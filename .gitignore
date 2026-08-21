@@ -1,4 +1,10 @@
 __pycache__/
+.vscode/
+data/
+checkpoints/
+output/
+**.png
+**.onnx
 *.pyc
 *.pyo
 *.egg-info/

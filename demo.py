@@ -94,6 +94,7 @@ def load_images(image_folder=None, video_path=None, fps=10, image_ext=".jpg,.png
             paths.extend(glob.glob(os.path.join(image_folder, f"*{ext}")))
         paths = sorted(paths)
         resolved_folder = image_folder
+        print(f"path = {paths}")
 
     if first_k is not None and first_k > 0:
         paths = paths[:first_k]
@@ -113,6 +114,7 @@ def load_images(image_folder=None, video_path=None, fps=10, image_ext=".jpg,.png
         print(f"Rotated {len(paths)} images 90° clockwise → {rotated_dir}")
 
     print(f"Loading {len(paths)} images...")
+    print(f"Path = {paths}")
     images = load_and_preprocess_images(
         paths,
         mode="crop",
@@ -162,7 +164,7 @@ def load_model(args, device):
 
     return model.to(device).eval()
 
-
+# 
 # =============================================================================
 # torch.compile (opt-in via --compile)
 # =============================================================================

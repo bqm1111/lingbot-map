@@ -17,6 +17,7 @@ import os
 import shutil
 import sys
 import time
+import traceback
 from contextlib import nullcontext
 from datetime import datetime
 
@@ -405,7 +406,6 @@ def find_image_folder(scene_path, image_ext):
             return root
 
     return None
-
 
 def find_scenes(input_folder, image_ext, min_images=2):
     """Find scenes under an input folder."""
@@ -1009,6 +1009,7 @@ def process_scene(args, scene_name, image_folder, model, device, video_images=No
     except Exception as exc:
         result["error"] = str(exc)
         print(f"Error processing {scene_name}: {exc}")
+        traceback.print_exc()
     finally:
         if torch.cuda.is_available():
             torch.cuda.empty_cache()
