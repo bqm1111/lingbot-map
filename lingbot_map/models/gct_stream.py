@@ -367,7 +367,7 @@ class GCTStream(GCTBase):
             "num_cached_blocks": num_cached,
             "cache_memory_mb": round(cache_memory_mb, 2)
         }
-
+    # 
     @torch.no_grad()
     def inference_streaming(
         self,
