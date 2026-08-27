@@ -1,0 +1,46 @@
+# Learned causal corrector -- the only trained component in this prototype.
+# LingbotMap stays frozen; this reads cached predictions only.
+
+seed: 0
+device: cuda:0
+
+data:
+  cache_dir: outputs/prompted_lingbot/cache
+  split_file: configs/prompted_lingbot/splits.json
+  train_split: train
+  val_split: val
+  # Prompt regimes are randomised so one checkpoint covers many sensor rigs.
+  prompt_samples_per_sequence: 8
+  val_prompt_samples_per_sequence: 4
+  depth_samples_per_frame: 256
+  base_anchor: depth_scale_pose_se3    # the learned part is a residual on this
+
+model:
+  hidden: 192
+  layers: 2
+  dropout: 0.0
+  max_log_scale_step: 0.15
+  max_rot_step_rad: 0.02
+  max_trans_step_m: 0.5
+  predict_confidence: true
+  base: anchor                          # "anchor" | "identity"
+
+loss:
+  depth: 1.0
+  rotation: 1.0
+  translation: 1.0
+  smoothness: 0.05
+  prompt_consistency: 0.2
+  confidence: 0.05
+  huber_delta_log: 0.1
+  huber_delta_m: 1.0
+
+optim:
+  epochs: 120
+  batch_size: 8
+  lr: 0.001
+  weight_decay: 0.0001
+  grad_clip: 1.0
+  scheduler: cosine
+  early_stopping_patience: 25
+  select_on: val_ate_m

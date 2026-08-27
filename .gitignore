@@ -5,6 +5,8 @@ checkpoints/
 output/
 **.png
 **.onnx
+outputs/
+output/
 *.pyc
 *.pyo
 *.egg-info/

@@ -138,6 +138,7 @@ def load_model(args, device):
         from lingbot_map.models.gct_stream import GCTStream
 
     print("Building model...")
+
     model = GCTStream(
         img_size=args.image_size,
         patch_size=args.patch_size,
@@ -150,7 +151,7 @@ def load_model(args, device):
         use_sdpa=args.use_sdpa,
         camera_num_iterations=args.camera_num_iterations,
     )
-
+    
     if args.model_path:
         print(f"Loading checkpoint: {args.model_path}")
         ckpt = torch.load(args.model_path, map_location=device, weights_only=False)
@@ -442,8 +443,8 @@ def main():
                 cv2.cvtColor(img, cv2.COLOR_RGB2BGR),
             )
         print(f"Exported to {args.export_preprocessed}")
-
     model = load_model(args, device)
+
     print(f"Total load time: {time.time() - t0:.1f}s")
 
     # Pick inference dtype; autocast still runs for the ops that need fp32 (e.g. LayerNorm).
@@ -604,3 +605,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

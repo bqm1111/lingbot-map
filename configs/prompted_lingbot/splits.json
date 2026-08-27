@@ -1,0 +1,62 @@
+{
+ "train": [
+  "tartanair_ForestEnv_Data_hard_P000_lcam_front_c000000",
+  "tartanair_ForestEnv_Data_hard_P000_lcam_front_c000500",
+  "tartanair_ForestEnv_Data_hard_P000_lcam_front_c001000",
+  "tartanair_ForestEnv_Data_hard_P000_lcam_front_c001500",
+  "tartanair_ForestEnv_Data_hard_P000_lcam_front_c002000",
+  "tartanair_ForestEnv_Data_hard_P002_lcam_front_c000000",
+  "tartanair_ForestEnv_Data_hard_P002_lcam_front_c000500",
+  "tartanair_ForestEnv_Data_hard_P002_lcam_front_c001000",
+  "tartanair_ForestEnv_Data_hard_P002_lcam_front_c001500",
+  "tartanair_ForestEnv_Data_hard_P003_lcam_front_c000000",
+  "tartanair_ForestEnv_Data_hard_P003_lcam_front_c000500",
+  "tartanair_ForestEnv_Data_hard_P003_lcam_front_c001000",
+  "tartanair_ForestEnv_Data_hard_P003_lcam_front_c001500",
+  "tartanair_ForestEnv_Data_hard_P004_lcam_front_c000000",
+  "tartanair_ForestEnv_Data_hard_P004_lcam_front_c000500",
+  "tartanair_ForestEnv_Data_hard_P004_lcam_front_c001000",
+  "tartanair_ForestEnv_Data_hard_P004_lcam_front_c001500"
+ ],
+ "val": [
+  "tartanair_ForestEnv_Data_hard_P005_lcam_front_c000000",
+  "tartanair_ForestEnv_Data_hard_P007_lcam_front_c000000",
+  "tartanair_ForestEnv_Data_hard_P007_lcam_front_c000500",
+  "tartanair_ForestEnv_Data_hard_P007_lcam_front_c001000"
+ ],
+ "test": [
+  "tartanair_ForestEnv_Data_hard_P009_lcam_front_c000000",
+  "tartanair_ForestEnv_Data_hard_P009_lcam_front_c000500",
+  "tartanair_ForestEnv_Data_hard_P009_lcam_front_c001000",
+  "tartanair_ForestEnv_Data_hard_P009_lcam_front_c001500",
+  "tartanair_ForestEnv_Data_hard_P010_lcam_front",
+  "tartanair_ForestEnv_Data_hard_P011_lcam_front_c000000",
+  "tartanair_ForestEnv_Data_hard_P011_lcam_front_c000500"
+ ],
+ "kitti_test": [
+  "kitti_09_c000000",
+  "kitti_09_c000500",
+  "kitti_09_c001000",
+  "kitti_10_c000000",
+  "kitti_10_c000500",
+  "kitti_10_c001000"
+ ],
+ "_note": "TartanAir trajectories are split by trajectory id. All of them are in ForestEnv because that is the only environment available locally, so train/val/test never share a trajectory but do share an environment. KITTI 09/10 is a fully disjoint real-world hold-out that is never trained on.",
+ "_assignment": {
+  "train": [
+   "P000",
+   "P002",
+   "P003",
+   "P004"
+  ],
+  "val": [
+   "P005",
+   "P007"
+  ],
+  "test": [
+   "P009",
+   "P010",
+   "P011"
+  ]
+ }
+}
