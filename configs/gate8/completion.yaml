@@ -1,0 +1,24 @@
+# Gate 8 completion module. Fixed before training; never tuned on KITTI-360.
+seed: 0
+train_sources: [sk_train, occ3d_train]      # genuine train splits only
+val_sources: [semantickitti, occ3d]         # official val (source validation); KITTI-360 never
+val_limit: 120
+val_stride: 1
+train_stride: 1
+crop: [128, 128, 32]
+width: 24
+batch_size: 4
+lr: 0.001
+weight_decay: 0.01
+grad_clip: 1.0
+steps: 6000
+log_every: 50
+val_every: 500
+ckpt_every: 500
+w_focal: 1.0
+w_dice: 1.0
+w_sem: 0.5
+focal_gamma: 2.0
+pos_weight_cap: 8.0
+w_unknown: 2.0
+lock_logodds: 2.0

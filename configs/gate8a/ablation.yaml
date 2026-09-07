@@ -1,0 +1,35 @@
+# Gate 8A: the 2x2 (crop sampler x occupancy loss) ablation.
+# Everything outside `sampler` and `occ_loss` is copied verbatim from
+# configs/gate8/completion.yaml and must not move -- the point of the gate is that the
+# only two things that changed are the two factors.
+seed: 0
+train_sources: [sk_train, occ3d_train]      # genuine train splits only
+val_sources: [semantickitti, occ3d]         # official val (source validation); KITTI-360 never
+val_limit: 120
+val_stride: 1
+train_stride: 1
+crop: [128, 128, 32]
+width: 24
+batch_size: 4
+lr: 0.001
+weight_decay: 0.01
+grad_clip: 1.0
+steps: 6000
+log_every: 50
+val_every: 500
+ckpt_every: 500
+w_sem: 0.5
+lock_logodds: 2.0
+# ---- factor A: crop sampler ------------------------------------------------
+sampler: uniform                 # occ_centred | uniform
+centre_on_occ_p: 0.7             # used by occ_centred only
+# ---- factor B: occupancy loss ----------------------------------------------
+occ_loss: bce                    # focal_dice | bce
+#   focal_dice arm (Gate 8's objective) -- ignored when occ_loss == bce
+w_focal: 1.0
+w_dice: 1.0
+focal_gamma: 2.0
+pos_weight_cap: 8.0
+w_unknown: 2.0
+#   bce arm
+w_bce: 1.0

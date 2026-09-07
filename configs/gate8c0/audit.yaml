@@ -1,0 +1,19 @@
+# Gate 8C-0 audit subset and the KITTI-360-only three-way partition.
+# Drives come from Gate 8B's manifest; the only new thing is that one training drive
+# (0010) is held back as a DISJOINT source-validation drive for Stage 7, so that
+# checkpoint and threshold selection never touches drive 0006.
+seed: 0
+sscbench_root: /media/SSD1/MINH_DATASETS/sscbench_kitti360
+kitti360_root: /media/welf/MINH/datasets/kitti360/KITTI-360
+train_drives: [2013_05_28_drive_0003_sync, 2013_05_28_drive_0007_sync]
+val_drive: 2013_05_28_drive_0010_sync
+heldout_drive: 2013_05_28_drive_0006_sync
+# Stage 1-4 audit subset: three anchors per partition, spread across each drive.
+n_audit_anchors_per_partition: 3
+# Stage 2-4 history lengths
+histories: [1, 5, 20, 0]        # 0 == all available past
+future_frames: 20
+# Stage 6 fixed-batch memorisation
+memorize_steps: 2000
+memorize_log_every: 50
+memorize_batch: 4

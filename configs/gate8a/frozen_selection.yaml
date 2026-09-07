@@ -1,0 +1,22 @@
+# FROZEN before KITTI-360 was opened. Written by tools/gate8a/selection.py.
+# Nothing below may be re-tuned after the held-out evaluation.
+gate: 8A
+selected_candidate: cellB_last
+checkpoint: artifacts/gate8a/checkpoints/cellB_uniform_focal_last.pt
+checkpoint_sha256: b505fdc4facdd53a2ee877de26f09045d3d3f13ec6468b81bd49226db0ac9c62
+global_threshold_final_logodds: 0.5625
+mapper_calibrated_threshold_logodds: -16.0
+selection_inputs:
+- artifacts/gate8a/scores_semantickitti_source_*.npz
+- artifacts/gate8a/scores_occ3d_source_*.npz
+selection_criterion:
+  checkpoint: max macro-average AP over the two source validation sets, subject to
+    AP > prevalence on both
+  threshold: single global final-logit threshold maximising the equally weighted mean
+    of the two per-source pooled full-grid binary IoUs
+  forbidden: KITTI-360 data, labels, prevalence, metrics or predictions play no part
+    in any of the above
+kitti360_used_in_selection: false
+sampler: uniform
+occ_loss: focal_dice
+config: configs/gate8a/cellB_uniform_focal.yaml

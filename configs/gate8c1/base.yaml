@@ -1,0 +1,28 @@
+# Gate 8C-1 base training configuration.
+# Gate 8A cell B verbatim (uniform sampler, focal BCE + Dice, 0.5x future-teacher KL,
+# 6000 steps, batch 4, crop 128x128x32, width 24, AdamW lr 1e-3 wd 0.01, cosine, clip 1.0).
+# The ONLY changes are the data source (KITTI-360 drives, rebuilt raw-LiDAR targets) and
+# the seed. Architecture, loss and optimisation are untouched.
+train_drives: [2013_05_28_drive_0003_sync, 2013_05_28_drive_0007_sync, 2013_05_28_drive_0010_sync]
+val_drive: 2013_05_28_drive_0006_sync
+val_limit: 120
+crop: [128, 128, 32]
+width: 24
+batch_size: 4
+lr: 0.001
+weight_decay: 0.01
+grad_clip: 1.0
+steps: 6000
+log_every: 50
+val_every: 500
+w_sem: 0.5
+lock_logodds: 2.0
+sampler: uniform
+centre_on_occ_p: 0.7
+occ_loss: focal_dice
+w_focal: 1.0
+w_dice: 1.0
+focal_gamma: 2.0
+pos_weight_cap: 8.0
+w_unknown: 2.0
+w_bce: 1.0

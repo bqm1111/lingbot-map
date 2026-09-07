@@ -1,0 +1,61 @@
+# Gate 4: zero-shot SemanticKITTI -> Occ3D-nuScenes transfer of the frozen Gate-3.1 stack.
+# NOTHING in this file may be tuned on Occ3D. Every value is inherited from Gate 0-3.1.
+experiment:
+  seed: 0
+  output_dir: artifacts/occ3d_zeroshot
+
+data:
+  # Resolution order: $OCC3D_DATA_ROOT, $NUSCENES_DATA_ROOT, then this explicit mount.
+  nuscenes_root: /media/SSD1/MINH_DATASETS/nuscenes
+  occ3d_root: /media/SSD1/MINH_DATASETS/nuscenes/occ3d_gt/Occupancy3D-nuScenes-trainval
+  split: val                     # official Occ3D val_split, 150 scenes
+  camera: CAM_FRONT              # OccAny NuScenesDataset default camera_names=['CAM_FRONT']
+  # Frozen LingBot predictions live outside the repository ('/' is at 99% capacity and
+  # bulk data must not sit in git). Only summaries are written under artifacts/.
+  cache_root: /media/SSD1/MINH_DATASETS/lingbot_occ3d_zeroshot/cache_lingbot
+
+# Every path here is hashed by the preflight and re-verified before evaluation.
+frozen:
+  lingbot: checkpoints/lingbot-map/204754b/lingbot-map.pt
+  depth_head: artifacts/depth_gate/runs/depth_cnn/best.pt
+  full_s0: artifacts/voxel_gate_validation/runs/full_s0/best.pt
+  occ_only_s0: artifacts/voxel_gate_validation/runs/occ_only_s0/best.pt
+  c0_corrector_s0: artifacts/voxel_gate_validation/runs/c0_corrector_s0/best.pt
+  gate31_config: configs/voxel_gate_validation/clean_infill.yaml
+  gate2_config: configs/depth_gate/refine.yaml
+  gate0_config: configs/scale_gate/semantickitti.yaml
+
+# --- frozen from Gate 0-3.1; changing any of these invalidates the experiment -------
+frozen_values:
+  s0: 27.3665                    # constant scale fitted on KITTI source sequences
+  tau: 0.45                      # probability threshold selected on KITTI seq 09-10
+  radius_m: 0.6                  # physical correction radius (3 voxels at 0.2 m)
+  canonical_voxel_size: 0.2      # Gate-3.1 training resolution
+  confidence_threshold: 1.5
+  min_depth_m: 1.0
+  max_depth_m: 60.0
+  lingbot_image_size: 518
+  lingbot_patch_size: 14
+  lingbot_preprocess_mode: crop
+  v1_control: {kind: dilate, radius: 2}          # frozen from Gate-3.1 source selection
+  v2_control: {kind: fill, radius: 1, min_neighbors: 3}
+
+clips:
+  n_frames: 5
+  keyframe_stride: 1             # consecutive official 2 Hz keyframes
+  clip_stride: 5                 # non-overlapping, matching the KITTI protocol
+  anchor: last                   # frozen: Gate 0-3.1 fuses into the LAST frame
+
+eval:
+  apply_camera_mask: true        # OccAny: voxel_label[mask_camera == 0] = 255
+  apply_lidar_mask: false        # OccAny default
+  single_camera_x_cut: 100       # OccAny: voxel_label[:100] = 255 when not use_surround_label
+  distance_bands_m: [[0, 10], [10, 20], [20, 30], [30, 40]]
+  bootstrap_n: 10000
+  bootstrap_seed: 0
+  bootstrap_unit: scene
+
+lingbot:
+  kv_cache_sliding_window: 64
+  num_scale_frames: 5
+  device: cuda:0

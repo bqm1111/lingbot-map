@@ -1,0 +1,53 @@
+# Gate 3: can a small 3D module correct the *visible* occupancy of frozen C3 geometry
+# better than deterministic morphology? LingBot and the Gate-2 depth head stay frozen;
+# only the clip-median scalar a_clip is taken from the depth head, r_shape is discarded.
+experiment:
+  seed: 0
+  output_dir: artifacts/voxel_gate
+
+data:
+  depth_gate_config: configs/depth_gate/refine.yaml   # -> configs/scale_gate/semantickitti.yaml
+  # Gate-2 split policy, reused verbatim. Sequence 08 is touched only at final evaluation.
+  source_train_sequences: ["00", "01", "02", "03", "04", "05", "06", "07"]
+  source_select_sequences: ["09", "10"]
+  val_sequences: ["08"]
+
+c3:
+  depth_run: depth_cnn        # frozen Gate-2 head; only its clip-median residual is used
+  use_r_shape: false          # r_shape is discarded from the deployed path, always
+
+region:
+  # Local band around C3 occupancy. Radius is chosen on source data only (select_region.py).
+  candidate_radii: [1, 2, 3]
+  radius: null                # filled in by select_region.py; never tuned on sequence 08
+  outside_policy: preserve_c3 # dilation is extensive, so this equals "force empty"
+
+controls:
+  candidate_radii: [1, 2]
+  candidate_min_neighbors: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16, 18, 20, 22, 24, 26]
+
+model:
+  arch: voxel_cnn3d
+  channels: 16
+  n_blocks: 3
+  kernel: 3
+
+loss:
+  pos_weight: null            # resolved from source-train class balance
+  dice_weight: 0.5
+
+train:
+  epochs: 20
+  batch_size: 1
+  lr: 0.001
+  weight_decay: 0.0001
+  patience: 4
+  amp: true
+  device: cuda:0
+  threshold_grid: [0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50,
+                   0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90]
+
+eval:
+  distance_bins_m: [[0, 10], [10, 20], [20, 40], [40, 80]]
+  bootstrap_n: 10000
+  bootstrap_seed: 0

@@ -1,0 +1,59 @@
+# Gate 3.1: clean revalidation of bounded local occupancy correction and infill.
+#
+# Everything methodological is frozen from Gate 3. The ONLY change is that the inference
+# region is a pure radius-3 dilation of the frozen geometry's occupancy, with no
+# intersection against the SemanticKITTI per-sample valid mask (the Gate-3 leak).
+experiment:
+  seed: 0                     # original Gate-3 seed, read from configs/voxel_gate/visible_correction.yaml
+  seeds: [0, 1, 2]            # seed study: original, +1, +2
+  output_dir: artifacts/voxel_gate_validation
+
+data:
+  depth_gate_config: configs/depth_gate/refine.yaml   # -> configs/scale_gate/semantickitti.yaml
+  source_train_sequences: ["00", "01", "02", "03", "04", "05", "06", "07"]
+  source_select_sequences: ["09", "10"]
+  val_sequences: ["08"]
+
+c3:
+  depth_run: depth_cnn        # frozen Gate-2 head; only its clip-median residual is used
+  use_r_shape: false
+
+region:
+  radius: 3                   # FROZEN from Gate 3 (0.6 m). Not reselected in this task.
+  intersect_with_valid_mask: false     # the Gate-3 defect, explicitly disabled
+  outside_policy: preserve_frozen_geometry
+
+controls:
+  candidate_radii: [1, 2]
+  candidate_min_neighbors: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16, 18, 20, 22, 24, 26]
+
+model:
+  arch: voxel_cnn3d
+  channels: 16
+  n_blocks: 3
+  kernel: 3
+
+loss:
+  pos_weight: null            # resolved from source-train balance inside S_train
+  dice_weight: 0.5
+
+train:
+  epochs: 20
+  batch_size: 1
+  lr: 0.001
+  weight_decay: 0.0001
+  patience: 4
+  amp: true
+  device: cuda:0
+  threshold: 0.45             # FROZEN from Gate 3; not reselected
+
+eval:
+  distance_bins_m: [[0, 10], [10, 20], [20, 40], [40, 80]]
+  bootstrap_n: 10000
+  bootstrap_seed: 0
+
+reference:
+  c0_iou: 0.0573
+  c3_iou: 0.0778
+  tolerance: 0.0005
+  visible_ceiling: 0.1255     # DIAGNOSTIC reference only; never an IoU upper bound

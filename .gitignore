@@ -25,3 +25,14 @@ weights/
 **/.DS_Store
 docs/
 
+
+# --- research artifacts -------------------------------------------------------
+# Bulk binaries: 3.7 GB of cached predictions and checkpoints. Regenerable from
+# the pipeline in core/run/ and far too large for git.
+artifacts/**/*.npz
+artifacts/**/*.pt
+artifacts/**/*.pth
+artifacts/**/*.log
+# Large derived indexes (>5 MB) rather than results.
+artifacts/gate8c1_original_audit/samples.json
+artifacts/occ3d_zeroshot/nuscenes_lidar_index.json

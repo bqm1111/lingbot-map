@@ -1,0 +1,60 @@
+# Gate 0: can LingBot-Map's canonical geometry be converted to metric scale reliably
+# enough for fixed-grid occupancy? Defaults follow the plan; every deviation from the
+# plan's suggested values is recorded in reports/scale_gate/preflight_inventory.md.
+experiment:
+  seed: 0
+  output_dir: artifacts/scale_gate
+
+lingbot:
+  checkpoint: checkpoints/lingbot-map/204754b/lingbot-map.pt
+  mode: direct                 # one independent forward per clip; state reset between clips
+  clip_length: 5
+  frame_stride: 5              # 5 native frames ~= 2 Hz on 10 Hz KITTI
+  clip_stride: null            # null -> non-overlapping clips (span + frame_stride)
+  confidence_threshold: 1.5    # matches the existing occupancy evaluator's default
+  inference_resolution: 518    # demo preprocessing: mode=crop, image_size=518, patch=14
+  patch_size: 14
+  num_scale_frames: 5          # == clip_length, so the whole clip is one direct block
+  kv_cache_sliding_window: 64
+  autocast_dtype: bfloat16
+  device: cuda:0
+
+dataset:
+  name: semantickitti
+  root: data/kitti/dataset
+  train_sequences: ["00", "01", "02", "03", "04", "05", "06", "07", "09", "10"]
+  val_sequences: ["08"]
+  camera: image_2
+  max_clips_per_sequence: null
+
+cache:
+  root: artifacts/scale_gate/cache
+  overwrite: false
+  dtype: float32
+
+scale:
+  # LingBot depth is optical-axis z depth (verified: occ_datasets.camera_points_from_depth
+  # and the existing cache manifest's conventions block). Set explicitly, never guessed.
+  depth_convention: z
+  minimum_valid_lidar_pixels: 200
+  minimum_translation_m: 0.5
+  robust_estimator: weighted_median_log_ratio
+  trim_log_ratio_quantiles: [0.01, 0.99]
+  lidar_min_depth_m: 1.0
+  lidar_max_depth_m: 80.0
+  use_confidence_weights: true     # ablated against uniform weights in the oracle report
+  joint_depth_weight: 0.5
+  max_agreement_error_log: 0.20    # clips above this are flagged, never silently dropped
+
+voxel:
+  use_existing_evaluator: true     # prompted_lingbot.occupancy + SEMANTICKITTI_GRID
+  history: 20
+  pixel_stride: 2
+  min_points_per_voxel: 1
+  min_depth_m: 1.0
+  max_depth_m: 60.0
+
+bootstrap:
+  n_boot: 10000
+  seed: 0
+  alpha: 0.05

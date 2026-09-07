@@ -1,0 +1,77 @@
+# Gate 5.2: does the Gate-5.1 G51-B gauge -- full image, calibrated FOV, one scalar per
+# five-frame clip -- transfer unchanged to a third benchmark?  Frozen inference only:
+# nothing here is trained, fitted, tuned or selected on SSCBench-KITTI-360.
+experiment:
+  seed: 0
+  output_dir: artifacts/gate5_2
+  gate5_config: configs/gate5/moge_metric_gauge.yaml            # frozen estimator + MoGe pin
+  gate5_1_config: configs/gate5_1/calibrated_gauge.yaml         # FOV formula, margins
+  gate4_config: configs/occ3d_zeroshot/frozen_transfer.yaml     # frozen scalars + hashes
+  gate31_config: configs/voxel_gate_validation/clean_infill.yaml
+
+dataset:
+  name: sscbench_kitti360
+  sequence: 2013_05_28_drive_0006_sync      # the official validation sequence
+  role: fresh_benchmark                     # never used to design Gates 1-5.1
+  # Official targets, extracted from the SSCBench squashfs image by byte-range read.
+  root: /media/SSD1/MINH_DATASETS/sscbench_kitti360
+  # Raw RGB, timestamps and velodyne come from the KITTI-360 release already on disk.
+  # Pixel identity with the archive's own copy is asserted by the tests.
+  kitti360_root: /media/welf/MINH/datasets/kitti360/KITTI-360
+  camera: image_00
+  clip_length: 5
+  anchor_stride: 5                          # native frames between consecutive anchors
+  # Declared before any result: a clip is eligible iff four earlier anchors exist AND
+  # consecutive anchors are exactly anchor_stride native frames apart (~2 s span).
+  require_contiguous_native_frames: true
+
+lingbot:
+  # Identical to Gate 0-5.1. Not re-tuned for this dataset.
+  checkpoint: checkpoints/lingbot-map/204754b/lingbot-map.pt
+  mode: direct
+  inference_resolution: 518
+  patch_size: 14
+  num_scale_frames: 5
+  kv_cache_sliding_window: 64
+  autocast_dtype: bfloat16
+  device: cuda:0
+  cache_root: /media/SSD1/MINH_DATASETS/lingbot_gate5_2/cache_lingbot
+
+moge:
+  # Same repository revision, same weights, same class as Gate 5. Asserted by the tests.
+  inherit_from_gate5: true
+  cache_root: /media/SSD1/MINH_DATASETS/lingbot_gate5_2/moge
+  # No aspect crop. Gate 5.1 discarded the crop as a metric-gauge component: it made the
+  # SemanticKITTI scale WORSE (14.8% -> 18.5%) and only helped occupancy by overscaling.
+  crop: false
+
+conditions:                       # fixed before any number was computed; V3 is not run
+  K360-C0: {scale: c0,     corrector: [raw, dilate_r2]}
+  K360-C3: {scale: c3,     corrector: [raw, dilate_r2]}
+  K360-A:  {scale: moge,   fov: inferred,   corrector: [raw, dilate_r2]}
+  K360-B:  {scale: moge,   fov: calibrated, corrector: [raw, dilate_r2]}
+  K360-OR: {scale: oracle, corrector: [raw, dilate_r2], diagnostic_only: true}
+
+oracle:
+  # Diagnostic only, computed after every deployable prediction is finalised and hashed.
+  primary: projected_lidar          # raw KITTI-360 velodyne, matching Gates 4-5.1 exactly
+  secondary: voxel_centre_lidar     # official .bin voxel centres; NOT an exact point oracle
+  min_valid_lidar_pixels: 200
+
+eval:
+  distance_bands_m: [[0, 10], [10, 20], [20, 30], [30, 40], [40, 51.2]]
+  height_bands_m: [[-2, -1], [-1, 0], [0, 1], [1, 4.4]]
+  depth_bands_m: [[0, 10], [10, 20], [20, 40], [40, 80]]
+  bootstrap_n: 10000
+  bootstrap_seed: 0
+  bootstrap_unit: contiguous_block   # ONE long drive: these are blocks, never "scenes"
+  block_size: 20                     # 20 consecutive anchor clips; remainder joins the last
+  non_inferiority_margin_iou: -0.01  # predeclared, for K360-B-D  -  K360-A-D
+
+decision:
+  # Predeclared. Not rewritten after seeing results; overlaps are documented in the report.
+  transfers:
+    max_median_relative_scale_error: 0.10
+    require_b_d_beats_c0_d: true          # paired block-bootstrap CI excludes zero
+    require_b_d_noninferior_to_a_d: true  # CI lower bound > -0.01
+    require_b_absrel_below_c0_absrel: true

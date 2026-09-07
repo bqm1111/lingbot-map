@@ -136,5 +136,3 @@ class LingBotSemBypass:
             pose_enc=preds["pose_enc"], extrinsic=extr.float(), intrinsic=intr.float(),
             semantic=sem, patch_grid=(H // ps, W // ps),
         )
-
-    # 

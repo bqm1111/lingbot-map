@@ -1,0 +1,62 @@
+experiment:
+  seed: 0
+  output_dir: artifacts/scale_gate
+lingbot:
+  checkpoint: checkpoints/lingbot-map/204754b/lingbot-map.pt
+  mode: direct
+  clip_length: 5
+  frame_stride: 5
+  clip_stride: null
+  confidence_threshold: 1.5
+  inference_resolution: 518
+  patch_size: 14
+  num_scale_frames: 5
+  kv_cache_sliding_window: 64
+  autocast_dtype: bfloat16
+  device: cuda:0
+dataset:
+  name: semantickitti
+  root: data/kitti/dataset
+  train_sequences:
+  - '00'
+  - '01'
+  - '02'
+  - '03'
+  - '04'
+  - '05'
+  - '06'
+  - '07'
+  - 09
+  - '10'
+  val_sequences:
+  - 08
+  camera: image_2
+  max_clips_per_sequence: null
+cache:
+  root: artifacts/scale_gate/cache
+  overwrite: false
+  dtype: float32
+scale:
+  depth_convention: z
+  minimum_valid_lidar_pixels: 200
+  minimum_translation_m: 0.5
+  robust_estimator: weighted_median_log_ratio
+  trim_log_ratio_quantiles:
+  - 0.01
+  - 0.99
+  lidar_min_depth_m: 1.0
+  lidar_max_depth_m: 80.0
+  use_confidence_weights: true
+  joint_depth_weight: 0.5
+  max_agreement_error_log: 0.2
+voxel:
+  use_existing_evaluator: true
+  history: 20
+  pixel_stride: 1
+  min_points_per_voxel: 1
+  min_depth_m: 1.0
+  max_depth_m: 60.0
+bootstrap:
+  n_boot: 10000
+  seed: 0
+  alpha: 0.05

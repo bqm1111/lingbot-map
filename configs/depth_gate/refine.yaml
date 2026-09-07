@@ -1,0 +1,45 @@
+# Gate 2: can a small residual head correct the *shape* of LingBot depth?
+# In-domain SemanticKITTI proof of learnability. LingBot stays frozen throughout.
+experiment:
+  seed: 0
+  output_dir: artifacts/depth_gate
+
+data:
+  scale_gate_config: configs/scale_gate/semantickitti.yaml   # reuse Gate-0 assets verbatim
+  train_sequences: ["00", "01", "02", "03", "04", "05", "06", "07"]
+  select_sequences: ["09", "10"]      # early stopping only; never sequence 08
+  val_sequences: ["08"]
+  rgb_cache: artifacts/depth_gate/cache_rgb
+
+scale:
+  # Deployable policy chosen in Gate 1 A3: the learned models did not reliably beat the
+  # constant once the pose-convention bug was repaired.
+  policy: constant
+  constant: 27.3665
+
+model:
+  arch: rgbd_unet          # identity | depth_cnn | rgbd_unet
+  base_channels: 32
+  max_log_residual: 0.7    # r is tanh-bounded, so refined depth is always finite and > 0
+  use_rgb: true
+
+loss:
+  primary: log_smooth_l1   # log_smooth_l1 | relative
+  lambda_residual: 0.05
+  confidence_weighted: false
+  smooth_l1_beta: 0.1
+
+train:
+  epochs: 30
+  batch_size: 8
+  lr: 0.0003
+  weight_decay: 0.0001
+  patience: 6
+  num_workers: 4
+  amp: true
+  device: cuda:0
+
+eval:
+  distance_bins_m: [[0, 10], [10, 20], [20, 40], [40, 80]]
+  bootstrap_n: 10000
+  bootstrap_seed: 0

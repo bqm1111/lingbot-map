@@ -1,0 +1,47 @@
+# Gate 4.1: diagnostic-only 2x2 factorization of the Occ3D-nuScenes geometry error.
+# NOTHING is trained, tuned or selected here. Every frozen value is inherited unchanged
+# from Gate 4 (configs/occ3d_zeroshot/frozen_transfer.yaml), which inherits Gate 0-3.1.
+experiment:
+  seed: 0
+  output_dir: artifacts/occ3d_zeroshot/gate41
+  gate4_config: configs/occ3d_zeroshot/frozen_transfer.yaml   # single source of frozen truth
+
+factorization:
+  # depth scale x relative camera poses. C3 is carried as a reference row, not a cell.
+  conditions:
+    G00: {scale: const,  poses: pred}
+    G01: {scale: oracle, poses: gt}      # placeholder overwritten below; see `cells`
+  cells:
+    G00: {scale: const,  poses: pred}    # deployable
+    G01: {scale: oracle, poses: pred}    # ORACLE (LiDAR-measured scale)
+    G10: {scale: const,  poses: gt}      # ORACLE (nuScenes ground-truth poses)
+    G11: {scale: oracle, poses: gt}      # ORACLE (both)
+  reference_rows: [C3]                   # frozen learned clip scale + predicted poses
+
+oracle_scale:
+  # Reused verbatim from the Gate-4 LiDAR diagnostic: robust weighted-median log ratio of
+  # projected LIDAR_TOP depth to frozen LingBot canonical depth at the ANCHOR frame.
+  min_correspondences: 200
+  lidar_min_depth_m: 1.0
+  lidar_max_depth_m: 80.0
+  # Deterministic failure policy, fixed BEFORE any occupancy result was inspected:
+  # a clip with fewer than `min_correspondences` valid LiDAR pixels is reported and
+  # EXCLUDED from every oracle-scale condition; it is never silently replaced by s0.
+  on_failure: exclude_and_report
+
+correctors:
+  raw: null
+  dilate_r2: {kind: dilate, radius: 2}   # 0.4 m expansion on the 0.2 m grid (5x5x5 max-pool)
+  occ_only: occ_only_s0                  # frozen Gate-3.1 occupancy-only CNN
+  v3: full_s0                            # frozen Gate-3.1 full corrector, seed 0
+
+eval:
+  distance_bands_m: [[0, 10], [10, 20], [20, 30], [30, 40]]
+  bootstrap_n: 10000
+  bootstrap_seed: 0
+  bootstrap_unit: scene
+  ground_plane:
+    # ego-frame band used for the ground-height statistic (front of vehicle, near lane)
+    x_range_m: [3.0, 30.0]
+    abs_y_max_m: 8.0
+    percentile: 5

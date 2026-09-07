@@ -1,0 +1,41 @@
+# Gate 8B leave-one-dataset-out fold: target = occ3d.
+# Every method setting is Gate 8A's frozen cell B (uniform sampler, focal BCE + Dice,
+# 0.5 x teacher KL, 6000 steps, batch 4, crop 128x128x32, seed 0). Only the source
+# lists differ. The target never appears in train or val.
+seed: 0
+train_sources:
+- sk_train
+- k360_train
+val_sources:
+- semantickitti
+- kitti360
+val_limit: 120
+val_stride: 1
+train_stride: 1
+crop:
+- 128
+- 128
+- 32
+width: 24
+batch_size: 4
+lr: 0.001
+weight_decay: 0.01
+grad_clip: 1.0
+steps: 6000
+log_every: 50
+val_every: 500
+ckpt_every: 500
+w_sem: 0.5
+lock_logodds: 2.0
+sampler: uniform
+centre_on_occ_p: 0.7
+occ_loss: focal_dice
+w_focal: 1.0
+w_dice: 1.0
+focal_gamma: 2.0
+pos_weight_cap: 8.0
+w_unknown: 2.0
+w_bce: 1.0
+target: occ3d
+source_balance: equal
+val_limit_per_source: 60

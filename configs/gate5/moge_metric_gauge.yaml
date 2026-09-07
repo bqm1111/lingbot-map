@@ -1,0 +1,62 @@
+# Gate 5: can a frozen pretrained monocular metric model supply the missing clip scale?
+# EVERY choice below was fixed BEFORE any occupancy number was computed. Nothing is trained.
+experiment:
+  seed: 0
+  output_dir: artifacts/gate5
+  gate4_config: configs/occ3d_zeroshot/frozen_transfer.yaml       # frozen scalars + hashes
+  gate41_config: configs/occ3d_zeroshot/gate41_factorization.yaml
+  gate31_config: configs/voxel_gate_validation/clean_infill.yaml  # SemanticKITTI protocol
+
+moge:
+  repo: https://github.com/microsoft/MoGe
+  commit: 74fbce054ebed49800de42d0ad0e83495065719a
+  hf_repo: Ruicheng/moge-2-vitl          # MoGe-2 metric ViT-L. NOT v1, v3 or -normal.
+  hf_revision: 39c4d5e957afe587e04eec59dc2bcc3be5ecd968
+  model_class: moge.model.v2.MoGeModel
+  license: MIT
+  src_dir: /home/minh/workspace/MoGe
+  # Bulk MoGe predictions live outside the repository ('/' is at 99% capacity).
+  cache_root: /media/SSD1/MINH_DATASETS/lingbot_gate5_moge
+  device: cuda:0
+
+# --- the estimator, declared in advance; no variant was chosen after seeing results ----
+estimator:
+  pooling: confidence_weighted_median_over_all_five_frames
+  weight: lingbot_confidence
+  # frozen LingBot criteria, inherited unchanged from Gate 0-4.1
+  conf_threshold: 1.5
+  # the frozen (1, 60) m range is applied to the ALREADY-METRIC MoGe depth. It is NOT
+  # applied to LingBot depth, which would be circular (that needs the unknown scale).
+  min_depth_m: 1.0
+  max_depth_m: 60.0
+  min_valid_pixels_per_clip: 500
+  on_failure: exclude_and_report          # never silently fall back to C0 or C3
+
+datasets:
+  occ3d:
+    manifest: manifests/occ3d_zeroshot/val.jsonl        # 1182 clips, 150 val scenes
+    lingbot_cache: /media/SSD1/MINH_DATASETS/lingbot_occ3d_zeroshot/cache_lingbot
+    role: development                                    # informed the method design
+  kitti:
+    # Gate-3.1 SemanticKITTI protocol: 163 clips, sequence 08
+    geometry_cache: artifacts/voxel_gate_validation/cache_c3
+    rgb_cache: artifacts/depth_gate/cache_rgb
+    lingbot_cache: artifacts/scale_gate/cache/lingbot
+    manifest: artifacts/scale_gate/manifests/val.jsonl
+    oracle_scale_csv: artifacts/scale_gate/scale_targets_val.csv   # Gate-0 s_joint
+    role: source
+
+conditions:                       # V3 is NOT run in Gate 5
+  M0: {scale: c0,     corrector: [raw, dilate_r2]}
+  M1: {scale: c3,     corrector: [raw, dilate_r2]}
+  M2: {scale: moge,   corrector: [raw, dilate_r2]}
+  OR: {scale: oracle, corrector: [raw, dilate_r2], diagnostic_only: true}
+
+eval:
+  distance_bands_m: [[0, 10], [10, 20], [20, 30], [30, 40]]
+  depth_bands_m: [[0, 10], [10, 20], [20, 40], [40, 80]]
+  bootstrap_n: 10000
+  bootstrap_seed: 0
+  occ3d_bootstrap_unit: scene       # 150 nuScenes scenes, clips averaged within a scene
+  kitti_bootstrap_unit: block       # one sequence: contiguous clip blocks, never "scenes"
+  kitti_block_size: 8

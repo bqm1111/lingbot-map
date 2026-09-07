@@ -1,0 +1,43 @@
+# Gate 5.1: does the SemanticKITTI MoGe scale bias come from test-time camera formation
+# (inferred FOV and/or out-of-range aspect ratio) rather than an irreducible teacher
+# domain failure? Diagnostic 2x2. NOTHING is trained, tuned or selected on results.
+experiment:
+  seed: 0
+  output_dir: artifacts/gate5_1
+  gate5_config: configs/gate5/moge_metric_gauge.yaml       # inherits every frozen value
+  gate4_config: configs/occ3d_zeroshot/frozen_transfer.yaml
+  gate41_config: configs/occ3d_zeroshot/gate41_factorization.yaml
+
+# Predeclared 2x2. G51-D is the PRIMARY candidate, fixed before any result was seen.
+variants:
+  G51-A: {crop: false, fov: inferred,  role: "exact Gate-5 reproduction"}
+  G51-B: {crop: false, fov: calibrated, role: "isolates FOV"}
+  G51-C: {crop: true,  fov: inferred,  role: "isolates aspect handling"}
+  G51-D: {crop: true,  fov: calibrated, role: "PRIMARY deployable candidate"}
+
+crop:
+  max_aspect_ratio: 2.0      # MoGe's documented 2:1 .. 1:2 operating range
+  patch: 14                  # the LingBot/DINOv2 patch lattice the depth lives on
+  policy: >
+    identity when W/H <= max_aspect_ratio; otherwise the widest patch-aligned crop with
+    W_crop <= max_aspect_ratio * H, full height, centred on the transformed calibrated
+    principal point and clipped to the image. No resize, pad, letterbox or stretch.
+
+# Estimator: identical to Gate 5, except crop variants use the corresponding cropped pixels.
+estimator:
+  inherit_from_gate5: true
+
+eval:
+  distance_bands_m: [[0, 10], [10, 20], [20, 30], [30, 40]]
+  depth_bands_m: [[0, 10], [10, 20], [20, 40], [40, 80]]
+  bootstrap_n: 10000
+  bootstrap_seed: 0
+  occ3d_bootstrap_unit: scene        # 150 official nuScenes scenes
+  kitti_bootstrap_unit: block        # 21 contiguous 8-clip blocks of sequence 08
+  kitti_block_size: 8
+  non_inferiority_margin_iou: -0.01  # predeclared
+
+decision:
+  primary_variant: G51-D
+  max_scale_bias_both_datasets: 0.05      # median |ratio - 1| <= 5%
+  min_occ3d_gain_retention: 0.90          # of the C0 -> oracle dilation gain

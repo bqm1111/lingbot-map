@@ -1,0 +1,36 @@
+# Gate 8A ablation cell: sampler=uniform, occ_loss=focal_dice
+# Derived from configs/gate8a/ablation.yaml; only the two factors differ.
+seed: 0
+train_sources:
+- sk_train
+- occ3d_train
+val_sources:
+- semantickitti
+- occ3d
+val_limit: 120
+val_stride: 1
+train_stride: 1
+crop:
+- 128
+- 128
+- 32
+width: 24
+batch_size: 4
+lr: 0.001
+weight_decay: 0.01
+grad_clip: 1.0
+steps: 6000
+log_every: 50
+val_every: 500
+ckpt_every: 500
+w_sem: 0.5
+lock_logodds: 2.0
+sampler: uniform
+centre_on_occ_p: 0.7
+occ_loss: focal_dice
+w_focal: 1.0
+w_dice: 1.0
+focal_gamma: 2.0
+pos_weight_cap: 8.0
+w_unknown: 2.0
+w_bce: 1.0
