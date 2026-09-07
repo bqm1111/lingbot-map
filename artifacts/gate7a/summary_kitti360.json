@@ -1,0 +1,2756 @@
+{
+  "dataset": "kitti360",
+  "grid": "sscbench_kitti360",
+  "voxel_size_m": 0.2,
+  "n_clips": 1753,
+  "radii_m": [
+    0.0,
+    0.4,
+    0.8,
+    1.2,
+    2.0,
+    4.0
+  ],
+  "range_bands_m": [
+    [
+      0,
+      10
+    ],
+    [
+      10,
+      20
+    ],
+    [
+      20,
+      30
+    ],
+    [
+      30,
+      40
+    ],
+    [
+      40,
+      60
+    ]
+  ],
+  "conditions": [
+    "B-R",
+    "B-D"
+  ],
+  "constructions": [
+    "oracle",
+    "morph"
+  ],
+  "primary_condition": "B-D",
+  "class_names": [
+    "car",
+    "bicycle",
+    "motorcycle",
+    "truck",
+    "other-vehicle",
+    "person",
+    "road",
+    "parking",
+    "sidewalk",
+    "other-ground",
+    "building",
+    "fence",
+    "vegetation",
+    "terrain",
+    "pole",
+    "traffic-sign",
+    "other-structure",
+    "other-object"
+  ],
+  "precommit_sha256": "2da49cc6b266b2fc22cddfa743f0cd54f37005c72c9da8cb1a281c0885f37a4e",
+  "gate6_rollup_sha256": "2d6effe3b0e6b351f7a347821f631e6bc0c5a9daf05fb004123231221c28bbbf",
+  "n_verified_against_pinned": 1753,
+  "max_projection_roundtrip_pixel_error": 1.0800249583553523e-12,
+  "empty_base_clips": {
+    "B-R": [],
+    "B-D": []
+  },
+  "seconds": 2351.665863275528,
+  "seconds_wall": 590.176082611084,
+  "n_shards": 4,
+  "pinned_channel_agreement": {
+    "n_raw_voxels": 32127689,
+    "n_raw_channel_mismatch": 0,
+    "n_dil_voxels": 167622838,
+    "n_dil_channel_mismatch": 0
+  },
+  "max_top1_top2_gap_at_mismatch": 0.0,
+  "peak_gpu_gib": 0.15839767456054688,
+  "base": {
+    "B-R": {
+      "tp": 5319813,
+      "fp": 8876088,
+      "fn": 132521658,
+      "binary_iou": 0.03625887069181678,
+      "binary_precision": 0.3747428923320894,
+      "binary_recall": 0.03859370450276173,
+      "ssc_miou": 0.008789469356000347,
+      "binary_iou_mean_per_clip": 0.037628913067186895,
+      "n_clips_with_empty_base": 0
+    },
+    "B-D": {
+      "tp": 23833788,
+      "fp": 42612530,
+      "fn": 114007683,
+      "binary_iou": 0.1320768055455861,
+      "binary_precision": 0.3586923808178506,
+      "binary_recall": 0.1729072377644606,
+      "ssc_miou": 0.026588337397800445,
+      "binary_iou_mean_per_clip": 0.13417095666059511,
+      "n_clips_with_empty_base": 0
+    }
+  },
+  "envelopes": {
+    "B-R": {
+      "oracle": {
+        "by_radius": [
+          {
+            "tp": 5319813,
+            "fp": 8876088,
+            "fn": 132521658,
+            "binary_iou": 0.03625887069181678,
+            "binary_precision": 0.3747428923320894,
+            "binary_recall": 0.03859370450276173,
+            "radius_m": 0.0,
+            "ssc_miou": 0.008789469356000347,
+            "delta_binary_iou": 0.0,
+            "delta_ssc_miou": 0.0,
+            "n_base_voxels": 14195901,
+            "n_added": 0,
+            "n_added_true_positive": 0,
+            "n_added_false_positive": 0,
+            "added_volume_ratio": 0.0,
+            "added_precision": 0.0,
+            "tp_recovered": 0,
+            "fn_recovered": 0,
+            "fp_unchanged_vs_base": true
+          },
+          {
+            "tp": 17771624,
+            "fp": 8876088,
+            "fn": 120069847,
+            "binary_iou": 0.12112813300008624,
+            "binary_precision": 0.6669099395850571,
+            "binary_recall": 0.1289279914895859,
+            "radius_m": 0.4,
+            "ssc_miou": 0.027725224094845506,
+            "delta_binary_iou": 0.08486926230826945,
+            "delta_ssc_miou": 0.018935754738845158,
+            "n_base_voxels": 14195901,
+            "n_added": 12451811,
+            "n_added_true_positive": 12451811,
+            "n_added_false_positive": 0,
+            "added_volume_ratio": 0.8771412959276061,
+            "added_precision": 1.0,
+            "tp_recovered": 12451811,
+            "fn_recovered": 12451811,
+            "fp_unchanged_vs_base": true
+          },
+          {
+            "tp": 28959833,
+            "fp": 8876088,
+            "fn": 108881638,
+            "binary_iou": 0.19738491559827545,
+            "binary_precision": 0.7654057899105985,
+            "binary_recall": 0.21009521147666801,
+            "radius_m": 0.8,
+            "ssc_miou": 0.042479398975364804,
+            "delta_binary_iou": 0.16112604490645865,
+            "delta_ssc_miou": 0.033689929619364456,
+            "n_base_voxels": 14195901,
+            "n_added": 23640020,
+            "n_added_true_positive": 23640020,
+            "n_added_false_positive": 0,
+            "added_volume_ratio": 1.6652708412097266,
+            "added_precision": 1.0,
+            "tp_recovered": 23640020,
+            "fn_recovered": 23640020,
+            "fp_unchanged_vs_base": true
+          },
+          {
+            "tp": 38195886,
+            "fp": 8876088,
+            "fn": 99645585,
+            "binary_iou": 0.26033616058184283,
+            "binary_precision": 0.8114358237876321,
+            "binary_recall": 0.2771001043655432,
+            "radius_m": 1.2,
+            "ssc_miou": 0.052661200251394855,
+            "delta_binary_iou": 0.22407728989002607,
+            "delta_ssc_miou": 0.043871730895394506,
+            "n_base_voxels": 14195901,
+            "n_added": 32876073,
+            "n_added_true_positive": 32876073,
+            "n_added_false_positive": 0,
+            "added_volume_ratio": 2.3158849163571937,
+            "added_precision": 1.0,
+            "tp_recovered": 32876073,
+            "fn_recovered": 32876073,
+            "fp_unchanged_vs_base": true
+          },
+          {
+            "tp": 50773195,
+            "fp": 8876088,
+            "fn": 87068276,
+            "binary_iou": 0.34606079426389585,
+            "binary_precision": 0.8511953949220143,
+            "binary_recall": 0.36834484304074205,
+            "radius_m": 2.0,
+            "ssc_miou": 0.06245806673137323,
+            "delta_binary_iou": 0.3098019235720791,
+            "delta_ssc_miou": 0.053668597375372884,
+            "n_base_voxels": 14195901,
+            "n_added": 45453382,
+            "n_added_true_positive": 45453382,
+            "n_added_false_positive": 0,
+            "added_volume_ratio": 3.2018666515073613,
+            "added_precision": 1.0,
+            "tp_recovered": 45453382,
+            "fn_recovered": 45453382,
+            "fp_unchanged_vs_base": true
+          },
+          {
+            "tp": 69251532,
+            "fp": 8876088,
+            "fn": 68589939,
+            "binary_iou": 0.4720057535853633,
+            "binary_precision": 0.8863898836288626,
+            "binary_recall": 0.5023998329211098,
+            "radius_m": 4.0,
+            "ssc_miou": 0.06987468556804916,
+            "delta_binary_iou": 0.4357468828935465,
+            "delta_ssc_miou": 0.06108521621204881,
+            "n_base_voxels": 14195901,
+            "n_added": 63931719,
+            "n_added_true_positive": 63931719,
+            "n_added_false_positive": 0,
+            "added_volume_ratio": 4.503533731321457,
+            "added_precision": 1.0,
+            "tp_recovered": 63931719,
+            "fn_recovered": 63931719,
+            "fp_unchanged_vs_base": true
+          }
+        ],
+        "recall_monotonic_non_decreasing": true,
+        "iou_monotonic_non_decreasing": true,
+        "false_positives_constant": true
+      },
+      "morph": {
+        "by_radius": [
+          {
+            "tp": 5319813,
+            "fp": 8876088,
+            "fn": 132521658,
+            "binary_iou": 0.03625887069181678,
+            "binary_precision": 0.3747428923320894,
+            "binary_recall": 0.03859370450276173,
+            "radius_m": 0.0,
+            "ssc_miou": 0.008789469356000347,
+            "delta_binary_iou": 0.0,
+            "delta_ssc_miou": 0.0,
+            "n_base_voxels": 14195901,
+            "n_added": 0,
+            "n_added_true_positive": 0,
+            "n_added_false_positive": 0,
+            "added_volume_ratio": 0.0,
+            "added_precision": 0.0,
+            "tp_recovered": 0,
+            "fn_recovered": 0,
+            "fp_unchanged_vs_base": true
+          },
+          {
+            "tp": 17771624,
+            "fp": 30683971,
+            "fn": 120069847,
+            "binary_iou": 0.1054536560717046,
+            "binary_precision": 0.3667610314144321,
+            "binary_recall": 0.1289279914895859,
+            "radius_m": 0.4,
+            "ssc_miou": 0.022540940188958487,
+            "delta_binary_iou": 0.06919478537988781,
+            "delta_ssc_miou": 0.01375147083295814,
+            "n_base_voxels": 14195901,
+            "n_added": 34259694,
+            "n_added_true_positive": 12451811,
+            "n_added_false_positive": 21807883,
+            "added_volume_ratio": 2.413351149743859,
+            "added_precision": 0.3634536548983771,
+            "tp_recovered": 12451811,
+            "fn_recovered": 12451811,
+            "fp_unchanged_vs_base": false
+          },
+          {
+            "tp": 28959833,
+            "fp": 53882179,
+            "fn": 108881638,
+            "binary_iou": 0.1510498730855583,
+            "binary_precision": 0.34957906382090287,
+            "binary_recall": 0.21009521147666801,
+            "radius_m": 0.8,
+            "ssc_miou": 0.029532474902970632,
+            "delta_binary_iou": 0.11479100239374153,
+            "delta_ssc_miou": 0.020743005546970283,
+            "n_base_voxels": 14195901,
+            "n_added": 68646111,
+            "n_added_true_positive": 23640020,
+            "n_added_false_positive": 45006091,
+            "added_volume_ratio": 4.835629031225281,
+            "added_precision": 0.3443752261508303,
+            "tp_recovered": 23640020,
+            "fn_recovered": 23640020,
+            "fp_unchanged_vs_base": false
+          },
+          {
+            "tp": 38195886,
+            "fp": 78649978,
+            "fn": 99645585,
+            "binary_iou": 0.17643138413286708,
+            "binary_precision": 0.3268912111429122,
+            "binary_recall": 0.2771001043655432,
+            "radius_m": 1.2,
+            "ssc_miou": 0.03216596824380799,
+            "delta_binary_iou": 0.1401725134410503,
+            "delta_ssc_miou": 0.023376498887807642,
+            "n_base_voxels": 14195901,
+            "n_added": 102649963,
+            "n_added_true_positive": 32876073,
+            "n_added_false_positive": 69773890,
+            "added_volume_ratio": 7.230957936378959,
+            "added_precision": 0.3202735981502497,
+            "tp_recovered": 32876073,
+            "fn_recovered": 32876073,
+            "fp_unchanged_vs_base": false
+          },
+          {
+            "tp": 50773195,
+            "fp": 121027149,
+            "fn": 87068276,
+            "binary_iou": 0.19613499310963223,
+            "binary_precision": 0.2955360496833464,
+            "binary_recall": 0.36834484304074205,
+            "radius_m": 2.0,
+            "ssc_miou": 0.032548241153087895,
+            "delta_binary_iou": 0.15987612241781546,
+            "delta_ssc_miou": 0.023758771797087547,
+            "n_base_voxels": 14195901,
+            "n_added": 157604443,
+            "n_added_true_positive": 45453382,
+            "n_added_false_positive": 112151061,
+            "added_volume_ratio": 11.102109193350953,
+            "added_precision": 0.2884016537528704,
+            "tp_recovered": 45453382,
+            "fn_recovered": 45453382,
+            "fp_unchanged_vs_base": false
+          },
+          {
+            "tp": 69251532,
+            "fp": 189705224,
+            "fn": 68589939,
+            "binary_iou": 0.21142491454539022,
+            "binary_precision": 0.2674250831285514,
+            "binary_recall": 0.5023998329211098,
+            "radius_m": 4.0,
+            "ssc_miou": 0.03093311685668859,
+            "delta_binary_iou": 0.17516604385357343,
+            "delta_ssc_miou": 0.022143647500688243,
+            "n_base_voxels": 14195901,
+            "n_added": 244760855,
+            "n_added_true_positive": 63931719,
+            "n_added_false_positive": 180829136,
+            "added_volume_ratio": 17.241656940267475,
+            "added_precision": 0.26120075042228463,
+            "tp_recovered": 63931719,
+            "fn_recovered": 63931719,
+            "fp_unchanged_vs_base": false
+          }
+        ],
+        "recall_monotonic_non_decreasing": true,
+        "iou_monotonic_non_decreasing": true,
+        "false_positives_constant": null
+      }
+    },
+    "B-D": {
+      "oracle": {
+        "by_radius": [
+          {
+            "tp": 23833788,
+            "fp": 42612530,
+            "fn": 114007683,
+            "binary_iou": 0.1320768055455861,
+            "binary_precision": 0.3586923808178506,
+            "binary_recall": 0.1729072377644606,
+            "radius_m": 0.0,
+            "ssc_miou": 0.026588337397800445,
+            "delta_binary_iou": 0.0,
+            "delta_ssc_miou": 0.0,
+            "n_base_voxels": 66446318,
+            "n_added": 0,
+            "n_added_true_positive": 0,
+            "n_added_false_positive": 0,
+            "added_volume_ratio": 0.0,
+            "added_precision": 0.0,
+            "tp_recovered": 0,
+            "fn_recovered": 0,
+            "fp_unchanged_vs_base": true
+          },
+          {
+            "tp": 33137741,
+            "fp": 42612530,
+            "fn": 104703730,
+            "binary_iou": 0.1836353908273832,
+            "binary_precision": 0.4374603623530271,
+            "binary_recall": 0.24040472551254186,
+            "radius_m": 0.4,
+            "ssc_miou": 0.03580866370518196,
+            "delta_binary_iou": 0.051558585281797104,
+            "delta_ssc_miou": 0.009220326307381514,
+            "n_base_voxels": 66446318,
+            "n_added": 9303953,
+            "n_added_true_positive": 9303953,
+            "n_added_false_positive": 0,
+            "added_volume_ratio": 0.1400221002463974,
+            "added_precision": 1.0,
+            "tp_recovered": 9303953,
+            "fn_recovered": 9303953,
+            "fp_unchanged_vs_base": true
+          },
+          {
+            "tp": 41042335,
+            "fp": 42612530,
+            "fn": 96799136,
+            "binary_iou": 0.22743931845545504,
+            "binary_precision": 0.490615040739113,
+            "binary_recall": 0.2977502684950308,
+            "radius_m": 0.8,
+            "ssc_miou": 0.04246490476020029,
+            "delta_binary_iou": 0.09536251290986894,
+            "delta_ssc_miou": 0.015876567362399844,
+            "n_base_voxels": 66446318,
+            "n_added": 17208547,
+            "n_added_true_positive": 17208547,
+            "n_added_false_positive": 0,
+            "added_volume_ratio": 0.2589842073717313,
+            "added_precision": 1.0,
+            "tp_recovered": 17208547,
+            "fn_recovered": 17208547,
+            "fp_unchanged_vs_base": true
+          },
+          {
+            "tp": 47709674,
+            "fp": 42612530,
+            "fn": 90131797,
+            "binary_iou": 0.2643869004600236,
+            "binary_precision": 0.5282164505197415,
+            "binary_recall": 0.34611988434162894,
+            "radius_m": 1.2,
+            "ssc_miou": 0.0470309966590991,
+            "delta_binary_iou": 0.13231009491443751,
+            "delta_ssc_miou": 0.020442659261298655,
+            "n_base_voxels": 66446318,
+            "n_added": 23875886,
+            "n_added_true_positive": 23875886,
+            "n_added_false_positive": 0,
+            "added_volume_ratio": 0.35932594489283814,
+            "added_precision": 1.0,
+            "tp_recovered": 23875886,
+            "fn_recovered": 23875886,
+            "fp_unchanged_vs_base": true
+          },
+          {
+            "tp": 57381596,
+            "fp": 42612530,
+            "fn": 80459875,
+            "binary_iou": 0.31798461481604945,
+            "binary_precision": 0.5738496679294942,
+            "binary_recall": 0.4162868807457808,
+            "radius_m": 2.0,
+            "ssc_miou": 0.05204136230402587,
+            "delta_binary_iou": 0.18590780927046335,
+            "delta_ssc_miou": 0.025453024906225422,
+            "n_base_voxels": 66446318,
+            "n_added": 33547808,
+            "n_added_true_positive": 33547808,
+            "n_added_false_positive": 0,
+            "added_volume_ratio": 0.5048858839702751,
+            "added_precision": 1.0,
+            "tp_recovered": 33547808,
+            "fn_recovered": 33547808,
+            "fp_unchanged_vs_base": true
+          },
+          {
+            "tp": 72985727,
+            "fp": 42612530,
+            "fn": 64855744,
+            "binary_iou": 0.40445613062355984,
+            "binary_precision": 0.6313739401797381,
+            "binary_recall": 0.5294903374906671,
+            "radius_m": 4.0,
+            "ssc_miou": 0.05716214852107663,
+            "delta_binary_iou": 0.27237932507797374,
+            "delta_ssc_miou": 0.030573811123276184,
+            "n_base_voxels": 66446318,
+            "n_added": 49151939,
+            "n_added_true_positive": 49151939,
+            "n_added_false_positive": 0,
+            "added_volume_ratio": 0.739724043098972,
+            "added_precision": 1.0,
+            "tp_recovered": 49151939,
+            "fn_recovered": 49151939,
+            "fp_unchanged_vs_base": true
+          }
+        ],
+        "recall_monotonic_non_decreasing": true,
+        "iou_monotonic_non_decreasing": true,
+        "false_positives_constant": true
+      },
+      "morph": {
+        "by_radius": [
+          {
+            "tp": 23833788,
+            "fp": 42612530,
+            "fn": 114007683,
+            "binary_iou": 0.1320768055455861,
+            "binary_precision": 0.3586923808178506,
+            "binary_recall": 0.1729072377644606,
+            "radius_m": 0.0,
+            "ssc_miou": 0.026588337397800445,
+            "delta_binary_iou": 0.0,
+            "delta_ssc_miou": 0.0,
+            "n_base_voxels": 66446318,
+            "n_added": 0,
+            "n_added_true_positive": 0,
+            "n_added_false_positive": 0,
+            "added_volume_ratio": 0.0,
+            "added_precision": 0.0,
+            "tp_recovered": 0,
+            "fn_recovered": 0,
+            "fp_unchanged_vs_base": true
+          },
+          {
+            "tp": 33137741,
+            "fp": 63880498,
+            "fn": 104703730,
+            "binary_iou": 0.16427432849418597,
+            "binary_precision": 0.34156197166184393,
+            "binary_recall": 0.24040472551254186,
+            "radius_m": 0.4,
+            "ssc_miou": 0.03107080767884721,
+            "delta_binary_iou": 0.03219752294859987,
+            "delta_ssc_miou": 0.0044824702810467645,
+            "n_base_voxels": 66446318,
+            "n_added": 30571921,
+            "n_added_true_positive": 9303953,
+            "n_added_false_positive": 21267968,
+            "added_volume_ratio": 0.4600995498351015,
+            "added_precision": 0.30433000922644016,
+            "tp_recovered": 9303953,
+            "fn_recovered": 9303953,
+            "fp_unchanged_vs_base": false
+          },
+          {
+            "tp": 41042335,
+            "fp": 86922788,
+            "fn": 96799136,
+            "binary_iou": 0.18260169647345934,
+            "binary_precision": 0.3207306337680776,
+            "binary_recall": 0.2977502684950308,
+            "radius_m": 0.8,
+            "ssc_miou": 0.03260377443575147,
+            "delta_binary_iou": 0.05052489092787324,
+            "delta_ssc_miou": 0.006015437037951026,
+            "n_base_voxels": 66446318,
+            "n_added": 61518805,
+            "n_added_true_positive": 17208547,
+            "n_added_false_positive": 44310258,
+            "added_volume_ratio": 0.9258421964028165,
+            "added_precision": 0.27972823919450324,
+            "tp_recovered": 17208547,
+            "fn_recovered": 17208547,
+            "fp_unchanged_vs_base": false
+          },
+          {
+            "tp": 47709674,
+            "fp": 109564700,
+            "fn": 90131797,
+            "binary_iou": 0.19283946640118366,
+            "binary_precision": 0.3033531324054102,
+            "binary_recall": 0.34611988434162894,
+            "radius_m": 1.2,
+            "ssc_miou": 0.032749424213814354,
+            "delta_binary_iou": 0.06076266085559756,
+            "delta_ssc_miou": 0.006161086816013909,
+            "n_base_voxels": 66446318,
+            "n_added": 90828056,
+            "n_added_true_positive": 23875886,
+            "n_added_false_positive": 66952170,
+            "added_volume_ratio": 1.3669388874188635,
+            "added_precision": 0.2628690632771002,
+            "tp_recovered": 23875886,
+            "fn_recovered": 23875886,
+            "fp_unchanged_vs_base": false
+          },
+          {
+            "tp": 57381596,
+            "fp": 145419591,
+            "fn": 80459875,
+            "binary_iou": 0.20257495186542795,
+            "binary_precision": 0.28294506974458683,
+            "binary_recall": 0.4162868807457808,
+            "radius_m": 2.0,
+            "ssc_miou": 0.032087416439256645,
+            "delta_binary_iou": 0.07049814631984186,
+            "delta_ssc_miou": 0.0054990790414562,
+            "n_base_voxels": 66446318,
+            "n_added": 136354869,
+            "n_added_true_positive": 33547808,
+            "n_added_false_positive": 102807061,
+            "added_volume_ratio": 2.0521057163769405,
+            "added_precision": 0.24603307711732686,
+            "tp_recovered": 33547808,
+            "fn_recovered": 33547808,
+            "fp_unchanged_vs_base": false
+          },
+          {
+            "tp": 72985727,
+            "fp": 203281506,
+            "fn": 64855744,
+            "binary_iou": 0.21395722927218708,
+            "binary_precision": 0.2641852463190957,
+            "binary_recall": 0.5294903374906671,
+            "radius_m": 4.0,
+            "ssc_miou": 0.030641623391114044,
+            "delta_binary_iou": 0.08188042372660098,
+            "delta_ssc_miou": 0.004053285993313598,
+            "n_base_voxels": 66446318,
+            "n_added": 209820915,
+            "n_added_true_positive": 49151939,
+            "n_added_false_positive": 160668976,
+            "added_volume_ratio": 3.157750817735303,
+            "added_precision": 0.23425662308259404,
+            "tp_recovered": 49151939,
+            "fn_recovered": 49151939,
+            "fp_unchanged_vs_base": false
+          }
+        ],
+        "recall_monotonic_non_decreasing": true,
+        "iou_monotonic_non_decreasing": true,
+        "false_positives_constant": null
+      }
+    }
+  },
+  "miss_distance": {
+    "B-R": {
+      "all": {
+        "n_gt_occupied": 137841471,
+        "n_true_positive": 5319813,
+        "n_miss": 132521658,
+        "quantiles_m": {
+          "p25": 1.25,
+          "p50": 4.3500000000000005,
+          "p75": 12.350000000000001,
+          "p90": 20.200000000000003,
+          "p95": 24.25,
+          "p99": 30.400000000000002
+        },
+        "miss_fraction_within_radius": {
+          "0": 0.0,
+          "0.4": 0.09396057359922255,
+          "0.8": 0.17838608689909388,
+          "1.2": 0.24808075522266707,
+          "2": 0.34298832874547946,
+          "4": 0.48242468412219836
+        },
+        "gt_recoverable_fraction_within_radius": {
+          "0": 0.03859370450276173,
+          "0.4": 0.1289279914895859,
+          "0.8": 0.21009521147666801,
+          "1.2": 0.2771001043655432,
+          "2": 0.36834484304074205,
+          "4": 0.5023998329211098
+        },
+        "n_miss_within_radius": {
+          "0": 0,
+          "0.4": 12451811,
+          "0.8": 23640020,
+          "1.2": 32876073,
+          "2": 45453382,
+          "4": 63931719
+        },
+        "mean_m": 7.643124338589243
+      },
+      "0-10m": {
+        "n_gt_occupied": 17287132,
+        "n_true_positive": 2629590,
+        "n_miss": 14657542,
+        "quantiles_m": {
+          "p25": 0.30000000000000004,
+          "p50": 0.6000000000000001,
+          "p75": 1.05,
+          "p90": 1.9000000000000001,
+          "p95": 2.5500000000000003,
+          "p99": 4.25
+        },
+        "miss_fraction_within_radius": {
+          "0": 0.0,
+          "0.4": 0.3901753104306302,
+          "0.8": 0.653853422354171,
+          "1.2": 0.7943123069338638,
+          "2": 0.9119305951843768,
+          "4": 0.9879959409292499
+        },
+        "gt_recoverable_fraction_within_radius": {
+          "0": 0.1521125655776794,
+          "0.4": 0.4829373085136389,
+          "0.8": 0.7065066663458114,
+          "1.2": 0.825599989633908,
+          "2": 0.9253270582997805,
+          "4": 0.9898219091518478
+        },
+        "n_miss_within_radius": {
+          "0": 0,
+          "0.4": 5719011,
+          "0.8": 9583884,
+          "1.2": 11642666,
+          "2": 13366661,
+          "4": 14481592
+        },
+        "mean_m": 0.8504560621419336
+      },
+      "10-20m": {
+        "n_gt_occupied": 35434336,
+        "n_true_positive": 2168617,
+        "n_miss": 33265719,
+        "quantiles_m": {
+          "p25": 0.65,
+          "p50": 1.35,
+          "p75": 2.6500000000000004,
+          "p90": 4.5,
+          "p95": 6.15,
+          "p99": 9.75
+        },
+        "miss_fraction_within_radius": {
+          "0": 0.0,
+          "0.4": 0.15444337758038537,
+          "0.8": 0.3175486451983798,
+          "1.2": 0.46634386588788296,
+          "2": 0.6590223707474954,
+          "4": 0.8737921462031228
+        },
+        "gt_recoverable_fraction_within_radius": {
+          "0": 0.06120100571377999,
+          "0.4": 0.20619229326041272,
+          "0.8": 0.3593153544629706,
+          "1.2": 0.4990041580008724,
+          "2": 0.6798905445836491,
+          "4": 0.8815161937844694
+        },
+        "n_miss_within_radius": {
+          "0": 0,
+          "0.4": 5137670,
+          "0.8": 10563484,
+          "1.2": 15513264,
+          "2": 21922853,
+          "4": 29067324
+        },
+        "mean_m": 1.9817527700212942
+      },
+      "20-30m": {
+        "n_gt_occupied": 32939726,
+        "n_true_positive": 468920,
+        "n_miss": 32470806,
+        "quantiles_m": {
+          "p25": 1.9000000000000001,
+          "p50": 4.05,
+          "p75": 7.15,
+          "p90": 10.450000000000001,
+          "p95": 12.450000000000001,
+          "p99": 16.150000000000002
+        },
+        "miss_fraction_within_radius": {
+          "0": 0.0,
+          "0.4": 0.04247187458173967,
+          "0.8": 0.0923363898019655,
+          "1.2": 0.14991380257083856,
+          "2": 0.26157244141090924,
+          "4": 0.49677069919360795
+        },
+        "gt_recoverable_fraction_within_radius": {
+          "0": 0.014235698256870747,
+          "0.4": 0.056102956047661114,
+          "0.8": 0.10525761507548666,
+          "1.2": 0.16201537316977074,
+          "2": 0.2720844733195413,
+          "4": 0.5039345196739038
+        },
+        "n_miss_within_radius": {
+          "0": 0,
+          "0.4": 1379096,
+          "0.8": 2998237,
+          "1.2": 4867822,
+          "2": 8493468,
+          "4": 16130545
+        },
+        "mean_m": 4.929432746449226
+      },
+      "30-40m": {
+        "n_gt_occupied": 26243283,
+        "n_true_positive": 50013,
+        "n_miss": 26193270,
+        "quantiles_m": {
+          "p25": 6.0,
+          "p50": 10.100000000000001,
+          "p75": 14.200000000000001,
+          "p90": 17.6,
+          "p95": 19.450000000000003,
+          "p99": 22.75
+        },
+        "miss_fraction_within_radius": {
+          "0": 0.0,
+          "0.4": 0.007708888580921741,
+          "0.8": 0.017610554161431542,
+          "1.2": 0.030361043122909052,
+          "2": 0.05936685263046577,
+          "4": 0.14852227308770535
+        },
+        "gt_recoverable_fraction_within_radius": {
+          "0": 0.0019057447957254435,
+          "0.4": 0.009599942202353265,
+          "0.8": 0.019482737735213997,
+          "1.2": 0.03220892751871022,
+          "2": 0.0611594593557521,
+          "4": 0.1501449723344446
+        },
+        "n_miss_within_radius": {
+          "0": 0,
+          "0.4": 201921,
+          "0.8": 461278,
+          "1.2": 795255,
+          "2": 1555012,
+          "4": 3890284
+        },
+        "mean_m": 10.238629730079522
+      },
+      "40-60m": {
+        "n_gt_occupied": 25936994,
+        "n_true_positive": 2673,
+        "n_miss": 25934321,
+        "quantiles_m": {
+          "p25": 15.0,
+          "p50": 19.700000000000003,
+          "p75": 24.25,
+          "p90": 28.200000000000003,
+          "p95": 30.450000000000003,
+          "p99": 34.65
+        },
+        "miss_fraction_within_radius": {
+          "0": 0.0,
+          "0.4": 0.0005441823597386645,
+          "0.8": 0.001277727687568917,
+          "1.2": 0.0022004046298339562,
+          "2": 0.004449239291824914,
+          "4": 0.013957334761145279
+        },
+        "gt_recoverable_fraction_within_radius": {
+          "0": 0.00010305743217583348,
+          "0.4": 0.0006471837098778679,
+          "0.8": 0.0013806534404102496,
+          "1.2": 0.0023032352939588913,
+          "2": 0.004551838196824197,
+          "4": 0.01405895378624061
+        },
+        "n_miss_within_radius": {
+          "0": 0,
+          "0.4": 14113,
+          "0.8": 33137,
+          "1.2": 57066,
+          "2": 115388,
+          "4": 361974
+        },
+        "mean_m": 19.520219406361175
+      }
+    },
+    "B-D": {
+      "all": {
+        "n_gt_occupied": 137841471,
+        "n_true_positive": 23833788,
+        "n_miss": 114007683,
+        "quantiles_m": {
+          "p25": 1.6,
+          "p50": 5.45,
+          "p75": 13.350000000000001,
+          "p90": 20.650000000000002,
+          "p95": 24.450000000000003,
+          "p99": 30.3
+        },
+        "miss_fraction_within_radius": {
+          "0": 0.0,
+          "0.4": 0.08160812284905396,
+          "0.8": 0.1509419939707046,
+          "1.2": 0.20942348245073975,
+          "2": 0.29425918602345424,
+          "4": 0.43112830387053824
+        },
+        "gt_recoverable_fraction_within_radius": {
+          "0": 0.1729072377644606,
+          "0.4": 0.24040472551254186,
+          "0.8": 0.2977502684950308,
+          "1.2": 0.34611988434162894,
+          "2": 0.4162868807457808,
+          "4": 0.5294903374906671
+        },
+        "n_miss_within_radius": {
+          "0": 0,
+          "0.4": 9303953,
+          "0.8": 17208547,
+          "1.2": 23875886,
+          "2": 33547808,
+          "4": 49151939
+        },
+        "mean_m": 8.280042082997161
+      },
+      "0-10m": {
+        "n_gt_occupied": 17287132,
+        "n_true_positive": 10484510,
+        "n_miss": 6802622,
+        "quantiles_m": {
+          "p25": 0.30000000000000004,
+          "p50": 0.65,
+          "p75": 1.25,
+          "p90": 2.1,
+          "p95": 2.8000000000000003,
+          "p99": 4.6000000000000005
+        },
+        "miss_fraction_within_radius": {
+          "0": 0.0,
+          "0.4": 0.4049316572345193,
+          "0.8": 0.6256070085916872,
+          "1.2": 0.7583668473714988,
+          "2": 0.8934725463211097,
+          "4": 0.9840671729224408
+        },
+        "gt_recoverable_fraction_within_radius": {
+          "0": 0.60649215844479,
+          "0.4": 0.7658359408605199,
+          "0.8": 0.8526734220575165,
+          "1.2": 0.9049154596609779,
+          "2": 0.9580806116364473,
+          "4": 0.9937303076068372
+        },
+        "n_miss_within_radius": {
+          "0": 0,
+          "0.4": 2754597,
+          "0.8": 4255768,
+          "1.2": 5158883,
+          "2": 6077956,
+          "4": 6694237
+        },
+        "mean_m": 0.9164667388545181
+      },
+      "10-20m": {
+        "n_gt_occupied": 35434336,
+        "n_true_positive": 10215579,
+        "n_miss": 25218757,
+        "quantiles_m": {
+          "p25": 0.65,
+          "p50": 1.25,
+          "p75": 2.6500000000000004,
+          "p90": 4.6000000000000005,
+          "p95": 6.300000000000001,
+          "p99": 9.700000000000001
+        },
+        "miss_fraction_within_radius": {
+          "0": 0.0,
+          "0.4": 0.18738873609036322,
+          "0.8": 0.35625578215452885,
+          "1.2": 0.49184109272316634,
+          "2": 0.6656980357913754,
+          "4": 0.8720770417035225
+        },
+        "gt_recoverable_fraction_within_radius": {
+          "0": 0.2882960470883383,
+          "0.4": 0.42166135129496995,
+          "0.8": 0.5418446954953523,
+          "1.2": 0.6383412969838069,
+          "2": 0.762075970606589,
+          "4": 0.9089567249122433
+        },
+        "n_miss_within_radius": {
+          "0": 0,
+          "0.4": 4725711,
+          "0.8": 8984328,
+          "1.2": 12403621,
+          "2": 16788077,
+          "4": 21992699
+        },
+        "mean_m": 1.956168960865121
+      },
+      "20-30m": {
+        "n_gt_occupied": 32939726,
+        "n_true_positive": 2712269,
+        "n_miss": 30227457,
+        "quantiles_m": {
+          "p25": 1.75,
+          "p50": 3.85,
+          "p75": 6.8500000000000005,
+          "p90": 10.100000000000001,
+          "p95": 12.100000000000001,
+          "p99": 15.75
+        },
+        "miss_fraction_within_radius": {
+          "0": 0.0,
+          "0.4": 0.05121482763171245,
+          "0.8": 0.11039559166356601,
+          "1.2": 0.17384879581501017,
+          "2": 0.2876168180472476,
+          "4": 0.5206899144708071
+        },
+        "gt_recoverable_fraction_within_radius": {
+          "0": 0.08234036312263192,
+          "0.4": 0.12933814324988618,
+          "0.8": 0.1836459416814821,
+          "1.2": 0.24187438596180186,
+          "2": 0.3462747079316932,
+          "4": 0.5601564809616206
+        },
+        "n_miss_within_radius": {
+          "0": 0,
+          "0.4": 1548094,
+          "0.8": 3336978,
+          "1.2": 5255007,
+          "2": 8693925,
+          "4": 15739132
+        },
+        "mean_m": 4.709579964831312
+      },
+      "30-40m": {
+        "n_gt_occupied": 26243283,
+        "n_true_positive": 393700,
+        "n_miss": 25849583,
+        "quantiles_m": {
+          "p25": 5.6000000000000005,
+          "p50": 9.700000000000001,
+          "p75": 13.700000000000001,
+          "p90": 17.05,
+          "p95": 18.95,
+          "p99": 22.25
+        },
+        "miss_fraction_within_radius": {
+          "0": 0.0,
+          "0.4": 0.009958110349400993,
+          "0.8": 0.022793327072239425,
+          "1.2": 0.0381199186075845,
+          "2": 0.07125113004724293,
+          "4": 0.16593741570221848
+        },
+        "gt_recoverable_fraction_within_radius": {
+          "0": 0.01500193401869728,
+          "0.4": 0.024810653453685654,
+          "0.8": 0.03745331710213238,
+          "1.2": 0.05254998012253269,
+          "2": 0.08518415931421384,
+          "4": 0.17844996755931794
+        },
+        "n_miss_within_radius": {
+          "0": 0,
+          "0.4": 257413,
+          "0.8": 589198,
+          "1.2": 985384,
+          "2": 1841812,
+          "4": 4289413
+        },
+        "mean_m": 9.81519042202731
+      },
+      "40-60m": {
+        "n_gt_occupied": 25936994,
+        "n_true_positive": 27730,
+        "n_miss": 25909264,
+        "quantiles_m": {
+          "p25": 14.450000000000001,
+          "p50": 19.200000000000003,
+          "p75": 23.75,
+          "p90": 27.650000000000002,
+          "p95": 29.900000000000002,
+          "p99": 34.1
+        },
+        "miss_fraction_within_radius": {
+          "0": 0.0,
+          "0.4": 0.0007000584810128146,
+          "0.8": 0.0016316557660611278,
+          "1.2": 0.0028171776705042642,
+          "2": 0.005636516730077705,
+          "4": 0.016845634827758905
+        },
+        "gt_recoverable_fraction_within_radius": {
+          "0": 0.0010691292907728629,
+          "0.4": 0.0017684393187583727,
+          "0.8": 0.002699040605862036,
+          "1.2": 0.00388329503411228,
+          "2": 0.00669961985571651,
+          "4": 0.017896753956915746
+        },
+        "n_miss_within_radius": {
+          "0": 0,
+          "0.4": 18138,
+          "0.8": 42275,
+          "1.2": 72991,
+          "2": 146038,
+          "4": 436458
+        },
+        "mean_m": 19.00265021808416
+      }
+    }
+  },
+  "semantic_transport": {
+    "B-R": {
+      "note": "the oracle-added and morphology-added TRUE POSITIVE voxels are the same set at every radius -- morphology adds every valid voxel in range and the oracle adds exactly its ground-truth-occupied subset -- so this table applies to both constructions",
+      "by_interval": [
+        {
+          "interval_m": [
+            0.0,
+            0.4
+          ],
+          "n_voxels": 12451811,
+          "top1_accuracy": 0.5915945881285862,
+          "balanced_recall": 0.2866350473016961,
+          "n_classes_present": 18,
+          "mean_max_probability": 0.8292422939330465,
+          "mean_entropy_nats": 0.5473253232057587,
+          "per_class_support": {
+            "car": 290331,
+            "bicycle": 377,
+            "motorcycle": 1463,
+            "truck": 14170,
+            "other-vehicle": 35860,
+            "person": 2389,
+            "road": 1328735,
+            "parking": 453378,
+            "sidewalk": 744521,
+            "other-ground": 254378,
+            "building": 2542548,
+            "fence": 141716,
+            "vegetation": 5517628,
+            "terrain": 490843,
+            "pole": 12689,
+            "traffic-sign": 2435,
+            "other-structure": 587269,
+            "other-object": 31081
+          },
+          "per_class_recall": {
+            "car": 0.5555348894882048,
+            "bicycle": 0.23342175066312998,
+            "motorcycle": 0.059466848940533154,
+            "truck": 0.6733239237826394,
+            "other-vehicle": 0.11539319576129392,
+            "person": 0.28589367936375054,
+            "road": 0.550520607946656,
+            "parking": 0.06172994719637918,
+            "sidewalk": 0.172218110704735,
+            "other-ground": 0.06921589131135554,
+            "building": 0.5797420540339848,
+            "fence": 0.22329871009624883,
+            "vegetation": 0.8388008397811524,
+            "terrain": 0.003695682733582836,
+            "pole": 0.30089053510914965,
+            "traffic-sign": 0.12895277207392197,
+            "other-structure": 0.24439907435945027,
+            "other-object": 0.06293233808436022
+          }
+        },
+        {
+          "interval_m": [
+            0.4,
+            0.8
+          ],
+          "n_voxels": 11188209,
+          "top1_accuracy": 0.5760779942526995,
+          "balanced_recall": 0.27331755750170666,
+          "n_classes_present": 18,
+          "mean_max_probability": 0.8229613455194458,
+          "mean_entropy_nats": 0.5679714628679111,
+          "per_class_support": {
+            "car": 307574,
+            "bicycle": 350,
+            "motorcycle": 1706,
+            "truck": 14801,
+            "other-vehicle": 30554,
+            "person": 3223,
+            "road": 1000571,
+            "parking": 378410,
+            "sidewalk": 587793,
+            "other-ground": 203534,
+            "building": 2335222,
+            "fence": 143643,
+            "vegetation": 5141596,
+            "terrain": 435902,
+            "pole": 16583,
+            "traffic-sign": 4173,
+            "other-structure": 547858,
+            "other-object": 34716
+          },
+          "per_class_recall": {
+            "car": 0.5423897988776685,
+            "bicycle": 0.15428571428571428,
+            "motorcycle": 0.043962485345838215,
+            "truck": 0.6425917167758936,
+            "other-vehicle": 0.09134646854748969,
+            "person": 0.3136829041265901,
+            "road": 0.3744222049209901,
+            "parking": 0.07032319441875215,
+            "sidewalk": 0.12436861275993419,
+            "other-ground": 0.058083661697799875,
+            "building": 0.5921518382406469,
+            "fence": 0.21327875357657525,
+            "vegetation": 0.8214295716738538,
+            "terrain": 0.0033447885075085686,
+            "pole": 0.3138153530724236,
+            "traffic-sign": 0.2324466810448119,
+            "other-structure": 0.23956207630444384,
+            "other-object": 0.088230210853785
+          }
+        },
+        {
+          "interval_m": [
+            0.8,
+            1.2
+          ],
+          "n_voxels": 9236053,
+          "top1_accuracy": 0.5759882495260692,
+          "balanced_recall": 0.2624043190956344,
+          "n_classes_present": 18,
+          "mean_max_probability": 0.8221465900655028,
+          "mean_entropy_nats": 0.5726593302788302,
+          "per_class_support": {
+            "car": 236475,
+            "bicycle": 206,
+            "motorcycle": 1480,
+            "truck": 11833,
+            "other-vehicle": 20508,
+            "person": 3210,
+            "road": 844524,
+            "parking": 270989,
+            "sidewalk": 428004,
+            "other-ground": 143848,
+            "building": 1976536,
+            "fence": 115147,
+            "vegetation": 4359150,
+            "terrain": 327917,
+            "pole": 15408,
+            "traffic-sign": 4798,
+            "other-structure": 448135,
+            "other-object": 27885
+          },
+          "per_class_recall": {
+            "car": 0.5049709271593191,
+            "bicycle": 0.2524271844660194,
+            "motorcycle": 0.02027027027027027,
+            "truck": 0.6462435561565114,
+            "other-vehicle": 0.06953384045250634,
+            "person": 0.2881619937694704,
+            "road": 0.2322799588880837,
+            "parking": 0.0673864990829886,
+            "sidewalk": 0.08288240296819656,
+            "other-ground": 0.05048384405761637,
+            "building": 0.6177772628477296,
+            "fence": 0.2059193899971341,
+            "vegetation": 0.8192842641340629,
+            "terrain": 0.003302665003644215,
+            "pole": 0.2695353063343718,
+            "traffic-sign": 0.2853272196748645,
+            "other-structure": 0.24240240106217992,
+            "other-object": 0.0650887573964497
+          }
+        },
+        {
+          "interval_m": [
+            1.2,
+            2.0
+          ],
+          "n_voxels": 12577309,
+          "top1_accuracy": 0.5527773071330282,
+          "balanced_recall": 0.23059096243509483,
+          "n_classes_present": 18,
+          "mean_max_probability": 0.8199911349697222,
+          "mean_entropy_nats": 0.5805873221413128,
+          "per_class_support": {
+            "car": 274393,
+            "bicycle": 173,
+            "motorcycle": 1459,
+            "truck": 15142,
+            "other-vehicle": 22123,
+            "person": 2985,
+            "road": 1576219,
+            "parking": 360448,
+            "sidewalk": 563541,
+            "other-ground": 181897,
+            "building": 2623481,
+            "fence": 123390,
+            "vegetation": 5789565,
+            "terrain": 404987,
+            "pole": 17099,
+            "traffic-sign": 5532,
+            "other-structure": 580535,
+            "other-object": 34340
+          },
+          "per_class_recall": {
+            "car": 0.44334585794827125,
+            "bicycle": 0.15606936416184972,
+            "motorcycle": 0.0006854009595613434,
+            "truck": 0.5916655659754325,
+            "other-vehicle": 0.06269493287528816,
+            "person": 0.2254606365159129,
+            "road": 0.1616399751557366,
+            "parking": 0.05306174538352273,
+            "sidewalk": 0.06115083019691558,
+            "other-ground": 0.039989664480447724,
+            "building": 0.634641531613913,
+            "fence": 0.18202447524110543,
+            "vegetation": 0.8081137356606239,
+            "terrain": 0.003135903127754718,
+            "pole": 0.1665009649687116,
+            "traffic-sign": 0.30151843817787416,
+            "other-structure": 0.2258864667935611,
+            "other-object": 0.033051834595224226
+          }
+        },
+        {
+          "interval_m": [
+            2.0,
+            4.0
+          ],
+          "n_voxels": 18478337,
+          "top1_accuracy": 0.47953920312201254,
+          "balanced_recall": 0.16115408266458625,
+          "n_classes_present": 18,
+          "mean_max_probability": 0.8125310464901484,
+          "mean_entropy_nats": 0.6069143852859157,
+          "per_class_support": {
+            "car": 315660,
+            "bicycle": 660,
+            "motorcycle": 1911,
+            "truck": 18701,
+            "other-vehicle": 30468,
+            "person": 3348,
+            "road": 3347517,
+            "parking": 565964,
+            "sidewalk": 765883,
+            "other-ground": 281509,
+            "building": 3442292,
+            "fence": 158726,
+            "vegetation": 8041828,
+            "terrain": 612515,
+            "pole": 25892,
+            "traffic-sign": 6467,
+            "other-structure": 812728,
+            "other-object": 46268
+          },
+          "per_class_recall": {
+            "car": 0.22183045048469874,
+            "bicycle": 0.0030303030303030303,
+            "motorcycle": 0.0,
+            "truck": 0.45976151007967486,
+            "other-vehicle": 0.007909938295917027,
+            "person": 0.11170848267622462,
+            "road": 0.08563929623060913,
+            "parking": 0.03818440748881554,
+            "sidewalk": 0.033858957569237076,
+            "other-ground": 0.033764462237441784,
+            "building": 0.6283246743739346,
+            "fence": 0.10753121731789372,
+            "vegetation": 0.7599101845998198,
+            "terrain": 0.0043247920459090795,
+            "pole": 0.05801019619959833,
+            "traffic-sign": 0.1550950981908149,
+            "other-structure": 0.17362635469677432,
+            "other-object": 0.018263162444886315
+          }
+        }
+      ]
+    },
+    "B-D": {
+      "note": "the oracle-added and morphology-added TRUE POSITIVE voxels are the same set at every radius -- morphology adds every valid voxel in range and the oracle adds exactly its ground-truth-occupied subset -- so this table applies to both constructions",
+      "by_interval": [
+        {
+          "interval_m": [
+            0.0,
+            0.4
+          ],
+          "n_voxels": 9303953,
+          "top1_accuracy": 0.576119741791473,
+          "balanced_recall": 0.2723154667259875,
+          "n_classes_present": 18,
+          "mean_max_probability": 0.8169946928286973,
+          "mean_entropy_nats": 0.5843045757787019,
+          "per_class_support": {
+            "car": 253370,
+            "bicycle": 219,
+            "motorcycle": 1447,
+            "truck": 12693,
+            "other-vehicle": 23237,
+            "person": 2991,
+            "road": 880094,
+            "parking": 296517,
+            "sidewalk": 481781,
+            "other-ground": 156162,
+            "building": 1999886,
+            "fence": 118192,
+            "vegetation": 4216443,
+            "terrain": 356636,
+            "pole": 14641,
+            "traffic-sign": 4141,
+            "other-structure": 456182,
+            "other-object": 29321
+          },
+          "per_class_recall": {
+            "car": 0.538141847890437,
+            "bicycle": 0.1689497716894977,
+            "motorcycle": 0.03178991015894955,
+            "truck": 0.6535098085558969,
+            "other-vehicle": 0.08899599776218961,
+            "person": 0.3159478435305918,
+            "road": 0.34431662981454253,
+            "parking": 0.06618844787988547,
+            "sidewalk": 0.12120859892772858,
+            "other-ground": 0.05407205338046388,
+            "building": 0.6132224536798597,
+            "fence": 0.2100988222553134,
+            "vegetation": 0.819288200978882,
+            "terrain": 0.0035778777240659944,
+            "pole": 0.2928761696605423,
+            "traffic-sign": 0.2533204539966192,
+            "other-structure": 0.23681776133209992,
+            "other-object": 0.08935575185020975
+          }
+        },
+        {
+          "interval_m": [
+            0.4,
+            0.8
+          ],
+          "n_voxels": 7904594,
+          "top1_accuracy": 0.5744980703626271,
+          "balanced_recall": 0.2583579675186199,
+          "n_classes_present": 18,
+          "mean_max_probability": 0.8206504853954677,
+          "mean_entropy_nats": 0.5768479326614344,
+          "per_class_support": {
+            "car": 194984,
+            "bicycle": 196,
+            "motorcycle": 1246,
+            "truck": 9927,
+            "other-vehicle": 16246,
+            "person": 2581,
+            "road": 772205,
+            "parking": 222634,
+            "sidewalk": 357672,
+            "other-ground": 119167,
+            "building": 1726900,
+            "fence": 93984,
+            "vegetation": 3694647,
+            "terrain": 274415,
+            "pole": 12760,
+            "traffic-sign": 4124,
+            "other-structure": 377949,
+            "other-object": 22957
+          },
+          "per_class_recall": {
+            "car": 0.4903017683502236,
+            "bicycle": 0.28061224489795916,
+            "motorcycle": 0.008025682182985553,
+            "truck": 0.6384607635740909,
+            "other-vehicle": 0.06149205958389758,
+            "person": 0.28322355676094535,
+            "road": 0.21169249098361187,
+            "parking": 0.060996972609754126,
+            "sidewalk": 0.07782828960611958,
+            "other-ground": 0.04841105339565484,
+            "building": 0.630056170015635,
+            "fence": 0.19670369424582906,
+            "vegetation": 0.8184153993602095,
+            "terrain": 0.003290636444800758,
+            "pole": 0.24482758620689654,
+            "traffic-sign": 0.3043161978661494,
+            "other-structure": 0.23807974091742537,
+            "other-object": 0.05370910833297034
+          }
+        },
+        {
+          "interval_m": [
+            0.8,
+            1.2
+          ],
+          "n_voxels": 6667339,
+          "top1_accuracy": 0.5580620694402969,
+          "balanced_recall": 0.23078453931939874,
+          "n_classes_present": 18,
+          "mean_max_probability": 0.8191858721523704,
+          "mean_entropy_nats": 0.5825178438663854,
+          "per_class_support": {
+            "car": 147134,
+            "bicycle": 67,
+            "motorcycle": 736,
+            "truck": 8109,
+            "other-vehicle": 11582,
+            "person": 1583,
+            "road": 801772,
+            "parking": 188303,
+            "sidewalk": 294137,
+            "other-ground": 95764,
+            "building": 1409136,
+            "fence": 65886,
+            "vegetation": 3088135,
+            "terrain": 214429,
+            "pole": 8865,
+            "traffic-sign": 2886,
+            "other-structure": 310681,
+            "other-object": 18134
+          },
+          "per_class_recall": {
+            "car": 0.44984843747876085,
+            "bicycle": 0.13432835820895522,
+            "motorcycle": 0.0,
+            "truck": 0.5934147243803182,
+            "other-vehicle": 0.06725954066655154,
+            "person": 0.21983575489576754,
+            "road": 0.1668728765783789,
+            "parking": 0.05270229364375501,
+            "sidewalk": 0.06337862968616666,
+            "other-ground": 0.038991687899419404,
+            "building": 0.63446537452737,
+            "fence": 0.18453085632759614,
+            "vegetation": 0.8102489042739388,
+            "terrain": 0.0027654841462675292,
+            "pole": 0.16536943034404963,
+            "traffic-sign": 0.30838530838530837,
+            "other-structure": 0.22731354669258821,
+            "other-object": 0.03441049961398478
+          }
+        },
+        {
+          "interval_m": [
+            1.2,
+            2.0
+          ],
+          "n_voxels": 9671922,
+          "top1_accuracy": 0.5171042529085739,
+          "balanced_recall": 0.19257504339884282,
+          "n_classes_present": 18,
+          "mean_max_probability": 0.8149977234506453,
+          "mean_entropy_nats": 0.5970295892548708,
+          "per_class_support": {
+            "car": 174049,
+            "bicycle": 265,
+            "motorcycle": 1012,
+            "truck": 10620,
+            "other-vehicle": 16434,
+            "person": 1640,
+            "road": 1546317,
+            "parking": 290885,
+            "sidewalk": 423689,
+            "other-ground": 139708,
+            "building": 1910723,
+            "fence": 80712,
+            "vegetation": 4290553,
+            "terrain": 309681,
+            "pole": 13185,
+            "traffic-sign": 3696,
+            "other-structure": 433203,
+            "other-object": 25550
+          },
+          "per_class_recall": {
+            "car": 0.35725571534452943,
+            "bicycle": 0.007547169811320755,
+            "motorcycle": 0.0,
+            "truck": 0.5324858757062146,
+            "other-vehicle": 0.033588901058780575,
+            "person": 0.17621951219512194,
+            "road": 0.12093121914846697,
+            "parking": 0.04291730408924489,
+            "sidewalk": 0.04737909173945984,
+            "other-ground": 0.03567440661952071,
+            "building": 0.6366610963493924,
+            "fence": 0.15318663891366835,
+            "vegetation": 0.7897030988779302,
+            "terrain": 0.0033582945030531416,
+            "pole": 0.10405764125900645,
+            "traffic-sign": 0.20562770562770563,
+            "other-structure": 0.20183147392792755,
+            "other-object": 0.01792563600782779
+          }
+        },
+        {
+          "interval_m": [
+            2.0,
+            4.0
+          ],
+          "n_voxels": 15604131,
+          "top1_accuracy": 0.45685049683317835,
+          "balanced_recall": 0.14004339602001084,
+          "n_classes_present": 18,
+          "mean_max_probability": 0.8114131139606625,
+          "mean_entropy_nats": 0.611095965116905,
+          "per_class_support": {
+            "car": 274638,
+            "bicycle": 461,
+            "motorcycle": 1398,
+            "truck": 14650,
+            "other-vehicle": 25361,
+            "person": 2945,
+            "road": 2920689,
+            "parking": 480155,
+            "sidewalk": 633246,
+            "other-ground": 244981,
+            "building": 2831882,
+            "fence": 139037,
+            "vegetation": 6757100,
+            "terrain": 526344,
+            "pole": 21623,
+            "traffic-sign": 5678,
+            "other-structure": 685761,
+            "other-object": 38182
+          },
+          "per_class_recall": {
+            "car": 0.14157545569076385,
+            "bicycle": 0.0021691973969631237,
+            "motorcycle": 0.0,
+            "truck": 0.40313993174061435,
+            "other-vehicle": 0.0,
+            "person": 0.046859083191850594,
+            "road": 0.068006555987303,
+            "parking": 0.03390988326686174,
+            "sidewalk": 0.025880937266086167,
+            "other-ground": 0.03159428690388234,
+            "building": 0.6169254227400718,
+            "fence": 0.0892568165308515,
+            "vegetation": 0.7365150730342899,
+            "terrain": 0.006085373823963036,
+            "pole": 0.04250104055866438,
+            "traffic-sign": 0.1026769989432899,
+            "other-structure": 0.15021851636357272,
+            "other-object": 0.023466554921167043
+          }
+        }
+      ]
+    }
+  },
+  "frustum": {
+    "B-R": {
+      "all": {
+        "n_coverage_miss": 132521658,
+        "in_any_input_frustum": 128469593,
+        "outside_all_input_frusta": 4052065,
+        "in_frustum_fraction": 0.9694233753097173,
+        "by_distance_to_base": {
+          "<= 0.4 m": {
+            "in_frustum": 12406687,
+            "outside": 45124,
+            "in_frustum_fraction": 0.996376109467129
+          },
+          "0.4-0.8 m": {
+            "in_frustum": 11070499,
+            "outside": 117710,
+            "in_frustum_fraction": 0.9894791025087215
+          },
+          "0.8-1.2 m": {
+            "in_frustum": 8631081,
+            "outside": 163983,
+            "in_frustum_fraction": 0.9813551100935707
+          },
+          "1.2-2 m": {
+            "in_frustum": 12689051,
+            "outside": 329247,
+            "in_frustum_fraction": 0.9747089058800159
+          },
+          "2-4 m": {
+            "in_frustum": 17791009,
+            "outside": 687328,
+            "in_frustum_fraction": 0.962803579131607
+          },
+          "> 4 m": {
+            "in_frustum": 65881266,
+            "outside": 2708673,
+            "in_frustum_fraction": 0.9605091790502978
+          }
+        },
+        "residual_classes": {
+          "near_surface": 913816,
+          "behind_surface": 49866575,
+          "in_front_of_surface": 15253453,
+          "no_valid_predicted_depth": 62435749,
+          "outside_all_frusta": 4052065
+        },
+        "residual_class_fraction": {
+          "near_surface": 0.006895597397370322,
+          "behind_surface": 0.37629000234814447,
+          "in_front_of_surface": 0.11510158588568217,
+          "no_valid_predicted_depth": 0.47113618967852033,
+          "outside_all_frusta": 0.0305766246902827
+        },
+        "residual_median_m": 6.625,
+        "n_residual_defined": 66033844
+      },
+      "0-10m": {
+        "n_coverage_miss": 14657542,
+        "in_any_input_frustum": 13997728,
+        "outside_all_input_frusta": 659814,
+        "in_frustum_fraction": 0.9549846761482929,
+        "by_distance_to_base": {
+          "<= 0.4 m": {
+            "in_frustum": 5691322,
+            "outside": 27689,
+            "in_frustum_fraction": 0.9951584286164163
+          },
+          "0.4-0.8 m": {
+            "in_frustum": 3796304,
+            "outside": 68569,
+            "in_frustum_fraction": 0.9822584079735608
+          },
+          "0.8-1.2 m": {
+            "in_frustum": 1883037,
+            "outside": 86435,
+            "in_frustum_fraction": 0.9561126027686608
+          },
+          "1.2-2 m": {
+            "in_frustum": 1664416,
+            "outside": 148889,
+            "in_frustum_fraction": 0.9178908126321826
+          },
+          "2-4 m": {
+            "in_frustum": 902925,
+            "outside": 212006,
+            "in_frustum_fraction": 0.8098483224522415
+          },
+          "> 4 m": {
+            "in_frustum": 59724,
+            "outside": 116226,
+            "in_frustum_fraction": 0.33943734015345267
+          }
+        },
+        "residual_classes": {
+          "near_surface": 291058,
+          "behind_surface": 5726764,
+          "in_front_of_surface": 5948761,
+          "no_valid_predicted_depth": 2031145,
+          "outside_all_frusta": 659814
+        },
+        "residual_class_fraction": {
+          "near_surface": 0.019857217533471846,
+          "behind_surface": 0.39070425314148854,
+          "in_front_of_surface": 0.40584983484952664,
+          "no_valid_predicted_depth": 0.1385733706238058,
+          "outside_all_frusta": 0.045015323851707194
+        },
+        "residual_median_m": -0.375,
+        "n_residual_defined": 11966583
+      },
+      "10-20m": {
+        "n_coverage_miss": 33265719,
+        "in_any_input_frustum": 31476581,
+        "outside_all_input_frusta": 1789138,
+        "in_frustum_fraction": 0.946216764471557,
+        "by_distance_to_base": {
+          "<= 0.4 m": {
+            "in_frustum": 5121008,
+            "outside": 16662,
+            "in_frustum_fraction": 0.9967568956355702
+          },
+          "0.4-0.8 m": {
+            "in_frustum": 5380009,
+            "outside": 45805,
+            "in_frustum_fraction": 0.9915579487243757
+          },
+          "0.8-1.2 m": {
+            "in_frustum": 4633975,
+            "outside": 70833,
+            "in_frustum_fraction": 0.9849445503408428
+          },
+          "1.2-2 m": {
+            "in_frustum": 6496870,
+            "outside": 157691,
+            "in_frustum_fraction": 0.9763033203843199
+          },
+          "2-4 m": {
+            "in_frustum": 6770028,
+            "outside": 374443,
+            "in_frustum_fraction": 0.9475898215557177
+          },
+          "> 4 m": {
+            "in_frustum": 3074691,
+            "outside": 1123704,
+            "in_frustum_fraction": 0.7323491477100178
+          }
+        },
+        "residual_classes": {
+          "near_surface": 418389,
+          "behind_surface": 14070089,
+          "in_front_of_surface": 6855120,
+          "no_valid_predicted_depth": 10132983,
+          "outside_all_frusta": 1789138
+        },
+        "residual_class_fraction": {
+          "near_surface": 0.012577181933148657,
+          "behind_surface": 0.4229606160023176,
+          "in_front_of_surface": 0.20607160181927828,
+          "no_valid_predicted_depth": 0.30460736471681255,
+          "outside_all_frusta": 0.05378323552844296
+        },
+        "residual_median_m": 2.375,
+        "n_residual_defined": 21343598
+      },
+      "20-30m": {
+        "n_coverage_miss": 32470806,
+        "in_any_input_frustum": 30933534,
+        "outside_all_input_frusta": 1537272,
+        "in_frustum_fraction": 0.9526567957690979,
+        "by_distance_to_base": {
+          "<= 0.4 m": {
+            "in_frustum": 1378325,
+            "outside": 771,
+            "in_frustum_fraction": 0.9994409381217841
+          },
+          "0.4-0.8 m": {
+            "in_frustum": 1615994,
+            "outside": 3147,
+            "in_frustum_fraction": 0.9980563768072083
+          },
+          "0.8-1.2 m": {
+            "in_frustum": 1771623,
+            "outside": 6477,
+            "in_frustum_fraction": 0.9963573477307238
+          },
+          "1.2-2 m": {
+            "in_frustum": 3694689,
+            "outside": 22442,
+            "in_frustum_fraction": 0.9939625479973668
+          },
+          "2-4 m": {
+            "in_frustum": 7538446,
+            "outside": 98631,
+            "in_frustum_fraction": 0.9870852421679132
+          },
+          "> 4 m": {
+            "in_frustum": 14934457,
+            "outside": 1405804,
+            "in_frustum_fraction": 0.9139668576897272
+          }
+        },
+        "residual_classes": {
+          "near_surface": 170662,
+          "behind_surface": 13122707,
+          "in_front_of_surface": 2155560,
+          "no_valid_predicted_depth": 15484605,
+          "outside_all_frusta": 1537272
+        },
+        "residual_class_fraction": {
+          "near_surface": 0.0052558596789990366,
+          "behind_surface": 0.4041386284036189,
+          "in_front_of_surface": 0.06638455479054016,
+          "no_valid_predicted_depth": 0.4768777528959398,
+          "outside_all_frusta": 0.04734320423090206
+        },
+        "residual_median_m": 8.875,
+        "n_residual_defined": 15448929
+      },
+      "30-40m": {
+        "n_coverage_miss": 26193270,
+        "in_any_input_frustum": 26127429,
+        "outside_all_input_frusta": 65841,
+        "in_frustum_fraction": 0.9974863390481601,
+        "by_distance_to_base": {
+          "<= 0.4 m": {
+            "in_frustum": 201919,
+            "outside": 2,
+            "in_frustum_fraction": 0.9999900951362166
+          },
+          "0.4-0.8 m": {
+            "in_frustum": 259168,
+            "outside": 189,
+            "in_frustum_fraction": 0.999271274729427
+          },
+          "0.8-1.2 m": {
+            "in_frustum": 319363,
+            "outside": 238,
+            "in_frustum_fraction": 0.9992553214789691
+          },
+          "1.2-2 m": {
+            "in_frustum": 773908,
+            "outside": 225,
+            "in_frustum_fraction": 0.9997093522689253
+          },
+          "2-4 m": {
+            "in_frustum": 2333024,
+            "outside": 2248,
+            "in_frustum_fraction": 0.9990373712355562
+          },
+          "> 4 m": {
+            "in_frustum": 22240047,
+            "outside": 62939,
+            "in_frustum_fraction": 0.997178001187823
+          }
+        },
+        "residual_classes": {
+          "near_surface": 31156,
+          "behind_surface": 9278129,
+          "in_front_of_surface": 283300,
+          "no_valid_predicted_depth": 16534844,
+          "outside_all_frusta": 65841
+        },
+        "residual_class_fraction": {
+          "near_surface": 0.0011894658437071812,
+          "behind_surface": 0.3542180491401035,
+          "in_front_of_surface": 0.010815755344788947,
+          "no_valid_predicted_depth": 0.6312630687195604,
+          "outside_all_frusta": 0.002513660951839919
+        },
+        "residual_median_m": 17.125,
+        "n_residual_defined": 9592585
+      },
+      "40-60m": {
+        "n_coverage_miss": 25934321,
+        "in_any_input_frustum": 25934321,
+        "outside_all_input_frusta": 0,
+        "in_frustum_fraction": 1.0,
+        "by_distance_to_base": {
+          "<= 0.4 m": {
+            "in_frustum": 14113,
+            "outside": 0,
+            "in_frustum_fraction": 1.0
+          },
+          "0.4-0.8 m": {
+            "in_frustum": 19024,
+            "outside": 0,
+            "in_frustum_fraction": 1.0
+          },
+          "0.8-1.2 m": {
+            "in_frustum": 23083,
+            "outside": 0,
+            "in_frustum_fraction": 1.0
+          },
+          "1.2-2 m": {
+            "in_frustum": 59168,
+            "outside": 0,
+            "in_frustum_fraction": 1.0
+          },
+          "2-4 m": {
+            "in_frustum": 246586,
+            "outside": 0,
+            "in_frustum_fraction": 1.0
+          },
+          "> 4 m": {
+            "in_frustum": 25572347,
+            "outside": 0,
+            "in_frustum_fraction": 1.0
+          }
+        },
+        "residual_classes": {
+          "near_surface": 2551,
+          "behind_surface": 7668886,
+          "in_front_of_surface": 10712,
+          "no_valid_predicted_depth": 18252172,
+          "outside_all_frusta": 0
+        },
+        "residual_class_fraction": {
+          "near_surface": 9.83638630832093e-05,
+          "behind_surface": 0.29570413661495126,
+          "in_front_of_surface": 0.00041304339527531875,
+          "no_valid_predicted_depth": 0.7037844561266902,
+          "outside_all_frusta": 0.0
+        },
+        "residual_median_m": 27.875,
+        "n_residual_defined": 7682149
+      }
+    },
+    "B-D": {
+      "all": {
+        "n_coverage_miss": 114007683,
+        "in_any_input_frustum": 110061721,
+        "outside_all_input_frusta": 3945962,
+        "in_frustum_fraction": 0.9653886308697283,
+        "by_distance_to_base": {
+          "<= 0.4 m": {
+            "in_frustum": 9173535,
+            "outside": 130418,
+            "in_frustum_fraction": 0.9859825173235506
+          },
+          "0.4-0.8 m": {
+            "in_frustum": 7739314,
+            "outside": 165280,
+            "in_frustum_fraction": 0.9790906402023937
+          },
+          "0.8-1.2 m": {
+            "in_frustum": 5889906,
+            "outside": 160768,
+            "in_frustum_fraction": 0.9734297369185648
+          },
+          "1.2-2 m": {
+            "in_frustum": 9976657,
+            "outside": 311930,
+            "in_frustum_fraction": 0.9696819398037845
+          },
+          "2-4 m": {
+            "in_frustum": 14950061,
+            "outside": 654070,
+            "in_frustum_fraction": 0.958083535699617
+          },
+          "> 4 m": {
+            "in_frustum": 62332248,
+            "outside": 2523496,
+            "in_frustum_fraction": 0.9610906321574231
+          }
+        },
+        "residual_classes": {
+          "near_surface": 125,
+          "behind_surface": 42783431,
+          "in_front_of_surface": 8375218,
+          "no_valid_predicted_depth": 58902947,
+          "outside_all_frusta": 3945962
+        },
+        "residual_class_fraction": {
+          "near_surface": 1.0964173353123928e-06,
+          "behind_surface": 0.375267963300333,
+          "in_front_of_surface": 0.07346187361776312,
+          "no_valid_predicted_depth": 0.5166576975342969,
+          "outside_all_frusta": 0.034611369130271685
+        },
+        "residual_median_m": 9.875,
+        "n_residual_defined": 51158774
+      },
+      "0-10m": {
+        "n_coverage_miss": 6802622,
+        "in_any_input_frustum": 6206217,
+        "outside_all_input_frusta": 596405,
+        "in_frustum_fraction": 0.9123271879578198,
+        "by_distance_to_base": {
+          "<= 0.4 m": {
+            "in_frustum": 2681960,
+            "outside": 72637,
+            "in_frustum_fraction": 0.973630625459913
+          },
+          "0.4-0.8 m": {
+            "in_frustum": 1418259,
+            "outside": 82912,
+            "in_frustum_fraction": 0.9447684507627712
+          },
+          "0.8-1.2 m": {
+            "in_frustum": 741381,
+            "outside": 72300,
+            "in_frustum_fraction": 0.9111445394448193
+          },
+          "1.2-2 m": {
+            "in_frustum": 885513,
+            "outside": 122994,
+            "in_frustum_fraction": 0.8780434840809236
+          },
+          "2-4 m": {
+            "in_frustum": 453147,
+            "outside": 163134,
+            "in_frustum_fraction": 0.7352928290828372
+          },
+          "> 4 m": {
+            "in_frustum": 25957,
+            "outside": 82428,
+            "in_frustum_fraction": 0.2394888591594778
+          }
+        },
+        "residual_classes": {
+          "near_surface": 54,
+          "behind_surface": 2813302,
+          "in_front_of_surface": 2516555,
+          "no_valid_predicted_depth": 876306,
+          "outside_all_frusta": 596405
+        },
+        "residual_class_fraction": {
+          "near_surface": 7.938115626592217e-06,
+          "behind_surface": 0.41356141793561363,
+          "in_front_of_surface": 0.36993897353108846,
+          "no_valid_predicted_depth": 0.1288188583754911,
+          "outside_all_frusta": 0.0876728120421802
+        },
+        "residual_median_m": 1.375,
+        "n_residual_defined": 5329911
+      },
+      "10-20m": {
+        "n_coverage_miss": 25218757,
+        "in_any_input_frustum": 23469909,
+        "outside_all_input_frusta": 1748848,
+        "in_frustum_fraction": 0.9306528866589261,
+        "by_distance_to_base": {
+          "<= 0.4 m": {
+            "in_frustum": 4672336,
+            "outside": 53375,
+            "in_frustum_fraction": 0.9887054032715924
+          },
+          "0.4-0.8 m": {
+            "in_frustum": 4184343,
+            "outside": 74274,
+            "in_frustum_fraction": 0.9825591265896886
+          },
+          "0.8-1.2 m": {
+            "in_frustum": 3038538,
+            "outside": 77457,
+            "in_frustum_fraction": 0.9751421295605417
+          },
+          "1.2-2 m": {
+            "in_frustum": 4529159,
+            "outside": 158595,
+            "in_frustum_fraction": 0.9661682332306687
+          },
+          "2-4 m": {
+            "in_frustum": 4832584,
+            "outside": 372038,
+            "in_frustum_fraction": 0.9285177674766775
+          },
+          "> 4 m": {
+            "in_frustum": 2212949,
+            "outside": 1013109,
+            "in_frustum_fraction": 0.6859606987847088
+          }
+        },
+        "residual_classes": {
+          "near_surface": 62,
+          "behind_surface": 10885406,
+          "in_front_of_surface": 4132266,
+          "no_valid_predicted_depth": 8452175,
+          "outside_all_frusta": 1748848
+        },
+        "residual_class_fraction": {
+          "near_surface": 2.4584875455994917e-06,
+          "behind_surface": 0.4316392754805481,
+          "in_front_of_surface": 0.16385684671135853,
+          "no_valid_predicted_depth": 0.33515430597947393,
+          "outside_all_frusta": 0.06934711334107387
+        },
+        "residual_median_m": 3.875,
+        "n_residual_defined": 15017734
+      },
+      "20-30m": {
+        "n_coverage_miss": 30227457,
+        "in_any_input_frustum": 28692493,
+        "outside_all_input_frusta": 1534964,
+        "in_frustum_fraction": 0.949219545660093,
+        "by_distance_to_base": {
+          "<= 0.4 m": {
+            "in_frustum": 1543897,
+            "outside": 4197,
+            "in_frustum_fraction": 0.9972889243159653
+          },
+          "0.4-0.8 m": {
+            "in_frustum": 1780974,
+            "outside": 7910,
+            "in_frustum_fraction": 0.9955782487852762
+          },
+          "0.8-1.2 m": {
+            "in_frustum": 1723031,
+            "outside": 10938,
+            "in_frustum_fraction": 0.9936919287484378
+          },
+          "1.2-2 m": {
+            "in_frustum": 3593017,
+            "outside": 29961,
+            "in_frustum_fraction": 0.9917302837610386
+          },
+          "2-4 m": {
+            "in_frustum": 6929541,
+            "outside": 115666,
+            "in_frustum_fraction": 0.9835823134792206
+          },
+          "> 4 m": {
+            "in_frustum": 13122033,
+            "outside": 1366292,
+            "in_frustum_fraction": 0.9056970353715836
+          }
+        },
+        "residual_classes": {
+          "near_surface": 9,
+          "behind_surface": 12265314,
+          "in_front_of_surface": 1508846,
+          "no_valid_predicted_depth": 14918324,
+          "outside_all_frusta": 1534964
+        },
+        "residual_class_fraction": {
+          "near_surface": 2.9774254579205917e-07,
+          "behind_surface": 0.4057673128109983,
+          "in_front_of_surface": 0.04991640547201837,
+          "no_valid_predicted_depth": 0.4935355296345306,
+          "outside_all_frusta": 0.050780454339906925
+        },
+        "residual_median_m": 9.875,
+        "n_residual_defined": 13774169
+      },
+      "30-40m": {
+        "n_coverage_miss": 25849583,
+        "in_any_input_frustum": 25783838,
+        "outside_all_input_frusta": 65745,
+        "in_frustum_fraction": 0.9974566320857091,
+        "by_distance_to_base": {
+          "<= 0.4 m": {
+            "in_frustum": 257204,
+            "outside": 209,
+            "in_frustum_fraction": 0.9991880751943375
+          },
+          "0.4-0.8 m": {
+            "in_frustum": 331601,
+            "outside": 184,
+            "in_frustum_fraction": 0.9994454239944542
+          },
+          "0.8-1.2 m": {
+            "in_frustum": 358517,
+            "outside": 73,
+            "in_frustum_fraction": 0.9997964248863604
+          },
+          "1.2-2 m": {
+            "in_frustum": 893644,
+            "outside": 380,
+            "in_frustum_fraction": 0.9995749554821795
+          },
+          "2-4 m": {
+            "in_frustum": 2444369,
+            "outside": 3232,
+            "in_frustum_fraction": 0.9986795233373413
+          },
+          "> 4 m": {
+            "in_frustum": 21498503,
+            "outside": 61667,
+            "in_frustum_fraction": 0.9971397720889956
+          }
+        },
+        "residual_classes": {
+          "near_surface": 0,
+          "behind_surface": 9156839,
+          "in_front_of_surface": 210432,
+          "no_valid_predicted_depth": 16416567,
+          "outside_all_frusta": 65745
+        },
+        "residual_class_fraction": {
+          "near_surface": 0.0,
+          "behind_surface": 0.35423546290862795,
+          "in_front_of_surface": 0.008140634222223237,
+          "no_valid_predicted_depth": 0.6350805349548578,
+          "outside_all_frusta": 0.002543367914290919
+        },
+        "residual_median_m": 17.375,
+        "n_residual_defined": 9367271
+      },
+      "40-60m": {
+        "n_coverage_miss": 25909264,
+        "in_any_input_frustum": 25909264,
+        "outside_all_input_frusta": 0,
+        "in_frustum_fraction": 1.0,
+        "by_distance_to_base": {
+          "<= 0.4 m": {
+            "in_frustum": 18138,
+            "outside": 0,
+            "in_frustum_fraction": 1.0
+          },
+          "0.4-0.8 m": {
+            "in_frustum": 24137,
+            "outside": 0,
+            "in_frustum_fraction": 1.0
+          },
+          "0.8-1.2 m": {
+            "in_frustum": 28439,
+            "outside": 0,
+            "in_frustum_fraction": 1.0
+          },
+          "1.2-2 m": {
+            "in_frustum": 75324,
+            "outside": 0,
+            "in_frustum_fraction": 1.0
+          },
+          "2-4 m": {
+            "in_frustum": 290420,
+            "outside": 0,
+            "in_frustum_fraction": 1.0
+          },
+          "> 4 m": {
+            "in_frustum": 25472806,
+            "outside": 0,
+            "in_frustum_fraction": 1.0
+          }
+        },
+        "residual_classes": {
+          "near_surface": 0,
+          "behind_surface": 7662570,
+          "in_front_of_surface": 7119,
+          "no_valid_predicted_depth": 18239575,
+          "outside_all_frusta": 0
+        },
+        "residual_class_fraction": {
+          "near_surface": 0.0,
+          "behind_surface": 0.2957463399963812,
+          "in_front_of_surface": 0.0002747665854190223,
+          "no_valid_predicted_depth": 0.7039788934181997,
+          "outside_all_frusta": 0.0
+        },
+        "residual_median_m": 27.875,
+        "n_residual_defined": 7669689
+      }
+    },
+    "note": "'in-frustum' is projection plus positive camera depth plus the frozen metric depth range. It is NOT visibility: occlusion is not tested. With a tolerance of one voxel diagonal the 'near the predicted surface' class is empty for B-D by construction, because B-D is exactly a 0.4 m dilation and has already absorbed that band; B-R is reported alongside for that reason."
+  },
+  "propagation_ties": {
+    "B-R": {
+      "n_propagated": 937856775,
+      "mean_tied_sources": 1.1452176628995403,
+      "fraction_with_a_tie": 0.11588770577469039
+    },
+    "B-D": {
+      "n_propagated": 914996324,
+      "mean_tied_sources": 1.0902386379423312,
+      "fraction_with_a_tie": 0.080406809372056
+    }
+  },
+  "bootstrap": {
+    "n_units": 87,
+    "unit": "contiguous block of 20 clips",
+    "n_boot": 10000,
+    "seed": 0,
+    "independence_caveat": "blocks from a single drive are not independent scenes and are never described as such",
+    "deltas": {
+      "B-R|oracle|r=0.4": {
+        "binary_iou": {
+          "a": 0.03625887069181678,
+          "b": 0.12112813300008624,
+          "difference": 0.08486926230826945,
+          "ci": [
+            0.08161596040701853,
+            0.08820063342778177
+          ],
+          "excludes_zero": true
+        },
+        "ssc_miou": {
+          "a": 0.008789469356000347,
+          "b": 0.027725224094845506,
+          "difference": 0.018935754738845158,
+          "ci": [
+            0.017450798658464436,
+            0.020069160342424022
+          ],
+          "excludes_zero": true
+        }
+      },
+      "B-R|oracle|r=0.8": {
+        "binary_iou": {
+          "a": 0.03625887069181678,
+          "b": 0.19738491559827545,
+          "difference": 0.16112604490645865,
+          "ci": [
+            0.15551253512949614,
+            0.16694884552502096
+          ],
+          "excludes_zero": true
+        },
+        "ssc_miou": {
+          "a": 0.008789469356000347,
+          "b": 0.042479398975364804,
+          "difference": 0.033689929619364456,
+          "ci": [
+            0.03118294353657646,
+            0.03566688335175924
+          ],
+          "excludes_zero": true
+        }
+      },
+      "B-R|oracle|r=1.2": {
+        "binary_iou": {
+          "a": 0.03625887069181678,
+          "b": 0.26033616058184283,
+          "difference": 0.22407728989002607,
+          "ci": [
+            0.2169350236899173,
+            0.23147203246187756
+          ],
+          "excludes_zero": true
+        },
+        "ssc_miou": {
+          "a": 0.008789469356000347,
+          "b": 0.052661200251394855,
+          "difference": 0.043871730895394506,
+          "ci": [
+            0.040571081552794486,
+            0.04652728087234122
+          ],
+          "excludes_zero": true
+        }
+      },
+      "B-R|oracle|r=2": {
+        "binary_iou": {
+          "a": 0.03625887069181678,
+          "b": 0.34606079426389585,
+          "difference": 0.3098019235720791,
+          "ci": [
+            0.3010368089596003,
+            0.3188138325538373
+          ],
+          "excludes_zero": true
+        },
+        "ssc_miou": {
+          "a": 0.008789469356000347,
+          "b": 0.06245806673137323,
+          "difference": 0.053668597375372884,
+          "ci": [
+            0.04979754183846891,
+            0.056866514225561375
+          ],
+          "excludes_zero": true
+        }
+      },
+      "B-R|oracle|r=4": {
+        "binary_iou": {
+          "a": 0.03625887069181678,
+          "b": 0.4720057535853633,
+          "difference": 0.4357468828935465,
+          "ci": [
+            0.42475554031203594,
+            0.4466200429656495
+          ],
+          "excludes_zero": true
+        },
+        "ssc_miou": {
+          "a": 0.008789469356000347,
+          "b": 0.06987468556804916,
+          "difference": 0.06108521621204881,
+          "ci": [
+            0.05683652526355828,
+            0.06468934506909486
+          ],
+          "excludes_zero": true
+        }
+      },
+      "B-R|morph|r=0.4": {
+        "binary_iou": {
+          "a": 0.03625887069181678,
+          "b": 0.1054536560717046,
+          "difference": 0.06919478537988781,
+          "ci": [
+            0.06699080075805273,
+            0.07145157366818056
+          ],
+          "excludes_zero": true
+        },
+        "ssc_miou": {
+          "a": 0.008789469356000347,
+          "b": 0.022540940188958487,
+          "difference": 0.01375147083295814,
+          "ci": [
+            0.012799600641829126,
+            0.014492188863605976
+          ],
+          "excludes_zero": true
+        }
+      },
+      "B-R|morph|r=0.8": {
+        "binary_iou": {
+          "a": 0.03625887069181678,
+          "b": 0.1510498730855583,
+          "difference": 0.11479100239374153,
+          "ci": [
+            0.11176636178732167,
+            0.11787210148801634
+          ],
+          "excludes_zero": true
+        },
+        "ssc_miou": {
+          "a": 0.008789469356000347,
+          "b": 0.029532474902970632,
+          "difference": 0.020743005546970283,
+          "ci": [
+            0.019339147383523724,
+            0.02200843745976087
+          ],
+          "excludes_zero": true
+        }
+      },
+      "B-R|morph|r=1.2": {
+        "binary_iou": {
+          "a": 0.03625887069181678,
+          "b": 0.17643138413286708,
+          "difference": 0.1401725134410503,
+          "ci": [
+            0.13686512301108247,
+            0.14356609287268496
+          ],
+          "excludes_zero": true
+        },
+        "ssc_miou": {
+          "a": 0.008789469356000347,
+          "b": 0.03216596824380799,
+          "difference": 0.023376498887807642,
+          "ci": [
+            0.02175641192189265,
+            0.024986916384875556
+          ],
+          "excludes_zero": true
+        }
+      },
+      "B-R|morph|r=2": {
+        "binary_iou": {
+          "a": 0.03625887069181678,
+          "b": 0.19613499310963223,
+          "difference": 0.15987612241781546,
+          "ci": [
+            0.15633051828694594,
+            0.16369487394586638
+          ],
+          "excludes_zero": true
+        },
+        "ssc_miou": {
+          "a": 0.008789469356000347,
+          "b": 0.032548241153087895,
+          "difference": 0.023758771797087547,
+          "ci": [
+            0.022122274631088977,
+            0.0254846600907228
+          ],
+          "excludes_zero": true
+        }
+      },
+      "B-R|morph|r=4": {
+        "binary_iou": {
+          "a": 0.03625887069181678,
+          "b": 0.21142491454539022,
+          "difference": 0.17516604385357343,
+          "ci": [
+            0.17047713884757237,
+            0.18029499930089116
+          ],
+          "excludes_zero": true
+        },
+        "ssc_miou": {
+          "a": 0.008789469356000347,
+          "b": 0.03093311685668859,
+          "difference": 0.022143647500688243,
+          "ci": [
+            0.020510955935807533,
+            0.023875869202320366
+          ],
+          "excludes_zero": true
+        }
+      },
+      "B-D|oracle|r=0.4": {
+        "binary_iou": {
+          "a": 0.1320768055455861,
+          "b": 0.1836353908273832,
+          "difference": 0.051558585281797104,
+          "ci": [
+            0.05015091354145503,
+            0.052989494669439675
+          ],
+          "excludes_zero": true
+        },
+        "ssc_miou": {
+          "a": 0.026588337397800445,
+          "b": 0.03580866370518196,
+          "difference": 0.009220326307381514,
+          "ci": [
+            0.008511304959880533,
+            0.009919071011835373
+          ],
+          "excludes_zero": true
+        }
+      },
+      "B-D|oracle|r=0.8": {
+        "binary_iou": {
+          "a": 0.1320768055455861,
+          "b": 0.22743931845545504,
+          "difference": 0.09536251290986894,
+          "ci": [
+            0.09279947410317092,
+            0.09799871259257911
+          ],
+          "excludes_zero": true
+        },
+        "ssc_miou": {
+          "a": 0.026588337397800445,
+          "b": 0.04246490476020029,
+          "difference": 0.015876567362399844,
+          "ci": [
+            0.014615386770234192,
+            0.017166105650613748
+          ],
+          "excludes_zero": true
+        }
+      },
+      "B-D|oracle|r=1.2": {
+        "binary_iou": {
+          "a": 0.1320768055455861,
+          "b": 0.2643869004600236,
+          "difference": 0.13231009491443751,
+          "ci": [
+            0.12884387976537265,
+            0.1359392243516585
+          ],
+          "excludes_zero": true
+        },
+        "ssc_miou": {
+          "a": 0.026588337397800445,
+          "b": 0.0470309966590991,
+          "difference": 0.020442659261298655,
+          "ci": [
+            0.018852981420329734,
+            0.02202089407907636
+          ],
+          "excludes_zero": true
+        }
+      },
+      "B-D|oracle|r=2": {
+        "binary_iou": {
+          "a": 0.1320768055455861,
+          "b": 0.31798461481604945,
+          "difference": 0.18590780927046335,
+          "ci": [
+            0.1812794831160999,
+            0.190747815972206
+          ],
+          "excludes_zero": true
+        },
+        "ssc_miou": {
+          "a": 0.026588337397800445,
+          "b": 0.05204136230402587,
+          "difference": 0.025453024906225422,
+          "ci": [
+            0.023569061730298553,
+            0.027331679397615695
+          ],
+          "excludes_zero": true
+        }
+      },
+      "B-D|oracle|r=4": {
+        "binary_iou": {
+          "a": 0.1320768055455861,
+          "b": 0.40445613062355984,
+          "difference": 0.27237932507797374,
+          "ci": [
+            0.2656761083610689,
+            0.2794531221165067
+          ],
+          "excludes_zero": true
+        },
+        "ssc_miou": {
+          "a": 0.026588337397800445,
+          "b": 0.05716214852107663,
+          "difference": 0.030573811123276184,
+          "ci": [
+            0.028343614751766926,
+            0.03278041101346851
+          ],
+          "excludes_zero": true
+        }
+      },
+      "B-D|morph|r=0.4": {
+        "binary_iou": {
+          "a": 0.1320768055455861,
+          "b": 0.16427432849418597,
+          "difference": 0.03219752294859987,
+          "ci": [
+            0.03120941963210185,
+            0.03323172929426585
+          ],
+          "excludes_zero": true
+        },
+        "ssc_miou": {
+          "a": 0.026588337397800445,
+          "b": 0.03107080767884721,
+          "difference": 0.0044824702810467645,
+          "ci": [
+            0.004051414613238165,
+            0.00500945242713319
+          ],
+          "excludes_zero": true
+        }
+      },
+      "B-D|morph|r=0.8": {
+        "binary_iou": {
+          "a": 0.1320768055455861,
+          "b": 0.18260169647345934,
+          "difference": 0.05052489092787324,
+          "ci": [
+            0.048639565760097286,
+            0.0525059237612552
+          ],
+          "excludes_zero": true
+        },
+        "ssc_miou": {
+          "a": 0.026588337397800445,
+          "b": 0.03260377443575147,
+          "difference": 0.006015437037951026,
+          "ci": [
+            0.005314637546143064,
+            0.006906749571325147
+          ],
+          "excludes_zero": true
+        }
+      },
+      "B-D|morph|r=1.2": {
+        "binary_iou": {
+          "a": 0.1320768055455861,
+          "b": 0.19283946640118366,
+          "difference": 0.06076266085559756,
+          "ci": [
+            0.0581159430111398,
+            0.06357152153567144
+          ],
+          "excludes_zero": true
+        },
+        "ssc_miou": {
+          "a": 0.026588337397800445,
+          "b": 0.032749424213814354,
+          "difference": 0.006161086816013909,
+          "ci": [
+            0.005345795831997145,
+            0.007173355184158005
+          ],
+          "excludes_zero": true
+        }
+      },
+      "B-D|morph|r=2": {
+        "binary_iou": {
+          "a": 0.1320768055455861,
+          "b": 0.20257495186542795,
+          "difference": 0.07049814631984186,
+          "ci": [
+            0.06677664733052444,
+            0.07442958100431822
+          ],
+          "excludes_zero": true
+        },
+        "ssc_miou": {
+          "a": 0.026588337397800445,
+          "b": 0.032087416439256645,
+          "difference": 0.0054990790414562,
+          "ci": [
+            0.004616802718675377,
+            0.00662467423129976
+          ],
+          "excludes_zero": true
+        }
+      },
+      "B-D|morph|r=4": {
+        "binary_iou": {
+          "a": 0.1320768055455861,
+          "b": 0.21395722927218708,
+          "difference": 0.08188042372660098,
+          "ci": [
+            0.07660092548433683,
+            0.08751056421096313
+          ],
+          "excludes_zero": true
+        },
+        "ssc_miou": {
+          "a": 0.026588337397800445,
+          "b": 0.030641623391114044,
+          "difference": 0.004053285993313598,
+          "ci": [
+            0.0030735284841019615,
+            0.005274629593056371
+          ],
+          "excludes_zero": true
+        }
+      }
+    }
+  }
+}

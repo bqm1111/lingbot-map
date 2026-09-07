@@ -1,0 +1,72 @@
+{
+  "gate": "8C-1 (padding fix)",
+  "claim": "target-domain-free transfer of the completion module: trained and selected on KITTI-360 alone, evaluated on untouched SemanticKITTI and Occ3D without adaptation. NOT whole-system zero-shot: the frozen foundation models (LingBot-Map, MoGe-2, Trident-H) have not had their training provenance audited, and LingBot-Map's published mixture includes KITTI-360.",
+  "derived_from": "artifacts/gate8c1/frozen_manifest.json",
+  "change": "CompletionUNet convolutions use padding_mode='replicate' instead of 'zeros'. Zero padding manufactured observed=0 AND unobserved=0 at the array boundary -- a state absent from training -- which flooded the grid ceiling. Retrained from scratch on the same data with the same config; thresholds re-selected by the gate's own rule on KITTI-360 drive 0006 only.",
+  "frozen_at": "2026-09-04T18:14:13+02:00",
+  "n_val_samples": 590,
+  "rule": {
+    "checkpoint": "highest full-grid occupancy AP on KITTI-360 drive 0006",
+    "occupancy_threshold": "final-logit threshold maximising full-grid IoU on drive 0006",
+    "semantic_threshold": "maximises coverage x agreement with the frozen teacher on voxels where both halves of the future window agree; no human semantic label",
+    "forbidden": "SemanticKITTI and Occ3D/nuScenes are not read"
+  },
+  "seeds": {
+    "0": {
+      "seed": 0,
+      "config": "configs/gate8c1_padfix/seed0.yaml",
+      "selected": "last",
+      "checkpoint": "artifacts/gate8c1/checkpoints/padfix_seed0_last.pt",
+      "checkpoint_sha256": "e94eeb190f147b7e8569aee347f2c468d54eba61d5c4714e7192a2e4d825fccb",
+      "occupancy_threshold": -0.125,
+      "semantic_threshold": 0.0,
+      "source_ap": 0.11097743737020105,
+      "source_ap_over_prevalence": 1.6316504994782166,
+      "source_auroc": 0.6244539331847171,
+      "source_iou_at_threshold": 0.10455361022610794
+    },
+    "1": {
+      "seed": 1,
+      "config": "configs/gate8c1_padfix/seed1.yaml",
+      "selected": "last",
+      "checkpoint": "artifacts/gate8c1/checkpoints/padfix_seed1_last.pt",
+      "checkpoint_sha256": "e609bd939febd30f4300b224f7c2eb83d322c69293de7670593566efbc1c5905",
+      "occupancy_threshold": -0.125,
+      "semantic_threshold": 0.0,
+      "source_ap": 0.11071329191961421,
+      "source_ap_over_prevalence": 1.6277668897409763,
+      "source_auroc": 0.6268267888614953,
+      "source_iou_at_threshold": 0.10412839990508149
+    },
+    "2": {
+      "seed": 2,
+      "config": "configs/gate8c1_padfix/seed2.yaml",
+      "selected": "last",
+      "checkpoint": "artifacts/gate8c1/checkpoints/padfix_seed2_last.pt",
+      "checkpoint_sha256": "d891607e88b4916ddf6a66f1530614b0db53440482d4e50bbbf1235fd07dfa8b",
+      "occupancy_threshold": -0.3125,
+      "semantic_threshold": 0.0,
+      "source_ap": 0.10899965924592409,
+      "source_ap_over_prevalence": 1.6025721323722188,
+      "source_auroc": 0.6179264348846722,
+      "source_iou_at_threshold": 0.10317060222133444
+    }
+  },
+  "firewall_proof": {
+    "selection": {
+      "n_opened": 7092,
+      "n_unique": 596,
+      "violations": [],
+      "forbidden_patterns": [
+        "data/kitti/dataset",
+        "occ3d_gt",
+        "nuscenes",
+        "lingbot_occ3d_zeroshot",
+        "scale_gate/cache",
+        "preprocess/labels"
+      ],
+      "note": "selection ran inside a file-access audit; opening a SemanticKITTI / Occ3D / SSCBench-label path would have raised"
+    },
+    "total_violations": 0
+  }
+}

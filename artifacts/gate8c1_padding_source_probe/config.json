@@ -1,0 +1,699 @@
+{
+  "checkpoint": "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/checkpoints/seed0_last.pt",
+  "threshold": -0.125,
+  "drive": "2013_05_28_drive_0006_sync",
+  "input_source": "Existing full validation volumes, no crops resampled",
+  "target_source": "Existing raw-LiDAR targets, matching embedded sample masks; current bytes only, historical bytes not established",
+  "conditions": {
+    "A": "zeros",
+    "B": "replicate"
+  },
+  "affected_layers": [
+    "enc1.0",
+    "enc1.3",
+    "enc2.0",
+    "enc2.3",
+    "enc3.0",
+    "enc3.3",
+    "dec2.0",
+    "dec2.3",
+    "dec1.0",
+    "dec1.3"
+  ],
+  "module_configuration": {
+    "": {
+      "type": "CompletionUNet",
+      "training": false,
+      "padding_mode": "zeros"
+    },
+    "enc1": {
+      "type": "Sequential",
+      "training": false
+    },
+    "enc1.0": {
+      "type": "Conv3d",
+      "training": false,
+      "padding_mode": "zeros",
+      "padding": [
+        1,
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1,
+        1
+      ],
+      "kernel_size": [
+        3,
+        3,
+        3
+      ],
+      "output_padding": [
+        0,
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    "enc1.1": {
+      "type": "GroupNorm",
+      "training": false,
+      "num_groups": 8,
+      "eps": 1e-05
+    },
+    "enc1.2": {
+      "type": "GELU",
+      "training": false
+    },
+    "enc1.3": {
+      "type": "Conv3d",
+      "training": false,
+      "padding_mode": "zeros",
+      "padding": [
+        1,
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1,
+        1
+      ],
+      "kernel_size": [
+        3,
+        3,
+        3
+      ],
+      "output_padding": [
+        0,
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    "enc1.4": {
+      "type": "GroupNorm",
+      "training": false,
+      "num_groups": 8,
+      "eps": 1e-05
+    },
+    "enc1.5": {
+      "type": "GELU",
+      "training": false
+    },
+    "down1": {
+      "type": "Conv3d",
+      "training": false,
+      "padding_mode": "zeros",
+      "padding": [
+        0,
+        0,
+        0
+      ],
+      "stride": [
+        2,
+        2,
+        2
+      ],
+      "dilation": [
+        1,
+        1,
+        1
+      ],
+      "kernel_size": [
+        2,
+        2,
+        2
+      ],
+      "output_padding": [
+        0,
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    "enc2": {
+      "type": "Sequential",
+      "training": false
+    },
+    "enc2.0": {
+      "type": "Conv3d",
+      "training": false,
+      "padding_mode": "zeros",
+      "padding": [
+        1,
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1,
+        1
+      ],
+      "kernel_size": [
+        3,
+        3,
+        3
+      ],
+      "output_padding": [
+        0,
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    "enc2.1": {
+      "type": "GroupNorm",
+      "training": false,
+      "num_groups": 8,
+      "eps": 1e-05
+    },
+    "enc2.2": {
+      "type": "GELU",
+      "training": false
+    },
+    "enc2.3": {
+      "type": "Conv3d",
+      "training": false,
+      "padding_mode": "zeros",
+      "padding": [
+        1,
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1,
+        1
+      ],
+      "kernel_size": [
+        3,
+        3,
+        3
+      ],
+      "output_padding": [
+        0,
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    "enc2.4": {
+      "type": "GroupNorm",
+      "training": false,
+      "num_groups": 8,
+      "eps": 1e-05
+    },
+    "enc2.5": {
+      "type": "GELU",
+      "training": false
+    },
+    "down2": {
+      "type": "Conv3d",
+      "training": false,
+      "padding_mode": "zeros",
+      "padding": [
+        0,
+        0,
+        0
+      ],
+      "stride": [
+        2,
+        2,
+        2
+      ],
+      "dilation": [
+        1,
+        1,
+        1
+      ],
+      "kernel_size": [
+        2,
+        2,
+        2
+      ],
+      "output_padding": [
+        0,
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    "enc3": {
+      "type": "Sequential",
+      "training": false
+    },
+    "enc3.0": {
+      "type": "Conv3d",
+      "training": false,
+      "padding_mode": "zeros",
+      "padding": [
+        1,
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1,
+        1
+      ],
+      "kernel_size": [
+        3,
+        3,
+        3
+      ],
+      "output_padding": [
+        0,
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    "enc3.1": {
+      "type": "GroupNorm",
+      "training": false,
+      "num_groups": 8,
+      "eps": 1e-05
+    },
+    "enc3.2": {
+      "type": "GELU",
+      "training": false
+    },
+    "enc3.3": {
+      "type": "Conv3d",
+      "training": false,
+      "padding_mode": "zeros",
+      "padding": [
+        1,
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1,
+        1
+      ],
+      "kernel_size": [
+        3,
+        3,
+        3
+      ],
+      "output_padding": [
+        0,
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    "enc3.4": {
+      "type": "GroupNorm",
+      "training": false,
+      "num_groups": 8,
+      "eps": 1e-05
+    },
+    "enc3.5": {
+      "type": "GELU",
+      "training": false
+    },
+    "up2": {
+      "type": "ConvTranspose3d",
+      "training": false,
+      "padding_mode": "zeros",
+      "padding": [
+        0,
+        0,
+        0
+      ],
+      "stride": [
+        2,
+        2,
+        2
+      ],
+      "dilation": [
+        1,
+        1,
+        1
+      ],
+      "kernel_size": [
+        2,
+        2,
+        2
+      ],
+      "output_padding": [
+        0,
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    "dec2": {
+      "type": "Sequential",
+      "training": false
+    },
+    "dec2.0": {
+      "type": "Conv3d",
+      "training": false,
+      "padding_mode": "zeros",
+      "padding": [
+        1,
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1,
+        1
+      ],
+      "kernel_size": [
+        3,
+        3,
+        3
+      ],
+      "output_padding": [
+        0,
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    "dec2.1": {
+      "type": "GroupNorm",
+      "training": false,
+      "num_groups": 8,
+      "eps": 1e-05
+    },
+    "dec2.2": {
+      "type": "GELU",
+      "training": false
+    },
+    "dec2.3": {
+      "type": "Conv3d",
+      "training": false,
+      "padding_mode": "zeros",
+      "padding": [
+        1,
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1,
+        1
+      ],
+      "kernel_size": [
+        3,
+        3,
+        3
+      ],
+      "output_padding": [
+        0,
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    "dec2.4": {
+      "type": "GroupNorm",
+      "training": false,
+      "num_groups": 8,
+      "eps": 1e-05
+    },
+    "dec2.5": {
+      "type": "GELU",
+      "training": false
+    },
+    "up1": {
+      "type": "ConvTranspose3d",
+      "training": false,
+      "padding_mode": "zeros",
+      "padding": [
+        0,
+        0,
+        0
+      ],
+      "stride": [
+        2,
+        2,
+        2
+      ],
+      "dilation": [
+        1,
+        1,
+        1
+      ],
+      "kernel_size": [
+        2,
+        2,
+        2
+      ],
+      "output_padding": [
+        0,
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    "dec1": {
+      "type": "Sequential",
+      "training": false
+    },
+    "dec1.0": {
+      "type": "Conv3d",
+      "training": false,
+      "padding_mode": "zeros",
+      "padding": [
+        1,
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1,
+        1
+      ],
+      "kernel_size": [
+        3,
+        3,
+        3
+      ],
+      "output_padding": [
+        0,
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    "dec1.1": {
+      "type": "GroupNorm",
+      "training": false,
+      "num_groups": 8,
+      "eps": 1e-05
+    },
+    "dec1.2": {
+      "type": "GELU",
+      "training": false
+    },
+    "dec1.3": {
+      "type": "Conv3d",
+      "training": false,
+      "padding_mode": "zeros",
+      "padding": [
+        1,
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1,
+        1
+      ],
+      "kernel_size": [
+        3,
+        3,
+        3
+      ],
+      "output_padding": [
+        0,
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    "dec1.4": {
+      "type": "GroupNorm",
+      "training": false,
+      "num_groups": 8,
+      "eps": 1e-05
+    },
+    "dec1.5": {
+      "type": "GELU",
+      "training": false
+    },
+    "head_occ": {
+      "type": "Conv3d",
+      "training": false,
+      "padding_mode": "zeros",
+      "padding": [
+        0,
+        0,
+        0
+      ],
+      "stride": [
+        1,
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1,
+        1
+      ],
+      "kernel_size": [
+        1,
+        1,
+        1
+      ],
+      "output_padding": [
+        0,
+        0,
+        0
+      ],
+      "groups": 1
+    },
+    "head_sem": {
+      "type": "Conv3d",
+      "training": false,
+      "padding_mode": "zeros",
+      "padding": [
+        0,
+        0,
+        0
+      ],
+      "stride": [
+        1,
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1,
+        1
+      ],
+      "kernel_size": [
+        1,
+        1,
+        1
+      ],
+      "output_padding": [
+        0,
+        0,
+        0
+      ],
+      "groups": 1
+    }
+  },
+  "parameter_count": 986114,
+  "voxel_size_m": 0.2,
+  "origin_m": [
+    0,
+    -25.6,
+    -2
+  ],
+  "axes": "XYZ",
+  "pad_z": 0,
+  "input_channels": 32,
+  "input_encoding": "preserved gate8.targets.unpack_sample",
+  "unknown_encoding": "channel 3 (unobserved)=1; all other encoded channels=0; raw age=-1 encodes as zero",
+  "residual_rule": "base + residual * (abs(base) < 2)",
+  "decision": "final >= -0.125",
+  "precision": "float32 inputs; CUDA bfloat16 autocast; float32 final logits",
+  "evaluation": true,
+  "postprocessing": null,
+  "boundary": "centre distance to any face <0.4 m",
+  "interior": "centre distance to every face >=2 m",
+  "undefined_rates": "JSON null; CSV empty; report undefined",
+  "criteria": {
+    "uniform_boundary_relative_reduction_min": 0.5,
+    "real_boundary_fpr_relative_reduction_min": 0.25,
+    "tp_retention_min": 0.95,
+    "iou_must_not_decrease": true,
+    "minimum_pooled_boundary_free_voxels": 1000,
+    "sufficiency_note": "Conservative descriptive minimum fixed before inference, not a statistical power claim; zero baseline boundary FP is inconclusive"
+  },
+  "randomness_seed": 0,
+  "cudnn_benchmark": false,
+  "commands": {
+    "prepare": "/home/minh/anaconda3/envs/cu128/bin/python tools/gate8c1/padding_source_probe.py prepare",
+    "run": "/home/minh/anaconda3/envs/cu128/bin/python tools/gate8c1/padding_source_probe.py run --device cuda:2"
+  },
+  "artifact_hashes": {
+    "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/checkpoints/seed0_last.pt": "5227c672012024786561e615b755edd938d551e62d05ad52d2ad23813825e7d0",
+    "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/frozen_manifest.json": "5385721d492a9287df9f063975a85d746fcd601d3a3e22ad42ed4249e0a9f65a",
+    "/home/minh/workspace/lingbot-map_fork/tools/gate8c1/padding_source_probe.py": "9176c1444e08593ceb39d42d6d292df83f96265834376c2e0d7a0855060f9eb5",
+    "/home/minh/workspace/lingbot-map_fork/tools/gate8c1/build_samples.py": "38682c30d64c4c2b8970b3980039deb4079421af695c27457ab225b31467e6fd",
+    "/home/minh/workspace/lingbot-map_fork/tools/gate8c1/build_targets.py": "73816b680fd114bb25b09af921b0b396f9bdf9ee1a116090c891b02efa3fc46a",
+    "/home/minh/workspace/lingbot-map_fork/sscbench_kitti360/adapter.py": "0318f4ca2a49108985fd89c2e4999e0f746557ff061042fef61d8559946d0d7e",
+    "/home/minh/workspace/lingbot-map_fork/gate8/net.py": "56852e4a11999c3ac8e817aaa7c7f8c0381fc71f734537226084750aedda578c",
+    "/home/minh/workspace/lingbot-map_fork/gate8/targets.py": "6ff8d46feb69148d54576aea192f40849a6fd01ea03af4797f8758a2c2f619ff",
+    "/home/minh/workspace/lingbot-map_fork/gate8/vocab.py": "b3fef8b8982254ea8a1670d7cd8e4ccdc301e85815d1be69e8d4e5dff97dd60a",
+    "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1_original_audit/code_used/gate8/vocab.py": "b3fef8b8982254ea8a1670d7cd8e4ccdc301e85815d1be69e8d4e5dff97dd60a",
+    "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1_original_audit/code_used/gate8/mapper.py": "95fd13c875a640cdb47dd964c53b59ced8e669331334f7431783036e958fe0eb",
+    "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1_original_audit/code_used/gate8/feed.py": "1a499c8bb5a8673c70b0bd68e4e7ee26d74d0b086de92105e0cf23f2ab34d977",
+    "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1_original_audit/code_used/gate8/net.py": "56852e4a11999c3ac8e817aaa7c7f8c0381fc71f734537226084750aedda578c",
+    "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1_original_audit/code_used/gate8/targets.py": "6ff8d46feb69148d54576aea192f40849a6fd01ea03af4797f8758a2c2f619ff",
+    "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1_original_audit/code_used/gate8/__init__.py": "7249f9b81fb91e8ac426db266bf8c4cc16aacef5e466b99b196628ee91663555",
+    "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1_original_audit/code_used/gate8/sources.py": "863bccd2dd44ecc263dc87872a05b2f671e9bf9ee8d1c9c40b11e8ff2a2439d4",
+    "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1_original_audit/code_used/gate8/losses.py": "92d3d4f9586a05749d58f86a60221bb4f57521e8c86137e8d0d0d1d423636348"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "n_crops": 400,
+  "crop": [
+    128,
+    128,
+    32
+  ],
+  "seed": 0,
+  "lock_logodds": 2.0,
+  "seconds": 86.52569079399109,
+  "rows": [
+    {
+      "source": "sk_train",
+      "sampler": "occ_centred",
+      "n_crops": 400,
+      "n_samples": 1656,
+      "crop_valid_voxels": 156872713,
+      "crop_volume": 209715200,
+      "crop_occupied_prevalence": 0.08190565302456393,
+      "crop_editable_fraction": 0.9338829309339477,
+      "crop_editable_occupied_prevalence": 0.07765968486618455,
+      "volume_occupied_prevalence": 0.06937755438212392,
+      "volume_editable_occupied_prevalence": 0.06520975076987219
+    },
+    {
+      "source": "sk_train",
+      "sampler": "uniform",
+      "n_crops": 400,
+      "n_samples": 1656,
+      "crop_valid_voxels": 154850162,
+      "crop_volume": 209715200,
+      "crop_occupied_prevalence": 0.08126398989495406,
+      "crop_editable_fraction": 0.935288546872815,
+      "crop_editable_occupied_prevalence": 0.07660929328229855,
+      "volume_occupied_prevalence": 0.06877191651782809,
+      "volume_editable_occupied_prevalence": 0.06476900924292231
+    },
+    {
+      "source": "occ3d_train",
+      "sampler": "occ_centred",
+      "n_crops": 400,
+      "n_samples": 1570,
+      "crop_valid_voxels": 41920474,
+      "crop_volume": 209715200,
+      "crop_occupied_prevalence": 0.211643694677689,
+      "crop_editable_fraction": 0.9284288388533012,
+      "crop_editable_occupied_prevalence": 0.1999128112906578,
+      "volume_occupied_prevalence": 0.21677079544256656,
+      "volume_editable_occupied_prevalence": 0.20434782739368632
+    },
+    {
+      "source": "occ3d_train",
+      "sampler": "uniform",
+      "n_crops": 400,
+      "n_samples": 1570,
+      "crop_valid_voxels": 23926756,
+      "crop_volume": 209715200,
+      "crop_occupied_prevalence": 0.2082025661982761,
+      "crop_editable_fraction": 0.8675211967723497,
+      "crop_editable_occupied_prevalence": 0.18873194774882343,
+      "volume_occupied_prevalence": 0.22007873762719338,
+      "volume_editable_occupied_prevalence": 0.20694035398217606
+    }
+  ]
+}

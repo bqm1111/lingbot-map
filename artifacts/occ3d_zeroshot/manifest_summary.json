@@ -1,0 +1,658 @@
+{
+  "config_sha256": "2762b31b97f2c41e5c6409fb91a60ef0f0bef2c285c5f7f844582ba69fce93c2",
+  "camera": "CAM_FRONT",
+  "split": "val",
+  "n_val_scenes_official": 150,
+  "n_val_scenes_present": 150,
+  "n_scenes_with_clips": 150,
+  "n_clips": 1182,
+  "clips_per_scene": {
+    "min": 7,
+    "median": 8.0,
+    "max": 8
+  },
+  "keyframes_per_scene": {
+    "min": 39,
+    "max": 41
+  },
+  "rejected": {
+    "short_scene": 0,
+    "missing_image": 0,
+    "missing_gt": 0,
+    "nonmonotonic_time": 0
+  },
+  "spacing_s": {
+    "mean": 0.4990710008460236,
+    "median": 0.499885,
+    "min": 0.398671,
+    "max": 0.65083,
+    "p05": 0.45006935000000003,
+    "p95": 0.549676
+  },
+  "duration_s": {
+    "mean": 1.9962840033840945,
+    "median": 2.000053,
+    "min": 1.799312,
+    "max": 2.250519
+  },
+  "semantickitti_reference": {
+    "n_clips": 163,
+    "span_s_mean": 2.078308822085891,
+    "span_s_median": 2.078399999999988,
+    "span_s_std": 0.0024650558896103032,
+    "gap_s_mean": 0.5195772055214728,
+    "gap_s_median": 0.5195999999999685,
+    "source": "data/kitti/dataset/sequences/<seq>/times.txt"
+  },
+  "temporal_match": {
+    "kitti_span_s_median": 2.078399999999988,
+    "nuscenes_span_s_median": 2.000053,
+    "abs_difference_s": 0.07834699999998795,
+    "comparable": true
+  },
+  "manifest_path": "manifests/occ3d_zeroshot/val.jsonl",
+  "manifest_sha256": "60a7460460d26c75ba890487759432fbeb154d97d5362c34a0877f1af18e1463",
+  "per_scene": {
+    "scene-0003": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0012": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0013": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0014": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0015": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0016": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0017": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0018": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0035": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0036": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0038": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0039": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0092": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0093": {
+      "n_keyframes": 39,
+      "n_clips": 7
+    },
+    "scene-0094": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0095": {
+      "n_keyframes": 39,
+      "n_clips": 7
+    },
+    "scene-0096": {
+      "n_keyframes": 39,
+      "n_clips": 7
+    },
+    "scene-0097": {
+      "n_keyframes": 39,
+      "n_clips": 7
+    },
+    "scene-0098": {
+      "n_keyframes": 39,
+      "n_clips": 7
+    },
+    "scene-0099": {
+      "n_keyframes": 39,
+      "n_clips": 7
+    },
+    "scene-0100": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0101": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0102": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0103": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0104": {
+      "n_keyframes": 39,
+      "n_clips": 7
+    },
+    "scene-0105": {
+      "n_keyframes": 39,
+      "n_clips": 7
+    },
+    "scene-0106": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0107": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0108": {
+      "n_keyframes": 39,
+      "n_clips": 7
+    },
+    "scene-0109": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0110": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0221": {
+      "n_keyframes": 39,
+      "n_clips": 7
+    },
+    "scene-0268": {
+      "n_keyframes": 39,
+      "n_clips": 7
+    },
+    "scene-0269": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0270": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0271": {
+      "n_keyframes": 39,
+      "n_clips": 7
+    },
+    "scene-0272": {
+      "n_keyframes": 39,
+      "n_clips": 7
+    },
+    "scene-0273": {
+      "n_keyframes": 39,
+      "n_clips": 7
+    },
+    "scene-0274": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0275": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0276": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0277": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0278": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0329": {
+      "n_keyframes": 39,
+      "n_clips": 7
+    },
+    "scene-0330": {
+      "n_keyframes": 39,
+      "n_clips": 7
+    },
+    "scene-0331": {
+      "n_keyframes": 39,
+      "n_clips": 7
+    },
+    "scene-0332": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0344": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0345": {
+      "n_keyframes": 39,
+      "n_clips": 7
+    },
+    "scene-0346": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0519": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0520": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0521": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0522": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0523": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0524": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0552": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0553": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0554": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0555": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0556": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0557": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0558": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0559": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0560": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0561": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0562": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0563": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0564": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0565": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0625": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0626": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0627": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0629": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0630": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0632": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0633": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0634": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0635": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0636": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0637": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0638": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0770": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0771": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0775": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0777": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0778": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0780": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0781": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0782": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0783": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0784": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0794": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0795": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0796": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0797": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0798": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0799": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0800": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0802": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0904": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0905": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0906": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0907": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0908": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0909": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0910": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0911": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0912": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0913": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0914": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0915": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0916": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0917": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0919": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0920": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0921": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0922": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0923": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0924": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0925": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0926": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0927": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0928": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0929": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0930": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0931": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0962": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0963": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0966": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0967": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0968": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-0969": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0971": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-0972": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-1059": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-1060": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-1061": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-1062": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-1063": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-1064": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-1065": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-1066": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-1067": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-1068": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-1069": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-1070": {
+      "n_keyframes": 41,
+      "n_clips": 8
+    },
+    "scene-1071": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-1072": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    },
+    "scene-1073": {
+      "n_keyframes": 40,
+      "n_clips": 8
+    }
+  },
+  "elapsed_s": 2.7006051540374756
+}

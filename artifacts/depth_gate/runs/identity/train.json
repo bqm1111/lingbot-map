@@ -1,0 +1,62 @@
+{
+  "provenance": {
+    "tool": "depth_gate.train",
+    "git_commit": "9a648322e6dc4e34995f0530650c2fa469779676",
+    "git_dirty_files": [
+      "M lingbot_map/models/gct_stream.py",
+      " M research/sem_bypass/model.py",
+      "?? artifacts/",
+      "?? configs/depth_gate/",
+      "?? configs/scale_gate/",
+      "?? depth_gate/",
+      "?? lingbot_map_scale_claude_code_plan.md",
+      "?? reports/",
+      "?? scale_gate/",
+      "?? scripts/export_occupancy_3d.py",
+      "?? scripts/make_occupancy_ceiling_figure.py",
+      "?? scripts/make_scene_completion_honest_figure.py",
+      "?? tests/depth_gate/",
+      "?? tests/scale_gate/",
+      "?? tools/__init__.py",
+      "?? tools/check_ddad_layout.py",
+      "?? tools/check_vkitti2_layout.py",
+      "?? tools/depth_gate/",
+      "?? tools/geometry_gate/",
+      "?? tools/scale_gate/"
+    ],
+    "python": "3.10.19",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.7.1+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "seed": 0,
+    "config_hash": "d2faead637e3a190",
+    "checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+    "checkpoint_sha256": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72",
+    "argv": [
+      "tools/depth_gate/train.py",
+      "--arch",
+      "identity",
+      "--run-name",
+      "identity"
+    ]
+  },
+  "run": "identity",
+  "arch": "identity",
+  "n_params": 0,
+  "stats": {
+    "log_depth_mean": 2.6606454849243164,
+    "log_depth_std": 0.7538336515426636,
+    "conf_mean": 8.253250122070312,
+    "conf_std": 7.681619644165039,
+    "n_frames": 400
+  },
+  "select_metrics": {
+    "abs_rel": 0.2088387977745031,
+    "log_rmse": 0.26253828161998655,
+    "rmse_m": 5.396852689742051,
+    "delta1": 0.6933605551141315,
+    "median_abs_err_m": 1.5171890258789062,
+    "n_valid": 10276085
+  }
+}

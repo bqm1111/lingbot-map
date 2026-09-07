@@ -1,0 +1,38 @@
+`python -m pytest tests/gate6 tests/gate7a tests/gate7b tests/gate8 tests/gate8a -q`
+
+```
+239 passed, 1 warning in 231.02s (0:03:51)
+```
+
+212 prior tests (Gate 6: 63, Gate 7A: 68, Gate 7B: 56, Gate 8: 25) plus 27 new Gate 8A
+tests, nothing skipped and nothing regressed. The one warning is numpy's `trapz`
+deprecation inside the AUROC cross-check against scikit-learn.
+
+The Gate 8A tests that carry the gate's integrity claims:
+
+* `test_editable_mask_is_exactly_the_residual_gate` — the editable region is not a copy of
+  the residual rule but the set of voxels `apply_residual` actually moves, checked on
+  20 000 log-odds including both signs of the exact lock boundary;
+  `test_editable_region_follows_a_change_in_the_lock` checks it tracks the constant.
+* `test_editable_fill_preserves_every_protected_voxel`,
+  `test_random_editable_preserves_protected_and_forced_voxels` — no baseline may change a
+  voxel the residual cannot change, nor remove occupancy the residual cannot remove.
+* `test_random_baseline_is_reproducible_and_seed_dependent`,
+  `test_matched_density_hits_the_requested_count` — fixed seeds reproduce exactly, differ
+  across seeds and across anchors, and hit the requested density to within 2 %.
+* `test_sweep_reproduces_brute_force_counts_at_many_thresholds`,
+  `test_threshold_sweep_uses_stored_continuous_scores_not_a_binarization`,
+  `test_per_clip_counts_sum_to_the_pooled_sweep` — every threshold-dependent count comes
+  out of stored continuous scores, one block answers different thresholds differently, and
+  the per-clip bootstrap input sums to the pooled sweep exactly.
+* `test_average_precision_matches_sklearn` — AP and AUROC agree with scikit-learn to 2e-3
+  on identically quantised scores.
+* `test_uniform_sampler_cannot_see_an_occupancy_label` — structural: the function's whole
+  input is the RNG and the lattice shape, its body contains no indexing and no attribute
+  access other than on the RNG. `test_uniform_sampler_is_blind_to_the_labels_behaviourally`
+  confirms identical origins from an all-empty and an all-occupied volume.
+* `test_bce_mask_excludes_invalid_and_protected_voxels` — flipping the target on invalid or
+  protected voxels leaves the loss unchanged; flipping it inside the mask does not.
+* `test_ablation_configs_differ_only_in_the_two_factors` — the 2x2 is a 2x2.
+* `test_no_kitti360_anywhere_in_the_selection_path` — no KITTI-360 reference survives in the
+  trainer, the sampler statistics or the selection tool except as a negation.

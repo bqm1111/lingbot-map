@@ -1,0 +1,8 @@
+{
+  "rule": "10/50/90th percentile of K360-C0-D IoU (baseline only)",
+  "clips": [
+    "2013_05_28_drive_0006_sync_001300",
+    "2013_05_28_drive_0006_sync_007355",
+    "2013_05_28_drive_0006_sync_002760"
+  ]
+}

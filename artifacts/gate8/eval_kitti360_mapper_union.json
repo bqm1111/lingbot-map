@@ -1,0 +1,438 @@
+{
+  "source": "kitti360",
+  "dataset": "kitti360",
+  "tag": "mapper_union",
+  "checkpoint": null,
+  "n_anchors": 1753,
+  "vocab_mode": "union",
+  "seconds": 214.70582938194275,
+  "peak_gpu_gib": 13.846606254577637,
+  "map_bytes_median": 4831838208.0,
+  "map_bytes_max": 9663676416.0,
+  "latency_ms": {
+    "step": {
+      "median": 8.039712905883789,
+      "p95": 12.268209457397461
+    },
+    "query": {
+      "median": 3.6051273345947266,
+      "p95": 3.9943218231201167
+    },
+    "dilate": {
+      "median": 29.07419204711914,
+      "p95": 33.24122428894043
+    }
+  },
+  "variants": {
+    "raw": {
+      "n_clips": 1753,
+      "n_valid": 549394259,
+      "n_gt_occupied": 137841471,
+      "n_pred_occupied": 19014846,
+      "binary_iou": 0.03603084292513288,
+      "binary_precision": 0.2868870460481247,
+      "binary_recall": 0.03957526686580412,
+      "empty_prediction_rate": 0.9653894344753245,
+      "ssc_miou": 0.007222139477650358,
+      "n_classes_scored": 18,
+      "per_class": {
+        "car": {
+          "iou": 0.01595969563163657,
+          "tp": 59229,
+          "fp": 690192,
+          "fn": 2961740,
+          "gt_voxels": 3020969,
+          "tp_conditioned_recall": 0.3674665905622216,
+          "tp_conditioned_gt_voxels": 161182
+        },
+        "bicycle": {
+          "iou": 0.0021936696960200563,
+          "tp": 14,
+          "fp": 2978,
+          "fn": 3390,
+          "gt_voxels": 3404,
+          "tp_conditioned_recall": 0.05511811023622047,
+          "tp_conditioned_gt_voxels": 254
+        },
+        "motorcycle": {
+          "iou": 0.0008378952072394146,
+          "tp": 15,
+          "fp": 2191,
+          "fn": 15696,
+          "gt_voxels": 15711,
+          "tp_conditioned_recall": 0.024271844660194174,
+          "tp_conditioned_gt_voxels": 618
+        },
+        "truck": {
+          "iou": 0.019995400051749417,
+          "tp": 4173,
+          "fp": 57891,
+          "fn": 146634,
+          "gt_voxels": 150807,
+          "tp_conditioned_recall": 0.44870967741935486,
+          "tp_conditioned_gt_voxels": 9300
+        },
+        "other-vehicle": {
+          "iou": 0.0047974427521650966,
+          "tp": 1843,
+          "fp": 108368,
+          "fn": 273952,
+          "gt_voxels": 275795,
+          "tp_conditioned_recall": 0.14207523897625654,
+          "tp_conditioned_gt_voxels": 12972
+        },
+        "person": {
+          "iou": 0.0060403012814242395,
+          "tp": 247,
+          "fp": 11852,
+          "fn": 28793,
+          "gt_voxels": 29040,
+          "tp_conditioned_recall": 0.20345963756177923,
+          "tp_conditioned_gt_voxels": 1214
+        },
+        "road": {
+          "iou": 0.018398133780944962,
+          "tp": 382794,
+          "fp": 3338306,
+          "fn": 17085032,
+          "gt_voxels": 17467826,
+          "tp_conditioned_recall": 0.4086073614523935,
+          "tp_conditioned_gt_voxels": 936826
+        },
+        "parking": {
+          "iou": 0.000988167185904569,
+          "tp": 4354,
+          "fp": 139144,
+          "fn": 4262639,
+          "gt_voxels": 4266993,
+          "tp_conditioned_recall": 0.019108224348284034,
+          "tp_conditioned_gt_voxels": 227860
+        },
+        "sidewalk": {
+          "iou": 0.005630319371037315,
+          "tp": 40048,
+          "fp": 1036010,
+          "fn": 6036860,
+          "gt_voxels": 6076908,
+          "tp_conditioned_recall": 0.09615666275297909,
+          "tp_conditioned_gt_voxels": 416487
+        },
+        "other-ground": {
+          "iou": 0.0036575467442160523,
+          "tp": 11991,
+          "fp": 902603,
+          "fn": 2363833,
+          "gt_voxels": 2375824,
+          "tp_conditioned_recall": 0.0924689225454209,
+          "tp_conditioned_gt_voxels": 129676
+        },
+        "building": {
+          "iou": 0.012375199590212419,
+          "tp": 357122,
+          "fp": 1927793,
+          "fn": 26572963,
+          "gt_voxels": 26930085,
+          "tp_conditioned_recall": 0.36133151211615316,
+          "tp_conditioned_gt_voxels": 988350
+        },
+        "fence": {
+          "iou": 0.005929821070161844,
+          "tp": 11800,
+          "fp": 575068,
+          "fn": 1403074,
+          "gt_voxels": 1414874,
+          "tp_conditioned_recall": 0.2040569284244384,
+          "tp_conditioned_gt_voxels": 57827
+        },
+        "vegetation": {
+          "iou": 0.018016702517510762,
+          "tp": 1235451,
+          "fp": 5033147,
+          "fn": 62303939,
+          "gt_voxels": 63539390,
+          "tp_conditioned_recall": 0.6246096350931795,
+          "tp_conditioned_gt_voxels": 1977957
+        },
+        "terrain": {
+          "iou": 0.00025193545257081124,
+          "tp": 1319,
+          "fp": 142657,
+          "fn": 5091492,
+          "gt_voxels": 5092811,
+          "tp_conditioned_recall": 0.0062062702621314,
+          "tp_conditioned_gt_voxels": 212527
+        },
+        "pole": {
+          "iou": 0.0026938786478207127,
+          "tp": 802,
+          "fp": 122334,
+          "fn": 174576,
+          "gt_voxels": 175378,
+          "tp_conditioned_recall": 0.1385864869535165,
+          "tp_conditioned_gt_voxels": 5787
+        },
+        "traffic-sign": {
+          "iou": 0.001136395920338646,
+          "tp": 80,
+          "fp": 22870,
+          "fn": 47448,
+          "gt_voxels": 47528,
+          "tp_conditioned_recall": 0.08412197686645637,
+          "tp_conditioned_gt_voxels": 951
+        },
+        "other-structure": {
+          "iou": 0.008935279990947535,
+          "tp": 82044,
+          "fp": 2590759,
+          "fn": 6509226,
+          "gt_voxels": 6591270,
+          "tp_conditioned_recall": 0.2743882250248322,
+          "tp_conditioned_gt_voxels": 299007
+        },
+        "other-object": {
+          "iou": 0.002160725705806019,
+          "tp": 1044,
+          "fp": 116313,
+          "fn": 365814,
+          "gt_voxels": 366858,
+          "tp_conditioned_recall": 0.06397842872901091,
+          "tp_conditioned_gt_voxels": 16318
+        }
+      },
+      "tp_conditioned": {
+        "n": 5455113,
+        "top1_accuracy": 0.4022593115852962,
+        "balanced_recall": 0.20081787411026794,
+        "n_classes_present": 18
+      },
+      "tp_conditioned_reconstruction_support": {
+        "n": 5455113,
+        "top1_accuracy": 0.4022593115852962,
+        "balanced_recall": 0.20081787411026794,
+        "n_classes_present": 18
+      },
+      "tp_conditioned_dilation_only": {
+        "n": 0,
+        "top1_accuracy": 0.0,
+        "balanced_recall": 0.0,
+        "n_classes_present": 0
+      },
+      "decomposition": {
+        "n_valid_gt_occupied": 137841471,
+        "coverage_miss": 132386358,
+        "naming_error": 3260743,
+        "correct": 2194370,
+        "coverage_miss_fraction": 0.9604247331341959,
+        "naming_error_fraction": 0.023655747260561372,
+        "correct_fraction": 0.015919519605242752,
+        "sums_to_one": true
+      },
+      "binary_iou_mean_per_clip": 0.03653321269249645
+    },
+    "dil": {
+      "n_clips": 1753,
+      "n_valid": 549394259,
+      "n_gt_occupied": 137841471,
+      "n_pred_occupied": 72805359,
+      "binary_iou": 0.10944979936932478,
+      "binary_precision": 0.28542952449420655,
+      "binary_recall": 0.15075868567885495,
+      "empty_prediction_rate": 0.8674806701975384,
+      "ssc_miou": 0.01887140173252086,
+      "n_classes_scored": 18,
+      "per_class": {
+        "car": {
+          "iou": 0.04014463643963779,
+          "tp": 245137,
+          "fp": 3085376,
+          "fn": 2775832,
+          "gt_voxels": 3020969,
+          "tp_conditioned_recall": 0.3960376364758455,
+          "tp_conditioned_gt_voxels": 618974
+        },
+        "bicycle": {
+          "iou": 0.007436656794998354,
+          "tp": 113,
+          "fp": 11791,
+          "fn": 3291,
+          "gt_voxels": 3404,
+          "tp_conditioned_recall": 0.11402623612512613,
+          "tp_conditioned_gt_voxels": 991
+        },
+        "motorcycle": {
+          "iou": 0.005801057839959051,
+          "tp": 136,
+          "fp": 7733,
+          "fn": 15575,
+          "gt_voxels": 15711,
+          "tp_conditioned_recall": 0.045167718365991365,
+          "tp_conditioned_gt_voxels": 3011
+        },
+        "truck": {
+          "iou": 0.03430454085510804,
+          "tp": 14171,
+          "fp": 262287,
+          "fn": 136636,
+          "gt_voxels": 150807,
+          "tp_conditioned_recall": 0.47868531279556814,
+          "tp_conditioned_gt_voxels": 29604
+        },
+        "other-vehicle": {
+          "iou": 0.010233920148073457,
+          "tp": 7409,
+          "fp": 448170,
+          "fn": 268386,
+          "gt_voxels": 275795,
+          "tp_conditioned_recall": 0.15037548203775117,
+          "tp_conditioned_gt_voxels": 49270
+        },
+        "person": {
+          "iou": 0.01271934097576289,
+          "tp": 1175,
+          "fp": 63339,
+          "fn": 27865,
+          "gt_voxels": 29040,
+          "tp_conditioned_recall": 0.240532241555783,
+          "tp_conditioned_gt_voxels": 4885
+        },
+        "road": {
+          "iou": 0.05916040125740873,
+          "tp": 1692689,
+          "fp": 11144032,
+          "fn": 15775137,
+          "gt_voxels": 17467826,
+          "tp_conditioned_recall": 0.4536274351110506,
+          "tp_conditioned_gt_voxels": 3731452
+        },
+        "parking": {
+          "iou": 0.004047277389034901,
+          "tp": 19842,
+          "fp": 635562,
+          "fn": 4247151,
+          "gt_voxels": 4266993,
+          "tp_conditioned_recall": 0.023325417910798674,
+          "tp_conditioned_gt_voxels": 850660
+        },
+        "sidewalk": {
+          "iou": 0.01580421937265119,
+          "tp": 154371,
+          "fp": 3690800,
+          "fn": 5922537,
+          "gt_voxels": 6076908,
+          "tp_conditioned_recall": 0.10544553643882328,
+          "tp_conditioned_gt_voxels": 1463988
+        },
+        "other-ground": {
+          "iou": 0.006545593162287099,
+          "tp": 36712,
+          "fp": 3232835,
+          "fn": 2339112,
+          "gt_voxels": 2375824,
+          "tp_conditioned_recall": 0.08232054605304465,
+          "tp_conditioned_gt_voxels": 445964
+        },
+        "building": {
+          "iou": 0.03959967956527162,
+          "tp": 1363940,
+          "fp": 7513123,
+          "fn": 25566145,
+          "gt_voxels": 26930085,
+          "tp_conditioned_recall": 0.37575408953589023,
+          "tp_conditioned_gt_voxels": 3629874
+        },
+        "fence": {
+          "iou": 0.012846330791974832,
+          "tp": 46185,
+          "fp": 2180316,
+          "fn": 1368689,
+          "gt_voxels": 1414874,
+          "tp_conditioned_recall": 0.21026729008554557,
+          "tp_conditioned_gt_voxels": 219649
+        },
+        "vegetation": {
+          "iou": 0.0581536689706256,
+          "tp": 4904397,
+          "fp": 20795736,
+          "fn": 58634993,
+          "gt_voxels": 63539390,
+          "tp_conditioned_recall": 0.6302576277938592,
+          "tp_conditioned_gt_voxels": 7781575
+        },
+        "terrain": {
+          "iou": 0.0009658489900770664,
+          "tp": 5369,
+          "fp": 466029,
+          "fn": 5087442,
+          "gt_voxels": 5092811,
+          "tp_conditioned_recall": 0.006362882199573359,
+          "tp_conditioned_gt_voxels": 843800
+        },
+        "pole": {
+          "iou": 0.005469288493746179,
+          "tp": 5483,
+          "fp": 827129,
+          "fn": 169895,
+          "gt_voxels": 175378,
+          "tp_conditioned_recall": 0.20973911712952337,
+          "tp_conditioned_gt_voxels": 26142
+        },
+        "traffic-sign": {
+          "iou": 0.0035689326810739875,
+          "tp": 669,
+          "fp": 139923,
+          "fn": 46859,
+          "gt_voxels": 47528,
+          "tp_conditioned_recall": 0.1409905163329821,
+          "tp_conditioned_gt_voxels": 4745
+        },
+        "other-structure": {
+          "iou": 0.01694504710568212,
+          "tp": 265417,
+          "fp": 9072127,
+          "fn": 6325853,
+          "gt_voxels": 6591270,
+          "tp_conditioned_recall": 0.2625032143210365,
+          "tp_conditioned_gt_voxels": 1011100
+        },
+        "other-object": {
+          "iou": 0.0059387903520025905,
+          "tp": 4916,
+          "fp": 460920,
+          "fn": 361942,
+          "gt_voxels": 366858,
+          "tp_conditioned_recall": 0.07549719726637487,
+          "tp_conditioned_gt_voxels": 65115
+        }
+      },
+      "tp_conditioned": {
+        "n": 20780799,
+        "top1_accuracy": 0.4219342576770027,
+        "balanced_recall": 0.2222730831963649,
+        "n_classes_present": 18
+      },
+      "tp_conditioned_reconstruction_support": {
+        "n": 20780799,
+        "top1_accuracy": 0.4219342576770027,
+        "balanced_recall": 0.2222730831963649,
+        "n_classes_present": 18
+      },
+      "tp_conditioned_dilation_only": {
+        "n": 0,
+        "top1_accuracy": 0.0,
+        "balanced_recall": 0.0,
+        "n_classes_present": 0
+      },
+      "decomposition": {
+        "n_valid_gt_occupied": 137841471,
+        "coverage_miss": 117060672,
+        "naming_error": 12012668,
+        "correct": 8768131,
+        "coverage_miss_fraction": 0.849241314321145,
+        "naming_error_fraction": 0.08714843154858672,
+        "correct_fraction": 0.06361025413026825,
+        "sums_to_one": true
+      },
+      "binary_iou_mean_per_clip": 0.10712513094453684
+    }
+  }
+}

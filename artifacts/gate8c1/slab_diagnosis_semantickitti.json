@@ -1,0 +1,56 @@
+{
+  "n_frames": 24,
+  "seed": 0,
+  "threshold": -0.125,
+  "WARNING": "post-hoc diagnosis only -- the cut height was chosen by looking at the target dataset, so no row but 'None' is a legitimate result",
+  "rows": {
+    "frozen": {
+      "iou": 0.12264125965670114,
+      "precision": 0.1586917723744564,
+      "recall": 0.35058948358289205,
+      "tp": 982005,
+      "fp": 5206123,
+      "fn": 1819006
+    },
+    "drop above 4.0 m": {
+      "iou": 0.1838977353802191,
+      "precision": 0.2789525948592933,
+      "recall": 0.35051236856977713,
+      "tp": 981789,
+      "fp": 2537766,
+      "fn": 1819222
+    },
+    "drop above 3.5 m": {
+      "iou": 0.21415550482398468,
+      "precision": 0.3551825809199781,
+      "recall": 0.35037920236657405,
+      "tp": 981416,
+      "fp": 1781715,
+      "fn": 1819595
+    },
+    "drop above 3.0 m": {
+      "iou": 0.21902735924693248,
+      "precision": 0.36894618770837523,
+      "recall": 0.35023603977278206,
+      "tp": 981015,
+      "fp": 1677950,
+      "fn": 1819996
+    },
+    "drop above 2.5 m": {
+      "iou": 0.22366126124809163,
+      "precision": 0.3830603249811933,
+      "recall": 0.3495902015379447,
+      "tp": 979206,
+      "fp": 1577065,
+      "fn": 1821805
+    },
+    "drop above 2.0 m": {
+      "iou": 0.2259996840077624,
+      "precision": 0.39096833265835673,
+      "recall": 0.3487926323745248,
+      "tp": 976972,
+      "fp": 1521880,
+      "fn": 1824039
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "semantickitti": {
+    "official_evaluation_clips": 163,
+    "official_prediction_files": 163,
+    "evaluation_grid": "semantickitti",
+    "voxels_per_clip": 2097152,
+    "valid_voxels_after_official_mask": 239805138,
+    "valid_gt_occupied_voxels": 18762930,
+    "gate6_B_D_coverage_miss": 13093177,
+    "gate7a_B_D_miss_population": 13093177,
+    "gate7a_anchors": 163,
+    "gate7b_recoverability_anchor_stride": 4,
+    "gate7b_recoverability_anchors_reported": 41,
+    "gate7b_anchors_reconstructed_here": 41,
+    "gate7b_anchors_skipped_for_zero_misses": 0,
+    "gate7b_miss_population_reported": 3186640,
+    "gate7b_miss_population_reconstructed_from_gate6_counts": 3186640,
+    "reconstruction_exact": true,
+    "gate7b_classes": {
+      "recovered_from_causal_past": 121717,
+      "recovered_from_a_later_viewpoint": 330861,
+      "in_frustum_but_never_reconstructed": 2734062,
+      "outside_all_frusta": 0,
+      "unresolved": 0
+    },
+    "explanation": "Gate 7A scored every official anchor; Gate 7B's temporal-recoverability tool was run with --stride 4 (every fourth anchor per segment, in stream order) and skips anchors with zero B-D misses. The Gate-7B population is therefore a deterministic ~1/4 subsample of the Gate-7A population, not a different filtering of it.",
+    "fraction_of_gate7a_population": 0.2433817246952363
+  },
+  "occ3d": {
+    "official_evaluation_clips": 1182,
+    "official_prediction_files": 1182,
+    "evaluation_grid": "occ3d_nuscenes",
+    "voxels_per_clip": 640000,
+    "valid_voxels_after_official_mask": 52095614,
+    "valid_gt_occupied_voxels": 11957590,
+    "gate6_B_D_coverage_miss": 8969696,
+    "gate7a_B_D_miss_population": 8969696,
+    "gate7a_anchors": 1182,
+    "gate7b_recoverability_anchor_stride": 4,
+    "gate7b_recoverability_anchors_reported": 300,
+    "gate7b_anchors_reconstructed_here": 300,
+    "gate7b_anchors_skipped_for_zero_misses": 0,
+    "gate7b_miss_population_reported": 2516764,
+    "gate7b_miss_population_reconstructed_from_gate6_counts": 2516764,
+    "reconstruction_exact": true,
+    "gate7b_classes": {
+      "recovered_from_causal_past": 74071,
+      "recovered_from_a_later_viewpoint": 105846,
+      "in_frustum_but_never_reconstructed": 2105536,
+      "outside_all_frusta": 231311,
+      "unresolved": 0
+    },
+    "explanation": "Gate 7A scored every official anchor; Gate 7B's temporal-recoverability tool was run with --stride 4 (every fourth anchor per segment, in stream order) and skips anchors with zero B-D misses. The Gate-7B population is therefore a deterministic ~1/4 subsample of the Gate-7A population, not a different filtering of it.",
+    "fraction_of_gate7a_population": 0.28058520600921144
+  },
+  "kitti360": {
+    "official_evaluation_clips": 1753,
+    "official_prediction_files": 1753,
+    "evaluation_grid": "sscbench_kitti360",
+    "voxels_per_clip": 2097152,
+    "valid_voxels_after_official_mask": 549394259,
+    "valid_gt_occupied_voxels": 137841471,
+    "gate6_B_D_coverage_miss": 114007683,
+    "gate7a_B_D_miss_population": 114007683,
+    "gate7a_anchors": 1753,
+    "gate7b_recoverability_anchor_stride": 4,
+    "gate7b_recoverability_anchors_reported": 439,
+    "gate7b_anchors_reconstructed_here": 439,
+    "gate7b_anchors_skipped_for_zero_misses": 0,
+    "gate7b_miss_population_reported": 28557603,
+    "gate7b_miss_population_reconstructed_from_gate6_counts": 28557603,
+    "reconstruction_exact": true,
+    "gate7b_classes": {
+      "recovered_from_causal_past": 567540,
+      "recovered_from_a_later_viewpoint": 1329511,
+      "in_frustum_but_never_reconstructed": 26660552,
+      "outside_all_frusta": 0,
+      "unresolved": 0
+    },
+    "explanation": "Gate 7A scored every official anchor; Gate 7B's temporal-recoverability tool was run with --stride 4 (every fourth anchor per segment, in stream order) and skips anchors with zero B-D misses. The Gate-7B population is therefore a deterministic ~1/4 subsample of the Gate-7A population, not a different filtering of it.",
+    "fraction_of_gate7a_population": 0.2504884078733536
+  }
+}

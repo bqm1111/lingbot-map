@@ -1,0 +1,33 @@
+diff --git a/lingbot_map/models/gct_stream.py b/lingbot_map/models/gct_stream.py
+index 9240227..410707f 100644
+--- a/lingbot_map/models/gct_stream.py
++++ b/lingbot_map/models/gct_stream.py
+@@ -492,7 +492,7 @@ class GCTStream(GCTBase):
+                     self,
+                     label=f"i={i} {'KF' if is_keyframe else 'nkf'}",
+                 )
+-
++            
+             all_pose_enc.append(_to_out(frame_output["pose_enc"]))
+             if "depth" in frame_output:
+                 all_depth.append(_to_out(frame_output["depth"]))
+@@ -515,7 +515,7 @@ class GCTStream(GCTBase):
+                 torch.cuda.empty_cache()
+         else:
+             images_out = images
+-
++        
+         # Concatenate all predictions along sequence dimension
+         predictions = {
+             "pose_enc": torch.cat(all_pose_enc, dim=1),
+diff --git a/research/sem_bypass/model.py b/research/sem_bypass/model.py
+index 0f1fa3a..35c8154 100644
+--- a/research/sem_bypass/model.py
++++ b/research/sem_bypass/model.py
+@@ -136,5 +136,3 @@ class LingBotSemBypass:
+             pose_enc=preds["pose_enc"], extrinsic=extr.float(), intrinsic=intr.float(),
+             semantic=sem, patch_grid=(H // ps, W // ps),
+         )
+-
+-    # 
+\ No newline at end of file

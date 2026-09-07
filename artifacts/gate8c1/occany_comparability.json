@@ -1,0 +1,67 @@
+{
+ "question": "Is our Occ3D-nuScenes number faithfully comparable to OccAny's published 23.55%?",
+ "answer": "The measurement is faithful; the comparison is not like-for-like until three asymmetries are named, and all three run against us.",
+ "verified_identical": {
+  "metric": {
+   "how": "OccAny's own SSCMetrics.get_score_completion (occany/metrics/ssc.py) was run on 193 of our real Occ3D predictions and compared with our counting",
+   "result": "byte-identical TP/FP/FN on every clip (exact agreement = True)",
+   "ours_iou_on_that_subset": 0.3423,
+   "occany_evaluator_iou_on_that_subset": 0.3423
+  },
+  "grid": "200x200x16 @ 0.4 m, origin (-40,-40,-1), ego frame of the target sample",
+  "masks": "mask_camera applied -> 255; mask_lidar NOT applied; voxel_label[:100,:,:] = 255 (the rear half, single-camera setting). Our gate6/targets.py does the same three operations in the same order.",
+  "occupied_free": "class 17 = free, 255 = ignore and excluded from TP/FP/FN by both",
+  "split_and_camera": "Occ3D-nuScenes official val, 150 scenes, CAM_FRONT only",
+  "sample_subset": {
+   "ours": 1182,
+   "ours_per_scene": 8,
+   "ours_stride": "uniform 1-in-5 (anchors 4,9,...,39)",
+   "occany": "~4800 (every frame with 8 more ahead of it); 6019 val frames carry a GT file",
+   "representativeness_check": {
+    "our_prevalence": 0.22953,
+    "all_val_frames_prevalence": 0.227,
+    "relative_difference": 0.0112,
+    "verdict": "our subsample is representative; pooled IoU is comparable in expectation"
+   }
+  }
+ },
+ "asymmetries_against_us": {
+  "post_processing": {
+   "finding": "sh/compute_metric.sh sets USE_MAJORITY_POOLING=1 by default and sh/exp_lists/metric_occany.sh EXP_ID 2 (nuScenes 5frames geometry) passes --geometry_only $MAJORITY_POOLING_ARG",
+   "consequence": "the published 23.55% is POST-PROCESSED with apply_majority_pooling in geometry-only mode, whose default use_dilation=True is a 3x3x3 max-pool (a one-voxel dilation), while our 30.89% is raw",
+   "our_matched_number": 0.3343
+  },
+  "temporal_direction": {
+   "occany": "target is the FIRST frame; the other four run forward at interval 2 (~1.0 s apart, ~4 s of future observation of the target region)",
+   "ours_primary": "five frames ENDING at the target, no future observation at all",
+   "our_matched_number_raw": 0.2756,
+   "our_matched_number_pooled": 0.3051
+  },
+  "target_domain_training": "OccAny trains on nuScenes; our completion module never saw it",
+  "threshold_tuning": "OccAny sets --recon_threshold/--gen_threshold per dataset (nuScenes 1.1, KITTI 2.5); our threshold was frozen on KITTI-360 validation before Occ3D was opened"
+ },
+ "headline_comparisons": {
+  "most_defensible_like_for_like": {
+   "description": "matched temporal sampling (target-first forward), matched post-processing (OccAny max-pool), OccAny's evaluator, identical grid/masks/split",
+   "ours": 0.3051,
+   "occany_published": 0.2355,
+   "absolute_gain": 0.0696,
+   "caveat": "still favours OccAny on training data and threshold tuning"
+  },
+  "our_deployment_protocol_matched_pooling": {
+   "ours": 0.3343,
+   "occany_published": 0.2355
+  },
+  "as_reported_in_report_md": {
+   "ours_raw_causal": 0.3089,
+   "occany_published_pooled": 0.2355,
+   "note": "conservative for us: raw vs pooled"
+  }
+ },
+ "semantickitti_for_contrast": {
+  "ours_raw_causal": 0.1274,
+  "ours_matched_fwd_pooled": 0.1277,
+  "occany_published": 0.2591,
+  "note": "the conclusion there is unchanged by any of this: we are ~half of OccAny"
+ }
+}

@@ -1,0 +1,43 @@
+{
+  "clips": [
+    "00004",
+    "00042",
+    "00081",
+    "00119",
+    "00158",
+    "00196",
+    "00004",
+    "00146",
+    "00288",
+    "00430",
+    "00572",
+    "00004",
+    "00153",
+    "00302",
+    "00450",
+    "00599"
+  ],
+  "steps": 2000,
+  "final_training_fit": {
+    "tp": 155937,
+    "fp": 851658,
+    "fn": 265782,
+    "tn": 9161996,
+    "sc_iou": 0.12245941304107111,
+    "precision": 0.1547615857561818,
+    "recall": 0.3697651753892995,
+    "pred_over_gt_occupied": 2.3892568274135146
+  },
+  "criterion": {
+    "occupancy_loss_initial": 1.1598657697439194,
+    "occupancy_loss_final": 1.0436916463077068,
+    "occupancy_loss_relative_decrease": 0.10016169669518056,
+    "occupancy_loss_step1": 1.1823665797710419,
+    "pooled_training_sc_iou": 0.12245941304107111,
+    "loss_criterion_passed": false,
+    "iou_criterion_passed": false,
+    "fits_training_clips": false
+  },
+  "seconds": 386.75218439102173,
+  "checkpoint_sha256": "4c73a88409bbaa1dd7be5f95e39a5ce709c7d1d53cc6ab4e46967d61723320c8"
+}

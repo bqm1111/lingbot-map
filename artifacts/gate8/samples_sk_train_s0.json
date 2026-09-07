@@ -1,0 +1,25 @@
+{
+  "source": "sk_train",
+  "n_samples": 900,
+  "seconds": 15.755563497543335,
+  "future_frames": 20,
+  "audit": [
+    {
+      "segment": "00",
+      "t": 563,
+      "clip": "00_002815",
+      "input_frames": [
+        0,
+        563
+      ],
+      "target_frames": [
+        564,
+        583
+      ],
+      "n_rows": 704753,
+      "n_fut_rows": 180853,
+      "bytes": 2616031
+    }
+  ],
+  "total_bytes": 2616031
+}

@@ -1,0 +1,30 @@
+{
+  "dataset": "semantickitti",
+  "n_anchors": 17,
+  "anchor_stride": 10,
+  "seconds": 15.044894456863403,
+  "definition": {
+    "thickness": "occupied voxels per non-empty vertical column",
+    "duplicate_rate": "fraction of non-empty columns with two or more occupied runs separated by >= 2 empty voxels"
+  },
+  "policies": {
+    "G-A": {
+      "thickness_mean": 4.294621767929861,
+      "thickness_median": 4.1920672936503305,
+      "duplicate_rate_mean": 0.3094924026285178,
+      "occupied_mean": 75062.11764705883
+    },
+    "G-B": {
+      "thickness_mean": 4.346100526838563,
+      "thickness_median": 4.185194432307596,
+      "duplicate_rate_mean": 0.3120313380992395,
+      "occupied_mean": 73247.0
+    },
+    "G-C": {
+      "thickness_mean": 4.295956368977972,
+      "thickness_median": 4.185568940765245,
+      "duplicate_rate_mean": 0.30701124681054165,
+      "occupied_mean": 71846.0
+    }
+  }
+}

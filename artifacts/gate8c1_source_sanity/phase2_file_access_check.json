@@ -1,0 +1,16 @@
+{
+  "n_opened": 19770,
+  "n_unique": 1213,
+  "violations": [],
+  "forbidden_patterns": [
+    "data/kitti/dataset",
+    "occ3d_gt",
+    "nuscenes",
+    "lingbot_occ3d_zeroshot",
+    "scale_gate/cache",
+    "preprocess/labels"
+  ],
+  "stage": "phase2",
+  "note": "every open, np.load and np.fromfile in this stage was intercepted; a SemanticKITTI / Occ3D / nuScenes / SSCBench-label path would have raised",
+  "n_target_domain_paths_opened": 0
+}

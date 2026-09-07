@@ -1,0 +1,724 @@
+{
+  "tolerance_m": 0.001,
+  "audit_anchors": [
+    {
+      "partition": "train",
+      "drive": "2013_05_28_drive_0003_sync",
+      "anchor": 195
+    },
+    {
+      "partition": "train",
+      "drive": "2013_05_28_drive_0003_sync",
+      "anchor": 785
+    },
+    {
+      "partition": "train",
+      "drive": "2013_05_28_drive_0007_sync",
+      "anchor": 530
+    },
+    {
+      "partition": "source_validation",
+      "drive": "2013_05_28_drive_0010_sync",
+      "anchor": 555
+    },
+    {
+      "partition": "source_validation",
+      "drive": "2013_05_28_drive_0010_sync",
+      "anchor": 1390
+    },
+    {
+      "partition": "source_validation",
+      "drive": "2013_05_28_drive_0010_sync",
+      "anchor": 2225
+    },
+    {
+      "partition": "heldout",
+      "drive": "2013_05_28_drive_0006_sync",
+      "anchor": 1810
+    },
+    {
+      "partition": "heldout",
+      "drive": "2013_05_28_drive_0006_sync",
+      "anchor": 4525
+    },
+    {
+      "partition": "heldout",
+      "drive": "2013_05_28_drive_0006_sync",
+      "anchor": 7240
+    }
+  ],
+  "round_trips": {
+    "2013_05_28_drive_0003_sync_000195": {
+      "velo_to_world": {
+        "max_abs_error_m": 1.3784529073745944e-12,
+        "within_tol": true
+      },
+      "rect_cam_to_velo": {
+        "max_abs_error_m": 1.4210854715202004e-14,
+        "within_tol": true
+      },
+      "rect_cam_to_world": {
+        "max_abs_error_m": 9.023892744153272e-13,
+        "within_tol": true
+      },
+      "velo_src_to_velo_anchor": {
+        "max_abs_error_m": 1.7763568394002505e-14,
+        "within_tol": true
+      },
+      "cam0_unrect_to_velo": {
+        "max_abs_error_m": 2.1316282072803006e-14,
+        "within_tol": true
+      },
+      "rigid_inverse_residual": {
+        "R_rect_00": {
+          "det": 0.9999995479528963,
+          "max_abs_RtR_minus_I": 9.9289899990751e-07,
+          "roundtrip_with_R_transpose_m": 5.794421315385989e-05,
+          "roundtrip_with_true_inverse_m": 1.4210854715202004e-14
+        },
+        "cam0_to_velo": {
+          "det": 1.0000000000351994,
+          "max_abs_RtR_minus_I": 5.986144913094904e-11,
+          "roundtrip_with_R_transpose_m": 2.692843281693058e-09,
+          "roundtrip_with_true_inverse_m": 2.1316282072803006e-14
+        },
+        "velo_to_world": {
+          "det": 1.000001094544045,
+          "max_abs_RtR_minus_I": 1.6636111366263862e-06,
+          "roundtrip_with_R_transpose_m": 0.0001112185473033378,
+          "roundtrip_with_true_inverse_m": 1.3784529073745944e-12
+        }
+      },
+      "composition_matches_direct": {
+        "max_abs_error_m": 0.0,
+        "within_tol": true
+      },
+      "R_rect_00_rotation_deg": 0.45114858450516565,
+      "rect_matters": true,
+      "cam0_to_velo_orthonormality": {
+        "det": 1.0000000000351994,
+        "max_abs_RtR_minus_I": 5.986144913094904e-11
+      },
+      "grid_index_centre_roundtrip": {
+        "n": 4096,
+        "n_kept": 4096,
+        "exact": true
+      }
+    },
+    "2013_05_28_drive_0003_sync_000785": {
+      "velo_to_world": {
+        "max_abs_error_m": 8.526512829121202e-13,
+        "within_tol": true
+      },
+      "rect_cam_to_velo": {
+        "max_abs_error_m": 1.4210854715202004e-14,
+        "within_tol": true
+      },
+      "rect_cam_to_world": {
+        "max_abs_error_m": 9.663381206337363e-13,
+        "within_tol": true
+      },
+      "velo_src_to_velo_anchor": {
+        "max_abs_error_m": 2.1316282072803006e-14,
+        "within_tol": true
+      },
+      "cam0_unrect_to_velo": {
+        "max_abs_error_m": 2.1316282072803006e-14,
+        "within_tol": true
+      },
+      "rigid_inverse_residual": {
+        "R_rect_00": {
+          "det": 0.9999995479528963,
+          "max_abs_RtR_minus_I": 9.9289899990751e-07,
+          "roundtrip_with_R_transpose_m": 5.8146110376355864e-05,
+          "roundtrip_with_true_inverse_m": 1.4210854715202004e-14
+        },
+        "cam0_to_velo": {
+          "det": 1.0000000000351994,
+          "max_abs_RtR_minus_I": 5.986144913094904e-11,
+          "roundtrip_with_R_transpose_m": 2.686483924208005e-09,
+          "roundtrip_with_true_inverse_m": 2.1316282072803006e-14
+        },
+        "velo_to_world": {
+          "det": 1.0000007834243436,
+          "max_abs_RtR_minus_I": 1.491957613897199e-06,
+          "roundtrip_with_R_transpose_m": 6.176893838016895e-05,
+          "roundtrip_with_true_inverse_m": 8.526512829121202e-13
+        }
+      },
+      "composition_matches_direct": {
+        "max_abs_error_m": 0.0,
+        "within_tol": true
+      },
+      "R_rect_00_rotation_deg": 0.45114858450516565,
+      "rect_matters": true,
+      "cam0_to_velo_orthonormality": {
+        "det": 1.0000000000351994,
+        "max_abs_RtR_minus_I": 5.986144913094904e-11
+      },
+      "grid_index_centre_roundtrip": {
+        "n": 4096,
+        "n_kept": 4096,
+        "exact": true
+      }
+    },
+    "2013_05_28_drive_0007_sync_000530": {
+      "velo_to_world": {
+        "max_abs_error_m": 5.933031843596837e-13,
+        "within_tol": true
+      },
+      "rect_cam_to_velo": {
+        "max_abs_error_m": 1.4210854715202004e-14,
+        "within_tol": true
+      },
+      "rect_cam_to_world": {
+        "max_abs_error_m": 7.318590178329032e-13,
+        "within_tol": true
+      },
+      "velo_src_to_velo_anchor": {
+        "max_abs_error_m": 2.842170943040401e-14,
+        "within_tol": true
+      },
+      "cam0_unrect_to_velo": {
+        "max_abs_error_m": 2.1316282072803006e-14,
+        "within_tol": true
+      },
+      "rigid_inverse_residual": {
+        "R_rect_00": {
+          "det": 0.9999995479528963,
+          "max_abs_RtR_minus_I": 9.9289899990751e-07,
+          "roundtrip_with_R_transpose_m": 5.9186095953123186e-05,
+          "roundtrip_with_true_inverse_m": 1.4210854715202004e-14
+        },
+        "cam0_to_velo": {
+          "det": 1.0000000000351994,
+          "max_abs_RtR_minus_I": 5.986144913094904e-11,
+          "roundtrip_with_R_transpose_m": 2.647169594638399e-09,
+          "roundtrip_with_true_inverse_m": 2.1316282072803006e-14
+        },
+        "velo_to_world": {
+          "det": 1.0000003385552871,
+          "max_abs_RtR_minus_I": 1.2139856107040714e-06,
+          "roundtrip_with_R_transpose_m": 6.998044253236912e-05,
+          "roundtrip_with_true_inverse_m": 5.933031843596837e-13
+        }
+      },
+      "composition_matches_direct": {
+        "max_abs_error_m": 0.0,
+        "within_tol": true
+      },
+      "R_rect_00_rotation_deg": 0.45114858450516565,
+      "rect_matters": true,
+      "cam0_to_velo_orthonormality": {
+        "det": 1.0000000000351994,
+        "max_abs_RtR_minus_I": 5.986144913094904e-11
+      },
+      "grid_index_centre_roundtrip": {
+        "n": 4096,
+        "n_kept": 4096,
+        "exact": true
+      }
+    },
+    "2013_05_28_drive_0010_sync_000555": {
+      "velo_to_world": {
+        "max_abs_error_m": 8.526512829121202e-13,
+        "within_tol": true
+      },
+      "rect_cam_to_velo": {
+        "max_abs_error_m": 1.4210854715202004e-14,
+        "within_tol": true
+      },
+      "rect_cam_to_world": {
+        "max_abs_error_m": 8.597567102697212e-13,
+        "within_tol": true
+      },
+      "velo_src_to_velo_anchor": {
+        "max_abs_error_m": 2.842170943040401e-14,
+        "within_tol": true
+      },
+      "cam0_unrect_to_velo": {
+        "max_abs_error_m": 1.4210854715202004e-14,
+        "within_tol": true
+      },
+      "rigid_inverse_residual": {
+        "R_rect_00": {
+          "det": 0.9999995479528963,
+          "max_abs_RtR_minus_I": 9.9289899990751e-07,
+          "roundtrip_with_R_transpose_m": 5.862702100500883e-05,
+          "roundtrip_with_true_inverse_m": 1.4210854715202004e-14
+        },
+        "cam0_to_velo": {
+          "det": 1.0000000000351994,
+          "max_abs_RtR_minus_I": 5.986144913094904e-11,
+          "roundtrip_with_R_transpose_m": 2.6352253712502716e-09,
+          "roundtrip_with_true_inverse_m": 1.4210854715202004e-14
+        },
+        "velo_to_world": {
+          "det": 1.0000009794447715,
+          "max_abs_RtR_minus_I": 2.0367229611739646e-06,
+          "roundtrip_with_R_transpose_m": 0.00010917236629381932,
+          "roundtrip_with_true_inverse_m": 8.526512829121202e-13
+        }
+      },
+      "composition_matches_direct": {
+        "max_abs_error_m": 0.0,
+        "within_tol": true
+      },
+      "R_rect_00_rotation_deg": 0.45114858450516565,
+      "rect_matters": true,
+      "cam0_to_velo_orthonormality": {
+        "det": 1.0000000000351994,
+        "max_abs_RtR_minus_I": 5.986144913094904e-11
+      },
+      "grid_index_centre_roundtrip": {
+        "n": 4096,
+        "n_kept": 4096,
+        "exact": true
+      }
+    },
+    "2013_05_28_drive_0010_sync_001390": {
+      "velo_to_world": {
+        "max_abs_error_m": 5.861977570020827e-13,
+        "within_tol": true
+      },
+      "rect_cam_to_velo": {
+        "max_abs_error_m": 1.4210854715202004e-14,
+        "within_tol": true
+      },
+      "rect_cam_to_world": {
+        "max_abs_error_m": 5.258016244624741e-13,
+        "within_tol": true
+      },
+      "velo_src_to_velo_anchor": {
+        "max_abs_error_m": 2.1316282072803006e-14,
+        "within_tol": true
+      },
+      "cam0_unrect_to_velo": {
+        "max_abs_error_m": 1.4210854715202004e-14,
+        "within_tol": true
+      },
+      "rigid_inverse_residual": {
+        "R_rect_00": {
+          "det": 0.9999995479528963,
+          "max_abs_RtR_minus_I": 9.9289899990751e-07,
+          "roundtrip_with_R_transpose_m": 5.7847191271775955e-05,
+          "roundtrip_with_true_inverse_m": 1.4210854715202004e-14
+        },
+        "cam0_to_velo": {
+          "det": 1.0000000000351994,
+          "max_abs_RtR_minus_I": 5.986144913094904e-11,
+          "roundtrip_with_R_transpose_m": 2.672329912911664e-09,
+          "roundtrip_with_true_inverse_m": 1.4210854715202004e-14
+        },
+        "velo_to_world": {
+          "det": 1.0000003024720636,
+          "max_abs_RtR_minus_I": 1.0526682130418408e-06,
+          "roundtrip_with_R_transpose_m": 8.13181373970906e-05,
+          "roundtrip_with_true_inverse_m": 5.861977570020827e-13
+        }
+      },
+      "composition_matches_direct": {
+        "max_abs_error_m": 0.0,
+        "within_tol": true
+      },
+      "R_rect_00_rotation_deg": 0.45114858450516565,
+      "rect_matters": true,
+      "cam0_to_velo_orthonormality": {
+        "det": 1.0000000000351994,
+        "max_abs_RtR_minus_I": 5.986144913094904e-11
+      },
+      "grid_index_centre_roundtrip": {
+        "n": 4096,
+        "n_kept": 4096,
+        "exact": true
+      }
+    },
+    "2013_05_28_drive_0010_sync_002225": {
+      "velo_to_world": {
+        "max_abs_error_m": 4.405364961712621e-13,
+        "within_tol": true
+      },
+      "rect_cam_to_velo": {
+        "max_abs_error_m": 1.4210854715202004e-14,
+        "within_tol": true
+      },
+      "rect_cam_to_world": {
+        "max_abs_error_m": 4.547473508864641e-13,
+        "within_tol": true
+      },
+      "velo_src_to_velo_anchor": {
+        "max_abs_error_m": 2.1316282072803006e-14,
+        "within_tol": true
+      },
+      "cam0_unrect_to_velo": {
+        "max_abs_error_m": 2.1316282072803006e-14,
+        "within_tol": true
+      },
+      "rigid_inverse_residual": {
+        "R_rect_00": {
+          "det": 0.9999995479528963,
+          "max_abs_RtR_minus_I": 9.9289899990751e-07,
+          "roundtrip_with_R_transpose_m": 5.831989751925448e-05,
+          "roundtrip_with_true_inverse_m": 1.4210854715202004e-14
+        },
+        "cam0_to_velo": {
+          "det": 1.0000000000351994,
+          "max_abs_RtR_minus_I": 5.986144913094904e-11,
+          "roundtrip_with_R_transpose_m": 2.6570248223833914e-09,
+          "roundtrip_with_true_inverse_m": 2.1316282072803006e-14
+        },
+        "velo_to_world": {
+          "det": 1.0000002676823903,
+          "max_abs_RtR_minus_I": 1.0953066398798919e-06,
+          "roundtrip_with_R_transpose_m": 6.4654968369382e-05,
+          "roundtrip_with_true_inverse_m": 4.405364961712621e-13
+        }
+      },
+      "composition_matches_direct": {
+        "max_abs_error_m": 0.0,
+        "within_tol": true
+      },
+      "R_rect_00_rotation_deg": 0.45114858450516565,
+      "rect_matters": true,
+      "cam0_to_velo_orthonormality": {
+        "det": 1.0000000000351994,
+        "max_abs_RtR_minus_I": 5.986144913094904e-11
+      },
+      "grid_index_centre_roundtrip": {
+        "n": 4096,
+        "n_kept": 4096,
+        "exact": true
+      }
+    },
+    "2013_05_28_drive_0006_sync_001810": {
+      "velo_to_world": {
+        "max_abs_error_m": 1.2221335055073723e-12,
+        "within_tol": true
+      },
+      "rect_cam_to_velo": {
+        "max_abs_error_m": 1.4210854715202004e-14,
+        "within_tol": true
+      },
+      "rect_cam_to_world": {
+        "max_abs_error_m": 8.952838470577262e-13,
+        "within_tol": true
+      },
+      "velo_src_to_velo_anchor": {
+        "max_abs_error_m": 2.842170943040401e-14,
+        "within_tol": true
+      },
+      "cam0_unrect_to_velo": {
+        "max_abs_error_m": 2.1316282072803006e-14,
+        "within_tol": true
+      },
+      "rigid_inverse_residual": {
+        "R_rect_00": {
+          "det": 0.9999995479528963,
+          "max_abs_RtR_minus_I": 9.9289899990751e-07,
+          "roundtrip_with_R_transpose_m": 5.7383815288858386e-05,
+          "roundtrip_with_true_inverse_m": 1.4210854715202004e-14
+        },
+        "cam0_to_velo": {
+          "det": 1.0000000000351994,
+          "max_abs_RtR_minus_I": 5.986144913094904e-11,
+          "roundtrip_with_R_transpose_m": 2.6953870246870792e-09,
+          "roundtrip_with_true_inverse_m": 2.1316282072803006e-14
+        },
+        "velo_to_world": {
+          "det": 1.0000011527149726,
+          "max_abs_RtR_minus_I": 1.7931570241991324e-06,
+          "roundtrip_with_R_transpose_m": 7.593957096219128e-05,
+          "roundtrip_with_true_inverse_m": 1.2221335055073723e-12
+        }
+      },
+      "composition_matches_direct": {
+        "max_abs_error_m": 0.0,
+        "within_tol": true
+      },
+      "R_rect_00_rotation_deg": 0.45114858450516565,
+      "rect_matters": true,
+      "cam0_to_velo_orthonormality": {
+        "det": 1.0000000000351994,
+        "max_abs_RtR_minus_I": 5.986144913094904e-11
+      },
+      "grid_index_centre_roundtrip": {
+        "n": 4096,
+        "n_kept": 4096,
+        "exact": true
+      }
+    },
+    "2013_05_28_drive_0006_sync_004525": {
+      "velo_to_world": {
+        "max_abs_error_m": 1.3500311979441904e-12,
+        "within_tol": true
+      },
+      "rect_cam_to_velo": {
+        "max_abs_error_m": 1.4210854715202004e-14,
+        "within_tol": true
+      },
+      "rect_cam_to_world": {
+        "max_abs_error_m": 1.1155520951433573e-12,
+        "within_tol": true
+      },
+      "velo_src_to_velo_anchor": {
+        "max_abs_error_m": 2.1316282072803006e-14,
+        "within_tol": true
+      },
+      "cam0_unrect_to_velo": {
+        "max_abs_error_m": 2.1316282072803006e-14,
+        "within_tol": true
+      },
+      "rigid_inverse_residual": {
+        "R_rect_00": {
+          "det": 0.9999995479528963,
+          "max_abs_RtR_minus_I": 9.9289899990751e-07,
+          "roundtrip_with_R_transpose_m": 5.752419662741204e-05,
+          "roundtrip_with_true_inverse_m": 1.4210854715202004e-14
+        },
+        "cam0_to_velo": {
+          "det": 1.0000000000351994,
+          "max_abs_RtR_minus_I": 5.986144913094904e-11,
+          "roundtrip_with_R_transpose_m": 2.6408386588627764e-09,
+          "roundtrip_with_true_inverse_m": 2.1316282072803006e-14
+        },
+        "velo_to_world": {
+          "det": 1.000000702885656,
+          "max_abs_RtR_minus_I": 6.310820662982926e-07,
+          "roundtrip_with_R_transpose_m": 5.64397676612316e-05,
+          "roundtrip_with_true_inverse_m": 1.3500311979441904e-12
+        }
+      },
+      "composition_matches_direct": {
+        "max_abs_error_m": 0.0,
+        "within_tol": true
+      },
+      "R_rect_00_rotation_deg": 0.45114858450516565,
+      "rect_matters": true,
+      "cam0_to_velo_orthonormality": {
+        "det": 1.0000000000351994,
+        "max_abs_RtR_minus_I": 5.986144913094904e-11
+      },
+      "grid_index_centre_roundtrip": {
+        "n": 4096,
+        "n_kept": 4096,
+        "exact": true
+      }
+    },
+    "2013_05_28_drive_0006_sync_007240": {
+      "velo_to_world": {
+        "max_abs_error_m": 8.242295734817162e-13,
+        "within_tol": true
+      },
+      "rect_cam_to_velo": {
+        "max_abs_error_m": 1.4210854715202004e-14,
+        "within_tol": true
+      },
+      "rect_cam_to_world": {
+        "max_abs_error_m": 1.3571366253017914e-12,
+        "within_tol": true
+      },
+      "velo_src_to_velo_anchor": {
+        "max_abs_error_m": 2.1316282072803006e-14,
+        "within_tol": true
+      },
+      "cam0_unrect_to_velo": {
+        "max_abs_error_m": 2.1316282072803006e-14,
+        "within_tol": true
+      },
+      "rigid_inverse_residual": {
+        "R_rect_00": {
+          "det": 0.9999995479528963,
+          "max_abs_RtR_minus_I": 9.9289899990751e-07,
+          "roundtrip_with_R_transpose_m": 5.813919023012204e-05,
+          "roundtrip_with_true_inverse_m": 1.4210854715202004e-14
+        },
+        "cam0_to_velo": {
+          "det": 1.0000000000351994,
+          "max_abs_RtR_minus_I": 5.986144913094904e-11,
+          "roundtrip_with_R_transpose_m": 2.6448603307471785e-09,
+          "roundtrip_with_true_inverse_m": 2.1316282072803006e-14
+        },
+        "velo_to_world": {
+          "det": 1.0000007117814584,
+          "max_abs_RtR_minus_I": 7.843523594610292e-07,
+          "roundtrip_with_R_transpose_m": 6.625375516478016e-05,
+          "roundtrip_with_true_inverse_m": 8.242295734817162e-13
+        }
+      },
+      "composition_matches_direct": {
+        "max_abs_error_m": 0.0,
+        "within_tol": true
+      },
+      "R_rect_00_rotation_deg": 0.45114858450516565,
+      "rect_matters": true,
+      "cam0_to_velo_orthonormality": {
+        "det": 1.0000000000351994,
+        "max_abs_RtR_minus_I": 5.986144913094904e-11
+      },
+      "grid_index_centre_roundtrip": {
+        "n": 4096,
+        "n_kept": 4096,
+        "exact": true
+      }
+    }
+  },
+  "figures": {
+    "2013_05_28_drive_0003_sync_000195": {
+      "n_target_occupied": 87018,
+      "n_valid": 575755,
+      "n_current_lidar_voxels": 15572,
+      "n_future_lidar_voxels": 80991,
+      "camera_origin_in_grid_frame_m": [
+        0.8044,
+        0.2993,
+        -0.177
+      ],
+      "camera_forward_in_grid_frame": [
+        0.9949,
+        0.0438,
+        -0.0911
+      ],
+      "png": "artifacts/gate8c0/fig_chain_train_0003_000195.png"
+    },
+    "2013_05_28_drive_0003_sync_000785": {
+      "n_target_occupied": 79986,
+      "n_valid": 409382,
+      "n_current_lidar_voxels": 14243,
+      "n_future_lidar_voxels": 73701,
+      "camera_origin_in_grid_frame_m": [
+        0.8044,
+        0.2993,
+        -0.177
+      ],
+      "camera_forward_in_grid_frame": [
+        0.9949,
+        0.0438,
+        -0.0911
+      ],
+      "png": "artifacts/gate8c0/fig_chain_train_0003_000785.png"
+    },
+    "2013_05_28_drive_0007_sync_000530": {
+      "n_target_occupied": 73951,
+      "n_valid": 275233,
+      "n_current_lidar_voxels": 14640,
+      "n_future_lidar_voxels": 102305,
+      "camera_origin_in_grid_frame_m": [
+        0.8044,
+        0.2993,
+        -0.177
+      ],
+      "camera_forward_in_grid_frame": [
+        0.9949,
+        0.0438,
+        -0.0911
+      ],
+      "png": "artifacts/gate8c0/fig_chain_train_0007_000530.png"
+    },
+    "2013_05_28_drive_0010_sync_000555": {
+      "n_target_occupied": 61660,
+      "n_valid": 286705,
+      "n_current_lidar_voxels": 11307,
+      "n_future_lidar_voxels": 59559,
+      "camera_origin_in_grid_frame_m": [
+        0.8044,
+        0.2993,
+        -0.177
+      ],
+      "camera_forward_in_grid_frame": [
+        0.9949,
+        0.0438,
+        -0.0911
+      ],
+      "png": "artifacts/gate8c0/fig_chain_source_validation_0010_000555.png"
+    },
+    "2013_05_28_drive_0010_sync_001390": {
+      "n_target_occupied": 69300,
+      "n_valid": 318567,
+      "n_current_lidar_voxels": 11467,
+      "n_future_lidar_voxels": 48111,
+      "camera_origin_in_grid_frame_m": [
+        0.8044,
+        0.2993,
+        -0.177
+      ],
+      "camera_forward_in_grid_frame": [
+        0.9949,
+        0.0438,
+        -0.0911
+      ],
+      "png": "artifacts/gate8c0/fig_chain_source_validation_0010_001390.png"
+    },
+    "2013_05_28_drive_0010_sync_002225": {
+      "n_target_occupied": 61640,
+      "n_valid": 502312,
+      "n_current_lidar_voxels": 13068,
+      "n_future_lidar_voxels": 74445,
+      "camera_origin_in_grid_frame_m": [
+        0.8044,
+        0.2993,
+        -0.177
+      ],
+      "camera_forward_in_grid_frame": [
+        0.9949,
+        0.0438,
+        -0.0911
+      ],
+      "png": "artifacts/gate8c0/fig_chain_source_validation_0010_002225.png"
+    },
+    "2013_05_28_drive_0006_sync_001810": {
+      "n_target_occupied": 101986,
+      "n_valid": 388680,
+      "n_current_lidar_voxels": 14921,
+      "n_future_lidar_voxels": 84461,
+      "camera_origin_in_grid_frame_m": [
+        0.8044,
+        0.2993,
+        -0.177
+      ],
+      "camera_forward_in_grid_frame": [
+        0.9949,
+        0.0438,
+        -0.0911
+      ],
+      "png": "artifacts/gate8c0/fig_chain_heldout_0006_001810.png"
+    },
+    "2013_05_28_drive_0006_sync_004525": {
+      "n_target_occupied": 77318,
+      "n_valid": 376831,
+      "n_current_lidar_voxels": 11471,
+      "n_future_lidar_voxels": 56057,
+      "camera_origin_in_grid_frame_m": [
+        0.8044,
+        0.2993,
+        -0.177
+      ],
+      "camera_forward_in_grid_frame": [
+        0.9949,
+        0.0438,
+        -0.0911
+      ],
+      "png": "artifacts/gate8c0/fig_chain_heldout_0006_004525.png"
+    },
+    "2013_05_28_drive_0006_sync_007240": {
+      "n_target_occupied": 76647,
+      "n_valid": 255157,
+      "n_current_lidar_voxels": 8070,
+      "n_future_lidar_voxels": 52863,
+      "camera_origin_in_grid_frame_m": [
+        0.8044,
+        0.2993,
+        -0.177
+      ],
+      "camera_forward_in_grid_frame": [
+        0.9949,
+        0.0438,
+        -0.0911
+      ],
+      "png": "artifacts/gate8c0/fig_chain_heldout_0006_007240.png"
+    }
+  },
+  "chain": "The complete KITTI-360 transform chain, written down once and then tested.\n\nEvery convention below was read out of the code that actually runs, not assumed. The\nchain has two halves that must agree, and Gate 8C-0 exists partly to check that they do:\n\n**The prediction half** (what the mapper builds, ``gate8.mapper.IncrementalMapper``)::\n\n    pixel (u,v) --K^-1--> ray in rectified cam0 of frame f\n      --depth d_m = s * d_canonical--> point in rectified cam0 of frame f\n      --T_c2w[f], translation scaled by the SAME s--> LingBot canonical world\n      --floor(p / 0.2)--> integer world lattice key           (the map's own frame)\n\n**The evaluation half** (what ``query`` reads back)::\n\n    grid index (i,j,k) --(ijk + 0.5) * 0.2 + origin--> point in velodyne of the ANCHOR\n      --inv(rect_cam_to_velo)--> rectified cam0 of the anchor\n      --T_c2w[anchor], translation scaled by s--> LingBot canonical world\n      --floor(p / 0.2)--> the same integer world lattice key\n\n**The oracle half** (ground truth only, used by Stages 2-4)::\n\n    velodyne point at frame f --velo_to_world[f] = cam0_to_world[f] @ inv(cam0_to_velo)-->\n      KITTI-360 world  --inv(velo_to_world[anchor])--> velodyne of the anchor\n      --floor((p - origin) / 0.2)--> grid index\n\nConventions, all verified by the round-trip tests in ``tests/gate8c0``:\n\n* **Matrix convention**: 4x4 homogeneous, **column-vector** semantics\n  (``p_dst = R @ p_src + t``). Code that stores points row-wise applies it as\n  ``p @ R.T + t``; ``gate8.mapper._integrate`` does exactly that.\n* **Pose direction**: ``pred_pose_c2w`` and ``cam0_to_world.txt`` are both\n  **source-to-world** (camera-to-world). The inverse is taken explicitly wherever a\n  world-to-local transform is needed; nothing relies on a transpose as an inverse.\n* **Axis order / handedness**: right-handed throughout. Rectified cam0 is\n  x-right, y-down, z-forward. Velodyne is x-forward, y-left, z-up. The grid inherits the\n  velodyne axes, so grid ``i`` runs forward, ``j`` left, ``k`` up.\n* **Grid**: ``dims = (256, 256, 32)``, ``voxel_size = 0.2 m``,\n  ``origin = (0.0, -25.6, -2.0)`` in the velodyne frame of the anchor, i.e. the box spans\n  x in [0, 51.2), y in [-25.6, 25.6), z in [-2, 4.4) metres.\n* **Binning**: ``floor``, never ``round`` -- ``floor((p - origin) / voxel_size)`` at\n  evaluation and ``floor(p / voxel_size)`` on the map's own world lattice (whose origin is\n  the world origin, so no offset term).\n* **Rectification**: ``rect_cam_to_velo = cam0_to_velo @ inv(R_rect_00)``. The shipped\n  ``calib_cam_to_velo.txt`` is *unrectified* cam0 to velodyne, and the images are\n  rectified, so omitting ``R_rect_00`` would introduce a ~0.4 deg rotation.\n* **Intrinsics**: ``P_rect_00[:3, :3]`` on the native 1408x376 lattice; the mapper uses\n  LingBot's ``pred_K`` on the processed 518x140 lattice instead, which is the same camera\n  scaled to the network's input.\n* **Target index**: the file is ``<anchor:06d>_1_1.npy`` where ``anchor`` is the\n  **SSCBench index**, and the coordinate frame is the velodyne frame of the native frame\n  ``pose_frames[anchor + 1]``. The target is anchored at ``t`` -- the last frame of the\n  clip and the frame the causal map is queried at -- not at ``t+1``.\n",
+  "failures": {},
+  "all_round_trips_pass": true,
+  "seconds": 4.508040428161621
+}

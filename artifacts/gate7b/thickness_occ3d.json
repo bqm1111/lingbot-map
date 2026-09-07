@@ -1,0 +1,30 @@
+{
+  "dataset": "occ3d",
+  "n_anchors": 150,
+  "anchor_stride": 10,
+  "seconds": 31.80598258972168,
+  "definition": {
+    "thickness": "occupied voxels per non-empty vertical column",
+    "duplicate_rate": "fraction of non-empty columns with two or more occupied runs separated by >= 2 empty voxels"
+  },
+  "policies": {
+    "G-A": {
+      "thickness_mean": 2.65967059370451,
+      "thickness_median": 2.5133795338016856,
+      "duplicate_rate_mean": 0.11650236820772543,
+      "occupied_mean": 36938.54666666667
+    },
+    "G-B": {
+      "thickness_mean": 2.65967059370451,
+      "thickness_median": 2.5133795338016856,
+      "duplicate_rate_mean": 0.11650236820772543,
+      "occupied_mean": 36938.54666666667
+    },
+    "G-C": {
+      "thickness_mean": 2.6471431741415623,
+      "thickness_median": 2.513791743049434,
+      "duplicate_rate_mean": 0.11584663392539317,
+      "occupied_mean": 37134.03333333333
+    }
+  }
+}

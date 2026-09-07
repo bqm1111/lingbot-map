@@ -1,0 +1,422 @@
+{
+  "deterministic_examples": [
+    {
+      "dataset": "semantickitti",
+      "clip_id": "08_000000_000020_s5",
+      "method": "mapper",
+      "all_equal": true,
+      "counts": [
+        16244,
+        45778,
+        91473,
+        1393587
+      ]
+    },
+    {
+      "dataset": "semantickitti",
+      "clip_id": "08_000000_000020_s5",
+      "method": "dilation",
+      "all_equal": true,
+      "counts": [
+        53236,
+        201030,
+        54481,
+        1238335
+      ]
+    },
+    {
+      "dataset": "semantickitti",
+      "clip_id": "08_000000_000020_s5",
+      "method": "seed0",
+      "all_equal": true,
+      "counts": [
+        59489,
+        262480,
+        48228,
+        1176885
+      ]
+    },
+    {
+      "dataset": "semantickitti",
+      "clip_id": "08_000000_000020_s5",
+      "method": "seed1",
+      "all_equal": true,
+      "counts": [
+        63269,
+        315756,
+        44448,
+        1123609
+      ]
+    },
+    {
+      "dataset": "semantickitti",
+      "clip_id": "08_000000_000020_s5",
+      "method": "seed2",
+      "all_equal": true,
+      "counts": [
+        63323,
+        243245,
+        44394,
+        1196120
+      ]
+    },
+    {
+      "dataset": "semantickitti",
+      "clip_id": "08_002025_002045_s5",
+      "method": "mapper",
+      "all_equal": true,
+      "counts": [
+        7208,
+        21914,
+        91071,
+        1059899
+      ]
+    },
+    {
+      "dataset": "semantickitti",
+      "clip_id": "08_002025_002045_s5",
+      "method": "dilation",
+      "all_equal": true,
+      "counts": [
+        24660,
+        79122,
+        73619,
+        1002691
+      ]
+    },
+    {
+      "dataset": "semantickitti",
+      "clip_id": "08_002025_002045_s5",
+      "method": "seed0",
+      "all_equal": true,
+      "counts": [
+        27281,
+        180328,
+        70998,
+        901485
+      ]
+    },
+    {
+      "dataset": "semantickitti",
+      "clip_id": "08_002025_002045_s5",
+      "method": "seed1",
+      "all_equal": true,
+      "counts": [
+        29406,
+        180864,
+        68873,
+        900949
+      ]
+    },
+    {
+      "dataset": "semantickitti",
+      "clip_id": "08_002025_002045_s5",
+      "method": "seed2",
+      "all_equal": true,
+      "counts": [
+        26692,
+        183070,
+        71587,
+        898743
+      ]
+    },
+    {
+      "dataset": "semantickitti",
+      "clip_id": "08_004050_004070_s5",
+      "method": "mapper",
+      "all_equal": true,
+      "counts": [
+        3566,
+        56236,
+        9528,
+        1518436
+      ]
+    },
+    {
+      "dataset": "semantickitti",
+      "clip_id": "08_004050_004070_s5",
+      "method": "dilation",
+      "all_equal": true,
+      "counts": [
+        8906,
+        199888,
+        4188,
+        1374784
+      ]
+    },
+    {
+      "dataset": "semantickitti",
+      "clip_id": "08_004050_004070_s5",
+      "method": "seed0",
+      "all_equal": true,
+      "counts": [
+        8980,
+        403847,
+        4114,
+        1170825
+      ]
+    },
+    {
+      "dataset": "semantickitti",
+      "clip_id": "08_004050_004070_s5",
+      "method": "seed1",
+      "all_equal": true,
+      "counts": [
+        9312,
+        352820,
+        3782,
+        1221852
+      ]
+    },
+    {
+      "dataset": "semantickitti",
+      "clip_id": "08_004050_004070_s5",
+      "method": "seed2",
+      "all_equal": true,
+      "counts": [
+        9128,
+        312730,
+        3966,
+        1261942
+      ]
+    },
+    {
+      "dataset": "occ3d",
+      "clip_id": "scene-0003_CAM_FRONT_fd842039_f56a5440",
+      "method": "mapper",
+      "all_equal": true,
+      "counts": [
+        237,
+        231,
+        11759,
+        66171
+      ]
+    },
+    {
+      "dataset": "occ3d",
+      "clip_id": "scene-0003_CAM_FRONT_fd842039_f56a5440",
+      "method": "dilation",
+      "all_equal": true,
+      "counts": [
+        1266,
+        1236,
+        10730,
+        65166
+      ]
+    },
+    {
+      "dataset": "occ3d",
+      "clip_id": "scene-0003_CAM_FRONT_fd842039_f56a5440",
+      "method": "seed0",
+      "all_equal": true,
+      "counts": [
+        4701,
+        1816,
+        7295,
+        64586
+      ]
+    },
+    {
+      "dataset": "occ3d",
+      "clip_id": "scene-0003_CAM_FRONT_fd842039_f56a5440",
+      "method": "seed1",
+      "all_equal": true,
+      "counts": [
+        4719,
+        3548,
+        7277,
+        62854
+      ]
+    },
+    {
+      "dataset": "occ3d",
+      "clip_id": "scene-0003_CAM_FRONT_fd842039_f56a5440",
+      "method": "seed2",
+      "all_equal": true,
+      "counts": [
+        4551,
+        1663,
+        7445,
+        64739
+      ]
+    },
+    {
+      "dataset": "occ3d",
+      "clip_id": "scene-0633_CAM_FRONT_9fde5c65_22a2197b",
+      "method": "mapper",
+      "all_equal": true,
+      "counts": [
+        40,
+        111,
+        8165,
+        26266
+      ]
+    },
+    {
+      "dataset": "occ3d",
+      "clip_id": "scene-0633_CAM_FRONT_9fde5c65_22a2197b",
+      "method": "dilation",
+      "all_equal": true,
+      "counts": [
+        194,
+        342,
+        8011,
+        26035
+      ]
+    },
+    {
+      "dataset": "occ3d",
+      "clip_id": "scene-0633_CAM_FRONT_9fde5c65_22a2197b",
+      "method": "seed0",
+      "all_equal": true,
+      "counts": [
+        2220,
+        222,
+        5985,
+        26155
+      ]
+    },
+    {
+      "dataset": "occ3d",
+      "clip_id": "scene-0633_CAM_FRONT_9fde5c65_22a2197b",
+      "method": "seed1",
+      "all_equal": true,
+      "counts": [
+        2584,
+        205,
+        5621,
+        26172
+      ]
+    },
+    {
+      "dataset": "occ3d",
+      "clip_id": "scene-0633_CAM_FRONT_9fde5c65_22a2197b",
+      "method": "seed2",
+      "all_equal": true,
+      "counts": [
+        2269,
+        199,
+        5936,
+        26178
+      ]
+    },
+    {
+      "dataset": "occ3d",
+      "clip_id": "scene-1073_CAM_FRONT_f9b33fd3_f0ee73d4",
+      "method": "mapper",
+      "all_equal": true,
+      "counts": [
+        8,
+        0,
+        6757,
+        10828
+      ]
+    },
+    {
+      "dataset": "occ3d",
+      "clip_id": "scene-1073_CAM_FRONT_f9b33fd3_f0ee73d4",
+      "method": "dilation",
+      "all_equal": true,
+      "counts": [
+        224,
+        0,
+        6541,
+        10828
+      ]
+    },
+    {
+      "dataset": "occ3d",
+      "clip_id": "scene-1073_CAM_FRONT_f9b33fd3_f0ee73d4",
+      "method": "seed0",
+      "all_equal": true,
+      "counts": [
+        519,
+        227,
+        6246,
+        10601
+      ]
+    },
+    {
+      "dataset": "occ3d",
+      "clip_id": "scene-1073_CAM_FRONT_f9b33fd3_f0ee73d4",
+      "method": "seed1",
+      "all_equal": true,
+      "counts": [
+        852,
+        631,
+        5913,
+        10197
+      ]
+    },
+    {
+      "dataset": "occ3d",
+      "clip_id": "scene-1073_CAM_FRONT_f9b33fd3_f0ee73d4",
+      "method": "seed2",
+      "all_equal": true,
+      "counts": [
+        863,
+        629,
+        5902,
+        10199
+      ]
+    }
+  ],
+  "historical_baselines": [
+    {
+      "dataset": "semantickitti",
+      "mode": "past5",
+      "method": "mapper",
+      "n_samples": 163,
+      "exact": true
+    },
+    {
+      "dataset": "semantickitti",
+      "mode": "past5",
+      "method": "dilation",
+      "n_samples": 163,
+      "exact": true
+    },
+    {
+      "dataset": "semantickitti",
+      "mode": "occany_fwd",
+      "method": "mapper",
+      "n_samples": 161,
+      "exact": true
+    },
+    {
+      "dataset": "semantickitti",
+      "mode": "occany_fwd",
+      "method": "dilation",
+      "n_samples": 161,
+      "exact": true
+    },
+    {
+      "dataset": "occ3d",
+      "mode": "past5",
+      "method": "mapper",
+      "n_samples": 1182,
+      "exact": true
+    },
+    {
+      "dataset": "occ3d",
+      "mode": "past5",
+      "method": "dilation",
+      "n_samples": 1182,
+      "exact": true
+    },
+    {
+      "dataset": "occ3d",
+      "mode": "occany_fwd",
+      "method": "mapper",
+      "n_samples": 882,
+      "exact": true
+    },
+    {
+      "dataset": "occ3d",
+      "mode": "occany_fwd",
+      "method": "dilation",
+      "n_samples": 882,
+      "exact": true
+    }
+  ]
+}

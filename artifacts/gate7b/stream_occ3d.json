@@ -1,0 +1,1374 @@
+{
+  "dataset": "occ3d",
+  "n_segments": 150,
+  "n_frames_streamed": 5910,
+  "seconds": 385.7513098716736,
+  "peak_gpu_gib": 13.23852825164795,
+  "checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+  "checkpoint_load": {
+    "missing_keys": 0,
+    "unexpected_keys": 0
+  },
+  "inference": {
+    "resolution": 518,
+    "patch_size": 14,
+    "num_scale_frames": 5,
+    "kv_cache_sliding_window": 64,
+    "max_frame_num": 1024,
+    "autocast": "bfloat16"
+  },
+  "boundary_rule": "150 streams, one per official nuScenes validation scene. A scene change is a genuine boundary; within a scene the frames are the unique CAM_FRONT samples in timestamp order.",
+  "segments": [
+    {
+      "segment": "scene-0003",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 3.6478726863861084,
+      "fps": 10.96529496472844,
+      "cached": false
+    },
+    {
+      "segment": "scene-0012",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.865051031112671,
+      "fps": 21.447134331834555,
+      "cached": false
+    },
+    {
+      "segment": "scene-0013",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8143930435180664,
+      "fps": 22.045939904201198,
+      "cached": false
+    },
+    {
+      "segment": "scene-0014",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.820260763168335,
+      "fps": 21.974873495804108,
+      "cached": false
+    },
+    {
+      "segment": "scene-0015",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8245604038238525,
+      "fps": 21.923088934830187,
+      "cached": false
+    },
+    {
+      "segment": "scene-0016",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8178606033325195,
+      "fps": 22.003887386453954,
+      "cached": false
+    },
+    {
+      "segment": "scene-0017",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8347828388214111,
+      "fps": 21.800945132937013,
+      "cached": false
+    },
+    {
+      "segment": "scene-0018",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8165676593780518,
+      "fps": 22.019548676593207,
+      "cached": false
+    },
+    {
+      "segment": "scene-0035",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8324902057647705,
+      "fps": 21.828220349645154,
+      "cached": false
+    },
+    {
+      "segment": "scene-0036",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.847890853881836,
+      "fps": 21.646300113436144,
+      "cached": false
+    },
+    {
+      "segment": "scene-0038",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8317313194274902,
+      "fps": 21.83726378195141,
+      "cached": false
+    },
+    {
+      "segment": "scene-0039",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.835014820098877,
+      "fps": 21.798189072851553,
+      "cached": false
+    },
+    {
+      "segment": "scene-0092",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8437669277191162,
+      "fps": 21.694716072103066,
+      "cached": false
+    },
+    {
+      "segment": "scene-0093",
+      "n_frames": 35,
+      "keyframe_interval": 1,
+      "rope_slots": 35,
+      "seconds": 1.5894157886505127,
+      "fps": 22.020669638444083,
+      "cached": false
+    },
+    {
+      "segment": "scene-0094",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8398916721343994,
+      "fps": 21.74041037622464,
+      "cached": false
+    },
+    {
+      "segment": "scene-0095",
+      "n_frames": 35,
+      "keyframe_interval": 1,
+      "rope_slots": 35,
+      "seconds": 1.5924277305603027,
+      "fps": 21.979019410623486,
+      "cached": false
+    },
+    {
+      "segment": "scene-0096",
+      "n_frames": 35,
+      "keyframe_interval": 1,
+      "rope_slots": 35,
+      "seconds": 1.588655948638916,
+      "fps": 22.031201928892354,
+      "cached": false
+    },
+    {
+      "segment": "scene-0097",
+      "n_frames": 35,
+      "keyframe_interval": 1,
+      "rope_slots": 35,
+      "seconds": 1.5574965476989746,
+      "fps": 22.47195992293437,
+      "cached": false
+    },
+    {
+      "segment": "scene-0098",
+      "n_frames": 35,
+      "keyframe_interval": 1,
+      "rope_slots": 35,
+      "seconds": 1.563903570175171,
+      "fps": 22.379896476660445,
+      "cached": false
+    },
+    {
+      "segment": "scene-0099",
+      "n_frames": 35,
+      "keyframe_interval": 1,
+      "rope_slots": 35,
+      "seconds": 1.5581512451171875,
+      "fps": 22.462517749596042,
+      "cached": false
+    },
+    {
+      "segment": "scene-0100",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8385446071624756,
+      "fps": 21.756339141389745,
+      "cached": false
+    },
+    {
+      "segment": "scene-0101",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8491506576538086,
+      "fps": 21.631552753387744,
+      "cached": false
+    },
+    {
+      "segment": "scene-0102",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8517799377441406,
+      "fps": 21.600838838727487,
+      "cached": false
+    },
+    {
+      "segment": "scene-0103",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8620941638946533,
+      "fps": 21.481190788084643,
+      "cached": false
+    },
+    {
+      "segment": "scene-0104",
+      "n_frames": 35,
+      "keyframe_interval": 1,
+      "rope_slots": 35,
+      "seconds": 1.5723857879638672,
+      "fps": 22.25916837198244,
+      "cached": false
+    },
+    {
+      "segment": "scene-0105",
+      "n_frames": 35,
+      "keyframe_interval": 1,
+      "rope_slots": 35,
+      "seconds": 1.568434476852417,
+      "fps": 22.315245243932083,
+      "cached": false
+    },
+    {
+      "segment": "scene-0106",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.9555063247680664,
+      "fps": 20.45506040730613,
+      "cached": false
+    },
+    {
+      "segment": "scene-0107",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8591053485870361,
+      "fps": 21.51572530862812,
+      "cached": false
+    },
+    {
+      "segment": "scene-0108",
+      "n_frames": 35,
+      "keyframe_interval": 1,
+      "rope_slots": 35,
+      "seconds": 1.5731487274169922,
+      "fps": 22.248373208468166,
+      "cached": false
+    },
+    {
+      "segment": "scene-0109",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8524425029754639,
+      "fps": 21.59311284196431,
+      "cached": false
+    },
+    {
+      "segment": "scene-0110",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8560256958007812,
+      "fps": 21.55142576447037,
+      "cached": false
+    },
+    {
+      "segment": "scene-0221",
+      "n_frames": 35,
+      "keyframe_interval": 1,
+      "rope_slots": 35,
+      "seconds": 1.5797674655914307,
+      "fps": 22.155159390433933,
+      "cached": false
+    },
+    {
+      "segment": "scene-0268",
+      "n_frames": 35,
+      "keyframe_interval": 1,
+      "rope_slots": 35,
+      "seconds": 1.5768187046051025,
+      "fps": 22.196591084176273,
+      "cached": false
+    },
+    {
+      "segment": "scene-0269",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.9016005992889404,
+      "fps": 21.034911334670948,
+      "cached": false
+    },
+    {
+      "segment": "scene-0270",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8711676597595215,
+      "fps": 21.377026153359616,
+      "cached": false
+    },
+    {
+      "segment": "scene-0271",
+      "n_frames": 35,
+      "keyframe_interval": 1,
+      "rope_slots": 35,
+      "seconds": 1.5744986534118652,
+      "fps": 22.229298147798747,
+      "cached": false
+    },
+    {
+      "segment": "scene-0272",
+      "n_frames": 35,
+      "keyframe_interval": 1,
+      "rope_slots": 35,
+      "seconds": 1.571608066558838,
+      "fps": 22.27018347941883,
+      "cached": false
+    },
+    {
+      "segment": "scene-0273",
+      "n_frames": 35,
+      "keyframe_interval": 1,
+      "rope_slots": 35,
+      "seconds": 1.5806341171264648,
+      "fps": 22.143011858828356,
+      "cached": false
+    },
+    {
+      "segment": "scene-0274",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8551511764526367,
+      "fps": 21.561585119163592,
+      "cached": false
+    },
+    {
+      "segment": "scene-0275",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8571407794952393,
+      "fps": 21.538485634283354,
+      "cached": false
+    },
+    {
+      "segment": "scene-0276",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8959951400756836,
+      "fps": 21.097100490670716,
+      "cached": false
+    },
+    {
+      "segment": "scene-0277",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.9093875885009766,
+      "fps": 20.949125384963473,
+      "cached": false
+    },
+    {
+      "segment": "scene-0278",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8631565570831299,
+      "fps": 21.46894196729346,
+      "cached": false
+    },
+    {
+      "segment": "scene-0329",
+      "n_frames": 35,
+      "keyframe_interval": 1,
+      "rope_slots": 35,
+      "seconds": 1.572718858718872,
+      "fps": 22.254454320278708,
+      "cached": false
+    },
+    {
+      "segment": "scene-0330",
+      "n_frames": 35,
+      "keyframe_interval": 1,
+      "rope_slots": 35,
+      "seconds": 1.5722630023956299,
+      "fps": 22.26090669733442,
+      "cached": false
+    },
+    {
+      "segment": "scene-0331",
+      "n_frames": 35,
+      "keyframe_interval": 1,
+      "rope_slots": 35,
+      "seconds": 1.5803101062774658,
+      "fps": 22.147551838698938,
+      "cached": false
+    },
+    {
+      "segment": "scene-0332",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8727052211761475,
+      "fps": 21.359474810925185,
+      "cached": false
+    },
+    {
+      "segment": "scene-0344",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8580987453460693,
+      "fps": 21.527381200911382,
+      "cached": false
+    },
+    {
+      "segment": "scene-0345",
+      "n_frames": 35,
+      "keyframe_interval": 1,
+      "rope_slots": 35,
+      "seconds": 1.5841500759124756,
+      "fps": 22.093866314932242,
+      "cached": false
+    },
+    {
+      "segment": "scene-0346",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8720791339874268,
+      "fps": 21.36661814866884,
+      "cached": false
+    },
+    {
+      "segment": "scene-0519",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.855893611907959,
+      "fps": 21.552959578797104,
+      "cached": false
+    },
+    {
+      "segment": "scene-0520",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8785734176635742,
+      "fps": 21.292753119944035,
+      "cached": false
+    },
+    {
+      "segment": "scene-0521",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8631010055541992,
+      "fps": 21.469582100355087,
+      "cached": false
+    },
+    {
+      "segment": "scene-0522",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8735923767089844,
+      "fps": 21.349360990815452,
+      "cached": false
+    },
+    {
+      "segment": "scene-0523",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8652689456939697,
+      "fps": 21.44462871820239,
+      "cached": false
+    },
+    {
+      "segment": "scene-0524",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8910667896270752,
+      "fps": 21.15208210487803,
+      "cached": false
+    },
+    {
+      "segment": "scene-0552",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.9159512519836426,
+      "fps": 20.8773578965471,
+      "cached": false
+    },
+    {
+      "segment": "scene-0553",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8532462120056152,
+      "fps": 21.583748419866623,
+      "cached": false
+    },
+    {
+      "segment": "scene-0554",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.852635145187378,
+      "fps": 21.59086752937225,
+      "cached": false
+    },
+    {
+      "segment": "scene-0555",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8518941402435303,
+      "fps": 21.599506759462972,
+      "cached": false
+    },
+    {
+      "segment": "scene-0556",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.860708475112915,
+      "fps": 21.497188052294245,
+      "cached": false
+    },
+    {
+      "segment": "scene-0557",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.9162721633911133,
+      "fps": 20.873861638325096,
+      "cached": false
+    },
+    {
+      "segment": "scene-0558",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.913447618484497,
+      "fps": 20.90467468959568,
+      "cached": false
+    },
+    {
+      "segment": "scene-0559",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8484504222869873,
+      "fps": 21.639747281136255,
+      "cached": false
+    },
+    {
+      "segment": "scene-0560",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.849329948425293,
+      "fps": 21.629455595017024,
+      "cached": false
+    },
+    {
+      "segment": "scene-0561",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.855743646621704,
+      "fps": 21.554701304147347,
+      "cached": false
+    },
+    {
+      "segment": "scene-0562",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.884312629699707,
+      "fps": 21.227899961788502,
+      "cached": false
+    },
+    {
+      "segment": "scene-0563",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.858766794204712,
+      "fps": 21.51964416661226,
+      "cached": false
+    },
+    {
+      "segment": "scene-0564",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8513691425323486,
+      "fps": 21.605631789502016,
+      "cached": false
+    },
+    {
+      "segment": "scene-0565",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.847503900527954,
+      "fps": 21.650833856734675,
+      "cached": false
+    },
+    {
+      "segment": "scene-0625",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.845374345779419,
+      "fps": 21.675818833985932,
+      "cached": false
+    },
+    {
+      "segment": "scene-0626",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8499226570129395,
+      "fps": 21.622525594982328,
+      "cached": false
+    },
+    {
+      "segment": "scene-0627",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.856431245803833,
+      "fps": 21.54671770926805,
+      "cached": false
+    },
+    {
+      "segment": "scene-0629",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.867253065109253,
+      "fps": 21.421841927815823,
+      "cached": false
+    },
+    {
+      "segment": "scene-0630",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8695621490478516,
+      "fps": 21.39538395146242,
+      "cached": false
+    },
+    {
+      "segment": "scene-0632",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8460309505462646,
+      "fps": 21.66810907919148,
+      "cached": false
+    },
+    {
+      "segment": "scene-0633",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8519926071166992,
+      "fps": 21.59835835536869,
+      "cached": false
+    },
+    {
+      "segment": "scene-0634",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.849334955215454,
+      "fps": 21.6293970365903,
+      "cached": false
+    },
+    {
+      "segment": "scene-0635",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8528144359588623,
+      "fps": 21.588778251989027,
+      "cached": false
+    },
+    {
+      "segment": "scene-0636",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.935135841369629,
+      "fps": 20.670383517722065,
+      "cached": false
+    },
+    {
+      "segment": "scene-0637",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.9282944202423096,
+      "fps": 20.74372024318444,
+      "cached": false
+    },
+    {
+      "segment": "scene-0638",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8637135028839111,
+      "fps": 21.462526261737107,
+      "cached": false
+    },
+    {
+      "segment": "scene-0770",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8504784107208252,
+      "fps": 21.61603170739972,
+      "cached": false
+    },
+    {
+      "segment": "scene-0771",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8542168140411377,
+      "fps": 21.572450264229218,
+      "cached": false
+    },
+    {
+      "segment": "scene-0775",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8519117832183838,
+      "fps": 21.59930098316301,
+      "cached": false
+    },
+    {
+      "segment": "scene-0777",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8527116775512695,
+      "fps": 21.589975647407822,
+      "cached": false
+    },
+    {
+      "segment": "scene-0778",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.899726152420044,
+      "fps": 21.05566633856378,
+      "cached": false
+    },
+    {
+      "segment": "scene-0780",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.855215072631836,
+      "fps": 21.560842508278785,
+      "cached": false
+    },
+    {
+      "segment": "scene-0781",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.850839376449585,
+      "fps": 21.611815973318503,
+      "cached": false
+    },
+    {
+      "segment": "scene-0782",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8542654514312744,
+      "fps": 21.57188441877333,
+      "cached": false
+    },
+    {
+      "segment": "scene-0783",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8508872985839844,
+      "fps": 21.61125641231742,
+      "cached": false
+    },
+    {
+      "segment": "scene-0784",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8755912780761719,
+      "fps": 21.326608023592822,
+      "cached": false
+    },
+    {
+      "segment": "scene-0794",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.9365673065185547,
+      "fps": 20.65510445485606,
+      "cached": false
+    },
+    {
+      "segment": "scene-0795",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.845045804977417,
+      "fps": 21.67967857063017,
+      "cached": false
+    },
+    {
+      "segment": "scene-0796",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8487215042114258,
+      "fps": 21.636574199455772,
+      "cached": false
+    },
+    {
+      "segment": "scene-0797",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8455030918121338,
+      "fps": 21.674306684971878,
+      "cached": false
+    },
+    {
+      "segment": "scene-0798",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.899315595626831,
+      "fps": 21.06021773953728,
+      "cached": false
+    },
+    {
+      "segment": "scene-0799",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8424084186553955,
+      "fps": 21.710712779521668,
+      "cached": false
+    },
+    {
+      "segment": "scene-0800",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8426728248596191,
+      "fps": 21.707597496613285,
+      "cached": false
+    },
+    {
+      "segment": "scene-0802",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8447849750518799,
+      "fps": 21.68274381076586,
+      "cached": false
+    },
+    {
+      "segment": "scene-0904",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8667247295379639,
+      "fps": 21.427904911240162,
+      "cached": false
+    },
+    {
+      "segment": "scene-0905",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8425476551055908,
+      "fps": 21.709072158411946,
+      "cached": false
+    },
+    {
+      "segment": "scene-0906",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8404791355133057,
+      "fps": 21.733471044671248,
+      "cached": false
+    },
+    {
+      "segment": "scene-0907",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8860971927642822,
+      "fps": 21.20781482176728,
+      "cached": false
+    },
+    {
+      "segment": "scene-0908",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8432645797729492,
+      "fps": 21.700628568974697,
+      "cached": false
+    },
+    {
+      "segment": "scene-0909",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8553123474121094,
+      "fps": 21.559712064544915,
+      "cached": false
+    },
+    {
+      "segment": "scene-0910",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.856355905532837,
+      "fps": 21.54759218357896,
+      "cached": false
+    },
+    {
+      "segment": "scene-0911",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8608317375183105,
+      "fps": 21.495764068032187,
+      "cached": false
+    },
+    {
+      "segment": "scene-0912",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8391444683074951,
+      "fps": 21.74924302537837,
+      "cached": false
+    },
+    {
+      "segment": "scene-0913",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8443090915679932,
+      "fps": 21.688338566933396,
+      "cached": false
+    },
+    {
+      "segment": "scene-0914",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.842857837677002,
+      "fps": 21.705418172907816,
+      "cached": false
+    },
+    {
+      "segment": "scene-0915",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8496038913726807,
+      "fps": 21.6262520783918,
+      "cached": false
+    },
+    {
+      "segment": "scene-0916",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8404719829559326,
+      "fps": 21.733555506646223,
+      "cached": false
+    },
+    {
+      "segment": "scene-0917",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.9053890705108643,
+      "fps": 20.993087773551352,
+      "cached": false
+    },
+    {
+      "segment": "scene-0919",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8895902633666992,
+      "fps": 21.16861034663232,
+      "cached": false
+    },
+    {
+      "segment": "scene-0920",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8448545932769775,
+      "fps": 21.68192558143502,
+      "cached": false
+    },
+    {
+      "segment": "scene-0921",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8430523872375488,
+      "fps": 21.70312698487851,
+      "cached": false
+    },
+    {
+      "segment": "scene-0922",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.848435878753662,
+      "fps": 21.63991754313417,
+      "cached": false
+    },
+    {
+      "segment": "scene-0923",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8484041690826416,
+      "fps": 21.64028877940256,
+      "cached": false
+    },
+    {
+      "segment": "scene-0924",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8575100898742676,
+      "fps": 21.53420334998425,
+      "cached": false
+    },
+    {
+      "segment": "scene-0925",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8407914638519287,
+      "fps": 21.72978351186963,
+      "cached": false
+    },
+    {
+      "segment": "scene-0926",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8426761627197266,
+      "fps": 21.707558175041118,
+      "cached": false
+    },
+    {
+      "segment": "scene-0927",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8455407619476318,
+      "fps": 21.67386428126751,
+      "cached": false
+    },
+    {
+      "segment": "scene-0928",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8421974182128906,
+      "fps": 21.713199467407712,
+      "cached": false
+    },
+    {
+      "segment": "scene-0929",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.839686393737793,
+      "fps": 21.7428362443502,
+      "cached": false
+    },
+    {
+      "segment": "scene-0930",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8640830516815186,
+      "fps": 21.45827138115843,
+      "cached": false
+    },
+    {
+      "segment": "scene-0931",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8604497909545898,
+      "fps": 21.500177104739898,
+      "cached": false
+    },
+    {
+      "segment": "scene-0962",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8802428245544434,
+      "fps": 21.27384797199197,
+      "cached": false
+    },
+    {
+      "segment": "scene-0963",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8563973903656006,
+      "fps": 21.547110660461747,
+      "cached": false
+    },
+    {
+      "segment": "scene-0966",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8582775592803955,
+      "fps": 21.525309715029714,
+      "cached": false
+    },
+    {
+      "segment": "scene-0967",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8438091278076172,
+      "fps": 21.694219535382185,
+      "cached": false
+    },
+    {
+      "segment": "scene-0968",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.844606637954712,
+      "fps": 21.684840104637022,
+      "cached": false
+    },
+    {
+      "segment": "scene-0969",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8532896041870117,
+      "fps": 21.58324306661555,
+      "cached": false
+    },
+    {
+      "segment": "scene-0971",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.850898265838623,
+      "fps": 21.611128357655254,
+      "cached": false
+    },
+    {
+      "segment": "scene-0972",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8471078872680664,
+      "fps": 21.65547571731791,
+      "cached": false
+    },
+    {
+      "segment": "scene-1059",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8460497856140137,
+      "fps": 21.66788800156634,
+      "cached": false
+    },
+    {
+      "segment": "scene-1060",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8436510562896729,
+      "fps": 21.69607956100953,
+      "cached": false
+    },
+    {
+      "segment": "scene-1061",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8454086780548096,
+      "fps": 21.67541557361853,
+      "cached": false
+    },
+    {
+      "segment": "scene-1062",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8511662483215332,
+      "fps": 21.607999841326144,
+      "cached": false
+    },
+    {
+      "segment": "scene-1063",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8501050472259521,
+      "fps": 21.620393966264785,
+      "cached": false
+    },
+    {
+      "segment": "scene-1064",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8508036136627197,
+      "fps": 21.61223357503633,
+      "cached": false
+    },
+    {
+      "segment": "scene-1065",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.847844123840332,
+      "fps": 21.646847525682478,
+      "cached": false
+    },
+    {
+      "segment": "scene-1066",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8468172550201416,
+      "fps": 21.658883623308878,
+      "cached": false
+    },
+    {
+      "segment": "scene-1067",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8425233364105225,
+      "fps": 21.709358687377744,
+      "cached": false
+    },
+    {
+      "segment": "scene-1068",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8426322937011719,
+      "fps": 21.708074984214395,
+      "cached": false
+    },
+    {
+      "segment": "scene-1069",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.861753225326538,
+      "fps": 21.485124588939165,
+      "cached": false
+    },
+    {
+      "segment": "scene-1070",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.88515043258667,
+      "fps": 21.218465809709855,
+      "cached": false
+    },
+    {
+      "segment": "scene-1071",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.9377188682556152,
+      "fps": 20.642829388356546,
+      "cached": false
+    },
+    {
+      "segment": "scene-1072",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.8419923782348633,
+      "fps": 21.71561645566147,
+      "cached": false
+    },
+    {
+      "segment": "scene-1073",
+      "n_frames": 40,
+      "keyframe_interval": 1,
+      "rope_slots": 40,
+      "seconds": 1.844160795211792,
+      "fps": 21.690082613108697,
+      "cached": false
+    }
+  ],
+  "root": "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d"
+}

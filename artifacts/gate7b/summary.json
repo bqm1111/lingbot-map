@@ -1,0 +1,2687 @@
+{
+  "bootstrap": {
+    "n_boot": 10000,
+    "seed": 0,
+    "units": {
+      "occ3d": "official nuScenes scene",
+      "semantickitti": "contiguous block of 20 clips (one drive)",
+      "kitti360": "contiguous block of 20 clips (one drive)"
+    },
+    "independence_caveat": "blocks from a single drive are not independent scenes and are never described as such"
+  },
+  "datasets": {
+    "semantickitti": {
+      "configs": {
+        "S1_G-A_h1": {
+          "variant": "S1",
+          "scale_policy": "G-A",
+          "horizon": "1",
+          "s2_conf": null,
+          "n_anchors": 163,
+          "binary_iou": 0.05633600697542052,
+          "binary_precision": 0.5141008957934453,
+          "binary_recall": 0.05950435246520666,
+          "ssc_miou": 0.02520996380104634,
+          "binary_iou_mean_per_clip": 0.05749865828192804,
+          "coverage_miss": 0.9404956475347933,
+          "naming_error": 0.020645123123094314,
+          "correct": 0.03885922934211235,
+          "tp_accuracy": 0.6530485205235043,
+          "tp_balanced_recall": 0.4641761253602035,
+          "tp_reconstruction_support": 0.6530485205235043,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 19.56212067604065,
+          "peak_gpu_gib": 0.5006709098815918,
+          "median_seconds_per_anchor": 0.00969243049621582,
+          "median_window": 1.0,
+          "volumes": {
+            "occupied": 15313,
+            "free": 56475,
+            "unknown": 2025362,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 2496118,
+            "moge_only": 0,
+            "beyond_five_frames": 0,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 236978176.0,
+          "scale": {
+            "08": {
+              "n": 815,
+              "median_scale": 26.980392156862735,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0,
+              "first_to_final_log_drift": 0.0,
+              "first_to_final_ratio": 1.0,
+              "min_scale": 26.980392156862735,
+              "max_scale": 27.340996168582382
+            }
+          }
+        },
+        "S1_G-A_h20": {
+          "variant": "S1",
+          "scale_policy": "G-A",
+          "horizon": "20",
+          "s2_conf": null,
+          "n_anchors": 163,
+          "binary_iou": 0.09379774140466396,
+          "binary_precision": 0.3129046603260294,
+          "binary_recall": 0.11812824542861909,
+          "ssc_miou": 0.028708320708275788,
+          "binary_iou_mean_per_clip": 0.09432282880359591,
+          "coverage_miss": 0.8818717545713809,
+          "naming_error": 0.05208440259596982,
+          "correct": 0.06604384283264927,
+          "tp_accuracy": 0.5590859543626874,
+          "tp_balanced_recall": 0.3364330670165881,
+          "tp_reconstruction_support": 0.5590859543626874,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 33.56817030906677,
+          "peak_gpu_gib": 0.652611255645752,
+          "median_seconds_per_anchor": 0.09723663330078125,
+          "median_window": 20.0,
+          "volumes": {
+            "occupied": 55955,
+            "free": 117113,
+            "unknown": 1924083,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 9120794,
+            "moge_only": 0,
+            "beyond_five_frames": 1959165,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 236978176.0,
+          "scale": {
+            "08": {
+              "n": 815,
+              "median_scale": 26.980392156862735,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0,
+              "first_to_final_log_drift": 0.0,
+              "first_to_final_ratio": 1.0,
+              "min_scale": 26.980392156862735,
+              "max_scale": 27.340996168582382
+            }
+          }
+        },
+        "S1_G-A_h5": {
+          "variant": "S1",
+          "scale_policy": "G-A",
+          "horizon": "5",
+          "s2_conf": null,
+          "n_anchors": 163,
+          "binary_iou": 0.09062513562220509,
+          "binary_precision": 0.33802035285742177,
+          "binary_recall": 0.11017991326514569,
+          "ssc_miou": 0.028797079309207874,
+          "binary_iou_mean_per_clip": 0.0913066263891669,
+          "coverage_miss": 0.8898200867348544,
+          "naming_error": 0.047489651136576216,
+          "correct": 0.06269026212856947,
+          "tp_accuracy": 0.5689808629428365,
+          "tp_balanced_recall": 0.35139044262993907,
+          "tp_reconstruction_support": 0.5689808629428365,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 25.53402590751648,
+          "peak_gpu_gib": 0.5414872169494629,
+          "median_seconds_per_anchor": 0.04400515556335449,
+          "median_window": 5.0,
+          "volumes": {
+            "occupied": 47859,
+            "free": 111189,
+            "unknown": 1938103,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 7801061,
+            "moge_only": 0,
+            "beyond_five_frames": 0,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 236978176.0,
+          "scale": {
+            "08": {
+              "n": 815,
+              "median_scale": 26.980392156862735,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0,
+              "first_to_final_log_drift": 0.0,
+              "first_to_final_ratio": 1.0,
+              "min_scale": 26.980392156862735,
+              "max_scale": 27.340996168582382
+            }
+          }
+        },
+        "S1_G-A_h50": {
+          "variant": "S1",
+          "scale_policy": "G-A",
+          "horizon": "50",
+          "s2_conf": null,
+          "n_anchors": 163,
+          "binary_iou": 0.09380140061872846,
+          "binary_precision": 0.31280520388363764,
+          "binary_recall": 0.1181482316461235,
+          "ssc_miou": 0.02870872283836644,
+          "binary_iou_mean_per_clip": 0.09432688963600518,
+          "coverage_miss": 0.8818517683538765,
+          "naming_error": 0.05208642786601027,
+          "correct": 0.06606180378011324,
+          "tp_accuracy": 0.5591433985908562,
+          "tp_balanced_recall": 0.3364470954117708,
+          "tp_reconstruction_support": 0.5591433985908562,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 36.5531325340271,
+          "peak_gpu_gib": 0.8573379516601562,
+          "median_seconds_per_anchor": 0.10575461387634277,
+          "median_window": 21.0,
+          "volumes": {
+            "occupied": 55982,
+            "free": 117189,
+            "unknown": 1923980,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 9125094,
+            "moge_only": 0,
+            "beyond_five_frames": 1963614,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 236978176.0,
+          "scale": {
+            "08": {
+              "n": 815,
+              "median_scale": 26.980392156862735,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0,
+              "first_to_final_log_drift": 0.0,
+              "first_to_final_ratio": 1.0,
+              "min_scale": 26.980392156862735,
+              "max_scale": 27.340996168582382
+            }
+          }
+        },
+        "S1_G-A_hall": {
+          "variant": "S1",
+          "scale_policy": "G-A",
+          "horizon": "all",
+          "s2_conf": null,
+          "n_anchors": 163,
+          "binary_iou": 0.09762136556998516,
+          "binary_precision": 0.2613224617095908,
+          "binary_recall": 0.1348259573531426,
+          "ssc_miou": 0.02678607176813373,
+          "binary_iou_mean_per_clip": 0.09665069797585735,
+          "coverage_miss": 0.8651740426468574,
+          "naming_error": 0.06357871611736546,
+          "correct": 0.07124724123577714,
+          "tp_accuracy": 0.5284386080727983,
+          "tp_balanced_recall": 0.3106534940124101,
+          "tp_reconstruction_support": 0.5284386080727983,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 50.96134042739868,
+          "peak_gpu_gib": 1.5609245300292969,
+          "median_seconds_per_anchor": 0.167755126953125,
+          "median_window": 35.0,
+          "volumes": {
+            "occupied": 77134,
+            "free": 165487,
+            "unknown": 1854530,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 12572857,
+            "moge_only": 0,
+            "beyond_five_frames": 5647445,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 236978176.0,
+          "scale": {
+            "08": {
+              "n": 815,
+              "median_scale": 26.980392156862735,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0,
+              "first_to_final_log_drift": 0.0,
+              "first_to_final_ratio": 1.0,
+              "min_scale": 26.980392156862735,
+              "max_scale": 27.340996168582382
+            }
+          }
+        },
+        "S1_G-B_hall": {
+          "variant": "S1",
+          "scale_policy": "G-B",
+          "horizon": "all",
+          "s2_conf": null,
+          "n_anchors": 163,
+          "binary_iou": 0.08872144848109677,
+          "binary_precision": 0.2400030976288004,
+          "binary_recall": 0.12338643271599904,
+          "ssc_miou": 0.02341714100551752,
+          "binary_iou_mean_per_clip": 0.08756070948186112,
+          "coverage_miss": 0.876613567284001,
+          "naming_error": 0.05893621092228133,
+          "correct": 0.06445022179371772,
+          "tp_accuracy": 0.5223444780356367,
+          "tp_balanced_recall": 0.30341949771983573,
+          "tp_reconstruction_support": 0.5223444780356367,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 52.38446378707886,
+          "peak_gpu_gib": 1.5715723037719727,
+          "median_seconds_per_anchor": 0.17624473571777344,
+          "median_window": 38.0,
+          "volumes": {
+            "occupied": 74211,
+            "free": 153474,
+            "unknown": 1869465,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 12096447,
+            "moge_only": 0,
+            "beyond_five_frames": 5603236,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 236978176.0,
+          "scale": {
+            "08": {
+              "n": 815,
+              "median_scale": 25.860676583779135,
+              "log_mad": 0.005091055728268401,
+              "adjacent_log_mad": 0.00016397656737154875,
+              "adjacent_log_p95": 0.0015441791938695104,
+              "first_to_final_log_drift": -0.036568732875768006,
+              "first_to_final_ratio": 0.9640918268152251,
+              "min_scale": 25.284271607378116,
+              "max_scale": 27.340996168582382
+            }
+          }
+        },
+        "S1_G-C_hall": {
+          "variant": "S1",
+          "scale_policy": "G-C",
+          "horizon": "all",
+          "s2_conf": null,
+          "n_anchors": 163,
+          "binary_iou": 0.08726786014970839,
+          "binary_precision": 0.23635159084306387,
+          "binary_recall": 0.12153640183063093,
+          "ssc_miou": 0.022949128497566317,
+          "binary_iou_mean_per_clip": 0.08642462504394992,
+          "coverage_miss": 0.878463598169369,
+          "naming_error": 0.05824468779662878,
+          "correct": 0.06329171403400215,
+          "tp_accuracy": 0.5207634344992652,
+          "tp_balanced_recall": 0.3036494900868297,
+          "tp_reconstruction_support": 0.5207634344992652,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 52.567188024520874,
+          "peak_gpu_gib": 1.5566301345825195,
+          "median_seconds_per_anchor": 0.17836618423461914,
+          "median_window": 34.0,
+          "volumes": {
+            "occupied": 74093,
+            "free": 154633,
+            "unknown": 1868424,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 12077259,
+            "moge_only": 0,
+            "beyond_five_frames": 5562204,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 236978176.0,
+          "scale": {
+            "08": {
+              "n": 815,
+              "median_scale": 26.011575562700965,
+              "log_mad": 0.03916008119833858,
+              "adjacent_log_mad": 0.03016107390159095,
+              "adjacent_log_p95": 0.08881272098688182,
+              "first_to_final_log_drift": -0.05492477431401088,
+              "first_to_final_ratio": 0.9465563506261185,
+              "min_scale": 22.049904030710177,
+              "max_scale": 30.954875008020796
+            }
+          }
+        },
+        "S2_G-A_hall_c0.5": {
+          "variant": "S2",
+          "scale_policy": "G-A",
+          "horizon": "all",
+          "s2_conf": 0.5,
+          "n_anchors": 163,
+          "binary_iou": 0.09147379228468874,
+          "binary_precision": 0.14363345881674924,
+          "binary_recall": 0.20121020544232698,
+          "ssc_miou": 0.025235141531995783,
+          "binary_iou_mean_per_clip": 0.09161387541710891,
+          "coverage_miss": 0.7987897945576731,
+          "naming_error": 0.0984102696114093,
+          "correct": 0.10279993583091766,
+          "tp_accuracy": 0.5109081599759276,
+          "tp_balanced_recall": 0.25993362387348634,
+          "tp_reconstruction_support": 0.5109081599759276,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 56.7126145362854,
+          "peak_gpu_gib": 1.6256132125854492,
+          "median_seconds_per_anchor": 0.1967628002166748,
+          "median_window": 35.0,
+          "volumes": {
+            "occupied": 194391,
+            "free": 417324,
+            "unknown": 1485435,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 31685843,
+            "moge_only": 0,
+            "beyond_five_frames": 15835165,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 236978176.0,
+          "scale": {
+            "08": {
+              "n": 815,
+              "median_scale": 26.980392156862735,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0,
+              "first_to_final_log_drift": 0.0,
+              "first_to_final_ratio": 1.0,
+              "min_scale": 26.980392156862735,
+              "max_scale": 27.340996168582382
+            }
+          }
+        },
+        "S2_G-A_hall_c0": {
+          "variant": "S2",
+          "scale_policy": "G-A",
+          "horizon": "all",
+          "s2_conf": 0.0,
+          "n_anchors": 163,
+          "binary_iou": 0.09147379228468874,
+          "binary_precision": 0.14363345881674924,
+          "binary_recall": 0.20121020544232698,
+          "ssc_miou": 0.025235141531995783,
+          "binary_iou_mean_per_clip": 0.09161387541710891,
+          "coverage_miss": 0.7987897945576731,
+          "naming_error": 0.0984102696114093,
+          "correct": 0.10279993583091766,
+          "tp_accuracy": 0.5109081599759276,
+          "tp_balanced_recall": 0.25993362387348634,
+          "tp_reconstruction_support": 0.5109081599759276,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 56.23095941543579,
+          "peak_gpu_gib": 1.6256132125854492,
+          "median_seconds_per_anchor": 0.19656777381896973,
+          "median_window": 35.0,
+          "volumes": {
+            "occupied": 194391,
+            "free": 417324,
+            "unknown": 1485435,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 31685843,
+            "moge_only": 0,
+            "beyond_five_frames": 15835165,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 236978176.0,
+          "scale": {
+            "08": {
+              "n": 815,
+              "median_scale": 26.980392156862735,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0,
+              "first_to_final_log_drift": 0.0,
+              "first_to_final_ratio": 1.0,
+              "min_scale": 26.980392156862735,
+              "max_scale": 27.340996168582382
+            }
+          }
+        },
+        "S2_G-A_hall_c1": {
+          "variant": "S2",
+          "scale_policy": "G-A",
+          "horizon": "all",
+          "s2_conf": 1.0,
+          "n_anchors": 163,
+          "binary_iou": 0.09147379228468874,
+          "binary_precision": 0.14363345881674924,
+          "binary_recall": 0.20121020544232698,
+          "ssc_miou": 0.025235141531995783,
+          "binary_iou_mean_per_clip": 0.09161387541710891,
+          "coverage_miss": 0.7987897945576731,
+          "naming_error": 0.0984102696114093,
+          "correct": 0.10279993583091766,
+          "tp_accuracy": 0.5109081599759276,
+          "tp_balanced_recall": 0.25993362387348634,
+          "tp_reconstruction_support": 0.5109081599759276,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 56.35298299789429,
+          "peak_gpu_gib": 1.6256132125854492,
+          "median_seconds_per_anchor": 0.19289827346801758,
+          "median_window": 35.0,
+          "volumes": {
+            "occupied": 194391,
+            "free": 417324,
+            "unknown": 1485435,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 31685843,
+            "moge_only": 0,
+            "beyond_five_frames": 15835165,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 236978176.0,
+          "scale": {
+            "08": {
+              "n": 815,
+              "median_scale": 26.980392156862735,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0,
+              "first_to_final_log_drift": 0.0,
+              "first_to_final_ratio": 1.0,
+              "min_scale": 26.980392156862735,
+              "max_scale": 27.340996168582382
+            }
+          }
+        },
+        "S3_G-A_hall": {
+          "variant": "S3",
+          "scale_policy": "G-A",
+          "horizon": "all",
+          "s2_conf": null,
+          "n_anchors": 163,
+          "binary_iou": 0.0897197029791686,
+          "binary_precision": 0.16757113441288995,
+          "binary_recall": 0.16185920855644614,
+          "ssc_miou": 0.02628870764421957,
+          "binary_iou_mean_per_clip": 0.09004791009870146,
+          "coverage_miss": 0.8381407914435539,
+          "naming_error": 0.0754278782684794,
+          "correct": 0.08643133028796675,
+          "tp_accuracy": 0.5339908125018727,
+          "tp_balanced_recall": 0.29130489672649723,
+          "tp_reconstruction_support": 0.5284799222894953,
+          "tp_moge_only": 0.5619285353116462,
+          "n_moge_only_voxels": 500359,
+          "seconds": 62.91469144821167,
+          "peak_gpu_gib": 1.5662474632263184,
+          "median_seconds_per_anchor": 0.23076319694519043,
+          "median_window": 35.0,
+          "volumes": {
+            "occupied": 133889,
+            "free": 150645,
+            "unknown": 1755777,
+            "provisional": 56840
+          },
+          "occ_source": {
+            "lingbot": 12635953,
+            "moge_only": 9187977,
+            "beyond_five_frames": 11069874,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 236978176.0,
+          "scale": {
+            "08": {
+              "n": 815,
+              "median_scale": 26.980392156862735,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0,
+              "first_to_final_log_drift": 0.0,
+              "first_to_final_ratio": 1.0,
+              "min_scale": 26.980392156862735,
+              "max_scale": 27.340996168582382
+            }
+          }
+        },
+        "S4_G-A_hall": {
+          "variant": "S4",
+          "scale_policy": "G-A",
+          "horizon": "all",
+          "s2_conf": null,
+          "n_anchors": 163,
+          "binary_iou": 0.08988015272768349,
+          "binary_precision": 0.16975323876135326,
+          "binary_recall": 0.1603843322977808,
+          "ssc_miou": 0.026298687175423698,
+          "binary_iou_mean_per_clip": 0.0902207300387133,
+          "coverage_miss": 0.8396156677022192,
+          "naming_error": 0.07474003260684765,
+          "correct": 0.08564429969093314,
+          "tp_accuracy": 0.5339941780093577,
+          "tp_balanced_recall": 0.2915713950506225,
+          "tp_reconstruction_support": 0.5285070634212107,
+          "tp_moge_only": 0.5632315644702033,
+          "n_moge_only_voxels": 475522,
+          "seconds": 62.96837854385376,
+          "peak_gpu_gib": 1.5648832321166992,
+          "median_seconds_per_anchor": 0.22791647911071777,
+          "median_window": 35.0,
+          "volumes": {
+            "occupied": 131226,
+            "free": 157333,
+            "unknown": 1756022,
+            "provisional": 52569
+          },
+          "occ_source": {
+            "lingbot": 12611361,
+            "moge_only": 8778542,
+            "beyond_five_frames": 10743775,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 236978176.0,
+          "scale": {
+            "08": {
+              "n": 815,
+              "median_scale": 26.980392156862735,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0,
+              "first_to_final_log_drift": 0.0,
+              "first_to_final_ratio": 1.0,
+              "min_scale": 26.980392156862735,
+              "max_scale": 27.340996168582382
+            }
+          }
+        }
+      },
+      "reference": {
+        "B-R": {
+          "binary_iou": 0.06700006394444305,
+          "ssc_miou": 0.02808692708105012,
+          "binary_precision": 0.3491709306912788,
+          "binary_recall": 0.07656128333900943,
+          "coverage_miss": 0.9234387166609905,
+          "naming_error": 0.028131747013925863,
+          "tp_accuracy": 0.6325590979273435,
+          "tp_balanced_recall": 0.43877455217304306,
+          "n_clips": 163
+        },
+        "B-D": {
+          "binary_iou": 0.15996464599099847,
+          "ssc_miou": 0.0511118326067667,
+          "binary_precision": 0.25367328884208135,
+          "binary_recall": 0.30217844441140057,
+          "coverage_miss": 0.6978215555885995,
+          "naming_error": 0.13319566826716298,
+          "tp_accuracy": 0.5592151897975097,
+          "tp_balanced_recall": 0.35510297310804123,
+          "n_clips": 163
+        }
+      },
+      "comparisons": {
+        "S1|G-A|all vs S0": {
+          "n_clips": 163,
+          "unit": "contiguous block of 20 clips",
+          "n_units": 8,
+          "binary_iou": {
+            "a": 0.15996464599099847,
+            "b": 0.09762136556998516,
+            "difference": -0.06234328042101331,
+            "ci": [
+              -0.07178488958247557,
+              -0.0529207099794546
+            ],
+            "excludes_zero": true
+          },
+          "ssc_miou": {
+            "a": 0.0511118326067667,
+            "b": 0.02678607176813373,
+            "difference": -0.024325760838632974,
+            "ci": [
+              -0.0283047416264529,
+              -0.017621172094557817
+            ],
+            "excludes_zero": true
+          },
+          "what": "streaming accumulation against the frozen five-frame map"
+        },
+        "S2|G-A|all vs S1|G-A|all": {
+          "n_clips": 163,
+          "unit": "contiguous block of 20 clips",
+          "n_units": 8,
+          "binary_iou": {
+            "a": 0.09762136556998516,
+            "b": 0.09147379228468874,
+            "difference": -0.006147573285296415,
+            "ci": [
+              -0.01047841469025635,
+              -0.000435395438050774
+            ],
+            "excludes_zero": true
+          },
+          "ssc_miou": {
+            "a": 0.02678607176813373,
+            "b": 0.025235141531995783,
+            "difference": -0.001550930236137945,
+            "ci": [
+              -0.0025590896186989606,
+              -0.0006075448528246422
+            ],
+            "excludes_zero": true
+          },
+          "what": "relaxed LingBot gate"
+        },
+        "S3|G-A|all vs S1|G-A|all": {
+          "n_clips": 163,
+          "unit": "contiguous block of 20 clips",
+          "n_units": 8,
+          "binary_iou": {
+            "a": 0.09762136556998516,
+            "b": 0.0897197029791686,
+            "difference": -0.007901662590816552,
+            "ci": [
+              -0.011157681397803067,
+              -0.004323022932891445
+            ],
+            "excludes_zero": true
+          },
+          "ssc_miou": {
+            "a": 0.02678607176813373,
+            "b": 0.02628870764421957,
+            "difference": -0.0004973641239141569,
+            "ci": [
+              -0.0007540676707608342,
+              5.366142568500325e-06
+            ],
+            "excludes_zero": false
+          },
+          "what": "MoGe rescue on rejected rays"
+        },
+        "S4|G-A|all vs S1|G-A|all": {
+          "n_clips": 163,
+          "unit": "contiguous block of 20 clips",
+          "n_units": 8,
+          "binary_iou": {
+            "a": 0.09762136556998516,
+            "b": 0.08988015272768349,
+            "difference": -0.00774121284230167,
+            "ci": [
+              -0.010901079979719869,
+              -0.004349535432525212
+            ],
+            "excludes_zero": true
+          },
+          "ssc_miou": {
+            "a": 0.02678607176813373,
+            "b": 0.026298687175423698,
+            "difference": -0.0004873845927100308,
+            "ci": [
+              -0.0007368245088214438,
+              -1.294778116312857e-06
+            ],
+            "excludes_zero": true
+          },
+          "what": "map-consistency-gated complementary fusion"
+        },
+        "S1|G-B|all vs S1|G-A|all": {
+          "n_clips": 163,
+          "unit": "contiguous block of 20 clips",
+          "n_units": 8,
+          "binary_iou": {
+            "a": 0.09762136556998516,
+            "b": 0.08872144848109677,
+            "difference": -0.00889991708888839,
+            "ci": [
+              -0.011507970179631594,
+              -0.006801720074578912
+            ],
+            "excludes_zero": true
+          },
+          "ssc_miou": {
+            "a": 0.02678607176813373,
+            "b": 0.02341714100551752,
+            "difference": -0.003368930762616209,
+            "ci": [
+              -0.0042866704661707255,
+              -0.0024766758628075106
+            ],
+            "excludes_zero": true
+          },
+          "what": "causal running-median gauge"
+        },
+        "S1|G-C|all vs S1|G-A|all": {
+          "n_clips": 163,
+          "unit": "contiguous block of 20 clips",
+          "n_units": 8,
+          "binary_iou": {
+            "a": 0.09762136556998516,
+            "b": 0.08726786014970839,
+            "difference": -0.01035350542027677,
+            "ci": [
+              -0.01348415626199427,
+              -0.007544066891220433
+            ],
+            "excludes_zero": true
+          },
+          "ssc_miou": {
+            "a": 0.02678607176813373,
+            "b": 0.022949128497566317,
+            "difference": -0.003836943270567411,
+            "ci": [
+              -0.005331915795707302,
+              -0.002181566932131871
+            ],
+            "excludes_zero": true
+          },
+          "what": "per-frame gauge (ablation only)"
+        }
+      }
+    },
+    "occ3d": {
+      "configs": {
+        "S1_G-A_h1": {
+          "variant": "S1",
+          "scale_policy": "G-A",
+          "horizon": "1",
+          "s2_conf": null,
+          "n_anchors": 1182,
+          "binary_iou": 0.04357979910737228,
+          "binary_precision": 0.7220407284696035,
+          "binary_recall": 0.04432339626964965,
+          "ssc_miou": 0.019007315587303297,
+          "binary_iou_mean_per_clip": 0.046753879778994915,
+          "coverage_miss": 0.9556766037303503,
+          "naming_error": 0.022589334472916365,
+          "correct": 0.02173406179673329,
+          "tp_accuracy": 0.4903519049964057,
+          "tp_balanced_recall": 0.4798415859203318,
+          "tp_reconstruction_support": 0.4903519049964057,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 48.86472415924072,
+          "peak_gpu_gib": 1.0187187194824219,
+          "median_seconds_per_anchor": 0.01252138614654541,
+          "median_window": 1.0,
+          "volumes": {
+            "occupied": 10977,
+            "free": 53541,
+            "unknown": 5055480,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 3304891,
+            "moge_only": 0,
+            "beyond_five_frames": 0,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 537600000.0,
+          "scale": {
+            "scene-0003": {
+              "n": 40,
+              "median_scale": 15.640138408304498,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0024365631698614726,
+              "first_to_final_log_drift": 0.0,
+              "first_to_final_ratio": 1.0,
+              "min_scale": 15.595251565008885,
+              "max_scale": 15.677530866512566
+            },
+            "scene-0012": {
+              "n": 40,
+              "median_scale": 20.56500351370344,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.005093693907213133,
+              "first_to_final_log_drift": 0.04943002957490883,
+              "first_to_final_ratio": 1.0506720736711663,
+              "min_scale": 19.573189417557288,
+              "max_scale": 20.56500351370344
+            },
+            "scene-0013": {
+              "n": 40,
+              "median_scale": 22.348856923083016,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.006050693814237472,
+              "first_to_final_log_drift": 0.03476119078262485,
+              "first_to_final_ratio": 1.0353724227957302,
+              "min_scale": 21.585331452750356,
+              "max_scale": 22.348856923083016
+            }
+          }
+        },
+        "S1_G-A_h20": {
+          "variant": "S1",
+          "scale_policy": "G-A",
+          "horizon": "20",
+          "s2_conf": null,
+          "n_anchors": 1182,
+          "binary_iou": 0.11444551813497399,
+          "binary_precision": 0.6090577250905757,
+          "binary_recall": 0.12351928774945453,
+          "ssc_miou": 0.034949782202396126,
+          "binary_iou_mean_per_clip": 0.1141786620862758,
+          "coverage_miss": 0.8764807122505455,
+          "naming_error": 0.06648312912551776,
+          "correct": 0.05703615862393676,
+          "tp_accuracy": 0.4617591281746088,
+          "tp_balanced_recall": 0.44018547133215247,
+          "tp_reconstruction_support": 0.4617591281746088,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 177.80051517486572,
+          "peak_gpu_gib": 1.2972726821899414,
+          "median_seconds_per_anchor": 0.12294244766235352,
+          "median_window": 20.0,
+          "volumes": {
+            "occupied": 75667,
+            "free": 282877,
+            "unknown": 4761455,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 19151003,
+            "moge_only": 0,
+            "beyond_five_frames": 13239290,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 537600000.0,
+          "scale": {
+            "scene-0003": {
+              "n": 40,
+              "median_scale": 15.640138408304498,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0024365631698614726,
+              "first_to_final_log_drift": 0.0,
+              "first_to_final_ratio": 1.0,
+              "min_scale": 15.595251565008885,
+              "max_scale": 15.677530866512566
+            },
+            "scene-0012": {
+              "n": 40,
+              "median_scale": 20.56500351370344,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.005093693907213133,
+              "first_to_final_log_drift": 0.04943002957490883,
+              "first_to_final_ratio": 1.0506720736711663,
+              "min_scale": 19.573189417557288,
+              "max_scale": 20.56500351370344
+            },
+            "scene-0013": {
+              "n": 40,
+              "median_scale": 22.348856923083016,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.006050693814237472,
+              "first_to_final_log_drift": 0.03476119078262485,
+              "first_to_final_ratio": 1.0353724227957302,
+              "min_scale": 21.585331452750356,
+              "max_scale": 22.348856923083016
+            }
+          }
+        },
+        "S1_G-A_h5": {
+          "variant": "S1",
+          "scale_policy": "G-A",
+          "horizon": "5",
+          "s2_conf": null,
+          "n_anchors": 1182,
+          "binary_iou": 0.09815881797467284,
+          "binary_precision": 0.6512818463887187,
+          "binary_recall": 0.10360398709104426,
+          "ssc_miou": 0.032712830060204236,
+          "binary_iou_mean_per_clip": 0.09914826816882744,
+          "coverage_miss": 0.8963960129089558,
+          "naming_error": 0.055192476075864784,
+          "correct": 0.04841151101517948,
+          "tp_accuracy": 0.4672745941006769,
+          "tp_balanced_recall": 0.44842501147315006,
+          "tp_reconstruction_support": 0.4672745941006769,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 108.23904776573181,
+          "peak_gpu_gib": 1.114151954650879,
+          "median_seconds_per_anchor": 0.06021690368652344,
+          "median_window": 5.0,
+          "volumes": {
+            "occupied": 32709,
+            "free": 136021,
+            "unknown": 4951268,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 8606696,
+            "moge_only": 0,
+            "beyond_five_frames": 0,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 537600000.0,
+          "scale": {
+            "scene-0003": {
+              "n": 40,
+              "median_scale": 15.640138408304498,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0024365631698614726,
+              "first_to_final_log_drift": 0.0,
+              "first_to_final_ratio": 1.0,
+              "min_scale": 15.595251565008885,
+              "max_scale": 15.677530866512566
+            },
+            "scene-0012": {
+              "n": 40,
+              "median_scale": 20.56500351370344,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.005093693907213133,
+              "first_to_final_log_drift": 0.04943002957490883,
+              "first_to_final_ratio": 1.0506720736711663,
+              "min_scale": 19.573189417557288,
+              "max_scale": 20.56500351370344
+            },
+            "scene-0013": {
+              "n": 40,
+              "median_scale": 22.348856923083016,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.006050693814237472,
+              "first_to_final_log_drift": 0.03476119078262485,
+              "first_to_final_ratio": 1.0353724227957302,
+              "min_scale": 21.585331452750356,
+              "max_scale": 22.348856923083016
+            }
+          }
+        },
+        "S1_G-A_h50": {
+          "variant": "S1",
+          "scale_policy": "G-A",
+          "horizon": "50",
+          "s2_conf": null,
+          "n_anchors": 1182,
+          "binary_iou": 0.11531040270403373,
+          "binary_precision": 0.6060570082848398,
+          "binary_recall": 0.12465354640859906,
+          "ssc_miou": 0.035018859243489846,
+          "binary_iou_mean_per_clip": 0.11513997308597157,
+          "coverage_miss": 0.875346453591401,
+          "naming_error": 0.06711603257847108,
+          "correct": 0.05753751383012798,
+          "tp_accuracy": 0.46157943747165486,
+          "tp_balanced_recall": 0.4400185001804528,
+          "tp_reconstruction_support": 0.46157943747165486,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 209.38268566131592,
+          "peak_gpu_gib": 1.4382734298706055,
+          "median_seconds_per_anchor": 0.1417144536972046,
+          "median_window": 20.0,
+          "volumes": {
+            "occupied": 81212,
+            "free": 299005,
+            "unknown": 4739782,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 20472845,
+            "moge_only": 0,
+            "beyond_five_frames": 14563988,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 537600000.0,
+          "scale": {
+            "scene-0003": {
+              "n": 40,
+              "median_scale": 15.640138408304498,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0024365631698614726,
+              "first_to_final_log_drift": 0.0,
+              "first_to_final_ratio": 1.0,
+              "min_scale": 15.595251565008885,
+              "max_scale": 15.677530866512566
+            },
+            "scene-0012": {
+              "n": 40,
+              "median_scale": 20.56500351370344,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.005093693907213133,
+              "first_to_final_log_drift": 0.04943002957490883,
+              "first_to_final_ratio": 1.0506720736711663,
+              "min_scale": 19.573189417557288,
+              "max_scale": 20.56500351370344
+            },
+            "scene-0013": {
+              "n": 40,
+              "median_scale": 22.348856923083016,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.006050693814237472,
+              "first_to_final_log_drift": 0.03476119078262485,
+              "first_to_final_ratio": 1.0353724227957302,
+              "min_scale": 21.585331452750356,
+              "max_scale": 22.348856923083016
+            }
+          }
+        },
+        "S1_G-A_hall": {
+          "variant": "S1",
+          "scale_policy": "G-A",
+          "horizon": "all",
+          "s2_conf": null,
+          "n_anchors": 1182,
+          "binary_iou": 0.11531040270403373,
+          "binary_precision": 0.6060570082848398,
+          "binary_recall": 0.12465354640859906,
+          "ssc_miou": 0.035018810403393996,
+          "binary_iou_mean_per_clip": 0.11513997308597157,
+          "coverage_miss": 0.875346453591401,
+          "naming_error": 0.06711611620736285,
+          "correct": 0.0575374302012362,
+          "tp_accuracy": 0.461578766581061,
+          "tp_balanced_recall": 0.4400181331275609,
+          "tp_reconstruction_support": 0.461578766581061,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 208.87105250358582,
+          "peak_gpu_gib": 1.4382734298706055,
+          "median_seconds_per_anchor": 0.14042150974273682,
+          "median_window": 20.0,
+          "volumes": {
+            "occupied": 81212,
+            "free": 299005,
+            "unknown": 4739782,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 20472845,
+            "moge_only": 0,
+            "beyond_five_frames": 14563988,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 537600000.0,
+          "scale": {
+            "scene-0003": {
+              "n": 40,
+              "median_scale": 15.640138408304498,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0024365631698614726,
+              "first_to_final_log_drift": 0.0,
+              "first_to_final_ratio": 1.0,
+              "min_scale": 15.595251565008885,
+              "max_scale": 15.677530866512566
+            },
+            "scene-0012": {
+              "n": 40,
+              "median_scale": 20.56500351370344,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.005093693907213133,
+              "first_to_final_log_drift": 0.04943002957490883,
+              "first_to_final_ratio": 1.0506720736711663,
+              "min_scale": 19.573189417557288,
+              "max_scale": 20.56500351370344
+            },
+            "scene-0013": {
+              "n": 40,
+              "median_scale": 22.348856923083016,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.006050693814237472,
+              "first_to_final_log_drift": 0.03476119078262485,
+              "first_to_final_ratio": 1.0353724227957302,
+              "min_scale": 21.585331452750356,
+              "max_scale": 22.348856923083016
+            }
+          }
+        },
+        "S1_G-B_hall": {
+          "variant": "S1",
+          "scale_policy": "G-B",
+          "horizon": "all",
+          "s2_conf": null,
+          "n_anchors": 1182,
+          "binary_iou": 0.11575304437287162,
+          "binary_precision": 0.6102646413455249,
+          "binary_recall": 0.12499299608031385,
+          "ssc_miou": 0.03504037548014692,
+          "binary_iou_mean_per_clip": 0.11627091779634446,
+          "coverage_miss": 0.8750070039196861,
+          "naming_error": 0.06753551509961456,
+          "correct": 0.05745748098069929,
+          "tp_accuracy": 0.45968560465404135,
+          "tp_balanced_recall": 0.43952743502435665,
+          "tp_reconstruction_support": 0.45968560465404135,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 208.47306966781616,
+          "peak_gpu_gib": 1.4392809867858887,
+          "median_seconds_per_anchor": 0.1411513090133667,
+          "median_window": 20.0,
+          "volumes": {
+            "occupied": 82322,
+            "free": 301574,
+            "unknown": 4736103,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 20733918,
+            "moge_only": 0,
+            "beyond_five_frames": 14760978,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 537600000.0,
+          "scale": {
+            "scene-0003": {
+              "n": 40,
+              "median_scale": 17.146698523262433,
+              "log_mad": 0.019937379555845958,
+              "adjacent_log_mad": 0.002387947560752668,
+              "adjacent_log_p95": 0.008327317788813612,
+              "first_to_final_log_drift": 0.11985867206390166,
+              "first_to_final_ratio": 1.1273375160359316,
+              "min_scale": 15.595251565008885,
+              "max_scale": 17.631714783676163
+            },
+            "scene-0012": {
+              "n": 40,
+              "median_scale": 21.410585121865623,
+              "log_mad": 0.02741558616959283,
+              "adjacent_log_mad": 0.002444403889656943,
+              "adjacent_log_p95": 0.027836434034640867,
+              "first_to_final_log_drift": 0.07599859230462958,
+              "first_to_final_ratio": 1.0789610553077325,
+              "min_scale": 19.573189417557288,
+              "max_scale": 22.043642346966845
+            },
+            "scene-0013": {
+              "n": 40,
+              "median_scale": 21.95107651546109,
+              "log_mad": 0.011262755305554206,
+              "adjacent_log_mad": 0.003158482631213655,
+              "adjacent_log_p95": 0.008909603249994506,
+              "first_to_final_log_drift": 0.03329462458993282,
+              "first_to_final_ratio": 1.0338550935074893,
+              "min_scale": 21.585331452750356,
+              "max_scale": 22.698354661791587
+            }
+          }
+        },
+        "S1_G-C_hall": {
+          "variant": "S1",
+          "scale_policy": "G-C",
+          "horizon": "all",
+          "s2_conf": null,
+          "n_anchors": 1182,
+          "binary_iou": 0.11219458581469219,
+          "binary_precision": 0.6052407330286016,
+          "binary_recall": 0.1210529044732258,
+          "ssc_miou": 0.03400668632462666,
+          "binary_iou_mean_per_clip": 0.11280915132079947,
+          "coverage_miss": 0.8789470955267742,
+          "naming_error": 0.06572369515930886,
+          "correct": 0.05532920931391693,
+          "tp_accuracy": 0.4570663509040754,
+          "tp_balanced_recall": 0.435894310197715,
+          "tp_reconstruction_support": 0.4570663509040754,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 207.9476888179779,
+          "peak_gpu_gib": 1.4370131492614746,
+          "median_seconds_per_anchor": 0.14060521125793457,
+          "median_window": 20.0,
+          "volumes": {
+            "occupied": 83262,
+            "free": 305534,
+            "unknown": 4731202,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 20939284,
+            "moge_only": 0,
+            "beyond_five_frames": 14891833,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 537600000.0,
+          "scale": {
+            "scene-0003": {
+              "n": 40,
+              "median_scale": 17.63171629822558,
+              "log_mad": 0.020499283300604576,
+              "adjacent_log_mad": 0.012599288687641153,
+              "adjacent_log_p95": 0.03992479214764471,
+              "first_to_final_log_drift": 0.21987995770207647,
+              "first_to_final_ratio": 1.2459271576509714,
+              "min_scale": 15.451210014941108,
+              "max_scale": 19.580875108511684
+            },
+            "scene-0012": {
+              "n": 40,
+              "median_scale": 21.120822425793964,
+              "log_mad": 0.04510236088909747,
+              "adjacent_log_mad": 0.028734006108902754,
+              "adjacent_log_p95": 0.06290061403400272,
+              "first_to_final_log_drift": 0.03322445379290073,
+              "first_to_final_ratio": 1.0337825496168231,
+              "min_scale": 19.10813397129186,
+              "max_scale": 24.047089601046427
+            },
+            "scene-0013": {
+              "n": 40,
+              "median_scale": 22.316128866399808,
+              "log_mad": 0.04105221500253231,
+              "adjacent_log_mad": 0.023293604638787713,
+              "adjacent_log_p95": 0.05474942101001425,
+              "first_to_final_log_drift": 0.16400994795618518,
+              "first_to_final_ratio": 1.1782260359754049,
+              "min_scale": 20.095063985374775,
+              "max_scale": 25.7977998952331
+            }
+          }
+        },
+        "S2_G-A_hall_c0.5": {
+          "variant": "S2",
+          "scale_policy": "G-A",
+          "horizon": "all",
+          "s2_conf": 0.5,
+          "n_anchors": 1182,
+          "binary_iou": 0.18607914134799416,
+          "binary_precision": 0.32844176991383517,
+          "binary_recall": 0.3003564263367451,
+          "ssc_miou": 0.04216188990164495,
+          "binary_iou_mean_per_clip": 0.19357038573328159,
+          "coverage_miss": 0.6996435736632549,
+          "naming_error": 0.185622688183823,
+          "correct": 0.11473373815292212,
+          "tp_accuracy": 0.3819919538671305,
+          "tp_balanced_recall": 0.33203458511930084,
+          "tp_reconstruction_support": 0.3819919538671305,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 288.87747049331665,
+          "peak_gpu_gib": 1.5523014068603516,
+          "median_seconds_per_anchor": 0.1893482208251953,
+          "median_window": 20.0,
+          "volumes": {
+            "occupied": 271823,
+            "free": 955559,
+            "unknown": 3892616,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 77509436,
+            "moge_only": 0,
+            "beyond_five_frames": 58092615,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 537600000.0,
+          "scale": {
+            "scene-0003": {
+              "n": 40,
+              "median_scale": 15.640138408304498,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0024365631698614726,
+              "first_to_final_log_drift": 0.0,
+              "first_to_final_ratio": 1.0,
+              "min_scale": 15.595251565008885,
+              "max_scale": 15.677530866512566
+            },
+            "scene-0012": {
+              "n": 40,
+              "median_scale": 20.56500351370344,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.005093693907213133,
+              "first_to_final_log_drift": 0.04943002957490883,
+              "first_to_final_ratio": 1.0506720736711663,
+              "min_scale": 19.573189417557288,
+              "max_scale": 20.56500351370344
+            },
+            "scene-0013": {
+              "n": 40,
+              "median_scale": 22.348856923083016,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.006050693814237472,
+              "first_to_final_log_drift": 0.03476119078262485,
+              "first_to_final_ratio": 1.0353724227957302,
+              "min_scale": 21.585331452750356,
+              "max_scale": 22.348856923083016
+            }
+          }
+        },
+        "S2_G-A_hall_c0": {
+          "variant": "S2",
+          "scale_policy": "G-A",
+          "horizon": "all",
+          "s2_conf": 0.0,
+          "n_anchors": 1182,
+          "binary_iou": 0.18607914134799416,
+          "binary_precision": 0.32844176991383517,
+          "binary_recall": 0.3003564263367451,
+          "ssc_miou": 0.04216186040105643,
+          "binary_iou_mean_per_clip": 0.19357038573328159,
+          "coverage_miss": 0.6996435736632549,
+          "naming_error": 0.18562277181271478,
+          "correct": 0.11473365452403034,
+          "tp_accuracy": 0.38199167543495977,
+          "tp_balanced_recall": 0.3320344797181673,
+          "tp_reconstruction_support": 0.38199167543495977,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 287.4696304798126,
+          "peak_gpu_gib": 1.5523014068603516,
+          "median_seconds_per_anchor": 0.18886637687683105,
+          "median_window": 20.0,
+          "volumes": {
+            "occupied": 271823,
+            "free": 955559,
+            "unknown": 3892616,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 77509436,
+            "moge_only": 0,
+            "beyond_five_frames": 58092615,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 537600000.0,
+          "scale": {
+            "scene-0003": {
+              "n": 40,
+              "median_scale": 15.640138408304498,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0024365631698614726,
+              "first_to_final_log_drift": 0.0,
+              "first_to_final_ratio": 1.0,
+              "min_scale": 15.595251565008885,
+              "max_scale": 15.677530866512566
+            },
+            "scene-0012": {
+              "n": 40,
+              "median_scale": 20.56500351370344,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.005093693907213133,
+              "first_to_final_log_drift": 0.04943002957490883,
+              "first_to_final_ratio": 1.0506720736711663,
+              "min_scale": 19.573189417557288,
+              "max_scale": 20.56500351370344
+            },
+            "scene-0013": {
+              "n": 40,
+              "median_scale": 22.348856923083016,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.006050693814237472,
+              "first_to_final_log_drift": 0.03476119078262485,
+              "first_to_final_ratio": 1.0353724227957302,
+              "min_scale": 21.585331452750356,
+              "max_scale": 22.348856923083016
+            }
+          }
+        },
+        "S2_G-A_hall_c1": {
+          "variant": "S2",
+          "scale_policy": "G-A",
+          "horizon": "all",
+          "s2_conf": 1.0,
+          "n_anchors": 1182,
+          "binary_iou": 0.18607914134799416,
+          "binary_precision": 0.32844176991383517,
+          "binary_recall": 0.3003564263367451,
+          "ssc_miou": 0.04216127860753674,
+          "binary_iou_mean_per_clip": 0.19357038573328159,
+          "coverage_miss": 0.6996435736632549,
+          "naming_error": 0.18562277181271478,
+          "correct": 0.11473365452403034,
+          "tp_accuracy": 0.38199167543495977,
+          "tp_balanced_recall": 0.33202851896178703,
+          "tp_reconstruction_support": 0.38199167543495977,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 285.71844148635864,
+          "peak_gpu_gib": 1.5523014068603516,
+          "median_seconds_per_anchor": 0.18822240829467773,
+          "median_window": 20.0,
+          "volumes": {
+            "occupied": 271823,
+            "free": 955559,
+            "unknown": 3892616,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 77509436,
+            "moge_only": 0,
+            "beyond_five_frames": 58092615,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 537600000.0,
+          "scale": {
+            "scene-0003": {
+              "n": 40,
+              "median_scale": 15.640138408304498,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0024365631698614726,
+              "first_to_final_log_drift": 0.0,
+              "first_to_final_ratio": 1.0,
+              "min_scale": 15.595251565008885,
+              "max_scale": 15.677530866512566
+            },
+            "scene-0012": {
+              "n": 40,
+              "median_scale": 20.56500351370344,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.005093693907213133,
+              "first_to_final_log_drift": 0.04943002957490883,
+              "first_to_final_ratio": 1.0506720736711663,
+              "min_scale": 19.573189417557288,
+              "max_scale": 20.56500351370344
+            },
+            "scene-0013": {
+              "n": 40,
+              "median_scale": 22.348856923083016,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.006050693814237472,
+              "first_to_final_log_drift": 0.03476119078262485,
+              "first_to_final_ratio": 1.0353724227957302,
+              "min_scale": 21.585331452750356,
+              "max_scale": 22.348856923083016
+            }
+          }
+        },
+        "S3_G-A_hall": {
+          "variant": "S3",
+          "scale_policy": "G-A",
+          "horizon": "all",
+          "s2_conf": null,
+          "n_anchors": 1182,
+          "binary_iou": 0.19610651362567522,
+          "binary_precision": 0.38677438595550084,
+          "binary_recall": 0.28459355104163964,
+          "ssc_miou": 0.04703475603774888,
+          "binary_iou_mean_per_clip": 0.2034674269883595,
+          "coverage_miss": 0.7154064489583604,
+          "naming_error": 0.1622267530497366,
+          "correct": 0.12236679799190305,
+          "tp_accuracy": 0.42997038247714625,
+          "tp_balanced_recall": 0.38895538037316,
+          "tp_reconstruction_support": 0.4633980192835681,
+          "tp_moge_only": 0.4037060086602621,
+          "n_moge_only_voxels": 1905716,
+          "seconds": 270.7036612033844,
+          "peak_gpu_gib": 1.4409832954406738,
+          "median_seconds_per_anchor": 0.18239259719848633,
+          "median_window": 20.0,
+          "volumes": {
+            "occupied": 204164,
+            "free": 283613,
+            "unknown": 4560710,
+            "provisional": 71511
+          },
+          "occ_source": {
+            "lingbot": 20535533,
+            "moge_only": 39256211,
+            "beyond_five_frames": 46758720,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 537600000.0,
+          "scale": {
+            "scene-0003": {
+              "n": 40,
+              "median_scale": 15.640138408304498,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0024365631698614726,
+              "first_to_final_log_drift": 0.0,
+              "first_to_final_ratio": 1.0,
+              "min_scale": 15.595251565008885,
+              "max_scale": 15.677530866512566
+            },
+            "scene-0012": {
+              "n": 40,
+              "median_scale": 20.56500351370344,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.005093693907213133,
+              "first_to_final_log_drift": 0.04943002957490883,
+              "first_to_final_ratio": 1.0506720736711663,
+              "min_scale": 19.573189417557288,
+              "max_scale": 20.56500351370344
+            },
+            "scene-0013": {
+              "n": 40,
+              "median_scale": 22.348856923083016,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.006050693814237472,
+              "first_to_final_log_drift": 0.03476119078262485,
+              "first_to_final_ratio": 1.0353724227957302,
+              "min_scale": 21.585331452750356,
+              "max_scale": 22.348856923083016
+            }
+          }
+        },
+        "S4_G-A_hall": {
+          "variant": "S4",
+          "scale_policy": "G-A",
+          "horizon": "all",
+          "s2_conf": null,
+          "n_anchors": 1182,
+          "binary_iou": 0.19417846987211324,
+          "binary_precision": 0.3867305679067675,
+          "binary_recall": 0.28057401198736537,
+          "ssc_miou": 0.046820898734573575,
+          "binary_iou_mean_per_clip": 0.2014097290920279,
+          "coverage_miss": 0.7194259880126347,
+          "naming_error": 0.15995054187340427,
+          "correct": 0.12062347011396109,
+          "tp_accuracy": 0.4299167597866938,
+          "tp_balanced_recall": 0.38983740555169843,
+          "tp_reconstruction_support": 0.4632095740633131,
+          "tp_moge_only": 0.4031422960185681,
+          "n_moge_only_voxels": 1859532,
+          "seconds": 283.32474064826965,
+          "peak_gpu_gib": 1.4404711723327637,
+          "median_seconds_per_anchor": 0.19289004802703857,
+          "median_window": 20.0,
+          "volumes": {
+            "occupied": 201205,
+            "free": 289074,
+            "unknown": 4561020,
+            "provisional": 68698
+          },
+          "occ_source": {
+            "lingbot": 20517100,
+            "moge_only": 38587802,
+            "beyond_five_frames": 46124569,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 537600000.0,
+          "scale": {
+            "scene-0003": {
+              "n": 40,
+              "median_scale": 15.640138408304498,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0024365631698614726,
+              "first_to_final_log_drift": 0.0,
+              "first_to_final_ratio": 1.0,
+              "min_scale": 15.595251565008885,
+              "max_scale": 15.677530866512566
+            },
+            "scene-0012": {
+              "n": 40,
+              "median_scale": 20.56500351370344,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.005093693907213133,
+              "first_to_final_log_drift": 0.04943002957490883,
+              "first_to_final_ratio": 1.0506720736711663,
+              "min_scale": 19.573189417557288,
+              "max_scale": 20.56500351370344
+            },
+            "scene-0013": {
+              "n": 40,
+              "median_scale": 22.348856923083016,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.006050693814237472,
+              "first_to_final_log_drift": 0.03476119078262485,
+              "first_to_final_ratio": 1.0353724227957302,
+              "min_scale": 21.585331452750356,
+              "max_scale": 22.348856923083016
+            }
+          }
+        }
+      },
+      "reference": {
+        "B-R": {
+          "binary_iou": 0.07934939860646681,
+          "ssc_miou": 0.024495769946329817,
+          "binary_precision": 0.6289105763174039,
+          "binary_recall": 0.08324704225517014,
+          "coverage_miss": 0.9167529577448299,
+          "naming_error": 0.045923969629331665,
+          "tp_accuracy": 0.44834112557939554,
+          "tp_balanced_recall": 0.41678230751957035,
+          "n_clips": 1182
+        },
+        "B-D": {
+          "binary_iou": 0.20942899905298007,
+          "ssc_miou": 0.047992911359742624,
+          "binary_precision": 0.564055514244134,
+          "binary_recall": 0.24987426396121626,
+          "coverage_miss": 0.7501257360387837,
+          "naming_error": 0.1391588940580836,
+          "tp_accuracy": 0.4430843262846674,
+          "tp_balanced_recall": 0.3794738325383626,
+          "n_clips": 1182
+        }
+      },
+      "comparisons": {
+        "S1|G-A|all vs S0": {
+          "n_clips": 1182,
+          "unit": "scene",
+          "n_units": 150,
+          "binary_iou": {
+            "a": 0.20942899905298007,
+            "b": 0.11531040270403373,
+            "difference": -0.09411859634894634,
+            "ci": [
+              -0.10339447493040083,
+              -0.0847725007666856
+            ],
+            "excludes_zero": true
+          },
+          "ssc_miou": {
+            "a": 0.047992911359742624,
+            "b": 0.035018810403393996,
+            "difference": -0.012974100956348628,
+            "ci": [
+              -0.016415910012368185,
+              -0.009607937924957765
+            ],
+            "excludes_zero": true
+          },
+          "what": "streaming accumulation against the frozen five-frame map"
+        },
+        "S2|G-A|all vs S1|G-A|all": {
+          "n_clips": 1182,
+          "unit": "scene",
+          "n_units": 150,
+          "binary_iou": {
+            "a": 0.11531040270403373,
+            "b": 0.18607914134799416,
+            "difference": 0.07076873864396044,
+            "ci": [
+              0.06335813387383392,
+              0.07806782436581912
+            ],
+            "excludes_zero": true
+          },
+          "ssc_miou": {
+            "a": 0.035018810403393996,
+            "b": 0.04216188990164495,
+            "difference": 0.007143079498250951,
+            "ci": [
+              0.004237678054216853,
+              0.009883862695424748
+            ],
+            "excludes_zero": true
+          },
+          "what": "relaxed LingBot gate"
+        },
+        "S3|G-A|all vs S1|G-A|all": {
+          "n_clips": 1182,
+          "unit": "scene",
+          "n_units": 150,
+          "binary_iou": {
+            "a": 0.11531040270403373,
+            "b": 0.19610651362567522,
+            "difference": 0.08079611092164149,
+            "ci": [
+              0.07195236951310488,
+              0.08976877076406573
+            ],
+            "excludes_zero": true
+          },
+          "ssc_miou": {
+            "a": 0.035018810403393996,
+            "b": 0.04703475603774888,
+            "difference": 0.012015945634354881,
+            "ci": [
+              0.008844325850790211,
+              0.015202940267099245
+            ],
+            "excludes_zero": true
+          },
+          "what": "MoGe rescue on rejected rays"
+        },
+        "S4|G-A|all vs S1|G-A|all": {
+          "n_clips": 1182,
+          "unit": "scene",
+          "n_units": 150,
+          "binary_iou": {
+            "a": 0.11531040270403373,
+            "b": 0.19417846987211324,
+            "difference": 0.07886806716807951,
+            "ci": [
+              0.07008483285560543,
+              0.08775555278744579
+            ],
+            "excludes_zero": true
+          },
+          "ssc_miou": {
+            "a": 0.035018810403393996,
+            "b": 0.046820898734573575,
+            "difference": 0.011802088331179579,
+            "ci": [
+              0.008636298378252732,
+              0.014997969813953689
+            ],
+            "excludes_zero": true
+          },
+          "what": "map-consistency-gated complementary fusion"
+        },
+        "S1|G-B|all vs S1|G-A|all": {
+          "n_clips": 1182,
+          "unit": "scene",
+          "n_units": 150,
+          "binary_iou": {
+            "a": 0.11531040270403373,
+            "b": 0.11575304437287162,
+            "difference": 0.00044264166883789535,
+            "ci": [
+              -0.002066700379259542,
+              0.0030207760248643634
+            ],
+            "excludes_zero": false
+          },
+          "ssc_miou": {
+            "a": 0.035018810403393996,
+            "b": 0.03504037548014692,
+            "difference": 2.1565076752924628e-05,
+            "ci": [
+              -0.0011079246681288508,
+              0.0011952879304587174
+            ],
+            "excludes_zero": false
+          },
+          "what": "causal running-median gauge"
+        },
+        "S1|G-C|all vs S1|G-A|all": {
+          "n_clips": 1182,
+          "unit": "scene",
+          "n_units": 150,
+          "binary_iou": {
+            "a": 0.11531040270403373,
+            "b": 0.11219458581469219,
+            "difference": -0.0031158168893415383,
+            "ci": [
+              -0.007190308270828619,
+              0.001339964526302629
+            ],
+            "excludes_zero": false
+          },
+          "ssc_miou": {
+            "a": 0.035018810403393996,
+            "b": 0.03400668632462666,
+            "difference": -0.001012124078767336,
+            "ci": [
+              -0.0030238094167140774,
+              0.0011296498763762699
+            ],
+            "excludes_zero": false
+          },
+          "what": "per-frame gauge (ablation only)"
+        }
+      }
+    },
+    "kitti360": {
+      "configs": {
+        "S1_G-A_h1": {
+          "variant": "S1",
+          "scale_policy": "G-A",
+          "horizon": "1",
+          "s2_conf": null,
+          "n_anchors": 1753,
+          "binary_iou": 0.01103979750610361,
+          "binary_precision": 0.3263228083954466,
+          "binary_recall": 0.011297274968866228,
+          "ssc_miou": 0.004003352785737443,
+          "binary_iou_mean_per_clip": 0.011847439686050105,
+          "coverage_miss": 0.9887027250311338,
+          "naming_error": 0.0056584930089726045,
+          "correct": 0.005638781959893623,
+          "tp_accuracy": 0.4991276193093776,
+          "tp_balanced_recall": 0.2832752736281059,
+          "tp_reconstruction_support": 0.4991276193093776,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 103.74576711654663,
+          "peak_gpu_gib": 0.47634029388427734,
+          "median_seconds_per_anchor": 0.007707357406616211,
+          "median_window": 1.0,
+          "volumes": {
+            "occupied": 4613,
+            "free": 16672,
+            "unknown": 2075866,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 8087567,
+            "moge_only": 0,
+            "beyond_five_frames": 0,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 228589568.0,
+          "scale": {
+            "2013_05_28_drive_0006_sync": {
+              "n": 1777,
+              "median_scale": 15.516587677725116,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0,
+              "first_to_final_log_drift": 0.007918201713376316,
+              "first_to_final_ratio": 1.0079496335790765,
+              "min_scale": 15.394209354120267,
+              "max_scale": 15.516587677725116
+            }
+          }
+        },
+        "S1_G-A_h20": {
+          "variant": "S1",
+          "scale_policy": "G-A",
+          "horizon": "20",
+          "s2_conf": null,
+          "n_anchors": 1753,
+          "binary_iou": 0.029086191010123125,
+          "binary_precision": 0.3064649730058436,
+          "binary_recall": 0.03113561520248141,
+          "ssc_miou": 0.0069171798058737565,
+          "binary_iou_mean_per_clip": 0.030481888045215826,
+          "coverage_miss": 0.9688643847975186,
+          "naming_error": 0.017282991705739995,
+          "correct": 0.013852623496741413,
+          "tp_accuracy": 0.4449124710289136,
+          "tp_balanced_recall": 0.22035622299329527,
+          "tp_reconstruction_support": 0.4449124710289136,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 218.8380002975464,
+          "peak_gpu_gib": 0.6010994911193848,
+          "median_seconds_per_anchor": 0.0721900463104248,
+          "median_window": 20.0,
+          "volumes": {
+            "occupied": 17961,
+            "free": 37805,
+            "unknown": 2041385,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 31486747,
+            "moge_only": 0,
+            "beyond_five_frames": 5460849,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 228589568.0,
+          "scale": {
+            "2013_05_28_drive_0006_sync": {
+              "n": 1777,
+              "median_scale": 15.516587677725116,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0,
+              "first_to_final_log_drift": 0.007918201713376316,
+              "first_to_final_ratio": 1.0079496335790765,
+              "min_scale": 15.394209354120267,
+              "max_scale": 15.516587677725116
+            }
+          }
+        },
+        "S1_G-A_h5": {
+          "variant": "S1",
+          "scale_policy": "G-A",
+          "horizon": "5",
+          "s2_conf": null,
+          "n_anchors": 1753,
+          "binary_iou": 0.02678861369069182,
+          "binary_precision": 0.30746649566125406,
+          "binary_recall": 0.028508786009690798,
+          "ssc_miou": 0.0066781646239879745,
+          "binary_iou_mean_per_clip": 0.028240330458166193,
+          "coverage_miss": 0.9714912139903092,
+          "naming_error": 0.015517144328792021,
+          "correct": 0.012991641680898777,
+          "tp_accuracy": 0.45570659082019893,
+          "tp_balanced_recall": 0.2312899389426503,
+          "tp_reconstruction_support": 0.45570659082019893,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 130.22637629508972,
+          "peak_gpu_gib": 0.5015592575073242,
+          "median_seconds_per_anchor": 0.02205824851989746,
+          "median_window": 5.0,
+          "volumes": {
+            "occupied": 15334,
+            "free": 34652,
+            "unknown": 2047164,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 26881344,
+            "moge_only": 0,
+            "beyond_five_frames": 0,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 228589568.0,
+          "scale": {
+            "2013_05_28_drive_0006_sync": {
+              "n": 1777,
+              "median_scale": 15.516587677725116,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0,
+              "first_to_final_log_drift": 0.007918201713376316,
+              "first_to_final_ratio": 1.0079496335790765,
+              "min_scale": 15.394209354120267,
+              "max_scale": 15.516587677725116
+            }
+          }
+        },
+        "S1_G-A_h50": {
+          "variant": "S1",
+          "scale_policy": "G-A",
+          "horizon": "50",
+          "s2_conf": null,
+          "n_anchors": 1753,
+          "binary_iou": 0.030292926487211942,
+          "binary_precision": 0.30469219425748073,
+          "binary_recall": 0.03254254302030773,
+          "ssc_miou": 0.006961900164209847,
+          "binary_iou_mean_per_clip": 0.031263856304355186,
+          "coverage_miss": 0.9674574569796923,
+          "naming_error": 0.018236166385659072,
+          "correct": 0.014306376634648654,
+          "tp_accuracy": 0.439620733564705,
+          "tp_balanced_recall": 0.2169135993639127,
+          "tp_reconstruction_support": 0.439620733564705,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 289.92213129997253,
+          "peak_gpu_gib": 0.7846226692199707,
+          "median_seconds_per_anchor": 0.0967106819152832,
+          "median_window": 26.0,
+          "volumes": {
+            "occupied": 19256,
+            "free": 40448,
+            "unknown": 2037446,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 33757386,
+            "moge_only": 0,
+            "beyond_five_frames": 7825148,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 228589568.0,
+          "scale": {
+            "2013_05_28_drive_0006_sync": {
+              "n": 1777,
+              "median_scale": 15.516587677725116,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0,
+              "first_to_final_log_drift": 0.007918201713376316,
+              "first_to_final_ratio": 1.0079496335790765,
+              "min_scale": 15.394209354120267,
+              "max_scale": 15.516587677725116
+            }
+          }
+        },
+        "S1_G-A_hall": {
+          "variant": "S1",
+          "scale_policy": "G-A",
+          "horizon": "all",
+          "s2_conf": null,
+          "n_anchors": 1753,
+          "binary_iou": 0.03596915342634591,
+          "binary_precision": 0.28702185091607324,
+          "binary_recall": 0.0394983016395697,
+          "ssc_miou": 0.007155807862264034,
+          "binary_iou_mean_per_clip": 0.03645827411928769,
+          "coverage_miss": 0.9605016983604303,
+          "naming_error": 0.02363409920371497,
+          "correct": 0.015864202435854735,
+          "tp_accuracy": 0.401642647337572,
+          "tp_balanced_recall": 0.19904755239223307,
+          "tp_reconstruction_support": 0.401642647337572,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 1305.5076241493225,
+          "peak_gpu_gib": 1.8054389953613281,
+          "median_seconds_per_anchor": 0.32199859619140625,
+          "median_window": 90.0,
+          "volumes": {
+            "occupied": 31085,
+            "free": 62173,
+            "unknown": 2003893,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 54492950,
+            "moge_only": 0,
+            "beyond_five_frames": 28970072,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 228589568.0,
+          "scale": {
+            "2013_05_28_drive_0006_sync": {
+              "n": 1777,
+              "median_scale": 15.516587677725116,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0,
+              "first_to_final_log_drift": 0.007918201713376316,
+              "first_to_final_ratio": 1.0079496335790765,
+              "min_scale": 15.394209354120267,
+              "max_scale": 15.516587677725116
+            }
+          }
+        },
+        "S1_G-B_hall": {
+          "variant": "S1",
+          "scale_policy": "G-B",
+          "horizon": "all",
+          "s2_conf": null,
+          "n_anchors": 1753,
+          "binary_iou": 0.035896088555648326,
+          "binary_precision": 0.29414072919547074,
+          "binary_recall": 0.039279680931437536,
+          "ssc_miou": 0.006898508635646814,
+          "binary_iou_mean_per_clip": 0.03632202297581404,
+          "coverage_miss": 0.9607203190685625,
+          "naming_error": 0.023023136484084678,
+          "correct": 0.016256544447352857,
+          "tp_accuracy": 0.4138665096523713,
+          "tp_balanced_recall": 0.19824474872018485,
+          "tp_reconstruction_support": 0.4138665096523713,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 1137.2925100326538,
+          "peak_gpu_gib": 1.7261052131652832,
+          "median_seconds_per_anchor": 0.28723931312561035,
+          "median_window": 80.0,
+          "volumes": {
+            "occupied": 31680,
+            "free": 68532,
+            "unknown": 1996939,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 55535301,
+            "moge_only": 0,
+            "beyond_five_frames": 28493855,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 228589568.0,
+          "scale": {
+            "2013_05_28_drive_0006_sync": {
+              "n": 1777,
+              "median_scale": 16.570037888905237,
+              "log_mad": 0.0038443017273102065,
+              "adjacent_log_mad": 7.722792885545005e-05,
+              "adjacent_log_p95": 0.001045382575688869,
+              "first_to_final_log_drift": 0.06687299277435388,
+              "first_to_final_ratio": 1.0691596785464708,
+              "min_scale": 15.394209354120267,
+              "max_scale": 18.29532317393589
+            }
+          }
+        },
+        "S1_G-C_hall": {
+          "variant": "S1",
+          "scale_policy": "G-C",
+          "horizon": "all",
+          "s2_conf": null,
+          "n_anchors": 1753,
+          "binary_iou": 0.035942374032211316,
+          "binary_precision": 0.29264175921853264,
+          "binary_recall": 0.03936207268130503,
+          "ssc_miou": 0.007118057088034737,
+          "binary_iou_mean_per_clip": 0.03645626446283258,
+          "coverage_miss": 0.960637927318695,
+          "naming_error": 0.023207028891907285,
+          "correct": 0.01615504378939775,
+          "tp_accuracy": 0.4104215730761192,
+          "tp_balanced_recall": 0.2027538600647835,
+          "tp_reconstruction_support": 0.4104215730761192,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 1163.4693884849548,
+          "peak_gpu_gib": 2.0352954864501953,
+          "median_seconds_per_anchor": 0.29024744033813477,
+          "median_window": 81.0,
+          "volumes": {
+            "occupied": 31724,
+            "free": 67365,
+            "unknown": 1998061,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 55613370,
+            "moge_only": 0,
+            "beyond_five_frames": 28871783,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 228589568.0,
+          "scale": {
+            "2013_05_28_drive_0006_sync": {
+              "n": 1777,
+              "median_scale": 16.4588679245283,
+              "log_mad": 0.05444856758023331,
+              "adjacent_log_mad": 0.044089284507953685,
+              "adjacent_log_p95": 0.14863500957919895,
+              "first_to_final_log_drift": 0.027005551334359,
+              "first_to_final_ratio": 1.0273735060415026,
+              "min_scale": 12.042173560421732,
+              "max_scale": 22.55238095238095
+            }
+          }
+        },
+        "S2_G-A_hall_c0.5": {
+          "variant": "S2",
+          "scale_policy": "G-A",
+          "horizon": "all",
+          "s2_conf": 0.5,
+          "n_anchors": 1753,
+          "binary_iou": 0.10695454241395935,
+          "binary_precision": 0.2670510214727702,
+          "binary_recall": 0.1513967012148325,
+          "ssc_miou": 0.011900244764158565,
+          "binary_iou_mean_per_clip": 0.10515710856647194,
+          "coverage_miss": 0.8486032987851675,
+          "naming_error": 0.08794409194893169,
+          "correct": 0.06345260926590082,
+          "tp_accuracy": 0.4191148734202691,
+          "tp_balanced_recall": 0.13220897394260803,
+          "tp_reconstruction_support": 0.4191148734202691,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 1452.6813695430756,
+          "peak_gpu_gib": 1.9035639762878418,
+          "median_seconds_per_anchor": 0.3884563446044922,
+          "median_window": 90.0,
+          "volumes": {
+            "occupied": 192670,
+            "free": 328399,
+            "unknown": 1576082,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 337751288,
+            "moge_only": 0,
+            "beyond_five_frames": 199529991,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 228589568.0,
+          "scale": {
+            "2013_05_28_drive_0006_sync": {
+              "n": 1777,
+              "median_scale": 15.516587677725116,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0,
+              "first_to_final_log_drift": 0.007918201713376316,
+              "first_to_final_ratio": 1.0079496335790765,
+              "min_scale": 15.394209354120267,
+              "max_scale": 15.516587677725116
+            }
+          }
+        },
+        "S2_G-A_hall_c0": {
+          "variant": "S2",
+          "scale_policy": "G-A",
+          "horizon": "all",
+          "s2_conf": 0.0,
+          "n_anchors": 1753,
+          "binary_iou": 0.10695454241395935,
+          "binary_precision": 0.2670510214727702,
+          "binary_recall": 0.1513967012148325,
+          "ssc_miou": 0.01190024473226242,
+          "binary_iou_mean_per_clip": 0.10515710856647194,
+          "coverage_miss": 0.8486032987851675,
+          "naming_error": 0.08794409194893169,
+          "correct": 0.06345260926590082,
+          "tp_accuracy": 0.4191148734202691,
+          "tp_balanced_recall": 0.13220897394260803,
+          "tp_reconstruction_support": 0.4191148734202691,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 1453.2923772335052,
+          "peak_gpu_gib": 1.9035639762878418,
+          "median_seconds_per_anchor": 0.38837361335754395,
+          "median_window": 90.0,
+          "volumes": {
+            "occupied": 192670,
+            "free": 328399,
+            "unknown": 1576082,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 337751288,
+            "moge_only": 0,
+            "beyond_five_frames": 199529991,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 228589568.0,
+          "scale": {
+            "2013_05_28_drive_0006_sync": {
+              "n": 1777,
+              "median_scale": 15.516587677725116,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0,
+              "first_to_final_log_drift": 0.007918201713376316,
+              "first_to_final_ratio": 1.0079496335790765,
+              "min_scale": 15.394209354120267,
+              "max_scale": 15.516587677725116
+            }
+          }
+        },
+        "S2_G-A_hall_c1": {
+          "variant": "S2",
+          "scale_policy": "G-A",
+          "horizon": "all",
+          "s2_conf": 1.0,
+          "n_anchors": 1753,
+          "binary_iou": 0.10695454241395935,
+          "binary_precision": 0.2670510214727702,
+          "binary_recall": 0.1513967012148325,
+          "ssc_miou": 0.01190024470620172,
+          "binary_iou_mean_per_clip": 0.10515710856647194,
+          "coverage_miss": 0.8486032987851675,
+          "naming_error": 0.08794409194893169,
+          "correct": 0.06345260926590082,
+          "tp_accuracy": 0.4191148734202691,
+          "tp_balanced_recall": 0.13220897394260803,
+          "tp_reconstruction_support": 0.4191148734202691,
+          "tp_moge_only": 0.0,
+          "n_moge_only_voxels": 0,
+          "seconds": 1439.4488232135773,
+          "peak_gpu_gib": 1.9035639762878418,
+          "median_seconds_per_anchor": 0.3839418888092041,
+          "median_window": 90.0,
+          "volumes": {
+            "occupied": 192670,
+            "free": 328399,
+            "unknown": 1576082,
+            "provisional": 0
+          },
+          "occ_source": {
+            "lingbot": 337751288,
+            "moge_only": 0,
+            "beyond_five_frames": 199529991,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 228589568.0,
+          "scale": {
+            "2013_05_28_drive_0006_sync": {
+              "n": 1777,
+              "median_scale": 15.516587677725116,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0,
+              "first_to_final_log_drift": 0.007918201713376316,
+              "first_to_final_ratio": 1.0079496335790765,
+              "min_scale": 15.394209354120267,
+              "max_scale": 15.516587677725116
+            }
+          }
+        },
+        "S3_G-A_hall": {
+          "variant": "S3",
+          "scale_policy": "G-A",
+          "horizon": "all",
+          "s2_conf": null,
+          "n_anchors": 1753,
+          "binary_iou": 0.07633666024115354,
+          "binary_precision": 0.2828108644830087,
+          "binary_recall": 0.09466170743346174,
+          "ssc_miou": 0.01147758664517025,
+          "binary_iou_mean_per_clip": 0.07467961644098557,
+          "coverage_miss": 0.9053382925665383,
+          "naming_error": 0.04886612099489275,
+          "correct": 0.045795586438568986,
+          "tp_accuracy": 0.483781538282087,
+          "tp_balanced_recall": 0.1729023027364946,
+          "tp_reconstruction_support": 0.4027379962453823,
+          "tp_moge_only": 0.5423778522360866,
+          "n_moge_only_voxels": 7572918,
+          "seconds": 2167.9627211093903,
+          "peak_gpu_gib": 1.8079123497009277,
+          "median_seconds_per_anchor": 0.45130181312561035,
+          "median_window": 90.0,
+          "volumes": {
+            "occupied": 94354,
+            "free": 55759,
+            "unknown": 1876090,
+            "provisional": 70946
+          },
+          "occ_source": {
+            "lingbot": 54749483,
+            "moge_only": 110654368,
+            "beyond_five_frames": 99274933,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 228589568.0,
+          "scale": {
+            "2013_05_28_drive_0006_sync": {
+              "n": 1777,
+              "median_scale": 15.516587677725116,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0,
+              "first_to_final_log_drift": 0.007918201713376316,
+              "first_to_final_ratio": 1.0079496335790765,
+              "min_scale": 15.394209354120267,
+              "max_scale": 15.516587677725116
+            }
+          }
+        },
+        "S4_G-A_hall": {
+          "variant": "S4",
+          "scale_policy": "G-A",
+          "horizon": "all",
+          "s2_conf": null,
+          "n_anchors": 1753,
+          "binary_iou": 0.07539717524057757,
+          "binary_precision": 0.2831541841258711,
+          "binary_recall": 0.09318403893121541,
+          "ssc_miou": 0.011386693352803099,
+          "binary_iou_mean_per_clip": 0.07383889038739475,
+          "coverage_miss": 0.9068159610687846,
+          "naming_error": 0.04799287146318977,
+          "correct": 0.04519116746802564,
+          "tp_accuracy": 0.48496682464454977,
+          "tp_balanced_recall": 0.17309908301737253,
+          "tp_reconstruction_support": 0.4025563508500671,
+          "tp_moge_only": 0.5459728667041241,
+          "n_moge_only_voxels": 7380821,
+          "seconds": 2180.5117144584656,
+          "peak_gpu_gib": 1.8049702644348145,
+          "median_seconds_per_anchor": 0.42769312858581543,
+          "median_window": 90.0,
+          "volumes": {
+            "occupied": 93029,
+            "free": 58481,
+            "unknown": 1876448,
+            "provisional": 69192
+          },
+          "occ_source": {
+            "lingbot": 54653269,
+            "moge_only": 108426856,
+            "beyond_five_frames": 97478401,
+            "unlabelled": 0
+          },
+          "map_bytes_mean": 228589568.0,
+          "scale": {
+            "2013_05_28_drive_0006_sync": {
+              "n": 1777,
+              "median_scale": 15.516587677725116,
+              "log_mad": 0.0,
+              "adjacent_log_mad": 0.0,
+              "adjacent_log_p95": 0.0,
+              "first_to_final_log_drift": 0.007918201713376316,
+              "first_to_final_ratio": 1.0079496335790765,
+              "min_scale": 15.394209354120267,
+              "max_scale": 15.516587677725116
+            }
+          }
+        }
+      },
+      "reference": {
+        "B-R": {
+          "binary_iou": 0.03625887069181678,
+          "ssc_miou": 0.008789469356000347,
+          "binary_precision": 0.3747428923320894,
+          "binary_recall": 0.03859370450276173,
+          "coverage_miss": 0.9614062954972383,
+          "naming_error": 0.014493330530403293,
+          "tp_accuracy": 0.6244638674329342,
+          "tp_balanced_recall": 0.2788619593468991,
+          "n_clips": 1753
+        },
+        "B-D": {
+          "binary_iou": 0.1320768055455861,
+          "ssc_miou": 0.026588337397800445,
+          "binary_precision": 0.3586923808178506,
+          "binary_recall": 0.1729072377644606,
+          "coverage_miss": 0.8270927622355394,
+          "naming_error": 0.06987845479391322,
+          "tp_accuracy": 0.5958615978290988,
+          "tp_balanced_recall": 0.28394544945436195,
+          "n_clips": 1753
+        }
+      },
+      "comparisons": {
+        "S1|G-A|all vs S0": {
+          "n_clips": 1753,
+          "unit": "contiguous block of 20 clips",
+          "n_units": 87,
+          "binary_iou": {
+            "a": 0.1320768055455861,
+            "b": 0.03596915342634591,
+            "difference": -0.09610765211924019,
+            "ci": [
+              -0.10023019483157808,
+              -0.09209075890128186
+            ],
+            "excludes_zero": true
+          },
+          "ssc_miou": {
+            "a": 0.026588337397800445,
+            "b": 0.007155807862264034,
+            "difference": -0.01943252953553641,
+            "ci": [
+              -0.020566412551378668,
+              -0.01806856334745751
+            ],
+            "excludes_zero": true
+          },
+          "what": "streaming accumulation against the frozen five-frame map"
+        },
+        "S2|G-A|all vs S1|G-A|all": {
+          "n_clips": 1753,
+          "unit": "contiguous block of 20 clips",
+          "n_units": 87,
+          "binary_iou": {
+            "a": 0.03596915342634591,
+            "b": 0.10695454241395935,
+            "difference": 0.07098538898761345,
+            "ci": [
+              0.06775704674041952,
+              0.07435561057674582
+            ],
+            "excludes_zero": true
+          },
+          "ssc_miou": {
+            "a": 0.007155807862264034,
+            "b": 0.011900244764158565,
+            "difference": 0.004744436901894532,
+            "ci": [
+              0.004167204501152355,
+              0.005179547187090591
+            ],
+            "excludes_zero": true
+          },
+          "what": "relaxed LingBot gate"
+        },
+        "S3|G-A|all vs S1|G-A|all": {
+          "n_clips": 1753,
+          "unit": "contiguous block of 20 clips",
+          "n_units": 87,
+          "binary_iou": {
+            "a": 0.03596915342634591,
+            "b": 0.07633666024115354,
+            "difference": 0.040367506814807635,
+            "ci": [
+              0.037683593281181316,
+              0.043177239232514784
+            ],
+            "excludes_zero": true
+          },
+          "ssc_miou": {
+            "a": 0.007155807862264034,
+            "b": 0.01147758664517025,
+            "difference": 0.0043217787829062165,
+            "ci": [
+              0.0035145588319562696,
+              0.005169414990991698
+            ],
+            "excludes_zero": true
+          },
+          "what": "MoGe rescue on rejected rays"
+        },
+        "S4|G-A|all vs S1|G-A|all": {
+          "n_clips": 1753,
+          "unit": "contiguous block of 20 clips",
+          "n_units": 87,
+          "binary_iou": {
+            "a": 0.03596915342634591,
+            "b": 0.07539717524057757,
+            "difference": 0.03942802181423166,
+            "ci": [
+              0.03681549644695365,
+              0.0421634807390558
+            ],
+            "excludes_zero": true
+          },
+          "ssc_miou": {
+            "a": 0.007155807862264034,
+            "b": 0.011386693352803099,
+            "difference": 0.004230885490539065,
+            "ci": [
+              0.0034392617591824932,
+              0.00506153644619376
+            ],
+            "excludes_zero": true
+          },
+          "what": "map-consistency-gated complementary fusion"
+        },
+        "S1|G-B|all vs S1|G-A|all": {
+          "n_clips": 1753,
+          "unit": "contiguous block of 20 clips",
+          "n_units": 87,
+          "binary_iou": {
+            "a": 0.03596915342634591,
+            "b": 0.035896088555648326,
+            "difference": -7.306487069758116e-05,
+            "ci": [
+              -0.00048080753750429827,
+              0.00034406642498673414
+            ],
+            "excludes_zero": false
+          },
+          "ssc_miou": {
+            "a": 0.007155807862264034,
+            "b": 0.006898508635646814,
+            "difference": -0.0002572992266172197,
+            "ci": [
+              -0.00048340470063929424,
+              -5.766978570214724e-05
+            ],
+            "excludes_zero": true
+          },
+          "what": "causal running-median gauge"
+        },
+        "S1|G-C|all vs S1|G-A|all": {
+          "n_clips": 1753,
+          "unit": "contiguous block of 20 clips",
+          "n_units": 87,
+          "binary_iou": {
+            "a": 0.03596915342634591,
+            "b": 0.035942374032211316,
+            "difference": -2.677939413459063e-05,
+            "ci": [
+              -0.0004610124621948,
+              0.0003983729957952204
+            ],
+            "excludes_zero": false
+          },
+          "ssc_miou": {
+            "a": 0.007155807862264034,
+            "b": 0.007118057088034737,
+            "difference": -3.775077422929658e-05,
+            "ci": [
+              -0.00025814590653507584,
+              0.00017035344122567176
+            ],
+            "excludes_zero": false
+          },
+          "what": "per-frame gauge (ablation only)"
+        }
+      }
+    }
+  },
+  "decision": {
+    "rules": {
+      "TEMPORAL_ACCUMULATION_WORKS": {
+        "improves_on": [],
+        "regresses_on": [
+          "semantickitti",
+          "occ3d",
+          "kitti360"
+        ],
+        "passes": false
+      },
+      "COMPLEMENTARY_DEPTH_WORKS": {
+        "improves_on": [
+          "occ3d",
+          "kitti360"
+        ],
+        "regresses_on": [
+          "semantickitti"
+        ],
+        "passes": false
+      },
+      "RELAXED_GATE_IS_SUFFICIENT": {
+        "improves_on": [
+          "occ3d",
+          "kitti360"
+        ],
+        "regresses_on": [
+          "semantickitti"
+        ],
+        "passes": false
+      },
+      "SCALE_POLICY_RUNNING_MEDIAN": {
+        "improves_on": [],
+        "regresses_on": [
+          "semantickitti",
+          "kitti360"
+        ],
+        "passes": false
+      },
+      "SCALE_POLICY_FIXED_ANCHOR": {
+        "passes": true
+      },
+      "EVIDENCE_REMAINS_INSUFFICIENT": {
+        "passes": true
+      }
+    },
+    "selected": [
+      "SCALE_POLICY_FIXED_ANCHOR",
+      "EVIDENCE_REMAINS_INSUFFICIENT"
+    ]
+  }
+}

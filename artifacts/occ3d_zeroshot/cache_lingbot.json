@@ -1,0 +1,13 @@
+{
+  "n_clips": 1182,
+  "n_cached": 1179,
+  "n_skipped": 3,
+  "cache_root": "/media/SSD1/MINH_DATASETS/lingbot_occ3d_zeroshot/cache_lingbot",
+  "elapsed_s": 247.03852677345276,
+  "ms_per_clip": 209.53225341259775,
+  "processed_hw": [
+    294,
+    518
+  ],
+  "device": "cuda:0"
+}

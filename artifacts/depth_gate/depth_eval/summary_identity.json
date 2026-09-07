@@ -1,0 +1,140 @@
+{
+  "provenance": {
+    "tool": "depth_gate.eval_depth",
+    "git_commit": "9a648322e6dc4e34995f0530650c2fa469779676",
+    "git_dirty_files": [
+      "M lingbot_map/models/gct_stream.py",
+      " M research/sem_bypass/model.py",
+      "?? artifacts/",
+      "?? configs/depth_gate/",
+      "?? configs/scale_gate/",
+      "?? depth_gate/",
+      "?? lingbot_map_scale_claude_code_plan.md",
+      "?? reports/",
+      "?? scale_gate/",
+      "?? scripts/export_occupancy_3d.py",
+      "?? scripts/make_occupancy_ceiling_figure.py",
+      "?? scripts/make_scene_completion_honest_figure.py",
+      "?? tests/depth_gate/",
+      "?? tests/scale_gate/",
+      "?? tools/__init__.py",
+      "?? tools/check_ddad_layout.py",
+      "?? tools/check_vkitti2_layout.py",
+      "?? tools/depth_gate/",
+      "?? tools/geometry_gate/",
+      "?? tools/scale_gate/"
+    ],
+    "python": "3.10.19",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.7.1+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "seed": 0,
+    "config_hash": "d2faead637e3a190",
+    "checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+    "checkpoint_sha256": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72",
+    "argv": [
+      "tools/depth_gate/eval_depth.py",
+      "--run",
+      "identity"
+    ]
+  },
+  "run": "identity",
+  "base": {
+    "overall": {
+      "abs_rel": 0.20460149185895488,
+      "log_rmse": 0.259161833272641,
+      "rmse_m": 5.164065424988233,
+      "delta1": 0.7055215194301744,
+      "median_abs_err_m": 1.569777488708496,
+      "n_valid": 14738262
+    },
+    "by_distance": {
+      "0-10m": {
+        "abs_rel": 0.22199741208363505,
+        "log_rmse": 0.25993248587145895,
+        "rmse_m": 2.4909933130850606,
+        "delta1": 0.6953780004257893,
+        "median_abs_err_m": 1.0119447708129883,
+        "n_valid": 6406924
+      },
+      "10-20m": {
+        "abs_rel": 0.19140604892422844,
+        "log_rmse": 0.24317037853251205,
+        "rmse_m": 4.112009850466266,
+        "delta1": 0.7291579552075016,
+        "median_abs_err_m": 1.8118553161621094,
+        "n_valid": 5411933
+      },
+      "20-40m": {
+        "abs_rel": 0.18465982453708982,
+        "log_rmse": 0.26545240623792515,
+        "rmse_m": 7.154136017504135,
+        "delta1": 0.7175312033572,
+        "median_abs_err_m": 3.5935935974121094,
+        "n_valid": 2218992
+      },
+      "40-80m": {
+        "abs_rel": 0.2106106814832963,
+        "log_rmse": 0.3392929438388014,
+        "rmse_m": 14.546033325832992,
+        "delta1": 0.5776263433145873,
+        "median_abs_err_m": 9.116676330566406,
+        "n_valid": 700413
+      }
+    }
+  },
+  "refined": {
+    "overall": {
+      "abs_rel": 0.20460149185895488,
+      "log_rmse": 0.259161833272641,
+      "rmse_m": 5.164065424988233,
+      "delta1": 0.7055215194301744,
+      "median_abs_err_m": 1.569777488708496,
+      "n_valid": 14738262
+    },
+    "by_distance": {
+      "0-10m": {
+        "abs_rel": 0.22199741208363505,
+        "log_rmse": 0.25993248587145895,
+        "rmse_m": 2.4909933130850606,
+        "delta1": 0.6953780004257893,
+        "median_abs_err_m": 1.0119447708129883,
+        "n_valid": 6406924
+      },
+      "10-20m": {
+        "abs_rel": 0.19140604892422844,
+        "log_rmse": 0.24317037853251205,
+        "rmse_m": 4.112009850466266,
+        "delta1": 0.7291579552075016,
+        "median_abs_err_m": 1.8118553161621094,
+        "n_valid": 5411933
+      },
+      "20-40m": {
+        "abs_rel": 0.18465982453708982,
+        "log_rmse": 0.26545240623792515,
+        "rmse_m": 7.154136017504135,
+        "delta1": 0.7175312033572,
+        "median_abs_err_m": 3.5935935974121094,
+        "n_valid": 2218992
+      },
+      "40-80m": {
+        "abs_rel": 0.2106106814832963,
+        "log_rmse": 0.3392929438388014,
+        "rmse_m": 14.546033325832992,
+        "delta1": 0.5776263433145873,
+        "median_abs_err_m": 9.116676330566406,
+        "n_valid": 700413
+      }
+    }
+  },
+  "abs_rel_delta_bootstrap": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 163,
+    "excludes_zero": false
+  },
+  "n_clips": 163,
+  "improved_clip_fraction": 0.0
+}

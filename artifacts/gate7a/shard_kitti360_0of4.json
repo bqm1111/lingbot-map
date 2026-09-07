@@ -1,0 +1,26 @@
+{
+  "dataset": "kitti360",
+  "shard": 0,
+  "shards": 4,
+  "n_clips": 439,
+  "n_verified_against_pinned": 439,
+  "max_projection_roundtrip_pixel_error": 1.0800249583553523e-12,
+  "pinned_channel_agreement": {
+    "n_raw_voxels": 8052166,
+    "n_raw_channel_mismatch": 0,
+    "n_dil_voxels": 41966586,
+    "n_dil_channel_mismatch": 0,
+    "max_top1_top2_gap_at_mismatch": 0.0,
+    "note": "geometry is bit-exact on every clip; these are argmax flips on voxels whose top two fused probabilities differ by less than the CUDA atomic accumulation error of index_add_. The PINNED Gate-6 channel is what this gate uses as the base label."
+  },
+  "empty_base_clips": {
+    "B-R": [],
+    "B-D": []
+  },
+  "voxel_size_m": 0.2,
+  "voxel_diagonal_m": 0.34641016151377546,
+  "seconds": 589.3638877868652,
+  "peak_gpu_gib": 0.14914655685424805,
+  "gate6_rollup_sha256": "2d6effe3b0e6b351f7a347821f631e6bc0c5a9daf05fb004123231221c28bbbf",
+  "precommit_sha256": "2da49cc6b266b2fc22cddfa743f0cd54f37005c72c9da8cb1a281c0885f37a4e"
+}

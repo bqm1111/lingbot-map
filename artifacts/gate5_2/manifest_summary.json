@@ -1,0 +1,846 @@
+{
+  "sequence": "2013_05_28_drive_0006_sync",
+  "official_role": "validation",
+  "n_anchors_official": 1812,
+  "anchor_first": 0,
+  "anchor_last": 9055,
+  "anchor_stride": 5,
+  "n_pose_frames": 9186,
+  "index_mapping": "kitti360_frame = pose_frames[sscbench_index + 1]",
+  "n_clips_eligible": 1753,
+  "n_excluded": 59,
+  "exclusion_reasons": {
+    "missing_history_anchor": 4,
+    "non_contiguous_native_frames": 55
+  },
+  "excluded": [
+    {
+      "anchor": 0,
+      "reason": "missing_history_anchor"
+    },
+    {
+      "anchor": 5,
+      "reason": "missing_history_anchor"
+    },
+    {
+      "anchor": 10,
+      "reason": "missing_history_anchor"
+    },
+    {
+      "anchor": 15,
+      "reason": "missing_history_anchor"
+    },
+    {
+      "anchor": 20,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        35,
+        69,
+        79,
+        90,
+        117
+      ],
+      "gaps": [
+        34,
+        10,
+        11,
+        27
+      ]
+    },
+    {
+      "anchor": 25,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        69,
+        79,
+        90,
+        117,
+        122
+      ],
+      "gaps": [
+        10,
+        11,
+        27,
+        5
+      ]
+    },
+    {
+      "anchor": 30,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        79,
+        90,
+        117,
+        122,
+        127
+      ],
+      "gaps": [
+        11,
+        27,
+        5,
+        5
+      ]
+    },
+    {
+      "anchor": 35,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        90,
+        117,
+        122,
+        127,
+        132
+      ],
+      "gaps": [
+        27,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "anchor": 430,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        507,
+        512,
+        517,
+        522,
+        545
+      ],
+      "gaps": [
+        5,
+        5,
+        5,
+        23
+      ]
+    },
+    {
+      "anchor": 435,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        512,
+        517,
+        522,
+        545,
+        554
+      ],
+      "gaps": [
+        5,
+        5,
+        23,
+        9
+      ]
+    },
+    {
+      "anchor": 440,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        517,
+        522,
+        545,
+        554,
+        559
+      ],
+      "gaps": [
+        5,
+        23,
+        9,
+        5
+      ]
+    },
+    {
+      "anchor": 445,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        522,
+        545,
+        554,
+        559,
+        564
+      ],
+      "gaps": [
+        23,
+        9,
+        5,
+        5
+      ]
+    },
+    {
+      "anchor": 450,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        545,
+        554,
+        559,
+        564,
+        573
+      ],
+      "gaps": [
+        9,
+        5,
+        5,
+        9
+      ]
+    },
+    {
+      "anchor": 455,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        554,
+        559,
+        564,
+        573,
+        583
+      ],
+      "gaps": [
+        5,
+        5,
+        9,
+        10
+      ]
+    },
+    {
+      "anchor": 460,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        559,
+        564,
+        573,
+        583,
+        607
+      ],
+      "gaps": [
+        5,
+        9,
+        10,
+        24
+      ]
+    },
+    {
+      "anchor": 465,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        564,
+        573,
+        583,
+        607,
+        614
+      ],
+      "gaps": [
+        9,
+        10,
+        24,
+        7
+      ]
+    },
+    {
+      "anchor": 470,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        573,
+        583,
+        607,
+        614,
+        619
+      ],
+      "gaps": [
+        10,
+        24,
+        7,
+        5
+      ]
+    },
+    {
+      "anchor": 475,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        583,
+        607,
+        614,
+        619,
+        624
+      ],
+      "gaps": [
+        24,
+        7,
+        5,
+        5
+      ]
+    },
+    {
+      "anchor": 480,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        607,
+        614,
+        619,
+        624,
+        629
+      ],
+      "gaps": [
+        7,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "anchor": 2340,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        2469,
+        2474,
+        2479,
+        2484,
+        2497
+      ],
+      "gaps": [
+        5,
+        5,
+        5,
+        13
+      ]
+    },
+    {
+      "anchor": 2345,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        2474,
+        2479,
+        2484,
+        2497,
+        2536
+      ],
+      "gaps": [
+        5,
+        5,
+        13,
+        39
+      ]
+    },
+    {
+      "anchor": 2350,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        2479,
+        2484,
+        2497,
+        2536,
+        2547
+      ],
+      "gaps": [
+        5,
+        13,
+        39,
+        11
+      ]
+    },
+    {
+      "anchor": 2355,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        2484,
+        2497,
+        2536,
+        2547,
+        2592
+      ],
+      "gaps": [
+        13,
+        39,
+        11,
+        45
+      ]
+    },
+    {
+      "anchor": 2360,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        2497,
+        2536,
+        2547,
+        2592,
+        2598
+      ],
+      "gaps": [
+        39,
+        11,
+        45,
+        6
+      ]
+    },
+    {
+      "anchor": 2365,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        2536,
+        2547,
+        2592,
+        2598,
+        2603
+      ],
+      "gaps": [
+        11,
+        45,
+        6,
+        5
+      ]
+    },
+    {
+      "anchor": 2370,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        2547,
+        2592,
+        2598,
+        2603,
+        2608
+      ],
+      "gaps": [
+        45,
+        6,
+        5,
+        5
+      ]
+    },
+    {
+      "anchor": 2375,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        2592,
+        2598,
+        2603,
+        2608,
+        2613
+      ],
+      "gaps": [
+        6,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "anchor": 3250,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        3468,
+        3473,
+        3478,
+        3483,
+        3493
+      ],
+      "gaps": [
+        5,
+        5,
+        5,
+        10
+      ]
+    },
+    {
+      "anchor": 3255,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        3473,
+        3478,
+        3483,
+        3493,
+        3504
+      ],
+      "gaps": [
+        5,
+        5,
+        10,
+        11
+      ]
+    },
+    {
+      "anchor": 3260,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        3478,
+        3483,
+        3493,
+        3504,
+        3514
+      ],
+      "gaps": [
+        5,
+        10,
+        11,
+        10
+      ]
+    },
+    {
+      "anchor": 3265,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        3483,
+        3493,
+        3504,
+        3514,
+        3522
+      ],
+      "gaps": [
+        10,
+        11,
+        10,
+        8
+      ]
+    },
+    {
+      "anchor": 3270,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        3493,
+        3504,
+        3514,
+        3522,
+        3527
+      ],
+      "gaps": [
+        11,
+        10,
+        8,
+        5
+      ]
+    },
+    {
+      "anchor": 3275,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        3504,
+        3514,
+        3522,
+        3527,
+        3532
+      ],
+      "gaps": [
+        10,
+        8,
+        5,
+        5
+      ]
+    },
+    {
+      "anchor": 3280,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        3514,
+        3522,
+        3527,
+        3532,
+        3537
+      ],
+      "gaps": [
+        8,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "anchor": 4145,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        4382,
+        4387,
+        4392,
+        4397,
+        4404
+      ],
+      "gaps": [
+        5,
+        5,
+        5,
+        7
+      ]
+    },
+    {
+      "anchor": 4150,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        4387,
+        4392,
+        4397,
+        4404,
+        4414
+      ],
+      "gaps": [
+        5,
+        5,
+        7,
+        10
+      ]
+    },
+    {
+      "anchor": 4155,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        4392,
+        4397,
+        4404,
+        4414,
+        4434
+      ],
+      "gaps": [
+        5,
+        7,
+        10,
+        20
+      ]
+    },
+    {
+      "anchor": 4160,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        4397,
+        4404,
+        4414,
+        4434,
+        4444
+      ],
+      "gaps": [
+        7,
+        10,
+        20,
+        10
+      ]
+    },
+    {
+      "anchor": 4165,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        4404,
+        4414,
+        4434,
+        4444,
+        4454
+      ],
+      "gaps": [
+        10,
+        20,
+        10,
+        10
+      ]
+    },
+    {
+      "anchor": 4170,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        4414,
+        4434,
+        4444,
+        4454,
+        4467
+      ],
+      "gaps": [
+        20,
+        10,
+        10,
+        13
+      ]
+    },
+    {
+      "anchor": 4175,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        4434,
+        4444,
+        4454,
+        4467,
+        4493
+      ],
+      "gaps": [
+        10,
+        10,
+        13,
+        26
+      ]
+    },
+    {
+      "anchor": 4180,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        4444,
+        4454,
+        4467,
+        4493,
+        4499
+      ],
+      "gaps": [
+        10,
+        13,
+        26,
+        6
+      ]
+    },
+    {
+      "anchor": 4185,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        4454,
+        4467,
+        4493,
+        4499,
+        4504
+      ],
+      "gaps": [
+        13,
+        26,
+        6,
+        5
+      ]
+    },
+    {
+      "anchor": 4190,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        4467,
+        4493,
+        4499,
+        4504,
+        4509
+      ],
+      "gaps": [
+        26,
+        6,
+        5,
+        5
+      ]
+    },
+    {
+      "anchor": 4195,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        4493,
+        4499,
+        4504,
+        4509,
+        4514
+      ],
+      "gaps": [
+        6,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "anchor": 5135,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        5434,
+        5439,
+        5444,
+        5449,
+        5458
+      ],
+      "gaps": [
+        5,
+        5,
+        5,
+        9
+      ]
+    },
+    {
+      "anchor": 5140,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        5439,
+        5444,
+        5449,
+        5458,
+        5490
+      ],
+      "gaps": [
+        5,
+        5,
+        9,
+        32
+      ]
+    },
+    {
+      "anchor": 5145,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        5444,
+        5449,
+        5458,
+        5490,
+        5533
+      ],
+      "gaps": [
+        5,
+        9,
+        32,
+        43
+      ]
+    },
+    {
+      "anchor": 5150,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        5449,
+        5458,
+        5490,
+        5533,
+        5577
+      ],
+      "gaps": [
+        9,
+        32,
+        43,
+        44
+      ]
+    },
+    {
+      "anchor": 5155,
+      "reason": "non_contiguous_native_frames",
+      "native_frames": [
+        5458,
+        5490,
+        5533,
+        5577,
+        5596
+      ],
+      "gaps": [
+        32,
+        43,
+        44,
+        19
+      ]
+    }
+  ],
+  "span_s": {
+    "median": 2.090031147003174,
+    "min": 2.082608938217163,
+    "max": 2.0989620685577393,
+    "mean": 2.09007677009156
+  },
+  "n_blocks": 87,
+  "block_size": 20,
+  "native_hw": [
+    376,
+    1408
+  ],
+  "K_native": [
+    [
+      552.554261,
+      0.0,
+      682.049453
+    ],
+    [
+      0.0,
+      552.554261,
+      238.769549
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "manifest": "manifests/gate5_2/val.jsonl"
+}

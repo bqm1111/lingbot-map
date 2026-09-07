@@ -1,0 +1,71 @@
+{
+  "variant": "G51-B",
+  "dataset": "occ3d",
+  "moge": {
+    "repo": "https://github.com/microsoft/MoGe",
+    "commit": "74fbce054ebed49800de42d0ad0e83495065719a",
+    "hf_repo": "Ruicheng/moge-2-vitl",
+    "hf_revision": "39c4d5e957afe587e04eec59dc2bcc3be5ecd968",
+    "model_class": "moge.model.v2.MoGeModel",
+    "license": "MIT",
+    "n_params": 326209221,
+    "weight_sha256": "3eefd4abb2102f38f12b2d1992e5ff15e4923e5431c67dd494afe157e0111cd5",
+    "depth_convention": "optical-axis z (points[...,2]), OpenCV camera frame",
+    "fov_source": "predicted by MoGe from RGB (fov_x=None)"
+  },
+  "crop_and_calibration": {
+    "crop": {
+      "x0": 0,
+      "x1": 518,
+      "width": 518,
+      "height": 294,
+      "cx_crop": 264.26644764237847,
+      "identity": true,
+      "aspect_ratio": 1.7619047619047619
+    },
+    "K_processed": [
+      [
+        410.0025694863219,
+        0.0,
+        264.26644764237847
+      ],
+      [
+        0.0,
+        413.69628632854096,
+        160.5589748256962
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "proc_hw": [
+      294,
+      518
+    ],
+    "teacher_width": 518,
+    "teacher_height": 294,
+    "calibrated_fov_x_deg": 64.5614792846793,
+    "crop_applied": false
+  },
+  "uses_crop": false,
+  "uses_calibrated_fov": true,
+  "n_clips": 1182,
+  "n_ok": 1182,
+  "n_failed": 0,
+  "failed_clip_ids": [],
+  "s_moge": {
+    "median": 25.5954249743728,
+    "p05": 14.699056041352144,
+    "p25": 20.853971085541772,
+    "p75": 30.31159380691842,
+    "p95": 41.7258357178421
+  },
+  "fov_calibrated_deg": 65.12158487224079,
+  "fov_moge_out_deg": 65.12158203125,
+  "mad_log_clip_median": 0.0484200880558171,
+  "per_frame_log_scale_std_median": 0.018778411514496322,
+  "elapsed_s": 388.62622332572937,
+  "peak_gpu_gib": 2.223451614379883
+}

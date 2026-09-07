@@ -1,0 +1,809 @@
+{
+  "source": "occ3d_train",
+  "n_samples": 519,
+  "seconds": 758.3799021244049,
+  "future_frames": 20,
+  "audit": [
+    {
+      "segment": "scene-0002",
+      "t": 4,
+      "clip": "scene-0002_25fbd2d7",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 313817,
+      "n_fut_rows": 62501,
+      "bytes": 1345738
+    },
+    {
+      "segment": "scene-0002",
+      "t": 6,
+      "clip": "scene-0002_cc175ce8",
+      "input_frames": [
+        0,
+        6
+      ],
+      "target_frames": [
+        7,
+        26
+      ],
+      "n_rows": 326480,
+      "n_fut_rows": 61032,
+      "bytes": 1424517
+    },
+    {
+      "segment": "scene-0002",
+      "t": 8,
+      "clip": "scene-0002_0bcb08a9",
+      "input_frames": [
+        0,
+        8
+      ],
+      "target_frames": [
+        9,
+        28
+      ],
+      "n_rows": 309307,
+      "n_fut_rows": 48038,
+      "bytes": 1367249
+    },
+    {
+      "segment": "scene-0002",
+      "t": 10,
+      "clip": "scene-0002_ecc288c7",
+      "input_frames": [
+        0,
+        10
+      ],
+      "target_frames": [
+        11,
+        30
+      ],
+      "n_rows": 298846,
+      "n_fut_rows": 37683,
+      "bytes": 1431352
+    },
+    {
+      "segment": "scene-0002",
+      "t": 12,
+      "clip": "scene-0002_694bf980",
+      "input_frames": [
+        0,
+        12
+      ],
+      "target_frames": [
+        13,
+        32
+      ],
+      "n_rows": 298172,
+      "n_fut_rows": 30547,
+      "bytes": 1550245
+    },
+    {
+      "segment": "scene-0002",
+      "t": 14,
+      "clip": "scene-0002_fa88c561",
+      "input_frames": [
+        0,
+        14
+      ],
+      "target_frames": [
+        15,
+        34
+      ],
+      "n_rows": 315171,
+      "n_fut_rows": 19591,
+      "bytes": 1626293
+    },
+    {
+      "segment": "scene-0002",
+      "t": 16,
+      "clip": "scene-0002_76166994",
+      "input_frames": [
+        0,
+        16
+      ],
+      "target_frames": [
+        17,
+        36
+      ],
+      "n_rows": 366034,
+      "n_fut_rows": 14514,
+      "bytes": 1833416
+    },
+    {
+      "segment": "scene-0002",
+      "t": 18,
+      "clip": "scene-0002_6b615c1f",
+      "input_frames": [
+        0,
+        18
+      ],
+      "target_frames": [
+        19,
+        38
+      ],
+      "n_rows": 426854,
+      "n_fut_rows": 28676,
+      "bytes": 2194451
+    },
+    {
+      "segment": "scene-0002",
+      "t": 20,
+      "clip": "scene-0002_d6515448",
+      "input_frames": [
+        0,
+        20
+      ],
+      "target_frames": [
+        21,
+        39
+      ],
+      "n_rows": 415680,
+      "n_fut_rows": 21256,
+      "bytes": 2124391
+    },
+    {
+      "segment": "scene-0002",
+      "t": 22,
+      "clip": "scene-0002_4dd38dcd",
+      "input_frames": [
+        0,
+        22
+      ],
+      "target_frames": [
+        23,
+        39
+      ],
+      "n_rows": 432904,
+      "n_fut_rows": 20177,
+      "bytes": 2156750
+    },
+    {
+      "segment": "scene-0002",
+      "t": 24,
+      "clip": "scene-0002_40a982cc",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 459927,
+      "n_fut_rows": 31489,
+      "bytes": 2472556
+    },
+    {
+      "segment": "scene-0002",
+      "t": 26,
+      "clip": "scene-0002_a05edf71",
+      "input_frames": [
+        0,
+        26
+      ],
+      "target_frames": [
+        27,
+        39
+      ],
+      "n_rows": 469964,
+      "n_fut_rows": 37232,
+      "bytes": 2545403
+    },
+    {
+      "segment": "scene-0002",
+      "t": 28,
+      "clip": "scene-0002_5b89841b",
+      "input_frames": [
+        0,
+        28
+      ],
+      "target_frames": [
+        29,
+        39
+      ],
+      "n_rows": 439441,
+      "n_fut_rows": 17495,
+      "bytes": 2141855
+    },
+    {
+      "segment": "scene-0002",
+      "t": 30,
+      "clip": "scene-0002_a0c1b7a7",
+      "input_frames": [
+        0,
+        30
+      ],
+      "target_frames": [
+        31,
+        39
+      ],
+      "n_rows": 468580,
+      "n_fut_rows": 36274,
+      "bytes": 2568776
+    },
+    {
+      "segment": "scene-0002",
+      "t": 32,
+      "clip": "scene-0002_65282c15",
+      "input_frames": [
+        0,
+        32
+      ],
+      "target_frames": [
+        33,
+        39
+      ],
+      "n_rows": 459343,
+      "n_fut_rows": 21046,
+      "bytes": 2443318
+    },
+    {
+      "segment": "scene-0002",
+      "t": 34,
+      "clip": "scene-0002_b0c254b0",
+      "input_frames": [
+        0,
+        34
+      ],
+      "target_frames": [
+        35,
+        39
+      ],
+      "n_rows": 431372,
+      "n_fut_rows": 15985,
+      "bytes": 2371017
+    },
+    {
+      "segment": "scene-0006",
+      "t": 4,
+      "clip": "scene-0006_8177ec02",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 564301,
+      "n_fut_rows": 55133,
+      "bytes": 2519450
+    },
+    {
+      "segment": "scene-0006",
+      "t": 6,
+      "clip": "scene-0006_81a0b7e1",
+      "input_frames": [
+        0,
+        6
+      ],
+      "target_frames": [
+        7,
+        26
+      ],
+      "n_rows": 641765,
+      "n_fut_rows": 57622,
+      "bytes": 2981113
+    },
+    {
+      "segment": "scene-0006",
+      "t": 8,
+      "clip": "scene-0006_aa7c3702",
+      "input_frames": [
+        0,
+        8
+      ],
+      "target_frames": [
+        9,
+        28
+      ],
+      "n_rows": 723434,
+      "n_fut_rows": 56800,
+      "bytes": 3449624
+    },
+    {
+      "segment": "scene-0006",
+      "t": 10,
+      "clip": "scene-0006_27a90215",
+      "input_frames": [
+        0,
+        10
+      ],
+      "target_frames": [
+        11,
+        30
+      ],
+      "n_rows": 773910,
+      "n_fut_rows": 68603,
+      "bytes": 4058745
+    },
+    {
+      "segment": "scene-0006",
+      "t": 12,
+      "clip": "scene-0006_8f7e3899",
+      "input_frames": [
+        0,
+        12
+      ],
+      "target_frames": [
+        13,
+        32
+      ],
+      "n_rows": 785071,
+      "n_fut_rows": 68902,
+      "bytes": 4291447
+    },
+    {
+      "segment": "scene-0006",
+      "t": 14,
+      "clip": "scene-0006_a7816112",
+      "input_frames": [
+        0,
+        14
+      ],
+      "target_frames": [
+        15,
+        34
+      ],
+      "n_rows": 782196,
+      "n_fut_rows": 68983,
+      "bytes": 4480443
+    },
+    {
+      "segment": "scene-0006",
+      "t": 16,
+      "clip": "scene-0006_d2c11bf0",
+      "input_frames": [
+        0,
+        16
+      ],
+      "target_frames": [
+        17,
+        36
+      ],
+      "n_rows": 822887,
+      "n_fut_rows": 68058,
+      "bytes": 4577690
+    },
+    {
+      "segment": "scene-0006",
+      "t": 18,
+      "clip": "scene-0006_dba47228",
+      "input_frames": [
+        0,
+        18
+      ],
+      "target_frames": [
+        19,
+        38
+      ],
+      "n_rows": 932487,
+      "n_fut_rows": 95306,
+      "bytes": 5036410
+    },
+    {
+      "segment": "scene-0006",
+      "t": 20,
+      "clip": "scene-0006_09c012e5",
+      "input_frames": [
+        0,
+        20
+      ],
+      "target_frames": [
+        21,
+        39
+      ],
+      "n_rows": 959376,
+      "n_fut_rows": 103306,
+      "bytes": 5182195
+    },
+    {
+      "segment": "scene-0006",
+      "t": 22,
+      "clip": "scene-0006_cc19adcc",
+      "input_frames": [
+        0,
+        22
+      ],
+      "target_frames": [
+        23,
+        39
+      ],
+      "n_rows": 945480,
+      "n_fut_rows": 107119,
+      "bytes": 5225093
+    },
+    {
+      "segment": "scene-0006",
+      "t": 24,
+      "clip": "scene-0006_b44d3214",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 950939,
+      "n_fut_rows": 105499,
+      "bytes": 5430314
+    },
+    {
+      "segment": "scene-0006",
+      "t": 26,
+      "clip": "scene-0006_4eba00e1",
+      "input_frames": [
+        0,
+        26
+      ],
+      "target_frames": [
+        27,
+        39
+      ],
+      "n_rows": 941417,
+      "n_fut_rows": 95726,
+      "bytes": 5475088
+    },
+    {
+      "segment": "scene-0006",
+      "t": 28,
+      "clip": "scene-0006_780d51b2",
+      "input_frames": [
+        0,
+        28
+      ],
+      "target_frames": [
+        29,
+        39
+      ],
+      "n_rows": 917253,
+      "n_fut_rows": 92182,
+      "bytes": 5474960
+    },
+    {
+      "segment": "scene-0006",
+      "t": 30,
+      "clip": "scene-0006_c1d4b38a",
+      "input_frames": [
+        0,
+        30
+      ],
+      "target_frames": [
+        31,
+        39
+      ],
+      "n_rows": 912383,
+      "n_fut_rows": 84286,
+      "bytes": 5451985
+    },
+    {
+      "segment": "scene-0006",
+      "t": 32,
+      "clip": "scene-0006_b333486b",
+      "input_frames": [
+        0,
+        32
+      ],
+      "target_frames": [
+        33,
+        39
+      ],
+      "n_rows": 921188,
+      "n_fut_rows": 69048,
+      "bytes": 5455105
+    },
+    {
+      "segment": "scene-0006",
+      "t": 34,
+      "clip": "scene-0006_536c2a11",
+      "input_frames": [
+        0,
+        34
+      ],
+      "target_frames": [
+        35,
+        39
+      ],
+      "n_rows": 963053,
+      "n_fut_rows": 51485,
+      "bytes": 5737596
+    },
+    {
+      "segment": "scene-0009",
+      "t": 4,
+      "clip": "scene-0009_1076169d",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 565943,
+      "n_fut_rows": 37542,
+      "bytes": 2404972
+    },
+    {
+      "segment": "scene-0009",
+      "t": 6,
+      "clip": "scene-0009_75b5ebc0",
+      "input_frames": [
+        0,
+        6
+      ],
+      "target_frames": [
+        7,
+        26
+      ],
+      "n_rows": 671918,
+      "n_fut_rows": 35370,
+      "bytes": 2986361
+    },
+    {
+      "segment": "scene-0009",
+      "t": 8,
+      "clip": "scene-0009_dbf2877e",
+      "input_frames": [
+        0,
+        8
+      ],
+      "target_frames": [
+        9,
+        28
+      ],
+      "n_rows": 736594,
+      "n_fut_rows": 34238,
+      "bytes": 3456521
+    },
+    {
+      "segment": "scene-0009",
+      "t": 10,
+      "clip": "scene-0009_706d7015",
+      "input_frames": [
+        0,
+        10
+      ],
+      "target_frames": [
+        11,
+        30
+      ],
+      "n_rows": 765234,
+      "n_fut_rows": 32259,
+      "bytes": 3769372
+    },
+    {
+      "segment": "scene-0009",
+      "t": 12,
+      "clip": "scene-0009_bb0cfd86",
+      "input_frames": [
+        0,
+        12
+      ],
+      "target_frames": [
+        13,
+        32
+      ],
+      "n_rows": 760938,
+      "n_fut_rows": 25380,
+      "bytes": 3704144
+    },
+    {
+      "segment": "scene-0009",
+      "t": 14,
+      "clip": "scene-0009_ff863072",
+      "input_frames": [
+        0,
+        14
+      ],
+      "target_frames": [
+        15,
+        34
+      ],
+      "n_rows": 751297,
+      "n_fut_rows": 44361,
+      "bytes": 3642849
+    },
+    {
+      "segment": "scene-0009",
+      "t": 16,
+      "clip": "scene-0009_65b7811c",
+      "input_frames": [
+        0,
+        16
+      ],
+      "target_frames": [
+        17,
+        36
+      ],
+      "n_rows": 723024,
+      "n_fut_rows": 37150,
+      "bytes": 3446661
+    },
+    {
+      "segment": "scene-0009",
+      "t": 18,
+      "clip": "scene-0009_d8457f76",
+      "input_frames": [
+        0,
+        18
+      ],
+      "target_frames": [
+        19,
+        38
+      ],
+      "n_rows": 719988,
+      "n_fut_rows": 33191,
+      "bytes": 3418166
+    },
+    {
+      "segment": "scene-0009",
+      "t": 20,
+      "clip": "scene-0009_4f23e318",
+      "input_frames": [
+        0,
+        20
+      ],
+      "target_frames": [
+        21,
+        39
+      ],
+      "n_rows": 714125,
+      "n_fut_rows": 46555,
+      "bytes": 3455682
+    },
+    {
+      "segment": "scene-0009",
+      "t": 22,
+      "clip": "scene-0009_12900de6",
+      "input_frames": [
+        0,
+        22
+      ],
+      "target_frames": [
+        23,
+        39
+      ],
+      "n_rows": 683285,
+      "n_fut_rows": 44701,
+      "bytes": 3393583
+    },
+    {
+      "segment": "scene-0009",
+      "t": 24,
+      "clip": "scene-0009_a3c6db27",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 648309,
+      "n_fut_rows": 39331,
+      "bytes": 3368022
+    },
+    {
+      "segment": "scene-0009",
+      "t": 26,
+      "clip": "scene-0009_e0b3ca47",
+      "input_frames": [
+        0,
+        26
+      ],
+      "target_frames": [
+        27,
+        39
+      ],
+      "n_rows": 649950,
+      "n_fut_rows": 27523,
+      "bytes": 3363533
+    },
+    {
+      "segment": "scene-0009",
+      "t": 28,
+      "clip": "scene-0009_7d25b827",
+      "input_frames": [
+        0,
+        28
+      ],
+      "target_frames": [
+        29,
+        39
+      ],
+      "n_rows": 619618,
+      "n_fut_rows": 33032,
+      "bytes": 3331372
+    },
+    {
+      "segment": "scene-0009",
+      "t": 30,
+      "clip": "scene-0009_dbca86d6",
+      "input_frames": [
+        0,
+        30
+      ],
+      "target_frames": [
+        31,
+        39
+      ],
+      "n_rows": 583794,
+      "n_fut_rows": 38928,
+      "bytes": 3202099
+    },
+    {
+      "segment": "scene-0009",
+      "t": 32,
+      "clip": "scene-0009_6a4e441c",
+      "input_frames": [
+        0,
+        32
+      ],
+      "target_frames": [
+        33,
+        39
+      ],
+      "n_rows": 582158,
+      "n_fut_rows": 32441,
+      "bytes": 3024418
+    },
+    {
+      "segment": "scene-0009",
+      "t": 34,
+      "clip": "scene-0009_6611ad2d",
+      "input_frames": [
+        0,
+        34
+      ],
+      "target_frames": [
+        35,
+        39
+      ],
+      "n_rows": 565710,
+      "n_fut_rows": 40798,
+      "bytes": 3041161
+    },
+    {
+      "segment": "scene-0019",
+      "t": 4,
+      "clip": "scene-0019_7db6aa62",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 791033,
+      "n_fut_rows": 95386,
+      "bytes": 3199350
+    },
+    {
+      "segment": "scene-0019",
+      "t": 6,
+      "clip": "scene-0019_40599f85",
+      "input_frames": [
+        0,
+        6
+      ],
+      "target_frames": [
+        7,
+        26
+      ],
+      "n_rows": 851312,
+      "n_fut_rows": 106743,
+      "bytes": 3699152
+    }
+  ],
+  "total_bytes": 1762746429
+}

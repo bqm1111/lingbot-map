@@ -1,0 +1,50 @@
+{
+  "dataset": "occ3d",
+  "moge": {
+    "repo": "https://github.com/microsoft/MoGe",
+    "commit": "74fbce054ebed49800de42d0ad0e83495065719a",
+    "hf_repo": "Ruicheng/moge-2-vitl",
+    "hf_revision": "39c4d5e957afe587e04eec59dc2bcc3be5ecd968",
+    "model_class": "moge.model.v2.MoGeModel",
+    "license": "MIT",
+    "n_params": 326209221,
+    "weight_sha256": "3eefd4abb2102f38f12b2d1992e5ff15e4923e5431c67dd494afe157e0111cd5",
+    "depth_convention": "optical-axis z (points[...,2]), OpenCV camera frame",
+    "fov_source": "predicted by MoGe from RGB (fov_x=None)"
+  },
+  "estimator": {
+    "pooling": "confidence_weighted_median_over_all_five_frames",
+    "weight": "lingbot_confidence",
+    "conf_threshold": 1.5,
+    "min_depth_m": 1.0,
+    "max_depth_m": 60.0,
+    "min_valid_pixels_per_clip": 500,
+    "on_failure": "exclude_and_report"
+  },
+  "n_clips": 1182,
+  "n_ok": 1182,
+  "n_failed": 0,
+  "failed_clip_ids": [],
+  "s_moge": {
+    "median": 23.377668138432952,
+    "p05": 13.907763897626067,
+    "p25": 18.785523493966615,
+    "p75": 28.396513753569423,
+    "p95": 37.81193816077749
+  },
+  "n_valid_total": {
+    "median": 416643.5,
+    "min": 109845
+  },
+  "mad_log_clip_median": 0.03673121811523117,
+  "per_frame_log_scale_std_median": 0.025587661361875368,
+  "fov_x_deg": {
+    "median": 68.82603073120117,
+    "p05": 62.99622974395752,
+    "p95": 73.67546920776367
+  },
+  "elapsed_s": 448.50400495529175,
+  "peak_gpu_gib": 2.223451614379883,
+  "ms_per_clip": 379.44501345936214,
+  "cache_root": "/media/SSD1/MINH_DATASETS/lingbot_gate5_moge/occ3d"
+}

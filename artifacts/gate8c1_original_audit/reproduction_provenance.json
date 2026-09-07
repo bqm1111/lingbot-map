@@ -1,0 +1,367 @@
+{
+  "checkpoints": {
+    "0": {
+      "frozen": {
+        "seed": 0,
+        "config": "configs/gate8c1/seed0.yaml",
+        "config_sha256": "a2a9cd5496214c66bc2d8bea6a2a7bc01a16c4380dea65ee2bc3f9924db1ee28",
+        "selected": "last",
+        "checkpoint": "artifacts/gate8c1/checkpoints/seed0_last.pt",
+        "checkpoint_sha256": "5227c672012024786561e615b755edd938d551e62d05ad52d2ad23813825e7d0",
+        "occupancy_threshold": -0.125,
+        "semantic_threshold": 0.0,
+        "source_ap": 0.11471620878094327,
+        "source_ap_over_prevalence": 1.6866199453793929,
+        "source_auroc": 0.633603353877123,
+        "source_iou_at_threshold": 0.10703704819534747,
+        "semantic_agreement_at_threshold": 0.4023643390392829,
+        "train_seconds": 859.4669678211212,
+        "gpu_hours": 0.23874082459343804,
+        "peak_gpu_gib": 4.844086170196533,
+        "n_params": 986114,
+        "best_step": 2500
+      },
+      "metadata": {
+        "meta": {
+          "config": {
+            "train_drives": [
+              "2013_05_28_drive_0003_sync",
+              "2013_05_28_drive_0007_sync",
+              "2013_05_28_drive_0010_sync"
+            ],
+            "val_drive": "2013_05_28_drive_0006_sync",
+            "val_limit": 120,
+            "crop": [
+              128,
+              128,
+              32
+            ],
+            "width": 24,
+            "batch_size": 4,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "grad_clip": 1.0,
+            "steps": 6000,
+            "log_every": 50,
+            "val_every": 500,
+            "w_sem": 0.5,
+            "lock_logodds": 2.0,
+            "sampler": "uniform",
+            "centre_on_occ_p": 0.7,
+            "occ_loss": "focal_dice",
+            "w_focal": 1.0,
+            "w_dice": 1.0,
+            "focal_gamma": 2.0,
+            "pos_weight_cap": 8.0,
+            "w_unknown": 2.0,
+            "w_bce": 1.0,
+            "seed": 0
+          },
+          "tag": "seed0",
+          "seed": 0,
+          "train_drives": [
+            "2013_05_28_drive_0003_sync",
+            "2013_05_28_drive_0007_sync",
+            "2013_05_28_drive_0010_sync"
+          ],
+          "val_drive": "2013_05_28_drive_0006_sync",
+          "step": 6000
+        },
+        "cin": 32,
+        "width": 24
+      },
+      "actual_sha256": "5227c672012024786561e615b755edd938d551e62d05ad52d2ad23813825e7d0"
+    },
+    "1": {
+      "frozen": {
+        "seed": 1,
+        "config": "configs/gate8c1/seed1.yaml",
+        "config_sha256": "7ba7e12f84038021d7d8bb479a62e43265180592f1009a629277e6ce6c81229f",
+        "selected": "last",
+        "checkpoint": "artifacts/gate8c1/checkpoints/seed1_last.pt",
+        "checkpoint_sha256": "13640b7664997abb90fce5da733a8ea60e1ed4b0b48e6a5dcb2a1b7132587752",
+        "occupancy_threshold": -0.09375,
+        "semantic_threshold": 0.0,
+        "source_ap": 0.1127344292040128,
+        "source_ap_over_prevalence": 1.6574827467453344,
+        "source_auroc": 0.6332759242456261,
+        "source_iou_at_threshold": 0.10567502242310534,
+        "semantic_agreement_at_threshold": 0.41370626972688707,
+        "train_seconds": 856.8140549659729,
+        "gpu_hours": 0.23800390435589686,
+        "peak_gpu_gib": 4.8443779945373535,
+        "n_params": 986114,
+        "best_step": 1000
+      },
+      "metadata": {
+        "meta": {
+          "config": {
+            "train_drives": [
+              "2013_05_28_drive_0003_sync",
+              "2013_05_28_drive_0007_sync",
+              "2013_05_28_drive_0010_sync"
+            ],
+            "val_drive": "2013_05_28_drive_0006_sync",
+            "val_limit": 120,
+            "crop": [
+              128,
+              128,
+              32
+            ],
+            "width": 24,
+            "batch_size": 4,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "grad_clip": 1.0,
+            "steps": 6000,
+            "log_every": 50,
+            "val_every": 500,
+            "w_sem": 0.5,
+            "lock_logodds": 2.0,
+            "sampler": "uniform",
+            "centre_on_occ_p": 0.7,
+            "occ_loss": "focal_dice",
+            "w_focal": 1.0,
+            "w_dice": 1.0,
+            "focal_gamma": 2.0,
+            "pos_weight_cap": 8.0,
+            "w_unknown": 2.0,
+            "w_bce": 1.0,
+            "seed": 1
+          },
+          "tag": "seed1",
+          "seed": 1,
+          "train_drives": [
+            "2013_05_28_drive_0003_sync",
+            "2013_05_28_drive_0007_sync",
+            "2013_05_28_drive_0010_sync"
+          ],
+          "val_drive": "2013_05_28_drive_0006_sync",
+          "step": 6000
+        },
+        "cin": 32,
+        "width": 24
+      },
+      "actual_sha256": "13640b7664997abb90fce5da733a8ea60e1ed4b0b48e6a5dcb2a1b7132587752"
+    },
+    "2": {
+      "frozen": {
+        "seed": 2,
+        "config": "configs/gate8c1/seed2.yaml",
+        "config_sha256": "6cfbb2b690d6273f42eaa12ebe69080ae4f1faf89e90a62fd947691b7f4f919c",
+        "selected": "last",
+        "checkpoint": "artifacts/gate8c1/checkpoints/seed2_last.pt",
+        "checkpoint_sha256": "68e67f28a1e4b764d14d1bc7d0f256ef5dd5f5be82d826884ada83ace0f65a67",
+        "occupancy_threshold": -0.15625,
+        "semantic_threshold": 0.0,
+        "source_ap": 0.11318930591118381,
+        "source_ap_over_prevalence": 1.6641705909057716,
+        "source_auroc": 0.632310105522307,
+        "source_iou_at_threshold": 0.10583533144419738,
+        "semantic_agreement_at_threshold": 0.39010064304431735,
+        "train_seconds": 858.138870716095,
+        "gpu_hours": 0.23837190886338552,
+        "peak_gpu_gib": 4.844457626342773,
+        "n_params": 986114,
+        "best_step": 2500
+      },
+      "metadata": {
+        "meta": {
+          "config": {
+            "train_drives": [
+              "2013_05_28_drive_0003_sync",
+              "2013_05_28_drive_0007_sync",
+              "2013_05_28_drive_0010_sync"
+            ],
+            "val_drive": "2013_05_28_drive_0006_sync",
+            "val_limit": 120,
+            "crop": [
+              128,
+              128,
+              32
+            ],
+            "width": 24,
+            "batch_size": 4,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "grad_clip": 1.0,
+            "steps": 6000,
+            "log_every": 50,
+            "val_every": 500,
+            "w_sem": 0.5,
+            "lock_logodds": 2.0,
+            "sampler": "uniform",
+            "centre_on_occ_p": 0.7,
+            "occ_loss": "focal_dice",
+            "w_focal": 1.0,
+            "w_dice": 1.0,
+            "focal_gamma": 2.0,
+            "pos_weight_cap": 8.0,
+            "w_unknown": 2.0,
+            "w_bce": 1.0,
+            "seed": 2
+          },
+          "tag": "seed2",
+          "seed": 2,
+          "train_drives": [
+            "2013_05_28_drive_0003_sync",
+            "2013_05_28_drive_0007_sync",
+            "2013_05_28_drive_0010_sync"
+          ],
+          "val_drive": "2013_05_28_drive_0006_sync",
+          "step": 6000
+        },
+        "cin": 32,
+        "width": 24
+      },
+      "actual_sha256": "68e67f28a1e4b764d14d1bc7d0f256ef5dd5f5be82d826884ada83ace0f65a67"
+    }
+  },
+  "historical_mask_then_pool": {
+    "semantickitti": {
+      "past5": {
+        "0": {
+          "tp": 8858695,
+          "fp": 59679349,
+          "fn": 9904235,
+          "iou": 0.11293265714526218
+        },
+        "1": {
+          "tp": 9173809,
+          "fp": 60290296,
+          "fn": 9589121,
+          "iou": 0.11604597894588135
+        },
+        "2": {
+          "tp": 9272502,
+          "fp": 54479100,
+          "fn": 9490428,
+          "iou": 0.12660083288243104
+        }
+      },
+      "occany_fwd": {
+        "0": {
+          "tp": 9920055,
+          "fp": 59711423,
+          "fn": 8748373,
+          "iou": 0.12656384100551557
+        },
+        "1": {
+          "tp": 10210042,
+          "fp": 66034200,
+          "fn": 8458386,
+          "iou": 0.12053984912959254
+        },
+        "2": {
+          "tp": 10351250,
+          "fp": 57495848,
+          "fn": 8317178,
+          "iou": 0.1359068915721066
+        }
+      }
+    },
+    "occ3d": {
+      "past5": {
+        "0": {
+          "tp": 5567118,
+          "fp": 4643870,
+          "fn": 6390472,
+          "iou": 0.3353390605404585
+        },
+        "1": {
+          "tp": 5941276,
+          "fp": 6045027,
+          "fn": 6016314,
+          "iou": 0.3300229072250995
+        },
+        "2": {
+          "tp": 5499898,
+          "fp": 4343015,
+          "fn": 6457692,
+          "iou": 0.3374045319176804
+        }
+      },
+      "occany_fwd": {
+        "0": {
+          "tp": 4164134,
+          "fp": 3910817,
+          "fn": 5519133,
+          "iou": 0.3063195725434682
+        },
+        "1": {
+          "tp": 4444644,
+          "fp": 5186198,
+          "fn": 5238623,
+          "iou": 0.29891082160656085
+        },
+        "2": {
+          "tp": 4126325,
+          "fp": 3618959,
+          "fn": 5556942,
+          "iou": 0.3101980826366955
+        }
+      }
+    }
+  },
+  "validation": [
+    {
+      "dataset": "semantickitti",
+      "mode": "past5",
+      "convention": "historical",
+      "samples": 163,
+      "accounting_valid": true
+    },
+    {
+      "dataset": "semantickitti",
+      "mode": "past5",
+      "convention": "corrected_",
+      "samples": 163,
+      "accounting_valid": true
+    },
+    {
+      "dataset": "semantickitti",
+      "mode": "occany_fwd",
+      "convention": "historical",
+      "samples": 161,
+      "accounting_valid": true
+    },
+    {
+      "dataset": "semantickitti",
+      "mode": "occany_fwd",
+      "convention": "corrected_",
+      "samples": 161,
+      "accounting_valid": true
+    },
+    {
+      "dataset": "occ3d",
+      "mode": "past5",
+      "convention": "historical",
+      "samples": 1182,
+      "accounting_valid": true
+    },
+    {
+      "dataset": "occ3d",
+      "mode": "past5",
+      "convention": "corrected_",
+      "samples": 1182,
+      "accounting_valid": true
+    },
+    {
+      "dataset": "occ3d",
+      "mode": "occany_fwd",
+      "convention": "historical",
+      "samples": 882,
+      "accounting_valid": true
+    },
+    {
+      "dataset": "occ3d",
+      "mode": "occany_fwd",
+      "convention": "corrected_",
+      "samples": 882,
+      "accounting_valid": true
+    }
+  ],
+  "python": "3.10.19 (main, Oct 21 2025, 16:43:05) [GCC 11.2.0]",
+  "torch": "2.7.1+cu128",
+  "numpy": "2.2.6"
+}

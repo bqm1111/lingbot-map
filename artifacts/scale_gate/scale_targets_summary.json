@@ -1,0 +1,107 @@
+{
+  "provenance": {
+    "tool": "build_scale_targets",
+    "git_commit": "9a648322e6dc4e34995f0530650c2fa469779676",
+    "git_dirty_files": [
+      "M lingbot_map/models/gct_stream.py",
+      " M research/sem_bypass/model.py",
+      "?? artifacts/",
+      "?? configs/scale_gate/",
+      "?? lingbot_map_scale_claude_code_plan.md",
+      "?? reports/",
+      "?? scale_gate/",
+      "?? scripts/export_occupancy_3d.py",
+      "?? scripts/make_occupancy_ceiling_figure.py",
+      "?? scripts/make_scene_completion_honest_figure.py",
+      "?? tests/scale_gate/",
+      "?? tools/__init__.py",
+      "?? tools/check_ddad_layout.py",
+      "?? tools/check_vkitti2_layout.py",
+      "?? tools/geometry_gate/",
+      "?? tools/scale_gate/"
+    ],
+    "python": "3.10.19",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.7.1+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "seed": 0,
+    "config_hash": "d2faead637e3a190",
+    "checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+    "checkpoint_sha256": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72",
+    "argv": [
+      "tools/scale_gate/build_scale_targets.py",
+      "--config",
+      "configs/scale_gate/semantickitti.yaml",
+      "--splits",
+      "val",
+      "train"
+    ]
+  },
+  "splits": {
+    "val": {
+      "n_clips": 163,
+      "n_with_cache": 163,
+      "n_missing_cache": 0,
+      "n_reliable": 162,
+      "excluded": {
+        "08_004000_004020_s5": "pose:only 0 pairs above 0.5 m of motion"
+      },
+      "agreement_error_log": {
+        "median": 0.027653949754091522,
+        "p90": 0.06769981165880293,
+        "max": 0.1700035069812591,
+        "frac_above_threshold": 0.0
+      },
+      "log_s_joint": {
+        "mean": 3.2572221875066907,
+        "std": 0.19130916560700506,
+        "s_median": 26.29906844774501,
+        "s_min": 14.583716870874966,
+        "s_max": 38.16029060143091
+      },
+      "csv": "artifacts/scale_gate/scale_targets_val.csv"
+    },
+    "train": {
+      "n_clips": 763,
+      "n_with_cache": 763,
+      "n_missing_cache": 0,
+      "n_reliable": 744,
+      "excluded": {
+        "00_001925_001945_s5": "agreement 0.229 > 0.2",
+        "01_000275_000295_s5": "agreement 0.520 > 0.2",
+        "01_000300_000320_s5": "agreement 0.341 > 0.2",
+        "01_000325_000345_s5": "agreement 0.617 > 0.2",
+        "01_000350_000370_s5": "agreement 0.218 > 0.2",
+        "01_000375_000395_s5": "agreement 0.623 > 0.2",
+        "01_000400_000420_s5": "agreement 0.893 > 0.2",
+        "01_000450_000470_s5": "agreement 1.022 > 0.2",
+        "01_000475_000495_s5": "agreement 0.739 > 0.2",
+        "01_000500_000520_s5": "agreement 0.346 > 0.2",
+        "01_000525_000545_s5": "agreement 0.351 > 0.2",
+        "01_000800_000820_s5": "agreement 0.549 > 0.2",
+        "05_002325_002345_s5": "pose:only 0 pairs above 0.5 m of motion",
+        "05_002350_002370_s5": "pose:only 0 pairs above 0.5 m of motion",
+        "05_002375_002395_s5": "pose:only 0 pairs above 0.5 m of motion",
+        "07_000650_000670_s5": "agreement 0.347 > 0.2",
+        "07_000675_000695_s5": "pose:only 0 pairs above 0.5 m of motion",
+        "07_000700_000720_s5": "pose:only 0 pairs above 0.5 m of motion",
+        "10_001150_001170_s5": "pose:only 0 pairs above 0.5 m of motion"
+      },
+      "agreement_error_log": {
+        "median": 0.02345020835599687,
+        "p90": 0.066244321077981,
+        "max": 1.0215426809448878,
+        "frac_above_threshold": 0.017173051519154558
+      },
+      "log_s_joint": {
+        "mean": 3.320821542167443,
+        "std": 0.21127944142929422,
+        "s_median": 27.440963354012354,
+        "s_min": 13.876208085541577,
+        "s_max": 75.50749705731873
+      },
+      "csv": "artifacts/scale_gate/scale_targets_train.csv"
+    }
+  }
+}

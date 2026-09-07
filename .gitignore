@@ -36,3 +36,11 @@ artifacts/**/*.log
 # Large derived indexes (>5 MB) rather than results.
 artifacts/gate8c1_original_audit/samples.json
 artifacts/occ3d_zeroshot/nuscenes_lidar_index.json
+artifacts/occ3d_zeroshot/gate41/factorization_per_band.csv
+artifacts/gate5_2/gate5_2_per_distance_band.csv
+artifacts/gate5_2/gate5_2_per_height_band.csv
+artifacts/gate5_1/per_band_occ3d.csv
+artifacts/gate8c1_padding_source_probe/selection.json
+artifacts/occ3d_zeroshot/gate41/factorization_per_clip.csv
+artifacts/gate5_1/depth_frames_occ3d.csv
+artifacts/gate5/gate5_depth_frames_occ3d.csv

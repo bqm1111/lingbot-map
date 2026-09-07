@@ -1,0 +1,84 @@
+{
+  "dataset": "occ3d",
+  "n_anchors": 1032,
+  "future_frames": 20,
+  "teacher": "frozen Trident-H fused over frames t+1..t+20 (the training target)",
+  "n_future_visible_gt_occupied": 959573,
+  "n_correct": 394671,
+  "accuracy_future_visible_occupied": 0.4112985671751915,
+  "accuracy_on_causally_observed_subset": 0.4441659171301693,
+  "n_causally_observed_subset": 495862,
+  "accuracy_on_newly_visible_subset": 0.3761523880175368,
+  "n_newly_visible_subset": 463711,
+  "per_class": {
+    "others": {
+      "n": 789,
+      "accuracy": 0.1229404309252218
+    },
+    "barrier": {
+      "n": 2289,
+      "accuracy": 0.6867627785058977
+    },
+    "bicycle": {
+      "n": 236,
+      "accuracy": 0.3474576271186441
+    },
+    "bus": {
+      "n": 6794,
+      "accuracy": 0.707977627318222
+    },
+    "car": {
+      "n": 26460,
+      "accuracy": 0.7056689342403628
+    },
+    "construction_vehicle": {
+      "n": 337,
+      "accuracy": 0.798219584569733
+    },
+    "motorcycle": {
+      "n": 556,
+      "accuracy": 0.5071942446043165
+    },
+    "pedestrian": {
+      "n": 2740,
+      "accuracy": 0.21496350364963504
+    },
+    "traffic_cone": {
+      "n": 801,
+      "accuracy": 0.35081148564294634
+    },
+    "trailer": {
+      "n": 1602,
+      "accuracy": 0.4232209737827715
+    },
+    "truck": {
+      "n": 13971,
+      "accuracy": 0.595590866795505
+    },
+    "driveable_surface": {
+      "n": 496185,
+      "accuracy": 0.43304815744127695
+    },
+    "other_flat": {
+      "n": 15598,
+      "accuracy": 0.21188613924862162
+    },
+    "sidewalk": {
+      "n": 91363,
+      "accuracy": 0.3227017501614439
+    },
+    "terrain": {
+      "n": 94016,
+      "accuracy": 0.018273485364193327
+    },
+    "manmade": {
+      "n": 82842,
+      "accuracy": 0.10392071654474783
+    },
+    "vegetation": {
+      "n": 122994,
+      "accuracy": 0.8214303136738378
+    }
+  },
+  "seconds": 586.5727956295013
+}

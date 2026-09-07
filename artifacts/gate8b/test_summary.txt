@@ -1,0 +1,35 @@
+`python -m pytest tests/gate6 tests/gate7a tests/gate7b tests/gate8 tests/gate8a tests/gate8b -q`
+
+```
+256 passed, 2 warnings in 117.45s (0:01:57)
+```
+
+239 prior tests (Gate 6: 63, Gate 7A: 68, Gate 7B: 56, Gate 8: 25, Gate 8A: 27) plus 17 new
+Gate 8B tests, run after every artifact was produced; nothing skipped on this machine and nothing regressed after the additive edits to
+`gate8/sources.py`, `gate6/targets.py`, `sscbench_kitti360/adapter.py` and
+`tools/gate8a/evaluate.py`.
+
+The Gate 8B tests that carry the gate's claims:
+
+* `test_every_fold_excludes_its_target_from_train_and_val`,
+  `test_fold_configs_match_gate8a_cell_b_except_sources` — each fold's train and validation
+  lists never resolve to the target dataset, and the configs differ from Gate 8A's cell B only
+  in those lists.
+* `test_kitti360_train_and_val_partitions_are_disjoint_and_official`,
+  `test_k360_train_frames_never_come_from_the_val_drive` — drives 0003/0007/0010 are official
+  SSCBench train drives, 0006 is the official val drive, and no training frame path or record
+  names the val drive.
+* `test_cached_samples_record_disjoint_input_and_target_frames` (both `k360_train` and
+  `kitti360`) — every cached sample's input frames are 0..t and its target frames t+1..t+20.
+* `test_k360_train_sample_targets_are_binary_only` — the KITTI-360 geometry target carries no
+  class label.
+* `test_fold_sampler_draws_each_source_with_probability_one_half`.
+* `test_clip_feed_builds_a_fresh_map_per_clip_with_no_carry_over`,
+  `test_clip_scale_is_the_pinned_g51b_scalar` — the matched setting keeps no map or scale state
+  between clips and uses the frozen five-frame gauge, not MoGe at clip time.
+* `test_pooling_matches_the_official_occany_function` — dilation, vote and semantic modes agree
+  bit-for-bit with `apply_majority_pooling` run in the OccAny environment;
+  `test_occany_geometry_default_is_a_max_pool_not_a_vote`.
+* `test_target_evaluator_takes_no_checkpoint_or_threshold_argument`,
+  `test_no_target_data_in_the_selection_path`, `test_registry_does_not_change_existing_source_paths`,
+  `test_target_loader_default_is_the_validation_drive`, `test_gate8a_artifacts_are_untouched`.

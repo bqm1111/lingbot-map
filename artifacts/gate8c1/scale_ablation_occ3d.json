@@ -1,0 +1,70 @@
+{
+  "dataset": "occ3d",
+  "n_anchors": 30,
+  "seed": 0,
+  "threshold": -0.125,
+  "moge_scale_stats": {
+    "n_segments": 150,
+    "min": 9.37410071942446,
+    "median": 24.47741697445942,
+    "max": 55.27638190954774,
+    "spread": 5.896713035630956
+  },
+  "NOTE": "the completion network was trained under per-scene MoGe scale, so its rows under 'raw' and 'constant' are out of distribution; the 'map' rows are the clean measure of what the scale does to the geometry",
+  "rows": {
+    "raw (s=1, LingBot alone)": {
+      "map": {
+        "iou": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0,
+        "fp": 599,
+        "fn": 302607
+      },
+      "completion": {
+        "iou": 0.24386535722318015,
+        "precision": 0.7248620655845834,
+        "recall": 0.2687413047285753,
+        "tp": 81323,
+        "fp": 30868,
+        "fn": 221284
+      }
+    },
+    "constant (s=24.48 for every scene)": {
+      "map": {
+        "iou": 0.0923750880740128,
+        "precision": 0.558645348944921,
+        "recall": 0.0996473974494972,
+        "tp": 30154,
+        "fp": 23823,
+        "fn": 272453
+      },
+      "completion": {
+        "iou": 0.2732911082158383,
+        "precision": 0.5548141436255741,
+        "recall": 0.35005469139841444,
+        "tp": 105929,
+        "fp": 84998,
+        "fn": 196678
+      }
+    },
+    "moge (per scene, deployed)": {
+      "map": {
+        "iou": 0.10428588441023648,
+        "precision": 0.6686962462824532,
+        "recall": 0.10996771389954628,
+        "tp": 33277,
+        "fp": 16487,
+        "fn": 269330
+      },
+      "completion": {
+        "iou": 0.29765761952056097,
+        "precision": 0.6246711238168999,
+        "recall": 0.3624866576120182,
+        "tp": 109691,
+        "fp": 65907,
+        "fn": 192916
+      }
+    }
+  }
+}

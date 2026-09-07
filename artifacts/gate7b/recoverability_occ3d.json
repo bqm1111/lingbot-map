@@ -1,0 +1,202 @@
+{
+  "dataset": "occ3d",
+  "n_anchors": 300,
+  "anchor_stride": 4,
+  "n_b_d_coverage_misses": 2516764,
+  "classes": [
+    "recovered_from_causal_past",
+    "recovered_from_a_later_viewpoint",
+    "in_frustum_but_never_reconstructed",
+    "outside_all_frusta",
+    "unresolved"
+  ],
+  "counts": {
+    "recovered_from_causal_past": {
+      "all": 74071,
+      "0-10m": 17950,
+      "10-20m": 32035,
+      "20-30m": 17440,
+      "30-40m": 6035,
+      "40-60m": 611
+    },
+    "recovered_from_a_later_viewpoint": {
+      "all": 105846,
+      "0-10m": 198,
+      "10-20m": 9257,
+      "20-30m": 32094,
+      "30-40m": 52295,
+      "40-60m": 12002
+    },
+    "in_frustum_but_never_reconstructed": {
+      "all": 2105536,
+      "0-10m": 136852,
+      "10-20m": 487968,
+      "20-30m": 643847,
+      "30-40m": 643884,
+      "40-60m": 192985
+    },
+    "outside_all_frusta": {
+      "all": 231311,
+      "0-10m": 15452,
+      "10-20m": 48758,
+      "20-30m": 56761,
+      "30-40m": 60967,
+      "40-60m": 49373
+    },
+    "unresolved": {
+      "all": 0,
+      "0-10m": 0,
+      "10-20m": 0,
+      "20-30m": 0,
+      "30-40m": 0,
+      "40-60m": 0
+    }
+  },
+  "fractions": {
+    "recovered_from_causal_past": 0.029431047170096203,
+    "recovered_from_a_later_viewpoint": 0.04205638669338881,
+    "in_frustum_but_never_reconstructed": 0.8366044650988332,
+    "outside_all_frusta": 0.09190810103768172,
+    "unresolved": 0.0
+  },
+  "recovery_latency": {
+    "within_1_frames": 6670,
+    "within_5_frames": 48025,
+    "within_10_frames": 81416,
+    "within_20_frames": 99496,
+    "within_50_frames": 105846,
+    "any_later_frame": 105846
+  },
+  "recovery_latency_fraction": {
+    "within_1_frames": 0.00265022862691933,
+    "within_5_frames": 0.019082043449445397,
+    "within_10_frames": 0.03234947734471726,
+    "within_20_frames": 0.039533305466861415,
+    "within_50_frames": 0.04205638669338881,
+    "any_later_frame": 0.04205638669338881
+  },
+  "per_class": {
+    "others": {
+      "recovered_from_causal_past": 198,
+      "recovered_from_a_later_viewpoint": 105,
+      "in_frustum_but_never_reconstructed": 4595,
+      "outside_all_frusta": 276,
+      "unresolved": 0
+    },
+    "barrier": {
+      "recovered_from_causal_past": 434,
+      "recovered_from_a_later_viewpoint": 240,
+      "in_frustum_but_never_reconstructed": 7059,
+      "outside_all_frusta": 369,
+      "unresolved": 0
+    },
+    "bicycle": {
+      "recovered_from_causal_past": 24,
+      "recovered_from_a_later_viewpoint": 7,
+      "in_frustum_but_never_reconstructed": 419,
+      "outside_all_frusta": 219,
+      "unresolved": 0
+    },
+    "bus": {
+      "recovered_from_causal_past": 356,
+      "recovered_from_a_later_viewpoint": 842,
+      "in_frustum_but_never_reconstructed": 11165,
+      "outside_all_frusta": 1922,
+      "unresolved": 0
+    },
+    "car": {
+      "recovered_from_causal_past": 2136,
+      "recovered_from_a_later_viewpoint": 1512,
+      "in_frustum_but_never_reconstructed": 50124,
+      "outside_all_frusta": 5353,
+      "unresolved": 0
+    },
+    "construction_vehicle": {
+      "recovered_from_causal_past": 31,
+      "recovered_from_a_later_viewpoint": 66,
+      "in_frustum_but_never_reconstructed": 2101,
+      "outside_all_frusta": 787,
+      "unresolved": 0
+    },
+    "motorcycle": {
+      "recovered_from_causal_past": 7,
+      "recovered_from_a_later_viewpoint": 70,
+      "in_frustum_but_never_reconstructed": 1009,
+      "outside_all_frusta": 163,
+      "unresolved": 0
+    },
+    "pedestrian": {
+      "recovered_from_causal_past": 297,
+      "recovered_from_a_later_viewpoint": 326,
+      "in_frustum_but_never_reconstructed": 7112,
+      "outside_all_frusta": 993,
+      "unresolved": 0
+    },
+    "traffic_cone": {
+      "recovered_from_causal_past": 122,
+      "recovered_from_a_later_viewpoint": 80,
+      "in_frustum_but_never_reconstructed": 1290,
+      "outside_all_frusta": 218,
+      "unresolved": 0
+    },
+    "trailer": {
+      "recovered_from_causal_past": 331,
+      "recovered_from_a_later_viewpoint": 132,
+      "in_frustum_but_never_reconstructed": 6409,
+      "outside_all_frusta": 1467,
+      "unresolved": 0
+    },
+    "truck": {
+      "recovered_from_causal_past": 1070,
+      "recovered_from_a_later_viewpoint": 1772,
+      "in_frustum_but_never_reconstructed": 26184,
+      "outside_all_frusta": 3282,
+      "unresolved": 0
+    },
+    "driveable_surface": {
+      "recovered_from_causal_past": 27012,
+      "recovered_from_a_later_viewpoint": 45783,
+      "in_frustum_but_never_reconstructed": 601783,
+      "outside_all_frusta": 60868,
+      "unresolved": 0
+    },
+    "other_flat": {
+      "recovered_from_causal_past": 544,
+      "recovered_from_a_later_viewpoint": 1272,
+      "in_frustum_but_never_reconstructed": 19349,
+      "outside_all_frusta": 2097,
+      "unresolved": 0
+    },
+    "sidewalk": {
+      "recovered_from_causal_past": 9008,
+      "recovered_from_a_later_viewpoint": 11315,
+      "in_frustum_but_never_reconstructed": 203918,
+      "outside_all_frusta": 20605,
+      "unresolved": 0
+    },
+    "terrain": {
+      "recovered_from_causal_past": 6288,
+      "recovered_from_a_later_viewpoint": 11736,
+      "in_frustum_but_never_reconstructed": 254063,
+      "outside_all_frusta": 35855,
+      "unresolved": 0
+    },
+    "manmade": {
+      "recovered_from_causal_past": 12759,
+      "recovered_from_a_later_viewpoint": 11773,
+      "in_frustum_but_never_reconstructed": 440325,
+      "outside_all_frusta": 53723,
+      "unresolved": 0
+    },
+    "vegetation": {
+      "recovered_from_causal_past": 13454,
+      "recovered_from_a_later_viewpoint": 18815,
+      "in_frustum_but_never_reconstructed": 468631,
+      "outside_all_frusta": 43114,
+      "unresolved": 0
+    }
+  },
+  "seconds": 102.86226844787598,
+  "diagnostic_only": "future frames are fused in a separate volume and never reach a causal prediction",
+  "semantic_class_use": "analysis only; no class drives any decision"
+}

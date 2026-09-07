@@ -1,0 +1,84 @@
+{
+  "gate": "8B",
+  "fold": "occ3d",
+  "target": "occ3d",
+  "train_sources": [
+    "sk_train",
+    "k360_train"
+  ],
+  "val_sources": [
+    "semantickitti",
+    "kitti360"
+  ],
+  "kitti360_train_drives": [
+    "2013_05_28_drive_0003_sync",
+    "2013_05_28_drive_0007_sync",
+    "2013_05_28_drive_0010_sync"
+  ],
+  "kitti360_val_drive": "2013_05_28_drive_0006_sync",
+  "selected_candidate": "fold_occ3d_best",
+  "checkpoint": "artifacts/gate8b/checkpoints/fold_occ3d_best.pt",
+  "checkpoint_sha256": "8728000f23756b73660eb6070e8762efe5815f6be9f5336701d274fcfdf9466c",
+  "global_threshold_final_logodds": -0.03125,
+  "mapper_calibrated_threshold_logodds": -3.96875,
+  "selection_inputs": [
+    "artifacts/gate8b/scores_semantickitti_src_occ3d_*.npz",
+    "artifacts/gate8b/scores_kitti360_src_occ3d_*.npz"
+  ],
+  "selection_criterion": {
+    "checkpoint": "max macro-average AP over the fold's two source-validation domains, subject to AP > prevalence on both",
+    "threshold": "single global final-logit threshold maximising the equally weighted mean of the two per-source pooled full-grid binary IoUs",
+    "forbidden": "occ3d data, labels, prevalence, metrics or predictions play no part in any of the above"
+  },
+  "hyperparameters": {
+    "seed": 0,
+    "train_sources": [
+      "sk_train",
+      "k360_train"
+    ],
+    "val_sources": [
+      "semantickitti",
+      "kitti360"
+    ],
+    "val_limit": 120,
+    "val_stride": 1,
+    "train_stride": 1,
+    "crop": [
+      128,
+      128,
+      32
+    ],
+    "width": 24,
+    "batch_size": 4,
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "steps": 6000,
+    "log_every": 50,
+    "val_every": 500,
+    "ckpt_every": 500,
+    "w_sem": 0.5,
+    "lock_logodds": 2.0,
+    "sampler": "uniform",
+    "centre_on_occ_p": 0.7,
+    "occ_loss": "focal_dice",
+    "w_focal": 1.0,
+    "w_dice": 1.0,
+    "focal_gamma": 2.0,
+    "pos_weight_cap": 8.0,
+    "w_unknown": 2.0,
+    "w_bce": 1.0,
+    "target": "occ3d",
+    "source_balance": "equal",
+    "val_limit_per_source": 60
+  },
+  "config": "configs/gate8b/fold_occ3d.yaml",
+  "config_sha256": "94eb1deb52f7e4d67f424c3f2abc29aec3c3c88e5442d79db436be484bd6821b",
+  "target_used_in_selection": false,
+  "frozen_sha256": "82facd75d2c02e8a6ba5a8d5a935052c68df8cf99342a8630a9d334bde6781ba",
+  "frozen_at": "2026-09-03T13:52:09+0200",
+  "all_candidate_checkpoints": {
+    "fold_occ3d_best": "8728000f23756b73660eb6070e8762efe5815f6be9f5336701d274fcfdf9466c",
+    "fold_occ3d_last": "784d36ab30632d5074d516c8558c1a1b7e78ba64cb21c95443b7b700e79e80d2"
+  }
+}

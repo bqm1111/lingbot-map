@@ -1,0 +1,33 @@
+{
+  "gate": "8A",
+  "selected_candidate": "cellB_last",
+  "checkpoint": "artifacts/gate8a/checkpoints/cellB_uniform_focal_last.pt",
+  "checkpoint_sha256": "b505fdc4facdd53a2ee877de26f09045d3d3f13ec6468b81bd49226db0ac9c62",
+  "global_threshold_final_logodds": 0.5625,
+  "mapper_calibrated_threshold_logodds": -16.0,
+  "selection_inputs": [
+    "artifacts/gate8a/scores_semantickitti_source_*.npz",
+    "artifacts/gate8a/scores_occ3d_source_*.npz"
+  ],
+  "selection_criterion": {
+    "checkpoint": "max macro-average AP over the two source validation sets, subject to AP > prevalence on both",
+    "threshold": "single global final-logit threshold maximising the equally weighted mean of the two per-source pooled full-grid binary IoUs",
+    "forbidden": "KITTI-360 data, labels, prevalence, metrics or predictions play no part in any of the above"
+  },
+  "kitti360_used_in_selection": false,
+  "sampler": "uniform",
+  "occ_loss": "focal_dice",
+  "config": "configs/gate8a/cellB_uniform_focal.yaml",
+  "config_sha256": "348959a0be5eff2cf0da9769df267c59a7a5e67825ffcfd2e88e2768c74c2458",
+  "frozen_at": "2026-09-03T11:35:41+0200",
+  "all_candidate_checkpoints": {
+    "cellA_best": "de9fbc0cf5d15bc1b0230aa0a54def56ddb9c2e0baf857ed3ee508a8adf6c8c1",
+    "cellA_last": "9891f98fdcead16b299700419804fc934482f64d8c4e6976ead4bdc6bc3cdc39",
+    "cellB_best": "f68dcc024f5409e60e9e2daf3d36f0b0af34a63b4fce36e0430a28791c615a6e",
+    "cellB_last": "b505fdc4facdd53a2ee877de26f09045d3d3f13ec6468b81bd49226db0ac9c62",
+    "cellC_best": "215fbaea762e6e4c1cb29781f7000375308a7356bf889a8e835ede40b93d6632",
+    "cellC_last": "1b68644289d3c72451500113940cdf00000963202537a1691093fdf4e3386a17",
+    "cellD_best": "693ad6f47c58f9b5b26e5f4cd4100fb0d7c4d7f3287624a3e1b5fbe87a297bc3",
+    "cellD_last": "a991d6a4645b093f649fe02171b00fcf8b46b9218109368910bea35c8fa6a9fc"
+  }
+}

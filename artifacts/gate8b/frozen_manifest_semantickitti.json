@@ -1,0 +1,84 @@
+{
+  "gate": "8B",
+  "fold": "semantickitti",
+  "target": "semantickitti",
+  "train_sources": [
+    "occ3d_train",
+    "k360_train"
+  ],
+  "val_sources": [
+    "occ3d",
+    "kitti360"
+  ],
+  "kitti360_train_drives": [
+    "2013_05_28_drive_0003_sync",
+    "2013_05_28_drive_0007_sync",
+    "2013_05_28_drive_0010_sync"
+  ],
+  "kitti360_val_drive": "2013_05_28_drive_0006_sync",
+  "selected_candidate": "fold_semantickitti_best",
+  "checkpoint": "artifacts/gate8b/checkpoints/fold_semantickitti_best.pt",
+  "checkpoint_sha256": "708951df7b0e136eee2eda1264e85d44bd08a68d8f24ea491d16f8723d9bb08b",
+  "global_threshold_final_logodds": 0.03125,
+  "mapper_calibrated_threshold_logodds": -16.0,
+  "selection_inputs": [
+    "artifacts/gate8b/scores_occ3d_src_semantickitti_*.npz",
+    "artifacts/gate8b/scores_kitti360_src_semantickitti_*.npz"
+  ],
+  "selection_criterion": {
+    "checkpoint": "max macro-average AP over the fold's two source-validation domains, subject to AP > prevalence on both",
+    "threshold": "single global final-logit threshold maximising the equally weighted mean of the two per-source pooled full-grid binary IoUs",
+    "forbidden": "semantickitti data, labels, prevalence, metrics or predictions play no part in any of the above"
+  },
+  "hyperparameters": {
+    "seed": 0,
+    "train_sources": [
+      "occ3d_train",
+      "k360_train"
+    ],
+    "val_sources": [
+      "occ3d",
+      "kitti360"
+    ],
+    "val_limit": 120,
+    "val_stride": 1,
+    "train_stride": 1,
+    "crop": [
+      128,
+      128,
+      32
+    ],
+    "width": 24,
+    "batch_size": 4,
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "steps": 6000,
+    "log_every": 50,
+    "val_every": 500,
+    "ckpt_every": 500,
+    "w_sem": 0.5,
+    "lock_logodds": 2.0,
+    "sampler": "uniform",
+    "centre_on_occ_p": 0.7,
+    "occ_loss": "focal_dice",
+    "w_focal": 1.0,
+    "w_dice": 1.0,
+    "focal_gamma": 2.0,
+    "pos_weight_cap": 8.0,
+    "w_unknown": 2.0,
+    "w_bce": 1.0,
+    "target": "semantickitti",
+    "source_balance": "equal",
+    "val_limit_per_source": 60
+  },
+  "config": "configs/gate8b/fold_semantickitti.yaml",
+  "config_sha256": "5df791b786c4d9c3c37691a7b39101f9d6fc141c1145e9b71e3306fd8d1ac369",
+  "target_used_in_selection": false,
+  "frozen_sha256": "3e3f0deacb95b59509bcd627d156d4ecb3ad718e9607542f56d096f48f4cf738",
+  "frozen_at": "2026-09-03T13:52:36+0200",
+  "all_candidate_checkpoints": {
+    "fold_semantickitti_best": "708951df7b0e136eee2eda1264e85d44bd08a68d8f24ea491d16f8723d9bb08b",
+    "fold_semantickitti_last": "78a589f833162e6aeacb99d6625cfa1f0864d06493a51f0bde6f5e6b8a9595ce"
+  }
+}

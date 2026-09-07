@@ -1,0 +1,32 @@
+{
+  "dataset": "kitti360",
+  "shard": 0,
+  "num_shards": 4,
+  "n_assigned": 445,
+  "n_written": 445,
+  "n_skipped_existing": 0,
+  "seconds": 744.7881212234497,
+  "seconds_per_frame": 1.6736811728959673,
+  "peak_gpu_gib": 10.015147686004639,
+  "fp16_checks": [
+    {
+      "frame": "0000000117",
+      "max_abs_prob_err": 0.00016319751739501953,
+      "argmax_disagree": 1,
+      "pixels": 72520
+    },
+    {
+      "frame": "0000005829",
+      "max_abs_prob_err": 0.0001677870750427246,
+      "argmax_disagree": 6,
+      "pixels": 72520
+    }
+  ],
+  "proc_hw": [
+    140,
+    518
+  ],
+  "n_classes": 18,
+  "sam_ckpt_sha256": "a7bf3b02f3ebf126",
+  "targets_opened": "none"
+}

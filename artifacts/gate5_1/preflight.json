@@ -1,0 +1,424 @@
+{
+  "moge": {
+    "repo": "https://github.com/microsoft/MoGe",
+    "commit": "74fbce054ebed49800de42d0ad0e83495065719a",
+    "hf_repo": "Ruicheng/moge-2-vitl",
+    "hf_revision": "39c4d5e957afe587e04eec59dc2bcc3be5ecd968",
+    "model_class": "moge.model.v2.MoGeModel",
+    "license": "MIT",
+    "n_params": 326209221,
+    "weight_sha256": "3eefd4abb2102f38f12b2d1992e5ff15e4923e5431c67dd494afe157e0111cd5",
+    "depth_convention": "optical-axis z (points[...,2]), OpenCV camera frame",
+    "fov_source": "predicted by MoGe from RGB (fov_x=None)"
+  },
+  "datasets": {
+    "occ3d": {
+      "n_clips": 10,
+      "variants": {
+        "G51-A": {
+          "shapes_match": true,
+          "depth_eq_points_z": true,
+          "finite_positive_in_mask": true,
+          "one_scalar_per_clip": true,
+          "n_scalars": 10,
+          "mask_frac": {
+            "median": 0.8986387991490032,
+            "min": 0.8577929241194547,
+            "max": 0.9633795603183358
+          },
+          "valid_px": {
+            "median": 67908.5,
+            "min": 55703.0,
+            "max": 122382.0
+          },
+          "frame_scale": {
+            "median": 18.839122772216797,
+            "min": 15.222769737243652,
+            "max": 24.237382888793945
+          },
+          "clip_scale": {
+            "median": 18.767667398569472,
+            "min": 15.677017357791586,
+            "max": 23.54104146975426
+          },
+          "disp": {
+            "median": 0.024377532985912574,
+            "min": 0.019027257770598202,
+            "max": 0.04932614339950715
+          },
+          "fov_out": {
+            "median": 66.1854476928711,
+            "min": 63.433589935302734,
+            "max": 75.5580062866211
+          },
+          "teacher_hw": [
+            294,
+            518
+          ],
+          "fov_supplied_deg": null,
+          "no_interpolation_padding_or_resize": true
+        },
+        "G51-B": {
+          "shapes_match": true,
+          "depth_eq_points_z": true,
+          "finite_positive_in_mask": true,
+          "one_scalar_per_clip": true,
+          "n_scalars": 10,
+          "mask_frac": {
+            "median": 0.8986387991490032,
+            "min": 0.8577929241194547,
+            "max": 0.9633795603183358
+          },
+          "valid_px": {
+            "median": 67907.5,
+            "min": 55703.0,
+            "max": 122381.0
+          },
+          "frame_scale": {
+            "median": 19.647254943847656,
+            "min": 15.568886756896973,
+            "max": 26.085426330566406
+          },
+          "clip_scale": {
+            "median": 19.88464000783263,
+            "min": 15.72453043336237,
+            "max": 25.127786433365284
+          },
+          "disp": {
+            "median": 0.01899379600470427,
+            "min": 0.011107775071457656,
+            "max": 0.030760932757746388
+          },
+          "fov_out": {
+            "median": 64.56147003173828,
+            "min": 64.56147003173828,
+            "max": 64.56147003173828
+          },
+          "teacher_hw": [
+            294,
+            518
+          ],
+          "fov_supplied_deg": 64.5614792846793,
+          "no_interpolation_padding_or_resize": true
+        },
+        "G51-C": {
+          "shapes_match": true,
+          "depth_eq_points_z": true,
+          "finite_positive_in_mask": true,
+          "one_scalar_per_clip": true,
+          "n_scalars": 10,
+          "mask_frac": {
+            "median": 0.8986387991490032,
+            "min": 0.8577929241194547,
+            "max": 0.9633795603183358
+          },
+          "valid_px": {
+            "median": 67908.5,
+            "min": 55703.0,
+            "max": 122382.0
+          },
+          "frame_scale": {
+            "median": 18.839122772216797,
+            "min": 15.222769737243652,
+            "max": 24.237382888793945
+          },
+          "clip_scale": {
+            "median": 18.767667398569472,
+            "min": 15.677017357791586,
+            "max": 23.54104146975426
+          },
+          "disp": {
+            "median": 0.024377532985912574,
+            "min": 0.019027257770598202,
+            "max": 0.04932614339950715
+          },
+          "fov_out": {
+            "median": 66.1854476928711,
+            "min": 63.433589935302734,
+            "max": 75.5580062866211
+          },
+          "teacher_hw": [
+            294,
+            518
+          ],
+          "fov_supplied_deg": null,
+          "no_interpolation_padding_or_resize": true
+        },
+        "G51-D": {
+          "shapes_match": true,
+          "depth_eq_points_z": true,
+          "finite_positive_in_mask": true,
+          "one_scalar_per_clip": true,
+          "n_scalars": 10,
+          "mask_frac": {
+            "median": 0.8986387991490032,
+            "min": 0.8577929241194547,
+            "max": 0.9633795603183358
+          },
+          "valid_px": {
+            "median": 67907.5,
+            "min": 55703.0,
+            "max": 122381.0
+          },
+          "frame_scale": {
+            "median": 19.647254943847656,
+            "min": 15.568886756896973,
+            "max": 26.085426330566406
+          },
+          "clip_scale": {
+            "median": 19.88464000783263,
+            "min": 15.72453043336237,
+            "max": 25.127786433365284
+          },
+          "disp": {
+            "median": 0.01899379600470427,
+            "min": 0.011107775071457656,
+            "max": 0.030760932757746388
+          },
+          "fov_out": {
+            "median": 64.56147003173828,
+            "min": 64.56147003173828,
+            "max": 64.56147003173828
+          },
+          "teacher_hw": [
+            294,
+            518
+          ],
+          "fov_supplied_deg": 64.5614792846793,
+          "no_interpolation_padding_or_resize": true
+        }
+      },
+      "processed_calibration": {
+        "K_native_fx_cx": [
+          1266.417203046554,
+          816.2670197447984
+        ],
+        "K_processed_fx_cx": [
+          410.0025694863219,
+          264.26644764237847
+        ],
+        "proc_hw": [
+          294,
+          518
+        ],
+        "aspect_ratio": 1.7619047619047619,
+        "crop": {
+          "x0": 0,
+          "x1": 518,
+          "width": 518,
+          "height": 294,
+          "cx_crop": 264.26644764237847,
+          "fx": 410.0025694863219,
+          "identity": true,
+          "aspect_ratio": 1.7619047619047619
+        },
+        "fov_x_full_deg": 64.5614792846793,
+        "fov_x_crop_deg": 64.5614792846793
+      }
+    },
+    "kitti": {
+      "n_clips": 10,
+      "variants": {
+        "G51-A": {
+          "shapes_match": true,
+          "depth_eq_points_z": true,
+          "finite_positive_in_mask": true,
+          "one_scalar_per_clip": true,
+          "n_scalars": 10,
+          "mask_frac": {
+            "median": 0.9708481672767387,
+            "min": 0.9315423958281102,
+            "max": 0.9940706012134584
+          },
+          "valid_px": {
+            "median": 60485.0,
+            "min": 50690.0,
+            "max": 67852.0
+          },
+          "frame_scale": {
+            "median": 25.339137077331543,
+            "min": 18.365367889404297,
+            "max": 31.10698127746582
+          },
+          "clip_scale": {
+            "median": 25.234460649694363,
+            "min": 18.582136140046288,
+            "max": 28.464897495872318
+          },
+          "disp": {
+            "median": 0.024541003753921202,
+            "min": 0.015370149089157778,
+            "max": 0.04287505052902031
+          },
+          "fov_out": {
+            "median": 90.28191375732422,
+            "min": 84.3058090209961,
+            "max": 98.04499053955078
+          },
+          "teacher_hw": [
+            154,
+            518
+          ],
+          "fov_supplied_deg": null,
+          "no_interpolation_padding_or_resize": true
+        },
+        "G51-B": {
+          "shapes_match": true,
+          "depth_eq_points_z": true,
+          "finite_positive_in_mask": true,
+          "one_scalar_per_clip": true,
+          "n_scalars": 10,
+          "mask_frac": {
+            "median": 0.9708481672767387,
+            "min": 0.9315423958281102,
+            "max": 0.9940706012134584
+          },
+          "valid_px": {
+            "median": 60485.0,
+            "min": 50690.0,
+            "max": 67850.0
+          },
+          "frame_scale": {
+            "median": 30.32873249053955,
+            "min": 19.991830825805664,
+            "max": 35.553524017333984
+          },
+          "clip_scale": {
+            "median": 31.479162966222383,
+            "min": 20.430790122038403,
+            "max": 34.78308244010089
+          },
+          "disp": {
+            "median": 0.03164891010277188,
+            "min": 0.021079766995897534,
+            "max": 0.05049819214198343
+          },
+          "fov_out": {
+            "median": 81.84611511230469,
+            "min": 81.84611511230469,
+            "max": 81.84611511230469
+          },
+          "teacher_hw": [
+            154,
+            518
+          ],
+          "fov_supplied_deg": 81.8461284907647,
+          "no_interpolation_padding_or_resize": true
+        },
+        "G51-C": {
+          "shapes_match": true,
+          "depth_eq_points_z": true,
+          "finite_positive_in_mask": true,
+          "one_scalar_per_clip": true,
+          "n_scalars": 10,
+          "mask_frac": {
+            "median": 0.9565904874346433,
+            "min": 0.8986338336987688,
+            "max": 0.9998102546803845
+          },
+          "valid_px": {
+            "median": 34945.0,
+            "min": 27746.0,
+            "max": 38958.0
+          },
+          "frame_scale": {
+            "median": 24.73052978515625,
+            "min": 17.092458724975586,
+            "max": 30.052677154541016
+          },
+          "clip_scale": {
+            "median": 24.232558951009153,
+            "min": 17.283535916560307,
+            "max": 28.261755453020132
+          },
+          "disp": {
+            "median": 0.024117259412199485,
+            "min": 0.00674401458273432,
+            "max": 0.057141951905344546
+          },
+          "fov_out": {
+            "median": 69.85677337646484,
+            "min": 64.6595230102539,
+            "max": 76.2898178100586
+          },
+          "teacher_hw": [
+            154,
+            308
+          ],
+          "fov_supplied_deg": null,
+          "no_interpolation_padding_or_resize": true
+        },
+        "G51-D": {
+          "shapes_match": true,
+          "depth_eq_points_z": true,
+          "finite_positive_in_mask": true,
+          "one_scalar_per_clip": true,
+          "n_scalars": 10,
+          "mask_frac": {
+            "median": 0.9565904874346433,
+            "min": 0.8986338336987688,
+            "max": 0.9998102546803845
+          },
+          "valid_px": {
+            "median": 34944.5,
+            "min": 27746.0,
+            "max": 38952.0
+          },
+          "frame_scale": {
+            "median": 33.80581474304199,
+            "min": 22.60463523864746,
+            "max": 40.14645004272461
+          },
+          "clip_scale": {
+            "median": 38.0218536573953,
+            "min": 24.93895388305577,
+            "max": 43.25523235701106
+          },
+          "disp": {
+            "median": 0.02790038212663829,
+            "min": 0.012732107702599698,
+            "max": 0.05781171854183209
+          },
+          "fov_out": {
+            "median": 54.53976821899414,
+            "min": 54.53976821899414,
+            "max": 54.53976821899414
+          },
+          "teacher_hw": [
+            154,
+            308
+          ],
+          "fov_supplied_deg": 54.53977450297614,
+          "no_interpolation_padding_or_resize": true
+        }
+      },
+      "processed_calibration": {
+        "K_native_fx_cx": [
+          707.0912,
+          601.8873
+        ],
+        "K_processed_fx_cx": [
+          298.75468319738985,
+          254.30474828711257
+        ],
+        "proc_hw": [
+          154,
+          518
+        ],
+        "aspect_ratio": 3.3636363636363638,
+        "crop": {
+          "x0": 100,
+          "x1": 408,
+          "width": 308,
+          "height": 154,
+          "cx_crop": 154.30474828711257,
+          "fx": 298.75468319738985,
+          "identity": false,
+          "aspect_ratio": 2.0
+        },
+        "fov_x_full_deg": 81.8461284907647,
+        "fov_x_crop_deg": 54.53977450297614
+      }
+    }
+  }
+}

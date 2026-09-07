@@ -1,0 +1,199 @@
+{
+  "gate": "8D",
+  "frozen_at": "2026-09-05T23:53:26+02:00",
+  "code_commit": "9a648322e6dc4e34995f0530650c2fa469779676",
+  "claim": "KITTI-360-only training with no target-domain optimisation, fine-tuning, threshold calibration or checkpoint selection. SemanticKITTI and Occ3D have been inspected during earlier development, so they are NOT historically untouched.",
+  "protocol_sha256": "3191b73e7a7a1483bebe9d4d2a14cddaec93067cf0189d4a5faebb41666913a9",
+  "protocol_json": "artifacts/gate8d/protocol.json",
+  "selected": "seed0_best",
+  "checkpoint": "artifacts/gate8d/checkpoints/g8d_seed0_best.pt",
+  "checkpoint_sha256": "2e32cc02aba705aba2042ccca5905188f9f279bec356602d66c875176505151f",
+  "occupancy_threshold": -0.4375,
+  "semantic_threshold": 0.0,
+  "architecture": {
+    "base": "gate8.net.CompletionUNet",
+    "width": 24,
+    "padding_mode": "replicate",
+    "extra_outputs": {
+      "surface_distance_m": 1
+    },
+    "semantic_head": "existing open-vocabulary logits, unchanged readout"
+  },
+  "target_construction": {
+    "audit": "artifacts/gate8d/target_audit.json",
+    "accepted": true,
+    "pseudo_free_collision_rate": 0.0014697033885297133,
+    "occupied_recall_vs_gate8c1": 1.0,
+    "native_sweep_gain": 4.830357142857142
+  },
+  "source_selection": {
+    "rule": "preregistered weighted score over source stress variants; source AUROC is deliberately excluded",
+    "weights": {
+      "mean_stress_sc_iou": 0.35,
+      "worst_stress_sc_iou": 0.25,
+      "volume_ratio_penalty": 0.15,
+      "calibration_ece_penalty": 0.05,
+      "semantic_teacher_agreement": 0.1,
+      "completed_semantic_accuracy": 0.05,
+      "surface_thickness_penalty": 0.05,
+      "note": "source AUROC is deliberately NOT the selection criterion: the Gate 8C-1 neighbourhood experiment raised source AUROC 0.68 -> 0.74 while Occ3D IoU fell 33.28 -> 28.12, so source ranking alone is not a transfer proxy."
+    },
+    "n_val_samples": 100,
+    "per_candidate": {
+      "seed0_best": {
+        "selection_score": 0.08730417886986933,
+        "mean_stress_iou": 0.2160707694245049,
+        "worst_stress_iou": 0.18780070790895995,
+        "identity_tau": -0.4375,
+        "pred_over_gt": 1.2150869029897642,
+        "surface_thickness_m": 0.984375,
+        "semantic_teacher_agreement": 0.31060054000018683,
+        "completed_semantic_accuracy": 0.30301928084997126
+      },
+      "seed0_last": {
+        "selection_score": 0.023635558652325576,
+        "mean_stress_iou": 0.22952017162141292,
+        "worst_stress_iou": 0.20071888598593549,
+        "identity_tau": -0.6875,
+        "pred_over_gt": 1.677393544809912,
+        "surface_thickness_m": 0.96875,
+        "semantic_teacher_agreement": 0.2977381653073236,
+        "completed_semantic_accuracy": 0.26792984558203226
+      },
+      "seed1_best": {
+        "selection_score": -0.17528982437376456,
+        "mean_stress_iou": 0.22509686697258985,
+        "worst_stress_iou": 0.19620304446872222,
+        "identity_tau": -0.6875,
+        "pred_over_gt": 2.9923391982827,
+        "surface_thickness_m": 0.9765625,
+        "semantic_teacher_agreement": 0.2969744107177892,
+        "completed_semantic_accuracy": 0.29714149478548985
+      },
+      "seed1_last": {
+        "selection_score": 0.02367598703129676,
+        "mean_stress_iou": 0.22886377656249218,
+        "worst_stress_iou": 0.1985934073589235,
+        "identity_tau": -0.75,
+        "pred_over_gt": 1.6933249082852857,
+        "surface_thickness_m": 0.96875,
+        "semantic_teacher_agreement": 0.3132001083737399,
+        "completed_semantic_accuracy": 0.3008307760022496
+      },
+      "seed2_best": {
+        "selection_score": 0.0415649618152142,
+        "mean_stress_iou": 0.22809617087582645,
+        "worst_stress_iou": 0.1966244248955646,
+        "identity_tau": -0.6875,
+        "pred_over_gt": 1.5644191426413931,
+        "surface_thickness_m": 0.9765625,
+        "semantic_teacher_agreement": 0.31178704560105386,
+        "completed_semantic_accuracy": 0.29774975241774765
+      },
+      "seed2_last": {
+        "selection_score": -0.020730718606107403,
+        "mean_stress_iou": 0.23244165703858238,
+        "worst_stress_iou": 0.20184907132979188,
+        "identity_tau": -0.875,
+        "pred_over_gt": 1.9777661582427588,
+        "surface_thickness_m": 0.96875,
+        "semantic_teacher_agreement": 0.2907522632360772,
+        "completed_semantic_accuracy": 0.2695926202149381
+      }
+    }
+  },
+  "all_seeds": {
+    "seed0_best": {
+      "checkpoint": "artifacts/gate8d/checkpoints/g8d_seed0_best.pt",
+      "sha256": "2e32cc02aba705aba2042ccca5905188f9f279bec356602d66c875176505151f",
+      "selection_score": 0.08730417886986933,
+      "occupancy_threshold": -0.4375
+    },
+    "seed0_last": {
+      "checkpoint": "artifacts/gate8d/checkpoints/g8d_seed0_last.pt",
+      "sha256": "1983d86996c2b3f836db81772c473fc11a6e840fd15d397a94267bb0475a4374",
+      "selection_score": 0.023635558652325576,
+      "occupancy_threshold": -0.6875
+    },
+    "seed1_best": {
+      "checkpoint": "artifacts/gate8d/checkpoints/g8d_seed1_best.pt",
+      "sha256": "05bddf68a08524210970f40d2e228eea8b4baf6f31e231dc4e7a15899674dc18",
+      "selection_score": -0.17528982437376456,
+      "occupancy_threshold": -0.6875
+    },
+    "seed1_last": {
+      "checkpoint": "artifacts/gate8d/checkpoints/g8d_seed1_last.pt",
+      "sha256": "ac8e9c630d50486ad251812b981470ae7a34b1d2d509d36c3baa1f724b8ee1a7",
+      "selection_score": 0.02367598703129676,
+      "occupancy_threshold": -0.75
+    },
+    "seed2_best": {
+      "checkpoint": "artifacts/gate8d/checkpoints/g8d_seed2_best.pt",
+      "sha256": "516c7c97467f52eb6117ab3fe78344e1d6bf5e9520113f1003ee4fb272573ffa",
+      "selection_score": 0.0415649618152142,
+      "occupancy_threshold": -0.6875
+    },
+    "seed2_last": {
+      "checkpoint": "artifacts/gate8d/checkpoints/g8d_seed2_last.pt",
+      "sha256": "50c9c866be39c7fd247d036c3eb812c2d34af70e067273307bfc8662b7c96e7d",
+      "selection_score": -0.020730718606107403,
+      "occupancy_threshold": -0.875
+    }
+  },
+  "eval_protocols": [
+    "past5_causal",
+    "stream_all_past_causal",
+    "occany_fwd_non_causal"
+  ],
+  "success_criteria": {
+    "semantickitti_sc_iou_min": 25.28,
+    "semantickitti_sc_iou_stretch": 25.91,
+    "occ3d_matched_forward_sc_iou_min": 30.0,
+    "max_pred_over_gt_volume": 1.6,
+    "must_improve_ssc_miou_over": [
+      "gate8c1_plain_column",
+      "mapper_dilate"
+    ],
+    "must_improve_completed_naming_accuracy": true
+  },
+  "firewall": {
+    "selection": {
+      "n_opened": 1206,
+      "n_unique": 106,
+      "violations": [],
+      "forbidden_patterns": [
+        "Occ3D",
+        "SemanticKITTI",
+        "_1_1.npy",
+        "data/kitti/dataset",
+        "lingbot_occ3d_zeroshot",
+        "nuScenes",
+        "nuscenes",
+        "occ3d",
+        "occ3d_gt",
+        "preprocess/labels",
+        "scale_gate/cache",
+        "semantickitti"
+      ]
+    },
+    "target_audit": {
+      "n_opened": 23889,
+      "n_unique": 10523,
+      "violations": [],
+      "forbidden_patterns": [
+        "Occ3D",
+        "SemanticKITTI",
+        "_1_1.npy",
+        "data/kitti/dataset",
+        "lingbot_occ3d_zeroshot",
+        "nuScenes",
+        "nuscenes",
+        "occ3d",
+        "occ3d_gt",
+        "preprocess/labels",
+        "scale_gate/cache",
+        "semantickitti"
+      ]
+    }
+  }
+}

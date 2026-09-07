@@ -1,0 +1,50 @@
+{
+  "dataset": "kitti",
+  "moge": {
+    "repo": "https://github.com/microsoft/MoGe",
+    "commit": "74fbce054ebed49800de42d0ad0e83495065719a",
+    "hf_repo": "Ruicheng/moge-2-vitl",
+    "hf_revision": "39c4d5e957afe587e04eec59dc2bcc3be5ecd968",
+    "model_class": "moge.model.v2.MoGeModel",
+    "license": "MIT",
+    "n_params": 326209221,
+    "weight_sha256": "3eefd4abb2102f38f12b2d1992e5ff15e4923e5431c67dd494afe157e0111cd5",
+    "depth_convention": "optical-axis z (points[...,2]), OpenCV camera frame",
+    "fov_source": "predicted by MoGe from RGB (fov_x=None)"
+  },
+  "estimator": {
+    "pooling": "confidence_weighted_median_over_all_five_frames",
+    "weight": "lingbot_confidence",
+    "conf_threshold": 1.5,
+    "min_depth_m": 1.0,
+    "max_depth_m": 60.0,
+    "min_valid_pixels_per_clip": 500,
+    "on_failure": "exclude_and_report"
+  },
+  "n_clips": 163,
+  "n_ok": 163,
+  "n_failed": 0,
+  "failed_clip_ids": [],
+  "s_moge": {
+    "median": 22.444050435719642,
+    "p05": 16.8256864850969,
+    "p25": 20.351023129897843,
+    "p75": 24.342573320046476,
+    "p95": 27.605832688408903
+  },
+  "n_valid_total": {
+    "median": 320697.0,
+    "min": 231295
+  },
+  "mad_log_clip_median": 0.04939939659913195,
+  "per_frame_log_scale_std_median": 0.030096107382122504,
+  "fov_x_deg": {
+    "median": 86.89656829833984,
+    "p05": 83.39926071166992,
+    "p95": 94.05928802490234
+  },
+  "elapsed_s": 50.31158208847046,
+  "peak_gpu_gib": 2.2286829948425293,
+  "ms_per_clip": 308.66001573808353,
+  "cache_root": "/media/SSD1/MINH_DATASETS/lingbot_gate5_moge/kitti"
+}

@@ -1,0 +1,413 @@
+{
+  "fold": "occ3d",
+  "target": "occ3d",
+  "sources": [
+    "semantickitti",
+    "kitti360"
+  ],
+  "tag": "src_occ3d",
+  "candidates": [
+    {
+      "candidate": "fold_occ3d_best",
+      "checkpoint": "artifacts/gate8b/checkpoints/fold_occ3d_best.pt",
+      "sources": {
+        "semantickitti": {
+          "average_precision": 0.3103214578323346,
+          "prevalence": 0.07824240196221317,
+          "ap_over_prevalence": 3.9661545408869605,
+          "auroc": 0.8711621411716397,
+          "n_anchors": 163
+        },
+        "kitti360": {
+          "average_precision": 0.2988163618674311,
+          "prevalence": 0.25089718128998506,
+          "ap_over_prevalence": 1.1909913070010196,
+          "auroc": 0.5603061013693124,
+          "n_anchors": 1753
+        }
+      },
+      "macro_ap": 0.30456890984988283,
+      "ap_exceeds_prevalence_on_both": true,
+      "own_macro_threshold": -0.03125,
+      "own_macro_iou": 0.23432943462144024,
+      "full_at_own_threshold": {
+        "semantickitti": {
+          "threshold": -0.03125,
+          "tp": 14438788,
+          "fp": 42443656,
+          "fn": 4324142,
+          "iou": 0.23590252199330314,
+          "precision": 0.2538355771070596,
+          "recall": 0.7695380199148001,
+          "density": 0.23720277419577224,
+          "pred_over_gt": 3.0316397279103
+        },
+        "kitti360": {
+          "threshold": -0.03125,
+          "tp": 70493513,
+          "fp": 165022506,
+          "fn": 67347958,
+          "iou": 0.23275634724957733,
+          "precision": 0.29931515189206725,
+          "recall": 0.511410045819955,
+          "density": 0.4286830725692021,
+          "pred_over_gt": 1.708600592342779
+        }
+      },
+      "edit_at_own_threshold": {
+        "semantickitti": {
+          "threshold": -0.03125,
+          "tp": 12636119,
+          "fp": 37488526,
+          "fn": 3872638,
+          "iou": 0.23401397807367455,
+          "precision": 0.2520939350293653,
+          "recall": 0.7654191651134001,
+          "density": 0.2220834959132648,
+          "pred_over_gt": 3.0362458542457196
+        },
+        "kitti360": {
+          "threshold": -0.03125,
+          "tp": 66082522,
+          "fp": 154117744,
+          "fn": 64074065,
+          "iou": 0.23246039052326536,
+          "precision": 0.3001019172247503,
+          "recall": 0.507715541127396,
+          "density": 0.42480240779720213,
+          "pred_over_gt": 1.691810388359369
+        }
+      },
+      "at_zero": {
+        "semantickitti": {
+          "threshold": 0.0,
+          "tp": 14286903,
+          "fp": 41375664,
+          "fn": 4476027,
+          "iou": 0.23756629561376177,
+          "precision": 0.25666985498530814,
+          "recall": 0.7614430688597144,
+          "density": 0.2321158231397027,
+          "pred_over_gt": 2.9666244557752974
+        },
+        "kitti360": {
+          "threshold": 0.0,
+          "tp": 67764164,
+          "fp": 155993797,
+          "fn": 70077307,
+          "iou": 0.23061957286897228,
+          "precision": 0.3028458236621132,
+          "recall": 0.49160940831805255,
+          "density": 0.40728121441836906,
+          "pred_over_gt": 1.623299282695554
+        }
+      }
+    },
+    {
+      "candidate": "fold_occ3d_last",
+      "checkpoint": "artifacts/gate8b/checkpoints/fold_occ3d_last.pt",
+      "sources": {
+        "semantickitti": {
+          "average_precision": 0.310073125051961,
+          "prevalence": 0.07824240196221317,
+          "ap_over_prevalence": 3.962980650845937,
+          "auroc": 0.8713974832288118,
+          "n_anchors": 163
+        },
+        "kitti360": {
+          "average_precision": 0.29278929106197404,
+          "prevalence": 0.25089718128998506,
+          "ap_over_prevalence": 1.1669692324026966,
+          "auroc": 0.5519807741711633,
+          "n_anchors": 1753
+        }
+      },
+      "macro_ap": 0.30143120805696755,
+      "ap_exceeds_prevalence_on_both": true,
+      "own_macro_threshold": -0.09375,
+      "own_macro_iou": 0.23097060127210622,
+      "full_at_own_threshold": {
+        "semantickitti": {
+          "threshold": -0.09375,
+          "tp": 15059660,
+          "fp": 46921483,
+          "fn": 3703270,
+          "iou": 0.22927296313053752,
+          "precision": 0.24297164058429835,
+          "recall": 0.8026283741398598,
+          "density": 0.2584646163836573,
+          "pred_over_gt": 3.3033829471196663
+        },
+        "kitti360": {
+          "threshold": -0.09375,
+          "tp": 78479949,
+          "fp": 199462620,
+          "fn": 59361522,
+          "iou": 0.23266823941367495,
+          "precision": 0.2823603065998861,
+          "recall": 0.5693493288387789,
+          "density": 0.5059073050852539,
+          "pred_over_gt": 2.0163929402639647
+        }
+      },
+      "edit_at_own_threshold": {
+        "semantickitti": {
+          "threshold": -0.09375,
+          "tp": 13256991,
+          "fp": 41966353,
+          "fn": 3251766,
+          "iou": 0.22671168981127185,
+          "precision": 0.2400613588340467,
+          "recall": 0.8030278112398166,
+          "density": 0.24467391822008544,
+          "pred_over_gt": 3.3450940007173164
+        },
+        "kitti360": {
+          "threshold": -0.09375,
+          "tp": 74068958,
+          "fp": 188557858,
+          "fn": 56087629,
+          "iou": 0.23239912455175982,
+          "precision": 0.282031207353936,
+          "recall": 0.5690757548828473,
+          "density": 0.506650177202387,
+          "pred_over_gt": 2.01777583488725
+        }
+      },
+      "at_zero": {
+        "semantickitti": {
+          "threshold": 0.0,
+          "tp": 14627333,
+          "fp": 43708539,
+          "fn": 4135597,
+          "iou": 0.23414421389706716,
+          "precision": 0.2507433676486399,
+          "recall": 0.7795868235931168,
+          "density": 0.2432636451684367,
+          "pred_over_gt": 3.109102469603628
+        },
+        "kitti360": {
+          "threshold": 0.0,
+          "tp": 69895085,
+          "fp": 169928484,
+          "fn": 67946386,
+          "iou": 0.22710171628026524,
+          "precision": 0.2914437696488455,
+          "recall": 0.5070686237815903,
+          "density": 0.43652361682214086,
+          "pred_over_gt": 1.7398506215883318
+        }
+      }
+    },
+    {
+      "candidate": "mapper",
+      "checkpoint": null,
+      "sources": {
+        "semantickitti": {
+          "average_precision": 0.10640473188370991,
+          "prevalence": 0.07824240196221317,
+          "ap_over_prevalence": 1.3599369295321175,
+          "auroc": 0.5523108943907268,
+          "n_anchors": 163
+        },
+        "kitti360": {
+          "average_precision": 0.25386680269350775,
+          "prevalence": 0.25089718128998506,
+          "ap_over_prevalence": 1.0118360094292587,
+          "auroc": 0.5066828132171882,
+          "n_anchors": 1753
+        }
+      },
+      "macro_ap": 0.18013576728860883,
+      "ap_exceeds_prevalence_on_both": true,
+      "own_macro_threshold": -3.96875,
+      "own_macro_iou": 0.1648650262049074,
+      "full_at_own_threshold": {
+        "semantickitti": {
+          "threshold": -3.96875,
+          "tp": 18568912,
+          "fp": 217904426,
+          "fn": 194018,
+          "iou": 0.0784599630208401,
+          "precision": 0.07852433664212918,
+          "recall": 0.9896595041392788,
+          "density": 0.9861062192920987,
+          "pred_over_gt": 12.60322017936431
+        },
+        "kitti360": {
+          "threshold": -3.96875,
+          "tp": 136469277,
+          "fp": 405276404,
+          "fn": 1372194,
+          "iou": 0.2512700893889747,
+          "precision": 0.25190653435038646,
+          "recall": 0.9900451294516438,
+          "density": 0.9860781617668851,
+          "pred_over_gt": 3.93020820998058
+        }
+      },
+      "edit_at_own_threshold": {
+        "semantickitti": {
+          "threshold": -3.96875,
+          "tp": 16508757,
+          "fp": 209193044,
+          "fn": 0,
+          "iou": 0.0731441084070038,
+          "precision": 0.0731441084070038,
+          "recall": 1.0,
+          "density": 1.0,
+          "pred_over_gt": 13.671641117499034
+        },
+        "kitti360": {
+          "threshold": -3.96875,
+          "tp": 130156587,
+          "fp": 388202683,
+          "fn": 0,
+          "iou": 0.2510933912689552,
+          "precision": 0.2510933912689552,
+          "recall": 1.0,
+          "density": 1.0,
+          "pred_over_gt": 3.9825819188083043
+        }
+      },
+      "at_zero": {
+        "semantickitti": {
+          "threshold": 0.0,
+          "tp": 17095818,
+          "fp": 198372294,
+          "fn": 1667112,
+          "iou": 0.07873350847949018,
+          "precision": 0.07934268250329311,
+          "recall": 0.9111486319034394,
+          "density": 0.8985133254317512,
+          "pred_over_gt": 11.483713471190267
+        },
+        "kitti360": {
+          "threshold": 0.0,
+          "tp": 128038836,
+          "fp": 379370519,
+          "fn": 9802635,
+          "iou": 0.24755581555640271,
+          "precision": 0.25233834326921306,
+          "recall": 0.9288847185909674,
+          "density": 0.9235796455601477,
+          "pred_over_gt": 3.6811080969964403
+        }
+      }
+    }
+  ],
+  "rule": {
+    "checkpoint": "max macro-average AP over the fold's two source-validation domains, subject to AP > prevalence on both",
+    "threshold": "single global final-logit threshold maximising the equally weighted mean of the two per-source pooled full-grid binary IoUs",
+    "forbidden": "occ3d data, labels, prevalence, metrics or predictions play no part in any of the above"
+  },
+  "selected": {
+    "candidate": "fold_occ3d_best",
+    "checkpoint": "artifacts/gate8b/checkpoints/fold_occ3d_best.pt",
+    "checkpoint_sha256": "8728000f23756b73660eb6070e8762efe5815f6be9f5336701d274fcfdf9466c",
+    "macro_ap": 0.30456890984988283,
+    "threshold": -0.03125,
+    "macro_full_iou_at_threshold": 0.23432943462144024,
+    "full_at_threshold": {
+      "semantickitti": {
+        "threshold": -0.03125,
+        "tp": 14438788,
+        "fp": 42443656,
+        "fn": 4324142,
+        "iou": 0.23590252199330314,
+        "precision": 0.2538355771070596,
+        "recall": 0.7695380199148001,
+        "density": 0.23720277419577224,
+        "pred_over_gt": 3.0316397279103
+      },
+      "kitti360": {
+        "threshold": -0.03125,
+        "tp": 70493513,
+        "fp": 165022506,
+        "fn": 67347958,
+        "iou": 0.23275634724957733,
+        "precision": 0.29931515189206725,
+        "recall": 0.511410045819955,
+        "density": 0.4286830725692021,
+        "pred_over_gt": 1.708600592342779
+      }
+    },
+    "edit_at_threshold": {
+      "semantickitti": {
+        "threshold": -0.03125,
+        "tp": 12636119,
+        "fp": 37488526,
+        "fn": 3872638,
+        "iou": 0.23401397807367455,
+        "precision": 0.2520939350293653,
+        "recall": 0.7654191651134001,
+        "density": 0.2220834959132648,
+        "pred_over_gt": 3.0362458542457196
+      },
+      "kitti360": {
+        "threshold": -0.03125,
+        "tp": 66082522,
+        "fp": 154117744,
+        "fn": 64074065,
+        "iou": 0.23246039052326536,
+        "precision": 0.3001019172247503,
+        "recall": 0.507715541127396,
+        "density": 0.42480240779720213,
+        "pred_over_gt": 1.691810388359369
+      }
+    }
+  },
+  "mapper_calibrated": {
+    "threshold": -3.96875,
+    "macro_full_iou_at_threshold": 0.1648650262049074,
+    "full_at_threshold": {
+      "semantickitti": {
+        "threshold": -3.96875,
+        "tp": 18568912,
+        "fp": 217904426,
+        "fn": 194018,
+        "iou": 0.0784599630208401,
+        "precision": 0.07852433664212918,
+        "recall": 0.9896595041392788,
+        "density": 0.9861062192920987,
+        "pred_over_gt": 12.60322017936431
+      },
+      "kitti360": {
+        "threshold": -3.96875,
+        "tp": 136469277,
+        "fp": 405276404,
+        "fn": 1372194,
+        "iou": 0.2512700893889747,
+        "precision": 0.25190653435038646,
+        "recall": 0.9900451294516438,
+        "density": 0.9860781617668851,
+        "pred_over_gt": 3.93020820998058
+      }
+    },
+    "edit_at_threshold": {
+      "semantickitti": {
+        "threshold": -3.96875,
+        "tp": 16508757,
+        "fp": 209193044,
+        "fn": 0,
+        "iou": 0.0731441084070038,
+        "precision": 0.0731441084070038,
+        "recall": 1.0,
+        "density": 1.0,
+        "pred_over_gt": 13.671641117499034
+      },
+      "kitti360": {
+        "threshold": -3.96875,
+        "tp": 130156587,
+        "fp": 388202683,
+        "fn": 0,
+        "iou": 0.2510933912689552,
+        "precision": 0.2510933912689552,
+        "recall": 1.0,
+        "density": 1.0,
+        "pred_over_gt": 3.9825819188083043
+      }
+    }
+  },
+  "seconds": 0.37288880348205566
+}

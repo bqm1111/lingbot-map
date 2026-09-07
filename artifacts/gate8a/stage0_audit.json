@@ -1,0 +1,94 @@
+{
+  "note": "hashes of everything Gate 8A must not change",
+  "files": {
+    "gate8/mapper.py": {
+      "sha256": "95fd13c875a640cdb47dd964c53b59ced8e669331334f7431783036e958fe0eb",
+      "bytes": 19695
+    },
+    "gate8/net.py": {
+      "sha256": "4cbfced792c8f255fc808c66819cc7f553777157e6699c01d4c26076af7a4ea4",
+      "bytes": 5416
+    },
+    "gate8/targets.py": {
+      "sha256": "6ff8d46feb69148d54576aea192f40849a6fd01ea03af4797f8758a2c2f619ff",
+      "bytes": 7618
+    },
+    "gate8/vocab.py": {
+      "sha256": "b3fef8b8982254ea8a1670d7cd8e4ccdc301e85815d1be69e8d4e5dff97dd60a",
+      "bytes": 6441
+    },
+    "gate8/sources.py": {
+      "sha256": "d1e612b95e5d6e9a1220de4000f0710ff6ec220c769826b4ff4b786434b3d234",
+      "bytes": 7791
+    },
+    "gate8/feed.py": {
+      "sha256": "1a499c8bb5a8673c70b0bd68e4e7ee26d74d0b086de92105e0cf23f2ab34d977",
+      "bytes": 2899
+    },
+    "gate8/losses.py": {
+      "sha256": "92d3d4f9586a05749d58f86a60221bb4f57521e8c86137e8d0d0d1d423636348",
+      "bytes": 1596
+    },
+    "gate7b/scale.py": {
+      "sha256": "2b0b2db98700dbc2044efe2bd12a6dc07d787b554787e5bfa723f177bb59c198",
+      "bytes": 6132
+    },
+    "gate7b/depth.py": {
+      "sha256": "d361f8fba7fb27ab92d9bbbc6d0f1e9eb7466c6c21294b1039cbbd2be5fa5ffb",
+      "bytes": 4727
+    },
+    "gate7b/voxmap.py": {
+      "sha256": "858a9341a8dff737041e0b2f0020c42e68ba6fc5eece69193a45f368f2c25c20",
+      "bytes": 7116
+    },
+    "gate7b/rays.py": {
+      "sha256": "69e60cf4d8151470be459e9d96b7ccb7d9e3b2aed3d22985fc50b7b33ff9871b",
+      "bytes": 6415
+    },
+    "gate6/grids.py": {
+      "sha256": "e1c8bf07d769fd49a2b98fd502a7f4eefc52d36e793c4814eb98f5daa2ed446f",
+      "bytes": 3891
+    },
+    "gate6/metrics.py": {
+      "sha256": "65c6b57cd45882b59bf13e51e15f001af5b8b283b53a1c22d078ad462d6f0177",
+      "bytes": 10436
+    },
+    "gate6/targets.py": {
+      "sha256": "e1d8ec78919cc25e9ae23f04681d9d73eca6d9b1458ac8896a49b65ba8635d17",
+      "bytes": 3055
+    },
+    "gate6/vocab.py": {
+      "sha256": "5a9815702d3bcb38d08d5f0ae9f90cd391de2df4fe09e06ebf68a260296587c8",
+      "bytes": 6260
+    },
+    "configs/gate8/completion.yaml": {
+      "sha256": "a4a365847dd4ad7472ce7eb4dd1a085fadda551a89f602e6ba0ff3542c47d197",
+      "bytes": 550
+    },
+    "artifacts/gate8/gate8_results.json": {
+      "sha256": "544224d4f411a20d7dbbc1cd417bb70de6c323960fe4efb1c3096e0dccf6e202",
+      "bytes": 1854475
+    },
+    "artifacts/gate8/gate8_manifest.json": {
+      "sha256": "269b78333b348ebe64457baaf7330d4e2650924c615cfddb9f2fa29b2b2e5226",
+      "bytes": 6743
+    },
+    "artifacts/gate8/train_completion.json": {
+      "sha256": "fb31e1a7088a3ad1d450dcf050bbe5c8cb5dc936d3e271d8bee40b531ff819bd",
+      "bytes": 1673870
+    },
+    "artifacts/gate8/checkpoints/completion_best.pt": {
+      "sha256": "de9fbc0cf5d15bc1b0230aa0a54def56ddb9c2e0baf857ed3ee508a8adf6c8c1",
+      "bytes": 3962967
+    },
+    "artifacts/gate8/checkpoints/completion_last.pt": {
+      "sha256": "9891f98fdcead16b299700419804fc934482f64d8c4e6976ead4bdc6bc3cdc39",
+      "bytes": 3962775
+    },
+    "reports/gate8/gate8_report.md": {
+      "sha256": "ef2e2c04df7876a3274412497802cd50fe5a38b40c1355959ec007ffc828b4cc",
+      "bytes": 32024
+    }
+  },
+  "drift_since_first_run": []
+}

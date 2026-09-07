@@ -1,0 +1,48 @@
+`python -m pytest tests/gate8c0 tests/gate8c1 tests/gate8 tests/gate8a tests/gate8b -q`
+
+```
+120 passed, 12 warnings in 11.78s
+```
+
+30 new Gate 8C-1 tests plus the Gate 8C-0, 8, 8A and 8B suites. The warnings are NumPy's
+`np.fromstring` deprecation inside the frozen `sscbench_kitti360.adapter.parse_calibration`;
+none originates in Gate 8C-1 code.
+
+**Firewall — the brief's central requirement.** Five tests are parameterised over every
+pre-firewall tool (`build_targets`, `build_samples`, `train`, `selection`,
+`validate_targets`):
+
+* `test_no_target_dataset_path_or_identifier_before_the_firewall` — no SemanticKITTI,
+  Occ3D/nuScenes or SSCBench-label path or identifier appears in the source of any of them;
+* `test_pre_firewall_modules_do_not_import_target_loaders` — nor in their import closure,
+  so a target loader cannot arrive transitively;
+* `test_sscbench_completion_labels_are_never_read` — `_1_1.npy` is unreachable from the
+  Gate 8C-1 target path, the label Gate 8C-0 disqualified;
+* `test_firewall_predicate_rejects_target_paths` and `test_runtime_file_audit_actually_fires`
+  — the predicate rejects each forbidden pattern, and the runtime audit that wrapped
+  training and selection genuinely raises when a forbidden path is opened (a passing audit
+  with a broken interceptor would prove nothing);
+* `test_target_evaluator_refuses_without_a_frozen_manifest` — the evaluator takes no
+  checkpoint or threshold argument and will not start without `frozen_manifest.json`.
+
+**Supervision.** `test_rebuilt_target_agrees_with_its_own_sweep_by_construction`,
+`test_rebuilt_target_has_no_systematic_one_voxel_offset` (the +1 z test SSCBench failed at
++99 % IoU), `test_occupancy_recall_grows_with_future_sweeps`,
+`test_conflicting_evidence_becomes_unknown_not_a_vote`,
+`test_a_sweep_never_carves_the_voxel_it_measured` (deviation 2, asserted rather than
+assumed).
+
+**Causality and frozen method.**
+`test_cached_samples_are_causal_and_use_only_future_frames_for_targets`,
+`test_ground_truth_poses_and_future_lidar_are_absent_from_the_inference_path`,
+`test_scale_is_fixed_once_and_applied_identically_to_depth_and_translation`,
+`test_each_frame_is_integrated_exactly_once`,
+`test_all_three_seeds_share_one_configuration_except_seed`,
+`test_training_drives_and_validation_drive_are_disjoint`,
+`test_protocol_offsets_are_causal_or_explicitly_labelled_non_causal`.
+
+**OccAny honesty.** `test_occany_official_metric_agrees_with_our_counting` (their evaluator
+against ours, exactly), `test_occany_pooling_default_is_a_max_pool_not_a_vote`,
+`test_published_occany_numbers_are_quoted_not_recomputed`.
+
+**Prior work.** `test_gate8c0_artifacts_remain_unchanged`.

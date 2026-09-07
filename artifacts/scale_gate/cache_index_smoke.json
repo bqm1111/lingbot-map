@@ -1,0 +1,60 @@
+{
+  "provenance": {
+    "tool": "cache_lingbot",
+    "git_commit": "9a648322e6dc4e34995f0530650c2fa469779676",
+    "git_dirty_files": [
+      "M lingbot_map/models/gct_stream.py",
+      " M research/sem_bypass/model.py",
+      "?? artifacts/",
+      "?? configs/scale_gate/",
+      "?? lingbot_map_scale_claude_code_plan.md",
+      "?? scale_gate/",
+      "?? scripts/export_occupancy_3d.py",
+      "?? scripts/make_occupancy_ceiling_figure.py",
+      "?? scripts/make_scene_completion_honest_figure.py",
+      "?? tests/scale_gate/",
+      "?? tools/scale_gate/"
+    ],
+    "python": "3.10.19",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.7.1+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "seed": 0,
+    "config_hash": "d2faead637e3a190",
+    "checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+    "checkpoint_sha256": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72",
+    "argv": [
+      "tools/scale_gate/cache_lingbot.py",
+      "--config",
+      "configs/scale_gate/semantickitti.yaml",
+      "--split",
+      "smoke",
+      "--overwrite"
+    ]
+  },
+  "stamp": {
+    "checkpoint_sha256": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72",
+    "config_hash": "d2faead637e3a190",
+    "mode": "direct",
+    "clip_length": 5,
+    "frame_stride": 5
+  },
+  "split": "smoke",
+  "n_clips": 2,
+  "n_ok": 2,
+  "seconds": 1.6444246768951416,
+  "peak_gpu_gib": 9.364034175872803,
+  "clips": [
+    {
+      "clip_id": "08_000000_000020_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "08_000025_000045_s5",
+      "ok": true,
+      "reason": ""
+    }
+  ]
+}

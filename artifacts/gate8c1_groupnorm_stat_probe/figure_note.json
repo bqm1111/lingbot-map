@@ -1,0 +1,7 @@
+{
+  "note": "The experiment script tools/gate8c1/groupnorm_stat_probe.py wrote every machine-readable output (config, run_started, results, invariants, counts, z_profiles, groupnorm_statistics, uniform_control, predictions) and then raised TypeError in its own final matplotlib call, because case 00889 has z slices with zero valid voxels and therefore an undefined scored fraction.",
+  "resolution": "The experiment script was left byte-unchanged so its recorded sha256 stays valid. comparison.png is rendered by tools/gate8c1/groupnorm_stat_probe_figure.py, which only reads results.json and z_profiles.csv and performs no inference.",
+  "affects_results": false,
+  "figure_script": "tools/gate8c1/groupnorm_stat_probe_figure.py",
+  "figure_script_sha256": "240d6c8a534b7e1988f968f35fc96f22b3ddd8c4c6a61bf8d67e7986477c6e5b"
+}

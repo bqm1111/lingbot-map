@@ -1,0 +1,1996 @@
+{
+  "provenance": {
+    "tool": "project_lidar",
+    "git_commit": "9a648322e6dc4e34995f0530650c2fa469779676",
+    "git_dirty_files": [
+      "M lingbot_map/models/gct_stream.py",
+      " M research/sem_bypass/model.py",
+      "?? artifacts/",
+      "?? configs/scale_gate/",
+      "?? lingbot_map_scale_claude_code_plan.md",
+      "?? scale_gate/",
+      "?? scripts/export_occupancy_3d.py",
+      "?? scripts/make_occupancy_ceiling_figure.py",
+      "?? scripts/make_scene_completion_honest_figure.py",
+      "?? tests/scale_gate/",
+      "?? tools/scale_gate/"
+    ],
+    "python": "3.10.19",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.7.1+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "seed": 0,
+    "config_hash": "d2faead637e3a190",
+    "checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+    "checkpoint_sha256": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72",
+    "argv": [
+      "tools/scale_gate/project_lidar.py",
+      "--config",
+      "configs/scale_gate/semantickitti.yaml",
+      "--split",
+      "val"
+    ]
+  },
+  "split": "val",
+  "n_clips": 163,
+  "n_projected": 163,
+  "clips": [
+    {
+      "clip_id": "08_000000_000020_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18463,
+        18544,
+        18823,
+        18595,
+        18240
+      ],
+      "median_depth_m": 13.7109375
+    },
+    {
+      "clip_id": "08_000025_000045_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17938,
+        17590,
+        17316,
+        16654,
+        17674
+      ],
+      "median_depth_m": 14.2578125
+    },
+    {
+      "clip_id": "08_000050_000070_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18094,
+        18505,
+        18748,
+        19193,
+        18691
+      ],
+      "median_depth_m": 13.5625
+    },
+    {
+      "clip_id": "08_000075_000095_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17698,
+        17019,
+        17152,
+        16686,
+        18080
+      ],
+      "median_depth_m": 12.7421875
+    },
+    {
+      "clip_id": "08_000100_000120_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18171,
+        18221,
+        18551,
+        18393,
+        18345
+      ],
+      "median_depth_m": 12.234375
+    },
+    {
+      "clip_id": "08_000125_000145_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17868,
+        18219,
+        18610,
+        18167,
+        17308
+      ],
+      "median_depth_m": 12.125
+    },
+    {
+      "clip_id": "08_000150_000170_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17249,
+        17396,
+        18050,
+        16097,
+        17662
+      ],
+      "median_depth_m": 12.359375
+    },
+    {
+      "clip_id": "08_000175_000195_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18130,
+        17893,
+        17361,
+        18280,
+        18279
+      ],
+      "median_depth_m": 12.7421875
+    },
+    {
+      "clip_id": "08_000200_000220_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18372,
+        18372,
+        18603,
+        18486,
+        18382
+      ],
+      "median_depth_m": 12.296875
+    },
+    {
+      "clip_id": "08_000225_000245_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        16762,
+        18853,
+        18766,
+        18746,
+        18840
+      ],
+      "median_depth_m": 13.0703125
+    },
+    {
+      "clip_id": "08_000250_000270_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18863,
+        18766,
+        18412,
+        18605,
+        18511
+      ],
+      "median_depth_m": 12.515625
+    },
+    {
+      "clip_id": "08_000275_000295_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18482,
+        18444,
+        18332,
+        18549,
+        18093
+      ],
+      "median_depth_m": 12.5703125
+    },
+    {
+      "clip_id": "08_000300_000320_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18104,
+        18446,
+        17115,
+        17954,
+        18197
+      ],
+      "median_depth_m": 13.1484375
+    },
+    {
+      "clip_id": "08_000325_000345_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18970,
+        19010,
+        18788,
+        18717,
+        18641
+      ],
+      "median_depth_m": 12.5859375
+    },
+    {
+      "clip_id": "08_000350_000370_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18183,
+        18337,
+        18300,
+        18946,
+        19007
+      ],
+      "median_depth_m": 11.484375
+    },
+    {
+      "clip_id": "08_000375_000395_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18982,
+        19043,
+        18958,
+        18711,
+        18934
+      ],
+      "median_depth_m": 12.3203125
+    },
+    {
+      "clip_id": "08_000400_000420_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        19195,
+        19206,
+        18590,
+        18263,
+        18258
+      ],
+      "median_depth_m": 13.7890625
+    },
+    {
+      "clip_id": "08_000425_000445_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18463,
+        18340,
+        18380,
+        17905,
+        18541
+      ],
+      "median_depth_m": 12.78125
+    },
+    {
+      "clip_id": "08_000450_000470_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18259,
+        17664,
+        18202,
+        16963,
+        18642
+      ],
+      "median_depth_m": 10.9921875
+    },
+    {
+      "clip_id": "08_000475_000495_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18807,
+        18955,
+        18805,
+        18892,
+        18840
+      ],
+      "median_depth_m": 12.875
+    },
+    {
+      "clip_id": "08_000500_000520_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17705,
+        18150,
+        18645,
+        18061,
+        17313
+      ],
+      "median_depth_m": 11.484375
+    },
+    {
+      "clip_id": "08_000525_000545_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17577,
+        18417,
+        17872,
+        17896,
+        17676
+      ],
+      "median_depth_m": 10.3359375
+    },
+    {
+      "clip_id": "08_000550_000570_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18094,
+        16521,
+        15664,
+        18920,
+        18045
+      ],
+      "median_depth_m": 10.6953125
+    },
+    {
+      "clip_id": "08_000575_000595_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17334,
+        16505,
+        13825,
+        17408,
+        18744
+      ],
+      "median_depth_m": 10.03125
+    },
+    {
+      "clip_id": "08_000600_000620_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18586,
+        17365,
+        18149,
+        18532,
+        17351
+      ],
+      "median_depth_m": 10.5
+    },
+    {
+      "clip_id": "08_000625_000645_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17045,
+        17646,
+        17418,
+        16881,
+        18263
+      ],
+      "median_depth_m": 10.8125
+    },
+    {
+      "clip_id": "08_000650_000670_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18601,
+        18285,
+        17958,
+        18657,
+        18667
+      ],
+      "median_depth_m": 10.5
+    },
+    {
+      "clip_id": "08_000675_000695_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18904,
+        18821,
+        19134,
+        19263,
+        19291
+      ],
+      "median_depth_m": 12.6796875
+    },
+    {
+      "clip_id": "08_000700_000720_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        19288,
+        19247,
+        19249,
+        19326,
+        19033
+      ],
+      "median_depth_m": 12.890625
+    },
+    {
+      "clip_id": "08_000725_000745_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18890,
+        18727,
+        18845,
+        19082,
+        19073
+      ],
+      "median_depth_m": 12.59375
+    },
+    {
+      "clip_id": "08_000750_000770_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        19084,
+        18859,
+        18798,
+        18422,
+        18361
+      ],
+      "median_depth_m": 11.7109375
+    },
+    {
+      "clip_id": "08_000775_000795_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        19137,
+        19170,
+        19043,
+        18965,
+        19023
+      ],
+      "median_depth_m": 14.203125
+    },
+    {
+      "clip_id": "08_000800_000820_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        19421,
+        18925,
+        18480,
+        17364,
+        17273
+      ],
+      "median_depth_m": 10.4609375
+    },
+    {
+      "clip_id": "08_000825_000845_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17966,
+        18722,
+        18663,
+        17550,
+        18767
+      ],
+      "median_depth_m": 11.046875
+    },
+    {
+      "clip_id": "08_000850_000870_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18598,
+        17586,
+        16456,
+        12141,
+        16672
+      ],
+      "median_depth_m": 9.0625
+    },
+    {
+      "clip_id": "08_000875_000895_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        15216,
+        16986,
+        17810,
+        16998,
+        17871
+      ],
+      "median_depth_m": 10.9140625
+    },
+    {
+      "clip_id": "08_000900_000920_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18626,
+        18540,
+        18188,
+        18523,
+        17633
+      ],
+      "median_depth_m": 11.4609375
+    },
+    {
+      "clip_id": "08_000925_000945_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        16958,
+        16113,
+        14765,
+        17253,
+        17381
+      ],
+      "median_depth_m": 10.8046875
+    },
+    {
+      "clip_id": "08_000950_000970_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        19102,
+        19172,
+        19119,
+        19184,
+        19289
+      ],
+      "median_depth_m": 11.171875
+    },
+    {
+      "clip_id": "08_000975_000995_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        19311,
+        19095,
+        19328,
+        19378,
+        19407
+      ],
+      "median_depth_m": 13.1953125
+    },
+    {
+      "clip_id": "08_001000_001020_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        19416,
+        19133,
+        19012,
+        18877,
+        19012
+      ],
+      "median_depth_m": 15.5234375
+    },
+    {
+      "clip_id": "08_001025_001045_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        19204,
+        19161,
+        19076,
+        19070,
+        18761
+      ],
+      "median_depth_m": 13.6640625
+    },
+    {
+      "clip_id": "08_001050_001070_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17764,
+        18252,
+        18710,
+        19313,
+        19597
+      ],
+      "median_depth_m": 12.9609375
+    },
+    {
+      "clip_id": "08_001075_001095_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        19521,
+        19318,
+        18648,
+        18526,
+        18311
+      ],
+      "median_depth_m": 12.59375
+    },
+    {
+      "clip_id": "08_001100_001120_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17802,
+        17021,
+        16942,
+        17529,
+        18594
+      ],
+      "median_depth_m": 11.109375
+    },
+    {
+      "clip_id": "08_001125_001145_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17555,
+        17657,
+        17603,
+        17863,
+        17704
+      ],
+      "median_depth_m": 11.0390625
+    },
+    {
+      "clip_id": "08_001150_001170_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18702,
+        17569,
+        18651,
+        18910,
+        18953
+      ],
+      "median_depth_m": 11.8671875
+    },
+    {
+      "clip_id": "08_001175_001195_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18865,
+        18572,
+        16911,
+        17155,
+        17175
+      ],
+      "median_depth_m": 10.1328125
+    },
+    {
+      "clip_id": "08_001200_001220_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17561,
+        15568,
+        15494,
+        15059,
+        16704
+      ],
+      "median_depth_m": 9.4453125
+    },
+    {
+      "clip_id": "08_001225_001245_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18311,
+        18319,
+        17397,
+        16062,
+        16133
+      ],
+      "median_depth_m": 9.8359375
+    },
+    {
+      "clip_id": "08_001250_001270_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        16424,
+        16073,
+        16854,
+        16601,
+        17343
+      ],
+      "median_depth_m": 9.625
+    },
+    {
+      "clip_id": "08_001275_001295_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18850,
+        19055,
+        19230,
+        19226,
+        19174
+      ],
+      "median_depth_m": 14.4375
+    },
+    {
+      "clip_id": "08_001300_001320_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        19121,
+        19161,
+        19142,
+        19050,
+        18685
+      ],
+      "median_depth_m": 13.109375
+    },
+    {
+      "clip_id": "08_001325_001345_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18681,
+        18595,
+        18629,
+        18554,
+        17759
+      ],
+      "median_depth_m": 12.140625
+    },
+    {
+      "clip_id": "08_001350_001370_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18055,
+        18485,
+        18683,
+        18661,
+        18689
+      ],
+      "median_depth_m": 10.6640625
+    },
+    {
+      "clip_id": "08_001375_001395_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17767,
+        17598,
+        19027,
+        18845,
+        19034
+      ],
+      "median_depth_m": 12.734375
+    },
+    {
+      "clip_id": "08_001400_001420_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18963,
+        18785,
+        18875,
+        18786,
+        18434
+      ],
+      "median_depth_m": 12.6796875
+    },
+    {
+      "clip_id": "08_001425_001445_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17870,
+        17769,
+        17234,
+        19143,
+        19250
+      ],
+      "median_depth_m": 13.1484375
+    },
+    {
+      "clip_id": "08_001450_001470_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        19225,
+        19102,
+        18918,
+        19154,
+        19154
+      ],
+      "median_depth_m": 12.3359375
+    },
+    {
+      "clip_id": "08_001475_001495_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        19157,
+        19305,
+        19160,
+        19183,
+        19015
+      ],
+      "median_depth_m": 13.703125
+    },
+    {
+      "clip_id": "08_001500_001520_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18932,
+        18786,
+        18478,
+        17535,
+        16658
+      ],
+      "median_depth_m": 11.0546875
+    },
+    {
+      "clip_id": "08_001525_001545_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18622,
+        17974,
+        18342,
+        18717,
+        18733
+      ],
+      "median_depth_m": 11.875
+    },
+    {
+      "clip_id": "08_001550_001570_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18826,
+        18826,
+        18813,
+        18832,
+        18814
+      ],
+      "median_depth_m": 11.28125
+    },
+    {
+      "clip_id": "08_001575_001595_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18787,
+        18740,
+        18909,
+        18797,
+        18808
+      ],
+      "median_depth_m": 13.6796875
+    },
+    {
+      "clip_id": "08_001600_001620_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18872,
+        18790,
+        18569,
+        18659,
+        18266
+      ],
+      "median_depth_m": 13.5859375
+    },
+    {
+      "clip_id": "08_001625_001645_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17995,
+        17647,
+        16653,
+        17624,
+        18384
+      ],
+      "median_depth_m": 11.8671875
+    },
+    {
+      "clip_id": "08_001650_001670_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18368,
+        18240,
+        18487,
+        18214,
+        18432
+      ],
+      "median_depth_m": 12.9140625
+    },
+    {
+      "clip_id": "08_001675_001695_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18731,
+        18757,
+        18573,
+        18345,
+        17608
+      ],
+      "median_depth_m": 12.9921875
+    },
+    {
+      "clip_id": "08_001700_001720_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17314,
+        17342,
+        17183,
+        16969,
+        15940
+      ],
+      "median_depth_m": 12.84375
+    },
+    {
+      "clip_id": "08_001725_001745_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17084,
+        16706,
+        16840,
+        17685,
+        18262
+      ],
+      "median_depth_m": 12.1484375
+    },
+    {
+      "clip_id": "08_001750_001770_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17498,
+        17544,
+        17618,
+        18640,
+        18653
+      ],
+      "median_depth_m": 11.7578125
+    },
+    {
+      "clip_id": "08_001775_001795_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18835,
+        18851,
+        18990,
+        18949,
+        18521
+      ],
+      "median_depth_m": 13.1953125
+    },
+    {
+      "clip_id": "08_001800_001820_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18650,
+        18524,
+        18578,
+        18560,
+        18571
+      ],
+      "median_depth_m": 14.4375
+    },
+    {
+      "clip_id": "08_001825_001845_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18824,
+        18995,
+        18912,
+        19191,
+        18644
+      ],
+      "median_depth_m": 14.8515625
+    },
+    {
+      "clip_id": "08_001850_001870_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18379,
+        18242,
+        18584,
+        18343,
+        17903
+      ],
+      "median_depth_m": 13.1953125
+    },
+    {
+      "clip_id": "08_001875_001895_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17534,
+        17208,
+        18209,
+        18027,
+        17941
+      ],
+      "median_depth_m": 12.5390625
+    },
+    {
+      "clip_id": "08_001900_001920_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18078,
+        18139,
+        18205,
+        18252,
+        18534
+      ],
+      "median_depth_m": 12.5703125
+    },
+    {
+      "clip_id": "08_001925_001945_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18962,
+        18822,
+        18443,
+        18306,
+        18115
+      ],
+      "median_depth_m": 9.84375
+    },
+    {
+      "clip_id": "08_001950_001970_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17776,
+        17778,
+        17365,
+        16973,
+        16161
+      ],
+      "median_depth_m": 9.453125
+    },
+    {
+      "clip_id": "08_001975_001995_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        15840,
+        17686,
+        18521,
+        18194,
+        18646
+      ],
+      "median_depth_m": 9.5078125
+    },
+    {
+      "clip_id": "08_002000_002020_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18816,
+        18984,
+        18926,
+        18479,
+        18395
+      ],
+      "median_depth_m": 10.3515625
+    },
+    {
+      "clip_id": "08_002025_002045_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17986,
+        17851,
+        18648,
+        17977,
+        16762
+      ],
+      "median_depth_m": 9.40625
+    },
+    {
+      "clip_id": "08_002050_002070_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17581,
+        17880,
+        18858,
+        18521,
+        17305
+      ],
+      "median_depth_m": 8.953125
+    },
+    {
+      "clip_id": "08_002075_002095_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        16405,
+        18289,
+        17995,
+        19083,
+        18883
+      ],
+      "median_depth_m": 8.5703125
+    },
+    {
+      "clip_id": "08_002100_002120_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18719,
+        18707,
+        18504,
+        18094,
+        18197
+      ],
+      "median_depth_m": 8.328125
+    },
+    {
+      "clip_id": "08_002125_002145_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18821,
+        18544,
+        18744,
+        18778,
+        18504
+      ],
+      "median_depth_m": 10.21875
+    },
+    {
+      "clip_id": "08_002150_002170_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18365,
+        18448,
+        18575,
+        18615,
+        18310
+      ],
+      "median_depth_m": 8.5625
+    },
+    {
+      "clip_id": "08_002175_002195_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18291,
+        18069,
+        17959,
+        18579,
+        18542
+      ],
+      "median_depth_m": 8.9140625
+    },
+    {
+      "clip_id": "08_002200_002220_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18531,
+        18289,
+        18476,
+        17963,
+        17591
+      ],
+      "median_depth_m": 8.703125
+    },
+    {
+      "clip_id": "08_002225_002245_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17426,
+        18412,
+        17507,
+        17338,
+        17896
+      ],
+      "median_depth_m": 8.3828125
+    },
+    {
+      "clip_id": "08_002250_002270_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18524,
+        18802,
+        18638,
+        18446,
+        18239
+      ],
+      "median_depth_m": 10.59375
+    },
+    {
+      "clip_id": "08_002275_002295_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17899,
+        17682,
+        18240,
+        18415,
+        17556
+      ],
+      "median_depth_m": 9.40625
+    },
+    {
+      "clip_id": "08_002300_002320_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18018,
+        17759,
+        18790,
+        18811,
+        17928
+      ],
+      "median_depth_m": 9.6953125
+    },
+    {
+      "clip_id": "08_002325_002345_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        16293,
+        16771,
+        15146,
+        13408,
+        15869
+      ],
+      "median_depth_m": 8.953125
+    },
+    {
+      "clip_id": "08_002350_002370_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        16105,
+        16328,
+        18374,
+        18576,
+        18983
+      ],
+      "median_depth_m": 11.1484375
+    },
+    {
+      "clip_id": "08_002375_002395_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18549,
+        17970,
+        17437,
+        16999,
+        18527
+      ],
+      "median_depth_m": 8.921875
+    },
+    {
+      "clip_id": "08_002400_002420_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17946,
+        17940,
+        17676,
+        17854,
+        17406
+      ],
+      "median_depth_m": 7.31640625
+    },
+    {
+      "clip_id": "08_002425_002445_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        16218,
+        16936,
+        16210,
+        16194,
+        16477
+      ],
+      "median_depth_m": 8.21875
+    },
+    {
+      "clip_id": "08_002450_002470_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        16686,
+        17157,
+        18130,
+        18836,
+        18847
+      ],
+      "median_depth_m": 13.8828125
+    },
+    {
+      "clip_id": "08_002475_002495_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18769,
+        18779,
+        18968,
+        19050,
+        19313
+      ],
+      "median_depth_m": 13.65625
+    },
+    {
+      "clip_id": "08_002500_002520_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        19134,
+        18880,
+        18700,
+        18454,
+        18044
+      ],
+      "median_depth_m": 9.6015625
+    },
+    {
+      "clip_id": "08_002525_002545_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17516,
+        17227,
+        17084,
+        17005,
+        17622
+      ],
+      "median_depth_m": 10.5703125
+    },
+    {
+      "clip_id": "08_002550_002570_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17146,
+        18134,
+        18639,
+        18802,
+        18710
+      ],
+      "median_depth_m": 10.328125
+    },
+    {
+      "clip_id": "08_002575_002595_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        19040,
+        19160,
+        18864,
+        18308,
+        18621
+      ],
+      "median_depth_m": 10.5546875
+    },
+    {
+      "clip_id": "08_002600_002620_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17684,
+        18113,
+        19141,
+        19395,
+        19101
+      ],
+      "median_depth_m": 12.515625
+    },
+    {
+      "clip_id": "08_002625_002645_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        19202,
+        19329,
+        18804,
+        18445,
+        18538
+      ],
+      "median_depth_m": 10.40625
+    },
+    {
+      "clip_id": "08_002650_002670_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18489,
+        18326,
+        17437,
+        17160,
+        17835
+      ],
+      "median_depth_m": 11.1640625
+    },
+    {
+      "clip_id": "08_002675_002695_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        16650,
+        15802,
+        15719,
+        17471,
+        17574
+      ],
+      "median_depth_m": 10.1796875
+    },
+    {
+      "clip_id": "08_002700_002720_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18152,
+        17921,
+        18342,
+        18406,
+        16905
+      ],
+      "median_depth_m": 11.578125
+    },
+    {
+      "clip_id": "08_002725_002745_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17346,
+        18066,
+        17382,
+        18190,
+        18378
+      ],
+      "median_depth_m": 11.3359375
+    },
+    {
+      "clip_id": "08_002750_002770_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17255,
+        16607,
+        17525,
+        16653,
+        16598
+      ],
+      "median_depth_m": 11.1328125
+    },
+    {
+      "clip_id": "08_002775_002795_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17279,
+        17625,
+        17591,
+        18235,
+        18141
+      ],
+      "median_depth_m": 11.3359375
+    },
+    {
+      "clip_id": "08_002800_002820_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        16626,
+        18163,
+        16718,
+        17827,
+        18223
+      ],
+      "median_depth_m": 10.8359375
+    },
+    {
+      "clip_id": "08_002825_002845_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17097,
+        17259,
+        17288,
+        16734,
+        17143
+      ],
+      "median_depth_m": 11.0625
+    },
+    {
+      "clip_id": "08_002850_002870_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18382,
+        18315,
+        17930,
+        17090,
+        17565
+      ],
+      "median_depth_m": 12.953125
+    },
+    {
+      "clip_id": "08_002875_002895_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17076,
+        16763,
+        16289,
+        17844,
+        17731
+      ],
+      "median_depth_m": 11.8828125
+    },
+    {
+      "clip_id": "08_002900_002920_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17594,
+        15312,
+        16331,
+        15800,
+        15386
+      ],
+      "median_depth_m": 10.3515625
+    },
+    {
+      "clip_id": "08_002925_002945_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        16581,
+        18218,
+        18179,
+        18119,
+        17468
+      ],
+      "median_depth_m": 13.4375
+    },
+    {
+      "clip_id": "08_002950_002970_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17668,
+        17667,
+        17432,
+        16952,
+        16871
+      ],
+      "median_depth_m": 12.5
+    },
+    {
+      "clip_id": "08_002975_002995_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        16367,
+        16376,
+        16465,
+        17042,
+        18162
+      ],
+      "median_depth_m": 11.859375
+    },
+    {
+      "clip_id": "08_003000_003020_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17632,
+        18558,
+        19023,
+        18784,
+        18419
+      ],
+      "median_depth_m": 11.6953125
+    },
+    {
+      "clip_id": "08_003025_003045_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17911,
+        17948,
+        18006,
+        18191,
+        18330
+      ],
+      "median_depth_m": 13.0
+    },
+    {
+      "clip_id": "08_003050_003070_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18785,
+        18695,
+        17766,
+        17959,
+        18446
+      ],
+      "median_depth_m": 11.9921875
+    },
+    {
+      "clip_id": "08_003075_003095_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18601,
+        17986,
+        18327,
+        18573,
+        18601
+      ],
+      "median_depth_m": 10.53125
+    },
+    {
+      "clip_id": "08_003100_003120_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18393,
+        17513,
+        17068,
+        18147,
+        18376
+      ],
+      "median_depth_m": 9.3359375
+    },
+    {
+      "clip_id": "08_003125_003145_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17155,
+        16687,
+        17909,
+        17423,
+        17879
+      ],
+      "median_depth_m": 9.53125
+    },
+    {
+      "clip_id": "08_003150_003170_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18599,
+        18199,
+        18343,
+        17004,
+        18738
+      ],
+      "median_depth_m": 9.890625
+    },
+    {
+      "clip_id": "08_003175_003195_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18839,
+        18589,
+        17996,
+        18784,
+        18823
+      ],
+      "median_depth_m": 9.734375
+    },
+    {
+      "clip_id": "08_003200_003220_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18736,
+        18508,
+        17154,
+        18786,
+        18716
+      ],
+      "median_depth_m": 10.375
+    },
+    {
+      "clip_id": "08_003225_003245_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18397,
+        17370,
+        17240,
+        18136,
+        16791
+      ],
+      "median_depth_m": 9.0625
+    },
+    {
+      "clip_id": "08_003250_003270_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        16957,
+        17325,
+        16090,
+        16279,
+        18223
+      ],
+      "median_depth_m": 10.1015625
+    },
+    {
+      "clip_id": "08_003275_003295_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17906,
+        18874,
+        18823,
+        18697,
+        18582
+      ],
+      "median_depth_m": 9.7734375
+    },
+    {
+      "clip_id": "08_003300_003320_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17551,
+        18791,
+        18406,
+        16958,
+        17438
+      ],
+      "median_depth_m": 9.9921875
+    },
+    {
+      "clip_id": "08_003325_003345_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18841,
+        18932,
+        17880,
+        19131,
+        19052
+      ],
+      "median_depth_m": 9.546875
+    },
+    {
+      "clip_id": "08_003350_003370_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        19001,
+        19142,
+        19357,
+        19345,
+        19233
+      ],
+      "median_depth_m": 11.3984375
+    },
+    {
+      "clip_id": "08_003375_003395_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        19203,
+        19333,
+        19422,
+        19446,
+        19379
+      ],
+      "median_depth_m": 11.6484375
+    },
+    {
+      "clip_id": "08_003400_003420_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        19230,
+        18641,
+        18603,
+        18802,
+        18804
+      ],
+      "median_depth_m": 11.4296875
+    },
+    {
+      "clip_id": "08_003425_003445_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18911,
+        18994,
+        18663,
+        18604,
+        18265
+      ],
+      "median_depth_m": 9.828125
+    },
+    {
+      "clip_id": "08_003450_003470_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18320,
+        18576,
+        18471,
+        18607,
+        18508
+      ],
+      "median_depth_m": 10.078125
+    },
+    {
+      "clip_id": "08_003475_003495_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18556,
+        17843,
+        16774,
+        16459,
+        18439
+      ],
+      "median_depth_m": 8.7578125
+    },
+    {
+      "clip_id": "08_003500_003520_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17857,
+        17800,
+        18470,
+        17252,
+        17207
+      ],
+      "median_depth_m": 8.734375
+    },
+    {
+      "clip_id": "08_003525_003545_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17478,
+        17253,
+        17453,
+        16343,
+        15547
+      ],
+      "median_depth_m": 8.0625
+    },
+    {
+      "clip_id": "08_003550_003570_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        16497,
+        17347,
+        18459,
+        18079,
+        17759
+      ],
+      "median_depth_m": 9.921875
+    },
+    {
+      "clip_id": "08_003575_003595_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18205,
+        17458,
+        17517,
+        16781,
+        17471
+      ],
+      "median_depth_m": 9.0625
+    },
+    {
+      "clip_id": "08_003600_003620_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17548,
+        17158,
+        17335,
+        18196,
+        18613
+      ],
+      "median_depth_m": 7.6953125
+    },
+    {
+      "clip_id": "08_003625_003645_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17825,
+        18169,
+        17963,
+        17937,
+        17537
+      ],
+      "median_depth_m": 8.453125
+    },
+    {
+      "clip_id": "08_003650_003670_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18604,
+        18619,
+        18509,
+        18300,
+        18289
+      ],
+      "median_depth_m": 9.53125
+    },
+    {
+      "clip_id": "08_003675_003695_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17948,
+        18366,
+        18022,
+        17857,
+        18234
+      ],
+      "median_depth_m": 8.2421875
+    },
+    {
+      "clip_id": "08_003700_003720_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17091,
+        16398,
+        17587,
+        18946,
+        19156
+      ],
+      "median_depth_m": 9.703125
+    },
+    {
+      "clip_id": "08_003725_003745_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        19332,
+        19398,
+        19475,
+        19450,
+        19343
+      ],
+      "median_depth_m": 12.8671875
+    },
+    {
+      "clip_id": "08_003750_003770_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        19332,
+        19241,
+        19368,
+        18620,
+        17898
+      ],
+      "median_depth_m": 8.828125
+    },
+    {
+      "clip_id": "08_003775_003795_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17637,
+        18611,
+        18502,
+        18354,
+        17154
+      ],
+      "median_depth_m": 10.3125
+    },
+    {
+      "clip_id": "08_003800_003820_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17259,
+        17811,
+        17423,
+        17136,
+        16099
+      ],
+      "median_depth_m": 10.4375
+    },
+    {
+      "clip_id": "08_003825_003845_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        15939,
+        16922,
+        17151,
+        17330,
+        18085
+      ],
+      "median_depth_m": 10.4140625
+    },
+    {
+      "clip_id": "08_003850_003870_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18923,
+        18723,
+        18936,
+        18620,
+        17698
+      ],
+      "median_depth_m": 12.4140625
+    },
+    {
+      "clip_id": "08_003875_003895_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17453,
+        18318,
+        17280,
+        16990,
+        17481
+      ],
+      "median_depth_m": 9.921875
+    },
+    {
+      "clip_id": "08_003900_003920_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        16415,
+        17565,
+        18088,
+        17503,
+        17574
+      ],
+      "median_depth_m": 8.8984375
+    },
+    {
+      "clip_id": "08_003925_003945_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17166,
+        16895,
+        17609,
+        17359,
+        17910
+      ],
+      "median_depth_m": 8.84375
+    },
+    {
+      "clip_id": "08_003950_003970_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17059,
+        17474,
+        18138,
+        18160,
+        18449
+      ],
+      "median_depth_m": 11.578125
+    },
+    {
+      "clip_id": "08_003975_003995_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18719,
+        18644,
+        18503,
+        18845,
+        18740
+      ],
+      "median_depth_m": 14.8984375
+    },
+    {
+      "clip_id": "08_004000_004020_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        18611,
+        18640,
+        18520,
+        18555,
+        17249
+      ],
+      "median_depth_m": 14.8515625
+    },
+    {
+      "clip_id": "08_004025_004045_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17594,
+        18375,
+        18684,
+        18444,
+        17994
+      ],
+      "median_depth_m": 13.875
+    },
+    {
+      "clip_id": "08_004050_004070_s5",
+      "sequence": "08",
+      "valid_per_frame": [
+        17733,
+        17811,
+        17845,
+        17660,
+        17563
+      ],
+      "median_depth_m": 14.546875
+    }
+  ]
+}

@@ -1,0 +1,809 @@
+{
+  "source": "occ3d",
+  "n_samples": 300,
+  "seconds": 318.8507959842682,
+  "future_frames": 20,
+  "audit": [
+    {
+      "segment": "scene-0554",
+      "t": 4,
+      "clip": "scene-0554_CAM_FRONT_e0b85d62_35264745",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 74234,
+      "n_fut_rows": 17130,
+      "bytes": 425889
+    },
+    {
+      "segment": "scene-0554",
+      "t": 24,
+      "clip": "scene-0554_CAM_FRONT_1263172d_587805aa",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 79805,
+      "n_fut_rows": 16796,
+      "bytes": 499957
+    },
+    {
+      "segment": "scene-0555",
+      "t": 4,
+      "clip": "scene-0555_CAM_FRONT_12a42a64_bf8b54d2",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 189660,
+      "n_fut_rows": 23314,
+      "bytes": 669364
+    },
+    {
+      "segment": "scene-0555",
+      "t": 24,
+      "clip": "scene-0555_CAM_FRONT_d1a6bacb_577babc0",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 271575,
+      "n_fut_rows": 22288,
+      "bytes": 1336507
+    },
+    {
+      "segment": "scene-0556",
+      "t": 4,
+      "clip": "scene-0556_CAM_FRONT_17e6f41d_22ab3af7",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 756341,
+      "n_fut_rows": 115207,
+      "bytes": 3119077
+    },
+    {
+      "segment": "scene-0556",
+      "t": 24,
+      "clip": "scene-0556_CAM_FRONT_336a6e0b_e0ae88cc",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 865995,
+      "n_fut_rows": 59711,
+      "bytes": 4654402
+    },
+    {
+      "segment": "scene-0557",
+      "t": 4,
+      "clip": "scene-0557_CAM_FRONT_6cb74a87_149a7945",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 413586,
+      "n_fut_rows": 49336,
+      "bytes": 1699917
+    },
+    {
+      "segment": "scene-0557",
+      "t": 24,
+      "clip": "scene-0557_CAM_FRONT_f3697fc3_43d1d341",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 522583,
+      "n_fut_rows": 24705,
+      "bytes": 2679754
+    },
+    {
+      "segment": "scene-0558",
+      "t": 4,
+      "clip": "scene-0558_CAM_FRONT_b4b5e858_1bcca0ca",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 219706,
+      "n_fut_rows": 33082,
+      "bytes": 825622
+    },
+    {
+      "segment": "scene-0558",
+      "t": 24,
+      "clip": "scene-0558_CAM_FRONT_c4066c80_17cdd19d",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 253107,
+      "n_fut_rows": 19007,
+      "bytes": 1224354
+    },
+    {
+      "segment": "scene-0559",
+      "t": 4,
+      "clip": "scene-0559_CAM_FRONT_029af235_4ffbb895",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 379615,
+      "n_fut_rows": 39789,
+      "bytes": 1426334
+    },
+    {
+      "segment": "scene-0559",
+      "t": 24,
+      "clip": "scene-0559_CAM_FRONT_2fdf63c9_83956bb0",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 613506,
+      "n_fut_rows": 48243,
+      "bytes": 2902984
+    },
+    {
+      "segment": "scene-0560",
+      "t": 4,
+      "clip": "scene-0560_CAM_FRONT_5c558d97_a4060a0e",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 294161,
+      "n_fut_rows": 39542,
+      "bytes": 1450805
+    },
+    {
+      "segment": "scene-0560",
+      "t": 24,
+      "clip": "scene-0560_CAM_FRONT_e11f179b_00bf6d20",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 336121,
+      "n_fut_rows": 37899,
+      "bytes": 1995117
+    },
+    {
+      "segment": "scene-0561",
+      "t": 4,
+      "clip": "scene-0561_CAM_FRONT_9eebbe06_25f8552b",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 242745,
+      "n_fut_rows": 42297,
+      "bytes": 1097440
+    },
+    {
+      "segment": "scene-0561",
+      "t": 24,
+      "clip": "scene-0561_CAM_FRONT_85196a97_778c13dd",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 429628,
+      "n_fut_rows": 99015,
+      "bytes": 2045353
+    },
+    {
+      "segment": "scene-0562",
+      "t": 4,
+      "clip": "scene-0562_CAM_FRONT_e493c692_c79d5105",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 681617,
+      "n_fut_rows": 60488,
+      "bytes": 2533070
+    },
+    {
+      "segment": "scene-0562",
+      "t": 24,
+      "clip": "scene-0562_CAM_FRONT_be83af41_c34e3ca7",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 847178,
+      "n_fut_rows": 52129,
+      "bytes": 3973511
+    },
+    {
+      "segment": "scene-0563",
+      "t": 4,
+      "clip": "scene-0563_CAM_FRONT_970f41b6_95f02301",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 126486,
+      "n_fut_rows": 15208,
+      "bytes": 486266
+    },
+    {
+      "segment": "scene-0563",
+      "t": 24,
+      "clip": "scene-0563_CAM_FRONT_8c4f9b0b_0645e15d",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 94801,
+      "n_fut_rows": 2287,
+      "bytes": 504676
+    },
+    {
+      "segment": "scene-0564",
+      "t": 4,
+      "clip": "scene-0564_CAM_FRONT_3b86f821_1706522f",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 105620,
+      "n_fut_rows": 6114,
+      "bytes": 273317
+    },
+    {
+      "segment": "scene-0564",
+      "t": 24,
+      "clip": "scene-0564_CAM_FRONT_0e6efc71_0fd26c83",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 104094,
+      "n_fut_rows": 0,
+      "bytes": 283211
+    },
+    {
+      "segment": "scene-0565",
+      "t": 4,
+      "clip": "scene-0565_CAM_FRONT_f0c47597_e7bc8aeb",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 565117,
+      "n_fut_rows": 67286,
+      "bytes": 2299408
+    },
+    {
+      "segment": "scene-0565",
+      "t": 24,
+      "clip": "scene-0565_CAM_FRONT_05527b6d_0de33421",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 703538,
+      "n_fut_rows": 56012,
+      "bytes": 4284980
+    },
+    {
+      "segment": "scene-0625",
+      "t": 4,
+      "clip": "scene-0625_CAM_FRONT_67d2d740_5bc6ae14",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 595518,
+      "n_fut_rows": 53701,
+      "bytes": 2352056
+    },
+    {
+      "segment": "scene-0625",
+      "t": 24,
+      "clip": "scene-0625_CAM_FRONT_668349dd_0466f571",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 1033472,
+      "n_fut_rows": 40636,
+      "bytes": 5060278
+    },
+    {
+      "segment": "scene-0626",
+      "t": 4,
+      "clip": "scene-0626_CAM_FRONT_57f23d2f_addf60d7",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 309133,
+      "n_fut_rows": 12731,
+      "bytes": 1198265
+    },
+    {
+      "segment": "scene-0626",
+      "t": 24,
+      "clip": "scene-0626_CAM_FRONT_7e3b2e21_1d4e275d",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 682488,
+      "n_fut_rows": 66803,
+      "bytes": 3662922
+    },
+    {
+      "segment": "scene-0627",
+      "t": 4,
+      "clip": "scene-0627_CAM_FRONT_0fae8aae_6a692a42",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 234625,
+      "n_fut_rows": 30187,
+      "bytes": 1063918
+    },
+    {
+      "segment": "scene-0627",
+      "t": 24,
+      "clip": "scene-0627_CAM_FRONT_221c593d_178c06a2",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 422527,
+      "n_fut_rows": 33874,
+      "bytes": 2004419
+    },
+    {
+      "segment": "scene-0629",
+      "t": 4,
+      "clip": "scene-0629_CAM_FRONT_14384b3c_9e545368",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 600373,
+      "n_fut_rows": 32061,
+      "bytes": 2280228
+    },
+    {
+      "segment": "scene-0629",
+      "t": 24,
+      "clip": "scene-0629_CAM_FRONT_5cc2771d_c49f9510",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 781811,
+      "n_fut_rows": 16509,
+      "bytes": 3516515
+    },
+    {
+      "segment": "scene-0630",
+      "t": 4,
+      "clip": "scene-0630_CAM_FRONT_6a808b09_ae9508b3",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 568479,
+      "n_fut_rows": 47657,
+      "bytes": 2150184
+    },
+    {
+      "segment": "scene-0630",
+      "t": 24,
+      "clip": "scene-0630_CAM_FRONT_440a528d_c1a3b338",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 706439,
+      "n_fut_rows": 10657,
+      "bytes": 3089276
+    },
+    {
+      "segment": "scene-0632",
+      "t": 4,
+      "clip": "scene-0632_CAM_FRONT_78c80690_ce0b0c67",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 189664,
+      "n_fut_rows": 21268,
+      "bytes": 600920
+    },
+    {
+      "segment": "scene-0632",
+      "t": 24,
+      "clip": "scene-0632_CAM_FRONT_64aaf542_c4b8c55c",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 270233,
+      "n_fut_rows": 24474,
+      "bytes": 1053961
+    },
+    {
+      "segment": "scene-0633",
+      "t": 4,
+      "clip": "scene-0633_CAM_FRONT_fe5b1b2e_e762b41b",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 497918,
+      "n_fut_rows": 17009,
+      "bytes": 1678085
+    },
+    {
+      "segment": "scene-0633",
+      "t": 24,
+      "clip": "scene-0633_CAM_FRONT_21af4cef_3b17af9e",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 780739,
+      "n_fut_rows": 22686,
+      "bytes": 2837154
+    },
+    {
+      "segment": "scene-0634",
+      "t": 4,
+      "clip": "scene-0634_CAM_FRONT_3bb017b6_cb0da387",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 275987,
+      "n_fut_rows": 43035,
+      "bytes": 954140
+    },
+    {
+      "segment": "scene-0634",
+      "t": 24,
+      "clip": "scene-0634_CAM_FRONT_f96a3767_475a324f",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 499013,
+      "n_fut_rows": 36211,
+      "bytes": 2705548
+    },
+    {
+      "segment": "scene-0635",
+      "t": 4,
+      "clip": "scene-0635_CAM_FRONT_43f05ac3_b0715ea6",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 53486,
+      "n_fut_rows": 680,
+      "bytes": 135328
+    },
+    {
+      "segment": "scene-0635",
+      "t": 24,
+      "clip": "scene-0635_CAM_FRONT_4c9136c0_e55fea30",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 55160,
+      "n_fut_rows": 713,
+      "bytes": 140421
+    },
+    {
+      "segment": "scene-0636",
+      "t": 4,
+      "clip": "scene-0636_CAM_FRONT_3ac231a1_925af658",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 658788,
+      "n_fut_rows": 32089,
+      "bytes": 2502776
+    },
+    {
+      "segment": "scene-0636",
+      "t": 24,
+      "clip": "scene-0636_CAM_FRONT_c64a7057_0d28a80a",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 1168483,
+      "n_fut_rows": 75555,
+      "bytes": 5558320
+    },
+    {
+      "segment": "scene-0637",
+      "t": 4,
+      "clip": "scene-0637_CAM_FRONT_8b77b8e2_26a15512",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 681262,
+      "n_fut_rows": 26439,
+      "bytes": 2269438
+    },
+    {
+      "segment": "scene-0637",
+      "t": 24,
+      "clip": "scene-0637_CAM_FRONT_c0da6ecb_cae3569b",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 793414,
+      "n_fut_rows": 30843,
+      "bytes": 3622977
+    },
+    {
+      "segment": "scene-0638",
+      "t": 4,
+      "clip": "scene-0638_CAM_FRONT_ccd7c315_1646a03c",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 579459,
+      "n_fut_rows": 100839,
+      "bytes": 1933663
+    },
+    {
+      "segment": "scene-0638",
+      "t": 24,
+      "clip": "scene-0638_CAM_FRONT_0b1c4f84_bbf22539",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 807920,
+      "n_fut_rows": 51597,
+      "bytes": 4090289
+    },
+    {
+      "segment": "scene-0770",
+      "t": 4,
+      "clip": "scene-0770_CAM_FRONT_4cecbedd_9935b3e1",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 104254,
+      "n_fut_rows": 19761,
+      "bytes": 524830
+    },
+    {
+      "segment": "scene-0770",
+      "t": 24,
+      "clip": "scene-0770_CAM_FRONT_b380e87c_3e2d8c16",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        39
+      ],
+      "n_rows": 106639,
+      "n_fut_rows": 19661,
+      "bytes": 620831
+    }
+  ],
+  "total_bytes": 383693093
+}

@@ -1,0 +1,10 @@
+case_id,condition,region,occupied,voxels,occupied_fraction
+uniform_256x256x32,A,all,455775,2097152,0.2173304557800293
+uniform_256x256x32,A,boundary,264560,319040,0.8292377131394183
+uniform_256x256x32,A,interior,0,668352,0.0
+uniform_256x256x32,B,all,132902,2097152,0.06337261199951172
+uniform_256x256x32,B,boundary,131519,319040,0.41223357572718156
+uniform_256x256x32,B,interior,0,668352,0.0
+uniform_256x256x32,C,all,0,2097152,0.0
+uniform_256x256x32,C,boundary,0,319040,0.0
+uniform_256x256x32,C,interior,0,668352,0.0

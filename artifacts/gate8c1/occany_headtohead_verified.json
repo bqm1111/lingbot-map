@@ -1,0 +1,118 @@
+{
+ "status": "OccAny released checkpoint downloaded and run on this machine; published number reproduced",
+ "occany_run": {
+  "checkpoint": "anhquancao/OccAny -> checkpoints/occany.pth (3.75 GB), MUSt3R_512 / GroundingDINO / SAM2 also fetched",
+  "command": "extract_output_occany.py --model occany_must3r --dataset nuscenes --setting 5frames --gen -rot 60 -vpi 10 -fwd 3 -seed_trans 2 --recon_conf_thres 1.1 --gen_conf_thres 1.1 --use_render_output --key_to_get_pts3d pts3d   (EXP_ID 2 of sh/exp_lists/occany.sh)",
+  "samples": 4819,
+  "model_params": 651129550,
+  "scored_by": "their own compute_metrics_from_saved_voxels.py"
+ },
+ "reproduction_full_val_4819": {
+  "pooled_their_default": {
+   "precision": 36.11,
+   "recall": 40.39,
+   "sc_iou": 23.56
+  },
+  "raw_no_pooling": {
+   "precision": 42.67,
+   "recall": 28.61,
+   "sc_iou": 20.67
+  },
+  "published": {
+   "precision": 36.09,
+   "recall": 40.39,
+   "sc_iou": 23.55
+  },
+  "verdict": "exact reproduction (23.56 vs 23.55); the published number is the POOLED one, confirming USE_MAJORITY_POOLING=1 is their default"
+ },
+ "cross_checks": {
+  "our_scoring_equals_theirs_on_all_4819": {
+   "ours": [
+    42.67,
+    28.61,
+    20.67
+   ],
+   "theirs": [
+    42.67,
+    28.61,
+    20.67
+   ]
+  },
+  "their_gt_label_identical_to_ours": "byte-identical on every matched sample",
+  "pooling_order": {
+   "occany_convention": "pool the full unmasked prediction, then the evaluator sets target==255 voxels to empty  (pool-then-mask)",
+   "measured_effect_on_us": {
+    "pool_then_mask": 42.04,
+    "mask_then_pool": 33.26
+   },
+   "note": "gate8c1_results.json's completion_occany_pool (33.43) used mask-then-pool, which is stricter than OccAny's own convention; the head-to-head below uses pool-then-mask for BOTH sides"
+  }
+ },
+ "head_to_head_882_shared_samples": {
+  "scored_by": "OccAny SSCMetrics.get_score_completion, identical samples and mask",
+  "occany_raw": {
+   "sc_iou": 20.64,
+   "precision": 42.55,
+   "recall": 28.61,
+   "pred_over_gt": 0.67
+  },
+  "occany_pooled": {
+   "sc_iou": 23.48,
+   "precision": 35.96,
+   "recall": 40.36,
+   "pred_over_gt": 1.12
+  },
+  "ours_fwd_raw": {
+   "sc_iou": 27.56,
+   "precision": 63.83,
+   "recall": 32.66,
+   "pred_over_gt": 0.51
+  },
+  "ours_fwd_pooled": {
+   "sc_iou": 40.47,
+   "precision": 55.75,
+   "recall": 59.62,
+   "pred_over_gt": 1.07
+  },
+  "ours_causal_raw": {
+   "sc_iou": 30.43,
+   "precision": 65.16,
+   "recall": 36.34,
+   "pred_over_gt": 0.56
+  },
+  "ours_causal_pooled": {
+   "sc_iou": 41.13,
+   "precision": 55.48,
+   "recall": 61.39,
+   "pred_over_gt": 1.11
+  },
+  "subset_is_representative": "OccAny scores 20.64/23.48 here vs 20.67/23.56 on all 4819"
+ },
+ "matched_deltas": {
+  "raw_vs_raw_matched_forward_input": {
+   "ours": 27.56,
+   "occany": 20.64,
+   "delta": 6.92
+  },
+  "pooled_vs_pooled_matched_forward": {
+   "ours": 40.47,
+   "occany": 23.48,
+   "delta": 16.99
+  },
+  "raw_vs_raw_our_causal_protocol": {
+   "ours": 30.43,
+   "occany": 20.64,
+   "delta": 9.79
+  },
+  "pooled_vs_pooled_our_causal_protocol": {
+   "ours": 41.13,
+   "occany": 23.48,
+   "delta": 17.65
+  }
+ },
+ "remaining_asymmetries_favouring_occany": [
+  "OccAny trained on nuScenes; our completion module never saw it",
+  "OccAny tunes its confidence threshold per dataset (nuScenes 1.1, KITTI 2.5); ours was frozen on KITTI-360 before Occ3D was opened",
+  "in the matched-forward rows the input is identical; in the causal rows ours is strictly harder (no future observation)"
+ ]
+}

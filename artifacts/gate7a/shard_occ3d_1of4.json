@@ -1,0 +1,30 @@
+{
+  "dataset": "occ3d",
+  "shard": 1,
+  "shards": 4,
+  "n_clips": 296,
+  "n_verified_against_pinned": 296,
+  "max_projection_roundtrip_pixel_error": 3.126388037344441e-13,
+  "pinned_channel_agreement": {
+    "n_raw_voxels": 2260653,
+    "n_raw_channel_mismatch": 1,
+    "n_dil_voxels": 6629072,
+    "n_dil_channel_mismatch": 12,
+    "max_top1_top2_gap_at_mismatch": 5.960464477539063e-08,
+    "note": "geometry is bit-exact on every clip; these are argmax flips on voxels whose top two fused probabilities differ by less than the CUDA atomic accumulation error of index_add_. The PINNED Gate-6 channel is what this gate uses as the base label."
+  },
+  "empty_base_clips": {
+    "B-R": [
+      "scene-0629_CAM_FRONT_fac8be41_bdbc78ad"
+    ],
+    "B-D": [
+      "scene-0629_CAM_FRONT_fac8be41_bdbc78ad"
+    ]
+  },
+  "voxel_size_m": 0.4,
+  "voxel_diagonal_m": 0.6928203230275509,
+  "seconds": 141.2920491695404,
+  "peak_gpu_gib": 0.24024200439453125,
+  "gate6_rollup_sha256": "32fbe8c6b6677ec680597c3b85782dda60460275f4a8917b30fc6b4c5a634782",
+  "precommit_sha256": "2da49cc6b266b2fc22cddfa743f0cd54f37005c72c9da8cb1a281c0885f37a4e"
+}

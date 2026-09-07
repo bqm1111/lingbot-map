@@ -1,0 +1,265 @@
+{
+  "provenance": {
+    "tool": "geometry_gate.factorize",
+    "git_commit": "9a648322e6dc4e34995f0530650c2fa469779676",
+    "git_dirty_files": [
+      "M lingbot_map/models/gct_stream.py",
+      " M research/sem_bypass/model.py",
+      "?? artifacts/",
+      "?? configs/scale_gate/",
+      "?? lingbot_map_scale_claude_code_plan.md",
+      "?? reports/",
+      "?? scale_gate/",
+      "?? scripts/export_occupancy_3d.py",
+      "?? scripts/make_occupancy_ceiling_figure.py",
+      "?? scripts/make_scene_completion_honest_figure.py",
+      "?? tests/scale_gate/",
+      "?? tools/__init__.py",
+      "?? tools/check_ddad_layout.py",
+      "?? tools/check_vkitti2_layout.py",
+      "?? tools/geometry_gate/",
+      "?? tools/scale_gate/"
+    ],
+    "python": "3.10.19",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.7.1+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "seed": 0,
+    "config_hash": "d2faead637e3a190",
+    "checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+    "checkpoint_sha256": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72",
+    "argv": [
+      "tools/geometry_gate/factorize.py",
+      "--config",
+      "configs/scale_gate/semantickitti.yaml",
+      "--split",
+      "val"
+    ]
+  },
+  "split": "val",
+  "n_clips": 163,
+  "deployable_scale": 27.3498,
+  "grid": {
+    "dims": [
+      256,
+      256,
+      32
+    ],
+    "voxel_size": 0.2
+  },
+  "five_frame_visible_reconstruction_ceiling": 0.12551093146694367,
+  "configs": {
+    "A_gtdepth_gtpose": {
+      "support": "sparse_common_support",
+      "depth_source": "lidar",
+      "pose_source": "gt",
+      "n_clips": 163,
+      "iou": 0.12551093146694367,
+      "precision": 0.937579282904487,
+      "recall": 0.12779787176885724,
+      "n_pred_occupied": 14933.398773006134,
+      "n_points": 90418.78527607361,
+      "in_grid_fraction": 0.6780615726736519,
+      "out_of_grid_fraction": 0.32193842732634814,
+      "sparse_absrel": NaN,
+      "pose_rot_err_deg": 0.0,
+      "pose_trans_err_m": 0.0
+    },
+    "B_gtdepth_predpose": {
+      "support": "sparse_common_support",
+      "depth_source": "lidar",
+      "pose_source": "pred",
+      "n_clips": 163,
+      "iou": 0.12334305601007528,
+      "precision": 0.8901371527849569,
+      "recall": 0.1266854933425852,
+      "n_pred_occupied": 15623.319018404907,
+      "n_points": 90418.78527607361,
+      "in_grid_fraction": 0.6809705946639039,
+      "out_of_grid_fraction": 0.3190294053360961,
+      "sparse_absrel": NaN,
+      "pose_rot_err_deg": 0.5083277113108572,
+      "pose_trans_err_m": 0.28813850556320586
+    },
+    "C_preddepth_common": {
+      "support": "sparse_common_support",
+      "depth_source": "pred",
+      "pose_source": "gt",
+      "n_clips": 163,
+      "iou": 0.06176474247639659,
+      "precision": 0.664185549558115,
+      "recall": 0.06437103749795357,
+      "n_pred_occupied": 10607.496932515338,
+      "n_points": 81030.63190184049,
+      "in_grid_fraction": 0.6708632261728681,
+      "out_of_grid_fraction": 0.32913677382713197,
+      "sparse_absrel": 0.09350978862963347,
+      "pose_rot_err_deg": 0.0,
+      "pose_trans_err_m": 0.0
+    },
+    "D_preddepth_full": {
+      "support": "full_predicted_depth",
+      "depth_source": "pred",
+      "pose_source": "gt",
+      "n_clips": 163,
+      "iou": 0.07816863733688373,
+      "precision": 0.40587267187447623,
+      "recall": 0.09018508936083165,
+      "n_pred_occupied": 24800.914110429447,
+      "n_points": 318149.74233128835,
+      "in_grid_fraction": 0.6346034125144457,
+      "out_of_grid_fraction": 0.3653965874855542,
+      "sparse_absrel": 0.09350978862963347,
+      "pose_rot_err_deg": 0.0,
+      "pose_trans_err_m": 0.0
+    },
+    "E_preddepth_predpose": {
+      "support": "full_predicted_depth",
+      "depth_source": "pred",
+      "pose_source": "pred",
+      "n_clips": 163,
+      "iou": 0.07691154923910878,
+      "precision": 0.4057288666460856,
+      "recall": 0.08846453151415257,
+      "n_pred_occupied": 24249.460122699387,
+      "n_points": 318149.74233128835,
+      "in_grid_fraction": 0.6368507258717468,
+      "out_of_grid_fraction": 0.36314927412825315,
+      "sparse_absrel": 0.09350978862963347,
+      "pose_rot_err_deg": 0.5083277113108572,
+      "pose_trans_err_m": 0.28813850556320586
+    },
+    "F_deployable": {
+      "support": "full_predicted_depth",
+      "depth_source": "pred",
+      "pose_source": "pred",
+      "n_clips": 163,
+      "iou": 0.05723681865994605,
+      "precision": 0.3182184285962506,
+      "recall": 0.06610826790384301,
+      "n_pred_occupied": 23512.723926380368,
+      "n_points": 318184.4846625767,
+      "in_grid_fraction": 0.5899934602617168,
+      "out_of_grid_fraction": 0.4100065397382832,
+      "sparse_absrel": 0.20494996019791548,
+      "pose_rot_err_deg": 0.5083277113108572,
+      "pose_trans_err_m": 0.28813850556320586
+    }
+  },
+  "pairwise_bootstrap": {
+    "B_gtdepth_predpose - A_gtdepth_gtpose": {
+      "mean": -0.002167875456868368,
+      "lo": -0.0038581172249077898,
+      "hi": -0.0007284738563995797,
+      "n": 163,
+      "excludes_zero": true
+    },
+    "C_preddepth_common - A_gtdepth_gtpose": {
+      "mean": -0.06374618899054707,
+      "lo": -0.06860840856086704,
+      "hi": -0.059527998913440544,
+      "n": 163,
+      "excludes_zero": true
+    },
+    "D_preddepth_full - A_gtdepth_gtpose": {
+      "mean": -0.04734229413005994,
+      "lo": -0.05304021006708724,
+      "hi": -0.0425664534788173,
+      "n": 163,
+      "excludes_zero": true
+    },
+    "E_preddepth_predpose - A_gtdepth_gtpose": {
+      "mean": -0.04859938222783489,
+      "lo": -0.054387711853138225,
+      "hi": -0.043718721792915534,
+      "n": 163,
+      "excludes_zero": true
+    },
+    "F_deployable - A_gtdepth_gtpose": {
+      "mean": -0.06827411280699762,
+      "lo": -0.07522157711151059,
+      "hi": -0.06205168652668355,
+      "n": 163,
+      "excludes_zero": true
+    },
+    "C_preddepth_common - B_gtdepth_predpose": {
+      "mean": -0.061578313533678715,
+      "lo": -0.06547556755492102,
+      "hi": -0.05801398550690639,
+      "n": 163,
+      "excludes_zero": true
+    },
+    "D_preddepth_full - B_gtdepth_predpose": {
+      "mean": -0.04517441867319157,
+      "lo": -0.04979123936768772,
+      "hi": -0.04105572114456842,
+      "n": 163,
+      "excludes_zero": true
+    },
+    "E_preddepth_predpose - B_gtdepth_predpose": {
+      "mean": -0.046431506770966524,
+      "lo": -0.051196571322646635,
+      "hi": -0.04216772885265915,
+      "n": 163,
+      "excludes_zero": true
+    },
+    "F_deployable - B_gtdepth_predpose": {
+      "mean": -0.06610623735012926,
+      "lo": -0.07239654615033603,
+      "hi": -0.060223043478553166,
+      "n": 163,
+      "excludes_zero": true
+    },
+    "D_preddepth_full - C_preddepth_common": {
+      "mean": 0.016403894860487135,
+      "lo": 0.015229577166695036,
+      "hi": 0.017490564862031703,
+      "n": 163,
+      "excludes_zero": true
+    },
+    "E_preddepth_predpose - C_preddepth_common": {
+      "mean": 0.015146806762712189,
+      "lo": 0.013716464001998541,
+      "hi": 0.016517820001179313,
+      "n": 163,
+      "excludes_zero": true
+    },
+    "F_deployable - C_preddepth_common": {
+      "mean": -0.0045279238164505405,
+      "lo": -0.009735452033674152,
+      "hi": 0.0006659487285921669,
+      "n": 163,
+      "excludes_zero": false
+    },
+    "E_preddepth_predpose - D_preddepth_full": {
+      "mean": -0.0012570880977749478,
+      "lo": -0.0020078835924470877,
+      "hi": -0.0005261992473908737,
+      "n": 163,
+      "excludes_zero": true
+    },
+    "F_deployable - D_preddepth_full": {
+      "mean": -0.020931818676937677,
+      "lo": -0.026288527171828304,
+      "hi": -0.015593484881997384,
+      "n": 163,
+      "excludes_zero": true
+    },
+    "F_deployable - E_preddepth_predpose": {
+      "mean": -0.01967473057916273,
+      "lo": -0.025233001808446107,
+      "hi": -0.014108253308615442,
+      "n": 163,
+      "excludes_zero": true
+    }
+  },
+  "factor_chain": {
+    "pose_only  (A->B)": "B_gtdepth_predpose - A_gtdepth_gtpose",
+    "depth_only (A->C)": "C_preddepth_common - A_gtdepth_gtpose",
+    "coverage   (C->D)": "D_preddepth_full - C_preddepth_common",
+    "pose_given_pred_depth (D->E)": "E_preddepth_predpose - D_preddepth_full",
+    "scale_estimation (E->F)": "F_deployable - E_preddepth_predpose"
+  },
+  "per_clip_csv": "artifacts/geometry_gate/factorization_per_clip.csv"
+}

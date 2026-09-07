@@ -1,0 +1,86 @@
+{
+  "segment": "08",
+  "images": [
+    "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/000000.png",
+    "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/000005.png",
+    "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/000010.png",
+    "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/000015.png",
+    "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/000020.png",
+    "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/000025.png",
+    "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/000030.png",
+    "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/000035.png",
+    "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/000040.png",
+    "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/000045.png",
+    "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/000050.png"
+  ],
+  "keyframe_interval": 1,
+  "checkpoint_load": {
+    "missing_keys": 0,
+    "unexpected_keys": 0
+  },
+  "normalization": false,
+  "prefix_9_vs_11": {
+    "pred_depth": {
+      "equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    },
+    "pred_depth_conf": {
+      "equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    },
+    "pred_pose_c2w": {
+      "equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    },
+    "pred_K": {
+      "equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    },
+    "pose_enc": {
+      "equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    }
+  },
+  "replay_vs_cache": {
+    "pred_depth": {
+      "equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    },
+    "pred_depth_conf": {
+      "equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    },
+    "pred_pose_c2w": {
+      "equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    },
+    "pred_K": {
+      "equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    },
+    "pose_enc": {
+      "equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    }
+  }
+}

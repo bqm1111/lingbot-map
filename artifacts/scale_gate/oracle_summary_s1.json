@@ -1,0 +1,140 @@
+{
+  "provenance": {
+    "tool": "eval_oracle_scale",
+    "git_commit": "9a648322e6dc4e34995f0530650c2fa469779676",
+    "git_dirty_files": [
+      "M lingbot_map/models/gct_stream.py",
+      " M research/sem_bypass/model.py",
+      "?? artifacts/",
+      "?? configs/scale_gate/",
+      "?? lingbot_map_scale_claude_code_plan.md",
+      "?? reports/",
+      "?? scale_gate/",
+      "?? scripts/export_occupancy_3d.py",
+      "?? scripts/make_occupancy_ceiling_figure.py",
+      "?? scripts/make_scene_completion_honest_figure.py",
+      "?? tests/scale_gate/",
+      "?? tools/__init__.py",
+      "?? tools/check_ddad_layout.py",
+      "?? tools/check_vkitti2_layout.py",
+      "?? tools/geometry_gate/",
+      "?? tools/scale_gate/"
+    ],
+    "python": "3.10.19",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.7.1+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "seed": 0,
+    "config_hash": "de3063b336561009",
+    "checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+    "checkpoint_sha256": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72",
+    "argv": [
+      "tools/scale_gate/eval_oracle_scale.py",
+      "--config",
+      "configs/scale_gate/semantickitti_stride1.yaml",
+      "--split",
+      "val"
+    ]
+  },
+  "split": "val",
+  "pixel_stride": 1,
+  "global_median_train": 27.440963354012354,
+  "n_train_clips_for_median": 744,
+  "grid": {
+    "dims": [
+      256,
+      256,
+      32
+    ],
+    "voxel_size": 0.2
+  },
+  "methods": {
+    "raw_canonical": {
+      "deployable": true,
+      "n_clips": 163,
+      "iou_mean": 7.289338784632465e-07,
+      "iou_median": 0.0,
+      "precision_mean": 0.002163101259346041,
+      "recall_mean": 7.291817803034058e-07,
+      "abs_log_scale_err_median": 3.2685619616359416,
+      "n_points_mean": 21839.969325153375,
+      "delta_iou_vs_raw": {
+        "mean": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "n": 163,
+        "excludes_zero": false
+      }
+    },
+    "global_median_train": {
+      "deployable": true,
+      "n_clips": 163,
+      "iou_mean": 0.057228303323047146,
+      "iou_median": 0.05250149085088353,
+      "precision_mean": 0.31825244464075725,
+      "recall_mean": 0.06610366353148296,
+      "abs_log_scale_err_median": 0.13068089927285031,
+      "n_points_mean": 318180.0920245399,
+      "delta_iou_vs_raw": {
+        "mean": 0.05722757438916869,
+        "lo": 0.05254160387795534,
+        "hi": 0.062123217497655994,
+        "n": 163,
+        "excludes_zero": true
+      }
+    },
+    "oracle_depth": {
+      "deployable": false,
+      "n_clips": 163,
+      "iou_mean": 0.0787868519777886,
+      "iou_median": 0.07714152875686407,
+      "precision_mean": 0.4108727390130411,
+      "recall_mean": 0.09078477914858565,
+      "abs_log_scale_err_median": 0.013755840143287568,
+      "n_points_mean": 318165.754601227,
+      "delta_iou_vs_raw": {
+        "mean": 0.07878612304391014,
+        "lo": 0.07477357394326131,
+        "hi": 0.08290541862576624,
+        "n": 163,
+        "excludes_zero": true
+      }
+    },
+    "oracle_pose": {
+      "deployable": false,
+      "n_clips": 162,
+      "iou_mean": 0.0731161087009459,
+      "iou_median": 0.07008826117254355,
+      "precision_mean": 0.3931282751687443,
+      "recall_mean": 0.08401756535561115,
+      "abs_log_scale_err_median": 0.013826974877045872,
+      "n_points_mean": 318629.5987654321,
+      "delta_iou_vs_raw": {
+        "mean": 0.0731153752674756,
+        "lo": 0.06887252719774657,
+        "hi": 0.07736433810909873,
+        "n": 162,
+        "excludes_zero": true
+      }
+    },
+    "oracle_joint": {
+      "deployable": false,
+      "n_clips": 163,
+      "iou_mean": 0.07691154923910878,
+      "iou_median": 0.07536982387549106,
+      "precision_mean": 0.4057288666460856,
+      "recall_mean": 0.08846453151415257,
+      "abs_log_scale_err_median": 0.0,
+      "n_points_mean": 318149.74233128835,
+      "delta_iou_vs_raw": {
+        "mean": 0.07691082030523032,
+        "lo": 0.0727939371503362,
+        "hi": 0.08108343557375604,
+        "n": 163,
+        "excludes_zero": true
+      }
+    }
+  },
+  "per_clip_csv": "artifacts/scale_gate/oracle_metrics_per_clip_s1.csv"
+}

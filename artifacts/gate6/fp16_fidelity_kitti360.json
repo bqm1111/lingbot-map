@@ -1,0 +1,64 @@
+{
+  "dataset": "kitti360",
+  "n_clips": 5,
+  "total_raw_voxels": 92510,
+  "total_raw_disagreements": 2,
+  "total_dil_voxels": 482908,
+  "total_dil_disagreements": 4,
+  "max_abs_prob_err": 0.000244140625,
+  "occupancy_identical": true,
+  "rows": [
+    {
+      "clip_id": "2013_05_28_drive_0006_sync_000040",
+      "n_raw": 19167,
+      "raw_label_disagreements": 0,
+      "raw_disagreement_fraction": 0.0,
+      "n_dil": 91062,
+      "dil_label_disagreements": 0,
+      "dil_disagreement_fraction": 0.0,
+      "max_abs_prob_err": 0.000244140625
+    },
+    {
+      "clip_id": "2013_05_28_drive_0006_sync_001845",
+      "n_raw": 19913,
+      "raw_label_disagreements": 0,
+      "raw_disagreement_fraction": 0.0,
+      "n_dil": 120523,
+      "dil_label_disagreements": 1,
+      "dil_disagreement_fraction": 8.297171494237614e-06,
+      "max_abs_prob_err": 0.000244140625
+    },
+    {
+      "clip_id": "2013_05_28_drive_0006_sync_003675",
+      "n_raw": 23401,
+      "raw_label_disagreements": 0,
+      "raw_disagreement_fraction": 0.0,
+      "n_dil": 132737,
+      "dil_label_disagreements": 0,
+      "dil_disagreement_fraction": 0.0,
+      "max_abs_prob_err": 0.000244140625
+    },
+    {
+      "clip_id": "2013_05_28_drive_0006_sync_005550",
+      "n_raw": 15597,
+      "raw_label_disagreements": 2,
+      "raw_disagreement_fraction": 0.00012822978777970122,
+      "n_dil": 66291,
+      "dil_label_disagreements": 3,
+      "dil_disagreement_fraction": 4.525501199257818e-05,
+      "max_abs_prob_err": 0.000244140625
+    },
+    {
+      "clip_id": "2013_05_28_drive_0006_sync_007305",
+      "n_raw": 14432,
+      "raw_label_disagreements": 0,
+      "raw_disagreement_fraction": 0.0,
+      "n_dil": 72295,
+      "dil_label_disagreements": 0,
+      "dil_disagreement_fraction": 0.0,
+      "max_abs_prob_err": 0.000244140625
+    }
+  ],
+  "raw_disagreement_fraction": 2.1619284401686305e-05,
+  "dil_disagreement_fraction": 8.283151242058528e-06
+}

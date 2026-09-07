@@ -1,0 +1,146 @@
+{
+  "provenance": {
+    "tool": "voxel_gate_validation.train",
+    "git_commit": "9a648322e6dc4e34995f0530650c2fa469779676",
+    "git_dirty_files": [
+      "M lingbot_map/models/gct_stream.py",
+      " M research/sem_bypass/model.py",
+      "?? artifacts/",
+      "?? configs/depth_gate/",
+      "?? configs/scale_gate/",
+      "?? configs/voxel_gate/",
+      "?? configs/voxel_gate_validation/",
+      "?? depth_gate/",
+      "?? lingbot_map_scale_claude_code_plan.md",
+      "?? reports/",
+      "?? scale_gate/",
+      "?? scripts/export_occupancy_3d.py",
+      "?? scripts/make_occupancy_ceiling_figure.py",
+      "?? scripts/make_scene_completion_honest_figure.py",
+      "?? tests/depth_gate/",
+      "?? tests/scale_gate/",
+      "?? tests/voxel_gate/",
+      "?? tests/voxel_gate_validation/",
+      "?? tools/__init__.py",
+      "?? tools/check_ddad_layout.py",
+      "?? tools/check_vkitti2_layout.py",
+      "?? tools/depth_gate/",
+      "?? tools/geometry_gate/",
+      "?? tools/scale_gate/",
+      "?? tools/voxel_gate/",
+      "?? tools/voxel_gate_validation/",
+      "?? voxel_gate/",
+      "?? voxel_gate_validation/"
+    ],
+    "python": "3.10.19",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.7.1+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "seed": 0,
+    "config_hash": "d2faead637e3a190",
+    "checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+    "checkpoint_sha256": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72",
+    "argv": [
+      "tools/voxel_gate_validation/train_clean.py",
+      "--run",
+      "c0_corrector_s0",
+      "--geometry",
+      "c0",
+      "--seed",
+      "0"
+    ]
+  },
+  "run": "c0_corrector_s0",
+  "geometry": "c0",
+  "seed": 0,
+  "occ_only": false,
+  "n_params": 16577,
+  "radius": 3,
+  "threshold": 0.45,
+  "pos_weight": 3.8005273312928467,
+  "norm": {
+    "log1p_count_mean": 1.521555756516427,
+    "log1p_count_std": 0.7848490207857517,
+    "n_frames_mean": 1.3915595718351192,
+    "n_frames_std": 0.7010850390783664,
+    "mean_confidence_mean": 4.859846276999804,
+    "mean_confidence_std": 4.257994827542736,
+    "mean_point_depth_mean": 21.46557758270281,
+    "mean_point_depth_std": 9.569562114846969,
+    "n_clips": 652
+  },
+  "best_epoch": 3,
+  "select_iou": 0.16573715210337672,
+  "peak_gpu_gib": 1.2367911338806152,
+  "train_seconds": 253.01292729377747,
+  "n_epochs_run": 8,
+  "n_train_clips": 652,
+  "n_select_clips": 111,
+  "source_train_sequences": [
+    "00",
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07"
+  ],
+  "source_select_sequences": [
+    "09",
+    "10"
+  ],
+  "sequence_08_used_in_training": false,
+  "region_intersects_valid_mask": false,
+  "history": [
+    {
+      "epoch": 0,
+      "train_loss": 1.6263726136070087,
+      "select_iou": 0.16476749899161408,
+      "epoch_s": 31.628327131271362
+    },
+    {
+      "epoch": 1,
+      "train_loss": 1.3884726077135354,
+      "select_iou": 0.1573706961774458,
+      "epoch_s": 31.188416719436646
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.3317267121347183,
+      "select_iou": 0.1634964959932039,
+      "epoch_s": 31.218051195144653
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.2870291525418043,
+      "select_iou": 0.16573715210337672,
+      "epoch_s": 31.177523374557495
+    },
+    {
+      "epoch": 4,
+      "train_loss": 1.25012862060699,
+      "select_iou": 0.1651227142820241,
+      "epoch_s": 31.212605476379395
+    },
+    {
+      "epoch": 5,
+      "train_loss": 1.2209298398597108,
+      "select_iou": 0.1634545599347686,
+      "epoch_s": 31.167945861816406
+    },
+    {
+      "epoch": 6,
+      "train_loss": 1.2014258062364134,
+      "select_iou": 0.16383360512513936,
+      "epoch_s": 31.14985728263855
+    },
+    {
+      "epoch": 7,
+      "train_loss": 1.1758511644199583,
+      "select_iou": 0.1473343356284046,
+      "epoch_s": 31.19921875
+    }
+  ]
+}

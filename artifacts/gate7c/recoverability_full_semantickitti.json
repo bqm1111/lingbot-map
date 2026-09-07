@@ -1,0 +1,216 @@
+{
+  "dataset": "semantickitti",
+  "n_anchors": 163,
+  "anchor_stride": 1,
+  "n_b_d_coverage_misses": 13093177,
+  "classes": [
+    "recovered_from_causal_past",
+    "recovered_from_a_later_viewpoint",
+    "in_frustum_but_never_reconstructed",
+    "outside_all_frusta",
+    "unresolved"
+  ],
+  "counts": {
+    "recovered_from_causal_past": {
+      "all": 572797,
+      "0-10m": 79224,
+      "10-20m": 188339,
+      "20-30m": 134001,
+      "30-40m": 77666,
+      "40-60m": 93567
+    },
+    "recovered_from_a_later_viewpoint": {
+      "all": 1383231,
+      "0-10m": 8713,
+      "10-20m": 110258,
+      "20-30m": 298087,
+      "30-40m": 421595,
+      "40-60m": 544578
+    },
+    "in_frustum_but_never_reconstructed": {
+      "all": 11137149,
+      "0-10m": 341345,
+      "10-20m": 1907292,
+      "20-30m": 2772994,
+      "30-40m": 2738006,
+      "40-60m": 3377512
+    },
+    "outside_all_frusta": {
+      "all": 0,
+      "0-10m": 0,
+      "10-20m": 0,
+      "20-30m": 0,
+      "30-40m": 0,
+      "40-60m": 0
+    },
+    "unresolved": {
+      "all": 0,
+      "0-10m": 0,
+      "10-20m": 0,
+      "20-30m": 0,
+      "30-40m": 0,
+      "40-60m": 0
+    }
+  },
+  "fractions": {
+    "recovered_from_causal_past": 0.04374774739545643,
+    "recovered_from_a_later_viewpoint": 0.10564517687342041,
+    "in_frustum_but_never_reconstructed": 0.8506070757311232,
+    "outside_all_frusta": 0.0,
+    "unresolved": 0.0
+  },
+  "recovery_latency": {
+    "within_1_frames": 107821,
+    "within_5_frames": 706836,
+    "within_10_frames": 1148299,
+    "within_20_frames": 1255565,
+    "within_50_frames": 1260643,
+    "any_later_frame": 1383231
+  },
+  "recovery_latency_fraction": {
+    "within_1_frames": 0.008234899749694059,
+    "within_5_frames": 0.05398506412920256,
+    "within_10_frames": 0.08770209094400847,
+    "within_20_frames": 0.0958946022038807,
+    "within_50_frames": 0.09628243779183616,
+    "any_later_frame": 0.10564517687342041
+  },
+  "per_class": {
+    "car": {
+      "recovered_from_causal_past": 26267,
+      "recovered_from_a_later_viewpoint": 75720,
+      "in_frustum_but_never_reconstructed": 381251,
+      "outside_all_frusta": 0,
+      "unresolved": 0
+    },
+    "bicycle": {
+      "recovered_from_causal_past": 618,
+      "recovered_from_a_later_viewpoint": 1508,
+      "in_frustum_but_never_reconstructed": 8145,
+      "outside_all_frusta": 0,
+      "unresolved": 0
+    },
+    "motorcycle": {
+      "recovered_from_causal_past": 79,
+      "recovered_from_a_later_viewpoint": 778,
+      "in_frustum_but_never_reconstructed": 3753,
+      "outside_all_frusta": 0,
+      "unresolved": 0
+    },
+    "truck": {
+      "recovered_from_causal_past": 227,
+      "recovered_from_a_later_viewpoint": 560,
+      "in_frustum_but_never_reconstructed": 8523,
+      "outside_all_frusta": 0,
+      "unresolved": 0
+    },
+    "other-vehicle": {
+      "recovered_from_causal_past": 948,
+      "recovered_from_a_later_viewpoint": 4594,
+      "in_frustum_but_never_reconstructed": 21986,
+      "outside_all_frusta": 0,
+      "unresolved": 0
+    },
+    "person": {
+      "recovered_from_causal_past": 2328,
+      "recovered_from_a_later_viewpoint": 6408,
+      "in_frustum_but_never_reconstructed": 24549,
+      "outside_all_frusta": 0,
+      "unresolved": 0
+    },
+    "bicyclist": {
+      "recovered_from_causal_past": 3487,
+      "recovered_from_a_later_viewpoint": 7053,
+      "in_frustum_but_never_reconstructed": 49696,
+      "outside_all_frusta": 0,
+      "unresolved": 0
+    },
+    "motorcyclist": {
+      "recovered_from_causal_past": 258,
+      "recovered_from_a_later_viewpoint": 38,
+      "in_frustum_but_never_reconstructed": 368,
+      "outside_all_frusta": 0,
+      "unresolved": 0
+    },
+    "road": {
+      "recovered_from_causal_past": 52096,
+      "recovered_from_a_later_viewpoint": 220433,
+      "in_frustum_but_never_reconstructed": 489868,
+      "outside_all_frusta": 0,
+      "unresolved": 0
+    },
+    "parking": {
+      "recovered_from_causal_past": 8511,
+      "recovered_from_a_later_viewpoint": 17451,
+      "in_frustum_but_never_reconstructed": 60833,
+      "outside_all_frusta": 0,
+      "unresolved": 0
+    },
+    "sidewalk": {
+      "recovered_from_causal_past": 41642,
+      "recovered_from_a_later_viewpoint": 173606,
+      "in_frustum_but_never_reconstructed": 651049,
+      "outside_all_frusta": 0,
+      "unresolved": 0
+    },
+    "other-ground": {
+      "recovered_from_causal_past": 328,
+      "recovered_from_a_later_viewpoint": 1538,
+      "in_frustum_but_never_reconstructed": 11391,
+      "outside_all_frusta": 0,
+      "unresolved": 0
+    },
+    "building": {
+      "recovered_from_causal_past": 109914,
+      "recovered_from_a_later_viewpoint": 171411,
+      "in_frustum_but_never_reconstructed": 1809428,
+      "outside_all_frusta": 0,
+      "unresolved": 0
+    },
+    "fence": {
+      "recovered_from_causal_past": 7373,
+      "recovered_from_a_later_viewpoint": 20041,
+      "in_frustum_but_never_reconstructed": 133724,
+      "outside_all_frusta": 0,
+      "unresolved": 0
+    },
+    "vegetation": {
+      "recovered_from_causal_past": 235565,
+      "recovered_from_a_later_viewpoint": 443608,
+      "in_frustum_but_never_reconstructed": 5689011,
+      "outside_all_frusta": 0,
+      "unresolved": 0
+    },
+    "trunk": {
+      "recovered_from_causal_past": 4759,
+      "recovered_from_a_later_viewpoint": 8227,
+      "in_frustum_but_never_reconstructed": 122563,
+      "outside_all_frusta": 0,
+      "unresolved": 0
+    },
+    "terrain": {
+      "recovered_from_causal_past": 76938,
+      "recovered_from_a_later_viewpoint": 226258,
+      "in_frustum_but_never_reconstructed": 1626513,
+      "outside_all_frusta": 0,
+      "unresolved": 0
+    },
+    "pole": {
+      "recovered_from_causal_past": 1139,
+      "recovered_from_a_later_viewpoint": 3476,
+      "in_frustum_but_never_reconstructed": 34597,
+      "outside_all_frusta": 0,
+      "unresolved": 0
+    },
+    "traffic-sign": {
+      "recovered_from_causal_past": 320,
+      "recovered_from_a_later_viewpoint": 523,
+      "in_frustum_but_never_reconstructed": 9901,
+      "outside_all_frusta": 0,
+      "unresolved": 0
+    }
+  },
+  "seconds": 369.3386404514313,
+  "diagnostic_only": "future frames are fused in a separate volume and never reach a causal prediction",
+  "semantic_class_use": "analysis only; no class drives any decision"
+}

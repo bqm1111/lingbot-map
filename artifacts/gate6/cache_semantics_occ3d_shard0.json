@@ -1,0 +1,56 @@
+{
+  "dataset": "occ3d",
+  "shard": 0,
+  "num_shards": 4,
+  "n_assigned": 1478,
+  "n_written": 1478,
+  "n_skipped_existing": 0,
+  "seconds": 2815.1053488254547,
+  "seconds_per_frame": 1.9046720903523076,
+  "peak_gpu_gib": 10.537965774536133,
+  "fp16_checks": [
+    {
+      "frame": "n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151061512404",
+      "max_abs_prob_err": 0.00016325712203979492,
+      "argmax_disagree": 6,
+      "pixels": 152292
+    },
+    {
+      "frame": "n008-2018-08-30-10-33-52-0400__CAM_FRONT__1535639640662404",
+      "max_abs_prob_err": 0.0001704692840576172,
+      "argmax_disagree": 11,
+      "pixels": 152292
+    },
+    {
+      "frame": "n008-2018-08-31-11-37-23-0400__CAM_FRONT__1535730672862404",
+      "max_abs_prob_err": 0.00017070770263671875,
+      "argmax_disagree": 21,
+      "pixels": 152292
+    },
+    {
+      "frame": "n015-2018-07-11-11-54-16+0800__CAM_FRONT__1531281507262460",
+      "max_abs_prob_err": 0.00017946958541870117,
+      "argmax_disagree": 13,
+      "pixels": 152292
+    },
+    {
+      "frame": "n015-2018-09-25-13-17-43+0800__CAM_FRONT__1537852776112460",
+      "max_abs_prob_err": 0.0001550912857055664,
+      "argmax_disagree": 5,
+      "pixels": 152292
+    },
+    {
+      "frame": "n015-2018-10-08-15-44-23+0800__CAM_FRONT__1538984984912460",
+      "max_abs_prob_err": 0.0001735687255859375,
+      "argmax_disagree": 11,
+      "pixels": 152292
+    }
+  ],
+  "proc_hw": [
+    294,
+    518
+  ],
+  "n_classes": 17,
+  "sam_ckpt_sha256": "a7bf3b02f3ebf126",
+  "targets_opened": "none"
+}

@@ -1,0 +1,87 @@
+{
+  "experiment": "gate8c1_source_sanity",
+  "device": "cuda:2",
+  "question": "Is poor SemanticKITTI performance a broken supervision/training pipeline or a model that learns KITTI-360 but does not generalise?",
+  "checkpoint": "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/checkpoints/seed0_last.pt",
+  "checkpoint_sha256": "5227c672012024786561e615b755edd938d551e62d05ad52d2ad23813825e7d0",
+  "threshold": -0.125,
+  "train_drives": [
+    "2013_05_28_drive_0003_sync",
+    "2013_05_28_drive_0007_sync",
+    "2013_05_28_drive_0010_sync"
+  ],
+  "val_drive": "2013_05_28_drive_0006_sync",
+  "supervision": "approved raw-LiDAR targets under /media/SSD1/MINH_DATASETS/lingbot_gate8c1/targets (occupied endpoints, free ray interiors, unobserved and conflicting voxels ignored); SSCBench _1_1.npy labels are never read",
+  "conditions": {
+    "mapper": "base_logodds > 0 (gate7b L_OCCUPIED_AT) AND semantic weight > 0",
+    "mapper_dilate": "Chebyshev dilation of mapper by 2 voxels = 0.4 m",
+    "completion": "apply_residual(base, net(input)) >= -0.125, zero padding, pad_z=0"
+  },
+  "mapper_definition_deviation": "The target-domain audit used q[\"occupied\"] & (sem_w > 0), where occupied also drops MoGe-only voxels with fewer than 2 MoGe confirmations. The cached source samples do not store n_lb/n_moge, so that term cannot be reproduced here and is omitted.",
+  "grid": {
+    "dims": [
+      256,
+      256,
+      32
+    ],
+    "voxel_size_m": 0.2,
+    "origin_m": [
+      0,
+      -25.6,
+      -2
+    ],
+    "axes": "XYZ",
+    "reduction": null,
+    "pad_z": 0
+  },
+  "masks": "gt_valid from the raw-LiDAR target; applied only when counting",
+  "boundary": "centre distance to any face <0.4 m",
+  "interior": "centre distance to every face >=2 m",
+  "precision": "float32 inputs; CUDA bfloat16 autocast; float32 final logits",
+  "residual_rule": "base + residual * (abs(base) < 2)",
+  "phase2": {
+    "n_clips": 16,
+    "steps": 2000,
+    "log_every": 100,
+    "selection": "per drive, np.linspace over the sorted sample list; shares 6/5/5 across drives 0003/0007/0010; recorded before any training",
+    "init": "torch.manual_seed(0), random.seed(0), np.random.seed(0), then CompletionUNet(width=24, padding_mode=\"zeros\")",
+    "optimizer": "AdamW lr 1e-3 wd 0.01, CosineAnnealingLR over 2000 steps, grad clip 1.0, batch 4, crop 128x128x32, sampler uniform, loss focal_dice + 0.5 semantic KL (configs/gate8c1/seed0.yaml)",
+    "checkpoint_selection": "none; the step-2000 head is used",
+    "fit_criterion": {
+      "occupancy_loss_relative_decrease_min": 0.9,
+      "occupancy_loss_initial": "mean of the masked occupancy loss over steps 1-10",
+      "occupancy_loss_final": "mean of the masked occupancy loss over steps 1991-2000",
+      "pooled_training_sc_iou_min": 0.8,
+      "pooled_training_sc_iou": "pooled over the 16 full 256x256x32 training clips at tau=-0.125, valid voxels only"
+    }
+  },
+  "known_limitation": "frozen_manifest code_hashes list gate8/net.py 4cbfced7...; the recovered source is 56852e4a... The audit established the difference is optional padding variants defaulting to zeros, and this checkpoint carries no padding_mode key, so zero padding is selected.",
+  "commands": {
+    "phase1": "/home/minh/anaconda3/envs/cu128/bin/python tools/gate8c1/source_sanity.py phase1 --device cuda:2",
+    "phase2": "/home/minh/anaconda3/envs/cu128/bin/python tools/gate8c1/source_sanity.py phase2 --device cuda:2"
+  },
+  "artifact_hashes": {
+    "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/checkpoints/seed0_last.pt": "5227c672012024786561e615b755edd938d551e62d05ad52d2ad23813825e7d0",
+    "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/frozen_manifest.json": "5385721d492a9287df9f063975a85d746fcd601d3a3e22ad42ed4249e0a9f65a",
+    "/home/minh/workspace/lingbot-map_fork/tools/gate8c1/source_sanity.py": "d0bfa329e2301ea86ab7215a16118a3905b64f6db6a1b332080e91b7e63bedd4",
+    "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1_padding_source_probe/selection.json": "c50b9b266a96b95e583e80233e13a9088ef3bd5af31f03e0fbbe306e5be48006",
+    "/home/minh/workspace/lingbot-map_fork/configs/gate8c1/seed0.yaml": "a2a9cd5496214c66bc2d8bea6a2a7bc01a16c4380dea65ee2bc3f9924db1ee28",
+    "/home/minh/workspace/lingbot-map_fork/gate8c1/data.py": "5c0903a6b4c9292dd3c1ee154a19a29fd5481b3cc5cb0bef5a0b8e0682a581bf",
+    "/home/minh/workspace/lingbot-map_fork/gate8c1/sources.py": "c23f2813886deab1f5e2153fe25dc9ee594449cb67a8c4c7afe2ce1ba3a02a6e",
+    "/home/minh/workspace/lingbot-map_fork/tools/gate8a/train.py": "37f8a63da0532dc88596cd5c507eb6d6c93117916febc68419c7961ad84086c2",
+    "/home/minh/workspace/lingbot-map_fork/tools/gate8/train.py": "ef1ed973f4eafe440bf3300491f5665b7b75794afd93f4726514433e6210c86b",
+    "/home/minh/workspace/lingbot-map_fork/gate8a/losses.py": "035494a42e34fff2283876b05eabe6723e92cf7f11c859e1cbae9671daa81903",
+    "/home/minh/workspace/lingbot-map_fork/gate8a/sampler.py": "fc15245362f8ae04c458d1cd652ac6a49115c631f4adb485bb15bfdc1e2b28b6",
+    "/home/minh/workspace/lingbot-map_fork/gate8a/regions.py": "79377f22e923ef50d01006d4859d2602fc9cab0ad25f4abbb73e73b2679fe6cc",
+    "/home/minh/workspace/lingbot-map_fork/voxel_gate/voxels.py": "8f5f01d90ca48e04970858c5a0f320b16b06ef5106da98d2492faa29625d60a0",
+    "/home/minh/workspace/lingbot-map_fork/sscbench_kitti360/audit.py": "2408e57ab253d97c152d32b10bb28f8db2c40a50168219d2ee628a9287e8e2aa",
+    "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1_original_audit/code_used/gate8/__init__.py": "7249f9b81fb91e8ac426db266bf8c4cc16aacef5e466b99b196628ee91663555",
+    "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1_original_audit/code_used/gate8/feed.py": "1a499c8bb5a8673c70b0bd68e4e7ee26d74d0b086de92105e0cf23f2ab34d977",
+    "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1_original_audit/code_used/gate8/losses.py": "92d3d4f9586a05749d58f86a60221bb4f57521e8c86137e8d0d0d1d423636348",
+    "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1_original_audit/code_used/gate8/mapper.py": "95fd13c875a640cdb47dd964c53b59ced8e669331334f7431783036e958fe0eb",
+    "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1_original_audit/code_used/gate8/net.py": "56852e4a11999c3ac8e817aaa7c7f8c0381fc71f734537226084750aedda578c",
+    "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1_original_audit/code_used/gate8/sources.py": "863bccd2dd44ecc263dc87872a05b2f671e9bf9ee8d1c9c40b11e8ff2a2439d4",
+    "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1_original_audit/code_used/gate8/targets.py": "6ff8d46feb69148d54576aea192f40849a6fd01ea03af4797f8758a2c2f619ff",
+    "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1_original_audit/code_used/gate8/vocab.py": "b3fef8b8982254ea8a1670d7cd8e4ccdc301e85815d1be69e8d4e5dff97dd60a"
+  }
+}

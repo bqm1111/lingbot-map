@@ -1,0 +1,33 @@
+{
+  "dataset": "kitti360",
+  "n_segments": 1,
+  "n_frames_streamed": 1777,
+  "seconds": 93.64304780960083,
+  "peak_gpu_gib": 8.99162769317627,
+  "checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+  "checkpoint_load": {
+    "missing_keys": 0,
+    "unexpected_keys": 0
+  },
+  "inference": {
+    "resolution": 518,
+    "patch_size": 14,
+    "num_scale_frames": 5,
+    "kv_cache_sliding_window": 64,
+    "max_frame_num": 1024,
+    "autocast": "bfloat16"
+  },
+  "boundary_rule": "one stream: KITTI-360 drive 2013_05_28_drive_0006_sync. The Gate-5.2 clip set slides by one frame, so the stream is the 1777 unique rectified frames in native index order.",
+  "segments": [
+    {
+      "segment": "2013_05_28_drive_0006_sync",
+      "n_frames": 1777,
+      "keyframe_interval": 2,
+      "rope_slots": 891,
+      "seconds": 74.81621241569519,
+      "fps": 23.751536500225384,
+      "cached": false
+    }
+  ],
+  "root": "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/kitti360"
+}

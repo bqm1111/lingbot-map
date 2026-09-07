@@ -1,0 +1,92 @@
+{
+  "dataset": "semantickitti",
+  "n_anchors": 162,
+  "future_frames": 20,
+  "teacher": "frozen Trident-H fused over frames t+1..t+20 (the training target)",
+  "n_future_visible_gt_occupied": 2781029,
+  "n_correct": 1192974,
+  "accuracy_future_visible_occupied": 0.4289685580409266,
+  "accuracy_on_causally_observed_subset": 0.4651303686624641,
+  "n_causally_observed_subset": 815380,
+  "accuracy_on_newly_visible_subset": 0.4139681092606055,
+  "n_newly_visible_subset": 1965649,
+  "per_class": {
+    "car": {
+      "n": 159128,
+      "accuracy": 0.3980380574129003
+    },
+    "bicycle": {
+      "n": 2899,
+      "accuracy": 0.11693687478440842
+    },
+    "motorcycle": {
+      "n": 1432,
+      "accuracy": 0.14385474860335196
+    },
+    "truck": {
+      "n": 954,
+      "accuracy": 0.3249475890985325
+    },
+    "other-vehicle": {
+      "n": 8323,
+      "accuracy": 0.21266370299170972
+    },
+    "person": {
+      "n": 13773,
+      "accuracy": 0.07398533362375663
+    },
+    "bicyclist": {
+      "n": 16001,
+      "accuracy": 0.062371101806137114
+    },
+    "motorcyclist": {
+      "n": 92,
+      "accuracy": 0.0
+    },
+    "road": {
+      "n": 774860,
+      "accuracy": 0.7206824458611878
+    },
+    "parking": {
+      "n": 36220,
+      "accuracy": 0.0334621755935947
+    },
+    "sidewalk": {
+      "n": 366155,
+      "accuracy": 0.17123895617975993
+    },
+    "other-ground": {
+      "n": 2511,
+      "accuracy": 0.332536837913182
+    },
+    "building": {
+      "n": 226453,
+      "accuracy": 0.42452076148251516
+    },
+    "fence": {
+      "n": 32211,
+      "accuracy": 0.07696128651702834
+    },
+    "vegetation": {
+      "n": 645846,
+      "accuracy": 0.620926660535174
+    },
+    "trunk": {
+      "n": 12932,
+      "accuracy": 0.12117228580266007
+    },
+    "terrain": {
+      "n": 474212,
+      "accuracy": 1.8978853339856436e-05
+    },
+    "pole": {
+      "n": 6147,
+      "accuracy": 0.07987636245322922
+    },
+    "traffic-sign": {
+      "n": 880,
+      "accuracy": 0.13068181818181818
+    }
+  },
+  "seconds": 266.0926899909973
+}

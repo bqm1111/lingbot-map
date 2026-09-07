@@ -1,0 +1,22 @@
+{
+  "dataset": "occ3d",
+  "rule": "percentiles [10, 50, 90] of the frozen B-D binary occupancy IoU",
+  "source": "artifacts/gate5_1/per_clip_occ3d.csv",
+  "selected": [
+    {
+      "clip_id": "scene-1070_CAM_FRONT_c97eef4c_bc33987f",
+      "percentile": 10,
+      "frozen_bd_iou": 0.04786628733997155
+    },
+    {
+      "clip_id": "scene-0556_CAM_FRONT_51f360a3_809dc18a",
+      "percentile": 50,
+      "frozen_bd_iou": 0.20667113643982568
+    },
+    {
+      "clip_id": "scene-0562_CAM_FRONT_aa4dc9c8_ef8800a2",
+      "percentile": 90,
+      "frozen_bd_iou": 0.3643970169162675
+    }
+  ]
+}

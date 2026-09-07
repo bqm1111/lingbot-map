@@ -1,0 +1,30 @@
+{
+  "dataset": "kitti360",
+  "n_anchors": 176,
+  "anchor_stride": 10,
+  "seconds": 256.5573344230652,
+  "definition": {
+    "thickness": "occupied voxels per non-empty vertical column",
+    "duplicate_rate": "fraction of non-empty columns with two or more occupied runs separated by >= 2 empty voxels"
+  },
+  "policies": {
+    "G-A": {
+      "thickness_mean": 4.131709514587169,
+      "thickness_median": 3.9619002028045927,
+      "duplicate_rate_mean": 0.2561012112893708,
+      "occupied_mean": 30455.636363636364
+    },
+    "G-B": {
+      "thickness_mean": 4.223573535418333,
+      "thickness_median": 4.05033985825876,
+      "duplicate_rate_mean": 0.2577162822141816,
+      "occupied_mean": 31007.11931818182
+    },
+    "G-C": {
+      "thickness_mean": 4.196063517098633,
+      "thickness_median": 4.0210664464231165,
+      "duplicate_rate_mean": 0.2575038845946298,
+      "occupied_mean": 30648.56818181818
+    }
+  }
+}

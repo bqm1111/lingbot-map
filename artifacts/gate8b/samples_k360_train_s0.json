@@ -1,0 +1,810 @@
+{
+  "source": "k360_train",
+  "n_samples": 193,
+  "seconds": 104.69969034194946,
+  "anchor_stride": 1,
+  "future_frames": 20,
+  "audit": [
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 4,
+      "clip": "2013_05_28_drive_0003_sync_000020",
+      "input_frames": [
+        0,
+        4
+      ],
+      "target_frames": [
+        5,
+        24
+      ],
+      "n_rows": 350072,
+      "n_fut_rows": 47065,
+      "bytes": 1165373
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 5,
+      "clip": "2013_05_28_drive_0003_sync_000025",
+      "input_frames": [
+        0,
+        5
+      ],
+      "target_frames": [
+        6,
+        25
+      ],
+      "n_rows": 370281,
+      "n_fut_rows": 48231,
+      "bytes": 1251539
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 6,
+      "clip": "2013_05_28_drive_0003_sync_000030",
+      "input_frames": [
+        0,
+        6
+      ],
+      "target_frames": [
+        7,
+        26
+      ],
+      "n_rows": 425989,
+      "n_fut_rows": 56386,
+      "bytes": 1409724
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 7,
+      "clip": "2013_05_28_drive_0003_sync_000035",
+      "input_frames": [
+        0,
+        7
+      ],
+      "target_frames": [
+        8,
+        27
+      ],
+      "n_rows": 448914,
+      "n_fut_rows": 64079,
+      "bytes": 1523618
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 8,
+      "clip": "2013_05_28_drive_0003_sync_000040",
+      "input_frames": [
+        0,
+        8
+      ],
+      "target_frames": [
+        9,
+        28
+      ],
+      "n_rows": 413374,
+      "n_fut_rows": 60386,
+      "bytes": 1513498
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 9,
+      "clip": "2013_05_28_drive_0003_sync_000045",
+      "input_frames": [
+        0,
+        9
+      ],
+      "target_frames": [
+        10,
+        29
+      ],
+      "n_rows": 390507,
+      "n_fut_rows": 62000,
+      "bytes": 1494639
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 10,
+      "clip": "2013_05_28_drive_0003_sync_000050",
+      "input_frames": [
+        0,
+        10
+      ],
+      "target_frames": [
+        11,
+        30
+      ],
+      "n_rows": 369298,
+      "n_fut_rows": 53571,
+      "bytes": 1479079
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 11,
+      "clip": "2013_05_28_drive_0003_sync_000055",
+      "input_frames": [
+        0,
+        11
+      ],
+      "target_frames": [
+        12,
+        31
+      ],
+      "n_rows": 375181,
+      "n_fut_rows": 59123,
+      "bytes": 1780565
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 12,
+      "clip": "2013_05_28_drive_0003_sync_000060",
+      "input_frames": [
+        0,
+        12
+      ],
+      "target_frames": [
+        13,
+        32
+      ],
+      "n_rows": 380721,
+      "n_fut_rows": 47982,
+      "bytes": 1780113
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 13,
+      "clip": "2013_05_28_drive_0003_sync_000065",
+      "input_frames": [
+        0,
+        13
+      ],
+      "target_frames": [
+        14,
+        33
+      ],
+      "n_rows": 383381,
+      "n_fut_rows": 27477,
+      "bytes": 1557871
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 14,
+      "clip": "2013_05_28_drive_0003_sync_000070",
+      "input_frames": [
+        0,
+        14
+      ],
+      "target_frames": [
+        15,
+        34
+      ],
+      "n_rows": 346197,
+      "n_fut_rows": 19685,
+      "bytes": 1397802
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 15,
+      "clip": "2013_05_28_drive_0003_sync_000075",
+      "input_frames": [
+        0,
+        15
+      ],
+      "target_frames": [
+        16,
+        35
+      ],
+      "n_rows": 299143,
+      "n_fut_rows": 16186,
+      "bytes": 1237438
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 16,
+      "clip": "2013_05_28_drive_0003_sync_000080",
+      "input_frames": [
+        0,
+        16
+      ],
+      "target_frames": [
+        17,
+        36
+      ],
+      "n_rows": 289738,
+      "n_fut_rows": 15742,
+      "bytes": 1160534
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 17,
+      "clip": "2013_05_28_drive_0003_sync_000085",
+      "input_frames": [
+        0,
+        17
+      ],
+      "target_frames": [
+        18,
+        37
+      ],
+      "n_rows": 290807,
+      "n_fut_rows": 16011,
+      "bytes": 1113670
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 18,
+      "clip": "2013_05_28_drive_0003_sync_000090",
+      "input_frames": [
+        0,
+        18
+      ],
+      "target_frames": [
+        19,
+        38
+      ],
+      "n_rows": 246547,
+      "n_fut_rows": 12267,
+      "bytes": 899988
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 19,
+      "clip": "2013_05_28_drive_0003_sync_000095",
+      "input_frames": [
+        0,
+        19
+      ],
+      "target_frames": [
+        20,
+        39
+      ],
+      "n_rows": 219130,
+      "n_fut_rows": 9989,
+      "bytes": 785416
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 20,
+      "clip": "2013_05_28_drive_0003_sync_000100",
+      "input_frames": [
+        0,
+        20
+      ],
+      "target_frames": [
+        21,
+        40
+      ],
+      "n_rows": 197604,
+      "n_fut_rows": 7292,
+      "bytes": 668159
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 21,
+      "clip": "2013_05_28_drive_0003_sync_000105",
+      "input_frames": [
+        0,
+        21
+      ],
+      "target_frames": [
+        22,
+        41
+      ],
+      "n_rows": 202519,
+      "n_fut_rows": 11122,
+      "bytes": 724147
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 22,
+      "clip": "2013_05_28_drive_0003_sync_000110",
+      "input_frames": [
+        0,
+        22
+      ],
+      "target_frames": [
+        23,
+        42
+      ],
+      "n_rows": 187523,
+      "n_fut_rows": 13688,
+      "bytes": 688209
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 23,
+      "clip": "2013_05_28_drive_0003_sync_000115",
+      "input_frames": [
+        0,
+        23
+      ],
+      "target_frames": [
+        24,
+        43
+      ],
+      "n_rows": 174701,
+      "n_fut_rows": 19560,
+      "bytes": 676835
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 24,
+      "clip": "2013_05_28_drive_0003_sync_000120",
+      "input_frames": [
+        0,
+        24
+      ],
+      "target_frames": [
+        25,
+        44
+      ],
+      "n_rows": 163126,
+      "n_fut_rows": 25120,
+      "bytes": 676808
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 25,
+      "clip": "2013_05_28_drive_0003_sync_000125",
+      "input_frames": [
+        0,
+        25
+      ],
+      "target_frames": [
+        26,
+        45
+      ],
+      "n_rows": 137474,
+      "n_fut_rows": 21898,
+      "bytes": 550131
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 26,
+      "clip": "2013_05_28_drive_0003_sync_000130",
+      "input_frames": [
+        0,
+        26
+      ],
+      "target_frames": [
+        27,
+        46
+      ],
+      "n_rows": 127862,
+      "n_fut_rows": 22977,
+      "bytes": 546660
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 27,
+      "clip": "2013_05_28_drive_0003_sync_000135",
+      "input_frames": [
+        0,
+        27
+      ],
+      "target_frames": [
+        28,
+        47
+      ],
+      "n_rows": 115236,
+      "n_fut_rows": 17657,
+      "bytes": 431522
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 28,
+      "clip": "2013_05_28_drive_0003_sync_000140",
+      "input_frames": [
+        0,
+        28
+      ],
+      "target_frames": [
+        29,
+        48
+      ],
+      "n_rows": 103781,
+      "n_fut_rows": 13975,
+      "bytes": 410565
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 29,
+      "clip": "2013_05_28_drive_0003_sync_000145",
+      "input_frames": [
+        0,
+        29
+      ],
+      "target_frames": [
+        30,
+        49
+      ],
+      "n_rows": 103797,
+      "n_fut_rows": 11167,
+      "bytes": 381041
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 30,
+      "clip": "2013_05_28_drive_0003_sync_000150",
+      "input_frames": [
+        0,
+        30
+      ],
+      "target_frames": [
+        31,
+        50
+      ],
+      "n_rows": 112827,
+      "n_fut_rows": 7113,
+      "bytes": 413359
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 31,
+      "clip": "2013_05_28_drive_0003_sync_000155",
+      "input_frames": [
+        0,
+        31
+      ],
+      "target_frames": [
+        32,
+        51
+      ],
+      "n_rows": 111158,
+      "n_fut_rows": 1837,
+      "bytes": 408086
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 32,
+      "clip": "2013_05_28_drive_0003_sync_000160",
+      "input_frames": [
+        0,
+        32
+      ],
+      "target_frames": [
+        33,
+        52
+      ],
+      "n_rows": 104082,
+      "n_fut_rows": 703,
+      "bytes": 326852
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 33,
+      "clip": "2013_05_28_drive_0003_sync_000165",
+      "input_frames": [
+        0,
+        33
+      ],
+      "target_frames": [
+        34,
+        53
+      ],
+      "n_rows": 118040,
+      "n_fut_rows": 936,
+      "bytes": 335617
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 34,
+      "clip": "2013_05_28_drive_0003_sync_000170",
+      "input_frames": [
+        0,
+        34
+      ],
+      "target_frames": [
+        35,
+        54
+      ],
+      "n_rows": 151772,
+      "n_fut_rows": 4879,
+      "bytes": 389986
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 35,
+      "clip": "2013_05_28_drive_0003_sync_000175",
+      "input_frames": [
+        0,
+        35
+      ],
+      "target_frames": [
+        36,
+        55
+      ],
+      "n_rows": 181068,
+      "n_fut_rows": 11555,
+      "bytes": 466121
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 36,
+      "clip": "2013_05_28_drive_0003_sync_000180",
+      "input_frames": [
+        0,
+        36
+      ],
+      "target_frames": [
+        37,
+        56
+      ],
+      "n_rows": 199891,
+      "n_fut_rows": 13299,
+      "bytes": 539745
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 37,
+      "clip": "2013_05_28_drive_0003_sync_000185",
+      "input_frames": [
+        0,
+        37
+      ],
+      "target_frames": [
+        38,
+        57
+      ],
+      "n_rows": 203988,
+      "n_fut_rows": 11814,
+      "bytes": 565888
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 38,
+      "clip": "2013_05_28_drive_0003_sync_000190",
+      "input_frames": [
+        0,
+        38
+      ],
+      "target_frames": [
+        39,
+        58
+      ],
+      "n_rows": 221107,
+      "n_fut_rows": 10958,
+      "bytes": 656463
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 39,
+      "clip": "2013_05_28_drive_0003_sync_000195",
+      "input_frames": [
+        0,
+        39
+      ],
+      "target_frames": [
+        40,
+        59
+      ],
+      "n_rows": 233503,
+      "n_fut_rows": 10641,
+      "bytes": 742532
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 40,
+      "clip": "2013_05_28_drive_0003_sync_000200",
+      "input_frames": [
+        0,
+        40
+      ],
+      "target_frames": [
+        41,
+        60
+      ],
+      "n_rows": 216733,
+      "n_fut_rows": 8833,
+      "bytes": 697606
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 41,
+      "clip": "2013_05_28_drive_0003_sync_000205",
+      "input_frames": [
+        0,
+        41
+      ],
+      "target_frames": [
+        42,
+        61
+      ],
+      "n_rows": 217930,
+      "n_fut_rows": 8593,
+      "bytes": 696290
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 42,
+      "clip": "2013_05_28_drive_0003_sync_000210",
+      "input_frames": [
+        0,
+        42
+      ],
+      "target_frames": [
+        43,
+        62
+      ],
+      "n_rows": 203869,
+      "n_fut_rows": 9523,
+      "bytes": 640778
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 43,
+      "clip": "2013_05_28_drive_0003_sync_000215",
+      "input_frames": [
+        0,
+        43
+      ],
+      "target_frames": [
+        44,
+        63
+      ],
+      "n_rows": 208846,
+      "n_fut_rows": 12915,
+      "bytes": 658826
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 44,
+      "clip": "2013_05_28_drive_0003_sync_000220",
+      "input_frames": [
+        0,
+        44
+      ],
+      "target_frames": [
+        45,
+        64
+      ],
+      "n_rows": 193202,
+      "n_fut_rows": 11003,
+      "bytes": 599815
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 45,
+      "clip": "2013_05_28_drive_0003_sync_000225",
+      "input_frames": [
+        0,
+        45
+      ],
+      "target_frames": [
+        46,
+        65
+      ],
+      "n_rows": 208037,
+      "n_fut_rows": 10377,
+      "bytes": 664312
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 46,
+      "clip": "2013_05_28_drive_0003_sync_000230",
+      "input_frames": [
+        0,
+        46
+      ],
+      "target_frames": [
+        47,
+        66
+      ],
+      "n_rows": 214028,
+      "n_fut_rows": 11896,
+      "bytes": 676883
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 47,
+      "clip": "2013_05_28_drive_0003_sync_000235",
+      "input_frames": [
+        0,
+        47
+      ],
+      "target_frames": [
+        48,
+        67
+      ],
+      "n_rows": 213127,
+      "n_fut_rows": 15097,
+      "bytes": 666150
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 48,
+      "clip": "2013_05_28_drive_0003_sync_000240",
+      "input_frames": [
+        0,
+        48
+      ],
+      "target_frames": [
+        49,
+        68
+      ],
+      "n_rows": 196270,
+      "n_fut_rows": 11922,
+      "bytes": 602579
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 49,
+      "clip": "2013_05_28_drive_0003_sync_000245",
+      "input_frames": [
+        0,
+        49
+      ],
+      "target_frames": [
+        50,
+        69
+      ],
+      "n_rows": 188614,
+      "n_fut_rows": 10439,
+      "bytes": 621455
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 50,
+      "clip": "2013_05_28_drive_0003_sync_000250",
+      "input_frames": [
+        0,
+        50
+      ],
+      "target_frames": [
+        51,
+        70
+      ],
+      "n_rows": 176112,
+      "n_fut_rows": 13679,
+      "bytes": 584197
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 51,
+      "clip": "2013_05_28_drive_0003_sync_000255",
+      "input_frames": [
+        0,
+        51
+      ],
+      "target_frames": [
+        52,
+        71
+      ],
+      "n_rows": 166279,
+      "n_fut_rows": 16806,
+      "bytes": 568344
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 52,
+      "clip": "2013_05_28_drive_0003_sync_000260",
+      "input_frames": [
+        0,
+        52
+      ],
+      "target_frames": [
+        53,
+        72
+      ],
+      "n_rows": 144477,
+      "n_fut_rows": 12482,
+      "bytes": 510164
+    },
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 53,
+      "clip": "2013_05_28_drive_0003_sync_000265",
+      "input_frames": [
+        0,
+        53
+      ],
+      "target_frames": [
+        54,
+        73
+      ],
+      "n_rows": 204382,
+      "n_fut_rows": 12916,
+      "bytes": 682263
+    }
+  ],
+  "total_bytes": 125955358
+}

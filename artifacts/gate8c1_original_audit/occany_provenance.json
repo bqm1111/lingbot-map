@@ -1,0 +1,350 @@
+{
+  "paper_url": "https://arxiv.org/html/2603.23502v2",
+  "paper_table": 1,
+  "published_sequence_iou_percent": {
+    "semantickitti": 25.91,
+    "occ3d": 23.55
+  },
+  "training_datasets": [
+    "Waymo",
+    "DDAD",
+    "PandaSet",
+    "VKITTI2",
+    "ONCE"
+  ],
+  "official_repo": "https://github.com/valeoai/OccAny",
+  "local_repo": "/home/minh/workspace/OccAny",
+  "local_commit": "04d4616e5a0fc3b0124b404be2f61d378373e8d8",
+  "variant": "OccAny MUSt3R + SAM2, full novel-view completion",
+  "checkpoint_sha256": "05155377a79cff430b6dfe45758cce89ff357c7e80b65438a66bea351c172b80",
+  "reconstruction_only": false,
+  "forward_sampling": {
+    "semantickitti_raw_frame_offsets": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "occ3d_stream_offsets": [
+      0,
+      2,
+      4,
+      6,
+      8
+    ]
+  },
+  "confidence_thresholds": {
+    "semantickitti": 2.5,
+    "occ3d": 1.1
+  },
+  "pooling": {
+    "function": "apply_majority_pooling",
+    "is_geometry_only": true,
+    "use_dilation": true,
+    "kernel": [
+      3,
+      3,
+      3
+    ],
+    "stride": 1,
+    "padding": 1,
+    "order": "full prediction pooled before scoring mask"
+  },
+  "remaining_mismatches": [
+    "Our geometry includes earlier/unsampled stream images and first-five-frame scale initialization",
+    "Occ3D: our camera-to-grid chain time-compensates camera exposure to LiDAR keyframe using annotated ego poses; OccAny uses static camera extrinsics",
+    "Voxelization: ours 0.2 m world map then any-child reduction for Occ3D; OccAny trilinear splats to native lattice, keeps positive contributions",
+    "Known-intrinsic principal-point crop (OccAny) versus predicted intrinsics and full-image anisotropic resize (ours)"
+  ],
+  "deterministic_extrinsic_checks": [
+    {
+      "dataset": "semantickitti",
+      "clip_id": "08_000000_000020_s5",
+      "input_images": [
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/000020.png",
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/000030.png",
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/000040.png",
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/000050.png",
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/000060.png"
+      ],
+      "input_orders": [
+        20,
+        30,
+        40,
+        50,
+        60
+      ],
+      "pixel_differences": [
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        }
+      ],
+      "intrinsics_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "extrinsic_max_abs": 2.220446049250313e-16
+    },
+    {
+      "dataset": "semantickitti",
+      "clip_id": "08_002000_002020_s5",
+      "input_images": [
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/002020.png",
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/002030.png",
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/002040.png",
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/002050.png",
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/002060.png"
+      ],
+      "input_orders": [
+        2020,
+        2030,
+        2040,
+        2050,
+        2060
+      ],
+      "pixel_differences": [
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        }
+      ],
+      "intrinsics_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "extrinsic_max_abs": 2.220446049250313e-16
+    },
+    {
+      "dataset": "semantickitti",
+      "clip_id": "08_004000_004020_s5",
+      "input_images": [
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/004020.png",
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/004030.png",
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/004040.png",
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/004050.png",
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/004060.png"
+      ],
+      "input_orders": [
+        4020,
+        4030,
+        4040,
+        4050,
+        4060
+      ],
+      "pixel_differences": [
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        }
+      ],
+      "intrinsics_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "extrinsic_max_abs": 2.220446049250313e-16
+    },
+    {
+      "dataset": "occ3d",
+      "clip_id": "scene-0003_CAM_FRONT_fd842039_f56a5440",
+      "input_images": [
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201472412460.jpg",
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201473362460.jpg",
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201474412460.jpg",
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201475412460.jpg",
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201476362460.jpg"
+      ],
+      "input_orders": [
+        1533201472448201000,
+        1533201473399299000,
+        1533201474449915000,
+        1533201475449679000,
+        1533201476399102000
+      ],
+      "pixel_differences": [
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        }
+      ],
+      "intrinsics_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "extrinsic_max_abs": 0.00017161343612787094
+    },
+    {
+      "dataset": "occ3d",
+      "clip_id": "scene-0633_CAM_FRONT_5406def8_3f2c2941",
+      "input_images": [
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n008-2018-09-18-14-35-12-0400__CAM_FRONT__1537296045412404.jpg",
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n008-2018-09-18-14-35-12-0400__CAM_FRONT__1537296046412404.jpg",
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n008-2018-09-18-14-35-12-0400__CAM_FRONT__1537296047412404.jpg",
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n008-2018-09-18-14-35-12-0400__CAM_FRONT__1537296048412404.jpg",
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n008-2018-09-18-14-35-12-0400__CAM_FRONT__1537296049412405.jpg"
+      ],
+      "input_orders": [
+        1537296045449787000,
+        1537296046449552000,
+        1537296047449845000,
+        1537296048450704000,
+        1537296049449931000
+      ],
+      "pixel_differences": [
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        }
+      ],
+      "intrinsics_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "extrinsic_max_abs": 0.31033903237793115
+    },
+    {
+      "dataset": "occ3d",
+      "clip_id": "scene-1073_CAM_FRONT_1bfa473e_df9df601",
+      "input_images": [
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-11-21-19-21-35+0800__CAM_FRONT__1542799756912460.jpg",
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-11-21-19-21-35+0800__CAM_FRONT__1542799757912460.jpg",
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-11-21-19-21-35+0800__CAM_FRONT__1542799758912464.jpg",
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-11-21-19-21-35+0800__CAM_FRONT__1542799759912460.jpg",
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-11-21-19-21-35+0800__CAM_FRONT__1542799760912460.jpg"
+      ],
+      "input_orders": [
+        1542799756947423000,
+        1542799757947730000,
+        1542799758948001000,
+        1542799759947239000,
+        1542799760947509000
+      ],
+      "pixel_differences": [
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        }
+      ],
+      "intrinsics_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "extrinsic_max_abs": 0.14939402771194032
+    }
+  ]
+}

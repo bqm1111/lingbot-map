@@ -1,0 +1,153 @@
+{
+  "frozen": {
+    "gate8/mapper.py": {
+      "sha256": "95fd13c875a640cdb47dd964c53b59ced8e669331334f7431783036e958fe0eb",
+      "bytes": 19695
+    },
+    "gate8/net.py": {
+      "sha256": "4cbfced792c8f255fc808c66819cc7f553777157e6699c01d4c26076af7a4ea4",
+      "bytes": 5416
+    },
+    "gate8/targets.py": {
+      "sha256": "6ff8d46feb69148d54576aea192f40849a6fd01ea03af4797f8758a2c2f619ff",
+      "bytes": 7618
+    },
+    "gate8/losses.py": {
+      "sha256": "92d3d4f9586a05749d58f86a60221bb4f57521e8c86137e8d0d0d1d423636348",
+      "bytes": 1596
+    },
+    "gate8/vocab.py": {
+      "sha256": "b3fef8b8982254ea8a1670d7cd8e4ccdc301e85815d1be69e8d4e5dff97dd60a",
+      "bytes": 6441
+    },
+    "gate8/sources.py": {
+      "sha256": "863bccd2dd44ecc263dc87872a05b2f671e9bf9ee8d1c9c40b11e8ff2a2439d4",
+      "bytes": 8848
+    },
+    "gate8b/sources.py": {
+      "sha256": "2e1723eef2d21392c67bb84921a3d2a8d7a6c5ba24e28f3b2739f4861c8a71af",
+      "bytes": 4478
+    },
+    "gate8b/clips.py": {
+      "sha256": "0f1a7d3de78c4e2699f8cc50d888b6f1a27f34a77c03a31f3ae45d6b2ca88c13",
+      "bytes": 4430
+    },
+    "gate8a/regions.py": {
+      "sha256": "79377f22e923ef50d01006d4859d2602fc9cab0ad25f4abbb73e73b2679fe6cc",
+      "bytes": 3411
+    },
+    "gate8a/scores.py": {
+      "sha256": "7bfbfb98737ba49acaf3958a369206bffe9b4c81da358cb5685977d57a22cba9",
+      "bytes": 9382
+    },
+    "gate6/grids.py": {
+      "sha256": "e1c8bf07d769fd49a2b98fd502a7f4eefc52d36e793c4814eb98f5daa2ed446f",
+      "bytes": 3891
+    },
+    "gate6/metrics.py": {
+      "sha256": "65c6b57cd45882b59bf13e51e15f001af5b8b283b53a1c22d078ad462d6f0177",
+      "bytes": 10436
+    },
+    "gate6/targets.py": {
+      "sha256": "276c51517e0ed0220fc112c02d2633d798437e6564d05d6fc7f4b09921b022e5",
+      "bytes": 3452
+    },
+    "sscbench_kitti360/adapter.py": {
+      "sha256": "0318f4ca2a49108985fd89c2e4999e0f746557ff061042fef61d8559946d0d7e",
+      "bytes": 14280
+    },
+    "configs/gate8a/cellB_uniform_focal.yaml": {
+      "sha256": "7a8820951d1e6df46a736ed740517a392af0d58c80ee1e7a45e4035e8e67e993",
+      "bytes": 590
+    },
+    "configs/gate8a/frozen_selection.yaml": {
+      "sha256": "348959a0be5eff2cf0da9769df267c59a7a5e67825ffcfd2e88e2768c74c2458",
+      "bytes": 1032
+    },
+    "configs/gate8b/fold_semantickitti.yaml": {
+      "sha256": "5df791b786c4d9c3c37691a7b39101f9d6fc141c1145e9b71e3306fd8d1ac369",
+      "bytes": 809
+    },
+    "configs/gate8b/fold_occ3d.yaml": {
+      "sha256": "94eb1deb52f7e4d67f424c3f2abc29aec3c3c88e5442d79db436be484bd6821b",
+      "bytes": 798
+    },
+    "configs/gate8b/frozen_fold_semantickitti.yaml": {
+      "sha256": "3e3f0deacb95b59509bcd627d156d4ecb3ad718e9607542f56d096f48f4cf738",
+      "bytes": 2018
+    },
+    "configs/gate8b/frozen_fold_occ3d.yaml": {
+      "sha256": "82facd75d2c02e8a6ba5a8d5a935052c68df8cf99342a8630a9d334bde6781ba",
+      "bytes": 1960
+    },
+    "artifacts/gate8/gate8_results.json": {
+      "sha256": "544224d4f411a20d7dbbc1cd417bb70de6c323960fe4efb1c3096e0dccf6e202",
+      "bytes": 1854475
+    },
+    "artifacts/gate8a/gate8a_results.json": {
+      "sha256": "56015c84845d56dd81bb4ca718eca144a3739b31260dc3901766da333591f38d",
+      "bytes": 234256
+    },
+    "artifacts/gate8b/gate8b_results.json": {
+      "sha256": "e52b6b17f197ef8120ff24843200bc991f9c12f66dc29c512e0be0a368e65249",
+      "bytes": 636913
+    },
+    "artifacts/gate8b/gate8b_manifest.json": {
+      "sha256": "923ca5b3c570fc9f2cdab3864c20990d75f75afbb3a88b091fa6b2ac9964c95c",
+      "bytes": 2045
+    },
+    "reports/gate8a/gate8a_report.md": {
+      "sha256": "09a0715cfd172efdc1f8117bdbb0f0b1720e461e9a2a0403856c317e507ed827",
+      "bytes": 28002
+    },
+    "reports/gate8b/gate8b_report.md": {
+      "sha256": "2f570a21dc2017be2a0a654fafe639db3e39d09ad0be7195a2cc9b79cc52bdaf",
+      "bytes": 40927
+    },
+    "artifacts/gate8a/checkpoints/cellB_uniform_focal_last.pt": {
+      "sha256": "b505fdc4facdd53a2ee877de26f09045d3d3f13ec6468b81bd49226db0ac9c62",
+      "bytes": 3963617
+    },
+    "artifacts/gate8b/checkpoints/fold_semantickitti_best.pt": {
+      "sha256": "708951df7b0e136eee2eda1264e85d44bd08a68d8f24ea491d16f8723d9bb08b",
+      "bytes": 3963943
+    },
+    "artifacts/gate8b/checkpoints/fold_occ3d_best.pt": {
+      "sha256": "8728000f23756b73660eb6070e8762efe5815f6be9f5336701d274fcfdf9466c",
+      "bytes": 3963351
+    }
+  },
+  "produced": {
+    "configs/gate8c0/audit.yaml": "2728c195541561a7c2380aef718badf2d28c7ab40713935cca20a0973f187c4d",
+    "gate8c0/transforms.py": "e97332cf82201a8ccd5e289bc7150168457f1b40c95ba0b7206379496b059bf0",
+    "gate8c0/oracle.py": "71e871e0ef40f906c91971d03fb789cff31d0adadc7acc2779f7bcd2c06401c7",
+    "gate8c0/checks.py": "1ce4c303b45749261158101ca03fc9c16510f608a5b51bf5c6ad6019357f1de9"
+  },
+  "artifacts": {
+    "fig_alignment.png": "66fc4a12574f9e7c6202b7efdcc1280343207250bb15ec231ed743f2b34a8f95",
+    "fig_chain_heldout_0006_001810.png": "61ae20bc181be85133dc784b4f3362297338503ecd56bd9acc7b1da0cb8932c3",
+    "fig_chain_heldout_0006_004525.png": "738b5ffed8c4a70855333fa569e5ca8c2e271cc0f3fd4f306dee72db85616b20",
+    "fig_chain_heldout_0006_007240.png": "039125c33f89861c3ae52f4929fdb08636dbd0f3405552ec78a4d688e17f19cb",
+    "fig_chain_source_validation_0010_000555.png": "89849e8c954e7e17537e7ad1431141e2af94f3a2636117e3e53ff5388bca7eb0",
+    "fig_chain_source_validation_0010_001390.png": "40b8900e837830f4c0b01cc50228dc8d792ef408342fc09748c5cca88983c655",
+    "fig_chain_source_validation_0010_002225.png": "d358bf3ee294941974bd94490fa74340dab920d1e93be41e7eacc4bac8ad25ed",
+    "fig_chain_train_0003_000195.png": "2d52a6f493821582e015fdb5ca7b58c140287d625f766f1cc40f56290fbfb550",
+    "fig_chain_train_0003_000785.png": "806cb51989a693d5e5f1a87ac62722e695164ba468c34252de809d07126e16ad",
+    "fig_chain_train_0007_000530.png": "66f2047e8a070b856077015bcfc9a51ea898dbd58bca0682134615e5fdd814f6",
+    "fig_channels.png": "fd1fc1f4f073435f7e6b1e62a70b10a132e4f8242b05b5c5031e154a748caea8",
+    "fig_memorize.png": "3c8b95f90ae7a077bdc84eb7332d39f2f158d71a67b8d8cf1c4c5fb29163f68b",
+    "fig_oracle.png": "709290efea316cc63f0aba119bf9827afcfd435c9e6d9d51951ecbd508c90983",
+    "gate8c0_results.json": "871b262d6017de5e82dba0a8ecf7c5a9567066df08b49652ad95682db4efa93d",
+    "stage0_provenance.csv": "067746f45ea2ff232e5779be8c57abfe4eb9c096a869a5dc09af1ccfb4e5324f",
+    "stage0_provenance.json": "7b88168efc94732b23fd5ed9901c710589a73354dbfc9a600cfcb894599a753b",
+    "stage1_transforms.json": "362bf81d43565345aa49955eee2a65cacaf0948961bf5051afb04d6bc0c72b94",
+    "stage2_alignment.json": "43fedc16fd74ee780fca29ce77fa4d393b9e10086c9951d8cf30d38d67b492cb",
+    "stage2b_target_consistency.json": "03d32baacd1631956c636f76f918d33c65bf59e5477588903de20e6e9cb3fa3c",
+    "stage3_temporal.json": "c87ae07d36260c5f4a5ace68d6eb2563b9c348ac04d11783328c651f3dc024ea",
+    "stage4_factorization.json": "22ce2dfde8bcce447f0aeddb5c88ad7902d0881d815639aa21e1eb08424a0281",
+    "stage5_cache_audit.json": "3216bbeb2b85331c63638da07ce149fe40df119b00b3d0773e2b32c9615eca9d",
+    "stage6_memorize.json": "77e10c4ac5fb4c908f6ef0388691c05fd01e0ce76e18244370a57992b93cbabf",
+    "stage7_channel_stats.json": "3295f26c85505b944dfe6116f14febb5c98d7e67e07e6debb63c282f373bf4bf"
+  },
+  "drift_since_first_run": []
+}

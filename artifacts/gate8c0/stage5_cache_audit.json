@@ -1,0 +1,2115 @@
+{
+  "per_sample": [
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0010_sync",
+      "t": 502,
+      "sample": "2013_05_28_drive_0010_sync_00502.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 502,
+        "max": 502,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 502,
+        "lo": 503,
+        "hi": 522,
+        "n": 20,
+        "expected_lo": 503,
+        "max_allowed": 522
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 568066,
+        "n_supervised": 568066
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0010_0000003035",
+        "trident_key": "0010_0000003035",
+        "pose_native": 3035,
+        "target_anchor": 2510,
+        "native_of_anchor": 3035
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0007_sync",
+      "t": 508,
+      "sample": "2013_05_28_drive_0007_sync_00508.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 508,
+        "max": 508,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 508,
+        "lo": 509,
+        "hi": 528,
+        "n": 20,
+        "expected_lo": 509,
+        "max_allowed": 528
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 301121,
+        "n_supervised": 301121
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0007_0000002779",
+        "trident_key": "0007_0000002779",
+        "pose_native": 2779,
+        "target_anchor": 2540,
+        "native_of_anchor": 2779
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0010_sync",
+      "t": 82,
+      "sample": "2013_05_28_drive_0010_sync_00082.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 82,
+        "max": 82,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 82,
+        "lo": 83,
+        "hi": 102,
+        "n": 20,
+        "expected_lo": 83,
+        "max_allowed": 102
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 411811,
+        "n_supervised": 411811
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0010_0000000424",
+        "trident_key": "0010_0000000424",
+        "pose_native": 424,
+        "target_anchor": 410,
+        "native_of_anchor": 424
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0010_sync",
+      "t": 65,
+      "sample": "2013_05_28_drive_0010_sync_00065.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 65,
+        "max": 65,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 65,
+        "lo": 66,
+        "hi": 85,
+        "n": 20,
+        "expected_lo": 66,
+        "max_allowed": 85
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 456235,
+        "n_supervised": 456235
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0010_0000000339",
+        "trident_key": "0010_0000000339",
+        "pose_native": 339,
+        "target_anchor": 325,
+        "native_of_anchor": 339
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0010_sync",
+      "t": 383,
+      "sample": "2013_05_28_drive_0010_sync_00383.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 383,
+        "max": 383,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 383,
+        "lo": 384,
+        "hi": 403,
+        "n": 20,
+        "expected_lo": 384,
+        "max_allowed": 403
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 357969,
+        "n_supervised": 357969
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0010_0000002041",
+        "trident_key": "0010_0000002041",
+        "pose_native": 2041,
+        "target_anchor": 1915,
+        "native_of_anchor": 2041
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 120,
+      "sample": "2013_05_28_drive_0003_sync_00120.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 120,
+        "max": 120,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 120,
+        "lo": 121,
+        "hi": 140,
+        "n": 20,
+        "expected_lo": 121,
+        "max_allowed": 140
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 382756,
+        "n_supervised": 382756
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0003_0000000622",
+        "trident_key": "0003_0000000622",
+        "pose_native": 622,
+        "target_anchor": 600,
+        "native_of_anchor": 622
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 27,
+      "sample": "2013_05_28_drive_0003_sync_00027.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 27,
+        "max": 27,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 27,
+        "lo": 28,
+        "hi": 47,
+        "n": 20,
+        "expected_lo": 28,
+        "max_allowed": 47
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 141593,
+        "n_supervised": 141593
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0003_0000000143",
+        "trident_key": "0003_0000000143",
+        "pose_native": 143,
+        "target_anchor": 135,
+        "native_of_anchor": 143
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0010_sync",
+      "t": 529,
+      "sample": "2013_05_28_drive_0010_sync_00529.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 529,
+        "max": 529,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 529,
+        "lo": 530,
+        "hi": 549,
+        "n": 20,
+        "expected_lo": 530,
+        "max_allowed": 549
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 529075,
+        "n_supervised": 529075
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0010_0000003170",
+        "trident_key": "0010_0000003170",
+        "pose_native": 3170,
+        "target_anchor": 2645,
+        "native_of_anchor": 3170
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0010_sync",
+      "t": 333,
+      "sample": "2013_05_28_drive_0010_sync_00333.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 333,
+        "max": 333,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 333,
+        "lo": 334,
+        "hi": 353,
+        "n": 20,
+        "expected_lo": 334,
+        "max_allowed": 353
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 437613,
+        "n_supervised": 437613
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0010_0000001791",
+        "trident_key": "0010_0000001791",
+        "pose_native": 1791,
+        "target_anchor": 1665,
+        "native_of_anchor": 1791
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0007_sync",
+      "t": 192,
+      "sample": "2013_05_28_drive_0007_sync_00192.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 192,
+        "max": 192,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 192,
+        "lo": 193,
+        "hi": 212,
+        "n": 20,
+        "expected_lo": 193,
+        "max_allowed": 212
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 278838,
+        "n_supervised": 278838
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0007_0000000962",
+        "trident_key": "0007_0000000962",
+        "pose_native": 962,
+        "target_anchor": 960,
+        "native_of_anchor": 962
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 62,
+      "sample": "2013_05_28_drive_0003_sync_00062.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 62,
+        "max": 62,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 62,
+        "lo": 63,
+        "hi": 82,
+        "n": 20,
+        "expected_lo": 63,
+        "max_allowed": 82
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 348100,
+        "n_supervised": 348100
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0003_0000000332",
+        "trident_key": "0003_0000000332",
+        "pose_native": 332,
+        "target_anchor": 310,
+        "native_of_anchor": 332
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0010_sync",
+      "t": 205,
+      "sample": "2013_05_28_drive_0010_sync_00205.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 205,
+        "max": 205,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 205,
+        "lo": 206,
+        "hi": 225,
+        "n": 20,
+        "expected_lo": 206,
+        "max_allowed": 225
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 338011,
+        "n_supervised": 338011
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0010_0000001065",
+        "trident_key": "0010_0000001065",
+        "pose_native": 1065,
+        "target_anchor": 1025,
+        "native_of_anchor": 1065
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 35,
+      "sample": "2013_05_28_drive_0003_sync_00035.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 35,
+        "max": 35,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 35,
+        "lo": 36,
+        "hi": 55,
+        "n": 20,
+        "expected_lo": 36,
+        "max_allowed": 55
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 368048,
+        "n_supervised": 368048
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0003_0000000197",
+        "trident_key": "0003_0000000197",
+        "pose_native": 197,
+        "target_anchor": 175,
+        "native_of_anchor": 197
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0007_sync",
+      "t": 64,
+      "sample": "2013_05_28_drive_0007_sync_00064.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 64,
+        "max": 64,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 64,
+        "lo": 65,
+        "hi": 84,
+        "n": 20,
+        "expected_lo": 65,
+        "max_allowed": 84
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 490819,
+        "n_supervised": 490819
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0007_0000000322",
+        "trident_key": "0007_0000000322",
+        "pose_native": 322,
+        "target_anchor": 320,
+        "native_of_anchor": 322
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0010_sync",
+      "t": 4,
+      "sample": "2013_05_28_drive_0010_sync_00004.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 4,
+        "max": 4,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 4,
+        "lo": 5,
+        "hi": 24,
+        "n": 20,
+        "expected_lo": 5,
+        "max_allowed": 24
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 500457,
+        "n_supervised": 500457
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0010_0000000034",
+        "trident_key": "0010_0000000034",
+        "pose_native": 34,
+        "target_anchor": 20,
+        "native_of_anchor": 34
+      }
+    },
+    {
+      "source": "kitti360",
+      "segment": "2013_05_28_drive_0006_sync",
+      "t": 1104,
+      "sample": "2013_05_28_drive_0006_sync_01104.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 1104,
+        "max": 1104,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 1104,
+        "lo": 1105,
+        "hi": 1124,
+        "n": 20,
+        "expected_lo": 1105,
+        "max_allowed": 1124
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 361242,
+        "n_supervised": 361242
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0000006209",
+        "trident_key": "0000006209",
+        "pose_native": 6209,
+        "target_anchor": 5695,
+        "native_of_anchor": 6209
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 110,
+      "sample": "2013_05_28_drive_0003_sync_00110.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 110,
+        "max": 110,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 110,
+        "lo": 111,
+        "hi": 130,
+        "n": 20,
+        "expected_lo": 111,
+        "max_allowed": 130
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 235022,
+        "n_supervised": 235022
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0003_0000000572",
+        "trident_key": "0003_0000000572",
+        "pose_native": 572,
+        "target_anchor": 550,
+        "native_of_anchor": 572
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 52,
+      "sample": "2013_05_28_drive_0003_sync_00052.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 52,
+        "max": 52,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 52,
+        "lo": 53,
+        "hi": 72,
+        "n": 20,
+        "expected_lo": 53,
+        "max_allowed": 72
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 412782,
+        "n_supervised": 412782
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0003_0000000282",
+        "trident_key": "0003_0000000282",
+        "pose_native": 282,
+        "target_anchor": 260,
+        "native_of_anchor": 282
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 132,
+      "sample": "2013_05_28_drive_0003_sync_00132.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 132,
+        "max": 132,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 132,
+        "lo": 133,
+        "hi": 152,
+        "n": 20,
+        "expected_lo": 133,
+        "max_allowed": 152
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 247303,
+        "n_supervised": 247303
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0003_0000000682",
+        "trident_key": "0003_0000000682",
+        "pose_native": 682,
+        "target_anchor": 660,
+        "native_of_anchor": 682
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0007_sync",
+      "t": 424,
+      "sample": "2013_05_28_drive_0007_sync_00424.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 424,
+        "max": 424,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 424,
+        "lo": 425,
+        "hi": 444,
+        "n": 20,
+        "expected_lo": 425,
+        "max_allowed": 444
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 455009,
+        "n_supervised": 455009
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0007_0000002180",
+        "trident_key": "0007_0000002180",
+        "pose_native": 2180,
+        "target_anchor": 2120,
+        "native_of_anchor": 2180
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0010_sync",
+      "t": 146,
+      "sample": "2013_05_28_drive_0010_sync_00146.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 146,
+        "max": 146,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 146,
+        "lo": 147,
+        "hi": 166,
+        "n": 20,
+        "expected_lo": 147,
+        "max_allowed": 166
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 543675,
+        "n_supervised": 543675
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0010_0000000744",
+        "trident_key": "0010_0000000744",
+        "pose_native": 744,
+        "target_anchor": 730,
+        "native_of_anchor": 744
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0010_sync",
+      "t": 514,
+      "sample": "2013_05_28_drive_0010_sync_00514.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 514,
+        "max": 514,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 514,
+        "lo": 515,
+        "hi": 534,
+        "n": 20,
+        "expected_lo": 515,
+        "max_allowed": 534
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 559600,
+        "n_supervised": 559600
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0010_0000003095",
+        "trident_key": "0010_0000003095",
+        "pose_native": 3095,
+        "target_anchor": 2570,
+        "native_of_anchor": 3095
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0010_sync",
+      "t": 322,
+      "sample": "2013_05_28_drive_0010_sync_00322.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 322,
+        "max": 322,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 322,
+        "lo": 323,
+        "hi": 342,
+        "n": 20,
+        "expected_lo": 323,
+        "max_allowed": 342
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 419359,
+        "n_supervised": 419359
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0010_0000001736",
+        "trident_key": "0010_0000001736",
+        "pose_native": 1736,
+        "target_anchor": 1610,
+        "native_of_anchor": 1736
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0010_sync",
+      "t": 437,
+      "sample": "2013_05_28_drive_0010_sync_00437.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 437,
+        "max": 437,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 437,
+        "lo": 438,
+        "hi": 457,
+        "n": 20,
+        "expected_lo": 438,
+        "max_allowed": 457
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 540569,
+        "n_supervised": 540569
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0010_0000002710",
+        "trident_key": "0010_0000002710",
+        "pose_native": 2710,
+        "target_anchor": 2185,
+        "native_of_anchor": 2710
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0007_sync",
+      "t": 376,
+      "sample": "2013_05_28_drive_0007_sync_00376.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 376,
+        "max": 376,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 376,
+        "lo": 377,
+        "hi": 396,
+        "n": 20,
+        "expected_lo": 377,
+        "max_allowed": 396
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 307758,
+        "n_supervised": 307758
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0007_0000001882",
+        "trident_key": "0007_0000001882",
+        "pose_native": 1882,
+        "target_anchor": 1880,
+        "native_of_anchor": 1882
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0007_sync",
+      "t": 208,
+      "sample": "2013_05_28_drive_0007_sync_00208.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 208,
+        "max": 208,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 208,
+        "lo": 209,
+        "hi": 228,
+        "n": 20,
+        "expected_lo": 209,
+        "max_allowed": 228
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 213522,
+        "n_supervised": 213522
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0007_0000001042",
+        "trident_key": "0007_0000001042",
+        "pose_native": 1042,
+        "target_anchor": 1040,
+        "native_of_anchor": 1042
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0010_sync",
+      "t": 79,
+      "sample": "2013_05_28_drive_0010_sync_00079.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 79,
+        "max": 79,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 79,
+        "lo": 80,
+        "hi": 99,
+        "n": 20,
+        "expected_lo": 80,
+        "max_allowed": 99
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 463847,
+        "n_supervised": 463847
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0010_0000000409",
+        "trident_key": "0010_0000000409",
+        "pose_native": 409,
+        "target_anchor": 395,
+        "native_of_anchor": 409
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0007_sync",
+      "t": 528,
+      "sample": "2013_05_28_drive_0007_sync_00528.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 528,
+        "max": 528,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 528,
+        "lo": 529,
+        "hi": 548,
+        "n": 20,
+        "expected_lo": 529,
+        "max_allowed": 548
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 202588,
+        "n_supervised": 202588
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0007_0000002879",
+        "trident_key": "0007_0000002879",
+        "pose_native": 2879,
+        "target_anchor": 2640,
+        "native_of_anchor": 2879
+      }
+    },
+    {
+      "source": "kitti360",
+      "segment": "2013_05_28_drive_0006_sync",
+      "t": 228,
+      "sample": "2013_05_28_drive_0006_sync_00228.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 228,
+        "max": 228,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 228,
+        "lo": 229,
+        "hi": 248,
+        "n": 20,
+        "expected_lo": 229,
+        "max_allowed": 248
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 311376,
+        "n_supervised": 311376
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0000001344",
+        "trident_key": "0000001344",
+        "pose_native": 1344,
+        "target_anchor": 1195,
+        "native_of_anchor": 1344
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0010_sync",
+      "t": 244,
+      "sample": "2013_05_28_drive_0010_sync_00244.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 244,
+        "max": 244,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 244,
+        "lo": 245,
+        "hi": 264,
+        "n": 20,
+        "expected_lo": 245,
+        "max_allowed": 264
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 443415,
+        "n_supervised": 443415
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0010_0000001260",
+        "trident_key": "0010_0000001260",
+        "pose_native": 1260,
+        "target_anchor": 1220,
+        "native_of_anchor": 1260
+      }
+    },
+    {
+      "source": "kitti360",
+      "segment": "2013_05_28_drive_0006_sync",
+      "t": 632,
+      "sample": "2013_05_28_drive_0006_sync_00632.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 632,
+        "max": 632,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 632,
+        "lo": 633,
+        "hi": 652,
+        "n": 20,
+        "expected_lo": 633,
+        "max_allowed": 652
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 143027,
+        "n_supervised": 143027
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0000003473",
+        "trident_key": "0000003473",
+        "pose_native": 3473,
+        "target_anchor": 3235,
+        "native_of_anchor": 3473
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0007_sync",
+      "t": 59,
+      "sample": "2013_05_28_drive_0007_sync_00059.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 59,
+        "max": 59,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 59,
+        "lo": 60,
+        "hi": 79,
+        "n": 20,
+        "expected_lo": 60,
+        "max_allowed": 79
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 462773,
+        "n_supervised": 462773
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0007_0000000297",
+        "trident_key": "0007_0000000297",
+        "pose_native": 297,
+        "target_anchor": 295,
+        "native_of_anchor": 297
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0010_sync",
+      "t": 451,
+      "sample": "2013_05_28_drive_0010_sync_00451.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 451,
+        "max": 451,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 451,
+        "lo": 452,
+        "hi": 471,
+        "n": 20,
+        "expected_lo": 452,
+        "max_allowed": 471
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 486555,
+        "n_supervised": 486555
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0010_0000002780",
+        "trident_key": "0010_0000002780",
+        "pose_native": 2780,
+        "target_anchor": 2255,
+        "native_of_anchor": 2780
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0010_sync",
+      "t": 58,
+      "sample": "2013_05_28_drive_0010_sync_00058.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 58,
+        "max": 58,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 58,
+        "lo": 59,
+        "hi": 78,
+        "n": 20,
+        "expected_lo": 59,
+        "max_allowed": 78
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 360396,
+        "n_supervised": 360396
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0010_0000000304",
+        "trident_key": "0010_0000000304",
+        "pose_native": 304,
+        "target_anchor": 290,
+        "native_of_anchor": 304
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0003_sync",
+      "t": 7,
+      "sample": "2013_05_28_drive_0003_sync_00007.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 7,
+        "max": 7,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 7,
+        "lo": 8,
+        "hi": 27,
+        "n": 20,
+        "expected_lo": 8,
+        "max_allowed": 27
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 441743,
+        "n_supervised": 441743
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0003_0000000042",
+        "trident_key": "0003_0000000042",
+        "pose_native": 42,
+        "target_anchor": 35,
+        "native_of_anchor": 42
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0007_sync",
+      "t": 245,
+      "sample": "2013_05_28_drive_0007_sync_00245.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 245,
+        "max": 245,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 245,
+        "lo": 246,
+        "hi": 265,
+        "n": 20,
+        "expected_lo": 246,
+        "max_allowed": 265
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 236462,
+        "n_supervised": 236462
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0007_0000001227",
+        "trident_key": "0007_0000001227",
+        "pose_native": 1227,
+        "target_anchor": 1225,
+        "native_of_anchor": 1227
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0007_sync",
+      "t": 246,
+      "sample": "2013_05_28_drive_0007_sync_00246.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 246,
+        "max": 246,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 246,
+        "lo": 247,
+        "hi": 266,
+        "n": 20,
+        "expected_lo": 247,
+        "max_allowed": 266
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 288479,
+        "n_supervised": 288479
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0007_0000001232",
+        "trident_key": "0007_0000001232",
+        "pose_native": 1232,
+        "target_anchor": 1230,
+        "native_of_anchor": 1232
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0010_sync",
+      "t": 483,
+      "sample": "2013_05_28_drive_0010_sync_00483.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 483,
+        "max": 483,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 483,
+        "lo": 484,
+        "hi": 503,
+        "n": 20,
+        "expected_lo": 484,
+        "max_allowed": 503
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 535881,
+        "n_supervised": 535881
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0010_0000002940",
+        "trident_key": "0010_0000002940",
+        "pose_native": 2940,
+        "target_anchor": 2415,
+        "native_of_anchor": 2940
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0010_sync",
+      "t": 182,
+      "sample": "2013_05_28_drive_0010_sync_00182.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 182,
+        "max": 182,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 182,
+        "lo": 183,
+        "hi": 202,
+        "n": 20,
+        "expected_lo": 183,
+        "max_allowed": 202
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 328369,
+        "n_supervised": 328369
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0010_0000000950",
+        "trident_key": "0010_0000000950",
+        "pose_native": 950,
+        "target_anchor": 910,
+        "native_of_anchor": 950
+      }
+    },
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0010_sync",
+      "t": 184,
+      "sample": "2013_05_28_drive_0010_sync_00184.npz",
+      "causal_input_only": {
+        "ok": true,
+        "t": 184,
+        "max": 184,
+        "min": 0,
+        "n_future_in_input": 0,
+        "why": ""
+      },
+      "future_target_window": {
+        "ok": true,
+        "t": 184,
+        "lo": 185,
+        "hi": 204,
+        "n": 20,
+        "expected_lo": 185,
+        "max_allowed": 204
+      },
+      "no_future_leak": {
+        "ok": true,
+        "n_overlap": 0,
+        "overlap": []
+      },
+      "dims_match_declaration": {
+        "ok": true,
+        "dims": [
+          256,
+          256,
+          32
+        ]
+      },
+      "unknown_not_supervised": {
+        "ok": true,
+        "n_supervised_but_invalid": 0,
+        "n_valid": 377186,
+        "n_supervised": 377186
+      },
+      "frame_identity_consistent": {
+        "ok": true,
+        "rgb_key": "0010_0000000960",
+        "trident_key": "0010_0000000960",
+        "pose_native": 960,
+        "target_anchor": 920,
+        "native_of_anchor": 960
+      }
+    }
+  ],
+  "global": {
+    "grid_declaration": {
+      "ok": true,
+      "got": [
+        [
+          256,
+          256,
+          32
+        ],
+        0.2,
+        [
+          0.0,
+          -25.6,
+          -2.0
+        ],
+        "velodyne_of_anchor_frame"
+      ],
+      "expect": [
+        [
+          256,
+          256,
+          32
+        ],
+        0.2,
+        [
+          0.0,
+          -25.6,
+          -2.0
+        ],
+        "velodyne_of_anchor_frame"
+      ]
+    },
+    "drive_partitions_disjoint": {
+      "ok": true,
+      "train_val": [],
+      "train_heldout": [],
+      "val_heldout": []
+    },
+    "cache_keys_cannot_collide": {
+      "ok": true,
+      "n_collisions": 0,
+      "examples": []
+    },
+    "trident_path_is_drive_scoped": {
+      "k360_train": "/media/SSD1/MINH_DATASETS/lingbot_gate8b/semantics/k360_train/0003_0000000004.npz",
+      "kitti360": "/media/SSD1/MINH_DATASETS/lingbot_gate6/semantics/kitti360/0000000004.npz",
+      "ok": true
+    }
+  },
+  "expect_grid": [
+    [
+      256,
+      256,
+      32
+    ],
+    0.2,
+    [
+      0.0,
+      -25.6,
+      -2.0
+    ],
+    "velodyne_of_anchor_frame"
+  ],
+  "live_mapper": [
+    {
+      "source": "k360_train",
+      "segment": "2013_05_28_drive_0003_sync",
+      "integrated_once": {
+        "ok": true,
+        "n_integrated": 12,
+        "n_frames": 12
+      },
+      "scale_anchor_window": {
+        "ok": true,
+        "n_observed": 5,
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "n_anchor": 5
+      }
+    },
+    {
+      "source": "kitti360",
+      "segment": "2013_05_28_drive_0006_sync",
+      "integrated_once": {
+        "ok": true,
+        "n_integrated": 12,
+        "n_frames": 12
+      },
+      "scale_anchor_window": {
+        "ok": true,
+        "n_observed": 5,
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "n_anchor": 5
+      }
+    }
+  ],
+  "n_samples": 40,
+  "failures": {},
+  "all_checks_pass": true,
+  "seconds": 4.9203407764434814
+}

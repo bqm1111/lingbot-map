@@ -1,0 +1,84 @@
+{
+  "uniform_unknown_overlap": [
+    {
+      "dataset": "semantickitti",
+      "seed": 0,
+      "fp": 37622396,
+      "fp_matching_uniform_unknown": 26320457,
+      "added_fp": 33817851,
+      "added_fp_matching_uniform_unknown": 25274301
+    },
+    {
+      "dataset": "semantickitti",
+      "seed": 1,
+      "fp": 38899069,
+      "fp_matching_uniform_unknown": 25984143,
+      "added_fp": 35024736,
+      "added_fp_matching_uniform_unknown": 25173583
+    },
+    {
+      "dataset": "semantickitti",
+      "seed": 2,
+      "fp": 33115892,
+      "fp_matching_uniform_unknown": 24321700,
+      "added_fp": 29221163,
+      "added_fp_matching_uniform_unknown": 23360959
+    },
+    {
+      "dataset": "occ3d",
+      "seed": 0,
+      "fp": 2129349,
+      "fp_matching_uniform_unknown": 727432,
+      "added_fp": 1510476,
+      "added_fp_matching_uniform_unknown": 705669
+    },
+    {
+      "dataset": "occ3d",
+      "seed": 1,
+      "fp": 3053720,
+      "fp_matching_uniform_unknown": 685696,
+      "added_fp": 2436995,
+      "added_fp_matching_uniform_unknown": 673316
+    },
+    {
+      "dataset": "occ3d",
+      "seed": 2,
+      "fp": 1939528,
+      "fp_matching_uniform_unknown": 792395,
+      "added_fp": 1308753,
+      "added_fp_matching_uniform_unknown": 766645
+    }
+  ],
+  "out_of_grid_checks": [
+    {
+      "dataset": "semantickitti",
+      "keep": [
+        false,
+        false,
+        true
+      ],
+      "accepted_indices": [
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "dataset": "occ3d",
+      "keep": [
+        false,
+        false,
+        true
+      ],
+      "accepted_indices": [
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1844 @@
+{
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/frozen_manifest.json": {
+    "exists": true,
+    "bytes": 9898,
+    "sha256": "5385721d492a9287df9f063975a85d746fcd601d3a3e22ad42ed4249e0a9f65a"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/selection.json": {
+    "exists": true,
+    "bytes": 36641,
+    "sha256": "c743b29de184acfa4ad2e42d5619fc1e9f6c21716476cd1dd2714b55fdc11c65"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/report.md": {
+    "exists": true,
+    "bytes": 30547,
+    "sha256": "6236cc09b6cc3dc27dac9858ea0c686987a5576de9c90c86433d4cc6080be9c2"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/gate8c1_results.json": {
+    "exists": true,
+    "bytes": 1454981,
+    "sha256": "84c8fb76dc16a32a47ee9cb503cf5019b7b7fff4219a3ff3edc8745122662b13"
+  },
+  "/home/minh/workspace/lingbot-map_fork/gate8/mapper.py": {
+    "exists": true,
+    "bytes": 19695,
+    "sha256": "95fd13c875a640cdb47dd964c53b59ced8e669331334f7431783036e958fe0eb"
+  },
+  "/home/minh/workspace/lingbot-map_fork/gate8/net.py": {
+    "exists": true,
+    "bytes": 7670,
+    "sha256": "56852e4a11999c3ac8e817aaa7c7f8c0381fc71f734537226084750aedda578c"
+  },
+  "/home/minh/workspace/lingbot-map_fork/gate8/feed.py": {
+    "exists": true,
+    "bytes": 2899,
+    "sha256": "1a499c8bb5a8673c70b0bd68e4e7ee26d74d0b086de92105e0cf23f2ab34d977"
+  },
+  "/home/minh/workspace/lingbot-map_fork/gate8/losses.py": {
+    "exists": true,
+    "bytes": 1596,
+    "sha256": "92d3d4f9586a05749d58f86a60221bb4f57521e8c86137e8d0d0d1d423636348"
+  },
+  "/home/minh/workspace/lingbot-map_fork/gate8/vocab.py": {
+    "exists": true,
+    "bytes": 6441,
+    "sha256": "b3fef8b8982254ea8a1670d7cd8e4ccdc301e85815d1be69e8d4e5dff97dd60a"
+  },
+  "/home/minh/workspace/lingbot-map_fork/gate8c0/transforms.py": {
+    "exists": true,
+    "bytes": 9053,
+    "sha256": "e97332cf82201a8ccd5e289bc7150168457f1b40c95ba0b7206379496b059bf0",
+    "expected_sha256": "e97332cf82201a8ccd5e289bc7150168457f1b40c95ba0b7206379496b059bf0",
+    "matches": true
+  },
+  "/home/minh/workspace/lingbot-map_fork/gate8c1/rawtarget.py": {
+    "exists": true,
+    "bytes": 11913,
+    "sha256": "9bc3d140192a68acec1f3fe8995a9f2645187370c13e84e454c0f5f59940c017",
+    "expected_sha256": "8e4cf9dac66f84d5483fa0b76e41ac0b95aedecc23bf2c9eac3c3c58e1478255",
+    "matches": false
+  },
+  "/home/minh/workspace/lingbot-map_fork/gate8c1/sources.py": {
+    "exists": true,
+    "bytes": 5186,
+    "sha256": "c23f2813886deab1f5e2153fe25dc9ee594449cb67a8c4c7afe2ce1ba3a02a6e",
+    "expected_sha256": "1cfa2be42c6f9a42356463ae5caded0a8417348adf7450dbcec3692b8d4e3c86",
+    "matches": false
+  },
+  "/home/minh/workspace/lingbot-map_fork/gate8c1/data.py": {
+    "exists": true,
+    "bytes": 2355,
+    "sha256": "5c0903a6b4c9292dd3c1ee154a19a29fd5481b3cc5cb0bef5a0b8e0682a581bf",
+    "expected_sha256": "5c0903a6b4c9292dd3c1ee154a19a29fd5481b3cc5cb0bef5a0b8e0682a581bf",
+    "matches": true
+  },
+  "/home/minh/workspace/lingbot-map_fork/tools/gate8c1/train.py": {
+    "exists": true,
+    "bytes": 7110,
+    "sha256": "19d071a09ff3cf46ea9f3102bb174e9f8f0b6a3f69369b03b61d67f0e85defcd",
+    "expected_sha256": "7791b5e715f48761fd289df62f53ec1cd4c60759045c376fa00fd905cc86ac5a",
+    "matches": false
+  },
+  "/home/minh/workspace/lingbot-map_fork/tools/gate8c1/selection.py": {
+    "exists": true,
+    "bytes": 8903,
+    "sha256": "00e171ef760e16997bdb403eeefc7cae5d89787e6e297674f90bc11fcda96c26",
+    "expected_sha256": "b1ed46f81e4d19884cae7699a595c1b637bac22d1460397239c8e2144e867c56",
+    "matches": false
+  },
+  "/home/minh/workspace/lingbot-map_fork/tools/gate8c1/build_targets.py": {
+    "exists": true,
+    "bytes": 5518,
+    "sha256": "73816b680fd114bb25b09af921b0b396f9bdf9ee1a116090c891b02efa3fc46a",
+    "expected_sha256": "1fabe2e9b2a8195f85d52569894ca8c00e3b54d4accf89bcf8babbbaa31dde6c",
+    "matches": false
+  },
+  "/home/minh/workspace/lingbot-map_fork/tools/gate8c1/build_samples.py": {
+    "exists": true,
+    "bytes": 9659,
+    "sha256": "38682c30d64c4c2b8970b3980039deb4079421af695c27457ab225b31467e6fd",
+    "expected_sha256": "a4b84ac149c2612b6ac90b34c4c435f202a7ed97f20f7428e466568a200a1666",
+    "matches": false
+  },
+  "/home/minh/workspace/lingbot-map_fork/checkpoints/lingbot-map/204754b/lingbot-map.pt": {
+    "exists": true,
+    "bytes": 4632303465,
+    "sha256": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72",
+    "expected_sha256": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72",
+    "matches": true
+  },
+  "/home/minh/workspace/lingbot-map_fork/configs/gate8c1/base.yaml": {
+    "exists": true,
+    "bytes": 829,
+    "sha256": "b4d2b97e6416c9f78385a47b539de4fe86fcbf263609f122260dac86dd32c5ed",
+    "expected_sha256": "b4d2b97e6416c9f78385a47b539de4fe86fcbf263609f122260dac86dd32c5ed",
+    "matches": true
+  },
+  "/home/minh/workspace/lingbot-map_fork/configs/gate8c1/seed0.yaml": {
+    "exists": true,
+    "bytes": 544,
+    "sha256": "a2a9cd5496214c66bc2d8bea6a2a7bc01a16c4380dea65ee2bc3f9924db1ee28",
+    "expected_sha256": "a2a9cd5496214c66bc2d8bea6a2a7bc01a16c4380dea65ee2bc3f9924db1ee28",
+    "matches": true
+  },
+  "/home/minh/workspace/lingbot-map_fork/configs/gate8c1/seed1.yaml": {
+    "exists": true,
+    "bytes": 544,
+    "sha256": "7ba7e12f84038021d7d8bb479a62e43265180592f1009a629277e6ce6c81229f",
+    "expected_sha256": "7ba7e12f84038021d7d8bb479a62e43265180592f1009a629277e6ce6c81229f",
+    "matches": true
+  },
+  "/home/minh/workspace/lingbot-map_fork/configs/gate8c1/seed2.yaml": {
+    "exists": true,
+    "bytes": 544,
+    "sha256": "6cfbb2b690d6273f42eaa12ebe69080ae4f1faf89e90a62fd947691b7f4f919c",
+    "expected_sha256": "6cfbb2b690d6273f42eaa12ebe69080ae4f1faf89e90a62fd947691b7f4f919c",
+    "matches": true
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/checkpoints/seed0_last.pt": {
+    "exists": true,
+    "bytes": 3962677,
+    "sha256": "5227c672012024786561e615b755edd938d551e62d05ad52d2ad23813825e7d0",
+    "expected_sha256": "5227c672012024786561e615b755edd938d551e62d05ad52d2ad23813825e7d0",
+    "matches": true
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/checkpoints/seed1_last.pt": {
+    "exists": true,
+    "bytes": 3962677,
+    "sha256": "13640b7664997abb90fce5da733a8ea60e1ed4b0b48e6a5dcb2a1b7132587752",
+    "expected_sha256": "13640b7664997abb90fce5da733a8ea60e1ed4b0b48e6a5dcb2a1b7132587752",
+    "matches": true
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/checkpoints/seed2_last.pt": {
+    "exists": true,
+    "bytes": 3962677,
+    "sha256": "68e67f28a1e4b764d14d1bc7d0f256ef5dd5f5be82d826884ada83ace0f65a67",
+    "expected_sha256": "68e67f28a1e4b764d14d1bc7d0f256ef5dd5f5be82d826884ada83ace0f65a67",
+    "matches": true
+  },
+  "/home/minh/workspace/lingbot-map_fork/gate8/targets.py": {
+    "exists": true,
+    "bytes": 7618,
+    "sha256": "6ff8d46feb69148d54576aea192f40849a6fd01ea03af4797f8758a2c2f619ff"
+  },
+  "/home/minh/workspace/lingbot-map_fork/gate8/__init__.py": {
+    "exists": true,
+    "bytes": 328,
+    "sha256": "7249f9b81fb91e8ac426db266bf8c4cc16aacef5e466b99b196628ee91663555"
+  },
+  "/home/minh/workspace/lingbot-map_fork/gate8/sources.py": {
+    "exists": true,
+    "bytes": 8848,
+    "sha256": "863bccd2dd44ecc263dc87872a05b2f671e9bf9ee8d1c9c40b11e8ff2a2439d4"
+  },
+  "/home/minh/workspace/lingbot-map_fork/tools/gate8c1/eval_target.py": {
+    "exists": true,
+    "bytes": 16112,
+    "sha256": "eeb8618f5897b0b484dd9dfd647f21efe59419ddac934d4a6bc2b1df5f17eaae"
+  },
+  "/home/minh/workspace/lingbot-map_fork/gate6/targets.py": {
+    "exists": true,
+    "bytes": 3452,
+    "sha256": "276c51517e0ed0220fc112c02d2633d798437e6564d05d6fc7f4b09921b022e5"
+  },
+  "/home/minh/workspace/lingbot-map_fork/gate6/grids.py": {
+    "exists": true,
+    "bytes": 3891,
+    "sha256": "e1c8bf07d769fd49a2b98fd502a7f4eefc52d36e793c4814eb98f5daa2ed446f"
+  },
+  "/home/minh/workspace/lingbot-map_fork/gate8a/regions.py": {
+    "exists": true,
+    "bytes": 3411,
+    "sha256": "79377f22e923ef50d01006d4859d2602fc9cab0ad25f4abbb73e73b2679fe6cc"
+  },
+  "/home/minh/workspace/lingbot-map_fork/gate8a/scores.py": {
+    "exists": true,
+    "bytes": 9382,
+    "sha256": "7bfbfb98737ba49acaf3958a369206bffe9b4c81da358cb5685977d57a22cba9"
+  },
+  "/home/minh/workspace/lingbot-map_fork/gate7b/replay.py": {
+    "exists": true,
+    "bytes": 7066,
+    "sha256": "9714cc8eab873b0117fa275b65910e79f69e2837df9521f5ad8de4aab03ee02d"
+  },
+  "/home/minh/workspace/lingbot-map_fork/gate7b/streams.py": {
+    "exists": true,
+    "bytes": 5789,
+    "sha256": "516ee29566993c974fe56b3c30b888644c8db3ae7fd8cda66e01dd75e7af91b1"
+  },
+  "/home/minh/workspace/lingbot-map_fork/lingbot_map/models/gct_stream.py": {
+    "exists": true,
+    "bytes": 23445,
+    "sha256": "e1f457088894c15648cf01b87e3e677338bd44e638b462a59cf41a7fa60f52c4"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/semantickitti/08.npz": {
+    "exists": true,
+    "bytes": 161489238,
+    "sha256": "b9f03a66e9c53100e129cf83c5f86cc64c5994e2663cf9c33a563ace46481801"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/semantickitti/08.npz": {
+    "exists": true,
+    "bytes": 16830,
+    "sha256": "b8e3a244bb2c71fb1fcf028d96da2188bfb2b5ab5e2ed19e043372998b226834"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/scores_semantickitti_past5_seed0_completion.npz": {
+    "exists": true,
+    "bytes": 442823,
+    "sha256": "08f3c6fb3fe373fdc70d5c60e84d373a5bbe682af2154de69723e40b7516962b"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/counts_semantickitti_past5_seed0_completion.npz": {
+    "exists": true,
+    "bytes": 64852,
+    "sha256": "7778efef44011fdbfd57b7c5084b974c47764a73e0850e2c65d1b5f85e46e298"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/scores_semantickitti_past5_seed1_completion.npz": {
+    "exists": true,
+    "bytes": 400081,
+    "sha256": "475a1ac502e58acad70f9d461b63db302931358f35c97898bf0086fafa28c2ce"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/counts_semantickitti_past5_seed1_completion.npz": {
+    "exists": true,
+    "bytes": 65510,
+    "sha256": "562ac370d080ef71429c4bf7340cb09245d4818c35a0c964a6f096416b9c2130"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/scores_semantickitti_past5_seed2_completion.npz": {
+    "exists": true,
+    "bytes": 407495,
+    "sha256": "ba613f856e82bf124b6d84f571d45cd96683d06265036670b5d7367ba1732e1d"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/counts_semantickitti_past5_seed2_completion.npz": {
+    "exists": true,
+    "bytes": 64502,
+    "sha256": "baaa827324166fdeadca3cea792c2128fc90963665588c32de413415645c4260"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/scores_semantickitti_occany_fwd_seed0_completion.npz": {
+    "exists": true,
+    "bytes": 430272,
+    "sha256": "ded84d26f2de003692e5fcd6564107ff116bbb9edd5e783ca5717c661f523b73"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/counts_semantickitti_occany_fwd_seed0_completion.npz": {
+    "exists": true,
+    "bytes": 66244,
+    "sha256": "891623d3bddc7188b17bcda0fff74f5a58c763dccd5d1b01eb176f88861ad0e9"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/scores_semantickitti_occany_fwd_seed1_completion.npz": {
+    "exists": true,
+    "bytes": 397771,
+    "sha256": "b2ab351dd3e267e72267209ce1f41ff165cb186e09d1af0d286c00cb3f99ec88"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/counts_semantickitti_occany_fwd_seed1_completion.npz": {
+    "exists": true,
+    "bytes": 67003,
+    "sha256": "19bb3bb615b70b617e729becce382ba00632a9454a9add02b8f60d4669eb14c6"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/scores_semantickitti_occany_fwd_seed2_completion.npz": {
+    "exists": true,
+    "bytes": 406064,
+    "sha256": "5f4e06ad837ee3916388f14b397169a27e9cf5c884bee29d69fd6d8650baa849"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/counts_semantickitti_occany_fwd_seed2_completion.npz": {
+    "exists": true,
+    "bytes": 65610,
+    "sha256": "7903f47cae2e1e3b73f37b4dc8c0e3f98ae923107390190d331acc4ed396785a"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0003.npz": {
+    "exists": true,
+    "bytes": 10603659,
+    "sha256": "4b021257450cacaccef53bd45c32d6f295352f588d276c5a7e5f3496cf6cbdf0"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0003.npz": {
+    "exists": true,
+    "bytes": 1825,
+    "sha256": "5edc8e83726412b3a6e5478653d78b2f8549d0ecb26aa1a7b102693c97279ffc"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0012.npz": {
+    "exists": true,
+    "bytes": 12593072,
+    "sha256": "c3f790227b166a665ab6b3763b0822e5a37224ab90d1316a5a6a88da16cde869"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0012.npz": {
+    "exists": true,
+    "bytes": 1914,
+    "sha256": "cf6cce1e6588184514bff0342acb7d8cdf39a7677609d7b728ca38283a15cf31"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0013.npz": {
+    "exists": true,
+    "bytes": 11964209,
+    "sha256": "2066bb104b65031b913612d9e460fb5b132fb7e1afde0099633e41443bb31b9b"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0013.npz": {
+    "exists": true,
+    "bytes": 1862,
+    "sha256": "eef16c40757130f1eceda209c79dc64031d8abc76465ed1d20bedb6eedc559ed"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0014.npz": {
+    "exists": true,
+    "bytes": 10153476,
+    "sha256": "7b16a6cd0fcef135dc243787c5faf9c888469e578867a30c9c5c3288e4dc6527"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0014.npz": {
+    "exists": true,
+    "bytes": 1843,
+    "sha256": "df010537e0f0316a57fe6e776b1b106f42d46c656b185d2d4dcd9095571b934b"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0015.npz": {
+    "exists": true,
+    "bytes": 13292217,
+    "sha256": "4c6ea6233d0de144848d8f3b172e6dd0a3f72cc312b1c1764528c8b0e3cf958e"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0015.npz": {
+    "exists": true,
+    "bytes": 1880,
+    "sha256": "bb3c439b1381d25aa0dce9b1255c024d0167a568c41af15a005d221631ac2a78"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0016.npz": {
+    "exists": true,
+    "bytes": 13341751,
+    "sha256": "86dd740f184c8d4b3387ff4dd636db7be1d67ff11d0e31b60222320be7ee5db7"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0016.npz": {
+    "exists": true,
+    "bytes": 1895,
+    "sha256": "559b435fc526754a47f17e08f4db7cce0fe6f0303fda9a04527f7458119643d8"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0017.npz": {
+    "exists": true,
+    "bytes": 12679984,
+    "sha256": "a6a66a06222748478148bed03a0ff5821b45902cab228c0524992bcda66d56cb"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0017.npz": {
+    "exists": true,
+    "bytes": 1879,
+    "sha256": "4620861620bc8f4cc18eb6d6343ddc75c9f48e2f01d9e6d49821e61b318acaf4"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0018.npz": {
+    "exists": true,
+    "bytes": 13149891,
+    "sha256": "eba597a3a24ec902177a0006b53ce9dc04029c23e7c78cc44504adca97b4a0e1"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0018.npz": {
+    "exists": true,
+    "bytes": 1909,
+    "sha256": "62146da1eeb9bc996e121ca317e90cb01ef8305bbba4456db9c298c012c58557"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0035.npz": {
+    "exists": true,
+    "bytes": 14198313,
+    "sha256": "965223580ed035def410a47d986ad355b5158c25b87a5d21d09bc4096ceac468"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0035.npz": {
+    "exists": true,
+    "bytes": 1823,
+    "sha256": "59ed30576c4e30941b705046da876208e5d02114c32f5a41748e99f4dc1a8e53"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0036.npz": {
+    "exists": true,
+    "bytes": 13406718,
+    "sha256": "22838e53336fdd02b649c3923a31f6f8ae2af9e07929f1d5ed9622b683704b8e"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0036.npz": {
+    "exists": true,
+    "bytes": 1818,
+    "sha256": "773d221ff6bc85558dd16edc5c019ce9ed27373edaf84f8ad1dc5b0e5c0a0e0f"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0038.npz": {
+    "exists": true,
+    "bytes": 11784014,
+    "sha256": "c13dd3da45fcf1297b35a0121171b36dee6cb6c278f4f3be7d0c0149d709679d"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0038.npz": {
+    "exists": true,
+    "bytes": 1821,
+    "sha256": "b5b392df87d29fae7b78017b042a8b400f793e27fa1b6e2a69e387ac8cfcf1b1"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0039.npz": {
+    "exists": true,
+    "bytes": 13965897,
+    "sha256": "335b9aaf901dd4d0383d2a00eccb8459b815d44213c61fae9e45b87641c233e3"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0039.npz": {
+    "exists": true,
+    "bytes": 1817,
+    "sha256": "80e26b652946a36548d55518c88ff5c362cb59c8a0fdb4300c16ae4aee29ea17"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0092.npz": {
+    "exists": true,
+    "bytes": 13825300,
+    "sha256": "0e56f49d7df8668a0adf09697cd7824ece6213e1bb8488ff5fe792e1acb979f2"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0092.npz": {
+    "exists": true,
+    "bytes": 1827,
+    "sha256": "607d00dc15a2a921fe995ef0e5d7c9bd8a1bb49570eb21f1625e8269b8277c30"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0093.npz": {
+    "exists": true,
+    "bytes": 9286493,
+    "sha256": "16de4e38b1c788d1c1fab40985420b877d4ea30ce2f9bc21ae01e3c6b78e9d77"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0093.npz": {
+    "exists": true,
+    "bytes": 1690,
+    "sha256": "424c70c341413f8a8f7d302dfab1418048936ab2b5092cb0aefc5c22df07ac82"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0094.npz": {
+    "exists": true,
+    "bytes": 12547342,
+    "sha256": "c8d508526f18005a60813fed571b94294330dd2a70e8e52570d7702b083b0b67"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0094.npz": {
+    "exists": true,
+    "bytes": 1807,
+    "sha256": "1ef7a1c53e063e0ba0f240d184b7a6a7822c5e9fc30f0c6e730a2a951478fa6d"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0095.npz": {
+    "exists": true,
+    "bytes": 9172461,
+    "sha256": "b36c95ed7ad5191df51d66ce99112d13fec21b3a7de03741680e637130613bdd"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0095.npz": {
+    "exists": true,
+    "bytes": 1630,
+    "sha256": "b4ab4f232b3edd7042252fc7187139c071ac0c77d9cfe245798806fbcad6d28c"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0096.npz": {
+    "exists": true,
+    "bytes": 10018946,
+    "sha256": "3e7941e3204ef2e7bc8550b05ffb4cf0fae24da3f99a41624c49d0a961c7c5ca"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0096.npz": {
+    "exists": true,
+    "bytes": 1681,
+    "sha256": "4ddc1801c972af32bca80df0b42d3e0fe3d507ca929d59e5ccc6931b1aaa2d84"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0097.npz": {
+    "exists": true,
+    "bytes": 8422541,
+    "sha256": "fac17a9425f23a71424f6da45a3c6c0f79118bfe23d6ec52bae4aae71be69ac5"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0097.npz": {
+    "exists": true,
+    "bytes": 1667,
+    "sha256": "845b35da08fa0a7f7b56a8b6f9a7bf0211e82f1ff0bc30680e88be9ed09bb8a5"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0098.npz": {
+    "exists": true,
+    "bytes": 9337613,
+    "sha256": "b3c04ca1717f49872fb37de9d00ce669a8bd493f9b40d1c03189d391b8973f11"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0098.npz": {
+    "exists": true,
+    "bytes": 1694,
+    "sha256": "7f649a9c0f97407a6e9f4c55a53162b583c7d16bd4e703c2fa80e0ef836d0156"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0099.npz": {
+    "exists": true,
+    "bytes": 12160969,
+    "sha256": "9d03d1e27a8b14990db1e8e02c264d73c07d7745357757a594e99f02bd83f695"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0099.npz": {
+    "exists": true,
+    "bytes": 1700,
+    "sha256": "54c34267fd23f5b83d23ddb3f338d5bbe82a467a2fc1f5e0d00f4dede732d1db"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0100.npz": {
+    "exists": true,
+    "bytes": 11833334,
+    "sha256": "7062de88a0bd11e17a4843e4fb895ea375778b7df7ce2d1f5f5a0c9094f4c29f"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0100.npz": {
+    "exists": true,
+    "bytes": 1761,
+    "sha256": "6b563098f931146dbf6fff4bd97ad7b05b91f657cbf076fa23620ee788d1a100"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0101.npz": {
+    "exists": true,
+    "bytes": 10245643,
+    "sha256": "737e5a2539c69a4f0bc91497eb7b9e471cbf24c0529f416174072fc03bb07bca"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0101.npz": {
+    "exists": true,
+    "bytes": 1804,
+    "sha256": "b2bb088b0c0b8a54b44e6140cb06d1df7219c351f4dbaf40cc79a581d3cdeb8d"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0102.npz": {
+    "exists": true,
+    "bytes": 10651016,
+    "sha256": "64fa66544e2e8ac06fd19a51830cfd7cafb81ff6ccf2a10bd3254a90c7468790"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0102.npz": {
+    "exists": true,
+    "bytes": 1807,
+    "sha256": "40556a08edb6a6a1e03d824486b20fa560bd6a4e14f6814a4c9bda13f35658ec"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0103.npz": {
+    "exists": true,
+    "bytes": 14114972,
+    "sha256": "3b1499072e8802446bbb313596d3a2d8f20058cf39572a831b6e7a5cd96387fd"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0103.npz": {
+    "exists": true,
+    "bytes": 1793,
+    "sha256": "1378e1b6dfcb9fcd8e489076399d7171010ac1debb21b9350f63255b5f0604dc"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0104.npz": {
+    "exists": true,
+    "bytes": 11929062,
+    "sha256": "05ca4c2c3dd61113dea59b9d9b2ed05db85eb7d8bd281ea509e6b73250663707"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0104.npz": {
+    "exists": true,
+    "bytes": 1685,
+    "sha256": "663bb5f451b49e372711bf178e25cb759903d015ffa6e0fbc57d755a08898d0e"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0105.npz": {
+    "exists": true,
+    "bytes": 9478156,
+    "sha256": "0a9f8624b35601bdfbcb2ae77d7adf5410fd6b346150918172ee6d59c71d24f8"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0105.npz": {
+    "exists": true,
+    "bytes": 1681,
+    "sha256": "4f24641e140f741a0733102215a4ced361ad4c9fff31132c70c4316b5d90b3e9"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0106.npz": {
+    "exists": true,
+    "bytes": 11038070,
+    "sha256": "6ab7a703db128434684a926b14b2b9cc977bb4ce25c471b64bd8cf49123a8b1d"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0106.npz": {
+    "exists": true,
+    "bytes": 1805,
+    "sha256": "71849c9bc16a1914c3514e1e466abf92392285c824ac3d281f235a514fbdc6be"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0107.npz": {
+    "exists": true,
+    "bytes": 12300842,
+    "sha256": "c305fdb745c12dd7fbe8f34fdd3e9c25394953ae81a9b757cf0ae88599951a91"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0107.npz": {
+    "exists": true,
+    "bytes": 1798,
+    "sha256": "00199103839b95c27761054faeb708426713c5017830f8da87e3a82d5329b527"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0108.npz": {
+    "exists": true,
+    "bytes": 9066828,
+    "sha256": "fa4d77de4d7bb8c78c8f2ec7e8dd1e3551c246f45b0f8e1f77336aa7df35f58c"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0108.npz": {
+    "exists": true,
+    "bytes": 1692,
+    "sha256": "e3ecbf3da075eb3d30b64973f83fa9c326ead95ab6bff3b5d2f87e9fa19e9441"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0109.npz": {
+    "exists": true,
+    "bytes": 11348632,
+    "sha256": "2b3b76e1d0a62cb2a49a86ca0c2bbc84006591cd69949ce02fe967754e0855f6"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0109.npz": {
+    "exists": true,
+    "bytes": 1816,
+    "sha256": "baf2ffb670fbc70208407d0a97e20fbad998cf5f2fe2c50aa0ba1f6f6a27dd38"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0110.npz": {
+    "exists": true,
+    "bytes": 12868022,
+    "sha256": "b2c63b866732af04f8c830242cc56f0a449a78a1c5727233aa9b6671aeedcfd3"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0110.npz": {
+    "exists": true,
+    "bytes": 1798,
+    "sha256": "0631a04d67d1baa077674ac26c29a6da6ade7a9e95d0e53b1ad1638cdd458930"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0221.npz": {
+    "exists": true,
+    "bytes": 11772191,
+    "sha256": "4595f454844f0094ae0cd48828da0392c82cb033ebfd139ba85ba7046ff269b9"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0221.npz": {
+    "exists": true,
+    "bytes": 1701,
+    "sha256": "7be9f40f9aa1c4f97b028386a003014dd1c3cfe59ecf51103c58f51880960c38"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0268.npz": {
+    "exists": true,
+    "bytes": 10285146,
+    "sha256": "da9bd85f8621245ee0c9350b530898b1ab6570fe2cc0ef5dccbf60c3bb99ad1d"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0268.npz": {
+    "exists": true,
+    "bytes": 1709,
+    "sha256": "2658738700bea22291a05d14bf21018a45133e98f75378f0d0b1aa793fcd2cb4"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0269.npz": {
+    "exists": true,
+    "bytes": 13166366,
+    "sha256": "3fcf196888705ccdf38cf4486a15840f04a541a0f78c3b1fa5f6a43a70f17a1b"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0269.npz": {
+    "exists": true,
+    "bytes": 1818,
+    "sha256": "c28c66f384db2b38012a536d50d50cd3440937072bd130224c53f9fd7911d4b0"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0270.npz": {
+    "exists": true,
+    "bytes": 12686697,
+    "sha256": "2742f110f788d52b9b29583f7b1762794ec555d50ee303f7ae4b0ae7326d615b"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0270.npz": {
+    "exists": true,
+    "bytes": 1828,
+    "sha256": "8418d5ff0067d9cb0c92c867c57e8814c56c2c983dbdf9ef22ff961215e97151"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0271.npz": {
+    "exists": true,
+    "bytes": 11357948,
+    "sha256": "cccc155a6b32e88b2c528a87a16144e97c963a38ba0b1450f1087e9d11e127df"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0271.npz": {
+    "exists": true,
+    "bytes": 1687,
+    "sha256": "061ef817f59c079f223602edc3cb9f438ec89f194d33cd2133c5301f69d6a886"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0272.npz": {
+    "exists": true,
+    "bytes": 10276829,
+    "sha256": "5305f311e42dafb154fb603a373afa9ba9f0219e7091846f1be5cd103d667cc9"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0272.npz": {
+    "exists": true,
+    "bytes": 1700,
+    "sha256": "d3f7a85ea1cf94bf7b6efe9914d8e56be18737bcc619acb33870cca137c486a6"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0273.npz": {
+    "exists": true,
+    "bytes": 12803020,
+    "sha256": "cb650242237745b759c51d092b2b8950c7282767a417210f3c7ffb1716bc582b"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0273.npz": {
+    "exists": true,
+    "bytes": 1685,
+    "sha256": "11a3e6661d4dd41036cfbc1bc411622ab00deb8e89000e92b5467abc9bd2f573"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0274.npz": {
+    "exists": true,
+    "bytes": 12749464,
+    "sha256": "6e1d53f7648292ee70009dfb7c11f8d95aeb4b5c97d7b963c8d6b0da90af0479"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0274.npz": {
+    "exists": true,
+    "bytes": 1836,
+    "sha256": "c4abe74d59dcefa3c95912baf5b46ba0856afea215b93d2a546ad70fd23ba502"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0275.npz": {
+    "exists": true,
+    "bytes": 12538557,
+    "sha256": "abad79dc3f9b816a6c79511010bdb19b5c1bccdff9c23c384532c1f50918e909"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0275.npz": {
+    "exists": true,
+    "bytes": 1808,
+    "sha256": "cfc910fdc9a12896e9e00f3e44c7c9cc4880b36759f91361c6215b401456cbc4"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0276.npz": {
+    "exists": true,
+    "bytes": 10779189,
+    "sha256": "302afa90e308cf8158586d078c4aa3b9f3e357bc0c54c544d0df07bf3f598951"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0276.npz": {
+    "exists": true,
+    "bytes": 1814,
+    "sha256": "7cf80a56b97037399dca0f9df367f2c916ae3c7e508b8cf3468d96d0c5202f68"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0277.npz": {
+    "exists": true,
+    "bytes": 13257322,
+    "sha256": "2fa49ad9e78703a4cac62680e3dedd5a9a0b5f3cabda7b4bb23e8b8c06a88049"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0277.npz": {
+    "exists": true,
+    "bytes": 1812,
+    "sha256": "a9715e1eeac7426fd6d4d4863c7db6bdc4ca7218abe2cd3ce034e63b0707d435"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0278.npz": {
+    "exists": true,
+    "bytes": 13370734,
+    "sha256": "f7eaa0bed897cc366eb7dd00052d262a8dcc00f137044f5b1a6a1a5d288b84fc"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0278.npz": {
+    "exists": true,
+    "bytes": 1807,
+    "sha256": "51ba0155b5eaa8d7e39d60b8a78db803f78543dc732384f05db0e2c13803425b"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0329.npz": {
+    "exists": true,
+    "bytes": 10297875,
+    "sha256": "f68c15d3dda7fabbbc400a2b49ede16aa811f63e9bdce9402e601c2dc04d9127"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0329.npz": {
+    "exists": true,
+    "bytes": 1684,
+    "sha256": "ea7a4a71b6b646d423d40d20d87c7bb4bff74d0935f7ef89c5648248602e51c9"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0330.npz": {
+    "exists": true,
+    "bytes": 10428435,
+    "sha256": "b9182c099cea9679a3a5eea359876b3646386780ee8630a971b16acdbe8ea10f"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0330.npz": {
+    "exists": true,
+    "bytes": 1703,
+    "sha256": "03fb180a2348f1ccd17606e46e3acbf354e08f009ce30d5f73fe57d0391172e4"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0331.npz": {
+    "exists": true,
+    "bytes": 8762458,
+    "sha256": "c7f7f278ae4db34815ccb4c8e6d2657be6359359f92e76e225ba0541ceaa7ce4"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0331.npz": {
+    "exists": true,
+    "bytes": 1682,
+    "sha256": "41b0cc19e0aa52ec096c7f33a588a1c4140ea8ed45d83a96faa54d8515a9f86b"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0332.npz": {
+    "exists": true,
+    "bytes": 12015638,
+    "sha256": "00c5b77a2a10f05488644c2297b4a7a2182795841536dcb2a9d1cc3a4acf2d31"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0332.npz": {
+    "exists": true,
+    "bytes": 1813,
+    "sha256": "1172ea28e59e30c1b58b0a437d21f22ebbd255adf7468925b8c7492ecb2062f5"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0344.npz": {
+    "exists": true,
+    "bytes": 9405121,
+    "sha256": "7fac9967502184d4087a1158f6e342471c155707db2319e91d7cf5c1ac30f70f"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0344.npz": {
+    "exists": true,
+    "bytes": 1768,
+    "sha256": "254c280eac52347eeef87ed6de7d5eb6c38c4b2fed087017470cb829fdbaae13"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0345.npz": {
+    "exists": true,
+    "bytes": 9645735,
+    "sha256": "9bcec9d01442e1f6757ed7d76b73bb511b53983a22e916467e80aeb45e2083af"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0345.npz": {
+    "exists": true,
+    "bytes": 1685,
+    "sha256": "10f3672ea735c5077c306cc475b35cf43bfad6c0055508da65b6b89b08e3797e"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0346.npz": {
+    "exists": true,
+    "bytes": 10797501,
+    "sha256": "e82e40149be9a88d32b4aaf5e48694e29adf4e1afc74608d4b90605290e67706"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0346.npz": {
+    "exists": true,
+    "bytes": 1778,
+    "sha256": "102b7d29f2ac61e50912c521f1debd80c8d6b1e496a9e14ab775a4a387b41804"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0519.npz": {
+    "exists": true,
+    "bytes": 13739137,
+    "sha256": "6446dabbc7e207d65692861e64f37effe8500007864d6458752ff5d507e1bf5e"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0519.npz": {
+    "exists": true,
+    "bytes": 1829,
+    "sha256": "7c424cbf9840353b46ef38844dcea8c9c71fd29f79820e20ba5aa678027b0b5d"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0520.npz": {
+    "exists": true,
+    "bytes": 11813596,
+    "sha256": "a5587bf406a3b9b4b65e0426cd20fd10236663e99cd9b327e300a2fb202d0875"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0520.npz": {
+    "exists": true,
+    "bytes": 1802,
+    "sha256": "87130923d6fea9c05226b2b9ecb284d5cb999942f94fec5eb36c3a8370767603"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0521.npz": {
+    "exists": true,
+    "bytes": 13226567,
+    "sha256": "c8b7fb449a7c3a2a4cafd9381f5595aba62c6c028cdd70ded953bf08c8accff6"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0521.npz": {
+    "exists": true,
+    "bytes": 1793,
+    "sha256": "3d6a4cf6c4edef0de01dfcb9510989c509bcc18de555f04b6602fc5b0f4eb830"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0522.npz": {
+    "exists": true,
+    "bytes": 11796306,
+    "sha256": "1db766632d9ab1c2d91d5a8b41f169d4eb3a865a7c49c5b7cf452e387f5da37f"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0522.npz": {
+    "exists": true,
+    "bytes": 1812,
+    "sha256": "c3b2ca560feb389b59c6e492a3b479dfefcd2ddb7977d1022d9b1afea3766142"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0523.npz": {
+    "exists": true,
+    "bytes": 11400798,
+    "sha256": "23e114258fa2666db91ca67cdb6d173962b286274ca21e9c7c0f464708a23e8c"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0523.npz": {
+    "exists": true,
+    "bytes": 1834,
+    "sha256": "b2a70128577f4c9dc9490775c6c86cd9c3ed8a768720bcb7b2a58588c62462a2"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0524.npz": {
+    "exists": true,
+    "bytes": 12727869,
+    "sha256": "ed041c3b7d1a1a566c794e27c35ac308e05cbb7ad4fb81cef5a809980f84efcb"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0524.npz": {
+    "exists": true,
+    "bytes": 1822,
+    "sha256": "2f4e6048f43114ee487a8d84d811f802ab80daead24b62b5e4f1ea377d6681c9"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0552.npz": {
+    "exists": true,
+    "bytes": 10364414,
+    "sha256": "b34e8b6da7a93cb93e589a2ff2cee4af7a6f1176ba94976d313c5c0f94a79eb9"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0552.npz": {
+    "exists": true,
+    "bytes": 1820,
+    "sha256": "bc56d8bc65cc79529b11d773a1c39fe43a904d50ed367ffd58ee0060ee615f60"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0553.npz": {
+    "exists": true,
+    "bytes": 10811218,
+    "sha256": "4422e6746b6076c2f455223b8b4dc6e61f90c5c028a889feada1f0e452bd8065"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0553.npz": {
+    "exists": true,
+    "bytes": 1783,
+    "sha256": "1e17b17c9abe0d5a3c74b8bf68baad5f32fdd45ad580b962cef6a73fa16b922a"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0554.npz": {
+    "exists": true,
+    "bytes": 10752487,
+    "sha256": "fdff7a2673fea911369752cb113bf51376eb27942d84d20b9d709c4518120734"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0554.npz": {
+    "exists": true,
+    "bytes": 1761,
+    "sha256": "9a1829f1b740255fafd2cde421a4d694e8a5c7024f42697ca9b15784568e982a"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0555.npz": {
+    "exists": true,
+    "bytes": 10556468,
+    "sha256": "9495be3ff69b6631f091a8b6dc5f37d340026540edb505458c067cefbc3aebb9"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0555.npz": {
+    "exists": true,
+    "bytes": 1792,
+    "sha256": "76afc783e69d042d5240123f873dc5ce1416ce486d38d72eeae40f4a0833d728"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0556.npz": {
+    "exists": true,
+    "bytes": 13610773,
+    "sha256": "e487dfd8283a18231173994fb4bda83c5dbc68da142367245d90cd724ee17a00"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0556.npz": {
+    "exists": true,
+    "bytes": 1815,
+    "sha256": "cdec1af31fc7053db878f2f6cbff1de7a8c34b4227a64c3bdd262dbd0c0dee4d"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0557.npz": {
+    "exists": true,
+    "bytes": 11168650,
+    "sha256": "a4011350920da189164e4a3c5e5fd2c5c58bf3ede1151a8c9e17618212275a32"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0557.npz": {
+    "exists": true,
+    "bytes": 1815,
+    "sha256": "afee200d28de41e5f3dfba983b6eaa9a32179d55e202f34d3a597d45b7fb9a95"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0558.npz": {
+    "exists": true,
+    "bytes": 9875239,
+    "sha256": "91e82f0bb4acf10339157e45b6e2eaa6d698b4e3f65244f4f07883b0c93a0b2b"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0558.npz": {
+    "exists": true,
+    "bytes": 1828,
+    "sha256": "b729dc113474ee19bbfaa787c4b1288b0d44e5e536026f0fa89c2ea5c9204e38"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0559.npz": {
+    "exists": true,
+    "bytes": 11477044,
+    "sha256": "e89dbe4b4da5a5c759508d1a1149dd49153cdbad85d3e8d6bd6f1e1a6655c9fe"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0559.npz": {
+    "exists": true,
+    "bytes": 1805,
+    "sha256": "64216a4621b9ec583ba4e005bddf4169738bd581a7139b04e756de4723278a8e"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0560.npz": {
+    "exists": true,
+    "bytes": 11332123,
+    "sha256": "ee080c3ff00b9262b2c2597e1872283e98be9b696a3d08807fdc248c5ef34098"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0560.npz": {
+    "exists": true,
+    "bytes": 1802,
+    "sha256": "7351972f3c40ed83497f2bc991c4b43b9580a902dbe95ca686cd4ea978bebfa0"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0561.npz": {
+    "exists": true,
+    "bytes": 11981432,
+    "sha256": "ec2e55310f7647e361dc1e28684603e15071bb99e17478b689242a766cb7cf35"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0561.npz": {
+    "exists": true,
+    "bytes": 1804,
+    "sha256": "0661b2da713e7224a056481a71ae31d88124632f2b8ffd7245ae977324c0cec3"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0562.npz": {
+    "exists": true,
+    "bytes": 12804708,
+    "sha256": "8c2e3391f5d6f7e45582d241e6036dabcfb18c8287d286afe7d9b01576dfea26"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0562.npz": {
+    "exists": true,
+    "bytes": 1817,
+    "sha256": "dae57cd9fd7810146c0f39bf3fe7443b015a031f15b956ae731fec6111702f7b"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0563.npz": {
+    "exists": true,
+    "bytes": 10626070,
+    "sha256": "c1ae762e4e12661092a7866ce95cf3346cde2b0262afbc84330fb12a28335742"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0563.npz": {
+    "exists": true,
+    "bytes": 1801,
+    "sha256": "75aefa1dbf0411f6aac73aed355e88f0a38c53ae9206fd757a5ec620389834f1"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0564.npz": {
+    "exists": true,
+    "bytes": 8260847,
+    "sha256": "aa1d185d2b747c290b2eccc1e57b0ae093462122f37c010f281f854f345f4930"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0564.npz": {
+    "exists": true,
+    "bytes": 1424,
+    "sha256": "3684d5d480eae482d29a456e97713143c7343a18221b044b33b70710182842d4"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0565.npz": {
+    "exists": true,
+    "bytes": 12724134,
+    "sha256": "9953c662df481fb35e719ab80966940d5e1272328720c3db64f7ffe4dbb759c9"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0565.npz": {
+    "exists": true,
+    "bytes": 1811,
+    "sha256": "21a2b660ca8b6b68f5a61347d65e98f7b20fe879b59f121d246469624a5d8c81"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0625.npz": {
+    "exists": true,
+    "bytes": 12552435,
+    "sha256": "bdfc76094001552e596194d78b33e4e264779321b67e3b6aeb85d0a1a1a64ae4"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0625.npz": {
+    "exists": true,
+    "bytes": 1813,
+    "sha256": "1696c9d7a6ff2c51e473e74fe92f0a4ed28c1c91227629e8e70815a737e0f052"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0626.npz": {
+    "exists": true,
+    "bytes": 11753833,
+    "sha256": "dc67623ca56e482a1f7f77a5945caa6c3d7b93e351ffabe9bdb8ece8e7e9e5d1"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0626.npz": {
+    "exists": true,
+    "bytes": 1833,
+    "sha256": "473c51d7c5ac30bcde89e3d7d5e113938ca93f3c858769811a8273c46767e72d"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0627.npz": {
+    "exists": true,
+    "bytes": 11367320,
+    "sha256": "ba2364ce0acaee3a58512586e74c01a6f07b6eb5084c3f2a0cbeb1985cbaf0c3"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0627.npz": {
+    "exists": true,
+    "bytes": 1818,
+    "sha256": "f0d1a28e58a4823d4becb1cb321b342645038dc4c1fe1db8e0d98adba1c7edc3"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0629.npz": {
+    "exists": true,
+    "bytes": 12068536,
+    "sha256": "bd7cf86703711d5a73074a26fdda0ceab4de7bf4ad4ac7ff242fb9b68e7308a5"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0629.npz": {
+    "exists": true,
+    "bytes": 1828,
+    "sha256": "c9850a395374f98e21ee001363c07be052a5d45a427967d28bd46e555ae516b8"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0630.npz": {
+    "exists": true,
+    "bytes": 11472839,
+    "sha256": "9271242111f7c781f1d6636d4a85d82bef80b37d8dedc8bc37601e76ba0e919e"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0630.npz": {
+    "exists": true,
+    "bytes": 1821,
+    "sha256": "4df9effbb954f880ec78fec2a57629cdd53fd7c798ee0a9a00189daf54bfe4ae"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0632.npz": {
+    "exists": true,
+    "bytes": 9766767,
+    "sha256": "ee415e62089826da97123f2bcffa5a6f8f8376b28ea17aed676152bd797b4754"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0632.npz": {
+    "exists": true,
+    "bytes": 1798,
+    "sha256": "cd42a38604228dc5814e2fa198d5c5aae7f637fec40c9236396fc12e420ff3a9"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0633.npz": {
+    "exists": true,
+    "bytes": 12005098,
+    "sha256": "5a7dae612eb7f90453fb40afa4323c9b0fb1fa1926b9a91af57bfdf2b1a4525b"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0633.npz": {
+    "exists": true,
+    "bytes": 1803,
+    "sha256": "3daf7e3fca111b99e3fced52d59b9eff3af7fd01040caf73e7f1c31356c63766"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0634.npz": {
+    "exists": true,
+    "bytes": 11251654,
+    "sha256": "313de639cfc031e44317b47152845388a3e5155763ad65f2c2543c3b99aaad1f"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0634.npz": {
+    "exists": true,
+    "bytes": 1808,
+    "sha256": "fa968fa14c0e456119facc5ca39e592cea5fdb4a83b4c6ce86634014f058ad9b"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0635.npz": {
+    "exists": true,
+    "bytes": 9606881,
+    "sha256": "12ce9291fccf389e139f5c0281239e45aac2602ea93a76deeb09cdd85ff285a6"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0635.npz": {
+    "exists": true,
+    "bytes": 1774,
+    "sha256": "231749de39d72e9323e225ade2f28a5967d357674baf39dd3460ceca696d3a04"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0636.npz": {
+    "exists": true,
+    "bytes": 12698503,
+    "sha256": "530409496d393bb89b2ee1c346654600a4134c0cfb9ebed06ae4d4aeb00ee212"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0636.npz": {
+    "exists": true,
+    "bytes": 1818,
+    "sha256": "0ae457bd51bdb8480ff1a6ba9201dba2d18f5a82ec7346842f88a928f244a5b1"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0637.npz": {
+    "exists": true,
+    "bytes": 12605164,
+    "sha256": "c00f291859069f8797fe9ef402664f95c9bec7c66a9b27c22a220f647d4020e9"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0637.npz": {
+    "exists": true,
+    "bytes": 1815,
+    "sha256": "2e65009fff08ae03dc95a19631907eec74b9c8e66fa9bf63fe170a0dd914d03a"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0638.npz": {
+    "exists": true,
+    "bytes": 13424527,
+    "sha256": "59ee95f72a9fd2968f019364564bb2c7456b2f62a5ec4cebafc130b56f3ad43b"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0638.npz": {
+    "exists": true,
+    "bytes": 1822,
+    "sha256": "4c850e7486569ebebb61e4617129b31c1d4b7f64a1891c365f69d82bc209807b"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0770.npz": {
+    "exists": true,
+    "bytes": 12055263,
+    "sha256": "d09efa2e017a22d1fda8adf32a112cd2db7d3b5620c48b324ce492b1d935214b"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0770.npz": {
+    "exists": true,
+    "bytes": 1771,
+    "sha256": "38ab8f6aa50aa7529980bfcd89be193053b3e3e84a4390f67fcdcb60a9590d01"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0771.npz": {
+    "exists": true,
+    "bytes": 12106836,
+    "sha256": "1b1e01b7c42a17d5cfc012830c02fff41f85eb33773753a3468a43c3a7760035"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0771.npz": {
+    "exists": true,
+    "bytes": 1772,
+    "sha256": "1277b8c37189bcfe1eb2b7fe55b492ed96c2de13f7c6722852e992deccea6b6c"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0775.npz": {
+    "exists": true,
+    "bytes": 12283508,
+    "sha256": "08338d4edcc7c874c3fa18ae2efb982ade232dd041d9cecd49cb06968ef1354b"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0775.npz": {
+    "exists": true,
+    "bytes": 1786,
+    "sha256": "d2584ffd90fbaf5bdcf34fd32c8f9d15a04582366cf193d5c743a401a7b264d4"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0777.npz": {
+    "exists": true,
+    "bytes": 12247922,
+    "sha256": "45574e8b87fc20f67558dc84a73e0635b7994b2b2b3797640c4b02cc46f27e7f"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0777.npz": {
+    "exists": true,
+    "bytes": 1777,
+    "sha256": "091f75513d2ddee203ad514652f6ca0f8cc6d8a2bba09db611fa47ddd377dd88"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0778.npz": {
+    "exists": true,
+    "bytes": 11398173,
+    "sha256": "e1f2f32922ff26b8b04fb4d9deb7d8f2d82b90f026e917a2e93a4eacf1dd553a"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0778.npz": {
+    "exists": true,
+    "bytes": 1772,
+    "sha256": "4d49aa4e925405de77a13b954952c343c38d6a56c4c01c86c4b4b53edb258cd2"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0780.npz": {
+    "exists": true,
+    "bytes": 11453298,
+    "sha256": "3ac79a4bbdfb2595f3c15dca9ffe47e51f59192193dfa7ba9c82792cb49ff75a"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0780.npz": {
+    "exists": true,
+    "bytes": 1771,
+    "sha256": "f38fc17c9554dcdcd31ac2a4b9558bdae38f27ef3d22e2a9afc36869e1030b02"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0781.npz": {
+    "exists": true,
+    "bytes": 11818300,
+    "sha256": "22219037af81865d13c35f8ad71b217896e9e0add0a91d969d4d49f50522a879"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0781.npz": {
+    "exists": true,
+    "bytes": 1760,
+    "sha256": "83fc921a7db404befd2d5fcac34379f7e0f3f608820ce1f4bc88ead9ba613192"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0782.npz": {
+    "exists": true,
+    "bytes": 10117179,
+    "sha256": "398e7fda6eb477b5ce11f07ab8801af40e0dd41ddfa1d3b7bbc490dcb2e62a40"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0782.npz": {
+    "exists": true,
+    "bytes": 1791,
+    "sha256": "1e3ab98a29bf2f2d7b58189013d6aa57e29c8d69eb5c3005fc1ae602483cd590"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0783.npz": {
+    "exists": true,
+    "bytes": 11275097,
+    "sha256": "9160daefe35d8c91775cfe41d903d7511d56de983f54d44e551fa5406d9f87c4"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0783.npz": {
+    "exists": true,
+    "bytes": 1802,
+    "sha256": "0ead871c9069455029665f4b69affe3c7b8150d3b6ed554dbf5832d17273de49"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0784.npz": {
+    "exists": true,
+    "bytes": 11822884,
+    "sha256": "9743493f95ddd249600e650b036eb0f19e5dc3d12f1e8162734691f446ad903c"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0784.npz": {
+    "exists": true,
+    "bytes": 1770,
+    "sha256": "cac405e4695346d7c112244c9cf3815a0dae5fe05ff73aa5eb935b462f3351c3"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0794.npz": {
+    "exists": true,
+    "bytes": 11709496,
+    "sha256": "022cc2278a6ac744c5004abce52ed0c16a22ae77ba796adfd43e8f6f72b63adf"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0794.npz": {
+    "exists": true,
+    "bytes": 1765,
+    "sha256": "53fc9f6029de4682f8e9eed02720a1f429062b88d556a87afcab24434717901b"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0795.npz": {
+    "exists": true,
+    "bytes": 12950177,
+    "sha256": "f2dd5d1a97c710206aac25b063b88605a8290b909bbe55b2c66fe1cb5bc6bb41"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0795.npz": {
+    "exists": true,
+    "bytes": 1818,
+    "sha256": "68487446931201a5dfdcd20b7d4a641940e772a779d2c39e7d7e67d49984ad97"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0796.npz": {
+    "exists": true,
+    "bytes": 13776079,
+    "sha256": "bf8dbda67f5f1cdf87deebc6d0b16e6f557641b00ba2d9cf8994854d4da88757"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0796.npz": {
+    "exists": true,
+    "bytes": 1794,
+    "sha256": "7e0f40357f0997be7164709bd9b2466c0d585e3f6d78920f5fa546acbd432f60"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0797.npz": {
+    "exists": true,
+    "bytes": 14698076,
+    "sha256": "7e289bd261081c480a1d7ba5e033a0a8f8115dee1c06b1df8390616c6b071d80"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0797.npz": {
+    "exists": true,
+    "bytes": 1821,
+    "sha256": "e110c2bb9c0c53150442f67c8460f8b42022f2666ec6dcb2c6c0012d07c08ac2"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0798.npz": {
+    "exists": true,
+    "bytes": 10628054,
+    "sha256": "4dba45911af8c321c0df6467558bee60e56289d5bb31a0ae80c3554e2a3244ff"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0798.npz": {
+    "exists": true,
+    "bytes": 1790,
+    "sha256": "23572bf1a49a07b88aefd28705db882b0bd5be1471eda21bc130a384352d202a"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0799.npz": {
+    "exists": true,
+    "bytes": 13636968,
+    "sha256": "8c8f111d4d0df30399d2919b52d25f16613bfeec8e90ad69329bec04038fec6b"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0799.npz": {
+    "exists": true,
+    "bytes": 1812,
+    "sha256": "5ad59fb2412c63bef7287d1bae8fff346b979928935ef6f7302c67e79063746f"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0800.npz": {
+    "exists": true,
+    "bytes": 13703585,
+    "sha256": "921043380696e27d32595d3abcbd18c07ac4e8e88d5b13b2991d9ec4342b0151"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0800.npz": {
+    "exists": true,
+    "bytes": 1786,
+    "sha256": "b3af7c31330fa328be1a322a115f1d3a354409d912ea5504a544aa5bad7ada5f"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0802.npz": {
+    "exists": true,
+    "bytes": 13842674,
+    "sha256": "b44b47f7e0386a3f8ea364fdc8f685a5649eb89a487671ce2740ace7aa4f255b"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0802.npz": {
+    "exists": true,
+    "bytes": 1827,
+    "sha256": "25da99226c2d06f6db337c95ef4316203f97f582a113aced339f21457d6c6c57"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0904.npz": {
+    "exists": true,
+    "bytes": 12880311,
+    "sha256": "090e2d265243e28ff1e9c4126457fb53cf8d3b5f7a8d12fab73db26bd7ee8d4e"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0904.npz": {
+    "exists": true,
+    "bytes": 1823,
+    "sha256": "99b9e8ed39113c41751e99061166666cebe33e938db90acf0323d9db89c43f7d"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0905.npz": {
+    "exists": true,
+    "bytes": 12237049,
+    "sha256": "c482548fb34b73f7ddaabe3c1a88b7436aad7ffeb5f07a10c9017046f9947d85"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0905.npz": {
+    "exists": true,
+    "bytes": 1813,
+    "sha256": "1ab2a9accd77a823511789a39850bca488bb84b790cabd5bb0926471aba1fca8"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0906.npz": {
+    "exists": true,
+    "bytes": 12320515,
+    "sha256": "4f59e2269c439b21b7dbad581e760f90534e42cc78a2633cb3e7c323bf21ebc3"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0906.npz": {
+    "exists": true,
+    "bytes": 1807,
+    "sha256": "410424b078c2228212bbe74e93a4711b2c51419e12d2bd85e379d29cbcc8484a"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0907.npz": {
+    "exists": true,
+    "bytes": 14276131,
+    "sha256": "33e14337f45a9b52d797a267e7933300d13ffc06aafe327015ea2247b92b5cbe"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0907.npz": {
+    "exists": true,
+    "bytes": 1798,
+    "sha256": "1dfeb08206da40fcf01c36b0121afa3b6e845d2c4e0f7617eb6ebc37a10760f5"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0908.npz": {
+    "exists": true,
+    "bytes": 11731821,
+    "sha256": "ca7527027073494b4874a0bb7b5758f8fbb6da981885fa04dbff8cb3d595be6c"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0908.npz": {
+    "exists": true,
+    "bytes": 1812,
+    "sha256": "024b0d94b9640a46528a9036a045ff109aca765d723f30d94c8e3aabe54e510a"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0909.npz": {
+    "exists": true,
+    "bytes": 11028013,
+    "sha256": "595c92177631163f8ac616032362fa1a8aa18bbe28eb05062288e71f96bf7025"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0909.npz": {
+    "exists": true,
+    "bytes": 1819,
+    "sha256": "eaa0e5a61956122a8164086cab24395bfe8876eb9dc551db1b1c33c1678bca22"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0910.npz": {
+    "exists": true,
+    "bytes": 11408590,
+    "sha256": "b3f0920f357de4f0d57c625f1663d003c410d8a2c72436e2540fee701c1583f5"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0910.npz": {
+    "exists": true,
+    "bytes": 1836,
+    "sha256": "6258845dc0f6a9c8c079ce60d08c9a69e69b81edda3122ae62d286ed46903d80"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0911.npz": {
+    "exists": true,
+    "bytes": 13705457,
+    "sha256": "1dca4fb12d6b137849b341e19a334c58e318f443ba5d01d1cadd1213dca4ff88"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0911.npz": {
+    "exists": true,
+    "bytes": 1826,
+    "sha256": "e745d9556f0fe93a65263131d4253c8bf60e4b6beac2879baebf5d31211f0652"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0912.npz": {
+    "exists": true,
+    "bytes": 10962599,
+    "sha256": "148be951427506db8a3c06c278efc522c5fa80bf16996abcdd389a1ccf704c42"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0912.npz": {
+    "exists": true,
+    "bytes": 1812,
+    "sha256": "d7f6c076a5873e8f2f1de9eccb7d18481205cce57604250543bbe02ffbb98baf"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0913.npz": {
+    "exists": true,
+    "bytes": 11170901,
+    "sha256": "2ee899fd46df8c5a344f07c7686aea504c8eef8225003462848a41a6e94ade80"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0913.npz": {
+    "exists": true,
+    "bytes": 1816,
+    "sha256": "a26c2f20de6c13c3ba6fe315e8b509c52d92b714fef2287d90d434bdf8733139"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0914.npz": {
+    "exists": true,
+    "bytes": 13539012,
+    "sha256": "e65fa6a53e2de2d17d48c18f031286c3b7408af6e21110ecc2fe53c19e40e3a6"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0914.npz": {
+    "exists": true,
+    "bytes": 1809,
+    "sha256": "475fbfc29ed65243a86f299d057adba32e574932dd8a78aaf3ed681336ab5d89"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0915.npz": {
+    "exists": true,
+    "bytes": 13230246,
+    "sha256": "c5c2b7164171e6456fa6e6010cd0a31f540df1e53315a8e78aa3e93815c2e33f"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0915.npz": {
+    "exists": true,
+    "bytes": 1828,
+    "sha256": "7ee035d627cb93c453e2b6a4279aee09948f5d8019fec50b7d25fd4bc32c5373"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0916.npz": {
+    "exists": true,
+    "bytes": 12154263,
+    "sha256": "1534e331301e509c3d5a0db26dbcebc7dc25e8fae1ec40045e8fef85d1577f0e"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0916.npz": {
+    "exists": true,
+    "bytes": 1809,
+    "sha256": "1e4852a7b80f44e4973fdc26cd430a401610342ad20ffb9f086b266a64a1e490"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0917.npz": {
+    "exists": true,
+    "bytes": 11283425,
+    "sha256": "dd1c3553aca16accead54bf93ee06f56d296a5897e4c9cdc3e80caaec5a68026"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0917.npz": {
+    "exists": true,
+    "bytes": 1800,
+    "sha256": "cec65d11dd795161ae952b50edbb2ef989daa2efd887db25ada4a46ad2941469"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0919.npz": {
+    "exists": true,
+    "bytes": 13241338,
+    "sha256": "552603cd4f0e79af0a50a68b7e9896ae0148b87b00d98c01ae7596e53d5a4f2d"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0919.npz": {
+    "exists": true,
+    "bytes": 1821,
+    "sha256": "dfe37932b814170a7afb048ac508c9cd6e3ea8c7e067e903751614ad933ad79f"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0920.npz": {
+    "exists": true,
+    "bytes": 13091317,
+    "sha256": "c0a5dac4069a06ec9e300093908d353c42c5b6bb029dc5c846226161b95cff18"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0920.npz": {
+    "exists": true,
+    "bytes": 1813,
+    "sha256": "402fc1f2572556a20d7aab0a7e06cd50a06fb843138da0a5730829dd7da77cfc"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0921.npz": {
+    "exists": true,
+    "bytes": 10937379,
+    "sha256": "45b32179f5427bb85f60741853f4f002458c9f41187b72f475f9821ecea27f55"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0921.npz": {
+    "exists": true,
+    "bytes": 1802,
+    "sha256": "f303a44b54ec038339e47612e5628b9b29f2c2722666989579aa2de79507d4d7"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0922.npz": {
+    "exists": true,
+    "bytes": 13922721,
+    "sha256": "f044adb149e6e930a3ff7235412a1cafa8f8d4f8be995fb4a1726160598bf048"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0922.npz": {
+    "exists": true,
+    "bytes": 1795,
+    "sha256": "593e5707940c877aba187dd56394341a0551eb545e150652949ab5ec74f74f56"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0923.npz": {
+    "exists": true,
+    "bytes": 13543801,
+    "sha256": "85c926154496e23b1ccc2652371e26cae40f2c8e0728cdd9000b76a758492fff"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0923.npz": {
+    "exists": true,
+    "bytes": 1827,
+    "sha256": "58570539c503499baf0b9ea190dfaf30b4fabdc92caf10d5c1cd450d95806ce6"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0924.npz": {
+    "exists": true,
+    "bytes": 13679926,
+    "sha256": "407cae65dfafeaa9eea9acc39a8c5340ec0f487d71c5686637448a1be248ad66"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0924.npz": {
+    "exists": true,
+    "bytes": 1801,
+    "sha256": "72968616e2017aa5fd6b6136c453ae7ce1ec2e9d20b2f1df2c99faf2ab0bba9d"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0925.npz": {
+    "exists": true,
+    "bytes": 12535574,
+    "sha256": "1f7b8afea5281f242ea01b614bf914944f6fd6ea87015a3b27ef1eab98382e0e"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0925.npz": {
+    "exists": true,
+    "bytes": 1799,
+    "sha256": "6968d6e1c7a2985983c8a058817c3e0577ce9cbf16377a44b5da5dc8879ec691"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0926.npz": {
+    "exists": true,
+    "bytes": 11383688,
+    "sha256": "076bac2ff3050c43f3a0b4066d813aba8ce59a1824530f1c06ef74a0b9bd23b6"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0926.npz": {
+    "exists": true,
+    "bytes": 1809,
+    "sha256": "3578aaed810cd5243ba68797c147ecdd93c6d2dd1a3c155d9f953b1529dc4f6c"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0927.npz": {
+    "exists": true,
+    "bytes": 12750260,
+    "sha256": "d6b8ecced0f3a3b6b22ae8d5fecabb8149eef0cb106ea751ed3c2664d6999d8d"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0927.npz": {
+    "exists": true,
+    "bytes": 1800,
+    "sha256": "d2ad1305fc5e8a0f48dfe586ef01d0754b328dc42da28239c01c33bb40d9a3bb"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0928.npz": {
+    "exists": true,
+    "bytes": 13166186,
+    "sha256": "05c0e431b2fb707ccfdfe3ee1ce05f18fb46b7814c9e6da60636567606cc5ecb"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0928.npz": {
+    "exists": true,
+    "bytes": 1813,
+    "sha256": "e594eec7bd088b83481bf926b51e8bba6bc2f7482dd0266fa46ad90d9c76f67c"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0929.npz": {
+    "exists": true,
+    "bytes": 12144114,
+    "sha256": "ded6eddf0597e7a1cafeba6c0d33d2bd124890d8a76acaac71e062eba94a0d43"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0929.npz": {
+    "exists": true,
+    "bytes": 1802,
+    "sha256": "4c6d2e4eb9d79922ef911bbf3f06a39d7d5c0e2e7110ed512027f3adbbcc0749"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0930.npz": {
+    "exists": true,
+    "bytes": 12471338,
+    "sha256": "674f5ddb6a144dc2385d86aa6f13579dd8bf60a75985e8892a231436be3606bc"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0930.npz": {
+    "exists": true,
+    "bytes": 1795,
+    "sha256": "133f945e88c29ceb855723de9612fe2402bce1a49d8ea1393e2719b0c7727459"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0931.npz": {
+    "exists": true,
+    "bytes": 14080273,
+    "sha256": "5241d051f94b10896c491cf2dfe71852823c7414827c2422a6d01897b3ce27a5"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0931.npz": {
+    "exists": true,
+    "bytes": 1812,
+    "sha256": "24d9554332b932122572d6539d3f498a9bc51fdb4b3764ed56674ad97299c3a7"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0962.npz": {
+    "exists": true,
+    "bytes": 11395592,
+    "sha256": "daa4d5cb5022e42ccc046909c4233399954039c78667f6d63ee97c62eca3a397"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0962.npz": {
+    "exists": true,
+    "bytes": 1826,
+    "sha256": "3ce6f53cce21baa9af822d5649e206e3c32e8e3f8cc3d7a68337d983491b62d7"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0963.npz": {
+    "exists": true,
+    "bytes": 10241463,
+    "sha256": "8f0f01e0a29d286f4bdc773aeeeb022638ced054d090a6efa99a413c28646738"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0963.npz": {
+    "exists": true,
+    "bytes": 1818,
+    "sha256": "3410a6b61d393373a11452b5e6e3a85e6516cf3ad8041c831e14930d12fb7c62"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0966.npz": {
+    "exists": true,
+    "bytes": 12213389,
+    "sha256": "d48b853f5d382003c3e13d9e709893358a91f1baab532132da876c95771f0566"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0966.npz": {
+    "exists": true,
+    "bytes": 1806,
+    "sha256": "76d7756c043eb0ec75b7c587a1ab94ff1dacb78aa5051c36266dde6f68f96b8c"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0967.npz": {
+    "exists": true,
+    "bytes": 14224577,
+    "sha256": "c65c3b61a421f85c70528844e7f0b06944efde1ae479bc12ba0348d282fc6b75"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0967.npz": {
+    "exists": true,
+    "bytes": 1816,
+    "sha256": "f50e1458a3064f2af43a1e7a11fbeda3a010522046342d2035302d9e116162ee"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0968.npz": {
+    "exists": true,
+    "bytes": 13736543,
+    "sha256": "9b5ecbc235eb97a0c4ae728667d3dc1e14aa1b76f1a1ef13fe375fa3b093f5dd"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0968.npz": {
+    "exists": true,
+    "bytes": 1822,
+    "sha256": "4f9c21f5b8cc4e52b807e3a577575f94c6391800d262ecdbf854eceb96b41622"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0969.npz": {
+    "exists": true,
+    "bytes": 12354521,
+    "sha256": "56eb40aa30ccccc6f735ebfa1a7370b4f48bdb1a981818f988171e1d99ff4738"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0969.npz": {
+    "exists": true,
+    "bytes": 1825,
+    "sha256": "1d7fc3a4af2bdb309a34a6b1316876c74d271da54df6077363b2718e4fc27dc6"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0971.npz": {
+    "exists": true,
+    "bytes": 11984549,
+    "sha256": "f99d3e2a098e729724262ac43a5ed49a74d80603f5bbe6cc758d4e8dadc7073b"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0971.npz": {
+    "exists": true,
+    "bytes": 1816,
+    "sha256": "b2ad918a0f64d939bd6d786b3fd4c988d276cd25755f0a0bb78331e33b497891"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-0972.npz": {
+    "exists": true,
+    "bytes": 12952377,
+    "sha256": "35a27d58ccd664bc79db27831af7433e061bb2e9d2166e74e97330a7c0765e53"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-0972.npz": {
+    "exists": true,
+    "bytes": 1815,
+    "sha256": "34de6893642fc8f1fd7d57ff38d85bfebe8315f56d98943b8bd16339be10014e"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-1059.npz": {
+    "exists": true,
+    "bytes": 12953980,
+    "sha256": "7982047c085f7f36691652c0435d94d79a2e0bc68ff6249510ec4aafd948cf82"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-1059.npz": {
+    "exists": true,
+    "bytes": 1820,
+    "sha256": "545bc47b7269f44d10d94b5e0d6d45682e6730a688ea864987d9112f294e36fd"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-1060.npz": {
+    "exists": true,
+    "bytes": 12688990,
+    "sha256": "90e69b926195aa96a289a1755ae2229d97cd988ed01184644acfe136b173efb7"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-1060.npz": {
+    "exists": true,
+    "bytes": 1818,
+    "sha256": "b45a188fdf92a3cc6ff8fac9a8265e67ae71b66c85274987b036e705c6064376"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-1061.npz": {
+    "exists": true,
+    "bytes": 10884371,
+    "sha256": "78312a0f42ab8725682915bd8c9c958780d137705158624448f828f967e8ab0c"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-1061.npz": {
+    "exists": true,
+    "bytes": 1806,
+    "sha256": "0d5549e0be4aefa443192b9cf17272c8542bb58156ba21bf76f5cedb22f222a9"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-1062.npz": {
+    "exists": true,
+    "bytes": 11493707,
+    "sha256": "a500062fd04fb5267a994082809c2b6ba90b4c0d7c8bbc6a5924eea713fbc957"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-1062.npz": {
+    "exists": true,
+    "bytes": 1824,
+    "sha256": "4b8392b901793f4b463967b22b37407708cce561941787b2ba1eda489310677b"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-1063.npz": {
+    "exists": true,
+    "bytes": 12560733,
+    "sha256": "086d3af271b8ffdf7dbac21383ab433827e28dc74cc7354312cb32cf70cfb85a"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-1063.npz": {
+    "exists": true,
+    "bytes": 1809,
+    "sha256": "2d1b5f4cfe4588655416bd206a8eb768c58a9507c140637481cfdb0081db390c"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-1064.npz": {
+    "exists": true,
+    "bytes": 11877728,
+    "sha256": "8911117bfb7ae05385d8a8f2d8bf5eb9c74c0eb4217784a501ef3943486c2e83"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-1064.npz": {
+    "exists": true,
+    "bytes": 1814,
+    "sha256": "8e959e6afcaa0792dcd6034f5080060e5f32b6475fcecdc461c161b5fbea04e3"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-1065.npz": {
+    "exists": true,
+    "bytes": 11753605,
+    "sha256": "b6a608cfbd6cd8bb910319134563c074109288bfda78092e61ab5d3352d83a0f"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-1065.npz": {
+    "exists": true,
+    "bytes": 1808,
+    "sha256": "ced45ade67d22d17ae925de5d158fd6e24d15294edb0546e70e2e5c461995923"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-1066.npz": {
+    "exists": true,
+    "bytes": 12117198,
+    "sha256": "4a37f1eb6516ed06fc2978b95f9db867d92a8a867739f1c2fd46883fd6760b30"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-1066.npz": {
+    "exists": true,
+    "bytes": 1821,
+    "sha256": "ac9df1ec054f3de0f819c733e9e83197ff4ef708b0ebc54dda948f2b03288320"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-1067.npz": {
+    "exists": true,
+    "bytes": 12052405,
+    "sha256": "1bb0c0b52e249078557940c45016112f9fa2e66947a4ad9d9dcdd87c87baaf31"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-1067.npz": {
+    "exists": true,
+    "bytes": 1814,
+    "sha256": "2dca0971f6e38aff74f7c62d8608654088d90dcfe64f65e8852149a27609c035"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-1068.npz": {
+    "exists": true,
+    "bytes": 10963492,
+    "sha256": "f225b9abe337e0e4ccae0931b5e764d736faf9bbecd5b6d519d7806aa36ca810"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-1068.npz": {
+    "exists": true,
+    "bytes": 1805,
+    "sha256": "1dced975e7e3d3e87d3efad4097d4f237d946e6b2ec72086bdb5e3d021dc8c36"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-1069.npz": {
+    "exists": true,
+    "bytes": 10419736,
+    "sha256": "e2b149d10caf3929c24a1f3c2c62b39ef7017cff0a367f161e3b9eb7bfd74891"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-1069.npz": {
+    "exists": true,
+    "bytes": 1811,
+    "sha256": "c37616521dc5101617ca7f007130ada6926250114b8f0671f94f0ad2a2f09970"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-1070.npz": {
+    "exists": true,
+    "bytes": 11874712,
+    "sha256": "2dc096a961ee94eebacf29e5740a92cf88d1835bf2b689bcfa8f8e3f3951afb8"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-1070.npz": {
+    "exists": true,
+    "bytes": 1805,
+    "sha256": "9ec057eb3efefd7d7780d002ec65d016b4da78046ab1ddb83f4339c6b5345941"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-1071.npz": {
+    "exists": true,
+    "bytes": 13056207,
+    "sha256": "4354dbfbe1750a6672bf24f9e1efda4a1dcccd939afad6b15ae6ad95eea13e49"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-1071.npz": {
+    "exists": true,
+    "bytes": 1814,
+    "sha256": "4f193b607718b1eccb891ac226e3e6535de02510fa17815d87da7f05a1aa3aae"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-1072.npz": {
+    "exists": true,
+    "bytes": 12891558,
+    "sha256": "a7981e78ec22f15243aedd5ae3fbb91689695ffcc87540519d9a2f4993b3d7db"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-1072.npz": {
+    "exists": true,
+    "bytes": 1822,
+    "sha256": "0bd23b2cd3068f1ca58044c7757652bce0f9f6b556da4bcd403718832107a08a"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/occ3d/scene-1073.npz": {
+    "exists": true,
+    "bytes": 11370862,
+    "sha256": "fba70a0fdfe422e43d4d570a554b532b83d923ef26508d2afeba876ab4fea941"
+  },
+  "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d/scene-1073.npz": {
+    "exists": true,
+    "bytes": 1811,
+    "sha256": "7a594a04d48cba18020c2dd7c45aa9f2b7b3c207945f75c78d60fffb6456985d"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/scores_occ3d_past5_seed0_completion.npz": {
+    "exists": true,
+    "bytes": 1908946,
+    "sha256": "b37225aeaa5817c3b08c0b67d98c4b4e5431674348b2edf513cab5ea2bdea242"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/counts_occ3d_past5_seed0_completion.npz": {
+    "exists": true,
+    "bytes": 273494,
+    "sha256": "6e230b247d88d140a3a96ab8c60aa1ba82b51bf379e88761d9176fb5e36fa321"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/scores_occ3d_past5_seed1_completion.npz": {
+    "exists": true,
+    "bytes": 1854931,
+    "sha256": "3b2b04b846767ad0d33596d1a001fa91bd87bfc11ed65733e5cdeac4f75bd290"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/counts_occ3d_past5_seed1_completion.npz": {
+    "exists": true,
+    "bytes": 263867,
+    "sha256": "6613458013315a450d1f81ff6e60bfb16fc08a3c7cb1d5dd6a35d2deebd2868a"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/scores_occ3d_past5_seed2_completion.npz": {
+    "exists": true,
+    "bytes": 1794530,
+    "sha256": "ba0e6d117a24522bc5284e7a8eb6856b52c4a7ca6e0c087ec4500113e1681f01"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/counts_occ3d_past5_seed2_completion.npz": {
+    "exists": true,
+    "bytes": 261891,
+    "sha256": "4c189da809b2e1791a48bf54b8b54ba87d77d7f5e628069f56826d9ecbe5aaeb"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/scores_occ3d_occany_fwd_seed0_completion.npz": {
+    "exists": true,
+    "bytes": 1470918,
+    "sha256": "80c7f649c6041df0450c66678f132a59e098709ad929878eb34bbeac17934058"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/counts_occ3d_occany_fwd_seed0_completion.npz": {
+    "exists": true,
+    "bytes": 203593,
+    "sha256": "8b9634bf57d99e9783fc13544e13f40ad34c31bebe806c7df1bdea1d1299d5f0"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/scores_occ3d_occany_fwd_seed1_completion.npz": {
+    "exists": true,
+    "bytes": 1423918,
+    "sha256": "ee88cbf902262bc8f0f869d6f864940ae0008f5b77adfcc531c38aa234bcbde1"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/counts_occ3d_occany_fwd_seed1_completion.npz": {
+    "exists": true,
+    "bytes": 195373,
+    "sha256": "8a313a95d2da8de5dc695a9491b49fea0a841b5541aca73eaa7f7f5beedcc9c4"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/scores_occ3d_occany_fwd_seed2_completion.npz": {
+    "exists": true,
+    "bytes": 1376087,
+    "sha256": "7fce0baa8536ef41a030208a7e4ebf0c9fec4a42aa76cd7575ed3c488989e141"
+  },
+  "/home/minh/workspace/lingbot-map_fork/artifacts/gate8c1/counts_occ3d_occany_fwd_seed2_completion.npz": {
+    "exists": true,
+    "bytes": 194604,
+    "sha256": "a8d7ed32ae5d5483cb56219c310a3400f63af792702881db53825d1b590466e3"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "gate": "8C-1 (ceiling fix, neighbourhood sky)",
+  "claim": "target-domain-free transfer of the completion module: trained and selected on KITTI-360 alone, evaluated on untouched SemanticKITTI and Occ3D without adaptation. NOT whole-system zero-shot: the frozen foundation models (LingBot-Map, MoGe-2, Trident-H) have not had their training provenance audited, and LingBot-Map's published mixture includes KITTI-360.",
+  "derived_from": "artifacts/gate8c1/frozen_manifest.json",
+  "changes": [
+    "CompletionUNet convolutions use padding_mode='replicate'; zero padding manufactured observed=0 AND unobserved=0 at the array boundary, a state absent from training, which leaked inward and flooded the grid ceiling.",
+    "gate8c1/rawtarget.py marks open sky FREE instead of UNKNOWN: in a column whose LiDAR returns reached a surface, voxels more than SKY_MARGIN_VOX above the topmost return are not occluded, merely above the sensor's top ring. Leaving them UNKNOWN dropped them from the loss and left the ceiling unsupervised (1.12% of the top layer supervised; now 21.9%).",
+    "Retrained from scratch on the rebuilt KITTI-360 supervision; checkpoint and thresholds re-selected by the gate's own rule on drive 0006 only.",
+    "The sky rule now takes the MAXIMUM column top over a 15x15 window, so a column with no LiDAR return of its own -- 43% of the grid -- inherits a roof height from its neighbours instead of staying unsupervised. A window with no return frees nothing."
+  ],
+  "frozen_at": "2026-09-05T01:31:29+02:00",
+  "data_root": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1_sky2",
+  "n_val_samples": 590,
+  "rule": {
+    "checkpoint": "highest full-grid occupancy AP on KITTI-360 drive 0006",
+    "occupancy_threshold": "final-logit threshold maximising full-grid IoU on drive 0006",
+    "semantic_threshold": "maximises coverage x agreement with the frozen teacher on voxels where both halves of the future window agree; no human semantic label",
+    "forbidden": "SemanticKITTI and Occ3D/nuScenes are not read"
+  },
+  "seeds": {
+    "0": {
+      "seed": 0,
+      "config": "configs/gate8c1_sky2/seed0.yaml",
+      "selected": "best",
+      "checkpoint": "artifacts/gate8c1/checkpoints/sky2_seed0_best.pt",
+      "checkpoint_sha256": "374e791edb998319f3e572bc157c36fcd56b6f6d393e820bcd7bb16b9b290532",
+      "occupancy_threshold": -0.21875,
+      "semantic_threshold": 0.0,
+      "source_ap": 0.08985652670709876,
+      "source_ap_over_prevalence": 2.784131079383083,
+      "source_auroc": 0.7430111498808721,
+      "source_iou_at_threshold": 0.1027565106169715
+    },
+    "1": {
+      "seed": 1,
+      "config": "configs/gate8c1_sky2/seed1.yaml",
+      "selected": "last",
+      "checkpoint": "artifacts/gate8c1/checkpoints/sky2_seed1_last.pt",
+      "checkpoint_sha256": "c3a8558210d8291e6d76c9688c90101089dff7eeff8b1ce51586f370d6de3288",
+      "occupancy_threshold": -0.125,
+      "semantic_threshold": 0.0,
+      "source_ap": 0.08757429757352495,
+      "source_ap_over_prevalence": 2.7134180739520106,
+      "source_auroc": 0.7376650721248533,
+      "source_iou_at_threshold": 0.09820373216952424
+    },
+    "2": {
+      "seed": 2,
+      "config": "configs/gate8c1_sky2/seed2.yaml",
+      "selected": "last",
+      "checkpoint": "artifacts/gate8c1/checkpoints/sky2_seed2_last.pt",
+      "checkpoint_sha256": "7b5453615ddb1c403570e47df70c9126fe94b99ad3ef20922c81b48c9920b207",
+      "occupancy_threshold": -0.28125,
+      "semantic_threshold": 0.0,
+      "source_ap": 0.08398451503372426,
+      "source_ap_over_prevalence": 2.6021915943233886,
+      "source_auroc": 0.7257697815823194,
+      "source_iou_at_threshold": 0.09781366032552709
+    }
+  },
+  "firewall_proof": {
+    "selection": {
+      "n_opened": 7092,
+      "n_unique": 596,
+      "violations": [],
+      "forbidden_patterns": [
+        "data/kitti/dataset",
+        "occ3d_gt",
+        "nuscenes",
+        "lingbot_occ3d_zeroshot",
+        "scale_gate/cache",
+        "preprocess/labels"
+      ],
+      "note": "selection ran inside a file-access audit; opening a SemanticKITTI / Occ3D / SSCBench-label path would have raised"
+    },
+    "total_violations": 0
+  }
+}

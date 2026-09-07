@@ -1,0 +1,26 @@
+{
+  "dataset": "semantickitti",
+  "shard": 1,
+  "num_shards": 4,
+  "n_assigned": 204,
+  "n_written": 204,
+  "n_skipped_existing": 0,
+  "seconds": 380.0773265361786,
+  "seconds_per_frame": 1.863124154362024,
+  "peak_gpu_gib": 10.033168315887451,
+  "fp16_checks": [
+    {
+      "frame": "08_000005",
+      "max_abs_prob_err": 0.00019043684005737305,
+      "argmax_disagree": 4,
+      "pixels": 79772
+    }
+  ],
+  "proc_hw": [
+    154,
+    518
+  ],
+  "n_classes": 19,
+  "sam_ckpt_sha256": "a7bf3b02f3ebf126",
+  "targets_opened": "none"
+}

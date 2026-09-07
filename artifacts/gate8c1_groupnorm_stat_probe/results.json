@@ -1,0 +1,688 @@
+{
+  "real": {
+    "00004": {
+      "A": {
+        "all": {
+          "tp": 10037,
+          "fp": 51833,
+          "fn": 9338,
+          "tn": 178464,
+          "valid": 249672,
+          "occupied": 19375,
+          "free": 230297,
+          "iou": 0.1409532636782384,
+          "fpr": 0.22507023539168985
+        },
+        "boundary": {
+          "tp": 4242,
+          "fp": 12998,
+          "fn": 681,
+          "tn": 5121,
+          "valid": 23042,
+          "occupied": 4923,
+          "free": 18119,
+          "iou": 0.23670554098543609,
+          "fpr": 0.7173685081958165
+        },
+        "interior": {
+          "tp": 609,
+          "fp": 2417,
+          "fn": 2930,
+          "tn": 64346,
+          "valid": 70302,
+          "occupied": 3539,
+          "free": 66763,
+          "iou": 0.10224983210208194,
+          "fpr": 0.036202687117115766
+        }
+      },
+      "B": {
+        "all": {
+          "tp": 7142,
+          "fp": 24839,
+          "fn": 12233,
+          "tn": 205458,
+          "valid": 249672,
+          "occupied": 19375,
+          "free": 230297,
+          "iou": 0.16153254625231828,
+          "fpr": 0.10785637676565478
+        },
+        "boundary": {
+          "tp": 3733,
+          "fp": 9731,
+          "fn": 1190,
+          "tn": 8388,
+          "valid": 23042,
+          "occupied": 4923,
+          "free": 18119,
+          "iou": 0.25474273235976524,
+          "fpr": 0.5370605441801424
+        },
+        "interior": {
+          "tp": 759,
+          "fp": 2874,
+          "fn": 2780,
+          "tn": 63889,
+          "valid": 70302,
+          "occupied": 3539,
+          "free": 66763,
+          "iou": 0.1183533447684391,
+          "fpr": 0.04304779593487411
+        }
+      },
+      "C": {
+        "all": {
+          "tp": 3925,
+          "fp": 11363,
+          "fn": 15450,
+          "tn": 218934,
+          "valid": 249672,
+          "occupied": 19375,
+          "free": 230297,
+          "iou": 0.12769210748910143,
+          "fpr": 0.04934063405081265
+        },
+        "boundary": {
+          "tp": 1248,
+          "fp": 1180,
+          "fn": 3675,
+          "tn": 16939,
+          "valid": 23042,
+          "occupied": 4923,
+          "free": 18119,
+          "iou": 0.20448959528100935,
+          "fpr": 0.06512500689883548
+        },
+        "interior": {
+          "tp": 608,
+          "fp": 2417,
+          "fn": 2931,
+          "tn": 64346,
+          "valid": 70302,
+          "occupied": 3539,
+          "free": 66763,
+          "iou": 0.10208193418401612,
+          "fpr": 0.036202687117115766
+        }
+      }
+    },
+    "00889": {
+      "A": {
+        "all": {
+          "tp": 8363,
+          "fp": 21409,
+          "fn": 27597,
+          "tn": 310439,
+          "valid": 367808,
+          "occupied": 35960,
+          "free": 331848,
+          "iou": 0.14577559309034496,
+          "fpr": 0.0645144765073166
+        },
+        "boundary": {
+          "tp": 1827,
+          "fp": 2818,
+          "fn": 577,
+          "tn": 5547,
+          "valid": 10769,
+          "occupied": 2404,
+          "free": 8365,
+          "iou": 0.34986595174262736,
+          "fpr": 0.33687985654512853
+        },
+        "interior": {
+          "tp": 637,
+          "fp": 3682,
+          "fn": 11730,
+          "tn": 190577,
+          "valid": 206626,
+          "occupied": 12367,
+          "free": 194259,
+          "iou": 0.039690946476415974,
+          "fpr": 0.01895407677379169
+        }
+      },
+      "B": {
+        "all": {
+          "tp": 4876,
+          "fp": 17965,
+          "fn": 31084,
+          "tn": 313883,
+          "valid": 367808,
+          "occupied": 35960,
+          "free": 331848,
+          "iou": 0.09042188224385721,
+          "fpr": 0.05413623104553892
+        },
+        "boundary": {
+          "tp": 964,
+          "fp": 2067,
+          "fn": 1440,
+          "tn": 6298,
+          "valid": 10769,
+          "occupied": 2404,
+          "free": 8365,
+          "iou": 0.21561171997316037,
+          "fpr": 0.24710101613867305
+        },
+        "interior": {
+          "tp": 1080,
+          "fp": 5538,
+          "fn": 11287,
+          "tn": 188721,
+          "valid": 206626,
+          "occupied": 12367,
+          "free": 194259,
+          "iou": 0.06031834683049427,
+          "fpr": 0.028508331660309173
+        }
+      },
+      "C": {
+        "all": {
+          "tp": 3344,
+          "fp": 12011,
+          "fn": 32616,
+          "tn": 319837,
+          "valid": 367808,
+          "occupied": 35960,
+          "free": 331848,
+          "iou": 0.06970878238936024,
+          "fpr": 0.03619428171934139
+        },
+        "boundary": {
+          "tp": 564,
+          "fp": 600,
+          "fn": 1840,
+          "tn": 7765,
+          "valid": 10769,
+          "occupied": 2404,
+          "free": 8365,
+          "iou": 0.1877496671105193,
+          "fpr": 0.07172743574417215
+        },
+        "interior": {
+          "tp": 626,
+          "fp": 3621,
+          "fn": 11741,
+          "tn": 190638,
+          "valid": 206626,
+          "occupied": 12367,
+          "free": 194259,
+          "iou": 0.03915436577433075,
+          "fpr": 0.01864006300866369
+        }
+      }
+    },
+    "01771": {
+      "A": {
+        "all": {
+          "tp": 5077,
+          "fp": 20904,
+          "fn": 11342,
+          "tn": 223007,
+          "valid": 260330,
+          "occupied": 16419,
+          "free": 243911,
+          "iou": 0.1360287222356188,
+          "fpr": 0.08570339181094744
+        },
+        "boundary": {
+          "tp": 2134,
+          "fp": 2814,
+          "fn": 133,
+          "tn": 4222,
+          "valid": 9303,
+          "occupied": 2267,
+          "free": 7036,
+          "iou": 0.419996063766975,
+          "fpr": 0.3999431495167709
+        },
+        "interior": {
+          "tp": 1,
+          "fp": 1033,
+          "fn": 4768,
+          "tn": 107053,
+          "valid": 112855,
+          "occupied": 4769,
+          "free": 108086,
+          "iou": 0.0001723543605653223,
+          "fpr": 0.009557204448309679
+        }
+      },
+      "B": {
+        "all": {
+          "tp": 1025,
+          "fp": 8327,
+          "fn": 15394,
+          "tn": 235584,
+          "valid": 260330,
+          "occupied": 16419,
+          "free": 243911,
+          "iou": 0.041420835690616664,
+          "fpr": 0.034139501703490206
+        },
+        "boundary": {
+          "tp": 286,
+          "fp": 743,
+          "fn": 1981,
+          "tn": 6293,
+          "valid": 9303,
+          "occupied": 2267,
+          "free": 7036,
+          "iou": 0.09501661129568106,
+          "fpr": 0.10559977259806709
+        },
+        "interior": {
+          "tp": 29,
+          "fp": 2029,
+          "fn": 4740,
+          "tn": 106057,
+          "valid": 112855,
+          "occupied": 4769,
+          "free": 108086,
+          "iou": 0.004265960576640188,
+          "fpr": 0.018772088892178452
+        }
+      },
+      "C": {
+        "all": {
+          "tp": 386,
+          "fp": 4615,
+          "fn": 16033,
+          "tn": 239296,
+          "valid": 260330,
+          "occupied": 16419,
+          "free": 243911,
+          "iou": 0.018351240848150614,
+          "fpr": 0.01892083587866066
+        },
+        "boundary": {
+          "tp": 73,
+          "fp": 392,
+          "fn": 2194,
+          "tn": 6644,
+          "valid": 9303,
+          "occupied": 2267,
+          "free": 7036,
+          "iou": 0.02745393004889056,
+          "fpr": 0.0557134735645253
+        },
+        "interior": {
+          "tp": 1,
+          "fp": 1006,
+          "fn": 4768,
+          "tn": 107080,
+          "valid": 112855,
+          "occupied": 4769,
+          "free": 108086,
+          "iou": 0.00017316017316017316,
+          "fpr": 0.009307403363987936
+        }
+      }
+    }
+  },
+  "pooled": {
+    "A": {
+      "all": {
+        "tp": 23477,
+        "fp": 94146,
+        "fn": 48277,
+        "tn": 711910,
+        "valid": 877810,
+        "occupied": 71754,
+        "free": 806056,
+        "iou": 0.14151295961422544,
+        "fpr": 0.11679833659199856
+      },
+      "boundary": {
+        "tp": 8203,
+        "fp": 18630,
+        "fn": 1391,
+        "tn": 14890,
+        "valid": 43114,
+        "occupied": 9594,
+        "free": 33520,
+        "iou": 0.2906391723356009,
+        "fpr": 0.5557875894988067
+      },
+      "interior": {
+        "tp": 1247,
+        "fp": 7132,
+        "fn": 19428,
+        "tn": 361976,
+        "valid": 389783,
+        "occupied": 20675,
+        "free": 369108,
+        "iou": 0.04484482324594526,
+        "fpr": 0.01932225798411305
+      }
+    },
+    "B": {
+      "all": {
+        "tp": 13043,
+        "fp": 51131,
+        "fn": 58711,
+        "tn": 754925,
+        "valid": 877810,
+        "occupied": 71754,
+        "free": 806056,
+        "iou": 0.10613988688611303,
+        "fpr": 0.0634335579661959
+      },
+      "boundary": {
+        "tp": 4983,
+        "fp": 12541,
+        "fn": 4611,
+        "tn": 20979,
+        "valid": 43114,
+        "occupied": 9594,
+        "free": 33520,
+        "iou": 0.22511859046758528,
+        "fpr": 0.3741348448687351
+      },
+      "interior": {
+        "tp": 1868,
+        "fp": 10441,
+        "fn": 18807,
+        "tn": 358667,
+        "valid": 389783,
+        "occupied": 20675,
+        "free": 369108,
+        "iou": 0.060033423319192696,
+        "fpr": 0.028287113798671392
+      }
+    },
+    "C": {
+      "all": {
+        "tp": 7655,
+        "fp": 27989,
+        "fn": 64099,
+        "tn": 778067,
+        "valid": 877810,
+        "occupied": 71754,
+        "free": 806056,
+        "iou": 0.07674724040784817,
+        "fpr": 0.03472339390811557
+      },
+      "boundary": {
+        "tp": 1885,
+        "fp": 2172,
+        "fn": 7709,
+        "tn": 31348,
+        "valid": 43114,
+        "occupied": 9594,
+        "free": 33520,
+        "iou": 0.16020737718850928,
+        "fpr": 0.06479713603818615
+      },
+      "interior": {
+        "tp": 1235,
+        "fp": 7044,
+        "fn": 19440,
+        "tn": 362064,
+        "valid": 389783,
+        "occupied": 20675,
+        "free": 369108,
+        "iou": 0.04455427684981421,
+        "fpr": 0.01908384537858838
+      }
+    }
+  },
+  "uniform": {
+    "uniform_256x256x32": {
+      "A": {
+        "all": {
+          "occupied": 455775,
+          "voxels": 2097152,
+          "occupied_fraction": 0.2173304557800293
+        },
+        "boundary": {
+          "occupied": 264560,
+          "voxels": 319040,
+          "occupied_fraction": 0.8292377131394183
+        },
+        "interior": {
+          "occupied": 0,
+          "voxels": 668352,
+          "occupied_fraction": 0.0
+        }
+      },
+      "B": {
+        "all": {
+          "occupied": 132902,
+          "voxels": 2097152,
+          "occupied_fraction": 0.06337261199951172
+        },
+        "boundary": {
+          "occupied": 131519,
+          "voxels": 319040,
+          "occupied_fraction": 0.41223357572718156
+        },
+        "interior": {
+          "occupied": 0,
+          "voxels": 668352,
+          "occupied_fraction": 0.0
+        }
+      },
+      "C": {
+        "all": {
+          "occupied": 0,
+          "voxels": 2097152,
+          "occupied_fraction": 0.0
+        },
+        "boundary": {
+          "occupied": 0,
+          "voxels": 319040,
+          "occupied_fraction": 0.0
+        },
+        "interior": {
+          "occupied": 0,
+          "voxels": 668352,
+          "occupied_fraction": 0.0
+        }
+      }
+    }
+  },
+  "per_case_tp_retention": {
+    "00004": {
+      "B": 0.7115672013549865,
+      "C": 0.39105310351698713
+    },
+    "00889": {
+      "B": 0.5830443620710272,
+      "C": 0.39985651082147555
+    },
+    "01771": {
+      "B": 0.20189088044120543,
+      "C": 0.07602915107346858
+    }
+  },
+  "pooled_tp_retention": {
+    "B": 0.5555650210844656,
+    "C": 0.3260638071303829
+  },
+  "boundary_fpr_relative_reduction": {
+    "B": 0.326838432635534,
+    "C": 0.88341384863124
+  },
+  "replay": [
+    {
+      "case_id": "00004",
+      "voxels_disagreeing_with_previous_A": 0,
+      "bitwise_identical": true,
+      "tp_previous": 10037,
+      "fp_previous": 51833,
+      "fn_previous": 9338,
+      "tp_now": 10037,
+      "fp_now": 51833,
+      "fn_now": 9338,
+      "iou_previous_pp": 14.09532636782384,
+      "iou_now_pp": 14.09532636782384,
+      "iou_delta_pp": 0.0
+    },
+    {
+      "case_id": "00889",
+      "voxels_disagreeing_with_previous_A": 0,
+      "bitwise_identical": true,
+      "tp_previous": 8363,
+      "fp_previous": 21409,
+      "fn_previous": 27597,
+      "tp_now": 8363,
+      "fp_now": 21409,
+      "fn_now": 27597,
+      "iou_previous_pp": 14.577559309034497,
+      "iou_now_pp": 14.577559309034497,
+      "iou_delta_pp": 0.0
+    },
+    {
+      "case_id": "01771",
+      "voxels_disagreeing_with_previous_A": 0,
+      "bitwise_identical": true,
+      "tp_previous": 5077,
+      "fp_previous": 20904,
+      "fn_previous": 11342,
+      "tp_now": 5077,
+      "fp_now": 20904,
+      "fn_now": 11342,
+      "iou_previous_pp": 13.60287222356188,
+      "iou_now_pp": 13.60287222356188,
+      "iou_delta_pp": 0.0
+    },
+    {
+      "case_id": "uniform_256x256x32",
+      "voxels_disagreeing_with_previous_A": 0,
+      "bitwise_identical": true,
+      "tp_previous": null,
+      "fp_previous": null,
+      "fn_previous": null,
+      "tp_now": null,
+      "fp_now": null,
+      "fn_now": null,
+      "iou_previous_pp": null,
+      "iou_now_pp": null,
+      "iou_delta_pp": null
+    }
+  ],
+  "replay_within_tolerance": true,
+  "frozen_stat_selfcheck": [
+    {
+      "case_id": "00004",
+      "selfstat_max_abs_logit_diff": 0.03125,
+      "selfstat_decision_agreement": 0.9999890327453613
+    },
+    {
+      "case_id": "00889",
+      "selfstat_max_abs_logit_diff": 0.03125,
+      "selfstat_decision_agreement": 0.999992847442627
+    },
+    {
+      "case_id": "01771",
+      "selfstat_max_abs_logit_diff": 0.03125,
+      "selfstat_decision_agreement": 0.9999690055847168
+    },
+    {
+      "case_id": "uniform_256x256x32",
+      "selfstat_max_abs_logit_diff": 0.00390625,
+      "selfstat_decision_agreement": 1.0
+    }
+  ],
+  "groupnorm_stat_summary": {
+    "dec1.1#0": {
+      "groups_compared": 24,
+      "degenerate_zero_variance_groups": 0,
+      "max_abs_mean_shift_in_A_std": 0.2094588170787942,
+      "median_abs_mean_shift_in_A_std": 0.0279261251613261,
+      "min_std_ratio_B_over_A": 0.959531562615807,
+      "max_std_ratio_B_over_A": 1.1048034990176816,
+      "median_std_ratio_B_over_A": 1.0339361080794456
+    },
+    "dec1.4#0": {
+      "groups_compared": 24,
+      "degenerate_zero_variance_groups": 0,
+      "max_abs_mean_shift_in_A_std": 0.12199975059709023,
+      "median_abs_mean_shift_in_A_std": 0.03082743409940485,
+      "min_std_ratio_B_over_A": 0.9420877421577815,
+      "max_std_ratio_B_over_A": 1.0995778638427949,
+      "median_std_ratio_B_over_A": 1.020529477439423
+    },
+    "dec2.1#0": {
+      "groups_compared": 24,
+      "degenerate_zero_variance_groups": 0,
+      "max_abs_mean_shift_in_A_std": 0.36975899707698495,
+      "median_abs_mean_shift_in_A_std": 0.15874468728685606,
+      "min_std_ratio_B_over_A": 0.6770120676361718,
+      "max_std_ratio_B_over_A": 1.105378224064843,
+      "median_std_ratio_B_over_A": 0.9148629920485842
+    },
+    "dec2.4#0": {
+      "groups_compared": 24,
+      "degenerate_zero_variance_groups": 0,
+      "max_abs_mean_shift_in_A_std": 0.28376623798844525,
+      "median_abs_mean_shift_in_A_std": 0.14806026589668386,
+      "min_std_ratio_B_over_A": 0.7589639714959576,
+      "max_std_ratio_B_over_A": 1.0574560217977056,
+      "median_std_ratio_B_over_A": 0.9250372010481394
+    },
+    "enc1.1#0": {
+      "groups_compared": 24,
+      "degenerate_zero_variance_groups": 0,
+      "max_abs_mean_shift_in_A_std": 0.05241069455105046,
+      "median_abs_mean_shift_in_A_std": 0.020396328471242356,
+      "min_std_ratio_B_over_A": 1.0049463233523213,
+      "max_std_ratio_B_over_A": 1.0487504520431152,
+      "median_std_ratio_B_over_A": 1.018908064391245
+    },
+    "enc1.4#0": {
+      "groups_compared": 24,
+      "degenerate_zero_variance_groups": 0,
+      "max_abs_mean_shift_in_A_std": 0.02253059345775157,
+      "median_abs_mean_shift_in_A_std": 0.007313135936089279,
+      "min_std_ratio_B_over_A": 1.007223576354168,
+      "max_std_ratio_B_over_A": 1.059659233544277,
+      "median_std_ratio_B_over_A": 1.0348797443608826
+    },
+    "enc2.1#0": {
+      "groups_compared": 24,
+      "degenerate_zero_variance_groups": 0,
+      "max_abs_mean_shift_in_A_std": 0.027071420950360966,
+      "median_abs_mean_shift_in_A_std": 0.009967302082944707,
+      "min_std_ratio_B_over_A": 1.013051987093037,
+      "max_std_ratio_B_over_A": 1.1323565770157775,
+      "median_std_ratio_B_over_A": 1.0492645863745538
+    },
+    "enc2.4#0": {
+      "groups_compared": 24,
+      "degenerate_zero_variance_groups": 0,
+      "max_abs_mean_shift_in_A_std": 0.06695731744444769,
+      "median_abs_mean_shift_in_A_std": 0.027670746086108273,
+      "min_std_ratio_B_over_A": 0.9278557229615453,
+      "max_std_ratio_B_over_A": 1.0508867412526999,
+      "median_std_ratio_B_over_A": 1.0068805838544739
+    },
+    "enc3.1#0": {
+      "groups_compared": 24,
+      "degenerate_zero_variance_groups": 0,
+      "max_abs_mean_shift_in_A_std": 0.17976318616045942,
+      "median_abs_mean_shift_in_A_std": 0.09209931962339485,
+      "min_std_ratio_B_over_A": 0.918182084618118,
+      "max_std_ratio_B_over_A": 1.2535647936229208,
+      "median_std_ratio_B_over_A": 1.0541361173068613
+    },
+    "enc3.4#0": {
+      "groups_compared": 24,
+      "degenerate_zero_variance_groups": 0,
+      "max_abs_mean_shift_in_A_std": 0.3070420823805172,
+      "median_abs_mean_shift_in_A_std": 0.17647928823264486,
+      "min_std_ratio_B_over_A": 0.890948056596849,
+      "max_std_ratio_B_over_A": 1.240972186930721,
+      "median_std_ratio_B_over_A": 1.1096097286828313
+    }
+  },
+  "criteria": {
+    "boundary_fpr": "passed",
+    "tp_retention": "failed",
+    "pooled_iou": "failed"
+  },
+  "overall": "mixed"
+}

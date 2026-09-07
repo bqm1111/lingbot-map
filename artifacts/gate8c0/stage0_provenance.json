@@ -1,0 +1,142 @@
+{
+  "config": "configs/gate8c0/audit.yaml",
+  "partition": {
+    "2013_05_28_drive_0003_sync": "train",
+    "2013_05_28_drive_0007_sync": "train",
+    "2013_05_28_drive_0010_sync": "source_validation",
+    "2013_05_28_drive_0006_sync": "heldout"
+  },
+  "per_drive": {
+    "2013_05_28_drive_0003_sync": {
+      "partition": "train",
+      "n_labelled_anchors": 198,
+      "n_stream_frames": 202,
+      "keyframe_interval": 1,
+      "proc_hw": [
+        140,
+        518
+      ],
+      "n_pose_frames": 1010,
+      "n_samples_cached": 193,
+      "missing": {
+        "image": 0,
+        "velodyne": 0,
+        "target": 0,
+        "trident": 0,
+        "sample": 5,
+        "pose": 0,
+        "cam0_to_world": 0
+      },
+      "anchor_index_stride": 5,
+      "native_frame_span": [
+        4,
+        1007
+      ]
+    },
+    "2013_05_28_drive_0007_sync": {
+      "partition": "train",
+      "n_labelled_anchors": 533,
+      "n_stream_frames": 578,
+      "keyframe_interval": 1,
+      "proc_hw": [
+        140,
+        518
+      ],
+      "n_pose_frames": 2890,
+      "n_samples_cached": 529,
+      "missing": {
+        "image": 0,
+        "velodyne": 0,
+        "target": 0,
+        "trident": 0,
+        "sample": 4,
+        "pose": 0,
+        "cam0_to_world": 0
+      },
+      "anchor_index_stride": 5,
+      "native_frame_span": [
+        2,
+        2899
+      ]
+    },
+    "2013_05_28_drive_0010_sync": {
+      "partition": "source_validation",
+      "n_labelled_anchors": 558,
+      "n_stream_frames": 605,
+      "keyframe_interval": 1,
+      "proc_hw": [
+        140,
+        518
+      ],
+      "n_pose_frames": 3026,
+      "n_samples_cached": 554,
+      "missing": {
+        "image": 0,
+        "velodyne": 0,
+        "target": 0,
+        "trident": 0,
+        "sample": 4,
+        "pose": 0,
+        "cam0_to_world": 0
+      },
+      "anchor_index_stride": 5,
+      "native_frame_span": [
+        10,
+        3310
+      ]
+    },
+    "2013_05_28_drive_0006_sync": {
+      "partition": "heldout",
+      "n_labelled_anchors": 1812,
+      "n_stream_frames": 1777,
+      "keyframe_interval": 2,
+      "proc_hw": [
+        140,
+        518
+      ],
+      "n_pose_frames": 9186,
+      "n_samples_cached": 175,
+      "missing": {
+        "image": 0,
+        "velodyne": 0,
+        "target": 0,
+        "trident": 35,
+        "sample": 1602,
+        "pose": 0,
+        "cam0_to_world": 0
+      },
+      "anchor_index_stride": 5,
+      "native_frame_span": [
+        35,
+        9569
+      ]
+    }
+  },
+  "n_rows": 3101,
+  "n_issues": 3,
+  "issues": [
+    {
+      "drive": "2013_05_28_drive_0006_sync",
+      "kind": "missing_trident",
+      "anchor": 0,
+      "path": "/media/SSD1/MINH_DATASETS/lingbot_gate6/semantics/kitti360/0000000035.npz"
+    },
+    {
+      "drive": "2013_05_28_drive_0006_sync",
+      "kind": "missing_trident",
+      "anchor": 5,
+      "path": "/media/SSD1/MINH_DATASETS/lingbot_gate6/semantics/kitti360/0000000069.npz"
+    },
+    {
+      "drive": "2013_05_28_drive_0006_sync",
+      "kind": "missing_trident",
+      "anchor": 10,
+      "path": "/media/SSD1/MINH_DATASETS/lingbot_gate6/semantics/kitti360/0000000079.npz"
+    }
+  ],
+  "issue_kinds": {
+    "missing_trident": 3
+  },
+  "frame_key_collisions_across_drives": 0,
+  "seconds": 1.35833740234375
+}

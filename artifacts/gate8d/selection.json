@@ -1,0 +1,465 @@
+{
+  "val_drive": "2013_05_28_drive_0006_sync",
+  "n_val_samples": 100,
+  "protocol_sha256": "3191b73e7a7a1483bebe9d4d2a14cddaec93067cf0189d4a5faebb41666913a9",
+  "weights": {
+    "mean_stress_sc_iou": 0.35,
+    "worst_stress_sc_iou": 0.25,
+    "volume_ratio_penalty": 0.15,
+    "calibration_ece_penalty": 0.05,
+    "semantic_teacher_agreement": 0.1,
+    "completed_semantic_accuracy": 0.05,
+    "surface_thickness_penalty": 0.05,
+    "note": "source AUROC is deliberately NOT the selection criterion: the Gate 8C-1 neighbourhood experiment raised source AUROC 0.68 -> 0.74 while Occ3D IoU fell 33.28 -> 28.12, so source ranking alone is not a transfer proxy."
+  },
+  "rule": "preregistered weighted score over source stress variants; source AUROC is deliberately excluded",
+  "candidates": {
+    "seed0_best": {
+      "per_variant": {
+        "identity": {
+          "best_tau": -0.4375,
+          "iou": 0.19591542838868856,
+          "precision": 0.29864249065867243,
+          "recall": 0.3628765790755959,
+          "pred_over_gt": 1.2150869029897642
+        },
+        "voxel_pool_2": {
+          "best_tau": -0.9375,
+          "iou": 0.25552393765833936,
+          "precision": 0.2576915829217506,
+          "recall": 0.9681294315630844,
+          "pred_over_gt": 3.7569307487123553
+        },
+        "voxel_pool_3": {
+          "best_tau": -1.1875,
+          "iou": 0.3024958550567281,
+          "precision": 0.3050946906708296,
+          "recall": 0.9726117524545003,
+          "pred_over_gt": 3.1879012719492485
+        },
+        "history_5": {
+          "best_tau": -0.4375,
+          "iou": 0.19675047150092842,
+          "precision": 0.2996958047807262,
+          "recall": 0.3641841985174752,
+          "pred_over_gt": 1.2151795010408377
+        },
+        "history_10": {
+          "best_tau": -0.4375,
+          "iou": 0.19658579295788337,
+          "precision": 0.2995645374781142,
+          "recall": 0.36381380631318144,
+          "pred_over_gt": 1.2144755496626873
+        },
+        "lidar_half": {
+          "best_tau": -0.4375,
+          "iou": 0.1973807663220943,
+          "precision": 0.2991519817624115,
+          "recall": 0.3671655183602347,
+          "pred_over_gt": 1.2273544577479685
+        },
+        "scale_noise": {
+          "best_tau": -0.4375,
+          "iou": 0.19611319560241708,
+          "precision": 0.29883783901309374,
+          "recall": 0.36326655932915525,
+          "pred_over_gt": 1.2155975981115246
+        },
+        "fov_crop": {
+          "best_tau": -0.75,
+          "iou": 0.18780070790895995,
+          "precision": 0.19660694337834458,
+          "recall": 0.8074262519588543,
+          "pred_over_gt": 4.106804358404917
+        }
+      },
+      "mean_stress_iou": 0.2160707694245049,
+      "worst_stress_iou": 0.18780070790895995,
+      "identity_tau": -0.4375,
+      "identity_iou": 0.19591542838868856,
+      "pred_over_gt": 1.2150869029897642,
+      "volume_penalty": 0.21508690298976418,
+      "surface_thickness_m": 0.984375,
+      "semantic_teacher_agreement": 0.31060054000018683,
+      "completed_semantic_accuracy": 0.30301928084997126,
+      "selection_score": 0.08730417886986933,
+      "checkpoint": "artifacts/gate8d/checkpoints/g8d_seed0_best.pt"
+    },
+    "seed0_last": {
+      "per_variant": {
+        "identity": {
+          "best_tau": -0.6875,
+          "iou": 0.21222939141044844,
+          "precision": 0.2794460425966781,
+          "recall": 0.4687409879743436,
+          "pred_over_gt": 1.677393544809912
+        },
+        "voxel_pool_2": {
+          "best_tau": -0.9375,
+          "iou": 0.2649061276044672,
+          "precision": 0.28021911046092035,
+          "recall": 0.8289907093935348,
+          "pred_over_gt": 2.9583660729989605
+        },
+        "voxel_pool_3": {
+          "best_tau": -1.0,
+          "iou": 0.30626480045694376,
+          "precision": 0.31800246403975807,
+          "recall": 0.8924439074107351,
+          "pred_over_gt": 2.806405636212799
+        },
+        "history_5": {
+          "best_tau": -0.6875,
+          "iou": 0.21243274681378102,
+          "precision": 0.280029610656203,
+          "recall": 0.46809439490313337,
+          "pred_over_gt": 1.67158892163665
+        },
+        "history_10": {
+          "best_tau": -0.6875,
+          "iou": 0.2124534570708048,
+          "precision": 0.27999351543354273,
+          "recall": 0.46829589875921424,
+          "pred_over_gt": 1.6725240869743128
+        },
+        "lidar_half": {
+          "best_tau": -0.75,
+          "iou": 0.2146964507878985,
+          "precision": 0.2757283634439454,
+          "recall": 0.49237289160189096,
+          "pred_over_gt": 1.785717237980084
+        },
+        "scale_noise": {
+          "best_tau": -0.6875,
+          "iou": 0.2124595128410239,
+          "precision": 0.27962946490616936,
+          "recall": 0.4693473739970614,
+          "pred_over_gt": 1.678461796415312
+        },
+        "fov_crop": {
+          "best_tau": -0.875,
+          "iou": 0.20071888598593549,
+          "precision": 0.21575883554795525,
+          "recall": 0.7422319010267497,
+          "pred_over_gt": 3.440099679541415
+        }
+      },
+      "mean_stress_iou": 0.22952017162141292,
+      "worst_stress_iou": 0.20071888598593549,
+      "identity_tau": -0.6875,
+      "identity_iou": 0.21222939141044844,
+      "pred_over_gt": 1.677393544809912,
+      "volume_penalty": 0.677393544809912,
+      "surface_thickness_m": 0.96875,
+      "semantic_teacher_agreement": 0.2977381653073236,
+      "completed_semantic_accuracy": 0.26792984558203226,
+      "selection_score": 0.023635558652325576,
+      "checkpoint": "artifacts/gate8d/checkpoints/g8d_seed0_last.pt"
+    },
+    "seed1_best": {
+      "per_variant": {
+        "identity": {
+          "best_tau": -0.6875,
+          "iou": 0.2082523503249352,
+          "precision": 0.2299581859868213,
+          "recall": 0.6881128938943488,
+          "pred_over_gt": 2.9923391982827
+        },
+        "voxel_pool_2": {
+          "best_tau": -0.75,
+          "iou": 0.26036153140341245,
+          "precision": 0.2760173104289641,
+          "recall": 0.821117838859442,
+          "pred_over_gt": 2.9748780523342035
+        },
+        "voxel_pool_3": {
+          "best_tau": -1.75,
+          "iou": 0.3025360366556535,
+          "precision": 0.30469268175891445,
+          "recall": 0.9771389654900817,
+          "pred_over_gt": 3.2069656542103457
+        },
+        "history_5": {
+          "best_tau": -0.6875,
+          "iou": 0.208846279501374,
+          "precision": 0.23098234724170974,
+          "recall": 0.6854594161392967,
+          "pred_over_gt": 2.9675835591972874
+        },
+        "history_10": {
+          "best_tau": -0.6875,
+          "iou": 0.2088231427888777,
+          "precision": 0.23083407525934427,
+          "recall": 0.6865183891950446,
+          "pred_over_gt": 2.974077325558346
+        },
+        "lidar_half": {
+          "best_tau": -0.5,
+          "iou": 0.20743776537962155,
+          "precision": 0.2847761008580945,
+          "recall": 0.4330518433807061,
+          "pred_over_gt": 1.5206748111088795
+        },
+        "scale_noise": {
+          "best_tau": -0.6875,
+          "iou": 0.20831478525812225,
+          "precision": 0.2300409054402578,
+          "recall": 0.6880539423011047,
+          "pred_over_gt": 2.991006929764472
+        },
+        "fov_crop": {
+          "best_tau": -0.5,
+          "iou": 0.19620304446872222,
+          "precision": 0.2759375247862591,
+          "recall": 0.40440769815302763,
+          "pred_over_gt": 1.465577030403101
+        }
+      },
+      "mean_stress_iou": 0.22509686697258985,
+      "worst_stress_iou": 0.19620304446872222,
+      "identity_tau": -0.6875,
+      "identity_iou": 0.2082523503249352,
+      "pred_over_gt": 2.9923391982827,
+      "volume_penalty": 1.9923391982827,
+      "surface_thickness_m": 0.9765625,
+      "semantic_teacher_agreement": 0.2969744107177892,
+      "completed_semantic_accuracy": 0.29714149478548985,
+      "selection_score": -0.17528982437376456,
+      "checkpoint": "artifacts/gate8d/checkpoints/g8d_seed1_best.pt"
+    },
+    "seed1_last": {
+      "per_variant": {
+        "identity": {
+          "best_tau": -0.75,
+          "iou": 0.2116357024642021,
+          "precision": 0.2778211616520793,
+          "recall": 0.47044149307421873,
+          "pred_over_gt": 1.6933249082852857
+        },
+        "voxel_pool_2": {
+          "best_tau": -1.0,
+          "iou": 0.26416664531485856,
+          "precision": 0.27592580040330833,
+          "recall": 0.861084254467078,
+          "pred_over_gt": 3.120709455978636
+        },
+        "voxel_pool_3": {
+          "best_tau": -1.1875,
+          "iou": 0.30365983050326395,
+          "precision": 0.3121568095230991,
+          "recall": 0.9177338560922591,
+          "pred_over_gt": 2.939977050298332
+        },
+        "history_5": {
+          "best_tau": -0.8125,
+          "iou": 0.21425722591561355,
+          "precision": 0.27055519728392896,
+          "recall": 0.5073093883645675,
+          "pred_over_gt": 1.8750679841207463
+        },
+        "history_10": {
+          "best_tau": -0.8125,
+          "iou": 0.2139920551041985,
+          "precision": 0.26982298726725384,
+          "recall": 0.50840463211441,
+          "pred_over_gt": 1.8842154156823048
+        },
+        "lidar_half": {
+          "best_tau": -0.8125,
+          "iou": 0.2128328066126019,
+          "precision": 0.26459445503370715,
+          "recall": 0.5210626357397924,
+          "pred_over_gt": 1.969287813206113
+        },
+        "scale_noise": {
+          "best_tau": -0.75,
+          "iou": 0.21177253922627534,
+          "precision": 0.277868082104742,
+          "recall": 0.4709833041402669,
+          "pred_over_gt": 1.694988861522895
+        },
+        "fov_crop": {
+          "best_tau": -0.6875,
+          "iou": 0.1985934073589235,
+          "precision": 0.2689814053417954,
+          "recall": 0.4314650601345947,
+          "pred_over_gt": 1.60407021290684
+        }
+      },
+      "mean_stress_iou": 0.22886377656249218,
+      "worst_stress_iou": 0.1985934073589235,
+      "identity_tau": -0.75,
+      "identity_iou": 0.2116357024642021,
+      "pred_over_gt": 1.6933249082852857,
+      "volume_penalty": 0.6933249082852857,
+      "surface_thickness_m": 0.96875,
+      "semantic_teacher_agreement": 0.3132001083737399,
+      "completed_semantic_accuracy": 0.3008307760022496,
+      "selection_score": 0.02367598703129676,
+      "checkpoint": "artifacts/gate8d/checkpoints/g8d_seed1_last.pt"
+    },
+    "seed2_best": {
+      "per_variant": {
+        "identity": {
+          "best_tau": -0.6875,
+          "iou": 0.21092678516756402,
+          "precision": 0.2855286791979436,
+          "recall": 0.44668653151037635,
+          "pred_over_gt": 1.5644191426413931
+        },
+        "voxel_pool_2": {
+          "best_tau": -1.0625,
+          "iou": 0.2640866410653558,
+          "precision": 0.2706464898585869,
+          "recall": 0.9159359867119454,
+          "pred_over_gt": 3.3842522295061834
+        },
+        "voxel_pool_3": {
+          "best_tau": -1.125,
+          "iou": 0.307749826861026,
+          "precision": 0.31774455166216836,
+          "recall": 0.9072678299986464,
+          "pred_over_gt": 2.8553371733758937
+        },
+        "history_5": {
+          "best_tau": -0.6875,
+          "iou": 0.21149672889528875,
+          "precision": 0.28537195297969903,
+          "recall": 0.4496388910314945,
+          "pred_over_gt": 1.5756239754348993
+        },
+        "history_10": {
+          "best_tau": -0.6875,
+          "iou": 0.21141528060482956,
+          "precision": 0.28545171545012304,
+          "recall": 0.4490733681163354,
+          "pred_over_gt": 1.5732025551438733
+        },
+        "lidar_half": {
+          "best_tau": -0.6875,
+          "iou": 0.2113564002067871,
+          "precision": 0.2828020378054752,
+          "recall": 0.4555181174928684,
+          "pred_over_gt": 1.6107313830821675
+        },
+        "scale_noise": {
+          "best_tau": -0.6875,
+          "iou": 0.21111327931019566,
+          "precision": 0.28580358617924756,
+          "recall": 0.44685007766333507,
+          "pred_over_gt": 1.5634866015399955
+        },
+        "fov_crop": {
+          "best_tau": -0.5625,
+          "iou": 0.1966244248955646,
+          "precision": 0.28677551080514396,
+          "recall": 0.3847944556145416,
+          "pred_over_gt": 1.3417967752344055
+        }
+      },
+      "mean_stress_iou": 0.22809617087582645,
+      "worst_stress_iou": 0.1966244248955646,
+      "identity_tau": -0.6875,
+      "identity_iou": 0.21092678516756402,
+      "pred_over_gt": 1.5644191426413931,
+      "volume_penalty": 0.5644191426413931,
+      "surface_thickness_m": 0.9765625,
+      "semantic_teacher_agreement": 0.31178704560105386,
+      "completed_semantic_accuracy": 0.29774975241774765,
+      "selection_score": 0.0415649618152142,
+      "checkpoint": "artifacts/gate8d/checkpoints/g8d_seed2_best.pt"
+    },
+    "seed2_last": {
+      "per_variant": {
+        "identity": {
+          "best_tau": -0.875,
+          "iou": 0.21658308072477866,
+          "precision": 0.26803925560384095,
+          "recall": 0.5301189688138573,
+          "pred_over_gt": 1.9777661582427588
+        },
+        "voxel_pool_2": {
+          "best_tau": -1.0625,
+          "iou": 0.26576323657683665,
+          "precision": 0.2753443441914692,
+          "recall": 0.8842267315944105,
+          "pred_over_gt": 3.2113488083108623
+        },
+        "voxel_pool_3": {
+          "best_tau": -1.1875,
+          "iou": 0.3089429373093822,
+          "precision": 0.32049229566433535,
+          "recall": 0.8955406550710776,
+          "pred_over_gt": 2.7942657816929675
+        },
+        "history_5": {
+          "best_tau": -0.875,
+          "iou": 0.2167700877609277,
+          "precision": 0.26885805370118726,
+          "recall": 0.5280534137049426,
+          "pred_over_gt": 1.964060240843032
+        },
+        "history_10": {
+          "best_tau": -0.875,
+          "iou": 0.2167537823332112,
+          "precision": 0.26874836998727736,
+          "recall": 0.528380131119965,
+          "pred_over_gt": 1.9660775287492112
+        },
+        "lidar_half": {
+          "best_tau": -0.875,
+          "iou": 0.21621100108896973,
+          "precision": 0.2571537163385112,
+          "recall": 0.5759085176242301,
+          "pred_over_gt": 2.239549658563431
+        },
+        "scale_noise": {
+          "best_tau": -0.875,
+          "iou": 0.21666005918476106,
+          "precision": 0.26810367141522423,
+          "recall": 0.5303281579332865,
+          "pred_over_gt": 1.978071225708593
+        },
+        "fov_crop": {
+          "best_tau": -0.6875,
+          "iou": 0.20184907132979188,
+          "precision": 0.2707599219278388,
+          "recall": 0.4423041066835952,
+          "pred_over_gt": 1.6335656456625631
+        }
+      },
+      "mean_stress_iou": 0.23244165703858238,
+      "worst_stress_iou": 0.20184907132979188,
+      "identity_tau": -0.875,
+      "identity_iou": 0.21658308072477866,
+      "pred_over_gt": 1.9777661582427588,
+      "volume_penalty": 0.9777661582427588,
+      "surface_thickness_m": 0.96875,
+      "semantic_teacher_agreement": 0.2907522632360772,
+      "completed_semantic_accuracy": 0.2695926202149381,
+      "selection_score": -0.020730718606107403,
+      "checkpoint": "artifacts/gate8d/checkpoints/g8d_seed2_last.pt"
+    }
+  },
+  "selected": "seed0_best",
+  "occupancy_threshold": -0.4375,
+  "firewall": {
+    "n_opened": 1206,
+    "n_unique": 106,
+    "violations": [],
+    "forbidden_patterns": [
+      "Occ3D",
+      "SemanticKITTI",
+      "_1_1.npy",
+      "data/kitti/dataset",
+      "lingbot_occ3d_zeroshot",
+      "nuScenes",
+      "nuscenes",
+      "occ3d",
+      "occ3d_gt",
+      "preprocess/labels",
+      "scale_gate/cache",
+      "semantickitti"
+    ]
+  }
+}

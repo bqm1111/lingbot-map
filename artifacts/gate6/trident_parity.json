@@ -1,0 +1,1370 @@
+{
+  "summary": {
+    "n_frames": 102,
+    "n_datasets": 3,
+    "frames_with_any_tie": 0,
+    "total_tie_pixels": 0,
+    "total_pixels": 82382952,
+    "max_tie_fraction": 0.0,
+    "argmax_parity_exact": true,
+    "n_pristine_checked": 12,
+    "pristine_all_identical": true,
+    "max_prob_sum_err": 3.5762786865234375e-07,
+    "trident_root": "/home/minh/workspace/third_party/Trident",
+    "seconds": 233.10136818885803,
+    "selection_rule": "evenly strided over each dataset's sorted unique-frame list",
+    "targets_opened": "none"
+  },
+  "rows": [
+    {
+      "dataset": "semantickitti",
+      "frame": "08_000000",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 2.980232238769531e-07,
+      "pristine_identical": true,
+      "pristine_mismatch": 0
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_000115",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 3.5762786865234375e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_000235",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_000355",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 3.5762786865234375e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_000475",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 3.5762786865234375e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_000595",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_000715",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_000835",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_000955",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 2.980232238769531e-07,
+      "pristine_identical": true,
+      "pristine_mismatch": 0
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_001075",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_001195",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_001315",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 3.5762786865234375e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_001435",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_001555",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_001675",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 3.5762786865234375e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_001795",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_001915",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 3.5762786865234375e-07,
+      "pristine_identical": true,
+      "pristine_mismatch": 0
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_002035",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_002155",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_002275",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_002395",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_002515",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_002635",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_002755",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 3.5762786865234375e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_002875",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 2.384185791015625e-07,
+      "pristine_identical": true,
+      "pristine_mismatch": 0
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_002995",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 3.5762786865234375e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_003115",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_003235",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_003355",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_003475",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_003595",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 3.5762786865234375e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_003715",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_003835",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 2.980232238769531e-07,
+      "pristine_identical": true,
+      "pristine_mismatch": 0
+    },
+    {
+      "dataset": "semantickitti",
+      "frame": "08_003955",
+      "pixels": 453620,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        370,
+        1226
+      ],
+      "n_classes": 19,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151061512404",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 2.384185791015625e-07,
+      "pristine_identical": true,
+      "pristine_mismatch": 0
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151281162404",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 3.5762786865234375e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151522912404",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 3.5762786865234375e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151710012404",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 3.5762786865234375e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n008-2018-08-01-15-16-36-0400__CAM_FRONT__1533151891412404",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n008-2018-08-28-16-43-51-0400__CAM_FRONT__1535489140412404",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n008-2018-08-30-10-33-52-0400__CAM_FRONT__1535639647662404",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n008-2018-08-30-10-33-52-0400__CAM_FRONT__1535639734662404",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n008-2018-08-30-15-31-50-0400__CAM_FRONT__1535657698912404",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 2.980232238769531e-07,
+      "pristine_identical": true,
+      "pristine_mismatch": 0
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n008-2018-08-30-15-31-50-0400__CAM_FRONT__1535657823912404",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 3.5762786865234375e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n008-2018-08-31-11-37-23-0400__CAM_FRONT__1535730293012404",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n008-2018-08-31-11-37-23-0400__CAM_FRONT__1535730500912404",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 3.5762786865234375e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n008-2018-09-18-14-35-12-0400__CAM_FRONT__1537295826412404",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 3.5762786865234375e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n008-2018-09-18-14-35-12-0400__CAM_FRONT__1537295966162404",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 3.5762786865234375e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n008-2018-09-18-14-35-12-0400__CAM_FRONT__1537296122362404",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n008-2018-09-18-15-12-01-0400__CAM_FRONT__1537297979262404",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 3.5762786865234375e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n008-2018-09-18-15-12-01-0400__CAM_FRONT__1537298066162404",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 3.5762786865234375e-07,
+      "pristine_identical": true,
+      "pristine_mismatch": 0
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n008-2018-09-18-15-12-01-0400__CAM_FRONT__1537298212912404",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n015-2018-07-11-11-54-16+0800__CAM_FRONT__1531281563112460",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n015-2018-07-11-11-54-16+0800__CAM_FRONT__1531281866662460",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 3.5762786865234375e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n015-2018-07-18-11-41-49+0800__CAM_FRONT__1531885320512478",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n015-2018-07-18-11-41-49+0800__CAM_FRONT__1531885620412466",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n015-2018-07-24-10-42-41+0800__CAM_FRONT__1532400241162460",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201583412460",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 3.5762786865234375e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n015-2018-09-25-13-17-43+0800__CAM_FRONT__1537852869612460",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 2.980232238769531e-07,
+      "pristine_identical": true,
+      "pristine_mismatch": 0
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n015-2018-09-25-13-17-43+0800__CAM_FRONT__1537853031612460",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 3.5762786865234375e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n015-2018-10-02-10-50-40+0800__CAM_FRONT__1538448768662460",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n015-2018-10-02-10-50-40+0800__CAM_FRONT__1538448895362460",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n015-2018-10-08-15-36-50+0800__CAM_FRONT__1538984471912460",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n015-2018-10-08-15-44-23+0800__CAM_FRONT__1538984914912460",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n015-2018-10-08-15-44-23+0800__CAM_FRONT__1538985021862460",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 3.5762786865234375e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n015-2018-11-21-19-21-35+0800__CAM_FRONT__1542799361162460",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n015-2018-11-21-19-21-35+0800__CAM_FRONT__1542799548162460",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 3.5762786865234375e-07,
+      "pristine_identical": true,
+      "pristine_mismatch": 0
+    },
+    {
+      "dataset": "occ3d",
+      "frame": "n015-2018-11-21-19-21-35+0800__CAM_FRONT__1542799635262460",
+      "pixels": 1440000,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        900,
+        1600
+      ],
+      "n_classes": 17,
+      "prob_sum_max_abs_err": 3.5762786865234375e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000000117",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.980232238769531e-07,
+      "pristine_identical": true,
+      "pristine_mismatch": 0
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000000377",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000000724",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 3.5762786865234375e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000000984",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000001249",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000001509",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000001769",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000002029",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000002294",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.384185791015625e-07,
+      "pristine_identical": true,
+      "pristine_mismatch": 0
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000002663",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000002923",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000003183",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000003448",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000003742",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 3.5762786865234375e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000004002",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000004262",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000004624",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000004884",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000005144",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000005409",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000005914",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000006174",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000006434",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000006699",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000006959",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000007219",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000007479",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000007744",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000008004",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000008264",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000008524",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000008789",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000009049",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.980232238769531e-07
+    },
+    {
+      "dataset": "kitti360",
+      "frame": "0000009309",
+      "pixels": 529408,
+      "ties": 0,
+      "tie_fraction": 0.0,
+      "lattice": [
+        376,
+        1408
+      ],
+      "n_classes": 18,
+      "prob_sum_max_abs_err": 2.384185791015625e-07
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "provenance": {
+    "tool": "eval_ceiling",
+    "git_commit": "9a648322e6dc4e34995f0530650c2fa469779676",
+    "git_dirty_files": [
+      "M lingbot_map/models/gct_stream.py",
+      " M research/sem_bypass/model.py",
+      "?? artifacts/",
+      "?? configs/scale_gate/",
+      "?? lingbot_map_scale_claude_code_plan.md",
+      "?? reports/",
+      "?? scale_gate/",
+      "?? scripts/export_occupancy_3d.py",
+      "?? scripts/make_occupancy_ceiling_figure.py",
+      "?? scripts/make_scene_completion_honest_figure.py",
+      "?? tests/scale_gate/",
+      "?? tools/__init__.py",
+      "?? tools/check_ddad_layout.py",
+      "?? tools/check_vkitti2_layout.py",
+      "?? tools/scale_gate/"
+    ],
+    "python": "3.10.19",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.7.1+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "seed": 0,
+    "config_hash": "d2faead637e3a190",
+    "checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+    "checkpoint_sha256": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72",
+    "argv": [
+      "tools/scale_gate/eval_ceiling.py",
+      "--config",
+      "configs/scale_gate/semantickitti.yaml",
+      "--split",
+      "val"
+    ]
+  },
+  "split": "val",
+  "n_clips": 163,
+  "ceiling_iou_mean": 0.12551093146694367,
+  "ceiling_iou_median": 0.11800343264082794,
+  "precision_mean": 0.937579282904487,
+  "recall_mean": 0.12779787176885724,
+  "note": "GT LiDAR depth + GT poses through the identical clips, grid, voxeliser and metric; the denominator for every other method",
+  "methods_as_fraction_of_ceiling": {
+    "raw_canonical": {
+      "iou": 1.810738921343881e-06,
+      "pct_of_ceiling": 0.0014426941941872071
+    },
+    "global_median_train": {
+      "iou": 0.04096274347742146,
+      "pct_of_ceiling": 32.63679346385058
+    },
+    "oracle_depth": {
+      "iou": 0.0513948288527534,
+      "pct_of_ceiling": 40.9484881133955
+    },
+    "oracle_pose": {
+      "iou": 0.04847164068887609,
+      "pct_of_ceiling": 38.619457382994774
+    },
+    "oracle_joint": {
+      "iou": 0.05007516426810575,
+      "pct_of_ceiling": 39.89705413133218
+    },
+    "combined_mlp": {
+      "iou": 0.04368578609252117,
+      "pct_of_ceiling": 34.80635955922841
+    },
+    "depth_mlp": {
+      "iou": 0.04397368603683897,
+      "pct_of_ceiling": 35.03574192533222
+    },
+    "image_mlp": {
+      "iou": 0.04068997389081776,
+      "pct_of_ceiling": 32.41946610963878
+    }
+  }
+}

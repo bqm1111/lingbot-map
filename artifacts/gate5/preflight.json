@@ -1,0 +1,84 @@
+{
+  "moge": {
+    "repo": "https://github.com/microsoft/MoGe",
+    "commit": "74fbce054ebed49800de42d0ad0e83495065719a",
+    "hf_repo": "Ruicheng/moge-2-vitl",
+    "hf_revision": "39c4d5e957afe587e04eec59dc2bcc3be5ecd968",
+    "model_class": "moge.model.v2.MoGeModel",
+    "license": "MIT",
+    "n_params": 326209221,
+    "weight_sha256": "3eefd4abb2102f38f12b2d1992e5ff15e4923e5431c67dd494afe157e0111cd5",
+    "depth_convention": "optical-axis z (points[...,2]), OpenCV camera frame",
+    "fov_source": "predicted by MoGe from RGB (fov_x=None)"
+  },
+  "datasets": {
+    "occ3d": {
+      "n_clips": 10,
+      "shapes_match": true,
+      "depth_eq_points_z": true,
+      "all_finite_positive_in_mask": true,
+      "fov_finite": true,
+      "ray_differs_from_z": true,
+      "rgb_in_unit_range": true,
+      "depth_median_m": {
+        "median": 18.24311065673828,
+        "min": 12.880692481994629,
+        "max": 24.185474395751953
+      },
+      "scale_median": {
+        "median": 18.839122772216797,
+        "min": 15.222769737243652,
+        "max": 24.237382888793945
+      },
+      "fov_deg": {
+        "median": 66.1854476928711,
+        "min": 63.433589935302734,
+        "max": 75.5580062866211
+      },
+      "moge_mask_fraction": {
+        "median": 0.8986387991490032,
+        "min": 0.8577929241194547,
+        "max": 0.9633795603183358
+      },
+      "valid_fraction": {
+        "median": 0.44590983111391275,
+        "min": 0.36576445249914635,
+        "max": 0.8036009770703648
+      }
+    },
+    "kitti": {
+      "n_clips": 10,
+      "shapes_match": true,
+      "depth_eq_points_z": true,
+      "all_finite_positive_in_mask": true,
+      "fov_finite": true,
+      "ray_differs_from_z": true,
+      "rgb_in_unit_range": true,
+      "depth_median_m": {
+        "median": 12.51748275756836,
+        "min": 8.052496910095215,
+        "max": 20.400285720825195
+      },
+      "scale_median": {
+        "median": 25.339137077331543,
+        "min": 18.365367889404297,
+        "max": 31.10698127746582
+      },
+      "fov_deg": {
+        "median": 90.28191375732422,
+        "min": 84.3058090209961,
+        "max": 98.04499053955078
+      },
+      "moge_mask_fraction": {
+        "median": 0.9708481672767387,
+        "min": 0.9315423958281102,
+        "max": 0.9940706012134584
+      },
+      "valid_fraction": {
+        "median": 0.7582234367948654,
+        "min": 0.6354359925788498,
+        "max": 0.850574136288422
+      }
+    }
+  }
+}

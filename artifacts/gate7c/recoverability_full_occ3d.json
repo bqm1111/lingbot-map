@@ -1,0 +1,202 @@
+{
+  "dataset": "occ3d",
+  "n_anchors": 1182,
+  "anchor_stride": 1,
+  "n_b_d_coverage_misses": 8969696,
+  "classes": [
+    "recovered_from_causal_past",
+    "recovered_from_a_later_viewpoint",
+    "in_frustum_but_never_reconstructed",
+    "outside_all_frusta",
+    "unresolved"
+  ],
+  "counts": {
+    "recovered_from_causal_past": {
+      "all": 416194,
+      "0-10m": 104380,
+      "10-20m": 188672,
+      "20-30m": 93640,
+      "30-40m": 27302,
+      "40-60m": 2200
+    },
+    "recovered_from_a_later_viewpoint": {
+      "all": 320491,
+      "0-10m": 1221,
+      "10-20m": 27116,
+      "20-30m": 97266,
+      "30-40m": 161823,
+      "40-60m": 33065
+    },
+    "in_frustum_but_never_reconstructed": {
+      "all": 7413669,
+      "0-10m": 483925,
+      "10-20m": 1759653,
+      "20-30m": 2281592,
+      "30-40m": 2231144,
+      "40-60m": 657355
+    },
+    "outside_all_frusta": {
+      "all": 819342,
+      "0-10m": 61154,
+      "10-20m": 184701,
+      "20-30m": 205206,
+      "30-40m": 212737,
+      "40-60m": 155544
+    },
+    "unresolved": {
+      "all": 0,
+      "0-10m": 0,
+      "10-20m": 0,
+      "20-30m": 0,
+      "30-40m": 0,
+      "40-60m": 0
+    }
+  },
+  "fractions": {
+    "recovered_from_causal_past": 0.046400011772974245,
+    "recovered_from_a_later_viewpoint": 0.03573041940328858,
+    "in_frustum_but_never_reconstructed": 0.8265239981377295,
+    "outside_all_frusta": 0.09134557068600764,
+    "unresolved": 0.0
+  },
+  "recovery_latency": {
+    "within_1_frames": 23327,
+    "within_5_frames": 160827,
+    "within_10_frames": 250217,
+    "within_20_frames": 306662,
+    "within_50_frames": 320491,
+    "any_later_frame": 320491
+  },
+  "recovery_latency_fraction": {
+    "within_1_frames": 0.002600645551421141,
+    "within_5_frames": 0.01793003910054477,
+    "within_10_frames": 0.02789581720495321,
+    "within_20_frames": 0.03418867261499164,
+    "within_50_frames": 0.03573041940328858,
+    "any_later_frame": 0.03573041940328858
+  },
+  "per_class": {
+    "others": {
+      "recovered_from_causal_past": 639,
+      "recovered_from_a_later_viewpoint": 258,
+      "in_frustum_but_never_reconstructed": 14720,
+      "outside_all_frusta": 1028,
+      "unresolved": 0
+    },
+    "barrier": {
+      "recovered_from_causal_past": 2072,
+      "recovered_from_a_later_viewpoint": 865,
+      "in_frustum_but_never_reconstructed": 25400,
+      "outside_all_frusta": 1421,
+      "unresolved": 0
+    },
+    "bicycle": {
+      "recovered_from_causal_past": 121,
+      "recovered_from_a_later_viewpoint": 83,
+      "in_frustum_but_never_reconstructed": 2186,
+      "outside_all_frusta": 468,
+      "unresolved": 0
+    },
+    "bus": {
+      "recovered_from_causal_past": 2293,
+      "recovered_from_a_later_viewpoint": 2199,
+      "in_frustum_but_never_reconstructed": 40857,
+      "outside_all_frusta": 7508,
+      "unresolved": 0
+    },
+    "car": {
+      "recovered_from_causal_past": 13027,
+      "recovered_from_a_later_viewpoint": 5786,
+      "in_frustum_but_never_reconstructed": 189972,
+      "outside_all_frusta": 20352,
+      "unresolved": 0
+    },
+    "construction_vehicle": {
+      "recovered_from_causal_past": 268,
+      "recovered_from_a_later_viewpoint": 140,
+      "in_frustum_but_never_reconstructed": 8566,
+      "outside_all_frusta": 3750,
+      "unresolved": 0
+    },
+    "motorcycle": {
+      "recovered_from_causal_past": 134,
+      "recovered_from_a_later_viewpoint": 219,
+      "in_frustum_but_never_reconstructed": 3808,
+      "outside_all_frusta": 261,
+      "unresolved": 0
+    },
+    "pedestrian": {
+      "recovered_from_causal_past": 1737,
+      "recovered_from_a_later_viewpoint": 732,
+      "in_frustum_but_never_reconstructed": 23026,
+      "outside_all_frusta": 4297,
+      "unresolved": 0
+    },
+    "traffic_cone": {
+      "recovered_from_causal_past": 684,
+      "recovered_from_a_later_viewpoint": 230,
+      "in_frustum_but_never_reconstructed": 4143,
+      "outside_all_frusta": 801,
+      "unresolved": 0
+    },
+    "trailer": {
+      "recovered_from_causal_past": 1390,
+      "recovered_from_a_later_viewpoint": 781,
+      "in_frustum_but_never_reconstructed": 24130,
+      "outside_all_frusta": 5983,
+      "unresolved": 0
+    },
+    "truck": {
+      "recovered_from_causal_past": 6045,
+      "recovered_from_a_later_viewpoint": 3901,
+      "in_frustum_but_never_reconstructed": 82158,
+      "outside_all_frusta": 12981,
+      "unresolved": 0
+    },
+    "driveable_surface": {
+      "recovered_from_causal_past": 153927,
+      "recovered_from_a_later_viewpoint": 140127,
+      "in_frustum_but_never_reconstructed": 1954471,
+      "outside_all_frusta": 207261,
+      "unresolved": 0
+    },
+    "other_flat": {
+      "recovered_from_causal_past": 3959,
+      "recovered_from_a_later_viewpoint": 3775,
+      "in_frustum_but_never_reconstructed": 65599,
+      "outside_all_frusta": 7476,
+      "unresolved": 0
+    },
+    "sidewalk": {
+      "recovered_from_causal_past": 46922,
+      "recovered_from_a_later_viewpoint": 33761,
+      "in_frustum_but_never_reconstructed": 665160,
+      "outside_all_frusta": 70932,
+      "unresolved": 0
+    },
+    "terrain": {
+      "recovered_from_causal_past": 38339,
+      "recovered_from_a_later_viewpoint": 33861,
+      "in_frustum_but_never_reconstructed": 859235,
+      "outside_all_frusta": 120165,
+      "unresolved": 0
+    },
+    "manmade": {
+      "recovered_from_causal_past": 67135,
+      "recovered_from_a_later_viewpoint": 34814,
+      "in_frustum_but_never_reconstructed": 1627264,
+      "outside_all_frusta": 204916,
+      "unresolved": 0
+    },
+    "vegetation": {
+      "recovered_from_causal_past": 77502,
+      "recovered_from_a_later_viewpoint": 58959,
+      "in_frustum_but_never_reconstructed": 1822974,
+      "outside_all_frusta": 149742,
+      "unresolved": 0
+    }
+  },
+  "seconds": 302.9699158668518,
+  "diagnostic_only": "future frames are fused in a separate volume and never reach a causal prediction",
+  "semantic_class_use": "analysis only; no class drives any decision"
+}

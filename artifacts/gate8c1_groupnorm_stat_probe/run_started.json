@@ -1,0 +1,13 @@
+{
+  "time_unix": 1788704303.7890363,
+  "command": "/home/minh/anaconda3/envs/cu128/bin/python tools/gate8c1/groupnorm_stat_probe.py run --device cuda:2",
+  "config_sha256": "21a85a77c4ef793c77453036542a1f2c9fd85c9845c507d38f0878c4591ef6d1",
+  "python": "3.10.19 (main, Oct 21 2025, 16:43:05) [GCC 11.2.0]",
+  "torch": "2.7.1+cu128",
+  "numpy": "2.2.6",
+  "device": "cuda:2",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "cudnn_benchmark": false
+}

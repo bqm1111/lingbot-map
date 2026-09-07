@@ -1,0 +1,451 @@
+{
+  "mapping": "kitti360_frame = pose_frames[sscbench_index + 1]",
+  "n_checked": 40,
+  "n_identical": 40,
+  "all_identical": true,
+  "n_archive_images": 9057,
+  "n_pose_frames": 9186,
+  "bytes_downloaded": 74412544,
+  "samples": [
+    {
+      "sscbench_index": 0,
+      "kitti360_frame": 35,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "fe20af7313c01df1db1ef245e81a3bd4"
+    },
+    {
+      "sscbench_index": 232,
+      "kitti360_frame": 329,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "56a98775f70ed62aad1dd8d21e271987"
+    },
+    {
+      "sscbench_index": 464,
+      "kitti360_frame": 613,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "a51eed9f17482f99155cdc2cafbee948"
+    },
+    {
+      "sscbench_index": 697,
+      "kitti360_frame": 846,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "d977d4c501bb71ae4df6310324573df7"
+    },
+    {
+      "sscbench_index": 929,
+      "kitti360_frame": 1078,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "8fd1c3dda71e47bf9116aac3844b767a"
+    },
+    {
+      "sscbench_index": 1161,
+      "kitti360_frame": 1310,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "d93b6c2a1ccdeca84b57d1621e57bdb0"
+    },
+    {
+      "sscbench_index": 1393,
+      "kitti360_frame": 1542,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "8ebc72494ea6a505512fe9e40b3f6249"
+    },
+    {
+      "sscbench_index": 1625,
+      "kitti360_frame": 1774,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "c514f3bb47e0d148501d4ee17b24cc06"
+    },
+    {
+      "sscbench_index": 1858,
+      "kitti360_frame": 2007,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "d14ec06f80393640c30650b156db4b7d"
+    },
+    {
+      "sscbench_index": 2090,
+      "kitti360_frame": 2239,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "8c8ef4e58ffd619a70f657829690b897"
+    },
+    {
+      "sscbench_index": 2322,
+      "kitti360_frame": 2471,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "50de90bbcdc0a5b64cd14808439cb7ac"
+    },
+    {
+      "sscbench_index": 2554,
+      "kitti360_frame": 2792,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "63b640c8a5c78157a164500cd4005ea6"
+    },
+    {
+      "sscbench_index": 2786,
+      "kitti360_frame": 3024,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "e0c92cde1099d7cdee411db1923cc873"
+    },
+    {
+      "sscbench_index": 3019,
+      "kitti360_frame": 3257,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "b1d74094848dfef20b008fdb62421b3f"
+    },
+    {
+      "sscbench_index": 3251,
+      "kitti360_frame": 3495,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "05f503f9ecb1dfe5228cd209e08339fa"
+    },
+    {
+      "sscbench_index": 3483,
+      "kitti360_frame": 3740,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "94e0f2c6295ea432fba117e3145876c4"
+    },
+    {
+      "sscbench_index": 3715,
+      "kitti360_frame": 3972,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "7613cbe594a9ad8654391262d6255809"
+    },
+    {
+      "sscbench_index": 3947,
+      "kitti360_frame": 4204,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "50cbda8670658bf08db61ffce3504e06"
+    },
+    {
+      "sscbench_index": 4180,
+      "kitti360_frame": 4499,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "e6f14a88255dfaa55e0380bde7da3f21"
+    },
+    {
+      "sscbench_index": 4412,
+      "kitti360_frame": 4731,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "78e62a5b07a5e827ad689836ee07c84f"
+    },
+    {
+      "sscbench_index": 4644,
+      "kitti360_frame": 4963,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "f2c77e17b5ca81ed00621c2b4240bc72"
+    },
+    {
+      "sscbench_index": 4876,
+      "kitti360_frame": 5195,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "d3119ef1709d5fbb558df352ff3ab9d2"
+    },
+    {
+      "sscbench_index": 5109,
+      "kitti360_frame": 5428,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "31188d454835150ea73e4cd37caa5815"
+    },
+    {
+      "sscbench_index": 5341,
+      "kitti360_frame": 5855,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "bfd7ae42c0de144060392a6473dd7621"
+    },
+    {
+      "sscbench_index": 5573,
+      "kitti360_frame": 6087,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "f8c9ebdcb2ee764f76c8fca46ea52c39"
+    },
+    {
+      "sscbench_index": 5805,
+      "kitti360_frame": 6319,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "977be8f1873a85f95a8ddb802be1877e"
+    },
+    {
+      "sscbench_index": 6037,
+      "kitti360_frame": 6551,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "d3739bc6e3da2f60df77686b13f8b1c4"
+    },
+    {
+      "sscbench_index": 6270,
+      "kitti360_frame": 6784,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "36fd2565a925b07a40cd1e042ea23647"
+    },
+    {
+      "sscbench_index": 6502,
+      "kitti360_frame": 7016,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "e641b828cf46cceb272b18b07459770e"
+    },
+    {
+      "sscbench_index": 6734,
+      "kitti360_frame": 7248,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "63d55063e375341cea806bb85606b84e"
+    },
+    {
+      "sscbench_index": 6966,
+      "kitti360_frame": 7480,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "77da64963ac0faae5c3304d256fbaef4"
+    },
+    {
+      "sscbench_index": 7198,
+      "kitti360_frame": 7712,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "a33a1eefcbf81bf656eb567f4f4c1eca"
+    },
+    {
+      "sscbench_index": 7431,
+      "kitti360_frame": 7945,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "2b89ca90c85e03d1dcb22b0f2a60d454"
+    },
+    {
+      "sscbench_index": 7663,
+      "kitti360_frame": 8177,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "e7110c3ec5124807ec49c19ced0e08b8"
+    },
+    {
+      "sscbench_index": 7895,
+      "kitti360_frame": 8409,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "4c0f2cde01c0c3c254f1715f11635d47"
+    },
+    {
+      "sscbench_index": 8127,
+      "kitti360_frame": 8641,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "896739ef2cb2cbec814df454b03d94ca"
+    },
+    {
+      "sscbench_index": 8359,
+      "kitti360_frame": 8873,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "aa135117eb0d0470295598e66d5e9974"
+    },
+    {
+      "sscbench_index": 8592,
+      "kitti360_frame": 9106,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "3073582ef6d31348e9ab9e28ab521e9e"
+    },
+    {
+      "sscbench_index": 8824,
+      "kitti360_frame": 9338,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "9b350e99fe6648f2667ff432aa590455"
+    },
+    {
+      "sscbench_index": 9056,
+      "kitti360_frame": 9570,
+      "identical": true,
+      "shape": [
+        376,
+        1408,
+        3
+      ],
+      "sha256_local": "473718a3f0a8ddc95936e2c3262e4893"
+    }
+  ]
+}

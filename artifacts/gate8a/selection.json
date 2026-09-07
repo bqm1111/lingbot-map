@@ -1,0 +1,899 @@
+{
+  "tag": "source",
+  "sources": [
+    "semantickitti",
+    "occ3d"
+  ],
+  "candidates": [
+    {
+      "candidate": "cellA_best",
+      "checkpoint": "artifacts/gate8/checkpoints/completion_best.pt",
+      "sources": {
+        "semantickitti": {
+          "average_precision": 0.3186173218338083,
+          "prevalence": 0.07824240196221317,
+          "ap_over_prevalence": 4.072182267457524,
+          "auroc": 0.8725726239627114,
+          "n_anchors": 163
+        },
+        "occ3d": {
+          "average_precision": 0.678174374182727,
+          "prevalence": 0.2295316070178192,
+          "ap_over_prevalence": 2.9546012551120175,
+          "auroc": 0.8239774647315107,
+          "n_anchors": 1182
+        }
+      },
+      "macro_ap": 0.49839584800826764,
+      "ap_exceeds_prevalence_on_both": true,
+      "own_macro_threshold": 0.5,
+      "own_macro_iou": 0.3551219047678946,
+      "full_at_own_threshold": {
+        "semantickitti": {
+          "iou": 0.25789897188845173,
+          "precision": 0.32948303295177483,
+          "recall": 0.5427615516339932,
+          "density": 0.12888969459862032,
+          "pred_over_gt": 1.6473125998977771
+        },
+        "occ3d": {
+          "iou": 0.4523448376473375,
+          "precision": 0.6211767535338124,
+          "recall": 0.624666174371257,
+          "density": 0.23082098619664987,
+          "pred_over_gt": 1.0056174362894195
+        }
+      },
+      "edit_at_own_threshold": {
+        "semantickitti": {
+          "threshold": 0.5,
+          "tp": 8381128,
+          "fp": 15769484,
+          "fn": 8127629,
+          "iou": 0.2596525628518605,
+          "precision": 0.34703584323246134,
+          "recall": 0.5076777131070498,
+          "density": 0.10700230079245136,
+          "pred_over_gt": 1.4628970551810776
+        },
+        "occ3d": {
+          "threshold": 0.5,
+          "tp": 7066597,
+          "fp": 4414159,
+          "fn": 3984884,
+          "iou": 0.4569223776060997,
+          "precision": 0.6155166959388388,
+          "recall": 0.6394253403684086,
+          "density": 0.23123235446246337,
+          "pred_over_gt": 1.0388432102448533
+        }
+      },
+      "at_zero": {
+        "semantickitti": {
+          "threshold": 0.0,
+          "tp": 14014123,
+          "fp": 39630089,
+          "fn": 4748807,
+          "iou": 0.23999654821751895,
+          "precision": 0.2612420329708637,
+          "recall": 0.7469048277641072,
+          "density": 0.22369917695424857,
+          "pred_over_gt": 2.8590530370256673
+        },
+        "occ3d": {
+          "threshold": 0.0,
+          "tp": 8717200,
+          "fp": 9172161,
+          "fn": 3240390,
+          "iou": 0.4125557371688857,
+          "precision": 0.48728403434868356,
+          "recall": 0.7290097753811596,
+          "density": 0.3433947625610095,
+          "pred_over_gt": 1.4960674349931717
+        }
+      }
+    },
+    {
+      "candidate": "cellA_last",
+      "checkpoint": "artifacts/gate8/checkpoints/completion_last.pt",
+      "sources": {
+        "semantickitti": {
+          "average_precision": 0.32158908551768106,
+          "prevalence": 0.07824240196221317,
+          "ap_over_prevalence": 4.1101637660995,
+          "auroc": 0.872305132426674,
+          "n_anchors": 163
+        },
+        "occ3d": {
+          "average_precision": 0.6806485205270036,
+          "prevalence": 0.2295316070178192,
+          "ap_over_prevalence": 2.9653803646927064,
+          "auroc": 0.8227536920339322,
+          "n_anchors": 1182
+        }
+      },
+      "macro_ap": 0.5011188030223424,
+      "ap_exceeds_prevalence_on_both": true,
+      "own_macro_threshold": 0.5625,
+      "own_macro_iou": 0.354975532105338,
+      "full_at_own_threshold": {
+        "semantickitti": {
+          "iou": 0.25740865810351565,
+          "precision": 0.34288701692391166,
+          "recall": 0.5080111688313073,
+          "density": 0.11592160715088598,
+          "pred_over_gt": 1.4815701492250943
+        },
+        "occ3d": {
+          "iou": 0.45254240610716034,
+          "precision": 0.6305249674854594,
+          "recall": 0.6158554524783004,
+          "density": 0.22419142617265247,
+          "pred_over_gt": 0.9767344423081908
+        }
+      },
+      "edit_at_own_threshold": {
+        "semantickitti": {
+          "threshold": 0.5625,
+          "tp": 7729109,
+          "fp": 13311689,
+          "fn": 8779648,
+          "iou": 0.2591882428586078,
+          "precision": 0.3673391570034559,
+          "recall": 0.4681823713317726,
+          "density": 0.09322388171816139,
+          "pred_over_gt": 1.2745234544308817
+        },
+        "occ3d": {
+          "threshold": 0.5625,
+          "tp": 6961242,
+          "fp": 4174143,
+          "fn": 4090239,
+          "iou": 0.4572056948207837,
+          "precision": 0.6251460546716615,
+          "recall": 0.6298922289238881,
+          "density": 0.224276283843677,
+          "pred_over_gt": 1.0075921046238057
+        }
+      },
+      "at_zero": {
+        "semantickitti": {
+          "threshold": 0.0,
+          "tp": 14381053,
+          "fp": 42016359,
+          "fn": 4381877,
+          "iou": 0.23661107651325108,
+          "precision": 0.2549949100501278,
+          "recall": 0.7664609418678213,
+          "density": 0.23518016532239605,
+          "pred_over_gt": 3.005789181114037
+        },
+        "occ3d": {
+          "threshold": 0.0,
+          "tp": 8797751,
+          "fp": 9647236,
+          "fn": 3159839,
+          "iou": 0.40721230525068797,
+          "precision": 0.47697246953874245,
+          "recall": 0.7357461662425288,
+          "density": 0.35406026695452714,
+          "pred_over_gt": 1.542533821614556
+        }
+      }
+    },
+    {
+      "candidate": "cellB_best",
+      "checkpoint": "artifacts/gate8a/checkpoints/cellB_uniform_focal_best.pt",
+      "sources": {
+        "semantickitti": {
+          "average_precision": 0.3223374836148593,
+          "prevalence": 0.07824240196221317,
+          "ap_over_prevalence": 4.119728887803455,
+          "auroc": 0.8731473475585884,
+          "n_anchors": 163
+        },
+        "occ3d": {
+          "average_precision": 0.6803078615698755,
+          "prevalence": 0.2295316070178192,
+          "ap_over_prevalence": 2.963896216337044,
+          "auroc": 0.8185547206282895,
+          "n_anchors": 1182
+        }
+      },
+      "macro_ap": 0.5013226725923674,
+      "ap_exceeds_prevalence_on_both": true,
+      "own_macro_threshold": 0.5625,
+      "own_macro_iou": 0.35686942035938796,
+      "full_at_own_threshold": {
+        "semantickitti": {
+          "iou": 0.2599585780962674,
+          "precision": 0.33557247863194783,
+          "recall": 0.5356804614204711,
+          "density": 0.12489977174717583,
+          "pred_over_gt": 1.5963182189562077
+        },
+        "occ3d": {
+          "iou": 0.4537802626225086,
+          "precision": 0.6496423734657469,
+          "recall": 0.600816636128183,
+          "density": 0.21228050023558606,
+          "pred_over_gt": 0.9248421295595517
+        }
+      },
+      "edit_at_own_threshold": {
+        "semantickitti": {
+          "threshold": 0.5625,
+          "tp": 8248266,
+          "fp": 14945542,
+          "fn": 8260491,
+          "iou": 0.26223016446813835,
+          "precision": 0.3556236216148724,
+          "recall": 0.4996297419605849,
+          "density": 0.10276306124823523,
+          "pred_over_gt": 1.4049396935214444
+        },
+        "occ3d": {
+          "threshold": 0.5625,
+          "tp": 6781414,
+          "fp": 3733464,
+          "fn": 4270067,
+          "iou": 0.4586702216342367,
+          "precision": 0.6449351100412197,
+          "recall": 0.613620382643738,
+          "density": 0.2117787362457279,
+          "pred_over_gt": 0.9514451502020408
+        }
+      },
+      "at_zero": {
+        "semantickitti": {
+          "threshold": 0.0,
+          "tp": 14547530,
+          "fp": 42602336,
+          "fn": 4215400,
+          "iou": 0.2370645635268655,
+          "precision": 0.25455055310190927,
+          "recall": 0.7753335966184386,
+          "density": 0.23831793795844358,
+          "pred_over_gt": 3.045892405930204
+        },
+        "occ3d": {
+          "threshold": 0.0,
+          "tp": 8472407,
+          "fp": 8465234,
+          "fn": 3485183,
+          "iou": 0.41484992477044313,
+          "precision": 0.5002117473147529,
+          "recall": 0.7085380080768784,
+          "density": 0.32512604611973667,
+          "pred_over_gt": 1.4164761461130546
+        }
+      }
+    },
+    {
+      "candidate": "cellB_last",
+      "checkpoint": "artifacts/gate8a/checkpoints/cellB_uniform_focal_last.pt",
+      "sources": {
+        "semantickitti": {
+          "average_precision": 0.32251079110468167,
+          "prevalence": 0.07824240196221317,
+          "ap_over_prevalence": 4.12194389508181,
+          "auroc": 0.8732737515616678,
+          "n_anchors": 163
+        },
+        "occ3d": {
+          "average_precision": 0.6810408308707042,
+          "prevalence": 0.2295316070178192,
+          "ap_over_prevalence": 2.9670895425649726,
+          "auroc": 0.8188918975410204,
+          "n_anchors": 1182
+        }
+      },
+      "macro_ap": 0.501775810987693,
+      "ap_exceeds_prevalence_on_both": true,
+      "own_macro_threshold": 0.5625,
+      "own_macro_iou": 0.3564649955492534,
+      "full_at_own_threshold": {
+        "semantickitti": {
+          "iou": 0.25928406528876646,
+          "precision": 0.33915835122441207,
+          "recall": 0.5240270043111603,
+          "density": 0.12089082094646363,
+          "pred_over_gt": 1.5450806457200448
+        },
+        "occ3d": {
+          "iou": 0.4536459258097404,
+          "precision": 0.6449105127505539,
+          "recall": 0.604682799794942,
+          "density": 0.21521406773322607,
+          "pred_over_gt": 0.9376227985739601
+        }
+      },
+      "edit_at_own_threshold": {
+        "semantickitti": {
+          "threshold": 0.5625,
+          "tp": 8029613,
+          "fp": 14202828,
+          "fn": 8479144,
+          "iou": 0.2614522500222636,
+          "precision": 0.36116650438878933,
+          "recall": 0.4863850742972351,
+          "density": 0.09850360476299434,
+          "pred_over_gt": 1.3467059330996272
+        },
+        "occ3d": {
+          "threshold": 0.5625,
+          "tp": 6827644,
+          "fp": 3840060,
+          "fn": 4223837,
+          "iou": 0.4584914348353874,
+          "precision": 0.6400293821425866,
+          "recall": 0.6178035323953414,
+          "density": 0.21485678405051362,
+          "pred_over_gt": 0.9652737040402096
+        }
+      },
+      "at_zero": {
+        "semantickitti": {
+          "threshold": 0.0,
+          "tp": 14533303,
+          "fp": 42427434,
+          "fn": 4229627,
+          "iou": 0.23750966737181037,
+          "precision": 0.2551459788871763,
+          "recall": 0.7745753461746113,
+          "density": 0.23752926011118244,
+          "pred_over_gt": 3.03581247704916
+        },
+        "occ3d": {
+          "threshold": 0.0,
+          "tp": 8491735,
+          "fp": 8537224,
+          "fn": 3465855,
+          "iou": 0.4143357924594973,
+          "precision": 0.49866436345286874,
+          "recall": 0.7101543872971059,
+          "density": 0.32687893840736765,
+          "pred_over_gt": 1.4241129692521655
+        }
+      }
+    },
+    {
+      "candidate": "cellC_best",
+      "checkpoint": "artifacts/gate8a/checkpoints/cellC_occcentred_bce_best.pt",
+      "sources": {
+        "semantickitti": {
+          "average_precision": 0.29466545123828236,
+          "prevalence": 0.07824240196221317,
+          "ap_over_prevalence": 3.766058350056658,
+          "auroc": 0.8670639452543317,
+          "n_anchors": 163
+        },
+        "occ3d": {
+          "average_precision": 0.6347461909750249,
+          "prevalence": 0.2295316070178192,
+          "ap_over_prevalence": 2.7653977559863807,
+          "auroc": 0.8147746561507122,
+          "n_anchors": 1182
+        }
+      },
+      "macro_ap": 0.46470582110665365,
+      "ap_exceeds_prevalence_on_both": true,
+      "own_macro_threshold": -0.78125,
+      "own_macro_iou": 0.34818890003657216,
+      "full_at_own_threshold": {
+        "semantickitti": {
+          "iou": 0.24665048828511646,
+          "precision": 0.32912512768948887,
+          "recall": 0.4960411300367267,
+          "density": 0.11792308219851402,
+          "pred_over_gt": 1.5071505889538575
+        },
+        "occ3d": {
+          "iou": 0.4497273117880279,
+          "precision": 0.6251354006343359,
+          "recall": 0.6157953233051141,
+          "density": 0.22610220123329383,
+          "pred_over_gt": 0.9850591130821512
+        }
+      },
+      "edit_at_own_threshold": {
+        "semantickitti": {
+          "threshold": -0.78125,
+          "tp": 7504516,
+          "fp": 14016246,
+          "fn": 9004241,
+          "iou": 0.2458481658462081,
+          "precision": 0.34871051499012906,
+          "recall": 0.45457789462889303,
+          "density": 0.0953504221262284,
+          "pred_over_gt": 1.3035967517118339
+        },
+        "occ3d": {
+          "threshold": -0.78125,
+          "tp": 6960523,
+          "fp": 4274405,
+          "fn": 4090958,
+          "iou": 0.45416773947033146,
+          "precision": 0.6195431782028331,
+          "recall": 0.6298271697702779,
+          "density": 0.22628116594902414,
+          "pred_over_gt": 1.0165993137028422
+        }
+      },
+      "at_zero": {
+        "semantickitti": {
+          "threshold": 0.0,
+          "tp": 6025597,
+          "fp": 10598487,
+          "fn": 12737333,
+          "iou": 0.20522160085121233,
+          "precision": 0.3624618956448969,
+          "recall": 0.3211437126291043,
+          "density": 0.06932330198863379,
+          "pred_over_gt": 0.8860068230281731
+        },
+        "occ3d": {
+          "threshold": 0.0,
+          "tp": 6392438,
+          "fp": 2311783,
+          "fn": 5565152,
+          "iou": 0.44798310339213926,
+          "precision": 0.7344066746467031,
+          "recall": 0.5345925056804924,
+          "density": 0.16708164721890023,
+          "pred_over_gt": 0.7279243559948116
+        }
+      }
+    },
+    {
+      "candidate": "cellC_last",
+      "checkpoint": "artifacts/gate8a/checkpoints/cellC_occcentred_bce_last.pt",
+      "sources": {
+        "semantickitti": {
+          "average_precision": 0.2977452972368475,
+          "prevalence": 0.07824240196221317,
+          "ap_over_prevalence": 3.805421226468,
+          "auroc": 0.8687278407045472,
+          "n_anchors": 163
+        },
+        "occ3d": {
+          "average_precision": 0.6461501022995951,
+          "prevalence": 0.2295316070178192,
+          "ap_over_prevalence": 2.815081158950944,
+          "auroc": 0.8186036592646836,
+          "n_anchors": 1182
+        }
+      },
+      "macro_ap": 0.4719476997682213,
+      "ap_exceeds_prevalence_on_both": true,
+      "own_macro_threshold": -0.9375,
+      "own_macro_iou": 0.34907755370924953,
+      "full_at_own_threshold": {
+        "semantickitti": {
+          "iou": 0.25024910183704635,
+          "precision": 0.3310523010262798,
+          "recall": 0.5062400168843566,
+          "density": 0.11964706110675577,
+          "pred_over_gt": 1.5291844077657382
+        },
+        "occ3d": {
+          "iou": 0.44790600558145277,
+          "precision": 0.6067540216081995,
+          "recall": 0.6311151327315956,
+          "density": 0.23874727726599018,
+          "pred_over_gt": 1.0401498964256175
+        }
+      },
+      "edit_at_own_threshold": {
+        "semantickitti": {
+          "threshold": -0.9375,
+          "tp": 7695877,
+          "fp": 14238304,
+          "fn": 8812880,
+          "iou": 0.2502963453970446,
+          "precision": 0.35086229114276024,
+          "recall": 0.46616937907560213,
+          "density": 0.09718212660606992,
+          "pred_over_gt": 1.3286391579935424
+        },
+        "occ3d": {
+          "threshold": -0.9375,
+          "tp": 7143711,
+          "fp": 4749970,
+          "fn": 3907770,
+          "iou": 0.4520920895176019,
+          "precision": 0.600630788735632,
+          "recall": 0.6464030477001227,
+          "density": 0.2395490210623295,
+          "pred_over_gt": 1.0762069807657453
+        }
+      },
+      "at_zero": {
+        "semantickitti": {
+          "threshold": 0.0,
+          "tp": 5975707,
+          "fp": 10263305,
+          "fn": 12787223,
+          "iou": 0.20587261833992593,
+          "precision": 0.36798464093751515,
+          "recall": 0.3184847462523177,
+          "density": 0.06771753155680926,
+          "pred_over_gt": 0.8654838023698858
+        },
+        "occ3d": {
+          "threshold": 0.0,
+          "tp": 6437429,
+          "fp": 2336503,
+          "fn": 5520161,
+          "iou": 0.4503558917659204,
+          "precision": 0.7336994405700887,
+          "recall": 0.5383550531503422,
+          "density": 0.1684197829014934,
+          "pred_over_gt": 0.7337542096693397
+        }
+      }
+    },
+    {
+      "candidate": "cellD_best",
+      "checkpoint": "artifacts/gate8a/checkpoints/cellD_uniform_bce_best.pt",
+      "sources": {
+        "semantickitti": {
+          "average_precision": 0.30178003780916,
+          "prevalence": 0.07824240196221317,
+          "ap_over_prevalence": 3.856988413455192,
+          "auroc": 0.8698889747237517,
+          "n_anchors": 163
+        },
+        "occ3d": {
+          "average_precision": 0.637570652628682,
+          "prevalence": 0.2295316070178192,
+          "ap_over_prevalence": 2.7777030837377685,
+          "auroc": 0.8163399224016475,
+          "n_anchors": 1182
+        }
+      },
+      "macro_ap": 0.46967534521892096,
+      "ap_exceeds_prevalence_on_both": true,
+      "own_macro_threshold": -0.875,
+      "own_macro_iou": 0.35096708730999526,
+      "full_at_own_threshold": {
+        "semantickitti": {
+          "iou": 0.25313159631689774,
+          "precision": 0.3364907154803667,
+          "recall": 0.5053914820339893,
+          "density": 0.11751600167966376,
+          "pred_over_gt": 1.5019477768131098
+        },
+        "occ3d": {
+          "iou": 0.44880257830309284,
+          "precision": 0.6153407229669426,
+          "recall": 0.6238165884597147,
+          "density": 0.2326932359411293,
+          "pred_over_gt": 1.0137742638775873
+        }
+      },
+      "edit_at_own_threshold": {
+        "semantickitti": {
+          "threshold": -0.875,
+          "tp": 7679956,
+          "fp": 13743186,
+          "fn": 8828801,
+          "iou": 0.25386653677087784,
+          "precision": 0.3584887781633525,
+          "recall": 0.4652049818166201,
+          "density": 0.0949179045319182,
+          "pred_over_gt": 1.2976835263854207
+        },
+        "occ3d": {
+          "threshold": -0.875,
+          "tp": 7056438,
+          "fp": 4521854,
+          "fn": 3995043,
+          "iou": 0.4531102682887127,
+          "precision": 0.6094541405589011,
+          "recall": 0.6385060970561321,
+          "density": 0.23319681385214563,
+          "pred_over_gt": 1.0476688147045632
+        }
+      },
+      "at_zero": {
+        "semantickitti": {
+          "threshold": 0.0,
+          "tp": 5844194,
+          "fp": 9428834,
+          "fn": 12918736,
+          "iou": 0.20730146577560737,
+          "precision": 0.3826480250019839,
+          "recall": 0.3114755531252315,
+          "density": 0.06368932762399779,
+          "pred_over_gt": 0.8140001588238084
+        },
+        "occ3d": {
+          "threshold": 0.0,
+          "tp": 6511524,
+          "fp": 2452848,
+          "fn": 5446066,
+          "iou": 0.4518616297436622,
+          "precision": 0.7263781556588682,
+          "recall": 0.5445515358864119,
+          "density": 0.17207536895524447,
+          "pred_over_gt": 0.7496804958189736
+        }
+      }
+    },
+    {
+      "candidate": "cellD_last",
+      "checkpoint": "artifacts/gate8a/checkpoints/cellD_uniform_bce_last.pt",
+      "sources": {
+        "semantickitti": {
+          "average_precision": 0.3027897108823601,
+          "prevalence": 0.07824240196221317,
+          "ap_over_prevalence": 3.8698928367330936,
+          "auroc": 0.8701460886311327,
+          "n_anchors": 163
+        },
+        "occ3d": {
+          "average_precision": 0.6383796086252687,
+          "prevalence": 0.2295316070178192,
+          "ap_over_prevalence": 2.7812274610864787,
+          "auroc": 0.8162072745917198,
+          "n_anchors": 1182
+        }
+      },
+      "macro_ap": 0.47058465975381436,
+      "ap_exceeds_prevalence_on_both": true,
+      "own_macro_threshold": -0.9375,
+      "own_macro_iou": 0.35004321429181684,
+      "full_at_own_threshold": {
+        "semantickitti": {
+          "iou": 0.25424808079581457,
+          "precision": 0.33616153440463553,
+          "recall": 0.5106193435673426,
+          "density": 0.11884787472735467,
+          "pred_over_gt": 1.5189701715030648
+        },
+        "occ3d": {
+          "iou": 0.44583834778781906,
+          "precision": 0.6019760760037073,
+          "recall": 0.6322032282424803,
+          "density": 0.2410571262294749,
+          "pred_over_gt": 1.0502132118595804
+        }
+      },
+      "edit_at_own_threshold": {
+        "semantickitti": {
+          "threshold": -0.9375,
+          "tp": 7778046,
+          "fp": 13964486,
+          "fn": 8730711,
+          "iou": 0.2552418198483174,
+          "precision": 0.35773414062354836,
+          "recall": 0.47114667688185125,
+          "density": 0.0963330017911554,
+          "pred_over_gt": 1.3170302282600683
+        },
+        "occ3d": {
+          "threshold": -0.9375,
+          "tp": 7156722,
+          "fp": 4857292,
+          "fn": 3894759,
+          "iou": 0.4498600866327026,
+          "precision": 0.5956978242242768,
+          "recall": 0.6475803559721995,
+          "density": 0.24197263174698577,
+          "pred_over_gt": 1.087095385677268
+        }
+      },
+      "at_zero": {
+        "semantickitti": {
+          "threshold": 0.0,
+          "tp": 5598105,
+          "fp": 8788213,
+          "fn": 13164825,
+          "iou": 0.20318957365943038,
+          "precision": 0.38912701637764435,
+          "recall": 0.2983598510467182,
+          "density": 0.0599917004280367,
+          "pred_over_gt": 0.7667415483615831
+        },
+        "occ3d": {
+          "threshold": 0.0,
+          "tp": 6535637,
+          "fp": 2501956,
+          "fn": 5421953,
+          "iou": 0.4519946200247228,
+          "precision": 0.7231612443711506,
+          "recall": 0.5465680793537828,
+          "density": 0.17348088075130472,
+          "pred_over_gt": 0.7558038869036319
+        }
+      }
+    },
+    {
+      "candidate": "mapper",
+      "checkpoint": null,
+      "sources": {
+        "semantickitti": {
+          "average_precision": 0.10640473188370991,
+          "prevalence": 0.07824240196221317,
+          "ap_over_prevalence": 1.3599369295321175,
+          "auroc": 0.5523108943907268,
+          "n_anchors": 163
+        },
+        "occ3d": {
+          "average_precision": 0.28211825794272843,
+          "prevalence": 0.2295316070178192,
+          "ap_over_prevalence": 1.2291041813724015,
+          "auroc": 0.5396006775173166,
+          "n_anchors": 1182
+        }
+      },
+      "macro_ap": 0.19426149491321917,
+      "ap_exceeds_prevalence_on_both": true,
+      "own_macro_threshold": -16.0,
+      "own_macro_iou": 0.1538870044900162,
+      "full_at_own_threshold": {
+        "semantickitti": {
+          "iou": 0.07824240196221317,
+          "precision": 0.07824240196221317,
+          "recall": 1.0,
+          "density": 1.0,
+          "pred_over_gt": 12.780793724647483
+        },
+        "occ3d": {
+          "iou": 0.2295316070178192,
+          "precision": 0.2295316070178192,
+          "recall": 1.0,
+          "density": 1.0,
+          "pred_over_gt": 4.356698465158949
+        }
+      },
+      "edit_at_own_threshold": {
+        "semantickitti": {
+          "threshold": -16.0,
+          "tp": 16508757,
+          "fp": 209193044,
+          "fn": 0,
+          "iou": 0.0731441084070038,
+          "precision": 0.0731441084070038,
+          "recall": 1.0,
+          "density": 1.0,
+          "pred_over_gt": 13.671641117499034
+        },
+        "occ3d": {
+          "threshold": -16.0,
+          "tp": 11051481,
+          "fp": 38598820,
+          "fn": 0,
+          "iou": 0.22258638472302514,
+          "precision": 0.22258638472302514,
+          "recall": 1.0,
+          "density": 1.0,
+          "pred_over_gt": 4.492637774068471
+        }
+      },
+      "at_zero": {
+        "semantickitti": {
+          "threshold": 0.0,
+          "tp": 17095818,
+          "fp": 198372294,
+          "fn": 1667112,
+          "iou": 0.07873350847949018,
+          "precision": 0.07934268250329311,
+          "recall": 0.9111486319034394,
+          "density": 0.8985133254317512,
+          "pred_over_gt": 11.483713471190267
+        },
+        "occ3d": {
+          "threshold": 0.0,
+          "tp": 10663492,
+          "fp": 36354190,
+          "fn": 1294098,
+          "iou": 0.2207223993816829,
+          "precision": 0.22679748440171935,
+          "recall": 0.8917760184117368,
+          "density": 0.9025266887150999,
+          "pred_over_gt": 3.9320366394900645
+        }
+      }
+    }
+  ],
+  "rule": {
+    "checkpoint": "max macro-average AP over the two source validation sets, subject to AP > prevalence on both",
+    "threshold": "single global final-logit threshold maximising the equally weighted mean of the two per-source pooled full-grid binary IoUs",
+    "forbidden": "KITTI-360 data, labels, prevalence, metrics or predictions play no part in any of the above"
+  },
+  "selected": {
+    "candidate": "cellB_last",
+    "checkpoint": "artifacts/gate8a/checkpoints/cellB_uniform_focal_last.pt",
+    "checkpoint_sha256": "b505fdc4facdd53a2ee877de26f09045d3d3f13ec6468b81bd49226db0ac9c62",
+    "macro_ap": 0.501775810987693,
+    "threshold": 0.5625,
+    "macro_full_iou_at_threshold": 0.3564649955492534,
+    "full_at_threshold": {
+      "semantickitti": {
+        "iou": 0.25928406528876646,
+        "precision": 0.33915835122441207,
+        "recall": 0.5240270043111603,
+        "density": 0.12089082094646363,
+        "pred_over_gt": 1.5450806457200448
+      },
+      "occ3d": {
+        "iou": 0.4536459258097404,
+        "precision": 0.6449105127505539,
+        "recall": 0.604682799794942,
+        "density": 0.21521406773322607,
+        "pred_over_gt": 0.9376227985739601
+      }
+    },
+    "edit_at_threshold": {
+      "semantickitti": {
+        "threshold": 0.5625,
+        "tp": 8029613,
+        "fp": 14202828,
+        "fn": 8479144,
+        "iou": 0.2614522500222636,
+        "precision": 0.36116650438878933,
+        "recall": 0.4863850742972351,
+        "density": 0.09850360476299434,
+        "pred_over_gt": 1.3467059330996272
+      },
+      "occ3d": {
+        "threshold": 0.5625,
+        "tp": 6827644,
+        "fp": 3840060,
+        "fn": 4223837,
+        "iou": 0.4584914348353874,
+        "precision": 0.6400293821425866,
+        "recall": 0.6178035323953414,
+        "density": 0.21485678405051362,
+        "pred_over_gt": 0.9652737040402096
+      }
+    }
+  },
+  "mapper_calibrated": {
+    "threshold": -16.0,
+    "macro_full_iou_at_threshold": 0.1538870044900162,
+    "full_at_threshold": {
+      "semantickitti": {
+        "iou": 0.07824240196221317,
+        "precision": 0.07824240196221317,
+        "recall": 1.0,
+        "density": 1.0,
+        "pred_over_gt": 12.780793724647483
+      },
+      "occ3d": {
+        "iou": 0.2295316070178192,
+        "precision": 0.2295316070178192,
+        "recall": 1.0,
+        "density": 1.0,
+        "pred_over_gt": 4.356698465158949
+      }
+    },
+    "edit_at_threshold": {
+      "semantickitti": {
+        "threshold": -16.0,
+        "tp": 16508757,
+        "fp": 209193044,
+        "fn": 0,
+        "iou": 0.0731441084070038,
+        "precision": 0.0731441084070038,
+        "recall": 1.0,
+        "density": 1.0,
+        "pred_over_gt": 13.671641117499034
+      },
+      "occ3d": {
+        "threshold": -16.0,
+        "tp": 11051481,
+        "fp": 38598820,
+        "fn": 0,
+        "iou": 0.22258638472302514,
+        "precision": 0.22258638472302514,
+        "recall": 1.0,
+        "density": 1.0,
+        "pred_over_gt": 4.492637774068471
+      }
+    }
+  },
+  "seconds": 0.70772385597229
+}

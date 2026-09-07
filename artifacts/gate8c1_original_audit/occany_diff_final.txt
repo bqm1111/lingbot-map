@@ -1,0 +1,69 @@
+diff --git a/occany/datasets/kitti.py b/occany/datasets/kitti.py
+index 8c5c977..5a9481a 100755
+--- a/occany/datasets/kitti.py
++++ b/occany/datasets/kitti.py
+@@ -640,7 +640,13 @@ class KittiDataset(Dataset):
+         label = np.fromfile(lidar_label_path, dtype=np.uint32)
+         label = label.reshape((-1))
+         label = label & 0xFFFF  # get lower half for semantics
+-        label = self.remap_lut[label.astype(np.uint16)].astype(np.float32)
++        # LOCAL PATCH: one label file in this copy of sequence 08 (001865.label) is corrupt
++        # -- correct point count, but ids running past the remap table. Treat out-of-range
++        # ids as unlabeled instead of crashing the run. Geometry-only evaluation reads
++        # voxels/*.label for its ground truth and never consults these point labels.
++        lbl16 = label.astype(np.uint16)
++        lbl16[lbl16 >= len(self.remap_lut)] = 0
++        label = self.remap_lut[lbl16].astype(np.float32)
+         label[label == 0] = 255
+         return lidar_points, label
+ 
+diff --git a/occany/model/model_sam2.py b/occany/model/model_sam2.py
+index d905b87..96d47ad 100644
+--- a/occany/model/model_sam2.py
++++ b/occany/model/model_sam2.py
+@@ -518,7 +518,7 @@ class SAM2ImagePredictorOccany(SAM2ImagePredictor):
+     @torch.no_grad()
+     def get_image_features_with_pos_enc(
+         self,
+-        image: Union[np.ndarray, Image],
++        image: Union[np.ndarray, "Image.Image"],   # was `Image` (the PIL *module*)
+     ) -> None:
+         """
+         Calculates the image embeddings for the provided image, allowing
+diff --git a/third_party/dust3r/dust3r/datasets/base/batched_sampler.py b/third_party/dust3r/dust3r/datasets/base/batched_sampler.py
+index 31875b4..f8e82f1 100755
+--- a/third_party/dust3r/dust3r/datasets/base/batched_sampler.py
++++ b/third_party/dust3r/dust3r/datasets/base/batched_sampler.py
+@@ -287,7 +287,9 @@ class BatchedRandomSamplerMust3r(BatchedRandomSampler):
+ 
+         idxs.append(ray_map_idx)
+         # put them together
+-        idxs = np.c_[sample_idxs, *idxs]  # shape = (total_size, n_feats)
++        # py3.10 compat: a starred expression inside a subscript needs 3.11+.
++        # Semantically identical; this sampler is training-time only.
++        idxs = np.c_[tuple([sample_idxs] + list(idxs))]  # shape = (total_size, n_feats)
+         print(idxs)
+         # Distributed sampler: we select a subset of batches
+         # make sure the slice for each node is aligned with batch_size
+diff --git a/third_party/dust3r/dust3r/datasets/base/easy_dataset.py b/third_party/dust3r/dust3r/datasets/base/easy_dataset.py
+index dedc38e..d2c23a0 100755
+--- a/third_party/dust3r/dust3r/datasets/base/easy_dataset.py
++++ b/third_party/dust3r/dust3r/datasets/base/easy_dataset.py
+@@ -271,7 +271,8 @@ class MulDataset_MUSt3R(MulDataset, EasyDataset_MUSt3R):
+ 
+     def __getitem__(self, idx):
+         if isinstance(idx, tuple):
+-            return self.dataset[idx[0] // self.multiplicator, *idx[1:]]
++            # py3.10 compat: a starred expression in a subscript needs 3.11+.
++            return self.dataset[tuple([idx[0] // self.multiplicator] + list(idx[1:]))]
+         else:
+             return self.dataset[idx // self.multiplicator]
+ 
+@@ -297,6 +298,6 @@ class ResizedDataset_MUSt3R(ResizedDataset, EasyDataset_MUSt3R):
+     def __getitem__(self, idx):
+         assert hasattr(self, '_idxs_mapping'), 'You need to call dataset.set_epoch() to use ResizedDataset.__getitem__()'
+         if isinstance(idx, tuple):
+-            return self.dataset[self._idxs_mapping[idx[0]], *idx[1:]]
++            return self.dataset[tuple([self._idxs_mapping[idx[0]]] + list(idx[1:]))]
+         else:
+             return self.dataset[self._idxs_mapping[idx]]

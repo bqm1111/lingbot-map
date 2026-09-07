@@ -1,0 +1,88 @@
+{
+  "dataset": "kitti360",
+  "n_anchors": 1748,
+  "future_frames": 20,
+  "teacher": "frozen Trident-H fused over frames t+1..t+20 (the training target)",
+  "n_future_visible_gt_occupied": 5597229,
+  "n_correct": 1662750,
+  "accuracy_future_visible_occupied": 0.2970666377952376,
+  "accuracy_on_causally_observed_subset": 0.33152326510434904,
+  "n_causally_observed_subset": 922433,
+  "accuracy_on_newly_visible_subset": 0.2902676394863006,
+  "n_newly_visible_subset": 4674796,
+  "per_class": {
+    "car": {
+      "n": 158733,
+      "accuracy": 0.12881379423308323
+    },
+    "bicycle": {
+      "n": 58,
+      "accuracy": 0.0
+    },
+    "motorcycle": {
+      "n": 1129,
+      "accuracy": 0.01771479185119575
+    },
+    "truck": {
+      "n": 4388,
+      "accuracy": 0.27552415679124886
+    },
+    "other-vehicle": {
+      "n": 15016,
+      "accuracy": 0.05367607884922749
+    },
+    "person": {
+      "n": 1110,
+      "accuracy": 0.062162162162162166
+    },
+    "road": {
+      "n": 1483533,
+      "accuracy": 0.21385435982886797
+    },
+    "parking": {
+      "n": 288010,
+      "accuracy": 0.006881705496336933
+    },
+    "sidewalk": {
+      "n": 484096,
+      "accuracy": 0.043222831835007934
+    },
+    "other-ground": {
+      "n": 165833,
+      "accuracy": 0.04365837921282254
+    },
+    "building": {
+      "n": 798072,
+      "accuracy": 0.36148618169789193
+    },
+    "fence": {
+      "n": 64734,
+      "accuracy": 0.05953594710662094
+    },
+    "vegetation": {
+      "n": 1572986,
+      "accuracy": 0.5703318402070966
+    },
+    "terrain": {
+      "n": 240352,
+      "accuracy": 0.004622387165490614
+    },
+    "pole": {
+      "n": 5919,
+      "accuracy": 0.06876161513769218
+    },
+    "traffic-sign": {
+      "n": 882,
+      "accuracy": 0.006802721088435374
+    },
+    "other-structure": {
+      "n": 295910,
+      "accuracy": 0.3430299753303369
+    },
+    "other-object": {
+      "n": 16468,
+      "accuracy": 0.017792081612824872
+    }
+  },
+  "seconds": 592.5994441509247
+}

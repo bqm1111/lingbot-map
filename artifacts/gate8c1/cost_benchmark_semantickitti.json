@@ -1,0 +1,69 @@
+{
+  "dataset": "semantickitti",
+  "device": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+  "params": {
+    "completion_unet_trained": 986114,
+    "lingbot_map_frozen": 1157943540,
+    "moge2_frozen": 326209221,
+    "trident_h_frozen": 228845944,
+    "frozen_total": 1712998705,
+    "occany_total": 651129550
+  },
+  "stages_ms": {
+    "map_query_dense_export": {
+      "median_ms": 3.161485306918621,
+      "p10_ms": 3.1214291229844093,
+      "p90_ms": 3.21758259087801,
+      "n": 12
+    },
+    "completion_unet_forward": {
+      "median_ms": 44.815029948949814,
+      "p10_ms": 44.77538634091616,
+      "p90_ms": 44.93656009435654,
+      "n": 12
+    },
+    "mapper_step_one_frame": {
+      "median_ms": 6.679933983832598,
+      "p10_ms": 6.651903502643108,
+      "p90_ms": 6.85748178511858,
+      "n": 6
+    },
+    "lingbot_map_per_frame": {
+      "median_ms": 13.368607312440872,
+      "p10_ms": 13.343315571546555,
+      "p90_ms": 13.394147716462612,
+      "n": 3
+    },
+    "moge2_per_frame": {
+      "median_ms": 42.469872161746025,
+      "p10_ms": 42.17023868113756,
+      "p90_ms": 42.72154439240694,
+      "n": 6
+    },
+    "trident_h_per_frame": {
+      "median_ms": 1903.6051293823616,
+      "source": "gate6 cache build, 4 shards x 1 GPU; includes NPZ writes so it is an upper bound"
+    }
+  },
+  "notes": {
+    "lingbot": "timed over a 5-frame streaming replay and divided by 5; keyframe_interval=1",
+    "moge": "runs on the first 5 frames of a sequence only, then ScaleState freezes; amortised cost per frame over an N-frame sequence is 5/N of this",
+    "trident": "Trident-H runs in its own conda environment (tools/gate6/cache_semantics.py) and is not importable here; see the cache build log for its rate",
+    "occany": "OccAny emits one prediction per sample and consumes its five frames inside that sample, so seconds/sample is its per-output cost. Measured from its own run on this machine (MUSt3R + generative novel-view rendering, --gen --batch_gen_view 12)."
+  },
+  "occany_per_output_sample": {
+    "median_s_per_sample": 0.7874015748031495,
+    "p10_s": 0.6289308176100629,
+    "p90_s": 1.93,
+    "n_observations": 1215
+  },
+  "totals_ms": {
+    "ours_per_frame_geometry_only": 20.04854129627347,
+    "ours_per_frame_with_trident_semantics": 1923.653670678635,
+    "ours_per_output_query_plus_net": 47.976515255868435,
+    "ours_per_output_total_geometry_only": 68.0250565521419,
+    "ours_per_output_total_deployed": 1971.6301859345035,
+    "occany_per_output": 787.4015748031495,
+    "moge2_amortised_note": "MoGe runs on the first 5 frames only; over an N-frame sequence add 5/N x 42.5 ms"
+  }
+}

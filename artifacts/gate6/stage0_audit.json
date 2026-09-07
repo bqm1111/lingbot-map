@@ -1,0 +1,116 @@
+{
+  "git": {
+    "status_short": "M lingbot_map/models/gct_stream.py\n M research/sem_bypass/model.py\n?? artifacts/\n?? configs/depth_gate/\n?? configs/gate5/\n?? configs/gate5_1/\n?? configs/gate5_2/\n?? configs/occ3d_zeroshot/\n?? configs/scale_gate/\n?? configs/voxel_gate/\n?? configs/voxel_gate_validation/\n?? depth_gate/\n?? gate6/\n?? lingbot_map_scale_claude_code_plan.md\n?? manifests/\n?? moge_gauge/\n?? occ3d_zeroshot/\n?? reports/\n?? scale_gate/\n?? scripts/export_occupancy_3d.py\n?? scripts/make_occupancy_ceiling_figure.py\n?? scripts/make_scene_completion_honest_figure.py\n?? sscbench_kitti360/\n?? tests/depth_gate/\n?? tests/gate5/\n?? tests/gate5_1/\n?? tests/gate5_2/\n?? tests/occ3d_zeroshot/\n?? tests/scale_gate/\n?? tests/voxel_gate/\n?? tests/voxel_gate_validation/\n?? tools/__init__.py\n?? tools/check_ddad_layout.py\n?? tools/check_vkitti2_layout.py\n?? tools/depth_gate/\n?? tools/gate5/\n?? tools/gate5_1/\n?? tools/gate5_2/\n?? tools/gate6/\n?? tools/geometry_gate/\n?? tools/occ3d_zeroshot/\n?? tools/scale_gate/\n?? tools/voxel_gate/\n?? tools/voxel_gate_validation/\n?? voxel_gate/\n?? voxel_gate_validation/",
+    "commit": "9a648322e6dc4e34995f0530650c2fa469779676",
+    "branch": "dev",
+    "describe": "9a648322e6dc4e34995f0530650c2fa469779676 2026-08-27 18:18:30 +0200 Add something"
+  },
+  "environment": {
+    "python": "3.10.19",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "cv2": "4.11.0",
+    "open_clip": "3.3.0",
+    "mmcv": null,
+    "mmengine": "0.10.7",
+    "mmseg": null,
+    "timm": "1.0.25",
+    "PIL": "11.3.0",
+    "cuda": "12.8",
+    "gpus": [
+      "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+      "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+      "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+      "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition"
+    ]
+  },
+  "preserved_user_modifications": {
+    "lingbot_map/models/gct_stream.py": {
+      "sha256": "e1f457088894c15648cf01b87e3e677338bd44e638b462a59cf41a7fa60f52c4",
+      "bytes": 23445
+    },
+    "research/sem_bypass/model.py": {
+      "sha256": "51ce29bf5a3a6abcffd922763875fe6290b1569642138b6d83323aabd0e0fe86",
+      "bytes": 6405
+    }
+  },
+  "pinned_files": {
+    "manifests/gate5_2/val.jsonl": {
+      "sha256": "336af314ce3feaf9fe5ec857162c1d81464af7232e528ede50acaab81bb7ffd7",
+      "bytes": 1473701
+    },
+    "manifests/occ3d_zeroshot/val.jsonl": {
+      "sha256": "60a7460460d26c75ba890487759432fbeb154d97d5362c34a0877f1af18e1463",
+      "bytes": 1311040
+    },
+    "artifacts/scale_gate/manifests/val.jsonl": {
+      "sha256": "16c8e6b5c5984e8ee1e99cc550adfed10b21375266370e2c7603f594f29ddfe0",
+      "bytes": 104261
+    },
+    "artifacts/gate5_1/scales_G51-B_kitti.csv": {
+      "sha256": "d49c584dd863d78fb4fb52b46788081b1f8321f9161a81fda6bcc46369e49007",
+      "bytes": 26940
+    },
+    "artifacts/gate5_1/scales_G51-B_occ3d.csv": {
+      "sha256": "8ca394b68cb9f6b661d5a61cedcd59122aa01f2022afade97e08a42d95378c52",
+      "bytes": 225791
+    },
+    "artifacts/gate5_2/scales_B.csv": {
+      "sha256": "b1c5ee59bf56a1525d05ae67219988b8e23b215fb84ad9c08ed2c956f792434b",
+      "bytes": 361412
+    },
+    "configs/gate5/moge_metric_gauge.yaml": {
+      "sha256": "b1df6521f72d75acd8716f6c75c40319ef898261163f01d1f70e1bedc8b02bbf",
+      "bytes": 2890
+    },
+    "configs/gate5_1/calibrated_gauge.yaml": {
+      "sha256": "b27193e9cd5962a24101955d2a8e451385ec0947471f69cbc86cd659d459781c",
+      "bytes": 2049
+    },
+    "configs/gate5_2/kitti360_transfer.yaml": {
+      "sha256": "785f64c6100719cbf5252d89d4a709cf1ba5036367b2ba625b4bb4778ff8817c",
+      "bytes": 3841
+    },
+    "configs/occ3d_zeroshot/frozen_transfer.yaml": {
+      "sha256": "d82a135080f44da92de858954069ef7466064b7d14a37ee3815b4c8873f953f8",
+      "bytes": 2871
+    },
+    "configs/scale_gate/semantickitti.yaml": {
+      "sha256": "472b45311a5e03ba74706022ad10cd7a4387f4ae269c984682a1a25f3e4ea086",
+      "bytes": 2151
+    },
+    "configs/depth_gate/refine.yaml": {
+      "sha256": "b7692022114830f94272da520e70ce774587d14ff04d5bd65d2eb08f41e0dd92",
+      "bytes": 1290
+    },
+    "checkpoints/lingbot-map/204754b/lingbot-map.pt": {
+      "sha256": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72",
+      "bytes": 4632303465
+    }
+  },
+  "pinned_trees": {
+    "lingbot_cache_kitti": {
+      "root": "artifacts/scale_gate/cache/lingbot",
+      "exists": true,
+      "n_files": 926,
+      "bytes": 951527501,
+      "index_sha256": "d00c6c3a017200e04781166095b23ab9e53dbd4c8d45e6604dd24ef50df1ac96"
+    },
+    "lingbot_cache_occ3d": {
+      "root": "/media/SSD1/MINH_DATASETS/lingbot_occ3d_zeroshot/cache_lingbot",
+      "exists": true,
+      "n_files": 1182,
+      "bytes": 1869662393,
+      "index_sha256": "3917607fb0933b4a5f0f504f290062171b6ecfbc2c20e2f940c288756dd19caf"
+    },
+    "lingbot_cache_kitti360": {
+      "root": "/media/SSD1/MINH_DATASETS/lingbot_gate5_2/cache_lingbot",
+      "exists": true,
+      "n_files": 1753,
+      "bytes": 1665830007,
+      "index_sha256": "197f2659c562811f88737ee277502092d417bd59626ce1d190baddfd65940352"
+    }
+  }
+}

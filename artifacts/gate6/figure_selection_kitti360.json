@@ -1,0 +1,22 @@
+{
+  "dataset": "kitti360",
+  "rule": "percentiles [10, 50, 90] of the frozen B-D binary occupancy IoU",
+  "source": "artifacts/gate5_2/gate5_2_per_clip.csv",
+  "selected": [
+    {
+      "clip_id": "2013_05_28_drive_0006_sync_000125",
+      "percentile": 10,
+      "frozen_bd_iou": 0.08915723098324953
+    },
+    {
+      "clip_id": "2013_05_28_drive_0006_sync_003575",
+      "percentile": 50,
+      "frozen_bd_iou": 0.130948519531069
+    },
+    {
+      "clip_id": "2013_05_28_drive_0006_sync_000560",
+      "percentile": 90,
+      "frozen_bd_iou": 0.1823666454207785
+    }
+  ]
+}

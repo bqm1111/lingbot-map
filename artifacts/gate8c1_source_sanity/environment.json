@@ -1,0 +1,12 @@
+{
+  "python": "3.10.19 (main, Oct 21 2025, 16:43:05) [GCC 11.2.0]",
+  "torch": "2.7.1+cu128",
+  "numpy": "2.2.6",
+  "device": "cuda:2",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+  "executable": "/home/minh/anaconda3/envs/cu128/bin/python",
+  "time_unix": 1788707058.0838838,
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "cudnn_benchmark": false
+}

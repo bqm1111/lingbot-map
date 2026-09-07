@@ -1,0 +1,3866 @@
+{
+  "provenance": {
+    "tool": "cache_lingbot",
+    "git_commit": "9a648322e6dc4e34995f0530650c2fa469779676",
+    "git_dirty_files": [
+      "M lingbot_map/models/gct_stream.py",
+      " M research/sem_bypass/model.py",
+      "?? artifacts/",
+      "?? configs/scale_gate/",
+      "?? lingbot_map_scale_claude_code_plan.md",
+      "?? scale_gate/",
+      "?? scripts/export_occupancy_3d.py",
+      "?? scripts/make_occupancy_ceiling_figure.py",
+      "?? scripts/make_scene_completion_honest_figure.py",
+      "?? tests/scale_gate/",
+      "?? tools/__init__.py",
+      "?? tools/scale_gate/"
+    ],
+    "python": "3.10.19",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.7.1+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "seed": 0,
+    "config_hash": "d2faead637e3a190",
+    "checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+    "checkpoint_sha256": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72",
+    "argv": [
+      "tools/scale_gate/cache_lingbot.py",
+      "--config",
+      "configs/scale_gate/semantickitti.yaml",
+      "--split",
+      "train",
+      "--overwrite"
+    ]
+  },
+  "stamp": {
+    "checkpoint_sha256": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72",
+    "config_hash": "d2faead637e3a190",
+    "mode": "direct",
+    "clip_length": 5,
+    "frame_stride": 5
+  },
+  "split": "train",
+  "n_clips": 763,
+  "n_ok": 763,
+  "seconds": 104.80074787139893,
+  "peak_gpu_gib": 9.364034175872803,
+  "clips": [
+    {
+      "clip_id": "00_000000_000020_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000025_000045_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000050_000070_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000075_000095_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000100_000120_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000125_000145_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000150_000170_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000175_000195_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000200_000220_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000225_000245_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000250_000270_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000275_000295_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000300_000320_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000325_000345_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000350_000370_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000375_000395_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000400_000420_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000425_000445_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000450_000470_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000475_000495_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000500_000520_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000525_000545_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000550_000570_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000575_000595_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000600_000620_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000625_000645_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000650_000670_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000675_000695_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000700_000720_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000725_000745_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000750_000770_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000775_000795_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000800_000820_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000825_000845_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000850_000870_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000875_000895_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000900_000920_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000925_000945_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000950_000970_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_000975_000995_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001000_001020_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001025_001045_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001050_001070_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001075_001095_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001100_001120_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001125_001145_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001150_001170_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001175_001195_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001200_001220_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001225_001245_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001250_001270_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001275_001295_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001300_001320_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001325_001345_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001350_001370_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001375_001395_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001400_001420_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001425_001445_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001450_001470_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001475_001495_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001500_001520_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001525_001545_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001550_001570_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001575_001595_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001600_001620_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001625_001645_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001650_001670_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001675_001695_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001700_001720_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001725_001745_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001750_001770_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001775_001795_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001800_001820_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001825_001845_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001850_001870_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001875_001895_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001900_001920_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001925_001945_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001950_001970_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_001975_001995_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002000_002020_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002025_002045_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002050_002070_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002075_002095_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002100_002120_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002125_002145_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002150_002170_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002175_002195_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002200_002220_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002225_002245_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002250_002270_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002275_002295_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002300_002320_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002325_002345_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002350_002370_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002375_002395_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002400_002420_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002425_002445_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002450_002470_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002475_002495_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002500_002520_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002525_002545_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002550_002570_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002575_002595_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002600_002620_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002625_002645_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002650_002670_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002675_002695_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002700_002720_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002725_002745_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002750_002770_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002775_002795_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002800_002820_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002825_002845_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002850_002870_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002875_002895_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002900_002920_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002925_002945_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002950_002970_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_002975_002995_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003000_003020_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003025_003045_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003050_003070_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003075_003095_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003100_003120_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003125_003145_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003150_003170_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003175_003195_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003200_003220_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003225_003245_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003250_003270_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003275_003295_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003300_003320_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003325_003345_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003350_003370_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003375_003395_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003400_003420_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003425_003445_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003450_003470_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003475_003495_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003500_003520_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003525_003545_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003550_003570_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003575_003595_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003600_003620_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003625_003645_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003650_003670_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003675_003695_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003700_003720_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003725_003745_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003750_003770_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003775_003795_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003800_003820_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003825_003845_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003850_003870_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003875_003895_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003900_003920_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003925_003945_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003950_003970_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_003975_003995_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_004000_004020_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_004025_004045_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_004050_004070_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_004075_004095_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_004100_004120_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_004125_004145_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_004150_004170_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_004175_004195_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_004200_004220_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_004225_004245_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_004250_004270_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_004275_004295_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_004300_004320_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_004325_004345_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_004350_004370_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_004375_004395_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_004400_004420_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_004425_004445_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_004450_004470_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_004475_004495_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "00_004500_004520_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000000_000020_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000025_000045_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000050_000070_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000075_000095_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000100_000120_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000125_000145_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000150_000170_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000175_000195_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000200_000220_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000225_000245_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000250_000270_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000275_000295_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000300_000320_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000325_000345_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000350_000370_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000375_000395_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000400_000420_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000425_000445_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000450_000470_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000475_000495_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000500_000520_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000525_000545_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000550_000570_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000575_000595_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000600_000620_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000625_000645_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000650_000670_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000675_000695_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000700_000720_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000725_000745_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000750_000770_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000775_000795_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000800_000820_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000825_000845_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000850_000870_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000875_000895_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000900_000920_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000925_000945_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000950_000970_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_000975_000995_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_001000_001020_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_001025_001045_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_001050_001070_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "01_001075_001095_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000000_000020_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000025_000045_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000050_000070_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000075_000095_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000100_000120_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000125_000145_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000150_000170_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000175_000195_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000200_000220_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000225_000245_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000250_000270_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000275_000295_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000300_000320_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000325_000345_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000350_000370_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000375_000395_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000400_000420_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000425_000445_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000450_000470_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000475_000495_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000500_000520_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000525_000545_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000550_000570_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000575_000595_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000600_000620_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000625_000645_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000650_000670_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000675_000695_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000700_000720_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000725_000745_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000750_000770_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000775_000795_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000800_000820_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000825_000845_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000850_000870_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000875_000895_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000900_000920_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000925_000945_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000950_000970_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_000975_000995_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001000_001020_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001025_001045_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001050_001070_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001075_001095_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001100_001120_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001125_001145_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001150_001170_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001175_001195_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001200_001220_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001225_001245_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001250_001270_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001275_001295_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001300_001320_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001325_001345_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001350_001370_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001375_001395_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001400_001420_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001425_001445_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001450_001470_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001475_001495_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001500_001520_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001525_001545_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001550_001570_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001575_001595_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001600_001620_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001625_001645_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001650_001670_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001675_001695_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001700_001720_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001725_001745_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001750_001770_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001775_001795_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001800_001820_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001825_001845_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001850_001870_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001875_001895_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001900_001920_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001925_001945_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001950_001970_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_001975_001995_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002000_002020_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002025_002045_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002050_002070_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002075_002095_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002100_002120_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002125_002145_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002150_002170_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002175_002195_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002200_002220_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002225_002245_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002250_002270_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002275_002295_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002300_002320_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002325_002345_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002350_002370_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002375_002395_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002400_002420_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002425_002445_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002450_002470_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002475_002495_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002500_002520_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002525_002545_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002550_002570_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002575_002595_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002600_002620_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002625_002645_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002650_002670_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002675_002695_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002700_002720_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002725_002745_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002750_002770_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002775_002795_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002800_002820_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002825_002845_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002850_002870_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002875_002895_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002900_002920_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002925_002945_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002950_002970_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_002975_002995_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003000_003020_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003025_003045_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003050_003070_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003075_003095_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003100_003120_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003125_003145_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003150_003170_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003175_003195_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003200_003220_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003225_003245_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003250_003270_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003275_003295_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003300_003320_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003325_003345_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003350_003370_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003375_003395_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003400_003420_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003425_003445_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003450_003470_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003475_003495_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003500_003520_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003525_003545_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003550_003570_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003575_003595_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003600_003620_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003625_003645_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003650_003670_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003675_003695_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003700_003720_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003725_003745_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003750_003770_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003775_003795_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003800_003820_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003825_003845_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003850_003870_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003875_003895_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003900_003920_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003925_003945_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003950_003970_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_003975_003995_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_004000_004020_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_004025_004045_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_004050_004070_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_004075_004095_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_004100_004120_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_004125_004145_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_004150_004170_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_004175_004195_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_004200_004220_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_004225_004245_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_004250_004270_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_004275_004295_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_004300_004320_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_004325_004345_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_004350_004370_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_004375_004395_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_004400_004420_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_004425_004445_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_004450_004470_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_004475_004495_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_004500_004520_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_004525_004545_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_004550_004570_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_004575_004595_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_004600_004620_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "02_004625_004645_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000000_000020_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000025_000045_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000050_000070_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000075_000095_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000100_000120_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000125_000145_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000150_000170_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000175_000195_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000200_000220_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000225_000245_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000250_000270_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000275_000295_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000300_000320_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000325_000345_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000350_000370_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000375_000395_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000400_000420_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000425_000445_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000450_000470_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000475_000495_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000500_000520_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000525_000545_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000550_000570_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000575_000595_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000600_000620_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000625_000645_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000650_000670_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000675_000695_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000700_000720_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000725_000745_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000750_000770_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "03_000775_000795_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "04_000000_000020_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "04_000025_000045_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "04_000050_000070_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "04_000075_000095_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "04_000100_000120_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "04_000125_000145_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "04_000150_000170_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "04_000175_000195_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "04_000200_000220_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "04_000225_000245_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "04_000250_000270_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000000_000020_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000025_000045_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000050_000070_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000075_000095_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000100_000120_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000125_000145_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000150_000170_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000175_000195_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000200_000220_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000225_000245_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000250_000270_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000275_000295_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000300_000320_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000325_000345_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000350_000370_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000375_000395_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000400_000420_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000425_000445_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000450_000470_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000475_000495_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000500_000520_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000525_000545_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000550_000570_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000575_000595_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000600_000620_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000625_000645_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000650_000670_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000675_000695_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000700_000720_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000725_000745_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000750_000770_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000775_000795_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000800_000820_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000825_000845_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000850_000870_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000875_000895_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000900_000920_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000925_000945_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000950_000970_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_000975_000995_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001000_001020_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001025_001045_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001050_001070_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001075_001095_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001100_001120_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001125_001145_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001150_001170_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001175_001195_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001200_001220_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001225_001245_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001250_001270_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001275_001295_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001300_001320_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001325_001345_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001350_001370_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001375_001395_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001400_001420_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001425_001445_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001450_001470_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001475_001495_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001500_001520_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001525_001545_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001550_001570_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001575_001595_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001600_001620_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001625_001645_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001650_001670_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001675_001695_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001700_001720_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001725_001745_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001750_001770_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001775_001795_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001800_001820_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001825_001845_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001850_001870_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001875_001895_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001900_001920_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001925_001945_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001950_001970_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_001975_001995_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002000_002020_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002025_002045_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002050_002070_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002075_002095_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002100_002120_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002125_002145_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002150_002170_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002175_002195_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002200_002220_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002225_002245_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002250_002270_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002275_002295_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002300_002320_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002325_002345_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002350_002370_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002375_002395_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002400_002420_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002425_002445_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002450_002470_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002475_002495_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002500_002520_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002525_002545_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002550_002570_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002575_002595_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002600_002620_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002625_002645_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002650_002670_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002675_002695_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002700_002720_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "05_002725_002745_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000000_000020_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000025_000045_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000050_000070_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000075_000095_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000100_000120_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000125_000145_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000150_000170_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000175_000195_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000200_000220_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000225_000245_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000250_000270_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000275_000295_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000300_000320_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000325_000345_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000350_000370_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000375_000395_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000400_000420_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000425_000445_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000450_000470_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000475_000495_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000500_000520_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000525_000545_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000550_000570_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000575_000595_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000600_000620_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000625_000645_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000650_000670_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000675_000695_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000700_000720_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000725_000745_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000750_000770_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000775_000795_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000800_000820_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000825_000845_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000850_000870_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000875_000895_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000900_000920_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000925_000945_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000950_000970_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_000975_000995_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_001000_001020_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_001025_001045_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_001050_001070_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "06_001075_001095_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000000_000020_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000025_000045_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000050_000070_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000075_000095_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000100_000120_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000125_000145_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000150_000170_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000175_000195_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000200_000220_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000225_000245_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000250_000270_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000275_000295_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000300_000320_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000325_000345_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000350_000370_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000375_000395_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000400_000420_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000425_000445_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000450_000470_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000475_000495_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000500_000520_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000525_000545_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000550_000570_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000575_000595_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000600_000620_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000625_000645_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000650_000670_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000675_000695_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000700_000720_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000725_000745_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000750_000770_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000775_000795_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000800_000820_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000825_000845_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000850_000870_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000875_000895_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000900_000920_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000925_000945_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000950_000970_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_000975_000995_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_001000_001020_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_001025_001045_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_001050_001070_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "07_001075_001095_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000000_000020_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000025_000045_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000050_000070_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000075_000095_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000100_000120_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000125_000145_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000150_000170_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000175_000195_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000200_000220_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000225_000245_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000250_000270_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000275_000295_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000300_000320_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000325_000345_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000350_000370_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000375_000395_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000400_000420_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000425_000445_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000450_000470_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000475_000495_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000500_000520_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000525_000545_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000550_000570_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000575_000595_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000600_000620_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000625_000645_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000650_000670_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000675_000695_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000700_000720_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000725_000745_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000750_000770_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000775_000795_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000800_000820_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000825_000845_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000850_000870_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000875_000895_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000900_000920_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000925_000945_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000950_000970_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_000975_000995_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_001000_001020_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_001025_001045_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_001050_001070_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_001075_001095_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_001100_001120_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_001125_001145_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_001150_001170_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_001175_001195_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_001200_001220_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_001225_001245_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_001250_001270_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_001275_001295_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_001300_001320_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_001325_001345_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_001350_001370_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_001375_001395_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_001400_001420_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_001425_001445_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_001450_001470_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_001475_001495_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_001500_001520_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_001525_001545_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "09_001550_001570_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000000_000020_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000025_000045_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000050_000070_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000075_000095_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000100_000120_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000125_000145_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000150_000170_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000175_000195_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000200_000220_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000225_000245_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000250_000270_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000275_000295_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000300_000320_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000325_000345_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000350_000370_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000375_000395_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000400_000420_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000425_000445_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000450_000470_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000475_000495_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000500_000520_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000525_000545_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000550_000570_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000575_000595_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000600_000620_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000625_000645_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000650_000670_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000675_000695_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000700_000720_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000725_000745_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000750_000770_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000775_000795_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000800_000820_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000825_000845_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000850_000870_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000875_000895_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000900_000920_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000925_000945_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000950_000970_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_000975_000995_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_001000_001020_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_001025_001045_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_001050_001070_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_001075_001095_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_001100_001120_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_001125_001145_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_001150_001170_s5",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "clip_id": "10_001175_001195_s5",
+      "ok": true,
+      "reason": ""
+    }
+  ]
+}

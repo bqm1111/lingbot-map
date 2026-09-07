@@ -1,0 +1,233 @@
+{
+  "gate": "8C-1",
+  "claim": "target-domain-free transfer of the completion module: trained and selected on KITTI-360 alone, evaluated on untouched SemanticKITTI and Occ3D without adaptation. NOT whole-system zero-shot: the frozen foundation models (LingBot-Map, MoGe-2, Trident-H) have not had their training provenance audited, and LingBot-Map's published mixture includes KITTI-360.",
+  "frozen_at": "2026-09-03T20:03:16+0200",
+  "code_commit": "9a648322e6dc4e34995f0530650c2fa469779676",
+  "worktree_dirty": true,
+  "seeds": {
+    "0": {
+      "seed": 0,
+      "config": "configs/gate8c1/seed0.yaml",
+      "config_sha256": "a2a9cd5496214c66bc2d8bea6a2a7bc01a16c4380dea65ee2bc3f9924db1ee28",
+      "selected": "last",
+      "checkpoint": "artifacts/gate8c1/checkpoints/seed0_last.pt",
+      "checkpoint_sha256": "5227c672012024786561e615b755edd938d551e62d05ad52d2ad23813825e7d0",
+      "occupancy_threshold": -0.125,
+      "semantic_threshold": 0.0,
+      "source_ap": 0.11471620878094327,
+      "source_ap_over_prevalence": 1.6866199453793929,
+      "source_auroc": 0.633603353877123,
+      "source_iou_at_threshold": 0.10703704819534747,
+      "semantic_agreement_at_threshold": 0.4023643390392829,
+      "train_seconds": 859.4669678211212,
+      "gpu_hours": 0.23874082459343804,
+      "peak_gpu_gib": 4.844086170196533,
+      "n_params": 986114,
+      "best_step": 2500
+    },
+    "1": {
+      "seed": 1,
+      "config": "configs/gate8c1/seed1.yaml",
+      "config_sha256": "7ba7e12f84038021d7d8bb479a62e43265180592f1009a629277e6ce6c81229f",
+      "selected": "last",
+      "checkpoint": "artifacts/gate8c1/checkpoints/seed1_last.pt",
+      "checkpoint_sha256": "13640b7664997abb90fce5da733a8ea60e1ed4b0b48e6a5dcb2a1b7132587752",
+      "occupancy_threshold": -0.09375,
+      "semantic_threshold": 0.0,
+      "source_ap": 0.1127344292040128,
+      "source_ap_over_prevalence": 1.6574827467453344,
+      "source_auroc": 0.6332759242456261,
+      "source_iou_at_threshold": 0.10567502242310534,
+      "semantic_agreement_at_threshold": 0.41370626972688707,
+      "train_seconds": 856.8140549659729,
+      "gpu_hours": 0.23800390435589686,
+      "peak_gpu_gib": 4.8443779945373535,
+      "n_params": 986114,
+      "best_step": 1000
+    },
+    "2": {
+      "seed": 2,
+      "config": "configs/gate8c1/seed2.yaml",
+      "config_sha256": "6cfbb2b690d6273f42eaa12ebe69080ae4f1faf89e90a62fd947691b7f4f919c",
+      "selected": "last",
+      "checkpoint": "artifacts/gate8c1/checkpoints/seed2_last.pt",
+      "checkpoint_sha256": "68e67f28a1e4b764d14d1bc7d0f256ef5dd5f5be82d826884ada83ace0f65a67",
+      "occupancy_threshold": -0.15625,
+      "semantic_threshold": 0.0,
+      "source_ap": 0.11318930591118381,
+      "source_ap_over_prevalence": 1.6641705909057716,
+      "source_auroc": 0.632310105522307,
+      "source_iou_at_threshold": 0.10583533144419738,
+      "semantic_agreement_at_threshold": 0.39010064304431735,
+      "train_seconds": 858.138870716095,
+      "gpu_hours": 0.23837190886338552,
+      "peak_gpu_gib": 4.844457626342773,
+      "n_params": 986114,
+      "best_step": 2500
+    }
+  },
+  "training_data": {
+    "dataset": "KITTI-360",
+    "train_drives": [
+      "2013_05_28_drive_0003_sync",
+      "2013_05_28_drive_0007_sync",
+      "2013_05_28_drive_0010_sync"
+    ],
+    "val_drive": "2013_05_28_drive_0006_sync",
+    "occupancy_supervision": "rebuilt from raw Velodyne sweeps t..t+20 with ground-truth poses; endpoints occupied, interiors free, unobserved and cross-sweep-conflicting voxels unknown and excluded from the loss",
+    "sscbench_completion_labels_used": false,
+    "human_semantic_labels_used": false,
+    "semantic_supervision": "frozen Trident-H fused over t+1..t+20, kept only where geometrically supported and where both halves of the future window agree; soft probabilities preserved",
+    "future_frames": 20,
+    "scale_frames": 5,
+    "carve_decimation": 4,
+    "band_half_m": 0.2
+  },
+  "target_datasets_excluded_until_now": [
+    "semantickitti",
+    "occ3d"
+  ],
+  "target_validation": {
+    "endpoints_agree_by_construction": true,
+    "transform_round_trips": true,
+    "recall_grows_with_future_sweeps": true,
+    "no_systematic_one_voxel_offset": true,
+    "current_to_future_alignment": true,
+    "semantickitti_not_opened": true
+  },
+  "target_validation_all_pass": true,
+  "source_dataset_hashes": {
+    "targets_0003": {
+      "n_files": 193,
+      "total_bytes": 37787781,
+      "listing_sha256": "5704b3a8c5cb49edc2687fab2bd8e6d333fdb75f358db280c307152cd7d1b651"
+    },
+    "targets_0007": {
+      "n_files": 569,
+      "total_bytes": 109136845,
+      "listing_sha256": "64f8a26cd5bc24f4b6630ecd4faa58f3d3b05f7ace665ee47631db295556a499"
+    },
+    "targets_0010": {
+      "n_files": 596,
+      "total_bytes": 113683332,
+      "listing_sha256": "8b4f62522f7607a61e14e1a908de7a86ccfe33d74c18033cddfc2771a7559de7"
+    },
+    "targets_0006": {
+      "n_files": 590,
+      "total_bytes": 104100969,
+      "listing_sha256": "226cce3f9ac597ffe61af0e666cb39c53b02cb0ae75f211cb8648ac217b18c24"
+    }
+  },
+  "sample_hashes": {
+    "samples_0003": {
+      "n_files": 193,
+      "total_bytes": 130165371,
+      "listing_sha256": "0e761abab301d8b49fc0790a029dfba1112792d7fc706e08500ce831d598dd39"
+    },
+    "samples_0007": {
+      "n_files": 569,
+      "total_bytes": 483019778,
+      "listing_sha256": "1c7b30746875d148b2667dd45d3a34c49db2e6fff7f20564cc6c841246f97ba5"
+    },
+    "samples_0010": {
+      "n_files": 596,
+      "total_bytes": 806091259,
+      "listing_sha256": "daecdba01799b8195123f963dad73e0bea9329ab99f69988f2d2177193bfd36f"
+    },
+    "samples_0006": {
+      "n_files": 590,
+      "total_bytes": 610851790,
+      "listing_sha256": "0a1eed0c484d88d3b595bb91fe2bed0fa6a21d46e1254f2ecc548542b1690cfa"
+    }
+  },
+  "code_hashes": {
+    "gate8/mapper.py": "95fd13c875a640cdb47dd964c53b59ced8e669331334f7431783036e958fe0eb",
+    "gate8/net.py": "4cbfced792c8f255fc808c66819cc7f553777157e6699c01d4c26076af7a4ea4",
+    "gate8/feed.py": "1a499c8bb5a8673c70b0bd68e4e7ee26d74d0b086de92105e0cf23f2ab34d977",
+    "gate8/losses.py": "92d3d4f9586a05749d58f86a60221bb4f57521e8c86137e8d0d0d1d423636348",
+    "gate8/vocab.py": "b3fef8b8982254ea8a1670d7cd8e4ccdc301e85815d1be69e8d4e5dff97dd60a",
+    "gate8c0/transforms.py": "e97332cf82201a8ccd5e289bc7150168457f1b40c95ba0b7206379496b059bf0",
+    "gate8c1/rawtarget.py": "8e4cf9dac66f84d5483fa0b76e41ac0b95aedecc23bf2c9eac3c3c58e1478255",
+    "gate8c1/sources.py": "1cfa2be42c6f9a42356463ae5caded0a8417348adf7450dbcec3692b8d4e3c86",
+    "gate8c1/data.py": "5c0903a6b4c9292dd3c1ee154a19a29fd5481b3cc5cb0bef5a0b8e0682a581bf",
+    "tools/gate8c1/train.py": "7791b5e715f48761fd289df62f53ec1cd4c60759045c376fa00fd905cc86ac5a",
+    "tools/gate8c1/selection.py": "b1ed46f81e4d19884cae7699a595c1b637bac22d1460397239c8e2144e867c56",
+    "tools/gate8c1/build_targets.py": "1fabe2e9b2a8195f85d52569894ca8c00e3b54d4accf89bcf8babbbaa31dde6c",
+    "tools/gate8c1/build_samples.py": "a4b84ac149c2612b6ac90b34c4c435f202a7ed97f20f7428e466568a200a1666",
+    "checkpoints/lingbot-map/204754b/lingbot-map.pt": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72"
+  },
+  "config_hashes": {
+    "configs/gate8c1/base.yaml": "b4d2b97e6416c9f78385a47b539de4fe86fcbf263609f122260dac86dd32c5ed",
+    "configs/gate8c1/seed0.yaml": "a2a9cd5496214c66bc2d8bea6a2a7bc01a16c4380dea65ee2bc3f9924db1ee28",
+    "configs/gate8c1/seed1.yaml": "7ba7e12f84038021d7d8bb479a62e43265180592f1009a629277e6ce6c81229f",
+    "configs/gate8c1/seed2.yaml": "6cfbb2b690d6273f42eaa12ebe69080ae4f1faf89e90a62fd947691b7f4f919c"
+  },
+  "firewall_proof": {
+    "selection": {
+      "n_opened": 7092,
+      "n_unique": 596,
+      "violations": [],
+      "forbidden_patterns": [
+        "data/kitti/dataset",
+        "occ3d_gt",
+        "nuscenes",
+        "lingbot_occ3d_zeroshot",
+        "scale_gate/cache",
+        "preprocess/labels"
+      ],
+      "note": "selection ran inside a file-access audit; opening a SemanticKITTI / Occ3D / SSCBench-label path would have raised"
+    },
+    "training": {
+      "0": {
+        "n_opened": 50882,
+        "n_unique": 1479,
+        "violations": [],
+        "forbidden_patterns": [
+          "data/kitti/dataset",
+          "occ3d_gt",
+          "nuscenes",
+          "lingbot_occ3d_zeroshot",
+          "scale_gate/cache",
+          "preprocess/labels"
+        ],
+        "note": "training executed inside a file-access audit; a SemanticKITTI / Occ3D / SSCBench-label open would have raised"
+      },
+      "1": {
+        "n_opened": 50882,
+        "n_unique": 1479,
+        "violations": [],
+        "forbidden_patterns": [
+          "data/kitti/dataset",
+          "occ3d_gt",
+          "nuscenes",
+          "lingbot_occ3d_zeroshot",
+          "scale_gate/cache",
+          "preprocess/labels"
+        ],
+        "note": "training executed inside a file-access audit; a SemanticKITTI / Occ3D / SSCBench-label open would have raised"
+      },
+      "2": {
+        "n_opened": 50882,
+        "n_unique": 1479,
+        "violations": [],
+        "forbidden_patterns": [
+          "data/kitti/dataset",
+          "occ3d_gt",
+          "nuscenes",
+          "lingbot_occ3d_zeroshot",
+          "scale_gate/cache",
+          "preprocess/labels"
+        ],
+        "note": "training executed inside a file-access audit; a SemanticKITTI / Occ3D / SSCBench-label open would have raised"
+      }
+    },
+    "total_violations": 0,
+    "neither_target_dataset_was_accessed": true
+  },
+  "selection_rule": {
+    "checkpoint": "highest full-grid occupancy AP on KITTI-360 drive 0006",
+    "occupancy_threshold": "final-logit threshold maximising full-grid IoU on drive 0006",
+    "semantic_threshold": "maximises coverage x agreement with the frozen teacher on voxels where both halves of the future window agree; no human semantic label",
+    "forbidden": "SemanticKITTI and Occ3D/nuScenes are not read"
+  }
+}

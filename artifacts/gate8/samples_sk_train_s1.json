@@ -1,0 +1,345 @@
+{
+  "source": "sk_train",
+  "n_samples": 544,
+  "seconds": 25.530164003372192,
+  "future_frames": 20,
+  "audit": [
+    {
+      "segment": "05",
+      "t": 527,
+      "clip": "05_002635",
+      "input_frames": [
+        0,
+        527
+      ],
+      "target_frames": [
+        528,
+        547
+      ],
+      "n_rows": 358643,
+      "n_fut_rows": 59784,
+      "bytes": 1370459
+    },
+    {
+      "segment": "05",
+      "t": 528,
+      "clip": "05_002640",
+      "input_frames": [
+        0,
+        528
+      ],
+      "target_frames": [
+        529,
+        548
+      ],
+      "n_rows": 341997,
+      "n_fut_rows": 59710,
+      "bytes": 1290319
+    },
+    {
+      "segment": "05",
+      "t": 529,
+      "clip": "05_002645",
+      "input_frames": [
+        0,
+        529
+      ],
+      "target_frames": [
+        530,
+        549
+      ],
+      "n_rows": 353480,
+      "n_fut_rows": 57492,
+      "bytes": 1307686
+    },
+    {
+      "segment": "05",
+      "t": 530,
+      "clip": "05_002650",
+      "input_frames": [
+        0,
+        530
+      ],
+      "target_frames": [
+        531,
+        550
+      ],
+      "n_rows": 375522,
+      "n_fut_rows": 53338,
+      "bytes": 1348385
+    },
+    {
+      "segment": "05",
+      "t": 531,
+      "clip": "05_002655",
+      "input_frames": [
+        0,
+        531
+      ],
+      "target_frames": [
+        532,
+        551
+      ],
+      "n_rows": 428304,
+      "n_fut_rows": 57685,
+      "bytes": 1513715
+    },
+    {
+      "segment": "05",
+      "t": 532,
+      "clip": "05_002660",
+      "input_frames": [
+        0,
+        532
+      ],
+      "target_frames": [
+        533,
+        552
+      ],
+      "n_rows": 448436,
+      "n_fut_rows": 64134,
+      "bytes": 1569966
+    },
+    {
+      "segment": "05",
+      "t": 533,
+      "clip": "05_002665",
+      "input_frames": [
+        0,
+        533
+      ],
+      "target_frames": [
+        534,
+        552
+      ],
+      "n_rows": 446200,
+      "n_fut_rows": 67770,
+      "bytes": 1576235
+    },
+    {
+      "segment": "05",
+      "t": 534,
+      "clip": "05_002670",
+      "input_frames": [
+        0,
+        534
+      ],
+      "target_frames": [
+        535,
+        552
+      ],
+      "n_rows": 468361,
+      "n_fut_rows": 72697,
+      "bytes": 1632167
+    },
+    {
+      "segment": "05",
+      "t": 535,
+      "clip": "05_002675",
+      "input_frames": [
+        0,
+        535
+      ],
+      "target_frames": [
+        536,
+        552
+      ],
+      "n_rows": 467452,
+      "n_fut_rows": 69716,
+      "bytes": 1660156
+    },
+    {
+      "segment": "05",
+      "t": 536,
+      "clip": "05_002680",
+      "input_frames": [
+        0,
+        536
+      ],
+      "target_frames": [
+        537,
+        552
+      ],
+      "n_rows": 497499,
+      "n_fut_rows": 86557,
+      "bytes": 1790693
+    },
+    {
+      "segment": "05",
+      "t": 537,
+      "clip": "05_002685",
+      "input_frames": [
+        0,
+        537
+      ],
+      "target_frames": [
+        538,
+        552
+      ],
+      "n_rows": 529120,
+      "n_fut_rows": 86360,
+      "bytes": 1920935
+    },
+    {
+      "segment": "05",
+      "t": 538,
+      "clip": "05_002690",
+      "input_frames": [
+        0,
+        538
+      ],
+      "target_frames": [
+        539,
+        552
+      ],
+      "n_rows": 545402,
+      "n_fut_rows": 88004,
+      "bytes": 2008736
+    },
+    {
+      "segment": "05",
+      "t": 539,
+      "clip": "05_002695",
+      "input_frames": [
+        0,
+        539
+      ],
+      "target_frames": [
+        540,
+        552
+      ],
+      "n_rows": 546258,
+      "n_fut_rows": 83657,
+      "bytes": 2031369
+    },
+    {
+      "segment": "05",
+      "t": 540,
+      "clip": "05_002700",
+      "input_frames": [
+        0,
+        540
+      ],
+      "target_frames": [
+        541,
+        552
+      ],
+      "n_rows": 545425,
+      "n_fut_rows": 76705,
+      "bytes": 2084700
+    },
+    {
+      "segment": "05",
+      "t": 541,
+      "clip": "05_002705",
+      "input_frames": [
+        0,
+        541
+      ],
+      "target_frames": [
+        542,
+        552
+      ],
+      "n_rows": 535572,
+      "n_fut_rows": 75435,
+      "bytes": 2104956
+    },
+    {
+      "segment": "05",
+      "t": 542,
+      "clip": "05_002710",
+      "input_frames": [
+        0,
+        542
+      ],
+      "target_frames": [
+        543,
+        552
+      ],
+      "n_rows": 542763,
+      "n_fut_rows": 63578,
+      "bytes": 2140392
+    },
+    {
+      "segment": "05",
+      "t": 543,
+      "clip": "05_002715",
+      "input_frames": [
+        0,
+        543
+      ],
+      "target_frames": [
+        544,
+        552
+      ],
+      "n_rows": 545822,
+      "n_fut_rows": 69526,
+      "bytes": 2029146
+    },
+    {
+      "segment": "05",
+      "t": 544,
+      "clip": "05_002720",
+      "input_frames": [
+        0,
+        544
+      ],
+      "target_frames": [
+        545,
+        552
+      ],
+      "n_rows": 525831,
+      "n_fut_rows": 66173,
+      "bytes": 1972072
+    },
+    {
+      "segment": "05",
+      "t": 545,
+      "clip": "05_002725",
+      "input_frames": [
+        0,
+        545
+      ],
+      "target_frames": [
+        546,
+        552
+      ],
+      "n_rows": 528924,
+      "n_fut_rows": 62233,
+      "bytes": 2058935
+    },
+    {
+      "segment": "05",
+      "t": 546,
+      "clip": "05_002730",
+      "input_frames": [
+        0,
+        546
+      ],
+      "target_frames": [
+        547,
+        552
+      ],
+      "n_rows": 470335,
+      "n_fut_rows": 65085,
+      "bytes": 1845043
+    },
+    {
+      "segment": "05",
+      "t": 547,
+      "clip": "05_002735",
+      "input_frames": [
+        0,
+        547
+      ],
+      "target_frames": [
+        548,
+        552
+      ],
+      "n_rows": 427672,
+      "n_fut_rows": 53799,
+      "bytes": 1677544
+    }
+  ],
+  "total_bytes": 36933609
+}

@@ -1,0 +1,83 @@
+{
+  "depth_bins_m": [
+    0.0,
+    5.0,
+    10.0,
+    15.0,
+    20.0,
+    30.0,
+    40.0,
+    1000000000.0
+  ],
+  "margin_m": [
+    0.9557912349700928,
+    1.9631047248840332,
+    4.520147323608398,
+    8.440271377563477,
+    14.138775825500488,
+    22.498611450195312,
+    0.4
+  ],
+  "val_drive_coverage": [
+    0.9549400763273596,
+    0.954630156444268,
+    0.9491739102278876,
+    0.9425542926572471,
+    0.9530586416956979,
+    0.9514357377616329,
+    1.0
+  ],
+  "val_drive": "2013_05_28_drive_0006_sync",
+  "fitted_on": [
+    "2013_05_28_drive_0003_sync",
+    "2013_05_28_drive_0007_sync",
+    "2013_05_28_drive_0010_sync"
+  ],
+  "stats": {
+    "drives": {
+      "2013_05_28_drive_0003_sync": {
+        "frames_used": 200,
+        "fov_x_deg": 103.74480804467827,
+        "role": "train"
+      },
+      "2013_05_28_drive_0007_sync": {
+        "frames_used": 200,
+        "fov_x_deg": 103.74480804467827,
+        "role": "train"
+      },
+      "2013_05_28_drive_0010_sync": {
+        "frames_used": 200,
+        "fov_x_deg": 103.74480804467827,
+        "role": "train"
+      },
+      "2013_05_28_drive_0006_sync": {
+        "frames_used": 200,
+        "fov_x_deg": 103.74480804467827,
+        "role": "val"
+      }
+    },
+    "quantile": 0.95
+  },
+  "firewall": {
+    "n_opened": 2404,
+    "n_unique": 1601,
+    "violations": [],
+    "forbidden_patterns": [
+      "Occ3D",
+      "SemanticKITTI",
+      "_1_1.npy",
+      "data/kitti/dataset",
+      "lingbot_gate8c1",
+      "lingbot_gate8c1_sky",
+      "lingbot_occ3d_zeroshot",
+      "nuScenes",
+      "nuscenes",
+      "occ3d",
+      "occ3d_gt",
+      "preprocess/labels",
+      "scale_gate/cache",
+      "semantickitti"
+    ]
+  },
+  "rule": "margin(d) is the 0.95 quantile of |MoGe - LiDAR| in the depth bin containing d, floored at 0.40 m; a ray carves free only to d - margin(d) and leaves [d-margin, d+margin] unknown"
+}

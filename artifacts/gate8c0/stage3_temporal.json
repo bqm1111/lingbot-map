@@ -1,0 +1,6188 @@
+{
+  "stream_stride_native_frames": 5,
+  "max_past_native": 200,
+  "history_kinds": [
+    "1",
+    "5",
+    "20",
+    "all_past",
+    "future"
+  ],
+  "n_samples": 24,
+  "aggregate": {
+    "train": {
+      "1": {
+        "full_grid": {
+          "precision": 0.32148192225920624,
+          "recall": 0.061593802735945294,
+          "iou": 0.054507811227358476,
+          "tp": 51865,
+          "fp": 109466,
+          "fn": 790184
+        },
+        "frustum": {
+          "precision": 0.2919960575758198,
+          "recall": 0.04131536284769636,
+          "iou": 0.03755336047185644,
+          "tp": 28441,
+          "fp": 68961,
+          "fn": 659947
+        },
+        "median_distance_m": 0.2,
+        "mean_valid_grid_coverage": 0.04140810069427484,
+        "mean_n_frames_used": 1.0
+      },
+      "5": {
+        "full_grid": {
+          "precision": 0.2989260832189276,
+          "recall": 0.08300467074956445,
+          "iou": 0.0694790709880593,
+          "tp": 69894,
+          "fp": 163923,
+          "fn": 772155
+        },
+        "frustum": {
+          "precision": 0.2729012626158316,
+          "recall": 0.05758380448235588,
+          "iou": 0.049924307495447115,
+          "tp": 39640,
+          "fp": 105614,
+          "fn": 648748
+        },
+        "median_distance_m": 0.2,
+        "mean_valid_grid_coverage": 0.0617646116593572,
+        "mean_n_frames_used": 4.75
+      },
+      "20": {
+        "full_grid": {
+          "precision": 0.298303711041433,
+          "recall": 0.08654484477744169,
+          "iou": 0.07190627861450538,
+          "tp": 72875,
+          "fp": 171423,
+          "fn": 769174
+        },
+        "frustum": {
+          "precision": 0.2743400839142357,
+          "recall": 0.060314822454778406,
+          "iou": 0.05201619116701933,
+          "tp": 41520,
+          "fp": 109825,
+          "fn": 646868
+        },
+        "median_distance_m": 0.2,
+        "mean_valid_grid_coverage": 0.06588200146571853,
+        "mean_n_frames_used": 18.5
+      },
+      "all_past": {
+        "full_grid": {
+          "precision": 0.2983284080583502,
+          "recall": 0.08655909572958344,
+          "iou": 0.0719175514070332,
+          "tp": 72887,
+          "fp": 171431,
+          "fn": 769162
+        },
+        "frustum": {
+          "precision": 0.27433827124601906,
+          "recall": 0.060314822454778406,
+          "iou": 0.052016126001297895,
+          "tp": 41520,
+          "fp": 109826,
+          "fn": 646868
+        },
+        "median_distance_m": 0.2,
+        "mean_valid_grid_coverage": 0.06589488995259916,
+        "mean_n_frames_used": 10.916666666666666
+      },
+      "future": {
+        "full_grid": {
+          "precision": 0.3334930109883141,
+          "recall": 0.34972311587567945,
+          "iou": 0.20584736130586315,
+          "tp": 294484,
+          "fp": 588545,
+          "fn": 547565
+        },
+        "frustum": {
+          "precision": 0.3291457461694389,
+          "recall": 0.34273113418595325,
+          "iou": 0.2017794206064193,
+          "tp": 235932,
+          "fp": 480869,
+          "fn": 452456
+        },
+        "median_distance_m": 0.2,
+        "mean_valid_grid_coverage": 0.21887460110360377,
+        "mean_n_frames_used": 19.0
+      },
+      "target_prevalence": 0.2099636411804383,
+      "valid_fraction_of_grid": 0.16484089692433676
+    },
+    "source_validation": {
+      "1": {
+        "full_grid": {
+          "precision": 0.2677486408698433,
+          "recall": 0.047310501358522904,
+          "iou": 0.041890426951300866,
+          "tp": 20094,
+          "fp": 54954,
+          "fn": 404632
+        },
+        "frustum": {
+          "precision": 0.22207549246175856,
+          "recall": 0.02972105216648502,
+          "iou": 0.026918510811423692,
+          "tp": 10090,
+          "fp": 35345,
+          "fn": 329400
+        },
+        "median_distance_m": 0.2,
+        "mean_valid_grid_coverage": 0.03596638743745061,
+        "mean_n_frames_used": 1.0
+      },
+      "5": {
+        "full_grid": {
+          "precision": 0.24729548426540768,
+          "recall": 0.06856891266369378,
+          "iou": 0.0567291753105466,
+          "tp": 29123,
+          "fp": 88643,
+          "fn": 395603
+        },
+        "frustum": {
+          "precision": 0.20947116574540053,
+          "recall": 0.04487319214115291,
+          "iou": 0.038374535873163015,
+          "tp": 15234,
+          "fp": 57492,
+          "fn": 324256
+        },
+        "median_distance_m": 0.2,
+        "mean_valid_grid_coverage": 0.056412483194205255,
+        "mean_n_frames_used": 5.0
+      },
+      "20": {
+        "full_grid": {
+          "precision": 0.251627283446126,
+          "recall": 0.07336023695276483,
+          "iou": 0.06022103078118417,
+          "tp": 31158,
+          "fp": 92668,
+          "fn": 393568
+        },
+        "frustum": {
+          "precision": 0.21636181896070517,
+          "recall": 0.04909422957966361,
+          "iou": 0.04168250570205274,
+          "tp": 16667,
+          "fp": 60366,
+          "fn": 322823
+        },
+        "median_distance_m": 0.2,
+        "mean_valid_grid_coverage": 0.05942597010515844,
+        "mean_n_frames_used": 20.0
+      },
+      "all_past": {
+        "full_grid": {
+          "precision": 0.251570955496325,
+          "recall": 0.07333433790255364,
+          "iou": 0.060200352152828915,
+          "tp": 31147,
+          "fp": 92663,
+          "fn": 393579
+        },
+        "frustum": {
+          "precision": 0.21634147291350236,
+          "recall": 0.04908833838993785,
+          "iou": 0.041677503901404504,
+          "tp": 16665,
+          "fp": 60366,
+          "fn": 322825
+        },
+        "median_distance_m": 0.2,
+        "mean_valid_grid_coverage": 0.05941859224170548,
+        "mean_n_frames_used": 12.333333333333334
+      },
+      "future": {
+        "full_grid": {
+          "precision": 0.27197618000533497,
+          "recall": 0.2664659097865447,
+          "iou": 0.15553023889884454,
+          "tp": 113175,
+          "fp": 302946,
+          "fn": 311551
+        },
+        "frustum": {
+          "precision": 0.2536911884981275,
+          "recall": 0.24303808654157708,
+          "iou": 0.14171568922133576,
+          "tp": 82509,
+          "fp": 242725,
+          "fn": 256981
+        },
+        "median_distance_m": 0.2,
+        "mean_valid_grid_coverage": 0.19711231616374003,
+        "mean_n_frames_used": 20.0
+      },
+      "target_prevalence": 0.20113461255922718,
+      "valid_fraction_of_grid": 0.16871023178100586
+    },
+    "heldout": {
+      "1": {
+        "full_grid": {
+          "precision": 0.25407187072915827,
+          "recall": 0.03733826072984698,
+          "iou": 0.03364955654220036,
+          "tp": 15802,
+          "fp": 46393,
+          "fn": 407410
+        },
+        "frustum": {
+          "precision": 0.24783555018137848,
+          "recall": 0.029728044093117703,
+          "iou": 0.027267865267796086,
+          "tp": 10248,
+          "fp": 31102,
+          "fn": 334477
+        },
+        "median_distance_m": 0.2,
+        "mean_valid_grid_coverage": 0.03731934289050149,
+        "mean_n_frames_used": 1.0
+      },
+      "5": {
+        "full_grid": {
+          "precision": 0.25693324154088015,
+          "recall": 0.059083863406519666,
+          "iou": 0.05046132610064416,
+          "tp": 25005,
+          "fp": 72316,
+          "fn": 398207
+        },
+        "frustum": {
+          "precision": 0.2553854573648125,
+          "recall": 0.04873159765030097,
+          "iou": 0.042669003441663175,
+          "tp": 16799,
+          "fp": 48980,
+          "fn": 327926
+        },
+        "median_distance_m": 0.2,
+        "mean_valid_grid_coverage": 0.05799562846649219,
+        "mean_n_frames_used": 5.0
+      },
+      "20": {
+        "full_grid": {
+          "precision": 0.27346010748243077,
+          "recall": 0.06877404232394166,
+          "iou": 0.058148966520292,
+          "tp": 29106,
+          "fp": 77330,
+          "fn": 394106
+        },
+        "frustum": {
+          "precision": 0.2733853698970781,
+          "recall": 0.05740517804046704,
+          "iou": 0.04980607619531814,
+          "tp": 19789,
+          "fp": 52596,
+          "fn": 324936
+        },
+        "median_distance_m": 0.2,
+        "mean_valid_grid_coverage": 0.06321903918420489,
+        "mean_n_frames_used": 20.0
+      },
+      "all_past": {
+        "full_grid": {
+          "precision": 0.2734958433140764,
+          "recall": 0.06879530826158048,
+          "iou": 0.05816578497338938,
+          "tp": 29115,
+          "fp": 77340,
+          "fn": 394097
+        },
+        "frustum": {
+          "precision": 0.27344915207424186,
+          "recall": 0.05743998839654797,
+          "iou": 0.04983439708458332,
+          "tp": 19801,
+          "fp": 52611,
+          "fn": 324924
+        },
+        "median_distance_m": 0.2,
+        "mean_valid_grid_coverage": 0.06322968841315002,
+        "mean_n_frames_used": 19.833333333333332
+      },
+      "future": {
+        "full_grid": {
+          "precision": 0.2683938998394887,
+          "recall": 0.17344971314613009,
+          "iou": 0.1177686116151431,
+          "tp": 73406,
+          "fp": 200095,
+          "fn": 349806
+        },
+        "frustum": {
+          "precision": 0.283999212753395,
+          "recall": 0.16743781274929292,
+          "iou": 0.11773704984242572,
+          "tp": 57720,
+          "fp": 145520,
+          "fn": 287005
+        },
+        "median_distance_m": 0.2,
+        "mean_valid_grid_coverage": 0.1569179267846338,
+        "mean_n_frames_used": 20.0
+      },
+      "target_prevalence": 0.24484709098401372,
+      "valid_fraction_of_grid": 0.1401801904042562
+    }
+  },
+  "per_sample": [
+    {
+      "partition": "train",
+      "drive": "2013_05_28_drive_0003_sync",
+      "anchor": 135,
+      "native_frame": 143,
+      "n_target_occupied": 27904,
+      "n_valid": 141593,
+      "target_prevalence": 0.19707188914706236,
+      "valid_fraction_of_grid": 0.06751680374145508,
+      "histories": {
+        "1": {
+          "n_frames_requested": 1,
+          "n_frames_used": 1,
+          "native_span": [
+            143,
+            143
+          ],
+          "n_voxels": 7482,
+          "full_grid": {
+            "tp": 962,
+            "fp": 6520,
+            "fn": 26942,
+            "precision": 0.1285752472600909,
+            "recall": 0.03447534403669725,
+            "iou": 0.027945619335347432,
+            "n_pred": 7482,
+            "n_gt": 27904,
+            "n_valid": 141593,
+            "pred_fraction": 0.052841595276602656,
+            "gt_fraction": 0.19707188914706236
+          },
+          "frustum": {
+            "tp": 357,
+            "fp": 3519,
+            "fn": 14324,
+            "precision": 0.09210526315789473,
+            "recall": 0.02431714460867788,
+            "iou": 0.019615384615384614,
+            "n_pred": 3876,
+            "n_gt": 14681,
+            "n_valid": 82953,
+            "pred_fraction": 0.04672525405952768,
+            "gt_fraction": 0.1769797355128808
+          },
+          "distance": {
+            "n": 7482,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.447213595499958,
+            "mean_m": 0.2805286233470922,
+            "frac_within_1_voxel": 0.7203956161454157,
+            "frac_exact": 0.1285752472600909
+          },
+          "target_coverage": 0.03447534403669725,
+          "valid_grid_coverage": 0.052841595276602656
+        },
+        "5": {
+          "n_frames_requested": 5,
+          "n_frames_used": 5,
+          "native_span": [
+            123,
+            143
+          ],
+          "n_voxels": 17189,
+          "full_grid": {
+            "tp": 1680,
+            "fp": 15509,
+            "fn": 26224,
+            "precision": 0.09773692477747396,
+            "recall": 0.060206422018348624,
+            "iou": 0.038698085826826066,
+            "n_pred": 17189,
+            "n_gt": 27904,
+            "n_valid": 141593,
+            "pred_fraction": 0.12139724421405013,
+            "gt_fraction": 0.19707188914706236
+          },
+          "frustum": {
+            "tp": 653,
+            "fp": 8710,
+            "fn": 14028,
+            "precision": 0.06974260386628217,
+            "recall": 0.04447925890606907,
+            "iou": 0.027916720106023685,
+            "n_pred": 9363,
+            "n_gt": 14681,
+            "n_valid": 82953,
+            "pred_fraction": 0.11287114390076308,
+            "gt_fraction": 0.1769797355128808
+          },
+          "distance": {
+            "n": 17189,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.5656854249492381,
+            "mean_m": 0.2960637200859957,
+            "frac_within_1_voxel": 0.6098085985223107,
+            "frac_exact": 0.09773692477747396
+          },
+          "target_coverage": 0.060206422018348624,
+          "valid_grid_coverage": 0.12139724421405013
+        },
+        "20": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            48,
+            143
+          ],
+          "n_voxels": 21931,
+          "full_grid": {
+            "tp": 2155,
+            "fp": 19776,
+            "fn": 25749,
+            "precision": 0.0982627331175049,
+            "recall": 0.07722907110091744,
+            "iou": 0.045197147651006714,
+            "n_pred": 21931,
+            "n_gt": 27904,
+            "n_valid": 141593,
+            "pred_fraction": 0.1548876003757248,
+            "gt_fraction": 0.19707188914706236
+          },
+          "frustum": {
+            "tp": 855,
+            "fp": 10886,
+            "fn": 13826,
+            "precision": 0.07282173579763222,
+            "recall": 0.05823853960901846,
+            "iou": 0.03344154574255877,
+            "n_pred": 11741,
+            "n_gt": 14681,
+            "n_valid": 82953,
+            "pred_fraction": 0.14153797933769724,
+            "gt_fraction": 0.1769797355128808
+          },
+          "distance": {
+            "n": 21931,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.6000000000000001,
+            "mean_m": 0.3147089094422655,
+            "frac_within_1_voxel": 0.5334002097487575,
+            "frac_exact": 0.0982627331175049
+          },
+          "target_coverage": 0.07722907110091744,
+          "valid_grid_coverage": 0.1548876003757248
+        },
+        "all_past": {
+          "n_frames_requested": 28,
+          "n_frames_used": 28,
+          "native_span": [
+            8,
+            143
+          ],
+          "n_voxels": 21954,
+          "full_grid": {
+            "tp": 2168,
+            "fp": 19786,
+            "fn": 25736,
+            "precision": 0.09875193586590143,
+            "recall": 0.07769495412844037,
+            "iou": 0.04546026420633256,
+            "n_pred": 21954,
+            "n_gt": 27904,
+            "n_valid": 141593,
+            "pred_fraction": 0.15505003778435375,
+            "gt_fraction": 0.19707188914706236
+          },
+          "frustum": {
+            "tp": 855,
+            "fp": 10887,
+            "fn": 13826,
+            "precision": 0.07281553398058252,
+            "recall": 0.05823853960901846,
+            "iou": 0.03344023779724656,
+            "n_pred": 11742,
+            "n_gt": 14681,
+            "n_valid": 82953,
+            "pred_fraction": 0.14155003435680447,
+            "gt_fraction": 0.1769797355128808
+          },
+          "distance": {
+            "n": 21954,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.6000000000000001,
+            "mean_m": 0.3146536216963841,
+            "frac_within_1_voxel": 0.5334790926482645,
+            "frac_exact": 0.09875193586590143
+          },
+          "target_coverage": 0.07769495412844037,
+          "valid_grid_coverage": 0.15505003778435375
+        },
+        "future": {
+          "n_frames_requested": 20,
+          "n_frames_used": 8,
+          "native_span": [
+            145,
+            163
+          ],
+          "n_voxels": 21170,
+          "full_grid": {
+            "tp": 2272,
+            "fp": 18898,
+            "fn": 25632,
+            "precision": 0.10732168162494095,
+            "recall": 0.08142201834862385,
+            "iou": 0.04854493397718046,
+            "n_pred": 21170,
+            "n_gt": 27904,
+            "n_valid": 141593,
+            "pred_fraction": 0.14951304089891448,
+            "gt_fraction": 0.19707188914706236
+          },
+          "frustum": {
+            "tp": 1256,
+            "fp": 12166,
+            "fn": 13425,
+            "precision": 0.09357770824020266,
+            "recall": 0.08555275526190315,
+            "iou": 0.04678362573099415,
+            "n_pred": 13422,
+            "n_gt": 14681,
+            "n_valid": 82953,
+            "pred_fraction": 0.16180246645690932,
+            "gt_fraction": 0.1769797355128808
+          },
+          "distance": {
+            "n": 21170,
+            "median_m": 0.2,
+            "p90_m": 0.5656854249492381,
+            "p95_m": 0.8,
+            "mean_m": 0.38248899295382377,
+            "frac_within_1_voxel": 0.5876712328767123,
+            "frac_exact": 0.10732168162494095
+          },
+          "target_coverage": 0.08142201834862385,
+          "valid_grid_coverage": 0.14951304089891448
+        }
+      }
+    },
+    {
+      "partition": "train",
+      "drive": "2013_05_28_drive_0003_sync",
+      "anchor": 330,
+      "native_frame": 352,
+      "n_target_occupied": 81528,
+      "n_valid": 375889,
+      "target_prevalence": 0.21689381705769523,
+      "valid_fraction_of_grid": 0.17923784255981445,
+      "histories": {
+        "1": {
+          "n_frames_requested": 1,
+          "n_frames_used": 1,
+          "native_span": [
+            352,
+            352
+          ],
+          "n_voxels": 15709,
+          "full_grid": {
+            "tp": 5281,
+            "fp": 10428,
+            "fn": 76247,
+            "precision": 0.33617671398561333,
+            "recall": 0.06477529192424689,
+            "iou": 0.05742964026273435,
+            "n_pred": 15709,
+            "n_gt": 81528,
+            "n_valid": 375889,
+            "pred_fraction": 0.04179159273083277,
+            "gt_fraction": 0.21689381705769523
+          },
+          "frustum": {
+            "tp": 2850,
+            "fp": 6390,
+            "fn": 59827,
+            "precision": 0.30844155844155846,
+            "recall": 0.04547122548941398,
+            "iou": 0.04126427961255013,
+            "n_pred": 9240,
+            "n_gt": 62677,
+            "n_valid": 319454,
+            "pred_fraction": 0.028924352175900128,
+            "gt_fraction": 0.1962003919187113
+          },
+          "distance": {
+            "n": 15709,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.447213595499958,
+            "mean_m": 0.1787387824335889,
+            "frac_within_1_voxel": 0.786682793303202,
+            "frac_exact": 0.33617671398561333
+          },
+          "target_coverage": 0.06477529192424689,
+          "valid_grid_coverage": 0.04179159273083277
+        },
+        "5": {
+          "n_frames_requested": 5,
+          "n_frames_used": 5,
+          "native_span": [
+            332,
+            352
+          ],
+          "n_voxels": 22983,
+          "full_grid": {
+            "tp": 7791,
+            "fp": 15192,
+            "fn": 73737,
+            "precision": 0.33898968803028323,
+            "recall": 0.09556226081836915,
+            "iou": 0.08055210918114145,
+            "n_pred": 22983,
+            "n_gt": 81528,
+            "n_valid": 375889,
+            "pred_fraction": 0.06114305020897127,
+            "gt_fraction": 0.21689381705769523
+          },
+          "frustum": {
+            "tp": 4125,
+            "fp": 9200,
+            "fn": 58552,
+            "precision": 0.30956848030018763,
+            "recall": 0.06581361583994129,
+            "iou": 0.0573897074168371,
+            "n_pred": 13325,
+            "n_gt": 62677,
+            "n_valid": 319454,
+            "pred_fraction": 0.041711795751500996,
+            "gt_fraction": 0.1962003919187113
+          },
+          "distance": {
+            "n": 22983,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.447213595499958,
+            "mean_m": 0.19029395026885979,
+            "frac_within_1_voxel": 0.7465082887351521,
+            "frac_exact": 0.33898968803028323
+          },
+          "target_coverage": 0.09556226081836915,
+          "valid_grid_coverage": 0.06114305020897127
+        },
+        "20": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            257,
+            352
+          ],
+          "n_voxels": 23789,
+          "full_grid": {
+            "tp": 8145,
+            "fp": 15644,
+            "fn": 73383,
+            "precision": 0.342385135987221,
+            "recall": 0.0999043273476597,
+            "iou": 0.08382044210266332,
+            "n_pred": 23789,
+            "n_gt": 81528,
+            "n_valid": 375889,
+            "pred_fraction": 0.06328730024023049,
+            "gt_fraction": 0.21689381705769523
+          },
+          "frustum": {
+            "tp": 4282,
+            "fp": 9407,
+            "fn": 58395,
+            "precision": 0.3128059025494923,
+            "recall": 0.06831852194584935,
+            "iou": 0.059402918816935796,
+            "n_pred": 13689,
+            "n_gt": 62677,
+            "n_valid": 319454,
+            "pred_fraction": 0.042851239928127366,
+            "gt_fraction": 0.1962003919187113
+          },
+          "distance": {
+            "n": 23789,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.447213595499958,
+            "mean_m": 0.18948082762775204,
+            "frac_within_1_voxel": 0.7445457984782883,
+            "frac_exact": 0.342385135987221
+          },
+          "target_coverage": 0.0999043273476597,
+          "valid_grid_coverage": 0.06328730024023049
+        },
+        "all_past": {
+          "n_frames_requested": 10,
+          "n_frames_used": 10,
+          "native_span": [
+            307,
+            352
+          ],
+          "n_voxels": 23789,
+          "full_grid": {
+            "tp": 8145,
+            "fp": 15644,
+            "fn": 73383,
+            "precision": 0.342385135987221,
+            "recall": 0.0999043273476597,
+            "iou": 0.08382044210266332,
+            "n_pred": 23789,
+            "n_gt": 81528,
+            "n_valid": 375889,
+            "pred_fraction": 0.06328730024023049,
+            "gt_fraction": 0.21689381705769523
+          },
+          "frustum": {
+            "tp": 4282,
+            "fp": 9407,
+            "fn": 58395,
+            "precision": 0.3128059025494923,
+            "recall": 0.06831852194584935,
+            "iou": 0.059402918816935796,
+            "n_pred": 13689,
+            "n_gt": 62677,
+            "n_valid": 319454,
+            "pred_fraction": 0.042851239928127366,
+            "gt_fraction": 0.1962003919187113
+          },
+          "distance": {
+            "n": 23789,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.447213595499958,
+            "mean_m": 0.18948082762775204,
+            "frac_within_1_voxel": 0.7445457984782883,
+            "frac_exact": 0.342385135987221
+          },
+          "target_coverage": 0.0999043273476597,
+          "valid_grid_coverage": 0.06328730024023049
+        },
+        "future": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            353,
+            372
+          ],
+          "n_voxels": 83484,
+          "full_grid": {
+            "tp": 28109,
+            "fp": 55375,
+            "fn": 53419,
+            "precision": 0.33669924776004984,
+            "recall": 0.3447772544401923,
+            "iou": 0.20532055542975683,
+            "n_pred": 83484,
+            "n_gt": 81528,
+            "n_valid": 375889,
+            "pred_fraction": 0.22209748090526724,
+            "gt_fraction": 0.21689381705769523
+          },
+          "frustum": {
+            "tp": 19648,
+            "fp": 41629,
+            "fn": 43029,
+            "precision": 0.3206423290957455,
+            "recall": 0.3134802240056161,
+            "iou": 0.18836883784250186,
+            "n_pred": 61277,
+            "n_gt": 62677,
+            "n_valid": 319454,
+            "pred_fraction": 0.19181791431630218,
+            "gt_fraction": 0.1962003919187113
+          },
+          "distance": {
+            "n": 83484,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.632455532033676,
+            "mean_m": 0.23126564461893936,
+            "frac_within_1_voxel": 0.7040390973120598,
+            "frac_exact": 0.33669924776004984
+          },
+          "target_coverage": 0.3447772544401923,
+          "valid_grid_coverage": 0.22209748090526724
+        }
+      }
+    },
+    {
+      "partition": "train",
+      "drive": "2013_05_28_drive_0003_sync",
+      "anchor": 360,
+      "native_frame": 382,
+      "n_target_occupied": 85505,
+      "n_valid": 385824,
+      "target_prevalence": 0.2216165920212325,
+      "valid_fraction_of_grid": 0.1839752197265625,
+      "histories": {
+        "1": {
+          "n_frames_requested": 1,
+          "n_frames_used": 1,
+          "native_span": [
+            382,
+            382
+          ],
+          "n_voxels": 13535,
+          "full_grid": {
+            "tp": 2111,
+            "fp": 11424,
+            "fn": 83394,
+            "precision": 0.1559660140376801,
+            "recall": 0.024688614700894684,
+            "iou": 0.021778827801793067,
+            "n_pred": 13535,
+            "n_gt": 85505,
+            "n_valid": 385824,
+            "pred_fraction": 0.03508076221282243,
+            "gt_fraction": 0.2216165920212325
+          },
+          "frustum": {
+            "tp": 1622,
+            "fp": 7090,
+            "fn": 73695,
+            "precision": 0.1861799816345271,
+            "recall": 0.02153564268359069,
+            "iou": 0.01968279393740823,
+            "n_pred": 8712,
+            "n_gt": 75317,
+            "n_valid": 353148,
+            "pred_fraction": 0.02466954364742261,
+            "gt_fraction": 0.21327318857815986
+          },
+          "distance": {
+            "n": 13535,
+            "median_m": 0.2,
+            "p90_m": 0.6000000000000001,
+            "p95_m": 0.8246211251235323,
+            "mean_m": 0.30268243015620494,
+            "frac_within_1_voxel": 0.5427410417436276,
+            "frac_exact": 0.1559660140376801
+          },
+          "target_coverage": 0.024688614700894684,
+          "valid_grid_coverage": 0.03508076221282243
+        },
+        "5": {
+          "n_frames_requested": 5,
+          "n_frames_used": 5,
+          "native_span": [
+            362,
+            382
+          ],
+          "n_voxels": 19331,
+          "full_grid": {
+            "tp": 3102,
+            "fp": 16229,
+            "fn": 82403,
+            "precision": 0.1604676426465263,
+            "recall": 0.0362785801999883,
+            "iou": 0.03049128118426485,
+            "n_pred": 19331,
+            "n_gt": 85505,
+            "n_valid": 385824,
+            "pred_fraction": 0.05010315584307871,
+            "gt_fraction": 0.2216165920212325
+          },
+          "frustum": {
+            "tp": 2413,
+            "fp": 10682,
+            "fn": 72904,
+            "precision": 0.18426880488736158,
+            "recall": 0.032037919725958285,
+            "iou": 0.02805846579611391,
+            "n_pred": 13095,
+            "n_gt": 75317,
+            "n_valid": 353148,
+            "pred_fraction": 0.03708077066838832,
+            "gt_fraction": 0.21327318857815986
+          },
+          "distance": {
+            "n": 19331,
+            "median_m": 0.2,
+            "p90_m": 0.6000000000000001,
+            "p95_m": 0.7483314773547883,
+            "mean_m": 0.3104255884073352,
+            "frac_within_1_voxel": 0.5068025451347576,
+            "frac_exact": 0.1604676426465263
+          },
+          "target_coverage": 0.0362785801999883,
+          "valid_grid_coverage": 0.05010315584307871
+        },
+        "20": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            287,
+            382
+          ],
+          "n_voxels": 19577,
+          "full_grid": {
+            "tp": 3151,
+            "fp": 16426,
+            "fn": 82354,
+            "precision": 0.16095418092659755,
+            "recall": 0.0368516461025671,
+            "iou": 0.030913068644475183,
+            "n_pred": 19577,
+            "n_gt": 85505,
+            "n_valid": 385824,
+            "pred_fraction": 0.05074075226009787,
+            "gt_fraction": 0.2216165920212325
+          },
+          "frustum": {
+            "tp": 2454,
+            "fp": 10799,
+            "fn": 72863,
+            "precision": 0.18516562287783897,
+            "recall": 0.03258228553978518,
+            "iou": 0.028496446653351295,
+            "n_pred": 13253,
+            "n_gt": 75317,
+            "n_valid": 353148,
+            "pred_fraction": 0.03752817515602524,
+            "gt_fraction": 0.21327318857815986
+          },
+          "distance": {
+            "n": 19577,
+            "median_m": 0.2,
+            "p90_m": 0.6000000000000001,
+            "p95_m": 0.7483314773547883,
+            "mean_m": 0.310830257722504,
+            "frac_within_1_voxel": 0.50436736987281,
+            "frac_exact": 0.16095418092659755
+          },
+          "target_coverage": 0.0368516461025671,
+          "valid_grid_coverage": 0.05074075226009787
+        },
+        "all_past": {
+          "n_frames_requested": 9,
+          "n_frames_used": 9,
+          "native_span": [
+            342,
+            382
+          ],
+          "n_voxels": 19574,
+          "full_grid": {
+            "tp": 3150,
+            "fp": 16424,
+            "fn": 82355,
+            "precision": 0.16092776131603148,
+            "recall": 0.036839950880065496,
+            "iou": 0.030903864454669427,
+            "n_pred": 19574,
+            "n_gt": 85505,
+            "n_valid": 385824,
+            "pred_fraction": 0.05073297669403666,
+            "gt_fraction": 0.2216165920212325
+          },
+          "frustum": {
+            "tp": 2454,
+            "fp": 10799,
+            "fn": 72863,
+            "precision": 0.18516562287783897,
+            "recall": 0.03258228553978518,
+            "iou": 0.028496446653351295,
+            "n_pred": 13253,
+            "n_gt": 75317,
+            "n_valid": 353148,
+            "pred_fraction": 0.03752817515602524,
+            "gt_fraction": 0.21327318857815986
+          },
+          "distance": {
+            "n": 19574,
+            "median_m": 0.2,
+            "p90_m": 0.6000000000000001,
+            "p95_m": 0.7483314773547883,
+            "mean_m": 0.31084483201379176,
+            "frac_within_1_voxel": 0.5043424951466231,
+            "frac_exact": 0.16092776131603148
+          },
+          "target_coverage": 0.036839950880065496,
+          "valid_grid_coverage": 0.05073297669403666
+        },
+        "future": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            383,
+            402
+          ],
+          "n_voxels": 92191,
+          "full_grid": {
+            "tp": 24866,
+            "fp": 67325,
+            "fn": 60639,
+            "precision": 0.26972264103871313,
+            "recall": 0.29081340272498685,
+            "iou": 0.16270365765883663,
+            "n_pred": 92191,
+            "n_gt": 85505,
+            "n_valid": 385824,
+            "pred_fraction": 0.23894573691631418,
+            "gt_fraction": 0.2216165920212325
+          },
+          "frustum": {
+            "tp": 22494,
+            "fp": 56892,
+            "fn": 52823,
+            "precision": 0.2833497090167032,
+            "recall": 0.2986576735663927,
+            "iou": 0.17013970304593484,
+            "n_pred": 79386,
+            "n_gt": 75317,
+            "n_valid": 353148,
+            "pred_fraction": 0.22479526997179652,
+            "gt_fraction": 0.21327318857815986
+          },
+          "distance": {
+            "n": 92191,
+            "median_m": 0.2,
+            "p90_m": 0.5656854249492381,
+            "p95_m": 0.7483314773547883,
+            "mean_m": 0.26439756714481577,
+            "frac_within_1_voxel": 0.6044516275992233,
+            "frac_exact": 0.26972264103871313
+          },
+          "target_coverage": 0.29081340272498685,
+          "valid_grid_coverage": 0.23894573691631418
+        }
+      }
+    },
+    {
+      "partition": "train",
+      "drive": "2013_05_28_drive_0003_sync",
+      "anchor": 530,
+      "native_frame": 552,
+      "n_target_occupied": 62631,
+      "n_valid": 238018,
+      "target_prevalence": 0.26313556117604553,
+      "valid_fraction_of_grid": 0.1134958267211914,
+      "histories": {
+        "1": {
+          "n_frames_requested": 1,
+          "n_frames_used": 1,
+          "native_span": [
+            552,
+            552
+          ],
+          "n_voxels": 12980,
+          "full_grid": {
+            "tp": 5372,
+            "fp": 7608,
+            "fn": 57259,
+            "precision": 0.41386748844375965,
+            "recall": 0.08577222142389551,
+            "iou": 0.07648172667606315,
+            "n_pred": 12980,
+            "n_gt": 62631,
+            "n_valid": 238018,
+            "pred_fraction": 0.054533690729272576,
+            "gt_fraction": 0.26313556117604553
+          },
+          "frustum": {
+            "tp": 3426,
+            "fp": 4839,
+            "fn": 52124,
+            "precision": 0.414519056261343,
+            "recall": 0.06167416741674167,
+            "iou": 0.056732186325324147,
+            "n_pred": 8265,
+            "n_gt": 55550,
+            "n_valid": 216016,
+            "pred_fraction": 0.03826105473668617,
+            "gt_fraction": 0.2571568772683505
+          },
+          "distance": {
+            "n": 12980,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.447213595499958,
+            "mean_m": 0.18612294874450924,
+            "frac_within_1_voxel": 0.7393682588597843,
+            "frac_exact": 0.41386748844375965
+          },
+          "target_coverage": 0.08577222142389551,
+          "valid_grid_coverage": 0.054533690729272576
+        },
+        "5": {
+          "n_frames_requested": 5,
+          "n_frames_used": 5,
+          "native_span": [
+            532,
+            552
+          ],
+          "n_voxels": 17817,
+          "full_grid": {
+            "tp": 6905,
+            "fp": 10912,
+            "fn": 55726,
+            "precision": 0.3875512151316159,
+            "recall": 0.11024891826731172,
+            "iou": 0.0938906490080633,
+            "n_pred": 17817,
+            "n_gt": 62631,
+            "n_valid": 238018,
+            "pred_fraction": 0.07485568318362477,
+            "gt_fraction": 0.26313556117604553
+          },
+          "frustum": {
+            "tp": 4674,
+            "fp": 7289,
+            "fn": 50876,
+            "precision": 0.3907046727409513,
+            "recall": 0.08414041404140414,
+            "iou": 0.07438055984340934,
+            "n_pred": 11963,
+            "n_gt": 55550,
+            "n_valid": 216016,
+            "pred_fraction": 0.055380157025405524,
+            "gt_fraction": 0.2571568772683505
+          },
+          "distance": {
+            "n": 17817,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.48989794855663565,
+            "mean_m": 0.20491767191340562,
+            "frac_within_1_voxel": 0.6902396587528765,
+            "frac_exact": 0.3875512151316159
+          },
+          "target_coverage": 0.11024891826731172,
+          "valid_grid_coverage": 0.07485568318362477
+        },
+        "20": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            457,
+            552
+          ],
+          "n_voxels": 18096,
+          "full_grid": {
+            "tp": 7030,
+            "fp": 11066,
+            "fn": 55601,
+            "precision": 0.3884836427939876,
+            "recall": 0.11224473503536588,
+            "iou": 0.0953905857768973,
+            "n_pred": 18096,
+            "n_gt": 62631,
+            "n_valid": 238018,
+            "pred_fraction": 0.07602786343889958,
+            "gt_fraction": 0.26313556117604553
+          },
+          "frustum": {
+            "tp": 4767,
+            "fp": 7398,
+            "fn": 50783,
+            "precision": 0.39186189889025896,
+            "recall": 0.08581458145814581,
+            "iou": 0.07572917328588677,
+            "n_pred": 12165,
+            "n_gt": 55550,
+            "n_valid": 216016,
+            "pred_fraction": 0.05631527294274498,
+            "gt_fraction": 0.2571568772683505
+          },
+          "distance": {
+            "n": 18096,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.48989794855663565,
+            "mean_m": 0.20526788576180768,
+            "frac_within_1_voxel": 0.6883289124668435,
+            "frac_exact": 0.3884836427939876
+          },
+          "target_coverage": 0.11224473503536588,
+          "valid_grid_coverage": 0.07602786343889958
+        },
+        "all_past": {
+          "n_frames_requested": 9,
+          "n_frames_used": 9,
+          "native_span": [
+            512,
+            552
+          ],
+          "n_voxels": 18096,
+          "full_grid": {
+            "tp": 7030,
+            "fp": 11066,
+            "fn": 55601,
+            "precision": 0.3884836427939876,
+            "recall": 0.11224473503536588,
+            "iou": 0.0953905857768973,
+            "n_pred": 18096,
+            "n_gt": 62631,
+            "n_valid": 238018,
+            "pred_fraction": 0.07602786343889958,
+            "gt_fraction": 0.26313556117604553
+          },
+          "frustum": {
+            "tp": 4767,
+            "fp": 7398,
+            "fn": 50783,
+            "precision": 0.39186189889025896,
+            "recall": 0.08581458145814581,
+            "iou": 0.07572917328588677,
+            "n_pred": 12165,
+            "n_gt": 55550,
+            "n_valid": 216016,
+            "pred_fraction": 0.05631527294274498,
+            "gt_fraction": 0.2571568772683505
+          },
+          "distance": {
+            "n": 18096,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.48989794855663565,
+            "mean_m": 0.20526788576180768,
+            "frac_within_1_voxel": 0.6883289124668435,
+            "frac_exact": 0.3884836427939876
+          },
+          "target_coverage": 0.11224473503536588,
+          "valid_grid_coverage": 0.07602786343889958
+        },
+        "future": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            553,
+            572
+          ],
+          "n_voxels": 68881,
+          "full_grid": {
+            "tp": 27897,
+            "fp": 40984,
+            "fn": 34734,
+            "precision": 0.40500283096935297,
+            "recall": 0.4454184030272549,
+            "iou": 0.26923707957342086,
+            "n_pred": 68881,
+            "n_gt": 62631,
+            "n_valid": 238018,
+            "pred_fraction": 0.2893940794393701,
+            "gt_fraction": 0.26313556117604553
+          },
+          "frustum": {
+            "tp": 24461,
+            "fp": 34463,
+            "fn": 31089,
+            "precision": 0.4151279614418573,
+            "recall": 0.44034203420342033,
+            "iou": 0.27174963616366526,
+            "n_pred": 58924,
+            "n_gt": 55550,
+            "n_valid": 216016,
+            "pred_fraction": 0.2727760906599511,
+            "gt_fraction": 0.2571568772683505
+          },
+          "distance": {
+            "n": 68881,
+            "median_m": 0.2,
+            "p90_m": 0.48989794855663565,
+            "p95_m": 0.8,
+            "mean_m": 0.25551297039170007,
+            "frac_within_1_voxel": 0.7043161394288701,
+            "frac_exact": 0.40500283096935297
+          },
+          "target_coverage": 0.4454184030272549,
+          "valid_grid_coverage": 0.2893940794393701
+        }
+      }
+    },
+    {
+      "partition": "train",
+      "drive": "2013_05_28_drive_0003_sync",
+      "anchor": 635,
+      "native_frame": 657,
+      "n_target_occupied": 57720,
+      "n_valid": 363778,
+      "target_prevalence": 0.1586681987365921,
+      "valid_fraction_of_grid": 0.1734628677368164,
+      "histories": {
+        "1": {
+          "n_frames_requested": 1,
+          "n_frames_used": 1,
+          "native_span": [
+            657,
+            657
+          ],
+          "n_voxels": 11626,
+          "full_grid": {
+            "tp": 3305,
+            "fp": 8321,
+            "fn": 54415,
+            "precision": 0.284276621365904,
+            "recall": 0.05725918225918226,
+            "iou": 0.05004466922063566,
+            "n_pred": 11626,
+            "n_gt": 57720,
+            "n_valid": 363778,
+            "pred_fraction": 0.03195905194926576,
+            "gt_fraction": 0.1586681987365921
+          },
+          "frustum": {
+            "tp": 1547,
+            "fp": 5021,
+            "fn": 43547,
+            "precision": 0.2355359317904994,
+            "recall": 0.034306116113008385,
+            "iou": 0.030869001297016863,
+            "n_pred": 6568,
+            "n_gt": 45094,
+            "n_valid": 308578,
+            "pred_fraction": 0.02128473189922807,
+            "gt_fraction": 0.14613485083188044
+          },
+          "distance": {
+            "n": 11626,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.447213595499958,
+            "mean_m": 0.20085083974412443,
+            "frac_within_1_voxel": 0.7106485463616034,
+            "frac_exact": 0.284276621365904
+          },
+          "target_coverage": 0.05725918225918226,
+          "valid_grid_coverage": 0.03195905194926576
+        },
+        "5": {
+          "n_frames_requested": 5,
+          "n_frames_used": 5,
+          "native_span": [
+            637,
+            657
+          ],
+          "n_voxels": 16603,
+          "full_grid": {
+            "tp": 4407,
+            "fp": 12196,
+            "fn": 53313,
+            "precision": 0.2654339577184846,
+            "recall": 0.07635135135135135,
+            "iou": 0.06303278219577779,
+            "n_pred": 16603,
+            "n_gt": 57720,
+            "n_valid": 363778,
+            "pred_fraction": 0.045640473035752575,
+            "gt_fraction": 0.1586681987365921
+          },
+          "frustum": {
+            "tp": 2036,
+            "fp": 7487,
+            "fn": 43058,
+            "precision": 0.2137981728446918,
+            "recall": 0.045150130837805474,
+            "iou": 0.038721211083851584,
+            "n_pred": 9523,
+            "n_gt": 45094,
+            "n_valid": 308578,
+            "pred_fraction": 0.030860916850844845,
+            "gt_fraction": 0.14613485083188044
+          },
+          "distance": {
+            "n": 16603,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.48989794855663565,
+            "mean_m": 0.22399934447851697,
+            "frac_within_1_voxel": 0.6501234716617479,
+            "frac_exact": 0.2654339577184846
+          },
+          "target_coverage": 0.07635135135135135,
+          "valid_grid_coverage": 0.045640473035752575
+        },
+        "20": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            562,
+            657
+          ],
+          "n_voxels": 16803,
+          "full_grid": {
+            "tp": 4464,
+            "fp": 12339,
+            "fn": 53256,
+            "precision": 0.2656668452062132,
+            "recall": 0.07733887733887734,
+            "iou": 0.06371772363293796,
+            "n_pred": 16803,
+            "n_gt": 57720,
+            "n_valid": 363778,
+            "pred_fraction": 0.04619025889416072,
+            "gt_fraction": 0.1586681987365921
+          },
+          "frustum": {
+            "tp": 2082,
+            "fp": 7599,
+            "fn": 43012,
+            "precision": 0.21506042764177255,
+            "recall": 0.04617022220251031,
+            "iou": 0.039511889624807846,
+            "n_pred": 9681,
+            "n_gt": 45094,
+            "n_valid": 308578,
+            "pred_fraction": 0.03137294298362164,
+            "gt_fraction": 0.14613485083188044
+          },
+          "distance": {
+            "n": 16803,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.48989794855663565,
+            "mean_m": 0.22479055946403376,
+            "frac_within_1_voxel": 0.6474439088258049,
+            "frac_exact": 0.2656668452062132
+          },
+          "target_coverage": 0.07733887733887734,
+          "valid_grid_coverage": 0.04619025889416072
+        },
+        "all_past": {
+          "n_frames_requested": 9,
+          "n_frames_used": 9,
+          "native_span": [
+            617,
+            657
+          ],
+          "n_voxels": 16803,
+          "full_grid": {
+            "tp": 4464,
+            "fp": 12339,
+            "fn": 53256,
+            "precision": 0.2656668452062132,
+            "recall": 0.07733887733887734,
+            "iou": 0.06371772363293796,
+            "n_pred": 16803,
+            "n_gt": 57720,
+            "n_valid": 363778,
+            "pred_fraction": 0.04619025889416072,
+            "gt_fraction": 0.1586681987365921
+          },
+          "frustum": {
+            "tp": 2082,
+            "fp": 7599,
+            "fn": 43012,
+            "precision": 0.21506042764177255,
+            "recall": 0.04617022220251031,
+            "iou": 0.039511889624807846,
+            "n_pred": 9681,
+            "n_gt": 45094,
+            "n_valid": 308578,
+            "pred_fraction": 0.03137294298362164,
+            "gt_fraction": 0.14613485083188044
+          },
+          "distance": {
+            "n": 16803,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.48989794855663565,
+            "mean_m": 0.22479055946403376,
+            "frac_within_1_voxel": 0.6474439088258049,
+            "frac_exact": 0.2656668452062132
+          },
+          "target_coverage": 0.07733887733887734,
+          "valid_grid_coverage": 0.04619025889416072
+        },
+        "future": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            658,
+            677
+          ],
+          "n_voxels": 66003,
+          "full_grid": {
+            "tp": 17286,
+            "fp": 48717,
+            "fn": 40434,
+            "precision": 0.2618971864915231,
+            "recall": 0.2994802494802495,
+            "iou": 0.1624059302686096,
+            "n_pred": 66003,
+            "n_gt": 57720,
+            "n_valid": 363778,
+            "pred_fraction": 0.18143758006256563,
+            "gt_fraction": 0.1586681987365921
+          },
+          "frustum": {
+            "tp": 12483,
+            "fp": 36800,
+            "fn": 32611,
+            "precision": 0.2532922102956395,
+            "recall": 0.27682175012196747,
+            "iou": 0.1524287493589274,
+            "n_pred": 49283,
+            "n_gt": 45094,
+            "n_valid": 308578,
+            "pred_fraction": 0.15971002469391857,
+            "gt_fraction": 0.14613485083188044
+          },
+          "distance": {
+            "n": 66003,
+            "median_m": 0.2,
+            "p90_m": 0.48989794855663565,
+            "p95_m": 0.692820323027551,
+            "mean_m": 0.24835718743004015,
+            "frac_within_1_voxel": 0.6301380240292108,
+            "frac_exact": 0.2618971864915231
+          },
+          "target_coverage": 0.2994802494802495,
+          "valid_grid_coverage": 0.18143758006256563
+        }
+      }
+    },
+    {
+      "partition": "train",
+      "drive": "2013_05_28_drive_0003_sync",
+      "anchor": 810,
+      "native_frame": 832,
+      "n_target_occupied": 64060,
+      "n_valid": 403003,
+      "target_prevalence": 0.15895663307717312,
+      "valid_fraction_of_grid": 0.19216680526733398,
+      "histories": {
+        "1": {
+          "n_frames_requested": 1,
+          "n_frames_used": 1,
+          "native_span": [
+            832,
+            832
+          ],
+          "n_voxels": 13882,
+          "full_grid": {
+            "tp": 3956,
+            "fp": 9926,
+            "fn": 60104,
+            "precision": 0.28497334678000286,
+            "recall": 0.06175460505775835,
+            "iou": 0.0534695753250615,
+            "n_pred": 13882,
+            "n_gt": 64060,
+            "n_valid": 403003,
+            "pred_fraction": 0.03444639369930249,
+            "gt_fraction": 0.15895663307717312
+          },
+          "frustum": {
+            "tp": 2450,
+            "fp": 5876,
+            "fn": 48056,
+            "precision": 0.2942589478741292,
+            "recall": 0.04850908802914505,
+            "iou": 0.043453584477315454,
+            "n_pred": 8326,
+            "n_gt": 50506,
+            "n_valid": 342441,
+            "pred_fraction": 0.024313677392601936,
+            "gt_fraction": 0.14748818044568263
+          },
+          "distance": {
+            "n": 13882,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.447213595499958,
+            "mean_m": 0.19809514077937038,
+            "frac_within_1_voxel": 0.7503241607837488,
+            "frac_exact": 0.28497334678000286
+          },
+          "target_coverage": 0.06175460505775835,
+          "valid_grid_coverage": 0.03444639369930249
+        },
+        "5": {
+          "n_frames_requested": 5,
+          "n_frames_used": 5,
+          "native_span": [
+            812,
+            832
+          ],
+          "n_voxels": 22735,
+          "full_grid": {
+            "tp": 5650,
+            "fp": 17085,
+            "fn": 58410,
+            "precision": 0.24851550472839234,
+            "recall": 0.088198563846394,
+            "iou": 0.06962844291083863,
+            "n_pred": 22735,
+            "n_gt": 64060,
+            "n_valid": 403003,
+            "pred_fraction": 0.05641397210442602,
+            "gt_fraction": 0.15895663307717312
+          },
+          "frustum": {
+            "tp": 3686,
+            "fp": 10594,
+            "fn": 46820,
+            "precision": 0.2581232492997199,
+            "recall": 0.07298142794915456,
+            "iou": 0.06032733224222586,
+            "n_pred": 14280,
+            "n_gt": 50506,
+            "n_valid": 342441,
+            "pred_fraction": 0.04170061412038862,
+            "gt_fraction": 0.14748818044568263
+          },
+          "distance": {
+            "n": 22735,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.6000000000000001,
+            "mean_m": 0.2418053467513572,
+            "frac_within_1_voxel": 0.6427094787772157,
+            "frac_exact": 0.24851550472839234
+          },
+          "target_coverage": 0.088198563846394,
+          "valid_grid_coverage": 0.05641397210442602
+        },
+        "20": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            737,
+            832
+          ],
+          "n_voxels": 24683,
+          "full_grid": {
+            "tp": 6201,
+            "fp": 18482,
+            "fn": 57859,
+            "precision": 0.2512255398452376,
+            "recall": 0.09679987511707774,
+            "iou": 0.07512539071018391,
+            "n_pred": 24683,
+            "n_gt": 64060,
+            "n_valid": 403003,
+            "pred_fraction": 0.06124768301972938,
+            "gt_fraction": 0.15895663307717312
+          },
+          "frustum": {
+            "tp": 4099,
+            "fp": 11546,
+            "fn": 46407,
+            "precision": 0.26200063918184724,
+            "recall": 0.08115867421692473,
+            "iou": 0.06605750016115516,
+            "n_pred": 15645,
+            "n_gt": 50506,
+            "n_valid": 342441,
+            "pred_fraction": 0.045686702234837534,
+            "gt_fraction": 0.14748818044568263
+          },
+          "distance": {
+            "n": 24683,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.6000000000000001,
+            "mean_m": 0.241853229824068,
+            "frac_within_1_voxel": 0.6356601709678726,
+            "frac_exact": 0.2512255398452376
+          },
+          "target_coverage": 0.09679987511707774,
+          "valid_grid_coverage": 0.06124768301972938
+        },
+        "all_past": {
+          "n_frames_requested": 18,
+          "n_frames_used": 18,
+          "native_span": [
+            747,
+            832
+          ],
+          "n_voxels": 24683,
+          "full_grid": {
+            "tp": 6201,
+            "fp": 18482,
+            "fn": 57859,
+            "precision": 0.2512255398452376,
+            "recall": 0.09679987511707774,
+            "iou": 0.07512539071018391,
+            "n_pred": 24683,
+            "n_gt": 64060,
+            "n_valid": 403003,
+            "pred_fraction": 0.06124768301972938,
+            "gt_fraction": 0.15895663307717312
+          },
+          "frustum": {
+            "tp": 4099,
+            "fp": 11546,
+            "fn": 46407,
+            "precision": 0.26200063918184724,
+            "recall": 0.08115867421692473,
+            "iou": 0.06605750016115516,
+            "n_pred": 15645,
+            "n_gt": 50506,
+            "n_valid": 342441,
+            "pred_fraction": 0.045686702234837534,
+            "gt_fraction": 0.14748818044568263
+          },
+          "distance": {
+            "n": 24683,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.6000000000000001,
+            "mean_m": 0.241853229824068,
+            "frac_within_1_voxel": 0.6356601709678726,
+            "frac_exact": 0.2512255398452376
+          },
+          "target_coverage": 0.09679987511707774,
+          "valid_grid_coverage": 0.06124768301972938
+        },
+        "future": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            833,
+            852
+          ],
+          "n_voxels": 61329,
+          "full_grid": {
+            "tp": 15817,
+            "fp": 45512,
+            "fn": 48243,
+            "precision": 0.25790409104991113,
+            "recall": 0.24690914767405558,
+            "iou": 0.14435257182491879,
+            "n_pred": 61329,
+            "n_gt": 64060,
+            "n_valid": 403003,
+            "pred_fraction": 0.15218000858554404,
+            "gt_fraction": 0.15895663307717312
+          },
+          "frustum": {
+            "tp": 12219,
+            "fp": 34476,
+            "fn": 38287,
+            "precision": 0.26167683906199807,
+            "recall": 0.24193165168494832,
+            "iou": 0.14378338942364266,
+            "n_pred": 46695,
+            "n_gt": 50506,
+            "n_valid": 342441,
+            "pred_fraction": 0.1363592560470271,
+            "gt_fraction": 0.14748818044568263
+          },
+          "distance": {
+            "n": 61329,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.632455532033676,
+            "mean_m": 0.27088430002531905,
+            "frac_within_1_voxel": 0.6343817769733732,
+            "frac_exact": 0.25790409104991113
+          },
+          "target_coverage": 0.24690914767405558,
+          "valid_grid_coverage": 0.15218000858554404
+        }
+      }
+    },
+    {
+      "partition": "train",
+      "drive": "2013_05_28_drive_0007_sync",
+      "anchor": 1365,
+      "native_frame": 1367,
+      "n_target_occupied": 100840,
+      "n_valid": 332670,
+      "target_prevalence": 0.30312321519824453,
+      "valid_fraction_of_grid": 0.1586294174194336,
+      "histories": {
+        "1": {
+          "n_frames_requested": 1,
+          "n_frames_used": 1,
+          "native_span": [
+            1367,
+            1367
+          ],
+          "n_voxels": 15078,
+          "full_grid": {
+            "tp": 7954,
+            "fp": 7124,
+            "fn": 92886,
+            "precision": 0.5275235442366362,
+            "recall": 0.07887742959143197,
+            "iou": 0.07367270571672038,
+            "n_pred": 15078,
+            "n_gt": 100840,
+            "n_valid": 332670,
+            "pred_fraction": 0.04532419514834521,
+            "gt_fraction": 0.30312321519824453
+          },
+          "frustum": {
+            "tp": 4421,
+            "fp": 5092,
+            "fn": 82541,
+            "precision": 0.4647324713549879,
+            "recall": 0.0508382971872772,
+            "iou": 0.048026158559106615,
+            "n_pred": 9513,
+            "n_gt": 86962,
+            "n_valid": 303186,
+            "pred_fraction": 0.03137677861114959,
+            "gt_fraction": 0.28682722817016615
+          },
+          "distance": {
+            "n": 15078,
+            "median_m": 0.0,
+            "p90_m": 0.28284271247461906,
+            "p95_m": 0.4,
+            "mean_m": 0.11178584734501838,
+            "frac_within_1_voxel": 0.8911659371269399,
+            "frac_exact": 0.5275235442366362
+          },
+          "target_coverage": 0.07887742959143197,
+          "valid_grid_coverage": 0.04532419514834521
+        },
+        "5": {
+          "n_frames_requested": 5,
+          "n_frames_used": 5,
+          "native_span": [
+            1347,
+            1367
+          ],
+          "n_voxels": 21871,
+          "full_grid": {
+            "tp": 10738,
+            "fp": 11133,
+            "fn": 90102,
+            "precision": 0.4909697773307119,
+            "recall": 0.1064855216184054,
+            "iou": 0.09589811829637501,
+            "n_pred": 21871,
+            "n_gt": 100840,
+            "n_valid": 332670,
+            "pred_fraction": 0.06574383022214206,
+            "gt_fraction": 0.30312321519824453
+          },
+          "frustum": {
+            "tp": 6604,
+            "fp": 8102,
+            "fn": 80358,
+            "precision": 0.4490684074527404,
+            "recall": 0.07594121570341068,
+            "iou": 0.06946898931246319,
+            "n_pred": 14706,
+            "n_gt": 86962,
+            "n_valid": 303186,
+            "pred_fraction": 0.048504878193584136,
+            "gt_fraction": 0.28682722817016615
+          },
+          "distance": {
+            "n": 21871,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.4,
+            "mean_m": 0.13980202765797117,
+            "frac_within_1_voxel": 0.8260710529925472,
+            "frac_exact": 0.4909697773307119
+          },
+          "target_coverage": 0.1064855216184054,
+          "valid_grid_coverage": 0.06574383022214206
+        },
+        "20": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            1272,
+            1367
+          ],
+          "n_voxels": 23519,
+          "full_grid": {
+            "tp": 11934,
+            "fp": 11585,
+            "fn": 88906,
+            "precision": 0.5074195331434159,
+            "recall": 0.11834589448631495,
+            "iou": 0.10615076717811875,
+            "n_pred": 23519,
+            "n_gt": 100840,
+            "n_valid": 332670,
+            "pred_fraction": 0.07069768839991583,
+            "gt_fraction": 0.30312321519824453
+          },
+          "frustum": {
+            "tp": 7425,
+            "fp": 8386,
+            "fn": 79537,
+            "precision": 0.46960976535323506,
+            "recall": 0.08538212092638164,
+            "iou": 0.07787263497923397,
+            "n_pred": 15811,
+            "n_gt": 86962,
+            "n_valid": 303186,
+            "pred_fraction": 0.05214950558403093,
+            "gt_fraction": 0.28682722817016615
+          },
+          "distance": {
+            "n": 23519,
+            "median_m": 0.0,
+            "p90_m": 0.3464101615137755,
+            "p95_m": 0.4,
+            "mean_m": 0.13498952940930853,
+            "frac_within_1_voxel": 0.8313703813937667,
+            "frac_exact": 0.5074195331434159
+          },
+          "target_coverage": 0.11834589448631495,
+          "valid_grid_coverage": 0.07069768839991583
+        },
+        "all_past": {
+          "n_frames_requested": 12,
+          "n_frames_used": 12,
+          "native_span": [
+            1312,
+            1367
+          ],
+          "n_voxels": 23519,
+          "full_grid": {
+            "tp": 11934,
+            "fp": 11585,
+            "fn": 88906,
+            "precision": 0.5074195331434159,
+            "recall": 0.11834589448631495,
+            "iou": 0.10615076717811875,
+            "n_pred": 23519,
+            "n_gt": 100840,
+            "n_valid": 332670,
+            "pred_fraction": 0.07069768839991583,
+            "gt_fraction": 0.30312321519824453
+          },
+          "frustum": {
+            "tp": 7425,
+            "fp": 8386,
+            "fn": 79537,
+            "precision": 0.46960976535323506,
+            "recall": 0.08538212092638164,
+            "iou": 0.07787263497923397,
+            "n_pred": 15811,
+            "n_gt": 86962,
+            "n_valid": 303186,
+            "pred_fraction": 0.05214950558403093,
+            "gt_fraction": 0.28682722817016615
+          },
+          "distance": {
+            "n": 23519,
+            "median_m": 0.0,
+            "p90_m": 0.3464101615137755,
+            "p95_m": 0.4,
+            "mean_m": 0.13498952940930853,
+            "frac_within_1_voxel": 0.8313703813937667,
+            "frac_exact": 0.5074195331434159
+          },
+          "target_coverage": 0.11834589448631495,
+          "valid_grid_coverage": 0.07069768839991583
+        },
+        "future": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            1368,
+            1387
+          ],
+          "n_voxels": 77756,
+          "full_grid": {
+            "tp": 41474,
+            "fp": 36282,
+            "fn": 59366,
+            "precision": 0.5333864910746438,
+            "recall": 0.41128520428401427,
+            "iou": 0.30246058254692904,
+            "n_pred": 77756,
+            "n_gt": 100840,
+            "n_valid": 332670,
+            "pred_fraction": 0.23373312892656387,
+            "gt_fraction": 0.30312321519824453
+          },
+          "frustum": {
+            "tp": 34482,
+            "fp": 31370,
+            "fn": 52480,
+            "precision": 0.5236287432424224,
+            "recall": 0.39651801936478004,
+            "iou": 0.2914004664841294,
+            "n_pred": 65852,
+            "n_gt": 86962,
+            "n_valid": 303186,
+            "pred_fraction": 0.21720000263864425,
+            "gt_fraction": 0.28682722817016615
+          },
+          "distance": {
+            "n": 77756,
+            "median_m": 0.0,
+            "p90_m": 0.3464101615137755,
+            "p95_m": 0.4,
+            "mean_m": 0.12718198706515518,
+            "frac_within_1_voxel": 0.841349863676115,
+            "frac_exact": 0.5333864910746438
+          },
+          "target_coverage": 0.41128520428401427,
+          "valid_grid_coverage": 0.23373312892656387
+        }
+      }
+    },
+    {
+      "partition": "train",
+      "drive": "2013_05_28_drive_0007_sync",
+      "anchor": 1630,
+      "native_frame": 1632,
+      "n_target_occupied": 67849,
+      "n_valid": 267061,
+      "target_prevalence": 0.25405806164134787,
+      "valid_fraction_of_grid": 0.12734460830688477,
+      "histories": {
+        "1": {
+          "n_frames_requested": 1,
+          "n_frames_used": 1,
+          "native_span": [
+            1632,
+            1632
+          ],
+          "n_voxels": 15259,
+          "full_grid": {
+            "tp": 5587,
+            "fp": 9672,
+            "fn": 62262,
+            "precision": 0.36614457041745857,
+            "recall": 0.08234461819628881,
+            "iou": 0.07207079372041124,
+            "n_pred": 15259,
+            "n_gt": 67849,
+            "n_valid": 267061,
+            "pred_fraction": 0.05713675901760272,
+            "gt_fraction": 0.25405806164134787
+          },
+          "frustum": {
+            "tp": 3656,
+            "fp": 6006,
+            "fn": 56679,
+            "precision": 0.3783895673773546,
+            "recall": 0.060595011187536255,
+            "iou": 0.05510920848344161,
+            "n_pred": 9662,
+            "n_gt": 60335,
+            "n_valid": 241018,
+            "pred_fraction": 0.04008829216075148,
+            "gt_fraction": 0.25033399995021116
+          },
+          "distance": {
+            "n": 15259,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.5656854249492381,
+            "mean_m": 0.26602052674590004,
+            "frac_within_1_voxel": 0.7410053083426175,
+            "frac_exact": 0.36614457041745857
+          },
+          "target_coverage": 0.08234461819628881,
+          "valid_grid_coverage": 0.05713675901760272
+        },
+        "5": {
+          "n_frames_requested": 5,
+          "n_frames_used": 5,
+          "native_span": [
+            1612,
+            1632
+          ],
+          "n_voxels": 18765,
+          "full_grid": {
+            "tp": 6842,
+            "fp": 11923,
+            "fn": 61007,
+            "precision": 0.3646149746869171,
+            "recall": 0.10084157467317131,
+            "iou": 0.08576944291230006,
+            "n_pred": 18765,
+            "n_gt": 67849,
+            "n_valid": 267061,
+            "pred_fraction": 0.07026484585918573,
+            "gt_fraction": 0.25405806164134787
+          },
+          "frustum": {
+            "tp": 4616,
+            "fp": 7547,
+            "fn": 55719,
+            "precision": 0.3795116336430157,
+            "recall": 0.07650617386260047,
+            "iou": 0.06800035355469786,
+            "n_pred": 12163,
+            "n_gt": 60335,
+            "n_valid": 241018,
+            "pred_fraction": 0.05046511048967297,
+            "gt_fraction": 0.25033399995021116
+          },
+          "distance": {
+            "n": 18765,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.5656854249492381,
+            "mean_m": 0.2667303916982516,
+            "frac_within_1_voxel": 0.7174527045030642,
+            "frac_exact": 0.3646149746869171
+          },
+          "target_coverage": 0.10084157467317131,
+          "valid_grid_coverage": 0.07026484585918573
+        },
+        "20": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            1537,
+            1632
+          ],
+          "n_voxels": 18822,
+          "full_grid": {
+            "tp": 6864,
+            "fp": 11958,
+            "fn": 60985,
+            "precision": 0.36467963021995536,
+            "recall": 0.10116582410941945,
+            "iou": 0.08600749307704839,
+            "n_pred": 18822,
+            "n_gt": 67849,
+            "n_valid": 267061,
+            "pred_fraction": 0.07047828024309052,
+            "gt_fraction": 0.25405806164134787
+          },
+          "frustum": {
+            "tp": 4631,
+            "fp": 7575,
+            "fn": 55704,
+            "precision": 0.37940357201376373,
+            "recall": 0.07675478577939836,
+            "iou": 0.06819319687822117,
+            "n_pred": 12206,
+            "n_gt": 60335,
+            "n_valid": 241018,
+            "pred_fraction": 0.050643520400965904,
+            "gt_fraction": 0.25033399995021116
+          },
+          "distance": {
+            "n": 18822,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.5656854249492381,
+            "mean_m": 0.2670810017229638,
+            "frac_within_1_voxel": 0.716661353734991,
+            "frac_exact": 0.36467963021995536
+          },
+          "target_coverage": 0.10116582410941945,
+          "valid_grid_coverage": 0.07047828024309052
+        },
+        "all_past": {
+          "n_frames_requested": 7,
+          "n_frames_used": 7,
+          "native_span": [
+            1602,
+            1632
+          ],
+          "n_voxels": 18822,
+          "full_grid": {
+            "tp": 6864,
+            "fp": 11958,
+            "fn": 60985,
+            "precision": 0.36467963021995536,
+            "recall": 0.10116582410941945,
+            "iou": 0.08600749307704839,
+            "n_pred": 18822,
+            "n_gt": 67849,
+            "n_valid": 267061,
+            "pred_fraction": 0.07047828024309052,
+            "gt_fraction": 0.25405806164134787
+          },
+          "frustum": {
+            "tp": 4631,
+            "fp": 7575,
+            "fn": 55704,
+            "precision": 0.37940357201376373,
+            "recall": 0.07675478577939836,
+            "iou": 0.06819319687822117,
+            "n_pred": 12206,
+            "n_gt": 60335,
+            "n_valid": 241018,
+            "pred_fraction": 0.050643520400965904,
+            "gt_fraction": 0.25033399995021116
+          },
+          "distance": {
+            "n": 18822,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.5656854249492381,
+            "mean_m": 0.2670810017229638,
+            "frac_within_1_voxel": 0.716661353734991,
+            "frac_exact": 0.36467963021995536
+          },
+          "target_coverage": 0.10116582410941945,
+          "valid_grid_coverage": 0.07047828024309052
+        },
+        "future": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            1633,
+            1652
+          ],
+          "n_voxels": 84544,
+          "full_grid": {
+            "tp": 34908,
+            "fp": 49636,
+            "fn": 32941,
+            "precision": 0.4128974261922786,
+            "recall": 0.5144954236613657,
+            "iou": 0.29712729284589523,
+            "n_pred": 84544,
+            "n_gt": 67849,
+            "n_valid": 267061,
+            "pred_fraction": 0.31657186934820136,
+            "gt_fraction": 0.25405806164134787
+          },
+          "frustum": {
+            "tp": 31050,
+            "fp": 42738,
+            "fn": 29285,
+            "precision": 0.4208001301024557,
+            "recall": 0.5146266677716085,
+            "iou": 0.30124280849495016,
+            "n_pred": 73788,
+            "n_gt": 60335,
+            "n_valid": 241018,
+            "pred_fraction": 0.3061514077786721,
+            "gt_fraction": 0.25033399995021116
+          },
+          "distance": {
+            "n": 84544,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.7211102550927979,
+            "mean_m": 0.30991189431758676,
+            "frac_within_1_voxel": 0.7329674489023467,
+            "frac_exact": 0.4128974261922786
+          },
+          "target_coverage": 0.5144954236613657,
+          "valid_grid_coverage": 0.31657186934820136
+        }
+      }
+    },
+    {
+      "partition": "train",
+      "drive": "2013_05_28_drive_0007_sync",
+      "anchor": 1705,
+      "native_frame": 1707,
+      "n_target_occupied": 76049,
+      "n_valid": 317513,
+      "target_prevalence": 0.23951460255170653,
+      "valid_fraction_of_grid": 0.15140199661254883,
+      "histories": {
+        "1": {
+          "n_frames_requested": 1,
+          "n_frames_used": 1,
+          "native_span": [
+            1707,
+            1707
+          ],
+          "n_voxels": 16691,
+          "full_grid": {
+            "tp": 5382,
+            "fp": 11309,
+            "fn": 70667,
+            "precision": 0.32244922413276617,
+            "recall": 0.07077016134334442,
+            "iou": 0.06160855330937064,
+            "n_pred": 16691,
+            "n_gt": 76049,
+            "n_valid": 317513,
+            "pred_fraction": 0.05256792635262178,
+            "gt_fraction": 0.23951460255170653
+          },
+          "frustum": {
+            "tp": 3095,
+            "fp": 7093,
+            "fn": 60831,
+            "precision": 0.30378877110325875,
+            "recall": 0.04841535525451303,
+            "iou": 0.043579887072473567,
+            "n_pred": 10188,
+            "n_gt": 63926,
+            "n_valid": 278635,
+            "pred_fraction": 0.03656396360830477,
+            "gt_fraction": 0.22942559262117107
+          },
+          "distance": {
+            "n": 16691,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.447213595499958,
+            "mean_m": 0.1958217877728875,
+            "frac_within_1_voxel": 0.7347672398298484,
+            "frac_exact": 0.32244922413276617
+          },
+          "target_coverage": 0.07077016134334442,
+          "valid_grid_coverage": 0.05256792635262178
+        },
+        "5": {
+          "n_frames_requested": 5,
+          "n_frames_used": 5,
+          "native_span": [
+            1687,
+            1707
+          ],
+          "n_voxels": 21141,
+          "full_grid": {
+            "tp": 7060,
+            "fp": 14081,
+            "fn": 68989,
+            "precision": 0.3339482522113429,
+            "recall": 0.09283488277294902,
+            "iou": 0.07833129923443914,
+            "n_pred": 21141,
+            "n_gt": 76049,
+            "n_valid": 317513,
+            "pred_fraction": 0.06658310053446631,
+            "gt_fraction": 0.23951460255170653
+          },
+          "frustum": {
+            "tp": 4150,
+            "fp": 9070,
+            "fn": 59776,
+            "precision": 0.31391830559757944,
+            "recall": 0.06491881237681069,
+            "iou": 0.05685243027015179,
+            "n_pred": 13220,
+            "n_gt": 63926,
+            "n_valid": 278635,
+            "pred_fraction": 0.047445582931074703,
+            "gt_fraction": 0.22942559262117107
+          },
+          "distance": {
+            "n": 21141,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.447213595499958,
+            "mean_m": 0.2012508450435568,
+            "frac_within_1_voxel": 0.7183198524194693,
+            "frac_exact": 0.3339482522113429
+          },
+          "target_coverage": 0.09283488277294902,
+          "valid_grid_coverage": 0.06658310053446631
+        },
+        "20": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            1612,
+            1707
+          ],
+          "n_voxels": 21191,
+          "full_grid": {
+            "tp": 7079,
+            "fp": 14112,
+            "fn": 68970,
+            "precision": 0.33405691095276296,
+            "recall": 0.09308472169259294,
+            "iou": 0.07851510076418851,
+            "n_pred": 21191,
+            "n_gt": 76049,
+            "n_valid": 317513,
+            "pred_fraction": 0.06674057440167804,
+            "gt_fraction": 0.23951460255170653
+          },
+          "frustum": {
+            "tp": 4160,
+            "fp": 9089,
+            "fn": 59766,
+            "precision": 0.3139859612046192,
+            "recall": 0.06507524325000782,
+            "iou": 0.056974594261453126,
+            "n_pred": 13249,
+            "n_gt": 63926,
+            "n_valid": 278635,
+            "pred_fraction": 0.047549661743858454,
+            "gt_fraction": 0.22942559262117107
+          },
+          "distance": {
+            "n": 21191,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.48989794855663565,
+            "mean_m": 0.20127877487562734,
+            "frac_within_1_voxel": 0.7182766268698976,
+            "frac_exact": 0.33405691095276296
+          },
+          "target_coverage": 0.09308472169259294,
+          "valid_grid_coverage": 0.06674057440167804
+        },
+        "all_past": {
+          "n_frames_requested": 7,
+          "n_frames_used": 7,
+          "native_span": [
+            1677,
+            1707
+          ],
+          "n_voxels": 21191,
+          "full_grid": {
+            "tp": 7079,
+            "fp": 14112,
+            "fn": 68970,
+            "precision": 0.33405691095276296,
+            "recall": 0.09308472169259294,
+            "iou": 0.07851510076418851,
+            "n_pred": 21191,
+            "n_gt": 76049,
+            "n_valid": 317513,
+            "pred_fraction": 0.06674057440167804,
+            "gt_fraction": 0.23951460255170653
+          },
+          "frustum": {
+            "tp": 4160,
+            "fp": 9089,
+            "fn": 59766,
+            "precision": 0.3139859612046192,
+            "recall": 0.06507524325000782,
+            "iou": 0.056974594261453126,
+            "n_pred": 13249,
+            "n_gt": 63926,
+            "n_valid": 278635,
+            "pred_fraction": 0.047549661743858454,
+            "gt_fraction": 0.22942559262117107
+          },
+          "distance": {
+            "n": 21191,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.48989794855663565,
+            "mean_m": 0.20127877487562734,
+            "frac_within_1_voxel": 0.7182766268698976,
+            "frac_exact": 0.33405691095276296
+          },
+          "target_coverage": 0.09308472169259294,
+          "valid_grid_coverage": 0.06674057440167804
+        },
+        "future": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            1708,
+            1727
+          ],
+          "n_voxels": 98954,
+          "full_grid": {
+            "tp": 36333,
+            "fp": 62621,
+            "fn": 39716,
+            "precision": 0.36717060452331385,
+            "recall": 0.47775776144327997,
+            "iou": 0.2620105285930627,
+            "n_pred": 98954,
+            "n_gt": 76049,
+            "n_valid": 317513,
+            "pred_fraction": 0.3116533811214029,
+            "gt_fraction": 0.23951460255170653
+          },
+          "frustum": {
+            "tp": 29854,
+            "fp": 52092,
+            "fn": 34072,
+            "precision": 0.36431308422619774,
+            "recall": 0.4670087288427244,
+            "iou": 0.25732213966798256,
+            "n_pred": 81946,
+            "n_gt": 63926,
+            "n_valid": 278635,
+            "pred_fraction": 0.29409801353024567,
+            "gt_fraction": 0.22942559262117107
+          },
+          "distance": {
+            "n": 98954,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.5656854249492381,
+            "mean_m": 0.20288605320772798,
+            "frac_within_1_voxel": 0.7221234108777816,
+            "frac_exact": 0.36717060452331385
+          },
+          "target_coverage": 0.47775776144327997,
+          "valid_grid_coverage": 0.3116533811214029
+        }
+      }
+    },
+    {
+      "partition": "train",
+      "drive": "2013_05_28_drive_0007_sync",
+      "anchor": 1945,
+      "native_frame": 1947,
+      "n_target_occupied": 74642,
+      "n_valid": 488412,
+      "target_prevalence": 0.1528258928937045,
+      "valid_fraction_of_grid": 0.2328929901123047,
+      "histories": {
+        "1": {
+          "n_frames_requested": 1,
+          "n_frames_used": 1,
+          "native_span": [
+            1947,
+            1947
+          ],
+          "n_voxels": 15616,
+          "full_grid": {
+            "tp": 5228,
+            "fp": 10388,
+            "fn": 69414,
+            "precision": 0.33478483606557374,
+            "recall": 0.07004099568607486,
+            "iou": 0.06148418205339292,
+            "n_pred": 15616,
+            "n_gt": 74642,
+            "n_valid": 488412,
+            "pred_fraction": 0.03197300639623924,
+            "gt_fraction": 0.1528258928937045
+          },
+          "frustum": {
+            "tp": 2647,
+            "fp": 6837,
+            "fn": 58585,
+            "precision": 0.2791016448755799,
+            "recall": 0.043229030572249805,
+            "iou": 0.03888701170870734,
+            "n_pred": 9484,
+            "n_gt": 61232,
+            "n_valid": 444632,
+            "pred_fraction": 0.021329998740531497,
+            "gt_fraction": 0.13771388474063945
+          },
+          "distance": {
+            "n": 15616,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.48989794855663565,
+            "mean_m": 0.27731232254553606,
+            "frac_within_1_voxel": 0.7353355532786885,
+            "frac_exact": 0.33478483606557374
+          },
+          "target_coverage": 0.07004099568607486,
+          "valid_grid_coverage": 0.03197300639623924
+        },
+        "5": {
+          "n_frames_requested": 5,
+          "n_frames_used": 5,
+          "native_span": [
+            1927,
+            1947
+          ],
+          "n_voxels": 21623,
+          "full_grid": {
+            "tp": 6656,
+            "fp": 14967,
+            "fn": 67986,
+            "precision": 0.30782037645100124,
+            "recall": 0.08917231585434474,
+            "iou": 0.07427825330044974,
+            "n_pred": 21623,
+            "n_gt": 74642,
+            "n_valid": 488412,
+            "pred_fraction": 0.04427204900780489,
+            "gt_fraction": 0.1528258928937045
+          },
+          "frustum": {
+            "tp": 3528,
+            "fp": 10111,
+            "fn": 57704,
+            "precision": 0.2586699904685094,
+            "recall": 0.057616932322968384,
+            "iou": 0.049451242588621165,
+            "n_pred": 13639,
+            "n_gt": 61232,
+            "n_valid": 444632,
+            "pred_fraction": 0.030674805232192015,
+            "gt_fraction": 0.13771388474063945
+          },
+          "distance": {
+            "n": 21623,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.632455532033676,
+            "mean_m": 0.33176240122609313,
+            "frac_within_1_voxel": 0.673634555797068,
+            "frac_exact": 0.30782037645100124
+          },
+          "target_coverage": 0.08917231585434474,
+          "valid_grid_coverage": 0.04427204900780489
+        },
+        "20": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            1852,
+            1947
+          ],
+          "n_voxels": 21892,
+          "full_grid": {
+            "tp": 6741,
+            "fp": 15151,
+            "fn": 67901,
+            "precision": 0.3079207016261648,
+            "recall": 0.09031108491197985,
+            "iou": 0.07507266713440915,
+            "n_pred": 21892,
+            "n_gt": 74642,
+            "n_valid": 488412,
+            "pred_fraction": 0.044822813526285185,
+            "gt_fraction": 0.1528258928937045
+          },
+          "frustum": {
+            "tp": 3573,
+            "fp": 10203,
+            "fn": 57659,
+            "precision": 0.25936411149825783,
+            "recall": 0.058351842174026655,
+            "iou": 0.050017498425141735,
+            "n_pred": 13776,
+            "n_gt": 61232,
+            "n_valid": 444632,
+            "pred_fraction": 0.030982925205563252,
+            "gt_fraction": 0.13771388474063945
+          },
+          "distance": {
+            "n": 21892,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.632455532033676,
+            "mean_m": 0.3311164240173747,
+            "frac_within_1_voxel": 0.6718892746208661,
+            "frac_exact": 0.3079207016261648
+          },
+          "target_coverage": 0.09031108491197985,
+          "valid_grid_coverage": 0.044822813526285185
+        },
+        "all_past": {
+          "n_frames_requested": 10,
+          "n_frames_used": 10,
+          "native_span": [
+            1902,
+            1947
+          ],
+          "n_voxels": 21892,
+          "full_grid": {
+            "tp": 6741,
+            "fp": 15151,
+            "fn": 67901,
+            "precision": 0.3079207016261648,
+            "recall": 0.09031108491197985,
+            "iou": 0.07507266713440915,
+            "n_pred": 21892,
+            "n_gt": 74642,
+            "n_valid": 488412,
+            "pred_fraction": 0.044822813526285185,
+            "gt_fraction": 0.1528258928937045
+          },
+          "frustum": {
+            "tp": 3573,
+            "fp": 10203,
+            "fn": 57659,
+            "precision": 0.25936411149825783,
+            "recall": 0.058351842174026655,
+            "iou": 0.050017498425141735,
+            "n_pred": 13776,
+            "n_gt": 61232,
+            "n_valid": 444632,
+            "pred_fraction": 0.030982925205563252,
+            "gt_fraction": 0.13771388474063945
+          },
+          "distance": {
+            "n": 21892,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.632455532033676,
+            "mean_m": 0.3311164240173747,
+            "frac_within_1_voxel": 0.6718892746208661,
+            "frac_exact": 0.3079207016261648
+          },
+          "target_coverage": 0.09031108491197985,
+          "valid_grid_coverage": 0.044822813526285185
+        },
+        "future": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            1948,
+            1967
+          ],
+          "n_voxels": 99848,
+          "full_grid": {
+            "tp": 31235,
+            "fp": 68613,
+            "fn": 43407,
+            "precision": 0.3128254947520231,
+            "recall": 0.418464135473326,
+            "iou": 0.21803776482496248,
+            "n_pred": 99848,
+            "n_gt": 74642,
+            "n_valid": 488412,
+            "pred_fraction": 0.20443396149152765,
+            "gt_fraction": 0.1528258928937045
+          },
+          "frustum": {
+            "tp": 25266,
+            "fp": 59209,
+            "fn": 35966,
+            "precision": 0.29909440662918024,
+            "recall": 0.41262738437418345,
+            "iou": 0.20977906194734353,
+            "n_pred": 84475,
+            "n_gt": 61232,
+            "n_valid": 444632,
+            "pred_fraction": 0.18998857482142537,
+            "gt_fraction": 0.13771388474063945
+          },
+          "distance": {
+            "n": 99848,
+            "median_m": 0.2,
+            "p90_m": 1.4966629547095767,
+            "p95_m": 4.409081537009721,
+            "mean_m": 0.7343518512242052,
+            "frac_within_1_voxel": 0.610758352696098,
+            "frac_exact": 0.3128254947520231
+          },
+          "target_coverage": 0.418464135473326,
+          "valid_grid_coverage": 0.20443396149152765
+        }
+      }
+    },
+    {
+      "partition": "train",
+      "drive": "2013_05_28_drive_0007_sync",
+      "anchor": 2395,
+      "native_frame": 2634,
+      "n_target_occupied": 75487,
+      "n_valid": 499971,
+      "target_prevalence": 0.150982756999906,
+      "valid_fraction_of_grid": 0.2384047508239746,
+      "histories": {
+        "1": {
+          "n_frames_requested": 1,
+          "n_frames_used": 1,
+          "native_span": [
+            2634,
+            2634
+          ],
+          "n_voxels": 11034,
+          "full_grid": {
+            "tp": 3479,
+            "fp": 7555,
+            "fn": 72008,
+            "precision": 0.31529816929490667,
+            "recall": 0.04608740577847841,
+            "iou": 0.04189446304279762,
+            "n_pred": 11034,
+            "n_gt": 75487,
+            "n_valid": 499971,
+            "pred_fraction": 0.022069280018241058,
+            "gt_fraction": 0.150982756999906
+          },
+          "frustum": {
+            "tp": 599,
+            "fp": 5159,
+            "fn": 53441,
+            "precision": 0.10402917679749914,
+            "recall": 0.011084381939304219,
+            "iou": 0.010118414162401392,
+            "n_pred": 5758,
+            "n_gt": 54040,
+            "n_valid": 390130,
+            "pred_fraction": 0.0147591828364904,
+            "gt_fraction": 0.13851792992079565
+          },
+          "distance": {
+            "n": 11034,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.6000000000000001,
+            "mean_m": 0.20660709352558693,
+            "frac_within_1_voxel": 0.7342758745695124,
+            "frac_exact": 0.31529816929490667
+          },
+          "target_coverage": 0.04608740577847841,
+          "valid_grid_coverage": 0.022069280018241058
+        },
+        "5": {
+          "n_frames_requested": 5,
+          "n_frames_used": 2,
+          "native_span": [
+            2629,
+            2634
+          ],
+          "n_voxels": 16319,
+          "full_grid": {
+            "tp": 4955,
+            "fp": 11364,
+            "fn": 70532,
+            "precision": 0.3036338010907531,
+            "recall": 0.06564044140050605,
+            "iou": 0.05705173227711828,
+            "n_pred": 16319,
+            "n_gt": 75487,
+            "n_valid": 499971,
+            "pred_fraction": 0.0326398931138006,
+            "gt_fraction": 0.150982756999906
+          },
+          "frustum": {
+            "tp": 900,
+            "fp": 8022,
+            "fn": 53140,
+            "precision": 0.10087424344317418,
+            "recall": 0.016654330125832718,
+            "iou": 0.014501627404853211,
+            "n_pred": 8922,
+            "n_gt": 54040,
+            "n_valid": 390130,
+            "pred_fraction": 0.022869299976930768,
+            "gt_fraction": 0.13851792992079565
+          },
+          "distance": {
+            "n": 16319,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.6000000000000001,
+            "mean_m": 0.21464703274610644,
+            "frac_within_1_voxel": 0.7197744959862736,
+            "frac_exact": 0.3036338010907531
+          },
+          "target_coverage": 0.06564044140050605,
+          "valid_grid_coverage": 0.0326398931138006
+        },
+        "20": {
+          "n_frames_requested": 20,
+          "n_frames_used": 2,
+          "native_span": [
+            2629,
+            2634
+          ],
+          "n_voxels": 16319,
+          "full_grid": {
+            "tp": 4955,
+            "fp": 11364,
+            "fn": 70532,
+            "precision": 0.3036338010907531,
+            "recall": 0.06564044140050605,
+            "iou": 0.05705173227711828,
+            "n_pred": 16319,
+            "n_gt": 75487,
+            "n_valid": 499971,
+            "pred_fraction": 0.0326398931138006,
+            "gt_fraction": 0.150982756999906
+          },
+          "frustum": {
+            "tp": 900,
+            "fp": 8022,
+            "fn": 53140,
+            "precision": 0.10087424344317418,
+            "recall": 0.016654330125832718,
+            "iou": 0.014501627404853211,
+            "n_pred": 8922,
+            "n_gt": 54040,
+            "n_valid": 390130,
+            "pred_fraction": 0.022869299976930768,
+            "gt_fraction": 0.13851792992079565
+          },
+          "distance": {
+            "n": 16319,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.6000000000000001,
+            "mean_m": 0.21464703274610644,
+            "frac_within_1_voxel": 0.7197744959862736,
+            "frac_exact": 0.3036338010907531
+          },
+          "target_coverage": 0.06564044140050605,
+          "valid_grid_coverage": 0.0326398931138006
+        },
+        "all_past": {
+          "n_frames_requested": 2,
+          "n_frames_used": 2,
+          "native_span": [
+            2629,
+            2634
+          ],
+          "n_voxels": 16319,
+          "full_grid": {
+            "tp": 4955,
+            "fp": 11364,
+            "fn": 70532,
+            "precision": 0.3036338010907531,
+            "recall": 0.06564044140050605,
+            "iou": 0.05705173227711828,
+            "n_pred": 16319,
+            "n_gt": 75487,
+            "n_valid": 499971,
+            "pred_fraction": 0.0326398931138006,
+            "gt_fraction": 0.150982756999906
+          },
+          "frustum": {
+            "tp": 900,
+            "fp": 8022,
+            "fn": 53140,
+            "precision": 0.10087424344317418,
+            "recall": 0.016654330125832718,
+            "iou": 0.014501627404853211,
+            "n_pred": 8922,
+            "n_gt": 54040,
+            "n_valid": 390130,
+            "pred_fraction": 0.022869299976930768,
+            "gt_fraction": 0.13851792992079565
+          },
+          "distance": {
+            "n": 16319,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.6000000000000001,
+            "mean_m": 0.21464703274610644,
+            "frac_within_1_voxel": 0.7197744959862736,
+            "frac_exact": 0.3036338010907531
+          },
+          "target_coverage": 0.06564044140050605,
+          "valid_grid_coverage": 0.0326398931138006
+        },
+        "future": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            2635,
+            2654
+          ],
+          "n_voxels": 59273,
+          "full_grid": {
+            "tp": 13792,
+            "fp": 45481,
+            "fn": 61695,
+            "precision": 0.23268604592310158,
+            "recall": 0.1827069561646376,
+            "iou": 0.11401362343760334,
+            "n_pred": 59273,
+            "n_gt": 75487,
+            "n_valid": 499971,
+            "pred_fraction": 0.11855287606681188,
+            "gt_fraction": 0.150982756999906
+          },
+          "frustum": {
+            "tp": 5446,
+            "fp": 36375,
+            "fn": 48594,
+            "precision": 0.13022165897515603,
+            "recall": 0.10077720207253886,
+            "iou": 0.06023336835702041,
+            "n_pred": 41821,
+            "n_gt": 54040,
+            "n_valid": 390130,
+            "pred_fraction": 0.10719760079973342,
+            "gt_fraction": 0.13851792992079565
+          },
+          "distance": {
+            "n": 59273,
+            "median_m": 0.2,
+            "p90_m": 0.632455532033676,
+            "p95_m": 0.894427190999916,
+            "mean_m": 0.2955257521782627,
+            "frac_within_1_voxel": 0.6100416715874006,
+            "frac_exact": 0.23268604592310158
+          },
+          "target_coverage": 0.1827069561646376,
+          "valid_grid_coverage": 0.11855287606681188
+        }
+      }
+    },
+    {
+      "partition": "train",
+      "drive": "2013_05_28_drive_0007_sync",
+      "anchor": 2555,
+      "native_frame": 2794,
+      "n_target_occupied": 67834,
+      "n_valid": 334625,
+      "target_prevalence": 0.20271647366454987,
+      "valid_fraction_of_grid": 0.1595616340637207,
+      "histories": {
+        "1": {
+          "n_frames_requested": 1,
+          "n_frames_used": 1,
+          "native_span": [
+            2794,
+            2794
+          ],
+          "n_voxels": 12439,
+          "full_grid": {
+            "tp": 3248,
+            "fp": 9191,
+            "fn": 64586,
+            "precision": 0.261114237478897,
+            "recall": 0.04788159330129434,
+            "iou": 0.04216812723141837,
+            "n_pred": 12439,
+            "n_gt": 67834,
+            "n_valid": 334625,
+            "pred_fraction": 0.03717295480014942,
+            "gt_fraction": 0.20271647366454987
+          },
+          "frustum": {
+            "tp": 1771,
+            "fp": 6039,
+            "fn": 56297,
+            "precision": 0.2267605633802817,
+            "recall": 0.030498725632017634,
+            "iou": 0.027625688302369476,
+            "n_pred": 7810,
+            "n_gt": 58068,
+            "n_valid": 301779,
+            "pred_fraction": 0.02587986572955706,
+            "gt_fraction": 0.19241895559333155
+          },
+          "distance": {
+            "n": 12439,
+            "median_m": 0.2,
+            "p90_m": 0.4,
+            "p95_m": 0.447213595499958,
+            "mean_m": 0.20281104814276635,
+            "frac_within_1_voxel": 0.7148484604871774,
+            "frac_exact": 0.261114237478897
+          },
+          "target_coverage": 0.04788159330129434,
+          "valid_grid_coverage": 0.03717295480014942
+        },
+        "5": {
+          "n_frames_requested": 5,
+          "n_frames_used": 5,
+          "native_span": [
+            2774,
+            2794
+          ],
+          "n_voxels": 17440,
+          "full_grid": {
+            "tp": 4108,
+            "fp": 13332,
+            "fn": 63726,
+            "precision": 0.23555045871559632,
+            "recall": 0.06055960137983902,
+            "iou": 0.05061232535790849,
+            "n_pred": 17440,
+            "n_gt": 67834,
+            "n_valid": 334625,
+            "pred_fraction": 0.05211804258498319,
+            "gt_fraction": 0.20271647366454987
+          },
+          "frustum": {
+            "tp": 2255,
+            "fp": 8800,
+            "fn": 55813,
+            "precision": 0.20398009950248755,
+            "recall": 0.03883378108424606,
+            "iou": 0.033723156068672606,
+            "n_pred": 11055,
+            "n_gt": 58068,
+            "n_valid": 301779,
+            "pred_fraction": 0.03663276768761246,
+            "gt_fraction": 0.19241895559333155
+          },
+          "distance": {
+            "n": 17440,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.5656854249492381,
+            "mean_m": 0.23726828946334552,
+            "frac_within_1_voxel": 0.6553325688073395,
+            "frac_exact": 0.23555045871559632
+          },
+          "target_coverage": 0.06055960137983902,
+          "valid_grid_coverage": 0.05211804258498319
+        },
+        "20": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            2699,
+            2794
+          ],
+          "n_voxels": 17676,
+          "full_grid": {
+            "tp": 4156,
+            "fp": 13520,
+            "fn": 63678,
+            "precision": 0.23512106811495814,
+            "recall": 0.06126721113306012,
+            "iou": 0.051085379944440346,
+            "n_pred": 17676,
+            "n_gt": 67834,
+            "n_valid": 334625,
+            "pred_fraction": 0.05282330967500934,
+            "gt_fraction": 0.20271647366454987
+          },
+          "frustum": {
+            "tp": 2292,
+            "fp": 8915,
+            "fn": 55776,
+            "precision": 0.2045150352458285,
+            "recall": 0.039470965075428806,
+            "iou": 0.034217637310959496,
+            "n_pred": 11207,
+            "n_gt": 58068,
+            "n_valid": 301779,
+            "pred_fraction": 0.03713644753279718,
+            "gt_fraction": 0.19241895559333155
+          },
+          "distance": {
+            "n": 17676,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.5656854249492381,
+            "mean_m": 0.23851078078295873,
+            "frac_within_1_voxel": 0.6511088481556914,
+            "frac_exact": 0.23512106811495814
+          },
+          "target_coverage": 0.06126721113306012,
+          "valid_grid_coverage": 0.05282330967500934
+        },
+        "all_past": {
+          "n_frames_requested": 10,
+          "n_frames_used": 10,
+          "native_span": [
+            2749,
+            2794
+          ],
+          "n_voxels": 17676,
+          "full_grid": {
+            "tp": 4156,
+            "fp": 13520,
+            "fn": 63678,
+            "precision": 0.23512106811495814,
+            "recall": 0.06126721113306012,
+            "iou": 0.051085379944440346,
+            "n_pred": 17676,
+            "n_gt": 67834,
+            "n_valid": 334625,
+            "pred_fraction": 0.05282330967500934,
+            "gt_fraction": 0.20271647366454987
+          },
+          "frustum": {
+            "tp": 2292,
+            "fp": 8915,
+            "fn": 55776,
+            "precision": 0.2045150352458285,
+            "recall": 0.039470965075428806,
+            "iou": 0.034217637310959496,
+            "n_pred": 11207,
+            "n_gt": 58068,
+            "n_valid": 301779,
+            "pred_fraction": 0.03713644753279718,
+            "gt_fraction": 0.19241895559333155
+          },
+          "distance": {
+            "n": 17676,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.5656854249492381,
+            "mean_m": 0.23851078078295873,
+            "frac_within_1_voxel": 0.6511088481556914,
+            "frac_exact": 0.23512106811495814
+          },
+          "target_coverage": 0.06126721113306012,
+          "valid_grid_coverage": 0.05282330967500934
+        },
+        "future": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            2795,
+            2814
+          ],
+          "n_voxels": 69596,
+          "full_grid": {
+            "tp": 20495,
+            "fp": 49101,
+            "fn": 47339,
+            "precision": 0.29448531524800275,
+            "recall": 0.3021346227555503,
+            "iou": 0.17526831145508187,
+            "n_pred": 69596,
+            "n_gt": 67834,
+            "n_valid": 334625,
+            "pred_fraction": 0.20798206948076206,
+            "gt_fraction": 0.20271647366454987
+          },
+          "frustum": {
+            "tp": 17273,
+            "fp": 42659,
+            "fn": 40795,
+            "precision": 0.28820997130080755,
+            "recall": 0.29746159674863953,
+            "iou": 0.17148331629056757,
+            "n_pred": 59932,
+            "n_gt": 58068,
+            "n_valid": 301779,
+            "pred_fraction": 0.1985956610632284,
+            "gt_fraction": 0.19241895559333155
+          },
+          "distance": {
+            "n": 69596,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.8,
+            "mean_m": 0.2454682370013684,
+            "frac_within_1_voxel": 0.6766049772975459,
+            "frac_exact": 0.29448531524800275
+          },
+          "target_coverage": 0.3021346227555503,
+          "valid_grid_coverage": 0.20798206948076206
+        }
+      }
+    },
+    {
+      "partition": "source_validation",
+      "drive": "2013_05_28_drive_0010_sync",
+      "anchor": 105,
+      "native_frame": 119,
+      "n_target_occupied": 67602,
+      "n_valid": 341906,
+      "target_prevalence": 0.1977210110381216,
+      "valid_fraction_of_grid": 0.16303348541259766,
+      "histories": {
+        "1": {
+          "n_frames_requested": 1,
+          "n_frames_used": 1,
+          "native_span": [
+            119,
+            119
+          ],
+          "n_voxels": 9237,
+          "full_grid": {
+            "tp": 1523,
+            "fp": 7714,
+            "fn": 66079,
+            "precision": 0.16488037241528636,
+            "recall": 0.022528919262743707,
+            "iou": 0.0202214668861862,
+            "n_pred": 9237,
+            "n_gt": 67602,
+            "n_valid": 341906,
+            "pred_fraction": 0.02701619743438255,
+            "gt_fraction": 0.1977210110381216
+          },
+          "frustum": {
+            "tp": 794,
+            "fp": 5132,
+            "fn": 56613,
+            "precision": 0.1339858251771853,
+            "recall": 0.013831065897887016,
+            "iou": 0.01269607764754793,
+            "n_pred": 5926,
+            "n_gt": 57407,
+            "n_valid": 315322,
+            "pred_fraction": 0.018793487292355117,
+            "gt_fraction": 0.1820583403631843
+          },
+          "distance": {
+            "n": 9237,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.5656854249492381,
+            "mean_m": 0.2604479057068654,
+            "frac_within_1_voxel": 0.64761286131861,
+            "frac_exact": 0.16488037241528636
+          },
+          "target_coverage": 0.022528919262743707,
+          "valid_grid_coverage": 0.02701619743438255
+        },
+        "5": {
+          "n_frames_requested": 5,
+          "n_frames_used": 5,
+          "native_span": [
+            99,
+            119
+          ],
+          "n_voxels": 14384,
+          "full_grid": {
+            "tp": 2071,
+            "fp": 12313,
+            "fn": 65531,
+            "precision": 0.1439794215795328,
+            "recall": 0.030635188308038224,
+            "iou": 0.02591503472439467,
+            "n_pred": 14384,
+            "n_gt": 67602,
+            "n_valid": 341906,
+            "pred_fraction": 0.04207004264329962,
+            "gt_fraction": 0.1977210110381216
+          },
+          "frustum": {
+            "tp": 1099,
+            "fp": 8454,
+            "fn": 56308,
+            "precision": 0.11504239505914372,
+            "recall": 0.019144006828435558,
+            "iou": 0.016686658265134147,
+            "n_pred": 9553,
+            "n_gt": 57407,
+            "n_valid": 315322,
+            "pred_fraction": 0.030296014867341955,
+            "gt_fraction": 0.1820583403631843
+          },
+          "distance": {
+            "n": 14384,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.6000000000000001,
+            "mean_m": 0.2867273710310566,
+            "frac_within_1_voxel": 0.5799499443826474,
+            "frac_exact": 0.1439794215795328
+          },
+          "target_coverage": 0.030635188308038224,
+          "valid_grid_coverage": 0.04207004264329962
+        },
+        "20": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            24,
+            119
+          ],
+          "n_voxels": 15613,
+          "full_grid": {
+            "tp": 2317,
+            "fp": 13296,
+            "fn": 65285,
+            "precision": 0.14840197271504516,
+            "recall": 0.034274133901363864,
+            "iou": 0.0286410047219956,
+            "n_pred": 15613,
+            "n_gt": 67602,
+            "n_valid": 341906,
+            "pred_fraction": 0.04566459787192971,
+            "gt_fraction": 0.1977210110381216
+          },
+          "frustum": {
+            "tp": 1232,
+            "fp": 9230,
+            "fn": 56175,
+            "precision": 0.11775951060982603,
+            "recall": 0.021460797463723934,
+            "iou": 0.018488227261131203,
+            "n_pred": 10462,
+            "n_gt": 57407,
+            "n_valid": 315322,
+            "pred_fraction": 0.033178782324100445,
+            "gt_fraction": 0.1820583403631843
+          },
+          "distance": {
+            "n": 15613,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.632455532033676,
+            "mean_m": 0.2909566298099178,
+            "frac_within_1_voxel": 0.5676039198104144,
+            "frac_exact": 0.14840197271504516
+          },
+          "target_coverage": 0.034274133901363864,
+          "valid_grid_coverage": 0.04566459787192971
+        },
+        "all_past": {
+          "n_frames_requested": 15,
+          "n_frames_used": 15,
+          "native_span": [
+            49,
+            119
+          ],
+          "n_voxels": 15613,
+          "full_grid": {
+            "tp": 2317,
+            "fp": 13296,
+            "fn": 65285,
+            "precision": 0.14840197271504516,
+            "recall": 0.034274133901363864,
+            "iou": 0.0286410047219956,
+            "n_pred": 15613,
+            "n_gt": 67602,
+            "n_valid": 341906,
+            "pred_fraction": 0.04566459787192971,
+            "gt_fraction": 0.1977210110381216
+          },
+          "frustum": {
+            "tp": 1232,
+            "fp": 9230,
+            "fn": 56175,
+            "precision": 0.11775951060982603,
+            "recall": 0.021460797463723934,
+            "iou": 0.018488227261131203,
+            "n_pred": 10462,
+            "n_gt": 57407,
+            "n_valid": 315322,
+            "pred_fraction": 0.033178782324100445,
+            "gt_fraction": 0.1820583403631843
+          },
+          "distance": {
+            "n": 15613,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.632455532033676,
+            "mean_m": 0.2909566298099178,
+            "frac_within_1_voxel": 0.5676039198104144,
+            "frac_exact": 0.14840197271504516
+          },
+          "target_coverage": 0.034274133901363864,
+          "valid_grid_coverage": 0.04566459787192971
+        },
+        "future": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            120,
+            139
+          ],
+          "n_voxels": 57793,
+          "full_grid": {
+            "tp": 9732,
+            "fp": 48061,
+            "fn": 57870,
+            "precision": 0.16839409617081655,
+            "recall": 0.1439602378627851,
+            "iou": 0.08414099582407511,
+            "n_pred": 57793,
+            "n_gt": 67602,
+            "n_valid": 341906,
+            "pred_fraction": 0.16903183916047101,
+            "gt_fraction": 0.1977210110381216
+          },
+          "frustum": {
+            "tp": 8059,
+            "fp": 40809,
+            "fn": 49348,
+            "precision": 0.1649136449210117,
+            "recall": 0.14038357691570713,
+            "iou": 0.08205384051478375,
+            "n_pred": 48868,
+            "n_gt": 57407,
+            "n_valid": 315322,
+            "pred_fraction": 0.15497808589315049,
+            "gt_fraction": 0.1820583403631843
+          },
+          "distance": {
+            "n": 57793,
+            "median_m": 0.2,
+            "p90_m": 0.6000000000000001,
+            "p95_m": 0.8246211251235323,
+            "mean_m": 0.31780424878088026,
+            "frac_within_1_voxel": 0.5284723063346772,
+            "frac_exact": 0.16839409617081655
+          },
+          "target_coverage": 0.1439602378627851,
+          "valid_grid_coverage": 0.16903183916047101
+        }
+      }
+    },
+    {
+      "partition": "source_validation",
+      "drive": "2013_05_28_drive_0010_sync",
+      "anchor": 185,
+      "native_frame": 199,
+      "n_target_occupied": 50730,
+      "n_valid": 328000,
+      "target_prevalence": 0.15466463414634146,
+      "valid_fraction_of_grid": 0.156402587890625,
+      "histories": {
+        "1": {
+          "n_frames_requested": 1,
+          "n_frames_used": 1,
+          "native_span": [
+            199,
+            199
+          ],
+          "n_voxels": 12814,
+          "full_grid": {
+            "tp": 3013,
+            "fp": 9801,
+            "fn": 47717,
+            "precision": 0.23513344779147807,
+            "recall": 0.05939286418292923,
+            "iou": 0.04977614775899952,
+            "n_pred": 12814,
+            "n_gt": 50730,
+            "n_valid": 328000,
+            "pred_fraction": 0.03906707317073171,
+            "gt_fraction": 0.15466463414634146
+          },
+          "frustum": {
+            "tp": 1752,
+            "fp": 5797,
+            "fn": 33261,
+            "precision": 0.23208371969797323,
+            "recall": 0.050038557107360125,
+            "iou": 0.04293065425140897,
+            "n_pred": 7549,
+            "n_gt": 35013,
+            "n_valid": 279137,
+            "pred_fraction": 0.027044067966625708,
+            "gt_fraction": 0.12543303109225937
+          },
+          "distance": {
+            "n": 12814,
+            "median_m": 0.2,
+            "p90_m": 0.48989794855663565,
+            "p95_m": 0.632455532033676,
+            "mean_m": 0.3692566507644967,
+            "frac_within_1_voxel": 0.6570938036522553,
+            "frac_exact": 0.23513344779147807
+          },
+          "target_coverage": 0.05939286418292923,
+          "valid_grid_coverage": 0.03906707317073171
+        },
+        "5": {
+          "n_frames_requested": 5,
+          "n_frames_used": 5,
+          "native_span": [
+            179,
+            199
+          ],
+          "n_voxels": 18680,
+          "full_grid": {
+            "tp": 3973,
+            "fp": 14707,
+            "fn": 46757,
+            "precision": 0.21268736616702355,
+            "recall": 0.07831657796175832,
+            "iou": 0.06071488607362807,
+            "n_pred": 18680,
+            "n_gt": 50730,
+            "n_valid": 328000,
+            "pred_fraction": 0.056951219512195124,
+            "gt_fraction": 0.15466463414634146
+          },
+          "frustum": {
+            "tp": 2455,
+            "fp": 8920,
+            "fn": 32558,
+            "precision": 0.21582417582417582,
+            "recall": 0.07011681375489104,
+            "iou": 0.055880545375913325,
+            "n_pred": 11375,
+            "n_gt": 35013,
+            "n_valid": 279137,
+            "pred_fraction": 0.04075059916815041,
+            "gt_fraction": 0.12543303109225937
+          },
+          "distance": {
+            "n": 18680,
+            "median_m": 0.2,
+            "p90_m": 0.5656854249492381,
+            "p95_m": 0.8246211251235323,
+            "mean_m": 0.41755374013844015,
+            "frac_within_1_voxel": 0.5855995717344754,
+            "frac_exact": 0.21268736616702355
+          },
+          "target_coverage": 0.07831657796175832,
+          "valid_grid_coverage": 0.056951219512195124
+        },
+        "20": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            104,
+            199
+          ],
+          "n_voxels": 19169,
+          "full_grid": {
+            "tp": 4133,
+            "fp": 15036,
+            "fn": 46597,
+            "precision": 0.21560853461317753,
+            "recall": 0.08147053025822984,
+            "iou": 0.06284402274731624,
+            "n_pred": 19169,
+            "n_gt": 50730,
+            "n_valid": 328000,
+            "pred_fraction": 0.05844207317073171,
+            "gt_fraction": 0.15466463414634146
+          },
+          "frustum": {
+            "tp": 2605,
+            "fp": 9175,
+            "fn": 32408,
+            "precision": 0.22113752122241087,
+            "recall": 0.07440093679490475,
+            "iou": 0.05895265682990857,
+            "n_pred": 11780,
+            "n_gt": 35013,
+            "n_valid": 279137,
+            "pred_fraction": 0.04220149962204939,
+            "gt_fraction": 0.12543303109225937
+          },
+          "distance": {
+            "n": 19169,
+            "median_m": 0.2,
+            "p90_m": 0.5656854249492381,
+            "p95_m": 0.8246211251235323,
+            "mean_m": 0.4143861830883835,
+            "frac_within_1_voxel": 0.5826073347592468,
+            "frac_exact": 0.21560853461317753
+          },
+          "target_coverage": 0.08147053025822984,
+          "valid_grid_coverage": 0.05844207317073171
+        },
+        "all_past": {
+          "n_frames_requested": 12,
+          "n_frames_used": 12,
+          "native_span": [
+            144,
+            199
+          ],
+          "n_voxels": 19168,
+          "full_grid": {
+            "tp": 4132,
+            "fp": 15036,
+            "fn": 46598,
+            "precision": 0.21556761268781302,
+            "recall": 0.0814508180563769,
+            "iou": 0.0628288173220205,
+            "n_pred": 19168,
+            "n_gt": 50730,
+            "n_valid": 328000,
+            "pred_fraction": 0.058439024390243906,
+            "gt_fraction": 0.15466463414634146
+          },
+          "frustum": {
+            "tp": 2605,
+            "fp": 9175,
+            "fn": 32408,
+            "precision": 0.22113752122241087,
+            "recall": 0.07440093679490475,
+            "iou": 0.05895265682990857,
+            "n_pred": 11780,
+            "n_gt": 35013,
+            "n_valid": 279137,
+            "pred_fraction": 0.04220149962204939,
+            "gt_fraction": 0.12543303109225937
+          },
+          "distance": {
+            "n": 19168,
+            "median_m": 0.2,
+            "p90_m": 0.5656854249492381,
+            "p95_m": 0.8246211251235323,
+            "mean_m": 0.41440780173316066,
+            "frac_within_1_voxel": 0.5825855592654424,
+            "frac_exact": 0.21556761268781302
+          },
+          "target_coverage": 0.0814508180563769,
+          "valid_grid_coverage": 0.058439024390243906
+        },
+        "future": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            200,
+            219
+          ],
+          "n_voxels": 60461,
+          "full_grid": {
+            "tp": 12027,
+            "fp": 48434,
+            "fn": 38703,
+            "precision": 0.19892161889482476,
+            "recall": 0.23707865168539327,
+            "iou": 0.12128393368561172,
+            "n_pred": 60461,
+            "n_gt": 50730,
+            "n_valid": 328000,
+            "pred_fraction": 0.18433231707317074,
+            "gt_fraction": 0.15466463414634146
+          },
+          "frustum": {
+            "tp": 7995,
+            "fp": 34465,
+            "fn": 27018,
+            "precision": 0.18829486575600565,
+            "recall": 0.2283437580327307,
+            "iou": 0.11507239701776102,
+            "n_pred": 42460,
+            "n_gt": 35013,
+            "n_valid": 279137,
+            "pred_fraction": 0.1521116870927179,
+            "gt_fraction": 0.12543303109225937
+          },
+          "distance": {
+            "n": 60461,
+            "median_m": 0.2,
+            "p90_m": 2.209072203437452,
+            "p95_m": 6.578753681359411,
+            "mean_m": 0.956422168263018,
+            "frac_within_1_voxel": 0.5192603496468798,
+            "frac_exact": 0.19892161889482476
+          },
+          "target_coverage": 0.23707865168539327,
+          "valid_grid_coverage": 0.18433231707317074
+        }
+      }
+    },
+    {
+      "partition": "source_validation",
+      "drive": "2013_05_28_drive_0010_sync",
+      "anchor": 1140,
+      "native_frame": 1180,
+      "n_target_occupied": 85499,
+      "n_valid": 344753,
+      "target_prevalence": 0.24800074256061586,
+      "valid_fraction_of_grid": 0.16439104080200195,
+      "histories": {
+        "1": {
+          "n_frames_requested": 1,
+          "n_frames_used": 1,
+          "native_span": [
+            1180,
+            1180
+          ],
+          "n_voxels": 11170,
+          "full_grid": {
+            "tp": 3860,
+            "fp": 7310,
+            "fn": 81639,
+            "precision": 0.3455684870188004,
+            "recall": 0.045146726862302484,
+            "iou": 0.04159079399627191,
+            "n_pred": 11170,
+            "n_gt": 85499,
+            "n_valid": 344753,
+            "pred_fraction": 0.03240000812175674,
+            "gt_fraction": 0.24800074256061586
+          },
+          "frustum": {
+            "tp": 2414,
+            "fp": 5029,
+            "fn": 72912,
+            "precision": 0.3243315867257826,
+            "recall": 0.03204736744284842,
+            "iou": 0.030041690000622238,
+            "n_pred": 7443,
+            "n_gt": 75326,
+            "n_valid": 304718,
+            "pred_fraction": 0.024425862600830933,
+            "gt_fraction": 0.2471990496130849
+          },
+          "distance": {
+            "n": 11170,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.6000000000000001,
+            "mean_m": 0.19875162631303028,
+            "frac_within_1_voxel": 0.741987466427932,
+            "frac_exact": 0.3455684870188004
+          },
+          "target_coverage": 0.045146726862302484,
+          "valid_grid_coverage": 0.03240000812175674
+        },
+        "5": {
+          "n_frames_requested": 5,
+          "n_frames_used": 5,
+          "native_span": [
+            1160,
+            1180
+          ],
+          "n_voxels": 17689,
+          "full_grid": {
+            "tp": 5709,
+            "fp": 11980,
+            "fn": 79790,
+            "precision": 0.3227429475945503,
+            "recall": 0.06677271079193908,
+            "iou": 0.058566460468408583,
+            "n_pred": 17689,
+            "n_gt": 85499,
+            "n_valid": 344753,
+            "pred_fraction": 0.05130919817956624,
+            "gt_fraction": 0.24800074256061586
+          },
+          "frustum": {
+            "tp": 3607,
+            "fp": 8072,
+            "fn": 71719,
+            "precision": 0.3088449353540543,
+            "recall": 0.04788519236385843,
+            "iou": 0.04325043766037555,
+            "n_pred": 11679,
+            "n_gt": 75326,
+            "n_valid": 304718,
+            "pred_fraction": 0.038327240268051115,
+            "gt_fraction": 0.2471990496130849
+          },
+          "distance": {
+            "n": 17689,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.6194733192201584,
+            "mean_m": 0.21497477837802892,
+            "frac_within_1_voxel": 0.7151902312171406,
+            "frac_exact": 0.3227429475945503
+          },
+          "target_coverage": 0.06677271079193908,
+          "valid_grid_coverage": 0.05130919817956624
+        },
+        "20": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            1085,
+            1180
+          ],
+          "n_voxels": 18604,
+          "full_grid": {
+            "tp": 6097,
+            "fp": 12507,
+            "fn": 79402,
+            "precision": 0.3277252203827134,
+            "recall": 0.07131077556462649,
+            "iou": 0.06221047690957696,
+            "n_pred": 18604,
+            "n_gt": 85499,
+            "n_valid": 344753,
+            "pred_fraction": 0.053963272255788924,
+            "gt_fraction": 0.24800074256061586
+          },
+          "frustum": {
+            "tp": 3917,
+            "fp": 8401,
+            "fn": 71409,
+            "precision": 0.31798993343075177,
+            "recall": 0.05200063723017285,
+            "iou": 0.04678299712159757,
+            "n_pred": 12318,
+            "n_gt": 75326,
+            "n_valid": 304718,
+            "pred_fraction": 0.04042426112011762,
+            "gt_fraction": 0.2471990496130849
+          },
+          "distance": {
+            "n": 18604,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.6000000000000001,
+            "mean_m": 0.21345785887038762,
+            "frac_within_1_voxel": 0.7139862395183831,
+            "frac_exact": 0.3277252203827134
+          },
+          "target_coverage": 0.07131077556462649,
+          "valid_grid_coverage": 0.053963272255788924
+        },
+        "all_past": {
+          "n_frames_requested": 11,
+          "n_frames_used": 11,
+          "native_span": [
+            1130,
+            1180
+          ],
+          "n_voxels": 18602,
+          "full_grid": {
+            "tp": 6097,
+            "fp": 12505,
+            "fn": 79402,
+            "precision": 0.3277604558649608,
+            "recall": 0.07131077556462649,
+            "iou": 0.06221174645932819,
+            "n_pred": 18602,
+            "n_gt": 85499,
+            "n_valid": 344753,
+            "pred_fraction": 0.05395747100097751,
+            "gt_fraction": 0.24800074256061586
+          },
+          "frustum": {
+            "tp": 3917,
+            "fp": 8401,
+            "fn": 71409,
+            "precision": 0.31798993343075177,
+            "recall": 0.05200063723017285,
+            "iou": 0.04678299712159757,
+            "n_pred": 12318,
+            "n_gt": 75326,
+            "n_valid": 304718,
+            "pred_fraction": 0.04042426112011762,
+            "gt_fraction": 0.2471990496130849
+          },
+          "distance": {
+            "n": 18602,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.6000000000000001,
+            "mean_m": 0.21345930579640313,
+            "frac_within_1_voxel": 0.7139554886571337,
+            "frac_exact": 0.3277604558649608
+          },
+          "target_coverage": 0.07131077556462649,
+          "valid_grid_coverage": 0.05395747100097751
+        },
+        "future": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            1181,
+            1200
+          ],
+          "n_voxels": 76963,
+          "full_grid": {
+            "tp": 29250,
+            "fp": 47713,
+            "fn": 56249,
+            "precision": 0.3800527526213895,
+            "recall": 0.34210926443584133,
+            "iou": 0.2195748130799027,
+            "n_pred": 76963,
+            "n_gt": 85499,
+            "n_valid": 344753,
+            "pred_fraction": 0.2232409870254936,
+            "gt_fraction": 0.24800074256061586
+          },
+          "frustum": {
+            "tp": 24203,
+            "fp": 39058,
+            "fn": 51123,
+            "precision": 0.38258958916235913,
+            "recall": 0.3213100390303481,
+            "iou": 0.2115942789201287,
+            "n_pred": 63261,
+            "n_gt": 75326,
+            "n_valid": 304718,
+            "pred_fraction": 0.2076050643545836,
+            "gt_fraction": 0.2471990496130849
+          },
+          "distance": {
+            "n": 76963,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.8,
+            "mean_m": 0.21070435104291826,
+            "frac_within_1_voxel": 0.7475150396943986,
+            "frac_exact": 0.3800527526213895
+          },
+          "target_coverage": 0.34210926443584133,
+          "valid_grid_coverage": 0.2232409870254936
+        }
+      }
+    },
+    {
+      "partition": "source_validation",
+      "drive": "2013_05_28_drive_0010_sync",
+      "anchor": 1570,
+      "native_frame": 1696,
+      "n_target_occupied": 85115,
+      "n_valid": 362415,
+      "target_prevalence": 0.2348550694645641,
+      "valid_fraction_of_grid": 0.17281293869018555,
+      "histories": {
+        "1": {
+          "n_frames_requested": 1,
+          "n_frames_used": 1,
+          "native_span": [
+            1696,
+            1696
+          ],
+          "n_voxels": 15093,
+          "full_grid": {
+            "tp": 5055,
+            "fp": 10038,
+            "fn": 80060,
+            "precision": 0.3349234744583582,
+            "recall": 0.05939023673853022,
+            "iou": 0.05312496715815581,
+            "n_pred": 15093,
+            "n_gt": 85115,
+            "n_valid": 362415,
+            "pred_fraction": 0.04164562725052771,
+            "gt_fraction": 0.2348550694645641
+          },
+          "frustum": {
+            "tp": 1845,
+            "fp": 6642,
+            "fn": 65244,
+            "precision": 0.21739130434782608,
+            "recall": 0.027500782542592677,
+            "iou": 0.025023395857915937,
+            "n_pred": 8487,
+            "n_gt": 67089,
+            "n_valid": 309577,
+            "pred_fraction": 0.027414827328903633,
+            "gt_fraction": 0.216711835827597
+          },
+          "distance": {
+            "n": 15093,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.66332495807108,
+            "mean_m": 0.2120099946882954,
+            "frac_within_1_voxel": 0.7306035910687073,
+            "frac_exact": 0.3349234744583582
+          },
+          "target_coverage": 0.05939023673853022,
+          "valid_grid_coverage": 0.04164562725052771
+        },
+        "5": {
+          "n_frames_requested": 5,
+          "n_frames_used": 5,
+          "native_span": [
+            1676,
+            1696
+          ],
+          "n_voxels": 22859,
+          "full_grid": {
+            "tp": 7373,
+            "fp": 15486,
+            "fn": 77742,
+            "precision": 0.32254254341834726,
+            "recall": 0.08662397932209363,
+            "iou": 0.07328952992514985,
+            "n_pred": 22859,
+            "n_gt": 85115,
+            "n_valid": 362415,
+            "pred_fraction": 0.06307410013382449,
+            "gt_fraction": 0.2348550694645641
+          },
+          "frustum": {
+            "tp": 2798,
+            "fp": 9812,
+            "fn": 64291,
+            "precision": 0.2218873909595559,
+            "recall": 0.04170579379630044,
+            "iou": 0.03638444233495013,
+            "n_pred": 12610,
+            "n_gt": 67089,
+            "n_valid": 309577,
+            "pred_fraction": 0.04073300019058263,
+            "gt_fraction": 0.216711835827597
+          },
+          "distance": {
+            "n": 22859,
+            "median_m": 0.2,
+            "p90_m": 0.48989794855663565,
+            "p95_m": 0.8,
+            "mean_m": 0.23772004939417873,
+            "frac_within_1_voxel": 0.710267290782624,
+            "frac_exact": 0.32254254341834726
+          },
+          "target_coverage": 0.08662397932209363,
+          "valid_grid_coverage": 0.06307410013382449
+        },
+        "20": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            1601,
+            1696
+          ],
+          "n_voxels": 23401,
+          "full_grid": {
+            "tp": 7588,
+            "fp": 15813,
+            "fn": 77527,
+            "precision": 0.32425964702363147,
+            "recall": 0.08914997356517652,
+            "iou": 0.07518230818008878,
+            "n_pred": 23401,
+            "n_gt": 85115,
+            "n_valid": 362415,
+            "pred_fraction": 0.06456962322199689,
+            "gt_fraction": 0.2348550694645641
+          },
+          "frustum": {
+            "tp": 2920,
+            "fp": 10032,
+            "fn": 64169,
+            "precision": 0.22544780728844965,
+            "recall": 0.04352427372594613,
+            "iou": 0.037862579582733626,
+            "n_pred": 12952,
+            "n_gt": 67089,
+            "n_valid": 309577,
+            "pred_fraction": 0.041837733423348636,
+            "gt_fraction": 0.216711835827597
+          },
+          "distance": {
+            "n": 23401,
+            "median_m": 0.2,
+            "p90_m": 0.5656854249492381,
+            "p95_m": 0.8,
+            "mean_m": 0.23782503618695552,
+            "frac_within_1_voxel": 0.7086021964873296,
+            "frac_exact": 0.32425964702363147
+          },
+          "target_coverage": 0.08914997356517652,
+          "valid_grid_coverage": 0.06456962322199689
+        },
+        "all_past": {
+          "n_frames_requested": 11,
+          "n_frames_used": 11,
+          "native_span": [
+            1646,
+            1696
+          ],
+          "n_voxels": 23391,
+          "full_grid": {
+            "tp": 7579,
+            "fp": 15812,
+            "fn": 77536,
+            "precision": 0.32401350946945406,
+            "recall": 0.08904423427128003,
+            "iou": 0.07509387973485787,
+            "n_pred": 23391,
+            "n_gt": 85115,
+            "n_valid": 362415,
+            "pred_fraction": 0.06454203054509333,
+            "gt_fraction": 0.2348550694645641
+          },
+          "frustum": {
+            "tp": 2918,
+            "fp": 10032,
+            "fn": 64171,
+            "precision": 0.22532818532818533,
+            "recall": 0.043494462579558496,
+            "iou": 0.037836646309046824,
+            "n_pred": 12950,
+            "n_gt": 67089,
+            "n_valid": 309577,
+            "pred_fraction": 0.04183127299508684,
+            "gt_fraction": 0.216711835827597
+          },
+          "distance": {
+            "n": 23391,
+            "median_m": 0.2,
+            "p90_m": 0.5656854249492381,
+            "p95_m": 0.8,
+            "mean_m": 0.23791190037405124,
+            "frac_within_1_voxel": 0.7085203710828951,
+            "frac_exact": 0.32401350946945406
+          },
+          "target_coverage": 0.08904423427128003,
+          "valid_grid_coverage": 0.06454203054509333
+        },
+        "future": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            1697,
+            1716
+          ],
+          "n_voxels": 80723,
+          "full_grid": {
+            "tp": 26849,
+            "fp": 53874,
+            "fn": 58266,
+            "precision": 0.3326065681404309,
+            "recall": 0.3154438113141044,
+            "iou": 0.19317356049759332,
+            "n_pred": 80723,
+            "n_gt": 85115,
+            "n_valid": 362415,
+            "pred_fraction": 0.22273636576852504,
+            "gt_fraction": 0.2348550694645641
+          },
+          "frustum": {
+            "tp": 17150,
+            "fp": 44658,
+            "fn": 49939,
+            "precision": 0.27747217188713436,
+            "recall": 0.25563058027396446,
+            "iou": 0.1534716815663955,
+            "n_pred": 61808,
+            "n_gt": 67089,
+            "n_valid": 309577,
+            "pred_fraction": 0.19965307500234192,
+            "gt_fraction": 0.216711835827597
+          },
+          "distance": {
+            "n": 80723,
+            "median_m": 0.2,
+            "p90_m": 0.48989794855663565,
+            "p95_m": 0.7483314773547883,
+            "mean_m": 0.2319379230459436,
+            "frac_within_1_voxel": 0.7030338317455992,
+            "frac_exact": 0.3326065681404309
+          },
+          "target_coverage": 0.3154438113141044,
+          "valid_grid_coverage": 0.22273636576852504
+        }
+      }
+    },
+    {
+      "partition": "source_validation",
+      "drive": "2013_05_28_drive_0010_sync",
+      "anchor": 1870,
+      "native_frame": 1996,
+      "n_target_occupied": 60408,
+      "n_valid": 296271,
+      "target_prevalence": 0.20389440748503904,
+      "valid_fraction_of_grid": 0.14127302169799805,
+      "histories": {
+        "1": {
+          "n_frames_requested": 1,
+          "n_frames_used": 1,
+          "native_span": [
+            1996,
+            1996
+          ],
+          "n_voxels": 14076,
+          "full_grid": {
+            "tp": 3193,
+            "fp": 10883,
+            "fn": 57215,
+            "precision": 0.22684001136686557,
+            "recall": 0.05285723745199311,
+            "iou": 0.04478826219298369,
+            "n_pred": 14076,
+            "n_gt": 60408,
+            "n_valid": 296271,
+            "pred_fraction": 0.047510556213736746,
+            "gt_fraction": 0.20389440748503904
+          },
+          "frustum": {
+            "tp": 1781,
+            "fp": 6993,
+            "fn": 41531,
+            "precision": 0.20298609528151357,
+            "recall": 0.041120243812338385,
+            "iou": 0.035404035384156644,
+            "n_pred": 8774,
+            "n_gt": 43312,
+            "n_valid": 228236,
+            "pred_fraction": 0.03844266461031564,
+            "gt_fraction": 0.18976848525210746
+          },
+          "distance": {
+            "n": 14076,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.6000000000000001,
+            "mean_m": 0.32036161229536736,
+            "frac_within_1_voxel": 0.6575731741972152,
+            "frac_exact": 0.22684001136686557
+          },
+          "target_coverage": 0.05285723745199311,
+          "valid_grid_coverage": 0.047510556213736746
+        },
+        "5": {
+          "n_frames_requested": 5,
+          "n_frames_used": 5,
+          "native_span": [
+            1976,
+            1996
+          ],
+          "n_voxels": 23330,
+          "full_grid": {
+            "tp": 5064,
+            "fp": 18266,
+            "fn": 55344,
+            "precision": 0.21705957993999142,
+            "recall": 0.08382995629717918,
+            "iou": 0.06436688105346111,
+            "n_pred": 23330,
+            "n_gt": 60408,
+            "n_valid": 296271,
+            "pred_fraction": 0.07874547289474838,
+            "gt_fraction": 0.20389440748503904
+          },
+          "frustum": {
+            "tp": 2975,
+            "fp": 12115,
+            "fn": 40337,
+            "precision": 0.19715043074884028,
+            "recall": 0.06868766161802733,
+            "iou": 0.053674202103667884,
+            "n_pred": 15090,
+            "n_gt": 43312,
+            "n_valid": 228236,
+            "pred_fraction": 0.06611577489966526,
+            "gt_fraction": 0.18976848525210746
+          },
+          "distance": {
+            "n": 23330,
+            "median_m": 0.2,
+            "p90_m": 0.48989794855663565,
+            "p95_m": 0.7483314773547883,
+            "mean_m": 0.35024887754135775,
+            "frac_within_1_voxel": 0.5999142734676383,
+            "frac_exact": 0.21705957993999142
+          },
+          "target_coverage": 0.08382995629717918,
+          "valid_grid_coverage": 0.07874547289474838
+        },
+        "20": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            1901,
+            1996
+          ],
+          "n_voxels": 25440,
+          "full_grid": {
+            "tp": 5881,
+            "fp": 19559,
+            "fn": 54527,
+            "precision": 0.23117138364779874,
+            "recall": 0.09735465501258111,
+            "iou": 0.07354283642002327,
+            "n_pred": 25440,
+            "n_gt": 60408,
+            "n_valid": 296271,
+            "pred_fraction": 0.08586733092337759,
+            "gt_fraction": 0.20389440748503904
+          },
+          "frustum": {
+            "tp": 3502,
+            "fp": 12983,
+            "fn": 39810,
+            "precision": 0.2124355474673946,
+            "recall": 0.08085519024750647,
+            "iou": 0.062208011368682835,
+            "n_pred": 16485,
+            "n_gt": 43312,
+            "n_valid": 228236,
+            "pred_fraction": 0.07222786939834207,
+            "gt_fraction": 0.18976848525210746
+          },
+          "distance": {
+            "n": 25440,
+            "median_m": 0.2,
+            "p90_m": 0.48989794855663565,
+            "p95_m": 0.7483314773547883,
+            "mean_m": 0.3438067123529734,
+            "frac_within_1_voxel": 0.600746855345912,
+            "frac_exact": 0.23117138364779874
+          },
+          "target_coverage": 0.09735465501258111,
+          "valid_grid_coverage": 0.08586733092337759
+        },
+        "all_past": {
+          "n_frames_requested": 13,
+          "n_frames_used": 13,
+          "native_span": [
+            1936,
+            1996
+          ],
+          "n_voxels": 25439,
+          "full_grid": {
+            "tp": 5880,
+            "fp": 19559,
+            "fn": 54528,
+            "precision": 0.23114116120916703,
+            "recall": 0.09733810091378625,
+            "iou": 0.07353033126164543,
+            "n_pred": 25439,
+            "n_gt": 60408,
+            "n_valid": 296271,
+            "pred_fraction": 0.08586395563521236,
+            "gt_fraction": 0.20389440748503904
+          },
+          "frustum": {
+            "tp": 3502,
+            "fp": 12983,
+            "fn": 39810,
+            "precision": 0.2124355474673946,
+            "recall": 0.08085519024750647,
+            "iou": 0.062208011368682835,
+            "n_pred": 16485,
+            "n_gt": 43312,
+            "n_valid": 228236,
+            "pred_fraction": 0.07222786939834207,
+            "gt_fraction": 0.18976848525210746
+          },
+          "distance": {
+            "n": 25439,
+            "median_m": 0.2,
+            "p90_m": 0.48989794855663565,
+            "p95_m": 0.7483314773547883,
+            "mean_m": 0.34382022729901507,
+            "frac_within_1_voxel": 0.6007311608160698,
+            "frac_exact": 0.23114116120916703
+          },
+          "target_coverage": 0.09733810091378625,
+          "valid_grid_coverage": 0.08586395563521236
+        },
+        "future": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            1997,
+            2016
+          ],
+          "n_voxels": 62125,
+          "full_grid": {
+            "tp": 16533,
+            "fp": 45592,
+            "fn": 43875,
+            "precision": 0.2661247484909457,
+            "recall": 0.273688915375447,
+            "iou": 0.15597169811320755,
+            "n_pred": 62125,
+            "n_gt": 60408,
+            "n_valid": 296271,
+            "pred_fraction": 0.20968977726473398,
+            "gt_fraction": 0.20389440748503904
+          },
+          "frustum": {
+            "tp": 12084,
+            "fp": 35262,
+            "fn": 31228,
+            "precision": 0.25522747433785326,
+            "recall": 0.27899889176209824,
+            "iou": 0.1537913304655484,
+            "n_pred": 47346,
+            "n_gt": 43312,
+            "n_valid": 228236,
+            "pred_fraction": 0.20744317285616642,
+            "gt_fraction": 0.18976848525210746
+          },
+          "distance": {
+            "n": 62125,
+            "median_m": 0.2,
+            "p90_m": 0.632455532033676,
+            "p95_m": 1.148912529307606,
+            "mean_m": 0.44885032428516247,
+            "frac_within_1_voxel": 0.6144708249496982,
+            "frac_exact": 0.2661247484909457
+          },
+          "target_coverage": 0.273688915375447,
+          "valid_grid_coverage": 0.20968977726473398
+        }
+      }
+    },
+    {
+      "partition": "source_validation",
+      "drive": "2013_05_28_drive_0010_sync",
+      "anchor": 2375,
+      "native_frame": 2900,
+      "n_target_occupied": 75372,
+      "n_valid": 449521,
+      "target_prevalence": 0.16767181066068104,
+      "valid_fraction_of_grid": 0.21434831619262695,
+      "histories": {
+        "1": {
+          "n_frames_requested": 1,
+          "n_frames_used": 1,
+          "native_span": [
+            2900,
+            2900
+          ],
+          "n_voxels": 12658,
+          "full_grid": {
+            "tp": 3450,
+            "fp": 9208,
+            "fn": 71922,
+            "precision": 0.2725549059883078,
+            "recall": 0.04577296608820251,
+            "iou": 0.040789784819106174,
+            "n_pred": 12658,
+            "n_gt": 75372,
+            "n_valid": 449521,
+            "pred_fraction": 0.028158862433568174,
+            "gt_fraction": 0.16767181066068104
+          },
+          "frustum": {
+            "tp": 1504,
+            "fp": 5752,
+            "fn": 59839,
+            "precision": 0.20727673649393605,
+            "recall": 0.024517874900151608,
+            "iou": 0.02241597734555481,
+            "n_pred": 7256,
+            "n_gt": 61343,
+            "n_valid": 396368,
+            "pred_fraction": 0.018306220481976346,
+            "gt_fraction": 0.15476274573123966
+          },
+          "distance": {
+            "n": 12658,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.6000000000000001,
+            "mean_m": 0.21977714174043322,
+            "frac_within_1_voxel": 0.7049296887343972,
+            "frac_exact": 0.2725549059883078
+          },
+          "target_coverage": 0.04577296608820251,
+          "valid_grid_coverage": 0.028158862433568174
+        },
+        "5": {
+          "n_frames_requested": 5,
+          "n_frames_used": 5,
+          "native_span": [
+            2880,
+            2900
+          ],
+          "n_voxels": 20824,
+          "full_grid": {
+            "tp": 4933,
+            "fp": 15891,
+            "fn": 70439,
+            "precision": 0.236890126776796,
+            "recall": 0.06544870774292841,
+            "iou": 0.054052573332018454,
+            "n_pred": 20824,
+            "n_gt": 75372,
+            "n_valid": 449521,
+            "pred_fraction": 0.0463248658015977,
+            "gt_fraction": 0.16767181066068104
+          },
+          "frustum": {
+            "tp": 2300,
+            "fp": 10119,
+            "fn": 59043,
+            "precision": 0.18520009662613737,
+            "recall": 0.03749409060528504,
+            "iou": 0.03218493744927374,
+            "n_pred": 12419,
+            "n_gt": 61343,
+            "n_valid": 396368,
+            "pred_fraction": 0.03133199451015218,
+            "gt_fraction": 0.15476274573123966
+          },
+          "distance": {
+            "n": 20824,
+            "median_m": 0.2,
+            "p90_m": 0.48989794855663565,
+            "p95_m": 0.7211102550927979,
+            "mean_m": 0.2609392204717974,
+            "frac_within_1_voxel": 0.6419035728006147,
+            "frac_exact": 0.236890126776796
+          },
+          "target_coverage": 0.06544870774292841,
+          "valid_grid_coverage": 0.0463248658015977
+        },
+        "20": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            2805,
+            2900
+          ],
+          "n_voxels": 21599,
+          "full_grid": {
+            "tp": 5142,
+            "fp": 16457,
+            "fn": 70230,
+            "precision": 0.23806657715634982,
+            "recall": 0.06822162076102531,
+            "iou": 0.055995382722233714,
+            "n_pred": 21599,
+            "n_gt": 75372,
+            "n_valid": 449521,
+            "pred_fraction": 0.04804892318712585,
+            "gt_fraction": 0.16767181066068104
+          },
+          "frustum": {
+            "tp": 2491,
+            "fp": 10545,
+            "fn": 58852,
+            "precision": 0.19108622276772017,
+            "recall": 0.0406077303033761,
+            "iou": 0.034651123970620964,
+            "n_pred": 13036,
+            "n_gt": 61343,
+            "n_valid": 396368,
+            "pred_fraction": 0.0328886287490413,
+            "gt_fraction": 0.15476274573123966
+          },
+          "distance": {
+            "n": 21599,
+            "median_m": 0.2,
+            "p90_m": 0.48989794855663565,
+            "p95_m": 0.7211102550927979,
+            "mean_m": 0.2615259117220534,
+            "frac_within_1_voxel": 0.6364646511412565,
+            "frac_exact": 0.23806657715634982
+          },
+          "target_coverage": 0.06822162076102531,
+          "valid_grid_coverage": 0.04804892318712585
+        },
+        "all_past": {
+          "n_frames_requested": 12,
+          "n_frames_used": 12,
+          "native_span": [
+            2845,
+            2900
+          ],
+          "n_voxels": 21597,
+          "full_grid": {
+            "tp": 5142,
+            "fp": 16455,
+            "fn": 70230,
+            "precision": 0.23808862341991943,
+            "recall": 0.06822162076102531,
+            "iou": 0.055996602306511156,
+            "n_pred": 21597,
+            "n_gt": 75372,
+            "n_valid": 449521,
+            "pred_fraction": 0.048044474006776104,
+            "gt_fraction": 0.16767181066068104
+          },
+          "frustum": {
+            "tp": 2491,
+            "fp": 10545,
+            "fn": 58852,
+            "precision": 0.19108622276772017,
+            "recall": 0.0406077303033761,
+            "iou": 0.034651123970620964,
+            "n_pred": 13036,
+            "n_gt": 61343,
+            "n_valid": 396368,
+            "pred_fraction": 0.0328886287490413,
+            "gt_fraction": 0.15476274573123966
+          },
+          "distance": {
+            "n": 21597,
+            "median_m": 0.2,
+            "p90_m": 0.48989794855663565,
+            "p95_m": 0.7211102550927979,
+            "mean_m": 0.2615087160297093,
+            "frac_within_1_voxel": 0.636523591239524,
+            "frac_exact": 0.23808862341991943
+          },
+          "target_coverage": 0.06822162076102531,
+          "valid_grid_coverage": 0.048044474006776104
+        },
+        "future": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            2901,
+            2920
+          ],
+          "n_voxels": 78056,
+          "full_grid": {
+            "tp": 18784,
+            "fp": 59272,
+            "fn": 56588,
+            "precision": 0.24064774008404222,
+            "recall": 0.24921721594225973,
+            "iou": 0.1395086301654734,
+            "n_pred": 78056,
+            "n_gt": 75372,
+            "n_valid": 449521,
+            "pred_fraction": 0.17364261069004563,
+            "gt_fraction": 0.16767181066068104
+          },
+          "frustum": {
+            "tp": 13018,
+            "fp": 48473,
+            "fn": 48325,
+            "precision": 0.21170577808134525,
+            "recall": 0.2122165528259133,
+            "iou": 0.11854374590223647,
+            "n_pred": 61491,
+            "n_gt": 61343,
+            "n_valid": 396368,
+            "pred_fraction": 0.15513613611593266,
+            "gt_fraction": 0.15476274573123966
+          },
+          "distance": {
+            "n": 78056,
+            "median_m": 0.2,
+            "p90_m": 0.6000000000000001,
+            "p95_m": 0.8246211251235323,
+            "mean_m": 0.28643516719686124,
+            "frac_within_1_voxel": 0.6052449523419083,
+            "frac_exact": 0.24064774008404222
+          },
+          "target_coverage": 0.24921721594225973,
+          "valid_grid_coverage": 0.17364261069004563
+        }
+      }
+    },
+    {
+      "partition": "heldout",
+      "drive": "2013_05_28_drive_0006_sync",
+      "anchor": 295,
+      "native_frame": 392,
+      "n_target_occupied": 76191,
+      "n_valid": 329390,
+      "target_prevalence": 0.23130939008470203,
+      "valid_fraction_of_grid": 0.15706539154052734,
+      "histories": {
+        "1": {
+          "n_frames_requested": 1,
+          "n_frames_used": 1,
+          "native_span": [
+            392,
+            392
+          ],
+          "n_voxels": 9601,
+          "full_grid": {
+            "tp": 3705,
+            "fp": 5896,
+            "fn": 72486,
+            "precision": 0.38589730236433706,
+            "recall": 0.04862779068393905,
+            "iou": 0.04513503965305103,
+            "n_pred": 9601,
+            "n_gt": 76191,
+            "n_valid": 329390,
+            "pred_fraction": 0.029147818695163787,
+            "gt_fraction": 0.23130939008470203
+          },
+          "frustum": {
+            "tp": 2884,
+            "fp": 4699,
+            "fn": 62844,
+            "precision": 0.3803244098641699,
+            "recall": 0.0438777994157741,
+            "iou": 0.0409502037570818,
+            "n_pred": 7583,
+            "n_gt": 65728,
+            "n_valid": 283379,
+            "pred_fraction": 0.02675921645570067,
+            "gt_fraction": 0.23194379258872394
+          },
+          "distance": {
+            "n": 9601,
+            "median_m": 0.2,
+            "p90_m": 0.8246211251235323,
+            "p95_m": 5.0517323761260355,
+            "mean_m": 0.7310698728708063,
+            "frac_within_1_voxel": 0.712009165711905,
+            "frac_exact": 0.38589730236433706
+          },
+          "target_coverage": 0.04862779068393905,
+          "valid_grid_coverage": 0.029147818695163787
+        },
+        "5": {
+          "n_frames_requested": 5,
+          "n_frames_used": 5,
+          "native_span": [
+            372,
+            392
+          ],
+          "n_voxels": 18478,
+          "full_grid": {
+            "tp": 7127,
+            "fp": 11351,
+            "fn": 69064,
+            "precision": 0.38570191579175234,
+            "recall": 0.09354123190403066,
+            "iou": 0.08141235064311987,
+            "n_pred": 18478,
+            "n_gt": 76191,
+            "n_valid": 329390,
+            "pred_fraction": 0.05609763502231398,
+            "gt_fraction": 0.23130939008470203
+          },
+          "frustum": {
+            "tp": 5162,
+            "fp": 8585,
+            "fn": 60566,
+            "precision": 0.37550010911471593,
+            "recall": 0.07853578383641675,
+            "iou": 0.06946294726360125,
+            "n_pred": 13747,
+            "n_gt": 65728,
+            "n_valid": 283379,
+            "pred_fraction": 0.04851100469689003,
+            "gt_fraction": 0.23194379258872394
+          },
+          "distance": {
+            "n": 18478,
+            "median_m": 0.2,
+            "p90_m": 2.720294101747089,
+            "p95_m": 5.388877434122992,
+            "mean_m": 0.8210190051303837,
+            "frac_within_1_voxel": 0.6845437817945665,
+            "frac_exact": 0.38570191579175234
+          },
+          "target_coverage": 0.09354123190403066,
+          "valid_grid_coverage": 0.05609763502231398
+        },
+        "20": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            297,
+            392
+          ],
+          "n_voxels": 21603,
+          "full_grid": {
+            "tp": 8843,
+            "fp": 12760,
+            "fn": 67348,
+            "precision": 0.4093412951904828,
+            "recall": 0.1160635770629077,
+            "iou": 0.09941428426886713,
+            "n_pred": 21603,
+            "n_gt": 76191,
+            "n_valid": 329390,
+            "pred_fraction": 0.06558486900027323,
+            "gt_fraction": 0.23130939008470203
+          },
+          "frustum": {
+            "tp": 6272,
+            "fp": 9464,
+            "fn": 59456,
+            "precision": 0.398576512455516,
+            "recall": 0.09542356377799416,
+            "iou": 0.08341312905628258,
+            "n_pred": 15736,
+            "n_gt": 65728,
+            "n_valid": 283379,
+            "pred_fraction": 0.05552987342040165,
+            "gt_fraction": 0.23194379258872394
+          },
+          "distance": {
+            "n": 21603,
+            "median_m": 0.2,
+            "p90_m": 2.8128263186199693,
+            "p95_m": 5.4,
+            "mean_m": 0.8316336721209673,
+            "frac_within_1_voxel": 0.6861547007360089,
+            "frac_exact": 0.4093412951904828
+          },
+          "target_coverage": 0.1160635770629077,
+          "valid_grid_coverage": 0.06558486900027323
+        },
+        "all_past": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            297,
+            392
+          ],
+          "n_voxels": 21603,
+          "full_grid": {
+            "tp": 8843,
+            "fp": 12760,
+            "fn": 67348,
+            "precision": 0.4093412951904828,
+            "recall": 0.1160635770629077,
+            "iou": 0.09941428426886713,
+            "n_pred": 21603,
+            "n_gt": 76191,
+            "n_valid": 329390,
+            "pred_fraction": 0.06558486900027323,
+            "gt_fraction": 0.23130939008470203
+          },
+          "frustum": {
+            "tp": 6272,
+            "fp": 9464,
+            "fn": 59456,
+            "precision": 0.398576512455516,
+            "recall": 0.09542356377799416,
+            "iou": 0.08341312905628258,
+            "n_pred": 15736,
+            "n_gt": 65728,
+            "n_valid": 283379,
+            "pred_fraction": 0.05552987342040165,
+            "gt_fraction": 0.23194379258872394
+          },
+          "distance": {
+            "n": 21603,
+            "median_m": 0.2,
+            "p90_m": 2.8128263186199693,
+            "p95_m": 5.4,
+            "mean_m": 0.8316336721209673,
+            "frac_within_1_voxel": 0.6861547007360089,
+            "frac_exact": 0.4093412951904828
+          },
+          "target_coverage": 0.1160635770629077,
+          "valid_grid_coverage": 0.06558486900027323
+        },
+        "future": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            393,
+            412
+          ],
+          "n_voxels": 47777,
+          "full_grid": {
+            "tp": 17233,
+            "fp": 30544,
+            "fn": 58958,
+            "precision": 0.36069656947903805,
+            "recall": 0.22618157000170624,
+            "iou": 0.1614559422869724,
+            "n_pred": 47777,
+            "n_gt": 76191,
+            "n_valid": 329390,
+            "pred_fraction": 0.14504690488478703,
+            "gt_fraction": 0.23130939008470203
+          },
+          "frustum": {
+            "tp": 14429,
+            "fp": 26213,
+            "fn": 51299,
+            "precision": 0.3550268195462822,
+            "recall": 0.21952592502434273,
+            "iou": 0.1569376012877824,
+            "n_pred": 40642,
+            "n_gt": 65728,
+            "n_valid": 283379,
+            "pred_fraction": 0.14341923713472063,
+            "gt_fraction": 0.23194379258872394
+          },
+          "distance": {
+            "n": 47777,
+            "median_m": 0.2,
+            "p90_m": 4.656178690729127,
+            "p95_m": 8.249121108315306,
+            "mean_m": 1.2198449689521331,
+            "frac_within_1_voxel": 0.6466500617451912,
+            "frac_exact": 0.36069656947903805
+          },
+          "target_coverage": 0.22618157000170624,
+          "valid_grid_coverage": 0.14504690488478703
+        }
+      }
+    },
+    {
+      "partition": "heldout",
+      "drive": "2013_05_28_drive_0006_sync",
+      "anchor": 815,
+      "native_frame": 964,
+      "n_target_occupied": 65872,
+      "n_valid": 245591,
+      "target_prevalence": 0.2682182979017961,
+      "valid_fraction_of_grid": 0.11710691452026367,
+      "histories": {
+        "1": {
+          "n_frames_requested": 1,
+          "n_frames_used": 1,
+          "native_span": [
+            964,
+            964
+          ],
+          "n_voxels": 8118,
+          "full_grid": {
+            "tp": 2374,
+            "fp": 5744,
+            "fn": 63498,
+            "precision": 0.2924365607292437,
+            "recall": 0.03603959193587564,
+            "iou": 0.03314901697944593,
+            "n_pred": 8118,
+            "n_gt": 65872,
+            "n_valid": 245591,
+            "pred_fraction": 0.03305495722563123,
+            "gt_fraction": 0.2682182979017961
+          },
+          "frustum": {
+            "tp": 1434,
+            "fp": 4108,
+            "fn": 56452,
+            "precision": 0.258751353302057,
+            "recall": 0.024772829354248006,
+            "iou": 0.023131270768138854,
+            "n_pred": 5542,
+            "n_gt": 57886,
+            "n_valid": 218542,
+            "pred_fraction": 0.025358969900522554,
+            "gt_fraction": 0.2648735712128561
+          },
+          "distance": {
+            "n": 8118,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.632455532033676,
+            "mean_m": 0.21858630845627397,
+            "frac_within_1_voxel": 0.7030056664203006,
+            "frac_exact": 0.2924365607292437
+          },
+          "target_coverage": 0.03603959193587564,
+          "valid_grid_coverage": 0.03305495722563123
+        },
+        "5": {
+          "n_frames_requested": 5,
+          "n_frames_used": 5,
+          "native_span": [
+            944,
+            964
+          ],
+          "n_voxels": 11936,
+          "full_grid": {
+            "tp": 3205,
+            "fp": 8731,
+            "fn": 62667,
+            "precision": 0.26851541554959785,
+            "recall": 0.048654967209132864,
+            "iou": 0.0429607388442824,
+            "n_pred": 11936,
+            "n_gt": 65872,
+            "n_valid": 245591,
+            "pred_fraction": 0.048601129520218576,
+            "gt_fraction": 0.2682182979017961
+          },
+          "frustum": {
+            "tp": 2094,
+            "fp": 6252,
+            "fn": 55792,
+            "precision": 0.25089863407620416,
+            "recall": 0.03617454997754207,
+            "iou": 0.03264835199101936,
+            "n_pred": 8346,
+            "n_gt": 57886,
+            "n_valid": 218542,
+            "pred_fraction": 0.03818945557375699,
+            "gt_fraction": 0.2648735712128561
+          },
+          "distance": {
+            "n": 11936,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.632455532033676,
+            "mean_m": 0.23800784078642742,
+            "frac_within_1_voxel": 0.661779490616622,
+            "frac_exact": 0.26851541554959785
+          },
+          "target_coverage": 0.048654967209132864,
+          "valid_grid_coverage": 0.048601129520218576
+        },
+        "20": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            869,
+            964
+          ],
+          "n_voxels": 13064,
+          "full_grid": {
+            "tp": 3548,
+            "fp": 9516,
+            "fn": 62324,
+            "precision": 0.27158603796693204,
+            "recall": 0.05386203546271557,
+            "iou": 0.04706319308112697,
+            "n_pred": 13064,
+            "n_gt": 65872,
+            "n_valid": 245591,
+            "pred_fraction": 0.053194131706780785,
+            "gt_fraction": 0.2682182979017961
+          },
+          "frustum": {
+            "tp": 2340,
+            "fp": 6820,
+            "fn": 55546,
+            "precision": 0.2554585152838428,
+            "recall": 0.04042428220986076,
+            "iou": 0.036163570611689795,
+            "n_pred": 9160,
+            "n_gt": 57886,
+            "n_valid": 218542,
+            "pred_fraction": 0.04191414007376156,
+            "gt_fraction": 0.2648735712128561
+          },
+          "distance": {
+            "n": 13064,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.66332495807108,
+            "mean_m": 0.24428459765176438,
+            "frac_within_1_voxel": 0.6445192896509492,
+            "frac_exact": 0.27158603796693204
+          },
+          "target_coverage": 0.05386203546271557,
+          "valid_grid_coverage": 0.053194131706780785
+        },
+        "all_past": {
+          "n_frames_requested": 18,
+          "n_frames_used": 18,
+          "native_span": [
+            879,
+            964
+          ],
+          "n_voxels": 13062,
+          "full_grid": {
+            "tp": 3547,
+            "fp": 9515,
+            "fn": 62325,
+            "precision": 0.27155106415556574,
+            "recall": 0.05384685450570804,
+            "iou": 0.04705055248252351,
+            "n_pred": 13062,
+            "n_gt": 65872,
+            "n_valid": 245591,
+            "pred_fraction": 0.053185988085882624,
+            "gt_fraction": 0.2682182979017961
+          },
+          "frustum": {
+            "tp": 2340,
+            "fp": 6820,
+            "fn": 55546,
+            "precision": 0.2554585152838428,
+            "recall": 0.04042428220986076,
+            "iou": 0.036163570611689795,
+            "n_pred": 9160,
+            "n_gt": 57886,
+            "n_valid": 218542,
+            "pred_fraction": 0.04191414007376156,
+            "gt_fraction": 0.2648735712128561
+          },
+          "distance": {
+            "n": 13062,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.66332495807108,
+            "mean_m": 0.24426679478391955,
+            "frac_within_1_voxel": 0.644541417853315,
+            "frac_exact": 0.27155106415556574
+          },
+          "target_coverage": 0.05384685450570804,
+          "valid_grid_coverage": 0.053185988085882624
+        },
+        "future": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            965,
+            984
+          ],
+          "n_voxels": 37337,
+          "full_grid": {
+            "tp": 11208,
+            "fp": 26129,
+            "fn": 54664,
+            "precision": 0.3001848032782495,
+            "recall": 0.1701481661403935,
+            "iou": 0.12182476277431767,
+            "n_pred": 37337,
+            "n_gt": 65872,
+            "n_valid": 245591,
+            "pred_fraction": 0.152029186737299,
+            "gt_fraction": 0.2682182979017961
+          },
+          "frustum": {
+            "tp": 9068,
+            "fp": 20766,
+            "fn": 48818,
+            "precision": 0.3039485151169806,
+            "recall": 0.1566527312303493,
+            "iou": 0.11529268168641611,
+            "n_pred": 29834,
+            "n_gt": 57886,
+            "n_valid": 218542,
+            "pred_fraction": 0.13651380512670333,
+            "gt_fraction": 0.2648735712128561
+          },
+          "distance": {
+            "n": 37337,
+            "median_m": 0.2,
+            "p90_m": 0.6000000000000001,
+            "p95_m": 0.8246211251235323,
+            "mean_m": 0.2654913083771308,
+            "frac_within_1_voxel": 0.648820205158422,
+            "frac_exact": 0.3001848032782495
+          },
+          "target_coverage": 0.1701481661403935,
+          "valid_grid_coverage": 0.152029186737299
+        }
+      }
+    },
+    {
+      "partition": "heldout",
+      "drive": "2013_05_28_drive_0006_sync",
+      "anchor": 2775,
+      "native_frame": 3013,
+      "n_target_occupied": 75378,
+      "n_valid": 314180,
+      "target_prevalence": 0.23991979120249537,
+      "valid_fraction_of_grid": 0.1498126983642578,
+      "histories": {
+        "1": {
+          "n_frames_requested": 1,
+          "n_frames_used": 1,
+          "native_span": [
+            3013,
+            3013
+          ],
+          "n_voxels": 9009,
+          "full_grid": {
+            "tp": 2236,
+            "fp": 6773,
+            "fn": 73142,
+            "precision": 0.2481962481962482,
+            "recall": 0.029663827642017564,
+            "iou": 0.02721817141605093,
+            "n_pred": 9009,
+            "n_gt": 75378,
+            "n_valid": 314180,
+            "pred_fraction": 0.02867464510789993,
+            "gt_fraction": 0.23991979120249537
+          },
+          "frustum": {
+            "tp": 1431,
+            "fp": 4249,
+            "fn": 62317,
+            "precision": 0.2519366197183099,
+            "recall": 0.022447763067076614,
+            "iou": 0.02104504610497522,
+            "n_pred": 5680,
+            "n_gt": 63748,
+            "n_valid": 286061,
+            "pred_fraction": 0.019855904859453054,
+            "gt_fraction": 0.22284757446838263
+          },
+          "distance": {
+            "n": 9009,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.66332495807108,
+            "mean_m": 0.232539375350427,
+            "frac_within_1_voxel": 0.6862026862026862,
+            "frac_exact": 0.2481962481962482
+          },
+          "target_coverage": 0.029663827642017564,
+          "valid_grid_coverage": 0.02867464510789993
+        },
+        "5": {
+          "n_frames_requested": 5,
+          "n_frames_used": 5,
+          "native_span": [
+            2993,
+            3013
+          ],
+          "n_voxels": 14674,
+          "full_grid": {
+            "tp": 3767,
+            "fp": 10907,
+            "fn": 71611,
+            "precision": 0.25671255281450184,
+            "recall": 0.04997479370638648,
+            "iou": 0.043657646172567656,
+            "n_pred": 14674,
+            "n_gt": 75378,
+            "n_valid": 314180,
+            "pred_fraction": 0.04670571010248902,
+            "gt_fraction": 0.23991979120249537
+          },
+          "frustum": {
+            "tp": 2530,
+            "fp": 7101,
+            "fn": 61218,
+            "precision": 0.2626933859412314,
+            "recall": 0.0396875196084583,
+            "iou": 0.035709748902595664,
+            "n_pred": 9631,
+            "n_gt": 63748,
+            "n_valid": 286061,
+            "pred_fraction": 0.033667644313625414,
+            "gt_fraction": 0.22284757446838263
+          },
+          "distance": {
+            "n": 14674,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.7211102550927979,
+            "mean_m": 0.2479181367204729,
+            "frac_within_1_voxel": 0.64372359274908,
+            "frac_exact": 0.25671255281450184
+          },
+          "target_coverage": 0.04997479370638648,
+          "valid_grid_coverage": 0.04670571010248902
+        },
+        "20": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            2918,
+            3013
+          ],
+          "n_voxels": 16276,
+          "full_grid": {
+            "tp": 4677,
+            "fp": 11599,
+            "fn": 70701,
+            "precision": 0.28735561563037604,
+            "recall": 0.062047281700230834,
+            "iou": 0.053772836497004955,
+            "n_pred": 16276,
+            "n_gt": 75378,
+            "n_valid": 314180,
+            "pred_fraction": 0.05180469794385384,
+            "gt_fraction": 0.23991979120249537
+          },
+          "frustum": {
+            "tp": 3216,
+            "fp": 7608,
+            "fn": 60532,
+            "precision": 0.29711751662971175,
+            "recall": 0.050448641526008656,
+            "iou": 0.045069790907562086,
+            "n_pred": 10824,
+            "n_gt": 63748,
+            "n_valid": 286061,
+            "pred_fraction": 0.037838083485690115,
+            "gt_fraction": 0.22284757446838263
+          },
+          "distance": {
+            "n": 16276,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.692820323027551,
+            "mean_m": 0.23974588866012947,
+            "frac_within_1_voxel": 0.6483779798476285,
+            "frac_exact": 0.28735561563037604
+          },
+          "target_coverage": 0.062047281700230834,
+          "valid_grid_coverage": 0.05180469794385384
+        },
+        "all_past": {
+          "n_frames_requested": 17,
+          "n_frames_used": 17,
+          "native_span": [
+            2933,
+            3013
+          ],
+          "n_voxels": 16276,
+          "full_grid": {
+            "tp": 4677,
+            "fp": 11599,
+            "fn": 70701,
+            "precision": 0.28735561563037604,
+            "recall": 0.062047281700230834,
+            "iou": 0.053772836497004955,
+            "n_pred": 16276,
+            "n_gt": 75378,
+            "n_valid": 314180,
+            "pred_fraction": 0.05180469794385384,
+            "gt_fraction": 0.23991979120249537
+          },
+          "frustum": {
+            "tp": 3216,
+            "fp": 7608,
+            "fn": 60532,
+            "precision": 0.29711751662971175,
+            "recall": 0.050448641526008656,
+            "iou": 0.045069790907562086,
+            "n_pred": 10824,
+            "n_gt": 63748,
+            "n_valid": 286061,
+            "pred_fraction": 0.037838083485690115,
+            "gt_fraction": 0.22284757446838263
+          },
+          "distance": {
+            "n": 16276,
+            "median_m": 0.2,
+            "p90_m": 0.447213595499958,
+            "p95_m": 0.692820323027551,
+            "mean_m": 0.23974588866012947,
+            "frac_within_1_voxel": 0.6483779798476285,
+            "frac_exact": 0.28735561563037604
+          },
+          "target_coverage": 0.062047281700230834,
+          "valid_grid_coverage": 0.05180469794385384
+        },
+        "future": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            3014,
+            3033
+          ],
+          "n_voxels": 42707,
+          "full_grid": {
+            "tp": 9775,
+            "fp": 32932,
+            "fn": 65603,
+            "precision": 0.22888519446460767,
+            "recall": 0.12967974740640506,
+            "iou": 0.09025020773705106,
+            "n_pred": 42707,
+            "n_gt": 75378,
+            "n_valid": 314180,
+            "pred_fraction": 0.13593163154879367,
+            "gt_fraction": 0.23991979120249537
+          },
+          "frustum": {
+            "tp": 8368,
+            "fp": 26439,
+            "fn": 55380,
+            "precision": 0.24041141149768724,
+            "recall": 0.13126686327414194,
+            "iou": 0.09278499118498232,
+            "n_pred": 34807,
+            "n_gt": 63748,
+            "n_valid": 286061,
+            "pred_fraction": 0.1216768451484124,
+            "gt_fraction": 0.22284757446838263
+          },
+          "distance": {
+            "n": 42707,
+            "median_m": 0.2,
+            "p90_m": 0.66332495807108,
+            "p95_m": 1.0,
+            "mean_m": 0.3014536047659615,
+            "frac_within_1_voxel": 0.5841665300770366,
+            "frac_exact": 0.22888519446460767
+          },
+          "target_coverage": 0.12967974740640506,
+          "valid_grid_coverage": 0.13593163154879367
+        }
+      }
+    },
+    {
+      "partition": "heldout",
+      "drive": "2013_05_28_drive_0006_sync",
+      "anchor": 4395,
+      "native_frame": 4714,
+      "n_target_occupied": 59468,
+      "n_valid": 297985,
+      "target_prevalence": 0.19956709230330386,
+      "valid_fraction_of_grid": 0.1420903205871582,
+      "histories": {
+        "1": {
+          "n_frames_requested": 1,
+          "n_frames_used": 1,
+          "native_span": [
+            4714,
+            4714
+          ],
+          "n_voxels": 9783,
+          "full_grid": {
+            "tp": 2845,
+            "fp": 6938,
+            "fn": 56623,
+            "precision": 0.2908105897986303,
+            "recall": 0.04784085558619762,
+            "iou": 0.04284251423064181,
+            "n_pred": 9783,
+            "n_gt": 59468,
+            "n_valid": 297985,
+            "pred_fraction": 0.03283051160293304,
+            "gt_fraction": 0.19956709230330386
+          },
+          "frustum": {
+            "tp": 1473,
+            "fp": 4098,
+            "fn": 44446,
+            "precision": 0.26440495422724825,
+            "recall": 0.03207822470001524,
+            "iou": 0.029449987004418497,
+            "n_pred": 5571,
+            "n_gt": 45919,
+            "n_valid": 250958,
+            "pred_fraction": 0.022198933686114808,
+            "gt_fraction": 0.18297484041154297
+          },
+          "distance": {
+            "n": 9783,
+            "median_m": 0.2,
+            "p90_m": 0.5656854249492381,
+            "p95_m": 0.7211102550927979,
+            "mean_m": 0.3119791449063494,
+            "frac_within_1_voxel": 0.6636001226617602,
+            "frac_exact": 0.2908105897986303
+          },
+          "target_coverage": 0.04784085558619762,
+          "valid_grid_coverage": 0.03283051160293304
+        },
+        "5": {
+          "n_frames_requested": 5,
+          "n_frames_used": 5,
+          "native_span": [
+            4694,
+            4714
+          ],
+          "n_voxels": 14404,
+          "full_grid": {
+            "tp": 4125,
+            "fp": 10279,
+            "fn": 55343,
+            "precision": 0.28637878367120245,
+            "recall": 0.06936503665837089,
+            "iou": 0.059142328702309774,
+            "n_pred": 14404,
+            "n_gt": 59468,
+            "n_valid": 297985,
+            "pred_fraction": 0.04833800359078477,
+            "gt_fraction": 0.19956709230330386
+          },
+          "frustum": {
+            "tp": 2197,
+            "fp": 5858,
+            "fn": 43722,
+            "precision": 0.2727498448168839,
+            "recall": 0.04784511857836626,
+            "iou": 0.042431967862178184,
+            "n_pred": 8055,
+            "n_gt": 45919,
+            "n_valid": 250958,
+            "pred_fraction": 0.03209700427960057,
+            "gt_fraction": 0.18297484041154297
+          },
+          "distance": {
+            "n": 14404,
+            "median_m": 0.2,
+            "p90_m": 0.6000000000000001,
+            "p95_m": 0.8246211251235323,
+            "mean_m": 0.3571176962269787,
+            "frac_within_1_voxel": 0.6455151346848098,
+            "frac_exact": 0.28637878367120245
+          },
+          "target_coverage": 0.06936503665837089,
+          "valid_grid_coverage": 0.04833800359078477
+        },
+        "20": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            4619,
+            4714
+          ],
+          "n_voxels": 15587,
+          "full_grid": {
+            "tp": 4744,
+            "fp": 10843,
+            "fn": 54724,
+            "precision": 0.30435619426445115,
+            "recall": 0.07977399609874218,
+            "iou": 0.06747166161767007,
+            "n_pred": 15587,
+            "n_gt": 59468,
+            "n_valid": 297985,
+            "pred_fraction": 0.052308002080641645,
+            "gt_fraction": 0.19956709230330386
+          },
+          "frustum": {
+            "tp": 2737,
+            "fp": 6268,
+            "fn": 43182,
+            "precision": 0.3039422543031649,
+            "recall": 0.05960495655393192,
+            "iou": 0.05244601145879242,
+            "n_pred": 9005,
+            "n_gt": 45919,
+            "n_valid": 250958,
+            "pred_fraction": 0.03588249826664223,
+            "gt_fraction": 0.18297484041154297
+          },
+          "distance": {
+            "n": 15587,
+            "median_m": 0.2,
+            "p90_m": 0.6000000000000001,
+            "p95_m": 0.8246211251235323,
+            "mean_m": 0.3559764615522335,
+            "frac_within_1_voxel": 0.6528517354205428,
+            "frac_exact": 0.30435619426445115
+          },
+          "target_coverage": 0.07977399609874218,
+          "valid_grid_coverage": 0.052308002080641645
+        },
+        "all_past": {
+          "n_frames_requested": 32,
+          "n_frames_used": 32,
+          "native_span": [
+            4559,
+            4714
+          ],
+          "n_voxels": 15617,
+          "full_grid": {
+            "tp": 4759,
+            "fp": 10858,
+            "fn": 54709,
+            "precision": 0.3047320227956714,
+            "recall": 0.08002623259568171,
+            "iou": 0.06767056280749652,
+            "n_pred": 15617,
+            "n_gt": 59468,
+            "n_valid": 297985,
+            "pred_fraction": 0.05240867828917563,
+            "gt_fraction": 0.19956709230330386
+          },
+          "frustum": {
+            "tp": 2749,
+            "fp": 6283,
+            "fn": 43170,
+            "precision": 0.30436226749335693,
+            "recall": 0.05986628628672227,
+            "iou": 0.052660817593195665,
+            "n_pred": 9032,
+            "n_gt": 45919,
+            "n_valid": 250958,
+            "pred_fraction": 0.03599008599048446,
+            "gt_fraction": 0.18297484041154297
+          },
+          "distance": {
+            "n": 15617,
+            "median_m": 0.2,
+            "p90_m": 0.6000000000000001,
+            "p95_m": 0.8246211251235323,
+            "mean_m": 0.35554918543844066,
+            "frac_within_1_voxel": 0.6531344048152654,
+            "frac_exact": 0.3047320227956714
+          },
+          "target_coverage": 0.08002623259568171,
+          "valid_grid_coverage": 0.05240867828917563
+        },
+        "future": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            4715,
+            4734
+          ],
+          "n_voxels": 42880,
+          "full_grid": {
+            "tp": 10874,
+            "fp": 32006,
+            "fn": 48594,
+            "precision": 0.25359141791044776,
+            "recall": 0.182854644514697,
+            "iou": 0.11887530883092463,
+            "n_pred": 42880,
+            "n_gt": 59468,
+            "n_valid": 297985,
+            "pred_fraction": 0.14389986073124486,
+            "gt_fraction": 0.19956709230330386
+          },
+          "frustum": {
+            "tp": 8326,
+            "fp": 20767,
+            "fn": 37593,
+            "precision": 0.28618568040422093,
+            "recall": 0.1813192796010366,
+            "iou": 0.12485379240020394,
+            "n_pred": 29093,
+            "n_gt": 45919,
+            "n_valid": 250958,
+            "pred_fraction": 0.11592776480526622,
+            "gt_fraction": 0.18297484041154297
+          },
+          "distance": {
+            "n": 42880,
+            "median_m": 0.2,
+            "p90_m": 0.9380831519646861,
+            "p95_m": 1.28062484748657,
+            "mean_m": 0.44436231241874025,
+            "frac_within_1_voxel": 0.5290345149253731,
+            "frac_exact": 0.25359141791044776
+          },
+          "target_coverage": 0.182854644514697,
+          "valid_grid_coverage": 0.14389986073124486
+        }
+      }
+    },
+    {
+      "partition": "heldout",
+      "drive": "2013_05_28_drive_0006_sync",
+      "anchor": 4925,
+      "native_frame": 5244,
+      "n_target_occupied": 90034,
+      "n_valid": 387872,
+      "target_prevalence": 0.23212296840194704,
+      "valid_fraction_of_grid": 0.1849517822265625,
+      "histories": {
+        "1": {
+          "n_frames_requested": 1,
+          "n_frames_used": 1,
+          "native_span": [
+            5244,
+            5244
+          ],
+          "n_voxels": 13173,
+          "full_grid": {
+            "tp": 2413,
+            "fp": 10760,
+            "fn": 87621,
+            "precision": 0.18317771198663935,
+            "recall": 0.026800986294066687,
+            "iou": 0.023939917058555072,
+            "n_pred": 13173,
+            "n_gt": 90034,
+            "n_valid": 387872,
+            "pred_fraction": 0.033962234964111875,
+            "gt_fraction": 0.23212296840194704
+          },
+          "frustum": {
+            "tp": 1618,
+            "fp": 7090,
+            "fn": 75450,
+            "precision": 0.18580615525953145,
+            "recall": 0.020994446462863966,
+            "iou": 0.01922574205660781,
+            "n_pred": 8708,
+            "n_gt": 77068,
+            "n_valid": 337211,
+            "pred_fraction": 0.025823594129491624,
+            "gt_fraction": 0.2285453321510864
+          },
+          "distance": {
+            "n": 13173,
+            "median_m": 0.2,
+            "p90_m": 0.48989794855663565,
+            "p95_m": 0.66332495807108,
+            "mean_m": 0.26481382289263145,
+            "frac_within_1_voxel": 0.6293175434601078,
+            "frac_exact": 0.18317771198663935
+          },
+          "target_coverage": 0.026800986294066687,
+          "valid_grid_coverage": 0.033962234964111875
+        },
+        "5": {
+          "n_frames_requested": 5,
+          "n_frames_used": 5,
+          "native_span": [
+            5224,
+            5244
+          ],
+          "n_voxels": 19167,
+          "full_grid": {
+            "tp": 3691,
+            "fp": 15476,
+            "fn": 86343,
+            "precision": 0.19257056399019148,
+            "recall": 0.04099562387542484,
+            "iou": 0.03498246611695574,
+            "n_pred": 19167,
+            "n_gt": 90034,
+            "n_valid": 387872,
+            "pred_fraction": 0.0494157866512664,
+            "gt_fraction": 0.23212296840194704
+          },
+          "frustum": {
+            "tp": 2736,
+            "fp": 10566,
+            "fn": 74332,
+            "precision": 0.20568335588633288,
+            "recall": 0.03550111589764883,
+            "iou": 0.03122075906611589,
+            "n_pred": 13302,
+            "n_gt": 77068,
+            "n_valid": 337211,
+            "pred_fraction": 0.03944711174902361,
+            "gt_fraction": 0.2285453321510864
+          },
+          "distance": {
+            "n": 19167,
+            "median_m": 0.2,
+            "p90_m": 0.48989794855663565,
+            "p95_m": 0.7211102550927979,
+            "mean_m": 0.27615684730981344,
+            "frac_within_1_voxel": 0.5875723900453905,
+            "frac_exact": 0.19257056399019148
+          },
+          "target_coverage": 0.04099562387542484,
+          "valid_grid_coverage": 0.0494157866512664
+        },
+        "20": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            5149,
+            5244
+          ],
+          "n_voxels": 20200,
+          "full_grid": {
+            "tp": 4040,
+            "fp": 16160,
+            "fn": 85994,
+            "precision": 0.2,
+            "recall": 0.04487193726814315,
+            "iou": 0.03804358061660734,
+            "n_pred": 20200,
+            "n_gt": 90034,
+            "n_valid": 387872,
+            "pred_fraction": 0.052079036383136705,
+            "gt_fraction": 0.23212296840194704
+          },
+          "frustum": {
+            "tp": 3061,
+            "fp": 11111,
+            "fn": 74007,
+            "precision": 0.21598927462602313,
+            "recall": 0.039718170965900246,
+            "iou": 0.034713480533913973,
+            "n_pred": 14172,
+            "n_gt": 77068,
+            "n_valid": 337211,
+            "pred_fraction": 0.042027098760123484,
+            "gt_fraction": 0.2285453321510864
+          },
+          "distance": {
+            "n": 20200,
+            "median_m": 0.2,
+            "p90_m": 0.48989794855663565,
+            "p95_m": 0.7211102550927979,
+            "mean_m": 0.2756315065977975,
+            "frac_within_1_voxel": 0.5816831683168316,
+            "frac_exact": 0.2
+          },
+          "target_coverage": 0.04487193726814315,
+          "valid_grid_coverage": 0.052079036383136705
+        },
+        "all_past": {
+          "n_frames_requested": 14,
+          "n_frames_used": 14,
+          "native_span": [
+            5179,
+            5244
+          ],
+          "n_voxels": 20193,
+          "full_grid": {
+            "tp": 4037,
+            "fp": 16156,
+            "fn": 85997,
+            "precision": 0.19992076462140346,
+            "recall": 0.044838616522647,
+            "iou": 0.038016762407006306,
+            "n_pred": 20193,
+            "n_gt": 90034,
+            "n_valid": 387872,
+            "pred_fraction": 0.052060989192310864,
+            "gt_fraction": 0.23212296840194704
+          },
+          "frustum": {
+            "tp": 3061,
+            "fp": 11111,
+            "fn": 74007,
+            "precision": 0.21598927462602313,
+            "recall": 0.039718170965900246,
+            "iou": 0.034713480533913973,
+            "n_pred": 14172,
+            "n_gt": 77068,
+            "n_valid": 337211,
+            "pred_fraction": 0.042027098760123484,
+            "gt_fraction": 0.2285453321510864
+          },
+          "distance": {
+            "n": 20193,
+            "median_m": 0.2,
+            "p90_m": 0.48989794855663565,
+            "p95_m": 0.7211102550927979,
+            "mean_m": 0.2756539378401437,
+            "frac_within_1_voxel": 0.5817362452334968,
+            "frac_exact": 0.19992076462140346
+          },
+          "target_coverage": 0.044838616522647,
+          "valid_grid_coverage": 0.052060989192310864
+        },
+        "future": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            5245,
+            5264
+          ],
+          "n_voxels": 66153,
+          "full_grid": {
+            "tp": 15317,
+            "fp": 50836,
+            "fn": 74717,
+            "precision": 0.2315390080570798,
+            "recall": 0.17012461958815558,
+            "iou": 0.10873145453254773,
+            "n_pred": 66153,
+            "n_gt": 90034,
+            "n_valid": 387872,
+            "pred_fraction": 0.17055368781453675,
+            "gt_fraction": 0.23212296840194704
+          },
+          "frustum": {
+            "tp": 12270,
+            "fp": 35960,
+            "fn": 64798,
+            "precision": 0.25440597138710347,
+            "recall": 0.1592100482690611,
+            "iou": 0.10855717167427541,
+            "n_pred": 48230,
+            "n_gt": 77068,
+            "n_valid": 337211,
+            "pred_fraction": 0.14302617648890456,
+            "gt_fraction": 0.2285453321510864
+          },
+          "distance": {
+            "n": 66153,
+            "median_m": 0.2,
+            "p90_m": 0.6000000000000001,
+            "p95_m": 0.8485281374238571,
+            "mean_m": 0.3146399910780758,
+            "frac_within_1_voxel": 0.5742596707632307,
+            "frac_exact": 0.2315390080570798
+          },
+          "target_coverage": 0.17012461958815558,
+          "valid_grid_coverage": 0.17055368781453675
+        }
+      }
+    },
+    {
+      "partition": "heldout",
+      "drive": "2013_05_28_drive_0006_sync",
+      "anchor": 7790,
+      "native_frame": 8304,
+      "n_target_occupied": 56269,
+      "n_valid": 188857,
+      "target_prevalence": 0.29794500600983814,
+      "valid_fraction_of_grid": 0.09005403518676758,
+      "histories": {
+        "1": {
+          "n_frames_requested": 1,
+          "n_frames_used": 1,
+          "native_span": [
+            8304,
+            8304
+          ],
+          "n_voxels": 12511,
+          "full_grid": {
+            "tp": 2229,
+            "fp": 10282,
+            "fn": 54040,
+            "precision": 0.17816321636959476,
+            "recall": 0.039613286178890685,
+            "iou": 0.033493110546798696,
+            "n_pred": 12511,
+            "n_gt": 56269,
+            "n_valid": 188857,
+            "pred_fraction": 0.0662458897472691,
+            "gt_fraction": 0.29794500600983814
+          },
+          "frustum": {
+            "tp": 1408,
+            "fp": 6858,
+            "fn": 32968,
+            "precision": 0.17033631744495523,
+            "recall": 0.0409588084710263,
+            "iou": 0.034146578066644034,
+            "n_pred": 8266,
+            "n_gt": 34376,
+            "n_valid": 105131,
+            "pred_fraction": 0.07862571458466104,
+            "gt_fraction": 0.3269825265620987
+          },
+          "distance": {
+            "n": 12511,
+            "median_m": 0.2,
+            "p90_m": 0.48989794855663565,
+            "p95_m": 0.6000000000000001,
+            "mean_m": 0.26518822171543766,
+            "frac_within_1_voxel": 0.5427224042842299,
+            "frac_exact": 0.17816321636959476
+          },
+          "target_coverage": 0.039613286178890685,
+          "valid_grid_coverage": 0.0662458897472691
+        },
+        "5": {
+          "n_frames_requested": 5,
+          "n_frames_used": 5,
+          "native_span": [
+            8284,
+            8304
+          ],
+          "n_voxels": 18662,
+          "full_grid": {
+            "tp": 3090,
+            "fp": 15572,
+            "fn": 53179,
+            "precision": 0.165577108562855,
+            "recall": 0.05491478433951199,
+            "iou": 0.04301165072869253,
+            "n_pred": 18662,
+            "n_gt": 56269,
+            "n_valid": 188857,
+            "pred_fraction": 0.09881550591188042,
+            "gt_fraction": 0.29794500600983814
+          },
+          "frustum": {
+            "tp": 2080,
+            "fp": 10618,
+            "fn": 32296,
+            "precision": 0.16380532367301937,
+            "recall": 0.060507330695834305,
+            "iou": 0.046228386007023156,
+            "n_pred": 12698,
+            "n_gt": 34376,
+            "n_valid": 105131,
+            "pred_fraction": 0.12078264260779409,
+            "gt_fraction": 0.3269825265620987
+          },
+          "distance": {
+            "n": 18662,
+            "median_m": 0.2,
+            "p90_m": 0.5656854249492381,
+            "p95_m": 0.632455532033676,
+            "mean_m": 0.2899474043504259,
+            "frac_within_1_voxel": 0.5060550851998714,
+            "frac_exact": 0.165577108562855
+          },
+          "target_coverage": 0.05491478433951199,
+          "valid_grid_coverage": 0.09881550591188042
+        },
+        "20": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            8209,
+            8304
+          ],
+          "n_voxels": 19706,
+          "full_grid": {
+            "tp": 3254,
+            "fp": 16452,
+            "fn": 53015,
+            "precision": 0.16512737237389627,
+            "recall": 0.05782935541772557,
+            "iou": 0.04474635937349596,
+            "n_pred": 19706,
+            "n_gt": 56269,
+            "n_valid": 188857,
+            "pred_fraction": 0.10434349799054311,
+            "gt_fraction": 0.29794500600983814
+          },
+          "frustum": {
+            "tp": 2163,
+            "fp": 11325,
+            "fn": 32213,
+            "precision": 0.160364768683274,
+            "recall": 0.06292180591110076,
+            "iou": 0.04732938010109188,
+            "n_pred": 13488,
+            "n_gt": 34376,
+            "n_valid": 105131,
+            "pred_fraction": 0.12829707698014858,
+            "gt_fraction": 0.3269825265620987
+          },
+          "distance": {
+            "n": 19706,
+            "median_m": 0.28284271247461906,
+            "p90_m": 0.5656854249492381,
+            "p95_m": 0.632455532033676,
+            "mean_m": 0.2982011895573406,
+            "frac_within_1_voxel": 0.4921343753171623,
+            "frac_exact": 0.16512737237389627
+          },
+          "target_coverage": 0.05782935541772557,
+          "valid_grid_coverage": 0.10434349799054311
+        },
+        "all_past": {
+          "n_frames_requested": 18,
+          "n_frames_used": 18,
+          "native_span": [
+            8219,
+            8304
+          ],
+          "n_voxels": 19704,
+          "full_grid": {
+            "tp": 3252,
+            "fp": 16452,
+            "fn": 53017,
+            "precision": 0.16504263093788063,
+            "recall": 0.057793811867991256,
+            "iou": 0.044718857001416375,
+            "n_pred": 19704,
+            "n_gt": 56269,
+            "n_valid": 188857,
+            "pred_fraction": 0.10433290796740391,
+            "gt_fraction": 0.29794500600983814
+          },
+          "frustum": {
+            "tp": 2163,
+            "fp": 11325,
+            "fn": 32213,
+            "precision": 0.160364768683274,
+            "recall": 0.06292180591110076,
+            "iou": 0.04732938010109188,
+            "n_pred": 13488,
+            "n_gt": 34376,
+            "n_valid": 105131,
+            "pred_fraction": 0.12829707698014858,
+            "gt_fraction": 0.3269825265620987
+          },
+          "distance": {
+            "n": 19704,
+            "median_m": 0.28284271247461906,
+            "p90_m": 0.5656854249492381,
+            "p95_m": 0.632455532033676,
+            "mean_m": 0.29823145764397857,
+            "frac_within_1_voxel": 0.4920828258221681,
+            "frac_exact": 0.16504263093788063
+          },
+          "target_coverage": 0.057793811867991256,
+          "valid_grid_coverage": 0.10433290796740391
+        },
+        "future": {
+          "n_frames_requested": 20,
+          "n_frames_used": 20,
+          "native_span": [
+            8305,
+            8324
+          ],
+          "n_voxels": 36647,
+          "full_grid": {
+            "tp": 8999,
+            "fp": 27648,
+            "fn": 47270,
+            "precision": 0.24555898163560455,
+            "recall": 0.1599282020295367,
+            "iou": 0.10723691266370342,
+            "n_pred": 36647,
+            "n_gt": 56269,
+            "n_valid": 188857,
+            "pred_fraction": 0.19404628899114146,
+            "gt_fraction": 0.29794500600983814
+          },
+          "frustum": {
+            "tp": 5259,
+            "fp": 15375,
+            "fn": 29117,
+            "precision": 0.25487060191916255,
+            "recall": 0.15298464044682336,
+            "iou": 0.10570641796144802,
+            "n_pred": 20634,
+            "n_gt": 34376,
+            "n_valid": 105131,
+            "pred_fraction": 0.1962694162521045,
+            "gt_fraction": 0.3269825265620987
+          },
+          "distance": {
+            "n": 36647,
+            "median_m": 0.2,
+            "p90_m": 0.5656854249492381,
+            "p95_m": 0.692820323027551,
+            "mean_m": 0.2810881244746137,
+            "frac_within_1_voxel": 0.5759270881654706,
+            "frac_exact": 0.24555898163560455
+          },
+          "target_coverage": 0.1599282020295367,
+          "valid_grid_coverage": 0.19404628899114146
+        }
+      }
+    }
+  ],
+  "note": "'future' is a target-quality diagnostic over t+1..t+20, never a baseline",
+  "seconds": 49.16968059539795,
+  "sanity": {
+    "train": {
+      "recalls": [
+        0.061593802735945294,
+        0.08300467074956445,
+        0.08654484477744169,
+        0.08655909572958344
+      ],
+      "monotone_non_decreasing": true,
+      "future_target_coverage": 0.34972311587567945,
+      "precision_at_1_frame": 0.32148192225920624
+    },
+    "source_validation": {
+      "recalls": [
+        0.047310501358522904,
+        0.06856891266369378,
+        0.07336023695276483,
+        0.07333433790255364
+      ],
+      "monotone_non_decreasing": false,
+      "future_target_coverage": 0.2664659097865447,
+      "precision_at_1_frame": 0.2677486408698433
+    },
+    "heldout": {
+      "recalls": [
+        0.03733826072984698,
+        0.059083863406519666,
+        0.06877404232394166,
+        0.06879530826158048
+      ],
+      "monotone_non_decreasing": true,
+      "future_target_coverage": 0.17344971314613009,
+      "precision_at_1_frame": 0.25407187072915827
+    }
+  }
+}

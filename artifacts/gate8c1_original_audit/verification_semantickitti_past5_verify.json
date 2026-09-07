@@ -1,0 +1,92 @@
+[
+  {
+    "clip_id": "08_000000_000020_s5",
+    "seed": 0,
+    "delta_from_histogram": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "clip_id": "08_000000_000020_s5",
+    "seed": 1,
+    "delta_from_histogram": [
+      -2,
+      -9,
+      2,
+      9
+    ]
+  },
+  {
+    "clip_id": "08_000000_000020_s5",
+    "seed": 2,
+    "delta_from_histogram": [
+      -1,
+      -7,
+      1,
+      7
+    ]
+  },
+  {
+    "clip_id": "08_002025_002045_s5",
+    "seed": 0,
+    "delta_from_histogram": [
+      4,
+      -8,
+      -4,
+      8
+    ]
+  },
+  {
+    "clip_id": "08_002025_002045_s5",
+    "seed": 1,
+    "delta_from_histogram": [
+      2,
+      0,
+      -2,
+      0
+    ]
+  },
+  {
+    "clip_id": "08_002025_002045_s5",
+    "seed": 2,
+    "delta_from_histogram": [
+      -2,
+      1,
+      2,
+      -1
+    ]
+  },
+  {
+    "clip_id": "08_004050_004070_s5",
+    "seed": 0,
+    "delta_from_histogram": [
+      0,
+      2,
+      0,
+      -2
+    ]
+  },
+  {
+    "clip_id": "08_004050_004070_s5",
+    "seed": 1,
+    "delta_from_histogram": [
+      0,
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "clip_id": "08_004050_004070_s5",
+    "seed": 2,
+    "delta_from_histogram": [
+      0,
+      4,
+      0,
+      -4
+    ]
+  }
+]

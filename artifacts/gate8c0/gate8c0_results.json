@@ -1,0 +1,283 @@
+{
+  "config": {
+    "seed": 0,
+    "sscbench_root": "/media/SSD1/MINH_DATASETS/sscbench_kitti360",
+    "kitti360_root": "/media/welf/MINH/datasets/kitti360/KITTI-360",
+    "train_drives": [
+      "2013_05_28_drive_0003_sync",
+      "2013_05_28_drive_0007_sync"
+    ],
+    "val_drive": "2013_05_28_drive_0010_sync",
+    "heldout_drive": "2013_05_28_drive_0006_sync",
+    "n_audit_anchors_per_partition": 3,
+    "histories": [
+      1,
+      5,
+      20,
+      0
+    ],
+    "future_frames": 20,
+    "memorize_steps": 2000,
+    "memorize_log_every": 50,
+    "memorize_batch": 4
+  },
+  "stages_present": {
+    "stage0_provenance": true,
+    "stage1_transforms": true,
+    "stage2_alignment": true,
+    "stage2b_target_consistency": true,
+    "stage3_temporal": true,
+    "stage4_factorization": true,
+    "stage5_cache_audit": true,
+    "stage6_memorize": true,
+    "stage7_channel_stats": true,
+    "hashes": true
+  },
+  "verdict": {
+    "outcome": "A: pipeline defect -- the KITTI-360 target as consumed is not geometrically consistent with its own LiDAR (the defect is in the published SSCBench release, not in our adapter)",
+    "our_transform_chain_is_correct": true,
+    "kitti360_target_is_geometrically_consistent": false,
+    "kitti360_sweep_vs_label_precision": 0.28815122873345933,
+    "semantickitti_sweep_vs_label_precision": 0.9832460638614263,
+    "offset_internal_to_published_release": true,
+    "fixed_batch_memorization_passes": true,
+    "gradients_healthy": true,
+    "information_collision": false,
+    "contradictory_targets": false,
+    "oracle_ceiling_all_past": {
+      "train": {
+        "precision": 0.2983284080583502,
+        "recall": 0.08655909572958344,
+        "iou": 0.0719175514070332,
+        "tp": 72887,
+        "fp": 171431,
+        "fn": 769162
+      },
+      "source_validation": {
+        "precision": 0.251570955496325,
+        "recall": 0.07333433790255364,
+        "iou": 0.060200352152828915,
+        "tp": 31147,
+        "fp": 92663,
+        "fn": 393579
+      },
+      "heldout": {
+        "precision": 0.2734958433140764,
+        "recall": 0.06879530826158048,
+        "iou": 0.05816578497338938,
+        "tp": 29115,
+        "fp": 77340,
+        "fn": 394097
+      }
+    },
+    "stage7_authorised": false,
+    "stage7_gate_reason": "Stage 7 requires Stages 1-6 to show correct alignment; the KITTI-360 target is not geometrically consistent with its own LiDAR, so the experiment would measure the defect, not learnability."
+  },
+  "headline": {
+    "ours_vs_official_bin_zero_shift": {
+      "precision": 0.6004423202517366,
+      "recall": 0.9989628349178911,
+      "iou": 0.6000682350847005,
+      "tp": 40453,
+      "fp": 26919,
+      "fn": 42
+    },
+    "official_bin_vs_official_label": {
+      "(0, 0, 0)": {
+        "precision": 0.29828246632892624,
+        "recall": 0.02067159565194308,
+        "iou": 0.01971294554196718,
+        "tp": 12070,
+        "fp": 28395,
+        "fn": 571823
+      },
+      "(0, 0, 1)": {
+        "precision": 0.6187026332691072,
+        "recall": 0.041245570678189326,
+        "iou": 0.04022313711408219,
+        "tp": 24083,
+        "fp": 14842,
+        "fn": 559810
+      }
+    },
+    "semantickitti_sweep_vs_label": {
+      "(0, 0, 0)": {
+        "precision": 0.9832460638614263,
+        "recall": 0.11137107904386244,
+        "iou": 0.11116013070230583,
+        "tp": 109100,
+        "fp": 1859,
+        "fn": 870508
+      },
+      "(0, 0, 1)": {
+        "precision": 0.7142247348750735,
+        "recall": 0.07686237760410286,
+        "iou": 0.07456907010255166,
+        "tp": 75295,
+        "fp": 30127,
+        "fn": 904313
+      }
+    },
+    "oracle_all_past": {
+      "train": {
+        "precision": 0.2983284080583502,
+        "recall": 0.08655909572958344,
+        "iou": 0.0719175514070332,
+        "tp": 72887,
+        "fp": 171431,
+        "fn": 769162
+      },
+      "source_validation": {
+        "precision": 0.251570955496325,
+        "recall": 0.07333433790255364,
+        "iou": 0.060200352152828915,
+        "tp": 31147,
+        "fp": 92663,
+        "fn": 393579
+      },
+      "heldout": {
+        "precision": 0.2734958433140764,
+        "recall": 0.06879530826158048,
+        "iou": 0.05816578497338938,
+        "tp": 29115,
+        "fp": 77340,
+        "fn": 394097
+      }
+    },
+    "oracle_future_diagnostic": {
+      "train": {
+        "precision": 0.3334930109883141,
+        "recall": 0.34972311587567945,
+        "iou": 0.20584736130586315,
+        "tp": 294484,
+        "fp": 588545,
+        "fn": 547565
+      },
+      "source_validation": {
+        "precision": 0.27197618000533497,
+        "recall": 0.2664659097865447,
+        "iou": 0.15553023889884454,
+        "tp": 113175,
+        "fp": 302946,
+        "fn": 311551
+      },
+      "heldout": {
+        "precision": 0.2683938998394887,
+        "recall": 0.17344971314613009,
+        "iou": 0.1177686116151431,
+        "tp": 73406,
+        "fp": 200095,
+        "fn": 349806
+      }
+    },
+    "target_prevalence": {
+      "train": 0.2099636411804383,
+      "source_validation": 0.20113461255922718,
+      "heldout": 0.24484709098401372
+    },
+    "valid_fraction_of_grid": {
+      "train": 0.16484089692433676,
+      "source_validation": 0.16871023178100586,
+      "heldout": 0.1401801904042562
+    },
+    "factorization_20frame": {
+      "train": {
+        "gt_depth_gt_pose": {
+          "precision": 0.2446364028252147,
+          "recall": 0.09463914616312184,
+          "iou": 0.07323780073163347
+        },
+        "gt_depth_lb_pose": {
+          "precision": 0.2732472533695775,
+          "recall": 0.09284321522949432,
+          "iou": 0.07445719547135649
+        },
+        "lb_depth_gt_pose": {
+          "precision": 0.2291984886244875,
+          "recall": 0.009143212663878698,
+          "iou": 0.008870455874849099
+        },
+        "lb_depth_lb_pose": {
+          "precision": 0.19516444069049252,
+          "recall": 0.011856351181465993,
+          "iou": 0.011303667194599189
+        }
+      },
+      "source_validation": {
+        "gt_depth_gt_pose": {
+          "precision": 0.2872419687075426,
+          "recall": 0.12818473413826376,
+          "iou": 0.0972514183116774
+        },
+        "gt_depth_lb_pose": {
+          "precision": 0.19903072507410718,
+          "recall": 0.0827313740318669,
+          "iou": 0.06206684046034129
+        },
+        "lb_depth_gt_pose": {
+          "precision": 0.37701149425287356,
+          "recall": 0.023522048660912197,
+          "iou": 0.022641983056165674
+        },
+        "lb_depth_lb_pose": {
+          "precision": 0.2651456703038319,
+          "recall": 0.047050616736641716,
+          "iou": 0.04162293096487687
+        }
+      },
+      "heldout": {
+        "gt_depth_gt_pose": {
+          "precision": 0.3304265190899435,
+          "recall": 0.11474179375853301,
+          "iou": 0.09309589932854195
+        },
+        "gt_depth_lb_pose": {
+          "precision": 0.29848664993321294,
+          "recall": 0.13157809598374604,
+          "iou": 0.1004996565170333
+        },
+        "lb_depth_gt_pose": {
+          "precision": 0.41474302720439543,
+          "recall": 0.07033459077173934,
+          "iou": 0.06398408344419199
+        },
+        "lb_depth_lb_pose": {
+          "precision": 0.4204478889740008,
+          "recall": 0.060376455058978824,
+          "iou": 0.055737744087832795
+        }
+      }
+    },
+    "memorization": {
+      "memorization_passes": true,
+      "gradients_healthy": true,
+      "final_edit_ap": {
+        "A": 0.9822847701863872,
+        "B": 0.9972131230344884
+      },
+      "final_edit_best_iou": {
+        "A": 0.8518985791278785,
+        "B": 0.9577044231526447
+      },
+      "min_pairwise_input_l2": 147.6958465576172,
+      "max_pairwise_target_disagreement": 0.36656585335731506
+    }
+  },
+  "affected_artifacts": {
+    "kitti360_results_invalidated": [
+      "artifacts/gate5_2/* (all KITTI-360 occupancy scores)",
+      "artifacts/gate6/counts_kitti360_*.npz and summary_kitti360.json",
+      "artifacts/gate7a/* KITTI-360 reachability and envelopes",
+      "artifacts/gate7b/eval_kitti360_*.json",
+      "artifacts/gate8/eval_kitti360_*.json (Gate 8 held-out fold)",
+      "artifacts/gate8a/eval_kitti360_locked.json and its decision",
+      "artifacts/gate8b KITTI-360 fold (target), and the KITTI-360 source-validation half of both new folds' checkpoint/threshold selection"
+    ],
+    "unaffected": [
+      "every SemanticKITTI result (sweep-vs-label precision 0.983 at zero shift)",
+      "every Occ3D result",
+      "the transform chain, mapper, caches and causal separation (all verified here)"
+    ],
+    "note": "Gate 8B's SemanticKITTI failure is NOT explained by this defect and remains open."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "dataset": "semantickitti",
+  "n_segments": 1,
+  "n_frames": 815,
+  "n_abstained": 0,
+  "seconds": 4.0384461879730225,
+  "estimator": "G51-B per frame, 3xMAD clip, >=1000 valid pixels",
+  "root": "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/semantickitti"
+}

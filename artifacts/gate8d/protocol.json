@@ -1,0 +1,158 @@
+{
+  "baseline_gate8c1": {
+    "checkpoints": [
+      "artifacts/gate8c1/checkpoints/sky_seed0_last.pt",
+      "artifacts/gate8c1/checkpoints/sky_seed1_last.pt",
+      "artifacts/gate8c1/checkpoints/sky_seed2_last.pt"
+    ],
+    "hashes": {
+      "artifacts/gate8c1/checkpoints/sky_seed0_last.pt": "ea721b21a259bd00cfae2b699265423e96b7b370a2cf119bcdfcf6dc2df1ea69",
+      "artifacts/gate8c1/checkpoints/sky_seed1_last.pt": "47353eacfbf7d830e13ca286069e12172b44c8bba352f8c056683f96ac667181",
+      "artifacts/gate8c1/checkpoints/sky_seed2_last.pt": "325d8783b9370f5c27a80999473aae2fdfabb54dd18c0591a9ca37e93de79c70",
+      "artifacts/gate8c1/frozen_manifest_sky.json": "61d7a1883c46a251357d44408b9b7a57ba372517a27de5d77a99740f05dc5284"
+    },
+    "manifest": "artifacts/gate8c1/frozen_manifest_sky.json",
+    "reported": {
+      "occ3d_causal_seed0": 33.28,
+      "occ3d_matched_forward_seed0": 30.7,
+      "rejected_variant": "neighbourhood height propagation (sky2) -- Occ3D 28.12, must remain rejected",
+      "semantickitti_sc_iou_seeds": [
+        22.61,
+        23.79,
+        22.83
+      ]
+    }
+  },
+  "claim": "KITTI-360-only training with no target-domain optimisation, fine-tuning, threshold calibration or checkpoint selection. SemanticKITTI and Occ3D have been inspected during earlier development, so they are NOT historically untouched.",
+  "code_commit": "9a648322e6dc4e34995f0530650c2fa469779676",
+  "frozen_at": "2026-09-05T20:59:59+02:00",
+  "gate": "8D",
+  "protocol": {
+    "ARCH": {
+      "base": "gate8.net.CompletionUNet",
+      "extra_outputs": {
+        "surface_distance_m": 1
+      },
+      "padding_mode": "replicate",
+      "semantic_head": "existing open-vocabulary logits, unchanged readout",
+      "width": 24
+    },
+    "BAND_HALF_M": 0.2,
+    "BATCH_SIZE": 4,
+    "CARVE_DECIMATION": 4,
+    "CARVE_NEAR_M": 1.0,
+    "CROP": [
+      128,
+      128,
+      32
+    ],
+    "EVAL_PROTOCOLS": [
+      "past5_causal",
+      "stream_all_past_causal",
+      "occany_fwd_non_causal"
+    ],
+    "FUTURE_STREAM_FRAMES": 20,
+    "GATE": "8D",
+    "IMAGE_EVIDENCE_NATIVE_STRIDE": 5,
+    "LR": 0.001,
+    "MIN_OCC_FRAMES": 1,
+    "MOGE_MARGIN_DEPTH_BINS_M": [
+      0.0,
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      30.0,
+      40.0,
+      1000000000.0
+    ],
+    "MOGE_MARGIN_QUANTILE": 0.95,
+    "MOGE_MAX_DEPTH_M": 40.0,
+    "MOGE_MIN_MARGIN_M": 0.4,
+    "MOGE_MIN_VIEWS": 2,
+    "MOGE_PIXEL_STRIDE": 4,
+    "NATIVE_STRIDE": 1,
+    "PRECEDENCE": [
+      "lidar_endpoint_occupied",
+      "lidar_interior_free",
+      "weighted_pseudo_free",
+      "conflict_unknown",
+      "no_evidence_unknown"
+    ],
+    "PSEUDO_FREE_MIN_WEIGHT": 2.0,
+    "SEEDS": [
+      0,
+      1,
+      2
+    ],
+    "SELECTION_SCORE": {
+      "calibration_ece_penalty": 0.05,
+      "completed_semantic_accuracy": 0.05,
+      "mean_stress_sc_iou": 0.35,
+      "note": "source AUROC is deliberately NOT the selection criterion: the Gate 8C-1 neighbourhood experiment raised source AUROC 0.68 -> 0.74 while Occ3D IoU fell 33.28 -> 28.12, so source ranking alone is not a transfer proxy.",
+      "semantic_teacher_agreement": 0.1,
+      "surface_thickness_penalty": 0.05,
+      "volume_ratio_penalty": 0.15,
+      "worst_stress_sc_iou": 0.25
+    },
+    "SEM_MIN_TEACHER_PROB": 0.5,
+    "SEM_MIN_VIEWS": 2,
+    "SKY_CACHE_STRIDE": 2,
+    "SKY_MIN_PROB": 0.8,
+    "SKY_MIN_VIEWS": 3,
+    "SKY_PIXEL_STRIDE": 4,
+    "SKY_PROMPT": "sky",
+    "STEPS": 6000,
+    "STRESS": {
+      "fov_scale": [
+        1.0,
+        0.9
+      ],
+      "history_frames": [
+        5,
+        10,
+        20
+      ],
+      "lidar_beam_keep": [
+        1.0,
+        0.5
+      ],
+      "scale_noise_log": [
+        0.0,
+        0.05
+      ],
+      "voxel_size_m": [
+        0.15,
+        0.2,
+        0.3,
+        0.45
+      ]
+    },
+    "SUCCESS": {
+      "max_pred_over_gt_volume": 1.6,
+      "must_improve_completed_naming_accuracy": true,
+      "must_improve_ssc_miou_over": [
+        "gate8c1_plain_column",
+        "mapper_dilate"
+      ],
+      "occ3d_matched_forward_sc_iou_min": 30.0,
+      "semantickitti_sc_iou_min": 25.28,
+      "semantickitti_sc_iou_stretch": 25.91
+    },
+    "TARGET_ACCEPTANCE": {
+      "max_pseudo_free_collision_rate": 0.02,
+      "min_occupied_recall_vs_gate8c1": 0.98,
+      "note": "collision = a voxel called free by MoGe/sky evidence that a held-out later LiDAR sweep -- one not used to build that target -- reports as an endpoint"
+    },
+    "TRAIN_DRIVES": [
+      "2013_05_28_drive_0003_sync",
+      "2013_05_28_drive_0007_sync",
+      "2013_05_28_drive_0010_sync"
+    ],
+    "TUDF_LOSS_WEIGHT": 0.25,
+    "TUDF_TRUNCATION_M": 1.0,
+    "VAL_DRIVE": "2013_05_28_drive_0006_sync",
+    "WEIGHT_DECAY": 0.01,
+    "protocol_source_sha256": "3191b73e7a7a1483bebe9d4d2a14cddaec93067cf0189d4a5faebb41666913a9"
+  }
+}

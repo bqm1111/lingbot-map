@@ -1,0 +1,218 @@
+{
+  "provenance": {
+    "tool": "voxel_gate_validation.train",
+    "git_commit": "9a648322e6dc4e34995f0530650c2fa469779676",
+    "git_dirty_files": [
+      "M lingbot_map/models/gct_stream.py",
+      " M research/sem_bypass/model.py",
+      "?? artifacts/",
+      "?? configs/depth_gate/",
+      "?? configs/scale_gate/",
+      "?? configs/voxel_gate/",
+      "?? configs/voxel_gate_validation/",
+      "?? depth_gate/",
+      "?? lingbot_map_scale_claude_code_plan.md",
+      "?? reports/",
+      "?? scale_gate/",
+      "?? scripts/export_occupancy_3d.py",
+      "?? scripts/make_occupancy_ceiling_figure.py",
+      "?? scripts/make_scene_completion_honest_figure.py",
+      "?? tests/depth_gate/",
+      "?? tests/scale_gate/",
+      "?? tests/voxel_gate/",
+      "?? tests/voxel_gate_validation/",
+      "?? tools/__init__.py",
+      "?? tools/check_ddad_layout.py",
+      "?? tools/check_vkitti2_layout.py",
+      "?? tools/depth_gate/",
+      "?? tools/geometry_gate/",
+      "?? tools/scale_gate/",
+      "?? tools/voxel_gate/",
+      "?? tools/voxel_gate_validation/",
+      "?? voxel_gate/",
+      "?? voxel_gate_validation/"
+    ],
+    "python": "3.10.19",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.7.1+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "seed": 0,
+    "config_hash": "d2faead637e3a190",
+    "checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+    "checkpoint_sha256": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72",
+    "argv": [
+      "tools/voxel_gate_validation/train_clean.py",
+      "--run",
+      "full_s2",
+      "--geometry",
+      "c3",
+      "--seed",
+      "2"
+    ]
+  },
+  "run": "full_s2",
+  "geometry": "c3",
+  "seed": 2,
+  "occ_only": false,
+  "n_params": 16577,
+  "radius": 3,
+  "threshold": 0.45,
+  "pos_weight": 3.4100350268328365,
+  "norm": {
+    "log1p_count_mean": 1.5393370964929352,
+    "log1p_count_std": 0.8127120789136827,
+    "n_frames_mean": 1.4071761583615872,
+    "n_frames_std": 0.7305986870013458,
+    "mean_confidence_mean": 5.035131921312314,
+    "mean_confidence_std": 4.435878560412953,
+    "mean_point_depth_mean": 21.215379334851914,
+    "mean_point_depth_std": 9.755683632444823,
+    "n_clips": 652
+  },
+  "best_epoch": 18,
+  "select_iou": 0.20318696447133672,
+  "peak_gpu_gib": 1.2367911338806152,
+  "train_seconds": 626.337744474411,
+  "n_epochs_run": 20,
+  "n_train_clips": 652,
+  "n_select_clips": 111,
+  "source_train_sequences": [
+    "00",
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07"
+  ],
+  "source_select_sequences": [
+    "09",
+    "10"
+  ],
+  "sequence_08_used_in_training": false,
+  "region_intersects_valid_mask": false,
+  "history": [
+    {
+      "epoch": 0,
+      "train_loss": 1.4888335868624822,
+      "select_iou": 0.18569004770467695,
+      "epoch_s": 31.462114810943604
+    },
+    {
+      "epoch": 1,
+      "train_loss": 1.283213345551052,
+      "select_iou": 0.18526884322077844,
+      "epoch_s": 31.108786582946777
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.2351654275246193,
+      "select_iou": 0.18899181489031555,
+      "epoch_s": 31.115347385406494
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.1879034721595378,
+      "select_iou": 0.195321789894094,
+      "epoch_s": 31.145271062850952
+    },
+    {
+      "epoch": 4,
+      "train_loss": 1.1564909890751165,
+      "select_iou": 0.18603626188919667,
+      "epoch_s": 31.12743592262268
+    },
+    {
+      "epoch": 5,
+      "train_loss": 1.1277950805571912,
+      "select_iou": 0.1973439559430621,
+      "epoch_s": 31.14039921760559
+    },
+    {
+      "epoch": 6,
+      "train_loss": 1.109833008672562,
+      "select_iou": 0.1900212588299903,
+      "epoch_s": 31.105973958969116
+    },
+    {
+      "epoch": 7,
+      "train_loss": 1.0930341324009047,
+      "select_iou": 0.19230553591886257,
+      "epoch_s": 31.16070318222046
+    },
+    {
+      "epoch": 8,
+      "train_loss": 1.0864115914135624,
+      "select_iou": 0.19449023181508032,
+      "epoch_s": 31.164340019226074
+    },
+    {
+      "epoch": 9,
+      "train_loss": 1.0754860792240482,
+      "select_iou": 0.1975369853615147,
+      "epoch_s": 31.167133808135986
+    },
+    {
+      "epoch": 10,
+      "train_loss": 1.0673877387507562,
+      "select_iou": 0.19504445282776928,
+      "epoch_s": 31.141415119171143
+    },
+    {
+      "epoch": 11,
+      "train_loss": 1.0633523282280728,
+      "select_iou": 0.19750214553243703,
+      "epoch_s": 31.193274974822998
+    },
+    {
+      "epoch": 12,
+      "train_loss": 1.057889503661109,
+      "select_iou": 0.19951222245605812,
+      "epoch_s": 31.142207145690918
+    },
+    {
+      "epoch": 13,
+      "train_loss": 1.057383702028017,
+      "select_iou": 0.19804679066035988,
+      "epoch_s": 31.143227577209473
+    },
+    {
+      "epoch": 14,
+      "train_loss": 1.0511982088074363,
+      "select_iou": 0.1931065130217774,
+      "epoch_s": 31.159574031829834
+    },
+    {
+      "epoch": 15,
+      "train_loss": 1.047933077611075,
+      "select_iou": 0.20187376261899184,
+      "epoch_s": 31.166965007781982
+    },
+    {
+      "epoch": 16,
+      "train_loss": 1.0462503371063185,
+      "select_iou": 0.20121155348834088,
+      "epoch_s": 31.056912422180176
+    },
+    {
+      "epoch": 17,
+      "train_loss": 1.0450310176866917,
+      "select_iou": 0.2012007437688312,
+      "epoch_s": 31.11896538734436
+    },
+    {
+      "epoch": 18,
+      "train_loss": 1.044237270402762,
+      "select_iou": 0.20318696447133672,
+      "epoch_s": 31.20564341545105
+    },
+    {
+      "epoch": 19,
+      "train_loss": 1.0414760180411895,
+      "select_iou": 0.1978148089944885,
+      "epoch_s": 31.181276321411133
+    }
+  ]
+}

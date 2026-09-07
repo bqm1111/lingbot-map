@@ -1,0 +1,1092 @@
+{
+  "val_drive": "2013_05_28_drive_0006_sync",
+  "n_val_samples": 590,
+  "seeds": {
+    "0": {
+      "candidates": {
+        "best": {
+          "full": {
+            "average_precision": 0.11081472063684779,
+            "auroc": 0.6311869734164575,
+            "prevalence": 0.06801544657124205,
+            "best_threshold": -0.21875,
+            "best_iou": 0.10318541531825612,
+            "at_zero": {
+              "threshold": 0.0,
+              "tp": 4143109,
+              "fp": 23188761,
+              "fn": 14051015,
+              "iou": 0.10011648535378817,
+              "precision": 0.15158527389454143,
+              "recall": 0.2277168716669184,
+              "density": 0.10217525964301076,
+              "pred_over_gt": 1.5022361065583592
+            },
+            "ap_over_prevalence": 1.6292581497759646
+          },
+          "edit": {
+            "average_precision": 0.12046968215114437,
+            "auroc": 0.6311253852177933,
+            "prevalence": 0.06750800209216444,
+            "best_threshold": -0.21875,
+            "best_iou": 0.10191384896081238,
+            "at_zero": {
+              "threshold": 0.0,
+              "tp": 3498238,
+              "fp": 18448244,
+              "fn": 13748120,
+              "iou": 0.09800467869063227,
+              "precision": 0.1593985769564343,
+              "recall": 0.20283923133220358,
+              "density": 0.0859058563420549,
+              "pred_over_gt": 1.272528495581502
+            },
+            "ap_over_prevalence": 1.7845244773601012
+          },
+          "semantic_consistency_curve": [
+            {
+              "tau": 0.0,
+              "coverage": 1.0,
+              "agreement": 0.40718279551515973,
+              "score": 0.40718279551515973
+            },
+            {
+              "tau": 0.05,
+              "coverage": 1.0,
+              "agreement": 0.40718279551515973,
+              "score": 0.40718279551515973
+            },
+            {
+              "tau": 0.1,
+              "coverage": 0.9999962787584781,
+              "agreement": 0.407184172922051,
+              "score": 0.40718265769139966
+            },
+            {
+              "tau": 0.15,
+              "coverage": 0.996249539840921,
+              "agreement": 0.4081935623373869,
+              "score": 0.406662648644648
+            },
+            {
+              "tau": 0.2,
+              "coverage": 0.9511424418208008,
+              "agreement": 0.41844953377335664,
+              "score": 0.3980051113319661
+            },
+            {
+              "tau": 0.25,
+              "coverage": 0.8783990612548054,
+              "agreement": 0.4322180642833047,
+              "score": 0.379659941923824
+            },
+            {
+              "tau": 0.3,
+              "coverage": 0.7903616536811418,
+              "agreement": 0.443818921762737,
+              "score": 0.3507774569393781
+            },
+            {
+              "tau": 0.35,
+              "coverage": 0.6515700951659281,
+              "agreement": 0.46661977849038405,
+              "score": 0.3040354934772838
+            },
+            {
+              "tau": 0.4,
+              "coverage": 0.5080263734034324,
+              "agreement": 0.4864695563661776,
+              "score": 0.24713936449188584
+            },
+            {
+              "tau": 0.45,
+              "coverage": 0.3869854125954102,
+              "agreement": 0.501850896849807,
+              "score": 0.1942089763787992
+            },
+            {
+              "tau": 0.5,
+              "coverage": 0.27736301248559225,
+              "agreement": 0.5119995706719233,
+              "score": 0.1420097433128945
+            },
+            {
+              "tau": 0.55,
+              "coverage": 0.17705460425767916,
+              "agreement": 0.5270304247476929,
+              "score": 0.09331316328545933
+            },
+            {
+              "tau": 0.6,
+              "coverage": 0.10417229734153127,
+              "agreement": 0.5745299581788137,
+              "score": 0.059850105635020905
+            },
+            {
+              "tau": 0.65,
+              "coverage": 0.06422917996378819,
+              "agreement": 0.5932269582682437,
+              "score": 0.038102481061981684
+            },
+            {
+              "tau": 0.7,
+              "coverage": 0.03699837492004499,
+              "agreement": 0.561544736949938,
+              "score": 0.02077624271205185
+            },
+            {
+              "tau": 0.75,
+              "coverage": 0.02211368447979042,
+              "agreement": 0.5274822529277216,
+              "score": 0.01166457610993264
+            },
+            {
+              "tau": 0.8,
+              "coverage": 0.0031426573771614727,
+              "agreement": 0.7654591702482239,
+              "score": 0.00240557590829648
+            },
+            {
+              "tau": 0.85,
+              "coverage": 0.0002687563321403768,
+              "agreement": 0.7523076923076923,
+              "score": 0.00020218745602560657
+            },
+            {
+              "tau": 0.9,
+              "coverage": 1.667667496871056e-05,
+              "agreement": 0.628099173553719,
+              "score": 1.0474605765471096e-05
+            },
+            {
+              "tau": 0.95,
+              "coverage": 3.032122721583738e-06,
+              "agreement": 0.8636363636363636,
+              "score": 2.618651441367774e-06
+            }
+          ],
+          "semantic_threshold": {
+            "tau": 0.0,
+            "coverage": 1.0,
+            "agreement": 0.40718279551515973,
+            "score": 0.40718279551515973
+          },
+          "checkpoint": "artifacts/gate8c1/checkpoints/seed0_best.pt",
+          "checkpoint_sha256": "361ca58479a152d96571460eb0192808a49349d1caa3cf7a08849ccbb5734cdc"
+        },
+        "last": {
+          "full": {
+            "average_precision": 0.11471620878094327,
+            "auroc": 0.633603353877123,
+            "prevalence": 0.06801544657124205,
+            "best_threshold": -0.125,
+            "best_iou": 0.10703704819534747,
+            "at_zero": {
+              "threshold": 0.0,
+              "tp": 4252680,
+              "fp": 22263036,
+              "fn": 13941444,
+              "iou": 0.10511563342557906,
+              "precision": 0.16038337414686446,
+              "recall": 0.23373920063422673,
+              "density": 0.0991242153178811,
+              "pred_over_gt": 1.4573779974237837
+            },
+            "ap_over_prevalence": 1.6866199453793929
+          },
+          "edit": {
+            "average_precision": 0.1301841083307755,
+            "auroc": 0.6336576202732979,
+            "prevalence": 0.06750800209216444,
+            "best_threshold": -0.125,
+            "best_iou": 0.10611569595879838,
+            "at_zero": {
+              "threshold": 0.0,
+              "tp": 3607809,
+              "fp": 17522519,
+              "fn": 13638549,
+              "iou": 0.10376547393233322,
+              "precision": 0.17074079493702132,
+              "recall": 0.20919251473267572,
+              "density": 0.08271115715167927,
+              "pred_over_gt": 1.2252052288373
+            },
+            "ap_over_prevalence": 1.9284248429251885
+          },
+          "semantic_consistency_curve": [
+            {
+              "tau": 0.0,
+              "coverage": 1.0,
+              "agreement": 0.4023643390392829,
+              "score": 0.4023643390392829
+            },
+            {
+              "tau": 0.05,
+              "coverage": 1.0,
+              "agreement": 0.4023643390392829,
+              "score": 0.4023643390392829
+            },
+            {
+              "tau": 0.1,
+              "coverage": 0.9999995865287198,
+              "agreement": 0.402364367581633,
+              "score": 0.40236420121552285
+            },
+            {
+              "tau": 0.15,
+              "coverage": 0.9990967030764882,
+              "agreement": 0.40260755523901004,
+              "score": 0.40224388107298004
+            },
+            {
+              "tau": 0.2,
+              "coverage": 0.9634848351827674,
+              "agreement": 0.4108594530277503,
+              "score": 0.3958568523837239
+            },
+            {
+              "tau": 0.25,
+              "coverage": 0.8771122008070132,
+              "agreement": 0.4269739863824917,
+              "score": 0.37450409288329095
+            },
+            {
+              "tau": 0.3,
+              "coverage": 0.7760483805501456,
+              "agreement": 0.44153173744789753,
+              "score": 0.34264998980793293
+            },
+            {
+              "tau": 0.35,
+              "coverage": 0.6521369642911041,
+              "agreement": 0.4606611657229906,
+              "score": 0.3004141741813923
+            },
+            {
+              "tau": 0.4,
+              "coverage": 0.5142730975049351,
+              "agreement": 0.48190857971657686,
+              "score": 0.2478326180050479
+            },
+            {
+              "tau": 0.45,
+              "coverage": 0.38020434577610834,
+              "agreement": 0.5036168354764888,
+              "score": 0.19147730945417243
+            },
+            {
+              "tau": 0.5,
+              "coverage": 0.26660945142973547,
+              "agreement": 0.5160039970575205,
+              "score": 0.1375715425910564
+            },
+            {
+              "tau": 0.55,
+              "coverage": 0.1709578324071347,
+              "agreement": 0.5329234147769002,
+              "score": 0.09110743182926723
+            },
+            {
+              "tau": 0.6,
+              "coverage": 0.1003939967829178,
+              "agreement": 0.5640445180890774,
+              "score": 0.05662668353445726
+            },
+            {
+              "tau": 0.65,
+              "coverage": 0.05902219830826847,
+              "agreement": 0.5964403470918448,
+              "score": 0.03520322044510734
+            },
+            {
+              "tau": 0.7,
+              "coverage": 0.032758089117670204,
+              "agreement": 0.5982304012520984,
+              "score": 0.019596884797115844
+            },
+            {
+              "tau": 0.75,
+              "coverage": 0.018091711513369663,
+              "agreement": 0.5949172297683347,
+              "score": 0.010763070895301766
+            },
+            {
+              "tau": 0.8,
+              "coverage": 0.006432372706319757,
+              "agreement": 0.6777227828844464,
+              "score": 0.004359365531076983
+            },
+            {
+              "tau": 0.85,
+              "coverage": 0.0016350032657339948,
+              "agreement": 0.6973784034392649,
+              "score": 0.0011402159670755576
+            },
+            {
+              "tau": 0.9,
+              "coverage": 0.00027440710630332834,
+              "agreement": 0.5821195379206429,
+              "score": 0.0001597377379234342
+            },
+            {
+              "tau": 0.95,
+              "coverage": 4.148495178166842e-05,
+              "agreement": 0.46511627906976744,
+              "score": 1.9295326410078332e-05
+            }
+          ],
+          "semantic_threshold": {
+            "tau": 0.0,
+            "coverage": 1.0,
+            "agreement": 0.4023643390392829,
+            "score": 0.4023643390392829
+          },
+          "checkpoint": "artifacts/gate8c1/checkpoints/seed0_last.pt",
+          "checkpoint_sha256": "5227c672012024786561e615b755edd938d551e62d05ad52d2ad23813825e7d0"
+        }
+      },
+      "selected": "last",
+      "checkpoint": "artifacts/gate8c1/checkpoints/seed0_last.pt",
+      "checkpoint_sha256": "5227c672012024786561e615b755edd938d551e62d05ad52d2ad23813825e7d0",
+      "source_ap": 0.11471620878094327,
+      "source_ap_over_prevalence": 1.6866199453793929,
+      "source_auroc": 0.633603353877123,
+      "occupancy_threshold": -0.125,
+      "source_iou_at_threshold": 0.10703704819534747,
+      "semantic_threshold": 0.0,
+      "semantic_agreement_at_threshold": 0.4023643390392829,
+      "semantic_coverage_at_threshold": 1.0
+    },
+    "1": {
+      "candidates": {
+        "best": {
+          "full": {
+            "average_precision": 0.10586352749798414,
+            "auroc": 0.6165401354556246,
+            "prevalence": 0.06801544657124205,
+            "best_threshold": -0.1875,
+            "best_iou": 0.10209582710592169,
+            "at_zero": {
+              "threshold": 0.0,
+              "tp": 3757786,
+              "fp": 20620968,
+              "fn": 14436338,
+              "iou": 0.09681249757182077,
+              "precision": 0.15414184006286785,
+              "recall": 0.20653844065259752,
+              "density": 0.0911355688331273,
+              "pred_over_gt": 1.3399245822442454
+            },
+            "ap_over_prevalence": 1.5564630217798912
+          },
+          "edit": {
+            "average_precision": 0.11049366087603625,
+            "auroc": 0.6150254025847635,
+            "prevalence": 0.06750800209216444,
+            "best_threshold": -0.1875,
+            "best_iou": 0.10052602462282816,
+            "at_zero": {
+              "threshold": 0.0,
+              "tp": 3112915,
+              "fp": 15880451,
+              "fn": 14133443,
+              "iou": 0.09396966064555146,
+              "precision": 0.16389485676209262,
+              "recall": 0.18049694897902502,
+              "density": 0.07434637456008075,
+              "pred_over_gt": 1.101297213011582
+            },
+            "ap_over_prevalence": 1.6367490882812112
+          },
+          "semantic_consistency_curve": [
+            {
+              "tau": 0.0,
+              "coverage": 1.0,
+              "agreement": 0.41306277059111096,
+              "score": 0.41306277059111096
+            },
+            {
+              "tau": 0.05,
+              "coverage": 1.0,
+              "agreement": 0.41306277059111096,
+              "score": 0.41306277059111096
+            },
+            {
+              "tau": 0.1,
+              "coverage": 0.9999968300535184,
+              "agreement": 0.413064079982138,
+              "score": 0.41306277059111096
+            },
+            {
+              "tau": 0.15,
+              "coverage": 0.9994214158552178,
+              "agreement": 0.41323860278882346,
+              "score": 0.4129995094852379
+            },
+            {
+              "tau": 0.2,
+              "coverage": 0.9835405352771629,
+              "agreement": 0.4170547456573292,
+              "score": 0.41019024778369056
+            },
+            {
+              "tau": 0.25,
+              "coverage": 0.9379622178213565,
+              "agreement": 0.42432017308305214,
+              "score": 0.3979962906113214
+            },
+            {
+              "tau": 0.3,
+              "coverage": 0.8592496902066433,
+              "agreement": 0.4332214970176002,
+              "score": 0.3722454371032312
+            },
+            {
+              "tau": 0.35,
+              "coverage": 0.6845711675726052,
+              "agreement": 0.45876629050429596,
+              "score": 0.31405817513347883
+            },
+            {
+              "tau": 0.4,
+              "coverage": 0.5216709256505592,
+              "agreement": 0.4854274359864499,
+              "score": 0.2532333798672289
+            },
+            {
+              "tau": 0.45,
+              "coverage": 0.3483846986407683,
+              "agreement": 0.5245816940328474,
+              "score": 0.18275623538809727
+            },
+            {
+              "tau": 0.5,
+              "coverage": 0.2167948450605963,
+              "agreement": 0.5557748129989714,
+              "score": 0.12048911447269388
+            },
+            {
+              "tau": 0.55,
+              "coverage": 0.1335393706663903,
+              "agreement": 0.5627620201586518,
+              "score": 0.07515088600693282
+            },
+            {
+              "tau": 0.6,
+              "coverage": 0.07796703889648374,
+              "agreement": 0.55771865349363,
+              "score": 0.04348367195023239
+            },
+            {
+              "tau": 0.65,
+              "coverage": 0.04587009035587886,
+              "agreement": 0.5232995910665621,
+              "score": 0.024003799525417664
+            },
+            {
+              "tau": 0.7,
+              "coverage": 0.017082428118362494,
+              "agreement": 0.4772881301232815,
+              "score": 0.0081532401745786
+            },
+            {
+              "tau": 0.75,
+              "coverage": 0.012688882294787656,
+              "agreement": 0.42591184584971653,
+              "score": 0.005404345279942798
+            },
+            {
+              "tau": 0.8,
+              "coverage": 0.010179111623876753,
+              "agreement": 0.41751516464471405,
+              "score": 0.004249933465579826
+            },
+            {
+              "tau": 0.85,
+              "coverage": 0.00790708693909003,
+              "agreement": 0.409876069791358,
+              "score": 0.0032409257180928005
+            },
+            {
+              "tau": 0.9,
+              "coverage": 0.0057214777518684425,
+              "agreement": 0.4129549779587117,
+              "score": 0.002362712718914092
+            },
+            {
+              "tau": 0.95,
+              "coverage": 0.003080361037608934,
+              "agreement": 0.40671140939597317,
+              "score": 0.001252817979054372
+            }
+          ],
+          "semantic_threshold": {
+            "tau": 0.0,
+            "coverage": 1.0,
+            "agreement": 0.41306277059111096,
+            "score": 0.41306277059111096
+          },
+          "checkpoint": "artifacts/gate8c1/checkpoints/seed1_best.pt",
+          "checkpoint_sha256": "f07003001277201dc6fb04622268125f616e50f7fed1c8b2546185a43c6e39f8"
+        },
+        "last": {
+          "full": {
+            "average_precision": 0.1127344292040128,
+            "auroc": 0.6332759242456261,
+            "prevalence": 0.06801544657124205,
+            "best_threshold": -0.09375,
+            "best_iou": 0.10567502242310534,
+            "at_zero": {
+              "threshold": 0.0,
+              "tp": 4407872,
+              "fp": 24414762,
+              "fn": 13786252,
+              "iou": 0.10344959499762561,
+              "precision": 0.15293092227448749,
+              "recall": 0.24226898750387763,
+              "density": 0.10774821161323649,
+              "pred_over_gt": 1.5841726702533192
+            },
+            "ap_over_prevalence": 1.6574827467453344
+          },
+          "edit": {
+            "average_precision": 0.12507891237129634,
+            "auroc": 0.6334563267742197,
+            "prevalence": 0.06750800209216444,
+            "best_threshold": -0.09375,
+            "best_iou": 0.10461593700003204,
+            "at_zero": {
+              "threshold": 0.0,
+              "tp": 3763001,
+              "fp": 19674245,
+              "fn": 13483357,
+              "iou": 0.10192143936544049,
+              "precision": 0.16055644933709362,
+              "recall": 0.21819105227897972,
+              "density": 0.09174120425904256,
+              "pred_over_gt": 1.3589678470086264
+            },
+            "ap_over_prevalence": 1.852801275329315
+          },
+          "semantic_consistency_curve": [
+            {
+              "tau": 0.0,
+              "coverage": 1.0,
+              "agreement": 0.41370626972688707,
+              "score": 0.41370626972688707
+            },
+            {
+              "tau": 0.05,
+              "coverage": 1.0,
+              "agreement": 0.41370626972688707,
+              "score": 0.41370626972688707
+            },
+            {
+              "tau": 0.1,
+              "coverage": 0.9999811181448701,
+              "agreement": 0.41371173836807523,
+              "score": 0.41370392672296585
+            },
+            {
+              "tau": 0.15,
+              "coverage": 0.9944547988372636,
+              "agreement": 0.4150378724199834,
+              "score": 0.41273640392726046
+            },
+            {
+              "tau": 0.2,
+              "coverage": 0.9408949696119283,
+              "agreement": 0.4267098572420042,
+              "score": 0.4014891581628258
+            },
+            {
+              "tau": 0.25,
+              "coverage": 0.8503517882563958,
+              "agreement": 0.44099782668911347,
+              "score": 0.37500329054227177
+            },
+            {
+              "tau": 0.3,
+              "coverage": 0.7430976138158948,
+              "agreement": 0.4538567129066774,
+              "score": 0.33725984037527756
+            },
+            {
+              "tau": 0.35,
+              "coverage": 0.6125178705732903,
+              "agreement": 0.4706749972042282,
+              "score": 0.2882968470196232
+            },
+            {
+              "tau": 0.4,
+              "coverage": 0.4691274088319946,
+              "agreement": 0.49327476386096686,
+              "score": 0.2314087118123094
+            },
+            {
+              "tau": 0.45,
+              "coverage": 0.3471044537334596,
+              "agreement": 0.5112699555999565,
+              "score": 0.17746407864885302
+            },
+            {
+              "tau": 0.5,
+              "coverage": 0.24598219620232142,
+              "agreement": 0.5303758098432337,
+              "score": 0.13046300651782344
+            },
+            {
+              "tau": 0.55,
+              "coverage": 0.15846190337644783,
+              "agreement": 0.5569001072413574,
+              "score": 0.08824745098401342
+            },
+            {
+              "tau": 0.6,
+              "coverage": 0.09316941310370425,
+              "agreement": 0.5943544712753179,
+              "score": 0.05537565726428382
+            },
+            {
+              "tau": 0.65,
+              "coverage": 0.05821234589408547,
+              "agreement": 0.597360595499659,
+              "score": 0.03477376160872303
+            },
+            {
+              "tau": 0.7,
+              "coverage": 0.029969914451413886,
+              "agreement": 0.621988401984815,
+              "score": 0.018640939197256536
+            },
+            {
+              "tau": 0.75,
+              "coverage": 0.01673607700930159,
+              "agreement": 0.6513493259546573,
+              "score": 0.010901032479133828
+            },
+            {
+              "tau": 0.8,
+              "coverage": 0.0073942447278621615,
+              "agreement": 0.7427213420316868,
+              "score": 0.00549186336758851
+            },
+            {
+              "tau": 0.85,
+              "coverage": 0.0032494707912172635,
+              "agreement": 0.7964965856555117,
+              "score": 0.0025881923903918647
+            },
+            {
+              "tau": 0.9,
+              "coverage": 0.00040988786245409263,
+              "agreement": 0.6724949562878278,
+              "score": 0.00027564752014397624
+            },
+            {
+              "tau": 0.95,
+              "coverage": 1.9433150170150324e-05,
+              "agreement": 0.5673758865248227,
+              "score": 1.102590080575905e-05
+            }
+          ],
+          "semantic_threshold": {
+            "tau": 0.0,
+            "coverage": 1.0,
+            "agreement": 0.41370626972688707,
+            "score": 0.41370626972688707
+          },
+          "checkpoint": "artifacts/gate8c1/checkpoints/seed1_last.pt",
+          "checkpoint_sha256": "13640b7664997abb90fce5da733a8ea60e1ed4b0b48e6a5dcb2a1b7132587752"
+        }
+      },
+      "selected": "last",
+      "checkpoint": "artifacts/gate8c1/checkpoints/seed1_last.pt",
+      "checkpoint_sha256": "13640b7664997abb90fce5da733a8ea60e1ed4b0b48e6a5dcb2a1b7132587752",
+      "source_ap": 0.1127344292040128,
+      "source_ap_over_prevalence": 1.6574827467453344,
+      "source_auroc": 0.6332759242456261,
+      "occupancy_threshold": -0.09375,
+      "source_iou_at_threshold": 0.10567502242310534,
+      "semantic_threshold": 0.0,
+      "semantic_agreement_at_threshold": 0.41370626972688707,
+      "semantic_coverage_at_threshold": 1.0
+    },
+    "2": {
+      "candidates": {
+        "best": {
+          "full": {
+            "average_precision": 0.10543492970168676,
+            "auroc": 0.6100917461048021,
+            "prevalence": 0.06801544657124205,
+            "best_threshold": -0.46875,
+            "best_iou": 0.10016751733625473,
+            "at_zero": {
+              "threshold": 0.0,
+              "tp": 3132759,
+              "fp": 16329354,
+              "fn": 15061365,
+              "iou": 0.09074285620933094,
+              "precision": 0.16096705429672514,
+              "recall": 0.17218520660846326,
+              "density": 0.07275559443889551,
+              "pred_over_gt": 1.069692225907661
+            },
+            "ap_over_prevalence": 1.5501615444257957
+          },
+          "edit": {
+            "average_precision": 0.1120048750728778,
+            "auroc": 0.6079041835579737,
+            "prevalence": 0.06750800209216444,
+            "best_threshold": -0.46875,
+            "best_iou": 0.09866977075365004,
+            "at_zero": {
+              "threshold": 0.0,
+              "tp": 2487888,
+              "fp": 11588837,
+              "fn": 14758470,
+              "iou": 0.08627956218086959,
+              "precision": 0.17673769999769123,
+              "recall": 0.14425584810427802,
+              "density": 0.05510100049823989,
+              "pred_over_gt": 0.8162143566775084
+            },
+            "ap_over_prevalence": 1.6591347929385405
+          },
+          "semantic_consistency_curve": [
+            {
+              "tau": 0.0,
+              "coverage": 1.0,
+              "agreement": 0.35121049919352426,
+              "score": 0.35121049919352426
+            },
+            {
+              "tau": 0.05,
+              "coverage": 1.0,
+              "agreement": 0.35121049919352426,
+              "score": 0.35121049919352426
+            },
+            {
+              "tau": 0.1,
+              "coverage": 0.9999921440456759,
+              "agreement": 0.3512105018119832,
+              "score": 0.35120774271832284
+            },
+            {
+              "tau": 0.15,
+              "coverage": 0.9985925437621449,
+              "agreement": 0.35145431652030085,
+              "score": 0.35095965995019324
+            },
+            {
+              "tau": 0.2,
+              "coverage": 0.9302825400863852,
+              "agreement": 0.3598934368109979,
+              "score": 0.3348025805569541
+            },
+            {
+              "tau": 0.25,
+              "coverage": 0.8449799693838299,
+              "agreement": 0.3695481866938036,
+              "score": 0.31226081547838
+            },
+            {
+              "tau": 0.3,
+              "coverage": 0.7316440458826323,
+              "agreement": 0.37608231101988715,
+              "score": 0.2751583836194807
+            },
+            {
+              "tau": 0.35,
+              "coverage": 0.5124429357949392,
+              "agreement": 0.3851587758596252,
+              "score": 0.19737189384869128
+            },
+            {
+              "tau": 0.4,
+              "coverage": 0.3764676679930366,
+              "agreement": 0.39397404004737296,
+              "score": 0.14831848810642972
+            },
+            {
+              "tau": 0.45,
+              "coverage": 0.27924678763825617,
+              "agreement": 0.41672363118579153,
+              "score": 0.11636873534158171
+            },
+            {
+              "tau": 0.5,
+              "coverage": 0.1972080213979657,
+              "agreement": 0.4596990224835083,
+              "score": 0.09065633466255162
+            },
+            {
+              "tau": 0.55,
+              "coverage": 0.13899925892164208,
+              "agreement": 0.5023296305807765,
+              "score": 0.06982344638511018
+            },
+            {
+              "tau": 0.6,
+              "coverage": 0.09506462762845416,
+              "agreement": 0.5539822110749469,
+              "score": 0.05266411260862753
+            },
+            {
+              "tau": 0.65,
+              "coverage": 0.06012782051156596,
+              "agreement": 0.5852530336996237,
+              "score": 0.03518998936414044
+            },
+            {
+              "tau": 0.7,
+              "coverage": 0.030955078688408456,
+              "agreement": 0.6192681178455826,
+              "score": 0.019169493317132608
+            },
+            {
+              "tau": 0.75,
+              "coverage": 0.005060750646083331,
+              "agreement": 0.7813121272365805,
+              "score": 0.0039540258527052665
+            },
+            {
+              "tau": 0.8,
+              "coverage": 0.0006833302024369171,
+              "agreement": 0.9435256151674062,
+              "score": 0.0006447395496167604
+            },
+            {
+              "tau": 0.85,
+              "coverage": 0.00016276986064501795,
+              "agreement": 0.9940728196443692,
+              "score": 0.00016180509432451405
+            },
+            {
+              "tau": 0.9,
+              "coverage": 2.7289104494253645e-05,
+              "agreement": 1.0,
+              "score": 2.7289104494253645e-05
+            },
+            {
+              "tau": 0.95,
+              "coverage": 0.0,
+              "agreement": 0.0,
+              "score": 0.0
+            }
+          ],
+          "semantic_threshold": {
+            "tau": 0.0,
+            "coverage": 1.0,
+            "agreement": 0.35121049919352426,
+            "score": 0.35121049919352426
+          },
+          "checkpoint": "artifacts/gate8c1/checkpoints/seed2_best.pt",
+          "checkpoint_sha256": "e489b7e4daa09b28ce8f97fa2677149c4ec6d7499f32e6911198c098717873bc"
+        },
+        "last": {
+          "full": {
+            "average_precision": 0.11318930591118381,
+            "auroc": 0.632310105522307,
+            "prevalence": 0.06801544657124205,
+            "best_threshold": -0.15625,
+            "best_iou": 0.10583533144419738,
+            "at_zero": {
+              "threshold": 0.0,
+              "tp": 4417114,
+              "fp": 24001273,
+              "fn": 13777010,
+              "iou": 0.10468236618321188,
+              "precision": 0.15543155211448137,
+              "recall": 0.2427769537021953,
+              "density": 0.10623700721394334,
+              "pred_over_gt": 1.561954123210329
+            },
+            "ap_over_prevalence": 1.6641705909057716
+          },
+          "edit": {
+            "average_precision": 0.12563860382968745,
+            "auroc": 0.6323917541299725,
+            "prevalence": 0.06750800209216444,
+            "best_threshold": -0.15625,
+            "best_iou": 0.10479285726936603,
+            "at_zero": {
+              "threshold": 0.0,
+              "tp": 3772243,
+              "fp": 19260756,
+              "fn": 13474115,
+              "iou": 0.1033289840440414,
+              "precision": 0.1637755899698515,
+              "recall": 0.21872693353576447,
+              "density": 0.09015884656231893,
+              "pred_over_gt": 1.3355282895090081
+            },
+            "ap_over_prevalence": 1.861092017775329
+          },
+          "semantic_consistency_curve": [
+            {
+              "tau": 0.0,
+              "coverage": 1.0,
+              "agreement": 0.39010064304431735,
+              "score": 0.39010064304431735
+            },
+            {
+              "tau": 0.05,
+              "coverage": 1.0,
+              "agreement": 0.39010064304431735,
+              "score": 0.39010064304431735
+            },
+            {
+              "tau": 0.1,
+              "coverage": 0.9999943492258371,
+              "agreement": 0.39010257177833074,
+              "score": 0.39010036739679727
+            },
+            {
+              "tau": 0.15,
+              "coverage": 0.9984562360634337,
+              "agreement": 0.3904175090365828,
+              "score": 0.38981479656592805
+            },
+            {
+              "tau": 0.2,
+              "coverage": 0.9300622977177901,
+              "agreement": 0.402850982484218,
+              "score": 0.37467651040714106
+            },
+            {
+              "tau": 0.25,
+              "coverage": 0.8367328712286423,
+              "agreement": 0.4161384343855702,
+              "score": 0.3481967070320301
+            },
+            {
+              "tau": 0.3,
+              "coverage": 0.7366458079594048,
+              "agreement": 0.42720837802597983,
+              "score": 0.3147012607979748
+            },
+            {
+              "tau": 0.35,
+              "coverage": 0.6096795280583678,
+              "agreement": 0.44387477487314114,
+              "score": 0.2706213632616709
+            },
+            {
+              "tau": 0.4,
+              "coverage": 0.45515483603589646,
+              "agreement": 0.475889501129619,
+              "score": 0.21660340785785628
+            },
+            {
+              "tau": 0.45,
+              "coverage": 0.3280701655249576,
+              "agreement": 0.5056747718832445,
+              "score": 0.1658968061135312
+            },
+            {
+              "tau": 0.5,
+              "coverage": 0.22829844301876484,
+              "agreement": 0.5502845841593961,
+              "score": 0.1256291137808186
+            },
+            {
+              "tau": 0.55,
+              "coverage": 0.16577910462242973,
+              "agreement": 0.5766972001124012,
+              "score": 0.09560434547289605
+            },
+            {
+              "tau": 0.6,
+              "coverage": 0.12345012013408047,
+              "agreement": 0.5893693271259671,
+              "score": 0.07275771423704282
+            },
+            {
+              "tau": 0.65,
+              "coverage": 0.08791074753815754,
+              "agreement": 0.5983892739504177,
+              "score": 0.05260484839179657
+            },
+            {
+              "tau": 0.7,
+              "coverage": 0.059527873683972596,
+              "agreement": 0.6149641247195616,
+              "score": 0.03660750673648083
+            },
+            {
+              "tau": 0.75,
+              "coverage": 0.03358875291962408,
+              "agreement": 0.6731785579463949,
+              "score": 0.0226112282536503
+            },
+            {
+              "tau": 0.8,
+              "coverage": 0.012746906097777963,
+              "agreement": 0.7371306237633397,
+              "score": 0.00939613484290779
+            },
+            {
+              "tau": 0.85,
+              "coverage": 0.003580661286670251,
+              "agreement": 0.7738645111624326,
+              "score": 0.002770946696247321
+            },
+            {
+              "tau": 0.9,
+              "coverage": 0.000359306542507673,
+              "agreement": 0.8200997314921366,
+              "score": 0.0002946671990339106
+            },
+            {
+              "tau": 0.95,
+              "coverage": 6.891188003599405e-07,
+              "agreement": 0.0,
+              "score": 0.0
+            }
+          ],
+          "semantic_threshold": {
+            "tau": 0.0,
+            "coverage": 1.0,
+            "agreement": 0.39010064304431735,
+            "score": 0.39010064304431735
+          },
+          "checkpoint": "artifacts/gate8c1/checkpoints/seed2_last.pt",
+          "checkpoint_sha256": "68e67f28a1e4b764d14d1bc7d0f256ef5dd5f5be82d826884ada83ace0f65a67"
+        }
+      },
+      "selected": "last",
+      "checkpoint": "artifacts/gate8c1/checkpoints/seed2_last.pt",
+      "checkpoint_sha256": "68e67f28a1e4b764d14d1bc7d0f256ef5dd5f5be82d826884ada83ace0f65a67",
+      "source_ap": 0.11318930591118381,
+      "source_ap_over_prevalence": 1.6641705909057716,
+      "source_auroc": 0.632310105522307,
+      "occupancy_threshold": -0.15625,
+      "source_iou_at_threshold": 0.10583533144419738,
+      "semantic_threshold": 0.0,
+      "semantic_agreement_at_threshold": 0.39010064304431735,
+      "semantic_coverage_at_threshold": 1.0
+    }
+  },
+  "rule": {
+    "checkpoint": "highest full-grid occupancy AP on KITTI-360 drive 0006",
+    "occupancy_threshold": "final-logit threshold maximising full-grid IoU on drive 0006",
+    "semantic_threshold": "maximises coverage x agreement with the frozen teacher on voxels where both halves of the future window agree; no human semantic label",
+    "forbidden": "SemanticKITTI and Occ3D/nuScenes are not read"
+  },
+  "firewall": {
+    "n_opened": 7092,
+    "n_unique": 596,
+    "violations": [],
+    "forbidden_patterns": [
+      "data/kitti/dataset",
+      "occ3d_gt",
+      "nuscenes",
+      "lingbot_occ3d_zeroshot",
+      "scale_gate/cache",
+      "preprocess/labels"
+    ],
+    "note": "selection ran inside a file-access audit; opening a SemanticKITTI / Occ3D / SSCBench-label path would have raised"
+  },
+  "seconds": 226.36026692390442
+}

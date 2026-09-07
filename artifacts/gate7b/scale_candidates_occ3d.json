@@ -1,0 +1,9 @@
+{
+  "dataset": "occ3d",
+  "n_segments": 150,
+  "n_frames": 5910,
+  "n_abstained": 21,
+  "seconds": 40.0152804851532,
+  "estimator": "G51-B per frame, 3xMAD clip, >=1000 valid pixels",
+  "root": "/media/SSD1/MINH_DATASETS/lingbot_gate7b/scale/occ3d"
+}

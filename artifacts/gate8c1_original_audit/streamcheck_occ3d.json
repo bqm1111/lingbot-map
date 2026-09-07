@@ -1,0 +1,86 @@
+{
+  "segment": "scene-0003",
+  "images": [
+    "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201470412460.jpg",
+    "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201470912460.jpg",
+    "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201471412477.jpg",
+    "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201471912460.jpg",
+    "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201472412460.jpg",
+    "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201472862460.jpg",
+    "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201473362460.jpg",
+    "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201473862460.jpg",
+    "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201474412460.jpg",
+    "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201474912460.jpg",
+    "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201475412460.jpg"
+  ],
+  "keyframe_interval": 1,
+  "checkpoint_load": {
+    "missing_keys": 0,
+    "unexpected_keys": 0
+  },
+  "normalization": false,
+  "prefix_9_vs_11": {
+    "pred_depth": {
+      "equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    },
+    "pred_depth_conf": {
+      "equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    },
+    "pred_pose_c2w": {
+      "equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    },
+    "pred_K": {
+      "equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    },
+    "pose_enc": {
+      "equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    }
+  },
+  "replay_vs_cache": {
+    "pred_depth": {
+      "equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    },
+    "pred_depth_conf": {
+      "equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    },
+    "pred_pose_c2w": {
+      "equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    },
+    "pred_K": {
+      "equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    },
+    "pose_enc": {
+      "equal": true,
+      "different_elements": 0,
+      "max_abs": 0.0,
+      "mean_abs": 0.0
+    }
+  }
+}

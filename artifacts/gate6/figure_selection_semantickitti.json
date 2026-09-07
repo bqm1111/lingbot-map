@@ -1,0 +1,22 @@
+{
+  "dataset": "semantickitti",
+  "rule": "percentiles [10, 50, 90] of the frozen B-D binary occupancy IoU",
+  "source": "artifacts/gate5_1/per_clip_kitti.csv",
+  "selected": [
+    {
+      "clip_id": "08_000475_000495_s5",
+      "percentile": 10,
+      "frozen_bd_iou": 0.11826406980443002
+    },
+    {
+      "clip_id": "08_003050_003070_s5",
+      "percentile": 50,
+      "frozen_bd_iou": 0.1552076906721321
+    },
+    {
+      "clip_id": "08_001725_001745_s5",
+      "percentile": 90,
+      "frozen_bd_iou": 0.20348286407605626
+    }
+  ]
+}

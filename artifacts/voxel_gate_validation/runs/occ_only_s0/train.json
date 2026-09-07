@@ -1,0 +1,153 @@
+{
+  "provenance": {
+    "tool": "voxel_gate_validation.train",
+    "git_commit": "9a648322e6dc4e34995f0530650c2fa469779676",
+    "git_dirty_files": [
+      "M lingbot_map/models/gct_stream.py",
+      " M research/sem_bypass/model.py",
+      "?? artifacts/",
+      "?? configs/depth_gate/",
+      "?? configs/scale_gate/",
+      "?? configs/voxel_gate/",
+      "?? configs/voxel_gate_validation/",
+      "?? depth_gate/",
+      "?? lingbot_map_scale_claude_code_plan.md",
+      "?? reports/",
+      "?? scale_gate/",
+      "?? scripts/export_occupancy_3d.py",
+      "?? scripts/make_occupancy_ceiling_figure.py",
+      "?? scripts/make_scene_completion_honest_figure.py",
+      "?? tests/depth_gate/",
+      "?? tests/scale_gate/",
+      "?? tests/voxel_gate/",
+      "?? tests/voxel_gate_validation/",
+      "?? tools/__init__.py",
+      "?? tools/check_ddad_layout.py",
+      "?? tools/check_vkitti2_layout.py",
+      "?? tools/depth_gate/",
+      "?? tools/geometry_gate/",
+      "?? tools/scale_gate/",
+      "?? tools/voxel_gate/",
+      "?? tools/voxel_gate_validation/",
+      "?? voxel_gate/",
+      "?? voxel_gate_validation/"
+    ],
+    "python": "3.10.19",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.7.1+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "seed": 0,
+    "config_hash": "d2faead637e3a190",
+    "checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+    "checkpoint_sha256": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72",
+    "argv": [
+      "tools/voxel_gate_validation/train_clean.py",
+      "--run",
+      "occ_only_s0",
+      "--geometry",
+      "c3",
+      "--seed",
+      "0",
+      "--occ-only"
+    ]
+  },
+  "run": "occ_only_s0",
+  "geometry": "c3",
+  "seed": 0,
+  "occ_only": true,
+  "n_params": 16577,
+  "radius": 3,
+  "threshold": 0.45,
+  "pos_weight": 3.4100350268328365,
+  "norm": {
+    "log1p_count_mean": 1.5393370964929352,
+    "log1p_count_std": 0.8127120789136827,
+    "n_frames_mean": 1.4071761583615872,
+    "n_frames_std": 0.7305986870013458,
+    "mean_confidence_mean": 5.035131921312314,
+    "mean_confidence_std": 4.435878560412953,
+    "mean_point_depth_mean": 21.215379334851914,
+    "mean_point_depth_std": 9.755683632444823,
+    "n_clips": 652
+  },
+  "best_epoch": 4,
+  "select_iou": 0.19306729604820774,
+  "peak_gpu_gib": 1.2367911338806152,
+  "train_seconds": 284.22772455215454,
+  "n_epochs_run": 9,
+  "n_train_clips": 652,
+  "n_select_clips": 111,
+  "source_train_sequences": [
+    "00",
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07"
+  ],
+  "source_select_sequences": [
+    "09",
+    "10"
+  ],
+  "sequence_08_used_in_training": false,
+  "region_intersects_valid_mask": false,
+  "history": [
+    {
+      "epoch": 0,
+      "train_loss": 1.372249834742283,
+      "select_iou": 0.1873159239682244,
+      "epoch_s": 31.646380186080933
+    },
+    {
+      "epoch": 1,
+      "train_loss": 1.1611184849878031,
+      "select_iou": 0.17843960735849457,
+      "epoch_s": 31.124470710754395
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.1418802863432587,
+      "select_iou": 0.19046986318061573,
+      "epoch_s": 31.149835348129272
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.1348751884845136,
+      "select_iou": 0.18744841489003292,
+      "epoch_s": 31.256883144378662
+    },
+    {
+      "epoch": 4,
+      "train_loss": 1.129594603839096,
+      "select_iou": 0.19306729604820774,
+      "epoch_s": 31.19036030769348
+    },
+    {
+      "epoch": 5,
+      "train_loss": 1.1200394677055394,
+      "select_iou": 0.19112160098450937,
+      "epoch_s": 31.191086769104004
+    },
+    {
+      "epoch": 6,
+      "train_loss": 1.1177237142631613,
+      "select_iou": 0.18877891867573743,
+      "epoch_s": 31.17654061317444
+    },
+    {
+      "epoch": 7,
+      "train_loss": 1.1125918705404902,
+      "select_iou": 0.19113223584070838,
+      "epoch_s": 31.235169410705566
+    },
+    {
+      "epoch": 8,
+      "train_loss": 1.112736874562831,
+      "select_iou": 0.19277476122908907,
+      "epoch_s": 31.195679187774658
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "source": "kitti360",
+  "n_frames": 100,
+  "components": {
+    "image_load": {
+      "median_ms": 15.095114707946777,
+      "p95_ms": 19.440376758575436,
+      "n": 100
+    },
+    "lingbot": {
+      "median_ms": 44.15321350097656,
+      "p95_ms": 47.753357887268066,
+      "n": 100
+    },
+    "moge": {
+      "median_ms": 59.04579162597656,
+      "p95_ms": 200.01406669616694,
+      "n": 5
+    },
+    "scale": {
+      "median_ms": 1.6124248504638672,
+      "p95_ms": 1.9708156585693362,
+      "n": 5
+    },
+    "map_step": {
+      "median_ms": 3.8465261459350586,
+      "p95_ms": 4.393184185028076,
+      "n": 100
+    },
+    "sem_load": {
+      "median_ms": 3.4651756286621094,
+      "p95_ms": 4.056048393249512,
+      "n": 100
+    },
+    "query": {
+      "median_ms": 3.1998157501220703,
+      "p95_ms": 3.466176986694336,
+      "n": 9
+    },
+    "net": {
+      "median_ms": 45.10378837585449,
+      "p95_ms": 55.89737892150878,
+      "n": 9
+    },
+    "cached_stream_compare": null
+  },
+  "live_vs_cached_depth_mean_abs_err": 0.038963833759262344,
+  "map_rows_final": 1144444,
+  "map_bytes_final": 603979776,
+  "peak_gpu_gib": 12.27154016494751,
+  "per_frame_ms_cached_teacher": 66.56002998352051,
+  "per_frame_ms_end_to_end": 1659.2521667480469,
+  "trident_online": {
+    "source": "kitti360",
+    "n": 25,
+    "median_ms": 1596.1573123931885,
+    "p95_ms": 1629.3175220489502,
+    "peak_gpu_gib": 10.015339374542236
+  },
+  "incremental": "map state is updated per frame; the dense grid is an export (query), measured separately; no history is replayed",
+  "note": "the frozen five-frame MoGe gauge runs on the first five frames only"
+}

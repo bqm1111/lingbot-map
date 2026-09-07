@@ -1,0 +1,111 @@
+{
+  "n_samples": 882,
+  "metrics": {
+    "mapper": {
+      "tp": 729138,
+      "fp": 485905,
+      "fn": 8954129,
+      "tn": 34831087,
+      "valid": 45000259,
+      "gt_occupied": 9683267,
+      "pred_occupied": 1215043,
+      "iou": 0.07170082283985363,
+      "precision": 0.600092342410927,
+      "recall": 0.07529876022214403,
+      "fpr": 0.013758391428126156,
+      "prevalence": 0.2151824726164354,
+      "volume_ratio": 0.12547862203944185
+    },
+    "dilation": {
+      "tp": 2099778,
+      "fp": 1671379,
+      "fn": 7583489,
+      "tn": 33645613,
+      "valid": 45000259,
+      "gt_occupied": 9683267,
+      "pred_occupied": 3771157,
+      "iou": 0.1849267691832929,
+      "precision": 0.5567994119576565,
+      "recall": 0.21684602934113043,
+      "fpr": 0.047325066642142116,
+      "prevalence": 0.2151824726164354,
+      "volume_ratio": 0.3894508950336699
+    },
+    "seed0": {
+      "tp": 3162254,
+      "fp": 1792075,
+      "fn": 6521013,
+      "tn": 33524917,
+      "valid": 45000259,
+      "gt_occupied": 9683267,
+      "pred_occupied": 4954329,
+      "iou": 0.27556947758071176,
+      "precision": 0.6382809861840019,
+      "recall": 0.32656891522251735,
+      "fpr": 0.05074257173430852,
+      "prevalence": 0.2151824726164354,
+      "volume_ratio": 0.5116381692253245
+    },
+    "seed1": {
+      "tp": 3410484,
+      "fp": 2667889,
+      "fn": 6272783,
+      "tn": 32649103,
+      "valid": 45000259,
+      "gt_occupied": 9683267,
+      "pred_occupied": 6078373,
+      "iou": 0.27612670425343183,
+      "precision": 0.561085014032538,
+      "recall": 0.35220385847049346,
+      "fpr": 0.07554122955884805,
+      "prevalence": 0.2151824726164354,
+      "volume_ratio": 0.6277192397978906
+    },
+    "seed2": {
+      "tp": 3114519,
+      "fp": 1639181,
+      "fn": 6568748,
+      "tn": 33677811,
+      "valid": 45000259,
+      "gt_occupied": 9683267,
+      "pred_occupied": 4753700,
+      "iou": 0.2750747011600318,
+      "precision": 0.6551778614552874,
+      "recall": 0.3216392773224161,
+      "fpr": 0.04641338084511841,
+      "prevalence": 0.2151824726164354,
+      "volume_ratio": 0.49091902557267086
+    }
+  },
+  "transitions": {
+    "seed0": {
+      "added_tp": 2443350,
+      "added_fp": 1344044,
+      "retained_tp": 718904,
+      "removed_fp": 37874,
+      "removed_tp": 10234
+    },
+    "seed1": {
+      "added_tp": 2694457,
+      "added_fp": 2223406,
+      "retained_tp": 716027,
+      "removed_fp": 41422,
+      "removed_tp": 13111
+    },
+    "seed2": {
+      "added_tp": 2392976,
+      "added_fp": 1184084,
+      "retained_tp": 721543,
+      "removed_fp": 30808,
+      "removed_tp": 7595
+    }
+  },
+  "labels_and_masks_equal_all": true,
+  "histogram_max_abs_delta": 225,
+  "histogram_sum_abs_delta": [
+    503,
+    840,
+    503,
+    840
+  ]
+}

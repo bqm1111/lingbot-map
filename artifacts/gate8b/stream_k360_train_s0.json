@@ -1,0 +1,16 @@
+{
+  "source": "k360_train",
+  "shard": 0,
+  "segments": [
+    {
+      "segment": "2013_05_28_drive_0003_sync",
+      "n_frames": 202,
+      "keyframe_interval": 1,
+      "lingbot_seconds": 19.759154796600342,
+      "fps": 10.223109342447941
+    }
+  ],
+  "n_frames": 202,
+  "seconds": 54.870163917541504,
+  "peak_gpu_gib": 10.738598346710205
+}

@@ -1,0 +1,59 @@
+{
+  "provenance": {
+    "tool": "eval_scale",
+    "git_commit": "9a648322e6dc4e34995f0530650c2fa469779676",
+    "git_dirty_files": [
+      "M lingbot_map/models/gct_stream.py",
+      " M research/sem_bypass/model.py",
+      "?? artifacts/",
+      "?? configs/scale_gate/",
+      "?? lingbot_map_scale_claude_code_plan.md",
+      "?? scale_gate/",
+      "?? scripts/export_occupancy_3d.py",
+      "?? scripts/make_occupancy_ceiling_figure.py",
+      "?? scripts/make_scene_completion_honest_figure.py",
+      "?? tests/scale_gate/",
+      "?? tools/__init__.py",
+      "?? tools/scale_gate/"
+    ],
+    "python": "3.10.19",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.7.1+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "seed": 0,
+    "config_hash": "d2faead637e3a190",
+    "checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+    "checkpoint_sha256": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72",
+    "argv": [
+      "tools/scale_gate/eval_scale.py",
+      "--config",
+      "configs/scale_gate/semantickitti.yaml",
+      "--checkpoint",
+      "artifacts/scale_gate/scale_models/depth_mlp_best.pt"
+    ]
+  },
+  "model": "depth_mlp",
+  "checkpoint": "artifacts/scale_gate/scale_models/depth_mlp_best.pt",
+  "split": "val",
+  "n_clips": 163,
+  "n_params": 74561,
+  "iou_mean": 0.04397368603683897,
+  "iou_baseline_mean": 0.04096274347742146,
+  "iou_oracle_mean": 0.05007516426810575,
+  "abs_log_scale_err_median": 0.07654166614389535,
+  "delta_iou_vs_baseline": {
+    "mean": 0.0030109425594175105,
+    "lo": 0.000223349839087503,
+    "hi": 0.005773756398002391,
+    "n": 163,
+    "excludes_zero": true
+  },
+  "recovered_oracle_fraction": 0.33042180871362065,
+  "oracle_headroom": 0.00911242079068431,
+  "win_rate_vs_baseline": 0.5521472392638037,
+  "top10_share_of_gain": 0.8655538050075777,
+  "scale_min": 17.74648668237149,
+  "scale_max": 44.39672403614337,
+  "all_scales_positive_finite": true
+}

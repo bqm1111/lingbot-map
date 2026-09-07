@@ -1,0 +1,70 @@
+{
+  "dataset": "semantickitti",
+  "n_anchors": 24,
+  "seed": 0,
+  "threshold": -0.125,
+  "moge_scale_stats": {
+    "n_segments": 1,
+    "min": 26.980392156862735,
+    "median": 26.980392156862735,
+    "max": 26.980392156862735,
+    "spread": 1.0
+  },
+  "NOTE": "the completion network was trained under per-scene MoGe scale, so its rows under 'raw' and 'constant' are out of distribution; the 'map' rows are the clean measure of what the scale does to the geometry",
+  "rows": {
+    "raw (s=1, LingBot alone)": {
+      "map": {
+        "iou": 3.568504946304706e-07,
+        "precision": 0.000778816199376947,
+        "recall": 3.5701394960605294e-07,
+        "tp": 1,
+        "fp": 1283,
+        "fn": 2801010
+      },
+      "completion": {
+        "iou": 0.1287236118740793,
+        "precision": 0.2085072532555,
+        "recall": 0.2517251806579838,
+        "tp": 705085,
+        "fp": 2676500,
+        "fn": 2095926
+      }
+    },
+    "constant (s=26.98 for every scene)": {
+      "map": {
+        "iou": 0.09338559306225154,
+        "precision": 0.3537260769306691,
+        "recall": 0.112596844496505,
+        "tp": 315385,
+        "fp": 576223,
+        "fn": 2485626
+      },
+      "completion": {
+        "iou": 0.12264229175460901,
+        "precision": 0.1586928421014188,
+        "recall": 0.3505926967084385,
+        "tp": 982014,
+        "fp": 5206129,
+        "fn": 1818997
+      }
+    },
+    "moge (per scene, deployed)": {
+      "map": {
+        "iou": 0.09338559306225154,
+        "precision": 0.3537260769306691,
+        "recall": 0.112596844496505,
+        "tp": 315385,
+        "fp": 576223,
+        "fn": 2485626
+      },
+      "completion": {
+        "iou": 0.12264166613277144,
+        "precision": 0.15869172147668956,
+        "recall": 0.3505930537223881,
+        "tp": 982015,
+        "fp": 5206178,
+        "fn": 1818996
+      }
+    }
+  }
+}

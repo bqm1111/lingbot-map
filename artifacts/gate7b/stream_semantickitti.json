@@ -1,0 +1,33 @@
+{
+  "dataset": "semantickitti",
+  "n_segments": 1,
+  "n_frames_streamed": 815,
+  "seconds": 48.24262976646423,
+  "peak_gpu_gib": 9.364034175872803,
+  "checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+  "checkpoint_load": {
+    "missing_keys": 0,
+    "unexpected_keys": 0
+  },
+  "inference": {
+    "resolution": 518,
+    "patch_size": 14,
+    "num_scale_frames": 5,
+    "kv_cache_sliding_window": 64,
+    "max_frame_num": 1024,
+    "autocast": "bfloat16"
+  },
+  "boundary_rule": "one stream: SemanticKITTI odometry sequence 08. The Gate-6 clip set tiles the sequence at stride 5, so the stream is the 815 unique frames in odometry order.",
+  "segments": [
+    {
+      "segment": "08",
+      "n_frames": 815,
+      "keyframe_interval": 1,
+      "rope_slots": 815,
+      "seconds": 37.45136308670044,
+      "fps": 21.761557733246274,
+      "cached": false
+    }
+  ],
+  "root": "/media/SSD1/MINH_DATASETS/lingbot_gate7b/stream/semantickitti"
+}

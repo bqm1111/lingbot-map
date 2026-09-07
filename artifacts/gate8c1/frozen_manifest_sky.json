@@ -1,0 +1,77 @@
+{
+  "gate": "8C-1 (ceiling fix)",
+  "claim": "target-domain-free transfer of the completion module: trained and selected on KITTI-360 alone, evaluated on untouched SemanticKITTI and Occ3D without adaptation. NOT whole-system zero-shot: the frozen foundation models (LingBot-Map, MoGe-2, Trident-H) have not had their training provenance audited, and LingBot-Map's published mixture includes KITTI-360.",
+  "derived_from": "artifacts/gate8c1/frozen_manifest.json",
+  "changes": [
+    "CompletionUNet convolutions use padding_mode='replicate'; zero padding manufactured observed=0 AND unobserved=0 at the array boundary, a state absent from training, which leaked inward and flooded the grid ceiling.",
+    "gate8c1/rawtarget.py marks open sky FREE instead of UNKNOWN: in a column whose LiDAR returns reached a surface, voxels more than SKY_MARGIN_VOX above the topmost return are not occluded, merely above the sensor's top ring. Leaving them UNKNOWN dropped them from the loss and left the ceiling unsupervised (1.12% of the top layer supervised; now 21.9%).",
+    "Retrained from scratch on the rebuilt KITTI-360 supervision; checkpoint and thresholds re-selected by the gate's own rule on drive 0006 only."
+  ],
+  "frozen_at": "2026-09-04T19:19:47+02:00",
+  "data_root": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1_sky",
+  "n_val_samples": 590,
+  "rule": {
+    "checkpoint": "highest full-grid occupancy AP on KITTI-360 drive 0006",
+    "occupancy_threshold": "final-logit threshold maximising full-grid IoU on drive 0006",
+    "semantic_threshold": "maximises coverage x agreement with the frozen teacher on voxels where both halves of the future window agree; no human semantic label",
+    "forbidden": "SemanticKITTI and Occ3D/nuScenes are not read"
+  },
+  "seeds": {
+    "0": {
+      "seed": 0,
+      "config": "configs/gate8c1_sky/seed0.yaml",
+      "selected": "last",
+      "checkpoint": "artifacts/gate8c1/checkpoints/sky_seed0_last.pt",
+      "checkpoint_sha256": "ea721b21a259bd00cfae2b699265423e96b7b370a2cf119bcdfcf6dc2df1ea69",
+      "occupancy_threshold": -0.125,
+      "semantic_threshold": 0.1,
+      "source_ap": 0.09956460996264335,
+      "source_ap_over_prevalence": 2.037824098124233,
+      "source_auroc": 0.6832312096495362,
+      "source_iou_at_threshold": 0.10339305901883002
+    },
+    "1": {
+      "seed": 1,
+      "config": "configs/gate8c1_sky/seed1.yaml",
+      "selected": "last",
+      "checkpoint": "artifacts/gate8c1/checkpoints/sky_seed1_last.pt",
+      "checkpoint_sha256": "47353eacfbf7d830e13ca286069e12172b44c8bba352f8c056683f96ac667181",
+      "occupancy_threshold": -0.4375,
+      "semantic_threshold": 0.0,
+      "source_ap": 0.09810589536140746,
+      "source_ap_over_prevalence": 2.0079680702866356,
+      "source_auroc": 0.6802731093962484,
+      "source_iou_at_threshold": 0.10081638129207725
+    },
+    "2": {
+      "seed": 2,
+      "config": "configs/gate8c1_sky/seed2.yaml",
+      "selected": "last",
+      "checkpoint": "artifacts/gate8c1/checkpoints/sky_seed2_last.pt",
+      "checkpoint_sha256": "325d8783b9370f5c27a80999473aae2fdfabb54dd18c0591a9ca37e93de79c70",
+      "occupancy_threshold": -0.3125,
+      "semantic_threshold": 0.1,
+      "source_ap": 0.0967668533798694,
+      "source_ap_over_prevalence": 1.9805614242966385,
+      "source_auroc": 0.6746166164970383,
+      "source_iou_at_threshold": 0.10139982657581252
+    }
+  },
+  "firewall_proof": {
+    "selection": {
+      "n_opened": 7092,
+      "n_unique": 596,
+      "violations": [],
+      "forbidden_patterns": [
+        "data/kitti/dataset",
+        "occ3d_gt",
+        "nuscenes",
+        "lingbot_occ3d_zeroshot",
+        "scale_gate/cache",
+        "preprocess/labels"
+      ],
+      "note": "selection ran inside a file-access audit; opening a SemanticKITTI / Occ3D / SSCBench-label path would have raised"
+    },
+    "total_violations": 0
+  }
+}

@@ -1,0 +1,420 @@
+{
+  "source": "occ3d",
+  "dataset": "occ3d",
+  "tag": "mapper_union",
+  "checkpoint": null,
+  "n_anchors": 1182,
+  "vocab_mode": "union",
+  "seconds": 177.93976998329163,
+  "peak_gpu_gib": 4.822292327880859,
+  "map_bytes_median": 301989888.0,
+  "map_bytes_max": 2415919104.0,
+  "latency_ms": {
+    "step": {
+      "median": 4.664301872253418,
+      "p95": 6.1388492584228525
+    },
+    "query": {
+      "median": 7.967114448547363,
+      "p95": 8.45097303390503
+    },
+    "dilate": {
+      "median": 28.88357639312744,
+      "p95": 33.09608697891236
+    }
+  },
+  "variants": {
+    "raw": {
+      "n_clips": 1182,
+      "n_valid": 52095614,
+      "n_gt_occupied": 11957590,
+      "n_pred_occupied": 2501988,
+      "binary_iou": 0.11696968250330253,
+      "binary_precision": 0.6052047411898058,
+      "binary_recall": 0.12663212235910412,
+      "empty_prediction_rate": 0.9519731545922465,
+      "ssc_miou": 0.03539783645564265,
+      "n_classes_scored": 17,
+      "per_class": {
+        "others": {
+          "iou": 0.0005953629345980285,
+          "tp": 176,
+          "fp": 275007,
+          "fn": 20435,
+          "gt_voxels": 20611,
+          "tp_conditioned_recall": 0.0944206008583691,
+          "tp_conditioned_gt_voxels": 1864
+        },
+        "barrier": {
+          "iou": 0.026709531811945412,
+          "tp": 3290,
+          "fp": 84197,
+          "fn": 35690,
+          "gt_voxels": 38980,
+          "tp_conditioned_recall": 0.6968862529125185,
+          "tp_conditioned_gt_voxels": 4721
+        },
+        "bicycle": {
+          "iou": 0.02283038196985219,
+          "tp": 156,
+          "fp": 3058,
+          "fn": 3619,
+          "gt_voxels": 3775,
+          "tp_conditioned_recall": 0.36619718309859156,
+          "tp_conditioned_gt_voxels": 426
+        },
+        "bus": {
+          "iou": 0.05715528896209849,
+          "tp": 7356,
+          "fp": 58062,
+          "fn": 63284,
+          "gt_voxels": 70640,
+          "tp_conditioned_recall": 0.8255892255892255,
+          "tp_conditioned_gt_voxels": 8910
+        },
+        "car": {
+          "iou": 0.07250538557339527,
+          "tp": 34465,
+          "fp": 147306,
+          "fn": 293573,
+          "gt_voxels": 328038,
+          "tp_conditioned_recall": 0.7307790170052161,
+          "tp_conditioned_gt_voxels": 47162
+        },
+        "construction_vehicle": {
+          "iou": 0.023132914547811346,
+          "tp": 464,
+          "fp": 5593,
+          "fn": 14001,
+          "gt_voxels": 14465,
+          "tp_conditioned_recall": 0.5829145728643216,
+          "tp_conditioned_gt_voxels": 796
+        },
+        "motorcycle": {
+          "iou": 0.047244094488188976,
+          "tp": 336,
+          "fp": 1295,
+          "fn": 5481,
+          "gt_voxels": 5817,
+          "tp_conditioned_recall": 0.4876632801161103,
+          "tp_conditioned_gt_voxels": 689
+        },
+        "pedestrian": {
+          "iou": 0.0125398030304524,
+          "tp": 1272,
+          "fp": 61381,
+          "fn": 38784,
+          "gt_voxels": 40056,
+          "tp_conditioned_recall": 0.23232876712328768,
+          "tp_conditioned_gt_voxels": 5475
+        },
+        "traffic_cone": {
+          "iou": 0.03150781802467196,
+          "tp": 401,
+          "fp": 4528,
+          "fn": 7798,
+          "gt_voxels": 8199,
+          "tp_conditioned_recall": 0.27168021680216803,
+          "tp_conditioned_gt_voxels": 1476
+        },
+        "trailer": {
+          "iou": 0.018143292279168322,
+          "tp": 959,
+          "fp": 14434,
+          "fn": 37464,
+          "gt_voxels": 38423,
+          "tp_conditioned_recall": 0.32192010741859683,
+          "tp_conditioned_gt_voxels": 2979
+        },
+        "truck": {
+          "iou": 0.0619563023271462,
+          "tp": 12891,
+          "fp": 70584,
+          "fn": 124591,
+          "gt_voxels": 137482,
+          "tp_conditioned_recall": 0.6824606914076976,
+          "tp_conditioned_gt_voxels": 18889
+        },
+        "driveable_surface": {
+          "iou": 0.10181098020867065,
+          "tp": 396460,
+          "fp": 40902,
+          "fn": 3456717,
+          "gt_voxels": 3853177,
+          "tp_conditioned_recall": 0.5452005137640921,
+          "tp_conditioned_gt_voxels": 727182
+        },
+        "other_flat": {
+          "iou": 0.008964085881009205,
+          "tp": 6051,
+          "fp": 546835,
+          "fn": 122141,
+          "gt_voxels": 128192,
+          "tp_conditioned_recall": 0.24565605716141603,
+          "tp_conditioned_gt_voxels": 24632
+        },
+        "sidewalk": {
+          "iou": 0.0541041916050478,
+          "tp": 66351,
+          "fp": 88691,
+          "fn": 1071314,
+          "gt_voxels": 1137665,
+          "tp_conditioned_recall": 0.40746381395120335,
+          "tp_conditioned_gt_voxels": 162839
+        },
+        "terrain": {
+          "iou": 0.001972652482594981,
+          "tp": 2751,
+          "fp": 976,
+          "fn": 1390842,
+          "gt_voxels": 1393593,
+          "tp_conditioned_recall": 0.01617369525724465,
+          "tp_conditioned_gt_voxels": 170091
+        },
+        "manmade": {
+          "iou": 0.007010243528855177,
+          "tp": 16092,
+          "fp": 49883,
+          "fn": 2229523,
+          "gt_voxels": 2245615,
+          "tp_conditioned_recall": 0.10734225850993576,
+          "tp_conditioned_gt_voxels": 149913
+        },
+        "vegetation": {
+          "iou": 0.05358089009041868,
+          "tp": 152194,
+          "fp": 347591,
+          "fn": 2340668,
+          "gt_voxels": 2492862,
+          "tp_conditioned_recall": 0.8174957431608575,
+          "tp_conditioned_gt_voxels": 186171
+        }
+      },
+      "tp_conditioned": {
+        "n": 1514215,
+        "top1_accuracy": 0.4633853184653434,
+        "balanced_recall": 0.43718658805887367,
+        "n_classes_present": 17
+      },
+      "tp_conditioned_reconstruction_support": {
+        "n": 1514215,
+        "top1_accuracy": 0.4633853184653434,
+        "balanced_recall": 0.43718658805887367,
+        "n_classes_present": 17
+      },
+      "tp_conditioned_dilation_only": {
+        "n": 0,
+        "top1_accuracy": 0.0,
+        "balanced_recall": 0.0,
+        "n_classes_present": 0
+      },
+      "decomposition": {
+        "n_valid_gt_occupied": 11957590,
+        "coverage_miss": 10443375,
+        "naming_error": 812550,
+        "correct": 701665,
+        "coverage_miss_fraction": 0.8733678776408959,
+        "naming_error_fraction": 0.06795265601178833,
+        "correct_fraction": 0.05867946634731581,
+        "sums_to_one": true
+      },
+      "binary_iou_mean_per_clip": 0.11684511618555521
+    },
+    "dil": {
+      "n_clips": 1182,
+      "n_valid": 52095614,
+      "n_gt_occupied": 11957590,
+      "n_pred_occupied": 6520536,
+      "binary_iou": 0.23088297498882568,
+      "binary_precision": 0.5315569149530038,
+      "binary_recall": 0.2898607495323054,
+      "empty_prediction_rate": 0.8748352212529831,
+      "ssc_miou": 0.054148578199224175,
+      "n_classes_scored": 17,
+      "per_class": {
+        "others": {
+          "iou": 0.0006425771925344466,
+          "tp": 463,
+          "fp": 699925,
+          "fn": 20148,
+          "gt_voxels": 20611,
+          "tp_conditioned_recall": 0.0943934760448522,
+          "tp_conditioned_gt_voxels": 4905
+        },
+        "barrier": {
+          "iou": 0.023435653139439093,
+          "tp": 6543,
+          "fp": 240210,
+          "fn": 32437,
+          "gt_voxels": 38980,
+          "tp_conditioned_recall": 0.528087167070218,
+          "tp_conditioned_gt_voxels": 12390
+        },
+        "bicycle": {
+          "iou": 0.02515128593040847,
+          "tp": 266,
+          "fp": 6801,
+          "fn": 3509,
+          "gt_voxels": 3775,
+          "tp_conditioned_recall": 0.2575024201355276,
+          "tp_conditioned_gt_voxels": 1033
+        },
+        "bus": {
+          "iou": 0.07182163310508875,
+          "tp": 16667,
+          "fp": 161421,
+          "fn": 53973,
+          "gt_voxels": 70640,
+          "tp_conditioned_recall": 0.8286680256550489,
+          "tp_conditioned_gt_voxels": 20113
+        },
+        "car": {
+          "iou": 0.09402174620435373,
+          "tp": 79459,
+          "fp": 517075,
+          "fn": 248579,
+          "gt_voxels": 328038,
+          "tp_conditioned_recall": 0.7036938636343509,
+          "tp_conditioned_gt_voxels": 112917
+        },
+        "construction_vehicle": {
+          "iou": 0.032981613698110826,
+          "tp": 1044,
+          "fp": 17189,
+          "fn": 13421,
+          "gt_voxels": 14465,
+          "tp_conditioned_recall": 0.5251509054325956,
+          "tp_conditioned_gt_voxels": 1988
+        },
+        "motorcycle": {
+          "iou": 0.07055602358887952,
+          "tp": 670,
+          "fp": 3679,
+          "fn": 5147,
+          "gt_voxels": 5817,
+          "tp_conditioned_recall": 0.44816053511705684,
+          "tp_conditioned_gt_voxels": 1495
+        },
+        "pedestrian": {
+          "iou": 0.011731747226907724,
+          "tp": 2789,
+          "fp": 197675,
+          "fn": 37267,
+          "gt_voxels": 40056,
+          "tp_conditioned_recall": 0.2209108910891089,
+          "tp_conditioned_gt_voxels": 12625
+        },
+        "traffic_cone": {
+          "iou": 0.03759565759031856,
+          "tp": 845,
+          "fp": 14277,
+          "fn": 7354,
+          "gt_voxels": 8199,
+          "tp_conditioned_recall": 0.2629122588674549,
+          "tp_conditioned_gt_voxels": 3214
+        },
+        "trailer": {
+          "iou": 0.018737377027819403,
+          "tp": 1438,
+          "fp": 38322,
+          "fn": 36985,
+          "gt_voxels": 38423,
+          "tp_conditioned_recall": 0.24294644365602297,
+          "tp_conditioned_gt_voxels": 5919
+        },
+        "truck": {
+          "iou": 0.07277429973841225,
+          "tp": 24760,
+          "fp": 202748,
+          "fn": 112722,
+          "gt_voxels": 137482,
+          "tp_conditioned_recall": 0.649306375055726,
+          "tp_conditioned_gt_voxels": 38133
+        },
+        "driveable_surface": {
+          "iou": 0.24094902038074267,
+          "tp": 963359,
+          "fp": 145009,
+          "fn": 2889818,
+          "gt_voxels": 3853177,
+          "tp_conditioned_recall": 0.5670356616688416,
+          "tp_conditioned_gt_voxels": 1698939
+        },
+        "other_flat": {
+          "iou": 0.007821973170027877,
+          "tp": 11005,
+          "fp": 1278742,
+          "fn": 117187,
+          "gt_voxels": 128192,
+          "tp_conditioned_recall": 0.20610930067048733,
+          "tp_conditioned_gt_voxels": 53394
+        },
+        "sidewalk": {
+          "iou": 0.10241356910550975,
+          "tp": 142365,
+          "fp": 252434,
+          "fn": 995300,
+          "gt_voxels": 1137665,
+          "tp_conditioned_recall": 0.3798121815222901,
+          "tp_conditioned_gt_voxels": 374830
+        },
+        "terrain": {
+          "iou": 0.004274262938396497,
+          "tp": 5971,
+          "fp": 3373,
+          "fn": 1387622,
+          "gt_voxels": 1393593,
+          "tp_conditioned_recall": 0.01603831359993124,
+          "tp_conditioned_gt_voxels": 372296
+        },
+        "manmade": {
+          "iou": 0.01466297883600542,
+          "tp": 35021,
+          "fp": 142781,
+          "fn": 2210594,
+          "gt_voxels": 2245615,
+          "tp_conditioned_recall": 0.1006234915526951,
+          "tp_conditioned_gt_voxels": 348040
+        },
+        "vegetation": {
+          "iou": 0.09095441051385592,
+          "tp": 316734,
+          "fp": 989476,
+          "fn": 2176128,
+          "gt_voxels": 2492862,
+          "tp_conditioned_recall": 0.7843736456953232,
+          "tp_conditioned_gt_voxels": 403805
+        }
+      },
+      "tp_conditioned": {
+        "n": 3466036,
+        "top1_accuracy": 0.4643341846420522,
+        "balanced_recall": 0.4009249974392666,
+        "n_classes_present": 17
+      },
+      "tp_conditioned_reconstruction_support": {
+        "n": 3466036,
+        "top1_accuracy": 0.4643341846420522,
+        "balanced_recall": 0.4009249974392666,
+        "n_classes_present": 17
+      },
+      "tp_conditioned_dilation_only": {
+        "n": 0,
+        "top1_accuracy": 0.0,
+        "balanced_recall": 0.0,
+        "n_classes_present": 0
+      },
+      "decomposition": {
+        "n_valid_gt_occupied": 11957590,
+        "coverage_miss": 8491554,
+        "naming_error": 1856637,
+        "correct": 1609399,
+        "coverage_miss_fraction": 0.7101392504676945,
+        "naming_error_fraction": 0.15526849473848828,
+        "correct_fraction": 0.13459225479381715,
+        "sums_to_one": true
+      },
+      "binary_iou_mean_per_clip": 0.2277418787990219
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "report": "reports/gate6/frozen_trident_semantic_lifting.md",
+  "sha256_before": "14fbf23e12968bb537332199bd89e65d7d71f14339077e4f359a11651bfa1bf2",
+  "sha256_after": "3724fbdce4a8d554bc155efd158d5d9007830ab8294a2a94475d39181c625c5e",
+  "lines_before": 956,
+  "lines_after": 1016,
+  "template": {
+    "path": "reports/gate6/_frozen_trident_semantic_lifting.template.md",
+    "sha256_before": "2fa98446d5af9ee55d57eec9eaf4e36a3761d261c2fb0348f8503a10383e69c6",
+    "sha256_after": "0a8b47db3fd1844286ae2d8ac12766630206a6120a007981b218c507d1558008"
+  },
+  "generator": {
+    "path": "tools/gate6/report_tables.py",
+    "sha256_before": "d31155d1063282798bc378c680e9eec637455298b70642ce408ce400252bc1fe",
+    "sha256_after": "44c9a11fd0635d7f4a846e034cb608a8e3b2431092a24c490d7b1139c1e1e5a8"
+  },
+  "corrections": [
+    {
+      "what": "\u00a714 no longer claims that every bootstrap interval excludes zero. The statement is now generated from the artifacts and names the exception, the Occ3D-nuScenes TP-conditioned accuracy difference, with its interval; the surrounding prose now reads that drop as not distinguishable from zero on that benchmark.",
+      "where": "`report_tables.t_bootstrap_zero_note` (new generator) + template \u00a714"
+    },
+    {
+      "what": "The 'Official SSC metrics' table now reports **pooled** binary IoU, precision and recall alongside its pooled semantic metrics, with every column labelled by aggregation. The values are computed from the stored counts, not transcribed.",
+      "where": "`report_tables.t_main`"
+    },
+    {
+      "what": "The reproduction/sanity table keeps the **mean-per-clip** binary IoU the frozen gates were pinned with, labels it as such, and shows the pooled value beside it for reference.",
+      "where": "`report_tables.t_sanity`"
+    },
+    {
+      "what": "`COVERAGE_DOMINATES` is now explicitly scoped to the population of valid ground-truth **occupied** voxels. \u00a71 and \u00a79 state that the partition excludes false-positive occupied predictions entirely and therefore does not establish that expanding occupancy would raise IoU.",
+      "where": "template \u00a71, \u00a72, \u00a79"
+    },
+    {
+      "what": "\u00a712 states the near-field reversal outright: in SemanticKITTI's 0\u201310 m band at B-D, naming error (0.264) exceeds coverage miss (0.256). A generated table shows the 0\u201310 m band of all three benchmarks.",
+      "where": "`report_tables.t_near_range_note` (new generator) + template \u00a712"
+    },
+    {
+      "what": "The Grounded-SAM-2 comparator now carries its limits **before** the table: one dataset, one drive, no paired confidence interval, and a vocabulary confound (OccAny synonym lists against Gate 6's single deterministic phrase per class).",
+      "where": "`report_tables.t_occany_section`"
+    },
+    {
+      "what": "Trident's spatial encoder is named as **DINO v1 ViT-B/16, not DINOv2**, in the provenance table and in the operating-point listing, not only in the deviation note.",
+      "where": "`report_tables.t_provenance` + template \u00a74"
+    }
+  ],
+  "gate6_artifacts_changed": "none \u2014 all 44 byte-identical",
+  "gate6_numerical_artifacts_untouched": true,
+  "method": "the fixes were made in the template and the generator and the report was regenerated; no number was edited in the rendered Markdown"
+}

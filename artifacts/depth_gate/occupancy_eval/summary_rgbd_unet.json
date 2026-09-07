@@ -1,0 +1,132 @@
+{
+  "provenance": {
+    "tool": "depth_gate.eval_occupancy",
+    "git_commit": "9a648322e6dc4e34995f0530650c2fa469779676",
+    "git_dirty_files": [
+      "M lingbot_map/models/gct_stream.py",
+      " M research/sem_bypass/model.py",
+      "?? artifacts/",
+      "?? configs/depth_gate/",
+      "?? configs/scale_gate/",
+      "?? depth_gate/",
+      "?? lingbot_map_scale_claude_code_plan.md",
+      "?? reports/",
+      "?? scale_gate/",
+      "?? scripts/export_occupancy_3d.py",
+      "?? scripts/make_occupancy_ceiling_figure.py",
+      "?? scripts/make_scene_completion_honest_figure.py",
+      "?? tests/depth_gate/",
+      "?? tests/scale_gate/",
+      "?? tools/__init__.py",
+      "?? tools/check_ddad_layout.py",
+      "?? tools/check_vkitti2_layout.py",
+      "?? tools/depth_gate/",
+      "?? tools/geometry_gate/",
+      "?? tools/scale_gate/"
+    ],
+    "python": "3.10.19",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.7.1+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "seed": 0,
+    "config_hash": "de3063b336561009",
+    "checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+    "checkpoint_sha256": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72",
+    "argv": [
+      "tools/depth_gate/eval_occupancy.py",
+      "--run",
+      "rgbd_unet"
+    ]
+  },
+  "run": "rgbd_unet",
+  "pixel_stride": 1,
+  "constant_scale": 27.3665,
+  "n_clips": 163,
+  "rows": {
+    "gtpose": {
+      "base": {
+        "iou": 0.0781686666618386,
+        "precision": 0.4058730943901493,
+        "recall": 0.09018509828674122,
+        "n_pred_occupied": 24800.877300613498,
+        "n_points": 318149.74233128835,
+        "in_grid_fraction": 0.6346033935752634,
+        "out_of_grid_fraction": 0.36539660642473654
+      },
+      "refined": {
+        "iou": 0.07935013355336756,
+        "precision": 0.37899432744820793,
+        "recall": 0.09326131817236329,
+        "n_pred_occupied": 28159.963190184048,
+        "n_points": 318181.0981595092,
+        "in_grid_fraction": 0.6346821576381938,
+        "out_of_grid_fraction": 0.3653178423618061
+      },
+      "delta_iou": {
+        "mean": 0.0011814668915289645,
+        "lo": -0.0016965359615109259,
+        "hi": 0.004101433855606335,
+        "n": 163,
+        "excludes_zero": false
+      },
+      "improved_clip_fraction": 0.6257668711656442
+    },
+    "predpose_const": {
+      "base": {
+        "iou": 0.05725103597087402,
+        "precision": 0.3182799787116466,
+        "recall": 0.06612787852145163,
+        "n_pred_occupied": 23507.779141104296,
+        "n_points": 318183.3619631902,
+        "in_grid_fraction": 0.5896877096344084,
+        "out_of_grid_fraction": 0.41031229036559164
+      },
+      "refined": {
+        "iou": 0.07682157593292638,
+        "precision": 0.34998284444656297,
+        "recall": 0.0914844572549864,
+        "n_pred_occupied": 29833.374233128834,
+        "n_points": 318199.0920245399,
+        "in_grid_fraction": 0.6200646752328032,
+        "out_of_grid_fraction": 0.3799353247671968
+      },
+      "delta_iou": {
+        "mean": 0.019570539962052377,
+        "lo": 0.014274237637090856,
+        "hi": 0.02483906038153421,
+        "n": 163,
+        "excludes_zero": true
+      },
+      "improved_clip_fraction": 0.7730061349693251
+    },
+    "predpose_oracle": {
+      "base": {
+        "iou": 0.0769116337687203,
+        "precision": 0.4057290351373585,
+        "recall": 0.08846463487935285,
+        "n_pred_occupied": 24249.46625766871,
+        "n_points": 318149.74233128835,
+        "in_grid_fraction": 0.6368507434549394,
+        "out_of_grid_fraction": 0.36314925654506053
+      },
+      "refined": {
+        "iou": 0.07885027204672697,
+        "precision": 0.38035237645709674,
+        "recall": 0.09233727368944507,
+        "n_pred_occupied": 27749.349693251534,
+        "n_points": 318181.0981595092,
+        "in_grid_fraction": 0.6370796387987616,
+        "out_of_grid_fraction": 0.36292036120123833
+      },
+      "delta_iou": {
+        "mean": 0.001938638278006663,
+        "lo": -0.0010367952591839775,
+        "hi": 0.004957229547922325,
+        "n": 163,
+        "excludes_zero": false
+      },
+      "improved_clip_fraction": 0.6257668711656442
+    }
+  }
+}

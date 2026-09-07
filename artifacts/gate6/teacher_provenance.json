@@ -1,0 +1,65 @@
+{
+  "clip": {
+    "hf_repo": "laion/CLIP-ViT-H-14-laion2B-s32B-b79K",
+    "license": "MIT (LAION OpenCLIP release)",
+    "model_type": "ViT-H-14",
+    "n_params": 986109441,
+    "patch_size": 14,
+    "pretrained_tag": "laion2b_s32b_b79k",
+    "supervision": "LAION-2B image-text pairs; contrastive, no dense segmentation labels",
+    "weight_bytes": 3944692325,
+    "weight_file": "/home/minh/.cache/huggingface/hub/models--laion--CLIP-ViT-H-14-laion2B-s32B-b79K/blobs/9a78ef8e8c73fd0df621682e7a8e8eb36c6916cb3c16b291a082ecd52ab79cc4",
+    "weight_sha256": "9a78ef8e8c73fd0df621682e7a8e8eb36c6916cb3c16b291a082ecd52ab79cc4"
+  },
+  "role": "primary, predeclared",
+  "sam": {
+    "checkpoint": "/home/minh/workspace/third_party/checkpoints/sam_vit_h_4b8939.pth",
+    "license": "Apache-2.0",
+    "model_type": "vit_h",
+    "n_params": 641090608,
+    "precision_used": "float32 (segment-anything issue #540: ViT-H overflows in fp16)",
+    "source_url": "https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth",
+    "supervision": "SA-1B, class-agnostic masks (no semantic class labels)",
+    "weight_bytes": 2564550879,
+    "weight_sha256": "a7bf3b02f3ebf1267aba913ff637d9a2d5c33d3173bb679e46d9f338c26f262e"
+  },
+  "source_file_hashes": {
+    "configs/base_config.py": "395312c5e39b3c69a0044acc9759664d05a8e06a5e4c5d90a1726985c5ec4483",
+    "configs/cfg_city_scapes.py": "bfff0d03cc3d12c2570f912e66fc8bda1555d17d707b6d7e332e6378f5eae3e0",
+    "open_clip/transformer.py": "dc6d3a5ec791bd273c861fc374d892195e4f1e5fb5d288f0c1c10a9476204125",
+    "prompts/imagenet_template.py": "2c9a73bc4baf567d37d0de6fcb42fe8c0a1ebabbdb8f511e971ccde01a2dc5ec",
+    "seg_utils/utils.py": "dd0a24196c1faabe410d8587765a62364e7c495b7e01c188d15ed4108a3a6bfc",
+    "trident.py": "0924813e951f96cd7698a4aeb90d568202d14444a97a364c63e57ce770f525ce"
+  },
+  "teacher": "Trident-H",
+  "total_params": 1712998705,
+  "trained_by_us": false,
+  "trident": {
+    "commit": "7feea10222bf15d5aabdeabefde5902a62584d94",
+    "commit_date": "2025-11-22 12:01:22 +1100",
+    "license": "Apache-2.0 (LICENSE in repository root)",
+    "local_path": "/home/minh/workspace/third_party/Trident",
+    "official_config_adopted": "configs/cfg_city_scapes.py (+ configs/base_config.py)",
+    "paper": "https://arxiv.org/abs/2411.09219",
+    "repo": "https://github.com/YuHengsss/Trident",
+    "tracked_files_unmodified": true,
+    "untracked_paths": [
+      "?? __pycache__/",
+      "?? open_clip/__pycache__/",
+      "?? prompts/__pycache__/",
+      "?? seg_utils/__pycache__/",
+      "?? segment_anything/__pycache__/",
+      "?? segment_anything/modeling/__pycache__/",
+      "?? segment_anything/utils/__pycache__/"
+    ]
+  },
+  "vfm": {
+    "hub": "facebookresearch/dino:main",
+    "license": "Apache-2.0",
+    "model": "dino_vitb16",
+    "n_params": 85798656,
+    "note": "trident.py:47 loads dino_vitb16 unconditionally; the ``vfm_model`` argument only selects the attention hook. DINOv2 is not reachable through the official implementation.",
+    "patch_size": 16,
+    "supervision": "ImageNet-1k, self-supervised (no labels)"
+  }
+}

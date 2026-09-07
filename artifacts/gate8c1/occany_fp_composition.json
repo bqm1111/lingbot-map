@@ -1,0 +1,85 @@
+{
+  "n_samples": 60,
+  "question": "is a red voxel 'nothing is there' or 'something is there but not exactly here'?",
+  "distance_bins_m": [
+    "<0.4",
+    "0.4-0.8",
+    "0.8-1.2",
+    ">1.2"
+  ],
+  "gt_class_share_pct": {
+    "others": 0.15307059300967338,
+    "barrier": 0.1907210211289882,
+    "bicycle": 0.028700736189313757,
+    "bus": 0.30475244071986385,
+    "car": 3.1603213865233073,
+    "construction_vehicle": 0.11680891018984148,
+    "motorcycle": 0.052155101247247586,
+    "pedestrian": 0.26895367299985956,
+    "traffic_cone": 0.06249353847673157,
+    "trailer": 0.24704235827468457,
+    "truck": 1.3347385378363656,
+    "driveable_surface": 32.34032900919195,
+    "other_flat": 1.1049783432885798,
+    "sidewalk": 10.287516568502948,
+    "terrain": 11.514858803179301,
+    "manmade": 19.533319857360425,
+    "vegetation": 19.299239121880916
+  },
+  "methods": {
+    "occany": {
+      "n_false_positive_voxels": 266107,
+      "distance_to_nearest_real_occupied_pct": [
+        0.0,
+        18.17163772467466,
+        25.104187413333733,
+        56.72417486199161
+      ],
+      "within_1_2_m_pct": 43.27582513800839,
+      "nearest_class_share_pct": {
+        "others": 0.5050599946638007,
+        "barrier": 0.3810497281168853,
+        "bus": 0.4362906650332385,
+        "car": 6.31663203147606,
+        "motorcycle": 0.22434584584396502,
+        "pedestrian": 0.606147151333862,
+        "truck": 0.8891160322727324,
+        "driveable_surface": 31.31447124652865,
+        "other_flat": 1.893223402616241,
+        "sidewalk": 11.70995126020736,
+        "terrain": 6.251996377397062,
+        "manmade": 19.65788197980512,
+        "vegetation": 19.29937957287858
+      },
+      "movable_class_enrichment": 1.5978338785187975,
+      "reading": "movable-class enrichment above 1 means false positives cluster on cars/trucks/pedestrians relative to their share of the ground truth, which is the signature of a moving object smearing across the accumulated frames while the target is a single instant"
+    },
+    "ours": {
+      "n_false_positive_voxels": 130624,
+      "distance_to_nearest_real_occupied_pct": [
+        0.0,
+        20.549056834884862,
+        18.922250122488975,
+        60.528693042626166
+      ],
+      "within_1_2_m_pct": 39.471306957373834,
+      "nearest_class_share_pct": {
+        "others": 0.6178037726604605,
+        "bus": 0.31694022537971583,
+        "car": 3.630267025967663,
+        "construction_vehicle": 0.26717907888290054,
+        "pedestrian": 0.878092846643802,
+        "trailer": 0.2778968642822146,
+        "truck": 1.6061366976972073,
+        "driveable_surface": 19.721490690837825,
+        "other_flat": 0.5787604115629593,
+        "sidewalk": 9.304568838804506,
+        "terrain": 4.62625551200392,
+        "manmade": 30.461477217050465,
+        "vegetation": 27.503368446839783
+      },
+      "movable_class_enrichment": 1.2713277943149455,
+      "reading": "movable-class enrichment above 1 means false positives cluster on cars/trucks/pedestrians relative to their share of the ground truth, which is the signature of a moving object smearing across the accumulated frames while the target is a single instant"
+    }
+  }
+}

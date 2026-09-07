@@ -1,0 +1,167 @@
+{
+  "n": 16,
+  "rule": "per drive, np.linspace over the sorted sample list; shares 6/5/5 across drives 0003/0007/0010; recorded before any training",
+  "clips": [
+    {
+      "drive": "2013_05_28_drive_0003_sync",
+      "sample_id": "00004",
+      "index": 0,
+      "n_in_drive": 193,
+      "input_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/samples/2013_05_28_drive_0003_sync/00004.npz",
+      "target_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/targets/2013_05_28_drive_0003_sync/00004.npz",
+      "input_sha256": "ed012ec9564383967b843981c16111d770c829c7ecac371f2413be85bd183333",
+      "target_sha256": "3eaddbd7a9ceaedfbf16ad05c7c0c6b49a7294f9fdb57b2e733a54d162f31e63"
+    },
+    {
+      "drive": "2013_05_28_drive_0003_sync",
+      "sample_id": "00042",
+      "index": 38,
+      "n_in_drive": 193,
+      "input_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/samples/2013_05_28_drive_0003_sync/00042.npz",
+      "target_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/targets/2013_05_28_drive_0003_sync/00042.npz",
+      "input_sha256": "4764b8578c091bfc1f3ca288174c421347f12a654466d0e0c36f276d75c81389",
+      "target_sha256": "22d0ef358714f4c21700529250164b7fe6738c3acdf5ec692bb13453b778af5f"
+    },
+    {
+      "drive": "2013_05_28_drive_0003_sync",
+      "sample_id": "00081",
+      "index": 77,
+      "n_in_drive": 193,
+      "input_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/samples/2013_05_28_drive_0003_sync/00081.npz",
+      "target_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/targets/2013_05_28_drive_0003_sync/00081.npz",
+      "input_sha256": "04b25536392977a9bae5ca9041bfbe4e02488f41dbebe400d599b544b2d5b15e",
+      "target_sha256": "e68283e7c9a15c845a26fd0d04ca91a60cf4f0306633722b77ef40e5f7613063"
+    },
+    {
+      "drive": "2013_05_28_drive_0003_sync",
+      "sample_id": "00119",
+      "index": 115,
+      "n_in_drive": 193,
+      "input_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/samples/2013_05_28_drive_0003_sync/00119.npz",
+      "target_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/targets/2013_05_28_drive_0003_sync/00119.npz",
+      "input_sha256": "9424801a09c74ff29dd18bf75ec003c1aa43aa6ad8d0ee493ad6b28ee6114f8a",
+      "target_sha256": "b37e5549427d5641315e0cc5327261b41f438b864c1044e9458a0a9cc9d650ae"
+    },
+    {
+      "drive": "2013_05_28_drive_0003_sync",
+      "sample_id": "00158",
+      "index": 154,
+      "n_in_drive": 193,
+      "input_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/samples/2013_05_28_drive_0003_sync/00158.npz",
+      "target_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/targets/2013_05_28_drive_0003_sync/00158.npz",
+      "input_sha256": "a684e0044838c734dd3ba6c76b868ce37ab08e1d5a18dc4c5eb70adc050ac959",
+      "target_sha256": "ef85bd799684a5682a7d4f080f399c9da2eec5cd0343850ef8f30e0d7a945475"
+    },
+    {
+      "drive": "2013_05_28_drive_0003_sync",
+      "sample_id": "00196",
+      "index": 192,
+      "n_in_drive": 193,
+      "input_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/samples/2013_05_28_drive_0003_sync/00196.npz",
+      "target_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/targets/2013_05_28_drive_0003_sync/00196.npz",
+      "input_sha256": "b973db8628017c1bc90f12c4e7adc58ee3eea0fa9ca860ab87943616e4cd052a",
+      "target_sha256": "8db95d2906724eb1a9c5dde5a7ba2c45c55518216097cd1b64f325fcadd59344"
+    },
+    {
+      "drive": "2013_05_28_drive_0007_sync",
+      "sample_id": "00004",
+      "index": 0,
+      "n_in_drive": 569,
+      "input_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/samples/2013_05_28_drive_0007_sync/00004.npz",
+      "target_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/targets/2013_05_28_drive_0007_sync/00004.npz",
+      "input_sha256": "3f6c6a471eaf9acf125ec4c35d896b59b4c681785740fd432bd06e0481d5e299",
+      "target_sha256": "fe8b99a630fe151b014c96125c9927824afd63150cb57f707538d8c6e6037d6c"
+    },
+    {
+      "drive": "2013_05_28_drive_0007_sync",
+      "sample_id": "00146",
+      "index": 142,
+      "n_in_drive": 569,
+      "input_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/samples/2013_05_28_drive_0007_sync/00146.npz",
+      "target_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/targets/2013_05_28_drive_0007_sync/00146.npz",
+      "input_sha256": "7e43ae8146d6b1002d6adb1362e9c73452edd5485dfaede5586c081ca1abcbd9",
+      "target_sha256": "1afd546429c8b34b212cce70b2d9430b8147120e20ebfc948cb0065932038c17"
+    },
+    {
+      "drive": "2013_05_28_drive_0007_sync",
+      "sample_id": "00288",
+      "index": 284,
+      "n_in_drive": 569,
+      "input_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/samples/2013_05_28_drive_0007_sync/00288.npz",
+      "target_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/targets/2013_05_28_drive_0007_sync/00288.npz",
+      "input_sha256": "850ecc12b0f804a4ef763cb31e3d3a23f6c91fc36d8de4e195fcf6593044939e",
+      "target_sha256": "58b55e479d1ca88e8f193903d5ae51eb80c66c4f41a5f1e3fb4d78fe3b40fded"
+    },
+    {
+      "drive": "2013_05_28_drive_0007_sync",
+      "sample_id": "00430",
+      "index": 426,
+      "n_in_drive": 569,
+      "input_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/samples/2013_05_28_drive_0007_sync/00430.npz",
+      "target_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/targets/2013_05_28_drive_0007_sync/00430.npz",
+      "input_sha256": "07de98a46ef86c0f55515de38f9b0afdbd69e59b6c6308e9bc745ed56997fc7c",
+      "target_sha256": "e21983ff7bdeba37b1a19dbbd8bdb758efa34e97e261a8f460251fb993316fd7"
+    },
+    {
+      "drive": "2013_05_28_drive_0007_sync",
+      "sample_id": "00572",
+      "index": 568,
+      "n_in_drive": 569,
+      "input_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/samples/2013_05_28_drive_0007_sync/00572.npz",
+      "target_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/targets/2013_05_28_drive_0007_sync/00572.npz",
+      "input_sha256": "2bc93f7f233700f03b7493eeef05dfaae32efceaefeabe7de55d7b59a0d4b7e9",
+      "target_sha256": "cbf91e77f4766ba4e83b9486c8759f26c011d92c8d110a421ef754618d82761b"
+    },
+    {
+      "drive": "2013_05_28_drive_0010_sync",
+      "sample_id": "00004",
+      "index": 0,
+      "n_in_drive": 596,
+      "input_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/samples/2013_05_28_drive_0010_sync/00004.npz",
+      "target_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/targets/2013_05_28_drive_0010_sync/00004.npz",
+      "input_sha256": "abdc8c645ccc90422cc5e1d5ec07d8df65a83980213579a840dd55635b80e8d0",
+      "target_sha256": "10511729fdbd02b896f280a90618240dc87221fc3dc9d079ed3d9184fc1872bf"
+    },
+    {
+      "drive": "2013_05_28_drive_0010_sync",
+      "sample_id": "00153",
+      "index": 149,
+      "n_in_drive": 596,
+      "input_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/samples/2013_05_28_drive_0010_sync/00153.npz",
+      "target_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/targets/2013_05_28_drive_0010_sync/00153.npz",
+      "input_sha256": "f650d0c86fd51f9baa7656d2a4be9a3cbcea6ad32c946b926be4f81deaadc068",
+      "target_sha256": "a48bdab9be47745c82f042ebee96be39ab791d456d937843fe291c21e807066f"
+    },
+    {
+      "drive": "2013_05_28_drive_0010_sync",
+      "sample_id": "00302",
+      "index": 298,
+      "n_in_drive": 596,
+      "input_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/samples/2013_05_28_drive_0010_sync/00302.npz",
+      "target_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/targets/2013_05_28_drive_0010_sync/00302.npz",
+      "input_sha256": "7c7f36c59e1ad00fb75067374006d1a9fab53e00457b8f6527f814fd959d3735",
+      "target_sha256": "d97ffb8b145cc1d745d144232758ac19a260ad06bb61fdbd607158bc00fae56f"
+    },
+    {
+      "drive": "2013_05_28_drive_0010_sync",
+      "sample_id": "00450",
+      "index": 446,
+      "n_in_drive": 596,
+      "input_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/samples/2013_05_28_drive_0010_sync/00450.npz",
+      "target_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/targets/2013_05_28_drive_0010_sync/00450.npz",
+      "input_sha256": "c6e684e80d1b0d2323b819474135cfde908b21604b34d2e61c59841a4bc85011",
+      "target_sha256": "971bff34df20ac720942bf730a98cf3ef2dc9ca734ca072b4214ed0a1fef0ab3"
+    },
+    {
+      "drive": "2013_05_28_drive_0010_sync",
+      "sample_id": "00599",
+      "index": 595,
+      "n_in_drive": 596,
+      "input_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/samples/2013_05_28_drive_0010_sync/00599.npz",
+      "target_path": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1/targets/2013_05_28_drive_0010_sync/00599.npz",
+      "input_sha256": "5fcdac45aa0fbe647b1077fcff9725d53943f7e958f19b1c29d94cf38257e347",
+      "target_sha256": "30a2d5db9d8073934fa9325d1456ed705da48793a9f4d6336e600edc53bab149"
+    }
+  ],
+  "recorded_before_training": true
+}

@@ -1,0 +1,220 @@
+{
+  "provenance": {
+    "tool": "project_lidar:qa",
+    "git_commit": "9a648322e6dc4e34995f0530650c2fa469779676",
+    "git_dirty_files": [
+      "M lingbot_map/models/gct_stream.py",
+      " M research/sem_bypass/model.py",
+      "?? artifacts/",
+      "?? configs/scale_gate/",
+      "?? lingbot_map_scale_claude_code_plan.md",
+      "?? scale_gate/",
+      "?? scripts/export_occupancy_3d.py",
+      "?? scripts/make_occupancy_ceiling_figure.py",
+      "?? scripts/make_scene_completion_honest_figure.py",
+      "?? tests/scale_gate/",
+      "?? tools/scale_gate/"
+    ],
+    "python": "3.10.19",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.7.1+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "seed": 0,
+    "config_hash": "d2faead637e3a190",
+    "checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+    "checkpoint_sha256": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72",
+    "argv": [
+      "tools/scale_gate/project_lidar.py",
+      "--config",
+      "configs/scale_gate/semantickitti.yaml",
+      "--split",
+      "train",
+      "--qa-only",
+      "--qa-frames",
+      "20"
+    ]
+  },
+  "frames": [
+    {
+      "sequence": "00",
+      "frame": 0,
+      "n_valid_native": 19320,
+      "n_valid_processed": 17843,
+      "depth_min_m": 3.978668689727783,
+      "depth_max_m": 77.68171691894531,
+      "png": "artifacts/scale_gate/qa/semantickitti_projection/proj_00_000000.png"
+    },
+    {
+      "sequence": "00",
+      "frame": 4500,
+      "n_valid_native": 19527,
+      "n_valid_processed": 18108,
+      "depth_min_m": 4.126565456390381,
+      "depth_max_m": 79.0204086303711,
+      "png": "artifacts/scale_gate/qa/semantickitti_projection/proj_00_004500.png"
+    },
+    {
+      "sequence": "01",
+      "frame": 0,
+      "n_valid_native": 20289,
+      "n_valid_processed": 18930,
+      "depth_min_m": 4.980103492736816,
+      "depth_max_m": 78.54088592529297,
+      "png": "artifacts/scale_gate/qa/semantickitti_projection/proj_01_000000.png"
+    },
+    {
+      "sequence": "01",
+      "frame": 1075,
+      "n_valid_native": 16526,
+      "n_valid_processed": 15194,
+      "depth_min_m": 2.2573890686035156,
+      "depth_max_m": 78.28353118896484,
+      "png": "artifacts/scale_gate/qa/semantickitti_projection/proj_01_001075.png"
+    },
+    {
+      "sequence": "02",
+      "frame": 0,
+      "n_valid_native": 18897,
+      "n_valid_processed": 17627,
+      "depth_min_m": 5.293186664581299,
+      "depth_max_m": 79.66262817382812,
+      "png": "artifacts/scale_gate/qa/semantickitti_projection/proj_02_000000.png"
+    },
+    {
+      "sequence": "02",
+      "frame": 4625,
+      "n_valid_native": 20029,
+      "n_valid_processed": 18673,
+      "depth_min_m": 4.898251533508301,
+      "depth_max_m": 79.02841186523438,
+      "png": "artifacts/scale_gate/qa/semantickitti_projection/proj_02_004625.png"
+    },
+    {
+      "sequence": "03",
+      "frame": 0,
+      "n_valid_native": 19465,
+      "n_valid_processed": 18060,
+      "depth_min_m": 5.210562229156494,
+      "depth_max_m": 78.390869140625,
+      "png": "artifacts/scale_gate/qa/semantickitti_projection/proj_03_000000.png"
+    },
+    {
+      "sequence": "03",
+      "frame": 775,
+      "n_valid_native": 20718,
+      "n_valid_processed": 19182,
+      "depth_min_m": 4.932501792907715,
+      "depth_max_m": 68.20095825195312,
+      "png": "artifacts/scale_gate/qa/semantickitti_projection/proj_03_000775.png"
+    },
+    {
+      "sequence": "04",
+      "frame": 0,
+      "n_valid_native": 19894,
+      "n_valid_processed": 18449,
+      "depth_min_m": 5.800324440002441,
+      "depth_max_m": 78.50423431396484,
+      "png": "artifacts/scale_gate/qa/semantickitti_projection/proj_04_000000.png"
+    },
+    {
+      "sequence": "04",
+      "frame": 250,
+      "n_valid_native": 20032,
+      "n_valid_processed": 18496,
+      "depth_min_m": 5.455494403839111,
+      "depth_max_m": 78.33934020996094,
+      "png": "artifacts/scale_gate/qa/semantickitti_projection/proj_04_000250.png"
+    },
+    {
+      "sequence": "05",
+      "frame": 0,
+      "n_valid_native": 20650,
+      "n_valid_processed": 19182,
+      "depth_min_m": 5.1143798828125,
+      "depth_max_m": 77.31819152832031,
+      "png": "artifacts/scale_gate/qa/semantickitti_projection/proj_05_000000.png"
+    },
+    {
+      "sequence": "05",
+      "frame": 2725,
+      "n_valid_native": 19561,
+      "n_valid_processed": 17983,
+      "depth_min_m": 4.874041557312012,
+      "depth_max_m": 78.58140563964844,
+      "png": "artifacts/scale_gate/qa/semantickitti_projection/proj_05_002725.png"
+    },
+    {
+      "sequence": "06",
+      "frame": 0,
+      "n_valid_native": 19745,
+      "n_valid_processed": 18239,
+      "depth_min_m": 5.340960502624512,
+      "depth_max_m": 79.35508728027344,
+      "png": "artifacts/scale_gate/qa/semantickitti_projection/proj_06_000000.png"
+    },
+    {
+      "sequence": "06",
+      "frame": 1075,
+      "n_valid_native": 19133,
+      "n_valid_processed": 17720,
+      "depth_min_m": 3.7173383235931396,
+      "depth_max_m": 75.17089080810547,
+      "png": "artifacts/scale_gate/qa/semantickitti_projection/proj_06_001075.png"
+    },
+    {
+      "sequence": "07",
+      "frame": 0,
+      "n_valid_native": 19951,
+      "n_valid_processed": 18512,
+      "depth_min_m": 5.490368366241455,
+      "depth_max_m": 76.04340362548828,
+      "png": "artifacts/scale_gate/qa/semantickitti_projection/proj_07_000000.png"
+    },
+    {
+      "sequence": "07",
+      "frame": 1075,
+      "n_valid_native": 18468,
+      "n_valid_processed": 16969,
+      "depth_min_m": 4.6301469802856445,
+      "depth_max_m": 69.90302276611328,
+      "png": "artifacts/scale_gate/qa/semantickitti_projection/proj_07_001075.png"
+    },
+    {
+      "sequence": "09",
+      "frame": 0,
+      "n_valid_native": 20627,
+      "n_valid_processed": 19125,
+      "depth_min_m": 5.928196907043457,
+      "depth_max_m": 72.30420684814453,
+      "png": "artifacts/scale_gate/qa/semantickitti_projection/proj_09_000000.png"
+    },
+    {
+      "sequence": "09",
+      "frame": 1550,
+      "n_valid_native": 20480,
+      "n_valid_processed": 18959,
+      "depth_min_m": 5.449063301086426,
+      "depth_max_m": 78.96656036376953,
+      "png": "artifacts/scale_gate/qa/semantickitti_projection/proj_09_001550.png"
+    },
+    {
+      "sequence": "10",
+      "frame": 0,
+      "n_valid_native": 16542,
+      "n_valid_processed": 15403,
+      "depth_min_m": 6.177819728851318,
+      "depth_max_m": 79.27412414550781,
+      "png": "artifacts/scale_gate/qa/semantickitti_projection/proj_10_000000.png"
+    },
+    {
+      "sequence": "10",
+      "frame": 1175,
+      "n_valid_native": 19954,
+      "n_valid_processed": 18493,
+      "depth_min_m": 3.2557849884033203,
+      "depth_max_m": 66.3228988647461,
+      "png": "artifacts/scale_gate/qa/semantickitti_projection/proj_10_001175.png"
+    }
+  ]
+}

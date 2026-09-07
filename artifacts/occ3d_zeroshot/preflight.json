@@ -1,0 +1,98 @@
+{
+  "status": "DATA_PRESENT",
+  "resolved_root": "/media/SSD1/MINH_DATASETS/nuscenes",
+  "resolution_method": "repository configuration (data.nuscenes_root)",
+  "occ3d_root": "/media/SSD1/MINH_DATASETS/nuscenes/occ3d_gt/Occupancy3D-nuScenes-trainval",
+  "forbidden_prefix_check": "passed",
+  "filesystem_nuscenes": {
+    "path": "/media/SSD1/MINH_DATASETS/nuscenes",
+    "filesystem_type": "ext4",
+    "total_bytes": 1967846088704,
+    "free_bytes": 638966820864,
+    "total_gib": 1832.6994857788086,
+    "free_gib": 595.0842247009277,
+    "free_fraction": 0.3247036567198281,
+    "inodes_total": 122101760,
+    "inodes_free": 119346171
+  },
+  "filesystem_occ3d": {
+    "path": "/media/SSD1/MINH_DATASETS/nuscenes/occ3d_gt/Occupancy3D-nuScenes-trainval",
+    "filesystem_type": "ext4",
+    "total_bytes": 1967846088704,
+    "free_bytes": 638966820864,
+    "total_gib": 1832.6994857788086,
+    "free_gib": 595.0842247009277,
+    "free_fraction": 0.3247036567198281,
+    "inodes_total": 122101760,
+    "inodes_free": 119346171
+  },
+  "present": {
+    "nuscenes/v1.0-trainval": true,
+    "nuscenes/samples/CAM_FRONT": true,
+    "nuscenes/samples/LIDAR_TOP": true,
+    "occ3d/annotations.json": true,
+    "occ3d/gts": true
+  },
+  "missing": [],
+  "sizes_bytes": {
+    "nuscenes_samples_cam_front": 5093421866,
+    "nuscenes_v1.0-trainval_meta": 32,
+    "occ3d_gts": 2912197920,
+    "occ3d_annotations": 150463571
+  },
+  "counts": {
+    "samples_CAM_FRONT_files": 34149,
+    "occ3d_gt_scene_dirs": 850
+  },
+  "official_split": {
+    "train_scenes": 700,
+    "val_scenes": 150,
+    "scene_infos": 850
+  },
+  "download_required": false,
+  "download_performed": false,
+  "free_space_headroom_ok": true,
+  "frozen_components": {
+    "lingbot": {
+      "path": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+      "exists": true,
+      "sha256": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72"
+    },
+    "depth_head": {
+      "path": "artifacts/depth_gate/runs/depth_cnn/best.pt",
+      "exists": true,
+      "sha256": "2a91822ea5d1182a6c0e5394751e74c56200ee5c4cae3d98c59a8a519faafbe1"
+    },
+    "full_s0": {
+      "path": "artifacts/voxel_gate_validation/runs/full_s0/best.pt",
+      "exists": true,
+      "sha256": "05730ac7addb101d51a15300b6f7a7427d4ed30252d704a0736abf73b0d2465d"
+    },
+    "occ_only_s0": {
+      "path": "artifacts/voxel_gate_validation/runs/occ_only_s0/best.pt",
+      "exists": true,
+      "sha256": "b90a6e4ee9cdeccdeaaa5162377a567ccd4dd7e256fcbf6770bbfd610d702e16"
+    },
+    "c0_corrector_s0": {
+      "path": "artifacts/voxel_gate_validation/runs/c0_corrector_s0/best.pt",
+      "exists": true,
+      "sha256": "6590049302ef20445aba5018a7bceaf5a5751234ea84c59b15adf73d1ce644e9"
+    },
+    "gate31_config": {
+      "path": "configs/voxel_gate_validation/clean_infill.yaml",
+      "exists": true,
+      "sha256": "a548ed08fcbe1ea61ce9d7525dec7e7ce7eaacdf886706f663995760100ff1f4"
+    },
+    "gate2_config": {
+      "path": "configs/depth_gate/refine.yaml",
+      "exists": true,
+      "sha256": "b7692022114830f94272da520e70ce774587d14ff04d5bd65d2eb08f41e0dd92"
+    },
+    "gate0_config": {
+      "path": "configs/scale_gate/semantickitti.yaml",
+      "exists": true,
+      "sha256": "472b45311a5e03ba74706022ad10cd7a4387f4ae269c984682a1a25f3e4ea086"
+    }
+  },
+  "elapsed_s": 5.97857403755188
+}

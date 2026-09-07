@@ -1,0 +1,80 @@
+{
+  "variant": "A",
+  "dataset": "sscbench_kitti360",
+  "sequence": "2013_05_28_drive_0006_sync",
+  "n_clips": 1753,
+  "n_ok": 1753,
+  "n_failed": 0,
+  "failed_clip_ids": [],
+  "native_hw": [
+    376,
+    1408
+  ],
+  "proc_hw": [
+    140,
+    518
+  ],
+  "K_native": [
+    [
+      552.554261,
+      0.0,
+      682.049453
+    ],
+    [
+      0.0,
+      552.554261,
+      238.769549
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "K_processed": [
+    [
+      203.28345681676137,
+      0.0,
+      250.92444364630683
+    ],
+    [
+      0.0,
+      205.73828867021277,
+      88.9035554787234
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "pixel_aspect_anisotropy": 1.012075905692927,
+  "processed_aspect_ratio": 3.7,
+  "calibrated_fov_x_deg": 103.74480804467827,
+  "crop_applied": false,
+  "s_moge": {
+    "median": 20.750334859545767,
+    "p05": 16.34782934614139,
+    "p25": 19.038432670217215,
+    "p75": 22.937041170634913,
+    "p95": 25.55468801474439
+  },
+  "elapsed_s": 545.0288739204407,
+  "peak_gpu_gib": 2.2123546600341797,
+  "moge": {
+    "repo": "https://github.com/microsoft/MoGe",
+    "commit": "74fbce054ebed49800de42d0ad0e83495065719a",
+    "hf_repo": "Ruicheng/moge-2-vitl",
+    "hf_revision": "39c4d5e957afe587e04eec59dc2bcc3be5ecd968",
+    "model_class": "moge.model.v2.MoGeModel",
+    "license": "MIT",
+    "n_params": 326209221,
+    "weight_sha256": "3eefd4abb2102f38f12b2d1992e5ff15e4923e5431c67dd494afe157e0111cd5",
+    "depth_convention": "optical-axis z (points[...,2]), OpenCV camera frame",
+    "fov_source": "predicted by MoGe from RGB (fov_x=None)"
+  },
+  "fov_moge_out_deg_median": 102.88146209716797,
+  "fov_difference_deg_median": -0.8633459475102967,
+  "mad_log_clip_median": 0.06452298217446062,
+  "per_frame_log_scale_std_median": 0.0472031754701301
+}

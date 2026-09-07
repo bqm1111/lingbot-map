@@ -1,0 +1,50 @@
+{
+  "provenance": {
+    "tool": "prepare_manifest",
+    "git_commit": "9a648322e6dc4e34995f0530650c2fa469779676",
+    "git_dirty_files": [
+      "M lingbot_map/models/gct_stream.py",
+      " M research/sem_bypass/model.py",
+      "?? artifacts/",
+      "?? configs/scale_gate/",
+      "?? lingbot_map_scale_claude_code_plan.md",
+      "?? scale_gate/",
+      "?? scripts/export_occupancy_3d.py",
+      "?? scripts/make_occupancy_ceiling_figure.py",
+      "?? scripts/make_scene_completion_honest_figure.py",
+      "?? tests/scale_gate/",
+      "?? tools/scale_gate/"
+    ],
+    "python": "3.10.19",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "torch": "2.7.1+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "seed": 0,
+    "config_hash": "d2faead637e3a190",
+    "checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+    "checkpoint_sha256": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72",
+    "argv": [
+      "tools/scale_gate/prepare_manifest.py",
+      "--config",
+      "configs/scale_gate/semantickitti.yaml"
+    ]
+  },
+  "manifests": {
+    "train": {
+      "path": "artifacts/scale_gate/manifests/train.jsonl",
+      "n_clips": 763,
+      "sha256": "f903fc3c3adb65a42d7e5d3848b73ea9f1e122b04b0cce6d945d13e003e057b8"
+    },
+    "val": {
+      "path": "artifacts/scale_gate/manifests/val.jsonl",
+      "n_clips": 163,
+      "sha256": "deef3e54691432be7889211b38dda61e323a47dec38c8047fdaeff5ded5ad5fb"
+    },
+    "smoke": {
+      "path": "artifacts/scale_gate/manifests/smoke.jsonl",
+      "n_clips": 2,
+      "sha256": "6a2a177ed70cb3a95be7b3a50e7be13f162e2cfee5bdcba7f55d3d8f01d97ee9"
+    }
+  }
+}

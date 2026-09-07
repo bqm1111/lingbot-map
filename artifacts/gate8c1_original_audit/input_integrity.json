@@ -1,0 +1,460 @@
+{
+  "occany_image_checks": [
+    {
+      "dataset": "semantickitti",
+      "clip_id": "08_000000_000020_s5",
+      "input_images": [
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/000020.png",
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/000030.png",
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/000040.png",
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/000050.png",
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/000060.png"
+      ],
+      "input_orders": [
+        20,
+        30,
+        40,
+        50,
+        60
+      ],
+      "pixel_differences": [
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        }
+      ],
+      "intrinsics_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "extrinsic_max_abs": 2.220446049250313e-16
+    },
+    {
+      "dataset": "semantickitti",
+      "clip_id": "08_002000_002020_s5",
+      "input_images": [
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/002020.png",
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/002030.png",
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/002040.png",
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/002050.png",
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/002060.png"
+      ],
+      "input_orders": [
+        2020,
+        2030,
+        2040,
+        2050,
+        2060
+      ],
+      "pixel_differences": [
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        }
+      ],
+      "intrinsics_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "extrinsic_max_abs": 2.220446049250313e-16
+    },
+    {
+      "dataset": "semantickitti",
+      "clip_id": "08_004000_004020_s5",
+      "input_images": [
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/004020.png",
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/004030.png",
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/004040.png",
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/004050.png",
+        "/home/minh/workspace/lingbot-map_fork/data/kitti/dataset/sequences/08/image_2/004060.png"
+      ],
+      "input_orders": [
+        4020,
+        4030,
+        4040,
+        4050,
+        4060
+      ],
+      "pixel_differences": [
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        }
+      ],
+      "intrinsics_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "extrinsic_max_abs": 2.220446049250313e-16
+    },
+    {
+      "dataset": "occ3d",
+      "clip_id": "scene-0003_CAM_FRONT_fd842039_f56a5440",
+      "input_images": [
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201472412460.jpg",
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201473362460.jpg",
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201474412460.jpg",
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201475412460.jpg",
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201476362460.jpg"
+      ],
+      "input_orders": [
+        1533201472448201000,
+        1533201473399299000,
+        1533201474449915000,
+        1533201475449679000,
+        1533201476399102000
+      ],
+      "pixel_differences": [
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        }
+      ],
+      "intrinsics_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "extrinsic_max_abs": 0.00017161343612787094
+    },
+    {
+      "dataset": "occ3d",
+      "clip_id": "scene-0633_CAM_FRONT_5406def8_3f2c2941",
+      "input_images": [
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n008-2018-09-18-14-35-12-0400__CAM_FRONT__1537296045412404.jpg",
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n008-2018-09-18-14-35-12-0400__CAM_FRONT__1537296046412404.jpg",
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n008-2018-09-18-14-35-12-0400__CAM_FRONT__1537296047412404.jpg",
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n008-2018-09-18-14-35-12-0400__CAM_FRONT__1537296048412404.jpg",
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n008-2018-09-18-14-35-12-0400__CAM_FRONT__1537296049412405.jpg"
+      ],
+      "input_orders": [
+        1537296045449787000,
+        1537296046449552000,
+        1537296047449845000,
+        1537296048450704000,
+        1537296049449931000
+      ],
+      "pixel_differences": [
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        }
+      ],
+      "intrinsics_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "extrinsic_max_abs": 0.31033903237793115
+    },
+    {
+      "dataset": "occ3d",
+      "clip_id": "scene-1073_CAM_FRONT_1bfa473e_df9df601",
+      "input_images": [
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-11-21-19-21-35+0800__CAM_FRONT__1542799756912460.jpg",
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-11-21-19-21-35+0800__CAM_FRONT__1542799757912460.jpg",
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-11-21-19-21-35+0800__CAM_FRONT__1542799758912464.jpg",
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-11-21-19-21-35+0800__CAM_FRONT__1542799759912460.jpg",
+        "/media/SSD1/MINH_DATASETS/nuscenes/samples/CAM_FRONT/n015-2018-11-21-19-21-35+0800__CAM_FRONT__1542799760912460.jpg"
+      ],
+      "input_orders": [
+        1542799756947423000,
+        1542799757947730000,
+        1542799758948001000,
+        1542799759947239000,
+        1542799760947509000
+      ],
+      "pixel_differences": [
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        },
+        {
+          "mean_abs": 0.0,
+          "max_abs": 0.0
+        }
+      ],
+      "intrinsics_max_abs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "extrinsic_max_abs": 0.14939402771194032
+    }
+  ],
+  "scale_checks": [
+    {
+      "dataset": "semantickitti",
+      "key": "08_000000",
+      "saved_log_s": 3.2951103857689628,
+      "recomputed_log_s": 3.2951103857689628
+    },
+    {
+      "dataset": "semantickitti",
+      "key": "08_000005",
+      "saved_log_s": 3.315172337957464,
+      "recomputed_log_s": 3.315172337957464
+    },
+    {
+      "dataset": "semantickitti",
+      "key": "08_000010",
+      "saved_log_s": 3.308387266937152,
+      "recomputed_log_s": 3.308387266937152
+    },
+    {
+      "dataset": "semantickitti",
+      "key": "08_000015",
+      "saved_log_s": 3.2842543292554973,
+      "recomputed_log_s": 3.2842543292554973
+    },
+    {
+      "dataset": "semantickitti",
+      "key": "08_000020",
+      "saved_log_s": 3.290661993409117,
+      "recomputed_log_s": 3.290661993409117
+    },
+    {
+      "dataset": "occ3d",
+      "key": "n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201470412460",
+      "saved_log_s": 2.7498405847138447,
+      "recomputed_log_s": 2.7498405847138447
+    },
+    {
+      "dataset": "occ3d",
+      "key": "n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201470912460",
+      "saved_log_s": 2.7546164798353505,
+      "recomputed_log_s": 2.7546164798353505
+    },
+    {
+      "dataset": "occ3d",
+      "key": "n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201471412477",
+      "saved_log_s": 2.744092377410163,
+      "recomputed_log_s": 2.744092377410163
+    },
+    {
+      "dataset": "occ3d",
+      "key": "n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201471912460",
+      "saved_log_s": 2.7376873183962163,
+      "recomputed_log_s": 2.7376873183962163
+    },
+    {
+      "dataset": "occ3d",
+      "key": "n015-2018-08-02-17-16-37+0800__CAM_FRONT__1533201472412460",
+      "saved_log_s": 2.7685236741256793,
+      "recomputed_log_s": 2.7685236741256793
+    }
+  ],
+  "source_listings": {
+    "targets_0003": {
+      "current": {
+        "n_files": 193,
+        "total_bytes": 37792799,
+        "listing_sha256": "017003559fa44aefc12b19bb962ef91962494f704a93f2d9b7238de228c89f69"
+      },
+      "frozen": {
+        "n_files": 193,
+        "total_bytes": 37787781,
+        "listing_sha256": "5704b3a8c5cb49edc2687fab2bd8e6d333fdb75f358db280c307152cd7d1b651"
+      },
+      "matches": false
+    },
+    "targets_0007": {
+      "current": {
+        "n_files": 569,
+        "total_bytes": 109151639,
+        "listing_sha256": "cfc788b779ef237be6a6baa68866cb8ac3e99ba6b640ee64107fbf7caf3a8731"
+      },
+      "frozen": {
+        "n_files": 569,
+        "total_bytes": 109136845,
+        "listing_sha256": "64f8a26cd5bc24f4b6630ecd4faa58f3d3b05f7ace665ee47631db295556a499"
+      },
+      "matches": false
+    },
+    "targets_0010": {
+      "current": {
+        "n_files": 596,
+        "total_bytes": 113698828,
+        "listing_sha256": "6caf8faf468f816f3f6b8afdfbfeb9738470189ac344fb1b3825d35d85f5bfb6"
+      },
+      "frozen": {
+        "n_files": 596,
+        "total_bytes": 113683332,
+        "listing_sha256": "8b4f62522f7607a61e14e1a908de7a86ccfe33d74c18033cddfc2771a7559de7"
+      },
+      "matches": false
+    },
+    "targets_0006": {
+      "current": {
+        "n_files": 590,
+        "total_bytes": 104116309,
+        "listing_sha256": "29501a7582bd21df9f3edd60ef5cce38c2a7a7843101aa941c9b81b0147a51c7"
+      },
+      "frozen": {
+        "n_files": 590,
+        "total_bytes": 104100969,
+        "listing_sha256": "226cce3f9ac597ffe61af0e666cb39c53b02cb0ae75f211cb8648ac217b18c24"
+      },
+      "matches": false
+    },
+    "samples_0003": {
+      "current": {
+        "n_files": 193,
+        "total_bytes": 130165371,
+        "listing_sha256": "0e761abab301d8b49fc0790a029dfba1112792d7fc706e08500ce831d598dd39"
+      },
+      "frozen": {
+        "n_files": 193,
+        "total_bytes": 130165371,
+        "listing_sha256": "0e761abab301d8b49fc0790a029dfba1112792d7fc706e08500ce831d598dd39"
+      },
+      "matches": true
+    },
+    "samples_0007": {
+      "current": {
+        "n_files": 569,
+        "total_bytes": 483019778,
+        "listing_sha256": "1c7b30746875d148b2667dd45d3a34c49db2e6fff7f20564cc6c841246f97ba5"
+      },
+      "frozen": {
+        "n_files": 569,
+        "total_bytes": 483019778,
+        "listing_sha256": "1c7b30746875d148b2667dd45d3a34c49db2e6fff7f20564cc6c841246f97ba5"
+      },
+      "matches": true
+    },
+    "samples_0010": {
+      "current": {
+        "n_files": 596,
+        "total_bytes": 806091259,
+        "listing_sha256": "daecdba01799b8195123f963dad73e0bea9329ab99f69988f2d2177193bfd36f"
+      },
+      "frozen": {
+        "n_files": 596,
+        "total_bytes": 806091259,
+        "listing_sha256": "daecdba01799b8195123f963dad73e0bea9329ab99f69988f2d2177193bfd36f"
+      },
+      "matches": true
+    },
+    "samples_0006": {
+      "current": {
+        "n_files": 590,
+        "total_bytes": 610851790,
+        "listing_sha256": "0a1eed0c484d88d3b595bb91fe2bed0fa6a21d46e1254f2ecc548542b1690cfa"
+      },
+      "frozen": {
+        "n_files": 590,
+        "total_bytes": 610851790,
+        "listing_sha256": "0a1eed0c484d88d3b595bb91fe2bed0fa6a21d46e1254f2ecc548542b1690cfa"
+      },
+      "matches": true
+    }
+  }
+}

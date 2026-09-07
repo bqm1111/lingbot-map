@@ -1,0 +1,37 @@
+{
+  "gate": "8B",
+  "selected_checkpoints": {
+    "semantickitti": {
+      "path": "artifacts/gate8b/checkpoints/fold_semantickitti_best.pt",
+      "sha256": "708951df7b0e136eee2eda1264e85d44bd08a68d8f24ea491d16f8723d9bb08b",
+      "recorded_sha256_matches": true
+    },
+    "occ3d": {
+      "path": "artifacts/gate8b/checkpoints/fold_occ3d_best.pt",
+      "sha256": "8728000f23756b73660eb6070e8762efe5815f6be9f5336701d274fcfdf9466c",
+      "recorded_sha256_matches": true
+    },
+    "kitti360": {
+      "path": "artifacts/gate8a/checkpoints/cellB_uniform_focal_last.pt",
+      "sha256": "b505fdc4facdd53a2ee877de26f09045d3d3f13ec6468b81bd49226db0ac9c62",
+      "recorded_sha256_matches": true
+    }
+  },
+  "configs": {
+    "configs/gate8b/fold_occ3d.yaml": "94eb1deb52f7e4d67f424c3f2abc29aec3c3c88e5442d79db436be484bd6821b",
+    "configs/gate8b/fold_semantickitti.yaml": "5df791b786c4d9c3c37691a7b39101f9d6fc141c1145e9b71e3306fd8d1ac369",
+    "configs/gate8b/frozen_fold_occ3d.yaml": "82facd75d2c02e8a6ba5a8d5a935052c68df8cf99342a8630a9d334bde6781ba",
+    "configs/gate8b/frozen_fold_semantickitti.yaml": "3e3f0deacb95b59509bcd627d156d4ecb3ad718e9607542f56d096f48f4cf738"
+  },
+  "frozen_files": {
+    "configs/gate8a/frozen_selection.yaml": "348959a0be5eff2cf0da9769df267c59a7a5e67825ffcfd2e88e2768c74c2458",
+    "gate8/net.py": "4cbfced792c8f255fc808c66819cc7f553777157e6699c01d4c26076af7a4ea4",
+    "gate8/mapper.py": "95fd13c875a640cdb47dd964c53b59ced8e669331334f7431783036e958fe0eb",
+    "gate8/targets.py": "6ff8d46feb69148d54576aea192f40849a6fd01ea03af4797f8758a2c2f619ff",
+    "gate8/losses.py": "92d3d4f9586a05749d58f86a60221bb4f57521e8c86137e8d0d0d1d423636348",
+    "gate8a/regions.py": "79377f22e923ef50d01006d4859d2602fc9cab0ad25f4abbb73e73b2679fe6cc",
+    "gate8a/scores.py": "7bfbfb98737ba49acaf3958a369206bffe9b4c81da358cb5685977d57a22cba9",
+    "gate8b/pooling.py": "7fca6129a69c63a12229d297f0b0dc09e4a0af80ac91fae8327827f46c541889",
+    "gate8b/clips.py": "0f1a7d3de78c4e2699f8cc50d888b6f1a27f34a77c03a31f3ae45d6b2ca88c13"
+  }
+}
