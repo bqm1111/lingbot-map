@@ -178,18 +178,25 @@ def build(geo: TF.DriveGeometry, anchor_native: int, future_natives: Sequence[in
     # KITTI-360 LiDAR geometry alone; no target dataset is consulted.
     X, Y, Z = (int(d) for d in dims)
     sv = state.view(X, Y, Z)
-    occ3 = sv == OCCUPIED
+    # Every voxel a sweep put a return in -- including one the conflict rule left UNKNOWN.
+    # Resolved OCCUPIED is not enough here. A conflicting voxel is still a real surface
+    # detection, so it must raise the roof (or the sky is carved straight through it) and
+    # it must never itself be carved (or a measured return is labelled FREE, which is the
+    # contradiction Gate 8C-0 rejected SSCBench's own label for).
+    measured = (n_occ > 0).view(X, Y, Z)
     zi = torch.arange(Z, device=device).view(1, 1, Z)
     neg = torch.full((X, Y, Z), -1, device=device, dtype=zi.dtype)
-    top = torch.where(occ3, zi.expand(X, Y, Z), neg).amax(dim=2)          # [X, Y]
+    top = torch.where(measured, zi.expand(X, Y, Z), neg).amax(dim=2)      # [X, Y]
     # a column with no return of its own borrows the highest roof in its neighbourhood
     k = 2 * SKY_NEIGHBOURHOOD_VOX + 1
     top_local = torch.nn.functional.max_pool2d(
         top.to(torch.float32)[None, None], kernel_size=k, stride=1,
         padding=SKY_NEIGHBOURHOOD_VOX)[0, 0].to(top.dtype)
     reachable = top_local >= 0                       # some return within the window
+    # ``~measured`` is implied by the roof test once ``top`` counts every return, and is
+    # kept explicit because it is the invariant the rule must not break.
     sky = ((zi > (top_local + SKY_MARGIN_VOX).unsqueeze(2))
-           & reachable.unsqueeze(2) & (sv == UNKNOWN))
+           & reachable.unsqueeze(2) & (sv == UNKNOWN) & ~measured)
     n_sky = int(sky.sum())
     sv[sky] = FREE
     state = sv.reshape(-1)
