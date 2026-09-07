@@ -1,5 +1,8 @@
 # core/ — the pipeline that is actually running
 
+> Looking for the headline results and how to rerun them? Start at
+> [`../REPRODUCE.md`](../REPRODUCE.md). This file explains the code.
+
 The repository holds **602 Python files** across ~30 research "gates". **57 of them** are
 reachable from the current line of work (Gate 8C-1). This directory is those 57 files,
 copied out and reorganised by role, with imports rewritten and nothing else changed.
