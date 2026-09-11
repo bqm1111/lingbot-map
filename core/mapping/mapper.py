@@ -215,7 +215,6 @@ class VoxelTable:
     def free(self) -> torch.Tensor:
         return (self.logodds <= VM.L_OCCUPIED_AT) & (self.w_free > 0)
 
-
 # --------------------------------------------------------------------------- #
 @dataclass
 class FrameInput:

@@ -350,6 +350,7 @@ designed to falsify the previous one.
 | **8B** | does it fail everywhere, or just on KITTI-360? | Mixed: Occ3D **29.55 %** IoU and AUROC 0.705 (passes), SemanticKITTI 7.22 % / 0.536, KITTI-360 18.73 % / 0.493. |
 | **8C-0** | why is KITTI-360 at chance even when trained on it? | **The published label is broken.** A ground-truth LiDAR return lands on a voxel SSCBench's own label calls *free* **71 %** of the time; on SemanticKITTI, under identical code, **1.7 %**. Their own voxel input disagrees with their own label by one voxel in z. Our chain reproduces their input at 99.90 % recall. Also: the model **can** memorise a fixed KITTI-360 batch to AP 0.997, so it is not an optimisation failure. |
 | **8C-1** | with clean supervision, does one-source training transfer? | Trained on KITTI-360 alone with rebuilt raw-LiDAR targets: **Occ3D 30.89 %**, **SemanticKITTI 12.74 %**. |
+| **8C-1 · ceiling** | why does it assert occupancy in a sheet near the top of the grid? | **The sky was never supervised.** A LiDAR ray never climbs above its topmost ring, so `rawtarget.py` marked the sky `UNKNOWN`, and `balanced_weights` gives `UNKNOWN` zero loss weight — while an unobserved voxel decodes to *occupied* by default (log-odds 0 ≥ τ < 0). Declaring open sky **FREE** and retraining: **SemanticKITTI 12.74 → 22.71 %**, **Occ3D 30.89 → 33.88 %**. Full derivation in `the_ceiling_math.md`. |
 
 The Gate 8C-0 finding is the one to lead with if anyone asks about KITTI-360 numbers in
 earlier reports: **they were measuring a defective target and should be withdrawn.**
@@ -360,48 +361,71 @@ earlier reports: **they were measuring a defective target and should be withdraw
 
 ### 8.1 Headline (Protocol A, causal 5 past frames, median of 3 seeds)
 
+**Current model: the ceiling fix** (`artifacts/gate8c1/frozen_manifest_sky.json`,
+`sky_seed{0,1,2}_last.pt`). The pre-fix row is kept because it is what earlier drafts, and
+the still-default `frozen_manifest.json`, report — see the warning after the table.
+
 | | SemanticKITTI 08 | Occ3D-nuScenes val |
 |---|---|---|
-| **ours, raw** | **12.74 %** ± 1.03 | **30.89 %** ± 0.29 |
-| ours + OccAny's post-processing | 11.85 %† | **42.04 %** |
+| **ours, raw — ceiling fixed** | **22.71 %** ± 0.60 | **33.88 %** ± 0.80 |
+| *ours, raw — before the fix* | *12.74 % ± 1.03* | *30.89 % ± 0.29* |
+| ours + OccAny's post-processing | 21.85 % | 35.69 % |
 | map + 0.4 m dilation | 15.41 % | 21.64 % |
 | frozen 5-frame + dilation | 16.00 % | 20.94 % |
 | fill every valid voxel | 7.82 % | 22.95 % |
-| **matched-density random fill** | **7.45 %** | **13.33 %** |
+| **matched-density random fill** | **7.29 %** | **13.19 %** |
 | **map only, no completion** | **8.90 %** | **9.99 %** |
 | OccAny (published, post-processed) | 25.91 % | 23.55 % — **reproduced here: 23.56 %** |
-| OccAny (raw, no post-processing — measured here) | — | **20.67 %** |
-| precision / recall | 15.9 / 39.1 | 67.1 / 36.4 |
-| predicted ÷ true volume | **2.38×** | **0.54×** |
-| AP / prevalence · AUROC | 2.54 · 0.651 | 2.31 · 0.763 |
-| SSC mIoU | 2.65 % | 4.13 % |
+| OccAny (raw, no post-processing — measured here) | **25.28 %** | **20.67 %** |
+| precision / recall | 32.3 / 42.5 | 73.8 / 38.1 |
+| predicted ÷ true volume | **1.32×** | **0.51×** |
+| AP / prevalence · AUROC | 3.48 · **0.809** | 2.31 · **0.731** |
+| SSC mIoU | 3.35 % | 4.24 % |
 
-† Occ3D uses OccAny's own pool-then-mask order (re-measured 2026-09-04); the SemanticKITTI
-cell still carries the gate's mask-then-pool order and was not re-measured — it is the
-stricter of the two on us, so it does not flatter the result.
+All rows: Protocol A `past5`, median of 3 seeds, 163 SemanticKITTI anchors and 1 182 Occ3D
+anchors — the same clips and masks as before the fix. `mapper_native`, `mapper_dilate` and
+`all_valid_occupied` reproduce to the last decimal across both model versions, which is the
+check that nothing else in the evaluation moved. The random-fill row shifts slightly (7.45 →
+7.29, 13.33 → 13.19) because it is **volume-matched to our output**, and our output volume
+changed.
+
+> **The default manifest is still the pre-fix model.** `artifacts/gate8c1/frozen_manifest.json`
+> — which `core/run/eval_target.py` reads unless `G8C1_MANIFEST` is set — names
+> `seed{0,1,2}_last.pt`, whose checkpoints carry no `padding_mode` key. Running any tool
+> without `export G8C1_MANIFEST=…/frozen_manifest_sky.json` reproduces the *italic* row, not
+> the bold one. `REPRODUCE.md` has not yet been repointed.
+
+**What the fix changed, and what it did not.** On SemanticKITTI everything moves the right
+way at once: precision doubles (15.9 → 32.3), over-prediction falls 2.38× → 1.32×, and AUROC
+rises 0.651 → **0.809** — so the improvement is in the *ranking*, not merely the threshold.
+On Occ3D the IoU gain is real (+2.99) but **AUROC falls 0.763 → 0.731**. Say that out loud:
+the fixed model is a better-calibrated and better-ranked model on the benchmark that exposed
+the bug, and a slightly worse-ranked one on the benchmark that hid it. §8.2.1 explains why
+the two benchmarks respond so differently.
 
 **What the training actually bought** (the two bold rows are the before-states):
 
 | | SemanticKITTI | Occ3D |
 |---|---|---|
 | map only, no completion | 8.90 (P 33.3 / R 10.8) | 9.99 (P 65.1 / R 10.6) |
-| random fill of the editable region, same output volume as ours | 7.45 | 13.33 |
-| **trained completion** | **12.74** (P 15.9 / R 39.2) | **30.89** (P 67.1 / R 36.4) |
+| random fill of the editable region, same output volume as ours | 7.29 | 13.19 |
+| **trained completion** | **22.71** (P 32.3 / R 42.5) | **33.88** (P 73.8 / R 38.1) |
 
 The map alone is the same object on both benchmarks: high precision, ~10 % recall, a third
 or a sixth of the true volume. It marks what the camera saw and nothing else.
 
-The two datasets then diverge in *how* the module buys recall. On **Occ3D** recall goes
-10.6 → 36.4 while precision goes 65.1 → **67.1** — it more than triples coverage at no
-precision cost at all, and beats every baseline including a density-matched random fill by
-17.6 points. On **SemanticKITTI** recall goes 10.8 → 39.2 but precision collapses 33.3 →
-15.9: it pays for coverage, and §8.2.1 shows where that payment goes — 71 % of it into a
-slab above 2 m. Training still beats both the raw map (+3.8) and matched random (+5.3)
-there, but not by enough to beat a 0.4 m dilation of the map (15.41).
+On **Occ3D** recall goes 10.6 → 38.1 while precision goes 65.1 → **73.8**: the module more
+than triples coverage *and* improves precision, beating a density-matched random fill by
+20.7 points. On **SemanticKITTI** recall goes 10.8 → 42.5 while precision falls 33.3 → 32.3
+— essentially held, where before the ceiling fix it collapsed to 15.9. The module now clears
+every baseline on both benchmarks, including the 0.4 m dilation (15.41) that used to beat it.
+
+Before the fix this paragraph read the opposite way on SemanticKITTI, and §8.2.1 records
+why.
 
 The random row matters because it is volume-matched: it rules out "the module just predicts
-more voxels". At identical output volume, chance placement scores 13.33 on Occ3D and the
-network scores 30.89.
+more voxels". At identical output volume, chance placement scores 13.19 on Occ3D and the
+network scores 33.88.
 
 ### 8.1.1 Two ablations that change how §8.1 must be read
 
@@ -448,9 +472,16 @@ SemanticKITTI does not show this: 12.26 deployed vs 12.63 blind, i.e. the observ
 roughly neutral there rather than harmful.
 
 **Read it as:** on Occ3D the module is precise and conservative and beats every baseline
-with paired CIs excluding zero. On SemanticKITTI it over-predicts 2.4× and loses to a plain
-0.4 m dilation. Ranking is genuinely above chance on both (AUROC 0.65 / 0.76) — so on
-SemanticKITTI it is the *decision boundary*, not the ordering, that is wrong.
+with paired CIs excluding zero. On SemanticKITTI, *before the ceiling fix*, it over-predicted
+2.4× and lost to a plain 0.4 m dilation, while ranking above chance (AUROC 0.65) — the
+*decision boundary*, not the ordering, was wrong. §8.2.1 found why and fixed it: the fixed
+model over-predicts 1.32×, beats the dilation baseline (22.71 vs 15.41) and ranks at AUROC
+**0.809**.
+
+**The ablations in §8.1.1 have not been re-measured on the fixed model**, so the numbers in
+this subsection are pre-fix throughout. The blind-prior comparison in particular deserves
+re-running before it is quoted again — it is the sharpest caveat on the Occ3D result, and the
+fixed model changes the Occ3D side of the ledger.
 
 ### 8.2 What the pictures show
 
@@ -496,11 +527,47 @@ Measured over those frames (`slab_profile_semantickitti.json`):
   **0.0 %** of the ground truth.
 * Per frame the completion produces ~30–67 k correct voxels against ~187–312 k red ones.
 
-### 8.2.1 What the slab costs — a diagnosis, not a result
+### 8.2.1 The ceiling slab — diagnosed, explained, and fixed
 
-`slab_diagnosis_semantickitti.json`, 24 frames. **Every row but the first is post-hoc**: the
-cut height was chosen by *looking at* SemanticKITTI, which is precisely the target-domain
-tuning the gate forbids. It is reported to size the artefact, never as a score.
+**This section used to end with an open question. It is now answered.** The full case study
+is `reports/the_ceiling_bug.md`; the derivation is `reports/the_ceiling_math.md`. Summary:
+
+**Root cause — two facts that compose.**
+
+1. *An unobserved voxel decodes to OCCUPIED by default.* The map stores log-odds, so a voxel
+   nothing has seen carries `ℓ_base = 0`. The residual gate `|ℓ_base| < LOCK_LOGODDS` is
+   therefore open, giving `ℓ_final = r`, and the decision is `r ≥ τ` with every frozen
+   τ negative. So `r = 0` ⟹ occupied. Empty space is not the default; it must be earned.
+   Verified by forcing `r ≡ 0` (`probe.py --lock 0`): **96.1 %** of scored voxels above 2 m
+   come out occupied.
+2. *No gradient existed there.* `balanced_weights` returns `w = gt_valid.float()`, so
+   `valid = 0` ⟹ `∂L/∂r = 0` **exactly**. A Velodyne ray never climbs above its topmost ring,
+   so `rawtarget.py` marked the sky `UNKNOWN` — and only **0.98 %** of the top training layer
+   carried supervision, against SemanticKITTI scoring **98.99 %** of that layer and calling it
+   empty.
+
+So `r` in the sky was never *wrong*; it was **undefined by the objective**, left to whatever
+the convolutional inductive bias interpolated. Measuring that residual on unobserved sky,
+pre-fix: median **−0.379** on SemanticKITTI with `P(r ≥ τ) = 22.6 %`, against a measured
+sky-fill rate of 21.7 %. The distribution accounts for the slab to within a point.
+
+**The fix.** `rawtarget.py` now marks open sky **FREE** rather than `UNKNOWN`: in a column
+whose returns reached a surface, voxels more than `SKY_MARGIN_VOX` above the topmost return
+are not occluded, merely above the sensor's top ring. Top-layer supervision **1.12 % → 21.9 %**.
+The sky residual moves to median **−1.547**, `P(r ≥ τ) = 0.70 %`. Predicted occupancy above
+2 m falls **22.24 % → 1.69 %**, and in the top layer **95.1 % → 0.73 %**. False positives above
+2 m fall from **71 % to 14.2 %** of the total.
+
+A second change shipped alongside it — `padding_mode="replicate"`, since zero-padding
+manufactured `observed = 0 AND unobserved = 0`, a state absent from training. **Ablated
+separately, it does not help**: padding alone, on the old targets, scores 11.60 median against
+the 12.74 baseline, consistently worse across all three seeds. The entire 12.74 → 22.71 gain
+is the supervision fix.
+
+**The historical diagnosis is kept below**, because it is what pointed at the answer.
+`slab_diagnosis_semantickitti.json`, 24 frames, **pre-fix model**. Every row but the first is
+post-hoc: the cut height was chosen by *looking at* SemanticKITTI, which is precisely the
+target-domain tuning the gate forbids. It sized the artefact; it was never a score.
 
 | predictions dropped above | SC IoU | precision | recall |
 |---|---|---|---|
@@ -510,14 +577,21 @@ tuning the gate forbids. It is reported to size the artefact, never as a score.
 | 2.5 m | 22.37 | 38.31 | 34.96 |
 | 2.0 m | 22.60 | 39.10 | 34.88 |
 
-**Read the recall column.** Removing everything above 3.5 m costs **0.02 points of recall**
-and gains **9.2 points of IoU**. The slab recovers nothing whatsoever — it is pure false
-positive. So the SemanticKITTI failure is not "the module does not transfer"; it is one
-localised artefact sitting on top of a module whose actual predictions rank correctly
-(AUROC 0.651) and whose recall is unaffected by removing it.
+**Read the recall column.** Removing everything above 3.5 m cost **0.02 points of recall**
+and gained **9.2 points of IoU**. The slab recovered nothing whatsoever — pure false positive.
+That is what said the SemanticKITTI failure was one localised artefact rather than "the module
+does not transfer", and it is what sent the next gate looking for a cause instead of a
+redesign.
 
-That reframes the next gate entirely: find why the module asserts occupancy in a horizontal
-sheet near the top of the grid, rather than redesigning the module.
+**The post-hoc cut reached 21.42; the principled fix reaches 22.71.** Supervising the region
+beat deleting predictions from it — which is the outcome one should hope for, since the cut
+was cheating and the fix is not.
+
+**What is left after the fix.** The error moved to where the diagnosis predicted:
+**63.9 %** of remaining false positives now sit at or below −1.0 m, in layers carrying
+**82.9 %** of all true positives. The road surface is predicted too thick. That is genuine
+surface-thickness error, not a boundary artefact, and closing it needs capacity or supervision
+density rather than a bug fix. It is the highest-value open problem in the project.
 
 **`fig_occany_3d.png`** — six panels per scene, one viewpoint throughout:
 
@@ -654,6 +728,31 @@ and they tune the confidence threshold per dataset (1.1 nuScenes, 2.5 KITTI) whi
 frozen on KITTI-360 before Occ3D was opened. In the causal rows our input is additionally
 strictly harder — no future observation at all.
 
+**SemanticKITTI head-to-head, ceiling-fixed model** (161 target frames both methods share,
+scored by OccAny's own `SSCMetrics`; `output/skyfix/figures/occany_kitti_headtohead.json`):
+
+| method | SC IoU | precision | recall | pred/GT |
+|---|---|---|---|---|
+| **OccAny, raw** | **25.28** | 45.49 | 36.26 | 0.80 |
+| OccAny, pooled *(their published protocol)* | 25.92 | 36.68 | 46.93 | 1.28 |
+| ours, causal 5 past frames, raw | **22.83** | 34.87 | 39.80 | 1.14 |
+| ours, causal 5 past frames, pooled | 22.03 | 27.95 | 51.00 | 1.82 |
+
+**We still lose on SemanticKITTI, 22.83 against 25.28** — but the gap is now 2.5 points, not
+13. Per frame we win **55 of 161** (34 %), so it is a consistent deficit rather than a few bad
+scenes. Note that pooling *helps* OccAny (+0.64) and *hurts* us (−0.80): a 3×3×3 max-pool on
+an already over-thick prediction only adds false positives, which is the road-band error of
+§8.2.1 seen from another angle.
+
+One discrepancy, unexplained: on SemanticKITTI OccAny's stored ground truth matches the volume
+our evaluator builds on only **1 of 161** frames, where on Occ3D it was byte-identical. Both
+sides in the table above are scored against *their* stored label, so the comparison is
+internally fair, but the cause has not been chased down.
+
+The 3D comparison figure is `output/skyfix/figures/fig_occany_kitti_3d.png` (six scenes, six
+panels each). **The red sheet that dominated the old version of this figure is gone**; the
+remaining red sits on the ground plane.
+
 Full record: `artifacts/gate8c1/occany_headtohead_verified.json`.
 
 ## 9. Honest limitations — say these before you are asked
@@ -662,10 +761,19 @@ Full record: `artifacts/gate8c1/occany_headtohead_verified.json`.
    published training mixture includes KITTI-360, and MoGe-2's and Trident-H's training data
    have not been audited. The defensible phrase is **"target-domain-free transfer of the
    completion module"**.
-2. **SemanticKITTI fails.** 12.74 % against a 16.00 % dilation baseline, with 2.4×
-   over-prediction. Under the Gate 8C-1 decision rule this is a **FAIL** overall.
-3. **Semantics do not work.** 2.65 % / 4.13 % SSC mIoU, below the plain dilation baseline on
-   both. Only the geometry half transfers.
+2. **SemanticKITTI still loses to OccAny.** 22.83 % against 25.28 % raw. It now clears every
+   non-learned baseline (dilation 16.00) and over-prediction is down to 1.32×, but the
+   preregistered success criterion was 25.28, so under the Gate 8C-1 decision rule this
+   remains a **FAIL** on that target — narrowly, and for a reason now localised (§8.2.1: the
+   road band). Before the ceiling fix this line read 12.74 % and the module lost to dilation.
+3. **Semantics do not work.** 3.35 % / 4.24 % SSC mIoU. The completion module is trained to
+   distil a frozen teacher's labels in a *different* dataset's vocabulary and never sees a
+   human semantic annotation for either target; on SemanticKITTI one of the 19 classes
+   (`motorcyclist`) is structurally unreachable. Only the geometry half transfers, and SSC
+   mIoU should be quoted as a diagnostic, never as a result.
+3a. **The fix improved Occ3D IoU but lowered its AUROC** (0.763 → 0.731) while raising
+   SemanticKITTI's (0.651 → 0.809). Do not claim the fixed model dominates the old one
+   everywhere; claim what is true — it is decisively better where the defect was scored.
 4. **KITTI-360 cannot currently be evaluated** — its published completion label is defective
    (§7). Every KITTI-360 number in Gates 5.2–8B should be withdrawn, not repaired.
 5. **The evaluation subsample** is 1 182 of ~4 800 possible Occ3D anchors (a uniform 1-in-5
@@ -688,8 +796,29 @@ tools/gate8c1/  build_targets · validate_targets · build_samples · train · s
                 freeze_manifest · eval_target · aggregate · report · visualize · compare_occany
 artifacts/gate8c1/  report.md · frozen_manifest.json · source_target_audit.md
                     occany_reproduction.md · occany_comparability.json · fig_*.png
+                    ceiling_fix.md · frozen_manifest_{padfix,sky,sky2}.json
+                    checkpoints/{padfix,sky,sky2}_seed{0,1,2}_{best,last}.pt
+tools/skyfix/   probe.py (the fast dial: --lock, --frames, --tau, --dataset)
+                predict_semantickitti.py (per-anchor prediction dump)
+                compare_occany_kitti_skyfix.py (head-to-head with ART redirected)
 reports/        gate8a/, gate8b/, gate8c0/ reports · METHOD.md (this file)
+                the_ceiling_bug.md (the case study) · the_ceiling_math.md (the derivation)
+WALKTHROUGH.md  hands-on tour of the eight load-bearing files
+output/skyfix/  eval/ (the fixed model's runs) · pred_seed2/ · figures/
 ```
+
+**The four model variants**, all selected through the `G8C1_MANIFEST` environment variable:
+
+| manifest | change | SemanticKITTI | Occ3D |
+|---|---|---|---|
+| `frozen_manifest.json` | none — **still the default** | 12.74 | 30.89 |
+| `frozen_manifest_padfix.json` | replicate padding only | 11.60 | — |
+| `frozen_manifest_sky.json` | + open-sky-is-FREE — **adopted** | **22.71** | **33.88** |
+| `frozen_manifest_sky2.json` | + neighbourhood roof — rejected | 22.93 | 28.12 |
+
+SemanticKITTI figures are `past5` medians over 163 anchors; Occ3D over 1 182. The `sky2`
+row and its Occ3D value come from `ceiling_fix.md` (882 samples, seed 0) and were not
+re-measured here.
 
 Reproduce (GPUs 1–3, conda env `cu128`):
 
@@ -700,6 +829,7 @@ tools/gate8c1/run_samples.sh
 tools/gate8c1/run_train.sh            # seeds 0,1,2 concurrently — 0.72 GPU-h total
 python tools/gate8c1/selection.py     # KITTI-360 drive 0006 only
 python tools/gate8c1/freeze_manifest.py    # <- the firewall lifts here
+export G8C1_MANIFEST=$PWD/artifacts/gate8c1/frozen_manifest_sky.json   # <- the ceiling fix
 python tools/gate8c1/eval_target.py --dataset occ3d --mode past5 --seed 0
 python tools/gate8c1/aggregate.py && python tools/gate8c1/report.py --write
 python tools/gate8c1/visualize.py --dataset occ3d
@@ -715,6 +845,11 @@ dataset with no human labels and no target-domain data, reaches 30.4 % scene-com
 on Occ3D-nuScenes against 20.6 % for a 651 M-parameter model that trained on that dataset
 and sees four seconds of future — while using only past frames.*
 
+(That sentence quotes the matched-input head-to-head, which has not been re-measured on the
+ceiling-fixed model. The fixed model scores **33.88 %** on the full Occ3D protocol against
+30.89 % before, so re-running `compare_occany.py` under `G8C1_MANIFEST=…_sky.json` should
+only improve it — but until that is done, quote the number that was actually measured.)
+
 **The three slides that carry it:**
 
 1. *The split* — the frozen/trained table in §3. One trained component, 0.99 M parameters,
@@ -723,14 +858,21 @@ and sees four seconds of future — while using only past frames.*
    strongest slide: blue is ours, orange is theirs, and no interpretation is required.
    Follow it with `fig_occany_why_missed.png` so nobody has to ask why both methods miss so
    much — it is 53 % road band and 47 % facade-and-canopy a forward camera never sees.
-3. *The honesty slide* — §9, and it is now the strongest slide you have. Present the
-   SemanticKITTI failure yourself with panel 6 of `fig_3d_gallery_semantickitti.png`: a red
-   sheet floating over all six frames. Then the two numbers that turn a failure into a
-   lead: **71 % of the false positives sit above 2 m where 1.8 % of the geometry is**, and
-   **removing everything above 3.5 m costs 0.02 points of recall and gains 9.2 points of
-   IoU** (§8.2.1 — say plainly that this is a diagnosis, not a result). Close by noting the
-   +5.2 m row of the Occ3D height table shows the same artefact in miniature, so it is one
-   bug rather than two datasets disagreeing.
+3. *The debugging slide* — this is now the strongest slide you have, and it is a **success**
+   story rather than an honesty one. Show the old `fig_3d_gallery_semantickitti.png` (a red
+   sheet floating over all six frames) beside the new
+   `output/skyfix/figures/fig_occany_kitti_3d.png` (no sheet). Then give the three-line cause:
+   *an unobserved voxel decodes to occupied by default; the loss weighted that region zero;
+   so nothing ever contradicted the default.* Land it with **12.74 → 22.71** and the ablation
+   showing the padding fix contributed **nothing** — the supervision fix did all of it.
+   Anyone who has debugged a model will recognise that shape, and it demonstrates method
+   rather than luck.
+3b. *The honesty slide* — §9. Lead with the two things that are still true: SemanticKITTI
+   still loses to OccAny (22.83 vs 25.28), and semantics do not transfer at all. Then §2.4 of
+   `the_ceiling_math.md`: strip Occ3D's camera mask and its sky burden β goes 1.87 → **10.83**,
+   worse than SemanticKITTI's 6.03. Occ3D is not intrinsically easier; its evaluation mask
+   makes it so. That is the most defensible thing you know, and stating it yourself is far
+   stronger than having it asked.
 
 **Questions you should expect, with the answers:**
 
