@@ -1,0 +1,116 @@
+{
+ "checks": [
+  {
+   "name": "01_same_clips",
+   "pass": true,
+   "detail": "training anchor list digest equal for H and S/U/F on every seed (1358 anchors); all six evaluations on the same 590 0006 anchors"
+  },
+  {
+   "name": "02_same_training_targets",
+   "pass": true,
+   "detail": "sha256 over every drawn target crop (occupancy, valid, loss-weight observed mask) identical for H and S/U/F on each seed, at every 1000-step checkpoint: seed 0 55abfec10807, seed 1 d1d54bda3b7e, seed 2 c63bd790ce58"
+  },
+  {
+   "name": "03_same_crop_coordinates",
+   "pass": true,
+   "detail": "sha256 over every (anchor, crop origin) draw identical per seed: seed 0 8c81c7be4f20, seed 1 f6e7b8871313, seed 2 41c39b03b97b"
+  },
+  {
+   "name": "04_same_augmentations",
+   "pass": true,
+   "detail": "the training pipeline has no augmentation (no augmentation tokens); crops identical per seed"
+  },
+  {
+   "name": "05_same_optimizer",
+   "pass": true,
+   "detail": "{'type': 'AdamW', 'lr': 0.001, 'weight_decay': 0.01} for every run"
+  },
+  {
+   "name": "06_same_schedule",
+   "pass": true,
+   "detail": "CosineAnnealingLR, identical learning-rate sequence at every step for H and S/U/F"
+  },
+  {
+   "name": "07_same_steps",
+   "pass": true,
+   "detail": "6000 steps, batch 4, every run"
+  },
+  {
+   "name": "08_same_architecture",
+   "pass": true,
+   "detail": "CompletionUNet cin 3, width 24, padding replicate, identical parameter names and shapes in all six checkpoints; shared initial weights per seed: True"
+  },
+  {
+   "name": "09_same_parameter_count",
+   "pass": true,
+   "detail": "967,322 parameters in every run"
+  },
+  {
+   "name": "10_same_checkpoint_rule",
+   "pass": true,
+   "detail": "the two configs differ only in ['input']; every evaluated checkpoint is the final step; no selection"
+  },
+  {
+   "name": "11_local_reset_L_pose_not_GT",
+   "pass": true,
+   "detail": "poses = inv(P_4) P_q of LingBot's local-reset pred_pose_c2w; the input builder never constructs GT geometry and ran inside a file audit forbidding data_poses / cam0_to_world: violations [0, 0, 0, 0, 0]"
+  },
+  {
+   "name": "12_dense_rays_no_lidar_mask",
+   "pass": true,
+   "detail": "rays accepted by the mapper equal an independent recount of every confident dense LingBot pixel in 1-60 m, and on 0006 exceed the clip's LiDAR-support pixels (no LiDAR mask; amended clause): ['0006:4 rays 303,082/362,600 (Gate 9 LiDAR support 102,801)', '0006:592 rays 302,065/362,600 (Gate 9 LiDAR support 102,128)', '0006:1180 rays 317,570/362,600 (Gate 9 LiDAR support 104,030)', '0003:4 rays 201,268/362,600', '0003:68 rays 282,863/362,600', '0003:132 rays 162,873/362,600', '0007:4 rays 270,590/362,600', '0007:193 rays 269,532/362,600', '0007:382 rays 324,582/362,600', '0010:4 rays 263,190/362,600', '0010:202 rays 270,463/362,600', '0010:400 rays 262,766/362,600']"
+  },
+  {
+   "name": "13_causal_moge_scale_once",
+   "pass": true,
+   "detail": "input scale == L clip scale on 79/79 sampled anchors; the mapper receives canonical depth and canonical poses and applies s_clip once to both (force(s)); stride-1 L clips regenerated for training are bit-identical to the local-registration audit's stride-3 clips on 454/454 overlapping anchors (the clip scale's causality and single application are audited in artifacts/depth_source_comparison/scale_audit.json)"
+  },
+  {
+   "name": "14_confidence_gate_unchanged",
+   "pass": true,
+   "detail": "mapper confidence threshold 1.5 (core constant); raw LingBot confidence passed for H; for S/U/F only the 20 m cut zeroes confidence"
+  },
+  {
+   "name": "15_U4_rules_frozen",
+   "pass": true,
+   "detail": "every sampled input records rules sha256 4dfd83dcb443240e == Gate 11's frozen file; coefficients a 0.0658 b 0.1270 g [1.502, 1.164, 0.978, 0.879] u_front 0.3084 u_back 1.3945 (round to the brief)"
+  },
+  {
+   "name": "16_cutoff_input_only",
+   "pass": true,
+   "detail": "no S/U/F ray >= 20 m in any of 1948 input files; training and evaluation read the unchanged full target (no range crop); 10,017,445 target-occupied voxels beyond 20 m are scored on 0006"
+  },
+  {
+   "name": "17_no_semantickitti_access",
+   "pass": true,
+   "detail": "training, evaluation and input generation ran inside file audits forbidding the SemanticKITTI path (data/kitti/dataset) and 'semantickitti': no violations"
+  },
+  {
+   "name": "18_no_occ3d_access",
+   "pass": true,
+   "detail": "no Occ3D / nuScenes path in Gate 12 code; audits forbid occ3d / nuscenes tokens; no violations"
+  },
+  {
+   "name": "19_no_semantic_supervision",
+   "pass": true,
+   "detail": "w_sem = 0; the semantic target passed to the unchanged loss is all zeros with a zero mask; training runs inside an audit forbidding trident / semantics paths; the input has no semantic channel"
+  },
+  {
+   "name": "20_deterministic_input_generation",
+   "pass": true,
+   "detail": "sanity_inputs.py rebuilt 9 deterministic anchors from their L clips and reproduced all five stored volumes exactly"
+  },
+  {
+   "name": "21_pre_training_sanity",
+   "pass": true,
+   "detail": "7/7 input sanity checks (H U = 0 and S/F = core mapper; exclusivity; 20 m; carving stop; U4 rules; no LiDAR / GT pose)"
+  },
+  {
+   "name": "22_input_code_frozen",
+   "pass": true,
+   "detail": "input-generation code unchanged since code_freeze.json (frozen before training)"
+  }
+ ],
+ "n_pass": 22,
+ "n_total": 22
+}

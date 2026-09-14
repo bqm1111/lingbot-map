@@ -1,0 +1,20 @@
+# Gate 14 candidate depth source (frozen; the single candidate of this gate)
+model: MUSt3R-512 (Cabon et al., CVPR 2025), the updated MUSt3R_512.pth release
+code: official naver/must3r, commit 0c0d76b76b68993e380752d56dd3e04979cbbeef, cloned to /media/SSD1/MINH_DATASETS/lingbot_gate14_must3r/src/must3r (code only)
+checkpoint: /media/SSD1/MINH_DATASETS/occany_checkpoints/MUSt3R_512.pth   # already on disk (OccAny's base weights)
+checkpoint_md5: 8854f948a8674fb1740258c1872f80dc                        # equals Naver's published checksum
+loading: must3r.model.load_model(strict=True); all parameters requires_grad=False
+environment: /home/minh/workspace/third_party/occany_env python (torch 2.7.1+cu128) with the official source on PYTHONPATH; nothing installed
+architecture: ViT-L encoder (DUSt3R/CroCo), ViT-B multi-layer-memory decoder, linear head (7 channels: global pointmap, local pointmap, confidence)
+input: the five rectified image_00 frames of the clip, stream frames t-4..t (no future image); official preprocessing
+       (centre crop to the 16:5 aspect bucket -> resize to 512x160, ImgNorm); no intrinsics, FOV, pose, LiDAR or label input
+temporal_processing: official must3r.engine.inference.inference with mem_batches [2, 1, 1, 1] (memory built in temporal order), then all five views rendered against the memory
+output_used: pts3d_local[..., 2] -- per-view optical-axis z-depth in the view's own camera frame
+metric: scale-ambiguous. Metric scale s_new = exp(median over the five frames of gates.gate7b.scale.frame_candidate(MoGe-2 depth, MoGe mask, MUSt3R depth, conf=1e3))
+        -- the LB-M causal clip-scale estimator (MoGe-2 B cache, KITTI-360 source calibration only), no confidence gate; no LiDAR
+confidence: native (1 + exp), NOT used as a gate (not on LingBot's scale); validity = inside crop, finite, > 0
+lattice: nearest-neighbour resample onto the 140x518 LingBot lattice through the official crop/resize matrix; 85.3 % of lattice pixels fall inside the 16:5 crop (top/bottom rows are cut)
+pose_used_for_geometry: none from MUSt3R. Condition L uses LingBot local-reset poses; condition G uses KITTI-360 GT poses
+training_data (NOTICE): CO3Dv2, ScanNet++, BlendedMVS, StaticThings3D, WildRGB-D, TartanAir, UnrealStereo4K, Virtual KITTI 2, DL3DV, MapFree, Infinigen, Hypersim, ARKitScenes.
+    No KITTI-360, SemanticKITTI or nuScenes. Virtual KITTI 2 is a synthetic KITTI clone (near-domain for KITTI-style targets).
+license: MUSt3R Non-Commercial License

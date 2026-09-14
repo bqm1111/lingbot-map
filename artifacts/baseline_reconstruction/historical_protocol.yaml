@@ -1,0 +1,60 @@
+name: Gate 8C-1 sky-fix baseline (post ceiling fix)
+protocol_of_record: past5
+seed_statistic_of_record: "median of 3 seeds (reports/METHOD.md \xA78.1); mean also reported here"
+pipeline:
+  lingbot_mode: 'long-stream causal replay (gates/gate7b/replay.py): one persistent KV cache per stream, reset only
+    at a stream boundary; sliding 64-block KV window; per-frame depth/pose cached to /media/SSD1/MINH_DATASETS/lingbot_gate7b/stream'
+  depth_source: LingBot-Map canonical depth x metric scale (LB-M); MoGe-2 used only as the scale gauge
+  scale_handling: 'per stream: exp(median(log_s of the FIRST five stream frames)) from MoGe-2 vs LingBot candidates
+    (core/mapping/scale.py); the same frozen stream scale is forced on every past5 window map'
+  pose_source: LingBot-Map streaming pose (long-stream), translation scaled by the stream scale
+  mapper: 'core/mapping/mapper.py IncrementalMapper: conf >= 1.5, depth 1-60 m, +-0.2 m occupied band, free carve
+    to d-0.2 m at stride 4, log-odds accumulation, semantic accumulators on'
+  voxel_representation: log-odds occupancy + w_free + n_obs + age + semantic evidence, exported to the benchmark
+    grid
+  input_channels: 32
+  channel_meaning: 0 logodds/4, 1 w_free/20, 2 observed, 3 1-observed, 4 n_obs/50, 5 age/100, 6 sem_w/20, 7..31
+    Trident-H union-vocabulary class probabilities (core/README.md)
+  semantics: 'present: Trident-H teacher probabilities as input; semantic KL loss w_sem = 0.5; semantic head'
+  residual_lock: 'apply_residual: final = base + residual * [|base| < 2.0] (LOCK_LOGODDS = 2)'
+  completion_architecture: core/model/net.py CompletionUNet, width 24, 32-ch input, occupancy residual + semantic
+    logits
+  n_params: 986114
+  input_shape: '[1, 32, X, Y, Z] on the benchmark prediction grid'
+  output_shape: '[1, 1, X, Y, Z] occupancy residual (+ [1, U, X, Y, Z] semantic logits)'
+  padding_mode: replicate (the padding half of the ceiling fix)
+  training_source: KITTI-360 drives 0003/0007/0010 (train), 0006 (validation/selection)
+  supervision: raw-Velodyne targets t..t+20 with GT poses, open sky FREE (plain column rule, SKY_MARGIN_VOX 1, no
+    neighbourhood), targets at /media/SSD1/MINH_DATASETS/lingbot_gate8c1_sky
+  training_steps: 6000
+  losses: focal (gamma 2, pos-weight cap 8) + Dice, w_unknown 2, + 0.5 semantic KL; AdamW 1e-3 wd 0.01; cosine;
+    clip 1; batch 4; crop 128x128x32
+  checkpoint_selection: 'manifest rule: highest full-grid occupancy AP on 0006 -> ''last'' (step 6000) for all three
+    seeds'
+  threshold_selection: 'per seed, final-log-odds threshold maximising full-grid IoU on 0006: -0.125 / -0.4375 /
+    -0.3125'
+  evaluator: core/run/eval_target.py (G8C1_MANIFEST=artifacts/gate8c1/frozen_manifest_sky.json), mode past5
+  zero_shot_window: fresh map over stream indices i-4..i, frozen stream scale, LingBot stream depth/pose
+targets:
+  semantickitti:
+    dataset: semantickitti
+    stream_rule: sequence 08, image_2, stride-5 stream of 815 unique frames; anchor = last frame of each official
+      clip; clip = stream indices i-4..i (native frames 20 apart end to end)
+    camera: image_2 (left colour camera)
+    prediction_grid: 256x256x32 @ 0.2 m, origin (0, -25.6, -2), velodyne frame of the anchor
+    evaluation_grid: same as prediction grid
+    evaluation_mask: official voxels/<frame>.invalid == 0 (label != 255)
+    occupancy_target: official label != 0 inside the mask
+    reduction: none
+    anchors_expected: 163
+  occ3d:
+    dataset: occ3d
+    stream_rule: 150 official validation scenes, CAM_FRONT samples in timestamp order, one stream per scene; anchor
+      = every sample with a label; clip = stream indices i-4..i
+    camera: CAM_FRONT only (the frozen single-camera protocol)
+    prediction_grid: canonical 400x400x32 @ 0.2 m, origin (-40, -40, -1), ego frame of the anchor sample
+    evaluation_grid: native 200x200x16 @ 0.4 m
+    evaluation_mask: mask_camera == 1, lidar mask off, ego x-index < 100 ignored (single front camera)
+    occupancy_target: semantics != 17 (free) inside the mask
+    reduction: native voxel occupied iff any of its 8 canonical subvoxels is occupied
+    anchors_expected: 1182

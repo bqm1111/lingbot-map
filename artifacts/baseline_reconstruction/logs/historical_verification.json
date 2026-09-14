@@ -1,0 +1,302 @@
+[
+ {
+  "name": "sky checkpoints: replicate padding, 32 input channels, sha256 == manifest; pre-fix: zeros padding",
+  "passed": true,
+  "detail": {
+   "sky": [
+    {
+     "seed": 0,
+     "config": "configs/gate8c1_sky/seed0.yaml",
+     "checkpoint": "artifacts/gate8c1/checkpoints/sky_seed0_last.pt",
+     "checkpoint_sha256_recorded": "ea721b21a259bd00cfae2b699265423e96b7b370a2cf119bcdfcf6dc2df1ea69",
+     "checkpoint_sha256_on_disk": "ea721b21a259bd00cfae2b699265423e96b7b370a2cf119bcdfcf6dc2df1ea69",
+     "occupancy_threshold": -0.125,
+     "padding_mode_in_checkpoint": "replicate",
+     "input_channels_in_checkpoint": 32
+    },
+    {
+     "seed": 1,
+     "config": "configs/gate8c1_sky/seed1.yaml",
+     "checkpoint": "artifacts/gate8c1/checkpoints/sky_seed1_last.pt",
+     "checkpoint_sha256_recorded": "47353eacfbf7d830e13ca286069e12172b44c8bba352f8c056683f96ac667181",
+     "checkpoint_sha256_on_disk": "47353eacfbf7d830e13ca286069e12172b44c8bba352f8c056683f96ac667181",
+     "occupancy_threshold": -0.4375,
+     "padding_mode_in_checkpoint": "replicate",
+     "input_channels_in_checkpoint": 32
+    },
+    {
+     "seed": 2,
+     "config": "configs/gate8c1_sky/seed2.yaml",
+     "checkpoint": "artifacts/gate8c1/checkpoints/sky_seed2_last.pt",
+     "checkpoint_sha256_recorded": "325d8783b9370f5c27a80999473aae2fdfabb54dd18c0591a9ca37e93de79c70",
+     "checkpoint_sha256_on_disk": "325d8783b9370f5c27a80999473aae2fdfabb54dd18c0591a9ca37e93de79c70",
+     "occupancy_threshold": -0.3125,
+     "padding_mode_in_checkpoint": "replicate",
+     "input_channels_in_checkpoint": 32
+    }
+   ],
+   "prefix": [
+    {
+     "seed": 0,
+     "config": "configs/gate8c1/seed0.yaml",
+     "checkpoint": "artifacts/gate8c1/checkpoints/seed0_last.pt",
+     "checkpoint_sha256_recorded": "5227c672012024786561e615b755edd938d551e62d05ad52d2ad23813825e7d0",
+     "checkpoint_sha256_on_disk": "5227c672012024786561e615b755edd938d551e62d05ad52d2ad23813825e7d0",
+     "occupancy_threshold": -0.125,
+     "padding_mode_in_checkpoint": "zeros",
+     "input_channels_in_checkpoint": 32
+    },
+    {
+     "seed": 1,
+     "config": "configs/gate8c1/seed1.yaml",
+     "checkpoint": "artifacts/gate8c1/checkpoints/seed1_last.pt",
+     "checkpoint_sha256_recorded": "13640b7664997abb90fce5da733a8ea60e1ed4b0b48e6a5dcb2a1b7132587752",
+     "checkpoint_sha256_on_disk": "13640b7664997abb90fce5da733a8ea60e1ed4b0b48e6a5dcb2a1b7132587752",
+     "occupancy_threshold": -0.09375,
+     "padding_mode_in_checkpoint": "zeros",
+     "input_channels_in_checkpoint": 32
+    },
+    {
+     "seed": 2,
+     "config": "configs/gate8c1/seed2.yaml",
+     "checkpoint": "artifacts/gate8c1/checkpoints/seed2_last.pt",
+     "checkpoint_sha256_recorded": "68e67f28a1e4b764d14d1bc7d0f256ef5dd5f5be82d826884ada83ace0f65a67",
+     "checkpoint_sha256_on_disk": "68e67f28a1e4b764d14d1bc7d0f256ef5dd5f5be82d826884ada83ace0f65a67",
+     "occupancy_threshold": -0.15625,
+     "padding_mode_in_checkpoint": "zeros",
+     "input_channels_in_checkpoint": 32
+    }
+   ]
+  }
+ },
+ {
+  "name": "sky eval JSONs name the manifest checkpoints/thresholds; RESULT log lines agree; protocol past5",
+  "passed": true,
+  "detail": {
+   "rows": [
+    {
+     "dataset": "occ3d",
+     "seed": 0,
+     "json_checkpoint": "artifacts/gate8c1/checkpoints/sky_seed0_last.pt",
+     "manifest_checkpoint": "artifacts/gate8c1/checkpoints/sky_seed0_last.pt",
+     "json_threshold": -0.125,
+     "manifest_threshold": -0.125,
+     "json_sc_iou_pct": 33.4892,
+     "log_sc_iou_pct": 33.49,
+     "n_clips": 1182
+    },
+    {
+     "dataset": "occ3d",
+     "seed": 1,
+     "json_checkpoint": "artifacts/gate8c1/checkpoints/sky_seed1_last.pt",
+     "manifest_checkpoint": "artifacts/gate8c1/checkpoints/sky_seed1_last.pt",
+     "json_threshold": -0.4375,
+     "manifest_threshold": -0.4375,
+     "json_sc_iou_pct": 35.0272,
+     "log_sc_iou_pct": 35.03,
+     "n_clips": 1182
+    },
+    {
+     "dataset": "occ3d",
+     "seed": 2,
+     "json_checkpoint": "artifacts/gate8c1/checkpoints/sky_seed2_last.pt",
+     "manifest_checkpoint": "artifacts/gate8c1/checkpoints/sky_seed2_last.pt",
+     "json_threshold": -0.3125,
+     "manifest_threshold": -0.3125,
+     "json_sc_iou_pct": 33.8798,
+     "log_sc_iou_pct": 33.88,
+     "n_clips": 1182
+    },
+    {
+     "dataset": "semantickitti",
+     "seed": 0,
+     "json_checkpoint": "artifacts/gate8c1/checkpoints/sky_seed0_last.pt",
+     "manifest_checkpoint": "artifacts/gate8c1/checkpoints/sky_seed0_last.pt",
+     "json_threshold": -0.125,
+     "manifest_threshold": -0.125,
+     "json_sc_iou_pct": 22.4674,
+     "log_sc_iou_pct": 22.47,
+     "n_clips": 163
+    },
+    {
+     "dataset": "semantickitti",
+     "seed": 1,
+     "json_checkpoint": "artifacts/gate8c1/checkpoints/sky_seed1_last.pt",
+     "manifest_checkpoint": "artifacts/gate8c1/checkpoints/sky_seed1_last.pt",
+     "json_threshold": -0.4375,
+     "manifest_threshold": -0.4375,
+     "json_sc_iou_pct": 23.6151,
+     "log_sc_iou_pct": 23.62,
+     "n_clips": 163
+    },
+    {
+     "dataset": "semantickitti",
+     "seed": 2,
+     "json_checkpoint": "artifacts/gate8c1/checkpoints/sky_seed2_last.pt",
+     "manifest_checkpoint": "artifacts/gate8c1/checkpoints/sky_seed2_last.pt",
+     "json_threshold": -0.3125,
+     "manifest_threshold": -0.3125,
+     "json_sc_iou_pct": 22.7133,
+     "log_sc_iou_pct": 22.71,
+     "n_clips": 163
+    }
+   ]
+  }
+ },
+ {
+  "name": "sky targets supervise the top layer (>= 4x and >= +15 pp over the pre-fix fraction)",
+  "passed": 1.0,
+  "detail": {
+   "prefix": {
+    "n_anchors": 40,
+    "top_layer_valid_pct": 3.7921524047851562,
+    "above_2m_valid_pct": 9.205617904663086
+   },
+   "sky": {
+    "n_anchors": 40,
+    "top_layer_valid_pct": 20.11199951171875,
+    "above_2m_valid_pct": 23.304125467936196
+   },
+   "current_gate12_13_builder": {
+    "n_anchors": 40,
+    "top_layer_valid_pct": 58.72261047363281,
+    "above_2m_valid_pct": 55.51730791727702
+   },
+   "ratio_sky_over_prefix": 5.303584182518685
+  }
+ },
+ {
+  "name": "seed-2 prediction dump re-scores to the recorded SC IoU and the top layer is no longer filled (< 2 % vs 95.1 % pre-fix)",
+  "passed": 1.0,
+  "detail": {
+   "n_anchors": 163,
+   "sc_iou_from_dump": 0.22713358012178836,
+   "recorded_sc_iou": 0.2271328944149913,
+   "tp": 7496311,
+   "fp": 14241045,
+   "fn": 11266619,
+   "top_layer_pred_occupied_pct": 0.729717305280708,
+   "top_layer_gt_occupied_pct": 0.004270170272094872,
+   "above_2m_pred_occupied_pct": 1.6929215043578647,
+   "above_2m_gt_occupied_pct": 0.40187820176349576,
+   "prefix_reference": {
+    "top_layer_pred_occupied_pct": 95.1,
+    "source": "artifacts/gate8c1/ceiling_fix.md"
+   }
+  }
+ },
+ {
+  "name": "cached target roots are reproduced bit-exactly by exactly one rule variant each (sky = pre-647bcf3 plain column rule; sky2 = pre-647bcf3 neighbourhood 7; current = today's file)",
+  "passed": true,
+  "detail": {
+   "rows": [
+    {
+     "stream_index": 4,
+     "native_frame": 137,
+     "cached_root": "sky",
+     "bit_exact_variants": [
+      "pre647_nb0"
+     ],
+     "expected": "pre647_nb0",
+     "occupied_identical_all_variants": true
+    },
+    {
+     "stream_index": 4,
+     "native_frame": 137,
+     "cached_root": "sky2",
+     "bit_exact_variants": [
+      "pre647_nb7"
+     ],
+     "expected": "pre647_nb7",
+     "occupied_identical_all_variants": true
+    },
+    {
+     "stream_index": 4,
+     "native_frame": 137,
+     "cached_root": "current",
+     "bit_exact_variants": [
+      "current_nb7"
+     ],
+     "expected": "current_nb7",
+     "occupied_identical_all_variants": true
+    },
+    {
+     "stream_index": 301,
+     "native_frame": 1709,
+     "cached_root": "sky",
+     "bit_exact_variants": [
+      "pre647_nb0"
+     ],
+     "expected": "pre647_nb0",
+     "occupied_identical_all_variants": true
+    },
+    {
+     "stream_index": 301,
+     "native_frame": 1709,
+     "cached_root": "sky2",
+     "bit_exact_variants": [
+      "pre647_nb7"
+     ],
+     "expected": "pre647_nb7",
+     "occupied_identical_all_variants": true
+    },
+    {
+     "stream_index": 301,
+     "native_frame": 1709,
+     "cached_root": "current",
+     "bit_exact_variants": [
+      "current_nb7"
+     ],
+     "expected": "current_nb7",
+     "occupied_identical_all_variants": true
+    },
+    {
+     "stream_index": 1000,
+     "native_frame": 5444,
+     "cached_root": "sky",
+     "bit_exact_variants": [
+      "pre647_nb0"
+     ],
+     "expected": "pre647_nb0",
+     "occupied_identical_all_variants": true
+    },
+    {
+     "stream_index": 1000,
+     "native_frame": 5444,
+     "cached_root": "sky2",
+     "bit_exact_variants": [
+      "pre647_nb7"
+     ],
+     "expected": "pre647_nb7",
+     "occupied_identical_all_variants": true
+    },
+    {
+     "stream_index": 1000,
+     "native_frame": 5444,
+     "cached_root": "current",
+     "bit_exact_variants": [
+      "current_nb7"
+     ],
+     "expected": "current_nb7",
+     "occupied_identical_all_variants": true
+    }
+   ]
+  }
+ },
+ {
+  "name": "no target-dataset path was opened during the audit",
+  "passed": true,
+  "detail": {
+   "files_opened": 4650,
+   "violations": [],
+   "forbidden_tokens": [
+    "data/kitti/dataset",
+    "occ3d_gt",
+    "nuscenes",
+    "lingbot_occ3d_zeroshot",
+    "scale_gate/cache",
+    "preprocess/labels"
+   ]
+  }
+ }
+]

@@ -1,0 +1,76 @@
+{
+  "study": "future_semantic_completion",
+  "claim": "a small head on the frozen adopted geometry predicts the future teacher's class-probability vector for currently unobserved, later LiDAR-confirmed occupied voxels; scored on oracle-occupied voxels, never through predicted occupancy",
+  "frozen_at": "2026-09-12T18:08:07+02:00",
+  "b0_sha256": "4a42202d0bf3803bed7e844bc65e0ea8ea170b1a52b09546cd38cd498e094b46",
+  "b0_argmax_union_index": 17,
+  "b1_max_dist_vox": 15.0,
+  "seeds": {
+    "0": {
+      "seed": 0,
+      "head_checkpoint": "artifacts/future_semantic_completion/checkpoints/fsc_seed0_head_last.pt",
+      "head_checkpoint_sha256": "7fd0cdbac6607445e01c200f0eaf543867f1d1a9dce1b8b42de0d666169312b9",
+      "frozen_checkpoint": "artifacts/gate8c1/checkpoints/sky_seed0_last.pt",
+      "frozen_checkpoint_sha256": "ea721b21a259bd00cfae2b699265423e96b7b370a2cf119bcdfcf6dc2df1ea69",
+      "steps": 6000,
+      "selected": "last",
+      "source_key": {
+        "B0": {
+          "n_voxels": 609435,
+          "cosine_mean": 0.4761390046218878,
+          "kl_mean": 1.7752765613270542,
+          "top1_agreement": 0.3939304437716902,
+          "miou_present_classes": 0.021885024653982788
+        },
+        "B1": {
+          "n_voxels": 609435,
+          "cosine_mean": 0.4591031507846275,
+          "kl_mean": 3.502720261542205,
+          "top1_agreement": 0.3812990720913633,
+          "miou_present_classes": 0.05848216364546862
+        },
+        "B2": {
+          "n_voxels": 609435,
+          "cosine_mean": 0.4909013188038738,
+          "kl_mean": 1.689784793095903,
+          "top1_agreement": 0.38763773002863305,
+          "miou_present_classes": 0.04245094192008067
+        },
+        "B2ref_existing_head": {
+          "n_voxels": 609435,
+          "cosine_mean": 0.4946952099504236,
+          "kl_mean": 1.6667173635350605,
+          "top1_agreement": 0.3888404833985577,
+          "miou_present_classes": 0.03935900913328518
+        }
+      }
+    }
+  },
+  "transfer_protocol": {
+    "mode": "past5",
+    "populations": [
+      "unobserved",
+      "observed"
+    ],
+    "voxels": "benchmark GT-occupied on the official grid and mask",
+    "occ3d_reduction": "mean of eight subvoxel probability vectors; observed if any subvoxel observed",
+    "expected_populations": {
+      "semantickitti": 163,
+      "occ3d": 1182
+    },
+    "nothing_selected_on_targets": true
+  },
+  "rule": "final-step head; no threshold; no checkpoint or hyperparameter selection on any target",
+  "env": {
+    "python": "3.10.19",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "git": {
+      "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+      "branch": "feature-completion-study",
+      "dirty": true
+    }
+  }
+}

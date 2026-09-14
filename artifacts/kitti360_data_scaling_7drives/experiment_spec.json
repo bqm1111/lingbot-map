@@ -1,0 +1,135 @@
+{
+ "experiment": "KITTI-360 data scaling, seven training drives",
+ "question": "Does more source training data improve semantic completion under the same imperfect, causal LingBot inputs?",
+ "git": {
+  "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+  "branch": "feature-completion-study",
+  "tracked_diff": "code_diff_tracked.patch (pre-existing, unrelated to this experiment)",
+  "experiment_code_untracked": "tools/kitti360_data_scaling_7drives/, tools/kitti360_data_scaling/common.py (see code_sha256)"
+ },
+ "code_sha256": {
+  "tools/kitti360_data_scaling/common.py": "5250876837c7999e13d78dcbd081fe0521e3541fb13c65d4ef5c4e1cd4fc7f68",
+  "tools/kitti360_data_scaling_7drives/analyze.py": "3a7786c85601af003960d1165e97f054310b1eeff916875b585b213ec8a578de",
+  "tools/kitti360_data_scaling_7drives/build_eval_masks.py": "2c4d3c3017171eacfbba213f0bff134045219e2651d0c69d682b00f178cb37ea",
+  "tools/kitti360_data_scaling_7drives/build_semantic_targets.py": "7984aa87a76f0833d0223e422679a427b07c76424ad503cfee8869030a093d83",
+  "tools/kitti360_data_scaling_7drives/drives7.py": "6c26d30802dc55509508cb207358eb777803c935603cea985fb0744a3975ead3",
+  "tools/kitti360_data_scaling_7drives/evaluate.py": "f68042d5ec01239910f359b104d3c696e7d078f1c6db70497d777cefe64b4aa6",
+  "tools/kitti360_data_scaling_7drives/manifests.py": "6fd6956988c63d0a7ab3d394ae5611da9df4742037a6a6c2a3bfd4711b15d473",
+  "tools/kitti360_data_scaling_7drives/qualitative.py": "60849a7b898cbfae279ea9a8ff06788bc35497c1b43f02ea55a7a6feaa3cd47f",
+  "tools/kitti360_data_scaling_7drives/run_all.sh": "70e1b6f7fb59a1973560db0b29ba61678d92907713fcd2d38e191a2c5b1dd103",
+  "tools/kitti360_data_scaling_7drives/run_from_verify.sh": "f86f5475b6d76f13ac2be299ffac3b6bfc31c5969db7f7b6d3cc6d85deec7fca",
+  "tools/kitti360_data_scaling_7drives/train.py": "4f12b2c33f6198da822a084523843a268d4d3217e9883a249762970e391e19a0",
+  "tools/kitti360_data_scaling_7drives/verify_targets.py": "44b24e92a98cd937d84bc12f192c2c872bee007f3858f693815e25c0d6ca90a4"
+ },
+ "model": {
+  "class": "core.model.net.CompletionUNet (width 24, replicate padding)",
+  "objective": "core.run._gate8a_train.step_loss: focal + Dice occupancy (w_unknown 2) + 0.5 x KL to the future teacher",
+  "config": "configs/gate8c1_sky/seed0.yaml (seed overridden)",
+  "config_sha256": "c2b57a0f1306df19c85c320de55e0b94518afae94c7ba4e56c679cf2dd13ed93",
+  "readout": "occupancy: apply_residual(base, residual) > 0; semantics: map teacher distribution where the causal map has evidence, network softmax elsewhere; union -> KITTI-360 classes via union_vocab.out_channel"
+ },
+ "frozen": {
+  "lingbot_checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+  "lingbot_sha256": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72",
+  "trident": "gates/gate6 official Cityscapes config, SAM-H sam_vit_h_4b8939.pth",
+  "inputs": "streaming LingBot + MoGe-2 scale, adopted 32-channel causal map (unchanged)"
+ },
+ "data": {
+  "train_drives": [
+   "0000",
+   "0002",
+   "0003",
+   "0004",
+   "0005",
+   "0007",
+   "0010"
+  ],
+  "development_drive": "0006 (590 anchors, stride 3)",
+  "reserved": "0009 (unused)",
+  "untouched": [
+   "SemanticKITTI",
+   "Occ3D-nuScenes"
+  ],
+  "manifests": {
+   "full": "34a901660d8f7281f87fc162f86744e36cbc8b70b30551e9076ea359e5f22f16",
+   "small": "adc13294d1b50a1aab82fbbfbdf4165474bde0100c9335b7feb392dc085f6e5b"
+  },
+  "budget": {
+   "steps": 12100,
+   "rule": "max(established 6000, ceil(5 x |full| / batch 4) rounded up to 100)",
+   "batch_size": 4,
+   "full_anchors": 9672,
+   "small_anchors": 2483,
+   "effective_epochs": {
+    "full": 5.0041356492969395,
+    "small": 19.49254933548127
+   },
+   "estimated_gpu_minutes_per_run": 30.451666666666664,
+   "estimated_gpu_hours_total_4_runs": 2.030111111111111,
+   "checkpoint_every": 1000,
+   "frozen_before_training": true,
+   "env": {
+    "python": "3.10.19",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "git": {
+     "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+     "branch": "feature-completion-study",
+     "dirty": true
+    }
+   }
+  }
+ },
+ "targets": {
+  "occupancy": "current core/supervision/rawtarget.py (raw Velodyne + GT poses; conflicting voxels excluded)",
+  "semantic": "tools/kitti360_data_scaling_7drives/build_semantic_targets.py (GT-registered projection, LiDAR presence+occlusion visibility, cached Trident; no mapper)",
+  "verification": "targets/verification.json",
+  "sem_w_note": "targets/semw_nondeterminism.json"
+ },
+ "evaluation": {
+  "script": "tools/kitti360_data_scaling_7drives/evaluate.py",
+  "masks": "tools/kitti360_data_scaling_7drives/build_eval_masks.py",
+  "threshold": 0.0,
+  "bootstrap": "20-anchor contiguous blocks, 2000 paired resamples"
+ },
+ "runs": {
+  "kds7_full_seed0": {
+   "final_checkpoint": "artifacts/kitti360_data_scaling_7drives/checkpoints/kds7_full_seed0_step12100.pt",
+   "final_checkpoint_sha256": "2e50248ce4b9e349fbda203ade65c80ca53906ce52f15036dde10c4801fe5184",
+   "init_sha256": "ad951c776b33987cc83d65ae6c1f59aa70a4575e9c1cb8dfbeb02676c906dd03",
+   "init_state_digest": "4967a92732637c71a0cecf54c36fed9eff6bbb20b33bb6dceec535786b54d356",
+   "manifest_sha256": "34a901660d8f7281f87fc162f86744e36cbc8b70b30551e9076ea359e5f22f16",
+   "seconds": 1881.5757353305817,
+   "peak_gpu_gib": 5.898590564727783
+  },
+  "kds7_full_seed1": {
+   "final_checkpoint": "artifacts/kitti360_data_scaling_7drives/checkpoints/kds7_full_seed1_step12100.pt",
+   "final_checkpoint_sha256": "941a06243a526e3a52e5205ec6f2aa4aedbff89e8bbffd8dcf981111175cd5ff",
+   "init_sha256": "aff7c9ce5e5c8b1ad6e30040208ba210a8c43453ce992c1e8dc73a7451d57123",
+   "init_state_digest": "7cb9f7af7b206db64c326afc623b7ab192cad2515de8076c54de3e160a29dede",
+   "manifest_sha256": "34a901660d8f7281f87fc162f86744e36cbc8b70b30551e9076ea359e5f22f16",
+   "seconds": 1883.4789152145386,
+   "peak_gpu_gib": 5.898754119873047
+  },
+  "kds7_small_seed0": {
+   "final_checkpoint": "artifacts/kitti360_data_scaling_7drives/checkpoints/kds7_small_seed0_step12100.pt",
+   "final_checkpoint_sha256": "3c04d1eaceda935eea825291bb7ac2768438b48d209a109cb4ee642f1f1d1632",
+   "init_sha256": "ad951c776b33987cc83d65ae6c1f59aa70a4575e9c1cb8dfbeb02676c906dd03",
+   "init_state_digest": "4967a92732637c71a0cecf54c36fed9eff6bbb20b33bb6dceec535786b54d356",
+   "manifest_sha256": "adc13294d1b50a1aab82fbbfbdf4165474bde0100c9335b7feb392dc085f6e5b",
+   "seconds": 1921.3784041404724,
+   "peak_gpu_gib": 5.898588180541992
+  },
+  "kds7_small_seed1": {
+   "final_checkpoint": "artifacts/kitti360_data_scaling_7drives/checkpoints/kds7_small_seed1_step12100.pt",
+   "final_checkpoint_sha256": "fda6c0daa7ba3f82ac0312780b2867c16893e54250292c9cfb9d58a77035b3f4",
+   "init_sha256": "aff7c9ce5e5c8b1ad6e30040208ba210a8c43453ce992c1e8dc73a7451d57123",
+   "init_state_digest": "7cb9f7af7b206db64c326afc623b7ab192cad2515de8076c54de3e160a29dede",
+   "manifest_sha256": "adc13294d1b50a1aab82fbbfbdf4165474bde0100c9335b7feb392dc085f6e5b",
+   "seconds": 1921.371085882187,
+   "peak_gpu_gib": 5.899134635925293
+  }
+ }
+}

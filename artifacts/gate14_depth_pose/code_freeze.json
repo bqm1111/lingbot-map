@@ -1,0 +1,21 @@
+{
+ "frozen_at": "2026-09-14T00:32:18",
+ "git_head": "0ba3b5deeb236a33022068445df85e135d006fc4",
+ "must3r_commit": "0c0d76b76b68993e380752d56dd3e04979cbbeef",
+ "must3r_checkpoint_md5": "8854f948a8674fb1740258c1872f80dc",
+ "note": "frozen after the 0006 Stage 1 analysis (promotion_result.json written) and before the 0003/0007/0010 replay; the reprojection diagnostic column was fixed and 0006 re-audited before this freeze (all occupancy counts identical, see logs/results_table_0006_prefix_reproj.md)",
+ "sha256": {
+  "tools/gate14_depth_pose/g14.py": "9d06ec120d6fc39702c98352632a3995f2ca7ffb65c19fec9ca8fa9cd2e62db2",
+  "tools/gate14_depth_pose/make_manifest.py": "9aba87a7f2b01966503dcdf3de6e7c778269f651932046474fabbe6ec335ec00",
+  "tools/gate14_depth_pose/must3r_infer.py": "cf0d91fd95d216dad79b1f12badd2a1ec360a21cb89374687cc58231a942054a",
+  "tools/gate14_depth_pose/audit14.py": "82f6f5988f8de49de59d61a1fb08e0c93b64f90f27a69c292198e156cc80e18b",
+  "tools/gate14_depth_pose/analyze14.py": "e25526923b935a013038e76fabbe8d0c06a5fe87d3e30ffb6b92d24319b372ca",
+  "tools/gate14_depth_pose/stage2_guard.py": "0c53717a8a3e78ee5203a93f31746b85968b33cd48f4491171218922621f0e88",
+  "tools/gate9_depth_occupancy/audit.py": "9359c95b2f407bb8d43d252c63c0b68ee07b5823416aa2fd88bf7b35d4c5c777",
+  "tools/gate9_depth_occupancy/common.py": "f2442ebe47fc5d4bebdfe20738ac608a1687bffb37ec693433154dbeef69d1e1",
+  "tools/gate9_depth_occupancy/variant_mapper.py": "21d6dc57f55c425509d2664edd5b51b6dc1b4d17b72b0cabc99a834cbd9a9d74",
+  "core/mapping/mapper.py": "9c04e302e0ec0e0876f8856c0f3c2c01b8db2c508126553322fbd6c9b0c92eac",
+  "gates/gate7b/scale.py": "2b0b2db98700dbc2044efe2bd12a6dc07d787b554787e5bfa723f177bb59c198",
+  "artifacts/gate14_depth_pose/promotion_rule.json": "d46c5c41dde27c77675b56706c3bc54173c4a9b13a2022b7167fada7d53d9f5a"
+ }
+}

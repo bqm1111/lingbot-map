@@ -1,0 +1,294 @@
+{
+  "study": "target_consistency",
+  "eligible_rule": "~observed & fut_observed & gt_occ & gt_valid (no teacher-present requirement)",
+  "future_horizon_frames": 20,
+  "groupings": {
+    "contiguous": {
+      "A": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "B": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "C": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "interleaved": {
+      "A": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19
+      ],
+      "B": [
+        2,
+        5,
+        8,
+        11,
+        14,
+        17,
+        20
+      ],
+      "C": [
+        3,
+        6,
+        9,
+        12,
+        15,
+        18
+      ]
+    }
+  },
+  "primary_grouping": "interleaved",
+  "grouping_rationale": "contiguous early/middle/late leaves 0.1-0.4 % of eligible voxels with A&B support and ~0 with A&B&C; interleaved offsets keep every frame in exactly one group and consecutive frames in different groups",
+  "candidate_target": "p_AB = (s_A + s_B) / (w_A + w_B), the mapper's evidence-weighted fusion of groups A and B",
+  "validation": "argmax(p_AB) == argmax(p_C), cosine(p_AB, p_C), JS(p_AB, p_C) on retained voxels with w_C > 0",
+  "filters": {
+    "any_AB": {
+      "family": "any",
+      "tau": 0.0,
+      "gamma": 0.0
+    },
+    "F0_existing_rule": {
+      "family": "F0",
+      "tau": 0.0,
+      "gamma": 0.0
+    },
+    "F1_agree": {
+      "family": "F1",
+      "tau": 0.0,
+      "gamma": 0.0
+    },
+    "F2_tau0.40": {
+      "family": "F2",
+      "tau": 0.4,
+      "gamma": 0.0
+    },
+    "F2_tau0.50": {
+      "family": "F2",
+      "tau": 0.5,
+      "gamma": 0.0
+    },
+    "F2_tau0.60": {
+      "family": "F2",
+      "tau": 0.6,
+      "gamma": 0.0
+    },
+    "F2_tau0.70": {
+      "family": "F2",
+      "tau": 0.7,
+      "gamma": 0.0
+    },
+    "F2_tau0.80": {
+      "family": "F2",
+      "tau": 0.8,
+      "gamma": 0.0
+    },
+    "F3_gam0.70": {
+      "family": "F3",
+      "tau": 0.0,
+      "gamma": 0.7
+    },
+    "F3_gam0.80": {
+      "family": "F3",
+      "tau": 0.0,
+      "gamma": 0.8
+    },
+    "F3_gam0.90": {
+      "family": "F3",
+      "tau": 0.0,
+      "gamma": 0.9
+    },
+    "F3_gam0.95": {
+      "family": "F3",
+      "tau": 0.0,
+      "gamma": 0.95
+    },
+    "F4_tau0.40_gam0.70": {
+      "family": "F4",
+      "tau": 0.4,
+      "gamma": 0.7
+    },
+    "F4_tau0.40_gam0.80": {
+      "family": "F4",
+      "tau": 0.4,
+      "gamma": 0.8
+    },
+    "F4_tau0.40_gam0.90": {
+      "family": "F4",
+      "tau": 0.4,
+      "gamma": 0.9
+    },
+    "F4_tau0.40_gam0.95": {
+      "family": "F4",
+      "tau": 0.4,
+      "gamma": 0.95
+    },
+    "F4_tau0.50_gam0.70": {
+      "family": "F4",
+      "tau": 0.5,
+      "gamma": 0.7
+    },
+    "F4_tau0.50_gam0.80": {
+      "family": "F4",
+      "tau": 0.5,
+      "gamma": 0.8
+    },
+    "F4_tau0.50_gam0.90": {
+      "family": "F4",
+      "tau": 0.5,
+      "gamma": 0.9
+    },
+    "F4_tau0.50_gam0.95": {
+      "family": "F4",
+      "tau": 0.5,
+      "gamma": 0.95
+    },
+    "F4_tau0.60_gam0.70": {
+      "family": "F4",
+      "tau": 0.6,
+      "gamma": 0.7
+    },
+    "F4_tau0.60_gam0.80": {
+      "family": "F4",
+      "tau": 0.6,
+      "gamma": 0.8
+    },
+    "F4_tau0.60_gam0.90": {
+      "family": "F4",
+      "tau": 0.6,
+      "gamma": 0.9
+    },
+    "F4_tau0.60_gam0.95": {
+      "family": "F4",
+      "tau": 0.6,
+      "gamma": 0.95
+    },
+    "F4_tau0.70_gam0.70": {
+      "family": "F4",
+      "tau": 0.7,
+      "gamma": 0.7
+    },
+    "F4_tau0.70_gam0.80": {
+      "family": "F4",
+      "tau": 0.7,
+      "gamma": 0.8
+    },
+    "F4_tau0.70_gam0.90": {
+      "family": "F4",
+      "tau": 0.7,
+      "gamma": 0.9
+    },
+    "F4_tau0.70_gam0.95": {
+      "family": "F4",
+      "tau": 0.7,
+      "gamma": 0.95
+    },
+    "F4_tau0.80_gam0.70": {
+      "family": "F4",
+      "tau": 0.8,
+      "gamma": 0.7
+    },
+    "F4_tau0.80_gam0.80": {
+      "family": "F4",
+      "tau": 0.8,
+      "gamma": 0.8
+    },
+    "F4_tau0.80_gam0.90": {
+      "family": "F4",
+      "tau": 0.8,
+      "gamma": 0.9
+    },
+    "F4_tau0.80_gam0.95": {
+      "family": "F4",
+      "tau": 0.8,
+      "gamma": 0.95
+    }
+  },
+  "tau_grid": [
+    0.0,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8
+  ],
+  "gamma_grid": [
+    0.0,
+    0.7,
+    0.8,
+    0.9,
+    0.95
+  ],
+  "sem_w_min": 1.0,
+  "min_class_support": 500,
+  "threshold_selection_drive": "2013_05_28_drive_0006_sync",
+  "evidence_root": "/media/SSD1/MINH_DATASETS/lingbot_future_semantic_completion/target_consistency/evidence",
+  "evidence_builds": {
+    "2013_05_28_drive_0003_sync": {
+      "n_written": 193,
+      "max_abs_dp": 0.0019608139991760254,
+      "max_abs_dw": 0.12371826171875
+    },
+    "2013_05_28_drive_0006_sync": {
+      "n_written": 587,
+      "max_abs_dp": 0.0019608736038208008,
+      "max_abs_dw": 0.833251953125
+    },
+    "2013_05_28_drive_0007_sync": {
+      "n_written": 569,
+      "max_abs_dp": 0.0019608139991760254,
+      "max_abs_dw": 0.19403076171875
+    },
+    "2013_05_28_drive_0010_sync": {
+      "n_written": 596,
+      "max_abs_dp": 0.0019608139991760254,
+      "max_abs_dw": 0.375
+    }
+  },
+  "frozen": {
+    "gate8c1_manifest": "artifacts/gate8c1/frozen_manifest_sky.json",
+    "trident_cache": "/media/SSD1/MINH_DATASETS/lingbot_gate6/semantics/kitti360 (1777 files, newest 2026-09-02)",
+    "mapper_code_digests": "1777 cached Trident-H files, newest 2026-09-02 < first evidence file 2026-09-13; mapper code digests {'core/mapping/mapper.py': '9c04e302e0ec', 'core/mapping/voxmap.py': '098d19b07dbb', 'core/mapping/feed.py': '0b4a17f258cd', 'core/mapping/rays.py': 'f46dc371869a', 'core/supervision/lifting.py': '1d6223d4a25b', 'core/run/build_samples.py': 'c3b472526688'}; per-frame replay reproduces the cached 20-frame target on every anchor: max |dp| 0.0020 (u8 quantisation 0.002), max |dw| 0.833 (float16)"
+  },
+  "previous_reference": {
+    "causal_vs_future_top1": 0.456,
+    "causal_vs_future_cosine": 0.51,
+    "shuffled_top1": 0.35,
+    "shuffled_cosine": 0.4,
+    "teacher_coverage_of_key_population": 0.228
+  },
+  "env": {
+    "python": "3.10.19",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "git": {
+      "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+      "branch": "feature-completion-study",
+      "dirty": true
+    }
+  }
+}

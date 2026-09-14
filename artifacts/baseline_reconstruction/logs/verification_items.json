@@ -1,0 +1,194 @@
+[
+ {
+  "section": "historical",
+  "name": "exact ceiling-fix commit/code identified",
+  "passed": true,
+  "evidence": "sky targets == pre-647bcf3 rawtarget.py with SKY_NEIGHBOURHOOD_VOX=0 (bit-exact, 3 anchors); fix applied 2026-09-04, first tracked at f7b7552; historical_baseline_audit.md \u00a73"
+ },
+ {
+  "section": "historical",
+  "name": "pre-fix and post-fix evaluation distinguished",
+  "passed": true,
+  "evidence": "prefix manifest checkpoints carry zeros padding, sky manifest replicate; separate eval records (artifacts/gate8c1 vs output/skyfix/eval)"
+ },
+ {
+  "section": "historical",
+  "name": "historical numbers traced to files/logs",
+  "passed": true,
+  "evidence": "six eval JSONs + RESULT log lines agree: SK 22.47/23.62/22.71, Occ3D 33.49/35.03/33.88"
+ },
+ {
+  "section": "historical",
+  "name": "exact checkpoint identified",
+  "passed": true,
+  "evidence": "sky_seed{0,1,2}_last.pt, sha256 == frozen_manifest_sky.json"
+ },
+ {
+  "section": "historical",
+  "name": "exact config identified",
+  "passed": true,
+  "evidence": "configs/gate8c1_sky/seed{0,1,2}.yaml (checkpoint meta carries the config; historical_protocol.yaml)"
+ },
+ {
+  "section": "historical",
+  "name": "metric definition identified",
+  "passed": true,
+  "evidence": "semantic.completion.binary_iou = TP/(TP+FP+FN) inside the official mask (core/run/eval_target.py; re-derived from the seed-2 dump to 7e-7)"
+ },
+ {
+  "section": "historical",
+  "name": "no semantic IoU confused with occupancy IoU",
+  "passed": true,
+  "evidence": "SSC mIoU (3.35 / 4.24) reported separately from SC IoU in the audit"
+ },
+ {
+  "section": "historical",
+  "name": "conflicting results documented",
+  "passed": true,
+  "evidence": "historical_baseline_audit.md \u00a72: OccAny-scorer subsets (22.83 / 33.28), matched-forward 30.70, sky2 28.12 / 22.93, overwritten JSONs"
+ },
+ {
+  "section": "historical",
+  "name": "canonical baseline justified",
+  "passed": true,
+  "evidence": "historical_baseline_audit.md \u00a77: validity (full anchor sets, gate's masks/metric, METHOD.md headline), not magnitude"
+ },
+ {
+  "section": "current",
+  "name": "only KITTI-360 0003/0007/0010 used for training",
+  "passed": true,
+  "evidence": "training_config train_drives = ['2013_05_28_drive_0003_sync', '2013_05_28_drive_0007_sync', '2013_05_28_drive_0010_sync']; n_train = 1358 = |0003|+|0007|+|0010| input anchors in every run record"
+ },
+ {
+  "section": "current",
+  "name": "0006 used source-side only",
+  "passed": true,
+  "evidence": "source eval: 590 anchors of 0006 per seed; training-time validation loss on every 5th 0006 anchor is logged, never used for selection"
+ },
+ {
+  "section": "current",
+  "name": "local-reset five-frame L inference",
+  "passed": true,
+  "evidence": "input cache records the clip sha256 it was built from; clip stream_indices = t-4..t: {'anchor': 4, 'S_equal': True, 'F_equal': True, 'clip_sha_matches_cache': True, 'scale_is_exp_nanmedian_log_s': True, 'rope_slots_used': 0, 'stream_indices': [0, 1, 2, 3, 4]}"
+ },
+ {
+  "section": "current",
+  "name": "no long-stream cache",
+  "passed": true,
+  "evidence": "clip rope_slots_used = 0 (five frames run as the batched scale block after clean_kv_cache; run_local_lingbot.py asserts the RoPE counter is 0 per clip)"
+ },
+ {
+  "section": "current",
+  "name": "LB-M depth (LingBot canonical depth x causal MoGe-2 clip scale)",
+  "passed": true,
+  "evidence": "S_H/F_H of anchor 4 re-derived from the clip through core IncrementalMapper: bit-exact = True"
+ },
+ {
+  "section": "current",
+  "name": "scale applied exactly once",
+  "passed": true,
+  "evidence": "scale enters only via mapper.scale_state.force(s_clip) (current/geometry.py); tests/baseline_reconstruction/test_geometry_scale_once.py; s_clip = exp(nanmedian log_s)"
+ },
+ {
+  "section": "current",
+  "name": "local LingBot pose (anchor = identity)",
+  "passed": true,
+  "evidence": "current/geometry.py frame_inputs: pose = inv(P_4) @ P_q; test_translation_is_scaled_with_depth"
+ },
+ {
+  "section": "current",
+  "name": "hard H mapper unchanged",
+  "passed": true,
+  "evidence": "core hashes vs Gate 12 code_freeze.json: {'core/mapping/mapper.py': True, 'core/run/_gate8a_train.py': True, 'core/model/net.py': True, 'core/model/losses.py': True, 'core/model/sampler.py': True}"
+ },
+ {
+  "section": "current",
+  "name": "no semantics",
+  "passed": true,
+  "evidence": "w_sem = 0, cin = 3, 967,322 params in every run record; no Trident path opened (firewall tokens 'trident', 'semantics')"
+ },
+ {
+  "section": "current",
+  "name": "same three seeds, same initial weights as Gate 12",
+  "passed": true,
+  "evidence": "seeds [0, 1, 2]; init_matches_gate12 = [True, True, True]"
+ },
+ {
+  "section": "current",
+  "name": "frozen training recipe (verbatim Gate 12 H)",
+  "passed": true,
+  "evidence": "training_config.yaml body == artifacts/gate12_suf/training_config_H.yaml body; run records carry its sha256 4ef021b64448"
+ },
+ {
+  "section": "current",
+  "name": "final-step (6000) checkpoint policy",
+  "passed": true,
+  "evidence": "run records: final_checkpoint = geo_seed*_step06000.pt; no selection code exists"
+ },
+ {
+  "section": "current",
+  "name": "source result matches the Gate 13 M regime",
+  "passed": true,
+  "evidence": "mean abs diff 0.0006 (tol 0.003); per seed {\"0\": 0.0011, \"1\": 0.001, \"2\": 0.0003}"
+ },
+ {
+  "section": "current",
+  "name": "training and source evaluation ran under a strict file audit with zero violations",
+  "passed": true,
+  "evidence": "train opened [5906, 5906, 5906] files, 0 violations; eval 0 violations"
+ },
+ {
+  "section": "firewall",
+  "name": "target datasets unopened before the source freeze",
+  "passed": true,
+  "evidence": "freeze 2026-09-14T12:21:03+02:00; earliest target clip file 2026-09-14T12:21:31; every source-side stage ran inside FileAudit with the dataset-directory tokens"
+ },
+ {
+  "section": "firewall",
+  "name": "source code/config hashes frozen before target evaluation",
+  "passed": true,
+  "evidence": "54 frozen files re-hashed: unchanged"
+ },
+ {
+  "section": "firewall",
+  "name": "SemanticKITTI is evaluation-only",
+  "passed": true,
+  "evidence": "opened only by targets/clips.py and targets/evaluate.py, both behind require_source_freeze(); 163 anchors"
+ },
+ {
+  "section": "firewall",
+  "name": "Occ3D-nuScenes is evaluation-only",
+  "passed": true,
+  "evidence": "opened only by targets/clips.py and targets/evaluate.py, both behind require_source_freeze(); 1182 anchors"
+ },
+ {
+  "section": "firewall",
+  "name": "no target-based threshold changes",
+  "passed": true,
+  "evidence": "threshold 0.0 in the freeze and in every zero-shot record; evaluation code has no threshold argument"
+ },
+ {
+  "section": "firewall",
+  "name": "checkpoints evaluated are the frozen ones",
+  "passed": true,
+  "evidence": "zero-shot records carry the checkpoint sha256 read from code_freeze.json"
+ },
+ {
+  "section": "firewall",
+  "name": "no semantic inputs at evaluation",
+  "passed": true,
+  "evidence": "targets/evaluate.py builds [S, 0, F] only; adapters expose occupancy targets only"
+ },
+ {
+  "section": "firewall",
+  "name": "exact historical protocol comparison documented rather than assumed",
+  "passed": true,
+  "evidence": "historical_comparability.md + tables/historical_vs_current.csv, mechanical classification"
+ },
+ {
+  "section": "firewall",
+  "name": "one evaluation per target, no re-runs with alternatives",
+  "passed": true,
+  "evidence": "exactly one zero_shot_<dataset>.json per target"
+ }
+]

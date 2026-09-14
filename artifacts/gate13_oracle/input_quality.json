@@ -1,0 +1,29 @@
+{
+ "n_anchors": 590,
+ "reference": "Gate 9: five-sweep LiDAR measurement inside the five camera frusta",
+ "summary": {
+  "M": {
+   "iou": 0.09144894993563805,
+   "precision": 0.18736182439436141,
+   "recall": 0.15156576243419775,
+   "occupied_in_lidar_free": 0.8126381756056386,
+   "occupied_voxels_in_mask_per_anchor": 7987.716949152542
+  },
+  "O": {
+   "iou": 0.4375842986259205,
+   "precision": 0.5324226051657251,
+   "recall": 0.7106983638951503,
+   "occupied_in_lidar_free": 0.4675773948342748,
+   "occupied_voxels_in_mask_per_anchor": 13180.488135593221
+  }
+ },
+ "O_equals_gate9_LD_metrics": [
+  590,
+  590
+ ],
+ "O_equals_gate9_LD_map": [
+  590,
+  590
+ ],
+ "seconds": 30.78333616256714
+}

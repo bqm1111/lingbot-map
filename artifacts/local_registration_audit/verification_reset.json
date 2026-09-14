@@ -1,0 +1,33 @@
+{
+  "no_leakage": {
+    "clip_A": 604,
+    "clip_B": 607,
+    "fresh_vs_after_A": {
+      "pred_depth": true,
+      "pred_depth_conf": true,
+      "pred_pose_c2w": true
+    },
+    "cached_vs_fresh": {
+      "pred_depth": true,
+      "pred_depth_conf": true,
+      "pred_pose_c2w": true
+    },
+    "pass": true
+  },
+  "weights_identical": {
+    "digest_first_load": "1c065be3690dd882",
+    "digest_second_load": "1c065be3690dd882",
+    "checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+    "checkpoint_sha256": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72",
+    "pass": true
+  },
+  "stream_prefix_reproduction": {
+    "frames": 60,
+    "keyframe_interval": 2,
+    "depth_rel_max": 0.0,
+    "depth_rel_median": 0.0,
+    "pose_abs_max": 0.0,
+    "bit_identical_depth": true,
+    "pass": true
+  }
+}

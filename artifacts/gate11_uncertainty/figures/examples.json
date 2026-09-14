@@ -1,0 +1,27 @@
+{
+ "clip": 766,
+ "side_view_column": 237,
+ "categories": {
+  "a_exact_depth_failure": {
+   "n_pixels_anchor_frame": 6832,
+   "column": 362,
+   "n_in_column": 35
+  },
+  "b_containment_success": {
+   "n_pixels_anchor_frame": 2932,
+   "column": 179,
+   "n_in_column": 22
+  },
+  "c_overly_broad": {
+   "n_pixels_anchor_frame": 4477,
+   "column": 160,
+   "n_in_column": 28
+  },
+  "d_carving_prevented": {
+   "n_pixels_anchor_frame": 193,
+   "column": 89,
+   "n_in_column": 5
+  }
+ },
+ "broad_threshold_m": 4.0
+}

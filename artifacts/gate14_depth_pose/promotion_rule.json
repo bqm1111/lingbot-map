@@ -1,0 +1,21 @@
+{
+ "written_at": "2026-09-14T00:16:19",
+ "status": "frozen before any NEW (MUSt3R) occupancy result was computed or inspected",
+ "drive": "2013_05_28_drive_0006_sync",
+ "metric_protocol": "Gate 9 observed map: occupied IoU / precision / recall of the five-frame mapper output against the five-sweep LiDAR measurement (occupied = return and never traversed, free = traversed and never a return) inside the union of the five camera frusta; counts pooled over the 590 clips",
+ "criteria": {
+  "C1_iou_gain": "on S_shared: IoU(NEW-L) - IoU(LBM-L) >= 0.05  OR  (IoU(NEW-L) - IoU(LBM-L)) / IoU(LBM-L) >= 0.50",
+  "C2_free_space": "on S_shared: occupied_in_lidar_free(LBM-L) - occupied_in_lidar_free(NEW-L) >= 0.05  (fraction of predicted-occupied voxels in the mask that the LiDAR measured free; absolute decrease)",
+  "C3_not_density": "C1 evaluated on S_shared (identical rays for both depth sources) -- the IoU gain must hold with support held fixed; additionally the S_native gain must not exceed the S_shared gain by more than 2x while S_shared fails C1 (i.e. C3 = C1 on S_shared)",
+  "C4_range_consistency": "on S_shared: IoU(NEW-L) > IoU(LBM-L) in every major range band, where a band is major if it holds >= 5 % of the reference-occupied voxels in the mask (bands by anchor-camera z of the voxel centre: 0-5, 5-10, 10-20, 20-30, >30 m)"
+ },
+ "promote": "C1 AND C2 AND C3 AND C4",
+ "stage2_gate": "tools/gate14_depth_pose/stage2 refuses to run unless artifacts/gate14_depth_pose/promotion_result.json has promote == true and its rule sha256 equals this file's",
+ "decision_guide_stage1": {
+  "A": "promotion flag true (NEW-L >> LBM-L under the rule) and NEW-G >> LBM-G",
+  "B": "depth_gain_GT = IoU(NEW-G) - IoU(LBM-G) >= 0.05 or >= 50 % relative, but NEW-L fails the rule (pose cost absorbs the gain)",
+  "C": "depth_gain_GT < 0.05 absolute and < 50 % relative (candidate depth not substantially better)",
+  "D": "NEW improves under both poses but NEW-L << NEW-G << LD-G; name the larger of pose_cost_NEW and (IoU(LD-G) - IoU(NEW-G)) as the next bottleneck",
+  "note": "guides, applied with judgement; quantities from S_shared"
+ }
+}

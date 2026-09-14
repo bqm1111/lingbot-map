@@ -1,0 +1,109 @@
+{
+  "study": "teacher-alignment control",
+  "condition": "S",
+  "objective": "L_occ + 0.5*L_KL with trunk KL-gradient matched to rho*|g_occ|",
+  "auxiliary_target": "shuffled: same vectors permuted within (z-layer, map-observed) strata per crop",
+  "rho": 3.5643757479566673,
+  "rho_record": "artifacts/teacher_alignment_study/rho_calibration.json",
+  "claim": "target-domain-free transfer; frozen foundation models not audited for training provenance (LingBot-Map, MoGe-2, Trident-H)",
+  "derived_from": [
+    "artifacts/gate8c1/frozen_manifest_sky.json",
+    "artifacts/feature_completion_study/frozen_manifest_B.json"
+  ],
+  "inherits": [
+    "causal inputs and 32-channel encoding",
+    "occupancy and future class-probability targets",
+    "auxiliary support (plus the tiny-strata rule)",
+    "source populations",
+    "architecture and initialisation (n_feat=64 head constructed, unused)",
+    "replicate padding, residual lock 2.0, grid, metric scale",
+    "AdamW 1e-3 / wd 0.01 / cosine, batch 4, crop 128x128x32, uniform crop sampler, grad clip 1.0",
+    "bf16 autocast, past5 inference",
+    "residual occupancy lock at |log-odds| >= 2.0"
+  ],
+  "semantic_decoder": {
+    "kind": "the gate's 25-class softmax head",
+    "trained": true
+  },
+  "source_partition": {
+    "n_files": 590,
+    "sha256": "dc7bac2982b3aa1101372cefde16672549a1719281ccfce0c0d2158b09b5a3de",
+    "drive": "2013_05_28_drive_0006_sync"
+  },
+  "evaluation_populations": {
+    "semantickitti": 163,
+    "occ3d": 1182,
+    "protocol": "past5"
+  },
+  "rule": {
+    "checkpoint": "final step, no selection",
+    "occupancy_threshold": "final-logit threshold maximising full-grid IoU on KITTI-360 drive 0006",
+    "semantic_threshold": "coverage x agreement with the frozen teacher on half-window-agreeing voxels (the gate's rule)",
+    "forbidden": "SemanticKITTI and Occ3D/nuScenes not read before this file"
+  },
+  "seeds": {
+    "0": {
+      "seed": 0,
+      "condition": "S",
+      "selected": "last",
+      "checkpoint": "artifacts/teacher_alignment_study/checkpoints/tas_S_seed0_last.pt",
+      "checkpoint_sha256": "11c73128b6097f7d2c97284ccd1056b6ad8fd13b3095b2d8c12507e9f9576c51",
+      "occupancy_threshold": -0.21875,
+      "semantic_threshold": 0.0,
+      "semantic_agreement_at_threshold": 0.3987055242873568,
+      "source_full_iou": 0.10436278890054011,
+      "source_later_iou": 0.10813713003072709,
+      "source_auroc": 0.6798593051290873,
+      "aligned_teacher_top1_agreement": 0.3987055242873568,
+      "n_degenerate_steps": 1,
+      "achieved_ratio_mean": 3.5637816853320086,
+      "train_record": "artifacts/teacher_alignment_study/train_tas_S_seed0.json"
+    },
+    "1": {
+      "seed": 1,
+      "condition": "S",
+      "selected": "last",
+      "checkpoint": "artifacts/teacher_alignment_study/checkpoints/tas_S_seed1_last.pt",
+      "checkpoint_sha256": "419970ad1b46e7c5f4da5fffa75ebf527d53bf9aab555210a0c6ccb1166d58ab",
+      "occupancy_threshold": -0.28125,
+      "semantic_threshold": 0.0,
+      "semantic_agreement_at_threshold": 0.3924454312747892,
+      "source_full_iou": 0.10203440022677308,
+      "source_later_iou": 0.10470572847029104,
+      "source_auroc": 0.6722220640181482,
+      "aligned_teacher_top1_agreement": 0.3924454312747892,
+      "n_degenerate_steps": 1,
+      "achieved_ratio_mean": 3.5637816853320086,
+      "train_record": "artifacts/teacher_alignment_study/train_tas_S_seed1.json"
+    },
+    "2": {
+      "seed": 2,
+      "condition": "S",
+      "selected": "last",
+      "checkpoint": "artifacts/teacher_alignment_study/checkpoints/tas_S_seed2_last.pt",
+      "checkpoint_sha256": "ed08fcd096b61d7faf004111f310015e4d0b18147eaef90094d116920b7659e4",
+      "occupancy_threshold": -0.09375,
+      "semantic_threshold": 0.0,
+      "semantic_agreement_at_threshold": 0.3832334982315417,
+      "source_full_iou": 0.09846987643171569,
+      "source_later_iou": 0.10002370309013707,
+      "source_auroc": 0.6648931821345255,
+      "aligned_teacher_top1_agreement": 0.3832334982315417,
+      "n_degenerate_steps": 1,
+      "achieved_ratio_mean": 3.5637816853320086,
+      "train_record": "artifacts/teacher_alignment_study/train_tas_S_seed2.json"
+    }
+  },
+  "env": {
+    "python": "3.10.19",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "git": {
+      "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+      "branch": "feature-completion-study",
+      "dirty": true
+    }
+  }
+}

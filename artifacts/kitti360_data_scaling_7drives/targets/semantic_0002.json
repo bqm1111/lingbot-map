@@ -1,0 +1,202 @@
+{
+  "drive": "2013_05_28_drive_0002_sync",
+  "n_written": 2769,
+  "n_skipped": 0,
+  "stats": {
+    "n_anchors": 2769,
+    "occupied": 81791028,
+    "candidates": 1632423026,
+    "outside_or_range": 1350593918,
+    "no_reference": 48531607,
+    "occluded": 129520200,
+    "not_present": 49260638,
+    "visible": 54516663,
+    "target_voxels": 22039282,
+    "contradictions": 278813,
+    "mapper_target_voxels": 49495385,
+    "views_per_voxel_hist": [
+      59472933,
+      9725686,
+      5081622,
+      2894674,
+      1751630,
+      1094087,
+      673800,
+      431439,
+      253627,
+      156641,
+      98919,
+      60181,
+      35394,
+      22354,
+      13833,
+      8788,
+      5190,
+      3052,
+      2025,
+      1329,
+      3824
+    ]
+  },
+  "rule": {
+    "visibility": "present: sweep depth range in the 7x7 window brackets z within tol; not occluded: z - min(3x3 window) < tol; tol = 0.3 m + 1 % z",
+    "depth_m": [
+      1.5,
+      60.0
+    ],
+    "border_px": 2,
+    "future_frames": 20,
+    "sem_w_min": 1.0,
+    "half_agreement": "a voxel with evidence in both halves of the window is dropped if the halves' argmax differ",
+    "weight": "1 per visible future view",
+    "probabilities": "cached Trident-H lattice 140x518, bilinear at the native pixel, align_corners=False, renormalised, 18 -> 25 via into_matrix",
+    "mapper_used": false
+  },
+  "calibration": {
+    "K": [
+      [
+        552.554261,
+        0.0,
+        682.049453
+      ],
+      [
+        0.0,
+        552.554261,
+        238.769549
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "P_rect_00": [
+      [
+        552.554261,
+        0.0,
+        682.049453,
+        0.0
+      ],
+      [
+        0.0,
+        552.554261,
+        238.769549,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "R_rect_00": [
+      [
+        0.999974,
+        -0.007141,
+        -8.9e-05,
+        0.0
+      ],
+      [
+        0.007141,
+        0.999969,
+        -0.003247,
+        0.0
+      ],
+      [
+        0.000112,
+        0.003247,
+        0.999995,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "cam0_to_velo": [
+      [
+        0.04307104361,
+        -0.08829286498,
+        0.995162929,
+        0.8043914418
+      ],
+      [
+        -0.999004371,
+        0.007784614041,
+        0.04392796942,
+        0.2993489574
+      ],
+      [
+        -0.01162548558,
+        -0.9960641394,
+        -0.08786966659,
+        -0.1770225824
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "rect_cam_to_velo": [
+      [
+        0.043612115055327874,
+        -0.0912146196284711,
+        0.9948756109863613,
+        0.8043914418
+      ],
+      [
+        -0.9990388848339291,
+        0.0005081416362397046,
+        0.04384092409976315,
+        0.2993489574
+      ],
+      [
+        -0.004504167301544631,
+        -0.9958313597837463,
+        -0.09110398740604471,
+        -0.1770225824
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "native_hw": [
+      376,
+      1408
+    ]
+  },
+  "seconds": 1192.8244824409485,
+  "firewall": {
+    "n_opened": 16630,
+    "n_unique": 8315,
+    "violations": [],
+    "forbidden_patterns": [
+      "data/kitti/dataset",
+      "occ3d_gt",
+      "nuscenes",
+      "lingbot_occ3d_zeroshot",
+      "scale_gate/cache",
+      "preprocess/labels"
+    ]
+  },
+  "env": {
+    "python": "3.10.19",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "git": {
+      "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+      "branch": "feature-completion-study",
+      "dirty": true
+    }
+  }
+}

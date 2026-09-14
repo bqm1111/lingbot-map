@@ -1,0 +1,98 @@
+{
+  "study": "feature-completion-study",
+  "condition": "C",
+  "objective": "L_occ + 0.5 * L_feature",
+  "claim": "target-domain-free transfer: trained on KITTI-360 drives 0003/0007/0010, selected on drive 0006, evaluated on untouched SemanticKITTI and Occ3D-nuScenes. NOT whole-system zero-shot -- the frozen foundation models (LingBot-Map, MoGe-2, Trident-H, SAM-H) have not had their training provenance audited.",
+  "derived_from": "artifacts/gate8c1/frozen_manifest_sky.json",
+  "inherits": [
+    "replicate padding",
+    "256x256x32 grid at 0.2 m",
+    "frozen five-frame metric scale",
+    "32-channel causal input encoding",
+    "residual occupancy lock at |log-odds| >= 2.0",
+    "bf16 autocast forward",
+    "past5 inference protocol"
+  ],
+  "occupancy_targets": {
+    "root": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1_sky",
+    "note": "the adopted ceiling-fixed targets, reused unmodified; the sky supervision is unchanged"
+  },
+  "feature_projection": {
+    "path": "/media/SSD1/MINH_DATASETS/lingbot_feature_study/pca/sam_vith_pca64.npz",
+    "dim": 64,
+    "sha256": "e8cf0ff3b7444ce69808c90d03671b558e6eab8a608f7553adb4ba43326517fa",
+    "record": "artifacts/feature_completion_study/pca_fit.json"
+  },
+  "semantic_decoder": {
+    "kind": null,
+    "trained": false,
+    "reason": "this condition applies no gradient to the 25-class head, so it is at initialisation. No compatible validated decoder exists for SAM features, and this study does not build one; its semantic-label metrics are unavailable."
+  },
+  "source_partition": {
+    "n_files": 590,
+    "sha256": "dc7bac2982b3aa1101372cefde16672549a1719281ccfce0c0d2158b09b5a3de",
+    "drive": "2013_05_28_drive_0006_sync",
+    "record": "artifacts/feature_completion_study/eval_masks"
+  },
+  "rule": {
+    "checkpoint": "final step, no selection",
+    "occupancy_threshold": "final-logit threshold maximising full-grid IoU on KITTI-360 drive 0006",
+    "forbidden": "SemanticKITTI and Occ3D/nuScenes are not read before this file exists"
+  },
+  "seeds": {
+    "0": {
+      "seed": 0,
+      "condition": "C",
+      "selected": "last",
+      "checkpoint": "artifacts/feature_completion_study/checkpoints/fcs_C_seed0_last.pt",
+      "checkpoint_sha256": "64c3f31637e851f2cb83fecf1f650a0de9ec88d4a17c8d70a639f2e2a4d07eae",
+      "occupancy_threshold": -0.15625,
+      "semantic_threshold": 0.0,
+      "source_full_iou": 0.10434269258225332,
+      "source_later_iou": 0.1077967832611269,
+      "source_later_ap": 0.1283202431073871,
+      "source_auroc": 0.6904809421624252,
+      "train_record": "artifacts/feature_completion_study/train_fcs_C_seed0.json"
+    },
+    "1": {
+      "seed": 1,
+      "condition": "C",
+      "selected": "last",
+      "checkpoint": "artifacts/feature_completion_study/checkpoints/fcs_C_seed1_last.pt",
+      "checkpoint_sha256": "644c006337253d4684b7020cb50b65b8df9c834f49756a11e1c0510c6f243283",
+      "occupancy_threshold": -0.15625,
+      "semantic_threshold": 0.0,
+      "source_full_iou": 0.1053625761213547,
+      "source_later_iou": 0.1096691531466787,
+      "source_later_ap": 0.13107463126609942,
+      "source_auroc": 0.6891428961371708,
+      "train_record": "artifacts/feature_completion_study/train_fcs_C_seed1.json"
+    },
+    "2": {
+      "seed": 2,
+      "condition": "C",
+      "selected": "last",
+      "checkpoint": "artifacts/feature_completion_study/checkpoints/fcs_C_seed2_last.pt",
+      "checkpoint_sha256": "299bf4581986628e454b3c76b15a77df05b35bd12e1f945b715b652e560afa7d",
+      "occupancy_threshold": -0.3125,
+      "semantic_threshold": 0.0,
+      "source_full_iou": 0.10460731750147914,
+      "source_later_iou": 0.10780461976779529,
+      "source_later_ap": 0.12710367288496208,
+      "source_auroc": 0.6822703198577903,
+      "train_record": "artifacts/feature_completion_study/train_fcs_C_seed2.json"
+    }
+  },
+  "env": {
+    "python": "3.10.19",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "git": {
+      "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+      "branch": "feature-completion-study",
+      "dirty": true
+    }
+  }
+}

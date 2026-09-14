@@ -1,0 +1,91 @@
+{
+  "drive": "2013_05_28_drive_0010_sync",
+  "n_source_frames": 61,
+  "n_rows": 307456,
+  "sampling_rule_max_dev_vs_official_interpolation": 1.341104507446289e-07,
+  "fields": [
+    "native_A",
+    "native_B",
+    "landmark",
+    "offset",
+    "baseline_m",
+    "angle_deg",
+    "z_A",
+    "z_B",
+    "resid_A",
+    "resid_B",
+    "strict",
+    "u_A",
+    "v_A",
+    "u_B",
+    "v_B",
+    "cls_A",
+    "cls_B",
+    "conf_A",
+    "conf_B",
+    "cls_ref_A",
+    "cls_ref_B",
+    "cos_same",
+    "pcos_same",
+    "js_same",
+    "top1_same",
+    "refcos_same",
+    "reftop1_same",
+    "cos_C0",
+    "pcos_C0",
+    "top1_C0",
+    "cos_C1",
+    "pcos_C1",
+    "top1_C1",
+    "cos_C2",
+    "pcos_C2",
+    "top1_C2",
+    "d_C2",
+    "cos_C3",
+    "pcos_C3",
+    "top1_C3",
+    "pert_1tok",
+    "pert_2px",
+    "pert_5px",
+    "cos_C2_sameview",
+    "pcos_C2_sameview",
+    "top1_C2_sameview"
+  ],
+  "controls": {
+    "C0": "landmark of an earlier unrelated (A,B) set of the drive (reservoir of 4000)",
+    "C1": "different landmark, same (A,B) set",
+    "C2": "different landmark, 0.3-1.5 m away, |dz| < 0.3 m, |dz_cam|/z < 0.1",
+    "C3": "different landmark whose per-view class in B equals X's class in A"
+  },
+  "perturbations": {
+    "1 token (11 px)": 11.0,
+    "2 px": 2.0,
+    "5 px": 5.0
+  },
+  "seconds": 47.9946448802948,
+  "firewall": {
+    "n_opened": 2286,
+    "n_unique": 1143,
+    "violations": [],
+    "forbidden_patterns": [
+      "data/kitti/dataset",
+      "occ3d_gt",
+      "nuscenes",
+      "lingbot_occ3d_zeroshot",
+      "scale_gate/cache",
+      "preprocess/labels"
+    ]
+  },
+  "env": {
+    "python": "3.10.19",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "git": {
+      "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+      "branch": "feature-completion-study",
+      "dirty": true
+    }
+  }
+}

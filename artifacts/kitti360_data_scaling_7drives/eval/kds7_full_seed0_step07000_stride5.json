@@ -1,0 +1,496 @@
+{
+  "checkpoint": "artifacts/kitti360_data_scaling_7drives/checkpoints/kds7_full_seed0_step07000.pt",
+  "checkpoint_sha256": "08f3958207e7afb46d767ceb28c9b46017e27960414cbc14ef997c9f86fa7120",
+  "stride": 5,
+  "n_anchors": 118,
+  "anchor_ids": [
+    4,
+    19,
+    34,
+    49,
+    64,
+    79,
+    94,
+    109,
+    124,
+    139,
+    154,
+    169,
+    184,
+    199,
+    214,
+    229,
+    244,
+    259,
+    274,
+    289,
+    304,
+    319,
+    334,
+    349,
+    364,
+    379,
+    394,
+    409,
+    424,
+    439,
+    454,
+    469,
+    484,
+    499,
+    514,
+    529,
+    544,
+    559,
+    574,
+    589,
+    604,
+    619,
+    634,
+    649,
+    664,
+    679,
+    694,
+    709,
+    724,
+    739,
+    754,
+    769,
+    784,
+    799,
+    814,
+    829,
+    844,
+    859,
+    874,
+    889,
+    904,
+    919,
+    934,
+    949,
+    964,
+    979,
+    994,
+    1009,
+    1024,
+    1039,
+    1054,
+    1069,
+    1084,
+    1099,
+    1114,
+    1129,
+    1144,
+    1159,
+    1174,
+    1189,
+    1204,
+    1219,
+    1234,
+    1249,
+    1264,
+    1279,
+    1294,
+    1309,
+    1324,
+    1339,
+    1354,
+    1369,
+    1384,
+    1399,
+    1414,
+    1429,
+    1444,
+    1459,
+    1474,
+    1489,
+    1504,
+    1519,
+    1534,
+    1549,
+    1564,
+    1579,
+    1594,
+    1609,
+    1624,
+    1639,
+    1654,
+    1669,
+    1684,
+    1699,
+    1714,
+    1729,
+    1744,
+    1759
+  ],
+  "threshold": 0.0,
+  "regions": {
+    "unobserved_later": {
+      "semantic_miou": 0.004639844772717717,
+      "empty_iou": 0.8805305989909931,
+      "per_class": {
+        "car": {
+          "label": 1,
+          "iou": 0.017058357538949038,
+          "gt_support": 17241,
+          "predicted": 21275
+        },
+        "bicycle": {
+          "label": 2,
+          "iou": 0.0,
+          "gt_support": 2,
+          "predicted": 23
+        },
+        "motorcycle": {
+          "label": 3,
+          "iou": 0.0,
+          "gt_support": 62,
+          "predicted": 26
+        },
+        "truck": {
+          "label": 4,
+          "iou": 0.0,
+          "gt_support": 902,
+          "predicted": 262
+        },
+        "other-vehicle": {
+          "label": 5,
+          "iou": 0.0,
+          "gt_support": 1794,
+          "predicted": 1379
+        },
+        "person": {
+          "label": 6,
+          "iou": 0.0,
+          "gt_support": 50,
+          "predicted": 57
+        },
+        "road": {
+          "label": 7,
+          "iou": 0.007217933729661905,
+          "gt_support": 27951,
+          "predicted": 1794212
+        },
+        "parking": {
+          "label": 8,
+          "iou": 0.00054784968996688,
+          "gt_support": 37829,
+          "predicted": 2350
+        },
+        "sidewalk": {
+          "label": 9,
+          "iou": 0.0010115550713924444,
+          "gt_support": 19219,
+          "predicted": 32239
+        },
+        "other-ground": {
+          "label": 10,
+          "iou": 0.003182757272879558,
+          "gt_support": 20532,
+          "predicted": 33366
+        },
+        "building": {
+          "label": 11,
+          "iou": 0.007667044879605541,
+          "gt_support": 249401,
+          "predicted": 87187
+        },
+        "fence": {
+          "label": 12,
+          "iou": 0.0016589479505080527,
+          "gt_support": 6321,
+          "predicted": 8170
+        },
+        "vegetation": {
+          "label": 13,
+          "iou": 0.04201030848050521,
+          "gt_support": 555201,
+          "predicted": 1127828
+        },
+        "terrain": {
+          "label": 14,
+          "iou": 4.419889502762431e-05,
+          "gt_support": 43603,
+          "predicted": 1649
+        },
+        "pole": {
+          "label": 15,
+          "iou": 0.0,
+          "gt_support": 195,
+          "predicted": 2360
+        },
+        "traffic-sign": {
+          "label": 16,
+          "iou": 0.0,
+          "gt_support": 150,
+          "predicted": 425
+        },
+        "other-structure": {
+          "label": 17,
+          "iou": 0.0031182524004226583,
+          "gt_support": 73205,
+          "predicted": 101474
+        },
+        "other-object": {
+          "label": 18,
+          "iou": 0.0,
+          "gt_support": 1628,
+          "predicted": 2443
+        }
+      },
+      "n_classes_with_support": 18,
+      "occupancy_iou": 0.11801514927480677,
+      "occupancy_precision": 0.18558358562044722,
+      "occupancy_recall": 0.2447931978430377,
+      "semantic_voxels": 31656777,
+      "gt_occupied_labelled_voxels": 1055286,
+      "teacher_agreement": 0.4624270111451347,
+      "teacher_voxels": 645304
+    },
+    "observed": {
+      "semantic_miou": 0.008016882981354568,
+      "empty_iou": 0.8192063363660589,
+      "per_class": {
+        "car": {
+          "label": 1,
+          "iou": 0.022884466528502585,
+          "gt_support": 12370,
+          "predicted": 69561
+        },
+        "bicycle": {
+          "label": 2,
+          "iou": 0.0,
+          "gt_support": 4,
+          "predicted": 25
+        },
+        "motorcycle": {
+          "label": 3,
+          "iou": 0.004098360655737705,
+          "gt_support": 125,
+          "predicted": 120
+        },
+        "truck": {
+          "label": 4,
+          "iou": 0.0,
+          "gt_support": 786,
+          "predicted": 3000
+        },
+        "other-vehicle": {
+          "label": 5,
+          "iou": 0.00023329056339671062,
+          "gt_support": 826,
+          "predicted": 7749
+        },
+        "person": {
+          "label": 6,
+          "iou": 0.0,
+          "gt_support": 5,
+          "predicted": 484
+        },
+        "road": {
+          "label": 7,
+          "iou": 0.03250594660784017,
+          "gt_support": 60549,
+          "predicted": 1362778
+        },
+        "parking": {
+          "label": 8,
+          "iou": 0.0017301786409446775,
+          "gt_support": 15655,
+          "predicted": 7504
+        },
+        "sidewalk": {
+          "label": 9,
+          "iou": 0.011908008362876102,
+          "gt_support": 29572,
+          "predicted": 48352
+        },
+        "other-ground": {
+          "label": 10,
+          "iou": 0.004732715385641742,
+          "gt_support": 10448,
+          "predicted": 117566
+        },
+        "building": {
+          "label": 11,
+          "iou": 0.014459337996795498,
+          "gt_support": 107571,
+          "predicted": 126060
+        },
+        "fence": {
+          "label": 12,
+          "iou": 0.003254272480434435,
+          "gt_support": 7370,
+          "predicted": 42881
+        },
+        "vegetation": {
+          "label": 13,
+          "iou": 0.04078021913213827,
+          "gt_support": 253251,
+          "predicted": 1776234
+        },
+        "terrain": {
+          "label": 14,
+          "iou": 0.0002046843474955408,
+          "gt_support": 27196,
+          "predicted": 7010
+        },
+        "pole": {
+          "label": 15,
+          "iou": 0.0,
+          "gt_support": 153,
+          "predicted": 6604
+        },
+        "traffic-sign": {
+          "label": 16,
+          "iou": 0.0,
+          "gt_support": 115,
+          "predicted": 1944
+        },
+        "other-structure": {
+          "label": 17,
+          "iou": 0.007117572215013668,
+          "gt_support": 35711,
+          "predicted": 204127
+        },
+        "other-object": {
+          "label": 18,
+          "iou": 0.0003948407475651487,
+          "gt_support": 1633,
+          "predicted": 5968
+        }
+      },
+      "n_classes_with_support": 18,
+      "occupancy_iou": 0.09922362022733758,
+      "occupancy_precision": 0.11022187315923818,
+      "occupancy_recall": 0.49859493902998075,
+      "semantic_voxels": 21291146,
+      "gt_occupied_labelled_voxels": 563340,
+      "teacher_agreement": 0.5134557783577385,
+      "teacher_voxels": 306151
+    },
+    "full": {
+      "semantic_miou": 0.005861509613498057,
+      "empty_iou": 0.9262436044891107,
+      "per_class": {
+        "car": {
+          "label": 1,
+          "iou": 0.019445272422069875,
+          "gt_support": 29611,
+          "predicted": 100354
+        },
+        "bicycle": {
+          "label": 2,
+          "iou": 0.0,
+          "gt_support": 6,
+          "predicted": 48
+        },
+        "motorcycle": {
+          "label": 3,
+          "iou": 0.0030120481927710845,
+          "gt_support": 187,
+          "predicted": 146
+        },
+        "truck": {
+          "label": 4,
+          "iou": 0.0,
+          "gt_support": 1688,
+          "predicted": 3576
+        },
+        "other-vehicle": {
+          "label": 5,
+          "iou": 0.00016656950112434413,
+          "gt_support": 2620,
+          "predicted": 9389
+        },
+        "person": {
+          "label": 6,
+          "iou": 0.0,
+          "gt_support": 55,
+          "predicted": 579
+        },
+        "road": {
+          "label": 7,
+          "iou": 0.017770462302869872,
+          "gt_support": 88500,
+          "predicted": 3225783
+        },
+        "parking": {
+          "label": 8,
+          "iou": 0.0008995545753957315,
+          "gt_support": 53484,
+          "predicted": 15501
+        },
+        "sidewalk": {
+          "label": 9,
+          "iou": 0.005715128280743144,
+          "gt_support": 48791,
+          "predicted": 121728
+        },
+        "other-ground": {
+          "label": 10,
+          "iou": 0.00380293523709385,
+          "gt_support": 30980,
+          "predicted": 173321
+        },
+        "building": {
+          "label": 11,
+          "iou": 0.008320586212205315,
+          "gt_support": 356972,
+          "predicted": 356922
+        },
+        "fence": {
+          "label": 12,
+          "iou": 0.0027047354566229857,
+          "gt_support": 13691,
+          "predicted": 55634
+        },
+        "vegetation": {
+          "label": 13,
+          "iou": 0.03926378864362305,
+          "gt_support": 808452,
+          "predicted": 3092355
+        },
+        "terrain": {
+          "label": 14,
+          "iou": 0.00010995723885155773,
+          "gt_support": 70799,
+          "predicted": 11060
+        },
+        "pole": {
+          "label": 15,
+          "iou": 0.0,
+          "gt_support": 348,
+          "predicted": 12165
+        },
+        "traffic-sign": {
+          "label": 16,
+          "iou": 0.0,
+          "gt_support": 265,
+          "predicted": 2978
+        },
+        "other-structure": {
+          "label": 17,
+          "iou": 0.004088881093583855,
+          "gt_support": 108916,
+          "predicted": 440660
+        },
+        "other-object": {
+          "label": 18,
+          "iou": 0.0002072538860103627,
+          "gt_support": 3261,
+          "predicted": 11217
+        }
+      },
+      "n_classes_with_support": 18,
+      "occupancy_iou": 0.10340946495206133,
+      "occupancy_precision": 0.13511322522494415,
+      "occupancy_recall": 0.3058950836733213,
+      "semantic_voxels": 111428939,
+      "gt_occupied_labelled_voxels": 1618626,
+      "teacher_agreement": 0.47884660861522615,
+      "teacher_voxels": 951455
+    }
+  },
+  "seconds": 9.738785982131958
+}

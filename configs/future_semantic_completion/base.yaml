@@ -1,0 +1,21 @@
+# Future-semantic-completion study. The data boundary, grid and frozen geometry are the
+# adopted Gate 8C-1 (ceiling-fixed) ones; only the new head is trained.
+train_drives:
+- 2013_05_28_drive_0003_sync
+- 2013_05_28_drive_0007_sync
+- 2013_05_28_drive_0010_sync
+val_drive: 2013_05_28_drive_0006_sync
+val_limit: 120
+# full grids, not crops: the trunk is frozen, so there is no trunk backward to pay for
+crop: [256, 256, 32]
+batch_size: 2
+steps: 6000
+lr: 0.001
+weight_decay: 0.01
+grad_clip: 1.0
+log_every: 50
+val_every: 500
+head_width: 32
+padding_mode: replicate
+loss: kl_teacher_student
+supervision: "~observed & fut_observed & gt_occ & gt_valid & fut_valid"

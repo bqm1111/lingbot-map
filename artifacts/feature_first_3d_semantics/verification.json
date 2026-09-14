@@ -1,0 +1,78 @@
+{
+  "checks": [
+    {
+      "name": "no_model_trained",
+      "pass": true,
+      "detail": "no optimiser/backward/parameter in 9 study modules: True; frozen checkpoints match manifest: True"
+    },
+    {
+      "name": "trident_frozen",
+      "pass": true,
+      "detail": "one SAM-H checkpoint sha across 5 extraction shards (a7bf3b02f3eb; matches gate-6 provenance record: teacher_provenance.json), one trident.py sha (0924813e951f), official Cityscapes config; the hook records model.clip.encode_image output and changes nothing"
+    },
+    {
+      "name": "extraction_deterministic",
+      "pass": true,
+      "detail": "0000000704.npz: bit-identical True, max|diff| 0.00e+00; 0003_0000000522.npz: bit-identical True, max|diff| 0.00e+00"
+    },
+    {
+      "name": "feature_reproduces_teacher",
+      "pass": true,
+      "detail": "3159 frames: bilinear(f_norm . text) x 40, softmax reproduces the official coarse probabilities to max |dp| 0.0037 (fp16 tokens), argmax agreement min 0.9970 / mean 0.9993; SAM refinement then changes 6.9 % of pixel labels (cached refined vs coarse 0.931)"
+    },
+    {
+      "name": "abc_disjoint_frames",
+      "pass": true,
+      "detail": "groups {'A': [1, 4, 7, 10, 13, 16, 19], 'B': [2, 5, 8, 11, 14, 17, 20], 'C': [3, 6, 9, 12, 15, 18]} disjoint: True; 3896/3896 lifted files have unique future frames in (t, t+20]"
+    },
+    {
+      "name": "c_not_in_ab_fusion",
+      "pass": true,
+      "detail": "fusion_metrics builds p_ref_ab, p_co_ab, f_ab from groups a and b only (source-inspected: no D[c] on any *_ab assignment); C is read only for the comparison"
+    },
+    {
+      "name": "matched_surface_elements",
+      "pass": true,
+      "detail": "8/8 lifting runs: every (voxel, frame) evidence pair of the feature path equals the probability path's pair set, weights within 4.9e-04 relative (float16 cache rounding); analysis asserts identical elig arrays and pair keys per anchor (0 mismatching anchors)"
+    },
+    {
+      "name": "controls_preserve_context",
+      "pass": true,
+      "detail": "C1 within anchor; C2 within (anchor, z band 4 vox, xy cell 20 vox); C3 within Trident class across the drive; C0 whole drive; fraction of A&B units actually permuted on 0006: {\"eligible\": {\"C0_drive\": 1.0, \"C1_anchor\": 1.0, \"C2_local\": 0.95, \"C3_same_class_other_location\": 1.0}, \"all_future_observed\": {\"C0_drive\": 1.0, \"C1_anchor\": 1.0, \"C2_local\": 0.96, \"C3_same_class_other_location\": 1.0}}"
+    },
+    {
+      "name": "kitti360_only_decisions",
+      "pass": true,
+      "detail": "controls, groups and fusion rules are constants; drive 0006 is the only inspection drive; audited opens 48512, violations 0"
+    },
+    {
+      "name": "targets_untouched",
+      "pass": true,
+      "detail": "no SemanticKITTI / Occ3D / nuScenes path opened by lifting or analysis (violations 0)"
+    },
+    {
+      "name": "fusion_unlearned",
+      "pass": true,
+      "detail": "f_AB = normalize(w_A f_A + w_B f_B) with the mapper's evidence weights; classification = softmax(40 f . text) with the teacher's own text embeddings and temperature"
+    },
+    {
+      "name": "pipelines_differ_only_in_order",
+      "pass": true,
+      "detail": "per-view classification in lift_features = softmax(40 f_pix . text) on the same lattice feature the mapper lifts; both pipelines use identical rays, weights, groups, text embeddings and temperature; P_coarse averages the per-view softmax, F averages the feature then applies the same softmax once"
+    }
+  ],
+  "n_pass": 12,
+  "n_total": 12,
+  "env": {
+    "python": "3.10.19",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "git": {
+      "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+      "branch": "feature-completion-study",
+      "dirty": true
+    }
+  }
+}

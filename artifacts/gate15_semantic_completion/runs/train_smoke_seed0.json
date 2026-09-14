@@ -1,0 +1,176 @@
+{
+ "tag": "smoke_seed0",
+ "seed": 0,
+ "steps": 20,
+ "train_config": {
+  "steps": 6000,
+  "batch_size": 4,
+  "crop": [
+   128,
+   128,
+   32
+  ],
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "grad_clip": 1.0,
+  "hide_block_vox": [
+   8,
+   8,
+   4
+  ],
+  "hide_block_prob": 0.5,
+  "log_every": 50,
+  "ckpt_every": 1000
+ },
+ "head_config": {
+  "evidence_dim": 32,
+  "width": 32,
+  "dilations": [
+   1,
+   2,
+   4,
+   8
+  ],
+  "trunk_channels": 24
+ },
+ "head_params": 290400,
+ "n_train_anchors": 1358,
+ "draw_digest": "54a00bde0f23e0a3611a40da2cc2eddc66132018a4d1ebcb7a71a84631cd81e5",
+ "geometry_state_digest_before": "f1d399d549ed315283bbef116856291215937057a21175cab331b01798d127ca",
+ "geometry_state_digest_after": "f1d399d549ed315283bbef116856291215937057a21175cab331b01798d127ca",
+ "geometry_grads_none": true,
+ "checkpoints": [
+  {
+   "step": 20,
+   "path": "artifacts/gate15_semantic_completion/checkpoints/smoke/smoke_seed0_step00020.pt",
+   "sha256": "75294eb8e370b850e1e3d7f65db2e9d49d3db2665b94fba70436d0143baf2df9"
+  }
+ ],
+ "log": [
+  {
+   "loss": 0.9810376167297363,
+   "loss_visible": 0.9818432331085205,
+   "loss_hidden": 0.9802737832069397,
+   "step": 1
+  },
+  {
+   "loss": 0.8832753300666809,
+   "loss_visible": 0.8827755451202393,
+   "loss_hidden": 0.8837209939956665,
+   "step": 2
+  },
+  {
+   "loss": 0.8720284104347229,
+   "loss_visible": 0.8721122741699219,
+   "loss_hidden": 0.8719601631164551,
+   "step": 3
+  },
+  {
+   "loss": 0.8235971331596375,
+   "loss_visible": 0.8237912058830261,
+   "loss_hidden": 0.823422372341156,
+   "step": 4
+  },
+  {
+   "loss": 0.8097041845321655,
+   "loss_visible": 0.8100632429122925,
+   "loss_hidden": 0.8093350529670715,
+   "step": 5
+  },
+  {
+   "loss": 0.8502751588821411,
+   "loss_visible": 0.85005784034729,
+   "loss_hidden": 0.8505277037620544,
+   "step": 6
+  },
+  {
+   "loss": 0.8228307366371155,
+   "loss_visible": 0.8279288411140442,
+   "loss_hidden": 0.8176116347312927,
+   "step": 7
+  },
+  {
+   "loss": 0.8205238580703735,
+   "loss_visible": 0.8214465975761414,
+   "loss_hidden": 0.8197230100631714,
+   "step": 8
+  },
+  {
+   "loss": 0.839929461479187,
+   "loss_visible": 0.8411188125610352,
+   "loss_hidden": 0.8385573029518127,
+   "step": 9
+  },
+  {
+   "loss": 0.8057786226272583,
+   "loss_visible": 0.804985523223877,
+   "loss_hidden": 0.806786060333252,
+   "step": 10
+  },
+  {
+   "loss": 0.8020198941230774,
+   "loss_visible": 0.803121030330658,
+   "loss_hidden": 0.8007944822311401,
+   "step": 11
+  },
+  {
+   "loss": 0.8151248097419739,
+   "loss_visible": 0.8133566379547119,
+   "loss_hidden": 0.817202627658844,
+   "step": 12
+  },
+  {
+   "loss": 0.803236722946167,
+   "loss_visible": 0.8034047484397888,
+   "loss_hidden": 0.803083062171936,
+   "step": 13
+  },
+  {
+   "loss": 0.7669976353645325,
+   "loss_visible": 0.7647669315338135,
+   "loss_hidden": 0.7694558501243591,
+   "step": 14
+  },
+  {
+   "loss": 0.7606740593910217,
+   "loss_visible": 0.7577359676361084,
+   "loss_hidden": 0.7635802626609802,
+   "step": 15
+  },
+  {
+   "loss": 0.7412920594215393,
+   "loss_visible": 0.7451193332672119,
+   "loss_hidden": 0.7378332018852234,
+   "step": 16
+  },
+  {
+   "loss": 0.8008794188499451,
+   "loss_visible": 0.7985677719116211,
+   "loss_hidden": 0.8031156063079834,
+   "step": 17
+  },
+  {
+   "loss": 0.7545853853225708,
+   "loss_visible": 0.7549998164176941,
+   "loss_hidden": 0.7541976571083069,
+   "step": 18
+  },
+  {
+   "loss": 0.7549617886543274,
+   "loss_visible": 0.7591883540153503,
+   "loss_hidden": 0.7509451508522034,
+   "step": 19
+  },
+  {
+   "loss": 0.7639008164405823,
+   "loss_visible": 0.7637144327163696,
+   "loss_hidden": 0.7641398310661316,
+   "step": 20
+  }
+ ],
+ "seconds": 20.775484561920166,
+ "firewall": {
+  "opened": 321,
+  "violations": []
+ }
+}

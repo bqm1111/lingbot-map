@@ -1,0 +1,68 @@
+{
+  "checks": [
+    {
+      "name": "abc_disjoint_future_frames",
+      "pass": true,
+      "detail": "groupings {\"contiguous\": {\"A\": [1, 2, 3, 4, 5, 6, 7], \"B\": [8, 9, 10, 11, 12, 13, 14], \"C\": [15, 16, 17, 18, 19, 20]}, \"interleaved\": {\"A\": [1, 4, 7, 10, 13, 16, 19], \"B\": [2, 5, 8, 11, 14, 17, 20], \"C\": [3, 6, 9, 12, 15, 18]}} pairwise disjoint within t+1..t+20: True; 1948/1948 evidence files have unique future frames in (t, t+20] and pair offsets in [1, 20]"
+    },
+    {
+      "name": "c_never_affects_retention",
+      "pass": true,
+      "detail": "random replacement of every group-C evidence pair leaves the retained mask identical for 5056/5056 (anchor, grouping, filter) cases"
+    },
+    {
+      "name": "fusion_uses_only_ab",
+      "pass": true,
+      "detail": "A+B candidate vector identical under the same C perturbation on 158/158 (anchor, grouping) cases; retain_mask signature: ['family', 'tau', 'gamma', 'wA', 'sA', 'wB', 'sB']"
+    },
+    {
+      "name": "frozen_teacher_and_mapper",
+      "pass": true,
+      "detail": "1777 cached Trident-H files, newest 2026-09-02 < first evidence file 2026-09-13; mapper code digests {'core/mapping/mapper.py': '9c04e302e0ec', 'core/mapping/voxmap.py': '098d19b07dbb', 'core/mapping/feed.py': '0b4a17f258cd', 'core/mapping/rays.py': 'f46dc371869a', 'core/supervision/lifting.py': '1d6223d4a25b', 'core/run/build_samples.py': 'c3b472526688'}; per-frame replay reproduces the cached 20-frame target on every anchor: max |dp| 0.0020 (u8 quantisation 0.002), max |dw| 0.833 (float16)"
+    },
+    {
+      "name": "no_causal_evidence_in_retention",
+      "pass": true,
+      "detail": "evidence files carry no causal-map array (['T_grid_to_world', 'cached_target_frames', 'dims', 'elig', 'existing_target_present', 'frames', 'n_eligible', 'obs_mask', 'pair_frame', 'pair_nobs', 'pair_row', 'pair_s', 'pair_w', 'reproduces_cached_target_max_abs_dp', 'reproduces_cached_target_max_abs_dw', 'scale', 't']); retention reads only pair_* future evidence"
+    },
+    {
+      "name": "voxel_identity_consistent",
+      "pass": true,
+      "detail": "1948/1948 anchors: one grid (256x256x32), one T_grid_to_world, one sorted eligible row set shared by every frame's query; A+B+C sum reproduces the cached fusion"
+    },
+    {
+      "name": "class_stats_after_filtering",
+      "pass": true,
+      "detail": "class distribution of F1 on 0006 sums to 1.000000 over 10131 retained voxels (eligible 2018736); Acc.add accumulates cls_ret from the retained rows only"
+    },
+    {
+      "name": "thresholds_selected_on_kitti360_only",
+      "pass": true,
+      "detail": "tau grid (0.0, 0.4, 0.5, 0.6, 0.7, 0.8), gamma grid (0.0, 0.7, 0.8, 0.9, 0.95) fixed in common.py; every stage ran inside the file-access audit with forbidden patterns ['data/kitti/dataset', 'occ3d_gt', 'nuscenes', 'lingbot_occ3d_zeroshot', 'scale_gate/cache', 'preprocess/labels']; violations per stage {'analysis': 0, 'neighbourhood_support': 0, 'causal_diagnostic': 0, 'evidence_0003': 0, 'evidence_0006': 0, 'evidence_0007': 0, 'evidence_0010': 0}"
+    },
+    {
+      "name": "targets_untouched",
+      "pass": true,
+      "detail": "no SemanticKITTI / Occ3D / nuScenes path opened by any stage (87906 opens audited)"
+    },
+    {
+      "name": "nothing_trained",
+      "pass": true,
+      "detail": "Gate 8C-1 checkpoints match their manifest hashes: True; previous semantic head matches its frozen hash: True; no optimiser / backward / parameter update in the 5 study modules: True"
+    }
+  ],
+  "n_pass": 10,
+  "n_total": 10,
+  "env": {
+    "python": "3.10.19",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "git": {
+      "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+      "branch": "feature-completion-study",
+      "dirty": true
+    }
+  }
+}

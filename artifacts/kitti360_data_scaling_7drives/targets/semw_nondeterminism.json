@@ -1,0 +1,45 @@
+{
+ "finding": "target verification initially failed: rebuilt samples of 0003/0007/0010/0006 matched the adopted Gate 8C-1 inputs in every array except sem_w",
+ "vs_adopted": {
+  "anchors": 50,
+  "evidence_voxels": 1298849,
+  "differing": 3967,
+  "fraction": 0.003054,
+  "max_fraction_per_anchor": 0.007205,
+  "relative_diff_median": 0.000663,
+  "relative_diff_max": 0.000977
+ },
+ "run_to_run_current_code": {
+  "drive": "2013_05_28_drive_0003_sync",
+  "anchors": 193,
+  "sem_w_identical_files": 1,
+  "differing_voxels": 10720,
+  "evidence_voxels": 2953511,
+  "fraction": 0.0036295784914970692
+ },
+ "interpretation": "the unchanged core/run/build_samples.py is not bit-reproducible in sem_w (float32 accumulation of confidence weights on CUDA); the difference to the adopted samples is of the same size, so the inputs are unchanged up to this arithmetic",
+ "check_amended": "inputs_unchanged now requires byte equality of every input array except sem_w, and sem_w differences on <= 1 % of evidence voxels with relative difference <= 1e-3",
+ "provenance_note": "while measuring run-to-run variation, a scratch rebuild of drive 0003 overwrote prep/core/samples_0003.json (the build record of 0003's samples); that overwritten record was then deleted, so the 0003 sample-build record is missing. The 0003 samples and targets themselves are unaffected.",
+ "second_failure": {
+  "check": "189/196 under the first amendment",
+  "cause": "1 anchor with sem_w differing on 1.003 % of voxels (relative 9.7e-4, above an ad hoc 1 % count bound); 6 anchors with sem_p differing by one u8 step on 1-5 voxels (sem_p was not exempted)",
+  "run_to_run_distribution_0003": {
+   "sem_w_fraction_median": 0.003541,
+   "p95": 0.006466,
+   "max": 0.008073,
+   "relative_max": 0.000976,
+   "sem_p_anchors_with_difference": "2/193",
+   "sem_p_max_step": 1,
+   "sem_p_voxels_touched_max": 2
+  },
+  "current_vs_adopted_distribution": {
+   "sem_w_fraction_median": 0.003319,
+   "p95": 0.006331,
+   "max": 0.010026,
+   "relative_max": 0.000977,
+   "sem_p_max_step": 1,
+   "sem_p_voxels_touched_max": 5
+  },
+  "final_rule": "all non-semantic input arrays byte-identical; sem_w relative difference <= 1e-3; sem_p <= 1 u8 step. Bounds are magnitudes taken from the builder's run-to-run envelope; the voxel-count bound was dropped because counts scale with anchor size"
+ }
+}

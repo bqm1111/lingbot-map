@@ -1,0 +1,42 @@
+experiment: baseline_reconstruction/2026-09-14
+dataset: semantickitti
+protocol:
+  dataset: semantickitti
+  stream_rule: sequence 08, image_2, stride-5 stream of 815 unique frames; anchor = last frame of each official clip; clip
+    = stream indices i-4..i (native frames 20 apart end to end)
+  camera: image_2 (left colour camera)
+  prediction_grid: 256x256x32 @ 0.2 m, origin (0, -25.6, -2), velodyne frame of the anchor
+  evaluation_grid: same as prediction grid
+  evaluation_mask: official voxels/<frame>.invalid == 0 (label != 255)
+  occupancy_target: official label != 0 inside the mask
+  reduction: none
+  anchors_expected: 163
+clip_offsets:
+- -4
+- -3
+- -2
+- -1
+- 0
+input_frame_construction: local-reset LingBot on the five target images, clip-local indices 0..4, KV cache cleared; causal
+  MoGe-2 clip scale from the frozen per-frame MoGe-B caches; anchor camera = identity
+camera_preprocessing: 'gates/gate7b/replay.load_images: mode=''crop'', 518 px, patch 14 (identical to the stream and to KITTI-360
+  clips)'
+coordinate_transform: grid -> world(anchor camera) = inv(T_cam_to_grid); cam_to_velo from calib.txt
+occupancy_threshold: 0.0
+checkpoint_rule: final step 6000, three seeds, mean primary / median secondary
+checkpoints:
+  '0': artifacts/baseline_reconstruction/checkpoints/geo_seed0_step06000.pt
+  '1': artifacts/baseline_reconstruction/checkpoints/geo_seed1_step06000.pt
+  '2': artifacts/baseline_reconstruction/checkpoints/geo_seed2_step06000.pt
+checkpoint_sha256:
+  '0': 7f5e853dd05bdbde918da888503995a363f4cd4fa3e09061bcf4f765e2428faa
+  '1': 2c4d79be4fa7766e34e27dd7215b0ce1f82703dc7c73be3f2bd612d42a8e5341
+  '2': 6038b1f7d901a751b6be91609919b2414776a28fb4e627985ec82fe9945b076c
+freeze_frozen_at: '2026-09-14T12:21:03+02:00'
+n_anchors_evaluated: 163
+n_skipped_no_label: 0
+n_skipped_no_scale: 0
+semantic_miou: 'unavailable: geometry-only model (stated, not worked around)'
+camera_fov_grid_note: SemanticKITTI shares the KITTI-360 grid dimensions and voxel size; the camera (image_2, 1226x370) and
+  the stride-5 stream differ from training
+deterministic_remapping: none

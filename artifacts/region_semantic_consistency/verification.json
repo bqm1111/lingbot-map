@@ -1,0 +1,68 @@
+{
+  "checks": [
+    {
+      "name": "no_model_trained",
+      "pass": true,
+      "detail": "no optimiser/backward/module in 2 study modules: True; Gate 8C-1 checkpoints match manifest: True; semantic head unchanged: True"
+    },
+    {
+      "name": "lingbot_and_trident_frozen",
+      "pass": true,
+      "detail": "1777 Trident-H and 1 LingBot stream caches, newest 2026-09-02 < first evidence file 2026-09-13; mapper digests {'core/mapping/mapper.py': '9c04e302e0ec', 'core/mapping/voxmap.py': '098d19b07dbb', 'core/mapping/feed.py': '0b4a17f258cd', 'core/supervision/lifting.py': '1d6223d4a25b'}; per-frame replay reproduces cached targets (max |dp| 0.0020) in 8 builds"
+    },
+    {
+      "name": "abc_disjoint_frames",
+      "pass": true,
+      "detail": "groups {'A': [1, 4, 7, 10, 13, 16, 19], 'B': [2, 5, 8, 11, 14, 17, 20], 'C': [3, 6, 9, 12, 15, 18]} pairwise disjoint: True; 3896/3896 evidence files have unique future frames in (t, t+20]"
+    },
+    {
+      "name": "regions_semantics_free",
+      "pass": true,
+      "detail": "label_regions reads the occupied grid and voxel coordinates only (block partition + 26-connected components); no probability, weight or class enters"
+    },
+    {
+      "name": "c_does_not_affect_ab",
+      "pass": true,
+      "detail": "random replacement of all group-C pairs leaves A and B sums/counts identical on 40/40 sampled anchors"
+    },
+    {
+      "name": "voxel_region_matched_anchors",
+      "pass": true,
+      "detail": "voxel and every region scale scored in one pass per anchor ({'2013_05_28_drive_0003_sync': 193, '2013_05_28_drive_0007_sync': 569, '2013_05_28_drive_0010_sync': 596, '2013_05_28_drive_0006_sync': 590}); matched set = voxels with own A&B = {'2013_05_28_drive_0003_sync': 2921, '2013_05_28_drive_0007_sync': 6124, '2013_05_28_drive_0010_sync': 19243, '2013_05_28_drive_0006_sync': 18051}, identical across scales: True"
+    },
+    {
+      "name": "shuffles_preserve_support",
+      "pass": true,
+      "detail": "R1 permutes B vectors within anchor among units with A&B support, stratified by observation count (edges (1, 2, 4, 8, 16, 1000000000)); R2 within (z bin 4 vox, xy cell 20 vox) strata; fraction of A&B units actually permuted in R1 on 0006: voxel 1.00, small 0.98, medium 0.96, large 0.94, xlarge 0.92"
+    },
+    {
+      "name": "targets_untouched",
+      "pass": true,
+      "detail": "every analysis pass ran inside the file-access audit; forbidden-path violations 0 over 7792 audited opens (eligible population)"
+    },
+    {
+      "name": "no_target_labels_in_region_parameters",
+      "pass": true,
+      "detail": "region scales {'small': 3, 'medium': 5, 'large': 9, 'xlarge': 15} and shuffle strata are constants in common.py; no benchmark label read anywhere (violations 0)"
+    },
+    {
+      "name": "region_aggregation_deterministic",
+      "pass": true,
+      "detail": "label_regions repeated twice per scale gives identical ids and stats on anchor 25; digest 252fff7883d7; block/label order is fixed"
+    }
+  ],
+  "n_pass": 10,
+  "n_total": 10,
+  "env": {
+    "python": "3.10.19",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "git": {
+      "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+      "branch": "feature-completion-study",
+      "dirty": true
+    }
+  }
+}

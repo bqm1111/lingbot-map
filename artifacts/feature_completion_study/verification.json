@@ -1,0 +1,63 @@
+{
+  "checks": [
+    {
+      "check": "inputs_paired",
+      "pass": true,
+      "detail": "3 seeds x 24000 (file, crop) draws identical across A/B/C"
+    },
+    {
+      "check": "init_shared",
+      "pass": true,
+      "detail": "shared-parameter digests per seed: ['18946306fdc6', '6e994b46ee50', '9fd28db31596']"
+    },
+    {
+      "check": "unused_heads_frozen",
+      "pass": true,
+      "detail": "24 untrained-head tensors compared against their initialisation, 0 moved"
+    },
+    {
+      "check": "aux_reaches_trunk",
+      "pass": true,
+      "detail": "||d L_aux / d enc1.weight||: B 3.718e+00, C 3.898e+00 (both must be > 0; the trunk is shared, not bypassed)"
+    },
+    {
+      "check": "frozen_unchanged",
+      "pass": true,
+      "detail": "6 digests compared, 0 changed"
+    },
+    {
+      "check": "alignment",
+      "pass": true,
+      "detail": "sparse crop gather exact: True; projected-pixel cosine 0.5094 vs shuffled 0.1958 on 4274 voxels"
+    },
+    {
+      "check": "gt_not_in_input",
+      "pass": true,
+      "detail": "input tensor identical: True; network output identical: True after replacing gt_occ with all-ones and gt_valid with all-zeros"
+    },
+    {
+      "check": "head_sparse_dense",
+      "pass": true,
+      "detail": "max |sparse - dense| over 64 voxels = 0.000e+00"
+    },
+    {
+      "check": "checkpoint_roundtrip",
+      "pass": true,
+      "detail": "occupancy, semantic and feature outputs identical after save/load: True"
+    }
+  ],
+  "n_pass": 9,
+  "n_total": 9,
+  "env": {
+    "python": "3.10.19",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "git": {
+      "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+      "branch": "feature-completion-study",
+      "dirty": true
+    }
+  }
+}

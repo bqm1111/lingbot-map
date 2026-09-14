@@ -1,0 +1,126 @@
+{
+  "condition": "A",
+  "seed": 1,
+  "tag": "fcs_A_seed1",
+  "checkpoint": "artifacts/feature_completion_study/checkpoints/fcs_A_seed1_last.pt",
+  "checkpoint_sha256": "9a2fbe465bb9e303b5efd8d8cd946f86e90d2fcdcfe3fcb36c75a301aee042fc",
+  "val_drive": "2013_05_28_drive_0006_sync",
+  "n_val_samples": 590,
+  "n_missing_eval_mask": 0,
+  "occupancy_threshold": -0.0625,
+  "threshold_rule": "final-logit threshold maximising full-grid IoU on KITTI-360 drive 0006, over the frozen 1024-bin candidate grid",
+  "partition_counts": {
+    "n_later_occupied": 16408850,
+    "n_later_free": 226918956,
+    "n_observed": 28436821,
+    "n_still_unknown": 100620946
+  },
+  "regions": {
+    "full": {
+      "n_voxels": 372385573,
+      "n_occupied": 18194124,
+      "prevalence": 0.04885829451830025,
+      "average_precision": 0.10696159981921036,
+      "auroc": 0.6970704372303951,
+      "at_threshold": {
+        "threshold": -0.0625,
+        "tp": 5541219,
+        "fp": 33106013,
+        "fn": 12652905,
+        "iou": 0.1080156764493631,
+        "precision": 0.1433794534107902,
+        "recall": 0.3045609120834837,
+        "density": 0.10378283908437022,
+        "pred_over_gt": 2.1241600859706136,
+        "tn": 321085436
+      },
+      "best_iou": {
+        "threshold": -0.0625,
+        "iou": 0.1080156764493631
+      }
+    },
+    "observed": {
+      "n_voxels": 28436821,
+      "n_occupied": 1785274,
+      "prevalence": 0.06278036493601025,
+      "average_precision": 0.11657004325921075,
+      "auroc": 0.6747659912722911,
+      "at_threshold": {
+        "threshold": -0.0625,
+        "tp": 1077882,
+        "fp": 7987676,
+        "fn": 707392,
+        "iou": 0.11029238868509508,
+        "precision": 0.11889858296643185,
+        "recall": 0.6037627837519619,
+        "density": 0.3187964646259158,
+        "pred_over_gt": 5.077964502927842,
+        "tn": 18663871
+      },
+      "best_iou": {
+        "threshold": 0.1875,
+        "iou": 0.11069002891989636
+      }
+    },
+    "later": {
+      "n_voxels": 243327806,
+      "n_occupied": 16408850,
+      "prevalence": 0.06743516193130841,
+      "average_precision": 0.13776144844061122,
+      "auroc": 0.642987603230014,
+      "at_threshold": {
+        "threshold": -0.0625,
+        "tp": 4463337,
+        "fp": 23508331,
+        "fn": 11945513,
+        "iou": 0.11181493502760127,
+        "precision": 0.1595663512093737,
+        "recall": 0.27200791036544303,
+        "density": 0.11495467147720881,
+        "pred_over_gt": 1.7046696142630349,
+        "tn": 203410625
+      },
+      "best_iou": {
+        "threshold": -0.125,
+        "iou": 0.11211612089044772
+      }
+    }
+  },
+  "feature_diagnostics": {
+    "cosine_mean": 0.017705165438036376,
+    "cosine_median": 0.017422226965707152,
+    "cosine_mean_predictor": 0.19896990382644322,
+    "pred_dispersion": 0.060432208627109185,
+    "target_dispersion": 0.10079461778282207,
+    "n_voxels": 7937422,
+    "head_trained": false
+  },
+  "semantic_threshold": null,
+  "semantic_note": "the 25-class head receives no gradient in this condition, so it is at initialisation and no semantic threshold is meaningful; the scoring path does not consume this field",
+  "seconds": 44.217355489730835,
+  "firewall": {
+    "n_opened": 3540,
+    "n_unique": 1770,
+    "violations": [],
+    "forbidden_patterns": [
+      "data/kitti/dataset",
+      "occ3d_gt",
+      "nuscenes",
+      "lingbot_occ3d_zeroshot",
+      "scale_gate/cache",
+      "preprocess/labels"
+    ]
+  },
+  "env": {
+    "python": "3.10.19",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "git": {
+      "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+      "branch": "feature-completion-study",
+      "dirty": true
+    }
+  }
+}

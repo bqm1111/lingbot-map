@@ -1,0 +1,60 @@
+{
+ "checkpoint": "artifacts/gate13_oracle/checkpoints/g13_O_seed1_step05000.pt",
+ "checkpoint_sha256": "d028acbf9535deafbfab04d31aaf14ee3ce56b7f1e9d507ef6c24ff0f92aaa0c",
+ "cond": "O",
+ "stride": 5,
+ "n_anchors": 118,
+ "threshold": 0.0,
+ "summary": {
+  "full": {
+   "iou": 0.33426576977680045,
+   "precision": 0.5432373577734401,
+   "recall": 0.46493992235389486
+  },
+  "past5": {
+   "iou": 0.593416604410429,
+   "precision": 0.6657304048268904,
+   "recall": 0.8452748094038087
+  },
+  "unobs5_later": {
+   "iou": 0.2670737557836139,
+   "precision": 0.5085009380293974,
+   "recall": 0.36000757568290276
+  },
+  "observed20": {
+   "iou": 0.571868560289613,
+   "precision": 0.6516092301025436,
+   "recall": 0.8237290272302191
+  },
+  "unobserved_later20": {
+   "iou": 0.2616081135516063,
+   "precision": 0.5063497278238959,
+   "recall": 0.3511739266154596
+  },
+  "H_evidence": {
+   "iou": 0.5989394595498021,
+   "precision": 0.687574403139649,
+   "recall": 0.8228896485139472
+  },
+  "no_H_evidence": {
+   "iou": 0.30339870499999005,
+   "precision": 0.5181933565487798,
+   "recall": 0.422616511418895
+  },
+  "O_evidence": {
+   "iou": 0.7054073927430075,
+   "precision": 0.7330034372340269,
+   "recall": 0.9493336417240996
+  },
+  "no_O_evidence": {
+   "iou": 0.25148843784442226,
+   "precision": 0.46751834002170223,
+   "recall": 0.3524387536434005
+  }
+ },
+ "firewall": {
+  "opened": 708,
+  "violations": []
+ },
+ "seconds": 7.37263822555542
+}

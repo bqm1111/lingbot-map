@@ -1,0 +1,68 @@
+{
+  "checks": [
+    {
+      "check": "gradmatch_equals_joint",
+      "pass": true,
+      "detail": "fp32: factor 1.000000, max|assembled - joint backprop| = 1.10e-06 (max |grad| 4.40e-01, TF32 off); bf16 autocast as trained: 1.45e-03 -- grad-of-sum vs sum-of-grads round differently through bf16/TF32 kernels"
+    },
+    {
+      "check": "heads_unscaled",
+      "pass": true,
+      "detail": "factor 0.76; sem-head err 0.0e+00, occ-head err 0.0e+00, feature head grad None: True"
+    },
+    {
+      "check": "ratio_matched",
+      "pass": true,
+      "detail": "||shared aux part|| / ||shared occ part|| = 3.56440 vs rho 3.5644"
+    },
+    {
+      "check": "shuffle_multiset",
+      "pass": true,
+      "detail": "crop0: multiset True, support True, per-stratum class hist True, moved 72.9%, argmax changed 38.2%, dropped tiny 0/1389; crop1: multiset True, support True, per-stratum class hist True, moved 71.4%, argmax changed 19.5%, dropped tiny 0/4017"
+    },
+    {
+      "check": "init_shared",
+      "pass": true,
+      "detail": "['seed0:18946306fdc6', 'seed1:6e994b46ee50', 'seed2:9fd28db31596'] == feature-study/B digests ['18946306fdc6', '6e994b46ee50', '9fd28db31596']: True"
+    },
+    {
+      "check": "no_future_in_input",
+      "pass": true,
+      "detail": "input/gt unchanged by replacing the future targets: True; sample file: input frames <= t=4 < target frames [5..24]: True"
+    },
+    {
+      "check": "frozen_unchanged",
+      "pass": true,
+      "detail": "4 digests vs the feature study's record, 0 changed"
+    },
+    {
+      "check": "checkpoint_roundtrip",
+      "pass": true,
+      "detail": "outputs identical after save/load: True"
+    },
+    {
+      "check": "inputs_paired",
+      "pass": true,
+      "detail": "3 seeds x 24000 draws identical across R/S and equal to historical B's"
+    },
+    {
+      "check": "budget_matched",
+      "pass": true,
+      "detail": "R0: degenerate 1/6000, achieved==rho on 100.0% of the rest; R1: degenerate 1/6000, achieved==rho on 100.0% of the rest; R2: degenerate 1/6000, achieved==rho on 100.0% of the rest; S0: degenerate 1/6000, achieved==rho on 100.0% of the rest; S1: degenerate 1/6000, achieved==rho on 100.0% of the rest; S2: degenerate 1/6000, achieved==rho on 100.0% of the rest"
+    }
+  ],
+  "n_pass": 10,
+  "n_total": 10,
+  "env": {
+    "python": "3.10.19",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "git": {
+      "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+      "branch": "feature-completion-study",
+      "dirty": true
+    }
+  }
+}

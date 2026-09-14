@@ -1,0 +1,28 @@
+{
+ "drive": "2013_05_28_drive_0010_sync",
+ "shard": 0,
+ "n_anchors": 596,
+ "n_written": 596,
+ "n_present": 0,
+ "evidence_voxels_mean": 23688.03523489933,
+ "seconds": 149.2247588634491,
+ "firewall": {
+  "opened": 8940,
+  "violations": [],
+  "forbidden": [
+   "data/kitti/dataset",
+   "occ3d_gt",
+   "nuscenes",
+   "lingbot_occ3d_zeroshot",
+   "scale_gate/cache",
+   "preprocess/labels",
+   "eval_masks",
+   "samples_gtsem",
+   "data_3d_semantics",
+   "velodyne",
+   "data_3d_raw",
+   "data_poses",
+   "targets"
+  ]
+ }
+}

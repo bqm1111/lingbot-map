@@ -1,0 +1,66 @@
+{
+  "checks": [
+    {
+      "name": "no_model_trained",
+      "pass": true,
+      "detail": "no optimiser/backward in 8 audit modules; LingBot built by gates.gate7b.replay.build_model, which raises if any parameter is trainable"
+    },
+    {
+      "name": "weights_identical",
+      "pass": true,
+      "detail": "LingBot parameter digest identical across loads (1c065be3690dd882); checkpoint sha256 ee665103348e07e6; S reads the stream cache produced by the same checkpoint (prefix re-run bit-identical, check 3); the frozen completion head is one checkpoint for every condition"
+    },
+    {
+      "name": "S_reproduces_stream",
+      "pass": true,
+      "detail": "unchanged streaming replay of the first 60 frames of 0006 (k=2) reproduces the cached depth and pose exactly; S five-frame maps use the cache as-is (anchor-relative vs stream-world voxel lattice Jaccard median 0.657: same observations, different lattice phase)"
+    },
+    {
+      "name": "L_has_no_prior_state",
+      "pass": true,
+      "detail": "clip 607 is bit-identical when run fresh, after clip 604, and in the cache ({'pred_depth': True, 'pred_depth_conf': True, 'pred_pose_c2w': True}); KV cache cleared and RoPE counter asserted 0 before every clip; only the five clip images are loaded"
+    },
+    {
+      "name": "G_uses_GT_pose_not_GT_depth",
+      "pass": true,
+      "detail": "G combines LingBot stream depth (and conf, K, scale) with GT relative poses only; the one LiDAR-scale condition Gs is declared a diagnostic oracle and kept out of every deployable comparison"
+    },
+    {
+      "name": "transform_conventions_validated",
+      "pass": true,
+      "detail": "GT round trip anchor camera -> world -> frame i -> T_i->t reproduces points to 3.0e-12 m on every clip pair; G pose-only reprojection error is 0 px by construction and equals the direct projection; LingBot c2w convention confirmed in the direct audit (direction cosine 0.86 vs -0.01 for w2c)"
+    },
+    {
+      "name": "same_landmarks_all_conditions",
+      "pass": true,
+      "detail": "identical landmark arrays per condition (one selection per clip pair, reused): 0006: 1,890,054, 0003: 152,624, 0007: 363,004, 0010: 581,314"
+    },
+    {
+      "name": "depth_matched_where_possible",
+      "pass": true,
+      "detail": "S, Lp and G share the stream depth; L and GLd share the clip depth; the S-vs-L depth change is measured separately (AbsRel S vs L) because a reset necessarily re-predicts depth"
+    },
+    {
+      "name": "no_condition_specific_tuning",
+      "pass": true,
+      "detail": "one visibility tolerance, one dilation radius (adopted r=2), one head threshold (adopted seed-0 -0.125), one grid for every condition"
+    },
+    {
+      "name": "kitti360_only",
+      "pass": true,
+      "detail": "drives ['0006', '0003', '0007', '0010']; file-access audit violations: pose 0, geometry 0"
+    },
+    {
+      "name": "targets_untouched",
+      "pass": true,
+      "detail": "no SemanticKITTI / Occ3D / nuScenes path opened or referenced"
+    },
+    {
+      "name": "raw_geometry_separate_from_head",
+      "pass": true,
+      "detail": "raw map metrics (vs the same five sweeps and vs the future target, before/after dilation) are stored and reported separately from the frozen-head diagnostic"
+    }
+  ],
+  "n_pass": 12,
+  "n_total": 12
+}

@@ -1,0 +1,151 @@
+{
+  "population": "eligible",
+  "n_units": 18051,
+  "n_with_C": 2592,
+  "queries": [
+    "a tree",
+    "leaves and branches",
+    "a bush",
+    "a house",
+    "a facade of a building",
+    "asphalt",
+    "a street",
+    "a pavement",
+    "an automobile",
+    "a parked car",
+    "a pedestrian",
+    "a wooden fence",
+    "a lamp post",
+    "a lawn",
+    "a truck",
+    "a traffic sign"
+  ],
+  "target_class": [
+    "vegetation",
+    "vegetation",
+    "vegetation",
+    "building",
+    "building",
+    "road",
+    "road",
+    "sidewalk",
+    "car",
+    "car",
+    "person",
+    "fence",
+    "pole",
+    "terrain",
+    "truck",
+    "traffic sign"
+  ],
+  "query_mapped_class_equals_vocab_decision": 0.5678909755692205,
+  "query_mapped_class_equals_C_view_decision": 0.4039351851851852,
+  "vocab_decision_equals_C_view_decision": 0.5397376543209876,
+  "query_usage": {
+    "a tree": 347,
+    "leaves and branches": 154,
+    "a bush": 5669,
+    "a house": 6750,
+    "a facade of a building": 40,
+    "asphalt": 504,
+    "a street": 216,
+    "a pavement": 2486,
+    "an automobile": 220,
+    "a parked car": 622,
+    "a pedestrian": 5,
+    "a wooden fence": 512,
+    "a lamp post": 19,
+    "a lawn": 354,
+    "a truck": 145,
+    "a traffic sign": 8
+  },
+  "mean_best_query_cosine": 0.16689413785934448,
+  "mean_best_vocab_cosine": 0.1469477117061615,
+  "per_vocab_class": {
+    "car": {
+      "n": 730,
+      "top_query": "a parked car",
+      "top_query_share": 0.6904109589041096,
+      "query_mapped_agree": 0.9534246575342465
+    },
+    "other vehicle": {
+      "n": 194,
+      "top_query": "a truck",
+      "top_query_share": 0.5876288659793815,
+      "query_mapped_agree": 0.0
+    },
+    "road": {
+      "n": 2199,
+      "top_query": "a pavement",
+      "top_query_share": 0.794906775807185,
+      "query_mapped_agree": 0.1959981809913597
+    },
+    "parking": {
+      "n": 231,
+      "top_query": "a parked car",
+      "top_query_share": 0.35064935064935066,
+      "query_mapped_agree": 0.0
+    },
+    "sidewalk": {
+      "n": 425,
+      "top_query": "a pavement",
+      "top_query_share": 0.9152941176470588,
+      "query_mapped_agree": 0.9152941176470588
+    },
+    "other ground": {
+      "n": 889,
+      "top_query": "a pavement",
+      "top_query_share": 0.2575928008998875,
+      "query_mapped_agree": 0.0
+    },
+    "building": {
+      "n": 2812,
+      "top_query": "a house",
+      "top_query_share": 0.9790184921763869,
+      "query_mapped_agree": 0.9907539118065434
+    },
+    "fence": {
+      "n": 405,
+      "top_query": "a wooden fence",
+      "top_query_share": 0.7012345679012346,
+      "query_mapped_agree": 0.7012345679012346
+    },
+    "vegetation": {
+      "n": 5902,
+      "top_query": "a bush",
+      "top_query_share": 0.870213486953575,
+      "query_mapped_agree": 0.9535750593019315
+    },
+    "terrain": {
+      "n": 180,
+      "top_query": "a bush",
+      "top_query_share": 0.4888888888888889,
+      "query_mapped_agree": 0.0
+    },
+    "other structure": {
+      "n": 3835,
+      "top_query": "a house",
+      "top_query_share": 0.9295958279009127,
+      "query_mapped_agree": 0.0
+    },
+    "other object": {
+      "n": 150,
+      "top_query": "a bush",
+      "top_query_share": 0.4066666666666667,
+      "query_mapped_agree": 0.0
+    }
+  },
+  "firewall": {
+    "n_opened": 1180,
+    "n_unique": 590,
+    "violations": [],
+    "forbidden_patterns": [
+      "data/kitti/dataset",
+      "occ3d_gt",
+      "nuscenes",
+      "lingbot_occ3d_zeroshot",
+      "scale_gate/cache",
+      "preprocess/labels"
+    ]
+  }
+}

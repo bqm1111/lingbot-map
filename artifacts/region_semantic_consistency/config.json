@@ -1,0 +1,76 @@
+{
+  "study": "region_semantic_consistency",
+  "regions": {
+    "definition": "cubic block partition of the raw-LiDAR occupied grid (gt_occ & gt_valid), 26-connected components within a block",
+    "block_side_vox": {
+      "small": 3,
+      "medium": 5,
+      "large": 9,
+      "xlarge": 15
+    },
+    "voxel_m": 0.2,
+    "semantic_input": "none"
+  },
+  "populations": {
+    "eligible": "~observed & fut_observed & gt_occ & gt_valid",
+    "all_future_observed": "fut_observed & gt_occ & gt_valid"
+  },
+  "evidence": {
+    "eligible": "/media/SSD1/MINH_DATASETS/lingbot_future_semantic_completion/target_consistency/evidence",
+    "all_future_observed": "/media/SSD1/MINH_DATASETS/lingbot_future_semantic_completion/target_consistency/evidence_allocc",
+    "source": "tools/future_semantic_completion/target_consistency/build_evidence.py (per future frame, frozen mapper)"
+  },
+  "grouping": {
+    "name": "interleaved",
+    "groups": {
+      "A": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19
+      ],
+      "B": [
+        2,
+        5,
+        8,
+        11,
+        14,
+        17,
+        20
+      ],
+      "C": [
+        3,
+        6,
+        9,
+        12,
+        15,
+        18
+      ]
+    }
+  },
+  "aggregation": "p_group(unit) = sum_i w_i p_i / sum_i w_i over observations of that group at the unit's voxels (mapper evidence weights)",
+  "controls": {
+    "R0": "sum_k q_k r_k over the retained A/B class distributions",
+    "R1": "within-anchor permutation of B among A&B units, stratified by A+B observation count (edges (1, 2, 4, 8, 16, 1000000000))",
+    "R2": "permutation within (z bin 4 vox, xy cell 20 vox) strata"
+  },
+  "frozen": {
+    "gate8c1_manifest": "artifacts/gate8c1/frozen_manifest_sky.json",
+    "mapper_code_digests": "1777 Trident-H and 1 LingBot stream caches, newest 2026-09-02 < first evidence file 2026-09-13; mapper digests {'core/mapping/mapper.py': '9c04e302e0ec', 'core/mapping/voxmap.py': '098d19b07dbb', 'core/mapping/feed.py': '0b4a17f258cd', 'core/supervision/lifting.py': '1d6223d4a25b'}; per-frame replay reproduces cached targets (max |dp| 0.0020) in 8 builds"
+  },
+  "env": {
+    "python": "3.10.19",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "git": {
+      "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+      "branch": "feature-completion-study",
+      "dirty": true
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+ "frozen_at": "2026-09-13T20:27:17",
+ "note": "frozen after the 0006 analysis, before the 0003/0007/0010 replay; nothing below may change for the replay",
+ "git_head": "0ba3b5deeb236a33022068445df85e135d006fc4",
+ "sha256": {
+  "tools/depth_source_comparison/analyze.py": "991a5ff871db20522d21937d4a9ed1a574b7eef450f54e4574ddda55fac3e57c",
+  "tools/depth_source_comparison/compare_sources.py": "2371fde4b05a315bf1157cb5f238b4f2e6b097d5a1388b5513cf1fa92ddaa7bc",
+  "tools/depth_source_comparison/dsc.py": "c255ccec60921d556b63a46916e8229d7349e85535c3b21b67cfe495961ff7f1",
+  "tools/depth_source_comparison/scale_audit.py": "368ab7ac69b8907778222c8d791701ebf8ece1810e3e3db7af19d7b615842679",
+  "tools/depth_source_comparison/verify.py": "f0a956c12281913f4da2b77406c7b0fa9d11d8b92ef63f214c858ab1230c2462",
+  "tools/gate9_depth_occupancy/audit.py": "9359c95b2f407bb8d43d252c63c0b68ee07b5823416aa2fd88bf7b35d4c5c777",
+  "tools/gate9_depth_occupancy/common.py": "f2442ebe47fc5d4bebdfe20738ac608a1687bffb37ec693433154dbeef69d1e1",
+  "tools/gate9_depth_occupancy/variant_mapper.py": "21d6dc57f55c425509d2664edd5b51b6dc1b4d17b72b0cabc99a834cbd9a9d74",
+  "core/mapping/mapper.py": "9c04e302e0ec0e0876f8856c0f3c2c01b8db2c508126553322fbd6c9b0c92eac",
+  "moge_gauge/calibrated.py": "1f872d663a595ae2ed5c872a9fd9c23b755706dba46c9b9ae6e027c143795517"
+ }
+}

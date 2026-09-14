@@ -1,0 +1,32 @@
+{
+ "frozen_at": "2026-09-13T23:04:32",
+ "git_head": "0ba3b5deeb236a33022068445df85e135d006fc4",
+ "note": "frozen after the oracle input build, the input-quality check (O == Gate 9 LD on 590/590) and the M/O smoke pairing test; before any Gate 13 training run. M reproduction tolerance and decision guide predeclared in analyze13.py",
+ "input_generation": {
+  "tools/gate13_oracle/g13.py": "1cb795bcf86c8b6ed98f44b9398b2a32cb63f49b16458b84bc413853e5fed05f",
+  "tools/gate13_oracle/build_oracle.py": "2c6827b962a12b46eb44c7e803da6ad79faecde97dada959ab50002d93d88e83",
+  "tools/gate9_depth_occupancy/audit.py": "9359c95b2f407bb8d43d252c63c0b68ee07b5823416aa2fd88bf7b35d4c5c777",
+  "tools/gate9_depth_occupancy/common.py": "f2442ebe47fc5d4bebdfe20738ac608a1687bffb37ec693433154dbeef69d1e1",
+  "tools/gate9_depth_occupancy/variant_mapper.py": "21d6dc57f55c425509d2664edd5b51b6dc1b4d17b72b0cabc99a834cbd9a9d74",
+  "core/mapping/mapper.py": "9c04e302e0ec0e0876f8856c0f3c2c01b8db2c508126553322fbd6c9b0c92eac",
+  "tools/gate12_suf/build_inputs.py": "821e8019ac560559e758e15ebc282fab07c13d34f3c8b85b5996e988bcb81435",
+  "tools/gate12_suf/g12.py": "8d956640ebe73e2d9e2354d28ab3b2510e000a7d222334047e6cfca77c2ea43b"
+ },
+ "training_evaluation": {
+  "tools/gate13_oracle/train13.py": "521512541180d5c4c493c747c71336c98b56f295affb2c9f0e2406431a0d38a0",
+  "tools/gate13_oracle/eval13.py": "6ad07b6a2dbcd4791d2e8259362a55787375858eb9584ee24b636bcec8d46812",
+  "tools/gate13_oracle/quality13.py": "f5d1263b69097761444eaf3327cc06516478e0945792c836c67c07bdacf6043e",
+  "tools/gate12_suf/train12.py": "b7291a087dada230cd1f5b1f8b7b32b21c0933eb9feb082556c11fcabaec548e",
+  "tools/gate12_suf/eval12.py": "76991bcefaf8d0fff0ec45656f0d8c79f63415516422b75eff7cbb35f428cbf7",
+  "core/run/_gate8a_train.py": "aa1330817a43ee33beb343c4e9ecf89c71d76b1e91c8a14cf5bdd2b25407517d",
+  "core/model/net.py": "8850ba29d42dca0df4027d968c16ff3f0275443b06af6d76dd045ace8a1c8956",
+  "core/model/losses.py": "f6dd7f58648e2f4d3abfc2ac9eadd0fc4308a413b99b0a73609cae45f7a53f11",
+  "core/model/sampler.py": "b0374c4ebb76e18cf92106756ed06055f93ea945255bfa58bc465c760ef18c65",
+  "artifacts/gate13_oracle/training_config_M.yaml": "94d80c6d3ff6ff7751ab217f05dfff0878193b254b89492fe9c6719544309df4",
+  "artifacts/gate13_oracle/training_config_O.yaml": "01d29b8e1801a4241772aae31430f6c293a68e5d2659bc4672bb0469ab522f38"
+ },
+ "analysis": {
+  "tools/gate13_oracle/analyze13.py": "9224fbf3b939ee479475116ec9b6ac1aac21dcedf52d933f8ce758dbf29b0026",
+  "tools/gate13_oracle/figures13.py": "a24ddf71df4b6a275a9a47244a0d86192ba3cdf43881aeefbd75ad51df28b793"
+ }
+}

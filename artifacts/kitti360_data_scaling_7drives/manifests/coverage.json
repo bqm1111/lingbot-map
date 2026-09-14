@@ -1,0 +1,355 @@
+{
+  "per_drive": {
+    "2013_05_28_drive_0000_sync": {
+      "stream_frames": 2103,
+      "not_eligible_by_rule": 9,
+      "eligible": 2094,
+      "built_samples": 2094,
+      "excluded_eligible": {
+        "n": 0,
+        "reason": null,
+        "stream_indices": []
+      },
+      "blocks": 105,
+      "small_blocks": 27,
+      "full": {
+        "anchors": 2094,
+        "unique_input_frames_all_past": 2098,
+        "unique_input_frames_last20": 2098,
+        "unique_future_target_frames": 2098,
+        "temporal_span_stream": [
+          4,
+          2097
+        ],
+        "temporal_span_native": [
+          91,
+          11470
+        ],
+        "trajectory_m_at_anchors": 8383.332254625459,
+        "spatial_cells_20m": 363,
+        "n_contiguous_runs": 1
+      },
+      "small": {
+        "anchors": 534,
+        "unique_input_frames_all_past": 2098,
+        "unique_input_frames_last20": 1032,
+        "unique_future_target_frames": 1032,
+        "temporal_span_stream": [
+          4,
+          2097
+        ],
+        "temporal_span_native": [
+          91,
+          11470
+        ],
+        "trajectory_m_at_anchors": 2065.7638617181697,
+        "spatial_cells_20m": 137,
+        "n_contiguous_runs": 27
+      },
+      "drive_trajectory_m": 8397.344979176198,
+      "drive_cells_20m": 364
+    },
+    "2013_05_28_drive_0002_sync": {
+      "stream_frames": 2778,
+      "not_eligible_by_rule": 9,
+      "eligible": 2769,
+      "built_samples": 2769,
+      "excluded_eligible": {
+        "n": 0,
+        "reason": null,
+        "stream_indices": []
+      },
+      "blocks": 139,
+      "small_blocks": 35,
+      "full": {
+        "anchors": 2769,
+        "unique_input_frames_all_past": 2773,
+        "unique_input_frames_last20": 2773,
+        "unique_future_target_frames": 2773,
+        "temporal_span_stream": [
+          4,
+          2772
+        ],
+        "temporal_span_native": [
+          4414,
+          18971
+        ],
+        "trajectory_m_at_anchors": 11552.911085027472,
+        "spatial_cells_20m": 522,
+        "n_contiguous_runs": 1
+      },
+      "small": {
+        "anchors": 700,
+        "unique_input_frames_all_past": 2744,
+        "unique_input_frames_last20": 1350,
+        "unique_future_target_frames": 1365,
+        "temporal_span_stream": [
+          4,
+          2743
+        ],
+        "temporal_span_native": [
+          4414,
+          18826
+        ],
+        "trajectory_m_at_anchors": 2814.3837895878305,
+        "spatial_cells_20m": 186,
+        "n_contiguous_runs": 35
+      },
+      "drive_trajectory_m": 11595.382755738727,
+      "drive_cells_20m": 523
+    },
+    "2013_05_28_drive_0003_sync": {
+      "stream_frames": 202,
+      "not_eligible_by_rule": 9,
+      "eligible": 193,
+      "built_samples": 193,
+      "excluded_eligible": {
+        "n": 0,
+        "reason": null,
+        "stream_indices": []
+      },
+      "blocks": 10,
+      "small_blocks": 3,
+      "full": {
+        "anchors": 193,
+        "unique_input_frames_all_past": 197,
+        "unique_input_frames_last20": 197,
+        "unique_future_target_frames": 197,
+        "temporal_span_stream": [
+          4,
+          196
+        ],
+        "temporal_span_native": [
+          27,
+          1002
+        ],
+        "trajectory_m_at_anchors": 1333.7416065165444,
+        "spatial_cells_20m": 83,
+        "n_contiguous_runs": 1
+      },
+      "small": {
+        "anchors": 60,
+        "unique_input_frames_all_past": 184,
+        "unique_input_frames_last20": 102,
+        "unique_future_target_frames": 115,
+        "temporal_span_stream": [
+          4,
+          183
+        ],
+        "temporal_span_native": [
+          27,
+          937
+        ],
+        "trajectory_m_at_anchors": 399.25815995190953,
+        "spatial_cells_20m": 28,
+        "n_contiguous_runs": 3
+      },
+      "drive_trajectory_m": 1373.6256432955656,
+      "drive_cells_20m": 85
+    },
+    "2013_05_28_drive_0004_sync": {
+      "stream_frames": 2211,
+      "not_eligible_by_rule": 9,
+      "eligible": 2202,
+      "built_samples": 2202,
+      "excluded_eligible": {
+        "n": 0,
+        "reason": null,
+        "stream_indices": []
+      },
+      "blocks": 111,
+      "small_blocks": 28,
+      "full": {
+        "anchors": 2202,
+        "unique_input_frames_all_past": 2206,
+        "unique_input_frames_last20": 2206,
+        "unique_future_target_frames": 2206,
+        "temporal_span_stream": [
+          4,
+          2205
+        ],
+        "temporal_span_native": [
+          78,
+          11375
+        ],
+        "trajectory_m_at_anchors": 9943.153506662322,
+        "spatial_cells_20m": 476,
+        "n_contiguous_runs": 1
+      },
+      "small": {
+        "anchors": 560,
+        "unique_input_frames_all_past": 2184,
+        "unique_input_frames_last20": 1077,
+        "unique_future_target_frames": 1092,
+        "temporal_span_stream": [
+          4,
+          2183
+        ],
+        "temporal_span_native": [
+          78,
+          11265
+        ],
+        "trajectory_m_at_anchors": 2428.6130738120582,
+        "spatial_cells_20m": 159,
+        "n_contiguous_runs": 28
+      },
+      "drive_trajectory_m": 9967.608323541255,
+      "drive_cells_20m": 476
+    },
+    "2013_05_28_drive_0005_sync": {
+      "stream_frames": 1258,
+      "not_eligible_by_rule": 9,
+      "eligible": 1249,
+      "built_samples": 1249,
+      "excluded_eligible": {
+        "n": 0,
+        "reason": null,
+        "stream_indices": []
+      },
+      "blocks": 63,
+      "small_blocks": 16,
+      "full": {
+        "anchors": 1249,
+        "unique_input_frames_all_past": 1253,
+        "unique_input_frames_last20": 1253,
+        "unique_future_target_frames": 1253,
+        "temporal_span_stream": [
+          4,
+          1252
+        ],
+        "temporal_span_native": [
+          56,
+          6671
+        ],
+        "trajectory_m_at_anchors": 4673.802335387154,
+        "spatial_cells_20m": 178,
+        "n_contiguous_runs": 1
+      },
+      "small": {
+        "anchors": 320,
+        "unique_input_frames_all_past": 1224,
+        "unique_input_frames_last20": 609,
+        "unique_future_target_frames": 624,
+        "temporal_span_stream": [
+          4,
+          1223
+        ],
+        "temporal_span_native": [
+          56,
+          6526
+        ],
+        "trajectory_m_at_anchors": 1144.2412973238092,
+        "spatial_cells_20m": 79,
+        "n_contiguous_runs": 16
+      },
+      "drive_trajectory_m": 4684.830090305375,
+      "drive_cells_20m": 179
+    },
+    "2013_05_28_drive_0007_sync": {
+      "stream_frames": 578,
+      "not_eligible_by_rule": 9,
+      "eligible": 569,
+      "built_samples": 569,
+      "excluded_eligible": {
+        "n": 0,
+        "reason": null,
+        "stream_indices": []
+      },
+      "blocks": 29,
+      "small_blocks": 8,
+      "full": {
+        "anchors": 569,
+        "unique_input_frames_all_past": 573,
+        "unique_input_frames_last20": 573,
+        "unique_future_target_frames": 573,
+        "temporal_span_stream": [
+          4,
+          572
+        ],
+        "temporal_span_native": [
+          22,
+          3111
+        ],
+        "trajectory_m_at_anchors": 4854.888152244798,
+        "spatial_cells_20m": 276,
+        "n_contiguous_runs": 1
+      },
+      "small": {
+        "anchors": 149,
+        "unique_input_frames_all_past": 573,
+        "unique_input_frames_last20": 286,
+        "unique_future_target_frames": 286,
+        "temporal_span_stream": [
+          4,
+          572
+        ],
+        "temporal_span_native": [
+          22,
+          3111
+        ],
+        "trajectory_m_at_anchors": 1217.2863032584362,
+        "spatial_cells_20m": 72,
+        "n_contiguous_runs": 8
+      },
+      "drive_trajectory_m": 4885.487524870541,
+      "drive_cells_20m": 278
+    },
+    "2013_05_28_drive_0010_sync": {
+      "stream_frames": 605,
+      "not_eligible_by_rule": 9,
+      "eligible": 596,
+      "built_samples": 596,
+      "excluded_eligible": {
+        "n": 0,
+        "reason": null,
+        "stream_indices": []
+      },
+      "blocks": 30,
+      "small_blocks": 8,
+      "full": {
+        "anchors": 596,
+        "unique_input_frames_all_past": 600,
+        "unique_input_frames_last20": 600,
+        "unique_future_target_frames": 600,
+        "temporal_span_stream": [
+          4,
+          599
+        ],
+        "temporal_span_native": [
+          34,
+          3559
+        ],
+        "trajectory_m_at_anchors": 3329.6302332195046,
+        "spatial_cells_20m": 187,
+        "n_contiguous_runs": 1
+      },
+      "small": {
+        "anchors": 160,
+        "unique_input_frames_all_past": 584,
+        "unique_input_frames_last20": 297,
+        "unique_future_target_frames": 312,
+        "temporal_span_stream": [
+          4,
+          583
+        ],
+        "temporal_span_native": [
+          34,
+          3456
+        ],
+        "trajectory_m_at_anchors": 781.1597969293331,
+        "spatial_cells_20m": 48,
+        "n_contiguous_runs": 8
+      },
+      "drive_trajectory_m": 3341.4959756094136,
+      "drive_cells_20m": 187
+    }
+  },
+  "totals": {
+    "full": 9672,
+    "small": 2483,
+    "small_fraction": 0.2567204301075269
+  },
+  "block_anchors": 20,
+  "small_every_block": 4,
+  "shared_context_note": "inputs are all-past causal maps, so every block shares input history with earlier stream frames; selected small blocks are 3 blocks (60 stream frames) apart, so no future-target frame is shared between selected blocks"
+}

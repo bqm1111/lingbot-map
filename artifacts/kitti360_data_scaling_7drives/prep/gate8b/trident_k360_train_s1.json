@@ -1,0 +1,12 @@
+{
+  "source": "k360_train",
+  "shard": 1,
+  "n_written": 1393,
+  "n_skipped": 230,
+  "proc_hw": [
+    140,
+    518
+  ],
+  "seconds": 5528.742479085922,
+  "peak_gpu_gib": 10.015339374542236
+}

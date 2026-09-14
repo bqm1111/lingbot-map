@@ -1,0 +1,186 @@
+{
+  "study": "direct_semantic_correspondence_audit",
+  "geometry_source": "KITTI-360 raw Velodyne sweeps + cam0_to_world.txt + calibration (P_rect_00, R_rect_00, calib_cam_to_velo)",
+  "correspondence_rule": {
+    "landmarks": "raw Velodyne returns of the sweep at A, velo->unrectified cam0->world (GT poses), rect_cam_to_velo = cam0_to_velo @ inv(R_rect_00)",
+    "projection": "K = P_rect_00[:3,:3] on the native 1408x376 image; cam0_to_world.txt poses; depth in (3, 50) m; 12-px border",
+    "visibility": "min sweep depth of the same frame in a 7x7 px window; |z - ref| < a + b z, strict (0.3, 0.01), loose (0.6, 0.02); no return -> rejected",
+    "A_stride_stream_frames": 5,
+    "B_offsets_stream_frames": [
+      -12,
+      -8,
+      -6,
+      -4,
+      -3,
+      -2,
+      -1,
+      1,
+      2,
+      3,
+      4,
+      6,
+      8,
+      12
+    ],
+    "landmarks_per_A": 1500,
+    "rng": "default_rng(native frame index)"
+  },
+  "calibration": {
+    "K": [
+      [
+        552.554261,
+        0.0,
+        682.049453
+      ],
+      [
+        0.0,
+        552.554261,
+        238.769549
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "P_rect_00": [
+      [
+        552.554261,
+        0.0,
+        682.049453,
+        0.0
+      ],
+      [
+        0.0,
+        552.554261,
+        238.769549,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "R_rect_00": [
+      [
+        0.999974,
+        -0.007141,
+        -8.9e-05,
+        0.0
+      ],
+      [
+        0.007141,
+        0.999969,
+        -0.003247,
+        0.0
+      ],
+      [
+        0.000112,
+        0.003247,
+        0.999995,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "cam0_to_velo": [
+      [
+        0.04307104361,
+        -0.08829286498,
+        0.995162929,
+        0.8043914418
+      ],
+      [
+        -0.999004371,
+        0.007784614041,
+        0.04392796942,
+        0.2993489574
+      ],
+      [
+        -0.01162548558,
+        -0.9960641394,
+        -0.08786966659,
+        -0.1770225824
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "rect_cam_to_velo": [
+      [
+        0.043612115055327874,
+        -0.0912146196284711,
+        0.9948756109863613,
+        0.8043914418
+      ],
+      [
+        -0.9990388848339291,
+        0.0005081416362397046,
+        0.04384092409976315,
+        0.2993489574
+      ],
+      [
+        -0.004504167301544631,
+        -0.9958313597837463,
+        -0.09110398740604471,
+        -0.1770225824
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "native_hw": [
+      376,
+      1408
+    ]
+  },
+  "tolerances": {
+    "strict": [
+      0.3,
+      0.01
+    ],
+    "loose": [
+      0.6,
+      0.02
+    ]
+  },
+  "controls": {
+    "C0": "landmark of an earlier unrelated (A,B) set of the drive (reservoir of 4000)",
+    "C1": "different landmark, same (A,B) set",
+    "C2": "different landmark, 0.3-1.5 m away, |dz| < 0.3 m, |dz_cam|/z < 0.1",
+    "C3": "different landmark whose per-view class in B equals X's class in A"
+  },
+  "feature": {
+    "source": "feature-first token cache (Trident-H correlation-refined CLIP ViT-H-14 tokens, 1024-d, unit norm, 34x128)",
+    "sampling": "bilinear at native pixel centres, align_corners=False (== official logit interpolation)",
+    "classification": "softmax(40 f . text) with Trident's own text embeddings"
+  },
+  "mapper_replay": {
+    "inputs": "stream cache pred_depth / pred_pose_c2w / pred_K, scale = exp(median(log_s[:5]))",
+    "association": "LingBot endpoint band (-1,0,+1 voxel) into 0.2 m world voxels; X placed via GT camera-frame coordinates at A and LingBot pose of A"
+  },
+  "env": {
+    "python": "3.10.19",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "git": {
+      "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+      "branch": "feature-completion-study",
+      "dirty": true
+    }
+  }
+}

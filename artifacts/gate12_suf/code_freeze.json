@@ -1,0 +1,31 @@
+{
+ "frozen_at": "2026-09-13T22:20:46",
+ "git_head": "0ba3b5deeb236a33022068445df85e135d006fc4",
+ "note": "input generation frozen after the pre-training sanity checks passed; training / evaluation code and configs frozen before any training run; analysis thresholds predeclared in analyze12.py",
+ "input_generation": {
+  "tools/gate12_suf/g12.py": "8d956640ebe73e2d9e2354d28ab3b2510e000a7d222334047e6cfca77c2ea43b",
+  "tools/gate12_suf/build_inputs.py": "821e8019ac560559e758e15ebc282fab07c13d34f3c8b85b5996e988bcb81435",
+  "tools/gate12_suf/gen_local_clips.py": "2d7d1585b5782e71720c4ea27889f415c3d3f5bd69f9805c80152b6fb78e60a3",
+  "tools/gate11_uncertainty/channel_mapper.py": "0fc94c0f746d797e3d6a33478f07097a633c0a31f579714b8ebf88eca414d5ca",
+  "tools/gate11_uncertainty/g11.py": "84af959fb73b5c582b119a9e3895ef7b6315bb4546f42eac747e52412b013a28",
+  "tools/gate9_depth_occupancy/variant_mapper.py": "21d6dc57f55c425509d2664edd5b51b6dc1b4d17b72b0cabc99a834cbd9a9d74",
+  "core/mapping/mapper.py": "9c04e302e0ec0e0876f8856c0f3c2c01b8db2c508126553322fbd6c9b0c92eac",
+  "artifacts/gate11_uncertainty/uncertainty_rules.json": "4dfd83dcb443240e53c7256257b3202b62d6e8ac60bbae8ecfc8cf644a4adfea",
+  "tools/local_registration_audit/run_local_lingbot.py": "7b79a21857eb31649c42b7f9140717d22eea614a204242c89b89702a845ff871"
+ },
+ "training_evaluation": {
+  "tools/gate12_suf/train12.py": "b7291a087dada230cd1f5b1f8b7b32b21c0933eb9feb082556c11fcabaec548e",
+  "tools/gate12_suf/eval12.py": "76991bcefaf8d0fff0ec45656f0d8c79f63415516422b75eff7cbb35f428cbf7",
+  "tools/gate12_suf/build_regions.py": "b15cdc7fb166ef5378bd1cafdd5a670e6d26671423f4d066861564df22d54b2e",
+  "tools/gate12_suf/sanity_inputs.py": "7ed87257793996481eb3acaf1e4a74bd44eada1f1c5923bea0283d5ee13f1eb6",
+  "core/run/_gate8a_train.py": "aa1330817a43ee33beb343c4e9ecf89c71d76b1e91c8a14cf5bdd2b25407517d",
+  "core/model/net.py": "8850ba29d42dca0df4027d968c16ff3f0275443b06af6d76dd045ace8a1c8956",
+  "core/model/losses.py": "f6dd7f58648e2f4d3abfc2ac9eadd0fc4308a413b99b0a73609cae45f7a53f11",
+  "core/model/sampler.py": "b0374c4ebb76e18cf92106756ed06055f93ea945255bfa58bc465c760ef18c65",
+  "artifacts/gate12_suf/training_config_H.yaml": "7bd84ea9f095c477c5b6dcf959b8f8bd0423bd2d581c191fa6192b5ed980376c",
+  "artifacts/gate12_suf/training_config_SUF.yaml": "79da895f00f5eb4d6798f0dc3cd6a3bb0b024a22ddd1a79b6bc26e3d88e2ffee"
+ },
+ "analysis": {
+  "tools/gate12_suf/analyze12.py": "66de22eae2ba207bbb4b42e4dbc58eeacb278f12d56cd9db0dd60765e2e5ac1e"
+ }
+}

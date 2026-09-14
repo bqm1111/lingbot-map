@@ -1,0 +1,92 @@
+{
+  "study": "feature-completion-study",
+  "condition": "B",
+  "objective": "L_occ + 0.5 * L_KL",
+  "claim": "target-domain-free transfer: trained on KITTI-360 drives 0003/0007/0010, selected on drive 0006, evaluated on untouched SemanticKITTI and Occ3D-nuScenes. NOT whole-system zero-shot -- the frozen foundation models (LingBot-Map, MoGe-2, Trident-H, SAM-H) have not had their training provenance audited.",
+  "derived_from": "artifacts/gate8c1/frozen_manifest_sky.json",
+  "inherits": [
+    "replicate padding",
+    "256x256x32 grid at 0.2 m",
+    "frozen five-frame metric scale",
+    "32-channel causal input encoding",
+    "residual occupancy lock at |log-odds| >= 2.0",
+    "bf16 autocast forward",
+    "past5 inference protocol"
+  ],
+  "occupancy_targets": {
+    "root": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1_sky",
+    "note": "the adopted ceiling-fixed targets, reused unmodified; the sky supervision is unchanged"
+  },
+  "feature_projection": null,
+  "semantic_decoder": {
+    "kind": "the gate's own 25-class softmax head",
+    "trained": true
+  },
+  "source_partition": {
+    "n_files": 590,
+    "sha256": "dc7bac2982b3aa1101372cefde16672549a1719281ccfce0c0d2158b09b5a3de",
+    "drive": "2013_05_28_drive_0006_sync",
+    "record": "artifacts/feature_completion_study/eval_masks"
+  },
+  "rule": {
+    "checkpoint": "final step, no selection",
+    "occupancy_threshold": "final-logit threshold maximising full-grid IoU on KITTI-360 drive 0006",
+    "forbidden": "SemanticKITTI and Occ3D/nuScenes are not read before this file exists"
+  },
+  "seeds": {
+    "0": {
+      "seed": 0,
+      "condition": "B",
+      "selected": "last",
+      "checkpoint": "artifacts/feature_completion_study/checkpoints/fcs_B_seed0_last.pt",
+      "checkpoint_sha256": "e38ea03572af70bd0905001e67fd60fe7c6e6221a14ec212d2c26d076373ebfc",
+      "occupancy_threshold": -0.28125,
+      "semantic_threshold": 0.0,
+      "source_full_iou": 0.1008630842918064,
+      "source_later_iou": 0.10370508379765661,
+      "source_later_ap": 0.12293270457660815,
+      "source_auroc": 0.6745757161777785,
+      "train_record": "artifacts/feature_completion_study/train_fcs_B_seed0.json"
+    },
+    "1": {
+      "seed": 1,
+      "condition": "B",
+      "selected": "last",
+      "checkpoint": "artifacts/feature_completion_study/checkpoints/fcs_B_seed1_last.pt",
+      "checkpoint_sha256": "92da081ea4fbf1922b5bb171ec9d770be01a6f35fa7934e605e6041dbce278fc",
+      "occupancy_threshold": -0.3125,
+      "semantic_threshold": 0.0,
+      "source_full_iou": 0.10204004525020806,
+      "source_later_iou": 0.10690310565588582,
+      "source_later_ap": 0.12906093338599323,
+      "source_auroc": 0.6819814363139958,
+      "train_record": "artifacts/feature_completion_study/train_fcs_B_seed1.json"
+    },
+    "2": {
+      "seed": 2,
+      "condition": "B",
+      "selected": "last",
+      "checkpoint": "artifacts/feature_completion_study/checkpoints/fcs_B_seed2_last.pt",
+      "checkpoint_sha256": "7ef8ad7578e33e658cca772012828265355cc3126d8ef876d1b78deca4cb0706",
+      "occupancy_threshold": -0.3125,
+      "semantic_threshold": 0.0,
+      "source_full_iou": 0.10109068827120278,
+      "source_later_iou": 0.10309436750085477,
+      "source_later_ap": 0.11919566594568712,
+      "source_auroc": 0.6717570955726797,
+      "train_record": "artifacts/feature_completion_study/train_fcs_B_seed2.json"
+    }
+  },
+  "env": {
+    "python": "3.10.19",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "git": {
+      "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+      "branch": "feature-completion-study",
+      "dirty": true
+    }
+  }
+}

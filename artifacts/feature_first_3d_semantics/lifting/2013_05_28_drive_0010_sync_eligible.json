@@ -1,0 +1,49 @@
+{
+  "drive": "2013_05_28_drive_0010_sync",
+  "population": "eligible",
+  "n_written": 596,
+  "n_skipped": 0,
+  "lattice_hw": [
+    140,
+    518
+  ],
+  "channels": {
+    "feature": 1024,
+    "coarse_probs": 18
+  },
+  "resampling": "token grid -> native (bilinear) -> LingBot lattice (bilinear, align_corners=False), as the official logits are resampled",
+  "all_pairs_match_probability_path": true,
+  "max_rel_weight_dev": 0.0004884004592895508,
+  "per_frame_coarse_vs_cached_refined": {
+    "argmax_agree_mean": 0.9265584817528725,
+    "argmax_agree_min": 0.8013375401496887,
+    "n_frames": 600
+  },
+  "seconds": 108.46059942245483,
+  "peak_gpu_gib": 11.294579029083252,
+  "firewall": {
+    "n_opened": 3592,
+    "n_unique": 1796,
+    "violations": [],
+    "forbidden_patterns": [
+      "data/kitti/dataset",
+      "occ3d_gt",
+      "nuscenes",
+      "lingbot_occ3d_zeroshot",
+      "scale_gate/cache",
+      "preprocess/labels"
+    ]
+  },
+  "env": {
+    "python": "3.10.19",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "git": {
+      "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+      "branch": "feature-completion-study",
+      "dirty": true
+    }
+  }
+}

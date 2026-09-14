@@ -1,0 +1,46 @@
+# The one configuration family of the feature-supervision study.
+#
+# Every field above `--- study ---` is the adopted ceiling-fixed Gate 8C-1 configuration
+# (configs/gate8c1_sky/seed0.yaml) verbatim: same drives, crop, width, batch, optimizer,
+# schedule, 6 000-step budget, focal+Dice occupancy objective, residual lock and replicate
+# padding. The condition and the seed are the only things a run varies, and they are passed
+# on the command line, not edited in here.
+train_drives:
+- 2013_05_28_drive_0003_sync
+- 2013_05_28_drive_0007_sync
+- 2013_05_28_drive_0010_sync
+val_drive: 2013_05_28_drive_0006_sync
+val_limit: 120
+crop:
+- 128
+- 128
+- 32
+width: 24
+batch_size: 4
+lr: 0.001
+weight_decay: 0.01
+grad_clip: 1.0
+steps: 6000
+log_every: 50
+val_every: 500
+lock_logodds: 2.0
+sampler: uniform
+centre_on_occ_p: 0.7
+occ_loss: focal_dice
+w_focal: 1.0
+w_dice: 1.0
+focal_gamma: 2.0
+pos_weight_cap: 8.0
+w_unknown: 2.0
+w_bce: 1.0
+padding_mode: replicate
+
+# --- study ---------------------------------------------------------------------------
+# Auxiliary weight. 0.5 is the adopted `w_sem`, kept for B and reused unchanged for C so
+# the two auxiliary objectives enter the trunk at the same nominal weight. They are not
+# thereby equalised in gradient magnitude -- that is measured, not assumed (see
+# `aux_grad_norm` in the training log).
+w_aux: 0.5
+feature_dim: 64
+# steps between the auxiliary-vs-occupancy gradient-magnitude probes at the shared trunk
+probe_every: 250

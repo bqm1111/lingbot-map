@@ -1,0 +1,16 @@
+{
+  "drive": "2013_05_28_drive_0006_sync",
+  "n_available": 590,
+  "n_selected": 8,
+  "rule": "eight evenly spaced drive-0006 anchors (endpoints included), fixed before any checkpoint existed; no model output is consulted",
+  "stream_indices": [
+    4,
+    256,
+    508,
+    760,
+    1015,
+    1267,
+    1519,
+    1771
+  ]
+}

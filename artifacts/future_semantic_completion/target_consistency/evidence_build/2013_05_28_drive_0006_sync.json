@@ -1,0 +1,36 @@
+{
+  "drive": "2013_05_28_drive_0006_sync",
+  "n_written": 587,
+  "n_skipped_existing": 3,
+  "n_files": 590,
+  "per_frame": true,
+  "future_frames": 20,
+  "seconds": 140.96550464630127,
+  "max_abs_dp": 0.0019608736038208008,
+  "max_abs_dw": 0.833251953125,
+  "firewall": {
+    "n_opened": 24564,
+    "n_unique": 2350,
+    "violations": [],
+    "forbidden_patterns": [
+      "data/kitti/dataset",
+      "occ3d_gt",
+      "nuscenes",
+      "lingbot_occ3d_zeroshot",
+      "scale_gate/cache",
+      "preprocess/labels"
+    ]
+  },
+  "env": {
+    "python": "3.10.19",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "git": {
+      "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+      "branch": "feature-completion-study",
+      "dirty": true
+    }
+  }
+}

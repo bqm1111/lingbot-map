@@ -1,0 +1,57 @@
+{
+  "git": {
+    "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+    "branch": "feature-completion-study",
+    "dirty": true
+  },
+  "env": {
+    "python": "3.10.19",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "git": {
+      "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+      "branch": "feature-completion-study",
+      "dirty": true
+    }
+  },
+  "data_root": "/media/SSD1/MINH_DATASETS/lingbot_gate8c1_sky",
+  "train_drives": [
+    "2013_05_28_drive_0003_sync",
+    "2013_05_28_drive_0007_sync",
+    "2013_05_28_drive_0010_sync"
+  ],
+  "val_drive": "2013_05_28_drive_0006_sync",
+  "eval_only": [
+    "semantickitti (163 anchors, past5)",
+    "occ3d (1182 anchors, past5)"
+  ],
+  "frozen_geometry": {
+    "frozen_checkpoint": "artifacts/gate8c1/checkpoints/sky_seed0_last.pt",
+    "frozen_checkpoint_sha256": "ea721b21a259bd00cfae2b699265423e96b7b370a2cf119bcdfcf6dc2df1ea69"
+  },
+  "head": {
+    "head_checkpoint": "artifacts/future_semantic_completion/checkpoints/fsc_seed0_head_last.pt",
+    "head_checkpoint_sha256": "7fd0cdbac6607445e01c200f0eaf543867f1d1a9dce1b8b42de0d666169312b9",
+    "steps": 6000
+  },
+  "b0_sha256": "4a42202d0bf3803bed7e844bc65e0ea8ea170b1a52b09546cd38cd498e094b46",
+  "config": "artifacts/future_semantic_completion/config.yaml",
+  "teacher": "Trident-H vocabulary-conditioned probabilities, cached under /media/SSD1/MINH_DATASETS/lingbot_gate6/semantics (frozen, unchanged)",
+  "code": [
+    "README.md",
+    "__pycache__",
+    "diagnose_targets.py",
+    "evaluate_source.py",
+    "figures.py",
+    "freeze_manifest.py",
+    "head.py",
+    "study.py",
+    "summarize.py",
+    "supervision_stats.py",
+    "train.py",
+    "transfer.py",
+    "verify.py"
+  ]
+}

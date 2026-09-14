@@ -1,0 +1,22 @@
+{
+  "drive": "2013_05_28_drive_0010_sync",
+  "n_clips": 199,
+  "n_pairs": 796,
+  "n_landmarks": 581314,
+  "stream_scale": 21.80179759897612,
+  "gt_round_trip_max_err_m": 1.6413537196058314e-12,
+  "firewall": {
+    "n_opened": 1596,
+    "n_unique": 798,
+    "violations": [],
+    "forbidden_patterns": [
+      "data/kitti/dataset",
+      "occ3d_gt",
+      "nuscenes",
+      "lingbot_occ3d_zeroshot",
+      "scale_gate/cache",
+      "preprocess/labels"
+    ]
+  },
+  "seconds": 17.243685007095337
+}

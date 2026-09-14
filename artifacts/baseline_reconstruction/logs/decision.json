@@ -1,0 +1,32 @@
+{
+ "decision": "B",
+ "per_target": {
+  "semantickitti": {
+   "current_mean": 26.172772815350925,
+   "current_sd": 0.31787268300763644,
+   "historical_median": 22.71328944149913,
+   "map_only": 8.820500920980095,
+   "beats_map_only": true,
+   "at_or_above_historical": true,
+   "ci": {
+    "lo": 0.2460838979706765,
+    "hi": 0.27691850646091903,
+    "n_blocks": 9
+   }
+  },
+  "occ3d": {
+   "current_mean": 31.221281347902757,
+   "current_sd": 1.7811363908902946,
+   "historical_median": 33.879816624743235,
+   "map_only": 10.035121420767629,
+   "beats_map_only": true,
+   "at_or_above_historical": false,
+   "ci": {
+    "lo": 0.2916568317450637,
+    "hi": 0.33206515723295904,
+    "n_blocks": 60
+   }
+  }
+ },
+ "reason": "below the historical median on occ3d; the historical system carried semantics, 32 input channels, a residual lock, source-selected thresholds and different targets (historical_comparability.md)"
+}

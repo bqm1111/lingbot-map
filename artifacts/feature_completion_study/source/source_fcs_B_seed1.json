@@ -1,0 +1,255 @@
+{
+  "condition": "B",
+  "seed": 1,
+  "tag": "fcs_B_seed1",
+  "checkpoint": "artifacts/feature_completion_study/checkpoints/fcs_B_seed1_last.pt",
+  "checkpoint_sha256": "92da081ea4fbf1922b5bb171ec9d770be01a6f35fa7934e605e6041dbce278fc",
+  "val_drive": "2013_05_28_drive_0006_sync",
+  "n_val_samples": 590,
+  "n_missing_eval_mask": 0,
+  "occupancy_threshold": -0.3125,
+  "threshold_rule": "final-logit threshold maximising full-grid IoU on KITTI-360 drive 0006, over the frozen 1024-bin candidate grid",
+  "partition_counts": {
+    "n_later_occupied": 16408850,
+    "n_later_free": 226918956,
+    "n_observed": 28436821,
+    "n_still_unknown": 100620946
+  },
+  "regions": {
+    "full": {
+      "n_voxels": 372385573,
+      "n_occupied": 18194124,
+      "prevalence": 0.04885829451830025,
+      "average_precision": 0.0993171959136041,
+      "auroc": 0.6819814363139958,
+      "at_threshold": {
+        "threshold": -0.3125,
+        "tp": 5360900,
+        "fp": 34343093,
+        "fn": 12833224,
+        "iou": 0.10204004525020806,
+        "precision": 0.13502168409106863,
+        "recall": 0.29465007493628165,
+        "density": 0.10662065310462497,
+        "pred_over_gt": 2.1822426295434725,
+        "tn": 319848356
+      },
+      "best_iou": {
+        "threshold": -0.3125,
+        "iou": 0.10204004525020806
+      }
+    },
+    "observed": {
+      "n_voxels": 28436821,
+      "n_occupied": 1785274,
+      "prevalence": 0.06278036493601025,
+      "average_precision": 0.10023093182624374,
+      "auroc": 0.6531655580955202,
+      "at_threshold": {
+        "threshold": -0.3125,
+        "tp": 1057587,
+        "fp": 8320613,
+        "fn": 727687,
+        "iou": 0.10465058633645913,
+        "precision": 0.1127707875711757,
+        "recall": 0.5923947808571681,
+        "density": 0.32979073153078536,
+        "pred_over_gt": 5.253087201180323,
+        "tn": 18330934
+      },
+      "best_iou": {
+        "threshold": -0.03125,
+        "iou": 0.10520702108441428
+      }
+    },
+    "later": {
+      "n_voxels": 243327806,
+      "n_occupied": 16408850,
+      "prevalence": 0.06743516193130841,
+      "average_precision": 0.12906093338599323,
+      "auroc": 0.6286333009517804,
+      "at_threshold": {
+        "threshold": -0.3125,
+        "tp": 4303313,
+        "fp": 23845481,
+        "fn": 12105537,
+        "iou": 0.10690310565588582,
+        "precision": 0.15287734884840892,
+        "recall": 0.2622556120630026,
+        "density": 0.11568260308071819,
+        "pred_over_gt": 1.7154641550139103,
+        "tn": 203073475
+      },
+      "best_iou": {
+        "threshold": -0.4375,
+        "iou": 0.10746823078035336
+      }
+    }
+  },
+  "feature_diagnostics": {
+    "cosine_mean": 0.02717389336844978,
+    "cosine_median": 0.03183642423259808,
+    "cosine_mean_predictor": 0.19896990382644322,
+    "pred_dispersion": 0.06210183008810706,
+    "target_dispersion": 0.10079461778282207,
+    "n_voxels": 7937422,
+    "head_trained": false
+  },
+  "semantic_threshold": 0.0,
+  "semantic_consistency": {
+    "curve": [
+      {
+        "tau": 0.0,
+        "coverage": 1.0,
+        "agreement": 0.39842243489132867,
+        "score": 0.39842243489132867
+      },
+      {
+        "tau": 0.05,
+        "coverage": 1.0,
+        "agreement": 0.39842243489132867,
+        "score": 0.39842243489132867
+      },
+      {
+        "tau": 0.1,
+        "coverage": 0.9996709259001222,
+        "agreement": 0.3984872983726138,
+        "score": 0.39835616652358913
+      },
+      {
+        "tau": 0.15,
+        "coverage": 0.9832221343403438,
+        "agreement": 0.40199242745842684,
+        "score": 0.39524785251433026
+      },
+      {
+        "tau": 0.2,
+        "coverage": 0.8845702042804326,
+        "agreement": 0.41990458335724895,
+        "score": 0.37143508307861167
+      },
+      {
+        "tau": 0.25,
+        "coverage": 0.7718638368981767,
+        "agreement": 0.4368163530592535,
+        "score": 0.337162746292184
+      },
+      {
+        "tau": 0.3,
+        "coverage": 0.6676245763422936,
+        "agreement": 0.4480646012298418,
+        "score": 0.29913893957005183
+      },
+      {
+        "tau": 0.35,
+        "coverage": 0.526399881472851,
+        "agreement": 0.47148979311473826,
+        "score": 0.24819217121125725
+      },
+      {
+        "tau": 0.4,
+        "coverage": 0.4015837887918773,
+        "agreement": 0.48523877347421523,
+        "score": 0.19486402512049883
+      },
+      {
+        "tau": 0.45,
+        "coverage": 0.2952563187392582,
+        "agreement": 0.5051425728396031,
+        "score": 0.1491465364950988
+      },
+      {
+        "tau": 0.5,
+        "coverage": 0.19954526797239708,
+        "agreement": 0.5147016020834978,
+        "score": 0.10270626911357365
+      },
+      {
+        "tau": 0.55,
+        "coverage": 0.120649626541212,
+        "agreement": 0.565488118273226,
+        "score": 0.06822593028315743
+      },
+      {
+        "tau": 0.6,
+        "coverage": 0.06992938009343588,
+        "agreement": 0.5871105594180078,
+        "score": 0.04105627746641164
+      },
+      {
+        "tau": 0.65,
+        "coverage": 0.044539902250378016,
+        "agreement": 0.5872226559406221,
+        "score": 0.02615483969480267
+      },
+      {
+        "tau": 0.7,
+        "coverage": 0.02978611947304805,
+        "agreement": 0.564191604102781,
+        "score": 0.01680507852549606
+      },
+      {
+        "tau": 0.75,
+        "coverage": 0.01353386527766824,
+        "agreement": 0.617580801310694,
+        "score": 0.00835825536301333
+      },
+      {
+        "tau": 0.8,
+        "coverage": 0.006504000921205903,
+        "agreement": 0.6977627118644067,
+        "score": 0.00453824932074923
+      },
+      {
+        "tau": 0.85,
+        "coverage": 0.0019705390490766398,
+        "agreement": 0.5984911450674509,
+        "score": 0.001179350171882004
+      },
+      {
+        "tau": 0.9,
+        "coverage": 0.0003056407987379278,
+        "agreement": 0.6199505358615004,
+        "score": 0.00018948217695871533
+      },
+      {
+        "tau": 0.95,
+        "coverage": 1.3354461939909457e-05,
+        "agreement": 0.5849056603773585,
+        "score": 7.81110037994704e-06
+      }
+    ],
+    "selected": {
+      "tau": 0.0,
+      "coverage": 1.0,
+      "agreement": 0.39842243489132867,
+      "score": 0.39842243489132867
+    }
+  },
+  "seconds": 45.78157424926758,
+  "firewall": {
+    "n_opened": 4720,
+    "n_unique": 1770,
+    "violations": [],
+    "forbidden_patterns": [
+      "data/kitti/dataset",
+      "occ3d_gt",
+      "nuscenes",
+      "lingbot_occ3d_zeroshot",
+      "scale_gate/cache",
+      "preprocess/labels"
+    ]
+  },
+  "env": {
+    "python": "3.10.19",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "git": {
+      "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+      "branch": "feature-completion-study",
+      "dirty": true
+    }
+  }
+}

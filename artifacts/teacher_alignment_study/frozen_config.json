@@ -1,0 +1,47 @@
+{
+  "study": "teacher-alignment control",
+  "conditions": {
+    "R": "aligned: future-teacher class vector at its own supervised voxel",
+    "S": "shuffled: same vectors permuted within (z-layer, map-observed) strata per crop"
+  },
+  "objective": "L_occ + 0.5 * L_KL, trunk gradient of the KL term rescaled to rho * |g_occ|",
+  "rho": 3.5643757479566673,
+  "rho_record": "rho_calibration.json",
+  "shuffle": {
+    "strata": "2*z + observed (64 strata per 128x128x32 crop)",
+    "min_stratum_size": 2,
+    "rng": "torch.Generator keyed by (seed, step, crop)",
+    "moves": "complete probability vector; the KL uses a binary mask so no scalar weight exists to move",
+    "applies_to": "training supervision only"
+  },
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "steps": 6000,
+  "base_config": "configs/feature_study/base.yaml",
+  "inherits_from_feature_study_B": [
+    "causal inputs and 32-channel encoding",
+    "occupancy and future class-probability targets",
+    "auxiliary support (plus the tiny-strata rule)",
+    "source populations",
+    "architecture and initialisation (n_feat=64 head constructed, unused)",
+    "replicate padding, residual lock 2.0, grid, metric scale",
+    "AdamW 1e-3 / wd 0.01 / cosine, batch 4, crop 128x128x32, uniform crop sampler, grad clip 1.0",
+    "bf16 autocast, past5 inference"
+  ],
+  "frozen_at": "2026-09-11T13:39:17.128728+02:00",
+  "env": {
+    "python": "3.10.19",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "git": {
+      "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+      "branch": "feature-completion-study",
+      "dirty": true
+    }
+  }
+}

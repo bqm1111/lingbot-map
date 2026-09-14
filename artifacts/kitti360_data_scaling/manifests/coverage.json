@@ -1,0 +1,108 @@
+{
+  "per_drive": {
+    "2013_05_28_drive_0003_sync": {
+      "n_eligible_by_rule": 193,
+      "n_samples": 193,
+      "n_blocks": 10,
+      "n_small_blocks": 3,
+      "full": {
+        "n_anchors": 193,
+        "unique_anchor_frames": 193,
+        "unique_input_frames_all_past": 197,
+        "unique_input_frames_last20": 197,
+        "unique_future_target_frames": 197,
+        "trajectory_m_within_anchor_steps": 1333.7416065165446,
+        "drive_trajectory_m": 1373.6256432955659,
+        "stream_span": [
+          4,
+          196
+        ]
+      },
+      "small": {
+        "n_anchors": 60,
+        "unique_anchor_frames": 60,
+        "unique_input_frames_all_past": 184,
+        "unique_input_frames_last20": 102,
+        "unique_future_target_frames": 115,
+        "trajectory_m_within_anchor_steps": 399.25815995191005,
+        "drive_trajectory_m": 1373.6256432955659,
+        "stream_span": [
+          4,
+          183
+        ]
+      },
+      "shared_context": "inputs are all-past causal maps, so every block shares its past with earlier blocks; selected 25 % blocks are separated by 3 blocks (60 stream frames > the 20-frame future horizon), so no future-target frame is shared between selected blocks"
+    },
+    "2013_05_28_drive_0007_sync": {
+      "n_eligible_by_rule": 569,
+      "n_samples": 569,
+      "n_blocks": 29,
+      "n_small_blocks": 8,
+      "full": {
+        "n_anchors": 569,
+        "unique_anchor_frames": 569,
+        "unique_input_frames_all_past": 573,
+        "unique_input_frames_last20": 573,
+        "unique_future_target_frames": 573,
+        "trajectory_m_within_anchor_steps": 4854.888152244801,
+        "drive_trajectory_m": 4885.487524870544,
+        "stream_span": [
+          4,
+          572
+        ]
+      },
+      "small": {
+        "n_anchors": 149,
+        "unique_anchor_frames": 149,
+        "unique_input_frames_all_past": 573,
+        "unique_input_frames_last20": 286,
+        "unique_future_target_frames": 286,
+        "trajectory_m_within_anchor_steps": 1217.2863032584382,
+        "drive_trajectory_m": 4885.487524870544,
+        "stream_span": [
+          4,
+          572
+        ]
+      },
+      "shared_context": "inputs are all-past causal maps, so every block shares its past with earlier blocks; selected 25 % blocks are separated by 3 blocks (60 stream frames > the 20-frame future horizon), so no future-target frame is shared between selected blocks"
+    },
+    "2013_05_28_drive_0010_sync": {
+      "n_eligible_by_rule": 596,
+      "n_samples": 596,
+      "n_blocks": 30,
+      "n_small_blocks": 8,
+      "full": {
+        "n_anchors": 596,
+        "unique_anchor_frames": 596,
+        "unique_input_frames_all_past": 600,
+        "unique_input_frames_last20": 600,
+        "unique_future_target_frames": 600,
+        "trajectory_m_within_anchor_steps": 3329.6302332195073,
+        "drive_trajectory_m": 3341.4959756094163,
+        "stream_span": [
+          4,
+          599
+        ]
+      },
+      "small": {
+        "n_anchors": 160,
+        "unique_anchor_frames": 160,
+        "unique_input_frames_all_past": 584,
+        "unique_input_frames_last20": 297,
+        "unique_future_target_frames": 312,
+        "trajectory_m_within_anchor_steps": 781.159796929333,
+        "drive_trajectory_m": 3341.4959756094163,
+        "stream_span": [
+          4,
+          583
+        ]
+      },
+      "shared_context": "inputs are all-past causal maps, so every block shares its past with earlier blocks; selected 25 % blocks are separated by 3 blocks (60 stream frames > the 20-frame future horizon), so no future-target frame is shared between selected blocks"
+    }
+  },
+  "totals": {
+    "full": 1358,
+    "small": 369
+  },
+  "small_fraction": 0.27172312223858613
+}

@@ -1,0 +1,4 @@
+dataset,current_iou_pct,historical_iou_pct,comparability,current_stat,historical_stat
+"KITTI-360 0006 (source, full region)",13.51,n/a (historical source metric used a different target build and threshold),not comparable,mean of 3 seeds,
+semantickitti,26.17,22.71,partially comparable,mean of 3 seeds (median alongside),median of 3 seeds
+occ3d,31.22,33.88,partially comparable,mean of 3 seeds (median alongside),median of 3 seeds

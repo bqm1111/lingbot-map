@@ -1,0 +1,325 @@
+{
+  "condition": "S",
+  "seed": 1,
+  "tag": "tas_S_seed1",
+  "checkpoint": "artifacts/teacher_alignment_study/checkpoints/tas_S_seed1_last.pt",
+  "checkpoint_sha256": "419970ad1b46e7c5f4da5fffa75ebf527d53bf9aab555210a0c6ccb1166d58ab",
+  "val_drive": "2013_05_28_drive_0006_sync",
+  "n_val_samples": 590,
+  "n_missing_eval_mask": 0,
+  "occupancy_threshold": -0.28125,
+  "threshold_rule": "final-logit threshold maximising full-grid IoU on KITTI-360 drive 0006, over the frozen 1024-bin candidate grid",
+  "partition_counts": {
+    "n_later_occupied": 16408850,
+    "n_later_free": 226918956,
+    "n_observed": 28436821,
+    "n_still_unknown": 100620946
+  },
+  "regions": {
+    "full": {
+      "n_voxels": 372385573,
+      "n_occupied": 18194124,
+      "prevalence": 0.04885829451830025,
+      "average_precision": 0.09664255772418862,
+      "auroc": 0.6722220640181482,
+      "at_threshold": {
+        "threshold": -0.28125,
+        "tp": 5196993,
+        "fp": 32739610,
+        "fn": 12997131,
+        "iou": 0.10203440022677308,
+        "precision": 0.13699152240910975,
+        "recall": 0.285641287263954,
+        "density": 0.10187452401653595,
+        "pred_over_gt": 2.085101926314232,
+        "tn": 321451839
+      },
+      "best_iou": {
+        "threshold": -0.28125,
+        "iou": 0.10203440022677308
+      }
+    },
+    "observed": {
+      "n_voxels": 28436821,
+      "n_occupied": 1785274,
+      "prevalence": 0.06278036493601025,
+      "average_precision": 0.09975218321831839,
+      "auroc": 0.6509934188875128,
+      "at_threshold": {
+        "threshold": -0.28125,
+        "tp": 1050398,
+        "fp": 8294203,
+        "fn": 734876,
+        "iou": 0.1042115578020566,
+        "precision": 0.1124069395793357,
+        "recall": 0.5883679480012592,
+        "density": 0.3286092000227452,
+        "pred_over_gt": 5.23426712090133,
+        "tn": 18357344
+      },
+      "best_iou": {
+        "threshold": -0.03125,
+        "iou": 0.1046917927163295
+      }
+    },
+    "later": {
+      "n_voxels": 243327806,
+      "n_occupied": 16408850,
+      "prevalence": 0.06743516193130841,
+      "average_precision": 0.11970085608534814,
+      "auroc": 0.6162861017981738,
+      "at_threshold": {
+        "threshold": -0.28125,
+        "tp": 4146595,
+        "fp": 23193520,
+        "fn": 12262255,
+        "iou": 0.10470572847029104,
+        "precision": 0.15166706504343527,
+        "recall": 0.25270479040273996,
+        "density": 0.11235918923298063,
+        "pred_over_gt": 1.6661810547357065,
+        "tn": 203725436
+      },
+      "best_iou": {
+        "threshold": -0.46875,
+        "iou": 0.10553426759380671
+      }
+    }
+  },
+  "feature_diagnostics": {
+    "cosine_mean": 0.0349396461762705,
+    "cosine_median": 0.0368918570675376,
+    "cosine_mean_predictor": 0.19896990382644322,
+    "pred_dispersion": 0.04626895724850388,
+    "target_dispersion": 0.10079461778282207,
+    "n_voxels": 7937422,
+    "head_trained": false
+  },
+  "semantic_threshold": 0.0,
+  "semantic_consistency": {
+    "curve": [
+      {
+        "tau": 0.0,
+        "coverage": 1.0,
+        "agreement": 0.3924454312747892,
+        "score": 0.3924454312747892
+      },
+      {
+        "tau": 0.05,
+        "coverage": 1.0,
+        "agreement": 0.3924454312747892,
+        "score": 0.3924454312747892
+      },
+      {
+        "tau": 0.1,
+        "coverage": 0.9999971023337301,
+        "agreement": 0.39244644246811833,
+        "score": 0.3924453052892992
+      },
+      {
+        "tau": 0.15,
+        "coverage": 0.996008149749377,
+        "agreement": 0.3933554834925574,
+        "score": 0.3917852673071937
+      },
+      {
+        "tau": 0.2,
+        "coverage": 0.9622828419605257,
+        "agreement": 0.3993472151578054,
+        "score": 0.3842849731310745
+      },
+      {
+        "tau": 0.25,
+        "coverage": 0.859136631515875,
+        "agreement": 0.4120328536674424,
+        "score": 0.35399251797371994
+      },
+      {
+        "tau": 0.3,
+        "coverage": 0.7558508291483054,
+        "agreement": 0.42166131317123223,
+        "score": 0.3187130531802391
+      },
+      {
+        "tau": 0.35,
+        "coverage": 0.6410654492100836,
+        "agreement": 0.43663625963882213,
+        "score": 0.2799124199267722
+      },
+      {
+        "tau": 0.4,
+        "coverage": 0.5039632515443931,
+        "agreement": 0.4635279159455513,
+        "score": 0.2336010357015162
+      },
+      {
+        "tau": 0.45,
+        "coverage": 0.3903855685133032,
+        "agreement": 0.4891486790236409,
+        "score": 0.19095658514817532
+      },
+      {
+        "tau": 0.5,
+        "coverage": 0.29368401982406883,
+        "agreement": 0.5073180232114192,
+        "score": 0.14899119638592984
+      },
+      {
+        "tau": 0.55,
+        "coverage": 0.21056320301478237,
+        "agreement": 0.5435620395505613,
+        "score": 0.11445416408501399
+      },
+      {
+        "tau": 0.6,
+        "coverage": 0.15558149736778515,
+        "agreement": 0.5651048330412757,
+        "score": 0.08791985609433389
+      },
+      {
+        "tau": 0.65,
+        "coverage": 0.09252764940556266,
+        "agreement": 0.5864975743126312,
+        "score": 0.054267241933212064
+      },
+      {
+        "tau": 0.7,
+        "coverage": 0.04115215242430099,
+        "agreement": 0.6181752499678547,
+        "score": 0.02543924211160752
+      },
+      {
+        "tau": 0.75,
+        "coverage": 0.01795708984604825,
+        "agreement": 0.6594683336490497,
+        "score": 0.01184213211795971
+      },
+      {
+        "tau": 0.8,
+        "coverage": 0.006943060353852926,
+        "agreement": 0.8109780439121757,
+        "score": 0.005630669504531824
+      },
+      {
+        "tau": 0.85,
+        "coverage": 0.0020916111049658188,
+        "agreement": 0.8206842549090471,
+        "score": 0.0017165523012383616
+      },
+      {
+        "tau": 0.9,
+        "coverage": 0.00020712014555859573,
+        "agreement": 0.7834549878345499,
+        "score": 0.00016226931111889984
+      },
+      {
+        "tau": 0.95,
+        "coverage": 4.157521169971812e-06,
+        "agreement": 0.8484848484848485,
+        "score": 3.527593719976083e-06
+      }
+    ],
+    "selected": {
+      "tau": 0.0,
+      "coverage": 1.0,
+      "agreement": 0.3924454312747892,
+      "score": 0.3924454312747892
+    }
+  },
+  "seconds": 45.442143201828,
+  "firewall": {
+    "n_opened": 4720,
+    "n_unique": 1770,
+    "violations": [],
+    "forbidden_patterns": [
+      "data/kitti/dataset",
+      "occ3d_gt",
+      "nuscenes",
+      "lingbot_occ3d_zeroshot",
+      "scale_gate/cache",
+      "preprocess/labels"
+    ]
+  },
+  "env": {
+    "python": "3.10.19",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "git": {
+      "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+      "branch": "feature-completion-study",
+      "dirty": true
+    }
+  },
+  "teacher_agreement": {
+    "all": {
+      "n": 7937422,
+      "top1_agreement": 0.3924454312747892,
+      "mean_kl": 1.6285902824309764
+    },
+    "later": {
+      "n": 6255745,
+      "top1_agreement": 0.4089493737356622,
+      "mean_kl": 1.5924034236092002
+    },
+    "observed": {
+      "n": 1062752,
+      "top1_agreement": 0.29707118876275934
+    },
+    "per_class_agreement_iou": {
+      "0": 0.04883932635411925,
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "4": 0.0,
+      "5": null,
+      "6": null,
+      "7": null,
+      "8": 0.0,
+      "9": null,
+      "10": 0.14802200176715866,
+      "11": 0.0,
+      "12": 0.0,
+      "13": 0.0005225506358926048,
+      "14": 0.24933403179929473,
+      "15": 0.008062475559542705,
+      "16": 0.0,
+      "17": 0.3797204376826671,
+      "18": null,
+      "19": 0.0,
+      "20": 0.0002488918387180885,
+      "21": 0.0,
+      "22": null,
+      "23": null,
+      "24": 0.0
+    },
+    "class_support_teacher": {
+      "0": 223459,
+      "1": 1644,
+      "2": 960,
+      "3": 21128,
+      "4": 54118,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 4237,
+      "9": 0,
+      "10": 549204,
+      "11": 24321,
+      "12": 127564,
+      "13": 268304,
+      "14": 1511573,
+      "15": 1808467,
+      "16": 135079,
+      "17": 3031025,
+      "18": 0,
+      "19": 39261,
+      "20": 77845,
+      "21": 14315,
+      "22": 0,
+      "23": 0,
+      "24": 44918
+    }
+  }
+}

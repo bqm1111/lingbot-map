@@ -1,0 +1,19 @@
+property,historical_post_ceiling_fix_baseline,current_geometry_only_baseline,kind,differs
+LingBot mode,"long-stream causal replay (persistent KV cache, stream depth/pose cache)","local-reset L, five frames t-4..t, KV cache cleared per clip",pipeline,True
+depth,LB-M (LingBot canonical depth x metric scale),LB-M (LingBot canonical depth x metric scale),pipeline,False
+scale,"stream scale: MoGe-2 vs LingBot, median of the FIRST five stream frames, frozen for the stream","clip scale: MoGe-2 vs LingBot, median over the clip's own five frames",pipeline,True
+pose,long-stream LingBot pose,local LingBot pose (anchor = identity),pipeline,True
+geometry representation,"log-odds map with w_free, n_obs, age, semantic evidence (H mapper + accumulators)","H: hard S / F from the same mapper, semantics off",pipeline,True
+input channels,32,3,pipeline,True
+semantics,Trident-H probabilities as input; semantic KL loss 0.5; semantic head,none,pipeline,True
+residual lock,final = base + residual * [|base| < 2],none (base log-odds 0: the network output is the map),pipeline,True
+completion architecture,"CompletionUNet width 24, cin 32, 986,114 params, replicate padding","CompletionUNet width 24, cin 3, 967,322 params, replicate padding",pipeline,True
+training data,KITTI-360 0003/0007/0010; targets: raw-LiDAR + plain-column open-sky rule (pre-647bcf3),KITTI-360 0003/0007/0010; targets: raw-LiDAR + neighbourhood-7 open-sky rule + 647bcf3 fix,pipeline,True
+validation drive / checkpoint rule,0006; highest AP -> step 6000 for all seeds,"0006; final step 6000, no selection",pipeline,True
+decision threshold,"per seed, IoU-maximising on 0006: -0.125 / -0.4375 / -0.3125",0 for every seed,pipeline,True
+training recipe,"focal+Dice (gamma 2, cap 8, w_unknown 2) + 0.5 semantic KL; AdamW 1e-3 wd 0.01; cosine; clip 1; batch 4; 128x128x32; 6000 steps","focal+Dice (gamma 2, cap 8, w_unknown 2); AdamW 1e-3 wd 0.01; cosine; clip 1; batch 4; 128x128x32; 6000 steps",pipeline,True
+seed statistic,median of 3,mean of 3 (median reported),pipeline,True
+SemanticKITTI protocol,"sequence 08, image_2, stride-5 stream of 815 unique frames; anchor = last frame of each official clip; clip = stream indices i-4..i (native frames 20 apart end to end); official voxels/<frame>.invalid == 0 (label != 255)","sequence 08, image_2, stride-5 stream of 815 unique frames; anchor = last frame of each official clip; clip = stream indices i-4..i (native frames 20 apart end to end); official voxels/<frame>.invalid == 0 (label != 255)",evaluation,False
+Occ3D protocol,"150 official validation scenes, CAM_FRONT samples in timestamp order, one stream per scene; anchor = every sample with a label; clip = stream indices i-4..i; mask_camera == 1, lidar mask off, ego x-index < 100 ignored (single front camera); native voxel occupied iff any of its 8 canonical subvoxels is occupied","150 official validation scenes, CAM_FRONT samples in timestamp order, one stream per scene; anchor = every sample with a label; clip = stream indices i-4..i; mask_camera == 1, lidar mask off, ego x-index < 100 ignored (single front camera); native voxel occupied iff any of its 8 canonical subvoxels is occupied",evaluation,False
+metric,SC IoU = TP/(TP+FP+FN) inside the official mask,SC IoU = TP/(TP+FP+FN) inside the official mask,evaluation,False
+anchor set,163 SemanticKITTI / 1182 Occ3D official anchors,163 SemanticKITTI / 1182 Occ3D official anchors,evaluation,False

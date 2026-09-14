@@ -1,0 +1,62 @@
+{
+  "drive": "2013_05_28_drive_0006_sync",
+  "n_clips": 118,
+  "definition": "Uses the verified physical correspondences of the direct audit on drive 0006 whose source\nframe A is a clip anchor t and whose partner B is t-1 .. t-4 (so both frames are in the clip).\nFor every landmark X (GT position in the anchor camera) and condition c, the 0.2 m voxel of\nX in the anchor camera is taken, and the pixels of frame t and of frame B whose endpoint band\n(-1, 0, +1 voxel along the ray, the mapper's rule) lands in that voxel under condition c's\ndepth and pose are collected -- the observations condition c would fuse into \"the same\nvoxel\". Reported: support (both frames have >= 1 pixel in the voxel), top-1 agreement of the\nmean Trident probabilities, cosine of the mean dense features, and the same two statistics\nagainst a local control (a different landmark 0.3-1.5 m away, same set).",
+  "results": {
+    "S": {
+      "landmarks": 140505,
+      "support_fraction": 0.008341340165830397,
+      "class_agreement": 0.5162116040955631,
+      "feature_cosine": 0.9034128735293301,
+      "local_control_n": 476,
+      "local_control_agreement": 0.4894957983193277,
+      "local_control_cosine": 0.9013283119983032,
+      "agreement_margin_over_local": 0.02671580577623539,
+      "cosine_margin_over_local": 0.002084561531026874
+    },
+    "L": {
+      "landmarks": 140505,
+      "support_fraction": 0.06572719832034447,
+      "class_agreement": 0.7105576610720087,
+      "feature_cosine": 0.9368695859787718,
+      "local_control_n": 3907,
+      "local_control_agreement": 0.6209367801382135,
+      "local_control_cosine": 0.9177936293568061,
+      "agreement_margin_over_local": 0.08962088093379517,
+      "cosine_margin_over_local": 0.019075956621965706
+    },
+    "Lp": {
+      "landmarks": 140505,
+      "support_fraction": 0.026668090103555035,
+      "class_agreement": 0.7488657592740859,
+      "feature_cosine": 0.9463984183161807,
+      "local_control_n": 1559,
+      "local_control_agreement": 0.6927517639512508,
+      "local_control_cosine": 0.9277266289959969,
+      "agreement_margin_over_local": 0.05611399532283512,
+      "cosine_margin_over_local": 0.018671789320183763
+    },
+    "G": {
+      "landmarks": 140505,
+      "support_fraction": 0.0110814561759368,
+      "class_agreement": 0.7321772639691715,
+      "feature_cosine": 0.9386997987003608,
+      "local_control_n": 577,
+      "local_control_agreement": 0.6776429809358753,
+      "local_control_cosine": 0.9243639326384824,
+      "agreement_margin_over_local": 0.054534283033296216,
+      "cosine_margin_over_local": 0.014335866061878422
+    },
+    "GLd": {
+      "landmarks": 140505,
+      "support_fraction": 0.024113020888936337,
+      "class_agreement": 0.6897874852420307,
+      "feature_cosine": 0.9333042057479568,
+      "local_control_n": 1303,
+      "local_control_agreement": 0.6308518802762855,
+      "local_control_cosine": 0.9214187343579846,
+      "agreement_margin_over_local": 0.058935604965745236,
+      "cosine_margin_over_local": 0.011885471389972202
+    }
+  }
+}

@@ -1,0 +1,65 @@
+protocol: gate15_semantic_completion/2026-09-14
+paths:
+  token_root: /media/SSD1/MINH_DATASETS/lingbot_feature_first_3d/trident_tokens
+  text_embeddings: /media/SSD1/MINH_DATASETS/lingbot_feature_first_3d/text_embeddings.npz
+  clips_train_root: /media/SSD1/MINH_DATASETS/lingbot_gate12_suf/local_lingbot
+  clips_val_root: /media/SSD1/MINH_DATASETS/lingbot_local_registration_audit/local_lingbot
+  inputs_root: /media/SSD1/MINH_DATASETS/lingbot_gate12_suf/inputs
+  geometry_checkpoints: /home/minh/workspace/lingbot-map_fork/artifacts/baseline_reconstruction/checkpoints
+  geometry_freeze: /home/minh/workspace/lingbot-map_fork/artifacts/baseline_reconstruction/code_freeze.json
+  geometry_source_eval: /home/minh/workspace/lingbot-map_fork/artifacts/baseline_reconstruction/source_eval
+  eval_masks_root: /media/SSD1/MINH_DATASETS/lingbot_k360_7drives/eval_masks
+  evidence_root: /media/SSD1/MINH_DATASETS/lingbot_gate15_semantic/evidence
+  checkpoints: /home/minh/workspace/lingbot-map_fork/artifacts/gate15_semantic_completion/checkpoints
+  runs: /home/minh/workspace/lingbot-map_fork/artifacts/gate15_semantic_completion/runs
+  source_eval: /home/minh/workspace/lingbot-map_fork/artifacts/gate15_semantic_completion/source_eval
+head:
+  evidence_dim: 32
+  width: 32
+  dilations:
+  - 1
+  - 2
+  - 4
+  - 8
+  trunk_channels: 24
+train:
+  steps: 6000
+  batch_size: 4
+  crop:
+  - 128
+  - 128
+  - 32
+  lr: 0.001
+  weight_decay: 0.01
+  grad_clip: 1.0
+  hide_block_vox:
+  - 8
+  - 8
+  - 4
+  hide_block_prob: 0.5
+  log_every: 50
+  ckpt_every: 1000
+train_drives:
+- 2013_05_28_drive_0003_sync
+- 2013_05_28_drive_0007_sync
+- 2013_05_28_drive_0010_sync
+val_drive: 2013_05_28_drive_0006_sync
+seeds:
+- 0
+- 1
+- 2
+teacher:
+  model: Trident-H (frozen), CLIP ViT-H-14 token feature
+  dim: 1024
+  token_grid_hw:
+  - 34
+  - 128
+  normalisation: unit L2 per token; lifted voxel feature = normalize(count-weighted mean of unit ray features)
+  text: Trident query_features (CLIP text, ImageNet templates), 18 KITTI-360 classes, unit norm; readout argmax cosine
+evidence: grid voxels whose world key holds >= 1 accepted causal ray endpoint and that the frozen hard map marks occupied
+occupancy: frozen Current Geometry-Only Baseline, final log-odds > 0
+distance_edges_m:
+- 1.0
+- 2.0
+- 4.0
+- 8.0

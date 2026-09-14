@@ -1,0 +1,52 @@
+{
+ "checks": [
+  {
+   "name": "1_H_U_zero_and_SF_equal_core_mapper",
+   "pass": true,
+   "detail": "on 9 deterministic anchors the H input's U channel is all zero and S_H / F_H equal core IncrementalMapper(semantics off) occupied / free on the same L frames bit for bit"
+  },
+  {
+   "name": "2_mutual_exclusivity",
+   "pass": true,
+   "detail": "S&U, S&F, U&F and S_H&F_H are empty on every sampled anchor"
+  },
+  {
+   "name": "3_no_ray_ge_20m_in_SUF",
+   "pass": true,
+   "detail": "recorded S/U/F rays >= 20 m = 0; recorded cut-ray count equals an independent recount; S/U/F rebuilt from near rays only equals the stored volumes"
+  },
+  {
+   "name": "7_deterministic_input_generation",
+   "pass": true,
+   "detail": "rebuilding every sampled anchor reproduces all five stored volumes exactly"
+  },
+  {
+   "name": "4_conservative_carving_and_interval",
+   "pass": true,
+   "detail": "synthetic ray at z = 10.0 m, u_front 1.3, u_back 2.9: last free voxel spans 8.6-8.8 m (starts before z - u_front = 8.7), surface voxels 9.8-10.4 m, interval voxels 8.8-13.0 m (voxel-extent comparisons with 1e-6 tolerance; amended after two float-rounding failures of the interval clause)"
+  },
+  {
+   "name": "5_U4_coefficients_frozen",
+   "pass": true,
+   "detail": "uncertainty_rules.json sha256 equals Gate 11's code freeze; a=0.065800 b=0.127002 g=[1.50247, 1.164115, 0.978129, 0.879264] -q16=0.308402 q84=1.394507 (round to {'a': 0.066, 'b': 0.127, 'g': [1.5, 1.16, 0.98, 0.88], 'u_front': 0.308, 'u_back': 1.395})"
+  },
+  {
+   "name": "6_no_lidar_no_gt_pose",
+   "pass": true,
+   "detail": "input builder source has no LiDAR / support / GT-pose / target access tokens []; poses are inv(P_4) P_q of LingBot pred_pose_c2w; every sampled rebuild ran inside the file-access audit forbidding data_poses, velodyne, targets, eval masks and target datasets: 36 files opened, violations []"
+  }
+ ],
+ "sample": [
+  "0006:346 S_H 48416 F_H 175694 S 30118 U 88032 F 96883 cut rays 30797",
+  "0006:766 S_H 29699 F_H 157608 S 14649 U 33595 F 47294 cut rays 29455",
+  "0006:361 S_H 50643 F_H 191822 S 23604 U 83042 F 71814 cut rays 51737",
+  "0003:4 S_H 18829 F_H 63845 S 16904 U 35106 F 45988 cut rays 7782",
+  "0003:100 S_H 30370 F_H 98291 S 18765 U 60596 F 60435 cut rays 33816",
+  "0007:4 S_H 31303 F_H 80921 S 22787 U 55688 F 56587 cut rays 21227",
+  "0007:288 S_H 47982 F_H 154889 S 20511 U 41463 F 67249 cut rays 56544",
+  "0010:4 S_H 36393 F_H 127920 S 33073 U 80984 F 104312 cut rays 20721",
+  "0010:302 S_H 11073 F_H 97165 S 7584 U 20509 F 41774 cut rays 14888"
+ ],
+ "n_pass": 7,
+ "n_total": 7
+}

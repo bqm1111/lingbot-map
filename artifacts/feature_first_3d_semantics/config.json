@@ -1,0 +1,131 @@
+{
+  "study": "feature_first_3d_semantics",
+  "representation": {
+    "tensor": "Trident.get_trident_seg: clip_features = model.clip.encode_image(...) (recorded by hook), L2-normalised",
+    "model": "open_clip ViT-H-14 laion2b_s32b_b79k with Trident DINO/SAM correlation refinement (official Cityscapes config)",
+    "dim": 1024,
+    "token_grid": [
+      34,
+      128
+    ],
+    "language_aligned": true,
+    "classifier": "logits = f . query_features^T (mean-templated CLIP text embeddings, unit norm); official coarse probs = softmax(40 * bilinear(logits))",
+    "relation_to_cached_probs": "cached 25-class vectors = SAM-refined per-view probabilities (refinement rewrites region scores after this classifier)"
+  },
+  "teacher": {
+    "config": {
+      "clip_type": "laion2b_s32b_b79k",
+      "model_type": "ViT-H-14",
+      "vfm_model": "dino",
+      "sam_model_type": "vit_h",
+      "sam_refinement": true,
+      "beta": 1.2,
+      "gamma": 3.0,
+      "cos_fac": 3.0,
+      "refine_neg_cos": false,
+      "coarse_thresh": 0.1,
+      "slide_stride": 224,
+      "slide_crop": 336,
+      "sam_iou_thresh": 0.8,
+      "minimal_area": 225,
+      "sam_mask_coff": 0.005,
+      "logit_scale": 40,
+      "prob_thd": 0.0,
+      "dataset_type": "CityscapesDataset"
+    },
+    "sam_ckpt": "/home/minh/workspace/third_party/checkpoints/sam_vit_h_4b8939.pth",
+    "sam_ckpt_sha256": "a7bf3b02f3ebf1267aba913ff637d9a2d5c33d3173bb679e46d9f338c26f262e",
+    "clip": "open_clip ViT-H-14 laion2b_s32b_b79k (fp16)",
+    "vocabulary": [
+      "car",
+      "bicycle",
+      "motorcycle",
+      "truck",
+      "other vehicle",
+      "person",
+      "road",
+      "parking",
+      "sidewalk",
+      "other ground",
+      "building",
+      "fence",
+      "vegetation",
+      "terrain",
+      "pole",
+      "traffic sign",
+      "other structure",
+      "other object"
+    ],
+    "trident_py_sha256": "0924813e951f96cd7698a4aeb90d568202d14444a97a364c63e57ce770f525ce",
+    "adapter_sha256": "49c4530f4fa0cf41bbaf182f898c66dc04c0662d1bfd16a350e38f6f75a8f348",
+    "hook": "model.clip.encode_image output, L2-normalised (the tensor the official code projects onto text)"
+  },
+  "extraction": {
+    "n_frames": 3159,
+    "dtype": "float16",
+    "bytes": 28155838464
+  },
+  "lifting": {
+    "lattice_hw": [
+      140,
+      518
+    ],
+    "resampling": "token grid -> native (bilinear) -> LingBot lattice (bilinear, align_corners=False), as the official logits are resampled",
+    "channels": {
+      "feature": 1024,
+      "coarse_probs": 18
+    },
+    "correspondence": "identical (voxel, frame) pairs and weights as the probability-path evidence cache (checked per anchor)"
+  },
+  "grouping": {
+    "A": [
+      1,
+      4,
+      7,
+      10,
+      13,
+      16,
+      19
+    ],
+    "B": [
+      2,
+      5,
+      8,
+      11,
+      14,
+      17,
+      20
+    ],
+    "C": [
+      3,
+      6,
+      9,
+      12,
+      15,
+      18
+    ]
+  },
+  "fusion": {
+    "P": "p_AB = (w_A p_A + w_B p_B)/(w_A + w_B)",
+    "F": "f_AB = normalize(w_A f_A + w_B f_B); p'_AB = softmax(40 f_AB . text)"
+  },
+  "controls": {
+    "C0": "random within drive",
+    "C1": "within anchor",
+    "C2": "within (anchor, z band 4 vox, xy cell 20 vox)",
+    "C3": "within Trident class across the drive"
+  },
+  "text_queries": "/media/SSD1/MINH_DATASETS/lingbot_feature_first_3d/text_queries.npz",
+  "env": {
+    "python": "3.10.19",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "git": {
+      "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+      "branch": "feature-completion-study",
+      "dirty": true
+    }
+  }
+}

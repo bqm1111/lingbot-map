@@ -1,0 +1,51 @@
+{
+ "frozen_at": "2026-09-14T13:43:02+02:00",
+ "protocol": "gate15_semantic_completion/2026-09-14",
+ "rule": {
+  "primary_region": "completed_unobserved = GT occupied (labelled) & frozen predicted occupied & no direct causal evidence",
+  "statistic": "per seed: mIoU of the confusion pooled over all 590 anchors of 0006; decisions use the mean over seeds 0/1/2",
+  "P1_unobserved_gain": {
+   "metric": "mIoU(B1) - mIoU(B0) on completed_unobserved",
+   "mean_over_seeds_at_least": 0.02,
+   "all_seeds_positive": true,
+   "paired_clip_block_bootstrap_ci95_lower_above": 0.0,
+   "blocks": 20,
+   "resamples": 2000
+  },
+  "P2_overall_ssc_gain": {
+   "metric": "SSC mIoU(B1) - SSC mIoU(B0) on ssc_full under frozen predicted occupancy",
+   "mean_over_seeds_above": 0.0,
+   "all_seeds_positive": true
+  },
+  "P3_breadth_no_collapse": {
+   "min_classes_with_positive_mean_iou_gain": 5,
+   "b1_dominant_pred_fraction_at_most": "max(0.60, GT dominant fraction + 0.10)",
+   "b1_min_classes_with_ge_1pct_of_predictions": 5,
+   "region": "completed_unobserved"
+  },
+  "P4_occupancy_unchanged": "per seed, occupancy TP/FP/FN over the 590 anchors (Gate 12 regions 'full') equal the frozen baseline's source_eval counts exactly; geometry state digests unchanged by training",
+  "decision_order": [
+   "invalid (stop) if P4 fails",
+   "D if the teacher readout of the evidence on oracle_observed has overall accuracy < 0.40 or mIoU < 0.15",
+   "A if P1, P2, P3 and P4 all pass",
+   "C if P1 fails and the collapse clause of P3 fails (dominant fraction above its limit or < 5 classes with >= 1 % of predictions)",
+   "B otherwise"
+  ],
+  "B0": "nearest evidence voxel label (3D Euclidean, no radius); evaluation/baseline_nearest.py",
+  "checkpoint_rule": "final step 6000 of each head seed, no selection",
+  "disclosure": "The Decision-D thresholds were written after a 10-anchor smoke test of the evaluator with an untrained (20-step) head, which showed a teacher readout of ~0.23 mIoU / 0.64 accuracy on observed voxels; the thresholds were the ones considered before that run and are not tuned to it. No trained-head result existed when this rule was frozen."
+ },
+ "measuring_code_sha256": {
+  "tools/semantic_completion/config.py": "55c8342f8c45419cdfa0b1ca042350958b31410a14792c4de7216e179edbcb20",
+  "tools/semantic_completion/evidence/trident.py": "21f824b733b8d3bad84a52f69b67e98c4db71fc18d7eb0e1c9b90989f077d022",
+  "tools/semantic_completion/evidence/lift.py": "0d4993718eb35d00c5099c9c2bfbc4274e8ac90790be209688e8572ae59c1746",
+  "tools/semantic_completion/evidence/build.py": "432f6788198c983c9b4f6732f1ede0715f15a626a2e03fcfeb09d51a7f04b102",
+  "tools/semantic_completion/frozen_geometry.py": "48af234fafa3728240b09f48d997bbdc2f3ff6d22ab614f436f4d7ab256c7f7a",
+  "tools/semantic_completion/dataset.py": "90dae374c134d2efe6607e1bbc415423b872dbcbb4e74be21bf2849f98738f66",
+  "tools/semantic_completion/evaluation/baseline_nearest.py": "ecfff6229475c35aa9785f3f9732cf5a4a78777a393a30e53754c72da0e38c69",
+  "tools/semantic_completion/evaluation/regions.py": "8bff1dfe6e98d7855f49e737cc48fba878f0e1689383ff5ff1f3acb20b0d9f52",
+  "tools/semantic_completion/evaluation/semantic_metrics.py": "42e7e874b57414504076cd954af4a6b6e100dd5542e581b6fc48d22aec2d40cb",
+  "tools/semantic_completion/evaluation/evaluate.py": "e9667b409d5c13eb46ae43cb1a5913df7c8bbb20f153f75c8e0282ff5f90aec8"
+ },
+ "trained_head_results_existing_at_freeze": []
+}

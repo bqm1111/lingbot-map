@@ -1,0 +1,81 @@
+diff --git a/core/model/net.py b/core/model/net.py
+index 3609200..cd3fb67 100644
+--- a/core/model/net.py
++++ b/core/model/net.py
+@@ -47,10 +47,11 @@ def _block(cin, cout, padding_mode: str = "zeros"):
+ 
+ class CompletionUNet(nn.Module):
+     def __init__(self, cin: int = N_INPUT_CHANNELS, width: int = 24, n_sem: int = V8.U,
+-                 padding_mode: str = "zeros"):
++                 padding_mode: str = "zeros", n_feat: int = 0):
+         super().__init__()
+         w = width
+         self.padding_mode = padding_mode
++        self.n_feat = int(n_feat)
+         _b = lambda a, b: _block(a, b, padding_mode)
+         self.enc1 = _b(cin, w)
+         self.down1 = nn.Conv3d(w, 2 * w, 2, stride=2)
+@@ -64,15 +65,30 @@ class CompletionUNet(nn.Module):
+         self.head_occ = nn.Conv3d(w, 1, 1)
+         self.head_sem = nn.Conv3d(w, n_sem, 1)
+         nn.init.zeros_(self.head_occ.weight); nn.init.zeros_(self.head_occ.bias)
+-
+-    def forward(self, x: torch.Tensor) -> Tuple[torch.Tensor, torch.Tensor]:
++        # Optional dense-feature head, for the feature-supervision study. Constructed
++        # LAST and only when asked for, so every parameter above draws exactly the same
++        # numbers from the RNG whether or not it exists: a model with the head and a model
++        # without it share their trunk and their two original heads bit for bit.
++        self.head_feat = nn.Conv3d(w, self.n_feat, 1) if self.n_feat else None
++
++    def forward(self, x: torch.Tensor, return_trunk: bool = False):
++        """``(occ_residual, sem_logits)``; with ``return_trunk``, also the shared decoder
++        feature the heads read, which is where an auxiliary gradient enters the trunk."""
+         e1 = self.enc1(x)
+         e2 = self.enc2(self.down1(e1))
+         e3 = self.enc3(self.down2(e2))
+         d2 = self.dec2(torch.cat([self.up2(e3), e2], 1))
+         d1 = self.dec1(torch.cat([self.up1(d2), e1], 1))
++        if return_trunk:
++            return self.head_occ(d1), self.head_sem(d1), d1
+         return self.head_occ(d1), self.head_sem(d1)
+ 
++    def predict_features(self, trunk: torch.Tensor) -> torch.Tensor:
++        """``[B, n_feat, X, Y, Z]`` from the shared decoder feature. Condition C only."""
++        if self.head_feat is None:
++            raise RuntimeError("this network was built without a feature head")
++        return self.head_feat(trunk)
++
+     def n_params(self) -> int:
+         return sum(p.numel() for p in self.parameters())
+ 
+@@ -151,13 +167,15 @@ class Completer:
+ def save_checkpoint(net: CompletionUNet, path: str, meta: dict) -> None:
+     torch.save({"state_dict": net.state_dict(), "meta": meta,
+                 "cin": net.enc1[0].in_channels, "width": net.enc1[0].out_channels,
+-                "padding_mode": getattr(net, "padding_mode", "zeros")}, path)
++                "padding_mode": getattr(net, "padding_mode", "zeros"),
++                "n_feat": int(getattr(net, "n_feat", 0))}, path)
+ 
+ 
+ def load_checkpoint(path: str, device) -> Completer:
+     ck = torch.load(path, map_location="cpu", weights_only=False)
+     net = CompletionUNet(cin=ck["cin"], width=ck["width"],
+-                         padding_mode=ck.get("padding_mode", "zeros"))
++                         padding_mode=ck.get("padding_mode", "zeros"),
++                         n_feat=int(ck.get("n_feat", 0)))
+     net.load_state_dict(ck["state_dict"])
+     return Completer(net, device)
+ 
+diff --git a/gates/gate6/_gate6_names.txt b/gates/gate6/_gate6_names.txt
+index 34e3b2d..77a0525 100644
+--- a/gates/gate6/_gate6_names.txt
++++ b/gates/gate6/_gate6_names.txt
+@@ -15,5 +15,4 @@ terrain
+ pole
+ traffic sign
+ other structure
+-other object
+-sky
+\ No newline at end of file
++other object
+\ No newline at end of file

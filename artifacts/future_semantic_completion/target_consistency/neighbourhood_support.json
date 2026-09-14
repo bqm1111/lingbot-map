@@ -1,0 +1,177 @@
+{
+  "edges_vox": [
+    0.0,
+    0.5,
+    1.5,
+    2.5,
+    3.5,
+    5.5,
+    10.5,
+    1000000000.0
+  ],
+  "names": [
+    "same voxel",
+    "1",
+    "2",
+    "3",
+    "4-5",
+    "6-10",
+    "none within 10 (of the 32 nearest)"
+  ],
+  "drives": {
+    "2013_05_28_drive_0003_sync": {
+      "n_evidence_pairs": 47730,
+      "single_frame_fraction": 0.8632306725329981,
+      "nearest_other_frame": {
+        "same voxel": {
+          "fraction": 0.13676932746700188,
+          "top1_agreement": 0.9276960784313726
+        },
+        "1": {
+          "fraction": 0.06804944479363084,
+          "top1_agreement": 0.8974753694581281
+        },
+        "2": {
+          "fraction": 0.0603184579928766,
+          "top1_agreement": 0.8808614102118791
+        },
+        "3": {
+          "fraction": 0.037041692855646347,
+          "top1_agreement": 0.8552036199095022
+        },
+        "4-5": {
+          "fraction": 0.05679865912424052,
+          "top1_agreement": 0.8376982663223903
+        },
+        "6-10": {
+          "fraction": 0.06714854389272994,
+          "top1_agreement": 0.7809672386895475
+        },
+        "none within 10 (of the 32 nearest)": {
+          "fraction": 0.5738738738738739,
+          "top1_agreement": null
+        }
+      },
+      "seconds": 0.20795989036560059
+    },
+    "2013_05_28_drive_0007_sync": {
+      "n_evidence_pairs": 194483,
+      "single_frame_fraction": 0.9049222811248284,
+      "nearest_other_frame": {
+        "same voxel": {
+          "fraction": 0.09507771887517161,
+          "top1_agreement": 0.43880806879022227
+        },
+        "1": {
+          "fraction": 0.09103623452949615,
+          "top1_agreement": 0.42106749505789326
+        },
+        "2": {
+          "fraction": 0.08430556912429364,
+          "top1_agreement": 0.4481580873383752
+        },
+        "3": {
+          "fraction": 0.05121784423317205,
+          "top1_agreement": 0.4563798815379982
+        },
+        "4-5": {
+          "fraction": 0.07301923561442389,
+          "top1_agreement": 0.48883881416801633
+        },
+        "6-10": {
+          "fraction": 0.05797936066391407,
+          "top1_agreement": 0.5463816956367507
+        },
+        "none within 10 (of the 32 nearest)": {
+          "fraction": 0.5473640369595286,
+          "top1_agreement": null
+        }
+      },
+      "seconds": 0.795025110244751
+    },
+    "2013_05_28_drive_0010_sync": {
+      "n_evidence_pairs": 277903,
+      "single_frame_fraction": 0.8303616729578306,
+      "nearest_other_frame": {
+        "same voxel": {
+          "fraction": 0.16963832704216938,
+          "top1_agreement": 0.7224826591434571
+        },
+        "1": {
+          "fraction": 0.10381679938683641,
+          "top1_agreement": 0.6924196734948529
+        },
+        "2": {
+          "fraction": 0.07429930587291249,
+          "top1_agreement": 0.6773053080201472
+        },
+        "3": {
+          "fraction": 0.05026214182646463,
+          "top1_agreement": 0.6355240549828178
+        },
+        "4-5": {
+          "fraction": 0.08425601738736178,
+          "top1_agreement": 0.5970531710442024
+        },
+        "6-10": {
+          "fraction": 0.08897349075036973,
+          "top1_agreement": 0.5706543719162016
+        },
+        "none within 10 (of the 32 nearest)": {
+          "fraction": 0.42875391773388555,
+          "top1_agreement": null
+        }
+      },
+      "seconds": 1.0815393924713135
+    },
+    "2013_05_28_drive_0006_sync": {
+      "n_evidence_pairs": 337202,
+      "single_frame_fraction": 0.8365015628614303,
+      "nearest_other_frame": {
+        "same voxel": {
+          "fraction": 0.16349843713856976,
+          "top1_agreement": 0.5246680693608068
+        },
+        "1": {
+          "fraction": 0.11732729936358621,
+          "top1_agreement": 0.5216742916361247
+        },
+        "2": {
+          "fraction": 0.09031678341172354,
+          "top1_agreement": 0.5275324248891807
+        },
+        "3": {
+          "fraction": 0.06149133160538787,
+          "top1_agreement": 0.5295876537255848
+        },
+        "4-5": {
+          "fraction": 0.09557772492452596,
+          "top1_agreement": 0.5180427565236277
+        },
+        "6-10": {
+          "fraction": 0.08373615814852818,
+          "top1_agreement": 0.5040373990650234
+        },
+        "none within 10 (of the 32 nearest)": {
+          "fraction": 0.3880522654076785,
+          "top1_agreement": null
+        }
+      },
+      "seconds": 1.230231523513794
+    }
+  },
+  "stride": 2,
+  "firewall": {
+    "n_opened": 1950,
+    "n_unique": 975,
+    "violations": [],
+    "forbidden_patterns": [
+      "data/kitti/dataset",
+      "occ3d_gt",
+      "nuscenes",
+      "lingbot_occ3d_zeroshot",
+      "scale_gate/cache",
+      "preprocess/labels"
+    ]
+  }
+}

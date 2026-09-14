@@ -1,0 +1,3680 @@
+{
+  "seed": 0,
+  "frozen_checkpoint": "artifacts/gate8c1/checkpoints/sky_seed0_last.pt",
+  "frozen_checkpoint_sha256": "ea721b21a259bd00cfae2b699265423e96b7b370a2cf119bcdfcf6dc2df1ea69",
+  "head_checkpoint_sha256": "7fd0cdbac6607445e01c200f0eaf543867f1d1a9dce1b8b42de0d666169312b9",
+  "b0_sha256": "4a42202d0bf3803bed7e844bc65e0ea8ea170b1a52b09546cd38cd498e094b46",
+  "populations": {
+    "key": {
+      "B0": {
+        "n_voxels": 609435,
+        "n_anchors": 590,
+        "cosine_mean": 0.4761390046218878,
+        "kl_mean": 1.7752765613270542,
+        "top1_agreement": 0.3939304437716902,
+        "cosine_to_b0_pred": 1.0000002284704368,
+        "cosine_to_b0_target": 0.4761390046218878,
+        "miou_present_classes": 0.021885024653982788,
+        "per_class": {
+          "car": {
+            "support": 21057,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "bicycle": {
+            "support": 169,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "motorcycle": {
+            "support": 111,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "truck": {
+            "support": 1812,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "other vehicle": {
+            "support": 3993,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "bus": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "construction vehicle": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "trailer": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "person": {
+            "support": 404,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "rider": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "road": {
+            "support": 46986,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "parking": {
+            "support": 2643,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "sidewalk": {
+            "support": 13550,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "other ground": {
+            "support": 22908,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "building": {
+            "support": 99901,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "man-made structure": {
+            "support": 129296,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "fence": {
+            "support": 14163,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "vegetation": {
+            "support": 240075,
+            "predicted": 609435,
+            "iou": 0.3939304437716902,
+            "recall": 1.0
+          },
+          "trunk": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "terrain": {
+            "support": 3138,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "pole": {
+            "support": 4713,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "traffic sign": {
+            "support": 603,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "barrier": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "traffic cone": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "other object": {
+            "support": 3913,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          }
+        },
+        "pred_variance": -5.551115123125783e-17,
+        "target_variance": 0.6064342114329749,
+        "pred_mean_vector": [
+          0.031205549836158752,
+          0.0014497205847874284,
+          0.0004903282388113439,
+          0.005840283818542957,
+          0.01667819730937481,
+          0.0,
+          0.0,
+          0.0,
+          0.002908524591475725,
+          0.0,
+          0.12706415355205536,
+          0.010614613071084023,
+          0.008956991136074066,
+          0.06182827427983284,
+          0.21672086417675018,
+          0.03429526463150978,
+          0.009797935374081135,
+          0.431858628988266,
+          0.0,
+          0.012921596877276897,
+          0.015289963223040104,
+          0.004852666053920984,
+          0.0,
+          0.0,
+          0.0069460500963032246
+        ],
+        "target_mean_vector": [
+          0.03336369599969053,
+          0.0010151479536724024,
+          0.0004882503873061124,
+          0.003698919531640664,
+          0.008676895836216959,
+          0.0,
+          0.0,
+          0.0,
+          0.004730205899823711,
+          0.0,
+          0.07702130452410397,
+          0.009124549398896198,
+          0.02302255242521633,
+          0.04667766767344923,
+          0.152824483569665,
+          0.20514613114467414,
+          0.02442397257295314,
+          0.36962550337490985,
+          0.0,
+          0.015067135038742595,
+          0.010104035827714564,
+          0.0012871839027870982,
+          0.0,
+          0.0,
+          0.01317086881435947
+        ],
+        "cosine_hist_bins": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6000000000000001,
+          0.65,
+          0.7000000000000001,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9,
+          0.9500000000000001,
+          1.0
+        ],
+        "cosine_hist": [
+          27108,
+          111280,
+          26051,
+          9317,
+          10300,
+          50779,
+          15164,
+          18865,
+          79479,
+          10670,
+          3153,
+          2503,
+          2394,
+          2577,
+          2858,
+          4027,
+          7901,
+          222652,
+          1970,
+          387
+        ]
+      },
+      "B1": {
+        "n_voxels": 609435,
+        "n_anchors": 590,
+        "cosine_mean": 0.4591031507846275,
+        "kl_mean": 3.502720261542205,
+        "top1_agreement": 0.3812990720913633,
+        "cosine_to_b0_pred": 0.7992756360924143,
+        "cosine_to_b0_target": 0.4761390046218878,
+        "miou_present_classes": 0.05848216364546862,
+        "per_class": {
+          "car": {
+            "support": 21057,
+            "predicted": 11374,
+            "iou": 0.1020082231812158,
+            "recall": 0.14256541767583225
+          },
+          "bicycle": {
+            "support": 169,
+            "predicted": 165,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "motorcycle": {
+            "support": 111,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "truck": {
+            "support": 1812,
+            "predicted": 1250,
+            "iou": 0.032018874283788336,
+            "recall": 0.052428256070640174
+          },
+          "other vehicle": {
+            "support": 3993,
+            "predicted": 2024,
+            "iou": 0.04498089614449462,
+            "recall": 0.06486351114450288
+          },
+          "bus": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "construction vehicle": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "trailer": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "person": {
+            "support": 404,
+            "predicted": 188,
+            "iou": 0.008517887563884156,
+            "recall": 0.012376237623762377
+          },
+          "rider": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "road": {
+            "support": 46986,
+            "predicted": 22197,
+            "iou": 0.09929449899895128,
+            "recall": 0.13299706295492275
+          },
+          "parking": {
+            "support": 2643,
+            "predicted": 2913,
+            "iou": 0.017955294979846097,
+            "recall": 0.037079076806659096
+          },
+          "sidewalk": {
+            "support": 13550,
+            "predicted": 10248,
+            "iou": 0.0400314657809632,
+            "recall": 0.06760147601476015
+          },
+          "other ground": {
+            "support": 22908,
+            "predicted": 9187,
+            "iou": 0.03632547626735551,
+            "recall": 0.04910948140387637
+          },
+          "building": {
+            "support": 99901,
+            "predicted": 40792,
+            "iou": 0.10014387814146974,
+            "recall": 0.12819691494579633
+          },
+          "man-made structure": {
+            "support": 129296,
+            "predicted": 28497,
+            "iou": 0.06541305155126431,
+            "recall": 0.0749288454399208
+          },
+          "fence": {
+            "support": 14163,
+            "predicted": 9201,
+            "iou": 0.057721037620535105,
+            "recall": 0.09002330014827367
+          },
+          "vegetation": {
+            "support": 240075,
+            "predicted": 467175,
+            "iou": 0.38513242238068474,
+            "recall": 0.8191148599396022
+          },
+          "trunk": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "terrain": {
+            "support": 3138,
+            "predicted": 1126,
+            "iou": 0.019364092756394932,
+            "recall": 0.02581261950286807
+          },
+          "pole": {
+            "support": 4713,
+            "predicted": 2232,
+            "iou": 0.010181818181818183,
+            "recall": 0.014852535539995756
+          },
+          "traffic sign": {
+            "support": 603,
+            "predicted": 138,
+            "iou": 0.024896265560165973,
+            "recall": 0.029850746268656716
+          },
+          "barrier": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "traffic cone": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "other object": {
+            "support": 3913,
+            "predicted": 728,
+            "iou": 0.008693762225603129,
+            "recall": 0.010222335803731152
+          }
+        },
+        "pred_variance": 0.24004898673792208,
+        "target_variance": 0.6064342114329749,
+        "pred_mean_vector": [
+          0.03618177033527078,
+          0.0016429754261414956,
+          0.000488873722345416,
+          0.005855870557406767,
+          0.014611453061249505,
+          0.0,
+          0.0,
+          0.0,
+          0.004203845638230054,
+          0.0,
+          0.1135032513952821,
+          0.014364868093372025,
+          0.02082425226062025,
+          0.057703376435709455,
+          0.1886440586326937,
+          0.07026874926779737,
+          0.021719935516923288,
+          0.4086231224781695,
+          0.0,
+          0.014933425560776223,
+          0.013839446129502678,
+          0.0034808492607465795,
+          0.0,
+          0.0,
+          0.008780991279597337
+        ],
+        "target_mean_vector": [
+          0.03336369599969053,
+          0.0010151479536724024,
+          0.0004882503873061124,
+          0.003698919531640664,
+          0.008676895836216959,
+          0.0,
+          0.0,
+          0.0,
+          0.004730205899823711,
+          0.0,
+          0.07702130452410397,
+          0.009124549398896198,
+          0.02302255242521633,
+          0.04667766767344923,
+          0.152824483569665,
+          0.20514613114467414,
+          0.02442397257295314,
+          0.36962550337490985,
+          0.0,
+          0.015067135038742595,
+          0.010104035827714564,
+          0.0012871839027870982,
+          0.0,
+          0.0,
+          0.01317086881435947
+        ],
+        "cosine_hist_bins": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6000000000000001,
+          0.65,
+          0.7000000000000001,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9,
+          0.9500000000000001,
+          1.0
+        ],
+        "cosine_hist": [
+          110325,
+          82423,
+          20723,
+          9517,
+          9499,
+          28528,
+          12568,
+          15942,
+          60414,
+          9587,
+          4500,
+          4208,
+          4212,
+          4738,
+          5017,
+          5386,
+          7783,
+          131651,
+          7865,
+          74544
+        ]
+      },
+      "B2": {
+        "n_voxels": 609435,
+        "n_anchors": 590,
+        "cosine_mean": 0.4909013188038738,
+        "kl_mean": 1.689784793095903,
+        "top1_agreement": 0.38763773002863305,
+        "cosine_to_b0_pred": 0.827394548288665,
+        "cosine_to_b0_target": 0.4761390046218878,
+        "miou_present_classes": 0.04245094192008067,
+        "per_class": {
+          "car": {
+            "support": 21057,
+            "predicted": 18676,
+            "iou": 0.07718375535433498,
+            "recall": 0.1352044450776464
+          },
+          "bicycle": {
+            "support": 169,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "motorcycle": {
+            "support": 111,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "truck": {
+            "support": 1812,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "other vehicle": {
+            "support": 3993,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "bus": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "construction vehicle": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "trailer": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "person": {
+            "support": 404,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "rider": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "road": {
+            "support": 46986,
+            "predicted": 18814,
+            "iou": 0.0883768628942885,
+            "recall": 0.1137147235346699
+          },
+          "parking": {
+            "support": 2643,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "sidewalk": {
+            "support": 13550,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "other ground": {
+            "support": 22908,
+            "predicted": 111,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "building": {
+            "support": 99901,
+            "predicted": 155504,
+            "iou": 0.2096590855270013,
+            "recall": 0.4431086775908149
+          },
+          "man-made structure": {
+            "support": 129296,
+            "predicted": 24,
+            "iou": 3.09319805747162e-05,
+            "recall": 3.093676525182527e-05
+          },
+          "fence": {
+            "support": 14163,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "vegetation": {
+            "support": 240075,
+            "predicted": 416306,
+            "iou": 0.38886631880525263,
+            "recall": 0.7655066125169218
+          },
+          "trunk": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "terrain": {
+            "support": 3138,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "pole": {
+            "support": 4713,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "traffic sign": {
+            "support": 603,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "barrier": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "traffic cone": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "other object": {
+            "support": 3913,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          }
+        },
+        "pred_variance": 0.13206934134828546,
+        "target_variance": 0.6064342114329749,
+        "pred_mean_vector": [
+          0.040103206112430435,
+          0.0023596582606213875,
+          0.0010235728639076212,
+          0.00627541647354016,
+          0.025204964827197116,
+          0.0001271250048736734,
+          0.00013887809377179406,
+          0.00013635024966191273,
+          0.004897451787071235,
+          8.974454958758794e-05,
+          0.046900637013392366,
+          0.01473164758652319,
+          0.010493946333353021,
+          0.04270821941776834,
+          0.19093810496914293,
+          0.06944786327799797,
+          0.016689441575000276,
+          0.4684145647022132,
+          8.970876813250666e-05,
+          0.01073716412743236,
+          0.028141334437350927,
+          0.008629457379785587,
+          8.199266705634866e-05,
+          5.664911237844977e-05,
+          0.011582899606139585
+        ],
+        "target_mean_vector": [
+          0.03336369599969053,
+          0.0010151479536724024,
+          0.0004882503873061124,
+          0.003698919531640664,
+          0.008676895836216959,
+          0.0,
+          0.0,
+          0.0,
+          0.004730205899823711,
+          0.0,
+          0.07702130452410397,
+          0.009124549398896198,
+          0.02302255242521633,
+          0.04667766767344923,
+          0.152824483569665,
+          0.20514613114467414,
+          0.02442397257295314,
+          0.36962550337490985,
+          0.0,
+          0.015067135038742595,
+          0.010104035827714564,
+          0.0012871839027870982,
+          0.0,
+          0.0,
+          0.01317086881435947
+        ],
+        "cosine_hist_bins": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6000000000000001,
+          0.65,
+          0.7000000000000001,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9,
+          0.9500000000000001,
+          1.0
+        ],
+        "cosine_hist": [
+          57637,
+          58338,
+          51082,
+          47338,
+          33572,
+          23823,
+          18374,
+          16743,
+          13826,
+          12636,
+          13533,
+          12843,
+          12522,
+          11693,
+          12018,
+          13136,
+          15733,
+          18079,
+          27804,
+          138705
+        ]
+      },
+      "B2ref_existing_head": {
+        "n_voxels": 609435,
+        "n_anchors": 590,
+        "cosine_mean": 0.4946952099504236,
+        "kl_mean": 1.6667173635350605,
+        "top1_agreement": 0.3888404833985577,
+        "cosine_to_b0_pred": 0.8822365041801625,
+        "cosine_to_b0_target": 0.4761390046218878,
+        "miou_present_classes": 0.03935900913328518,
+        "per_class": {
+          "car": {
+            "support": 21057,
+            "predicted": 4687,
+            "iou": 0.03352202015335822,
+            "recall": 0.03965427173861424
+          },
+          "bicycle": {
+            "support": 169,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "motorcycle": {
+            "support": 111,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "truck": {
+            "support": 1812,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "other vehicle": {
+            "support": 3993,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "bus": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "construction vehicle": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "trailer": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "person": {
+            "support": 404,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "rider": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "road": {
+            "support": 46986,
+            "predicted": 46717,
+            "iou": 0.1365929987142476,
+            "recall": 0.2396671348912442
+          },
+          "parking": {
+            "support": 2643,
+            "predicted": 23,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "sidewalk": {
+            "support": 13550,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "other ground": {
+            "support": 22908,
+            "predicted": 18,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "building": {
+            "support": 99901,
+            "predicted": 78537,
+            "iou": 0.14704653420157748,
+            "recall": 0.22897668692005085
+          },
+          "man-made structure": {
+            "support": 129296,
+            "predicted": 531,
+            "iou": 0.0008865794991982237,
+            "recall": 0.0008894320009899764
+          },
+          "fence": {
+            "support": 14163,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "vegetation": {
+            "support": 240075,
+            "predicted": 478922,
+            "iou": 0.3904140318307517,
+            "recall": 0.840933041757784
+          },
+          "trunk": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "terrain": {
+            "support": 3138,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "pole": {
+            "support": 4713,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "traffic sign": {
+            "support": 603,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "barrier": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "traffic cone": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "other object": {
+            "support": 3913,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          }
+        },
+        "pred_variance": 0.07487979698365979,
+        "target_variance": 0.6064342114329749,
+        "pred_mean_vector": [
+          0.038697357946257394,
+          0.002249749098631099,
+          0.0006341592835066909,
+          0.008291990443279305,
+          0.030088668025154947,
+          6.908451527057659e-05,
+          7.385261608913375e-05,
+          6.819256075781602e-05,
+          0.0054114284826532275,
+          8.518010736984905e-05,
+          0.09092768888207328,
+          0.015195790790754136,
+          0.01166648706596165,
+          0.06059504596838564,
+          0.1427426877022827,
+          0.052051418298231136,
+          0.012451513787299823,
+          0.4528006692181432,
+          0.00011664648646406603,
+          0.013525339548575804,
+          0.03703039558104898,
+          0.01211259275535208,
+          0.00012523292747746966,
+          8.32585876021412e-05,
+          0.01290556821368557
+        ],
+        "target_mean_vector": [
+          0.03336369599969053,
+          0.0010151479536724024,
+          0.0004882503873061124,
+          0.003698919531640664,
+          0.008676895836216959,
+          0.0,
+          0.0,
+          0.0,
+          0.004730205899823711,
+          0.0,
+          0.07702130452410397,
+          0.009124549398896198,
+          0.02302255242521633,
+          0.04667766767344923,
+          0.152824483569665,
+          0.20514613114467414,
+          0.02442397257295314,
+          0.36962550337490985,
+          0.0,
+          0.015067135038742595,
+          0.010104035827714564,
+          0.0012871839027870982,
+          0.0,
+          0.0,
+          0.01317086881435947
+        ],
+        "cosine_hist_bins": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6000000000000001,
+          0.65,
+          0.7000000000000001,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9,
+          0.9500000000000001,
+          1.0
+        ],
+        "cosine_hist": [
+          35327,
+          62568,
+          59737,
+          41187,
+          30682,
+          27276,
+          23644,
+          19875,
+          17331,
+          15544,
+          13279,
+          12517,
+          13891,
+          13307,
+          13854,
+          15794,
+          17537,
+          21925,
+          37331,
+          116829
+        ]
+      }
+    },
+    "key_agree": {
+      "B0": {
+        "n_voxels": 609435,
+        "n_anchors": 590,
+        "cosine_mean": 0.4761390046218878,
+        "kl_mean": 1.7752765613270542,
+        "top1_agreement": 0.3939304437716902,
+        "cosine_to_b0_pred": 1.0000002284704368,
+        "cosine_to_b0_target": 0.4761390046218878,
+        "miou_present_classes": 0.021885024653982788,
+        "per_class": {
+          "car": {
+            "support": 21057,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "bicycle": {
+            "support": 169,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "motorcycle": {
+            "support": 111,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "truck": {
+            "support": 1812,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "other vehicle": {
+            "support": 3993,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "bus": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "construction vehicle": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "trailer": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "person": {
+            "support": 404,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "rider": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "road": {
+            "support": 46986,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "parking": {
+            "support": 2643,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "sidewalk": {
+            "support": 13550,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "other ground": {
+            "support": 22908,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "building": {
+            "support": 99901,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "man-made structure": {
+            "support": 129296,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "fence": {
+            "support": 14163,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "vegetation": {
+            "support": 240075,
+            "predicted": 609435,
+            "iou": 0.3939304437716902,
+            "recall": 1.0
+          },
+          "trunk": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "terrain": {
+            "support": 3138,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "pole": {
+            "support": 4713,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "traffic sign": {
+            "support": 603,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "barrier": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "traffic cone": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "other object": {
+            "support": 3913,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          }
+        },
+        "pred_variance": -5.551115123125783e-17,
+        "target_variance": 0.6064342114329749,
+        "pred_mean_vector": [
+          0.031205549836158752,
+          0.0014497205847874284,
+          0.0004903282388113439,
+          0.005840283818542957,
+          0.01667819730937481,
+          0.0,
+          0.0,
+          0.0,
+          0.002908524591475725,
+          0.0,
+          0.12706415355205536,
+          0.010614613071084023,
+          0.008956991136074066,
+          0.06182827427983284,
+          0.21672086417675018,
+          0.03429526463150978,
+          0.009797935374081135,
+          0.431858628988266,
+          0.0,
+          0.012921596877276897,
+          0.015289963223040104,
+          0.004852666053920984,
+          0.0,
+          0.0,
+          0.0069460500963032246
+        ],
+        "target_mean_vector": [
+          0.03336369599969053,
+          0.0010151479536724024,
+          0.0004882503873061124,
+          0.003698919531640664,
+          0.008676895836216959,
+          0.0,
+          0.0,
+          0.0,
+          0.004730205899823711,
+          0.0,
+          0.07702130452410397,
+          0.009124549398896198,
+          0.02302255242521633,
+          0.04667766767344923,
+          0.152824483569665,
+          0.20514613114467414,
+          0.02442397257295314,
+          0.36962550337490985,
+          0.0,
+          0.015067135038742595,
+          0.010104035827714564,
+          0.0012871839027870982,
+          0.0,
+          0.0,
+          0.01317086881435947
+        ],
+        "cosine_hist_bins": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6000000000000001,
+          0.65,
+          0.7000000000000001,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9,
+          0.9500000000000001,
+          1.0
+        ],
+        "cosine_hist": [
+          27108,
+          111280,
+          26051,
+          9317,
+          10300,
+          50779,
+          15164,
+          18865,
+          79479,
+          10670,
+          3153,
+          2503,
+          2394,
+          2577,
+          2858,
+          4027,
+          7901,
+          222652,
+          1970,
+          387
+        ]
+      },
+      "B1": {
+        "n_voxels": 609435,
+        "n_anchors": 590,
+        "cosine_mean": 0.4591031507846275,
+        "kl_mean": 3.502720261542205,
+        "top1_agreement": 0.3812990720913633,
+        "cosine_to_b0_pred": 0.7992756360924143,
+        "cosine_to_b0_target": 0.4761390046218878,
+        "miou_present_classes": 0.05848216364546862,
+        "per_class": {
+          "car": {
+            "support": 21057,
+            "predicted": 11374,
+            "iou": 0.1020082231812158,
+            "recall": 0.14256541767583225
+          },
+          "bicycle": {
+            "support": 169,
+            "predicted": 165,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "motorcycle": {
+            "support": 111,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "truck": {
+            "support": 1812,
+            "predicted": 1250,
+            "iou": 0.032018874283788336,
+            "recall": 0.052428256070640174
+          },
+          "other vehicle": {
+            "support": 3993,
+            "predicted": 2024,
+            "iou": 0.04498089614449462,
+            "recall": 0.06486351114450288
+          },
+          "bus": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "construction vehicle": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "trailer": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "person": {
+            "support": 404,
+            "predicted": 188,
+            "iou": 0.008517887563884156,
+            "recall": 0.012376237623762377
+          },
+          "rider": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "road": {
+            "support": 46986,
+            "predicted": 22197,
+            "iou": 0.09929449899895128,
+            "recall": 0.13299706295492275
+          },
+          "parking": {
+            "support": 2643,
+            "predicted": 2913,
+            "iou": 0.017955294979846097,
+            "recall": 0.037079076806659096
+          },
+          "sidewalk": {
+            "support": 13550,
+            "predicted": 10248,
+            "iou": 0.0400314657809632,
+            "recall": 0.06760147601476015
+          },
+          "other ground": {
+            "support": 22908,
+            "predicted": 9187,
+            "iou": 0.03632547626735551,
+            "recall": 0.04910948140387637
+          },
+          "building": {
+            "support": 99901,
+            "predicted": 40792,
+            "iou": 0.10014387814146974,
+            "recall": 0.12819691494579633
+          },
+          "man-made structure": {
+            "support": 129296,
+            "predicted": 28497,
+            "iou": 0.06541305155126431,
+            "recall": 0.0749288454399208
+          },
+          "fence": {
+            "support": 14163,
+            "predicted": 9201,
+            "iou": 0.057721037620535105,
+            "recall": 0.09002330014827367
+          },
+          "vegetation": {
+            "support": 240075,
+            "predicted": 467175,
+            "iou": 0.38513242238068474,
+            "recall": 0.8191148599396022
+          },
+          "trunk": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "terrain": {
+            "support": 3138,
+            "predicted": 1126,
+            "iou": 0.019364092756394932,
+            "recall": 0.02581261950286807
+          },
+          "pole": {
+            "support": 4713,
+            "predicted": 2232,
+            "iou": 0.010181818181818183,
+            "recall": 0.014852535539995756
+          },
+          "traffic sign": {
+            "support": 603,
+            "predicted": 138,
+            "iou": 0.024896265560165973,
+            "recall": 0.029850746268656716
+          },
+          "barrier": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "traffic cone": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "other object": {
+            "support": 3913,
+            "predicted": 728,
+            "iou": 0.008693762225603129,
+            "recall": 0.010222335803731152
+          }
+        },
+        "pred_variance": 0.24004898673792208,
+        "target_variance": 0.6064342114329749,
+        "pred_mean_vector": [
+          0.03618177033527078,
+          0.0016429754261414956,
+          0.000488873722345416,
+          0.005855870557406767,
+          0.014611453061249505,
+          0.0,
+          0.0,
+          0.0,
+          0.004203845638230054,
+          0.0,
+          0.1135032513952821,
+          0.014364868093372025,
+          0.02082425226062025,
+          0.057703376435709455,
+          0.1886440586326937,
+          0.07026874926779737,
+          0.021719935516923288,
+          0.4086231224781695,
+          0.0,
+          0.014933425560776223,
+          0.013839446129502678,
+          0.0034808492607465795,
+          0.0,
+          0.0,
+          0.008780991279597337
+        ],
+        "target_mean_vector": [
+          0.03336369599969053,
+          0.0010151479536724024,
+          0.0004882503873061124,
+          0.003698919531640664,
+          0.008676895836216959,
+          0.0,
+          0.0,
+          0.0,
+          0.004730205899823711,
+          0.0,
+          0.07702130452410397,
+          0.009124549398896198,
+          0.02302255242521633,
+          0.04667766767344923,
+          0.152824483569665,
+          0.20514613114467414,
+          0.02442397257295314,
+          0.36962550337490985,
+          0.0,
+          0.015067135038742595,
+          0.010104035827714564,
+          0.0012871839027870982,
+          0.0,
+          0.0,
+          0.01317086881435947
+        ],
+        "cosine_hist_bins": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6000000000000001,
+          0.65,
+          0.7000000000000001,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9,
+          0.9500000000000001,
+          1.0
+        ],
+        "cosine_hist": [
+          110325,
+          82423,
+          20723,
+          9517,
+          9499,
+          28528,
+          12568,
+          15942,
+          60414,
+          9587,
+          4500,
+          4208,
+          4212,
+          4738,
+          5017,
+          5386,
+          7783,
+          131651,
+          7865,
+          74544
+        ]
+      },
+      "B2": {
+        "n_voxels": 609435,
+        "n_anchors": 590,
+        "cosine_mean": 0.4909013188038738,
+        "kl_mean": 1.689784793095903,
+        "top1_agreement": 0.38763773002863305,
+        "cosine_to_b0_pred": 0.827394548288665,
+        "cosine_to_b0_target": 0.4761390046218878,
+        "miou_present_classes": 0.04245094192008067,
+        "per_class": {
+          "car": {
+            "support": 21057,
+            "predicted": 18676,
+            "iou": 0.07718375535433498,
+            "recall": 0.1352044450776464
+          },
+          "bicycle": {
+            "support": 169,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "motorcycle": {
+            "support": 111,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "truck": {
+            "support": 1812,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "other vehicle": {
+            "support": 3993,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "bus": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "construction vehicle": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "trailer": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "person": {
+            "support": 404,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "rider": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "road": {
+            "support": 46986,
+            "predicted": 18814,
+            "iou": 0.0883768628942885,
+            "recall": 0.1137147235346699
+          },
+          "parking": {
+            "support": 2643,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "sidewalk": {
+            "support": 13550,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "other ground": {
+            "support": 22908,
+            "predicted": 111,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "building": {
+            "support": 99901,
+            "predicted": 155504,
+            "iou": 0.2096590855270013,
+            "recall": 0.4431086775908149
+          },
+          "man-made structure": {
+            "support": 129296,
+            "predicted": 24,
+            "iou": 3.09319805747162e-05,
+            "recall": 3.093676525182527e-05
+          },
+          "fence": {
+            "support": 14163,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "vegetation": {
+            "support": 240075,
+            "predicted": 416306,
+            "iou": 0.38886631880525263,
+            "recall": 0.7655066125169218
+          },
+          "trunk": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "terrain": {
+            "support": 3138,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "pole": {
+            "support": 4713,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "traffic sign": {
+            "support": 603,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "barrier": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "traffic cone": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "other object": {
+            "support": 3913,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          }
+        },
+        "pred_variance": 0.13206934134828546,
+        "target_variance": 0.6064342114329749,
+        "pred_mean_vector": [
+          0.040103206112430435,
+          0.0023596582606213875,
+          0.0010235728639076212,
+          0.00627541647354016,
+          0.025204964827197116,
+          0.0001271250048736734,
+          0.00013887809377179406,
+          0.00013635024966191273,
+          0.004897451787071235,
+          8.974454958758794e-05,
+          0.046900637013392366,
+          0.01473164758652319,
+          0.010493946333353021,
+          0.04270821941776834,
+          0.19093810496914293,
+          0.06944786327799797,
+          0.016689441575000276,
+          0.4684145647022132,
+          8.970876813250666e-05,
+          0.01073716412743236,
+          0.028141334437350927,
+          0.008629457379785587,
+          8.199266705634866e-05,
+          5.664911237844977e-05,
+          0.011582899606139585
+        ],
+        "target_mean_vector": [
+          0.03336369599969053,
+          0.0010151479536724024,
+          0.0004882503873061124,
+          0.003698919531640664,
+          0.008676895836216959,
+          0.0,
+          0.0,
+          0.0,
+          0.004730205899823711,
+          0.0,
+          0.07702130452410397,
+          0.009124549398896198,
+          0.02302255242521633,
+          0.04667766767344923,
+          0.152824483569665,
+          0.20514613114467414,
+          0.02442397257295314,
+          0.36962550337490985,
+          0.0,
+          0.015067135038742595,
+          0.010104035827714564,
+          0.0012871839027870982,
+          0.0,
+          0.0,
+          0.01317086881435947
+        ],
+        "cosine_hist_bins": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6000000000000001,
+          0.65,
+          0.7000000000000001,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9,
+          0.9500000000000001,
+          1.0
+        ],
+        "cosine_hist": [
+          57637,
+          58338,
+          51082,
+          47338,
+          33572,
+          23823,
+          18374,
+          16743,
+          13826,
+          12636,
+          13533,
+          12843,
+          12522,
+          11693,
+          12018,
+          13136,
+          15733,
+          18079,
+          27804,
+          138705
+        ]
+      },
+      "B2ref_existing_head": {
+        "n_voxels": 609435,
+        "n_anchors": 590,
+        "cosine_mean": 0.4946952099504236,
+        "kl_mean": 1.6667173635350605,
+        "top1_agreement": 0.3888404833985577,
+        "cosine_to_b0_pred": 0.8822365041801625,
+        "cosine_to_b0_target": 0.4761390046218878,
+        "miou_present_classes": 0.03935900913328518,
+        "per_class": {
+          "car": {
+            "support": 21057,
+            "predicted": 4687,
+            "iou": 0.03352202015335822,
+            "recall": 0.03965427173861424
+          },
+          "bicycle": {
+            "support": 169,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "motorcycle": {
+            "support": 111,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "truck": {
+            "support": 1812,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "other vehicle": {
+            "support": 3993,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "bus": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "construction vehicle": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "trailer": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "person": {
+            "support": 404,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "rider": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "road": {
+            "support": 46986,
+            "predicted": 46717,
+            "iou": 0.1365929987142476,
+            "recall": 0.2396671348912442
+          },
+          "parking": {
+            "support": 2643,
+            "predicted": 23,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "sidewalk": {
+            "support": 13550,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "other ground": {
+            "support": 22908,
+            "predicted": 18,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "building": {
+            "support": 99901,
+            "predicted": 78537,
+            "iou": 0.14704653420157748,
+            "recall": 0.22897668692005085
+          },
+          "man-made structure": {
+            "support": 129296,
+            "predicted": 531,
+            "iou": 0.0008865794991982237,
+            "recall": 0.0008894320009899764
+          },
+          "fence": {
+            "support": 14163,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "vegetation": {
+            "support": 240075,
+            "predicted": 478922,
+            "iou": 0.3904140318307517,
+            "recall": 0.840933041757784
+          },
+          "trunk": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "terrain": {
+            "support": 3138,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "pole": {
+            "support": 4713,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "traffic sign": {
+            "support": 603,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "barrier": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "traffic cone": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "other object": {
+            "support": 3913,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          }
+        },
+        "pred_variance": 0.07487979698365979,
+        "target_variance": 0.6064342114329749,
+        "pred_mean_vector": [
+          0.038697357946257394,
+          0.002249749098631099,
+          0.0006341592835066909,
+          0.008291990443279305,
+          0.030088668025154947,
+          6.908451527057659e-05,
+          7.385261608913375e-05,
+          6.819256075781602e-05,
+          0.0054114284826532275,
+          8.518010736984905e-05,
+          0.09092768888207328,
+          0.015195790790754136,
+          0.01166648706596165,
+          0.06059504596838564,
+          0.1427426877022827,
+          0.052051418298231136,
+          0.012451513787299823,
+          0.4528006692181432,
+          0.00011664648646406603,
+          0.013525339548575804,
+          0.03703039558104898,
+          0.01211259275535208,
+          0.00012523292747746966,
+          8.32585876021412e-05,
+          0.01290556821368557
+        ],
+        "target_mean_vector": [
+          0.03336369599969053,
+          0.0010151479536724024,
+          0.0004882503873061124,
+          0.003698919531640664,
+          0.008676895836216959,
+          0.0,
+          0.0,
+          0.0,
+          0.004730205899823711,
+          0.0,
+          0.07702130452410397,
+          0.009124549398896198,
+          0.02302255242521633,
+          0.04667766767344923,
+          0.152824483569665,
+          0.20514613114467414,
+          0.02442397257295314,
+          0.36962550337490985,
+          0.0,
+          0.015067135038742595,
+          0.010104035827714564,
+          0.0012871839027870982,
+          0.0,
+          0.0,
+          0.01317086881435947
+        ],
+        "cosine_hist_bins": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6000000000000001,
+          0.65,
+          0.7000000000000001,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9,
+          0.9500000000000001,
+          1.0
+        ],
+        "cosine_hist": [
+          35327,
+          62568,
+          59737,
+          41187,
+          30682,
+          27276,
+          23644,
+          19875,
+          17331,
+          15544,
+          13279,
+          12517,
+          13891,
+          13307,
+          13854,
+          15794,
+          17537,
+          21925,
+          37331,
+          116829
+        ]
+      }
+    },
+    "observed": {
+      "B0": {
+        "n_voxels": 114115,
+        "n_anchors": 590,
+        "cosine_mean": 0.4047238595311663,
+        "kl_mean": 1.9903802090474016,
+        "top1_agreement": 0.31415677167769357,
+        "cosine_to_b0_pred": 1.000000228548804,
+        "cosine_to_b0_target": 0.4047238595311663,
+        "miou_present_classes": 0.017453153982094086,
+        "per_class": {
+          "car": {
+            "support": 7663,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "bicycle": {
+            "support": 140,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "motorcycle": {
+            "support": 24,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "truck": {
+            "support": 275,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "other vehicle": {
+            "support": 902,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "bus": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "construction vehicle": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "trailer": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "person": {
+            "support": 70,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "rider": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "road": {
+            "support": 25470,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "parking": {
+            "support": 798,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "sidewalk": {
+            "support": 6641,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "other ground": {
+            "support": 8078,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "building": {
+            "support": 7322,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "man-made structure": {
+            "support": 13619,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "fence": {
+            "support": 4042,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "vegetation": {
+            "support": 35850,
+            "predicted": 114115,
+            "iou": 0.31415677167769357,
+            "recall": 1.0
+          },
+          "trunk": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "terrain": {
+            "support": 1134,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "pole": {
+            "support": 802,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "traffic sign": {
+            "support": 88,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "barrier": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "traffic cone": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "other object": {
+            "support": 1197,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          }
+        },
+        "pred_variance": -1.1102230246251565e-16,
+        "target_variance": 0.6419973984810508,
+        "pred_mean_vector": [
+          0.031205549836158752,
+          0.0014497205847874284,
+          0.0004903282388113439,
+          0.005840283818542957,
+          0.01667819730937481,
+          0.0,
+          0.0,
+          0.0,
+          0.002908524591475725,
+          0.0,
+          0.12706415355205536,
+          0.010614613071084023,
+          0.008956991136074066,
+          0.06182827427983284,
+          0.21672086417675018,
+          0.03429526463150978,
+          0.009797935374081135,
+          0.431858628988266,
+          0.0,
+          0.012921596877276897,
+          0.015289963223040104,
+          0.004852666053920984,
+          0.0,
+          0.0,
+          0.0069460500963032246
+        ],
+        "target_mean_vector": [
+          0.0632441822226668,
+          0.0018323106012428179,
+          0.0006131757593639882,
+          0.0032985989315644135,
+          0.011002317266819078,
+          0.0,
+          0.0,
+          0.0,
+          0.004251748246206435,
+          0.0,
+          0.2193299683793886,
+          0.013352406316481755,
+          0.057609206488117605,
+          0.0744865400204992,
+          0.06152245873808228,
+          0.11328823030050379,
+          0.03632919363772907,
+          0.293902110984953,
+          0.0,
+          0.018349910575304974,
+          0.009440425361217692,
+          0.0011530164679045476,
+          0.0,
+          0.0,
+          0.01625982765793893
+        ],
+        "cosine_hist_bins": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6000000000000001,
+          0.65,
+          0.7000000000000001,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9,
+          0.9500000000000001,
+          1.0
+        ],
+        "cosine_hist": [
+          9151,
+          17809,
+          6861,
+          2512,
+          3214,
+          24888,
+          2306,
+          2114,
+          6020,
+          1243,
+          610,
+          544,
+          533,
+          625,
+          708,
+          948,
+          1812,
+          31976,
+          203,
+          38
+        ]
+      },
+      "B1": {
+        "n_voxels": 114115,
+        "n_anchors": 590,
+        "cosine_mean": 0.43139210589566224,
+        "kl_mean": 6.27121052772064,
+        "top1_agreement": 0.3757788196117951,
+        "cosine_to_b0_pred": 0.42171186614698863,
+        "cosine_to_b0_target": 0.4047238595311663,
+        "miou_present_classes": 0.10139054767969528,
+        "per_class": {
+          "car": {
+            "support": 7663,
+            "predicted": 6918,
+            "iou": 0.17389904194509298,
+            "recall": 0.28187393971029623
+          },
+          "bicycle": {
+            "support": 140,
+            "predicted": 40,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "motorcycle": {
+            "support": 24,
+            "predicted": 1,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "truck": {
+            "support": 275,
+            "predicted": 300,
+            "iou": 0.0994263862332696,
+            "recall": 0.1890909090909091
+          },
+          "other vehicle": {
+            "support": 902,
+            "predicted": 701,
+            "iou": 0.03286082474226804,
+            "recall": 0.0565410199556541
+          },
+          "bus": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "construction vehicle": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "trailer": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "person": {
+            "support": 70,
+            "predicted": 24,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "rider": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "road": {
+            "support": 25470,
+            "predicted": 25223,
+            "iou": 0.2748465949099688,
+            "recall": 0.42909305064782094
+          },
+          "parking": {
+            "support": 798,
+            "predicted": 1441,
+            "iou": 0.028952205882352942,
+            "recall": 0.07894736842105263
+          },
+          "sidewalk": {
+            "support": 6641,
+            "predicted": 8422,
+            "iou": 0.0856998702609197,
+            "recall": 0.17903930131004367
+          },
+          "other ground": {
+            "support": 8078,
+            "predicted": 5698,
+            "iou": 0.05571308146218101,
+            "recall": 0.08999752413963852
+          },
+          "building": {
+            "support": 7322,
+            "predicted": 11067,
+            "iou": 0.2033898305084746,
+            "recall": 0.42447418738049714
+          },
+          "man-made structure": {
+            "support": 13619,
+            "predicted": 10726,
+            "iou": 0.23515981735159816,
+            "recall": 0.3403333578089434
+          },
+          "fence": {
+            "support": 4042,
+            "predicted": 4069,
+            "iou": 0.10654843110504775,
+            "recall": 0.19322117763483423
+          },
+          "vegetation": {
+            "support": 35850,
+            "predicted": 36624,
+            "iou": 0.35349045680349606,
+            "recall": 0.5279776847977685
+          },
+          "trunk": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "terrain": {
+            "support": 1134,
+            "predicted": 555,
+            "iou": 0.09533073929961089,
+            "recall": 0.12962962962962962
+          },
+          "pole": {
+            "support": 802,
+            "predicted": 1476,
+            "iou": 0.02658855340243353,
+            "recall": 0.07356608478802992
+          },
+          "traffic sign": {
+            "support": 88,
+            "predicted": 135,
+            "iou": 0.027649769585253458,
+            "recall": 0.06818181818181818
+          },
+          "barrier": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "traffic cone": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "other object": {
+            "support": 1197,
+            "predicted": 695,
+            "iou": 0.025474254742547425,
+            "recall": 0.03926482873851295
+          }
+        },
+        "pred_variance": 0.6301445260999085,
+        "target_variance": 0.6419973984810508,
+        "pred_mean_vector": [
+          0.05730602393561432,
+          0.0015166701574020288,
+          0.0004765365492711541,
+          0.0035463834374360225,
+          0.009566894201231685,
+          0.0,
+          0.0,
+          0.0,
+          0.004568603097492626,
+          0.0,
+          0.21923258641448423,
+          0.019959141219534505,
+          0.06780628348298229,
+          0.05917103031468761,
+          0.08991825055130306,
+          0.09478202752521463,
+          0.036415201399946404,
+          0.29234177838861686,
+          0.0,
+          0.014683925448031968,
+          0.013878246325732136,
+          0.001765048862836662,
+          0.0,
+          0.0,
+          0.012503328988087738
+        ],
+        "target_mean_vector": [
+          0.0632441822226668,
+          0.0018323106012428179,
+          0.0006131757593639882,
+          0.0032985989315644135,
+          0.011002317266819078,
+          0.0,
+          0.0,
+          0.0,
+          0.004251748246206435,
+          0.0,
+          0.2193299683793886,
+          0.013352406316481755,
+          0.057609206488117605,
+          0.0744865400204992,
+          0.06152245873808228,
+          0.11328823030050379,
+          0.03632919363772907,
+          0.293902110984953,
+          0.0,
+          0.018349910575304974,
+          0.009440425361217692,
+          0.0011530164679045476,
+          0.0,
+          0.0,
+          0.01625982765793893
+        ],
+        "cosine_hist_bins": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6000000000000001,
+          0.65,
+          0.7000000000000001,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9,
+          0.9500000000000001,
+          1.0
+        ],
+        "cosine_hist": [
+          46633,
+          4352,
+          2890,
+          2200,
+          1894,
+          1708,
+          1572,
+          1397,
+          1330,
+          1324,
+          1282,
+          1434,
+          1400,
+          1626,
+          1737,
+          1679,
+          1672,
+          2090,
+          2714,
+          33181
+        ]
+      },
+      "B2": {
+        "n_voxels": 114115,
+        "n_anchors": 590,
+        "cosine_mean": 0.4558445411451373,
+        "kl_mean": 1.8318872525006387,
+        "top1_agreement": 0.3149805021250493,
+        "cosine_to_b0_pred": 0.6167540665116407,
+        "cosine_to_b0_target": 0.4047238595311663,
+        "miou_present_classes": 0.04887544438472521,
+        "per_class": {
+          "car": {
+            "support": 7663,
+            "predicted": 26796,
+            "iou": 0.11265741039715854,
+            "recall": 0.4553047109487146
+          },
+          "bicycle": {
+            "support": 140,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "motorcycle": {
+            "support": 24,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "truck": {
+            "support": 275,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "other vehicle": {
+            "support": 902,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "bus": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "construction vehicle": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "trailer": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "person": {
+            "support": 70,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "rider": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "road": {
+            "support": 25470,
+            "predicted": 26656,
+            "iou": 0.27273171208125796,
+            "recall": 0.43855516293678837
+          },
+          "parking": {
+            "support": 798,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "sidewalk": {
+            "support": 6641,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "other ground": {
+            "support": 8078,
+            "predicted": 1101,
+            "iou": 0.01335835725325679,
+            "recall": 0.014978955186927457
+          },
+          "building": {
+            "support": 7322,
+            "predicted": 25994,
+            "iou": 0.17384257628074132,
+            "recall": 0.6738596012018574
+          },
+          "man-made structure": {
+            "support": 13619,
+            "predicted": 17,
+            "iou": 0.00014669209329617132,
+            "recall": 0.00014685366032748365
+          },
+          "fence": {
+            "support": 4042,
+            "predicted": 8,
+            "iou": 0.0019792182088075212,
+            "recall": 0.0019792182088075212
+          },
+          "vegetation": {
+            "support": 35850,
+            "predicted": 33543,
+            "iou": 0.3050420326105354,
+            "recall": 0.45244072524407253
+          },
+          "trunk": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "terrain": {
+            "support": 1134,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "pole": {
+            "support": 802,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "traffic sign": {
+            "support": 88,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "barrier": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "traffic cone": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "other object": {
+            "support": 1197,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          }
+        },
+        "pred_variance": 0.09360609219686802,
+        "target_variance": 0.6419973984810508,
+        "pred_mean_vector": [
+          0.13332452534698486,
+          0.0071221630498413315,
+          0.0030485087373294827,
+          0.0128505002899661,
+          0.058863967930283284,
+          0.00024557680219611033,
+          0.0003326160927101252,
+          0.00029200571884048976,
+          0.00911302829906286,
+          0.00017848190991396205,
+          0.1298956012577797,
+          0.03252275730260274,
+          0.042436262820509,
+          0.09777297846156735,
+          0.11945850965671916,
+          0.05672411504815344,
+          0.03238655850193751,
+          0.17618810825416073,
+          0.00020241637326256552,
+          0.01811822453176036,
+          0.032417810463944825,
+          0.013864757734396035,
+          0.00014151106729234252,
+          9.816911717761708e-05,
+          0.022400844757885324
+        ],
+        "target_mean_vector": [
+          0.0632441822226668,
+          0.0018323106012428179,
+          0.0006131757593639882,
+          0.0032985989315644135,
+          0.011002317266819078,
+          0.0,
+          0.0,
+          0.0,
+          0.004251748246206435,
+          0.0,
+          0.2193299683793886,
+          0.013352406316481755,
+          0.057609206488117605,
+          0.0744865400204992,
+          0.06152245873808228,
+          0.11328823030050379,
+          0.03632919363772907,
+          0.293902110984953,
+          0.0,
+          0.018349910575304974,
+          0.009440425361217692,
+          0.0011530164679045476,
+          0.0,
+          0.0,
+          0.01625982765793893
+        ],
+        "cosine_hist_bins": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6000000000000001,
+          0.65,
+          0.7000000000000001,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9,
+          0.9500000000000001,
+          1.0
+        ],
+        "cosine_hist": [
+          4145,
+          6630,
+          8267,
+          8372,
+          7986,
+          7666,
+          7266,
+          6318,
+          5328,
+          4991,
+          5045,
+          5316,
+          4666,
+          4702,
+          4558,
+          3971,
+          3420,
+          3268,
+          3682,
+          8518
+        ]
+      },
+      "B2ref_existing_head": {
+        "n_voxels": 114115,
+        "n_anchors": 590,
+        "cosine_mean": 0.47481580101597015,
+        "kl_mean": 1.7764967143454655,
+        "top1_agreement": 0.3474126977172151,
+        "cosine_to_b0_pred": 0.6373177671283111,
+        "cosine_to_b0_target": 0.4047238595311663,
+        "miou_present_classes": 0.05183170716540969,
+        "per_class": {
+          "car": {
+            "support": 7663,
+            "predicted": 15202,
+            "iou": 0.11640056637859479,
+            "recall": 0.3111053112358084
+          },
+          "bicycle": {
+            "support": 140,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "motorcycle": {
+            "support": 24,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "truck": {
+            "support": 275,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "other vehicle": {
+            "support": 902,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "bus": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "construction vehicle": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "trailer": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "person": {
+            "support": 70,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "rider": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "road": {
+            "support": 25470,
+            "predicted": 41760,
+            "iou": 0.3135477316243992,
+            "recall": 0.6300745975657637
+          },
+          "parking": {
+            "support": 798,
+            "predicted": 226,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "sidewalk": {
+            "support": 6641,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "other ground": {
+            "support": 8078,
+            "predicted": 155,
+            "iou": 0.0008509603695599319,
+            "recall": 0.0008665511265164644
+          },
+          "building": {
+            "support": 7322,
+            "predicted": 22441,
+            "iou": 0.16763436641820323,
+            "recall": 0.5835837202950014
+          },
+          "man-made structure": {
+            "support": 13619,
+            "predicted": 665,
+            "iou": 0.01926644783787641,
+            "recall": 0.019825244144210295
+          },
+          "fence": {
+            "support": 4042,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "vegetation": {
+            "support": 35850,
+            "predicted": 33666,
+            "iou": 0.31527065634874085,
+            "recall": 0.46479776847977683
+          },
+          "trunk": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "terrain": {
+            "support": 1134,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "pole": {
+            "support": 802,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "traffic sign": {
+            "support": 88,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          },
+          "barrier": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "traffic cone": {
+            "support": 0,
+            "predicted": 0,
+            "iou": null,
+            "recall": null
+          },
+          "other object": {
+            "support": 1197,
+            "predicted": 0,
+            "iou": 0.0,
+            "recall": 0.0
+          }
+        },
+        "pred_variance": 0.11114182258163144,
+        "target_variance": 0.6419973984810508,
+        "pred_mean_vector": [
+          0.12728240255221124,
+          0.006408339843521265,
+          0.0014159261517630382,
+          0.009816085454659023,
+          0.05750827303629562,
+          0.00016905932633715808,
+          0.00019692785737187947,
+          0.0002222030358383267,
+          0.00602774449932683,
+          0.00018582371102051381,
+          0.19147538947929754,
+          0.04036153203655694,
+          0.027624862884460016,
+          0.08734960225227183,
+          0.12197869442098702,
+          0.0477824046724325,
+          0.016143869556658905,
+          0.20665900646290386,
+          0.0003920517622250643,
+          0.013928082498558965,
+          0.01741339417800229,
+          0.0065409345568311645,
+          0.00020556884442325538,
+          0.00018686436282697614,
+          0.0127249560660614
+        ],
+        "target_mean_vector": [
+          0.0632441822226668,
+          0.0018323106012428179,
+          0.0006131757593639882,
+          0.0032985989315644135,
+          0.011002317266819078,
+          0.0,
+          0.0,
+          0.0,
+          0.004251748246206435,
+          0.0,
+          0.2193299683793886,
+          0.013352406316481755,
+          0.057609206488117605,
+          0.0744865400204992,
+          0.06152245873808228,
+          0.11328823030050379,
+          0.03632919363772907,
+          0.293902110984953,
+          0.0,
+          0.018349910575304974,
+          0.009440425361217692,
+          0.0011530164679045476,
+          0.0,
+          0.0,
+          0.01625982765793893
+        ],
+        "cosine_hist_bins": [
+          0.0,
+          0.05,
+          0.1,
+          0.15000000000000002,
+          0.2,
+          0.25,
+          0.30000000000000004,
+          0.35000000000000003,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6000000000000001,
+          0.65,
+          0.7000000000000001,
+          0.75,
+          0.8,
+          0.8500000000000001,
+          0.9,
+          0.9500000000000001,
+          1.0
+        ],
+        "cosine_hist": [
+          6655,
+          8252,
+          8228,
+          7709,
+          6723,
+          6291,
+          5736,
+          4738,
+          4771,
+          4260,
+          3980,
+          3900,
+          3820,
+          4062,
+          4217,
+          4774,
+          5060,
+          5218,
+          5563,
+          10158
+        ]
+      }
+    }
+  },
+  "same_voxel_set": {
+    "n_anchors": 590,
+    "n_key_measured": 609435,
+    "n_key_sample_rule": 609435,
+    "n_symmetric_diff": 0,
+    "n_missing_mask": 0,
+    "index_digest": "278b8ccb5397c6672301e74cdbcb85f3ba96335585d60ea11ee35c9b26d16675"
+  },
+  "b1_max_dist_vox": 15.0,
+  "distance_to_evidence": {
+    "edges_vox": [
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      5.0,
+      10.0,
+      15.0,
+      Infinity
+    ],
+    "names": [
+      "<=1",
+      "1-2",
+      "2-3",
+      "3-5",
+      "5-10",
+      "10-15",
+      ">15"
+    ],
+    "key_hist": [
+      0,
+      37926,
+      26143,
+      44794,
+      82180,
+      50671,
+      367721
+    ],
+    "by_condition": {
+      "B0": {
+        "n": [
+          0.0,
+          37926.0,
+          26143.0,
+          44794.0,
+          82180.0,
+          50671.0,
+          367721.0
+        ],
+        "cosine": [
+          0.0,
+          0.4646670551601667,
+          0.4745496206780464,
+          0.4894387867720355,
+          0.5004469119811992,
+          0.4963721272290013,
+          0.4675945635801533
+        ],
+        "top1": [
+          0.0,
+          0.40650213573801613,
+          0.41368626400948627,
+          0.429879001652007,
+          0.44024093453394986,
+          0.4331866353535553,
+          0.3710911261527082
+        ]
+      },
+      "B1": {
+        "n": [
+          0.0,
+          37926.0,
+          26143.0,
+          44794.0,
+          82180.0,
+          50671.0,
+          367721.0
+        ],
+        "cosine": [
+          0.0,
+          0.4778301147451103,
+          0.45499067665682824,
+          0.449963044650218,
+          0.45350651761853966,
+          0.4044442598159374,
+          0.46736008346887675
+        ],
+        "top1": [
+          0.0,
+          0.42648842482729526,
+          0.40722181846000843,
+          0.40099120417913114,
+          0.40590167924069115,
+          0.35229223816384125,
+          0.370895325532129
+        ]
+      },
+      "B2": {
+        "n": [
+          0.0,
+          37926.0,
+          26143.0,
+          44794.0,
+          82180.0,
+          50671.0,
+          367721.0
+        ],
+        "cosine": [
+          0.0,
+          0.49469346209004234,
+          0.4902346810800565,
+          0.5014229382420271,
+          0.4938934210137559,
+          0.4910539764517535,
+          0.48858618012848315
+        ],
+        "top1": [
+          0.0,
+          0.37736645045615147,
+          0.36793788012087364,
+          0.3865026566057954,
+          0.38180822584570456,
+          0.3817568234295751,
+          0.3923490907508682
+        ]
+      },
+      "B2ref_existing_head": {
+        "n": [
+          0.0,
+          37926.0,
+          26143.0,
+          44794.0,
+          82180.0,
+          50671.0,
+          367721.0
+        ],
+        "cosine": [
+          0.0,
+          0.5158396859704911,
+          0.51537156815765,
+          0.5275433862332937,
+          0.5243177280956904,
+          0.5162245440451128,
+          0.4774561612448685
+        ],
+        "top1": [
+          0.0,
+          0.4015714813057006,
+          0.40263167960830815,
+          0.4208152877617538,
+          0.416962764662935,
+          0.4015511831224961,
+          0.3746155373231336
+        ]
+      }
+    }
+  },
+  "paired": {
+    "key:B2-B0:sum_cos": {
+      "delta": 0.014762314181985956,
+      "ci95": [
+        -0.004329230371042753,
+        0.035582371457816696
+      ],
+      "p_positive": 0.929,
+      "n_units": 30
+    },
+    "key:B2-B0:n_top1": {
+      "delta": -0.006292713743057094,
+      "ci95": [
+        -0.04124126591059636,
+        0.028969613764641956
+      ],
+      "p_positive": 0.3425,
+      "n_units": 30
+    },
+    "key:B2-B0:sum_kl": {
+      "delta": -0.08549176823115127,
+      "ci95": [
+        -0.15465314893176535,
+        -0.016021388007173284
+      ],
+      "p_positive": 0.0055,
+      "n_units": 30
+    },
+    "key:B2-B1:sum_cos": {
+      "delta": 0.031798168019246245,
+      "ci95": [
+        0.01587566985345641,
+        0.04854961923082835
+      ],
+      "p_positive": 1.0,
+      "n_units": 30
+    },
+    "key:B2-B1:n_top1": {
+      "delta": 0.006338657937269766,
+      "ci95": [
+        -0.018955971878679253,
+        0.03094662061665362
+      ],
+      "p_positive": 0.6695,
+      "n_units": 30
+    },
+    "key:B2-B1:sum_kl": {
+      "delta": -1.8129354684463022,
+      "ci95": [
+        -2.049842987361513,
+        -1.5800635178539397
+      ],
+      "p_positive": 0.0,
+      "n_units": 30
+    },
+    "key:B2-B2ref_existing_head:sum_cos": {
+      "delta": -0.003793891146549834,
+      "ci95": [
+        -0.018113450760188568,
+        0.00991761787290295
+      ],
+      "p_positive": 0.279,
+      "n_units": 30
+    },
+    "key:B2-B2ref_existing_head:n_top1": {
+      "delta": -0.0012027533699246022,
+      "ci95": [
+        -0.020409821840944975,
+        0.016802896020235332
+      ],
+      "p_positive": 0.441,
+      "n_units": 30
+    },
+    "key:B2-B2ref_existing_head:sum_kl": {
+      "delta": 0.023067429560842425,
+      "ci95": [
+        -0.019458908018292212,
+        0.06738823490150325
+      ],
+      "p_positive": 0.852,
+      "n_units": 30
+    },
+    "key:B1-B0:sum_cos": {
+      "delta": -0.01703585383726029,
+      "ci95": [
+        -0.03111792972783137,
+        -0.0024412725418329682
+      ],
+      "p_positive": 0.0125,
+      "n_units": 30
+    },
+    "key:B1-B0:n_top1": {
+      "delta": -0.01263137168032686,
+      "ci95": [
+        -0.03021683081290226,
+        0.005753587256739143
+      ],
+      "p_positive": 0.095,
+      "n_units": 30
+    },
+    "key:B1-B0:sum_kl": {
+      "delta": 1.7274437002151508,
+      "ci95": [
+        1.4860533750102367,
+        1.9615257224424851
+      ],
+      "p_positive": 1.0,
+      "n_units": 30
+    },
+    "key_agree:B2-B0:sum_cos": {
+      "delta": 0.014762314181985956,
+      "ci95": [
+        -0.004329230371042753,
+        0.035582371457816696
+      ],
+      "p_positive": 0.929,
+      "n_units": 30
+    },
+    "key_agree:B2-B0:n_top1": {
+      "delta": -0.006292713743057094,
+      "ci95": [
+        -0.04124126591059636,
+        0.028969613764641956
+      ],
+      "p_positive": 0.3425,
+      "n_units": 30
+    },
+    "key_agree:B2-B0:sum_kl": {
+      "delta": -0.08549176823115127,
+      "ci95": [
+        -0.15465314893176535,
+        -0.016021388007173284
+      ],
+      "p_positive": 0.0055,
+      "n_units": 30
+    },
+    "key_agree:B2-B1:sum_cos": {
+      "delta": 0.031798168019246245,
+      "ci95": [
+        0.01587566985345641,
+        0.04854961923082835
+      ],
+      "p_positive": 1.0,
+      "n_units": 30
+    },
+    "key_agree:B2-B1:n_top1": {
+      "delta": 0.006338657937269766,
+      "ci95": [
+        -0.018955971878679253,
+        0.03094662061665362
+      ],
+      "p_positive": 0.6695,
+      "n_units": 30
+    },
+    "key_agree:B2-B1:sum_kl": {
+      "delta": -1.8129354684463022,
+      "ci95": [
+        -2.049842987361513,
+        -1.5800635178539397
+      ],
+      "p_positive": 0.0,
+      "n_units": 30
+    },
+    "key_agree:B2-B2ref_existing_head:sum_cos": {
+      "delta": -0.003793891146549834,
+      "ci95": [
+        -0.018113450760188568,
+        0.00991761787290295
+      ],
+      "p_positive": 0.279,
+      "n_units": 30
+    },
+    "key_agree:B2-B2ref_existing_head:n_top1": {
+      "delta": -0.0012027533699246022,
+      "ci95": [
+        -0.020409821840944975,
+        0.016802896020235332
+      ],
+      "p_positive": 0.441,
+      "n_units": 30
+    },
+    "key_agree:B2-B2ref_existing_head:sum_kl": {
+      "delta": 0.023067429560842425,
+      "ci95": [
+        -0.019458908018292212,
+        0.06738823490150325
+      ],
+      "p_positive": 0.852,
+      "n_units": 30
+    },
+    "key_agree:B1-B0:sum_cos": {
+      "delta": -0.01703585383726029,
+      "ci95": [
+        -0.03111792972783137,
+        -0.0024412725418329682
+      ],
+      "p_positive": 0.0125,
+      "n_units": 30
+    },
+    "key_agree:B1-B0:n_top1": {
+      "delta": -0.01263137168032686,
+      "ci95": [
+        -0.03021683081290226,
+        0.005753587256739143
+      ],
+      "p_positive": 0.095,
+      "n_units": 30
+    },
+    "key_agree:B1-B0:sum_kl": {
+      "delta": 1.7274437002151508,
+      "ci95": [
+        1.4860533750102367,
+        1.9615257224424851
+      ],
+      "p_positive": 1.0,
+      "n_units": 30
+    },
+    "observed:B2-B0:sum_cos": {
+      "delta": 0.05112068161397098,
+      "ci95": [
+        0.014995283397157338,
+        0.08883361575183107
+      ],
+      "p_positive": 0.9975,
+      "n_units": 30
+    },
+    "observed:B2-B0:n_top1": {
+      "delta": 0.0008237304473557376,
+      "ci95": [
+        -0.053402154959567474,
+        0.05682981615922381
+      ],
+      "p_positive": 0.5025,
+      "n_units": 30
+    },
+    "observed:B2-B0:sum_kl": {
+      "delta": -0.15849295654676288,
+      "ci95": [
+        -0.27587986308427215,
+        -0.05742461956234249
+      ],
+      "p_positive": 0.0015,
+      "n_units": 30
+    },
+    "observed:B2-B1:sum_cos": {
+      "delta": 0.024452435249475046,
+      "ci95": [
+        -0.01630690286621107,
+        0.06628757291608751
+      ],
+      "p_positive": 0.8785,
+      "n_units": 30
+    },
+    "observed:B2-B1:n_top1": {
+      "delta": -0.06079831748674583,
+      "ci95": [
+        -0.10323005782136928,
+        -0.016605031128139186
+      ],
+      "p_positive": 0.002,
+      "n_units": 30
+    },
+    "observed:B2-B1:sum_kl": {
+      "delta": -4.4393232752200005,
+      "ci95": [
+        -4.911368084475794,
+        -3.9157967488169843
+      ],
+      "p_positive": 0.0,
+      "n_units": 30
+    },
+    "observed:B2-B2ref_existing_head:sum_cos": {
+      "delta": -0.01897125987083285,
+      "ci95": [
+        -0.03127288681049981,
+        -0.006364876562748837
+      ],
+      "p_positive": 0.002,
+      "n_units": 30
+    },
+    "observed:B2-B2ref_existing_head:n_top1": {
+      "delta": -0.0324321955921658,
+      "ci95": [
+        -0.047059646401921895,
+        -0.01847089564479945
+      ],
+      "p_positive": 0.0,
+      "n_units": 30
+    },
+    "observed:B2-B2ref_existing_head:sum_kl": {
+      "delta": 0.05539053815517334,
+      "ci95": [
+        0.00724115871534435,
+        0.10400858259992653
+      ],
+      "p_positive": 0.9865,
+      "n_units": 30
+    },
+    "observed:B1-B0:sum_cos": {
+      "delta": 0.02666824636449593,
+      "ci95": [
+        -0.02636493386633607,
+        0.0797183663282082
+      ],
+      "p_positive": 0.8355,
+      "n_units": 30
+    },
+    "observed:B1-B0:n_top1": {
+      "delta": 0.061622047934101566,
+      "ci95": [
+        0.0027737501544923804,
+        0.11962805843500861
+      ],
+      "p_positive": 0.98,
+      "n_units": 30
+    },
+    "observed:B1-B0:sum_kl": {
+      "delta": 4.280830318673238,
+      "ci95": [
+        3.718939125764319,
+        4.7879645543421026
+      ],
+      "p_positive": 1.0,
+      "n_units": 30
+    }
+  },
+  "seconds": 509.07779598236084,
+  "firewall": {
+    "n_opened": 2360,
+    "n_unique": 1180,
+    "violations": [],
+    "forbidden_patterns": [
+      "data/kitti/dataset",
+      "occ3d_gt",
+      "nuscenes",
+      "lingbot_occ3d_zeroshot",
+      "scale_gate/cache",
+      "preprocess/labels"
+    ]
+  },
+  "env": {
+    "python": "3.10.19",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "git": {
+      "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+      "branch": "feature-completion-study",
+      "dirty": true
+    }
+  }
+}

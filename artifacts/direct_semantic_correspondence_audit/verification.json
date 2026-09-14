@@ -1,0 +1,78 @@
+{
+  "checks": [
+    {
+      "name": "no_model_trained",
+      "pass": true,
+      "detail": "no optimiser/backward in 7 modules: True; frozen checkpoints intact: True"
+    },
+    {
+      "name": "trident_frozen",
+      "pass": true,
+      "detail": "token cache (SAM-H sha a7bf3b02f3eb, official config) written before this audit started: True; Trident is only read through that cache"
+    },
+    {
+      "name": "correspondence_without_mapper",
+      "pass": true,
+      "detail": "build_pairs reads raw Velodyne, GT cam0_to_world poses and calibration only (no LingBot depth/pose, no mapper, no semantic cache)"
+    },
+    {
+      "name": "calibration_consistent",
+      "pass": true,
+      "detail": "world->rectified-cam0->pixel round trip reproduces stored u_A/v_A to 7.59e-05 px on 1500 landmarks; A-frame self z-buffer residual max 0.71 m; K = P_rect_00[:3,:3] on (376, 1408), rect_cam_to_velo = cam0_to_velo @ inv(R_rect_00)"
+    },
+    {
+      "name": "visibility_on_all_accepted",
+      "pass": true,
+      "detail": "134569/134569 sampled stored pairs satisfy |z - z_ref| < tolerance and the depth range (strict flag consistent); pooled counts {'n_A': 496, 'n_landmarks': 744000, 'n_candidates': 10332000, 'accepted_loose': 2597279, 'accepted_strict': 2059573, 'rej_behind_or_range': 5539590, 'rej_outside': 393241, 'rej_no_reference': 137761, 'rej_occluded': 1452707, 'rej_in_front': 211422}"
+    },
+    {
+      "name": "same_point_same_geometry",
+      "pass": true,
+      "detail": "each row stores the landmark index into one X_world array; u_B is the projection of that same world point (source-inspected)"
+    },
+    {
+      "name": "local_controls_distinct",
+      "pass": true,
+      "detail": "C2 candidates exclude the landmark itself and require 0.3 m <= |X' - X| <= 1.5 m, |dz| < 0.3 m; C1/C3 permutations exclude self"
+    },
+    {
+      "name": "direct_image_space_sampling",
+      "pass": true,
+      "detail": "grid_sample at native pixel centres (align_corners=False) equals F.interpolate of the token grid to 2.4e-07; no mapper in the sampling path"
+    },
+    {
+      "name": "mapper_not_in_pair_selection",
+      "pass": true,
+      "detail": "pairs are selected in build_pairs (geometry only); mapper_compare only reads the already-selected pairs"
+    },
+    {
+      "name": "kitti360_only",
+      "pass": true,
+      "detail": "drives ['0003', '0006', '0007', '0010']; audited opens 22464, forbidden-path violations 0"
+    },
+    {
+      "name": "targets_untouched",
+      "pass": true,
+      "detail": "no SemanticKITTI / Occ3D / nuScenes path opened (0 violations)"
+    },
+    {
+      "name": "deterministic_filtering",
+      "pass": true,
+      "detail": "landmark subsampling seeded by the native frame index; control draws seeded by a fixed constant; thresholds are constants in common.py"
+    }
+  ],
+  "n_pass": 12,
+  "n_total": 12,
+  "env": {
+    "python": "3.10.19",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "git": {
+      "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+      "branch": "feature-completion-study",
+      "dirty": true
+    }
+  }
+}

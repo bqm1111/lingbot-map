@@ -1,0 +1,48 @@
+{
+  "checks": [
+    {
+      "name": "independent_lidar_projection",
+      "pass": true,
+      "detail": "sweep j -> anchor grid -> world -> camera j equals direct velodyne->camera projection to 2.5e-10; voxel index/centre round trip exact (1.0); visibility pass rate of voxels built from sweep j itself, seen from camera j: {'0006': [0.78, 0.765, 0.819], '0002': [0.736, 0.806, 0.794], '0005': [0.808, 0.765, 0.8]} (misses are occluded sub-voxel structure and range limits)"
+    },
+    {
+      "name": "deterministic_overlays",
+      "pass": true,
+      "detail": "6 overlays at fixed anchors {'2013_05_28_drive_0006_sync': [4, 604, 1204], '2013_05_28_drive_0002_sync': [400, 2000], '2013_05_28_drive_0000_sync': [900]} in /home/minh/workspace/lingbot-map_fork/artifacts/kitti360_data_scaling_7drives/targets/overlays"
+    },
+    {
+      "name": "inputs_unchanged",
+      "pass": true,
+      "detail": "10262/10262 semantic-target files copy every input array of the rebuilt sample byte for byte; 196/196 rebuilt samples of drives 0003/0007/0010/0006 match the adopted Gate 8C-1 inputs: all geometry/map arrays byte-identical; float-accumulated semantic evidence within the builder's own run-to-run envelope (sem_w relative <= 9.8e-04, differing on <= 1.00% of evidence voxels; sem_p <= 1 u8 step). Same envelope as the unchanged builder re-run on identical caches (artifacts/kitti360_data_scaling_7drives/targets/semw_nondeterminism.json)"
+    },
+    {
+      "name": "future_and_gt_not_in_inputs",
+      "pass": true,
+      "detail": "erasing every target array leaves the 32-channel input unchanged on 208/208 sampled anchors; 10262/10262 files have input frames <= t < target frames <= t+20"
+    },
+    {
+      "name": "occupancy_targets_trusted",
+      "pass": true,
+      "detail": "current rawtarget.py (raw Velodyne, GT poses) rebuilds the stored targets exactly on 6/6 anchors of 0000/0004/0006; 0 cross-sweep conflicting voxels are supervised; semantic-target builds for 8 drives ran inside the file-access audit with 0 forbidden opens (no SSCBench label, no SemanticKITTI/Occ3D)"
+    },
+    {
+      "name": "semantic_targets_registered",
+      "pass": true,
+      "detail": "all 8 drives built with GT poses + LiDAR visibility, mapper not used; totals {'occupied': 313689942, 'target_voxels': 84465755, 'mapper_target_voxels': 164596243, 'visible': 201030954, 'occluded': 496669411, 'no_reference': 158892402, 'contradictions': 1148288} (target/occupied 0.269, mapper-built 0.525)"
+    }
+  ],
+  "n_pass": 6,
+  "n_total": 6,
+  "env": {
+    "python": "3.10.19",
+    "torch": "2.7.1+cu128",
+    "numpy": "2.2.6",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "git": {
+      "commit": "0ba3b5deeb236a33022068445df85e135d006fc4",
+      "branch": "feature-completion-study",
+      "dirty": true
+    }
+  }
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "file": "easy_consistent_0000000117_0000000137_407.png",
+    "kind": "easy_consistent",
+    "native_A": 117,
+    "native_B": 137,
+    "landmark": 407,
+    "cos_same": 0.9722110033035278,
+    "top1_same": 1
+  },
+  {
+    "file": "hard_inconsistent_0000000117_0000000127_928.png",
+    "kind": "hard_inconsistent",
+    "native_A": 117,
+    "native_B": 127,
+    "landmark": 928,
+    "cos_same": 0.8674534559249878,
+    "top1_same": 0
+  },
+  {
+    "file": "easy_consistent_0000001204_0000001199_1473.png",
+    "kind": "easy_consistent",
+    "native_A": 1204,
+    "native_B": 1199,
+    "landmark": 1473,
+    "cos_same": 0.9839441776275635,
+    "top1_same": 1
+  },
+  {
+    "file": "hard_inconsistent_0000001204_0000001174_1064.png",
+    "kind": "hard_inconsistent",
+    "native_A": 1204,
+    "native_B": 1174,
+    "landmark": 1064,
+    "cos_same": 0.8619328141212463,
+    "top1_same": 0
+  },
+  {
+    "file": "easy_consistent_0000002204_0000002199_643.png",
+    "kind": "easy_consistent",
+    "native_A": 2204,
+    "native_B": 2199,
+    "landmark": 643,
+    "cos_same": 0.9774385690689087,
+    "top1_same": 1
+  },
+  {
+    "file": "hard_inconsistent_0000002204_0000002174_345.png",
+    "kind": "hard_inconsistent",
+    "native_A": 2204,
+    "native_B": 2174,
+    "landmark": 345,
+    "cos_same": 0.8567058444023132,
+    "top1_same": 0
+  },
+  {
+    "file": "easy_consistent_0000003313_0000003293_1455.png",
+    "kind": "easy_consistent",
+    "native_A": 3313,
+    "native_B": 3293,
+    "landmark": 1455,
+    "cos_same": 0.9775592684745789,
+    "top1_same": 1
+  },
+  {
+    "file": "hard_inconsistent_0000003313_0000003283_524.png",
+    "kind": "hard_inconsistent",
+    "native_A": 3313,
+    "native_B": 3283,
+    "landmark": 524,
+    "cos_same": 0.895612359046936,
+    "top1_same": 0
+  },
+  {
+    "file": "easy_consistent_0000004347_0000004337_1097.png",
+    "kind": "easy_consistent",
+    "native_A": 4347,
+    "native_B": 4337,
+    "landmark": 1097,
+    "cos_same": 0.9790874719619751,
+    "top1_same": 1
+  },
+  {
+    "file": "hard_inconsistent_0000004347_0000004342_709.png",
+    "kind": "hard_inconsistent",
+    "native_A": 4347,
+    "native_B": 4342,
+    "landmark": 709,
+    "cos_same": 0.8683567047119141,
+    "top1_same": 0
+  },
+  {
+    "file": "easy_consistent_0000005444_0000005414_738.png",
+    "kind": "easy_consistent",
+    "native_A": 5444,
+    "native_B": 5414,
+    "landmark": 738,
+    "cos_same": 0.9752514362335205,
+    "top1_same": 1
+  },
+  {
+    "file": "hard_inconsistent_0000005444_0000005404_1307.png",
+    "kind": "hard_inconsistent",
+    "native_A": 5444,
+    "native_B": 5404,
+    "landmark": 1307,
+    "cos_same": 0.8968929052352905,
+    "top1_same": 0
+  }
+]

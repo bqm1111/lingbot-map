@@ -1,0 +1,141 @@
+{
+ "experiment": "baseline_reconstruction/2026-09-14",
+ "frozen_at": "2026-09-14T12:21:03+02:00",
+ "git_head": "0ba3b5deeb236a33022068445df85e135d006fc4",
+ "git_status_dirty_files": 58,
+ "reason": "0006 result confirmed against Gate 13 M within the predeclared tolerance",
+ "sha256": {
+  "tools/baseline_reconstruction/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tools/baseline_reconstruction/cli/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tools/baseline_reconstruction/cli/build_target_clips.py": "8d6e989d747e638e4bb971abd7474ddffe35d44cd493182029dffb905b636dc6",
+  "tools/baseline_reconstruction/cli/eval_source.py": "8b024a6acfa1a257d088d00315d49d621de1af3da4eddf9c47f0fc4bff9673da",
+  "tools/baseline_reconstruction/cli/eval_targets.py": "a4568e5fc6eb1f15d42b640bf783cd3337d638b88d65d3b2d188441100be1c84",
+  "tools/baseline_reconstruction/cli/freeze_source.py": "ec8ad521f140dc6a917603f012ddb5ac0227fcc21a7aadd3d542ebe1e2c41c64",
+  "tools/baseline_reconstruction/cli/train_current.py": "94cfc3459e5f41340601d42e8b3f866e4cfca943abfd52f89c1cf32b812314b3",
+  "tools/baseline_reconstruction/config.py": "7d908805c58536d189f5e6a158f092efff3b903948a5428a9a50c808392a7017",
+  "tools/baseline_reconstruction/current/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tools/baseline_reconstruction/current/dataset.py": "16db6ff7a11891dc92ef35d072edbad245996b2366d481108a8dbcbd81a60556",
+  "tools/baseline_reconstruction/current/evaluate_source.py": "264e4a9a45f0c383a4e3a72cf5ea706e685bcb88638cfe3b9f567056e4d0244c",
+  "tools/baseline_reconstruction/current/geometry.py": "b6bd60ae78b23731950ebd7ec6bea176b256cf8ddc30fe7afbcd92112126fe8b",
+  "tools/baseline_reconstruction/current/recipe.py": "1b726d7ae071e40bfacd8c0eba1f3c834d76c064ad999e28637dfc9dfc00afaf",
+  "tools/baseline_reconstruction/current/train.py": "fe7acc203a3d0b2af129add7d622acdb2b83f18337982fac902098307555c834",
+  "tools/baseline_reconstruction/freeze.py": "9da32c5f4e7fb2bfbfa9a004595b60d5c71efc4795cf5b002553ed5dc6e91405",
+  "tools/baseline_reconstruction/metrics/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tools/baseline_reconstruction/metrics/comparability.py": "d5d0c723fb2a297467697ec12b92a7e2301cabdac62e4197da6dc2f61c7f737a",
+  "tools/baseline_reconstruction/metrics/occupancy.py": "c2ddc7b22a8059ae5945f67dc821e3c4314de800d15690b46e5afbe9159ef485",
+  "tools/baseline_reconstruction/targets/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tools/baseline_reconstruction/targets/adapters.py": "6c50e56c93b6b257622fce57e0109873dd9469088517d7271dc52012b54f6134",
+  "tools/baseline_reconstruction/targets/clips.py": "74c6a863311302605aa1938af378ba0f5be4fddfc79cf8be80c9e0bcbe605a86",
+  "tools/baseline_reconstruction/targets/evaluate.py": "e80299111461303d42beed8bf73d1aa00cfdb816d4d249508855b910b29b59e9",
+  "core/mapping/mapper.py": "9c04e302e0ec0e0876f8856c0f3c2c01b8db2c508126553322fbd6c9b0c92eac",
+  "core/mapping/depth.py": "ac0429d6744043913d5c6bc33b7037f08fe9256165d07d748ee2a5df28a32236",
+  "core/mapping/rays.py": "f46dc371869a226b33ae1e2db93b3740146949030a2b789149e050c20a061ee4",
+  "core/mapping/voxmap.py": "098d19b07dbb38857209851ba881bc3ea6ff627383b6337180b277fdf62bebc8",
+  "core/mapping/scale.py": "bbad06548cfc523d75dbcf11be81ee8005efaedd88249bf4d30c3c98a958971b",
+  "core/model/net.py": "8850ba29d42dca0df4027d968c16ff3f0275443b06af6d76dd045ace8a1c8956",
+  "core/model/losses.py": "f6dd7f58648e2f4d3abfc2ac9eadd0fc4308a413b99b0a73609cae45f7a53f11",
+  "core/model/sampler.py": "b0374c4ebb76e18cf92106756ed06055f93ea945255bfa58bc465c760ef18c65",
+  "core/run/_gate8a_train.py": "aa1330817a43ee33beb343c4e9ecf89c71d76b1e91c8a14cf5bdd2b25407517d",
+  "core/run/_gate8_train.py": "76d6da2bdba8241c14019a74a730699c1d7cf76663ced396a0a16c96b321c12f",
+  "core/datasets/sources.py": "76cbeb17c30f4924c28cdf754ba0ac052f3ab243b0c8f1476781e4ba2794b900",
+  "core/datasets/streams.py": "0296414ba75ede264f6343ec6811eed50a30fd300bb1fcb97702dfe3a5037e63",
+  "core/datasets/frames.py": "ab50655d9411bd5bca94ec6f23036a64a36a2a3ed00f1558edbcc4828b7b7671",
+  "core/datasets/grids.py": "f0f0256d42bda9d72ff4158d5c8138832444fd1a48e28ca61067caef3aa79584",
+  "core/datasets/occ3d_grid.py": "79ad30acbbc39a53c94deb18c897e99e56a1fc5620dfd5fd59ddb86400502270",
+  "core/datasets/occupancy.py": "c722c11db821b1ec3eeca504dd657d7b3ce7ee0b7cbbcf0a65de5240543dc974",
+  "core/datasets/kitti360_splits.py": "7b9ac416144103f681049cdf13200167fea53830f636296ef779ebdc0f49dfa5",
+  "core/datasets/audit.py": "f6e9ee191b4ea348474f43b233c2eb89bacb7dc0c6f9e6a82edca6315be6511a",
+  "core/evaluation/official_targets.py": "c896a893b7ed9f668717cf8f7baba15b75ce7a44cada691632421da8ae55b856",
+  "core/evaluation/regions.py": "4e201fa1b38bc2a299e66f4f2a5eecb40559581be8fa236273e7bcdf4e1d88fb",
+  "core/datasets/occ_datasets.py": "9db1474a80d7f286acd04cf16f8909ff44be12dada23ad5f9116f52a57367604",
+  "core/datasets/nuscenes.py": "a129a0c29ea8fc8303d98c9b89cccbf7cde36974543c3a540c97fef0e6973ac9",
+  "core/datasets/kitti_odometry.py": "3b742aec7a8c742a7d8c4ecdf9590c56bfe049359f88e460e67dc0c7eb5211bc",
+  "core/supervision/rawtarget.py": "b59c9f4d0c862d8140bba5faee7933576788f14e1ae483736b56e442285406aa",
+  "gates/gate7b/replay.py": "9136b474b4077e58c29b0ab8bd1ee3694e337511e494ee32642135704e7f6025",
+  "gates/gate7b/scale.py": "2b0b2db98700dbc2044efe2bd12a6dc07d787b554787e5bfa723f177bb59c198",
+  "gates/gate7b/depth.py": "d9ce5297a3707f7b60afdf340a3ab73bb2c1e5357f3ac82a01f0192d8e74ef50",
+  "checkpoints/lingbot-map/204754b/lingbot-map.pt": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72",
+  "artifacts/baseline_reconstruction/training_config.yaml": "4ef021b6444853877af830ac4c32bd2b23e5de63b9bc7575e03f0fd87c6ba43f",
+  "artifacts/baseline_reconstruction/checkpoints/geo_seed0_step06000.pt": "7f5e853dd05bdbde918da888503995a363f4cd4fa3e09061bcf4f765e2428faa",
+  "artifacts/baseline_reconstruction/checkpoints/geo_seed1_step06000.pt": "2c4d79be4fa7766e34e27dd7215b0ce1f82703dc7c73be3f2bd612d42a8e5341",
+  "artifacts/baseline_reconstruction/checkpoints/geo_seed2_step06000.pt": "6038b1f7d901a751b6be91609919b2414776a28fb4e627985ec82fe9945b076c"
+ },
+ "frozen_decisions": {
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "checkpoint_rule": "final step 6000 of every seed; no selection",
+  "occupancy_threshold": 0.0,
+  "seed_statistic": "mean over seeds primary; median secondary",
+  "train_drives": [
+   "2013_05_28_drive_0003_sync",
+   "2013_05_28_drive_0007_sync",
+   "2013_05_28_drive_0010_sync"
+  ],
+  "val_drive": "2013_05_28_drive_0006_sync",
+  "clip_offsets": [
+   -4,
+   -3,
+   -2,
+   -1,
+   0
+  ],
+  "target_protocols": {
+   "semantickitti": {
+    "dataset": "semantickitti",
+    "stream_rule": "sequence 08, image_2, stride-5 stream of 815 unique frames; anchor = last frame of each official clip; clip = stream indices i-4..i (native frames 20 apart end to end)",
+    "camera": "image_2 (left colour camera)",
+    "prediction_grid": "256x256x32 @ 0.2 m, origin (0, -25.6, -2), velodyne frame of the anchor",
+    "evaluation_grid": "same as prediction grid",
+    "evaluation_mask": "official voxels/<frame>.invalid == 0 (label != 255)",
+    "occupancy_target": "official label != 0 inside the mask",
+    "reduction": "none",
+    "anchors_expected": 163
+   },
+   "occ3d": {
+    "dataset": "occ3d",
+    "stream_rule": "150 official validation scenes, CAM_FRONT samples in timestamp order, one stream per scene; anchor = every sample with a label; clip = stream indices i-4..i",
+    "camera": "CAM_FRONT only (the frozen single-camera protocol)",
+    "prediction_grid": "canonical 400x400x32 @ 0.2 m, origin (-40, -40, -1), ego frame of the anchor sample",
+    "evaluation_grid": "native 200x200x16 @ 0.4 m",
+    "evaluation_mask": "mask_camera == 1, lidar mask off, ego x-index < 100 ignored (single front camera)",
+    "occupancy_target": "semantics != 17 (free) inside the mask",
+    "reduction": "native voxel occupied iff any of its 8 canonical subvoxels is occupied",
+    "anchors_expected": 1182
+   }
+  }
+ },
+ "excluded_from_freeze_render_only": [
+  "tools/baseline_reconstruction/reports/",
+  "tools/baseline_reconstruction/historical/",
+  "tools/baseline_reconstruction/cli/audit_history.py",
+  "tools/baseline_reconstruction/cli/report.py",
+  "tools/baseline_reconstruction/README.md"
+ ],
+ "source_summary": {
+  "ours_full_iou": {
+   "0": 0.13649204328513742,
+   "1": 0.1346087911248216,
+   "2": 0.134322630417346
+  },
+  "gate13_M_full_iou": {
+   "0": 0.1354,
+   "1": 0.1336,
+   "2": 0.1346
+  },
+  "per_seed_abs_diff": {
+   "0": 0.0010920432851374284,
+   "1": 0.0010087911248216064,
+   "2": 0.0002773695826540079
+  },
+  "mean_abs_diff": 0.0006078216091016664,
+  "tolerance": {
+   "mean_full_iou_abs": 0.003,
+   "per_seed_full_iou_abs": 0.005
+  },
+  "pass": true
+ },
+ "target_datasets_opened_before_freeze": false
+}
