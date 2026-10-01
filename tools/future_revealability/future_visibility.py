@@ -48,11 +48,17 @@ class RevealRecord:
     last_top1: np.ndarray         # [R, H] uint8   argmax of the latest view, 255 if no view
     first_top1: np.ndarray        # [R] uint8      argmax of the first view, 255 if never
     frames: List[Dict]
+    #: Additive, only filled when ``reveal_record(..., want_mean_prob=True)``: the mean future probability
+    #: itself at the LAST horizon, ``[R, 18]`` float32, all zeros where the voxel is never visible. Its
+    #: argmax is exactly ``mean_top1[:, -1]`` -- Gate 21 distils the vector whose argmax Gate 20 reported,
+    #: and ``tools.future_semantic_prior.targets`` asserts that agreement voxel for voxel.
+    mean_prob: Optional[np.ndarray] = None
 
 
 @torch.no_grad()
 def reveal_record(stream: DriveStream, geo: TF.DriveGeometry, t: int, views: ViewCache,
-                  rows_mask: Optional[torch.Tensor], cfg: C.TargetConfig, device) -> RevealRecord:
+                  rows_mask: Optional[torch.Tensor], cfg: C.TargetConfig, device,
+                  want_mean_prob: bool = False) -> RevealRecord:
     n = C.N_VOXELS
     anchor = stream.frames[t]
     t0 = anchor.time_s
@@ -126,7 +132,9 @@ def reveal_record(stream: DriveStream, geo: TF.DriveGeometry, t: int, views: Vie
                         mean_top1=snap_mean[:, rows].T.cpu().numpy(),
                         last_top1=snap_last[:, rows].T.cpu().numpy(),
                         first_top1=first_top1[rows].cpu().numpy(),
-                        frames=frames)
+                        frames=frames,
+                        mean_prob=(psum[rows] / n_views[rows].clamp(min=1)[:, None]).cpu().numpy()
+                        if want_mean_prob else None)
 
 
 def nested_levels_ok(r: RevealRecord) -> bool:

@@ -1,0 +1,626 @@
+{
+ "version": "gate21.1",
+ "n_checks": 12,
+ "all_ok": true,
+ "failed": [],
+ "checks": [
+  {
+   "name": "decision rule unchanged since it was hashed",
+   "expected": "82c42383a456ce39892b32b4a13b39867b1143b55c011c7418689e72a66deb38",
+   "actual": "82c42383a456ce39892b32b4a13b39867b1143b55c011c7418689e72a66deb38",
+   "ok": true
+  },
+  {
+   "name": "config thresholds appear verbatim in decision_rule.md",
+   "values": {
+    "a_delta_e2_min": 1.0,
+    "c_delta_e2_max": 0.25,
+    "b0_e2_miou": 10.18
+   },
+   "found_in_document": {
+    "a_delta_e2_min": true,
+    "c_delta_e2_max": true,
+    "b0_e2_miou": true
+   },
+   "ok": true
+  },
+  {
+   "name": "no input channel is derived from a future frame",
+   "channels": [
+    "evidence_dist",
+    "evidence_mask",
+    "evidence_proj",
+    "hard_F",
+    "hard_S",
+    "height",
+    "occupancy",
+    "range",
+    "trunk"
+   ],
+   "not_whitelisted": [],
+   "suspiciously_named": [],
+   "ok": true
+  },
+  {
+   "name": "the head input opens no file of the Gate 20 or Gate 21 reveal caches",
+   "forbidden_patterns": [
+    "data/kitti/dataset",
+    "occ3d_gt",
+    "nuscenes",
+    "lingbot_occ3d_zeroshot",
+    "scale_gate/cache",
+    "preprocess/labels",
+    "eval_masks",
+    "samples_gtsem",
+    "data_3d_semantics",
+    "velodyne",
+    "data_3d_raw",
+    "data_poses",
+    "targets",
+    "delayed_targets",
+    "lingbot_k360_7drives",
+    "data_poses",
+    "/media/SSD1/MINH_DATASETS/lingbot_gate21_semantic_prior",
+    "lingbot_gate20_future_reveal"
+   ],
+   "rows": [
+    {
+     "t": 4,
+     "n_opened": 4,
+     "violations": [],
+     "reveal_cache_hits": [],
+     "channels": 63
+    },
+    {
+     "t": 7,
+     "n_opened": 4,
+     "violations": [],
+     "reveal_cache_hits": [],
+     "channels": 63
+    },
+    {
+     "t": 10,
+     "n_opened": 4,
+     "violations": [],
+     "reveal_cache_hits": [],
+     "channels": 63
+    },
+    {
+     "t": 13,
+     "n_opened": 4,
+     "violations": [],
+     "reveal_cache_hits": [],
+     "channels": 63
+    }
+   ],
+   "ok": true
+  },
+  {
+   "name": "the prediction is bit-identical when the reveal mask is corrupted",
+   "control": "C3_full",
+   "seed": 0,
+   "used_trained_checkpoint": true,
+   "rows": [
+    {
+     "t": 4,
+     "n": 4174,
+     "identical_under_shuffle": true,
+     "identical_under_all_hidden": true,
+     "partition_did_change": true,
+     "E1_E2_partition_E0": true
+    },
+    {
+     "t": 7,
+     "n": 4035,
+     "identical_under_shuffle": true,
+     "identical_under_all_hidden": true,
+     "partition_did_change": true,
+     "E1_E2_partition_E0": true
+    },
+    {
+     "t": 10,
+     "n": 4022,
+     "identical_under_shuffle": true,
+     "identical_under_all_hidden": true,
+     "partition_did_change": true,
+     "E1_E2_partition_E0": true
+    },
+    {
+     "t": 13,
+     "n": 2432,
+     "identical_under_shuffle": true,
+     "identical_under_all_hidden": true,
+     "partition_did_change": true,
+     "E1_E2_partition_E0": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "name": "every training run's firewall is clean and forbids the dev drive and all GT",
+   "rows": [
+    {
+     "control": "C1_prior",
+     "seed": 0,
+     "present": true,
+     "violations": [],
+     "n_opened": 12006,
+     "dev_drive_forbidden": true,
+     "labels_forbidden": true,
+     "eval_masks_forbidden": true,
+     "lidar_forbidden": true
+    },
+    {
+     "control": "C1_prior",
+     "seed": 1,
+     "present": true,
+     "violations": [],
+     "n_opened": 12006,
+     "dev_drive_forbidden": true,
+     "labels_forbidden": true,
+     "eval_masks_forbidden": true,
+     "lidar_forbidden": true
+    },
+    {
+     "control": "C1_prior",
+     "seed": 2,
+     "present": true,
+     "violations": [],
+     "n_opened": 12006,
+     "dev_drive_forbidden": true,
+     "labels_forbidden": true,
+     "eval_masks_forbidden": true,
+     "lidar_forbidden": true
+    },
+    {
+     "control": "C2_geometry",
+     "seed": 0,
+     "present": true,
+     "violations": [],
+     "n_opened": 36006,
+     "dev_drive_forbidden": true,
+     "labels_forbidden": true,
+     "eval_masks_forbidden": true,
+     "lidar_forbidden": true
+    },
+    {
+     "control": "C2_geometry",
+     "seed": 1,
+     "present": true,
+     "violations": [],
+     "n_opened": 36006,
+     "dev_drive_forbidden": true,
+     "labels_forbidden": true,
+     "eval_masks_forbidden": true,
+     "lidar_forbidden": true
+    },
+    {
+     "control": "C2_geometry",
+     "seed": 2,
+     "present": true,
+     "violations": [],
+     "n_opened": 36006,
+     "dev_drive_forbidden": true,
+     "labels_forbidden": true,
+     "eval_masks_forbidden": true,
+     "lidar_forbidden": true
+    },
+    {
+     "control": "C3_full",
+     "seed": 0,
+     "present": true,
+     "violations": [],
+     "n_opened": 36006,
+     "dev_drive_forbidden": true,
+     "labels_forbidden": true,
+     "eval_masks_forbidden": true,
+     "lidar_forbidden": true
+    },
+    {
+     "control": "C3_full",
+     "seed": 1,
+     "present": true,
+     "violations": [],
+     "n_opened": 36006,
+     "dev_drive_forbidden": true,
+     "labels_forbidden": true,
+     "eval_masks_forbidden": true,
+     "lidar_forbidden": true
+    },
+    {
+     "control": "C3_full",
+     "seed": 2,
+     "present": true,
+     "violations": [],
+     "n_opened": 36006,
+     "dev_drive_forbidden": true,
+     "labels_forbidden": true,
+     "eval_masks_forbidden": true,
+     "lidar_forbidden": true
+    },
+    {
+     "control": "C4_semantics",
+     "seed": 0,
+     "present": true,
+     "violations": [],
+     "n_opened": 36006,
+     "dev_drive_forbidden": true,
+     "labels_forbidden": true,
+     "eval_masks_forbidden": true,
+     "lidar_forbidden": true
+    },
+    {
+     "control": "C4_semantics",
+     "seed": 1,
+     "present": true,
+     "violations": [],
+     "n_opened": 36006,
+     "dev_drive_forbidden": true,
+     "labels_forbidden": true,
+     "eval_masks_forbidden": true,
+     "lidar_forbidden": true
+    },
+    {
+     "control": "C4_semantics",
+     "seed": 2,
+     "present": true,
+     "violations": [],
+     "n_opened": 36006,
+     "dev_drive_forbidden": true,
+     "labels_forbidden": true,
+     "eval_masks_forbidden": true,
+     "lidar_forbidden": true
+    }
+   ],
+   "n_runs": 12,
+   "ok": true
+  },
+  {
+   "name": "the frozen geometry network is identical before, during and after every run",
+   "requires_grad_any": false,
+   "live_digest": "f1d399d549ed3152",
+   "rows": [
+    {
+     "control": "C1_prior",
+     "seed": 0,
+     "unchanged": true,
+     "grads_none": true,
+     "matches_fresh_load": true
+    },
+    {
+     "control": "C1_prior",
+     "seed": 1,
+     "unchanged": true,
+     "grads_none": true,
+     "matches_fresh_load": true
+    },
+    {
+     "control": "C1_prior",
+     "seed": 2,
+     "unchanged": true,
+     "grads_none": true,
+     "matches_fresh_load": true
+    },
+    {
+     "control": "C2_geometry",
+     "seed": 0,
+     "unchanged": true,
+     "grads_none": true,
+     "matches_fresh_load": true
+    },
+    {
+     "control": "C2_geometry",
+     "seed": 1,
+     "unchanged": true,
+     "grads_none": true,
+     "matches_fresh_load": true
+    },
+    {
+     "control": "C2_geometry",
+     "seed": 2,
+     "unchanged": true,
+     "grads_none": true,
+     "matches_fresh_load": true
+    },
+    {
+     "control": "C3_full",
+     "seed": 0,
+     "unchanged": true,
+     "grads_none": true,
+     "matches_fresh_load": true
+    },
+    {
+     "control": "C3_full",
+     "seed": 1,
+     "unchanged": true,
+     "grads_none": true,
+     "matches_fresh_load": true
+    },
+    {
+     "control": "C3_full",
+     "seed": 2,
+     "unchanged": true,
+     "grads_none": true,
+     "matches_fresh_load": true
+    },
+    {
+     "control": "C4_semantics",
+     "seed": 0,
+     "unchanged": true,
+     "grads_none": true,
+     "matches_fresh_load": true
+    },
+    {
+     "control": "C4_semantics",
+     "seed": 1,
+     "unchanged": true,
+     "grads_none": true,
+     "matches_fresh_load": true
+    },
+    {
+     "control": "C4_semantics",
+     "seed": 2,
+     "unchanged": true,
+     "grads_none": true,
+     "matches_fresh_load": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "name": "E0 is bit-exactly the frozen region completed_never_observed",
+   "rows": [
+    {
+     "t": 4,
+     "n_rebuilt": 4174,
+     "n_cached": 4174,
+     "identical": true,
+     "sem_gt_identical": true
+    },
+    {
+     "t": 223,
+     "n_rebuilt": 3835,
+     "n_cached": 3835,
+     "identical": true,
+     "sem_gt_identical": true
+    },
+    {
+     "t": 442,
+     "n_rebuilt": 5482,
+     "n_cached": 5482,
+     "identical": true,
+     "sem_gt_identical": true
+    },
+    {
+     "t": 661,
+     "n_rebuilt": 2108,
+     "n_cached": 2108,
+     "identical": true,
+     "sem_gt_identical": true
+    },
+    {
+     "t": 880,
+     "n_rebuilt": 5063,
+     "n_cached": 5063,
+     "identical": true,
+     "sem_gt_identical": true
+    },
+    {
+     "t": 1099,
+     "n_rebuilt": 1891,
+     "n_cached": 1891,
+     "identical": true,
+     "sem_gt_identical": true
+    },
+    {
+     "t": 1318,
+     "n_rebuilt": 3399,
+     "n_cached": 3399,
+     "identical": true,
+     "sem_gt_identical": true
+    },
+    {
+     "t": 1537,
+     "n_rebuilt": 4399,
+     "n_cached": 4399,
+     "identical": true,
+     "sem_gt_identical": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "name": "the populations reproduce Gate 20's frozen counts",
+   "dev": {
+    "E0": 2743212,
+    "E1": 876254,
+    "E2": 1866958
+   },
+   "expected_dev": {
+    "E0": 2743212,
+    "E1": 876254,
+    "E2": 1866958
+   },
+   "UR_train": 2280255,
+   "expected_UR_train": 2280255,
+   "partition_ok": true,
+   "ok": true
+  },
+  {
+   "name": "the training targets are a well-formed subset of E0 with Gate 20's own readout",
+   "n_checked": 39,
+   "rows": [
+    {
+     "drive": "0003",
+     "t": 4,
+     "n": 1548,
+     "subset_of_E0": true,
+     "equals_revealed_rows": true,
+     "sums_to_one": true,
+     "argmax_disagreements": 0,
+     "argmax_non_tie": 0,
+     "sem_gt_in_1_18": true
+    },
+    {
+     "drive": "0003",
+     "t": 18,
+     "n": 150,
+     "subset_of_E0": true,
+     "equals_revealed_rows": true,
+     "sums_to_one": true,
+     "argmax_disagreements": 0,
+     "argmax_non_tie": 0,
+     "sem_gt_in_1_18": true
+    },
+    {
+     "drive": "0003",
+     "t": 32,
+     "n": 1220,
+     "subset_of_E0": true,
+     "equals_revealed_rows": true,
+     "sums_to_one": true,
+     "argmax_disagreements": 1,
+     "argmax_non_tie": 0,
+     "sem_gt_in_1_18": true
+    },
+    {
+     "drive": "0003",
+     "t": 46,
+     "n": 1754,
+     "subset_of_E0": true,
+     "equals_revealed_rows": true,
+     "sums_to_one": true,
+     "argmax_disagreements": 0,
+     "argmax_non_tie": 0,
+     "sem_gt_in_1_18": true
+    },
+    {
+     "drive": "0003",
+     "t": 60,
+     "n": 1059,
+     "subset_of_E0": true,
+     "equals_revealed_rows": true,
+     "sums_to_one": true,
+     "argmax_disagreements": 0,
+     "argmax_non_tie": 0,
+     "sem_gt_in_1_18": true
+    },
+    {
+     "drive": "0003",
+     "t": 74,
+     "n": 2099,
+     "subset_of_E0": true,
+     "equals_revealed_rows": true,
+     "sums_to_one": true,
+     "argmax_disagreements": 0,
+     "argmax_non_tie": 0,
+     "sem_gt_in_1_18": true
+    }
+   ],
+   "total_argmax_disagreements": 6,
+   "total_argmax_non_tie": 0,
+   "note": "the stored target is float16; an argmax may differ from Gate 20's only at an exact tie",
+   "ok": true
+  },
+  {
+   "name": "C1 is a class prior: one constant class, from the training distribution",
+   "empirical_distribution": [
+    0.027382,
+    0.007394,
+    0.004779,
+    0.007055,
+    0.025142,
+    0.017961,
+    0.215375,
+    0.034927,
+    0.042243,
+    0.129988,
+    0.016003,
+    0.023642,
+    0.2775,
+    0.088611,
+    0.019632,
+    0.005512,
+    0.023547,
+    0.033304
+   ],
+   "n_target_voxels": 2280255,
+   "empirical_top3": [
+    "vegetation",
+    "road",
+    "other-ground"
+   ],
+   "rows": [
+    {
+     "seed": 0,
+     "n_distinct_predicted_classes": 1,
+     "predicted_class": [
+      13
+     ],
+     "tv_from_empirical_pct": 12.546,
+     "argmax_learned": 13,
+     "argmax_in_empirical_top3": true
+    },
+    {
+     "seed": 1,
+     "n_distinct_predicted_classes": 1,
+     "predicted_class": [
+      7
+     ],
+     "tv_from_empirical_pct": 12.809,
+     "argmax_learned": 7,
+     "argmax_in_empirical_top3": true
+    },
+    {
+     "seed": 2,
+     "n_distinct_predicted_classes": 1,
+     "predicted_class": [
+      7
+     ],
+     "tv_from_empirical_pct": 12.647,
+     "argmax_learned": 7,
+     "argmax_in_empirical_top3": true
+    }
+   ],
+   "ok": true
+  },
+  {
+   "name": "every trained run is a distinct model",
+   "n_runs": 12,
+   "parameter_digests": {
+    "C1_prior_seed0": "8059ca8a7dc8e824",
+    "C1_prior_seed1": "8cd979e9a242f74c",
+    "C1_prior_seed2": "09331cc4bd7395af",
+    "C2_geometry_seed0": "b0a7dbe0e99886e6",
+    "C2_geometry_seed1": "a2916c2ab4717db5",
+    "C2_geometry_seed2": "31a5307b3daa1d94",
+    "C3_full_seed0": "3eb9be9d2fb75d8b",
+    "C3_full_seed1": "d10945007467ff57",
+    "C3_full_seed2": "b0500ef7ab2ca11a",
+    "C4_semantics_seed0": "79117b1a714c2be2",
+    "C4_semantics_seed1": "e9e42fcb69fbd103",
+    "C4_semantics_seed2": "e6038dd532fdcd15"
+   },
+   "prediction_digests": {
+    "C1_prior_seed0": "7c47f8a7dfc3fb63",
+    "C1_prior_seed1": "e20b5ec303ab90d9",
+    "C1_prior_seed2": "e20b5ec303ab90d9",
+    "C2_geometry_seed0": "95f6ad3f50f6f3b2",
+    "C2_geometry_seed1": "11d0e05740699724",
+    "C2_geometry_seed2": "e3bd0f4ab8eb83cf",
+    "C3_full_seed0": "7ba895a9137cce2c",
+    "C3_full_seed1": "ae9773d2de0ae1a8",
+    "C3_full_seed2": "2d3c5da7fd9aae6a",
+    "C4_semantics_seed0": "3659eddd192a90ce",
+    "C4_semantics_seed1": "e56649396b1693fc",
+    "C4_semantics_seed2": "560b6ccb16a357c1"
+   },
+   "n_unique_parameters": 12,
+   "n_unique_predictions_voxel_conditioned": 9,
+   "n_voxel_conditioned_runs": 9,
+   "c1_parameters_distinct": true,
+   "note": "C1 is a constant-class predictor, so two seeds may share a prediction while differing in parameters; its requirement is on the parameters",
+   "ok": true
+  }
+ ]
+}

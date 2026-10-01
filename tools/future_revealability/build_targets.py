@@ -54,11 +54,14 @@ def _digest(*arrays: np.ndarray) -> str:
 
 
 @torch.no_grad()
-def causal_state(drive: str, t: int, net, text, device, paths: C.Paths) -> Dict:
-    """Everything available at t, and nothing else. The audit makes that a runtime guarantee."""
+def causal_state(drive: str, t: int, net, text, device, paths: C.Paths, want_trunk: bool = False) -> Dict:
+    """Everything available at t, and nothing else. The audit makes that a runtime guarantee.
+
+    ``want_trunk`` additionally returns the frozen decoder feature ``d1`` from the SAME forward (Gate 21
+    needs it as a head input; computing it in a second forward would be the same number twice)."""
     with FileAudit(patterns=C.PREDICT_FORBIDDEN, strict=True):
         S, F_ = load_hard_map(drive, t, device, paths.g15)
-        occ, _ = occupancy_and_trunk(net, geometry_input(S, F_))
+        occ, d1 = occupancy_and_trunk(net, geometry_input(S, F_))
         O = occ[0]
         ev = load_evidence(paths.g15.evidence_path(drive, t), device)
     E = torch.zeros(C.N_VOXELS, dtype=torch.bool, device=device)
@@ -66,8 +69,11 @@ def causal_state(drive: str, t: int, net, text, device, paths: C.Paths) -> Dict:
     ev_label = torch.zeros(C.N_VOXELS, dtype=torch.long, device=device)
     ev_label[ev.flat_index] = TR.classify(ev.feature, text)
     nearest, dist_m = B0.nearest_evidence(E)
-    return {"S": S, "F": F_, "O": O, "E": E, "ev": ev, "dist_m": dist_m,
-            "b0": B0.nearest_label(ev_label, nearest)}
+    out = {"S": S, "F": F_, "O": O, "E": E, "ev": ev, "dist_m": dist_m,
+           "b0": B0.nearest_label(ev_label, nearest)}
+    if want_trunk:
+        out["trunk"] = d1[0]
+    return out
 
 
 def _state_digest(st: Dict) -> str:

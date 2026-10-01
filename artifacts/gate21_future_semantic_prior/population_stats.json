@@ -1,0 +1,59 @@
+{
+ "version": "gate21.1",
+ "reveal_level": "visible",
+ "reveal_readout": "mean_probability",
+ "train": {
+  "per_drive": {
+   "2013_05_28_drive_0003_sync": {
+    "anchors": 193,
+    "anchors_with_empty_UR": 0,
+    "n_P0": 1076037,
+    "n_UR": 268819,
+    "revealed_pct": 24.982
+   },
+   "2013_05_28_drive_0007_sync": {
+    "anchors": 529,
+    "anchors_with_empty_UR": 1,
+    "n_P0": 4405165,
+    "n_UR": 1133453,
+    "revealed_pct": 25.73
+   },
+   "2013_05_28_drive_0010_sync": {
+    "anchors": 554,
+    "anchors_with_empty_UR": 1,
+    "n_P0": 2898317,
+    "n_UR": 877983,
+    "revealed_pct": 30.293
+   }
+  },
+  "n_UR_total": 2280255,
+  "n_P0_total": 8379519,
+  "class_counts_UR": {
+   "car": 32257,
+   "bicycle": 275,
+   "motorcycle": 67,
+   "truck": 1168,
+   "other-vehicle": 14795,
+   "person": 122,
+   "road": 542098,
+   "parking": 36919,
+   "sidewalk": 143448,
+   "other-ground": 53160,
+   "building": 113994,
+   "fence": 16821,
+   "vegetation": 941870,
+   "terrain": 347614,
+   "pole": 705,
+   "traffic-sign": 27,
+   "other-structure": 30828,
+   "other-object": 4087
+  }
+ },
+ "dev": {
+  "E0": 2743212,
+  "E1": 876254,
+  "E2": 1866958,
+  "anchors": 590
+ },
+ "target_sha256": "3a6c7969b59071dc8a6f990a09bfb90174db10cf57c38c6a2431147c254e2085"
+}

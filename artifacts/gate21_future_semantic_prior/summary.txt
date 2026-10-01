@@ -1,0 +1,32 @@
+GATE 21 RESULT
+
+Outcome:                      C
+Model parameters:             257,394  (C3 full)
+
+B0 E1 mIoU:                   6.39
+C3 E1 mIoU:                   6.44 +- 0.22
+Delta E1:                     +0.05
+
+B0 E2 NEVER-REVEALED mIoU:    10.18
+C3 E2 NEVER-REVEALED mIoU:    6.19 +- 0.25
+Delta E2:                     -3.99
+E2 delta 95% CI / seed spread: [-5.03, -3.13] / -3.78, -4.34, -3.85
+
+C1 prior E2:                  1.09
+C2 geometry E2:               4.98
+C4 semantics-only E2:         6.35
+
+Best E2 distance bin:         2-4 m  (-0.43 pp, 301,362 voxels)
+Worst E2 distance bin:        0-1 m (-6.29 pp, 851,732 voxels)
+
+Thing E2 delta:               -15.68
+Stuff E2 delta:               -4.31
+
+Geometry bit-identical:       True (B0 identical across runs: True)
+Leakage checks:               12 checks, all_ok = True
+
+Scientific conclusion:        future supervision does not generalise from revealed to never-revealed hidden voxels
+Recommended next step:        close this branch; no automatic rescue by size, epochs, data or a transformer
+
+Report:                       artifacts/gate21_future_semantic_prior/report.md
+Commit:                       31ee257ad5dc
