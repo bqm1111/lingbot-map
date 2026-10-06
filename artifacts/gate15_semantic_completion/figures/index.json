@@ -1,0 +1,18 @@
+{
+ "examples": {
+  "success_p90": 1000,
+  "median_p50": 1240,
+  "failure_p10": 652,
+  "observed_correct_completion_wrong": 1111
+ },
+ "files": [
+  "artifacts/gate15_semantic_completion/figures/6_observed_vs_unobserved_miou.png",
+  "artifacts/gate15_semantic_completion/figures/7_semantics_vs_propagation_distance.png",
+  "artifacts/gate15_semantic_completion/figures/8_per_class_iou.png",
+  "artifacts/gate15_semantic_completion/figures/9_class_frequency.png",
+  "artifacts/gate15_semantic_completion/figures/10_example_success_p90_01000.png",
+  "artifacts/gate15_semantic_completion/figures/10_example_median_p50_01240.png",
+  "artifacts/gate15_semantic_completion/figures/10_example_failure_p10_00652.png",
+  "artifacts/gate15_semantic_completion/figures/10_example_observed_correct_completion_wrong_01111.png"
+ ]
+}

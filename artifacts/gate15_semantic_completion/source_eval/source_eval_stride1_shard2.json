@@ -1,0 +1,16 @@
+{
+ "head_checkpoints": {
+  "0": "artifacts/gate15_semantic_completion/checkpoints/sem_seed0_step06000.pt",
+  "1": "artifacts/gate15_semantic_completion/checkpoints/sem_seed1_step06000.pt",
+  "2": "artifacts/gate15_semantic_completion/checkpoints/sem_seed2_step06000.pt"
+ },
+ "stride": 1,
+ "shard": 2,
+ "shards": 4,
+ "n_anchors": 147,
+ "seconds": 538.8371574878693,
+ "firewall": {
+  "opened": 1176,
+  "violations": []
+ }
+}
