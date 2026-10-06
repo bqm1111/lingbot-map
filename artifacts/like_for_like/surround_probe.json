@@ -1,0 +1,547 @@
+{
+ "ring_order": [
+  "CAM_FRONT",
+  "CAM_FRONT_LEFT",
+  "CAM_BACK_LEFT",
+  "CAM_BACK",
+  "CAM_BACK_RIGHT",
+  "CAM_FRONT_RIGHT"
+ ],
+ "model_load": {
+  "missing_keys": 0,
+  "unexpected_keys": 0
+ },
+ "samples": [
+  {
+   "sample_token": "e93e98b63d3b40209056d129dc53ceee",
+   "per_camera": [
+    {
+     "camera": "CAM_FRONT",
+     "rotation_error_deg": 0.0,
+     "gt_rotation_from_front_deg": 0.0,
+     "translation_error_m_after_global_scale": 2.220525673683562e-16
+    },
+    {
+     "camera": "CAM_FRONT_LEFT",
+     "rotation_error_deg": 6.176114697227076,
+     "gt_rotation_from_front_deg": 54.83698693660726,
+     "translation_error_m_after_global_scale": 0.4041789532105485
+    },
+    {
+     "camera": "CAM_BACK_LEFT",
+     "rotation_error_deg": 8.156654802586829,
+     "gt_rotation_from_front_deg": 108.27437918770505,
+     "translation_error_m_after_global_scale": 0.5420926085034538
+    },
+    {
+     "camera": "CAM_BACK",
+     "rotation_error_deg": 8.769110790438036,
+     "gt_rotation_from_front_deg": 179.5335106839481,
+     "translation_error_m_after_global_scale": 1.2894104283879384
+    },
+    {
+     "camera": "CAM_BACK_RIGHT",
+     "rotation_error_deg": 9.447931874603947,
+     "gt_rotation_from_front_deg": 111.12438890062518,
+     "translation_error_m_after_global_scale": 1.6329777077602852
+    },
+    {
+     "camera": "CAM_FRONT_RIGHT",
+     "rotation_error_deg": 3.4224200623887104,
+     "gt_rotation_from_front_deg": 56.73250158639443,
+     "translation_error_m_after_global_scale": 0.347195198555568
+    }
+   ],
+   "fitted_scale": 8.779407033239908,
+   "mean_rotation_error_deg": 7.19444644544892,
+   "mean_translation_error_m": 0.8431709792835587
+  },
+  {
+   "sample_token": "21f50dbd1f5849da834f60e1113ede64",
+   "per_camera": [
+    {
+     "camera": "CAM_FRONT",
+     "rotation_error_deg": 0.0,
+     "gt_rotation_from_front_deg": 0.0,
+     "translation_error_m_after_global_scale": 1.34540251935144e-18
+    },
+    {
+     "camera": "CAM_FRONT_LEFT",
+     "rotation_error_deg": 1.4003640170053218,
+     "gt_rotation_from_front_deg": 54.7531374576451,
+     "translation_error_m_after_global_scale": 0.32920813473481353
+    },
+    {
+     "camera": "CAM_BACK_LEFT",
+     "rotation_error_deg": 5.810456660558249,
+     "gt_rotation_from_front_deg": 107.98915472280075,
+     "translation_error_m_after_global_scale": 0.5859048354938041
+    },
+    {
+     "camera": "CAM_BACK",
+     "rotation_error_deg": 2.13850396089758,
+     "gt_rotation_from_front_deg": 178.88416009196501,
+     "translation_error_m_after_global_scale": 3.2489338350100256
+    },
+    {
+     "camera": "CAM_BACK_RIGHT",
+     "rotation_error_deg": 5.721644403590271,
+     "gt_rotation_from_front_deg": 113.11141717729492,
+     "translation_error_m_after_global_scale": 1.8144579153021545
+    },
+    {
+     "camera": "CAM_FRONT_RIGHT",
+     "rotation_error_deg": 1.609440818568515,
+     "gt_rotation_from_front_deg": 58.160299638334166,
+     "translation_error_m_after_global_scale": 0.2760910329029677
+    }
+   ],
+   "fitted_scale": 6.204573987650019,
+   "mean_rotation_error_deg": 3.3360819721239876,
+   "mean_translation_error_m": 1.2509191506887531
+  },
+  {
+   "sample_token": "ae7033439a7d4dc89e6a9567401aa2e3",
+   "per_camera": [
+    {
+     "camera": "CAM_FRONT",
+     "rotation_error_deg": 0.0,
+     "gt_rotation_from_front_deg": 0.0,
+     "translation_error_m_after_global_scale": 2.267808076533609e-16
+    },
+    {
+     "camera": "CAM_FRONT_LEFT",
+     "rotation_error_deg": 0.6867521588089273,
+     "gt_rotation_from_front_deg": 54.83698693660726,
+     "translation_error_m_after_global_scale": 0.6044769794546238
+    },
+    {
+     "camera": "CAM_BACK_LEFT",
+     "rotation_error_deg": 1.7898690864533884,
+     "gt_rotation_from_front_deg": 108.27437918770505,
+     "translation_error_m_after_global_scale": 0.3965531258576472
+    },
+    {
+     "camera": "CAM_BACK",
+     "rotation_error_deg": 1.363068397091524,
+     "gt_rotation_from_front_deg": 179.5335106839481,
+     "translation_error_m_after_global_scale": 0.5483441926654608
+    },
+    {
+     "camera": "CAM_BACK_RIGHT",
+     "rotation_error_deg": 3.8905562603121364,
+     "gt_rotation_from_front_deg": 111.12438890062518,
+     "translation_error_m_after_global_scale": 0.248316462045342
+    },
+    {
+     "camera": "CAM_FRONT_RIGHT",
+     "rotation_error_deg": 2.3462736570738794,
+     "gt_rotation_from_front_deg": 56.73250158639443,
+     "translation_error_m_after_global_scale": 0.37696209800560776
+    }
+   ],
+   "fitted_scale": 5.454708412100092,
+   "mean_rotation_error_deg": 2.015303911947971,
+   "mean_translation_error_m": 0.4349305716057363
+  },
+  {
+   "sample_token": "c0f6cef97fa44973afe8ed8e18e652c3",
+   "per_camera": [
+    {
+     "camera": "CAM_FRONT",
+     "rotation_error_deg": 0.0,
+     "gt_rotation_from_front_deg": 0.0,
+     "translation_error_m_after_global_scale": 2.234947485995913e-16
+    },
+    {
+     "camera": "CAM_FRONT_LEFT",
+     "rotation_error_deg": 2.3351867822631376,
+     "gt_rotation_from_front_deg": 54.83698693660726,
+     "translation_error_m_after_global_scale": 0.21166989497247687
+    },
+    {
+     "camera": "CAM_BACK_LEFT",
+     "rotation_error_deg": 2.4315970276312897,
+     "gt_rotation_from_front_deg": 108.27437918770505,
+     "translation_error_m_after_global_scale": 0.2683383428280012
+    },
+    {
+     "camera": "CAM_BACK",
+     "rotation_error_deg": 13.913339767774447,
+     "gt_rotation_from_front_deg": 179.5335106839481,
+     "translation_error_m_after_global_scale": 1.40249520094106
+    },
+    {
+     "camera": "CAM_BACK_RIGHT",
+     "rotation_error_deg": 10.626515984247488,
+     "gt_rotation_from_front_deg": 111.12438890062518,
+     "translation_error_m_after_global_scale": 1.0227095642203439
+    },
+    {
+     "camera": "CAM_FRONT_RIGHT",
+     "rotation_error_deg": 1.7600433974375354,
+     "gt_rotation_from_front_deg": 56.73250158639443,
+     "translation_error_m_after_global_scale": 0.16979703011444525
+    }
+   ],
+   "fitted_scale": 13.29145224527978,
+   "mean_rotation_error_deg": 6.21333659187078,
+   "mean_translation_error_m": 0.6150020066152655
+  },
+  {
+   "sample_token": "e1375f37410e4fb4902dbb8caf567891",
+   "per_camera": [
+    {
+     "camera": "CAM_FRONT",
+     "rotation_error_deg": 0.0,
+     "gt_rotation_from_front_deg": 0.0,
+     "translation_error_m_after_global_scale": 2.220462989844635e-16
+    },
+    {
+     "camera": "CAM_FRONT_LEFT",
+     "rotation_error_deg": 1.6728306006561784,
+     "gt_rotation_from_front_deg": 54.83698693660726,
+     "translation_error_m_after_global_scale": 0.40310287549480545
+    },
+    {
+     "camera": "CAM_BACK_LEFT",
+     "rotation_error_deg": 3.244016817112742,
+     "gt_rotation_from_front_deg": 108.27437918770505,
+     "translation_error_m_after_global_scale": 0.573503863655295
+    },
+    {
+     "camera": "CAM_BACK",
+     "rotation_error_deg": 3.485416790858232,
+     "gt_rotation_from_front_deg": 179.5335106839481,
+     "translation_error_m_after_global_scale": 1.1412771445972
+    },
+    {
+     "camera": "CAM_BACK_RIGHT",
+     "rotation_error_deg": 6.128602189091423,
+     "gt_rotation_from_front_deg": 111.12438890062518,
+     "translation_error_m_after_global_scale": 1.3376245727023703
+    },
+    {
+     "camera": "CAM_FRONT_RIGHT",
+     "rotation_error_deg": 2.0152967247311455,
+     "gt_rotation_from_front_deg": 56.73250158639443,
+     "translation_error_m_after_global_scale": 0.8870570045184042
+    }
+   ],
+   "fitted_scale": 20.45435420685317,
+   "mean_rotation_error_deg": 3.309232624489944,
+   "mean_translation_error_m": 0.8685130921936149
+  },
+  {
+   "sample_token": "5e33f3e4a2b348c39bcac9a94f7a7a28",
+   "per_camera": [
+    {
+     "camera": "CAM_FRONT",
+     "rotation_error_deg": 0.0,
+     "gt_rotation_from_front_deg": 0.0,
+     "translation_error_m_after_global_scale": 1.170837282325316e-18
+    },
+    {
+     "camera": "CAM_FRONT_LEFT",
+     "rotation_error_deg": 3.4567207530237303,
+     "gt_rotation_from_front_deg": 54.7531374576451,
+     "translation_error_m_after_global_scale": 0.16055511862582497
+    },
+    {
+     "camera": "CAM_BACK_LEFT",
+     "rotation_error_deg": 8.194524209137352,
+     "gt_rotation_from_front_deg": 107.98915472280075,
+     "translation_error_m_after_global_scale": 0.4439515923986928
+    },
+    {
+     "camera": "CAM_BACK",
+     "rotation_error_deg": 4.27274445150291,
+     "gt_rotation_from_front_deg": 178.88416009196501,
+     "translation_error_m_after_global_scale": 1.8203544765581547
+    },
+    {
+     "camera": "CAM_BACK_RIGHT",
+     "rotation_error_deg": 0.6673374891478455,
+     "gt_rotation_from_front_deg": 113.11141717729492,
+     "translation_error_m_after_global_scale": 1.6646839009351324
+    },
+    {
+     "camera": "CAM_FRONT_RIGHT",
+     "rotation_error_deg": 1.3528020331156172,
+     "gt_rotation_from_front_deg": 58.160299638334166,
+     "translation_error_m_after_global_scale": 0.15228189451009275
+    }
+   ],
+   "fitted_scale": 10.79906784950636,
+   "mean_rotation_error_deg": 3.5888257871854905,
+   "mean_translation_error_m": 0.8483653966055795
+  },
+  {
+   "sample_token": "00c55a3b44f14b32b5abfce04e80bc06",
+   "per_camera": [
+    {
+     "camera": "CAM_FRONT",
+     "rotation_error_deg": 0.0,
+     "gt_rotation_from_front_deg": 0.0,
+     "translation_error_m_after_global_scale": 5.280301232002283e-19
+    },
+    {
+     "camera": "CAM_FRONT_LEFT",
+     "rotation_error_deg": 1.2407720614950455,
+     "gt_rotation_from_front_deg": 54.7531374576451,
+     "translation_error_m_after_global_scale": 0.6943352903560358
+    },
+    {
+     "camera": "CAM_BACK_LEFT",
+     "rotation_error_deg": 0.9992241226734512,
+     "gt_rotation_from_front_deg": 107.98915472280075,
+     "translation_error_m_after_global_scale": 0.5747704254528107
+    },
+    {
+     "camera": "CAM_BACK",
+     "rotation_error_deg": 8.523018485228684,
+     "gt_rotation_from_front_deg": 178.88416009196501,
+     "translation_error_m_after_global_scale": 1.1864722901103766
+    },
+    {
+     "camera": "CAM_BACK_RIGHT",
+     "rotation_error_deg": 6.966889191929136,
+     "gt_rotation_from_front_deg": 113.11141717729492,
+     "translation_error_m_after_global_scale": 0.8891765877771776
+    },
+    {
+     "camera": "CAM_FRONT_RIGHT",
+     "rotation_error_deg": 2.112756897747045,
+     "gt_rotation_from_front_deg": 58.160299638334166,
+     "translation_error_m_after_global_scale": 0.4787931297676122
+    }
+   ],
+   "fitted_scale": 9.740436545883936,
+   "mean_rotation_error_deg": 3.968532151814672,
+   "mean_translation_error_m": 0.7647095446928026
+  },
+  {
+   "sample_token": "75b1bc01c27049e9a3df0f7509f8cb94",
+   "per_camera": [
+    {
+     "camera": "CAM_FRONT",
+     "rotation_error_deg": 0.0,
+     "gt_rotation_from_front_deg": 0.0,
+     "translation_error_m_after_global_scale": 4.508521305676843e-19
+    },
+    {
+     "camera": "CAM_FRONT_LEFT",
+     "rotation_error_deg": 0.9530644708535199,
+     "gt_rotation_from_front_deg": 54.7531374576451,
+     "translation_error_m_after_global_scale": 0.2923880597373834
+    },
+    {
+     "camera": "CAM_BACK_LEFT",
+     "rotation_error_deg": 2.7531991076547717,
+     "gt_rotation_from_front_deg": 107.98915472280075,
+     "translation_error_m_after_global_scale": 0.6246125643208018
+    },
+    {
+     "camera": "CAM_BACK",
+     "rotation_error_deg": 4.716498055581588,
+     "gt_rotation_from_front_deg": 178.88416009196501,
+     "translation_error_m_after_global_scale": 2.232940578255143
+    },
+    {
+     "camera": "CAM_BACK_RIGHT",
+     "rotation_error_deg": 1.9691608869917316,
+     "gt_rotation_from_front_deg": 113.11141717729492,
+     "translation_error_m_after_global_scale": 2.493582941543162
+    },
+    {
+     "camera": "CAM_FRONT_RIGHT",
+     "rotation_error_deg": 1.2940758886273773,
+     "gt_rotation_from_front_deg": 58.160299638334166,
+     "translation_error_m_after_global_scale": 1.2618883016142355
+    }
+   ],
+   "fitted_scale": 8.316753867668755,
+   "mean_rotation_error_deg": 2.337199681941798,
+   "mean_translation_error_m": 1.3810824890941453
+  },
+  {
+   "sample_token": "f49a9d7adf99422eb0bda48496cc9241",
+   "per_camera": [
+    {
+     "camera": "CAM_FRONT",
+     "rotation_error_deg": 1.2074182697257333e-06,
+     "gt_rotation_from_front_deg": 0.0,
+     "translation_error_m_after_global_scale": 1.911347405370048e-17
+    },
+    {
+     "camera": "CAM_FRONT_LEFT",
+     "rotation_error_deg": 0.641556289909881,
+     "gt_rotation_from_front_deg": 54.7531374576451,
+     "translation_error_m_after_global_scale": 0.6013926557744075
+    },
+    {
+     "camera": "CAM_BACK_LEFT",
+     "rotation_error_deg": 3.32582535551555,
+     "gt_rotation_from_front_deg": 107.98915472280075,
+     "translation_error_m_after_global_scale": 1.0527759293825858
+    },
+    {
+     "camera": "CAM_BACK",
+     "rotation_error_deg": 12.340240374342413,
+     "gt_rotation_from_front_deg": 178.88416009196501,
+     "translation_error_m_after_global_scale": 2.753507584597076
+    },
+    {
+     "camera": "CAM_BACK_RIGHT",
+     "rotation_error_deg": 8.230385876194829,
+     "gt_rotation_from_front_deg": 113.11141717729492,
+     "translation_error_m_after_global_scale": 1.7047932218289712
+    },
+    {
+     "camera": "CAM_FRONT_RIGHT",
+     "rotation_error_deg": 1.8861141931557595,
+     "gt_rotation_from_front_deg": 58.160299638334166,
+     "translation_error_m_after_global_scale": 0.5072565091288332
+    }
+   ],
+   "fitted_scale": 11.018167632128144,
+   "mean_rotation_error_deg": 5.284824417823686,
+   "mean_translation_error_m": 1.3239451801423747
+  },
+  {
+   "sample_token": "7ae1339577c04889aa87594d7e002df3",
+   "per_camera": [
+    {
+     "camera": "CAM_FRONT",
+     "rotation_error_deg": 0.0,
+     "gt_rotation_from_front_deg": 0.0,
+     "translation_error_m_after_global_scale": 4.693826626145747e-18
+    },
+    {
+     "camera": "CAM_FRONT_LEFT",
+     "rotation_error_deg": 0.7052449633565664,
+     "gt_rotation_from_front_deg": 54.7531374576451,
+     "translation_error_m_after_global_scale": 0.8460789232416078
+    },
+    {
+     "camera": "CAM_BACK_LEFT",
+     "rotation_error_deg": 2.0406314279122295,
+     "gt_rotation_from_front_deg": 107.98915472280075,
+     "translation_error_m_after_global_scale": 0.452335677148891
+    },
+    {
+     "camera": "CAM_BACK",
+     "rotation_error_deg": 1.1804895779865507,
+     "gt_rotation_from_front_deg": 178.88416009196501,
+     "translation_error_m_after_global_scale": 0.9198816711068728
+    },
+    {
+     "camera": "CAM_BACK_RIGHT",
+     "rotation_error_deg": 2.8699948104361983,
+     "gt_rotation_from_front_deg": 113.11141717729492,
+     "translation_error_m_after_global_scale": 0.5765701648460567
+    },
+    {
+     "camera": "CAM_FRONT_RIGHT",
+     "rotation_error_deg": 1.146486039356593,
+     "gt_rotation_from_front_deg": 58.160299638334166,
+     "translation_error_m_after_global_scale": 0.2729558905980455
+    }
+   ],
+   "fitted_scale": 10.82322731235927,
+   "mean_rotation_error_deg": 1.5885693638096277,
+   "mean_translation_error_m": 0.6135644653882948
+  },
+  {
+   "sample_token": "aefc56d4c6294812a61190b16cd50ded",
+   "per_camera": [
+    {
+     "camera": "CAM_FRONT",
+     "rotation_error_deg": 0.0,
+     "gt_rotation_from_front_deg": 0.0,
+     "translation_error_m_after_global_scale": 2.2205061632676437e-16
+    },
+    {
+     "camera": "CAM_FRONT_LEFT",
+     "rotation_error_deg": 2.6558492685439408,
+     "gt_rotation_from_front_deg": 54.83698693660726,
+     "translation_error_m_after_global_scale": 0.4319511199786082
+    },
+    {
+     "camera": "CAM_BACK_LEFT",
+     "rotation_error_deg": 3.4302021755698124,
+     "gt_rotation_from_front_deg": 108.27437918770505,
+     "translation_error_m_after_global_scale": 0.34524651725300354
+    },
+    {
+     "camera": "CAM_BACK",
+     "rotation_error_deg": 3.203186385432582,
+     "gt_rotation_from_front_deg": 179.5335106839481,
+     "translation_error_m_after_global_scale": 1.5646412224920836
+    },
+    {
+     "camera": "CAM_BACK_RIGHT",
+     "rotation_error_deg": 3.874690539163337,
+     "gt_rotation_from_front_deg": 111.12438890062518,
+     "translation_error_m_after_global_scale": 1.2517565692669597
+    },
+    {
+     "camera": "CAM_FRONT_RIGHT",
+     "rotation_error_deg": 1.8908838745554943,
+     "gt_rotation_from_front_deg": 56.73250158639443,
+     "translation_error_m_after_global_scale": 0.3614227767789541
+    }
+   ],
+   "fitted_scale": 7.06361542388715,
+   "mean_rotation_error_deg": 3.0109624486530335,
+   "mean_translation_error_m": 0.7910036411539219
+  },
+  {
+   "sample_token": "36b853916aa04e7093932df9d044126b",
+   "per_camera": [
+    {
+     "camera": "CAM_FRONT",
+     "rotation_error_deg": 0.0,
+     "gt_rotation_from_front_deg": 0.0,
+     "translation_error_m_after_global_scale": 2.2205428971086857e-16
+    },
+    {
+     "camera": "CAM_FRONT_LEFT",
+     "rotation_error_deg": 4.136115616457039,
+     "gt_rotation_from_front_deg": 54.83698693660726,
+     "translation_error_m_after_global_scale": 0.1889094271934535
+    },
+    {
+     "camera": "CAM_BACK_LEFT",
+     "rotation_error_deg": 10.108027223396792,
+     "gt_rotation_from_front_deg": 108.27437918770505,
+     "translation_error_m_after_global_scale": 0.10897399148630102
+    },
+    {
+     "camera": "CAM_BACK",
+     "rotation_error_deg": 39.35802049985304,
+     "gt_rotation_from_front_deg": 179.5335106839481,
+     "translation_error_m_after_global_scale": 0.8194431497989086
+    },
+    {
+     "camera": "CAM_BACK_RIGHT",
+     "rotation_error_deg": 15.92020355632578,
+     "gt_rotation_from_front_deg": 111.12438890062518,
+     "translation_error_m_after_global_scale": 0.8788912071375181
+    },
+    {
+     "camera": "CAM_FRONT_RIGHT",
+     "rotation_error_deg": 71.55361508828764,
+     "gt_rotation_from_front_deg": 56.73250158639443,
+     "translation_error_m_after_global_scale": 1.0341868994428025
+    }
+   ],
+   "fitted_scale": 1.38945012158435,
+   "mean_rotation_error_deg": 28.21519639686406,
+   "mean_translation_error_m": 0.6060809350117967
+  }
+ ],
+ "mean_rotation_error_deg": 5.838542649497829,
+ "mean_translation_error_m": 0.8617739543729869,
+ "reference": "neighbouring surround cameras sit ~55-70 deg apart; a useless prediction scores ~60 deg on average"
+}

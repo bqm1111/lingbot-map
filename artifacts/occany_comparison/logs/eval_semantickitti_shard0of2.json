@@ -1,0 +1,10 @@
+{
+ "dataset": "semantickitti",
+ "shard": 0,
+ "shards": 2,
+ "n_samples": 403,
+ "out": "/home/minh/workspace/lingbot-map_fork/artifacts/occany_comparison/eval/semantickitti_shard0of2.npz",
+ "seconds": 397.79533767700195,
+ "fast_equals_official": true,
+ "label_identical": 403
+}

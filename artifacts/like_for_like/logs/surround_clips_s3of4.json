@@ -1,0 +1,14 @@
+{
+ "setting": "surround",
+ "shard": 3,
+ "shards": 4,
+ "n_samples": 1204,
+ "n_written": 0,
+ "n_present": 1204,
+ "n_no_scale": 0,
+ "seconds": 0.01859593391418457,
+ "model": {
+  "missing_keys": 0,
+  "unexpected_keys": 0
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "protocol": "causal",
+ "samples": {
+  "semantickitti/08_000420": {
+   "occupied": true,
+   "observed": true,
+   "evidence": true,
+   "query_index": true,
+   "evidence_distance": true,
+   "methods": true,
+   "labels__B0": true,
+   "labels__B3_s0": true,
+   "labels__B3_s1": true,
+   "labels__B3_s2": true
+  },
+  "semantickitti/08_003620": {
+   "occupied": true,
+   "observed": true,
+   "evidence": true,
+   "query_index": true,
+   "evidence_distance": true,
+   "methods": true,
+   "labels__B0": true,
+   "labels__B3_s0": true,
+   "labels__B3_s1": true,
+   "labels__B3_s2": true
+  },
+  "occ3d/scene-0095_1c99c1f837fa457085f86e4afab500ed": {
+   "occupied": true,
+   "observed": true,
+   "evidence": true,
+   "query_index": true,
+   "evidence_distance": true,
+   "methods": true,
+   "labels__B0": true,
+   "labels__B3_s0": true,
+   "labels__B3_s1": true,
+   "labels__B3_s2": true
+  },
+  "occ3d/scene-0972_fcb5d6987a9e4deb80551d2a85e60e20": {
+   "occupied": true,
+   "observed": true,
+   "evidence": true,
+   "query_index": true,
+   "evidence_distance": true,
+   "methods": true,
+   "labels__B0": true,
+   "labels__B3_s0": true,
+   "labels__B3_s1": true,
+   "labels__B3_s2": true
+  }
+ },
+ "all_equal": true
+}

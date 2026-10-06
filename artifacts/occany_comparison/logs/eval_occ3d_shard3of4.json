@@ -1,0 +1,10 @@
+{
+ "dataset": "occ3d",
+ "shard": 3,
+ "shards": 4,
+ "n_samples": 1204,
+ "out": "/home/minh/workspace/lingbot-map_fork/artifacts/occany_comparison/eval/occ3d_shard3of4.npz",
+ "seconds": 1900.698501586914,
+ "fast_equals_official": true,
+ "label_identical": 1204
+}
