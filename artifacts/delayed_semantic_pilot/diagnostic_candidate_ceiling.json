@@ -1,0 +1,133 @@
+{
+ "note": "post-hoc diagnostic, not a decision criterion",
+ "regions": {
+  "primary": {
+   "voxels": 2743212,
+   "nearest1_acc": 0.46002642158170787,
+   "any16_ceiling": 0.5731547543536555,
+   "anywhere_ceiling": 0.9749220986201577
+  },
+  "geo_observed": {
+   "voxels": 476001,
+   "nearest1_acc": 0.4057344417343661,
+   "any16_ceiling": 0.5426921372013924,
+   "anywhere_ceiling": 0.976495847697799
+  },
+  "geo_unobserved": {
+   "voxels": 2267211,
+   "nearest1_acc": 0.47142502396115754,
+   "any16_ceiling": 0.5795503815039712,
+   "anywhere_ceiling": 0.9745916899662184
+  }
+ },
+ "per_class": {
+  "car": {
+   "voxels": 35497,
+   "nearest1_acc": 0.3340845705270868,
+   "any16_ceiling": 0.47170183395779924,
+   "anywhere_ceiling": 0.8757078062934895
+  },
+  "bicycle": {
+   "voxels": 69,
+   "nearest1_acc": 0.028985507246376812,
+   "any16_ceiling": 0.043478260869565216,
+   "anywhere_ceiling": 0.8405797101449275
+  },
+  "motorcycle": {
+   "voxels": 189,
+   "nearest1_acc": 0.07407407407407407,
+   "any16_ceiling": 0.14814814814814814,
+   "anywhere_ceiling": 0.30158730158730157
+  },
+  "truck": {
+   "voxels": 2236,
+   "nearest1_acc": 0.7160107334525939,
+   "any16_ceiling": 0.8448121645796064,
+   "anywhere_ceiling": 0.8694096601073346
+  },
+  "other vehicle": {
+   "voxels": 3470,
+   "nearest1_acc": 0.03861671469740634,
+   "any16_ceiling": 0.1371757925072046,
+   "anywhere_ceiling": 0.698270893371758
+  },
+  "person": {
+   "voxels": 99,
+   "nearest1_acc": 0.12121212121212122,
+   "any16_ceiling": 0.42424242424242425,
+   "anywhere_ceiling": 0.8080808080808081
+  },
+  "road": {
+   "voxels": 307633,
+   "nearest1_acc": 0.19595752081213655,
+   "any16_ceiling": 0.2844590794875712,
+   "anywhere_ceiling": 0.9981959022601606
+  },
+  "parking": {
+   "voxels": 177605,
+   "nearest1_acc": 0.04990850482812984,
+   "any16_ceiling": 0.14051406210410744,
+   "anywhere_ceiling": 0.8935671856085132
+  },
+  "sidewalk": {
+   "voxels": 160432,
+   "nearest1_acc": 0.10913658123067717,
+   "any16_ceiling": 0.2233344968584821,
+   "anywhere_ceiling": 0.9929128852099331
+  },
+  "other ground": {
+   "voxels": 101243,
+   "nearest1_acc": 0.055470501664312596,
+   "any16_ceiling": 0.15814426676412197,
+   "anywhere_ceiling": 0.9996740515393657
+  },
+  "building": {
+   "voxels": 484817,
+   "nearest1_acc": 0.5841729972340078,
+   "any16_ceiling": 0.7705670386970754,
+   "anywhere_ceiling": 0.9980466856566498
+  },
+  "fence": {
+   "voxels": 25193,
+   "nearest1_acc": 0.18132020799428414,
+   "any16_ceiling": 0.3194935101020125,
+   "anywhere_ceiling": 0.9798356686381138
+  },
+  "vegetation": {
+   "voxels": 1060981,
+   "nearest1_acc": 0.7881130764829908,
+   "any16_ceiling": 0.8883731188400169,
+   "anywhere_ceiling": 0.9999990574760528
+  },
+  "terrain": {
+   "voxels": 180188,
+   "nearest1_acc": 0.0028303771616311852,
+   "any16_ceiling": 0.014290629786667258,
+   "anywhere_ceiling": 0.7829378204985904
+  },
+  "pole": {
+   "voxels": 294,
+   "nearest1_acc": 0.027210884353741496,
+   "any16_ceiling": 0.14625850340136054,
+   "anywhere_ceiling": 0.9183673469387755
+  },
+  "traffic sign": {
+   "voxels": 54,
+   "nearest1_acc": 0.018518518518518517,
+   "any16_ceiling": 0.1111111111111111,
+   "anywhere_ceiling": 0.9259259259259259
+  },
+  "other structure": {
+   "voxels": 198329,
+   "nearest1_acc": 0.15792445885372286,
+   "any16_ceiling": 0.30962693302542743,
+   "anywhere_ceiling": 0.9929662328756763
+  },
+  "other object": {
+   "voxels": 4883,
+   "nearest1_acc": 0.052836371083350396,
+   "any16_ceiling": 0.1198033995494573,
+   "anywhere_ceiling": 0.9463444603727217
+  }
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "stage": "predeclaration",
+ "frozen_at": "2026-09-15T00:02:12+02:00",
+ "protocol": "gate16_candidate_selection/2026-09-14",
+ "sha256": {
+  "artifacts/gate16_candidate_selection/predeclaration.md": "65387e1c4aec534aa48854e39bd7647c9408f727d7214ec4d7970f0548036c94",
+  "tools/delayed_semantic/gate16/config.py": "8a4814293311dd32e6d90e8b62d9c0f697a122cf4d9bb732b21fb459cd2a6577"
+ },
+ "payload": {},
+ "existing_results": {
+  "checkpoints": 0,
+  "eval": 0
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "stage": "addendum_A",
+ "frozen_at": "2026-09-14T20:07:43+02:00",
+ "protocol": "delayed_semantic_pilot/2026-09-14",
+ "sha256": {
+  "artifacts/delayed_semantic_pilot/predeclaration.md": "f3e1224a21969d85513bb5a00351640f64b232e0cc1068d2132a24932012bed0",
+  "artifacts/delayed_semantic_pilot/predeclaration_addendum_A.md": "8ec4f488ff2c56a4cbeec5f208b6e9d8a976b1a03f061be697cb875099ba4ccc"
+ },
+ "reliability_gate": {
+  "G1_registration": {
+   "offsets": [
+    1,
+    5,
+    10,
+    20
+   ],
+   "median_max_m": 0.1,
+   "p90_max_m": 0.2
+  },
+  "G2_coverage": {
+   "mean_D_per_train_anchor_min": 2000,
+   "classes_min": 8,
+   "voxels_per_class_min": 10000
+  },
+  "G3_repeatability": {
+   "train_agreement_min": 0.65,
+   "train_margin_over_shuffle_min": 0.1,
+   "dev_agreement_min": 0.6,
+   "dev_margin_over_shuffle_min": 0.1
+  },
+  "G4_reobservation": {
+   "agreement_min": 0.65
+  },
+  "tier_B_rule": "tier B enters the delayed loss only if tier B alone meets G3 on the training drives",
+  "stop_rule": "any of G1-G4 failing for tier A => Stop: delayed targets are not reliable enough; nothing is trained"
+ },
+ "decision": {
+  "primary_region": "completed_never_observed = GT occupied & predicted occupied & no student evidence in H_t",
+  "K1": {
+   "metric": "mIoU(B2) - mIoU(B1)",
+   "ci95_lower_above": 0.0
+  },
+  "K2": {
+   "metric": "mIoU(B2) - mIoU(B0)",
+   "min_points": 2.0,
+   "ci95_lower_above": 0.0
+  },
+  "K3": "predictions on evidence voxels identical across methods",
+  "K4": {
+   "min_classes_positive_gain_vs_B0": 5,
+   "gain_without_largest_class_above": 0.0
+  },
+  "K5": "ssc_full mIoU(B2) >= ssc_full mIoU(B0)",
+  "K6": "occupancy TP/FP/FN identical to the frozen seed-0 counts of Gate 15 source evaluation",
+  "bootstrap": {
+   "block_anchors": 20,
+   "resamples": 2000,
+   "seed": 0
+  },
+  "outcomes": {
+   "proceed": "K1-K6 all pass",
+   "stop": "reliability gate fails",
+   "revise": "otherwise"
+  }
+ },
+ "existing_results": {
+  "delayed_targets": 4,
+  "eval": 0,
+  "checkpoints": 0
+ }
+}

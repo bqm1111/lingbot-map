@@ -1,0 +1,28 @@
+{
+ "geometry": {
+  "path": "artifacts/baseline_reconstruction/checkpoints/geo_seed0_step06000.pt",
+  "sha256": "7f5e853dd05bdbde918da888503995a363f4cd4fa3e09061bcf4f765e2428faa",
+  "frozen_reference": "7f5e853dd05bdbde918da888503995a363f4cd4fa3e09061bcf4f765e2428faa",
+  "matches_frozen": true
+ },
+ "lingbot": {
+  "path": "checkpoints/lingbot-map/204754b/lingbot-map.pt"
+ },
+ "heads": {
+  "B1": {
+   "step": 3000,
+   "path": "artifacts/delayed_semantic_pilot/checkpoints/B1_seed0_step03000.pt",
+   "sha256": "09b641cf61312ca406ebfa4add552214e287fce6c3e43b3c29d83e1d2692eea3"
+  },
+  "B2": {
+   "step": 3000,
+   "path": "artifacts/delayed_semantic_pilot/checkpoints/B2_seed0_step03000.pt",
+   "sha256": "5348d3dbdf8877e85a317c0de21460c0ff3646b9161e3547f079cbffe9237af2"
+  },
+  "B2s": {
+   "step": 3000,
+   "path": "artifacts/delayed_semantic_pilot/checkpoints/B2s_seed0_step03000.pt",
+   "sha256": "cfd4d46540367581465285970719e9fc7203d232c2a4c898c7f7d3c15fad2398"
+  }
+ }
+}

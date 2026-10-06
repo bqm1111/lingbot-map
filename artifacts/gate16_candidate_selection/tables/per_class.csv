@@ -1,0 +1,19 @@
+class,gt_voxels,B0_iou,B3_iou,B3_selected_correct,limited_by
+car,35497,0.090631,0.109064,0.338141,candidate absence
+bicycle,69,0.001996,0.002591,0.000000,candidate absence
+motorcycle,189,0.033784,0.056125,0.026455,candidate absence
+truck,2236,0.079619,0.092917,0.670990,association
+other vehicle,3470,0.009250,0.012379,0.024976,candidate absence
+person,99,0.008226,0.009979,0.104377,candidate absence
+road,307633,0.175164,0.182459,0.229623,candidate absence
+parking,177605,0.038883,0.048304,0.058152,candidate absence
+sidewalk,160432,0.083255,0.079413,0.142027,candidate absence
+other ground,101243,0.031703,0.040417,0.064600,candidate absence
+building,484817,0.350476,0.356184,0.496706,association
+fence,25193,0.045046,0.044036,0.160164,candidate absence
+vegetation,1060981,0.527708,0.541751,0.840839,candidate absence
+terrain,180188,0.002608,0.001973,0.005220,candidate absence
+pole,294,0.000273,0.000180,0.011338,candidate absence
+traffic sign,54,0.000462,0.000000,0.018519,candidate absence
+other structure,198329,0.088929,0.094631,0.127672,candidate absence
+other object,4883,0.015336,0.015887,0.034405,candidate absence

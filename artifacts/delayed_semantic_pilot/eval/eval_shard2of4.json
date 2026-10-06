@@ -1,0 +1,15 @@
+{
+ "head_checkpoints": {
+  "B1": "/home/minh/workspace/lingbot-map_fork/artifacts/delayed_semantic_pilot/checkpoints/B1_seed0_step03000.pt",
+  "B2": "/home/minh/workspace/lingbot-map_fork/artifacts/delayed_semantic_pilot/checkpoints/B2_seed0_step03000.pt",
+  "B2s": "/home/minh/workspace/lingbot-map_fork/artifacts/delayed_semantic_pilot/checkpoints/B2s_seed0_step03000.pt"
+ },
+ "shard": 2,
+ "shards": 4,
+ "n_anchors": 147,
+ "seconds": 231.2917356491089,
+ "firewall": {
+  "opened": 1764,
+  "violations": []
+ }
+}

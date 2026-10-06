@@ -1,0 +1,59 @@
+{
+ "read_only_inputs": {
+  "trident_tokens": "/media/SSD1/MINH_DATASETS/lingbot_feature_first_3d/trident_tokens",
+  "text_embeddings": {
+   "path": "/media/SSD1/MINH_DATASETS/lingbot_feature_first_3d/text_embeddings.npz",
+   "sha256": "45c8a8dda5edd0fda375b79e52ca6596eb0f472864ceb402e1e3cb9d1b24d64d"
+  },
+  "local_reset_clips": {
+   "train": "/media/SSD1/MINH_DATASETS/lingbot_gate12_suf/local_lingbot",
+   "dev": "/media/SSD1/MINH_DATASETS/lingbot_local_registration_audit/local_lingbot"
+  },
+  "hard_map_inputs": "/media/SSD1/MINH_DATASETS/lingbot_gate12_suf/inputs",
+  "gate15_evidence": "/media/SSD1/MINH_DATASETS/lingbot_gate15_semantic/evidence",
+  "eval_masks_semantic_gt_dev_only": "/media/SSD1/MINH_DATASETS/lingbot_k360_7drives/eval_masks",
+  "gate12_occupancy_regions_dev_only": "/media/SSD1/MINH_DATASETS/lingbot_gate12_suf/regions",
+  "kitti360_lidar_targets_only": "/media/welf/MINH/datasets/kitti360/KITTI-360/data_3d_raw",
+  "gt_poses_calibration_targets_only": "/media/SSD1/MINH_DATASETS/sscbench_kitti360"
+ },
+ "anchors": {
+  "2013_05_28_drive_0003_sync": 193,
+  "2013_05_28_drive_0007_sync": 569,
+  "2013_05_28_drive_0010_sync": 596,
+  "2013_05_28_drive_0006_sync": 590
+ },
+ "written_by_this_study": {
+  "root": "/media/SSD1/MINH_DATASETS/lingbot_delayed_semantic",
+  "provenance": {
+   "2013_05_28_drive_0003_sync": 193,
+   "2013_05_28_drive_0007_sync": 569,
+   "2013_05_28_drive_0010_sync": 596,
+   "2013_05_28_drive_0006_sync": 590
+  },
+  "delayed_targets": {
+   "2013_05_28_drive_0003_sync": 193,
+   "2013_05_28_drive_0007_sync": 569,
+   "2013_05_28_drive_0010_sync": 596,
+   "2013_05_28_drive_0006_sync": 590
+  },
+  "delayed_targets_4s": {
+   "2013_05_28_drive_0003_sync": 193,
+   "2013_05_28_drive_0007_sync": 569,
+   "2013_05_28_drive_0010_sync": 596
+  },
+  "train_cache_student": {
+   "2013_05_28_drive_0003_sync": 193,
+   "2013_05_28_drive_0007_sync": 569,
+   "2013_05_28_drive_0010_sync": 596
+  },
+  "predictions_at_t": {
+   "2013_05_28_drive_0006_sync": 590
+  }
+ },
+ "not_opened": [
+  "SemanticKITTI (data/kitti/dataset)",
+  "Occ3D-nuScenes",
+  "SSCBench preprocess/labels",
+  "KITTI-360 data_3d_semantics"
+ ]
+}

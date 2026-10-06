@@ -1,0 +1,23 @@
+{
+ "stage": "ceiling",
+ "frozen_at": "2026-09-15T00:11:18+02:00",
+ "protocol": "gate16_candidate_selection/2026-09-14",
+ "sha256": {
+  "artifacts/gate16_candidate_selection/predeclaration.md": "65387e1c4aec534aa48854e39bd7647c9408f727d7214ec4d7970f0548036c94",
+  "artifacts/gate16_candidate_selection/candidate_ceiling.json": "95cffab6a1871c111d7c23d1813a53ddeeaf0a0ed19b7b68c4c6aff56eb6cdaf",
+  "tools/delayed_semantic/gate16/ceiling.py": "a7457f17e3215c86638f5c087f8173026e6542f2d6938fa8a30d1ca16da9439c",
+  "tools/delayed_semantic/gate16/candidates.py": "cef8b806b5a461b1899f01b2ef8da8753d4a82ffb04df7f2cc7157a47cea7b03",
+  "tools/delayed_semantic/gate16/candidate_regions.py": "62c10f5117d29e6c8d43bdba1e40275e86f90c377a7b9a6fba8c143c59ffcfbb"
+ },
+ "payload": {
+  "N_nearest_candidate_acc": 0.46002642158170787,
+  "O_oracle_acc": 0.5731547543536555,
+  "H": 0.11312833277194762,
+  "T": 0.5165905879676816,
+  "required_recovered_fraction": 0.5
+ },
+ "existing_results": {
+  "checkpoints": 13,
+  "eval": 0
+ }
+}

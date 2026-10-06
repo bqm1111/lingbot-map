@@ -1,0 +1,39 @@
+{
+ "git_head": "598cd228620f1d4f5db9010aedca0392c926edb5",
+ "sha256": {
+  "tools/delayed_semantic/gate16/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tools/delayed_semantic/gate16/analysis.py": "142694f1d4cf15b77e112a4b517d6b2c3181d61a1ff536410ed04419b8fa0754",
+  "tools/delayed_semantic/gate16/candidate_metrics.py": "73bf5e4a94a8514fd3c6bfe04b387cfce0718f2c9cb0c686dd77bc5e03d574dd",
+  "tools/delayed_semantic/gate16/candidate_regions.py": "62c10f5117d29e6c8d43bdba1e40275e86f90c377a7b9a6fba8c143c59ffcfbb",
+  "tools/delayed_semantic/gate16/candidate_targets.py": "4b2b08e9cc196cfa04b1d751be18a044f17fa7f12fe02f9b38655ab136074ea8",
+  "tools/delayed_semantic/gate16/candidates.py": "cef8b806b5a461b1899f01b2ef8da8753d4a82ffb04df7f2cc7157a47cea7b03",
+  "tools/delayed_semantic/gate16/ceiling.py": "a7457f17e3215c86638f5c087f8173026e6542f2d6938fa8a30d1ca16da9439c",
+  "tools/delayed_semantic/gate16/cli.py": "830211ebf050302ee53784644272b4862becb307b464d9d7e5976a1206b08189",
+  "tools/delayed_semantic/gate16/config.py": "8a4814293311dd32e6d90e8b62d9c0f697a122cf4d9bb732b21fb459cd2a6577",
+  "tools/delayed_semantic/gate16/context.py": "25b7090328902807265459cdde84beb0a41b6a8eb3dbb9f7683f9f4a2dc3e28e",
+  "tools/delayed_semantic/gate16/evaluate.py": "96acd5d3c348fabce8faf4f867767ca1e8edd4bf450069f6447cb104b750cf51",
+  "tools/delayed_semantic/gate16/report.py": "b70fa8f6d6aed69ab2afb9b36697eebabb637b9f838389c09ba356818793d240",
+  "tools/delayed_semantic/gate16/rules.py": "f4714d7048ccdb5117f84dbe3c0ae80ca1d7fa7626dff2c389f18163bc18298c",
+  "tools/delayed_semantic/gate16/selection_loss.py": "6bc621f35f82f61cdccab4bdb83a2cd8602e4fb999d4900edf210077ae925397",
+  "tools/delayed_semantic/gate16/train.py": "905c294e12b2448f12c3a056452ef8742c17ae52e43a0d18da1b4c2ca9659a05",
+  "tools/delayed_semantic/gate16/verify.py": "0decee70425b77625207a373469e4e562997d1cd03e7c24ee9efd6c909905195",
+  "tools/delayed_semantic/model.py": "53079bff8ee2f81e95d7eb7b14c7a6159d923ecbd66217b9a84fc14212024801",
+  "tools/delayed_semantic/train.py": "1903095c3afc2ab7adde1f1ff2dbc8ba7318134b83d47d4e92210468e469054a",
+  "tests/delayed_semantic/test_gate16.py": "43a71a695c0221bf770d7a0907b4209cadcc666b42d03d3303b72362f2213e14",
+  "artifacts/gate16_candidate_selection/predeclaration.md": "65387e1c4aec534aa48854e39bd7647c9408f727d7214ec4d7970f0548036c94",
+  "artifacts/gate16_candidate_selection/candidate_ceiling.json": "95cffab6a1871c111d7c23d1813a53ddeeaf0a0ed19b7b68c4c6aff56eb6cdaf",
+  "artifacts/gate16_candidate_selection/checkpoints/B3_seed0_step03000.pt": "4e883e07bdff50ec33fe8b303bebd427e51df13f6c96e6ec22296d829be97f5b",
+  "artifacts/gate16_candidate_selection/checkpoints/B3_seed1_step03000.pt": "6be03cbb83c605de9e3a276dc91855231622ffd0a0d3f565453aa33f92e2d92d",
+  "artifacts/gate16_candidate_selection/checkpoints/B3_seed2_step03000.pt": "6eb76fcd2f4a09194ba364e2a0c12591dab6829727afe2cad6e34165553a4c5d",
+  "artifacts/gate16_candidate_selection/checkpoints/B3geom_seed0_step03000.pt": "5a7106298724909b6a57d9fcb65dcaa58560d743559fd4b3c389b20c5bbc8176",
+  "artifacts/gate16_candidate_selection/checkpoints/B3geom_seed1_step03000.pt": "54469cc3614c8fa8d4595f79d201ecf1c30cb36e4f57eeea5cb434af0082f2d9",
+  "artifacts/gate16_candidate_selection/checkpoints/B3geom_seed2_step03000.pt": "03c08216bbf61454a31b87f470635f5c7bbe43d625d0b2e3ed911c072863c0d3",
+  "artifacts/delayed_semantic_pilot/checkpoints/B1_seed0_step03000.pt": "09b641cf61312ca406ebfa4add552214e287fce6c3e43b3c29d83e1d2692eea3",
+  "artifacts/delayed_semantic_pilot/checkpoints/B2_seed0_step03000.pt": "5348d3dbdf8877e85a317c0de21460c0ff3646b9161e3547f079cbffe9237af2"
+ },
+ "frozen_stages": {
+  "predeclaration": "2026-09-15T00:02:12+02:00",
+  "ceiling": "2026-09-15T00:11:18+02:00",
+  "code": "2026-09-15T00:14:56+02:00"
+ }
+}

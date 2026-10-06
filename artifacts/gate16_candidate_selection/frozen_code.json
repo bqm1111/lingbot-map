@@ -1,0 +1,22 @@
+{
+ "stage": "code",
+ "frozen_at": "2026-09-15T00:14:56+02:00",
+ "protocol": "gate16_candidate_selection/2026-09-14",
+ "sha256": {
+  "artifacts/gate16_candidate_selection/predeclaration.md": "65387e1c4aec534aa48854e39bd7647c9408f727d7214ec4d7970f0548036c94",
+  "artifacts/gate16_candidate_selection/candidate_ceiling.json": "95cffab6a1871c111d7c23d1813a53ddeeaf0a0ed19b7b68c4c6aff56eb6cdaf",
+  "tools/delayed_semantic/gate16/candidates.py": "cef8b806b5a461b1899f01b2ef8da8753d4a82ffb04df7f2cc7157a47cea7b03",
+  "tools/delayed_semantic/gate16/candidate_targets.py": "4b2b08e9cc196cfa04b1d751be18a044f17fa7f12fe02f9b38655ab136074ea8",
+  "tools/delayed_semantic/gate16/candidate_regions.py": "62c10f5117d29e6c8d43bdba1e40275e86f90c377a7b9a6fba8c143c59ffcfbb",
+  "tools/delayed_semantic/gate16/candidate_metrics.py": "73bf5e4a94a8514fd3c6bfe04b387cfce0718f2c9cb0c686dd77bc5e03d574dd",
+  "tools/delayed_semantic/gate16/evaluate.py": "96acd5d3c348fabce8faf4f867767ca1e8edd4bf450069f6447cb104b750cf51",
+  "tools/delayed_semantic/gate16/analysis.py": "142694f1d4cf15b77e112a4b517d6b2c3181d61a1ff536410ed04419b8fa0754",
+  "tools/delayed_semantic/regions.py": "2f62c38e01997b893c0af937f797e7d792c0b9141d5bdd1b2ae5bc2201035b61",
+  "tools/delayed_semantic/model.py": "53079bff8ee2f81e95d7eb7b14c7a6159d923ecbd66217b9a84fc14212024801"
+ },
+ "payload": {},
+ "existing_results": {
+  "checkpoints": 18,
+  "eval": 0
+ }
+}
