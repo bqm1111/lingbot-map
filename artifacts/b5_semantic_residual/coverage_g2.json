@@ -1,0 +1,37 @@
+{
+ "window": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "mean_D_per_train_anchor": 3391.335787923417,
+ "classes_with_min_voxels": 14,
+ "class_counts": [
+  189278,
+  7572,
+  651,
+  29518,
+  54297,
+  2516,
+  746595,
+  291231,
+  115708,
+  325514,
+  344910,
+  134025,
+  2170449,
+  64565,
+  49863,
+  14024,
+  57083,
+  7635
+ ],
+ "gate": {
+  "mean_D_per_train_anchor_min": 2000,
+  "classes_min": 8,
+  "voxels_per_class_min": 10000
+ },
+ "pass": true
+}

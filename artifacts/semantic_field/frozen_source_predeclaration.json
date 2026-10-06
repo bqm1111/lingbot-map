@@ -1,0 +1,14 @@
+{
+ "stage": "source_predeclaration",
+ "frozen_at": "2026-09-15T14:00:42+02:00",
+ "sha256": {
+  "artifacts/semantic_field/source_predeclaration.md": "e799abccba97a4c25501136e0b6d10bdcadc083671214fee2d8e5ceae7b58cb1",
+  "tools/semantic_field/config/schema.py": "782795a15bcbf06ea7b82a9f61380daf91b1a541506f346840a421242a29719b"
+ },
+ "payload": {},
+ "existing": {
+  "checkpoints": 0,
+  "eval": 0,
+  "target_predictions": 0
+ }
+}

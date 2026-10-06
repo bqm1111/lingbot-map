@@ -1,0 +1,182 @@
+{
+ "version": "b5.1",
+ "n_anchors": 590,
+ "decision_region": "completed_revealed_unseen",
+ "future_offsets": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "methods": [
+  "B0",
+  "B5_s0",
+  "B5_s1",
+  "B5_s2"
+ ],
+ "miou_by_region": {
+  "observed_current": {
+   "B0": 15.20849644320245,
+   "B5_s0": 15.20849644320245,
+   "B5_s1": 15.20849644320245,
+   "B5_s2": 15.20849644320245,
+   "B5_mean": 15.20849644320245,
+   "delta_mean": 0.0
+  },
+  "observed_past_only": {
+   "B0": 17.38246809299052,
+   "B5_s0": 17.38246809299052,
+   "B5_s1": 17.38246809299052,
+   "B5_s2": 17.38246809299052,
+   "B5_mean": 17.38246809299052,
+   "delta_mean": 0.0
+  },
+  "never_observed": {
+   "B0": 8.392475299689655,
+   "B5_s0": 6.318244421537061,
+   "B5_s1": 6.502821147222707,
+   "B5_s2": 6.134881027675701,
+   "B5_mean": 6.318648865478489,
+   "delta_mean": -2.073826434211166
+  },
+  "completed_never_observed": {
+   "B0": 8.796376363534595,
+   "B5_s0": 6.416783075637178,
+   "B5_s1": 6.43260422163313,
+   "B5_s2": 6.406784634873761,
+   "B5_mean": 6.418723977381357,
+   "delta_mean": -2.3776523861532377
+  },
+  "completed_geo_observed": {
+   "B0": 9.721979511105086,
+   "B5_s0": 9.120930146562875,
+   "B5_s1": 9.06522384789318,
+   "B5_s2": 8.769975457487682,
+   "B5_mean": 8.985376483981247,
+   "delta_mean": -0.7366030271238397
+  },
+  "completed_geo_unobserved": {
+   "B0": 7.731346393575363,
+   "B5_s0": 5.72558945956693,
+   "B5_s1": 5.7417244196370465,
+   "B5_s2": 5.782970002212525,
+   "B5_mean": 5.750094627138833,
+   "delta_mean": -1.9812517664365297
+  },
+  "completed_later_revealed": {
+   "B0": 8.336335618274699,
+   "B5_s0": 6.06236442817976,
+   "B5_s1": 6.018023323972781,
+   "B5_s2": 6.08474586728461,
+   "B5_mean": 6.055044539812383,
+   "delta_mean": -2.281291078462316
+  },
+  "completed_revealed_unseen": {
+   "B0": 7.233699635629357,
+   "B5_s0": 5.279222667312046,
+   "B5_s1": 5.128132085082406,
+   "B5_s2": 5.201882097825402,
+   "B5_mean": 5.203078950073285,
+   "delta_mean": -2.0306206855560722
+  },
+  "completed_not_revealed": {
+   "B0": 8.782412238867618,
+   "B5_s0": 6.44933745942215,
+   "B5_s1": 6.476358960163926,
+   "B5_s2": 6.4210367075905594,
+   "B5_mean": 6.448911042392211,
+   "delta_mean": -2.3335011964754067
+  },
+  "ssc_full": {
+   "B0": 1.5480635417300568,
+   "B5_s0": 1.2470922208150537,
+   "B5_s1": 1.242102107337747,
+   "B5_s2": 1.237239789114346,
+   "B5_mean": 1.2421447057557156,
+   "delta_mean": -0.3059188359743412
+  },
+  "ssc_never_observed": {
+   "B0": 1.3927645153874209,
+   "B5_s0": 0.8244269049377919,
+   "B5_s1": 0.8138363838001573,
+   "B5_s2": 0.8177037396794852,
+   "B5_mean": 0.8186556761391448,
+   "delta_mean": -0.574108839248276
+  }
+ },
+ "decision_region_delta_per_seed": {
+  "seed0": -1.9544769683173104,
+  "seed1": -2.105567550546951,
+  "seed2": -2.0318175378039545
+ },
+ "decision_region_ci_per_seed": {
+  "seed0": [
+   -1.9544769683173104,
+   -3.200829700772728,
+   -1.4302280892445016
+  ],
+  "seed1": [
+   -2.105567550546951,
+   -3.364230493720982,
+   -1.5442289313727229
+  ],
+  "seed2": [
+   -2.0318175378039545,
+   -3.279792482086505,
+   -1.5012557059703797
+  ]
+ },
+ "teacher_agreement": {
+  "B0": {
+   "top1_agreement": 0.4520631237010581
+  },
+  "B5_s0": {
+   "top1_agreement": 0.3917016765753066
+  },
+  "B5_s1": {
+   "top1_agreement": 0.4038274559404479
+  },
+  "B5_s2": {
+   "top1_agreement": 0.4087912945122665
+  }
+ },
+ "checks": {
+  "mean_miou_gain_pp": -2.030620685556072,
+  "mean_miou_gain_pp_min": 1.0,
+  "gain_meets_threshold": false,
+  "all_three_seeds_positive": false,
+  "paired_ci95": [
+   -2.0318175378039545,
+   -3.279792482086505,
+   -1.5012557059703797
+  ],
+  "ci_lower_above_zero": false,
+  "candidate_supported_change_pp": -0.7366030271238397,
+  "candidate_supported_ok": false,
+  "full_source_ssc_change_pp": -0.3059188359743412,
+  "full_source_ssc_ok": true,
+  "direct_evidence_identical": true,
+  "occupancy_identical": true
+ },
+ "outcome": "SOURCE FAIL",
+ "rule": {
+  "primary_population": "geometrically unobserved, future-revealed voxels: predicted occupied at t, no semantic evidence at t, never hit by an H_t camera view, with a valid future teacher target",
+  "primary_metric": "semantic mIoU against held-out source ground truth, B5 minus B0",
+  "pass_requires": {
+   "mean_miou_gain_pp_min": 1.0,
+   "all_three_seeds_positive": true,
+   "paired_ci95_lower_above": 0.0,
+   "candidate_supported_change_pp_min": -0.5,
+   "full_source_ssc_change_pp_min": -0.5,
+   "direct_evidence_predictions_identical": true,
+   "occupancy_identical": true
+  },
+  "bootstrap": {
+   "block_anchors": 20,
+   "resamples": 2000,
+   "seed": 0
+  },
+  "note": "Teacher-agreement metrics (cosine, top-1 vs the future teacher readout) are reported but CANNOT establish SOURCE PASS on their own: agreeing with the teacher is not the same as being right."
+ }
+}

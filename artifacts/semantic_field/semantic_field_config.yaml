@@ -1,0 +1,57 @@
+protocol: semantic_field_b4/2026-09-15
+train_drives:
+- 2013_05_28_drive_0003_sync
+- 2013_05_28_drive_0007_sync
+- 2013_05_28_drive_0010_sync
+dev_drive: 2013_05_28_drive_0006_sync
+seeds:
+- 0
+- 1
+- 2
+geometry_seed: 0
+feature_space:
+  teacher_dim: 1024
+  text_logit_scale: 40.0
+  centering: normalize(f - mu), mu = mean raw unit evidence feature over training-drive evidence voxels
+head:
+  trunk_channels: 24
+  geometry_channels: 3
+  evidence_projection: 32
+  widths:
+  - 32
+  - 48
+  - 64
+  coarse_dilations:
+  - 1
+  - 2
+  groups: 8
+parameters: 1357008
+mask:
+  block_voxels:
+  - 16
+  - 16
+  - 8
+  hide_probability: 0.5
+train:
+  steps: 6000
+  anchors_per_step: 4
+  crop:
+  - 128
+  - 128
+  - 32
+  max_masked_targets: 8192
+  max_delayed_targets: 4096
+  lr: 0.001
+  weight_decay: 0.01
+  grad_clip: 1.0
+  lambda_text: 1.0
+  lambda_feature: 1.0
+  lambda_delayed: 1.0
+  log_every: 50
+  ckpt_every: 1000
+checkpoint_rule: final step 6000, no selection
+delayed_targets: pilot delayed_targets (10 s, tiers A+B), class-distribution targets, not rebuilt
+losses:
+  masked: KL(softmax(40 cos(f_t,text)) || softmax(40 cos(f_s,text))) + (1 - cos(centre(f_t), centre(f_s)))
+  delayed: KL(q_delayed || softmax(40 cos(f_s,text)))
+  total: L_masked + 1.0 * L_delayed

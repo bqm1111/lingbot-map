@@ -1,0 +1,14 @@
+# Semantic-field source verification — 10/10 pass
+
+| check | pass | detail |
+|---|---|---|
+| 1 frozen stages unchanged and in order | yes | `{"predeclaration < centering < first checkpoint": true, "source_code frozen before evaluation": true, "no checkpoint at predeclaration / centering freeze": true}` |
+| 2 delayed-target rules (pilot) and Gate 16 candidate rules unchanged | yes | `{"pilot": ["predeclaration", "reliability", "addendum_A", "decision"], "gate16": ["predeclaration", "ceiling", "code"]}` |
+| 3 geometry checkpoint == frozen baseline; B3 checkpoints == Gate 16 freeze | yes | `{"geometry": "artifacts/baseline_reconstruction/checkpoints/geo_seed0_step06000.pt", "B3": true}` |
+| 4 centering mean unchanged since its freeze (training drives only) | yes | `{"n_voxels": 27141436, "per_drive": {"2013_05_28_drive_0003_sync": 3677888, "2013_05_28_drive_0007_sync": 9345479, "2013_05_28_drive_0010_sync": 14118069}}` |
+| 5 three B4 seeds, final-step checkpoints hashed, identical frozen geometry digest, no training firewall violation (labels, LiDAR, target datasets) | yes | `{"seeds": {"0": true, "1": true, "2": true}, "params": 1357008}` |
+| 6 no target dataset accessed before promotion (evaluation audits clean, no target predictions) | yes | `{"shards": 4}` |
+| 7 occupancy TP/FP/FN identical to Gate 15 seed 0 on every anchor | yes | `{"anchors": 590}` |
+| 8 B0 reproduces Gate 15 and B3 reproduces Gate 16 per anchor (primary region) | yes | `{"B3": {"0": true, "1": true, "2": true}}` |
+| 9 evidence path identical across methods on every anchor | yes | `{}` |
+| 10 tests: B4 generative output, masking, centering, firewalls, frozen geometry; pilot/Gate 16 causality and prefix invariance | yes | `"28 passed, 6 warnings in 9.86s"` |

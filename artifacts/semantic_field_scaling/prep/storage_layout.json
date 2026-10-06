@@ -1,0 +1,166 @@
+{
+ "placements": {
+  "clips/2013_05_28_drive_0005_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_gate12_suf/local_lingbot/2013_05_28_drive_0005_sync",
+   "target": "/media/minh/MINH1/lingbot_b4_scaling/cold/clips/2013_05_28_drive_0005_sync",
+   "tier": "cold"
+  },
+  "inputs/2013_05_28_drive_0005_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_gate12_suf/inputs/2013_05_28_drive_0005_sync",
+   "target": "/media/welf/SSD2/MINH_DATASETS/lingbot_b4_scaling/hot/inputs/2013_05_28_drive_0005_sync",
+   "tier": "hot"
+  },
+  "clips/2013_05_28_drive_0000_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_gate12_suf/local_lingbot/2013_05_28_drive_0000_sync",
+   "target": "/media/minh/MINH1/lingbot_b4_scaling/cold/clips/2013_05_28_drive_0000_sync",
+   "tier": "cold"
+  },
+  "inputs/2013_05_28_drive_0000_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_gate12_suf/inputs/2013_05_28_drive_0000_sync",
+   "target": "/media/welf/SSD2/MINH_DATASETS/lingbot_b4_scaling/hot/inputs/2013_05_28_drive_0000_sync",
+   "tier": "hot"
+  },
+  "clips/2013_05_28_drive_0002_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_gate12_suf/local_lingbot/2013_05_28_drive_0002_sync",
+   "target": "/media/minh/MINH1/lingbot_b4_scaling/cold/clips/2013_05_28_drive_0002_sync",
+   "tier": "cold"
+  },
+  "evidence/2013_05_28_drive_0005_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_gate15_semantic/evidence/2013_05_28_drive_0005_sync",
+   "target": "/media/welf/SSD2/MINH_DATASETS/lingbot_b4_scaling/hot/evidence/2013_05_28_drive_0005_sync",
+   "tier": "hot"
+  },
+  "provenance/2013_05_28_drive_0005_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_delayed_semantic/provenance/2013_05_28_drive_0005_sync",
+   "target": "/media/welf/SSD2/MINH_DATASETS/lingbot_b4_scaling/hot/provenance/2013_05_28_drive_0005_sync",
+   "tier": "hot"
+  },
+  "inputs/2013_05_28_drive_0002_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_gate12_suf/inputs/2013_05_28_drive_0002_sync",
+   "target": "/media/welf/SSD2/MINH_DATASETS/lingbot_b4_scaling/hot/inputs/2013_05_28_drive_0002_sync",
+   "tier": "hot"
+  },
+  "delayed_targets/2013_05_28_drive_0005_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_delayed_semantic/delayed_targets/2013_05_28_drive_0005_sync",
+   "target": "/media/welf/SSD2/MINH_DATASETS/lingbot_b4_scaling/hot/delayed_targets/2013_05_28_drive_0005_sync",
+   "tier": "hot"
+  },
+  "train_cache_student/2013_05_28_drive_0005_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_delayed_semantic/train_cache/student/2013_05_28_drive_0005_sync",
+   "target": "/media/welf/SSD2/MINH_DATASETS/lingbot_b4_scaling/hot/train_cache_student/2013_05_28_drive_0005_sync",
+   "tier": "hot"
+  },
+  "train_cache_query/2013_05_28_drive_0005_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_delayed_semantic/train_cache/query/2013_05_28_drive_0005_sync",
+   "target": "/media/welf/SSD2/MINH_DATASETS/lingbot_b4_scaling/hot/train_cache_query/2013_05_28_drive_0005_sync",
+   "tier": "hot"
+  },
+  "clips/2013_05_28_drive_0004_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_gate12_suf/local_lingbot/2013_05_28_drive_0004_sync",
+   "target": "/media/minh/MINH1/lingbot_b4_scaling/cold/clips/2013_05_28_drive_0004_sync",
+   "tier": "cold"
+  },
+  "inputs/2013_05_28_drive_0004_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_gate12_suf/inputs/2013_05_28_drive_0004_sync",
+   "target": "/media/welf/SSD2/MINH_DATASETS/lingbot_b4_scaling/hot/inputs/2013_05_28_drive_0004_sync",
+   "tier": "hot"
+  },
+  "evidence/2013_05_28_drive_0000_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_gate15_semantic/evidence/2013_05_28_drive_0000_sync",
+   "target": "/media/welf/SSD2/MINH_DATASETS/lingbot_b4_scaling/hot/evidence/2013_05_28_drive_0000_sync",
+   "tier": "hot"
+  },
+  "provenance/2013_05_28_drive_0000_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_delayed_semantic/provenance/2013_05_28_drive_0000_sync",
+   "target": "/media/welf/SSD2/MINH_DATASETS/lingbot_b4_scaling/hot/provenance/2013_05_28_drive_0000_sync",
+   "tier": "hot"
+  },
+  "delayed_targets/2013_05_28_drive_0000_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_delayed_semantic/delayed_targets/2013_05_28_drive_0000_sync",
+   "target": "/media/welf/SSD2/MINH_DATASETS/lingbot_b4_scaling/hot/delayed_targets/2013_05_28_drive_0000_sync",
+   "tier": "hot"
+  },
+  "train_cache_student/2013_05_28_drive_0000_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_delayed_semantic/train_cache/student/2013_05_28_drive_0000_sync",
+   "target": "/media/welf/SSD2/MINH_DATASETS/lingbot_b4_scaling/hot/train_cache_student/2013_05_28_drive_0000_sync",
+   "tier": "hot"
+  },
+  "train_cache_query/2013_05_28_drive_0000_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_delayed_semantic/train_cache/query/2013_05_28_drive_0000_sync",
+   "target": "/media/welf/SSD2/MINH_DATASETS/lingbot_b4_scaling/hot/train_cache_query/2013_05_28_drive_0000_sync",
+   "tier": "hot"
+  },
+  "evidence/2013_05_28_drive_0002_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_gate15_semantic/evidence/2013_05_28_drive_0002_sync",
+   "target": "/media/welf/SSD2/MINH_DATASETS/lingbot_b4_scaling/hot/evidence/2013_05_28_drive_0002_sync",
+   "tier": "hot"
+  },
+  "provenance/2013_05_28_drive_0002_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_delayed_semantic/provenance/2013_05_28_drive_0002_sync",
+   "target": "/media/welf/SSD2/MINH_DATASETS/lingbot_b4_scaling/hot/provenance/2013_05_28_drive_0002_sync",
+   "tier": "hot"
+  },
+  "delayed_targets/2013_05_28_drive_0002_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_delayed_semantic/delayed_targets/2013_05_28_drive_0002_sync",
+   "target": "/media/welf/SSD2/MINH_DATASETS/lingbot_b4_scaling/hot/delayed_targets/2013_05_28_drive_0002_sync",
+   "tier": "hot"
+  },
+  "train_cache_student/2013_05_28_drive_0002_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_delayed_semantic/train_cache/student/2013_05_28_drive_0002_sync",
+   "target": "/media/welf/SSD2/MINH_DATASETS/lingbot_b4_scaling/hot/train_cache_student/2013_05_28_drive_0002_sync",
+   "tier": "hot"
+  },
+  "train_cache_query/2013_05_28_drive_0002_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_delayed_semantic/train_cache/query/2013_05_28_drive_0002_sync",
+   "target": "/media/welf/SSD2/MINH_DATASETS/lingbot_b4_scaling/hot/train_cache_query/2013_05_28_drive_0002_sync",
+   "tier": "hot"
+  },
+  "evidence/2013_05_28_drive_0004_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_gate15_semantic/evidence/2013_05_28_drive_0004_sync",
+   "target": "/media/SSD1/MINH_DATASETS/lingbot_b4_scaling/hot/evidence/2013_05_28_drive_0004_sync",
+   "tier": "hot"
+  },
+  "provenance/2013_05_28_drive_0004_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_delayed_semantic/provenance/2013_05_28_drive_0004_sync",
+   "target": "/media/SSD1/MINH_DATASETS/lingbot_b4_scaling/hot/provenance/2013_05_28_drive_0004_sync",
+   "tier": "hot"
+  },
+  "delayed_targets/2013_05_28_drive_0004_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_delayed_semantic/delayed_targets/2013_05_28_drive_0004_sync",
+   "target": "/media/SSD1/MINH_DATASETS/lingbot_b4_scaling/hot/delayed_targets/2013_05_28_drive_0004_sync",
+   "tier": "hot"
+  },
+  "train_cache_student/2013_05_28_drive_0004_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_delayed_semantic/train_cache/student/2013_05_28_drive_0004_sync",
+   "target": "/media/SSD1/MINH_DATASETS/lingbot_b4_scaling/hot/train_cache_student/2013_05_28_drive_0004_sync",
+   "tier": "hot"
+  },
+  "train_cache_query/2013_05_28_drive_0004_sync": {
+   "link": "/media/SSD1/MINH_DATASETS/lingbot_delayed_semantic/train_cache/query/2013_05_28_drive_0004_sync",
+   "target": "/media/SSD1/MINH_DATASETS/lingbot_b4_scaling/hot/train_cache_query/2013_05_28_drive_0004_sync",
+   "tier": "hot"
+  }
+ },
+ "token_links": {
+  "2013_05_28_drive_0005_sync": {
+   "count": 1258,
+   "from": "/media/minh/MINH1/lingbot_b4_scaling/cold/trident_tokens/k360_train",
+   "into": "/media/SSD1/MINH_DATASETS/lingbot_feature_first_3d/trident_tokens/k360_train"
+  },
+  "2013_05_28_drive_0000_sync": {
+   "count": 2103,
+   "from": "/media/minh/MINH1/lingbot_b4_scaling/cold/trident_tokens/k360_train",
+   "into": "/media/SSD1/MINH_DATASETS/lingbot_feature_first_3d/trident_tokens/k360_train"
+  },
+  "2013_05_28_drive_0002_sync": {
+   "count": 2778,
+   "from": "/media/minh/MINH1/lingbot_b4_scaling/cold/trident_tokens/k360_train",
+   "into": "/media/SSD1/MINH_DATASETS/lingbot_feature_first_3d/trident_tokens/k360_train"
+  },
+  "2013_05_28_drive_0004_sync": {
+   "count": 2211,
+   "from": "/media/minh/MINH1/lingbot_b4_scaling/cold/trident_tokens/k360_train",
+   "into": "/media/SSD1/MINH_DATASETS/lingbot_feature_first_3d/trident_tokens/k360_train"
+  }
+ }
+}

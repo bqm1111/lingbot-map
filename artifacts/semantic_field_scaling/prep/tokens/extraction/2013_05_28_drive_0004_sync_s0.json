@@ -1,0 +1,71 @@
+{
+  "drive": "2013_05_28_drive_0004_sync",
+  "source": "k360_train",
+  "shard": 0,
+  "num_shards": 1,
+  "n_written": 1441,
+  "n_skipped": 770,
+  "token_grid_hw": [
+    34,
+    128
+  ],
+  "feat_dim": 1024,
+  "dtype": "float16 (unit-normalised)",
+  "bytes_per_frame": 8912896,
+  "coarse_reproduction": {
+    "max_abs_dp_max": 0.004087507724761963,
+    "argmax_agree_min": 0.9978485703468323,
+    "argmax_agree_mean": 0.9992408194862911,
+    "refined_vs_coarse_agree_mean": 0.9256974300686309
+  },
+  "teacher": {
+    "config": {
+      "clip_type": "laion2b_s32b_b79k",
+      "model_type": "ViT-H-14",
+      "vfm_model": "dino",
+      "sam_model_type": "vit_h",
+      "sam_refinement": true,
+      "beta": 1.2,
+      "gamma": 3.0,
+      "cos_fac": 3.0,
+      "refine_neg_cos": false,
+      "coarse_thresh": 0.1,
+      "slide_stride": 224,
+      "slide_crop": 336,
+      "sam_iou_thresh": 0.8,
+      "minimal_area": 225,
+      "sam_mask_coff": 0.005,
+      "logit_scale": 40,
+      "prob_thd": 0.0,
+      "dataset_type": "CityscapesDataset"
+    },
+    "sam_ckpt": "/home/minh/workspace/third_party/checkpoints/sam_vit_h_4b8939.pth",
+    "sam_ckpt_sha256": "a7bf3b02f3ebf1267aba913ff637d9a2d5c33d3173bb679e46d9f338c26f262e",
+    "clip": "open_clip ViT-H-14 laion2b_s32b_b79k (fp16)",
+    "vocabulary": [
+      "car",
+      "bicycle",
+      "motorcycle",
+      "truck",
+      "other vehicle",
+      "person",
+      "road",
+      "parking",
+      "sidewalk",
+      "other ground",
+      "building",
+      "fence",
+      "vegetation",
+      "terrain",
+      "pole",
+      "traffic sign",
+      "other structure",
+      "other object"
+    ],
+    "trident_py_sha256": "0924813e951f96cd7698a4aeb90d568202d14444a97a364c63e57ce770f525ce",
+    "adapter_sha256": "49c4530f4fa0cf41bbaf182f898c66dc04c0662d1bfd16a350e38f6f75a8f348",
+    "hook": "model.clip.encode_image output, L2-normalised (the tensor the official code projects onto text)"
+  },
+  "seconds": 2628.093956232071,
+  "torch": "2.7.1+cu128"
+}

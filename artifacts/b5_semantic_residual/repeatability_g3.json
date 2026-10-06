@@ -1,0 +1,19 @@
+{
+ "horizon_s": 2.6350000000000002,
+ "train": {
+  "agreement": 0.7491159364569064,
+  "shuffled": 0.3845127394667476,
+  "pairs": 1552773
+ },
+ "dev": {
+  "agreement": 0.7377668291000044,
+  "shuffled": 0.32956682047522534,
+  "pairs": 927560
+ },
+ "gate": {
+  "train_agreement_min": 0.65,
+  "train_margin_over_shuffle_min": 0.1,
+  "dev_agreement_min": 0.6,
+  "dev_margin_over_shuffle_min": 0.1
+ }
+}

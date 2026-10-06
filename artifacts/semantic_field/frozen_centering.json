@@ -1,0 +1,25 @@
+{
+ "stage": "centering",
+ "frozen_at": "2026-09-15T14:03:38+02:00",
+ "sha256": {
+  "artifacts/semantic_field/source_predeclaration.md": "e799abccba97a4c25501136e0b6d10bdcadc083671214fee2d8e5ceae7b58cb1",
+  "tools/semantic_field/config/schema.py": "782795a15bcbf06ea7b82a9f61380daf91b1a541506f346840a421242a29719b",
+  "tools/semantic_field/data/feature_mean.py": "c537143ab9aa42aa0de47d0f7dbe1b848091ecc2c9b43c1062775361e75c48c2"
+ },
+ "payload": {
+  "mu_sha256": "5a41e4d8ef56d4472851b6eb7e56f99a105569d10e1083bb335afb12bc265a94",
+  "n_voxels": 27141436,
+  "per_drive": {
+   "2013_05_28_drive_0003_sync": 3677888,
+   "2013_05_28_drive_0007_sync": 9345479,
+   "2013_05_28_drive_0010_sync": 14118069
+  },
+  "mu_norm": 0.9050724330006585,
+  "file_list_sha256": "84cd2273b0bb521e6d459627582ab297e16932a49d2befd0bbd1bf59e540762d"
+ },
+ "existing": {
+  "checkpoints": 0,
+  "eval": 0,
+  "target_predictions": 0
+ }
+}

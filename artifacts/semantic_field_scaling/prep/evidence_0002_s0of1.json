@@ -1,0 +1,36 @@
+{
+ "stage": "evidence",
+ "drive": "2013_05_28_drive_0002_sync",
+ "shard": 0,
+ "shards": 1,
+ "kept_anchors": 2769,
+ "result": {
+  "drive": "2013_05_28_drive_0002_sync",
+  "shard": 0,
+  "n_anchors": 2769,
+  "n_written": 2769,
+  "n_present": 0,
+  "evidence_voxels_mean": 18444.20404478151,
+  "seconds": 621.767327785492,
+  "firewall": {
+   "opened": 41535,
+   "violations": [],
+   "forbidden": [
+    "data/kitti/dataset",
+    "occ3d_gt",
+    "nuscenes",
+    "lingbot_occ3d_zeroshot",
+    "scale_gate/cache",
+    "preprocess/labels",
+    "eval_masks",
+    "samples_gtsem",
+    "data_3d_semantics",
+    "velodyne",
+    "data_3d_raw",
+    "data_poses",
+    "targets"
+   ]
+  }
+ },
+ "seconds": 621.9699416160583
+}

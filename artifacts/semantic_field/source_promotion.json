@@ -1,0 +1,45 @@
+{
+ "decision": "SOURCE FAIL",
+ "criteria": {
+  "S1": {
+   "gain": -0.5713840549813529,
+   "pass": false
+  },
+  "S2": {
+   "seed_gains": [
+    -0.869306875778241,
+    -0.47073730687174375,
+    -0.37410798229407227
+   ],
+   "ci95": [
+    -1.3690988712532286,
+    0.22851150294401099
+   ],
+   "pass": false
+  },
+  "S3": {
+   "gain_vs_B3": -1.1544010730194216,
+   "ci95": [
+    -2.1264632330431117,
+    -0.20234745483732045
+   ],
+   "pass": false
+  },
+  "S4": {
+   "classes_improved_vs_B0": 6,
+   "pass": false
+  },
+  "S5": {
+   "dominant_fraction": 0.4048939710091674,
+   "limit": 0.6,
+   "classes_ge_1pct": 7.0,
+   "entropy_pred": 2.1518304592242234,
+   "entropy_gt": 2.7125540469762623,
+   "pass": true
+  },
+  "S6": {
+   "pass": true
+  }
+ },
+ "frozen_rule": "artifacts/semantic_field/source_predeclaration.md"
+}

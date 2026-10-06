@@ -1,0 +1,13 @@
+{
+ "train_B3": {
+  "steps": 200,
+  "distinct_anchors_available": 1358,
+  "anchor_reads": 1600,
+  "seconds_in_loop": 97.84983849525452,
+  "seconds_per_step": 0.4892491924762726,
+  "wall_incl_setup_s": 99.95190215110779,
+  "peak_gpu_bytes": 4695929344,
+  "peak_host_rss_bytes": 2058002432
+ },
+ "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition"
+}

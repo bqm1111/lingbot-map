@@ -1,0 +1,32 @@
+{
+ "selection_rule": "anchors at fixed quantiles of per-anchor (oracle A - B0) mIoU on P2",
+ "quantiles": [
+  0.05,
+  0.35,
+  0.65,
+  0.95
+ ],
+ "picks": [
+  {
+   "t": 661,
+   "delta_miou": -2.6587684963675393,
+   "rank_pct": 4.923599320882852
+  },
+  {
+   "t": 43,
+   "delta_miou": -0.12920668853323392,
+   "rank_pct": 34.97453310696095
+  },
+  {
+   "t": 604,
+   "delta_miou": 0.8333080379118805,
+   "rank_pct": 65.02546689303905
+  },
+  {
+   "t": 838,
+   "delta_miou": 3.8202062572674738,
+   "rank_pct": 95.07640067911714
+  }
+ ],
+ "figure": "/home/minh/workspace/lingbot-map_fork/artifacts/gate17_instance_oracle/qualitative.png"
+}

@@ -1,0 +1,22 @@
+{
+ "C0_b0": {
+  "miou": 8.796376363534595,
+  "accuracy": 46.00690723137694
+ },
+ "A_oracle_instance": {
+  "miou": 8.88488376380897,
+  "accuracy": 47.325471017187155
+ },
+ "C1_shuffled_instance": {
+  "miou": 5.991853924591208,
+  "accuracy": 36.15327579494403
+ },
+ "C3_visible_majority": {
+  "miou": 8.811838314157407,
+  "accuracy": 47.283622264702835
+ },
+ "C2_gt_class": {
+  "miou": 100.0,
+  "accuracy": 100.0
+ }
+}

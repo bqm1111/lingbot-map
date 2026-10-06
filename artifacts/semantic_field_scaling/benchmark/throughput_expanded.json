@@ -1,0 +1,23 @@
+{
+ "pool": "expanded (draft, 9066 anchors)",
+ "train_B4": {
+  "steps": 150,
+  "distinct_anchors_available": 9066,
+  "anchor_reads": 600,
+  "seconds_in_loop": 65.58807373046875,
+  "seconds_per_step": 0.43725382486979164,
+  "wall_incl_setup_s": 66.68055701255798,
+  "peak_gpu_bytes": 11988464128,
+  "peak_host_rss_bytes": 2279096320
+ },
+ "train_B3": {
+  "steps": 150,
+  "distinct_anchors_available": 9066,
+  "anchor_reads": 1200,
+  "seconds_in_loop": 86.31873941421509,
+  "seconds_per_step": 0.575458262761434,
+  "wall_incl_setup_s": 86.33070206642151,
+  "peak_gpu_bytes": 4739129856,
+  "peak_host_rss_bytes": 2494558208
+ }
+}

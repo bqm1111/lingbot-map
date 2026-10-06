@@ -1,0 +1,20 @@
+{
+ "drive": "2013_05_28_drive_0006_sync",
+ "n_anchors": 590,
+ "written": 590,
+ "skipped": 0,
+ "seconds": 235.81463074684143,
+ "future_offsets": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "mean_n_target": 3710.9101694915253,
+ "mean_n_D": 3564.722033898305,
+ "mean_n_D_unobserved": 2043.8491525423728,
+ "mean_n_tierA": 4011.6983050847457,
+ "mean_n_tierB": 3110.3033898305084,
+ "max_cos_gap": 7.152557373046875e-07
+}

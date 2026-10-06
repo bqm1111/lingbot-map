@@ -1,0 +1,8 @@
+drive,pool,anchors,stream_definition_check,temporal_blocks_20,path_m_at_anchors,cells_51m,cells_new_vs_current,cells_shared_with_0006_trajectory,frac_anchors_within_25m_of_0006,frac_anchors_within_57m_of_0006,frac_anchors_within_114m_of_0006,anchors_beyond_114m_of_0006,temporal_blocks_beyond_114m,frac_anchors_within_57m_of_current_train
+0003,current,193,True,10,1325.0,35,35,0,0.0,0.0,0.0,193,10,
+0007,current,569,True,29,4853.0,117,117,0,0.0,0.0,0.0,569,29,
+0010,current,596,True,30,3328.0,75,75,0,0.0,0.0,0.0,596,30,
+0000,candidate,2094,True,105,8370.0,128,128,0,0.0,0.0,0.0,2094,105,0.0
+0002,candidate,2769,True,139,11525.0,197,196,0,0.0,0.0,0.0,2769,139,0.0061
+0004,candidate,2202,True,111,9927.0,182,182,6,0.025,0.03,0.0763,2034,104,0.0
+0005,candidate,1249,True,63,4663.0,67,67,17,0.1817,0.241,0.3507,811,44,0.0

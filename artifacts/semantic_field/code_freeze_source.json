@@ -1,0 +1,39 @@
+{
+ "git_head": "598cd228620f1d4f5db9010aedca0392c926edb5",
+ "sha256": {
+  "tools/semantic_field/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tools/semantic_field/cli/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tools/semantic_field/config/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tools/semantic_field/config/schema.py": "782795a15bcbf06ea7b82a9f61380daf91b1a541506f346840a421242a29719b",
+  "tools/semantic_field/data/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tools/semantic_field/data/feature_mean.py": "c537143ab9aa42aa0de47d0f7dbe1b848091ecc2c9b43c1062775361e75c48c2",
+  "tools/semantic_field/data/semantic_evidence.py": "7d75f156ed89b69041cb288ce32b5eb7e49206e95c53015d210cc5eb01a3e9b3",
+  "tools/semantic_field/evaluation/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tools/semantic_field/evaluation/analysis.py": "743467d61b9e5de5992936031aa05e42a9c75241c29d985f1c8b0d5a93f6ca45",
+  "tools/semantic_field/evaluation/evaluate_source.py": "e60f002329371e73301657341a750c6a63c8029944389cf80389e02d04838fb2",
+  "tools/semantic_field/evaluation/predict.py": "94ae2740ae0eb2cd2128505511c6b9f3ae72a2db599f12e9a360efeba50551e1",
+  "tools/semantic_field/evaluation/report.py": "a23f4c280575fbde12dfd99fb6b37cff6635b7c8f8f9ec9b2cd5560ed49ab993",
+  "tools/semantic_field/freeze.py": "52e8fd4b54c0edffeac2e8f39f7c7f790f39c6dea00d78ffc3626b2ea0cdd0e8",
+  "tools/semantic_field/losses/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tools/semantic_field/losses/semantic_loss.py": "859f50c202662e0a6d1d067043aa209afb1acd76ed55b04616c3aeeadf3028b4",
+  "tools/semantic_field/model/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tools/semantic_field/model/semantic_field_head.py": "0ab16b70ccebf780b716086053a7516a909d7e57a18c987d2819a3e35d80df7f",
+  "tools/semantic_field/training/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tools/semantic_field/training/trainer.py": "a807dc85401365ff44900293c203f401e4934ace7d777047250f8141a626a3f5",
+  "tools/semantic_field/verify_source.py": "7fcfc9114a3c1f55611dc16a9e3b2d16536301f1e8d310a7381fb49551c1a7f7",
+  "tests/semantic_field/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/semantic_field/test_semantic_field.py": "0da250e3ced81a4bbdeae66d8ad580bc9e355e435e0cd47d24b1466441484d64",
+  "artifacts/semantic_field/source_predeclaration.md": "e799abccba97a4c25501136e0b6d10bdcadc083671214fee2d8e5ceae7b58cb1",
+  "/media/SSD1/MINH_DATASETS/lingbot_semantic_field/feature_mean_train_drives.npz": "5a41e4d8ef56d4472851b6eb7e56f99a105569d10e1083bb335afb12bc265a94",
+  "/home/minh/workspace/lingbot-map_fork/artifacts/semantic_field/checkpoints/B4_seed0_step06000.pt": "301c0ef45a8b38e213ca4b67c7a6c6ec2843ebaa1a36142294071fff0c02d172",
+  "/home/minh/workspace/lingbot-map_fork/artifacts/semantic_field/checkpoints/B4_seed1_step06000.pt": "b8515ef13b71fdcf69236460936c2c4d5c338c0191ada9f6cb143c67c2f5f9df",
+  "/home/minh/workspace/lingbot-map_fork/artifacts/semantic_field/checkpoints/B4_seed2_step06000.pt": "d7c00322b4879627aa97b802813602ba1ed3c5836d2c267c86987faa5cfade1c"
+ },
+ "frozen_stages": {
+  "source_predeclaration": "2026-09-15T14:00:42+02:00",
+  "centering": "2026-09-15T14:03:38+02:00",
+  "source_code": "2026-09-15T14:05:32+02:00"
+ },
+ "decision": "SOURCE FAIL",
+ "note": "SOURCE FAIL: no final freeze, targets never opened"
+}

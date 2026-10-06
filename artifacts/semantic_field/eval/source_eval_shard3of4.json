@@ -1,0 +1,15 @@
+{
+ "shard": 3,
+ "shards": 4,
+ "n_anchors": 147,
+ "seconds": 280.72085452079773,
+ "b4_checkpoints": {
+  "B4_s0": "/home/minh/workspace/lingbot-map_fork/artifacts/semantic_field/checkpoints/B4_seed0_step06000.pt",
+  "B4_s1": "/home/minh/workspace/lingbot-map_fork/artifacts/semantic_field/checkpoints/B4_seed1_step06000.pt",
+  "B4_s2": "/home/minh/workspace/lingbot-map_fork/artifacts/semantic_field/checkpoints/B4_seed2_step06000.pt"
+ },
+ "firewall": {
+  "opened": 1764,
+  "violations": []
+ }
+}

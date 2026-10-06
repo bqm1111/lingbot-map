@@ -1,0 +1,341 @@
+{
+ "selection": {
+  "stride": 45,
+  "anchors": [
+   [
+    "2013_05_28_drive_0003_sync",
+    4
+   ],
+   [
+    "2013_05_28_drive_0003_sync",
+    49
+   ],
+   [
+    "2013_05_28_drive_0003_sync",
+    94
+   ],
+   [
+    "2013_05_28_drive_0003_sync",
+    139
+   ],
+   [
+    "2013_05_28_drive_0003_sync",
+    184
+   ],
+   [
+    "2013_05_28_drive_0007_sync",
+    36
+   ],
+   [
+    "2013_05_28_drive_0007_sync",
+    81
+   ],
+   [
+    "2013_05_28_drive_0007_sync",
+    126
+   ],
+   [
+    "2013_05_28_drive_0007_sync",
+    171
+   ],
+   [
+    "2013_05_28_drive_0007_sync",
+    216
+   ],
+   [
+    "2013_05_28_drive_0007_sync",
+    261
+   ],
+   [
+    "2013_05_28_drive_0007_sync",
+    306
+   ],
+   [
+    "2013_05_28_drive_0007_sync",
+    351
+   ],
+   [
+    "2013_05_28_drive_0007_sync",
+    396
+   ],
+   [
+    "2013_05_28_drive_0007_sync",
+    441
+   ],
+   [
+    "2013_05_28_drive_0007_sync",
+    486
+   ],
+   [
+    "2013_05_28_drive_0007_sync",
+    531
+   ],
+   [
+    "2013_05_28_drive_0010_sync",
+    7
+   ],
+   [
+    "2013_05_28_drive_0010_sync",
+    52
+   ],
+   [
+    "2013_05_28_drive_0010_sync",
+    97
+   ],
+   [
+    "2013_05_28_drive_0010_sync",
+    142
+   ],
+   [
+    "2013_05_28_drive_0010_sync",
+    187
+   ],
+   [
+    "2013_05_28_drive_0010_sync",
+    232
+   ],
+   [
+    "2013_05_28_drive_0010_sync",
+    277
+   ],
+   [
+    "2013_05_28_drive_0010_sync",
+    322
+   ],
+   [
+    "2013_05_28_drive_0010_sync",
+    367
+   ],
+   [
+    "2013_05_28_drive_0010_sync",
+    412
+   ],
+   [
+    "2013_05_28_drive_0010_sync",
+    457
+   ],
+   [
+    "2013_05_28_drive_0010_sync",
+    502
+   ],
+   [
+    "2013_05_28_drive_0010_sync",
+    547
+   ],
+   [
+    "2013_05_28_drive_0010_sync",
+    592
+   ]
+  ]
+ },
+ "b4_loaded_values": {
+  "anchors": 31,
+  "mismatches": [],
+  "pass": true
+ },
+ "b3_loaded_values": {
+  "anchors": 31,
+  "mismatches": [],
+  "pass": true
+ },
+ "b4_short_run": {
+  "steps": 20,
+  "deterministic_kernels": false,
+  "draw_digest_equal": true,
+  "original_vs_new": {
+   "log": {
+    "rows": 20,
+    "keys_equal": true,
+    "target_counts_equal": true,
+    "all_rows_bit_identical": false,
+    "max_abs_logged_diff": 0.001109778881072998
+   },
+   "tensors": {
+    "step1_dense_trunk_exact": true,
+    "step1_dense_geometry_exact": true,
+    "step1_dense_projected_evidence_exact": true,
+    "step1_dense_mask_count_exact": true,
+    "step1_masked_target_exact": true,
+    "step1_delayed_target_exact": true,
+    "step1_hidden_max_abs_diff": 0.0,
+    "step1_masked_student_max_abs_diff": 0.0,
+    "step1_delayed_student_max_abs_diff": 0.0,
+    "step2_dense_trunk_exact": true,
+    "step2_dense_geometry_exact": true,
+    "step2_dense_projected_evidence_exact": false,
+    "step2_dense_mask_count_exact": true,
+    "step2_masked_target_exact": true,
+    "step2_delayed_target_exact": true,
+    "step2_hidden_max_abs_diff": 0.10080718994140625,
+    "step2_masked_student_max_abs_diff": 0.001049740705639124,
+    "step2_delayed_student_max_abs_diff": 0.000804780051112175
+   },
+   "final_param_max_abs_diff": 0.004409400280565023
+  },
+  "original_vs_original": {
+   "log": {
+    "rows": 20,
+    "keys_equal": true,
+    "target_counts_equal": true,
+    "all_rows_bit_identical": false,
+    "max_abs_logged_diff": 0.0009080171585083008
+   },
+   "tensors": {
+    "step1_dense_trunk_exact": true,
+    "step1_dense_geometry_exact": true,
+    "step1_dense_projected_evidence_exact": true,
+    "step1_dense_mask_count_exact": true,
+    "step1_masked_target_exact": true,
+    "step1_delayed_target_exact": true,
+    "step1_hidden_max_abs_diff": 0.0,
+    "step1_masked_student_max_abs_diff": 0.0,
+    "step1_delayed_student_max_abs_diff": 0.0,
+    "step2_dense_trunk_exact": true,
+    "step2_dense_geometry_exact": true,
+    "step2_dense_projected_evidence_exact": false,
+    "step2_dense_mask_count_exact": true,
+    "step2_masked_target_exact": true,
+    "step2_delayed_target_exact": true,
+    "step2_hidden_max_abs_diff": 0.1034163236618042,
+    "step2_masked_student_max_abs_diff": 0.001020057126879692,
+    "step2_delayed_student_max_abs_diff": 0.0009008785709738731
+   },
+   "final_param_max_abs_diff": 0.00497514707967639
+  },
+  "params_finite": true,
+  "geometry_digest_unchanged": true,
+  "peak_gpu_bytes": 11690913792,
+  "cache": {
+   "hits": 52,
+   "misses": 28,
+   "evictions": 0,
+   "bytes_now": 1236982280,
+   "bytes_peak": 1236982280
+  },
+  "cache_bound_bytes": 2147483648
+ },
+ "b4_short_run_deterministic_kernels": {
+  "steps": 20,
+  "deterministic_kernels": true,
+  "draw_digest_equal": true,
+  "original_vs_new": {
+   "log": {
+    "rows": 20,
+    "keys_equal": true,
+    "target_counts_equal": true,
+    "all_rows_bit_identical": false,
+    "max_abs_logged_diff": 0.0016940832138061523
+   },
+   "tensors": {
+    "step1_dense_trunk_exact": true,
+    "step1_dense_geometry_exact": true,
+    "step1_dense_projected_evidence_exact": true,
+    "step1_dense_mask_count_exact": true,
+    "step1_masked_target_exact": true,
+    "step1_delayed_target_exact": true,
+    "step1_hidden_max_abs_diff": 0.0,
+    "step1_masked_student_max_abs_diff": 0.0,
+    "step1_delayed_student_max_abs_diff": 0.0,
+    "step2_dense_trunk_exact": true,
+    "step2_dense_geometry_exact": true,
+    "step2_dense_projected_evidence_exact": false,
+    "step2_dense_mask_count_exact": true,
+    "step2_masked_target_exact": true,
+    "step2_delayed_target_exact": true,
+    "step2_hidden_max_abs_diff": 0.1389939785003662,
+    "step2_masked_student_max_abs_diff": 0.0013371985405683517,
+    "step2_delayed_student_max_abs_diff": 0.0009214040474034846
+   },
+   "final_param_max_abs_diff": 0.004120867699384689
+  },
+  "original_vs_original": {
+   "log": {
+    "rows": 20,
+    "keys_equal": true,
+    "target_counts_equal": true,
+    "all_rows_bit_identical": false,
+    "max_abs_logged_diff": 0.001109778881072998
+   },
+   "tensors": {
+    "step1_dense_trunk_exact": true,
+    "step1_dense_geometry_exact": true,
+    "step1_dense_projected_evidence_exact": true,
+    "step1_dense_mask_count_exact": true,
+    "step1_masked_target_exact": true,
+    "step1_delayed_target_exact": true,
+    "step1_hidden_max_abs_diff": 0.0,
+    "step1_masked_student_max_abs_diff": 0.0,
+    "step1_delayed_student_max_abs_diff": 0.0,
+    "step2_dense_trunk_exact": true,
+    "step2_dense_geometry_exact": true,
+    "step2_dense_projected_evidence_exact": false,
+    "step2_dense_mask_count_exact": true,
+    "step2_masked_target_exact": true,
+    "step2_delayed_target_exact": true,
+    "step2_hidden_max_abs_diff": 0.1324481964111328,
+    "step2_masked_student_max_abs_diff": 0.0011253710836172104,
+    "step2_delayed_student_max_abs_diff": 0.0009340955875813961
+   },
+   "final_param_max_abs_diff": 0.003956311382353306
+  },
+  "params_finite": true,
+  "geometry_digest_unchanged": true,
+  "peak_gpu_bytes": 9885353472,
+  "cache": {
+   "hits": 52,
+   "misses": 28,
+   "evictions": 0,
+   "bytes_now": 1236982280,
+   "bytes_peak": 1236982280
+  },
+  "cache_bound_bytes": 2147483648
+ },
+ "b3_short_run": {
+  "steps": 20,
+  "original_draw_digest": "bf604f37a14caec2b1adef56104b810343addb06d3dcd8e41b0a8011074b3dc6",
+  "new_draw_digest": "bf604f37a14caec2b1adef56104b810343addb06d3dcd8e41b0a8011074b3dc6",
+  "draw_digest_equal": true,
+  "log": {
+   "rows": 20,
+   "keys_equal": true,
+   "target_counts_equal": true,
+   "all_rows_bit_identical": true,
+   "max_abs_logged_diff": 0.0
+  },
+  "final_param_max_abs_diff": 0.0,
+  "params_finite": true,
+  "peak_gpu_bytes": 4622727168,
+  "cache": {
+   "hits": 129,
+   "misses": 31,
+   "evictions": 0,
+   "bytes_now": 1396778576,
+   "bytes_peak": 1396778576
+  }
+ },
+ "b4_resume": {
+  "steps": 20,
+  "draws_equal": true,
+  "log": {
+   "rows": 20,
+   "keys_equal": true,
+   "target_counts_equal": true,
+   "all_rows_bit_identical": false,
+   "max_abs_logged_diff": 0.0012100636959075928
+  },
+  "final_param_max_abs_diff": 0.004900588188320398
+ },
+ "b3_resume": {
+  "steps": 20,
+  "draws_equal": true,
+  "log": {
+   "rows": 20,
+   "keys_equal": true,
+   "target_counts_equal": true,
+   "all_rows_bit_identical": true,
+   "max_abs_logged_diff": 0.0
+  },
+  "final_param_max_abs_diff": 0.0
+ },
+ "peak_host_rss_bytes": 9016651776
+}

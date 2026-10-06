@@ -1,0 +1,21 @@
+{
+ "stage": "source_code",
+ "frozen_at": "2026-09-15T14:05:32+02:00",
+ "sha256": {
+  "artifacts/semantic_field/source_predeclaration.md": "e799abccba97a4c25501136e0b6d10bdcadc083671214fee2d8e5ceae7b58cb1",
+  "tools/semantic_field/config/schema.py": "782795a15bcbf06ea7b82a9f61380daf91b1a541506f346840a421242a29719b",
+  "tools/semantic_field/model/semantic_field_head.py": "0ab16b70ccebf780b716086053a7516a909d7e57a18c987d2819a3e35d80df7f",
+  "tools/semantic_field/data/semantic_evidence.py": "7d75f156ed89b69041cb288ce32b5eb7e49206e95c53015d210cc5eb01a3e9b3",
+  "tools/semantic_field/evaluation/predict.py": "94ae2740ae0eb2cd2128505511c6b9f3ae72a2db599f12e9a360efeba50551e1",
+  "tools/semantic_field/evaluation/evaluate_source.py": "e60f002329371e73301657341a750c6a63c8029944389cf80389e02d04838fb2",
+  "tools/semantic_field/evaluation/analysis.py": "743467d61b9e5de5992936031aa05e42a9c75241c29d985f1c8b0d5a93f6ca45",
+  "tools/delayed_semantic/regions.py": "2f62c38e01997b893c0af937f797e7d792c0b9141d5bdd1b2ae5bc2201035b61",
+  "tools/delayed_semantic/gate16/candidate_regions.py": "62c10f5117d29e6c8d43bdba1e40275e86f90c377a7b9a6fba8c143c59ffcfbb"
+ },
+ "payload": {},
+ "existing": {
+  "checkpoints": 0,
+  "eval": 0,
+  "target_predictions": 0
+ }
+}

@@ -1,0 +1,300 @@
+{
+ "version": "gate17.1",
+ "n_anchors": 590,
+ "coverage_P2": 0.36702194361937757,
+ "instances_per_anchor": 2198.857627118644,
+ "instances_with_evidence_per_anchor": 120.95423728813559,
+ "population_voxels": {
+  "P1_ssc_deployable": 553275690,
+  "P2_correct_completion": 2743212,
+  "P3_oracle_geometry": 7834276
+ },
+ "miou": {
+  "C0_b0": {
+   "P1_ssc_deployable": 1.3927645153874209,
+   "P2_correct_completion": 8.796376363534595,
+   "P3_oracle_geometry": 8.392475299689655
+  },
+  "A_oracle_instance": {
+   "P1_ssc_deployable": 1.3499710096593909,
+   "P2_correct_completion": 8.88488376380897,
+   "P3_oracle_geometry": 8.586604079176146
+  },
+  "C1_shuffled_instance": {
+   "P1_ssc_deployable": 0.9647108026607429,
+   "P2_correct_completion": 5.991853924591208,
+   "P3_oracle_geometry": 6.420977242694365
+  },
+  "C3_visible_majority": {
+   "P1_ssc_deployable": 1.3432717184356155,
+   "P2_correct_completion": 8.811838314157407,
+   "P3_oracle_geometry": 8.539019453033546
+  },
+  "C2_gt_class": {
+   "P1_ssc_deployable": 38.13100554512869,
+   "P2_correct_completion": 100.0,
+   "P3_oracle_geometry": 100.0
+  }
+ },
+ "paired_ci_P2": {
+  "A_oracle_instance": [
+   0.08850740027437531,
+   -0.2702788771770954,
+   0.3413876437335068
+  ],
+  "C1_shuffled_instance": [
+   -2.804522438943387,
+   -3.278019918937394,
+   -2.416469487179198
+  ],
+  "C3_visible_majority": [
+   0.015461950622812637,
+   -0.3753772693680252,
+   0.29251335439838766
+  ],
+  "C2_gt_class": [
+   91.20362363646541,
+   90.42659495625549,
+   91.94638666272908
+  ]
+ },
+ "paired_ci_P1": {
+  "A_oracle_instance": [
+   -0.04279350572802998,
+   -0.19845082923210214,
+   0.01869520888291509
+  ],
+  "C2_gt_class": [
+   36.73824102974127,
+   34.19550924901758,
+   39.54535990854989
+  ]
+ },
+ "bins": {
+  "distance": {
+   "0-1 m": {
+    "C0_b0": 12.386079270463144,
+    "A_oracle_instance": 12.554104897652204,
+    "C1_shuffled_instance": 6.5676845238357,
+    "C3_visible_majority": 12.293234870394103,
+    "C2_gt_class": 100.0
+   },
+   "1-2 m": {
+    "C0_b0": 9.822177899521325,
+    "A_oracle_instance": 9.85821081821252,
+    "C1_shuffled_instance": 7.39407631610878,
+    "C3_visible_majority": 9.814669859217934,
+    "C2_gt_class": 100.0
+   },
+   "2-4 m": {
+    "C0_b0": 7.72195763147138,
+    "A_oracle_instance": 7.812018285474162,
+    "C1_shuffled_instance": 6.715884275346759,
+    "C3_visible_majority": 7.774132923893859,
+    "C2_gt_class": 100.0
+   },
+   "4-8 m": {
+    "C0_b0": 4.234447560958896,
+    "A_oracle_instance": 4.280321075720481,
+    "C1_shuffled_instance": 4.003188170159606,
+    "C3_visible_majority": 4.269856531045961,
+    "C2_gt_class": 100.0
+   },
+   ">8 m": {
+    "C0_b0": 3.0713553487671463,
+    "A_oracle_instance": 3.1628655655282936,
+    "C1_shuffled_instance": 3.05453467772855,
+    "C3_visible_majority": 3.1628655655282936,
+    "C2_gt_class": 100.0
+   }
+  },
+  "distance_counts": {
+   "0-1 m": 1106487,
+   "1-2 m": 557765,
+   "2-4 m": 459431,
+   "4-8 m": 221659,
+   ">8 m": 397870
+  },
+  "visibility": {
+   "0-20%": {
+    "C0_b0": 8.33175913819932,
+    "A_oracle_instance": 8.236959730465495,
+    "C1_shuffled_instance": 6.1552786585359485,
+    "C3_visible_majority": 8.170944070032892,
+    "C2_gt_class": 100.0
+   },
+   "20-40%": {
+    "C0_b0": 15.045910769589366,
+    "A_oracle_instance": 17.436263425408313,
+    "C1_shuffled_instance": 4.922939500646449,
+    "C3_visible_majority": 16.89803194582308,
+    "C2_gt_class": 100.0
+   },
+   "40-60%": {
+    "C0_b0": 16.085137772358614,
+    "A_oracle_instance": 19.53145707425747,
+    "C1_shuffled_instance": 4.758703288804641,
+    "C3_visible_majority": 19.551131544964402,
+    "C2_gt_class": 100.0
+   },
+   "60-80%": {
+    "C0_b0": 14.411199608072966,
+    "A_oracle_instance": 17.03706788040894,
+    "C1_shuffled_instance": 4.928254655277518,
+    "C3_visible_majority": 17.661044017615122,
+    "C2_gt_class": 100.0
+   },
+   "80-100%": {
+    "C0_b0": 18.43729824527266,
+    "A_oracle_instance": 21.502735961195803,
+    "C1_shuffled_instance": 5.0816778625374255,
+    "C3_visible_majority": 23.40331711130635,
+    "C2_gt_class": 100.0
+   }
+  },
+  "visibility_counts": {
+   "0-20%": 2496900,
+   "20-40%": 177640,
+   "40-60%": 53547,
+   "60-80%": 13617,
+   "80-100%": 1508
+  }
+ },
+ "thing_stuff": {
+  "thing": {
+   "C0_b0": 17.45134293445103,
+   "A_oracle_instance": 16.112884735143528,
+   "C1_shuffled_instance": 11.154937443382547,
+   "C3_visible_majority": 15.922673722208494,
+   "C2_gt_class": 100.0
+  },
+  "stuff": {
+   "C0_b0": 11.40100825519298,
+   "A_oracle_instance": 11.765013979924994,
+   "C1_shuffled_instance": 8.190204277034532,
+   "C3_visible_majority": 11.690667746526296,
+   "C2_gt_class": 100.0
+  }
+ },
+ "thing_stuff_voxels": {
+  "thing": 41560,
+  "stuff": 2701652
+ },
+ "per_class_P2": {
+  "C0_b0": {
+   "car": 9.063086340007997,
+   "bicycle": 0.19960079840319359,
+   "motorcycle": 3.3783783783783785,
+   "truck": 7.961910459666965,
+   "other-vehicle": 0.9250310644760458,
+   "person": 0.8225616921269095,
+   "road": 17.516358275692625,
+   "parking": 3.8883099925199867,
+   "sidewalk": 8.32548614476006,
+   "other-ground": 3.1702913554072185,
+   "building": 35.04762377527783,
+   "fence": 4.504566031845146,
+   "vegetation": 52.770808771665045,
+   "terrain": 0.2607534732362635,
+   "pole": 0.027332005778766936,
+   "traffic-sign": 0.04616805170821791,
+   "other-structure": 8.892878960018725,
+   "other-object": 1.533628972653363
+  },
+  "A_oracle_instance": {
+   "car": 9.282674538971744,
+   "bicycle": 0.0,
+   "motorcycle": 0.997506234413965,
+   "truck": 7.454083626416569,
+   "other-vehicle": 0.7749792416274565,
+   "person": 1.097293343087052,
+   "road": 16.47132359845995,
+   "parking": 4.029008510507693,
+   "sidewalk": 8.407789897114567,
+   "other-ground": 4.245410795077952,
+   "building": 35.3206232676605,
+   "fence": 4.543147208121828,
+   "vegetation": 54.894613494542,
+   "terrain": 0.25811638510118373,
+   "pole": 0.03225211942499079,
+   "traffic-sign": 0.057971014492753624,
+   "other-structure": 9.89860279885198,
+   "other-object": 2.1625116746892736
+  },
+  "C1_shuffled_instance": {
+   "car": 4.423664261465267,
+   "bicycle": 0.0,
+   "motorcycle": 0.2518891687657431,
+   "truck": 4.619209039548022,
+   "other-vehicle": 0.3992801709593971,
+   "person": 0.6067291781577496,
+   "road": 11.771469691327583,
+   "parking": 3.2843594194966346,
+   "sidewalk": 4.635322689607403,
+   "other-ground": 2.4999865765325575,
+   "building": 25.667204225042457,
+   "fence": 2.157159874557345,
+   "vegetation": 40.14652434784479,
+   "terrain": 0.20904061360492893,
+   "pole": 0.02980372120747648,
+   "traffic-sign": 0.05393743257820927,
+   "other-structure": 6.09319292222369,
+   "other-object": 1.0045973097224588
+  },
+  "C3_visible_majority": {
+   "car": 9.285294516522761,
+   "bicycle": 0.0,
+   "motorcycle": 0.9433962264150944,
+   "truck": 7.1515605961196,
+   "other-vehicle": 0.8628005657708628,
+   "person": 0.9174311926605505,
+   "road": 16.158699103173163,
+   "parking": 3.609025906043258,
+   "sidewalk": 9.005056938081026,
+   "other-ground": 3.583208571161224,
+   "building": 35.65665014482466,
+   "fence": 4.511537719663361,
+   "vegetation": 54.660632515537124,
+   "terrain": 0.26540765452594073,
+   "pole": 0.032377428307123035,
+   "traffic-sign": 0.058445353594389245,
+   "other-structure": 9.661203925894755,
+   "other-object": 2.250361296538435
+  },
+  "C2_gt_class": {
+   "car": 100.0,
+   "bicycle": 100.0,
+   "motorcycle": 100.0,
+   "truck": 100.0,
+   "other-vehicle": 100.0,
+   "person": 100.0,
+   "road": 100.0,
+   "parking": 100.0,
+   "sidewalk": 100.0,
+   "other-ground": 100.0,
+   "building": 100.0,
+   "fence": 100.0,
+   "vegetation": 100.0,
+   "terrain": 100.0,
+   "pole": 100.0,
+   "traffic-sign": 100.0,
+   "other-structure": 100.0,
+   "other-object": 100.0
+  }
+ },
+ "gains": {
+  "A_minus_B0_P2": 0.08850740027437531,
+  "A_minus_B0_P1": -0.04279350572802998,
+  "shuffled_minus_B0_P2": -2.804522438943387,
+  "gt_ceiling_minus_B0_P2": 91.20362363646541
+ },
+ "oracle_use": {
+  "C0_b0": "none -- the deployed baseline",
+  "A_oracle_instance": "grouping only; the label is the teacher's, aggregated over the instance's own visible evidence",
+  "C1_shuffled_instance": "grouping only, then aggregates permuted between instances (control)",
+  "C3_visible_majority": "grouping only; majority teacher class over the instance's visible evidence",
+  "C2_gt_class": "FULL semantic oracle -- the ceiling, never a method"
+ },
+ "outcome": "C",
+ "outcome_reason": "perfect instance grouping does not materially beat nearest-evidence propagation"
+}

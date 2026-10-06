@@ -1,0 +1,7 @@
+stage,units_needed_new_drives,measured_mb_per_unit_min,measured_mb_per_unit_max,measured_s_per_unit_min,measured_s_per_unit_max,estimate_storage_gb_low,estimate_storage_gb_high,estimate_single_gpu_hours_low,estimate_single_gpu_hours_high
+trident_h_tokens (per stream frame),8350,8.916,8.916,1.65,1.84,74.4,74.4,3.83,4.27
+local_reset_lingbot_clips,8314,0.879,0.92,0.151,0.158,7.3,7.7,0.35,0.37
+hard_map_inputs,8314,0.063,0.095,0.15,0.17,0.5,0.8,0.35,0.39
+gate15_evidence,8314,33.771,48.705,0.191,0.25,280.8,404.9,0.44,0.58
+delayed_targets,8314,0.171,0.197,0.146,0.153,1.4,1.6,0.34,0.35
+b3_train_cache (B3 arm only),8314,1.743,2.091,0.051,0.052,14.5,17.4,0.12,0.12

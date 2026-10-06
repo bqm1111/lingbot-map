@@ -1,0 +1,19 @@
+{
+ "stage": "train_cache",
+ "drive": "2013_05_28_drive_0005_sync",
+ "shard": 0,
+ "shards": 1,
+ "kept_anchors": 811,
+ "result": {
+  "drive": "2013_05_28_drive_0005_sync",
+  "shard": 0,
+  "written": 811,
+  "seconds": 46.797632694244385,
+  "geometry_digest": "f1d399d549ed315283bbef116856291215937057a21175cab331b01798d127ca",
+  "firewall": {
+   "opened": 4866,
+   "violations": []
+  }
+ },
+ "seconds": 47.05247116088867
+}
