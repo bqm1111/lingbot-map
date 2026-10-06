@@ -1,0 +1,19 @@
+{
+ "stage": "evaluators",
+ "frozen_at": "2026-09-15T10:31:34+02:00",
+ "sha256": {
+  "artifacts/final_zero_shot/practical_evaluation_predeclaration.md": "7a306e910b8b2ccf1a776ebc09aee8eaf5d18c32cb267f8f3b4ac8569639cb8c",
+  "tools/zero_shot_eval/practical/protocol.py": "c5a46f9824784d3b9487782f7bd4abb01bc89b5a8f4d61353a7c040bf31800f0",
+  "tools/zero_shot_eval/canonical/prediction.py": "8a845959c43d28bcad654cead0c800f3f573f9fbf3bd618ec888b8291c5e6a4e",
+  "tools/zero_shot_eval/canonical/metrics.py": "dc2556c19addecf964dcea36ba2562015972f686f1b593ad02643549d07696ed",
+  "tools/zero_shot_eval/practical/masks.py": "367eb90b95cf5871d8f6cc4a049e698a3447ba17b88842bd96a992d761fab2c6",
+  "tools/zero_shot_eval/practical/evaluator.py": "543cbbc9e8fa691bac5022299050c1923c668cb95ff94817d2462ae0fb68b946",
+  "tools/zero_shot_eval/official/evaluator.py": "fd642208f2dd1c37cbd2bfd68eecf7b71d9309fe58db31ddf033e98a36a892c7",
+  "tools/zero_shot_eval/analysis.py": "4cb986632ec114e64baf51c338f016c146a2ff489b35614ef863c26724307cdc"
+ },
+ "existing_predictions": {
+  "semantickitti": 0,
+  "occ3d": 0
+ },
+ "existing_scores": 0
+}

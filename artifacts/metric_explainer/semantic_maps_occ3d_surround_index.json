@@ -1,0 +1,39 @@
+{
+ "setting": "surround",
+ "method": "B3_s0",
+ "figure": "/home/minh/workspace/lingbot-map_fork/artifacts/metric_explainer/semantic_maps_occ3d_surround.png",
+ "samples": [
+  {
+   "sample_id": "scene-1068_b587b544aa814cdf9a1cbc9d6819c383",
+   "rank_pct": 15.006226650062267,
+   "delta_iou_pp": 3.14921151964639,
+   "recovered_6cam": 1662,
+   "recovered_1cam": 958,
+   "label_correct_pct": 35.74007220216607
+  },
+  {
+   "sample_id": "scene-0929_0305c100b4a84730989c5dda78ddeec9",
+   "rank_pct": 39.99584889995849,
+   "delta_iou_pp": 8.397851548214552,
+   "recovered_6cam": 6006,
+   "recovered_1cam": 3734,
+   "label_correct_pct": 33.616383616383615
+  },
+  {
+   "sample_id": "scene-0969_863d4849fa1349739b081c338a407815",
+   "rank_pct": 65.00622665006226,
+   "delta_iou_pp": 14.173838668070967,
+   "recovered_6cam": 6765,
+   "recovered_1cam": 3256,
+   "label_correct_pct": 13.495934959349594
+  },
+  {
+   "sample_id": "scene-0094_16c4a3eac2a54160a30b559855584cd8",
+   "rank_pct": 89.99584889995849,
+   "delta_iou_pp": 22.42296350749815,
+   "recovered_6cam": 11486,
+   "recovered_1cam": 4865,
+   "label_correct_pct": 40.03134250391781
+  }
+ ]
+}

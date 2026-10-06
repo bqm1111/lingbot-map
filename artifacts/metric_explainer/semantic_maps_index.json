@@ -1,0 +1,88 @@
+{
+ "semantickitti": {
+  "dataset": "semantickitti",
+  "method": "B3_s0",
+  "figure": "/home/minh/workspace/lingbot-map_fork/artifacts/metric_explainer/semantic_maps_semantickitti.png",
+  "samples": [
+   {
+    "sample_id": "08_000970",
+    "rank_pct": 15.0,
+    "delta_iou_track_p": -4.214272399682139,
+    "ours_iou_full_volume": 33.706449502241405,
+    "occany_iou_full_volume": 28.35123408121387,
+    "recovered": 62333,
+    "label_correct_pct": 53.656971427654696
+   },
+   {
+    "sample_id": "08_001530",
+    "rank_pct": 40.0,
+    "delta_iou_track_p": -0.10730680929166292,
+    "ours_iou_full_volume": 31.16675494775365,
+    "occany_iou_full_volume": 27.892693258030356,
+    "recovered": 64724,
+    "label_correct_pct": 61.23076447685557
+   },
+   {
+    "sample_id": "08_003285",
+    "rank_pct": 65.0,
+    "delta_iou_track_p": 3.8410651734396675,
+    "ours_iou_full_volume": 26.544796119139697,
+    "occany_iou_full_volume": 26.853933834988204,
+    "recovered": 62599,
+    "label_correct_pct": 73.84143516669596
+   },
+   {
+    "sample_id": "08_003455",
+    "rank_pct": 90.0,
+    "delta_iou_track_p": 9.178584698563636,
+    "ours_iou_full_volume": 24.845842918338274,
+    "occany_iou_full_volume": 25.895706800988457,
+    "recovered": 49359,
+    "label_correct_pct": 55.941165744848966
+   }
+  ]
+ },
+ "occ3d": {
+  "dataset": "occ3d",
+  "method": "B3_s0",
+  "figure": "/home/minh/workspace/lingbot-map_fork/artifacts/metric_explainer/semantic_maps_occ3d.png",
+  "samples": [
+   {
+    "sample_id": "scene-0771_0684698985f54d5c814a5cfdc42a31f5",
+    "rank_pct": 15.007112375533428,
+    "delta_iou_track_p": -22.350350330579744,
+    "ours_iou_full_volume": 34.76538695917124,
+    "occany_iou_full_volume": 38.78930355568616,
+    "recovered": 1141,
+    "label_correct_pct": 26.46801051709027
+   },
+   {
+    "sample_id": "scene-0092_971fe52375054e499551b963e85e1fcf",
+    "rank_pct": 39.995258416311046,
+    "delta_iou_track_p": -3.231847162877094,
+    "ours_iou_full_volume": 36.33200795228628,
+    "occany_iou_full_volume": 37.26173261469699,
+    "recovered": 3655,
+    "label_correct_pct": 60.41039671682626
+   },
+   {
+    "sample_id": "scene-0221_bb9c0abebf574b4892f1e0fab92004d1",
+    "rank_pct": 65.00711237553342,
+    "delta_iou_track_p": 14.381910416742885,
+    "ours_iou_full_volume": 31.49377860872929,
+    "occany_iou_full_volume": 12.68689953553477,
+    "recovered": 4885,
+    "label_correct_pct": 43.74616171954964
+   },
+   {
+    "sample_id": "scene-0969_68eec73ac1ac49c9917640b8ee867b66",
+    "rank_pct": 89.99525841631105,
+    "delta_iou_track_p": 34.75346636122498,
+    "ours_iou_full_volume": 32.06870799103809,
+    "occany_iou_full_volume": 12.232779097387175,
+    "recovered": 4294,
+    "label_correct_pct": 49.254774103400095
+   }
+  ]
+ }
+}

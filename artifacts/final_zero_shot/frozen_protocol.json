@@ -1,0 +1,13 @@
+{
+ "stage": "protocol",
+ "frozen_at": "2026-09-15T10:31:34+02:00",
+ "sha256": {
+  "artifacts/final_zero_shot/practical_evaluation_predeclaration.md": "7a306e910b8b2ccf1a776ebc09aee8eaf5d18c32cb267f8f3b4ac8569639cb8c",
+  "tools/zero_shot_eval/practical/protocol.py": "c5a46f9824784d3b9487782f7bd4abb01bc89b5a8f4d61353a7c040bf31800f0"
+ },
+ "existing_predictions": {
+  "semantickitti": 0,
+  "occ3d": 0
+ },
+ "existing_scores": 0
+}

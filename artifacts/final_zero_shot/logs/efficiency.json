@@ -1,0 +1,28 @@
+{
+ "sample": "08_000635",
+ "stage_seconds_second_run": {
+  "load_clip": 0.010563135147094727,
+  "hard_mapper": 0.03682851791381836,
+  "completion_unet": 0.0472874641418457,
+  "evidence_lift_incl_token_io": 0.09334206581115723,
+  "b0_edt": 0.2487020492553711,
+  "b3_one_head_on_predicted_occupied": 1.044208288192749,
+  "n_b3_queries": 369670,
+  "peak_gpu_mem_GB": 5.540349952
+ },
+ "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+ "other_stages": {
+  "lingbot_local_reset_clip_seconds": 0.29,
+  "trident_h_seconds_per_frame": 1.82,
+  "note": "LingBot clip time from tools/occany_comparison clip-building logs; Trident from this study's extraction logs (includes SAM refinement, which the token feature does not need)"
+ },
+ "params": {
+  "LingBot-Map": 1157943540,
+  "MoGe-2 ViT-L": 326209227,
+  "CompletionUNet": 967322,
+  "B3 association head": 25489,
+  "Trident-H (CLIP ViT-H-14 + DINO + SAM ViT-H)": "not counted here (public figures ~1.6 B)"
+ },
+ "cameras": 1,
+ "input_frames": 5
+}

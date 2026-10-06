@@ -1,0 +1,7 @@
+{
+ "goal": "Level A OccAny semantics with the official preset 'KITTI 5-frame distill semantic' (requires GroundingDINO boxes, resized_1216_box5_text5_DINOB)",
+ "attempt_1": "extract_gdino_boxes_kitti.py as released: RuntimeError CUDA illegal memory access inside GroundingDINO deformable attention (MsDeformAttn CUDA op) on RTX PRO 6000 Blackwell (sm_120); 0 boxes",
+ "attempt_2": "rebuilt the GroundingDINO _C extension in place (CUDA 12.8, TORCH_CUDA_ARCH_LIST=12.0, clean build dirs): the op still reports 'no kernel image is available for execution on the device' (36 errors on 3 frames) and returns 0 boxes per frame",
+ "restored": "original _C .so restored from backup (sha256 identical); empty box outputs deleted; OccAny's learned method and outputs untouched",
+ "decision": "Level A semantic evaluation of OccAny is not feasible on this machine without substantial toolchain work; semantics are compared at Level B (published Table 4) and Level C; geometry remains Level A (released predictions)"
+}

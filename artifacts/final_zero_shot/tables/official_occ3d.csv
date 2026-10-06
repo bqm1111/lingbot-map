@@ -1,0 +1,9 @@
+method,sc_iou,sc_precision,sc_recall,ssc_miou,superclass_miou
+ours (B0/B3 share occupancy),0.319400,0.778681,0.351290,,
+B0,,,,0.037063,0.066295
+B3 (seed mean),,,,0.037988,0.067645
+B3_s0,,,,0.038046,0.067727
+B3_s1,,,,0.037867,0.067540
+B3_s2,,,,0.038049,0.067669
+OccAny released geometry (raw),0.206588,0.429565,0.284688,,
+OccAny released geometry (pooled),0.235479,0.362798,0.401555,,

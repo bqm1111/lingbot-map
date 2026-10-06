@@ -1,0 +1,107 @@
+{
+ "n_pass": 9,
+ "n": 9,
+ "rows": [
+  {
+   "check": "1 protocol and evaluators frozen before any prediction or score; unchanged since",
+   "pass": true,
+   "detail": {
+    "protocol": "2026-09-15T10:31:34+02:00",
+    "evaluators": "2026-09-15T10:31:34+02:00"
+   }
+  },
+  {
+   "check": "2 frozen B3 checkpoints (== Gate 16 code freeze) and geometry checkpoint (== baseline freeze); none trained after target access",
+   "pass": true,
+   "detail": {
+    "0": true,
+    "1": true,
+    "2": true
+   }
+  },
+  {
+   "check": "3 one canonical prediction per evaluated sample",
+   "pass": true,
+   "detail": {
+    "semantickitti": [
+     801,
+     801
+    ],
+    "occ3d": [
+     4219,
+     4219
+    ]
+   }
+  },
+  {
+   "check": "4 occupancy (geometry seed 0, causal) identical per sample to the frozen OccAny-comparison evaluation",
+   "pass": true,
+   "detail": {
+    "semantickitti": true,
+    "occ3d": true
+   }
+  },
+  {
+   "check": "5 Track O and Track P (full region) read the same predictions: confusions identical",
+   "pass": true,
+   "detail": {
+    "semantickitti": {
+     "B0": true,
+     "B3_s0": true,
+     "B3_s1": true,
+     "B3_s2": true
+    },
+    "occ3d": {
+     "B0": true,
+     "B3_s0": true,
+     "B3_s1": true,
+     "B3_s2": true
+    }
+   }
+  },
+  {
+   "check": "6 Trident tokens for every history frame; tokens reproduce Trident's coarse probabilities (argmax agreement >= 0.99)",
+   "pass": true,
+   "detail": {
+    "semantickitti": {
+     "frames": 805,
+     "tokens": 805,
+     "min_argmax_agree": 0.9980512261390686
+    },
+    "occ3d": {
+     "frames": 4819,
+     "tokens": 4819,
+     "min_argmax_agree": 0.9968500137329102
+    }
+   }
+  },
+  {
+   "check": "7 labels: OccAny stored labels == independent official loader on every evaluated sample",
+   "pass": true,
+   "detail": {
+    "semantickitti": true,
+    "occ3d": true
+   }
+  },
+  {
+   "check": "8 predictions reproduce on re-run (deterministic)",
+   "pass": true,
+   "detail": {
+    "semantickitti:08_000020": true,
+    "semantickitti:08_002020": true,
+    "occ3d:scene-0003_02651ca22b08484294d473d9c26cd9af": true,
+    "occ3d:scene-0632_b39f4a387bfb416789997e070446663e": true
+   }
+  },
+  {
+   "check": "9 tests (protocol, serialization, masks, metrics, KITTI-360 reproduction of the grid-generic code)",
+   "pass": true,
+   "detail": "9 passed, 2 warnings in 3.77s"
+  },
+  {
+   "check": "note",
+   "pass": true,
+   "detail": "the first freeze command ran while one test failed because its expected value was wrong (class-1 FP count); the metric code was correct and no frozen file changed; the test was corrected and all tests pass"
+  }
+ ]
+}

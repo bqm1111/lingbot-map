@@ -1,0 +1,54 @@
+{
+ "dataset": "occ3d",
+ "shard": 0,
+ "shards": 4,
+ "written": 5358,
+ "skipped": 666,
+ "seconds": 10677.260588645935,
+ "coarse_reproduction": {
+  "max_abs_dp": 0.003897428512573242,
+  "argmax_agree_min": 0.9960819482803345
+ },
+ "teacher": {
+  "config": {
+   "clip_type": "laion2b_s32b_b79k",
+   "model_type": "ViT-H-14",
+   "vfm_model": "dino",
+   "sam_model_type": "vit_h",
+   "sam_refinement": true,
+   "beta": 1.2,
+   "gamma": 3.0,
+   "cos_fac": 3.0,
+   "refine_neg_cos": false,
+   "coarse_thresh": 0.1,
+   "slide_stride": 224,
+   "slide_crop": 336,
+   "sam_iou_thresh": 0.8,
+   "minimal_area": 225,
+   "sam_mask_coff": 0.005,
+   "logit_scale": 40,
+   "prob_thd": 0.0,
+   "dataset_type": "CityscapesDataset"
+  },
+  "vocabulary": [
+   "others",
+   "barrier",
+   "bicycle",
+   "bus",
+   "car",
+   "construction vehicle",
+   "motorcycle",
+   "pedestrian",
+   "traffic cone",
+   "trailer",
+   "truck",
+   "drivable road surface",
+   "other flat ground",
+   "sidewalk",
+   "terrain",
+   "man-made structure",
+   "vegetation"
+  ],
+  "sam_ckpt": "/home/minh/workspace/third_party/checkpoints/sam_vit_h_4b8939.pth"
+ }
+}

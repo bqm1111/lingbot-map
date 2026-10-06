@@ -1,0 +1,209 @@
+version: final_zero_shot/track_p_v1
+region:
+  max_range_m: 40.0
+  range_edges_m:
+  - 10.0
+  - 20.0
+  - 30.0
+  range_names:
+  - 0-10 m
+  - 10-20 m
+  - 20-30 m
+  - 30-40 m
+  fov_uses_native_image_width: true
+evidence_distance_edges_m:
+- 1.0
+- 2.0
+- 4.0
+- 8.0
+datasets:
+  semantickitti:
+    name: semantickitti
+    n_classes: 20
+    empty_class: 0
+    semantic_classes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    class_names:
+    - empty
+    - car
+    - bicycle
+    - motorcycle
+    - truck
+    - other-vehicle
+    - person
+    - bicyclist
+    - motorcyclist
+    - road
+    - parking
+    - sidewalk
+    - other-ground
+    - building
+    - fence
+    - vegetation
+    - trunk
+    - terrain
+    - pole
+    - traffic-sign
+    dynamic_classes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    superclass_of:
+    - 0
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 5
+    - 5
+    - 5
+    - 1
+    - 1
+    - 1
+    - 1
+    - 2
+    - 6
+    - 4
+    - 4
+    - 4
+    - 6
+    - 6
+    superclass_names:
+    - empty
+    - ground
+    - structure
+    - vehicle
+    - nature
+    - human
+    - object
+    superclass_empty: 0
+    image_width: 1226
+    occany_other_class: 20
+    occany_ignore_other: true
+  occ3d:
+    name: occ3d
+    n_classes: 18
+    empty_class: 17
+    semantic_classes:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    class_names:
+    - others
+    - barrier
+    - bicycle
+    - bus
+    - car
+    - construction_vehicle
+    - motorcycle
+    - pedestrian
+    - traffic_cone
+    - trailer
+    - truck
+    - driveable_surface
+    - other_flat
+    - sidewalk
+    - terrain
+    - manmade
+    - vegetation
+    - free
+    dynamic_classes:
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 9
+    - 10
+    superclass_of:
+    - 0
+    - 2
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 5
+    - 6
+    - 3
+    - 3
+    - 1
+    - 1
+    - 1
+    - 4
+    - 2
+    - 4
+    - 7
+    superclass_names:
+    - other
+    - ground
+    - structure
+    - vehicle
+    - nature
+    - human
+    - object
+    - empty
+    superclass_empty: 7
+    image_width: 1600
+    occany_other_class: 0
+    occany_ignore_other: false
+methods:
+- B0
+- B3_s0
+- B3_s1
+- B3_s2
+statistics:
+  resamples: 2000
+  seed: 0
+  semantickitti_block_samples: 25
+  occ3d_block: scene
+paper_criteria:
+  central_metric: completed_no_evidence_miou
+  meaningful_gain_points: 1.0
+  occany_published_miou:
+  - - semantickitti
+    - 7.28
+  - - occ3d
+    - 6.66
+frozen:
+  protocol: '2026-09-15T10:31:34+02:00'
+  evaluators: '2026-09-15T10:31:34+02:00'

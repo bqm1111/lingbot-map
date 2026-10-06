@@ -1,0 +1,11 @@
+dataset,method,cameras,temporal_context,evaluation,track_p_sc_iou,track_p_ssc_miou,track_p_central_miou,official_sc_iou,official_ssc_miou
+semantickitti,B0,1 (image_2),5 causal (t-4..t),Track P,0.326468,0.054493,0.123269,0.263969,0.043185
+semantickitti,B3,1 (image_2),5 causal (t-4..t),Track P,0.326468,0.056407,0.125798,0.263969,0.044253
+semantickitti,OccAny geometry (released, raw),1 front,5 forward (t..t+8),Level A (same evaluator),0.312774,,,0.252097,
+semantickitti,OccAny geometry (released, pooled),1 front,5 forward (t..t+8),Level A (same evaluator),0.310512,,,0.259286,
+semantickitti,OccAny + GSAM2 semantics (published),1 (5 frames),5 forward,Level B (paper Tab. 4),,,,,0.072800
+occ3d,B0,1 (CAM_FRONT),5 causal (t-4..t),Track P,0.368676,0.043608,0.081788,0.319400,0.037063
+occ3d,B3,1 (CAM_FRONT),5 causal (t-4..t),Track P,0.368676,0.045363,0.087232,0.319400,0.037988
+occ3d,OccAny geometry (released, raw),1 front,5 forward (t..t+8),Level A (same evaluator),0.300521,,,0.206588,
+occ3d,OccAny geometry (released, pooled),1 front,5 forward (t..t+8),Level A (same evaluator),0.307843,,,0.235479,
+occ3d,OccAny + GSAM2 semantics (published),6 surround (1 timestep),1 timestep,Level B (paper Tab. 4),,,,,0.066600
