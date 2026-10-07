@@ -1,0 +1,98 @@
+{
+  "figure": "artifacts/waymo_supervision_pilot/examples/k360_reference/0007_00328.png",
+  "scene": "2013_05_28_drive_0007_sync",
+  "anchor": 328,
+  "yield_U_over_hidden": 0.09685556728851344,
+  "counts": {
+    "O_priv": 35751,
+    "E_causal": 14893,
+    "Z_valid": 3303,
+    "hidden": 34092,
+    "U": 3302,
+    "hidden_surface_observed_no_teacher": 1205,
+    "U_surface_observed_no_teacher": 2,
+    "hidden_outside_every_frustum": 0,
+    "U_outside_every_frustum": 0,
+    "hidden_occluded_throughout": 16726,
+    "U_occluded_throughout": 1574,
+    "hidden_unresolved_visibility": 16161,
+    "U_unresolved_visibility": 1726,
+    "hidden_causal_free_disagreement": 2506,
+    "U_causal_free_disagreement": 22,
+    "hidden_unresolved_not_carved": 13655,
+    "U_unresolved_not_carved": 1704
+  },
+  "provenance": {
+    "sources": {
+      "future_selected_camera": 3302
+    },
+    "overlaps": {},
+    "n_union": 3302,
+    "geometry_source": "lidar_return",
+    "camera": "selected",
+    "observation_count": {
+      "n": 3302,
+      "mean": 1.2437916994094849,
+      "median": 1.0,
+      "p10": 1.0,
+      "p90": 2.0
+    },
+    "first_observation_dt_s": {
+      "n": 3302,
+      "mean": 0.8919020295143127,
+      "median": 1.044921875,
+      "p10": 0.5224609375,
+      "p90": 1.56640625
+    },
+    "tier": {
+      "A_occupied_at_t": 815,
+      "B_occupancy_uncertain": 2487
+    }
+  },
+  "agreement": {
+    "n_with_two_views": 725,
+    "n_two_views_agree": 584,
+    "two_view_agreement": 0.8055172413793104,
+    "mean_top_probability": 0.6447216868400574,
+    "note": "consistency between views of a frozen teacher, not semantic correctness"
+  },
+  "repeat_vs_new": {
+    "n_targets": 3302,
+    "n_causal_camera_had_a_return": 668,
+    "n_newly_supported": 2634,
+    "n_single_observation": 2577,
+    "n_repeated_observation": 725
+  },
+  "causal_frames": [
+    {
+      "index": 324,
+      "dt_s": -2.089128017425537,
+      "image": "media/welf/MINH/datasets/kitti360/KITTI-360/data_2d_raw/2013_05_28_drive_0007_sync/image_00/data_rect/0000001622.png"
+    },
+    {
+      "index": 325,
+      "dt_s": -1.5668768882751465,
+      "image": "media/welf/MINH/datasets/kitti360/KITTI-360/data_2d_raw/2013_05_28_drive_0007_sync/image_00/data_rect/0000001627.png"
+    },
+    {
+      "index": 326,
+      "dt_s": -1.0445830821990967,
+      "image": "media/welf/MINH/datasets/kitti360/KITTI-360/data_2d_raw/2013_05_28_drive_0007_sync/image_00/data_rect/0000001632.png"
+    },
+    {
+      "index": 327,
+      "dt_s": -0.5222060680389404,
+      "image": "media/welf/MINH/datasets/kitti360/KITTI-360/data_2d_raw/2013_05_28_drive_0007_sync/image_00/data_rect/0000001637.png"
+    },
+    {
+      "index": 328,
+      "dt_s": 0.0,
+      "image": "media/welf/MINH/datasets/kitti360/KITTI-360/data_2d_raw/2013_05_28_drive_0007_sync/image_00/data_rect/0000001642.png"
+    }
+  ],
+  "revealing_frame": {
+    "index": 330,
+    "dt_s": 1.0446579456329346,
+    "image": "media/welf/MINH/datasets/kitti360/KITTI-360/data_2d_raw/2013_05_28_drive_0007_sync/image_00/data_rect/0000001652.png"
+  }
+}

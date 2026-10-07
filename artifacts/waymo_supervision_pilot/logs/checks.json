@@ -1,0 +1,72 @@
+{
+  "version": "waymo_pilot.1",
+  "drive": "2013_05_28_drive_0007_sync",
+  "anchor": 9,
+  "all_ok": true,
+  "n_checks": 4,
+  "checks": [
+    {
+      "name": "preprocessing matches cached fixture",
+      "ok": true,
+      "drive": "2013_05_28_drive_0007_sync",
+      "anchor": 9,
+      "geometry_params": 967322,
+      "clip_sha256_matches_input_cache": true,
+      "evidence_voxel_set_identical": true,
+      "evidence_ray_counts_identical": true,
+      "max_feature_abs_diff": 0.00025331974029541016,
+      "fp16_tolerance": 0.0009765625,
+      "n_evidence_voxels": 17566
+    },
+    {
+      "name": "privileged inputs cannot change causal tensors",
+      "ok": true,
+      "causal_digest_before": "630cde00b5c1c578",
+      "causal_digest_after_perturbation": "630cde00b5c1c578",
+      "digests_equal": true,
+      "causal_state_opened_no_privileged_path": true,
+      "audit_error": null,
+      "forbidden_patterns": [
+        "delayed_targets",
+        "/targets/",
+        "velodyne",
+        "data_3d_raw",
+        "data_poses",
+        "eval_masks",
+        "gate20_future_reveal"
+      ],
+      "n_paths_opened_by_causal_state": 6
+    },
+    {
+      "name": "known projection / alignment / visibility case",
+      "ok": true,
+      "voxel_binning_exact": true,
+      "outside_grid_rejected": true,
+      "zbuffer": {
+        "zmin_m": 10.0,
+        "tolerance_m": 0.5,
+        "near_kept": true,
+        "far_25m_rejected": true,
+        "grazing_within_tolerance_kept": true
+      },
+      "waymo_axis_convention_ok": true,
+      "waymo_case": {
+        "forward_10m_uv": [
+          960.0,
+          640.0
+        ],
+        "left_1m_u": 754.5,
+        "up_1m_v": 434.5
+      }
+    },
+    {
+      "name": "invalid supervision excluded, not assigned a class",
+      "ok": true,
+      "n_hidden_without_target": 28204,
+      "n_of_those_given_a_class": 0,
+      "U_is_subset_of_valid_targets": true,
+      "n_unknown_voxels_in_privileged_occupancy": 0,
+      "n_privileged_unknown": 1791510
+    }
+  ]
+}

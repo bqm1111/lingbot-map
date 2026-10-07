@@ -1,0 +1,1900 @@
+{
+  "version": "waymo_pilot.1",
+  "arm": "k360",
+  "variant": "k360_reference",
+  "device": "cuda:0",
+  "smoke": true,
+  "seconds": 5.0555503368377686,
+  "seconds_per_anchor": 0.4790544271469116,
+  "gpu_hours": 0.001330707139439053,
+  "selection": {
+    "arm": "k360",
+    "rule": "deterministic scene order, first N scenes, anchors spread with min separation 40 frames",
+    "sample_seed": 0,
+    "caps": {
+      "max_scenes": 2,
+      "max_anchors": 10,
+      "per_scene": 5,
+      "min_separation_frames": 40
+    },
+    "n_scenes_available": 3,
+    "n_scenes_used": 2,
+    "n_anchors": 10,
+    "anchors_per_scene": {
+      "2013_05_28_drive_0003_sync": 5,
+      "2013_05_28_drive_0007_sync": 5
+    },
+    "within_scene_gap_frames": {
+      "n": 8,
+      "min": 40,
+      "median": 50.0,
+      "max": 60
+    },
+    "anchors": [
+      "2013_05_28_drive_0003_sync:00004",
+      "2013_05_28_drive_0003_sync:00044",
+      "2013_05_28_drive_0003_sync:00085",
+      "2013_05_28_drive_0003_sync:00125",
+      "2013_05_28_drive_0003_sync:00166",
+      "2013_05_28_drive_0007_sync:00004",
+      "2013_05_28_drive_0007_sync:00064",
+      "2013_05_28_drive_0007_sync:00124",
+      "2013_05_28_drive_0007_sync:00183",
+      "2013_05_28_drive_0007_sync:00243"
+    ],
+    "digest": "7ebcbdd0abb9c62e",
+    "eligible_per_scene": {
+      "2013_05_28_drive_0003_sync": 193,
+      "2013_05_28_drive_0007_sync": 569,
+      "2013_05_28_drive_0010_sync": 596
+    }
+  },
+  "teacher": {
+    "phrases": [
+      "car",
+      "bicycle",
+      "motorcycle",
+      "truck",
+      "other vehicle",
+      "person",
+      "road",
+      "parking",
+      "sidewalk",
+      "other ground",
+      "building",
+      "fence",
+      "vegetation",
+      "terrain",
+      "pole",
+      "traffic sign",
+      "other structure",
+      "other object"
+    ],
+    "labels": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "dim": 1024
+  },
+  "firewall": {
+    "n_opened": 110,
+    "violations": [],
+    "patterns": [
+      "data/kitti/dataset",
+      "occ3d_gt",
+      "nuscenes",
+      "lingbot_occ3d_zeroshot",
+      "scale_gate/cache",
+      "semantickitti"
+    ]
+  },
+  "aggregate": {
+    "variant": "k360_reference",
+    "n_scenes": 2,
+    "scenes": [
+      "2013_05_28_drive_0003_sync",
+      "2013_05_28_drive_0007_sync"
+    ],
+    "n_anchors": 10,
+    "n_usable_pairs": 10,
+    "n_privileged_occupied": 322267,
+    "n_causal_evidence": 181417,
+    "n_hidden_before_target": 312701,
+    "hidden_per_anchor": 31270.1,
+    "n_with_privileged_semantics": 36796,
+    "fraction_of_hidden_with_target": 0.11767151368239948,
+    "U_per_anchor": 3679.6,
+    "subcases_hidden": {
+      "surface_observed_no_teacher": 5953,
+      "outside_every_frustum": 2381,
+      "occluded_throughout": 142144,
+      "unresolved_visibility": 162223
+    },
+    "subcases_U": {
+      "surface_observed_no_teacher": 414,
+      "outside_every_frustum": 0,
+      "occluded_throughout": 8079,
+      "unresolved_visibility": 28303
+    },
+    "subcase_fractions_of_hidden": {
+      "surface_observed_no_teacher": 0.019037355173152627,
+      "outside_every_frustum": 0.0076143024806444495,
+      "occluded_throughout": 0.4545684215912325,
+      "unresolved_visibility": 0.5187799207549704
+    },
+    "diagnostics_hidden": {
+      "causal_free_disagreement": 18771,
+      "unresolved_not_carved": 143452
+    },
+    "diagnostics_U": {
+      "causal_free_disagreement": 1273,
+      "unresolved_not_carved": 27030
+    },
+    "sources": {
+      "future_selected_camera": 36796
+    },
+    "overlaps": {},
+    "exclusive_to_source": {},
+    "tier": {
+      "A_occupied_at_t": 13547,
+      "B_occupancy_uncertain": 23249
+    },
+    "exclusions": {
+      "n_future_hit": 760350,
+      "n_conflict_dynamic": 538414,
+      "n_not_static_1s": 669963,
+      "n_tierA": 39473,
+      "n_tierB": 50914,
+      "n_target": 37202
+    },
+    "distance_U": {
+      "0-1 m": 4732,
+      "1-2 m": 3905,
+      "2-4 m": 5729,
+      "4-8 m": 4967,
+      ">8 m": 17463
+    },
+    "distance_hidden": {
+      "0-1 m": 53332,
+      "1-2 m": 34701,
+      "2-4 m": 50376,
+      "4-8 m": 49593,
+      ">8 m": 124699
+    },
+    "range_U": {
+      "0-10 m": 6,
+      "10-20 m": 2911,
+      "20-30 m": 8764,
+      "30-40 m": 11309,
+      ">40 m": 13806
+    },
+    "range_hidden": {
+      "0-10 m": 20460,
+      "10-20 m": 64392,
+      "20-30 m": 70504,
+      "30-40 m": 72200,
+      ">40 m": 85145
+    },
+    "readout_histogram_U": {
+      "car": 401,
+      "bicycle": 0,
+      "motorcycle": 0,
+      "truck": 1,
+      "other-vehicle": 7,
+      "person": 1,
+      "road": 5927,
+      "parking": 20,
+      "sidewalk": 37,
+      "other-ground": 1906,
+      "building": 224,
+      "fence": 822,
+      "vegetation": 26626,
+      "terrain": 380,
+      "pole": 120,
+      "traffic-sign": 27,
+      "other-structure": 294,
+      "other-object": 3
+    },
+    "b0_histogram_U": {
+      "car": 278,
+      "bicycle": 0,
+      "motorcycle": 0,
+      "truck": 292,
+      "other-vehicle": 0,
+      "person": 0,
+      "road": 320,
+      "parking": 0,
+      "sidewalk": 0,
+      "other-ground": 41,
+      "building": 1516,
+      "fence": 57,
+      "vegetation": 28361,
+      "terrain": 4077,
+      "pole": 1405,
+      "traffic-sign": 44,
+      "other-structure": 405,
+      "other-object": 0
+    },
+    "agreement": {
+      "n_with_two_views": 13841,
+      "n_agree": 11267,
+      "two_view_agreement": 0.814030778122968,
+      "denominator": "target voxels in U with >= 2 privileged views",
+      "note": "teacher consistency between views, NOT semantic correctness"
+    },
+    "repeat_vs_new": {
+      "n_targets": 36796,
+      "n_causal_camera_had_a_return": 12004,
+      "n_newly_supported": 24792,
+      "n_single_observation": 22955,
+      "n_repeated_observation": 13841
+    },
+    "fraction_newly_supported": 0.6737688879226003,
+    "fraction_single_observation": 0.6238449831503424,
+    "class_diversity": {
+      "n_total": 36796,
+      "top_class": "vegetation",
+      "top_class_fraction": 0.7236112620937059,
+      "top3_fraction": 0.936487661702359,
+      "n_classes_present": 16,
+      "n_classes_above_1pct": 6,
+      "entropy_bits": 1.4002008277977318,
+      "thing_fraction": 0.01114251549081422
+    },
+    "timing": {
+      "causal_span_s": 2.0905,
+      "stream_dt_s": 0.522625,
+      "n_causal_frames": 5.0,
+      "n_future_frames": 19.0,
+      "future_last_dt_s": 9.928
+    }
+  },
+  "per_anchor": [
+    {
+      "arm": "k360",
+      "variant": "k360_reference",
+      "scene": "2013_05_28_drive_0003_sync",
+      "anchor": 4,
+      "scale_m_per_unit": 21.359920239282157,
+      "causal": {
+        "in_frustum": 1834001,
+        "surface": 18829,
+        "free": 63845,
+        "evidence": 12621,
+        "occluded_all": 239965
+      },
+      "privileged": {
+        "n_valid": 648203,
+        "n_sweeps_used": 21,
+        "native_frame": 27
+      },
+      "counts": {
+        "O_priv": 24673,
+        "E_causal": 12621,
+        "Z_valid": 5456,
+        "hidden": 23813,
+        "U": 5376,
+        "hidden_surface_observed_no_teacher": 294,
+        "U_surface_observed_no_teacher": 20,
+        "hidden_outside_every_frustum": 2381,
+        "U_outside_every_frustum": 0,
+        "hidden_occluded_throughout": 3540,
+        "U_occluded_throughout": 32,
+        "hidden_unresolved_visibility": 17598,
+        "U_unresolved_visibility": 5324,
+        "hidden_causal_free_disagreement": 1153,
+        "U_causal_free_disagreement": 182,
+        "hidden_unresolved_not_carved": 16445,
+        "U_unresolved_not_carved": 5142
+      },
+      "clip_span_s": {
+        "causal_first_dt_s": -2.407,
+        "causal_span_s": 2.407,
+        "n_causal_frames": 5,
+        "n_future_frames": 19,
+        "future_last_dt_s": 9.947,
+        "stream_dt_s": 0.60175
+      },
+      "exclusions": {
+        "n_future_hit": 87805,
+        "n_conflict_dynamic": 70548,
+        "n_not_static_1s": 76370,
+        "n_tierA": 6085,
+        "n_tierB": 5350,
+        "n_target": 5456
+      },
+      "provenance": {
+        "sources": {
+          "future_selected_camera": 5376
+        },
+        "overlaps": {},
+        "n_union": 5376,
+        "geometry_source": "lidar_return",
+        "camera": "selected",
+        "observation_count": {
+          "n": 5376,
+          "mean": 2.3502604961395264,
+          "median": 2.0,
+          "p10": 1.0,
+          "p90": 5.0
+        },
+        "first_observation_dt_s": {
+          "n": 5376,
+          "mean": 1.8458242416381836,
+          "median": 1.0478515625,
+          "p10": 0.52392578125,
+          "p90": 4.70703125
+        },
+        "tier": {
+          "A_occupied_at_t": 2994,
+          "B_occupancy_uncertain": 2382
+        }
+      },
+      "distance": {
+        "0-1 m": 427,
+        "1-2 m": 343,
+        "2-4 m": 259,
+        "4-8 m": 227,
+        ">8 m": 4120
+      },
+      "distance_hidden": {
+        "0-1 m": 3356,
+        "1-2 m": 2346,
+        "2-4 m": 2228,
+        "4-8 m": 2159,
+        ">8 m": 13724
+      },
+      "range": {
+        "0-10 m": 6,
+        "10-20 m": 410,
+        "20-30 m": 835,
+        "30-40 m": 721,
+        ">40 m": 3404
+      },
+      "range_hidden": {
+        "0-10 m": 1532,
+        "10-20 m": 2832,
+        "20-30 m": 6521,
+        "30-40 m": 2687,
+        ">40 m": 10241
+      },
+      "readout_histogram": {
+        "car": 111,
+        "bicycle": 0,
+        "motorcycle": 0,
+        "truck": 0,
+        "other-vehicle": 0,
+        "person": 0,
+        "road": 1422,
+        "parking": 17,
+        "sidewalk": 37,
+        "other-ground": 86,
+        "building": 224,
+        "fence": 5,
+        "vegetation": 3267,
+        "terrain": 1,
+        "pole": 31,
+        "traffic-sign": 9,
+        "other-structure": 166,
+        "other-object": 0
+      },
+      "b0_histogram": {
+        "car": 234,
+        "bicycle": 0,
+        "motorcycle": 0,
+        "truck": 286,
+        "other-vehicle": 0,
+        "person": 0,
+        "road": 67,
+        "parking": 0,
+        "sidewalk": 0,
+        "other-ground": 41,
+        "building": 1516,
+        "fence": 0,
+        "vegetation": 2961,
+        "terrain": 0,
+        "pole": 0,
+        "traffic-sign": 0,
+        "other-structure": 271,
+        "other-object": 0
+      },
+      "agreement": {
+        "n_with_two_views": 3220,
+        "n_two_views_agree": 2837,
+        "two_view_agreement": 0.881055900621118,
+        "mean_top_probability": 0.5764655470848083,
+        "note": "consistency between views of a frozen teacher, not semantic correctness"
+      },
+      "repeat_vs_new": {
+        "n_targets": 5376,
+        "n_causal_camera_had_a_return": 2787,
+        "n_newly_supported": 2589,
+        "n_single_observation": 2156,
+        "n_repeated_observation": 3220
+      }
+    },
+    {
+      "arm": "k360",
+      "variant": "k360_reference",
+      "scene": "2013_05_28_drive_0003_sync",
+      "anchor": 44,
+      "scale_m_per_unit": 29.1704934049829,
+      "causal": {
+        "in_frustum": 2093677,
+        "surface": 37688,
+        "free": 161526,
+        "evidence": 21933,
+        "occluded_all": 353340
+      },
+      "privileged": {
+        "n_valid": 777186,
+        "n_sweeps_used": 21,
+        "native_frame": 242
+      },
+      "counts": {
+        "O_priv": 34718,
+        "E_causal": 21933,
+        "Z_valid": 3927,
+        "hidden": 34083,
+        "U": 3900,
+        "hidden_surface_observed_no_teacher": 496,
+        "U_surface_observed_no_teacher": 41,
+        "hidden_outside_every_frustum": 0,
+        "U_outside_every_frustum": 0,
+        "hidden_occluded_throughout": 10524,
+        "U_occluded_throughout": 542,
+        "hidden_unresolved_visibility": 23063,
+        "U_unresolved_visibility": 3317,
+        "hidden_causal_free_disagreement": 1447,
+        "U_causal_free_disagreement": 112,
+        "hidden_unresolved_not_carved": 21616,
+        "U_unresolved_not_carved": 3205
+      },
+      "clip_span_s": {
+        "causal_first_dt_s": -2.093,
+        "causal_span_s": 2.093,
+        "n_causal_frames": 5,
+        "n_future_frames": 19,
+        "future_last_dt_s": 9.939,
+        "stream_dt_s": 0.52325
+      },
+      "exclusions": {
+        "n_future_hit": 89041,
+        "n_conflict_dynamic": 66978,
+        "n_not_static_1s": 78155,
+        "n_tierA": 4689,
+        "n_tierB": 6197,
+        "n_target": 3927
+      },
+      "provenance": {
+        "sources": {
+          "future_selected_camera": 3900
+        },
+        "overlaps": {},
+        "n_union": 3900,
+        "geometry_source": "lidar_return",
+        "camera": "selected",
+        "observation_count": {
+          "n": 3900,
+          "mean": 1.8894871473312378,
+          "median": 1.0,
+          "p10": 1.0,
+          "p90": 4.0
+        },
+        "first_observation_dt_s": {
+          "n": 3900,
+          "mean": 1.1194496154785156,
+          "median": 1.0458984375,
+          "p10": 0.5234375,
+          "p90": 2.091796875
+        },
+        "tier": {
+          "A_occupied_at_t": 1776,
+          "B_occupancy_uncertain": 2124
+        }
+      },
+      "distance": {
+        "0-1 m": 438,
+        "1-2 m": 187,
+        "2-4 m": 281,
+        "4-8 m": 361,
+        ">8 m": 2633
+      },
+      "distance_hidden": {
+        "0-1 m": 5704,
+        "1-2 m": 3084,
+        "2-4 m": 4907,
+        "4-8 m": 5333,
+        ">8 m": 15055
+      },
+      "range": {
+        "0-10 m": 0,
+        "10-20 m": 48,
+        "20-30 m": 710,
+        "30-40 m": 1599,
+        ">40 m": 1543
+      },
+      "range_hidden": {
+        "0-10 m": 524,
+        "10-20 m": 4948,
+        "20-30 m": 9728,
+        "30-40 m": 9031,
+        ">40 m": 9852
+      },
+      "readout_histogram": {
+        "car": 0,
+        "bicycle": 0,
+        "motorcycle": 0,
+        "truck": 0,
+        "other-vehicle": 0,
+        "person": 0,
+        "road": 539,
+        "parking": 0,
+        "sidewalk": 0,
+        "other-ground": 49,
+        "building": 0,
+        "fence": 82,
+        "vegetation": 3174,
+        "terrain": 0,
+        "pole": 37,
+        "traffic-sign": 15,
+        "other-structure": 3,
+        "other-object": 1
+      },
+      "b0_histogram": {
+        "car": 0,
+        "bicycle": 0,
+        "motorcycle": 0,
+        "truck": 0,
+        "other-vehicle": 0,
+        "person": 0,
+        "road": 10,
+        "parking": 0,
+        "sidewalk": 0,
+        "other-ground": 0,
+        "building": 0,
+        "fence": 8,
+        "vegetation": 1862,
+        "terrain": 643,
+        "pole": 1377,
+        "traffic-sign": 0,
+        "other-structure": 0,
+        "other-object": 0
+      },
+      "agreement": {
+        "n_with_two_views": 1935,
+        "n_two_views_agree": 1710,
+        "two_view_agreement": 0.8837209302325582,
+        "mean_top_probability": 0.7041930556297302,
+        "note": "consistency between views of a frozen teacher, not semantic correctness"
+      },
+      "repeat_vs_new": {
+        "n_targets": 3900,
+        "n_causal_camera_had_a_return": 1659,
+        "n_newly_supported": 2241,
+        "n_single_observation": 1965,
+        "n_repeated_observation": 1935
+      }
+    },
+    {
+      "arm": "k360",
+      "variant": "k360_reference",
+      "scene": "2013_05_28_drive_0003_sync",
+      "anchor": 85,
+      "scale_m_per_unit": 27.257270693512307,
+      "causal": {
+        "in_frustum": 2097152,
+        "surface": 33260,
+        "free": 85996,
+        "evidence": 21643,
+        "occluded_all": 1663912
+      },
+      "privileged": {
+        "n_valid": 491929,
+        "n_sweeps_used": 21,
+        "native_frame": 447
+      },
+      "counts": {
+        "O_priv": 31298,
+        "E_causal": 21643,
+        "Z_valid": 3397,
+        "hidden": 30752,
+        "U": 3368,
+        "hidden_surface_observed_no_teacher": 261,
+        "U_surface_observed_no_teacher": 21,
+        "hidden_outside_every_frustum": 0,
+        "U_outside_every_frustum": 0,
+        "hidden_occluded_throughout": 24449,
+        "U_occluded_throughout": 2148,
+        "hidden_unresolved_visibility": 6042,
+        "U_unresolved_visibility": 1199,
+        "hidden_causal_free_disagreement": 681,
+        "U_causal_free_disagreement": 38,
+        "hidden_unresolved_not_carved": 5361,
+        "U_unresolved_not_carved": 1161
+      },
+      "clip_span_s": {
+        "causal_first_dt_s": -2.094,
+        "causal_span_s": 2.094,
+        "n_causal_frames": 5,
+        "n_future_frames": 19,
+        "future_last_dt_s": 9.936,
+        "stream_dt_s": 0.5235
+      },
+      "exclusions": {
+        "n_future_hit": 65270,
+        "n_conflict_dynamic": 42045,
+        "n_not_static_1s": 57077,
+        "n_tierA": 3157,
+        "n_tierB": 5036,
+        "n_target": 3397
+      },
+      "provenance": {
+        "sources": {
+          "future_selected_camera": 3368
+        },
+        "overlaps": {},
+        "n_union": 3368,
+        "geometry_source": "lidar_return",
+        "camera": "selected",
+        "observation_count": {
+          "n": 3368,
+          "mean": 1.4949524402618408,
+          "median": 1.0,
+          "p10": 1.0,
+          "p90": 2.0
+        },
+        "first_observation_dt_s": {
+          "n": 3368,
+          "mean": 1.0737618207931519,
+          "median": 1.046875,
+          "p10": 0.5234375,
+          "p90": 2.09375
+        },
+        "tier": {
+          "A_occupied_at_t": 1278,
+          "B_occupancy_uncertain": 2090
+        }
+      },
+      "distance": {
+        "0-1 m": 250,
+        "1-2 m": 457,
+        "2-4 m": 746,
+        "4-8 m": 572,
+        ">8 m": 1343
+      },
+      "distance_hidden": {
+        "0-1 m": 3222,
+        "1-2 m": 4035,
+        "2-4 m": 5214,
+        "4-8 m": 4675,
+        ">8 m": 13606
+      },
+      "range": {
+        "0-10 m": 0,
+        "10-20 m": 437,
+        "20-30 m": 862,
+        "30-40 m": 1095,
+        ">40 m": 974
+      },
+      "range_hidden": {
+        "0-10 m": 3276,
+        "10-20 m": 7887,
+        "20-30 m": 4970,
+        "30-40 m": 5142,
+        ">40 m": 9477
+      },
+      "readout_histogram": {
+        "car": 33,
+        "bicycle": 0,
+        "motorcycle": 0,
+        "truck": 1,
+        "other-vehicle": 0,
+        "person": 0,
+        "road": 524,
+        "parking": 1,
+        "sidewalk": 0,
+        "other-ground": 91,
+        "building": 0,
+        "fence": 515,
+        "vegetation": 2127,
+        "terrain": 0,
+        "pole": 0,
+        "traffic-sign": 0,
+        "other-structure": 76,
+        "other-object": 0
+      },
+      "b0_histogram": {
+        "car": 0,
+        "bicycle": 0,
+        "motorcycle": 0,
+        "truck": 0,
+        "other-vehicle": 0,
+        "person": 0,
+        "road": 204,
+        "parking": 0,
+        "sidewalk": 0,
+        "other-ground": 0,
+        "building": 0,
+        "fence": 25,
+        "vegetation": 3135,
+        "terrain": 0,
+        "pole": 0,
+        "traffic-sign": 4,
+        "other-structure": 0,
+        "other-object": 0
+      },
+      "agreement": {
+        "n_with_two_views": 1290,
+        "n_two_views_agree": 1050,
+        "two_view_agreement": 0.813953488372093,
+        "mean_top_probability": 0.7129570841789246,
+        "note": "consistency between views of a frozen teacher, not semantic correctness"
+      },
+      "repeat_vs_new": {
+        "n_targets": 3368,
+        "n_causal_camera_had_a_return": 1155,
+        "n_newly_supported": 2213,
+        "n_single_observation": 2078,
+        "n_repeated_observation": 1290
+      }
+    },
+    {
+      "arm": "k360",
+      "variant": "k360_reference",
+      "scene": "2013_05_28_drive_0003_sync",
+      "anchor": 125,
+      "scale_m_per_unit": 29.93487270574305,
+      "causal": {
+        "in_frustum": 2097152,
+        "surface": 14202,
+        "free": 48983,
+        "evidence": 8935,
+        "occluded_all": 310496
+      },
+      "privileged": {
+        "n_valid": 850472,
+        "n_sweeps_used": 21,
+        "native_frame": 647
+      },
+      "counts": {
+        "O_priv": 28004,
+        "E_causal": 8935,
+        "Z_valid": 1984,
+        "hidden": 27539,
+        "U": 1962,
+        "hidden_surface_observed_no_teacher": 298,
+        "U_surface_observed_no_teacher": 42,
+        "hidden_outside_every_frustum": 0,
+        "U_outside_every_frustum": 0,
+        "hidden_occluded_throughout": 12484,
+        "U_occluded_throughout": 1,
+        "hidden_unresolved_visibility": 14757,
+        "U_unresolved_visibility": 1919,
+        "hidden_causal_free_disagreement": 1623,
+        "U_causal_free_disagreement": 48,
+        "hidden_unresolved_not_carved": 13134,
+        "U_unresolved_not_carved": 1871
+      },
+      "clip_span_s": {
+        "causal_first_dt_s": -2.092,
+        "causal_span_s": 2.092,
+        "n_causal_frames": 5,
+        "n_future_frames": 19,
+        "future_last_dt_s": 9.937,
+        "stream_dt_s": 0.523
+      },
+      "exclusions": {
+        "n_future_hit": 71437,
+        "n_conflict_dynamic": 53502,
+        "n_not_static_1s": 63093,
+        "n_tierA": 3103,
+        "n_tierB": 5241,
+        "n_target": 1984
+      },
+      "provenance": {
+        "sources": {
+          "future_selected_camera": 1962
+        },
+        "overlaps": {},
+        "n_union": 1962,
+        "geometry_source": "lidar_return",
+        "camera": "selected",
+        "observation_count": {
+          "n": 1962,
+          "mean": 1.4352701902389526,
+          "median": 1.0,
+          "p10": 1.0,
+          "p90": 2.0
+        },
+        "first_observation_dt_s": {
+          "n": 1962,
+          "mean": 1.0098328590393066,
+          "median": 1.0458984375,
+          "p10": 0.52294921875,
+          "p90": 1.568359375
+        },
+        "tier": {
+          "A_occupied_at_t": 648,
+          "B_occupancy_uncertain": 1314
+        }
+      },
+      "distance": {
+        "0-1 m": 148,
+        "1-2 m": 80,
+        "2-4 m": 263,
+        "4-8 m": 608,
+        ">8 m": 863
+      },
+      "distance_hidden": {
+        "0-1 m": 2708,
+        "1-2 m": 1999,
+        "2-4 m": 6462,
+        "4-8 m": 5989,
+        ">8 m": 10381
+      },
+      "range": {
+        "0-10 m": 0,
+        "10-20 m": 100,
+        "20-30 m": 459,
+        "30-40 m": 514,
+        ">40 m": 889
+      },
+      "range_hidden": {
+        "0-10 m": 948,
+        "10-20 m": 8462,
+        "20-30 m": 7646,
+        "30-40 m": 5747,
+        ">40 m": 4736
+      },
+      "readout_histogram": {
+        "car": 70,
+        "bicycle": 0,
+        "motorcycle": 0,
+        "truck": 0,
+        "other-vehicle": 2,
+        "person": 0,
+        "road": 498,
+        "parking": 0,
+        "sidewalk": 0,
+        "other-ground": 282,
+        "building": 0,
+        "fence": 1,
+        "vegetation": 1104,
+        "terrain": 5,
+        "pole": 0,
+        "traffic-sign": 0,
+        "other-structure": 0,
+        "other-object": 0
+      },
+      "b0_histogram": {
+        "car": 0,
+        "bicycle": 0,
+        "motorcycle": 0,
+        "truck": 0,
+        "other-vehicle": 0,
+        "person": 0,
+        "road": 12,
+        "parking": 0,
+        "sidewalk": 0,
+        "other-ground": 0,
+        "building": 0,
+        "fence": 0,
+        "vegetation": 1950,
+        "terrain": 0,
+        "pole": 0,
+        "traffic-sign": 0,
+        "other-structure": 0,
+        "other-object": 0
+      },
+      "agreement": {
+        "n_with_two_views": 684,
+        "n_two_views_agree": 509,
+        "two_view_agreement": 0.7441520467836257,
+        "mean_top_probability": 0.5668060183525085,
+        "note": "consistency between views of a frozen teacher, not semantic correctness"
+      },
+      "repeat_vs_new": {
+        "n_targets": 1962,
+        "n_causal_camera_had_a_return": 562,
+        "n_newly_supported": 1400,
+        "n_single_observation": 1278,
+        "n_repeated_observation": 684
+      }
+    },
+    {
+      "arm": "k360",
+      "variant": "k360_reference",
+      "scene": "2013_05_28_drive_0003_sync",
+      "anchor": 166,
+      "scale_m_per_unit": 28.842896606129283,
+      "causal": {
+        "in_frustum": 2080424,
+        "surface": 50479,
+        "free": 252937,
+        "evidence": 27458,
+        "occluded_all": 568701
+      },
+      "privileged": {
+        "n_valid": 685755,
+        "n_sweeps_used": 21,
+        "native_frame": 852
+      },
+      "counts": {
+        "O_priv": 33076,
+        "E_causal": 27458,
+        "Z_valid": 3680,
+        "hidden": 32240,
+        "U": 3591,
+        "hidden_surface_observed_no_teacher": 523,
+        "U_surface_observed_no_teacher": 86,
+        "hidden_outside_every_frustum": 0,
+        "U_outside_every_frustum": 0,
+        "hidden_occluded_throughout": 12558,
+        "U_occluded_throughout": 1011,
+        "hidden_unresolved_visibility": 19159,
+        "U_unresolved_visibility": 2494,
+        "hidden_causal_free_disagreement": 2547,
+        "U_causal_free_disagreement": 103,
+        "hidden_unresolved_not_carved": 16612,
+        "U_unresolved_not_carved": 2391
+      },
+      "clip_span_s": {
+        "causal_first_dt_s": -2.092,
+        "causal_span_s": 2.092,
+        "n_causal_frames": 5,
+        "n_future_frames": 19,
+        "future_last_dt_s": 9.936,
+        "stream_dt_s": 0.523
+      },
+      "exclusions": {
+        "n_future_hit": 85953,
+        "n_conflict_dynamic": 63747,
+        "n_not_static_1s": 76398,
+        "n_tierA": 4254,
+        "n_tierB": 5301,
+        "n_target": 3680
+      },
+      "provenance": {
+        "sources": {
+          "future_selected_camera": 3591
+        },
+        "overlaps": {},
+        "n_union": 3591,
+        "geometry_source": "lidar_return",
+        "camera": "selected",
+        "observation_count": {
+          "n": 3591,
+          "mean": 1.4851016998291016,
+          "median": 1.0,
+          "p10": 1.0,
+          "p90": 2.0
+        },
+        "first_observation_dt_s": {
+          "n": 3591,
+          "mean": 1.1120858192443848,
+          "median": 1.046875,
+          "p10": 0.5234375,
+          "p90": 2.09375
+        },
+        "tier": {
+          "A_occupied_at_t": 1374,
+          "B_occupancy_uncertain": 2217
+        }
+      },
+      "distance": {
+        "0-1 m": 688,
+        "1-2 m": 350,
+        "2-4 m": 622,
+        "4-8 m": 522,
+        ">8 m": 1409
+      },
+      "distance_hidden": {
+        "0-1 m": 4970,
+        "1-2 m": 4385,
+        "2-4 m": 4211,
+        "4-8 m": 5447,
+        ">8 m": 13227
+      },
+      "range": {
+        "0-10 m": 0,
+        "10-20 m": 255,
+        "20-30 m": 626,
+        "30-40 m": 1739,
+        ">40 m": 971
+      },
+      "range_hidden": {
+        "0-10 m": 1772,
+        "10-20 m": 4748,
+        "20-30 m": 4579,
+        "30-40 m": 11912,
+        ">40 m": 9229
+      },
+      "readout_histogram": {
+        "car": 187,
+        "bicycle": 0,
+        "motorcycle": 0,
+        "truck": 0,
+        "other-vehicle": 5,
+        "person": 0,
+        "road": 610,
+        "parking": 2,
+        "sidewalk": 0,
+        "other-ground": 568,
+        "building": 0,
+        "fence": 0,
+        "vegetation": 2034,
+        "terrain": 101,
+        "pole": 35,
+        "traffic-sign": 0,
+        "other-structure": 49,
+        "other-object": 0
+      },
+      "b0_histogram": {
+        "car": 44,
+        "bicycle": 0,
+        "motorcycle": 0,
+        "truck": 0,
+        "other-vehicle": 0,
+        "person": 0,
+        "road": 0,
+        "parking": 0,
+        "sidewalk": 0,
+        "other-ground": 0,
+        "building": 0,
+        "fence": 23,
+        "vegetation": 3322,
+        "terrain": 0,
+        "pole": 28,
+        "traffic-sign": 40,
+        "other-structure": 134,
+        "other-object": 0
+      },
+      "agreement": {
+        "n_with_two_views": 1354,
+        "n_two_views_agree": 888,
+        "two_view_agreement": 0.6558345642540621,
+        "mean_top_probability": 0.49404844641685486,
+        "note": "consistency between views of a frozen teacher, not semantic correctness"
+      },
+      "repeat_vs_new": {
+        "n_targets": 3591,
+        "n_causal_camera_had_a_return": 1098,
+        "n_newly_supported": 2493,
+        "n_single_observation": 2237,
+        "n_repeated_observation": 1354
+      }
+    },
+    {
+      "arm": "k360",
+      "variant": "k360_reference",
+      "scene": "2013_05_28_drive_0007_sync",
+      "anchor": 4,
+      "scale_m_per_unit": 27.30530164533821,
+      "causal": {
+        "in_frustum": 2097118,
+        "surface": 31303,
+        "free": 80921,
+        "evidence": 20414,
+        "occluded_all": 801487
+      },
+      "privileged": {
+        "n_valid": 309750,
+        "n_sweeps_used": 21,
+        "native_frame": 22
+      },
+      "counts": {
+        "O_priv": 32960,
+        "E_causal": 20414,
+        "Z_valid": 6914,
+        "hidden": 30488,
+        "U": 6849,
+        "hidden_surface_observed_no_teacher": 1222,
+        "U_surface_observed_no_teacher": 71,
+        "hidden_outside_every_frustum": 0,
+        "U_outside_every_frustum": 0,
+        "hidden_occluded_throughout": 6883,
+        "U_occluded_throughout": 508,
+        "hidden_unresolved_visibility": 22383,
+        "U_unresolved_visibility": 6270,
+        "hidden_causal_free_disagreement": 2045,
+        "U_causal_free_disagreement": 385,
+        "hidden_unresolved_not_carved": 20338,
+        "U_unresolved_not_carved": 5885
+      },
+      "clip_span_s": {
+        "causal_first_dt_s": -2.089,
+        "causal_span_s": 2.089,
+        "n_causal_frames": 5,
+        "n_future_frames": 19,
+        "future_last_dt_s": 9.919,
+        "stream_dt_s": 0.52225
+      },
+      "exclusions": {
+        "n_future_hit": 72363,
+        "n_conflict_dynamic": 47424,
+        "n_not_static_1s": 59002,
+        "n_tierA": 6373,
+        "n_tierB": 6988,
+        "n_target": 6914
+      },
+      "provenance": {
+        "sources": {
+          "future_selected_camera": 6849
+        },
+        "overlaps": {},
+        "n_union": 6849,
+        "geometry_source": "lidar_return",
+        "camera": "selected",
+        "observation_count": {
+          "n": 6849,
+          "mean": 1.4530588388442993,
+          "median": 1.0,
+          "p10": 1.0,
+          "p90": 2.0
+        },
+        "first_observation_dt_s": {
+          "n": 6849,
+          "mean": 1.290971279144287,
+          "median": 1.044921875,
+          "p10": 0.5224609375,
+          "p90": 2.611328125
+        },
+        "tier": {
+          "A_occupied_at_t": 2275,
+          "B_occupancy_uncertain": 4574
+        }
+      },
+      "distance": {
+        "0-1 m": 1272,
+        "1-2 m": 914,
+        "2-4 m": 753,
+        "4-8 m": 735,
+        ">8 m": 3175
+      },
+      "distance_hidden": {
+        "0-1 m": 8560,
+        "1-2 m": 3933,
+        "2-4 m": 2843,
+        "4-8 m": 3065,
+        ">8 m": 12087
+      },
+      "range": {
+        "0-10 m": 0,
+        "10-20 m": 852,
+        "20-30 m": 2018,
+        "30-40 m": 1942,
+        ">40 m": 2037
+      },
+      "range_hidden": {
+        "0-10 m": 2523,
+        "10-20 m": 6861,
+        "20-30 m": 6678,
+        "30-40 m": 6770,
+        ">40 m": 7656
+      },
+      "readout_histogram": {
+        "car": 0,
+        "bicycle": 0,
+        "motorcycle": 0,
+        "truck": 0,
+        "other-vehicle": 0,
+        "person": 0,
+        "road": 252,
+        "parking": 0,
+        "sidewalk": 0,
+        "other-ground": 398,
+        "building": 0,
+        "fence": 0,
+        "vegetation": 5923,
+        "terrain": 267,
+        "pole": 9,
+        "traffic-sign": 0,
+        "other-structure": 0,
+        "other-object": 0
+      },
+      "b0_histogram": {
+        "car": 0,
+        "bicycle": 0,
+        "motorcycle": 0,
+        "truck": 0,
+        "other-vehicle": 0,
+        "person": 0,
+        "road": 6,
+        "parking": 0,
+        "sidewalk": 0,
+        "other-ground": 0,
+        "building": 0,
+        "fence": 1,
+        "vegetation": 3408,
+        "terrain": 3434,
+        "pole": 0,
+        "traffic-sign": 0,
+        "other-structure": 0,
+        "other-object": 0
+      },
+      "agreement": {
+        "n_with_two_views": 2455,
+        "n_two_views_agree": 1734,
+        "two_view_agreement": 0.7063136456211813,
+        "mean_top_probability": 0.5756880044937134,
+        "note": "consistency between views of a frozen teacher, not semantic correctness"
+      },
+      "repeat_vs_new": {
+        "n_targets": 6849,
+        "n_causal_camera_had_a_return": 2026,
+        "n_newly_supported": 4823,
+        "n_single_observation": 4394,
+        "n_repeated_observation": 2455
+      }
+    },
+    {
+      "arm": "k360",
+      "variant": "k360_reference",
+      "scene": "2013_05_28_drive_0007_sync",
+      "anchor": 64,
+      "scale_m_per_unit": 28.987690079652438,
+      "causal": {
+        "in_frustum": 2097152,
+        "surface": 34455,
+        "free": 107197,
+        "evidence": 20372,
+        "occluded_all": 1349248
+      },
+      "privileged": {
+        "n_valid": 797554,
+        "n_sweeps_used": 21,
+        "native_frame": 322
+      },
+      "counts": {
+        "O_priv": 43673,
+        "E_causal": 20372,
+        "Z_valid": 1992,
+        "hidden": 43034,
+        "U": 1966,
+        "hidden_surface_observed_no_teacher": 313,
+        "U_surface_observed_no_teacher": 36,
+        "hidden_outside_every_frustum": 0,
+        "U_outside_every_frustum": 0,
+        "hidden_occluded_throughout": 33268,
+        "U_occluded_throughout": 1126,
+        "hidden_unresolved_visibility": 9453,
+        "U_unresolved_visibility": 804,
+        "hidden_causal_free_disagreement": 1001,
+        "U_causal_free_disagreement": 27,
+        "hidden_unresolved_not_carved": 8452,
+        "U_unresolved_not_carved": 777
+      },
+      "clip_span_s": {
+        "causal_first_dt_s": -2.088,
+        "causal_span_s": 2.088,
+        "n_causal_frames": 5,
+        "n_future_frames": 19,
+        "future_last_dt_s": 9.917,
+        "stream_dt_s": 0.522
+      },
+      "exclusions": {
+        "n_future_hit": 97560,
+        "n_conflict_dynamic": 71178,
+        "n_not_static_1s": 90685,
+        "n_tierA": 2875,
+        "n_tierB": 4000,
+        "n_target": 1992
+      },
+      "provenance": {
+        "sources": {
+          "future_selected_camera": 1966
+        },
+        "overlaps": {},
+        "n_union": 1966,
+        "geometry_source": "lidar_return",
+        "camera": "selected",
+        "observation_count": {
+          "n": 1966,
+          "mean": 1.2019329071044922,
+          "median": 1.0,
+          "p10": 1.0,
+          "p90": 2.0
+        },
+        "first_observation_dt_s": {
+          "n": 1966,
+          "mean": 0.8698717951774597,
+          "median": 0.52197265625,
+          "p10": 0.52197265625,
+          "p90": 1.56640625
+        },
+        "tier": {
+          "A_occupied_at_t": 465,
+          "B_occupancy_uncertain": 1501
+        }
+      },
+      "distance": {
+        "0-1 m": 129,
+        "1-2 m": 75,
+        "2-4 m": 587,
+        "4-8 m": 379,
+        ">8 m": 796
+      },
+      "distance_hidden": {
+        "0-1 m": 2616,
+        "1-2 m": 2096,
+        "2-4 m": 6612,
+        "4-8 m": 8772,
+        ">8 m": 22938
+      },
+      "range": {
+        "0-10 m": 0,
+        "10-20 m": 56,
+        "20-30 m": 504,
+        "30-40 m": 558,
+        ">40 m": 848
+      },
+      "range_hidden": {
+        "0-10 m": 1953,
+        "10-20 m": 7326,
+        "20-30 m": 12131,
+        "30-40 m": 9395,
+        ">40 m": 12229
+      },
+      "readout_histogram": {
+        "car": 0,
+        "bicycle": 0,
+        "motorcycle": 0,
+        "truck": 0,
+        "other-vehicle": 0,
+        "person": 1,
+        "road": 378,
+        "parking": 0,
+        "sidewalk": 0,
+        "other-ground": 57,
+        "building": 0,
+        "fence": 85,
+        "vegetation": 1440,
+        "terrain": 0,
+        "pole": 4,
+        "traffic-sign": 0,
+        "other-structure": 0,
+        "other-object": 1
+      },
+      "b0_histogram": {
+        "car": 0,
+        "bicycle": 0,
+        "motorcycle": 0,
+        "truck": 0,
+        "other-vehicle": 0,
+        "person": 0,
+        "road": 0,
+        "parking": 0,
+        "sidewalk": 0,
+        "other-ground": 0,
+        "building": 0,
+        "fence": 0,
+        "vegetation": 1966,
+        "terrain": 0,
+        "pole": 0,
+        "traffic-sign": 0,
+        "other-structure": 0,
+        "other-object": 0
+      },
+      "agreement": {
+        "n_with_two_views": 356,
+        "n_two_views_agree": 314,
+        "two_view_agreement": 0.8820224719101124,
+        "mean_top_probability": 0.6982167959213257,
+        "note": "consistency between views of a frozen teacher, not semantic correctness"
+      },
+      "repeat_vs_new": {
+        "n_targets": 1966,
+        "n_causal_camera_had_a_return": 350,
+        "n_newly_supported": 1616,
+        "n_single_observation": 1610,
+        "n_repeated_observation": 356
+      }
+    },
+    {
+      "arm": "k360",
+      "variant": "k360_reference",
+      "scene": "2013_05_28_drive_0007_sync",
+      "anchor": 124,
+      "scale_m_per_unit": 36.504854368932044,
+      "causal": {
+        "in_frustum": 2097152,
+        "surface": 27988,
+        "free": 82396,
+        "evidence": 14799,
+        "occluded_all": 691412
+      },
+      "privileged": {
+        "n_valid": 594507,
+        "n_sweeps_used": 21,
+        "native_frame": 622
+      },
+      "counts": {
+        "O_priv": 32729,
+        "E_causal": 14799,
+        "Z_valid": 3404,
+        "hidden": 31734,
+        "U": 3400,
+        "hidden_surface_observed_no_teacher": 860,
+        "U_surface_observed_no_teacher": 6,
+        "hidden_outside_every_frustum": 0,
+        "U_outside_every_frustum": 0,
+        "hidden_occluded_throughout": 12875,
+        "U_occluded_throughout": 1102,
+        "hidden_unresolved_visibility": 17999,
+        "U_unresolved_visibility": 2292,
+        "hidden_causal_free_disagreement": 3364,
+        "U_causal_free_disagreement": 83,
+        "hidden_unresolved_not_carved": 14635,
+        "U_unresolved_not_carved": 2209
+      },
+      "clip_span_s": {
+        "causal_first_dt_s": -2.089,
+        "causal_span_s": 2.089,
+        "n_causal_frames": 5,
+        "n_future_frames": 19,
+        "future_last_dt_s": 9.92,
+        "stream_dt_s": 0.52225
+      },
+      "exclusions": {
+        "n_future_hit": 65940,
+        "n_conflict_dynamic": 43611,
+        "n_not_static_1s": 58761,
+        "n_tierA": 2901,
+        "n_tierB": 4278,
+        "n_target": 3404
+      },
+      "provenance": {
+        "sources": {
+          "future_selected_camera": 3400
+        },
+        "overlaps": {},
+        "n_union": 3400,
+        "geometry_source": "lidar_return",
+        "camera": "selected",
+        "observation_count": {
+          "n": 3400,
+          "mean": 1.2364705801010132,
+          "median": 1.0,
+          "p10": 1.0,
+          "p90": 2.0
+        },
+        "first_observation_dt_s": {
+          "n": 3400,
+          "mean": 0.90679931640625,
+          "median": 1.0439453125,
+          "p10": 0.52197265625,
+          "p90": 1.56640625
+        },
+        "tier": {
+          "A_occupied_at_t": 803,
+          "B_occupancy_uncertain": 2597
+        }
+      },
+      "distance": {
+        "0-1 m": 80,
+        "1-2 m": 458,
+        "2-4 m": 914,
+        "4-8 m": 590,
+        ">8 m": 1358
+      },
+      "distance_hidden": {
+        "0-1 m": 7025,
+        "1-2 m": 4433,
+        "2-4 m": 8025,
+        "4-8 m": 5729,
+        ">8 m": 6522
+      },
+      "range": {
+        "0-10 m": 0,
+        "10-20 m": 120,
+        "20-30 m": 892,
+        "30-40 m": 1053,
+        ">40 m": 1335
+      },
+      "range_hidden": {
+        "0-10 m": 2259,
+        "10-20 m": 8502,
+        "20-30 m": 6593,
+        "30-40 m": 7261,
+        ">40 m": 7119
+      },
+      "readout_histogram": {
+        "car": 0,
+        "bicycle": 0,
+        "motorcycle": 0,
+        "truck": 0,
+        "other-vehicle": 0,
+        "person": 0,
+        "road": 441,
+        "parking": 0,
+        "sidewalk": 0,
+        "other-ground": 125,
+        "building": 0,
+        "fence": 15,
+        "vegetation": 2817,
+        "terrain": 0,
+        "pole": 2,
+        "traffic-sign": 0,
+        "other-structure": 0,
+        "other-object": 0
+      },
+      "b0_histogram": {
+        "car": 0,
+        "bicycle": 0,
+        "motorcycle": 0,
+        "truck": 0,
+        "other-vehicle": 0,
+        "person": 0,
+        "road": 0,
+        "parking": 0,
+        "sidewalk": 0,
+        "other-ground": 0,
+        "building": 0,
+        "fence": 0,
+        "vegetation": 3400,
+        "terrain": 0,
+        "pole": 0,
+        "traffic-sign": 0,
+        "other-structure": 0,
+        "other-object": 0
+      },
+      "agreement": {
+        "n_with_two_views": 746,
+        "n_two_views_agree": 660,
+        "two_view_agreement": 0.8847184986595175,
+        "mean_top_probability": 0.7200992107391357,
+        "note": "consistency between views of a frozen teacher, not semantic correctness"
+      },
+      "repeat_vs_new": {
+        "n_targets": 3400,
+        "n_causal_camera_had_a_return": 641,
+        "n_newly_supported": 2759,
+        "n_single_observation": 2654,
+        "n_repeated_observation": 746
+      }
+    },
+    {
+      "arm": "k360",
+      "variant": "k360_reference",
+      "scene": "2013_05_28_drive_0007_sync",
+      "anchor": 183,
+      "scale_m_per_unit": 36.284518828451894,
+      "causal": {
+        "in_frustum": 2097152,
+        "surface": 30766,
+        "free": 102120,
+        "evidence": 15363,
+        "occluded_all": 817575
+      },
+      "privileged": {
+        "n_valid": 660151,
+        "n_sweeps_used": 21,
+        "native_frame": 917
+      },
+      "counts": {
+        "O_priv": 35315,
+        "E_causal": 15363,
+        "Z_valid": 3037,
+        "hidden": 34371,
+        "U": 2999,
+        "hidden_surface_observed_no_teacher": 978,
+        "U_surface_observed_no_teacher": 54,
+        "hidden_outside_every_frustum": 0,
+        "U_outside_every_frustum": 0,
+        "hidden_occluded_throughout": 13761,
+        "U_occluded_throughout": 850,
+        "hidden_unresolved_visibility": 19632,
+        "U_unresolved_visibility": 2095,
+        "hidden_causal_free_disagreement": 3173,
+        "U_causal_free_disagreement": 118,
+        "hidden_unresolved_not_carved": 16459,
+        "U_unresolved_not_carved": 1977
+      },
+      "clip_span_s": {
+        "causal_first_dt_s": -2.088,
+        "causal_span_s": 2.088,
+        "n_causal_frames": 5,
+        "n_future_frames": 19,
+        "future_last_dt_s": 9.917,
+        "stream_dt_s": 0.522
+      },
+      "exclusions": {
+        "n_future_hit": 74757,
+        "n_conflict_dynamic": 48524,
+        "n_not_static_1s": 67314,
+        "n_tierA": 3173,
+        "n_tierB": 4270,
+        "n_target": 3037
+      },
+      "provenance": {
+        "sources": {
+          "future_selected_camera": 2999
+        },
+        "overlaps": {},
+        "n_union": 2999,
+        "geometry_source": "lidar_return",
+        "camera": "selected",
+        "observation_count": {
+          "n": 2999,
+          "mean": 1.1930643320083618,
+          "median": 1.0,
+          "p10": 1.0,
+          "p90": 2.0
+        },
+        "first_observation_dt_s": {
+          "n": 2999,
+          "mean": 0.8605808019638062,
+          "median": 0.52197265625,
+          "p10": 0.52197265625,
+          "p90": 1.56640625
+        },
+        "tier": {
+          "A_occupied_at_t": 848,
+          "B_occupancy_uncertain": 2151
+        }
+      },
+      "distance": {
+        "0-1 m": 591,
+        "1-2 m": 260,
+        "2-4 m": 366,
+        "4-8 m": 473,
+        ">8 m": 1309
+      },
+      "distance_hidden": {
+        "0-1 m": 8942,
+        "1-2 m": 3714,
+        "2-4 m": 3908,
+        "4-8 m": 4811,
+        ">8 m": 12996
+      },
+      "range": {
+        "0-10 m": 0,
+        "10-20 m": 83,
+        "20-30 m": 816,
+        "30-40 m": 1057,
+        ">40 m": 1043
+      },
+      "range_hidden": {
+        "0-10 m": 1520,
+        "10-20 m": 7202,
+        "20-30 m": 5912,
+        "30-40 m": 7377,
+        ">40 m": 12360
+      },
+      "readout_histogram": {
+        "car": 0,
+        "bicycle": 0,
+        "motorcycle": 0,
+        "truck": 0,
+        "other-vehicle": 0,
+        "person": 0,
+        "road": 294,
+        "parking": 0,
+        "sidewalk": 0,
+        "other-ground": 130,
+        "building": 0,
+        "fence": 2,
+        "vegetation": 2567,
+        "terrain": 1,
+        "pole": 2,
+        "traffic-sign": 3,
+        "other-structure": 0,
+        "other-object": 0
+      },
+      "b0_histogram": {
+        "car": 0,
+        "bicycle": 0,
+        "motorcycle": 0,
+        "truck": 6,
+        "other-vehicle": 0,
+        "person": 0,
+        "road": 0,
+        "parking": 0,
+        "sidewalk": 0,
+        "other-ground": 0,
+        "building": 0,
+        "fence": 0,
+        "vegetation": 2993,
+        "terrain": 0,
+        "pole": 0,
+        "traffic-sign": 0,
+        "other-structure": 0,
+        "other-object": 0
+      },
+      "agreement": {
+        "n_with_two_views": 541,
+        "n_two_views_agree": 489,
+        "two_view_agreement": 0.9038817005545287,
+        "mean_top_probability": 0.7302459478378296,
+        "note": "consistency between views of a frozen teacher, not semantic correctness"
+      },
+      "repeat_vs_new": {
+        "n_targets": 2999,
+        "n_causal_camera_had_a_return": 704,
+        "n_newly_supported": 2295,
+        "n_single_observation": 2458,
+        "n_repeated_observation": 541
+      }
+    },
+    {
+      "arm": "k360",
+      "variant": "k360_reference",
+      "scene": "2013_05_28_drive_0007_sync",
+      "anchor": 243,
+      "scale_m_per_unit": 25.938566552901026,
+      "causal": {
+        "in_frustum": 2097152,
+        "surface": 30130,
+        "free": 69355,
+        "evidence": 17879,
+        "occluded_all": 1299811
+      },
+      "privileged": {
+        "n_valid": 389764,
+        "n_sweeps_used": 21,
+        "native_frame": 1217
+      },
+      "counts": {
+        "O_priv": 25821,
+        "E_causal": 17879,
+        "Z_valid": 3411,
+        "hidden": 24647,
+        "U": 3385,
+        "hidden_surface_observed_no_teacher": 708,
+        "U_surface_observed_no_teacher": 37,
+        "hidden_outside_every_frustum": 0,
+        "U_outside_every_frustum": 0,
+        "hidden_occluded_throughout": 11802,
+        "U_occluded_throughout": 759,
+        "hidden_unresolved_visibility": 12137,
+        "U_unresolved_visibility": 2589,
+        "hidden_causal_free_disagreement": 1737,
+        "U_causal_free_disagreement": 177,
+        "hidden_unresolved_not_carved": 10400,
+        "U_unresolved_not_carved": 2412
+      },
+      "clip_span_s": {
+        "causal_first_dt_s": -2.087,
+        "causal_span_s": 2.087,
+        "n_causal_frames": 5,
+        "n_future_frames": 19,
+        "future_last_dt_s": 9.917,
+        "stream_dt_s": 0.52175
+      },
+      "exclusions": {
+        "n_future_hit": 50224,
+        "n_conflict_dynamic": 30857,
+        "n_not_static_1s": 43108,
+        "n_tierA": 2863,
+        "n_tierB": 4253,
+        "n_target": 3411
+      },
+      "provenance": {
+        "sources": {
+          "future_selected_camera": 3385
+        },
+        "overlaps": {},
+        "n_union": 3385,
+        "geometry_source": "lidar_return",
+        "camera": "selected",
+        "observation_count": {
+          "n": 3385,
+          "mean": 1.4871492385864258,
+          "median": 1.0,
+          "p10": 1.0,
+          "p90": 3.0
+        },
+        "first_observation_dt_s": {
+          "n": 3385,
+          "mean": 0.973066508769989,
+          "median": 1.0439453125,
+          "p10": 0.52197265625,
+          "p90": 1.5654296875
+        },
+        "tier": {
+          "A_occupied_at_t": 1086,
+          "B_occupancy_uncertain": 2299
+        }
+      },
+      "distance": {
+        "0-1 m": 709,
+        "1-2 m": 781,
+        "2-4 m": 938,
+        "4-8 m": 500,
+        ">8 m": 457
+      },
+      "distance_hidden": {
+        "0-1 m": 6229,
+        "1-2 m": 4676,
+        "2-4 m": 5966,
+        "4-8 m": 3613,
+        ">8 m": 4163
+      },
+      "range": {
+        "0-10 m": 0,
+        "10-20 m": 550,
+        "20-30 m": 1042,
+        "30-40 m": 1031,
+        ">40 m": 762
+      },
+      "range_hidden": {
+        "0-10 m": 4153,
+        "10-20 m": 5624,
+        "20-30 m": 5746,
+        "30-40 m": 6878,
+        ">40 m": 2246
+      },
+      "readout_histogram": {
+        "car": 0,
+        "bicycle": 0,
+        "motorcycle": 0,
+        "truck": 0,
+        "other-vehicle": 0,
+        "person": 0,
+        "road": 969,
+        "parking": 0,
+        "sidewalk": 0,
+        "other-ground": 120,
+        "building": 0,
+        "fence": 117,
+        "vegetation": 2173,
+        "terrain": 5,
+        "pole": 0,
+        "traffic-sign": 0,
+        "other-structure": 0,
+        "other-object": 1
+      },
+      "b0_histogram": {
+        "car": 0,
+        "bicycle": 0,
+        "motorcycle": 0,
+        "truck": 0,
+        "other-vehicle": 0,
+        "person": 0,
+        "road": 21,
+        "parking": 0,
+        "sidewalk": 0,
+        "other-ground": 0,
+        "building": 0,
+        "fence": 0,
+        "vegetation": 3364,
+        "terrain": 0,
+        "pole": 0,
+        "traffic-sign": 0,
+        "other-structure": 0,
+        "other-object": 0
+      },
+      "agreement": {
+        "n_with_two_views": 1260,
+        "n_two_views_agree": 1076,
+        "two_view_agreement": 0.8539682539682539,
+        "mean_top_probability": 0.6152122616767883,
+        "note": "consistency between views of a frozen teacher, not semantic correctness"
+      },
+      "repeat_vs_new": {
+        "n_targets": 3385,
+        "n_causal_camera_had_a_return": 1022,
+        "n_newly_supported": 2363,
+        "n_single_observation": 2125,
+        "n_repeated_observation": 1260
+      }
+    }
+  ]
+}
