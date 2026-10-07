@@ -80,7 +80,7 @@ def main() -> int:
     ap.add_argument("--workers", type=int, default=8)
     ap.add_argument("--stride", type=int, default=1)
     ap.add_argument("--min-free-gib", type=float, default=40.0)
-    ap.add_argument("--staging", default="/media/SSD1/MINH_DATASETS/waymo_staging")
+    ap.add_argument("--staging", default=C.WAYMO_ROOT)
     ap.add_argument("--list-only", action="store_true")
     a = ap.parse_args()
 

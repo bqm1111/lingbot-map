@@ -95,7 +95,7 @@ def check_2_privileged_cannot_touch_causal(drive: str, t: int, device,
     # hard-map input legitimately live in per-drive directories, so forbidding the drive name
     # would fail the check on a legal read instead of on a leak.
     privileged = ("delayed_targets", "/targets/", "velodyne", "data_3d_raw", "data_poses",
-                  "eval_masks", "gate20_future_reveal")
+                  "eval_masks", "gate20_future_reveal")  # roots, never the drive name
     audit_ok, audit_err = True, None
     try:
         with FileAudit(patterns=privileged, strict=True) as audit:
@@ -196,7 +196,7 @@ def check_4_invalid_supervision_excluded(drive: str, t: int, device,
     unsupervised = pop.hidden & ~pop.Z_valid
     assigned_a_class = int((readout[unsupervised] != 0).sum())
 
-    with np.load(SRC.target_path(drive, t)) as z:
+    with np.load(K.target_path(drive, t)) as z:
         n = C.N_VOXELS
         occ_raw = np.unpackbits(z["occ_packed"])[:n].astype(bool)
         valid_raw = np.unpackbits(z["valid_packed"])[:n].astype(bool)

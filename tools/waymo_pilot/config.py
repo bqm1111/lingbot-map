@@ -31,8 +31,12 @@ VERSION = "waymo_pilot.1"
 REPO_ROOT = G15.REPO_ROOT
 ARTIFACT_DIR = os.path.join(REPO_ROOT, "artifacts", "waymo_supervision_pilot")
 REPORT_PATH = os.path.join(REPO_ROOT, "reports", "waymo_supervision_pilot.md")
+#: The derived corpus lives on the 7.3 TB volume, not SSD1: the full training split's frame
+#: cache is ~519 GiB and SSD1 has 230 GiB. Measured 299 MB/s write / 421 MB/s read there
+#: against SSD1's 4.2 GB/s, which is immaterial here -- extraction writes 0.62 GiB per
+#: segment against 2.6 min of compute.
 DATA_ROOT = os.environ.get("WAYMO_PILOT_DATA_ROOT",
-                           "/media/SSD1/MINH_DATASETS/lingbot_waymo_pilot")
+                           "/media/minh/MINH1/lingbot_waymo_pilot")
 
 # --------------------------------------------------------------------------- #
 # the frozen causal contract, inherited (asserted in checks.check_1)
@@ -119,7 +123,9 @@ VARIANTS: Dict[str, Tuple[str, ...]] = {
 # Waymo (§2). Every field below was read from the installed SDK or from the local
 # reference implementation; see waymo.py for the provenance of each.
 # --------------------------------------------------------------------------- #
-WAYMO_ROOT = os.environ.get("WAYMO_ROOT", "/media/SSD1/MINH_DATASETS/waymo_perception_v1_4_2")
+#: Staging only: ``fetch_corpus.py`` deletes each ``.tfrecord`` once it is extracted, so
+#: this directory never holds more than the in-flight segments.
+WAYMO_ROOT = os.environ.get("WAYMO_ROOT", "/media/minh/MINH1/waymo_staging")
 WAYMO_EXPECTED_VERSION = "perception v1.4.2 (individual_files/training/*.tfrecord)"
 WAYMO_SDK_PACKAGE = "waymo-open-dataset-tf-2-12-0"
 #: The reader environment, built on SSD1 because ``/`` is nearly full and TF is ~1.8 GiB.

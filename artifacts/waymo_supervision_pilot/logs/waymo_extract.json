@@ -1,0 +1,2421 @@
+{
+  "version": "waymo_pilot.1",
+  "root": "/media/SSD1/MINH_DATASETS/waymo_perception_v1_4_2",
+  "stride": 1,
+  "anchor_frame_budget": {
+    "frames_back": 20,
+    "frames_forward": 100,
+    "span": 121,
+    "first_anchor_frame": 20,
+    "extended_window_frames": 20
+  },
+  "anchors_supported_per_segment": {
+    "segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord": 78,
+    "segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord": 79
+  },
+  "n_segments": 2,
+  "n_frames": 397,
+  "gib": 1.230411870405078,
+  "seconds": 306.9351978302002,
+  "seconds_per_frame": 0.7731365184639803,
+  "caps": {
+    "max_derived_gib": 20.0,
+    "max_preprocess_gpu_hours": 2.0
+  },
+  "segments": [
+    {
+      "segment": "segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord",
+      "n_frames": 198,
+      "frames": [
+        {
+          "frame_index": 0,
+          "bytes": 3562454,
+          "max_sync_error_s": 0.07471036911010742,
+          "n_points": 171606
+        },
+        {
+          "frame_index": 1,
+          "bytes": 3566995,
+          "max_sync_error_s": 0.07491922378540039,
+          "n_points": 171072
+        },
+        {
+          "frame_index": 2,
+          "bytes": 3524101,
+          "max_sync_error_s": 0.07509398460388184,
+          "n_points": 170223
+        },
+        {
+          "frame_index": 3,
+          "bytes": 3550892,
+          "max_sync_error_s": 0.07526278495788574,
+          "n_points": 171610
+        },
+        {
+          "frame_index": 4,
+          "bytes": 3557773,
+          "max_sync_error_s": 0.07542300224304199,
+          "n_points": 172359
+        },
+        {
+          "frame_index": 5,
+          "bytes": 3544907,
+          "max_sync_error_s": 0.07555079460144043,
+          "n_points": 172267
+        },
+        {
+          "frame_index": 6,
+          "bytes": 3533400,
+          "max_sync_error_s": 0.07567644119262695,
+          "n_points": 172690
+        },
+        {
+          "frame_index": 7,
+          "bytes": 3532777,
+          "max_sync_error_s": 0.07576632499694824,
+          "n_points": 172274
+        },
+        {
+          "frame_index": 8,
+          "bytes": 3529255,
+          "max_sync_error_s": 0.07586216926574707,
+          "n_points": 171775
+        },
+        {
+          "frame_index": 9,
+          "bytes": 3543966,
+          "max_sync_error_s": 0.07591700553894043,
+          "n_points": 172830
+        },
+        {
+          "frame_index": 10,
+          "bytes": 3551376,
+          "max_sync_error_s": 0.07601785659790039,
+          "n_points": 172149
+        },
+        {
+          "frame_index": 11,
+          "bytes": 3551497,
+          "max_sync_error_s": 0.0760347843170166,
+          "n_points": 172528
+        },
+        {
+          "frame_index": 12,
+          "bytes": 3552230,
+          "max_sync_error_s": 0.07605552673339844,
+          "n_points": 172291
+        },
+        {
+          "frame_index": 13,
+          "bytes": 3551085,
+          "max_sync_error_s": 0.07607746124267578,
+          "n_points": 172401
+        },
+        {
+          "frame_index": 14,
+          "bytes": 3556088,
+          "max_sync_error_s": 0.07605338096618652,
+          "n_points": 172242
+        },
+        {
+          "frame_index": 15,
+          "bytes": 3526279,
+          "max_sync_error_s": 0.07606697082519531,
+          "n_points": 172457
+        },
+        {
+          "frame_index": 16,
+          "bytes": 3513705,
+          "max_sync_error_s": 0.07604479789733887,
+          "n_points": 171942
+        },
+        {
+          "frame_index": 17,
+          "bytes": 3504062,
+          "max_sync_error_s": 0.0760335922241211,
+          "n_points": 171747
+        },
+        {
+          "frame_index": 18,
+          "bytes": 3513863,
+          "max_sync_error_s": 0.07604575157165527,
+          "n_points": 172162
+        },
+        {
+          "frame_index": 19,
+          "bytes": 3512678,
+          "max_sync_error_s": 0.07602858543395996,
+          "n_points": 172032
+        },
+        {
+          "frame_index": 20,
+          "bytes": 3506716,
+          "max_sync_error_s": 0.07601332664489746,
+          "n_points": 172139
+        },
+        {
+          "frame_index": 21,
+          "bytes": 3507529,
+          "max_sync_error_s": 0.07602930068969727,
+          "n_points": 172192
+        },
+        {
+          "frame_index": 22,
+          "bytes": 3500573,
+          "max_sync_error_s": 0.07601189613342285,
+          "n_points": 171558
+        },
+        {
+          "frame_index": 23,
+          "bytes": 3492360,
+          "max_sync_error_s": 0.07599282264709473,
+          "n_points": 170933
+        },
+        {
+          "frame_index": 24,
+          "bytes": 3518891,
+          "max_sync_error_s": 0.07593750953674316,
+          "n_points": 171288
+        },
+        {
+          "frame_index": 25,
+          "bytes": 3515090,
+          "max_sync_error_s": 0.07595157623291016,
+          "n_points": 170923
+        },
+        {
+          "frame_index": 26,
+          "bytes": 3460798,
+          "max_sync_error_s": 0.07592439651489258,
+          "n_points": 171046
+        },
+        {
+          "frame_index": 27,
+          "bytes": 3468635,
+          "max_sync_error_s": 0.07587027549743652,
+          "n_points": 170176
+        },
+        {
+          "frame_index": 28,
+          "bytes": 3499334,
+          "max_sync_error_s": 0.07585501670837402,
+          "n_points": 169457
+        },
+        {
+          "frame_index": 29,
+          "bytes": 3519641,
+          "max_sync_error_s": 0.07584595680236816,
+          "n_points": 169000
+        },
+        {
+          "frame_index": 30,
+          "bytes": 3540160,
+          "max_sync_error_s": 0.07583475112915039,
+          "n_points": 168255
+        },
+        {
+          "frame_index": 31,
+          "bytes": 3539902,
+          "max_sync_error_s": 0.07581353187561035,
+          "n_points": 168085
+        },
+        {
+          "frame_index": 32,
+          "bytes": 3534680,
+          "max_sync_error_s": 0.0757904052734375,
+          "n_points": 168122
+        },
+        {
+          "frame_index": 33,
+          "bytes": 3481352,
+          "max_sync_error_s": 0.07576251029968262,
+          "n_points": 167380
+        },
+        {
+          "frame_index": 34,
+          "bytes": 3463067,
+          "max_sync_error_s": 0.07578110694885254,
+          "n_points": 167168
+        },
+        {
+          "frame_index": 35,
+          "bytes": 3455648,
+          "max_sync_error_s": 0.07575702667236328,
+          "n_points": 166973
+        },
+        {
+          "frame_index": 36,
+          "bytes": 3474502,
+          "max_sync_error_s": 0.07571196556091309,
+          "n_points": 166698
+        },
+        {
+          "frame_index": 37,
+          "bytes": 3465874,
+          "max_sync_error_s": 0.0756540298461914,
+          "n_points": 166560
+        },
+        {
+          "frame_index": 38,
+          "bytes": 3454655,
+          "max_sync_error_s": 0.07563090324401855,
+          "n_points": 166426
+        },
+        {
+          "frame_index": 39,
+          "bytes": 3427371,
+          "max_sync_error_s": 0.07554101943969727,
+          "n_points": 166801
+        },
+        {
+          "frame_index": 40,
+          "bytes": 3425475,
+          "max_sync_error_s": 0.07548689842224121,
+          "n_points": 166737
+        },
+        {
+          "frame_index": 41,
+          "bytes": 3407975,
+          "max_sync_error_s": 0.07538890838623047,
+          "n_points": 166300
+        },
+        {
+          "frame_index": 42,
+          "bytes": 3405732,
+          "max_sync_error_s": 0.07533478736877441,
+          "n_points": 166305
+        },
+        {
+          "frame_index": 43,
+          "bytes": 3388472,
+          "max_sync_error_s": 0.07523679733276367,
+          "n_points": 166548
+        },
+        {
+          "frame_index": 44,
+          "bytes": 3380967,
+          "max_sync_error_s": 0.07510566711425781,
+          "n_points": 166586
+        },
+        {
+          "frame_index": 45,
+          "bytes": 3362179,
+          "max_sync_error_s": 0.07497477531433105,
+          "n_points": 166656
+        },
+        {
+          "frame_index": 46,
+          "bytes": 3356703,
+          "max_sync_error_s": 0.07488083839416504,
+          "n_points": 167094
+        },
+        {
+          "frame_index": 47,
+          "bytes": 3352689,
+          "max_sync_error_s": 0.07474660873413086,
+          "n_points": 166950
+        },
+        {
+          "frame_index": 48,
+          "bytes": 3392917,
+          "max_sync_error_s": 0.07462477684020996,
+          "n_points": 167500
+        },
+        {
+          "frame_index": 49,
+          "bytes": 3364397,
+          "max_sync_error_s": 0.07448244094848633,
+          "n_points": 167232
+        },
+        {
+          "frame_index": 50,
+          "bytes": 3357198,
+          "max_sync_error_s": 0.07435345649719238,
+          "n_points": 167500
+        },
+        {
+          "frame_index": 51,
+          "bytes": 3333425,
+          "max_sync_error_s": 0.0742635726928711,
+          "n_points": 166109
+        },
+        {
+          "frame_index": 52,
+          "bytes": 3326744,
+          "max_sync_error_s": 0.07413148880004883,
+          "n_points": 166451
+        },
+        {
+          "frame_index": 53,
+          "bytes": 3318663,
+          "max_sync_error_s": 0.07400035858154297,
+          "n_points": 166860
+        },
+        {
+          "frame_index": 54,
+          "bytes": 3344430,
+          "max_sync_error_s": 0.07387256622314453,
+          "n_points": 166292
+        },
+        {
+          "frame_index": 55,
+          "bytes": 3325774,
+          "max_sync_error_s": 0.07377433776855469,
+          "n_points": 165231
+        },
+        {
+          "frame_index": 56,
+          "bytes": 3301937,
+          "max_sync_error_s": 0.07364034652709961,
+          "n_points": 163784
+        },
+        {
+          "frame_index": 57,
+          "bytes": 3307320,
+          "max_sync_error_s": 0.07346940040588379,
+          "n_points": 163260
+        },
+        {
+          "frame_index": 58,
+          "bytes": 3297958,
+          "max_sync_error_s": 0.07334613800048828,
+          "n_points": 163199
+        },
+        {
+          "frame_index": 59,
+          "bytes": 3322149,
+          "max_sync_error_s": 0.07321429252624512,
+          "n_points": 163971
+        },
+        {
+          "frame_index": 60,
+          "bytes": 3352113,
+          "max_sync_error_s": 0.07308530807495117,
+          "n_points": 165228
+        },
+        {
+          "frame_index": 61,
+          "bytes": 3298526,
+          "max_sync_error_s": 0.07295012474060059,
+          "n_points": 165099
+        },
+        {
+          "frame_index": 62,
+          "bytes": 3256822,
+          "max_sync_error_s": 0.07282829284667969,
+          "n_points": 164843
+        },
+        {
+          "frame_index": 63,
+          "bytes": 3228729,
+          "max_sync_error_s": 0.07269930839538574,
+          "n_points": 164538
+        },
+        {
+          "frame_index": 64,
+          "bytes": 3192083,
+          "max_sync_error_s": 0.07256412506103516,
+          "n_points": 164591
+        },
+        {
+          "frame_index": 65,
+          "bytes": 3214149,
+          "max_sync_error_s": 0.07246899604797363,
+          "n_points": 165117
+        },
+        {
+          "frame_index": 66,
+          "bytes": 3223132,
+          "max_sync_error_s": 0.07241415977478027,
+          "n_points": 165710
+        },
+        {
+          "frame_index": 67,
+          "bytes": 3230383,
+          "max_sync_error_s": 0.0723578929901123,
+          "n_points": 166087
+        },
+        {
+          "frame_index": 68,
+          "bytes": 3243533,
+          "max_sync_error_s": 0.07234001159667969,
+          "n_points": 166884
+        },
+        {
+          "frame_index": 69,
+          "bytes": 3254425,
+          "max_sync_error_s": 0.07236099243164062,
+          "n_points": 167730
+        },
+        {
+          "frame_index": 70,
+          "bytes": 3256392,
+          "max_sync_error_s": 0.07233381271362305,
+          "n_points": 168054
+        },
+        {
+          "frame_index": 71,
+          "bytes": 3244151,
+          "max_sync_error_s": 0.07235288619995117,
+          "n_points": 168646
+        },
+        {
+          "frame_index": 72,
+          "bytes": 3260148,
+          "max_sync_error_s": 0.07233405113220215,
+          "n_points": 167851
+        },
+        {
+          "frame_index": 73,
+          "bytes": 3264888,
+          "max_sync_error_s": 0.07231473922729492,
+          "n_points": 168521
+        },
+        {
+          "frame_index": 74,
+          "bytes": 3270650,
+          "max_sync_error_s": 0.07229995727539062,
+          "n_points": 168225
+        },
+        {
+          "frame_index": 75,
+          "bytes": 3260910,
+          "max_sync_error_s": 0.07229185104370117,
+          "n_points": 167944
+        },
+        {
+          "frame_index": 76,
+          "bytes": 3266424,
+          "max_sync_error_s": 0.07223868370056152,
+          "n_points": 168529
+        },
+        {
+          "frame_index": 77,
+          "bytes": 3268384,
+          "max_sync_error_s": 0.07222270965576172,
+          "n_points": 168210
+        },
+        {
+          "frame_index": 78,
+          "bytes": 3238318,
+          "max_sync_error_s": 0.07219672203063965,
+          "n_points": 167572
+        },
+        {
+          "frame_index": 79,
+          "bytes": 3238933,
+          "max_sync_error_s": 0.07218456268310547,
+          "n_points": 167116
+        },
+        {
+          "frame_index": 80,
+          "bytes": 3254952,
+          "max_sync_error_s": 0.07217264175415039,
+          "n_points": 166697
+        },
+        {
+          "frame_index": 81,
+          "bytes": 3255668,
+          "max_sync_error_s": 0.07214975357055664,
+          "n_points": 166417
+        },
+        {
+          "frame_index": 82,
+          "bytes": 3257928,
+          "max_sync_error_s": 0.07213449478149414,
+          "n_points": 165954
+        },
+        {
+          "frame_index": 83,
+          "bytes": 3262058,
+          "max_sync_error_s": 0.07215762138366699,
+          "n_points": 165175
+        },
+        {
+          "frame_index": 84,
+          "bytes": 3258355,
+          "max_sync_error_s": 0.07218170166015625,
+          "n_points": 164490
+        },
+        {
+          "frame_index": 85,
+          "bytes": 3263191,
+          "max_sync_error_s": 0.07220935821533203,
+          "n_points": 165312
+        },
+        {
+          "frame_index": 86,
+          "bytes": 3255881,
+          "max_sync_error_s": 0.07226061820983887,
+          "n_points": 165562
+        },
+        {
+          "frame_index": 87,
+          "bytes": 3236893,
+          "max_sync_error_s": 0.07227921485900879,
+          "n_points": 164241
+        },
+        {
+          "frame_index": 88,
+          "bytes": 3250648,
+          "max_sync_error_s": 0.07229733467102051,
+          "n_points": 166377
+        },
+        {
+          "frame_index": 89,
+          "bytes": 3267982,
+          "max_sync_error_s": 0.07231736183166504,
+          "n_points": 166511
+        },
+        {
+          "frame_index": 90,
+          "bytes": 3291026,
+          "max_sync_error_s": 0.0723271369934082,
+          "n_points": 166917
+        },
+        {
+          "frame_index": 91,
+          "bytes": 3282384,
+          "max_sync_error_s": 0.07229924201965332,
+          "n_points": 167337
+        },
+        {
+          "frame_index": 92,
+          "bytes": 3278562,
+          "max_sync_error_s": 0.07232022285461426,
+          "n_points": 166443
+        },
+        {
+          "frame_index": 93,
+          "bytes": 3275133,
+          "max_sync_error_s": 0.07230424880981445,
+          "n_points": 165752
+        },
+        {
+          "frame_index": 94,
+          "bytes": 3286357,
+          "max_sync_error_s": 0.07232117652893066,
+          "n_points": 165164
+        },
+        {
+          "frame_index": 95,
+          "bytes": 3283457,
+          "max_sync_error_s": 0.07230734825134277,
+          "n_points": 164674
+        },
+        {
+          "frame_index": 96,
+          "bytes": 3299065,
+          "max_sync_error_s": 0.07232904434204102,
+          "n_points": 165354
+        },
+        {
+          "frame_index": 97,
+          "bytes": 3312027,
+          "max_sync_error_s": 0.07238316535949707,
+          "n_points": 165722
+        },
+        {
+          "frame_index": 98,
+          "bytes": 3333751,
+          "max_sync_error_s": 0.07239603996276855,
+          "n_points": 165858
+        },
+        {
+          "frame_index": 99,
+          "bytes": 3320932,
+          "max_sync_error_s": 0.07237887382507324,
+          "n_points": 165700
+        },
+        {
+          "frame_index": 100,
+          "bytes": 3311078,
+          "max_sync_error_s": 0.07236695289611816,
+          "n_points": 165908
+        },
+        {
+          "frame_index": 101,
+          "bytes": 3293953,
+          "max_sync_error_s": 0.07239007949829102,
+          "n_points": 164334
+        },
+        {
+          "frame_index": 102,
+          "bytes": 3296088,
+          "max_sync_error_s": 0.07237696647644043,
+          "n_points": 164818
+        },
+        {
+          "frame_index": 103,
+          "bytes": 3315827,
+          "max_sync_error_s": 0.07235383987426758,
+          "n_points": 165897
+        },
+        {
+          "frame_index": 104,
+          "bytes": 3329065,
+          "max_sync_error_s": 0.0723428726196289,
+          "n_points": 166196
+        },
+        {
+          "frame_index": 105,
+          "bytes": 3319986,
+          "max_sync_error_s": 0.0723257064819336,
+          "n_points": 165467
+        },
+        {
+          "frame_index": 106,
+          "bytes": 3320550,
+          "max_sync_error_s": 0.07230591773986816,
+          "n_points": 165754
+        },
+        {
+          "frame_index": 107,
+          "bytes": 3328299,
+          "max_sync_error_s": 0.07228779792785645,
+          "n_points": 165617
+        },
+        {
+          "frame_index": 108,
+          "bytes": 3332831,
+          "max_sync_error_s": 0.07230377197265625,
+          "n_points": 166287
+        },
+        {
+          "frame_index": 109,
+          "bytes": 3324555,
+          "max_sync_error_s": 0.07232284545898438,
+          "n_points": 165909
+        },
+        {
+          "frame_index": 110,
+          "bytes": 3318560,
+          "max_sync_error_s": 0.07234978675842285,
+          "n_points": 164599
+        },
+        {
+          "frame_index": 111,
+          "bytes": 3313122,
+          "max_sync_error_s": 0.0723726749420166,
+          "n_points": 164689
+        },
+        {
+          "frame_index": 112,
+          "bytes": 3316083,
+          "max_sync_error_s": 0.07235074043273926,
+          "n_points": 165369
+        },
+        {
+          "frame_index": 113,
+          "bytes": 3314155,
+          "max_sync_error_s": 0.07236766815185547,
+          "n_points": 165685
+        },
+        {
+          "frame_index": 114,
+          "bytes": 3314774,
+          "max_sync_error_s": 0.07235360145568848,
+          "n_points": 165198
+        },
+        {
+          "frame_index": 115,
+          "bytes": 3308654,
+          "max_sync_error_s": 0.07236552238464355,
+          "n_points": 164657
+        },
+        {
+          "frame_index": 116,
+          "bytes": 3322960,
+          "max_sync_error_s": 0.07234668731689453,
+          "n_points": 164038
+        },
+        {
+          "frame_index": 117,
+          "bytes": 3320892,
+          "max_sync_error_s": 0.07236051559448242,
+          "n_points": 163804
+        },
+        {
+          "frame_index": 118,
+          "bytes": 3312669,
+          "max_sync_error_s": 0.07234954833984375,
+          "n_points": 163973
+        },
+        {
+          "frame_index": 119,
+          "bytes": 3323881,
+          "max_sync_error_s": 0.07235956192016602,
+          "n_points": 164454
+        },
+        {
+          "frame_index": 120,
+          "bytes": 3318549,
+          "max_sync_error_s": 0.07234835624694824,
+          "n_points": 164367
+        },
+        {
+          "frame_index": 121,
+          "bytes": 3328342,
+          "max_sync_error_s": 0.07233333587646484,
+          "n_points": 165144
+        },
+        {
+          "frame_index": 122,
+          "bytes": 3317700,
+          "max_sync_error_s": 0.07235932350158691,
+          "n_points": 165065
+        },
+        {
+          "frame_index": 123,
+          "bytes": 3307319,
+          "max_sync_error_s": 0.07234430313110352,
+          "n_points": 165157
+        },
+        {
+          "frame_index": 124,
+          "bytes": 3314301,
+          "max_sync_error_s": 0.07233119010925293,
+          "n_points": 166312
+        },
+        {
+          "frame_index": 125,
+          "bytes": 3307495,
+          "max_sync_error_s": 0.07234811782836914,
+          "n_points": 167177
+        },
+        {
+          "frame_index": 126,
+          "bytes": 3291587,
+          "max_sync_error_s": 0.07229924201965332,
+          "n_points": 167530
+        },
+        {
+          "frame_index": 127,
+          "bytes": 3290134,
+          "max_sync_error_s": 0.07228827476501465,
+          "n_points": 168066
+        },
+        {
+          "frame_index": 128,
+          "bytes": 3291858,
+          "max_sync_error_s": 0.0722801685333252,
+          "n_points": 167745
+        },
+        {
+          "frame_index": 129,
+          "bytes": 3295453,
+          "max_sync_error_s": 0.07227301597595215,
+          "n_points": 167624
+        },
+        {
+          "frame_index": 130,
+          "bytes": 3290545,
+          "max_sync_error_s": 0.0722200870513916,
+          "n_points": 167415
+        },
+        {
+          "frame_index": 131,
+          "bytes": 3298674,
+          "max_sync_error_s": 0.07220101356506348,
+          "n_points": 167582
+        },
+        {
+          "frame_index": 132,
+          "bytes": 3307764,
+          "max_sync_error_s": 0.07214713096618652,
+          "n_points": 167468
+        },
+        {
+          "frame_index": 133,
+          "bytes": 3301803,
+          "max_sync_error_s": 0.07217288017272949,
+          "n_points": 166719
+        },
+        {
+          "frame_index": 134,
+          "bytes": 3298639,
+          "max_sync_error_s": 0.0721580982208252,
+          "n_points": 166521
+        },
+        {
+          "frame_index": 135,
+          "bytes": 3309450,
+          "max_sync_error_s": 0.07221031188964844,
+          "n_points": 165970
+        },
+        {
+          "frame_index": 136,
+          "bytes": 3315845,
+          "max_sync_error_s": 0.0722193717956543,
+          "n_points": 165048
+        },
+        {
+          "frame_index": 137,
+          "bytes": 3343340,
+          "max_sync_error_s": 0.07229757308959961,
+          "n_points": 164243
+        },
+        {
+          "frame_index": 138,
+          "bytes": 3362379,
+          "max_sync_error_s": 0.07235002517700195,
+          "n_points": 165370
+        },
+        {
+          "frame_index": 139,
+          "bytes": 3362466,
+          "max_sync_error_s": 0.07240533828735352,
+          "n_points": 164975
+        },
+        {
+          "frame_index": 140,
+          "bytes": 3341263,
+          "max_sync_error_s": 0.07242250442504883,
+          "n_points": 163757
+        },
+        {
+          "frame_index": 141,
+          "bytes": 3362113,
+          "max_sync_error_s": 0.07248353958129883,
+          "n_points": 162358
+        },
+        {
+          "frame_index": 142,
+          "bytes": 3385733,
+          "max_sync_error_s": 0.07254171371459961,
+          "n_points": 161835
+        },
+        {
+          "frame_index": 143,
+          "bytes": 3431851,
+          "max_sync_error_s": 0.07259607315063477,
+          "n_points": 160463
+        },
+        {
+          "frame_index": 144,
+          "bytes": 3476113,
+          "max_sync_error_s": 0.07268619537353516,
+          "n_points": 159187
+        },
+        {
+          "frame_index": 145,
+          "bytes": 3392804,
+          "max_sync_error_s": 0.07277846336364746,
+          "n_points": 157599
+        },
+        {
+          "frame_index": 146,
+          "bytes": 3388793,
+          "max_sync_error_s": 0.07282853126525879,
+          "n_points": 158604
+        },
+        {
+          "frame_index": 147,
+          "bytes": 3397294,
+          "max_sync_error_s": 0.07288980484008789,
+          "n_points": 158468
+        },
+        {
+          "frame_index": 148,
+          "bytes": 3423766,
+          "max_sync_error_s": 0.07294392585754395,
+          "n_points": 159125
+        },
+        {
+          "frame_index": 149,
+          "bytes": 3468396,
+          "max_sync_error_s": 0.07299923896789551,
+          "n_points": 157161
+        },
+        {
+          "frame_index": 150,
+          "bytes": 3451982,
+          "max_sync_error_s": 0.07301139831542969,
+          "n_points": 157152
+        },
+        {
+          "frame_index": 151,
+          "bytes": 3444137,
+          "max_sync_error_s": 0.07296061515808105,
+          "n_points": 156950
+        },
+        {
+          "frame_index": 152,
+          "bytes": 3411548,
+          "max_sync_error_s": 0.0729377269744873,
+          "n_points": 156535
+        },
+        {
+          "frame_index": 153,
+          "bytes": 3410601,
+          "max_sync_error_s": 0.07291698455810547,
+          "n_points": 156950
+        },
+        {
+          "frame_index": 154,
+          "bytes": 3410393,
+          "max_sync_error_s": 0.07293343544006348,
+          "n_points": 155991
+        },
+        {
+          "frame_index": 155,
+          "bytes": 3398665,
+          "max_sync_error_s": 0.07295060157775879,
+          "n_points": 155553
+        },
+        {
+          "frame_index": 156,
+          "bytes": 3391924,
+          "max_sync_error_s": 0.07292771339416504,
+          "n_points": 155501
+        },
+        {
+          "frame_index": 157,
+          "bytes": 3392376,
+          "max_sync_error_s": 0.07289981842041016,
+          "n_points": 155878
+        },
+        {
+          "frame_index": 158,
+          "bytes": 3341943,
+          "max_sync_error_s": 0.07288098335266113,
+          "n_points": 155932
+        },
+        {
+          "frame_index": 159,
+          "bytes": 3348733,
+          "max_sync_error_s": 0.07282638549804688,
+          "n_points": 156798
+        },
+        {
+          "frame_index": 160,
+          "bytes": 3346729,
+          "max_sync_error_s": 0.07280755043029785,
+          "n_points": 157259
+        },
+        {
+          "frame_index": 161,
+          "bytes": 3359808,
+          "max_sync_error_s": 0.07278275489807129,
+          "n_points": 158572
+        },
+        {
+          "frame_index": 162,
+          "bytes": 3353853,
+          "max_sync_error_s": 0.0727548599243164,
+          "n_points": 157893
+        },
+        {
+          "frame_index": 163,
+          "bytes": 3349037,
+          "max_sync_error_s": 0.07276606559753418,
+          "n_points": 158119
+        },
+        {
+          "frame_index": 164,
+          "bytes": 3346592,
+          "max_sync_error_s": 0.07275009155273438,
+          "n_points": 157567
+        },
+        {
+          "frame_index": 165,
+          "bytes": 3355995,
+          "max_sync_error_s": 0.07276248931884766,
+          "n_points": 158481
+        },
+        {
+          "frame_index": 166,
+          "bytes": 3346210,
+          "max_sync_error_s": 0.07274150848388672,
+          "n_points": 158275
+        },
+        {
+          "frame_index": 167,
+          "bytes": 3350702,
+          "max_sync_error_s": 0.07272171974182129,
+          "n_points": 158755
+        },
+        {
+          "frame_index": 168,
+          "bytes": 3356106,
+          "max_sync_error_s": 0.07270312309265137,
+          "n_points": 158760
+        },
+        {
+          "frame_index": 169,
+          "bytes": 3351989,
+          "max_sync_error_s": 0.07268333435058594,
+          "n_points": 158189
+        },
+        {
+          "frame_index": 170,
+          "bytes": 3350168,
+          "max_sync_error_s": 0.07262563705444336,
+          "n_points": 157762
+        },
+        {
+          "frame_index": 171,
+          "bytes": 3355050,
+          "max_sync_error_s": 0.07260274887084961,
+          "n_points": 157566
+        },
+        {
+          "frame_index": 172,
+          "bytes": 3370042,
+          "max_sync_error_s": 0.07258296012878418,
+          "n_points": 158780
+        },
+        {
+          "frame_index": 173,
+          "bytes": 3349954,
+          "max_sync_error_s": 0.07252311706542969,
+          "n_points": 159256
+        },
+        {
+          "frame_index": 174,
+          "bytes": 3343526,
+          "max_sync_error_s": 0.07250642776489258,
+          "n_points": 159293
+        },
+        {
+          "frame_index": 175,
+          "bytes": 3305785,
+          "max_sync_error_s": 0.07248544692993164,
+          "n_points": 159831
+        },
+        {
+          "frame_index": 176,
+          "bytes": 3294048,
+          "max_sync_error_s": 0.07245564460754395,
+          "n_points": 159864
+        },
+        {
+          "frame_index": 177,
+          "bytes": 3327307,
+          "max_sync_error_s": 0.07247781753540039,
+          "n_points": 160350
+        },
+        {
+          "frame_index": 178,
+          "bytes": 3307496,
+          "max_sync_error_s": 0.07245302200317383,
+          "n_points": 160813
+        },
+        {
+          "frame_index": 179,
+          "bytes": 3307970,
+          "max_sync_error_s": 0.0724632740020752,
+          "n_points": 160937
+        },
+        {
+          "frame_index": 180,
+          "bytes": 3290551,
+          "max_sync_error_s": 0.07248544692993164,
+          "n_points": 162488
+        },
+        {
+          "frame_index": 181,
+          "bytes": 3280065,
+          "max_sync_error_s": 0.07250666618347168,
+          "n_points": 162438
+        },
+        {
+          "frame_index": 182,
+          "bytes": 3304882,
+          "max_sync_error_s": 0.07251882553100586,
+          "n_points": 163201
+        },
+        {
+          "frame_index": 183,
+          "bytes": 3312973,
+          "max_sync_error_s": 0.07252693176269531,
+          "n_points": 163999
+        },
+        {
+          "frame_index": 184,
+          "bytes": 3314325,
+          "max_sync_error_s": 0.07254409790039062,
+          "n_points": 164257
+        },
+        {
+          "frame_index": 185,
+          "bytes": 3309764,
+          "max_sync_error_s": 0.07253170013427734,
+          "n_points": 163941
+        },
+        {
+          "frame_index": 186,
+          "bytes": 3297848,
+          "max_sync_error_s": 0.07255172729492188,
+          "n_points": 165730
+        },
+        {
+          "frame_index": 187,
+          "bytes": 3282350,
+          "max_sync_error_s": 0.0726020336151123,
+          "n_points": 164254
+        },
+        {
+          "frame_index": 188,
+          "bytes": 3281030,
+          "max_sync_error_s": 0.07265329360961914,
+          "n_points": 164021
+        },
+        {
+          "frame_index": 189,
+          "bytes": 3279803,
+          "max_sync_error_s": 0.07267332077026367,
+          "n_points": 164460
+        },
+        {
+          "frame_index": 190,
+          "bytes": 3290599,
+          "max_sync_error_s": 0.0726935863494873,
+          "n_points": 165556
+        },
+        {
+          "frame_index": 191,
+          "bytes": 3295407,
+          "max_sync_error_s": 0.07270979881286621,
+          "n_points": 165429
+        },
+        {
+          "frame_index": 192,
+          "bytes": 3288087,
+          "max_sync_error_s": 0.07276296615600586,
+          "n_points": 164980
+        },
+        {
+          "frame_index": 193,
+          "bytes": 3287763,
+          "max_sync_error_s": 0.07277607917785645,
+          "n_points": 164927
+        },
+        {
+          "frame_index": 194,
+          "bytes": 3285991,
+          "max_sync_error_s": 0.0727534294128418,
+          "n_points": 165217
+        },
+        {
+          "frame_index": 195,
+          "bytes": 3294714,
+          "max_sync_error_s": 0.07281661033630371,
+          "n_points": 165551
+        },
+        {
+          "frame_index": 196,
+          "bytes": 3291933,
+          "max_sync_error_s": 0.07283973693847656,
+          "n_points": 165189
+        },
+        {
+          "frame_index": 197,
+          "bytes": 3292005,
+          "max_sync_error_s": 0.07282185554504395,
+          "n_points": 165857
+        }
+      ]
+    },
+    {
+      "segment": "segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord",
+      "n_frames": 199,
+      "frames": [
+        {
+          "frame_index": 0,
+          "bytes": 3269528,
+          "max_sync_error_s": 0.07122325897216797,
+          "n_points": 167802
+        },
+        {
+          "frame_index": 1,
+          "bytes": 3278123,
+          "max_sync_error_s": 0.07120394706726074,
+          "n_points": 169035
+        },
+        {
+          "frame_index": 2,
+          "bytes": 3273881,
+          "max_sync_error_s": 0.07121515274047852,
+          "n_points": 168437
+        },
+        {
+          "frame_index": 3,
+          "bytes": 3281703,
+          "max_sync_error_s": 0.07123374938964844,
+          "n_points": 169148
+        },
+        {
+          "frame_index": 4,
+          "bytes": 3277999,
+          "max_sync_error_s": 0.07121920585632324,
+          "n_points": 168618
+        },
+        {
+          "frame_index": 5,
+          "bytes": 3264199,
+          "max_sync_error_s": 0.07123351097106934,
+          "n_points": 167177
+        },
+        {
+          "frame_index": 6,
+          "bytes": 3254361,
+          "max_sync_error_s": 0.07124519348144531,
+          "n_points": 166912
+        },
+        {
+          "frame_index": 7,
+          "bytes": 3246389,
+          "max_sync_error_s": 0.07125735282897949,
+          "n_points": 169113
+        },
+        {
+          "frame_index": 8,
+          "bytes": 3252917,
+          "max_sync_error_s": 0.07130599021911621,
+          "n_points": 168957
+        },
+        {
+          "frame_index": 9,
+          "bytes": 3261705,
+          "max_sync_error_s": 0.07135152816772461,
+          "n_points": 170696
+        },
+        {
+          "frame_index": 10,
+          "bytes": 3270637,
+          "max_sync_error_s": 0.07136678695678711,
+          "n_points": 168602
+        },
+        {
+          "frame_index": 11,
+          "bytes": 3281278,
+          "max_sync_error_s": 0.07145333290100098,
+          "n_points": 169422
+        },
+        {
+          "frame_index": 12,
+          "bytes": 3280025,
+          "max_sync_error_s": 0.07154488563537598,
+          "n_points": 168579
+        },
+        {
+          "frame_index": 13,
+          "bytes": 3279218,
+          "max_sync_error_s": 0.07162737846374512,
+          "n_points": 168063
+        },
+        {
+          "frame_index": 14,
+          "bytes": 3262195,
+          "max_sync_error_s": 0.07167983055114746,
+          "n_points": 168748
+        },
+        {
+          "frame_index": 15,
+          "bytes": 3259618,
+          "max_sync_error_s": 0.07177734375,
+          "n_points": 168565
+        },
+        {
+          "frame_index": 16,
+          "bytes": 3247179,
+          "max_sync_error_s": 0.07186675071716309,
+          "n_points": 167407
+        },
+        {
+          "frame_index": 17,
+          "bytes": 3255358,
+          "max_sync_error_s": 0.07192230224609375,
+          "n_points": 168389
+        },
+        {
+          "frame_index": 18,
+          "bytes": 3261438,
+          "max_sync_error_s": 0.07201552391052246,
+          "n_points": 167696
+        },
+        {
+          "frame_index": 19,
+          "bytes": 3275373,
+          "max_sync_error_s": 0.07207512855529785,
+          "n_points": 167411
+        },
+        {
+          "frame_index": 20,
+          "bytes": 3282853,
+          "max_sync_error_s": 0.07216167449951172,
+          "n_points": 167894
+        },
+        {
+          "frame_index": 21,
+          "bytes": 3273098,
+          "max_sync_error_s": 0.0722508430480957,
+          "n_points": 168498
+        },
+        {
+          "frame_index": 22,
+          "bytes": 3252495,
+          "max_sync_error_s": 0.07230544090270996,
+          "n_points": 165780
+        },
+        {
+          "frame_index": 23,
+          "bytes": 3263200,
+          "max_sync_error_s": 0.07232308387756348,
+          "n_points": 166561
+        },
+        {
+          "frame_index": 24,
+          "bytes": 3264481,
+          "max_sync_error_s": 0.07233333587646484,
+          "n_points": 166428
+        },
+        {
+          "frame_index": 25,
+          "bytes": 3281315,
+          "max_sync_error_s": 0.07235479354858398,
+          "n_points": 167810
+        },
+        {
+          "frame_index": 26,
+          "bytes": 3265621,
+          "max_sync_error_s": 0.07233023643493652,
+          "n_points": 166107
+        },
+        {
+          "frame_index": 27,
+          "bytes": 3266287,
+          "max_sync_error_s": 0.0723106861114502,
+          "n_points": 166469
+        },
+        {
+          "frame_index": 28,
+          "bytes": 3271551,
+          "max_sync_error_s": 0.07232832908630371,
+          "n_points": 167314
+        },
+        {
+          "frame_index": 29,
+          "bytes": 3270395,
+          "max_sync_error_s": 0.07230472564697266,
+          "n_points": 167572
+        },
+        {
+          "frame_index": 30,
+          "bytes": 3264811,
+          "max_sync_error_s": 0.07224822044372559,
+          "n_points": 166603
+        },
+        {
+          "frame_index": 31,
+          "bytes": 3263860,
+          "max_sync_error_s": 0.07219481468200684,
+          "n_points": 166011
+        },
+        {
+          "frame_index": 32,
+          "bytes": 3267721,
+          "max_sync_error_s": 0.07213711738586426,
+          "n_points": 166180
+        },
+        {
+          "frame_index": 33,
+          "bytes": 3275469,
+          "max_sync_error_s": 0.07207465171813965,
+          "n_points": 166609
+        },
+        {
+          "frame_index": 34,
+          "bytes": 3274543,
+          "max_sync_error_s": 0.0720221996307373,
+          "n_points": 166611
+        },
+        {
+          "frame_index": 35,
+          "bytes": 3274717,
+          "max_sync_error_s": 0.07192444801330566,
+          "n_points": 166366
+        },
+        {
+          "frame_index": 36,
+          "bytes": 3278280,
+          "max_sync_error_s": 0.07186388969421387,
+          "n_points": 166586
+        },
+        {
+          "frame_index": 37,
+          "bytes": 3283132,
+          "max_sync_error_s": 0.0718073844909668,
+          "n_points": 166607
+        },
+        {
+          "frame_index": 38,
+          "bytes": 3281578,
+          "max_sync_error_s": 0.0717458724975586,
+          "n_points": 166201
+        },
+        {
+          "frame_index": 39,
+          "bytes": 3282859,
+          "max_sync_error_s": 0.07167935371398926,
+          "n_points": 166227
+        },
+        {
+          "frame_index": 40,
+          "bytes": 3284337,
+          "max_sync_error_s": 0.07161974906921387,
+          "n_points": 166535
+        },
+        {
+          "frame_index": 41,
+          "bytes": 3290562,
+          "max_sync_error_s": 0.07160425186157227,
+          "n_points": 167101
+        },
+        {
+          "frame_index": 42,
+          "bytes": 3290839,
+          "max_sync_error_s": 0.07153987884521484,
+          "n_points": 166573
+        },
+        {
+          "frame_index": 43,
+          "bytes": 3290897,
+          "max_sync_error_s": 0.07152915000915527,
+          "n_points": 167375
+        },
+        {
+          "frame_index": 44,
+          "bytes": 3291278,
+          "max_sync_error_s": 0.07146859169006348,
+          "n_points": 167274
+        },
+        {
+          "frame_index": 45,
+          "bytes": 3290933,
+          "max_sync_error_s": 0.07145214080810547,
+          "n_points": 167281
+        },
+        {
+          "frame_index": 46,
+          "bytes": 3290249,
+          "max_sync_error_s": 0.07143950462341309,
+          "n_points": 167145
+        },
+        {
+          "frame_index": 47,
+          "bytes": 3308184,
+          "max_sync_error_s": 0.07144999504089355,
+          "n_points": 169215
+        },
+        {
+          "frame_index": 48,
+          "bytes": 3292255,
+          "max_sync_error_s": 0.07143330574035645,
+          "n_points": 167908
+        },
+        {
+          "frame_index": 49,
+          "bytes": 3295374,
+          "max_sync_error_s": 0.07141780853271484,
+          "n_points": 168807
+        },
+        {
+          "frame_index": 50,
+          "bytes": 3290170,
+          "max_sync_error_s": 0.07140851020812988,
+          "n_points": 168405
+        },
+        {
+          "frame_index": 51,
+          "bytes": 3296135,
+          "max_sync_error_s": 0.07139182090759277,
+          "n_points": 169534
+        },
+        {
+          "frame_index": 52,
+          "bytes": 3290224,
+          "max_sync_error_s": 0.07140326499938965,
+          "n_points": 169092
+        },
+        {
+          "frame_index": 53,
+          "bytes": 3290458,
+          "max_sync_error_s": 0.0713808536529541,
+          "n_points": 169521
+        },
+        {
+          "frame_index": 54,
+          "bytes": 3291187,
+          "max_sync_error_s": 0.07134819030761719,
+          "n_points": 169622
+        },
+        {
+          "frame_index": 55,
+          "bytes": 3294845,
+          "max_sync_error_s": 0.0713348388671875,
+          "n_points": 170004
+        },
+        {
+          "frame_index": 56,
+          "bytes": 3281242,
+          "max_sync_error_s": 0.07132220268249512,
+          "n_points": 168765
+        },
+        {
+          "frame_index": 57,
+          "bytes": 3303153,
+          "max_sync_error_s": 0.07134079933166504,
+          "n_points": 170910
+        },
+        {
+          "frame_index": 58,
+          "bytes": 3299057,
+          "max_sync_error_s": 0.07133030891418457,
+          "n_points": 168075
+        },
+        {
+          "frame_index": 59,
+          "bytes": 3297783,
+          "max_sync_error_s": 0.07134890556335449,
+          "n_points": 167789
+        },
+        {
+          "frame_index": 60,
+          "bytes": 3305323,
+          "max_sync_error_s": 0.07136774063110352,
+          "n_points": 168732
+        },
+        {
+          "frame_index": 61,
+          "bytes": 3294046,
+          "max_sync_error_s": 0.07138323783874512,
+          "n_points": 167505
+        },
+        {
+          "frame_index": 62,
+          "bytes": 3301456,
+          "max_sync_error_s": 0.07140374183654785,
+          "n_points": 168475
+        },
+        {
+          "frame_index": 63,
+          "bytes": 3329417,
+          "max_sync_error_s": 0.07142329216003418,
+          "n_points": 172174
+        },
+        {
+          "frame_index": 64,
+          "bytes": 3334023,
+          "max_sync_error_s": 0.07140398025512695,
+          "n_points": 172748
+        },
+        {
+          "frame_index": 65,
+          "bytes": 3297267,
+          "max_sync_error_s": 0.07141256332397461,
+          "n_points": 168977
+        },
+        {
+          "frame_index": 66,
+          "bytes": 3289362,
+          "max_sync_error_s": 0.07142925262451172,
+          "n_points": 169155
+        },
+        {
+          "frame_index": 67,
+          "bytes": 3285680,
+          "max_sync_error_s": 0.07143688201904297,
+          "n_points": 167528
+        },
+        {
+          "frame_index": 68,
+          "bytes": 3325267,
+          "max_sync_error_s": 0.07144546508789062,
+          "n_points": 171097
+        },
+        {
+          "frame_index": 69,
+          "bytes": 3307685,
+          "max_sync_error_s": 0.07142305374145508,
+          "n_points": 169594
+        },
+        {
+          "frame_index": 70,
+          "bytes": 3298543,
+          "max_sync_error_s": 0.07143950462341309,
+          "n_points": 167924
+        },
+        {
+          "frame_index": 71,
+          "bytes": 3317540,
+          "max_sync_error_s": 0.07144904136657715,
+          "n_points": 170009
+        },
+        {
+          "frame_index": 72,
+          "bytes": 3301888,
+          "max_sync_error_s": 0.07142972946166992,
+          "n_points": 168126
+        },
+        {
+          "frame_index": 73,
+          "bytes": 3311176,
+          "max_sync_error_s": 0.07144427299499512,
+          "n_points": 168752
+        },
+        {
+          "frame_index": 74,
+          "bytes": 3306871,
+          "max_sync_error_s": 0.07141709327697754,
+          "n_points": 168138
+        },
+        {
+          "frame_index": 75,
+          "bytes": 3310392,
+          "max_sync_error_s": 0.07139158248901367,
+          "n_points": 168014
+        },
+        {
+          "frame_index": 76,
+          "bytes": 3312024,
+          "max_sync_error_s": 0.07137131690979004,
+          "n_points": 167740
+        },
+        {
+          "frame_index": 77,
+          "bytes": 3311654,
+          "max_sync_error_s": 0.07135176658630371,
+          "n_points": 167466
+        },
+        {
+          "frame_index": 78,
+          "bytes": 3300460,
+          "max_sync_error_s": 0.07135868072509766,
+          "n_points": 165941
+        },
+        {
+          "frame_index": 79,
+          "bytes": 3319622,
+          "max_sync_error_s": 0.07136702537536621,
+          "n_points": 169009
+        },
+        {
+          "frame_index": 80,
+          "bytes": 3314826,
+          "max_sync_error_s": 0.07134389877319336,
+          "n_points": 167173
+        },
+        {
+          "frame_index": 81,
+          "bytes": 3308754,
+          "max_sync_error_s": 0.07135224342346191,
+          "n_points": 166213
+        },
+        {
+          "frame_index": 82,
+          "bytes": 3301077,
+          "max_sync_error_s": 0.07137513160705566,
+          "n_points": 165292
+        },
+        {
+          "frame_index": 83,
+          "bytes": 3326785,
+          "max_sync_error_s": 0.071380615234375,
+          "n_points": 168300
+        },
+        {
+          "frame_index": 84,
+          "bytes": 3317696,
+          "max_sync_error_s": 0.07135605812072754,
+          "n_points": 167029
+        },
+        {
+          "frame_index": 85,
+          "bytes": 3328697,
+          "max_sync_error_s": 0.07137489318847656,
+          "n_points": 168471
+        },
+        {
+          "frame_index": 86,
+          "bytes": 3312439,
+          "max_sync_error_s": 0.0713493824005127,
+          "n_points": 166334
+        },
+        {
+          "frame_index": 87,
+          "bytes": 3328719,
+          "max_sync_error_s": 0.07136201858520508,
+          "n_points": 167998
+        },
+        {
+          "frame_index": 88,
+          "bytes": 3327958,
+          "max_sync_error_s": 0.07134556770324707,
+          "n_points": 167858
+        },
+        {
+          "frame_index": 89,
+          "bytes": 3312364,
+          "max_sync_error_s": 0.07135820388793945,
+          "n_points": 165812
+        },
+        {
+          "frame_index": 90,
+          "bytes": 3299944,
+          "max_sync_error_s": 0.07137084007263184,
+          "n_points": 164827
+        },
+        {
+          "frame_index": 91,
+          "bytes": 3328675,
+          "max_sync_error_s": 0.07138562202453613,
+          "n_points": 168021
+        },
+        {
+          "frame_index": 92,
+          "bytes": 3309029,
+          "max_sync_error_s": 0.07136201858520508,
+          "n_points": 166694
+        },
+        {
+          "frame_index": 93,
+          "bytes": 3319790,
+          "max_sync_error_s": 0.07134366035461426,
+          "n_points": 167027
+        },
+        {
+          "frame_index": 94,
+          "bytes": 3323404,
+          "max_sync_error_s": 0.07135415077209473,
+          "n_points": 167208
+        },
+        {
+          "frame_index": 95,
+          "bytes": 3323008,
+          "max_sync_error_s": 0.07134079933166504,
+          "n_points": 166898
+        },
+        {
+          "frame_index": 96,
+          "bytes": 3322772,
+          "max_sync_error_s": 0.07131552696228027,
+          "n_points": 166928
+        },
+        {
+          "frame_index": 97,
+          "bytes": 3315917,
+          "max_sync_error_s": 0.07129096984863281,
+          "n_points": 165743
+        },
+        {
+          "frame_index": 98,
+          "bytes": 3327035,
+          "max_sync_error_s": 0.07127070426940918,
+          "n_points": 167286
+        },
+        {
+          "frame_index": 99,
+          "bytes": 3312564,
+          "max_sync_error_s": 0.07127928733825684,
+          "n_points": 165675
+        },
+        {
+          "frame_index": 100,
+          "bytes": 3301006,
+          "max_sync_error_s": 0.07129406929016113,
+          "n_points": 164227
+        },
+        {
+          "frame_index": 101,
+          "bytes": 3299504,
+          "max_sync_error_s": 0.0713045597076416,
+          "n_points": 164308
+        },
+        {
+          "frame_index": 102,
+          "bytes": 3312406,
+          "max_sync_error_s": 0.07131528854370117,
+          "n_points": 165528
+        },
+        {
+          "frame_index": 103,
+          "bytes": 3321809,
+          "max_sync_error_s": 0.07133173942565918,
+          "n_points": 167046
+        },
+        {
+          "frame_index": 104,
+          "bytes": 3308861,
+          "max_sync_error_s": 0.0713491439819336,
+          "n_points": 165597
+        },
+        {
+          "frame_index": 105,
+          "bytes": 3322503,
+          "max_sync_error_s": 0.07139706611633301,
+          "n_points": 167039
+        },
+        {
+          "frame_index": 106,
+          "bytes": 3315535,
+          "max_sync_error_s": 0.0714423656463623,
+          "n_points": 166540
+        },
+        {
+          "frame_index": 107,
+          "bytes": 3313147,
+          "max_sync_error_s": 0.07146811485290527,
+          "n_points": 167056
+        },
+        {
+          "frame_index": 108,
+          "bytes": 3293761,
+          "max_sync_error_s": 0.07152366638183594,
+          "n_points": 164213
+        },
+        {
+          "frame_index": 109,
+          "bytes": 3291572,
+          "max_sync_error_s": 0.07154536247253418,
+          "n_points": 163855
+        },
+        {
+          "frame_index": 110,
+          "bytes": 3333514,
+          "max_sync_error_s": 0.07155990600585938,
+          "n_points": 168850
+        },
+        {
+          "frame_index": 111,
+          "bytes": 3292408,
+          "max_sync_error_s": 0.07154059410095215,
+          "n_points": 165483
+        },
+        {
+          "frame_index": 112,
+          "bytes": 3307666,
+          "max_sync_error_s": 0.07155513763427734,
+          "n_points": 167389
+        },
+        {
+          "frame_index": 113,
+          "bytes": 3304358,
+          "max_sync_error_s": 0.07152891159057617,
+          "n_points": 166863
+        },
+        {
+          "frame_index": 114,
+          "bytes": 3302915,
+          "max_sync_error_s": 0.0715024471282959,
+          "n_points": 166680
+        },
+        {
+          "frame_index": 115,
+          "bytes": 3298452,
+          "max_sync_error_s": 0.07148194313049316,
+          "n_points": 166518
+        },
+        {
+          "frame_index": 116,
+          "bytes": 3289735,
+          "max_sync_error_s": 0.07144761085510254,
+          "n_points": 166277
+        },
+        {
+          "frame_index": 117,
+          "bytes": 3297195,
+          "max_sync_error_s": 0.07141804695129395,
+          "n_points": 166990
+        },
+        {
+          "frame_index": 118,
+          "bytes": 3296866,
+          "max_sync_error_s": 0.07139778137207031,
+          "n_points": 166890
+        },
+        {
+          "frame_index": 119,
+          "bytes": 3290835,
+          "max_sync_error_s": 0.07137131690979004,
+          "n_points": 166104
+        },
+        {
+          "frame_index": 120,
+          "bytes": 3292561,
+          "max_sync_error_s": 0.07134819030761719,
+          "n_points": 166537
+        },
+        {
+          "frame_index": 121,
+          "bytes": 3296415,
+          "max_sync_error_s": 0.07128357887268066,
+          "n_points": 166769
+        },
+        {
+          "frame_index": 122,
+          "bytes": 3298045,
+          "max_sync_error_s": 0.07126235961914062,
+          "n_points": 165996
+        },
+        {
+          "frame_index": 123,
+          "bytes": 3304491,
+          "max_sync_error_s": 0.07123494148254395,
+          "n_points": 166171
+        },
+        {
+          "frame_index": 124,
+          "bytes": 3303780,
+          "max_sync_error_s": 0.07120561599731445,
+          "n_points": 166707
+        },
+        {
+          "frame_index": 125,
+          "bytes": 3305873,
+          "max_sync_error_s": 0.07118415832519531,
+          "n_points": 166705
+        },
+        {
+          "frame_index": 126,
+          "bytes": 3308700,
+          "max_sync_error_s": 0.07119894027709961,
+          "n_points": 166818
+        },
+        {
+          "frame_index": 127,
+          "bytes": 3296600,
+          "max_sync_error_s": 0.07118034362792969,
+          "n_points": 165586
+        },
+        {
+          "frame_index": 128,
+          "bytes": 3314649,
+          "max_sync_error_s": 0.07119989395141602,
+          "n_points": 168516
+        },
+        {
+          "frame_index": 129,
+          "bytes": 3286994,
+          "max_sync_error_s": 0.07118058204650879,
+          "n_points": 165395
+        },
+        {
+          "frame_index": 130,
+          "bytes": 3295996,
+          "max_sync_error_s": 0.07120203971862793,
+          "n_points": 166580
+        },
+        {
+          "frame_index": 131,
+          "bytes": 3292828,
+          "max_sync_error_s": 0.07121491432189941,
+          "n_points": 165855
+        },
+        {
+          "frame_index": 132,
+          "bytes": 3305289,
+          "max_sync_error_s": 0.07123136520385742,
+          "n_points": 167711
+        },
+        {
+          "frame_index": 133,
+          "bytes": 3326413,
+          "max_sync_error_s": 0.07120609283447266,
+          "n_points": 170472
+        },
+        {
+          "frame_index": 134,
+          "bytes": 3316497,
+          "max_sync_error_s": 0.0712134838104248,
+          "n_points": 169246
+        },
+        {
+          "frame_index": 135,
+          "bytes": 3290987,
+          "max_sync_error_s": 0.07122635841369629,
+          "n_points": 166058
+        },
+        {
+          "frame_index": 136,
+          "bytes": 3303080,
+          "max_sync_error_s": 0.07123184204101562,
+          "n_points": 167604
+        },
+        {
+          "frame_index": 137,
+          "bytes": 3288596,
+          "max_sync_error_s": 0.07122254371643066,
+          "n_points": 165940
+        },
+        {
+          "frame_index": 138,
+          "bytes": 3287696,
+          "max_sync_error_s": 0.07123899459838867,
+          "n_points": 165834
+        },
+        {
+          "frame_index": 139,
+          "bytes": 3303147,
+          "max_sync_error_s": 0.07125568389892578,
+          "n_points": 167814
+        },
+        {
+          "frame_index": 140,
+          "bytes": 3291502,
+          "max_sync_error_s": 0.0712273120880127,
+          "n_points": 166405
+        },
+        {
+          "frame_index": 141,
+          "bytes": 3299920,
+          "max_sync_error_s": 0.07120370864868164,
+          "n_points": 167057
+        },
+        {
+          "frame_index": 142,
+          "bytes": 3294567,
+          "max_sync_error_s": 0.07121658325195312,
+          "n_points": 166052
+        },
+        {
+          "frame_index": 143,
+          "bytes": 3293794,
+          "max_sync_error_s": 0.07122397422790527,
+          "n_points": 166506
+        },
+        {
+          "frame_index": 144,
+          "bytes": 3291334,
+          "max_sync_error_s": 0.07123184204101562,
+          "n_points": 166160
+        },
+        {
+          "frame_index": 145,
+          "bytes": 3294699,
+          "max_sync_error_s": 0.07124733924865723,
+          "n_points": 166362
+        },
+        {
+          "frame_index": 146,
+          "bytes": 3293452,
+          "max_sync_error_s": 0.07125592231750488,
+          "n_points": 166175
+        },
+        {
+          "frame_index": 147,
+          "bytes": 3289400,
+          "max_sync_error_s": 0.07126545906066895,
+          "n_points": 165798
+        },
+        {
+          "frame_index": 148,
+          "bytes": 3286909,
+          "max_sync_error_s": 0.07126927375793457,
+          "n_points": 165821
+        },
+        {
+          "frame_index": 149,
+          "bytes": 3322338,
+          "max_sync_error_s": 0.07124876976013184,
+          "n_points": 170093
+        },
+        {
+          "frame_index": 150,
+          "bytes": 3288917,
+          "max_sync_error_s": 0.07125425338745117,
+          "n_points": 165820
+        },
+        {
+          "frame_index": 151,
+          "bytes": 3301232,
+          "max_sync_error_s": 0.07127189636230469,
+          "n_points": 167302
+        },
+        {
+          "frame_index": 152,
+          "bytes": 3299617,
+          "max_sync_error_s": 0.07125353813171387,
+          "n_points": 166888
+        },
+        {
+          "frame_index": 153,
+          "bytes": 3301869,
+          "max_sync_error_s": 0.07126832008361816,
+          "n_points": 167160
+        },
+        {
+          "frame_index": 154,
+          "bytes": 3290503,
+          "max_sync_error_s": 0.07124972343444824,
+          "n_points": 165846
+        },
+        {
+          "frame_index": 155,
+          "bytes": 3304457,
+          "max_sync_error_s": 0.0712275505065918,
+          "n_points": 166651
+        },
+        {
+          "frame_index": 156,
+          "bytes": 3320846,
+          "max_sync_error_s": 0.07123899459838867,
+          "n_points": 167592
+        },
+        {
+          "frame_index": 157,
+          "bytes": 3298373,
+          "max_sync_error_s": 0.0712132453918457,
+          "n_points": 165557
+        },
+        {
+          "frame_index": 158,
+          "bytes": 3317459,
+          "max_sync_error_s": 0.07119536399841309,
+          "n_points": 167738
+        },
+        {
+          "frame_index": 159,
+          "bytes": 3290709,
+          "max_sync_error_s": 0.07121729850769043,
+          "n_points": 164975
+        },
+        {
+          "frame_index": 160,
+          "bytes": 3319034,
+          "max_sync_error_s": 0.0712435245513916,
+          "n_points": 167905
+        },
+        {
+          "frame_index": 161,
+          "bytes": 3303626,
+          "max_sync_error_s": 0.07122969627380371,
+          "n_points": 166376
+        },
+        {
+          "frame_index": 162,
+          "bytes": 3290463,
+          "max_sync_error_s": 0.07125210762023926,
+          "n_points": 164788
+        },
+        {
+          "frame_index": 163,
+          "bytes": 3320180,
+          "max_sync_error_s": 0.07127714157104492,
+          "n_points": 168012
+        },
+        {
+          "frame_index": 164,
+          "bytes": 3305033,
+          "max_sync_error_s": 0.0712583065032959,
+          "n_points": 166495
+        },
+        {
+          "frame_index": 165,
+          "bytes": 3302313,
+          "max_sync_error_s": 0.0712432861328125,
+          "n_points": 165781
+        },
+        {
+          "frame_index": 166,
+          "bytes": 3327567,
+          "max_sync_error_s": 0.07126379013061523,
+          "n_points": 168527
+        },
+        {
+          "frame_index": 167,
+          "bytes": 3297416,
+          "max_sync_error_s": 0.07124471664428711,
+          "n_points": 165319
+        },
+        {
+          "frame_index": 168,
+          "bytes": 3315944,
+          "max_sync_error_s": 0.07126903533935547,
+          "n_points": 168206
+        },
+        {
+          "frame_index": 169,
+          "bytes": 3305084,
+          "max_sync_error_s": 0.07125425338745117,
+          "n_points": 166325
+        },
+        {
+          "frame_index": 170,
+          "bytes": 3299310,
+          "max_sync_error_s": 0.07127737998962402,
+          "n_points": 166088
+        },
+        {
+          "frame_index": 171,
+          "bytes": 3272617,
+          "max_sync_error_s": 0.07129955291748047,
+          "n_points": 163814
+        },
+        {
+          "frame_index": 172,
+          "bytes": 3272041,
+          "max_sync_error_s": 0.0713205337524414,
+          "n_points": 164199
+        },
+        {
+          "frame_index": 173,
+          "bytes": 3300726,
+          "max_sync_error_s": 0.07134294509887695,
+          "n_points": 167543
+        },
+        {
+          "frame_index": 174,
+          "bytes": 3325518,
+          "max_sync_error_s": 0.07133197784423828,
+          "n_points": 170584
+        },
+        {
+          "frame_index": 175,
+          "bytes": 3307162,
+          "max_sync_error_s": 0.07135224342346191,
+          "n_points": 168049
+        },
+        {
+          "frame_index": 176,
+          "bytes": 3291377,
+          "max_sync_error_s": 0.07137632369995117,
+          "n_points": 166107
+        },
+        {
+          "frame_index": 177,
+          "bytes": 3293295,
+          "max_sync_error_s": 0.07140660285949707,
+          "n_points": 165447
+        },
+        {
+          "frame_index": 178,
+          "bytes": 3315273,
+          "max_sync_error_s": 0.07138967514038086,
+          "n_points": 168153
+        },
+        {
+          "frame_index": 179,
+          "bytes": 3313611,
+          "max_sync_error_s": 0.0714120864868164,
+          "n_points": 166970
+        },
+        {
+          "frame_index": 180,
+          "bytes": 3284940,
+          "max_sync_error_s": 0.07139897346496582,
+          "n_points": 165660
+        },
+        {
+          "frame_index": 181,
+          "bytes": 3324422,
+          "max_sync_error_s": 0.07138323783874512,
+          "n_points": 168350
+        },
+        {
+          "frame_index": 182,
+          "bytes": 3290926,
+          "max_sync_error_s": 0.07140755653381348,
+          "n_points": 165215
+        },
+        {
+          "frame_index": 183,
+          "bytes": 3328567,
+          "max_sync_error_s": 0.07142949104309082,
+          "n_points": 168952
+        },
+        {
+          "frame_index": 184,
+          "bytes": 3303839,
+          "max_sync_error_s": 0.07141470909118652,
+          "n_points": 166939
+        },
+        {
+          "frame_index": 185,
+          "bytes": 3289137,
+          "max_sync_error_s": 0.07143688201904297,
+          "n_points": 165038
+        },
+        {
+          "frame_index": 186,
+          "bytes": 3325216,
+          "max_sync_error_s": 0.07146024703979492,
+          "n_points": 169360
+        },
+        {
+          "frame_index": 187,
+          "bytes": 3311008,
+          "max_sync_error_s": 0.07143425941467285,
+          "n_points": 167059
+        },
+        {
+          "frame_index": 188,
+          "bytes": 3298712,
+          "max_sync_error_s": 0.07144951820373535,
+          "n_points": 165857
+        },
+        {
+          "frame_index": 189,
+          "bytes": 3318519,
+          "max_sync_error_s": 0.07143354415893555,
+          "n_points": 168046
+        },
+        {
+          "frame_index": 190,
+          "bytes": 3301772,
+          "max_sync_error_s": 0.07145166397094727,
+          "n_points": 166687
+        },
+        {
+          "frame_index": 191,
+          "bytes": 3298032,
+          "max_sync_error_s": 0.07143712043762207,
+          "n_points": 167026
+        },
+        {
+          "frame_index": 192,
+          "bytes": 3301770,
+          "max_sync_error_s": 0.07145810127258301,
+          "n_points": 166318
+        },
+        {
+          "frame_index": 193,
+          "bytes": 3291734,
+          "max_sync_error_s": 0.07148241996765137,
+          "n_points": 165881
+        },
+        {
+          "frame_index": 194,
+          "bytes": 3320831,
+          "max_sync_error_s": 0.07149434089660645,
+          "n_points": 167565
+        },
+        {
+          "frame_index": 195,
+          "bytes": 3294908,
+          "max_sync_error_s": 0.07148885726928711,
+          "n_points": 165294
+        },
+        {
+          "frame_index": 196,
+          "bytes": 3304586,
+          "max_sync_error_s": 0.07151079177856445,
+          "n_points": 167403
+        },
+        {
+          "frame_index": 197,
+          "bytes": 3296175,
+          "max_sync_error_s": 0.07150006294250488,
+          "n_points": 166607
+        },
+        {
+          "frame_index": 198,
+          "bytes": 3306601,
+          "max_sync_error_s": 0.07149028778076172,
+          "n_points": 167857
+        }
+      ]
+    }
+  ]
+}

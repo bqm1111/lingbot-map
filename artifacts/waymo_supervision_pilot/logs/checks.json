@@ -14,7 +14,7 @@
       "clip_sha256_matches_input_cache": true,
       "evidence_voxel_set_identical": true,
       "evidence_ray_counts_identical": true,
-      "max_feature_abs_diff": 0.00025331974029541016,
+      "max_feature_abs_diff": 0.00025337934494018555,
       "fp16_tolerance": 0.0009765625,
       "n_evidence_voxels": 17566
     },
@@ -66,7 +66,7 @@
       "n_of_those_given_a_class": 0,
       "U_is_subset_of_valid_targets": true,
       "n_unknown_voxels_in_privileged_occupancy": 0,
-      "n_privileged_unknown": 1791510
+      "n_privileged_unknown": 1354221
     }
   ]
 }
