@@ -27,6 +27,46 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..",
 from tools.waymo_pilot import config as C, waymo as W                       # noqa: E402
 
 
+def extract_segment(src: str, seg: str, stride: int = 1, max_frames=None,
+                    paths=None) -> dict:
+    """Convert one .tfrecord into the per-frame cache. Returns the per-frame record.
+
+    Shared with ``fetch_corpus.py`` so the corpus and the smoke test cannot drift apart.
+    Human annotations (laser_labels, camera_labels, projected_lidar_labels) are never read.
+    """
+    p = paths or C.Paths()
+    rows, n_bytes = [], 0
+    for idx, fr in W.read_segment(src, frame_stride=stride, max_frames=max_frames):
+        dst = p.waymo_frame_path(seg, idx)
+        os.makedirs(os.path.dirname(dst), exist_ok=True)
+        if os.path.exists(dst):
+            rows.append({"frame_index": int(idx), "bytes": os.path.getsize(dst),
+                         "skipped": True})
+            continue
+        sync = W.sync_error_s(fr["image_timing"], fr["frame_timestamp_s"])
+        payload = {
+            "segment": fr["segment"], "frame_index": np.int32(idx),
+            "frame_timestamp_s": np.float64(fr["frame_timestamp_s"]),
+            "vehicle_to_world": fr["vehicle_to_world"],
+            "points_vehicle": fr["points_vehicle"], "cp_points": fr["cp_points"],
+            "calibration_json": json.dumps({k: v.to_dict() for k, v in fr["cameras"].items()}),
+            "timing_json": json.dumps(fr["image_timing"]),
+            "sync_error_json": json.dumps(sync),
+        }
+        for nm, jpg in fr["images"].items():
+            payload[f"image_{nm}"] = np.frombuffer(jpg, np.uint8)
+            payload[f"pose_{nm}"] = fr["image_pose"][nm]
+        tmp = dst + ".tmp.npz"
+        np.savez_compressed(tmp, **payload)
+        os.replace(tmp, dst)
+        sz = os.path.getsize(dst)
+        n_bytes += sz
+        rows.append({"frame_index": int(idx), "bytes": int(sz),
+                     "max_sync_error_s": max(sync.values()) if sync else None,
+                     "n_points": int(len(fr["points_vehicle"]))})
+    return {"segment": seg, "n_frames": len(rows), "bytes": n_bytes, "frames": rows}
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)

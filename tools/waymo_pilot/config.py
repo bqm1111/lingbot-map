@@ -86,9 +86,18 @@ EXISTING_TARGET_CFG = DS.TargetConfig()      # 20 future stream frames, <= 10 s,
 #: the bounded ADDITIONAL window of the extended variant, before and after the anchor
 EXTENDED_WINDOW_S = 2.0
 #: maximum |image timestamp - LiDAR timestamp| accepted for one observation, seconds.
-#: KITTI-360 measures < 5 ms (tools/delayed_semantic/targets.py); Waymo is recorded per
-#: frame from ``pose_timestamp`` and is never assumed.
-MAX_SYNC_ERROR_S = 0.05
+#: KITTI-360 measures < 5 ms (tools/delayed_semantic/targets.py). Waymo MEASURED on the
+#: first two segments: 24.7-74.7 ms between a camera's ``pose_timestamp`` and the frame
+#: timestamp, an order of magnitude worse and above the 50 ms this pilot first assumed.
+#: It is raised rather than enforced as a filter because ``CameraImage.pose`` is the vehicle
+#: pose at *that image's own* timestamp: ego motion is already compensated per camera, so
+#: the residual applies to moving content only -- which the conflict and static-support rules
+#: already exclude. The measured value is reported per observation; it is not assumed away.
+MAX_SYNC_ERROR_S = 0.10
+#: MEASURED per camera on segments 1001709.../1002394...: FRONT 54.7, FRONT_LEFT 34.7,
+#: FRONT_RIGHT 64.7, SIDE_LEFT 24.7, SIDE_RIGHT 74.7 ms.
+WAYMO_MEASURED_SYNC_MS = {"FRONT": 54.7, "FRONT_LEFT": 34.7, "FRONT_RIGHT": 64.7,
+                          "SIDE_LEFT": 24.7, "SIDE_RIGHT": 74.7}
 
 #: Supervision sources, kept apart so "new environment" is never confused with
 #: "new target recipe". Every target voxel records which of these produced it.
@@ -122,6 +131,18 @@ WAYMO_ENV = os.environ.get("WAYMO_ENV", "/media/SSD1/MINH_DATASETS/envs/waymo")
 #: licence-holder's own account can only authenticate through gcloud.
 GCLOUD = os.environ.get("GCLOUD_HOME", "/media/SSD1/MINH_DATASETS/envs/google-cloud-sdk")
 WAYMO_SELECTED_CAMERA = "FRONT"                  # CameraName.Name == 1
+#: MEASURED horizontal field of view of the selected camera, degrees. This is the single
+#: largest difference between the two arms and it is NOT a protocol choice we can undo while
+#: deployment stays monocular: KITTI-360's image_00 is a 104 deg wide-angle, Waymo's FRONT is
+#: a 50 deg near-telephoto. A causal clip therefore sees roughly half the lateral scene on
+#: Waymo, which moves voxels out of the frustum rather than into occlusion. Any A/B result
+#: has to be read with this in front of it.
+WAYMO_FRONT_HFOV_DEG = 49.6
+K360_IMAGE00_HFOV_DEG = 103.9
+#: MEASURED: of all LiDAR returns in a frame, the fraction projecting into NO camera.
+#: Waymo's five cameras leave gaps, so privileged semantic coverage is bounded before any
+#: occlusion test is applied.
+WAYMO_RETURNS_WITHOUT_CAMERA = 0.60
 WAYMO_OTHER_CAMERAS: Tuple[str, ...] = ("FRONT_LEFT", "FRONT_RIGHT", "SIDE_LEFT", "SIDE_RIGHT")
 #: Waymo runs at 10 Hz. The causal clip must keep the existing TEMPORAL protocol, so the
 #: stream is decimated to one frame in ``WAYMO_STREAM_STRIDE``; 5 gives 0.50 s against
@@ -182,6 +203,39 @@ CLASS_NAMES: Tuple[str, ...] = ("car", "bicycle", "motorcycle", "truck", "other-
                                 "building", "fence", "vegetation", "terrain", "pole",
                                 "traffic-sign", "other-structure", "other-object")
 THING_LABELS: Tuple[int, ...] = (1, 2, 3, 4, 5, 6)
+
+
+#: Road surface height in the KITTI-360 anchor velodyne frame, MEASURED from the 2nd
+#: percentile of returns on the road strip 3-15 m ahead, |y| < 3 m, over ten sweeps of
+#: drive 0007 (not taken from a published rig sheet).
+K360_ROAD_Z_IN_GRID_FRAME_M = -1.759
+#: The grid therefore starts 0.241 m BELOW the road and reaches 6.159 m above it. That
+#: ground-relative extent -- not the literal number -2.0 -- is what the frozen geometry
+#: model has learned to expect, so it is what a second dataset must reproduce.
+GRID_FLOOR_BELOW_ROAD_M = GRID_ORIGIN_M[2] - K360_ROAD_Z_IN_GRID_FRAME_M
+
+
+#: MEASURED road height in the Waymo vehicle frame (2nd percentile of returns 3-15 m ahead,
+#: |y| < 3 m, over ten frames of the first two segments). The vehicle frame is on the ground,
+#: so this is near zero -- but it is measured, not assumed to be exactly zero.
+WAYMO_ROAD_Z_IN_VEHICLE_FRAME_M = -0.016
+
+
+def waymo_grid_origin(road_z_in_vehicle_frame_m: float) -> Tuple[float, float, float]:
+    """The Waymo anchor grid origin, aligned to the road rather than to a frame convention.
+
+    Waymo's vehicle frame has its origin on the ground at the rear axle, whereas KITTI-360's
+    grid is anchored to a velodyne 1.76 m up. Reusing the literal origin ``(0, -25.6, -2)``
+    would bury a quarter of the 6.4 m-tall volume below the road and lose the same amount of
+    headroom, so the grid would cover a different part of the world on the two datasets while
+    appearing identical in the config.
+
+    Dims, voxel size and the x/y extent are untouched; only the z offset is chosen, and it is
+    chosen so the grid floor sits ``GRID_FLOOR_BELOW_ROAD_M`` below the measured road on both
+    datasets. ``road_z_in_vehicle_frame_m`` must be measured from the segment's own LiDAR.
+    """
+    return (GRID_ORIGIN_M[0], GRID_ORIGIN_M[1],
+            float(road_z_in_vehicle_frame_m) + GRID_FLOOR_BELOW_ROAD_M)
 
 
 def anchor_frame_budget() -> Dict[str, int]:
