@@ -33,14 +33,26 @@ def main() -> int:
     ap.add_argument("--root", default=C.WAYMO_ROOT)
     ap.add_argument("--segments", type=int, default=C.SMOKE_SEGMENTS,
                     help=f"segments to convert (cap {C.MAX_SEGMENTS})")
-    ap.add_argument("--frames-per-segment", type=int, default=40,
-                    help="frames per segment AFTER the stride, enough to cover the "
-                         "privileged window of the sampled anchors")
+    ap.add_argument("--frames-per-segment", type=int, default=0,
+                    help="native frames per segment; 0 (the default) means the whole "
+                         "segment. An anchor needs frames [f-back, f+forward] around it, so "
+                         "a short extraction supports NO anchors -- see --explain")
     ap.add_argument("--stride", type=int, default=1,
                     help="frame decimation at extraction; keep 1 so the interleaved "
                          "temporal source stays available (the stream stride is applied later)")
     ap.add_argument("--probe-only", action="store_true")
+    ap.add_argument("--explain", action="store_true",
+                    help="print the per-anchor frame budget and exit")
     a = ap.parse_args()
+
+    budget = C.anchor_frame_budget()
+    if a.explain:
+        print(json.dumps({"stream_stride": C.WAYMO_STREAM_STRIDE,
+                          "stream_dt_s": C.WAYMO_STREAM_STRIDE / C.WAYMO_NOMINAL_HZ,
+                          **budget,
+                          "anchors_supported_by_a_199_frame_segment":
+                              C.anchors_supported(199)}, indent=1))
+        return 0
 
     av = W.probe(a.root)
     print(json.dumps(av.as_dict(), indent=1))
@@ -68,9 +80,16 @@ def main() -> int:
             matches = [q for q in
                        (os.path.join(dp, seg) for dp, _, fn in os.walk(a.root) if seg in fn)]
             src = matches[0] if matches else src
+        want = a.frames_per_segment or None
+        if want is not None and C.anchors_supported(want) == 0:
+            print(f"refusing --frames-per-segment {want}: an anchor needs "
+                  f"{budget['span']} native frames around it "
+                  f"({budget['frames_back']} back, {budget['frames_forward']} forward), so "
+                  f"this extraction would support 0 anchors. Use 0 for the whole segment.",
+                  file=sys.stderr)
+            return 2
         rows = []
-        for idx, fr in W.read_segment(src, frame_stride=a.stride,
-                                      max_frames=a.frames_per_segment):
+        for idx, fr in W.read_segment(src, frame_stride=a.stride, max_frames=want):
             dst = p.waymo_frame_path(seg, idx)
             os.makedirs(os.path.dirname(dst), exist_ok=True)
             sync = W.sync_error_s(fr["image_timing"], fr["frame_timestamp_s"])
@@ -105,6 +124,9 @@ def main() -> int:
             break
     el = time.time() - t0
     rec = {"version": C.VERSION, "root": a.root, "stride": a.stride,
+           "anchor_frame_budget": budget,
+           "anchors_supported_per_segment": {m["segment"]: C.anchors_supported(m["n_frames"])
+                                             for m in manifest},
            "n_segments": len(manifest), "n_frames": n_frames,
            "gib": n_bytes / 2 ** 30, "seconds": el,
            "seconds_per_frame": el / max(n_frames, 1),

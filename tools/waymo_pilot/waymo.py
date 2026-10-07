@@ -129,8 +129,11 @@ def acquisition_instructions(root: str = C.WAYMO_ROOT) -> str:
         f"4. create the reader environment (kept apart from cu128; TF 2.12 pins numpy<2):\n"
         f"   conda create -y -n waymo python=3.10 && conda run -n waymo pip install \\\n"
         f"       {C.WAYMO_SDK_PACKAGE}==1.6.7\n"
-        f"5. WAYMO_ROOT={root} conda run -n waymo python \\\n"
-        f"       tools/waymo_pilot/cli/waymo_extract.py --segments {C.SMOKE_SEGMENTS} --frames-per-segment 40")
+        f"5. WAYMO_ROOT={root} <waymo-env>/bin/python \\\n"
+        f"       tools/waymo_pilot/cli/waymo_extract.py --segments {C.SMOKE_SEGMENTS}\n"
+        f"   (whole segments: an anchor needs "
+        f"{C.anchor_frame_budget()['span']} native frames around it, so a short extraction "
+        f"supports none)")
 
 
 # --------------------------------------------------------------------------- #

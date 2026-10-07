@@ -402,9 +402,14 @@ def build() -> str:
       "it is the command that produced the availability block in §1, and it exits 2 today.")
     w("")
     w("When it exits 0, the next command is the smoke test the brief asks for — "
-      "`python tools/waymo_pilot/cli/waymo_extract.py --segments 2 --frames-per-segment 40` — "
+      f"`waymo_extract.py --segments {C.SMOKE_SEGMENTS}`, whole segments — "
       "whose runtime and storage must be measured from that run before any expansion, rather "
-      "than estimated here. The pilot's caps "
+      "than estimated here. Whole segments are not a convenience: an anchor needs "
+      f"{C.anchor_frame_budget()['span']} native frames around it "
+      f"({C.anchor_frame_budget()['frames_back']} back for the causal clip, "
+      f"{C.anchor_frame_budget()['frames_forward']} forward for the existing privileged "
+      "window), so a truncated extraction supports no anchors at all and the extractor "
+      "refuses it. The pilot's caps "
       f"({C.MAX_DERIVED_GIB} GiB derived, {C.MAX_PREPROCESS_GPU_HOURS} GPU-h) stop the "
       "expansion if the smoke test says it would exceed them.")
     w("")

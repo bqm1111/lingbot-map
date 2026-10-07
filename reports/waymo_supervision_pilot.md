@@ -1,6 +1,6 @@
 # Waymo supervision pilot — does a small Waymo subset give hidden-region semantic supervision our KITTI-360 recipe lacks?
 
-`waymo_pilot.1` · commit `f8203f2` · audit only, no training launched, no target benchmark opened.
+`waymo_pilot.1` · commit `3919ef8` · audit only, no training launched, no target benchmark opened.
 
 ## Verdict: **BLOCKED** on the Waymo arm — and one measured finding that should change what we do when it unblocks
 
@@ -221,8 +221,9 @@ The Waymo arm is blocked on a step a human must take:
 4. create the reader environment (kept apart from cu128; TF 2.12 pins numpy<2):
    conda create -y -n waymo python=3.10 && conda run -n waymo pip install \
        waymo-open-dataset-tf-2-12-0==1.6.7
-5. WAYMO_ROOT=/media/SSD1/MINH_DATASETS/waymo_perception_v1_4_2 conda run -n waymo python \
-       tools/waymo_pilot/cli/waymo_extract.py --segments 2 --frames-per-segment 40
+5. WAYMO_ROOT=/media/SSD1/MINH_DATASETS/waymo_perception_v1_4_2 <waymo-env>/bin/python \
+       tools/waymo_pilot/cli/waymo_extract.py --segments 2
+   (whole segments: an anchor needs 121 native frames around it, so a short extraction supports none)
 ```
 
 `tools/waymo_pilot/cli/waymo_extract.py` is written and runnable; today it exits 2 and prints exactly the above. It is not presented as executable.
@@ -249,5 +250,5 @@ python tools/waymo_pilot/cli/waymo_extract.py --probe-only
 
 It opens nothing and downloads nothing: it reports the dataset root, the number of `.tfrecord` files, and whether TensorFlow and the SDK import, then exits 0 if the arm can run and 2 otherwise. **Cost: under a second, no GPU, no storage.** It is verified — it is the command that produced the availability block in §1, and it exits 2 today.
 
-When it exits 0, the next command is the smoke test the brief asks for — `python tools/waymo_pilot/cli/waymo_extract.py --segments 2 --frames-per-segment 40` — whose runtime and storage must be measured from that run before any expansion, rather than estimated here. The pilot's caps (20.0 GiB derived, 2.0 GPU-h) stop the expansion if the smoke test says it would exceed them.
+When it exits 0, the next command is the smoke test the brief asks for — `waymo_extract.py --segments 2`, whole segments — whose runtime and storage must be measured from that run before any expansion, rather than estimated here. Whole segments are not a convenience: an anchor needs 121 native frames around it (20 back for the causal clip, 100 forward for the existing privileged window), so a truncated extraction supports no anchors at all and the extractor refuses it. The pilot's caps (20.0 GiB derived, 2.0 GPU-h) stop the expansion if the smoke test says it would exceed them.
 

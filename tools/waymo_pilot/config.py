@@ -176,6 +176,28 @@ CLASS_NAMES: Tuple[str, ...] = ("car", "bicycle", "motorcycle", "truck", "other-
 THING_LABELS: Tuple[int, ...] = (1, 2, 3, 4, 5, 6)
 
 
+def anchor_frame_budget() -> Dict[str, int]:
+    """How many NATIVE Waymo frames one anchor needs around it, and where anchors can sit.
+
+    The causal clip reaches ``(CLIP_LENGTH - 1) * WAYMO_STREAM_STRIDE`` native frames back.
+    The privileged side reaches ``horizon_frames * WAYMO_STREAM_STRIDE`` forward under the
+    existing recipe, and ``EXTENDED_WINDOW_S * WAYMO_NOMINAL_HZ`` either way under the
+    extended one. An extraction shorter than ``span`` supports **no anchors at all**, which
+    is worth computing rather than discovering after a download.
+    """
+    ext = int(round(EXTENDED_WINDOW_S * WAYMO_NOMINAL_HZ))
+    back = max((CLIP_LENGTH - 1) * WAYMO_STREAM_STRIDE, ext)
+    fwd = max(EXISTING_TARGET_CFG.horizon_frames * WAYMO_STREAM_STRIDE, ext)
+    return {"frames_back": back, "frames_forward": fwd, "span": back + fwd + 1,
+            "first_anchor_frame": back, "extended_window_frames": ext}
+
+
+def anchors_supported(n_frames: int) -> int:
+    """Anchors an extraction of ``n_frames`` consecutive native frames can support."""
+    b = anchor_frame_budget()
+    return max(0, n_frames - b["frames_back"] - b["frames_forward"])
+
+
 def ensure_dirs() -> None:
     p = Paths()
     for d in (ARTIFACT_DIR, p.figures, p.examples, p.logs, os.path.dirname(REPORT_PATH),
