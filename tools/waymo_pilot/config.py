@@ -60,9 +60,26 @@ MAX_ANCHORS = 100
 MAX_ANCHORS_PER_SEGMENT = 5
 SMOKE_SEGMENTS = 2
 SMOKE_ANCHORS = 10
-#: anchors inside one segment are spread by at least this many stream frames, so two
-#: anchors of a segment never share a causal clip or a privileged window
+#: Anchors inside one scene are spread by at least this many stream frames, so two anchors
+#: never share a causal clip or a privileged window. Zero overlap needs
+#: (CLIP_LENGTH - 1) + horizon_frames + 1 = 25; 40 leaves a margin on KITTI-360, whose
+#: drives run for minutes.
 MIN_ANCHOR_SEPARATION_FRAMES = 40
+#: MEASURED structural difference. A Waymo segment is 20 s = 199 native frames = 39 stream
+#: frames at stride 5, of which only indices 4..18 can be anchors. Two of them cannot be 25
+#: frames apart, so a Waymo segment yields exactly ONE fully independent anchor -- against
+#: 5-15 for a KITTI-360 drive. Waymo therefore trades anchors-per-scene for scenes:
+#:
+#:                          scenes   anchors   independent
+#:   KITTI-360 frozen pool       3     1,358            35
+#:   Waymo, 798 segments       798    12,768           798
+#:
+#: 798 independent anchors across 798 scenes against 35 across 3 is the diversity the
+#: hypothesis is about; it is not 12,768 independent examples, and must not be reported as
+#: such. Sampling more than one anchor per segment is allowed, but those anchors share
+#: privileged frames and are not independent evidence.
+WAYMO_INDEPENDENT_ANCHORS_PER_SEGMENT = 1
+WAYMO_ELIGIBLE_ANCHORS_PER_SEGMENT = 15
 SAMPLE_SEED = 0
 
 #: KITTI-360 reference sample: the official SSCBench *train* drives only. 0006 is
