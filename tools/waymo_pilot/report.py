@@ -79,7 +79,9 @@ def build() -> str:
     w("> Does a small Waymo subset give us useful hidden-region semantic supervision that "
       "our existing KITTI-360 recipe lacks?")
     w("")
-    w("**Waymo — not available.** Probed, not assumed:")
+    w("**Waymo — the environment is ready; the data is not here.** Probed from the reader "
+      "environment, not assumed (the block below is from the analysis environment, which is "
+      "why the SDK reads as absent there — `interpreter` names which one answered):")
     w("")
     w("```json")
     w(json.dumps(avail.as_dict(), indent=1))
@@ -352,7 +354,11 @@ def build() -> str:
     w("")
     w("### The prerequisite, not a command")
     w("")
-    w("The Waymo arm is blocked on a step a human must take:")
+    w("Everything automatable has been done: the reader environment (TensorFlow 2.13 + the "
+      "Waymo SDK, installed without the SDK's withdrawn `jaxlib==0.4.13` pin), the Google "
+      "Cloud SDK, and the dataset root all exist, and the reader was verified end to end "
+      "against a synthetic `.tfrecord` through the real SDK. What remains needs a human "
+      "once:")
     w("")
     w("```")
     w(W.acquisition_instructions())

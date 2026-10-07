@@ -1,6 +1,6 @@
 # Waymo supervision pilot — does a small Waymo subset give hidden-region semantic supervision our KITTI-360 recipe lacks?
 
-`waymo_pilot.1` · commit `3919ef8` · audit only, no training launched, no target benchmark opened.
+`waymo_pilot.1` · commit `9c3309f` · audit only, no training launched, no target benchmark opened.
 
 ## Verdict: **BLOCKED** on the Waymo arm — and one measured finding that should change what we do when it unblocks
 
@@ -14,12 +14,14 @@ This says nothing about whether heterogeneous training works. It was not tested.
 
 > Does a small Waymo subset give us useful hidden-region semantic supervision that our existing KITTI-360 recipe lacks?
 
-**Waymo — not available.** Probed, not assumed:
+**Waymo — the environment is ready; the data is not here.** Probed from the reader environment, not assumed (the block below is from the analysis environment, which is why the SDK reads as absent there — `interpreter` names which one answered):
 
 ```json
 {
+ "interpreter": "/home/minh/anaconda3/envs/cu128/bin/python",
+ "reader_env": "/media/SSD1/MINH_DATASETS/envs/waymo",
  "root": "/media/SSD1/MINH_DATASETS/waymo_perception_v1_4_2",
- "root_exists": false,
+ "root_exists": true,
  "n_tfrecords": 0,
  "sdk_importable": false,
  "tensorflow_importable": false,
@@ -28,9 +30,9 @@ This says nothing about whether heterogeneous training works. It was not tested.
  "n_segments": 0,
  "ok": false,
  "missing": [
-  "dataset root /media/SSD1/MINH_DATASETS/waymo_perception_v1_4_2 does not exist",
-  "tensorflow is not importable in this environment",
-  "waymo-open-dataset-tf-2-12-0 is not importable (ModuleNotFoundError: No module named 'waymo_open_dataset')"
+  "no *.tfrecord under /media/SSD1/MINH_DATASETS/waymo_perception_v1_4_2 (expected perception v1.4.2 (individual_files/training/*.tfrecord))",
+  "waymo-open-dataset-tf-2-12-0 is not importable here (ModuleNotFoundError: No module named 'waymo_open_dataset'); the reader env is /media/SSD1/MINH_DATASETS/envs/waymo",
+  "tensorflow is not importable here; the reader env is /media/SSD1/MINH_DATASETS/envs/waymo"
  ]
 }
 ```
@@ -209,21 +211,31 @@ The pilot reuses every existing cache and adds essentially nothing: both caps ar
 
 ### The prerequisite, not a command
 
-The Waymo arm is blocked on a step a human must take:
+Everything automatable has been done: the reader environment (TensorFlow 2.13 + the Waymo SDK, installed without the SDK's withdrawn `jaxlib==0.4.13` pin), the Google Cloud SDK, and the dataset root all exist, and the reader was verified end to end against a synthetic `.tfrecord` through the real SDK. What remains needs a human once:
 
 ```
-1. accept the Waymo Open Dataset licence at https://waymo.com/open/licensing/
-   (a human must do this; it is not automatable and this pilot does not do it)
-2. install the gcloud SDK, then `gcloud auth login`
-3. copy 20 segments only (~22 GiB), not the full split:
-   gsutil -m cp $(gsutil ls gs://waymo_open_dataset_v_1_4_2/individual_files/training/ \
-       | head -20) /media/SSD1/MINH_DATASETS/waymo_perception_v1_4_2/
-4. create the reader environment (kept apart from cu128; TF 2.12 pins numpy<2):
-   conda create -y -n waymo python=3.10 && conda run -n waymo pip install \
-       waymo-open-dataset-tf-2-12-0==1.6.7
-5. WAYMO_ROOT=/media/SSD1/MINH_DATASETS/waymo_perception_v1_4_2 <waymo-env>/bin/python \
+PREPARED ALREADY (nothing to do):
+  - reader env with TensorFlow 2.13 + the Waymo SDK: /media/SSD1/MINH_DATASETS/envs/waymo
+    (installed --no-deps: the SDK pins jaxlib==0.4.13, withdrawn from PyPI;
+     nothing this pilot calls needs jax. Verified on a synthetic tfrecord.)
+  - Google Cloud SDK: /media/SSD1/MINH_DATASETS/envs/google-cloud-sdk/bin/gcloud
+  - dataset root: /media/SSD1/MINH_DATASETS/waymo_perception_v1_4_2
+
+NEEDS A HUMAN (once):
+  1. accept the licence at https://waymo.com/open/licensing/ with the Google
+     account you will authenticate as
+  2. /media/SSD1/MINH_DATASETS/envs/google-cloud-sdk/bin/gcloud auth login --no-launch-browser
+     (prints a URL; sign in, paste the code back)
+
+THEN (automatable):
+  3. download 20 segments only, ~22 GiB, not the full split:
+     /media/SSD1/MINH_DATASETS/envs/google-cloud-sdk/bin/gsutil -m cp \
+       $(/media/SSD1/MINH_DATASETS/envs/google-cloud-sdk/bin/gsutil ls gs://waymo_open_dataset_v_1_4_2/individual_files/training/ \
+         | head -20) /media/SSD1/MINH_DATASETS/waymo_perception_v1_4_2/
+  4. WAYMO_ROOT=/media/SSD1/MINH_DATASETS/waymo_perception_v1_4_2 /media/SSD1/MINH_DATASETS/envs/waymo/bin/python \
        tools/waymo_pilot/cli/waymo_extract.py --segments 2
-   (whole segments: an anchor needs 121 native frames around it, so a short extraction supports none)
+     (whole segments: an anchor needs 121 native frames around it, so a truncated
+      extraction supports none and the extractor refuses it)
 ```
 
 `tools/waymo_pilot/cli/waymo_extract.py` is written and runnable; today it exits 2 and prints exactly the above. It is not presented as executable.

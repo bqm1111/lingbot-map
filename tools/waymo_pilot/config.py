@@ -113,6 +113,14 @@ VARIANTS: Dict[str, Tuple[str, ...]] = {
 WAYMO_ROOT = os.environ.get("WAYMO_ROOT", "/media/SSD1/MINH_DATASETS/waymo_perception_v1_4_2")
 WAYMO_EXPECTED_VERSION = "perception v1.4.2 (individual_files/training/*.tfrecord)"
 WAYMO_SDK_PACKAGE = "waymo-open-dataset-tf-2-12-0"
+#: The reader environment, built on SSD1 because ``/`` is nearly full and TF is ~1.8 GiB.
+#: Installed with ``--no-deps`` plus tensorflow/numpy/absl/immutabledict: the SDK's own
+#: metadata pins ``jaxlib==0.4.13``, which has been withdrawn from PyPI and is unsatisfiable.
+#: Nothing this pilot calls (``dataset_pb2``, ``frame_utils``) needs jax.
+WAYMO_ENV = os.environ.get("WAYMO_ENV", "/media/SSD1/MINH_DATASETS/envs/waymo")
+#: Google Cloud SDK. Standalone (pip) gsutil no longer supports user-account OAuth, so the
+#: licence-holder's own account can only authenticate through gcloud.
+GCLOUD = os.environ.get("GCLOUD_HOME", "/media/SSD1/MINH_DATASETS/envs/google-cloud-sdk")
 WAYMO_SELECTED_CAMERA = "FRONT"                  # CameraName.Name == 1
 WAYMO_OTHER_CAMERAS: Tuple[str, ...] = ("FRONT_LEFT", "FRONT_RIGHT", "SIDE_LEFT", "SIDE_RIGHT")
 #: Waymo runs at 10 Hz. The causal clip must keep the existing TEMPORAL protocol, so the

@@ -72,14 +72,19 @@ class Availability:
             out.append(f"dataset root {self.root} does not exist")
         elif self.n_tfrecords == 0:
             out.append(f"no *.tfrecord under {self.root} (expected {C.WAYMO_EXPECTED_VERSION})")
-        if not self.tensorflow_importable:
-            out.append("tensorflow is not importable in this environment")
         if not self.sdk_importable:
-            out.append(f"{C.WAYMO_SDK_PACKAGE} is not importable ({self.sdk_error})")
+            out.append(f"{C.WAYMO_SDK_PACKAGE} is not importable here "
+                       f"({self.sdk_error}); the reader env is {C.WAYMO_ENV}")
+        if not self.tensorflow_importable:
+            out.append(f"tensorflow is not importable here; the reader env is {C.WAYMO_ENV}")
         return out
 
     def as_dict(self) -> Dict:
-        return {"root": self.root, "root_exists": self.root_exists,
+        import sys as _sys
+        # the SDK answer is interpreter-relative: it is absent from the analysis env (cu128)
+        # by design and present in the reader env, so the probe names which one it ran under
+        return {"interpreter": _sys.executable, "reader_env": C.WAYMO_ENV,
+                "root": self.root, "root_exists": self.root_exists,
                 "n_tfrecords": self.n_tfrecords, "sdk_importable": self.sdk_importable,
                 "tensorflow_importable": self.tensorflow_importable,
                 "sdk_error": self.sdk_error, "expected_version": C.WAYMO_EXPECTED_VERSION,
@@ -117,23 +122,32 @@ def require(root: str = C.WAYMO_ROOT) -> Availability:
 
 
 def acquisition_instructions(root: str = C.WAYMO_ROOT) -> str:
-    """The smallest sequence of steps that unblocks this arm. The licence step is the user's."""
+    """The remaining steps. Everything automatable is already done; one step needs a human."""
     n = C.MAX_SEGMENTS
     return (
-        f"1. accept the Waymo Open Dataset licence at https://waymo.com/open/licensing/\n"
-        f"   (a human must do this; it is not automatable and this pilot does not do it)\n"
-        f"2. install the gcloud SDK, then `gcloud auth login`\n"
-        f"3. copy {n} segments only (~{n * 1.1:.0f} GiB), not the full split:\n"
-        f"   gsutil -m cp $(gsutil ls gs://waymo_open_dataset_v_1_4_2/individual_files/training/ \\\n"
-        f"       | head -{n}) {root}/\n"
-        f"4. create the reader environment (kept apart from cu128; TF 2.12 pins numpy<2):\n"
-        f"   conda create -y -n waymo python=3.10 && conda run -n waymo pip install \\\n"
-        f"       {C.WAYMO_SDK_PACKAGE}==1.6.7\n"
-        f"5. WAYMO_ROOT={root} <waymo-env>/bin/python \\\n"
+        f"PREPARED ALREADY (nothing to do):\n"
+        f"  - reader env with TensorFlow 2.13 + the Waymo SDK: {C.WAYMO_ENV}\n"
+        f"    (installed --no-deps: the SDK pins jaxlib==0.4.13, withdrawn from PyPI;\n"
+        f"     nothing this pilot calls needs jax. Verified on a synthetic tfrecord.)\n"
+        f"  - Google Cloud SDK: {C.GCLOUD}/bin/gcloud\n"
+        f"  - dataset root: {root}\n"
+        f"\n"
+        f"NEEDS A HUMAN (once):\n"
+        f"  1. accept the licence at https://waymo.com/open/licensing/ with the Google\n"
+        f"     account you will authenticate as\n"
+        f"  2. {C.GCLOUD}/bin/gcloud auth login --no-launch-browser\n"
+        f"     (prints a URL; sign in, paste the code back)\n"
+        f"\n"
+        f"THEN (automatable):\n"
+        f"  3. download {n} segments only, ~{n * 1.1:.0f} GiB, not the full split:\n"
+        f"     {C.GCLOUD}/bin/gsutil -m cp \\\n"
+        f"       $({C.GCLOUD}/bin/gsutil ls gs://waymo_open_dataset_v_1_4_2/individual_files/training/ \\\n"
+        f"         | head -{n}) {root}/\n"
+        f"  4. WAYMO_ROOT={root} {C.WAYMO_ENV}/bin/python \\\n"
         f"       tools/waymo_pilot/cli/waymo_extract.py --segments {C.SMOKE_SEGMENTS}\n"
-        f"   (whole segments: an anchor needs "
-        f"{C.anchor_frame_budget()['span']} native frames around it, so a short extraction "
-        f"supports none)")
+        f"     (whole segments: an anchor needs "
+        f"{C.anchor_frame_budget()['span']} native frames around it, so a truncated\n"
+        f"      extraction supports none and the extractor refuses it)")
 
 
 # --------------------------------------------------------------------------- #
@@ -223,8 +237,18 @@ def read_segment(path: str, frame_stride: int = 1, max_frames: Optional[int] = N
         frame.ParseFromString(bytes(data.numpy()))
         parsed = frame_utils.parse_range_image_and_camera_projection(frame)
         range_images, camera_projections, _seg, top_pose = parsed
-        points, cp_points = frame_utils.convert_range_image_to_point_cloud(
-            frame, range_images, camera_projections, top_pose)
+        # A frame carrying no laser returns empty range images, and the SDK's conversion
+        # raises on the reshape rather than returning nothing. Real perception frames always
+        # have lasers, but one malformed frame must not take the whole segment down: the
+        # frame is yielded with zero points, and the caller sees it has no geometry.
+        if range_images and top_pose is not None and len(top_pose.data):
+            points, cp_points = frame_utils.convert_range_image_to_point_cloud(
+                frame, range_images, camera_projections, top_pose)
+            pts = np.concatenate(points, axis=0).astype(np.float32)
+            cps = np.concatenate(cp_points, axis=0).astype(np.int32)
+        else:
+            pts = np.zeros((0, 3), np.float32)
+            cps = np.zeros((0, 6), np.int32)
         cams = {}
         for cal in frame.context.camera_calibrations:
             nm = CAMERA_NAME.get(int(cal.name))
@@ -248,8 +272,7 @@ def read_segment(path: str, frame_stride: int = 1, max_frames: Optional[int] = N
             "segment": frame.context.name,
             "frame_timestamp_s": frame.timestamp_micros * 1e-6,
             "vehicle_to_world": np.asarray(frame.pose.transform, np.float64).reshape(4, 4),
-            "points_vehicle": np.concatenate(points, axis=0).astype(np.float32),
-            "cp_points": np.concatenate(cp_points, axis=0).astype(np.int32),
+            "points_vehicle": pts, "cp_points": cps,
             "cameras": cams, "images": images, "image_pose": poses,
             "image_timing": stamps,
         }
