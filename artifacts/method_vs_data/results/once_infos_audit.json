@@ -1,0 +1,459 @@
+{
+ "data_root": "/media/minh/MINH1/once_data/extracted/data",
+ "n_sequences": 6,
+ "sequences": {
+  "000076": {
+   "n_frames": 2055,
+   "n_with_pose": 2055,
+   "n_with_annos": 1000,
+   "timestamp_span_s": 1106.999,
+   "dt_s": {
+    "min": 0.499,
+    "p50": 0.5,
+    "max": 13.0
+   },
+   "monotonic": true,
+   "path_length_m": 5338.10538746533,
+   "step_m": {
+    "p50": 0.748812141537202,
+    "max": 163.16618575105892
+   },
+   "calib": {
+    "cam01": {
+     "fx": 958.8315,
+     "fy": 962.3082,
+     "cx": 934.9871,
+     "cy": 519.1207,
+     "hfov_deg": 90.06978216699608,
+     "vfov_deg": 55.84500902889804,
+     "cam_to_velo_translation": [
+      -0.1362,
+      -0.3726,
+      -0.3031
+     ],
+     "distortion": [
+      -0.3121,
+      0.1024,
+      0.00033,
+      -0.000398,
+      -0.0158
+     ],
+     "distortion_all_zero": false
+    },
+    "cam03": {
+     "fx": 1938.34597,
+     "fy": 1937.09807,
+     "cx": 959.5,
+     "cy": 509.5,
+     "hfov_deg": 52.695449238331264,
+     "vfov_deg": 29.500256650365206,
+     "cam_to_velo_translation": [
+      0.0418,
+      -0.415,
+      -0.3083
+     ],
+     "distortion": [
+      -0.58121,
+      0.43896,
+      0.00764,
+      0.00029,
+      0.0
+     ],
+     "distortion_all_zero": false
+    },
+    "cam05": {
+     "fx": 956.1788,
+     "fy": 957.3191,
+     "cx": 942.1158,
+     "cy": 534.9691,
+     "hfov_deg": 90.22851556697654,
+     "vfov_deg": 56.0918236567749,
+     "cam_to_velo_translation": [
+      0.9349,
+      -1.2497,
+      -0.9904
+     ],
+     "distortion": [
+      -0.3223,
+      0.1121,
+      0.000132,
+      -0.000606,
+      -0.0184
+     ],
+     "distortion_all_zero": false
+    },
+    "cam06": {
+     "fx": 960.1722,
+     "fy": 961.0462,
+     "cx": 930.9725,
+     "cy": 527.6315,
+     "hfov_deg": 89.98972349125177,
+     "vfov_deg": 55.907252258582076,
+     "cam_to_velo_translation": [
+      0.8264,
+      1.637,
+      -0.7769
+     ],
+     "distortion": [
+      -0.341,
+      0.1383,
+      -0.000352,
+      0.000233,
+      -0.0284
+     ],
+     "distortion_all_zero": false
+    },
+    "cam07": {
+     "fx": 958.7242,
+     "fy": 959.2743,
+     "cx": 945.0733,
+     "cy": 541.1526,
+     "hfov_deg": 90.07619432196675,
+     "vfov_deg": 55.994859883849315,
+     "cam_to_velo_translation": [
+      -0.8282,
+      1.6632,
+      -0.7729
+     ],
+     "distortion": [
+      -0.3242,
+      0.1146,
+      0.000251,
+      -0.000311,
+      -0.0195
+     ],
+     "distortion_all_zero": false
+    },
+    "cam08": {
+     "fx": 961.418,
+     "fy": 961.514,
+     "cx": 933.048,
+     "cy": 538.496,
+     "hfov_deg": 89.91543183149139,
+     "vfov_deg": 55.88416497391859,
+     "cam_to_velo_translation": [
+      -0.9412,
+      -1.2456,
+      -0.9911
+     ],
+     "distortion": [
+      -0.3346,
+      0.1279,
+      0.00024,
+      0.000301,
+      -0.0239
+     ],
+     "distortion_all_zero": false
+    },
+    "cam09": {
+     "fx": 957.3874,
+     "fy": 960.8491,
+     "cx": 957.7912,
+     "cy": 565.3051,
+     "hfov_deg": 90.15614044497799,
+     "vfov_deg": 55.91698496644884,
+     "cam_to_velo_translation": [
+      -0.0034,
+      0.7653,
+      -0.2263
+     ],
+     "distortion": [
+      -0.3152,
+      0.1068,
+      1e-05,
+      0.000143,
+      -0.0174
+     ],
+     "distortion_all_zero": false
+    }
+   }
+  },
+  "000080": {
+   "n_frames": 1922,
+   "n_with_pose": 1922,
+   "n_with_annos": 961,
+   "timestamp_span_s": 1072.0,
+   "dt_s": {
+    "min": 0.499,
+    "p50": 0.5,
+    "max": 13.001
+   },
+   "monotonic": true,
+   "path_length_m": 6495.013802425153,
+   "step_m": {
+    "p50": 2.421279383945285,
+    "max": 190.34224183161552
+   },
+   "calib": {
+    "max_abs_intrinsic_diff_vs_first_sequence": 0.0
+   }
+  },
+  "000092": {
+   "n_frames": 1165,
+   "n_with_pose": 1165,
+   "n_with_annos": 583,
+   "timestamp_span_s": 608.0,
+   "dt_s": {
+    "min": 0.499,
+    "p50": 0.5,
+    "max": 12.501
+   },
+   "monotonic": true,
+   "path_length_m": 2805.7176139327794,
+   "step_m": {
+    "p50": 0.9732351253118454,
+    "max": 13.773329850426654
+   },
+   "calib": {
+    "max_abs_intrinsic_diff_vs_first_sequence": 0.0
+   }
+  },
+  "000104": {
+   "n_frames": 1230,
+   "n_with_pose": 1230,
+   "n_with_annos": 615,
+   "timestamp_span_s": 681.498,
+   "dt_s": {
+    "min": 0.499,
+    "p50": 0.5,
+    "max": 13.0
+   },
+   "monotonic": true,
+   "path_length_m": 5454.939292005641,
+   "step_m": {
+    "p50": 4.714722724324968,
+    "max": 115.73883055346087
+   },
+   "calib": {
+    "max_abs_intrinsic_diff_vs_first_sequence": 0.0
+   }
+  },
+  "000113": {
+   "n_frames": 1891,
+   "n_with_pose": 1891,
+   "n_with_annos": 946,
+   "timestamp_span_s": 959.5,
+   "dt_s": {
+    "min": 0.499,
+    "p50": 0.5,
+    "max": 12.5
+   },
+   "monotonic": true,
+   "path_length_m": 5184.558017650956,
+   "step_m": {
+    "p50": 1.8353914840062464,
+    "max": 9.941133086279063
+   },
+   "calib": {
+    "max_abs_intrinsic_diff_vs_first_sequence": 0.0
+   }
+  },
+  "000121": {
+   "n_frames": 1714,
+   "n_with_pose": 1714,
+   "n_with_annos": 856,
+   "timestamp_span_s": 887.499,
+   "dt_s": {
+    "min": 0.499,
+    "p50": 0.5,
+    "max": 13.001
+   },
+   "monotonic": true,
+   "path_length_m": 7090.864430951411,
+   "step_m": {
+    "p50": 4.8889609852391525,
+    "max": 130.30790089048446
+   },
+   "calib": {
+    "max_abs_intrinsic_diff_vs_first_sequence": 0.0
+   }
+  }
+ },
+ "cameras": [
+  "cam01",
+  "cam03",
+  "cam05",
+  "cam06",
+  "cam07",
+  "cam08",
+  "cam09"
+ ],
+ "image_size": [
+  1920,
+  1020
+ ],
+ "calibration_first_sequence": {
+  "cam01": {
+   "fx": 958.8315,
+   "fy": 962.3082,
+   "cx": 934.9871,
+   "cy": 519.1207,
+   "hfov_deg": 90.06978216699608,
+   "vfov_deg": 55.84500902889804,
+   "cam_to_velo_translation": [
+    -0.1362,
+    -0.3726,
+    -0.3031
+   ],
+   "distortion": [
+    -0.3121,
+    0.1024,
+    0.00033,
+    -0.000398,
+    -0.0158
+   ],
+   "distortion_all_zero": false
+  },
+  "cam03": {
+   "fx": 1938.34597,
+   "fy": 1937.09807,
+   "cx": 959.5,
+   "cy": 509.5,
+   "hfov_deg": 52.695449238331264,
+   "vfov_deg": 29.500256650365206,
+   "cam_to_velo_translation": [
+    0.0418,
+    -0.415,
+    -0.3083
+   ],
+   "distortion": [
+    -0.58121,
+    0.43896,
+    0.00764,
+    0.00029,
+    0.0
+   ],
+   "distortion_all_zero": false
+  },
+  "cam05": {
+   "fx": 956.1788,
+   "fy": 957.3191,
+   "cx": 942.1158,
+   "cy": 534.9691,
+   "hfov_deg": 90.22851556697654,
+   "vfov_deg": 56.0918236567749,
+   "cam_to_velo_translation": [
+    0.9349,
+    -1.2497,
+    -0.9904
+   ],
+   "distortion": [
+    -0.3223,
+    0.1121,
+    0.000132,
+    -0.000606,
+    -0.0184
+   ],
+   "distortion_all_zero": false
+  },
+  "cam06": {
+   "fx": 960.1722,
+   "fy": 961.0462,
+   "cx": 930.9725,
+   "cy": 527.6315,
+   "hfov_deg": 89.98972349125177,
+   "vfov_deg": 55.907252258582076,
+   "cam_to_velo_translation": [
+    0.8264,
+    1.637,
+    -0.7769
+   ],
+   "distortion": [
+    -0.341,
+    0.1383,
+    -0.000352,
+    0.000233,
+    -0.0284
+   ],
+   "distortion_all_zero": false
+  },
+  "cam07": {
+   "fx": 958.7242,
+   "fy": 959.2743,
+   "cx": 945.0733,
+   "cy": 541.1526,
+   "hfov_deg": 90.07619432196675,
+   "vfov_deg": 55.994859883849315,
+   "cam_to_velo_translation": [
+    -0.8282,
+    1.6632,
+    -0.7729
+   ],
+   "distortion": [
+    -0.3242,
+    0.1146,
+    0.000251,
+    -0.000311,
+    -0.0195
+   ],
+   "distortion_all_zero": false
+  },
+  "cam08": {
+   "fx": 961.418,
+   "fy": 961.514,
+   "cx": 933.048,
+   "cy": 538.496,
+   "hfov_deg": 89.91543183149139,
+   "vfov_deg": 55.88416497391859,
+   "cam_to_velo_translation": [
+    -0.9412,
+    -1.2456,
+    -0.9911
+   ],
+   "distortion": [
+    -0.3346,
+    0.1279,
+    0.00024,
+    0.000301,
+    -0.0239
+   ],
+   "distortion_all_zero": false
+  },
+  "cam09": {
+   "fx": 957.3874,
+   "fy": 960.8491,
+   "cx": 957.7912,
+   "cy": 565.3051,
+   "hfov_deg": 90.15614044497799,
+   "vfov_deg": 55.91698496644884,
+   "cam_to_velo_translation": [
+    -0.0034,
+    0.7653,
+    -0.2263
+   ],
+   "distortion": [
+    -0.3152,
+    0.1068,
+    1e-05,
+    0.000143,
+    -0.0174
+   ],
+   "distortion_all_zero": false
+  }
+ },
+ "corpus": {
+  "n_sequences": 6,
+  "n_frames": 9977,
+  "n_frames_with_annos": 4961,
+  "dt_s": {
+   "min": 0.499,
+   "p01": 0.499,
+   "p50": 0.5,
+   "p99": 1.0,
+   "max": 13.001
+  },
+  "implied_fps": 2.0,
+  "all_dt_monotonic": true,
+  "frac_dt_within_5pct_of_0p5s": 0.9829505566141811,
+  "step_m": {
+   "p50": 2.7459675404356716,
+   "p99": 10.350137266582001
+  },
+  "implied_speed_mps_p50": 5.491935080871343
+ },
+ "capacity": {
+  "five_frame_causal_clips": 9953,
+  "independent_sequences": 6,
+  "note": "clips within one sequence are not independent"
+ }
+}

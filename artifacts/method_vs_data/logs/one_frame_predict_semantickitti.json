@@ -1,0 +1,38 @@
+[
+ {
+  "arm": "one_frame_unet",
+  "dataset": "semantickitti",
+  "n_samples": 801,
+  "n_written": 797,
+  "n_skipped": 4,
+  "minutes": 1.5571086486180623,
+  "root": "/media/minh/MINH1/lingbot_one_frame/predictions"
+ },
+ {
+  "arm": "one_frame_map",
+  "dataset": "semantickitti",
+  "n_samples": 801,
+  "n_written": 797,
+  "n_skipped": 4,
+  "minutes": 0.5529833833376566,
+  "root": "/media/minh/MINH1/lingbot_one_frame/predictions"
+ },
+ {
+  "arm": "five_frame_map",
+  "dataset": "semantickitti",
+  "n_samples": 801,
+  "n_written": 797,
+  "n_skipped": 4,
+  "minutes": 1.1530609607696534,
+  "root": "/media/minh/MINH1/lingbot_one_frame/predictions"
+ },
+ {
+  "arm": "one_frame_unet_scale5",
+  "dataset": "semantickitti",
+  "n_samples": 801,
+  "n_written": 801,
+  "n_skipped": 0,
+  "minutes": 1.5328629851341247,
+  "root": "/media/minh/MINH1/lingbot_one_frame/predictions"
+ }
+]

@@ -1,0 +1,283 @@
+{
+ "provenance": {
+  "version": "once_arm.1",
+  "status": "exploratory",
+  "prevalence_band": {
+   "gate": "occupied prevalence in valid",
+   "predeclared_band": [
+    0.015,
+    0.04
+   ],
+   "once_measured_median": 0.013,
+   "verdict": "FAILED -- not relabelled as passed",
+   "sequences_inside_band": "2 of 6",
+   "why_it_is_not_disqualifying": "The band was calibrated under the frozen 21-sweep / 10.46 s carve. Applied to the authorized ~2.1 s window it also rejects KITTI-360, on vertical coverage (21 of 32 z-levels against a floor of 30). Each corpus fails a different band and the corpus the bands were calibrated from is one of them.",
+   "cause": "Scene content. LiDAR sparsity is falsified as the cause: removing 85 % of KITTI-360's returns leaves it in band (prevalence elasticity to point count ~0.1).",
+   "reference": "artifacts/method_vs_data/once_supervision_validation.md"
+  },
+  "camera": "cam01",
+  "hfov_deg": 90.1,
+  "undistort_images": false,
+  "distortion_evidence": {
+   "decision": "use shipped JPEGs as-is; do NOT call cv2.undistort",
+   "logcorr_lidar_vs_mono_depth": {
+    "plain_pinhole": 0.8571,
+    "distortion_applied": 0.6978,
+    "pinhole_better_in": "12 of 12 frames"
+   },
+   "map_vs_target_iou_pct": {
+    "shipped": 3.26,
+    "undistorted": 1.44,
+    "shipped_better_in": "11 of 12 anchors"
+   },
+   "retracts": "once_metadata_audit.md \u00a75 (M2 gradient test is centre-biased)"
+  },
+  "input_clip": {
+   "offsets": [
+    -4,
+    -3,
+    -2,
+    -1,
+    0
+   ],
+   "stream_stride": 1,
+   "span_s": 2.0,
+   "future_frames_used": 0
+  },
+  "supervision": {
+   "policy": "duration-matched, native cadence",
+   "span_s": 2.1,
+   "max_gap_s": 0.75,
+   "interpolated_or_duplicated_sweeps": false
+  },
+  "grid": {
+   "dims": [
+    256,
+    256,
+    32
+   ],
+   "voxel_size": 0.2,
+   "origin": [
+    0.0,
+    -25.6,
+    -2.0
+   ],
+   "frame": "velodyne_of_anchor_frame"
+  },
+  "anchors": {
+   "min_separation_frames": 5,
+   "target_n": 1400,
+   "independent_scene_count": 6,
+   "note": "the anchor count is NOT the independent count"
+  },
+  "val_sequences": [
+   "000121"
+  ]
+ },
+ "dataset": "occ3d",
+ "n_samples": 4219,
+ "postprocess": "raw",
+ "arms": [
+  "k360",
+  "once",
+  "occany_5f_fwd"
+ ],
+ "n_missing_once_predictions": 0,
+ "once_prediction_root": "/media/minh/MINH1/lingbot_once_arm/zero_shot_predictions",
+ "statistics": {
+  "blocks": 150,
+  "resamples": 2000,
+  "bootstrap_seed": 0,
+  "block_rule": "one per scene",
+  "paired": "all arms resampled on the same anchors"
+ },
+ "composition": {
+  "all": {
+   "valid_voxels": 212657425,
+   "gt_occupied": 46118669,
+   "share_of_valid": 1.0,
+   "share_of_gt_occupied": 1.0
+  },
+  "in_frustum": {
+   "valid_voxels": 108351243,
+   "gt_occupied": 20989650,
+   "share_of_valid": 0.5095107448047017,
+   "share_of_gt_occupied": 0.45512263157464494
+  },
+  "out_frustum": {
+   "valid_voxels": 104306182,
+   "gt_occupied": 25129019,
+   "share_of_valid": 0.49048925519529823,
+   "share_of_gt_occupied": 0.5448773684253551
+  },
+  "A0fixed_observed": {
+   "valid_voxels": 55436411,
+   "gt_occupied": 15166119,
+   "share_of_valid": 0.2606841073148516,
+   "share_of_gt_occupied": 0.32884988506498314
+  },
+  "A0fixed_completed": {
+   "valid_voxels": 157221014,
+   "gt_occupied": 30952550,
+   "share_of_valid": 0.7393158926851484,
+   "share_of_gt_occupied": 0.6711501149350169
+  }
+ },
+ "iou": {
+  "all": {
+   "k360": {
+    "iou": 31.939957771336434,
+    "precision": 77.86811511449736,
+    "recall": 35.12898865316343
+   },
+   "once": {
+    "iou": 18.67289641716569,
+    "precision": 52.66442058880841,
+    "recall": 22.43893031691786
+   },
+   "occany_5f_fwd": {
+    "iou": 20.65876590626946,
+    "precision": 42.95647251457886,
+    "recall": 28.4687595819385
+   }
+  },
+  "in_frustum": {
+   "k360": {
+    "iou": 36.17683965261597,
+    "precision": 76.5542349890761,
+    "recall": 40.68454214338972
+   },
+   "once": {
+    "iou": 17.640126675253903,
+    "precision": 50.53875278670589,
+    "recall": 21.32098915417837
+   },
+   "occany_5f_fwd": {
+    "iou": 29.97667894635734,
+    "precision": 42.41231123184865,
+    "recall": 50.55303447175155
+   }
+  },
+  "out_frustum": {
+   "k360": {
+    "iou": 28.25199245957546,
+    "precision": 79.38676136252364,
+    "recall": 30.48857179820669
+   },
+   "once": {
+    "iou": 19.54478392016253,
+    "precision": 54.40808161728687,
+    "recall": 23.372719006659192
+   },
+   "occany_5f_fwd": {
+    "iou": 8.9446726253115,
+    "precision": 45.41122678801292,
+    "recall": 10.02230926722607
+   }
+  },
+  "A0fixed_observed": {
+   "k360": {
+    "iou": 41.82196766943439,
+    "precision": 88.12041412659747,
+    "recall": 44.32079822135116
+   },
+   "once": {
+    "iou": 24.927376618250474,
+    "precision": 44.393249839042674,
+    "recall": 36.244242841560194
+   },
+   "occany_5f_fwd": {
+    "iou": 28.047900368160064,
+    "precision": 64.23489013719535,
+    "recall": 33.23868156381999
+   }
+  },
+  "A0fixed_completed": {
+   "k360": {
+    "iou": 27.356364955278167,
+    "precision": 71.93362387728888,
+    "recall": 30.62518920088975
+   },
+   "once": {
+    "iou": 14.539667350062567,
+    "precision": 66.75604272163503,
+    "recall": 15.674608392523394
+   },
+   "occany_5f_fwd": {
+    "iou": 17.745170255255363,
+    "precision": 35.605548700579796,
+    "recall": 26.131594973596684
+   }
+  }
+ },
+ "contrasts": {
+  "Q1b_once_vs_occany_5frame_forward": {
+   "a": "once",
+   "b": "occany_5f_fwd",
+   "all": {
+    "delta": -1.98586948910377,
+    "ci_low": -3.936597876692693,
+    "ci_high": -0.07983195012288608,
+    "significant_at_95": true
+   },
+   "in_frustum": {
+    "delta": -12.336552271103436,
+    "ci_low": -15.19083380797131,
+    "ci_high": -9.415344638432794,
+    "significant_at_95": true
+   },
+   "out_frustum": {
+    "delta": 10.60011129485103,
+    "ci_low": 8.814313407309328,
+    "ci_high": 12.272993243107758,
+    "significant_at_95": true
+   },
+   "A0fixed_observed": {
+    "delta": -3.120523749909591,
+    "ci_low": -5.665089286670494,
+    "ci_high": -0.562727307976503,
+    "significant_at_95": true
+   },
+   "A0fixed_completed": {
+    "delta": -3.2055029051927963,
+    "ci_low": -5.2557375825994646,
+    "ci_high": -1.1728290998100828,
+    "significant_at_95": true
+   }
+  },
+  "Q3_once_vs_kitti360_same_recipe": {
+   "a": "once",
+   "b": "k360",
+   "all": {
+    "delta": -13.267061354170746,
+    "ci_low": -14.608276106287416,
+    "ci_high": -11.943884110048772,
+    "significant_at_95": true
+   },
+   "in_frustum": {
+    "delta": -18.536712977362065,
+    "ci_low": -20.465171316829494,
+    "ci_high": -16.694670299505482,
+    "significant_at_95": true
+   },
+   "out_frustum": {
+    "delta": -8.707208539412932,
+    "ci_low": -9.854151982776209,
+    "ci_high": -7.494325729333851,
+    "significant_at_95": true
+   },
+   "A0fixed_observed": {
+    "delta": -16.89459105118392,
+    "ci_low": -19.349760878640176,
+    "ci_high": -14.602326809675898,
+    "significant_at_95": true
+   },
+   "A0fixed_completed": {
+    "delta": -12.8166976052156,
+    "ci_low": -13.958828522381987,
+    "ci_high": -11.664767341423126,
+    "significant_at_95": true
+   }
+  }
+ }
+}

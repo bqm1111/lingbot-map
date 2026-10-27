@@ -1,0 +1,1711 @@
+{
+ "data_root": "/media/minh/MINH1/once_data/extracted/data",
+ "span_s": 2.1,
+ "grid": "sscbench_kitti360",
+ "authorized_protocol": "fixed ~2.1 s supervision window at the dataset's native rate; ~5 sweeps for ONCE at 2 FPS; no interpolation",
+ "sequences": {
+  "000076": {
+   "n_frames": 2055,
+   "n_frames_with_cloud": 2055,
+   "G1_origin": {
+    "road_z_mode_m_median": -1.7598407727479934,
+    "road_z_modes": [
+     -1.804,
+     -1.713,
+     -1.739,
+     -1.78,
+     -1.704,
+     -1.804
+    ],
+    "elevation_p1_deg_median": -24.97400161535179,
+    "points_per_sweep_median": 64914,
+    "threshold_road_z": [
+     -2.6,
+     -1.0
+    ],
+    "threshold_elev_p1_max": -8.0,
+    "pass": true
+   },
+   "G2_axis": {
+    "ours": {
+     "n": 1033,
+     "median_unit_components": [
+      1.0,
+      0.0,
+      -0.0029
+     ]
+    },
+    "once": {
+     "n": 1033,
+     "median_unit_components": [
+      0.0,
+      -1.0,
+      -0.0029
+     ]
+    },
+    "forward_component_ours_x": 1.0,
+    "component_once_y": -1.0,
+    "threshold_forward_min": 0.95,
+    "pass": true
+   },
+   "G3_roundtrip": {
+    "max_abs_deviation_from_identity": 4.17284262699269e-13,
+    "n_pairs": 399,
+    "pass": true
+   },
+   "G4_windows": {
+    "n_candidate_anchors": 56,
+    "n_windows": 50,
+    "n_rejected_gap": 6,
+    "span_s": {
+     "min": 1.997999906539917,
+     "p50": 2.0,
+     "max": 2.002000093460083
+    },
+    "sweeps": {
+     "min": 5,
+     "p50": 5.0,
+     "max": 5
+    },
+    "threshold_span": [
+     1.8,
+     2.4
+    ],
+    "threshold_sweeps": [
+     4,
+     6
+    ],
+    "pass": true
+   },
+   "G5_targets": {
+    "n_targets": 7,
+    "median": {
+     "prevalence": 0.009715313091874123,
+     "valid": 0.6056289672851562,
+     "conflict": 0.015567449851464951,
+     "z_levels": 32.0
+    },
+    "bands": {
+     "prevalence": [
+      0.015,
+      0.04
+     ],
+     "conflict_max": 0.12,
+     "valid": [
+      0.45,
+      0.75
+     ],
+     "z_levels_min": 30
+    },
+    "per_band_pass": {
+     "prevalence": false,
+     "valid": true,
+     "conflict": true,
+     "z_levels": true
+    },
+    "ranges": {
+     "prevalence": [
+      0.007181043736636639,
+      0.014825153164565563
+     ],
+     "valid": [
+      0.5514206886291504,
+      0.8304057121276855
+     ],
+     "conflict": [
+      0.008504194958431343,
+      0.022572576677054288
+     ],
+     "z_levels": [
+      31.0,
+      32.0
+     ]
+    },
+    "sweeps_used": {
+     "p50": 5.0,
+     "min": 5,
+     "max": 5
+    },
+    "span_s_used": {
+     "p50": 2.0,
+     "min": 1.998999834060669,
+     "max": 2.001000165939331
+    },
+    "per_target": [
+     {
+      "n_frames_used": 5,
+      "n_points_total": 314444,
+      "n_sky_free": 859437,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 149352,
+      "n_occupied": 16870,
+      "n_free": 1719564,
+      "n_unknown": 360718,
+      "n_conflict_to_unknown": 16084,
+      "conflict_fraction_of_touched": 0.01800956464195297,
+      "valid_fraction": 0.8279962539672852,
+      "prevalence_in_valid": 0.009715313091874123,
+      "anchor": 0,
+      "sweeps": 5,
+      "span_s": 2.0,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 301108,
+      "n_sky_free": 883337,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 159846,
+      "n_occupied": 13766,
+      "n_free": 1727721,
+      "n_unknown": 355665,
+      "n_conflict_to_unknown": 19818,
+      "conflict_fraction_of_touched": 0.022572576677054288,
+      "valid_fraction": 0.8304057121276855,
+      "prevalence_in_valid": 0.007904739119112492,
+      "anchor": 512,
+      "sweeps": 5,
+      "span_s": 1.998999834060669,
+      "z_levels_occupied": 31
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 319029,
+      "n_sky_free": 514200,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 205855,
+      "n_occupied": 17144,
+      "n_free": 1139269,
+      "n_unknown": 940739,
+      "n_conflict_to_unknown": 13962,
+      "conflict_fraction_of_touched": 0.021277860326894504,
+      "valid_fraction": 0.5514206886291504,
+      "prevalence_in_valid": 0.014825153164565563,
+      "anchor": 768,
+      "sweeps": 5,
+      "span_s": 2.0,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 319275,
+      "n_sky_free": 690772,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 122061,
+      "n_occupied": 8731,
+      "n_free": 1207109,
+      "n_unknown": 881312,
+      "n_conflict_to_unknown": 5355,
+      "conflict_fraction_of_touched": 0.010095716060578066,
+      "valid_fraction": 0.5797576904296875,
+      "prevalence_in_valid": 0.007181043736636639,
+      "anchor": 1024,
+      "sweeps": 5,
+      "span_s": 1.998999834060669,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 324256,
+      "n_sky_free": 747821,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 117780,
+      "n_occupied": 9343,
+      "n_free": 1259048,
+      "n_unknown": 828761,
+      "n_conflict_to_unknown": 4465,
+      "conflict_fraction_of_touched": 0.008504194958431343,
+      "valid_fraction": 0.6048159599304199,
+      "prevalence_in_valid": 0.0073660253547132015,
+      "anchor": 1280,
+      "sweeps": 5,
+      "span_s": 2.0,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 331469,
+      "n_sky_free": 557055,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 171786,
+      "n_occupied": 18535,
+      "n_free": 1251561,
+      "n_unknown": 827056,
+      "n_conflict_to_unknown": 10133,
+      "conflict_fraction_of_touched": 0.014011842239903536,
+      "valid_fraction": 0.6056289672851562,
+      "prevalence_in_valid": 0.01459338515996933,
+      "anchor": 1536,
+      "sweeps": 5,
+      "span_s": 2.001000165939331,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 317000,
+      "n_sky_free": 645257,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 161366,
+      "n_occupied": 15373,
+      "n_free": 1315179,
+      "n_unknown": 766600,
+      "n_conflict_to_unknown": 10837,
+      "conflict_fraction_of_touched": 0.015567449851464951,
+      "valid_fraction": 0.6344566345214844,
+      "prevalence_in_valid": 0.011553850956261158,
+      "anchor": 1792,
+      "sweeps": 5,
+      "span_s": 2.001000165939331,
+      "z_levels_occupied": 32
+     }
+    ],
+    "pass": false
+   },
+   "G6_ordering": {
+    "strictly_increasing": true,
+    "dt_min_s": 0.49899983406066895,
+    "dt_max_s": 13.0,
+    "windows_are_per_sequence": true,
+    "pass": true
+   }
+  },
+  "000080": {
+   "n_frames": 1922,
+   "n_frames_with_cloud": 1922,
+   "G1_origin": {
+    "road_z_mode_m_median": -1.743367173373699,
+    "road_z_modes": [
+     -1.735,
+     -1.746,
+     -1.773,
+     -1.741,
+     -1.708,
+     -1.753
+    ],
+    "elevation_p1_deg_median": -24.974001626854996,
+    "points_per_sweep_median": 65602,
+    "threshold_road_z": [
+     -2.6,
+     -1.0
+    ],
+    "threshold_elev_p1_max": -8.0,
+    "pass": true
+   },
+   "G2_axis": {
+    "ours": {
+     "n": 1046,
+     "median_unit_components": [
+      1.0,
+      0.0009,
+      -0.0026
+     ]
+    },
+    "once": {
+     "n": 1046,
+     "median_unit_components": [
+      0.0009,
+      -1.0,
+      -0.0026
+     ]
+    },
+    "forward_component_ours_x": 1.0,
+    "component_once_y": -1.0,
+    "threshold_forward_min": 0.95,
+    "pass": true
+   },
+   "G3_roundtrip": {
+    "max_abs_deviation_from_identity": 8.393286066166183e-14,
+    "n_pairs": 399,
+    "pass": true
+   },
+   "G4_windows": {
+    "n_candidate_anchors": 52,
+    "n_windows": 43,
+    "n_rejected_gap": 9,
+    "span_s": {
+     "min": 1.997999906539917,
+     "p50": 2.0,
+     "max": 2.002000093460083
+    },
+    "sweeps": {
+     "min": 5,
+     "p50": 5.0,
+     "max": 5
+    },
+    "threshold_span": [
+     1.8,
+     2.4
+    ],
+    "threshold_sweeps": [
+     4,
+     6
+    ],
+    "pass": true
+   },
+   "G5_targets": {
+    "n_targets": 7,
+    "median": {
+     "prevalence": 0.024498045444488525,
+     "valid": 0.5203685760498047,
+     "conflict": 0.022025803272155788,
+     "z_levels": 32.0
+    },
+    "bands": {
+     "prevalence": [
+      0.015,
+      0.04
+     ],
+     "conflict_max": 0.12,
+     "valid": [
+      0.45,
+      0.75
+     ],
+     "z_levels_min": 30
+    },
+    "per_band_pass": {
+     "prevalence": true,
+     "valid": true,
+     "conflict": true,
+     "z_levels": true
+    },
+    "ranges": {
+     "prevalence": [
+      0.009453224949538708,
+      0.03242853283882141
+     ],
+     "valid": [
+      0.38120365142822266,
+      0.634432315826416
+     ],
+     "conflict": [
+      0.009661975707446384,
+      0.02751135855948123
+     ],
+     "z_levels": [
+      28.0,
+      32.0
+     ]
+    },
+    "sweeps_used": {
+     "p50": 5.0,
+     "min": 5,
+     "max": 5
+    },
+    "span_s_used": {
+     "p50": 2.0,
+     "min": 1.999000072479248,
+     "max": 2.002000093460083
+    },
+    "per_target": [
+     {
+      "n_frames_used": 5,
+      "n_points_total": 344340,
+      "n_sky_free": 476611,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 174444,
+      "n_occupied": 14722,
+      "n_free": 784720,
+      "n_unknown": 1297710,
+      "n_conflict_to_unknown": 7263,
+      "conflict_fraction_of_touched": 0.022002823438172156,
+      "valid_fraction": 0.38120365142822266,
+      "prevalence_in_valid": 0.01841534487903118,
+      "anchor": 0,
+      "sweeps": 5,
+      "span_s": 2.0,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 337705,
+      "n_sky_free": 552466,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 225708,
+      "n_occupied": 23634,
+      "n_free": 901053,
+      "n_unknown": 1172465,
+      "n_conflict_to_unknown": 10530,
+      "conflict_fraction_of_touched": 0.02751135855948123,
+      "valid_fraction": 0.44092512130737305,
+      "prevalence_in_valid": 0.025558920577168465,
+      "anchor": 240,
+      "sweeps": 5,
+      "span_s": 2.0,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 315275,
+      "n_sky_free": 555609,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 129339,
+      "n_occupied": 9130,
+      "n_free": 956678,
+      "n_unknown": 1131344,
+      "n_conflict_to_unknown": 4002,
+      "conflict_fraction_of_touched": 0.009661975707446384,
+      "valid_fraction": 0.46053314208984375,
+      "prevalence_in_valid": 0.009453224949538708,
+      "anchor": 480,
+      "sweeps": 5,
+      "span_s": 2.0,
+      "z_levels_occupied": 28
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 340874,
+      "n_sky_free": 370498,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 242037,
+      "n_occupied": 35389,
+      "n_free": 1055903,
+      "n_unknown": 1005860,
+      "n_conflict_to_unknown": 17124,
+      "conflict_fraction_of_touched": 0.023205830458126783,
+      "valid_fraction": 0.5203685760498047,
+      "prevalence_in_valid": 0.03242853283882141,
+      "anchor": 720,
+      "sweeps": 5,
+      "span_s": 1.999000072479248,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 335081,
+      "n_sky_free": 463741,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 216931,
+      "n_occupied": 31682,
+      "n_free": 1261564,
+      "n_unknown": 803906,
+      "n_conflict_to_unknown": 18682,
+      "conflict_fraction_of_touched": 0.022025803272155788,
+      "valid_fraction": 0.6166677474975586,
+      "prevalence_in_valid": 0.024498045444488525,
+      "anchor": 1200,
+      "sweeps": 5,
+      "span_s": 2.002000093460083,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 342834,
+      "n_sky_free": 570457,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 231992,
+      "n_occupied": 29539,
+      "n_free": 1157941,
+      "n_unknown": 909672,
+      "n_conflict_to_unknown": 17032,
+      "conflict_fraction_of_touched": 0.026862023010622106,
+      "valid_fraction": 0.5662345886230469,
+      "prevalence_in_valid": 0.024875367060303688,
+      "anchor": 1440,
+      "sweeps": 5,
+      "span_s": 2.0,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 328575,
+      "n_sky_free": 459924,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 197910,
+      "n_occupied": 25305,
+      "n_free": 1305196,
+      "n_unknown": 766651,
+      "n_conflict_to_unknown": 15129,
+      "conflict_fraction_of_touched": 0.017081288824959975,
+      "valid_fraction": 0.634432315826416,
+      "prevalence_in_valid": 0.019019151106476784,
+      "anchor": 1680,
+      "sweeps": 5,
+      "span_s": 2.0,
+      "z_levels_occupied": 32
+     }
+    ],
+    "pass": true
+   },
+   "G6_ordering": {
+    "strictly_increasing": true,
+    "dt_min_s": 0.49899983406066895,
+    "dt_max_s": 13.000999927520752,
+    "windows_are_per_sequence": true,
+    "pass": true
+   }
+  },
+  "000092": {
+   "n_frames": 1165,
+   "n_frames_with_cloud": 1165,
+   "G1_origin": {
+    "road_z_mode_m_median": -1.737876029163599,
+    "road_z_modes": [
+     -1.774,
+     -1.771,
+     -1.735,
+     -1.714,
+     -1.73,
+     -1.741
+    ],
+    "elevation_p1_deg_median": -24.974001672167752,
+    "points_per_sweep_median": 66191,
+    "threshold_road_z": [
+     -2.6,
+     -1.0
+    ],
+    "threshold_elev_p1_max": -8.0,
+    "pass": true
+   },
+   "G2_axis": {
+    "ours": {
+     "n": 616,
+     "median_unit_components": [
+      1.0,
+      0.0003,
+      -0.0026
+     ]
+    },
+    "once": {
+     "n": 616,
+     "median_unit_components": [
+      0.0003,
+      -1.0,
+      -0.0026
+     ]
+    },
+    "forward_component_ours_x": 1.0,
+    "component_once_y": -1.0,
+    "threshold_forward_min": 0.95,
+    "pass": true
+   },
+   "G3_roundtrip": {
+    "max_abs_deviation_from_identity": 3.701483564100272e-13,
+    "n_pairs": 399,
+    "pass": true
+   },
+   "G4_windows": {
+    "n_candidate_anchors": 32,
+    "n_windows": 29,
+    "n_rejected_gap": 3,
+    "span_s": {
+     "min": 1.997999906539917,
+     "p50": 2.0,
+     "max": 2.003000020980835
+    },
+    "sweeps": {
+     "min": 5,
+     "p50": 5.0,
+     "max": 5
+    },
+    "threshold_span": [
+     1.8,
+     2.4
+    ],
+    "threshold_sweeps": [
+     4,
+     6
+    ],
+    "pass": true
+   },
+   "G5_targets": {
+    "n_targets": 8,
+    "median": {
+     "prevalence": 0.012097558937966824,
+     "valid": 0.6339952945709229,
+     "conflict": 0.014285686696154617,
+     "z_levels": 32.0
+    },
+    "bands": {
+     "prevalence": [
+      0.015,
+      0.04
+     ],
+     "conflict_max": 0.12,
+     "valid": [
+      0.45,
+      0.75
+     ],
+     "z_levels_min": 30
+    },
+    "per_band_pass": {
+     "prevalence": false,
+     "valid": true,
+     "conflict": true,
+     "z_levels": true
+    },
+    "ranges": {
+     "prevalence": [
+      0.005835673771798611,
+      0.032901469618082047
+     ],
+     "valid": [
+      0.47884082794189453,
+      0.7349967956542969
+     ],
+     "conflict": [
+      0.004984172800743177,
+      0.028941929812833275
+     ],
+     "z_levels": [
+      25.0,
+      32.0
+     ]
+    },
+    "sweeps_used": {
+     "p50": 5.0,
+     "min": 5,
+     "max": 5
+    },
+    "span_s_used": {
+     "p50": 1.999500036239624,
+     "min": 1.997999906539917,
+     "max": 2.0
+    },
+    "per_target": [
+     {
+      "n_frames_used": 5,
+      "n_points_total": 332810,
+      "n_sky_free": 539071,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 142138,
+      "n_occupied": 18423,
+      "n_free": 1281148,
+      "n_unknown": 797581,
+      "n_conflict_to_unknown": 15355,
+      "conflict_fraction_of_touched": 0.019791069207519447,
+      "valid_fraction": 0.6196837425231934,
+      "prevalence_in_valid": 0.014176216907799244,
+      "anchor": 0,
+      "sweeps": 5,
+      "span_s": 2.0,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 321260,
+      "n_sky_free": 854170,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 107219,
+      "n_occupied": 8835,
+      "n_free": 1505129,
+      "n_unknown": 583188,
+      "n_conflict_to_unknown": 3305,
+      "conflict_fraction_of_touched": 0.004984172800743177,
+      "valid_fraction": 0.7219142913818359,
+      "prevalence_in_valid": 0.005835673771798611,
+      "anchor": 145,
+      "sweeps": 5,
+      "span_s": 2.0,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 327727,
+      "n_sky_free": 526464,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 126615,
+      "n_occupied": 10061,
+      "n_free": 994141,
+      "n_unknown": 1092950,
+      "n_conflict_to_unknown": 2396,
+      "conflict_fraction_of_touched": 0.004990273548634339,
+      "valid_fraction": 0.47884082794189453,
+      "prevalence_in_valid": 0.010018900968134403,
+      "anchor": 290,
+      "sweeps": 5,
+      "span_s": 1.999000072479248,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 322497,
+      "n_sky_free": 561095,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 155617,
+      "n_occupied": 22230,
+      "n_free": 1519170,
+      "n_unknown": 555752,
+      "n_conflict_to_unknown": 17332,
+      "conflict_fraction_of_touched": 0.017373052523112113,
+      "valid_fraction": 0.7349967956542969,
+      "prevalence_in_valid": 0.014421953819692135,
+      "anchor": 435,
+      "sweeps": 5,
+      "span_s": 1.997999906539917,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 337542,
+      "n_sky_free": 464652,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 165633,
+      "n_occupied": 23281,
+      "n_free": 1054986,
+      "n_unknown": 1018885,
+      "n_conflict_to_unknown": 11071,
+      "conflict_fraction_of_touched": 0.01772250378590204,
+      "valid_fraction": 0.514157772064209,
+      "prevalence_in_valid": 0.021591126918792725,
+      "anchor": 580,
+      "sweeps": 5,
+      "span_s": 2.0,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 308233,
+      "n_sky_free": 798987,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 108706,
+      "n_occupied": 9787,
+      "n_free": 1349811,
+      "n_unknown": 737554,
+      "n_conflict_to_unknown": 6349,
+      "conflict_fraction_of_touched": 0.011198320869197122,
+      "valid_fraction": 0.6483068466186523,
+      "prevalence_in_valid": 0.007198451552540064,
+      "anchor": 725,
+      "sweeps": 5,
+      "span_s": 1.999000072479248,
+      "z_levels_occupied": 25
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 307815,
+      "n_sky_free": 789478,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 107300,
+      "n_occupied": 10048,
+      "n_free": 1379748,
+      "n_unknown": 707356,
+      "n_conflict_to_unknown": 3871,
+      "conflict_fraction_of_touched": 0.006406935578105527,
+      "valid_fraction": 0.6627063751220703,
+      "prevalence_in_valid": 0.00722983805462718,
+      "anchor": 870,
+      "sweeps": 5,
+      "span_s": 1.999000072479248,
+      "z_levels_occupied": 25
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 336545,
+      "n_sky_free": 363986,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 244258,
+      "n_occupied": 34438,
+      "n_free": 1012263,
+      "n_unknown": 1050451,
+      "n_conflict_to_unknown": 20348,
+      "conflict_fraction_of_touched": 0.028941929812833275,
+      "valid_fraction": 0.49910593032836914,
+      "prevalence_in_valid": 0.032901469618082047,
+      "anchor": 1015,
+      "sweeps": 5,
+      "span_s": 2.0,
+      "z_levels_occupied": 32
+     }
+    ],
+    "pass": false
+   },
+   "G6_ordering": {
+    "strictly_increasing": true,
+    "dt_min_s": 0.49899983406066895,
+    "dt_max_s": 12.500999927520752,
+    "windows_are_per_sequence": true,
+    "pass": true
+   }
+  },
+  "000104": {
+   "n_frames": 1230,
+   "n_frames_with_cloud": 1230,
+   "G1_origin": {
+    "road_z_mode_m_median": -1.7300736406445503,
+    "road_z_modes": [
+     -0.023,
+     -1.77,
+     -1.776,
+     -1.721,
+     -1.739,
+     -0.046
+    ],
+    "elevation_p1_deg_median": -24.974001632976318,
+    "points_per_sweep_median": 67328,
+    "threshold_road_z": [
+     -2.6,
+     -1.0
+    ],
+    "threshold_elev_p1_max": -8.0,
+    "pass": true
+   },
+   "G2_axis": {
+    "ours": {
+     "n": 894,
+     "median_unit_components": [
+      1.0,
+      0.0006,
+      -0.002
+     ]
+    },
+    "once": {
+     "n": 894,
+     "median_unit_components": [
+      0.0006,
+      -1.0,
+      -0.002
+     ]
+    },
+    "forward_component_ours_x": 1.0,
+    "component_once_y": -1.0,
+    "threshold_forward_min": 0.95,
+    "pass": true
+   },
+   "G3_roundtrip": {
+    "max_abs_deviation_from_identity": 5.808686864838819e-13,
+    "n_pairs": 399,
+    "pass": true
+   },
+   "G4_windows": {
+    "n_candidate_anchors": 34,
+    "n_windows": 32,
+    "n_rejected_gap": 2,
+    "span_s": {
+     "min": 1.997999906539917,
+     "p50": 2.0,
+     "max": 2.002000093460083
+    },
+    "sweeps": {
+     "min": 5,
+     "p50": 5.0,
+     "max": 5
+    },
+    "threshold_span": [
+     1.8,
+     2.4
+    ],
+    "threshold_sweeps": [
+     4,
+     6
+    ],
+    "pass": true
+   },
+   "G5_targets": {
+    "n_targets": 8,
+    "median": {
+     "prevalence": 0.015102965757250786,
+     "valid": 0.5690340995788574,
+     "conflict": 0.021272378282986587,
+     "z_levels": 32.0
+    },
+    "bands": {
+     "prevalence": [
+      0.015,
+      0.04
+     ],
+     "conflict_max": 0.12,
+     "valid": [
+      0.45,
+      0.75
+     ],
+     "z_levels_min": 30
+    },
+    "per_band_pass": {
+     "prevalence": true,
+     "valid": true,
+     "conflict": true,
+     "z_levels": true
+    },
+    "ranges": {
+     "prevalence": [
+      0.00613064132630825,
+      0.03007962927222252
+     ],
+     "valid": [
+      0.5213046073913574,
+      0.8602910041809082
+     ],
+     "conflict": [
+      0.004004491017964072,
+      0.030144424216421804
+     ],
+     "z_levels": [
+      27.0,
+      32.0
+     ]
+    },
+    "sweeps_used": {
+     "p50": 5.0,
+     "min": 5,
+     "max": 5
+    },
+    "span_s_used": {
+     "p50": 2.0,
+     "min": 1.999000072479248,
+     "max": 2.000999927520752
+    },
+    "per_target": [
+     {
+      "n_frames_used": 5,
+      "n_points_total": 317594,
+      "n_sky_free": 704096,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 150463,
+      "n_occupied": 9350,
+      "n_free": 1515776,
+      "n_unknown": 572026,
+      "n_conflict_to_unknown": 12046,
+      "conflict_fraction_of_touched": 0.01445966514459665,
+      "valid_fraction": 0.7272367477416992,
+      "prevalence_in_valid": 0.00613064132630825,
+      "anchor": 0,
+      "sweeps": 5,
+      "span_s": 2.0,
+      "z_levels_occupied": 31
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 326872,
+      "n_sky_free": 572684,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 109765,
+      "n_occupied": 8176,
+      "n_free": 1203220,
+      "n_unknown": 885756,
+      "n_conflict_to_unknown": 2568,
+      "conflict_fraction_of_touched": 0.004004491017964072,
+      "valid_fraction": 0.5776386260986328,
+      "prevalence_in_valid": 0.006749237887561321,
+      "anchor": 153,
+      "sweeps": 5,
+      "span_s": 2.000999927520752,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 318719,
+      "n_sky_free": 764263,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 146250,
+      "n_occupied": 16670,
+      "n_free": 1787491,
+      "n_unknown": 292991,
+      "n_conflict_to_unknown": 13677,
+      "conflict_fraction_of_touched": 0.012981515316897231,
+      "valid_fraction": 0.8602910041809082,
+      "prevalence_in_valid": 0.00923975184559822,
+      "anchor": 306,
+      "sweeps": 5,
+      "span_s": 2.000999927520752,
+      "z_levels_occupied": 27
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 338240,
+      "n_sky_free": 571818,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 212155,
+      "n_occupied": 28543,
+      "n_free": 1146763,
+      "n_unknown": 921846,
+      "n_conflict_to_unknown": 13919,
+      "conflict_fraction_of_touched": 0.02254428602202437,
+      "valid_fraction": 0.560429573059082,
+      "prevalence_in_valid": 0.024285590276122093,
+      "anchor": 459,
+      "sweeps": 5,
+      "span_s": 1.999000072479248,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 330108,
+      "n_sky_free": 683476,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 172845,
+      "n_occupied": 16985,
+      "n_free": 1102731,
+      "n_unknown": 977436,
+      "n_conflict_to_unknown": 11752,
+      "conflict_fraction_of_touched": 0.026232611296630296,
+      "valid_fraction": 0.5339221954345703,
+      "prevalence_in_valid": 0.015169025398790836,
+      "anchor": 612,
+      "sweeps": 5,
+      "span_s": 2.000999927520752,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 340744,
+      "n_sky_free": 386756,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 231777,
+      "n_occupied": 34016,
+      "n_free": 1096849,
+      "n_unknown": 966287,
+      "n_conflict_to_unknown": 19022,
+      "conflict_fraction_of_touched": 0.024926257746048845,
+      "valid_fraction": 0.539238452911377,
+      "prevalence_in_valid": 0.03007962927222252,
+      "anchor": 765,
+      "sweeps": 5,
+      "span_s": 2.0,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 334066,
+      "n_sky_free": 424140,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 243438,
+      "n_occupied": 29344,
+      "n_free": 1063911,
+      "n_unknown": 1003897,
+      "n_conflict_to_unknown": 20797,
+      "conflict_fraction_of_touched": 0.030144424216421804,
+      "valid_fraction": 0.5213046073913574,
+      "prevalence_in_valid": 0.026840947568416595,
+      "anchor": 918,
+      "sweeps": 5,
+      "span_s": 1.999000072479248,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 322982,
+      "n_sky_free": 598932,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 160948,
+      "n_occupied": 21533,
+      "n_free": 1410477,
+      "n_unknown": 665142,
+      "n_conflict_to_unknown": 17002,
+      "conflict_fraction_of_touched": 0.020000470543948805,
+      "valid_fraction": 0.682835578918457,
+      "prevalence_in_valid": 0.015036906115710735,
+      "anchor": 1071,
+      "sweeps": 5,
+      "span_s": 2.0,
+      "z_levels_occupied": 32
+     }
+    ],
+    "pass": true
+   },
+   "G6_ordering": {
+    "strictly_increasing": true,
+    "dt_min_s": 0.49899983406066895,
+    "dt_max_s": 13.0,
+    "windows_are_per_sequence": true,
+    "pass": true
+   }
+  },
+  "000113": {
+   "n_frames": 1891,
+   "n_frames_with_cloud": 1891,
+   "G1_origin": {
+    "road_z_mode_m_median": -1.7620307053811848,
+    "road_z_modes": [
+     -1.784,
+     -1.711,
+     -1.736,
+     -1.802,
+     -1.747,
+     -1.777
+    ],
+    "elevation_p1_deg_median": -24.974001654103283,
+    "points_per_sweep_median": 64128,
+    "threshold_road_z": [
+     -2.6,
+     -1.0
+    ],
+    "threshold_elev_p1_max": -8.0,
+    "pass": true
+   },
+   "G2_axis": {
+    "ours": {
+     "n": 1047,
+     "median_unit_components": [
+      1.0,
+      0.0006,
+      -0.0016
+     ]
+    },
+    "once": {
+     "n": 1047,
+     "median_unit_components": [
+      0.0006,
+      -1.0,
+      -0.0016
+     ]
+    },
+    "forward_component_ours_x": 1.0,
+    "component_once_y": -1.0,
+    "threshold_forward_min": 0.95,
+    "pass": true
+   },
+   "G3_roundtrip": {
+    "max_abs_deviation_from_identity": 7.132072710192006e-13,
+    "n_pairs": 399,
+    "pass": true
+   },
+   "G4_windows": {
+    "n_candidate_anchors": 52,
+    "n_windows": 50,
+    "n_rejected_gap": 2,
+    "span_s": {
+     "min": 1.5,
+     "p50": 2.0,
+     "max": 2.002000093460083
+    },
+    "sweeps": {
+     "min": 4,
+     "p50": 5.0,
+     "max": 5
+    },
+    "threshold_span": [
+     1.8,
+     2.4
+    ],
+    "threshold_sweeps": [
+     4,
+     6
+    ],
+    "pass": true
+   },
+   "G5_targets": {
+    "n_targets": 7,
+    "median": {
+     "prevalence": 0.019733047112822533,
+     "valid": 0.5729794502258301,
+     "conflict": 0.02215348194574249,
+     "z_levels": 32.0
+    },
+    "bands": {
+     "prevalence": [
+      0.015,
+      0.04
+     ],
+     "conflict_max": 0.12,
+     "valid": [
+      0.45,
+      0.75
+     ],
+     "z_levels_min": 30
+    },
+    "per_band_pass": {
+     "prevalence": true,
+     "valid": true,
+     "conflict": true,
+     "z_levels": true
+    },
+    "ranges": {
+     "prevalence": [
+      0.011149316094815731,
+      0.03417736664414406
+     ],
+     "valid": [
+      0.4074831008911133,
+      0.7592654228210449
+     ],
+     "conflict": [
+      0.006544126295429893,
+      0.024788102744327873
+     ],
+     "z_levels": [
+      31.0,
+      32.0
+     ]
+    },
+    "sweeps_used": {
+     "p50": 5.0,
+     "min": 5,
+     "max": 5
+    },
+    "span_s_used": {
+     "p50": 2.0,
+     "min": 1.998999834060669,
+     "max": 2.001000165939331
+    },
+    "per_target": [
+     {
+      "n_frames_used": 5,
+      "n_points_total": 321340,
+      "n_sky_free": 706058,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 175007,
+      "n_occupied": 17753,
+      "n_free": 1574542,
+      "n_unknown": 504857,
+      "n_conflict_to_unknown": 21733,
+      "conflict_fraction_of_touched": 0.02393581285725299,
+      "valid_fraction": 0.7592654228210449,
+      "prevalence_in_valid": 0.011149316094815731,
+      "anchor": 0,
+      "sweeps": 5,
+      "span_s": 2.0,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 324323,
+      "n_sky_free": 644384,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 152831,
+      "n_occupied": 18494,
+      "n_free": 1323852,
+      "n_unknown": 754806,
+      "n_conflict_to_unknown": 11389,
+      "conflict_fraction_of_touched": 0.016055521173579793,
+      "valid_fraction": 0.640080451965332,
+      "prevalence_in_valid": 0.013777372427284718,
+      "anchor": 236,
+      "sweeps": 5,
+      "span_s": 2.0,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 335763,
+      "n_sky_free": 543309,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 238990,
+      "n_occupied": 33596,
+      "n_free": 1251150,
+      "n_unknown": 812406,
+      "n_conflict_to_unknown": 18132,
+      "conflict_fraction_of_touched": 0.02387143235176791,
+      "valid_fraction": 0.612614631652832,
+      "prevalence_in_valid": 0.026149915531277657,
+      "anchor": 472,
+      "sweeps": 5,
+      "span_s": 2.0,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 338544,
+      "n_sky_free": 446850,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 233233,
+      "n_occupied": 29105,
+      "n_free": 1172520,
+      "n_unknown": 895527,
+      "n_conflict_to_unknown": 19185,
+      "conflict_fraction_of_touched": 0.024788102744327873,
+      "valid_fraction": 0.5729794502258301,
+      "prevalence_in_valid": 0.02422136813402176,
+      "anchor": 708,
+      "sweeps": 5,
+      "span_s": 1.998999834060669,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 337960,
+      "n_sky_free": 327635,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 229801,
+      "n_occupied": 34176,
+      "n_free": 965784,
+      "n_unknown": 1097192,
+      "n_conflict_to_unknown": 15211,
+      "conflict_fraction_of_touched": 0.02212393241953876,
+      "valid_fraction": 0.4768180847167969,
+      "prevalence_in_valid": 0.03417736664414406,
+      "anchor": 944,
+      "sweeps": 5,
+      "span_s": 1.998999834060669,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 312254,
+      "n_sky_free": 550481,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 139205,
+      "n_occupied": 9874,
+      "n_free": 844680,
+      "n_unknown": 1242598,
+      "n_conflict_to_unknown": 2003,
+      "conflict_fraction_of_touched": 0.006544126295429893,
+      "valid_fraction": 0.4074831008911133,
+      "prevalence_in_valid": 0.011554565280675888,
+      "anchor": 1180,
+      "sweeps": 5,
+      "span_s": 2.001000165939331,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 336210,
+      "n_sky_free": 492386,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 242889,
+      "n_occupied": 18780,
+      "n_free": 932923,
+      "n_unknown": 1145449,
+      "n_conflict_to_unknown": 10406,
+      "conflict_fraction_of_touched": 0.02215348194574249,
+      "valid_fraction": 0.45380735397338867,
+      "prevalence_in_valid": 0.019733047112822533,
+      "anchor": 1416,
+      "sweeps": 5,
+      "span_s": 2.0,
+      "z_levels_occupied": 31
+     }
+    ],
+    "pass": true
+   },
+   "G6_ordering": {
+    "strictly_increasing": true,
+    "dt_min_s": 0.49899983406066895,
+    "dt_max_s": 12.5,
+    "windows_are_per_sequence": true,
+    "pass": true
+   }
+  },
+  "000121": {
+   "n_frames": 1714,
+   "n_frames_with_cloud": 1714,
+   "G1_origin": {
+    "road_z_mode_m_median": -1.7366221484541895,
+    "road_z_modes": [
+     -0.031,
+     -1.736,
+     -1.798,
+     -1.737,
+     -1.763,
+     -0.33
+    ],
+    "elevation_p1_deg_median": -24.9740016528432,
+    "points_per_sweep_median": 65918,
+    "threshold_road_z": [
+     -2.6,
+     -1.0
+    ],
+    "threshold_elev_p1_max": -8.0,
+    "pass": true
+   },
+   "G2_axis": {
+    "ours": {
+     "n": 1207,
+     "median_unit_components": [
+      1.0,
+      0.0004,
+      -0.0021
+     ]
+    },
+    "once": {
+     "n": 1207,
+     "median_unit_components": [
+      0.0004,
+      -1.0,
+      -0.0021
+     ]
+    },
+    "forward_component_ours_x": 1.0,
+    "component_once_y": -1.0,
+    "threshold_forward_min": 0.95,
+    "pass": true
+   },
+   "G3_roundtrip": {
+    "max_abs_deviation_from_identity": 6.497025140106416e-13,
+    "n_pairs": 399,
+    "pass": true
+   },
+   "G4_windows": {
+    "n_candidate_anchors": 47,
+    "n_windows": 45,
+    "n_rejected_gap": 2,
+    "span_s": {
+     "min": 1.997999906539917,
+     "p50": 2.0,
+     "max": 2.001999855041504
+    },
+    "sweeps": {
+     "min": 5,
+     "p50": 5.0,
+     "max": 5
+    },
+    "threshold_span": [
+     1.8,
+     2.4
+    ],
+    "threshold_sweeps": [
+     4,
+     6
+    ],
+    "pass": true
+   },
+   "G5_targets": {
+    "n_targets": 7,
+    "median": {
+     "prevalence": 0.013237645849585533,
+     "valid": 0.5550165176391602,
+     "conflict": 0.019237977852182696,
+     "z_levels": 31.0
+    },
+    "bands": {
+     "prevalence": [
+      0.015,
+      0.04
+     ],
+     "conflict_max": 0.12,
+     "valid": [
+      0.45,
+      0.75
+     ],
+     "z_levels_min": 30
+    },
+    "per_band_pass": {
+     "prevalence": false,
+     "valid": true,
+     "conflict": true,
+     "z_levels": true
+    },
+    "ranges": {
+     "prevalence": [
+      0.0071658543311059475,
+      0.01930423267185688
+     ],
+     "valid": [
+      0.20845317840576172,
+      0.8035788536071777
+     ],
+     "conflict": [
+      0.017183683387116712,
+      0.05137879780057584
+     ],
+     "z_levels": [
+      20.0,
+      32.0
+     ]
+    },
+    "sweeps_used": {
+     "p50": 5.0,
+     "min": 5,
+     "max": 5
+    },
+    "span_s_used": {
+     "p50": 2.0,
+     "min": 1.999000072479248,
+     "max": 2.0
+    },
+    "per_target": [
+     {
+      "n_frames_used": 5,
+      "n_points_total": 312312,
+      "n_sky_free": 780907,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 140278,
+      "n_occupied": 7703,
+      "n_free": 1067256,
+      "n_unknown": 1022193,
+      "n_conflict_to_unknown": 5295,
+      "conflict_fraction_of_touched": 0.017688501972627085,
+      "valid_fraction": 0.512580394744873,
+      "prevalence_in_valid": 0.0071658543311059475,
+      "anchor": 0,
+      "sweeps": 5,
+      "span_s": 2.0,
+      "z_levels_occupied": 20
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 293609,
+      "n_sky_free": 1092637,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 150312,
+      "n_occupied": 13225,
+      "n_free": 1672002,
+      "n_unknown": 411925,
+      "n_conflict_to_unknown": 19108,
+      "conflict_fraction_of_touched": 0.03123763687309751,
+      "valid_fraction": 0.8035788536071777,
+      "prevalence_in_valid": 0.007847607135772705,
+      "anchor": 214,
+      "sweeps": 5,
+      "span_s": 1.999000072479248,
+      "z_levels_occupied": 31
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 300653,
+      "n_sky_free": 759939,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 216094,
+      "n_occupied": 17000,
+      "n_free": 1292646,
+      "n_unknown": 787506,
+      "n_conflict_to_unknown": 16583,
+      "conflict_fraction_of_touched": 0.0292835826166805,
+      "valid_fraction": 0.6244878768920898,
+      "prevalence_in_valid": 0.012980607338249683,
+      "anchor": 428,
+      "sweeps": 5,
+      "span_s": 1.999000072479248,
+      "z_levels_occupied": 27
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 329000,
+      "n_sky_free": 396070,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 169942,
+      "n_occupied": 8295,
+      "n_free": 618327,
+      "n_unknown": 1470530,
+      "n_conflict_to_unknown": 4031,
+      "conflict_fraction_of_touched": 0.017183683387116712,
+      "valid_fraction": 0.2987966537475586,
+      "prevalence_in_valid": 0.013237645849585533,
+      "anchor": 642,
+      "sweeps": 5,
+      "span_s": 2.0,
+      "z_levels_occupied": 31
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 325503,
+      "n_sky_free": 694588,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 182165,
+      "n_occupied": 22390,
+      "n_free": 1598412,
+      "n_unknown": 476350,
+      "n_conflict_to_unknown": 18168,
+      "conflict_fraction_of_touched": 0.019237977852182696,
+      "valid_fraction": 0.7728586196899414,
+      "prevalence_in_valid": 0.013814149424433708,
+      "anchor": 856,
+      "sweeps": 5,
+      "span_s": 1.999000072479248,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 294696,
+      "n_sky_free": 588307,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 195813,
+      "n_occupied": 20844,
+      "n_free": 1143110,
+      "n_unknown": 933198,
+      "n_conflict_to_unknown": 10888,
+      "conflict_fraction_of_touched": 0.018563257094632035,
+      "valid_fraction": 0.5550165176391602,
+      "prevalence_in_valid": 0.017907923087477684,
+      "anchor": 1284,
+      "sweeps": 5,
+      "span_s": 2.0,
+      "z_levels_occupied": 32
+     },
+     {
+      "n_frames_used": 5,
+      "n_points_total": 176240,
+      "n_sky_free": 345894,
+      "sky_margin_vox": 1,
+      "sky_neighbourhood_vox": 7,
+      "n_points_in_grid": 142832,
+      "n_occupied": 8439,
+      "n_free": 428719,
+      "n_unknown": 1659994,
+      "n_conflict_to_unknown": 4943,
+      "conflict_fraction_of_touched": 0.05137879780057584,
+      "valid_fraction": 0.20845317840576172,
+      "prevalence_in_valid": 0.01930423267185688,
+      "anchor": 1498,
+      "sweeps": 5,
+      "span_s": 2.0,
+      "z_levels_occupied": 26
+     }
+    ],
+    "pass": false
+   },
+   "G6_ordering": {
+    "strictly_increasing": true,
+    "dt_min_s": 0.49899983406066895,
+    "dt_max_s": 13.000999927520752,
+    "windows_are_per_sequence": true,
+    "pass": true
+   }
+  }
+ },
+ "summary": {
+  "G1_origin": {
+   "pass_sequences": 6,
+   "of": 6,
+   "all_pass": true
+  },
+  "G2_axis": {
+   "pass_sequences": 6,
+   "of": 6,
+   "all_pass": true
+  },
+  "G3_roundtrip": {
+   "pass_sequences": 6,
+   "of": 6,
+   "all_pass": true
+  },
+  "G4_windows": {
+   "pass_sequences": 6,
+   "of": 6,
+   "all_pass": true
+  },
+  "G5_targets": {
+   "pass_sequences": 3,
+   "of": 6,
+   "all_pass": false
+  },
+  "G6_ordering": {
+   "pass_sequences": 6,
+   "of": 6,
+   "all_pass": true
+  }
+ },
+ "all_gates_pass": false
+}

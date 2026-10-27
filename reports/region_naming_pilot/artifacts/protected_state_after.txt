@@ -1,0 +1,32 @@
+# protected-state snapshot, taken at the end of the run
+
+## /home/minh/workspace/lingbot-map_fork
+HEAD 148c46e935858457887b17944f5c5427147ee964
+branch feature-completion-study
+--- status --porcelain ---
+M artifacts/gate21_future_semantic_prior/report.md
+ M gates/gate6/_gate6_names.txt
+ M tools/occany_comparison/scoring.py
+ M tools/semantic_completion/reports/figures.py
+ M tools/semantic_completion/reports/final.py
+?? CURRENT_SYSTEM.md
+?? artifacts/waymo_supervision_pilot/logs/fetch_corpus.json
+?? artifacts/waymo_supervision_pilot/logs/waymo_clips.json
+?? reports/region_naming_pilot/
+--- stat-sum (mtime,size of tracked+untracked, sha256 of the listing) ---
+787a523e7e66fbeaa722925d288703d657abd139244810ab66c670659b14ee49  -
+
+## /home/minh/workspace/StreamingSSC
+HEAD HEAD
+branch HEAD
+--- status --porcelain ---
+?? .gitignore
+?? README.md
+?? configs/
+?? docs/
+?? pyproject.toml
+?? scripts/
+?? src/
+?? tests/
+--- stat-sum (mtime,size of tracked+untracked, sha256 of the listing) ---
+7f0cca96f5d78037db2b389e908e9b9734bc31e48066cf44e90cbbe2146ff16f  -

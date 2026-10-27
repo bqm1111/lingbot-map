@@ -1,0 +1,182 @@
+{
+ "scene_json": "ddad_train_val__000020__scene_c81887aa44cb49e8b211fb0aa4accbbad119e853.json",
+ "grid": "sscbench_kitti360",
+ "dims": [
+  256,
+  256,
+  32
+ ],
+ "voxel_size": 0.2,
+ "grid_origin": [
+  0.0,
+  -25.6,
+  -2.0
+ ],
+ "sweeps": 21,
+ "arms": {
+  "published_vehicle_origin": {
+   "mount_in_vehicle_frame": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "describe": {
+    "scene": "000020",
+    "n_samples_with_cloud": 100,
+    "points_per_sweep": 229726,
+    "path_length_m": 38.592896635892025,
+    "median_step_m": 0.3743468509433901,
+    "range_m": {
+     "p50": 18.371153112031113,
+     "p90": 71.72150533424599,
+     "max": 236.99034229713706
+    },
+    "z_all": {
+     "min": -23.692994056687688,
+     "max": 27.045115165471554
+    },
+    "z_within_6m_horizontal": {
+     "n": 43977,
+     "p01": 0.02151700250023765,
+     "p50": 1.2889501911583992,
+     "mode_bin": 0.07794721071969832
+    }
+   },
+   "targets": [
+    {
+     "n_frames_used": 21,
+     "n_points_total": 4843950,
+     "n_sky_free": 244412,
+     "sky_margin_vox": 1,
+     "sky_neighbourhood_vox": 7,
+     "n_points_in_grid": 2438227,
+     "n_occupied": 11909,
+     "n_free": 1256482,
+     "n_unknown": 828761,
+     "n_conflict_to_unknown": 109442,
+     "conflict_fraction_of_touched": 0.09655900146547487,
+     "valid_fraction": 0.6048159599304199,
+     "prevalence_in_valid": 0.009389060549438,
+     "anchor": 0,
+     "z_voxels_occupied": 27
+    },
+    {
+     "n_frames_used": 21,
+     "n_points_total": 4559196,
+     "n_sky_free": 246237,
+     "sky_margin_vox": 1,
+     "sky_neighbourhood_vox": 7,
+     "n_points_in_grid": 2294816,
+     "n_occupied": 8166,
+     "n_free": 1214758,
+     "n_unknown": 874228,
+     "n_conflict_to_unknown": 87895,
+     "conflict_fraction_of_touched": 0.08256292140952975,
+     "valid_fraction": 0.5831356048583984,
+     "prevalence_in_valid": 0.0066774385049939156,
+     "anchor": 20,
+     "z_voxels_occupied": 31
+    },
+    {
+     "n_frames_used": 21,
+     "n_points_total": 4709803,
+     "n_sky_free": 296671,
+     "sky_margin_vox": 1,
+     "sky_neighbourhood_vox": 7,
+     "n_points_in_grid": 2465914,
+     "n_occupied": 5376,
+     "n_free": 1287144,
+     "n_unknown": 804632,
+     "n_conflict_to_unknown": 66073,
+     "conflict_fraction_of_touched": 0.06222020073037379,
+     "valid_fraction": 0.6163215637207031,
+     "prevalence_in_valid": 0.004159316886216402,
+     "anchor": 40,
+     "z_voxels_occupied": 25
+    }
+   ]
+  },
+  "assumed_roof_mount": {
+   "mount_in_vehicle_frame": [
+    1.6,
+    0.0,
+    1.6
+   ],
+   "describe": {
+    "scene": "000020",
+    "n_samples_with_cloud": 100,
+    "points_per_sweep": 229726,
+    "path_length_m": 38.59603147842574,
+    "median_step_m": 0.37414976280264917,
+    "range_m": {
+     "p50": 18.26823004724227,
+     "p90": 71.61410501079841,
+     "max": 237.84958262820714
+    },
+    "z_all": {
+     "min": -25.29299405668769,
+     "max": 25.445115165471552
+    },
+    "z_within_6m_horizontal": {
+     "n": 48631,
+     "p01": -1.5655702979970485,
+     "p50": -0.3078133188199872,
+     "mode_bin": -1.5176203155586423
+    }
+   },
+   "targets": [
+    {
+     "n_frames_used": 21,
+     "n_points_total": 4843950,
+     "n_sky_free": 375922,
+     "sky_margin_vox": 1,
+     "sky_neighbourhood_vox": 7,
+     "n_points_in_grid": 2316748,
+     "n_occupied": 26571,
+     "n_free": 1662775,
+     "n_unknown": 407806,
+     "n_conflict_to_unknown": 94987,
+     "conflict_fraction_of_touched": 0.06744267120890138,
+     "valid_fraction": 0.8055429458618164,
+     "prevalence_in_valid": 0.015728570520877838,
+     "anchor": 0,
+     "z_voxels_occupied": 32
+    },
+    {
+     "n_frames_used": 21,
+     "n_points_total": 4559196,
+     "n_sky_free": 392848,
+     "sky_margin_vox": 1,
+     "sky_neighbourhood_vox": 7,
+     "n_points_in_grid": 2218089,
+     "n_occupied": 21762,
+     "n_free": 1622785,
+     "n_unknown": 452605,
+     "n_conflict_to_unknown": 74305,
+     "conflict_fraction_of_touched": 0.056036784202762584,
+     "valid_fraction": 0.7841811180114746,
+     "prevalence_in_valid": 0.013232823461294174,
+     "anchor": 20,
+     "z_voxels_occupied": 32
+    },
+    {
+     "n_frames_used": 21,
+     "n_points_total": 4709803,
+     "n_sky_free": 449686,
+     "sky_margin_vox": 1,
+     "sky_neighbourhood_vox": 7,
+     "n_points_in_grid": 2341467,
+     "n_occupied": 14500,
+     "n_free": 1685080,
+     "n_unknown": 397572,
+     "n_conflict_to_unknown": 55980,
+     "conflict_fraction_of_touched": 0.04286784176727617,
+     "valid_fraction": 0.8104228973388672,
+     "prevalence_in_valid": 0.008531519211828709,
+     "anchor": 40,
+     "z_voxels_occupied": 32
+    }
+   ]
+  }
+ }
+}

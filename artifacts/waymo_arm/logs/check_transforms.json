@@ -1,0 +1,588 @@
+{
+  "version": "waymo_arm.1",
+  "segments_tested": [
+    "segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord",
+    "segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord",
+    "segment-1005081002024129653_5313_150_5333_150_with_camera_labels.tfrecord"
+  ],
+  "checks": [
+    {
+      "check": "T6_voxel_index_roundtrip",
+      "dims": [
+        256,
+        256,
+        32
+      ],
+      "voxel_size": 0.2,
+      "origin": [
+        0.0,
+        -25.6,
+        -0.2570000000000001
+      ],
+      "n_tested": 4096,
+      "index_roundtrip_exact": true,
+      "flat_matches_c_order": true,
+      "passed": true
+    },
+    {
+      "segment": "segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord",
+      "check": "T1_axis_permutation",
+      "principal_point": [
+        952.4121898799498,
+        634.5872082485005
+      ],
+      "projected": [
+        952.4121898799498,
+        634.5872082485005
+      ],
+      "error_px": 0.0,
+      "z_forward_positive": true,
+      "passed": true
+    },
+    {
+      "segment": "segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord",
+      "check": "T2_projection_vs_sdk_cp_points",
+      "camera": "FRONT",
+      "tolerance_m": 0.2,
+      "gates": "semantic_target_only",
+      "note": "no lens distortion is applied by design; criterion is metric, not pixel",
+      "rows": [
+        {
+          "frame": 0,
+          "n_points": 20196,
+          "px_p50": 3.701384086890583,
+          "px_p99": 25.398851987287784,
+          "m_p50": 0.024778551674133675,
+          "m_p99": 0.10755195429495286,
+          "m_max": 0.16225347974158535,
+          "frac_within_one_voxel": 1.0,
+          "with_distortion_px_p50": 3.529882898132885,
+          "with_distortion_px_p99": 24.169265259016377,
+          "with_distortion_m_p99": 0.08063399644297467,
+          "with_distortion_frac_within_one_voxel": 1.0
+        },
+        {
+          "frame": 5,
+          "n_points": 20275,
+          "px_p50": 3.4728010572552686,
+          "px_p99": 22.754282928911444,
+          "m_p50": 0.027136833372132685,
+          "m_p99": 0.10833736043702424,
+          "m_max": 0.16570359368714116,
+          "frac_within_one_voxel": 1.0,
+          "with_distortion_px_p50": 2.720807559867192,
+          "with_distortion_px_p99": 27.575705144529685,
+          "with_distortion_m_p99": 0.09350968148437418,
+          "with_distortion_frac_within_one_voxel": 1.0
+        },
+        {
+          "frame": 10,
+          "n_points": 20420,
+          "px_p50": 3.547485032971542,
+          "px_p99": 23.984413975869035,
+          "m_p50": 0.02554990487478319,
+          "m_p99": 0.11812212745505035,
+          "m_max": 0.17412863380125862,
+          "frac_within_one_voxel": 1.0,
+          "with_distortion_px_p50": 2.989245634534017,
+          "with_distortion_px_p99": 24.244779680313837,
+          "with_distortion_m_p99": 0.0798664490728894,
+          "with_distortion_frac_within_one_voxel": 1.0
+        }
+      ],
+      "worst_p99_m": 0.11812212745505035,
+      "worst_p99_m_with_distortion": 0.09350968148437418,
+      "distortion_explains_tail": true,
+      "passed": true
+    },
+    {
+      "segment": "segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord",
+      "check": "T7_grid_placement",
+      "camera_centre_grid_m": [
+        1.5391467608686606,
+        -0.02402951085443307,
+        2.115778469674332
+      ],
+      "camera_centre_voxel_index": [
+        7.695733804343303,
+        127.87985244572783,
+        11.86389234837166
+      ],
+      "camera_inside_grid": true,
+      "grid_floor_z_m": -0.2570000000000001,
+      "road_z_constant_m": -0.016,
+      "road_z_measured_this_segment_m": -0.023345664143562317,
+      "road_above_floor_m": 0.2336543358564378,
+      "predeclared_floor_below_road_m": -0.2410000000000001,
+      "passed": true
+    },
+    {
+      "segment": "segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord",
+      "anchor": 4,
+      "check": "T3_T4_pose_roundtrip_and_anchor_identity",
+      "n_frames": 21,
+      "max_roundtrip_error": 2.0587975768648903e-12,
+      "anchor_identity_error": 0.0,
+      "passed": true
+    },
+    {
+      "segment": "segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord",
+      "anchor": 4,
+      "check": "T5_per_laser_beam_inclinations",
+      "pad_deg": 1.5,
+      "rows": [
+        {
+          "laser": "TOP",
+          "n_points": 154828,
+          "calibrated_range_deg": [
+            -18.02,
+            2.29
+          ],
+          "n_beam_inclinations": 64,
+          "measured_p1_p99_deg": [
+            -17.61655387789983,
+            2.1547545045058416
+          ],
+          "frac_inside": 1.0,
+          "passed": true
+        },
+        {
+          "laser": "FRONT",
+          "n_points": 3681,
+          "calibrated_range_deg": [
+            -90.0,
+            30.0
+          ],
+          "n_beam_inclinations": 0,
+          "measured_p1_p99_deg": [
+            -64.81776873226612,
+            13.346939774640948
+          ],
+          "frac_inside": 1.0,
+          "passed": true
+        },
+        {
+          "laser": "SIDE_LEFT",
+          "n_points": 3697,
+          "calibrated_range_deg": [
+            -90.0,
+            30.0
+          ],
+          "n_beam_inclinations": 0,
+          "measured_p1_p99_deg": [
+            -61.00800577969492,
+            14.228053559340088
+          ],
+          "frac_inside": 1.0,
+          "passed": true
+        },
+        {
+          "laser": "SIDE_RIGHT",
+          "n_points": 4714,
+          "calibrated_range_deg": [
+            -90.0,
+            30.0
+          ],
+          "n_beam_inclinations": 0,
+          "measured_p1_p99_deg": [
+            -65.88060842972061,
+            13.936113961462029
+          ],
+          "frac_inside": 1.0,
+          "passed": true
+        },
+        {
+          "laser": "REAR",
+          "n_points": 5219,
+          "calibrated_range_deg": [
+            -90.0,
+            30.0
+          ],
+          "n_beam_inclinations": 0,
+          "measured_p1_p99_deg": [
+            -69.35022519714316,
+            14.577731505355478
+          ],
+          "frac_inside": 1.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "segment": "segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord",
+      "check": "T1_axis_permutation",
+      "principal_point": [
+        975.5965057143899,
+        630.853334844486
+      ],
+      "projected": [
+        975.5965057143898,
+        630.853334844486
+      ],
+      "error_px": 1.1368683772161603e-13,
+      "z_forward_positive": true,
+      "passed": true
+    },
+    {
+      "segment": "segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord",
+      "check": "T2_projection_vs_sdk_cp_points",
+      "camera": "FRONT",
+      "tolerance_m": 0.2,
+      "gates": "semantic_target_only",
+      "note": "no lens distortion is applied by design; criterion is metric, not pixel",
+      "rows": [
+        {
+          "frame": 0,
+          "n_points": 19658,
+          "px_p50": 1.6353164424738802,
+          "px_p99": 16.469205224045577,
+          "m_p50": 0.018052066795904015,
+          "m_p99": 0.11397380159315723,
+          "m_max": 0.19935221319433513,
+          "frac_within_one_voxel": 1.0,
+          "with_distortion_px_p50": 1.68775127840759,
+          "with_distortion_px_p99": 8.399590189841817,
+          "with_distortion_m_p99": 0.07548063037171807,
+          "with_distortion_frac_within_one_voxel": 1.0
+        },
+        {
+          "frame": 5,
+          "n_points": 20103,
+          "px_p50": 1.579464074606807,
+          "px_p99": 17.00797926918535,
+          "m_p50": 0.017602007252379683,
+          "m_p99": 0.10502810801771978,
+          "m_max": 0.1965493928169136,
+          "frac_within_one_voxel": 1.0,
+          "with_distortion_px_p50": 1.6174927087410214,
+          "with_distortion_px_p99": 10.283785467199024,
+          "with_distortion_m_p99": 0.07654073620949402,
+          "with_distortion_frac_within_one_voxel": 1.0
+        },
+        {
+          "frame": 10,
+          "n_points": 20094,
+          "px_p50": 1.8075417567289072,
+          "px_p99": 16.009939098302254,
+          "m_p50": 0.01920299535625633,
+          "m_p99": 0.09902494272629182,
+          "m_max": 0.15037348246826862,
+          "frac_within_one_voxel": 1.0,
+          "with_distortion_px_p50": 1.870085894488222,
+          "with_distortion_px_p99": 11.132259835244238,
+          "with_distortion_m_p99": 0.09361184764363681,
+          "with_distortion_frac_within_one_voxel": 1.0
+        }
+      ],
+      "worst_p99_m": 0.11397380159315723,
+      "worst_p99_m_with_distortion": 0.09361184764363681,
+      "distortion_explains_tail": true,
+      "passed": true
+    },
+    {
+      "segment": "segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord",
+      "check": "T7_grid_placement",
+      "camera_centre_grid_m": [
+        1.5393679168564702,
+        -0.023691101834458727,
+        2.116014704116658
+      ],
+      "camera_centre_voxel_index": [
+        7.696839584282351,
+        127.88154449082771,
+        11.865073520583291
+      ],
+      "camera_inside_grid": true,
+      "grid_floor_z_m": -0.2570000000000001,
+      "road_z_constant_m": -0.016,
+      "road_z_measured_this_segment_m": 0.011227390728890896,
+      "road_above_floor_m": 0.268227390728891,
+      "predeclared_floor_below_road_m": -0.2410000000000001,
+      "passed": true
+    },
+    {
+      "segment": "segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord",
+      "anchor": 4,
+      "check": "T3_T4_pose_roundtrip_and_anchor_identity",
+      "n_frames": 21,
+      "max_roundtrip_error": 5.5284665734234295e-12,
+      "anchor_identity_error": 0.0,
+      "passed": true
+    },
+    {
+      "segment": "segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord",
+      "anchor": 4,
+      "check": "T5_per_laser_beam_inclinations",
+      "pad_deg": 1.5,
+      "rows": [
+        {
+          "laser": "TOP",
+          "n_points": 149758,
+          "calibrated_range_deg": [
+            -17.92,
+            2.42
+          ],
+          "n_beam_inclinations": 64,
+          "measured_p1_p99_deg": [
+            -17.348520421243908,
+            2.3792476733253722
+          ],
+          "frac_inside": 1.0,
+          "passed": true
+        },
+        {
+          "laser": "FRONT",
+          "n_points": 3909,
+          "calibrated_range_deg": [
+            -90.0,
+            30.0
+          ],
+          "n_beam_inclinations": 0,
+          "measured_p1_p99_deg": [
+            -64.87585974503453,
+            11.995873972194943
+          ],
+          "frac_inside": 1.0,
+          "passed": true
+        },
+        {
+          "laser": "SIDE_LEFT",
+          "n_points": 4864,
+          "calibrated_range_deg": [
+            -90.0,
+            30.0
+          ],
+          "n_beam_inclinations": 0,
+          "measured_p1_p99_deg": [
+            -64.01011185916205,
+            13.442792965519818
+          ],
+          "frac_inside": 1.0,
+          "passed": true
+        },
+        {
+          "laser": "SIDE_RIGHT",
+          "n_points": 4516,
+          "calibrated_range_deg": [
+            -90.0,
+            30.0
+          ],
+          "n_beam_inclinations": 0,
+          "measured_p1_p99_deg": [
+            -65.43031094355106,
+            13.615577140472713
+          ],
+          "frac_inside": 1.0,
+          "passed": true
+        },
+        {
+          "laser": "REAR",
+          "n_points": 4847,
+          "calibrated_range_deg": [
+            -90.0,
+            30.0
+          ],
+          "n_beam_inclinations": 0,
+          "measured_p1_p99_deg": [
+            -57.4232474751813,
+            14.076211699319435
+          ],
+          "frac_inside": 1.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "segment": "segment-1005081002024129653_5313_150_5333_150_with_camera_labels.tfrecord",
+      "check": "T1_axis_permutation",
+      "principal_point": [
+        957.2938286685071,
+        650.5697927719348
+      ],
+      "projected": [
+        957.2938286685072,
+        650.5697927719348
+      ],
+      "error_px": 1.1368683772161603e-13,
+      "z_forward_positive": true,
+      "passed": true
+    },
+    {
+      "segment": "segment-1005081002024129653_5313_150_5333_150_with_camera_labels.tfrecord",
+      "check": "T2_projection_vs_sdk_cp_points",
+      "camera": "FRONT",
+      "tolerance_m": 0.2,
+      "gates": "semantic_target_only",
+      "note": "no lens distortion is applied by design; criterion is metric, not pixel",
+      "rows": [
+        {
+          "frame": 0,
+          "n_points": 17673,
+          "px_p50": 7.399667111813312,
+          "px_p99": 72.2390291059586,
+          "m_p50": 0.060717261031070904,
+          "m_p99": 0.23703899388457078,
+          "m_max": 4.934537120696295,
+          "frac_within_one_voxel": 0.9509986985797544,
+          "with_distortion_px_p50": 7.464887896118531,
+          "with_distortion_px_p99": 55.853587006780124,
+          "with_distortion_m_p99": 0.18915795829256063,
+          "with_distortion_frac_within_one_voxel": 0.9936060657500142
+        },
+        {
+          "frame": 5,
+          "n_points": 17495,
+          "px_p50": 7.151397377077114,
+          "px_p99": 78.44271077780651,
+          "m_p50": 0.06113466926734418,
+          "m_p99": 0.2421005669403392,
+          "m_max": 5.256070955981352,
+          "frac_within_one_voxel": 0.9443269505573021,
+          "with_distortion_px_p50": 7.195970731129241,
+          "with_distortion_px_p99": 60.366512085585825,
+          "with_distortion_m_p99": 0.19278403477809536,
+          "with_distortion_frac_within_one_voxel": 0.9926264647042012
+        },
+        {
+          "frame": 10,
+          "n_points": 17694,
+          "px_p50": 6.909485533013617,
+          "px_p99": 75.05353762672893,
+          "m_p50": 0.061942589077104926,
+          "m_p99": 0.2330352300421298,
+          "m_max": 5.6464301187261645,
+          "frac_within_one_voxel": 0.9553520967559624,
+          "with_distortion_px_p50": 7.019588227792158,
+          "with_distortion_px_p99": 58.60620488919435,
+          "with_distortion_m_p99": 0.19084723252333882,
+          "with_distortion_frac_within_one_voxel": 0.9929354583474624
+        }
+      ],
+      "worst_p99_m": 0.2421005669403392,
+      "worst_p99_m_with_distortion": 0.19278403477809536,
+      "distortion_explains_tail": true,
+      "passed": false
+    },
+    {
+      "segment": "segment-1005081002024129653_5313_150_5333_150_with_camera_labels.tfrecord",
+      "check": "T7_grid_placement",
+      "camera_centre_grid_m": [
+        1.5444145042510942,
+        -0.022877347388980857,
+        2.115953541712884
+      ],
+      "camera_centre_voxel_index": [
+        7.722072521255471,
+        127.88561326305509,
+        11.86476770856442
+      ],
+      "camera_inside_grid": true,
+      "grid_floor_z_m": -0.2570000000000001,
+      "road_z_constant_m": -0.016,
+      "road_z_measured_this_segment_m": -0.030072243884205818,
+      "road_above_floor_m": 0.2269277561157943,
+      "predeclared_floor_below_road_m": -0.2410000000000001,
+      "passed": true
+    },
+    {
+      "segment": "segment-1005081002024129653_5313_150_5333_150_with_camera_labels.tfrecord",
+      "anchor": 4,
+      "check": "T3_T4_pose_roundtrip_and_anchor_identity",
+      "n_frames": 21,
+      "max_roundtrip_error": 4.220623850414995e-12,
+      "anchor_identity_error": 0.0,
+      "passed": true
+    },
+    {
+      "segment": "segment-1005081002024129653_5313_150_5333_150_with_camera_labels.tfrecord",
+      "anchor": 4,
+      "check": "T5_per_laser_beam_inclinations",
+      "pad_deg": 1.5,
+      "rows": [
+        {
+          "laser": "TOP",
+          "n_points": 146780,
+          "calibrated_range_deg": [
+            -17.88,
+            2.48
+          ],
+          "n_beam_inclinations": 64,
+          "measured_p1_p99_deg": [
+            -17.7054842359484,
+            2.3098579212562114
+          ],
+          "frac_inside": 0.998780487804878,
+          "passed": true
+        },
+        {
+          "laser": "FRONT",
+          "n_points": 4017,
+          "calibrated_range_deg": [
+            -90.0,
+            30.0
+          ],
+          "n_beam_inclinations": 0,
+          "measured_p1_p99_deg": [
+            -75.95616184305115,
+            13.322206411315156
+          ],
+          "frac_inside": 1.0,
+          "passed": true
+        },
+        {
+          "laser": "SIDE_LEFT",
+          "n_points": 3519,
+          "calibrated_range_deg": [
+            -90.0,
+            30.0
+          ],
+          "n_beam_inclinations": 0,
+          "measured_p1_p99_deg": [
+            -75.85533915775666,
+            -5.129625605632251
+          ],
+          "frac_inside": 1.0,
+          "passed": true
+        },
+        {
+          "laser": "SIDE_RIGHT",
+          "n_points": 5179,
+          "calibrated_range_deg": [
+            -90.0,
+            30.0
+          ],
+          "n_beam_inclinations": 0,
+          "measured_p1_p99_deg": [
+            -74.76657386169332,
+            14.46349543220415
+          ],
+          "frac_inside": 1.0,
+          "passed": true
+        },
+        {
+          "laser": "REAR",
+          "n_points": 4319,
+          "calibrated_range_deg": [
+            -90.0,
+            30.0
+          ],
+          "n_beam_inclinations": 0,
+          "measured_p1_p99_deg": [
+            -63.802226248936385,
+            15.365300504713655
+          ],
+          "frac_inside": 1.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "all_passed": false,
+  "geometry_gates_passed": true,
+  "advisory_failures": [
+    "T2_projection_vs_sdk_cp_points"
+  ]
+}

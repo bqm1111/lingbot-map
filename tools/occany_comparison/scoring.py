@@ -77,10 +77,10 @@ def official_counts(dataset: str, occ: np.ndarray, label: np.ndarray) -> Tuple[i
     pred_label = np.where(occ, 1, run.empty_class).astype(np.uint8)
     return OE.official_sc_counts(pred_label, label, n_classes=run.n_classes, empty_class=run.empty_class)
 
-
 def fast_counts(occ: torch.Tensor, gt: torch.Tensor, keep: torch.Tensor) -> Tuple[int, int, int]:
     p, g = occ & keep, gt & keep
     return int((p & g).sum()), int((p & ~g).sum()), int((~p & g).sum())
 
 
 __all__ = ["OccAnyOutput", "load_occany", "independent_label", "pool", "official_counts", "fast_counts"]
+

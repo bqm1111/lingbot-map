@@ -1,0 +1,214 @@
+{
+ "bands": {
+  "prevalence": [
+   0.015,
+   0.04
+  ],
+  "conflict_max": 0.12,
+  "valid": [
+   0.45,
+   0.75
+  ],
+  "z_levels_min": 30
+ },
+ "measured_sensor_facts": {
+  "kitti360_points_per_cloud": 120055,
+  "kitti360_rings": 64,
+  "once_points_per_cloud": 66563,
+  "once_rings": 40,
+  "once_prevalence_median": 0.0133,
+  "once_valid_median": 0.694
+ },
+ "runs": {
+  "2013_05_28_drive_0003_sync|beams64|keep0.45": {
+   "drive": "2013_05_28_drive_0003_sync",
+   "n_beams": 64,
+   "keep_points": 0.45,
+   "n_targets": 30,
+   "median": {
+    "prevalence": 0.021995600312948227,
+    "valid": 0.6275362968444824,
+    "conflict": 0.06775643080605076,
+    "z_levels": 32.0,
+    "occupied_voxels": 25858.501160431653
+   },
+   "points_kept_fraction": 0.45005210917887156,
+   "per_band_pass": {
+    "prevalence": true,
+    "valid": true,
+    "conflict": true,
+    "z_levels": true
+   },
+   "in_bands": true
+  },
+  "2013_05_28_drive_0007_sync|beams64|keep0.45": {
+   "drive": "2013_05_28_drive_0007_sync",
+   "n_beams": 64,
+   "keep_points": 0.45,
+   "n_targets": 30,
+   "median": {
+    "prevalence": 0.027492721565067768,
+    "valid": 0.550316572189331,
+    "conflict": 0.06649336413093809,
+    "z_levels": 32.0,
+    "occupied_voxels": 30348.99981525168
+   },
+   "points_kept_fraction": 0.45005472551819425,
+   "per_band_pass": {
+    "prevalence": true,
+    "valid": true,
+    "conflict": true,
+    "z_levels": true
+   },
+   "in_bands": true
+  },
+  "2013_05_28_drive_0010_sync|beams64|keep0.45": {
+   "drive": "2013_05_28_drive_0010_sync",
+   "n_beams": 64,
+   "keep_points": 0.45,
+   "n_targets": 30,
+   "median": {
+    "prevalence": 0.022493318654596806,
+    "valid": 0.6491715908050537,
+    "conflict": 0.06315225672237347,
+    "z_levels": 32.0,
+    "occupied_voxels": 29474.99854702037
+   },
+   "points_kept_fraction": 0.4500374544890163,
+   "per_band_pass": {
+    "prevalence": true,
+    "valid": true,
+    "conflict": true,
+    "z_levels": true
+   },
+   "in_bands": true
+  },
+  "2013_05_28_drive_0003_sync|beams64|keep0.25": {
+   "drive": "2013_05_28_drive_0003_sync",
+   "n_beams": 64,
+   "keep_points": 0.25,
+   "n_targets": 30,
+   "median": {
+    "prevalence": 0.021033713594079018,
+    "valid": 0.606229305267334,
+    "conflict": 0.05667183523217169,
+    "z_levels": 32.0,
+    "occupied_voxels": 25176.49954982288
+   },
+   "points_kept_fraction": 0.2501167764234127,
+   "per_band_pass": {
+    "prevalence": true,
+    "valid": true,
+    "conflict": true,
+    "z_levels": true
+   },
+   "in_bands": true
+  },
+  "2013_05_28_drive_0007_sync|beams64|keep0.25": {
+   "drive": "2013_05_28_drive_0007_sync",
+   "n_beams": 64,
+   "keep_points": 0.25,
+   "n_targets": 30,
+   "median": {
+    "prevalence": 0.026425063610076904,
+    "valid": 0.52852463722229,
+    "conflict": 0.050307636842761544,
+    "z_levels": 32.0,
+    "occupied_voxels": 28520.500815944746
+   },
+   "points_kept_fraction": 0.25011432270845774,
+   "per_band_pass": {
+    "prevalence": true,
+    "valid": true,
+    "conflict": true,
+    "z_levels": true
+   },
+   "in_bands": true
+  },
+  "2013_05_28_drive_0010_sync|beams64|keep0.25": {
+   "drive": "2013_05_28_drive_0010_sync",
+   "n_beams": 64,
+   "keep_points": 0.25,
+   "n_targets": 30,
+   "median": {
+    "prevalence": 0.02221324574202299,
+    "valid": 0.6321511268615723,
+    "conflict": 0.054602057969112265,
+    "z_levels": 32.0,
+    "occupied_voxels": 27730.499489547685
+   },
+   "points_kept_fraction": 0.25011061225411785,
+   "per_band_pass": {
+    "prevalence": true,
+    "valid": true,
+    "conflict": true,
+    "z_levels": true
+   },
+   "in_bands": true
+  },
+  "2013_05_28_drive_0003_sync|beams64|keep0.15": {
+   "drive": "2013_05_28_drive_0003_sync",
+   "n_beams": 64,
+   "keep_points": 0.15,
+   "n_targets": 30,
+   "median": {
+    "prevalence": 0.019817352294921875,
+    "valid": 0.5903215408325195,
+    "conflict": 0.045039076344352905,
+    "z_levels": 31.0,
+    "occupied_voxels": 23985.500686614774
+   },
+   "points_kept_fraction": 0.15004920449903458,
+   "per_band_pass": {
+    "prevalence": true,
+    "valid": true,
+    "conflict": true,
+    "z_levels": true
+   },
+   "in_bands": true
+  },
+  "2013_05_28_drive_0007_sync|beams64|keep0.15": {
+   "drive": "2013_05_28_drive_0007_sync",
+   "n_beams": 64,
+   "keep_points": 0.15,
+   "n_targets": 30,
+   "median": {
+    "prevalence": 0.023535768501460552,
+    "valid": 0.5109665393829346,
+    "conflict": 0.037478482040388464,
+    "z_levels": 32.0,
+    "occupied_voxels": 26025.999428819865
+   },
+   "points_kept_fraction": 0.1500416358915734,
+   "per_band_pass": {
+    "prevalence": true,
+    "valid": true,
+    "conflict": true,
+    "z_levels": true
+   },
+   "in_bands": true
+  },
+  "2013_05_28_drive_0010_sync|beams64|keep0.15": {
+   "drive": "2013_05_28_drive_0010_sync",
+   "n_beams": 64,
+   "keep_points": 0.15,
+   "n_targets": 30,
+   "median": {
+    "prevalence": 0.021378652192652225,
+    "valid": 0.6171867847442627,
+    "conflict": 0.04350427141166728,
+    "z_levels": 31.5,
+    "occupied_voxels": 25831.000202969648
+   },
+   "points_kept_fraction": 0.15004387795495394,
+   "per_band_pass": {
+    "prevalence": true,
+    "valid": true,
+    "conflict": true,
+    "z_levels": true
+   },
+   "in_bands": true
+  }
+ },
+ "note": "Only read_velodyne is wrapped; poses, calibration, the 21-sweep window and the grid are the frozen ones. 64 beams reproduces k360_sweep_control."
+}

@@ -1,0 +1,40 @@
+{
+  "version": "waymo_arm.1",
+  "shard": 0,
+  "shards": 1,
+  "n_built": 85,
+  "n_failed": 0,
+  "minutes": 1.666873292128245,
+  "gib": 0.012218193151056767,
+  "grid": {
+    "dims": [
+      256,
+      256,
+      32
+    ],
+    "voxel_size": 0.2,
+    "origin": [
+      0.0,
+      -25.6,
+      -0.2570000000000001
+    ]
+  },
+  "aggregate": {
+    "valid_fraction": 0.671678498212029,
+    "prevalence_in_valid": 0.020236726587309555,
+    "conflict_fraction_of_touched": 0.06663670377115831,
+    "n_frames_used": 21.0,
+    "n_occupied": 25481.90588235294,
+    "n_free": 1383130.0,
+    "n_unknown": 688540.094117647,
+    "n_sky_free": 651119.4823529412
+  },
+  "laser_shares": {
+    "TOP": 0.8933967007101961,
+    "FRONT": 0.02393545004217395,
+    "SIDE_LEFT": 0.026809662491573065,
+    "SIDE_RIGHT": 0.02803125050248354,
+    "REAR": 0.02782693625357339
+  },
+  "errors": []
+}

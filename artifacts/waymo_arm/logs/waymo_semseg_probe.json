@@ -1,0 +1,8 @@
+{"probe": "waymo 3D semantic label availability, v1.4.2 individual_files/training",
+ "date": "2026-10-20", "source_bucket": "gs://waymo_open_dataset_v_1_4_2/individual_files/training",
+ "note": "laser id 1 = TOP; the other four lasers carry no segmentation_label_compressed",
+ "segments":
+ [  {"segment": "segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord", "frames": 198, "frames_with_3d_semseg": 30, "frames_with_camera_panoptic": 20, "laser_ids_carrying_semseg": [1]},  {"segment": "segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord", "frames": 199, "frames_with_3d_semseg": 20, "frames_with_camera_panoptic": 20, "laser_ids_carrying_semseg": [1]},  {"segment": "segment-1005081002024129653_5313_150_5333_150_with_camera_labels.tfrecord", "frames": 199, "frames_with_3d_semseg": 30, "frames_with_camera_panoptic": 20, "laser_ids_carrying_semseg": [1]}],
+ "total":
+{"segments": 3, "frames": 596, "with_3d": 80, "with_2d": 60}
+}

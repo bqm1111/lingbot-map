@@ -1,0 +1,37 @@
+# protected-state snapshot, taken 2026-10-12T20:11:15+02:00
+
+## /home/minh/workspace/lingbot-map_fork
+HEAD 148c46e935858457887b17944f5c5427147ee964
+branch feature-completion-study
+--- status --porcelain ---
+ M artifacts/gate21_future_semantic_prior/report.md
+ M gates/gate6/_gate6_names.txt
+ M tools/occany_comparison/scoring.py
+ M tools/semantic_completion/reports/figures.py
+ M tools/semantic_completion/reports/final.py
+?? CURRENT_SYSTEM.md
+?? artifacts/waymo_supervision_pilot/logs/fetch_corpus.json
+?? artifacts/waymo_supervision_pilot/logs/waymo_clips.json
+--- stat-sum (mtime,size of tracked+untracked, sha256 of the listing) ---
+d56c8ed035e975bf01025d421a2f2b24013c91570b21bddb8ba4cc25daf8f7a9  -
+
+## /home/minh/workspace/StreamingSSC
+HEAD fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+HEAD Use '--' to separate paths from revisions, like this:
+HEAD 'git <command> [<revision>...] -- [<file>...]'
+HEAD HEAD
+branch fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+branch Use '--' to separate paths from revisions, like this:
+branch 'git <command> [<revision>...] -- [<file>...]'
+branch HEAD
+--- status --porcelain ---
+?? .gitignore
+?? README.md
+?? configs/
+?? docs/
+?? pyproject.toml
+?? scripts/
+?? src/
+?? tests/
+--- stat-sum (mtime,size of tracked+untracked, sha256 of the listing) ---
+8dcd4aa6a02a67fc7774c86d26db3e1adb63cfe587bb67042cd66f3311ebb2a2  -

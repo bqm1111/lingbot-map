@@ -1,0 +1,47 @@
+{
+  "version": "waymo_arm.1",
+  "started": "2026-10-20T13:10:24",
+  "steps": [
+    {
+      "step": "build_targets",
+      "returncode": 0
+    },
+    {
+      "step": "build_inputs",
+      "returncode": 0
+    },
+    {
+      "step": "train_seed0",
+      "n_train": 3755,
+      "n_val": 40,
+      "minutes": 9.169925610224405,
+      "final_sha256": "e40fb93467e4d37c220113985ae53e944a86df9f90174b228e4348d626bf5702",
+      "firewall": {
+        "opened": 15182,
+        "violations": []
+      }
+    },
+    {
+      "step": "train_seed1",
+      "n_train": 3755,
+      "n_val": 40,
+      "minutes": 9.071218438943227,
+      "final_sha256": "f06ff8a059bc41c2d64e7ff69758d65f88960795bc48824b0f10cf7ecc723487",
+      "firewall": {
+        "opened": 15180,
+        "violations": []
+      }
+    },
+    {
+      "step": "train_seed2",
+      "n_train": 3755,
+      "n_val": 40,
+      "minutes": 9.073968223730724,
+      "final_sha256": "87cbad3cfc86aeade2823bd3c761a36119051c2c6b772975ec98c0c73562c3b4",
+      "firewall": {
+        "opened": 15180,
+        "violations": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "version": "waymo_arm.1",
+  "checks": [
+    {
+      "check": "I1_corpus",
+      "n_cached_segments": 798,
+      "n_fully_extracted": 791,
+      "n_with_sidecar": 253,
+      "n_with_clips": 791,
+      "sidecars_are_subset_of_cached": true,
+      "passed": true
+    },
+    {
+      "check": "I2_anchors_per_segment",
+      "n_segments": 40,
+      "min": 5,
+      "max": 5,
+      "mean": 5.0,
+      "all_within_eligible_set": true,
+      "unexpected": [],
+      "passed": true
+    },
+    {
+      "check": "I3_sequence_boundaries",
+      "n_violations": 0,
+      "examples": [],
+      "passed": true
+    },
+    {
+      "check": "I4_clip_causality",
+      "n_clips": 200,
+      "clip_offsets": [
+        -4,
+        -3,
+        -2,
+        -1,
+        0
+      ],
+      "privileged_window_stream_frames_after_anchor": 20,
+      "note": "the clip (the network input) contains no frame after t; the privileged occupancy window deliberately does, which is training-only supervision",
+      "n_violations": 0,
+      "examples": [],
+      "passed": true
+    },
+    {
+      "check": "I5_timestamps",
+      "expected_dt_s": 0.5,
+      "gate": "strictly increasing AND no interval >= 2x nominal",
+      "discontinuity_threshold_s": 1.0,
+      "jitter_threshold_s": 0.55,
+      "dt_min": 0.4959731101989746,
+      "dt_max": 0.6012029647827148,
+      "n_violations": 0,
+      "examples": [],
+      "n_clips_with_single_frame_jitter": 2,
+      "jitter_examples": [
+        {
+          "segment": "segment-10327752107000040525_1120_000_1140_000_with_camera_labels.tfrecord",
+          "anchor": 4,
+          "dt_max": 0.6012
+        },
+        {
+          "segment": "segment-10584247114982259878_490_000_510_000_with_camera_labels.tfrecord",
+          "anchor": 16,
+          "dt_max": 0.6
+        }
+      ],
+      "corpus_census": "logs/clip_timing_census.json",
+      "passed": true
+    },
+    {
+      "check": "I6_cache_health",
+      "n_inputs_on_disk": 200,
+      "n_targets_on_disk": 1210,
+      "n_inputs_loaded": 200,
+      "n_targets_loaded": 400,
+      "n_bad_inputs": 0,
+      "n_bad_targets": 0,
+      "examples": [],
+      "passed": true
+    },
+    {
+      "check": "I7_grid_consistency",
+      "grid": {
+        "dims": [
+          256,
+          256,
+          32
+        ],
+        "voxel_size": 0.2,
+        "origin": [
+          0.0,
+          -25.6,
+          -0.2570000000000001
+        ],
+        "frame": "vehicle_of_anchor_frame"
+      },
+      "n_voxels": 2097152,
+      "states": {
+        "UNKNOWN": 0,
+        "FREE": 1,
+        "OCCUPIED": 2
+      },
+      "passed": true
+    },
+    {
+      "check": "I8_supervision_rules",
+      "n_violations": 0,
+      "examples": [],
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

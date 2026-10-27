@@ -1,0 +1,12 @@
+{
+ "dataset": "occ3d",
+ "shard": 0,
+ "shards": 2,
+ "samples": 2110,
+ "written": 2110,
+ "seconds": 3091.7682888507843,
+ "checkpoints": "/home/minh/workspace/lingbot-map_fork/artifacts/waymo_arm/checkpoints",
+ "freeze": "/home/minh/workspace/lingbot-map_fork/artifacts/waymo_arm/geometry_freeze.json",
+ "prediction_root": "/media/minh/MINH1/lingbot_waymo_arm/zero_shot_predictions",
+ "geometry_seed": 0
+}

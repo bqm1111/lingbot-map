@@ -1,0 +1,291 @@
+{
+ "version": "waymo_arm.1",
+ "results": {
+  "semantickitti": {
+   "dataset": "semantickitti",
+   "n_samples": 801,
+   "image_size": [
+    1226,
+    370
+   ],
+   "k360_predictions": "/media/SSD1/MINH_DATASETS/lingbot_zero_shot_eval/predictions",
+   "waymo_predictions": "/media/minh/MINH1/lingbot_waymo_arm/zero_shot_predictions",
+   "geometry_seed": 0,
+   "composition": {
+    "in_frustum": {
+     "valid_voxels": 813955852,
+     "share_of_valid": 0.6934014615128014,
+     "gt_occupied": 69534788,
+     "share_of_gt_occupied": 0.7452919665930686,
+     "prevalence_in_region": 0.08542820575482514
+    },
+    "out_frustum": {
+     "valid_voxels": 359903589,
+     "share_of_valid": 0.30659853848719865,
+     "gt_occupied": 23763934,
+     "share_of_gt_occupied": 0.2547080334069313,
+     "prevalence_in_region": 0.06602861078998576
+    }
+   },
+   "iou": {
+    "in_frustum/all": {
+     "k360": {
+      "iou": 25.161564764064664,
+      "precision": 36.39908188406001,
+      "recall": 44.903586964268875,
+      "tp": 31223614,
+      "fp": 54557709,
+      "fn": 38311174
+     },
+     "waymo": {
+      "iou": 22.38445287108819,
+      "precision": 34.34380864768196,
+      "recall": 39.12893643969979,
+      "tp": 27208223,
+      "fp": 52014857,
+      "fn": 42326565
+     },
+     "delta_iou": -2.7771118929764746
+    },
+    "in_frustum/observed": {
+     "k360": {
+      "iou": 33.742715938086796,
+      "precision": 39.83606245472474,
+      "recall": 68.80823976579181,
+      "tp": 6783750,
+      "fp": 10245418,
+      "fn": 3075171
+     },
+     "waymo": {
+      "iou": 31.321450433075068,
+      "precision": 33.908126527183136,
+      "recall": 80.41464172397771,
+      "tp": 7928016,
+      "fp": 15452857,
+      "fn": 1930905
+     },
+     "delta_iou": -2.4212655050117284
+    },
+    "in_frustum/completed": {
+     "k360": {
+      "iou": 23.502545357135762,
+      "precision": 35.547778829623596,
+      "recall": 40.954350943908366,
+      "tp": 24439864,
+      "fp": 44312291,
+      "fn": 35236003
+     },
+     "waymo": {
+      "iou": 20.03390931347221,
+      "precision": 34.526226730257996,
+      "recall": 32.30821430713357,
+      "tp": 19280207,
+      "fp": 36562000,
+      "fn": 40395660
+     },
+     "delta_iou": -3.468636043663551
+    },
+    "out_frustum/all": {
+     "k360": {
+      "iou": 29.9792397799111,
+      "precision": 40.26832347405254,
+      "recall": 53.98693246665304,
+      "tp": 12829419,
+      "fp": 19030410,
+      "fn": 10934515
+     },
+     "waymo": {
+      "iou": 26.583063547268015,
+      "precision": 35.0034250149014,
+      "recall": 52.495357039789795,
+      "tp": 12474962,
+      "fp": 23164299,
+      "fn": 11288972
+     },
+     "delta_iou": -3.3961762326430858
+    },
+    "out_frustum/observed": {
+     "k360": {
+      "iou": 32.72902645149239,
+      "precision": 39.906042175010185,
+      "recall": 64.53671254325415,
+      "tp": 2891004,
+      "fp": 4353523,
+      "fn": 1588623
+     },
+     "waymo": {
+      "iou": 25.86794619605934,
+      "precision": 27.29628917375004,
+      "recall": 83.17484915596768,
+      "tp": 3725923,
+      "fp": 9924002,
+      "fn": 753704
+     },
+     "delta_iou": -6.861080255433048
+    },
+    "out_frustum/completed": {
+     "k360": {
+      "iou": 29.26403294301137,
+      "precision": 40.374946445914006,
+      "recall": 51.536282843868854,
+      "tp": 9938415,
+      "fp": 14676887,
+      "fn": 9345892
+     },
+     "waymo": {
+      "iou": 26.899755643450725,
+      "precision": 39.787645247678235,
+      "recall": 45.36869797810209,
+      "tp": 8749039,
+      "fp": 13240297,
+      "fn": 10535268
+     },
+     "delta_iou": -2.3642772995606443
+    }
+   }
+  },
+  "occ3d": {
+   "dataset": "occ3d",
+   "n_samples": 4219,
+   "image_size": [
+    1600,
+    900
+   ],
+   "k360_predictions": "/media/SSD1/MINH_DATASETS/lingbot_zero_shot_eval/predictions",
+   "waymo_predictions": "/media/minh/MINH1/lingbot_waymo_arm/zero_shot_predictions",
+   "geometry_seed": 0,
+   "composition": {
+    "in_frustum": {
+     "valid_voxels": 108351243,
+     "share_of_valid": 0.5095107448047017,
+     "gt_occupied": 20989650,
+     "share_of_gt_occupied": 0.45512263157464494,
+     "prevalence_in_region": 0.19371858982734513
+    },
+    "out_frustum": {
+     "valid_voxels": 104306182,
+     "share_of_valid": 0.49048925519529823,
+     "gt_occupied": 25129019,
+     "share_of_gt_occupied": 0.5448773684253551,
+     "prevalence_in_region": 0.24091591234736212
+    }
+   },
+   "iou": {
+    "in_frustum/all": {
+     "k360": {
+      "iou": 36.17683965261597,
+      "precision": 76.5542349890761,
+      "recall": 40.68454214338972,
+      "tp": 8539543,
+      "fp": 2615350,
+      "fn": 12450107
+     },
+     "waymo": {
+      "iou": 22.86171818456806,
+      "precision": 60.57371274263083,
+      "recall": 26.858303973625095,
+      "tp": 5637464,
+      "fp": 3669319,
+      "fn": 15352186
+     },
+     "delta_iou": -13.31512146804791
+    },
+    "in_frustum/observed": {
+     "k360": {
+      "iou": 43.83568569793333,
+      "precision": 88.88962301205774,
+      "recall": 46.37668928155224,
+      "tp": 3901554,
+      "fp": 487658,
+      "fn": 4511194
+     },
+     "waymo": {
+      "iou": 31.022899586139484,
+      "precision": 62.378215323351846,
+      "recall": 38.16354656052933,
+      "tp": 3210603,
+      "fp": 1936391,
+      "fn": 5202145
+     },
+     "delta_iou": -12.812786111793844
+    },
+    "in_frustum/completed": {
+     "k360": {
+      "iou": 31.541088451677073,
+      "precision": 68.55169494393839,
+      "recall": 36.87703855846217,
+      "tp": 4637989,
+      "fp": 2127692,
+      "fn": 7938913
+     },
+     "waymo": {
+      "iou": 16.959397840505442,
+      "precision": 58.34096392869927,
+      "recall": 19.296174844965794,
+      "tp": 2426861,
+      "fp": 1732928,
+      "fn": 10150041
+     },
+     "delta_iou": -14.58169061117163
+    },
+    "out_frustum/all": {
+     "k360": {
+      "iou": 28.25199245957546,
+      "precision": 79.38676136252364,
+      "recall": 30.48857179820669,
+      "tp": 7661479,
+      "fp": 1989348,
+      "fn": 17467540
+     },
+     "waymo": {
+      "iou": 22.848278025125747,
+      "precision": 72.80419587475701,
+      "recall": 24.980326530056743,
+      "tp": 6277311,
+      "fp": 2344872,
+      "fn": 18851708
+     },
+     "delta_iou": -5.403714434449714
+    },
+    "out_frustum/observed": {
+     "k360": {
+      "iou": 39.322913652869396,
+      "precision": 87.07795141070622,
+      "recall": 41.75975227778838,
+      "tp": 2820191,
+      "fp": 418506,
+      "fn": 3933180
+     },
+     "waymo": {
+      "iou": 36.66993304720776,
+      "precision": 68.59382721057328,
+      "recall": 44.06892498575896,
+      "tp": 2976138,
+      "fp": 1362646,
+      "fn": 3777233
+     },
+     "delta_iou": -2.6529806056616323
+    },
+    "out_frustum/completed": {
+     "k360": {
+      "iou": 24.27137807203172,
+      "precision": 75.5020250681131,
+      "recall": 26.34621647084228,
+      "tp": 4841288,
+      "fp": 1570842,
+      "fn": 13534360
+     },
+     "waymo": {
+      "iou": 17.053386131142293,
+      "precision": 77.06900524560052,
+      "recall": 17.964933808048563,
+      "tp": 3301173,
+      "fp": 982226,
+      "fn": 15074475
+     },
+     "delta_iou": -7.217991940889426
+    }
+   }
+  }
+ }
+}

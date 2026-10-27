@@ -1,0 +1,405 @@
+{
+ "version": "waymo_arm.1",
+ "results": {
+  "semantickitti/k360": {
+   "dataset": "semantickitti",
+   "arm": "k360",
+   "method": "B0",
+   "n_samples": 801,
+   "predictions": "/media/SSD1/MINH_DATASETS/lingbot_zero_shot_eval/predictions",
+   "geometry_seed": 0,
+   "gt_occupied_voxels": 93298722,
+   "valid_voxels": 1173859441,
+   "false_positive_voxels": 73588119,
+   "buckets": {
+    "occ_miss": {
+     "voxels": 49245689,
+     "share": 0.5278281196606316
+    },
+    "ev_right": {
+     "voxels": 2934511,
+     "share": 0.03145285312696995
+    },
+    "ev_wrong": {
+     "voxels": 2286917,
+     "share": 0.02451177198332899
+    },
+    "noev_right": {
+     "voxels": 15363584,
+     "share": 0.16467089442018296
+    },
+    "noev_wrong": {
+     "voxels": 23468021,
+     "share": 0.2515363608088865
+    }
+   },
+   "error_character": {
+    "ev_wrong": {
+     "voxels": 2286917,
+     "intra_superclass_share": 0.3513030862073263,
+     "predicted_free_share": 0.0
+    },
+    "noev_wrong": {
+     "voxels": 23468021,
+     "intra_superclass_share": 0.2845467881590868,
+     "predicted_free_share": 0.0
+    }
+   },
+   "distance": {
+    "0-1 m": {
+     "voxels": 24448451,
+     "accuracy": 47.66618547735396
+    },
+    "1-2 m": {
+     "voxels": 7142365,
+     "accuracy": 42.91894911559407
+    },
+    "2-4 m": {
+     "voxels": 6352417,
+     "accuracy": 37.20440581907643
+    },
+    "4-8 m": {
+     "voxels": 3332624,
+     "accuracy": 21.091188204849992
+    },
+    ">8 m": {
+     "voxels": 2777176,
+     "accuracy": 18.46314385548485
+    }
+   },
+   "distance_no_evidence": {
+    "0-1 m": {
+     "voxels": 19227023,
+     "accuracy": 45.34832563522704
+    },
+    "1-2 m": {
+     "voxels": 7142365,
+     "accuracy": 42.91894911559407
+    },
+    "2-4 m": {
+     "voxels": 6352417,
+     "accuracy": 37.20440581907643
+    },
+    "4-8 m": {
+     "voxels": 3332624,
+     "accuracy": 21.091188204849992
+    },
+    ">8 m": {
+     "voxels": 2777176,
+     "accuracy": 18.46314385548485
+    }
+   },
+   "miou": {
+    "base": 4.3185054284837605,
+    "oracle_teacher": 5.944477832418882,
+    "oracle_extrapolation": 21.817401838482954,
+    "oracle_semantics": 23.876749793014817
+   },
+   "oracle_gain": {
+    "oracle_teacher": 1.6259724039351218,
+    "oracle_extrapolation": 17.498896409999194,
+    "oracle_semantics": 19.558244364531056
+   }
+  },
+  "semantickitti/waymo": {
+   "dataset": "semantickitti",
+   "arm": "waymo",
+   "method": "B0",
+   "n_samples": 801,
+   "predictions": "/media/minh/MINH1/lingbot_waymo_arm/zero_shot_predictions",
+   "geometry_seed": 0,
+   "gt_occupied_voxels": 93298722,
+   "valid_voxels": 1173859441,
+   "false_positive_voxels": 75179156,
+   "buckets": {
+    "occ_miss": {
+     "voxels": 53615537,
+     "share": 0.5746652885556138
+    },
+    "ev_right": {
+     "voxels": 3938101,
+     "share": 0.04220959210995409
+    },
+    "ev_wrong": {
+     "voxels": 2435644,
+     "share": 0.0261058667020112
+    },
+    "noev_right": {
+     "voxels": 14892449,
+     "share": 0.15962114679341483
+    },
+    "noev_wrong": {
+     "voxels": 18416991,
+     "share": 0.19739810583900602
+    }
+   },
+   "error_character": {
+    "ev_wrong": {
+     "voxels": 2435644,
+     "intra_superclass_share": 0.345297999214992,
+     "predicted_free_share": 0.0
+    },
+    "noev_wrong": {
+     "voxels": 18416991,
+     "intra_superclass_share": 0.3113813760347714,
+     "predicted_free_share": 0.0
+    }
+   },
+   "distance": {
+    "0-1 m": {
+     "voxels": 26788825,
+     "accuracy": 54.3547505349712
+    },
+    "1-2 m": {
+     "voxels": 5860282,
+     "accuracy": 44.261504821781614
+    },
+    "2-4 m": {
+     "voxels": 3284624,
+     "accuracy": 29.77397108466601
+    },
+    "4-8 m": {
+     "voxels": 1932245,
+     "accuracy": 19.31804714205497
+    },
+    ">8 m": {
+     "voxels": 1817209,
+     "accuracy": 17.855238445330173
+    }
+   },
+   "distance_no_evidence": {
+    "0-1 m": {
+     "voxels": 20415080,
+     "accuracy": 52.0345646453504
+    },
+    "1-2 m": {
+     "voxels": 5860282,
+     "accuracy": 44.261504821781614
+    },
+    "2-4 m": {
+     "voxels": 3284624,
+     "accuracy": 29.77397108466601
+    },
+    "4-8 m": {
+     "voxels": 1932245,
+     "accuracy": 19.31804714205497
+    },
+    ">8 m": {
+     "voxels": 1817209,
+     "accuracy": 17.855238445330173
+    }
+   },
+   "miou": {
+    "base": 4.9014812554939615,
+    "oracle_teacher": 6.8098924795136,
+    "oracle_extrapolation": 18.681476680456377,
+    "oracle_semantics": 21.097748466305717
+   },
+   "oracle_gain": {
+    "oracle_teacher": 1.9084112240196385,
+    "oracle_extrapolation": 13.779995424962415,
+    "oracle_semantics": 16.196267210811754
+   }
+  },
+  "occ3d/k360": {
+   "dataset": "occ3d",
+   "arm": "k360",
+   "method": "B0",
+   "n_samples": 4219,
+   "predictions": "/media/SSD1/MINH_DATASETS/lingbot_zero_shot_eval/predictions",
+   "geometry_seed": 0,
+   "gt_occupied_voxels": 46118669,
+   "valid_voxels": 212657425,
+   "false_positive_voxels": 4604698,
+   "buckets": {
+    "occ_miss": {
+     "voxels": 29917647,
+     "share": 0.6487101134683657
+    },
+    "ev_right": {
+     "voxels": 1219640,
+     "share": 0.026445689488566983
+    },
+    "ev_wrong": {
+     "voxels": 1735396,
+     "share": 0.03762892636819159
+    },
+    "noev_right": {
+     "voxels": 3961747,
+     "share": 0.08590332474686119
+    },
+    "noev_wrong": {
+     "voxels": 9284239,
+     "share": 0.20131194592801452
+    }
+   },
+   "error_character": {
+    "ev_wrong": {
+     "voxels": 1735396,
+     "intra_superclass_share": 0.3806162973753541,
+     "predicted_free_share": 0.0
+    },
+    "noev_wrong": {
+     "voxels": 9284239,
+     "intra_superclass_share": 0.3429265446527174,
+     "predicted_free_share": 0.0002845682882571205
+    }
+   },
+   "distance": {
+    "0-1 m": {
+     "voxels": 8758765,
+     "accuracy": 40.42236548189157
+    },
+    "1-2 m": {
+     "voxels": 1648670,
+     "accuracy": 25.37469596705223
+    },
+    "2-4 m": {
+     "voxels": 1818198,
+     "accuracy": 23.690929150730557
+    },
+    "4-8 m": {
+     "voxels": 1634718,
+     "accuracy": 21.3756134085512
+    },
+    ">8 m": {
+     "voxels": 2340671,
+     "accuracy": 18.898982385820133
+    }
+   },
+   "distance_no_evidence": {
+    "0-1 m": {
+     "voxels": 5803729,
+     "accuracy": 39.98911734162639
+    },
+    "1-2 m": {
+     "voxels": 1648670,
+     "accuracy": 25.37469596705223
+    },
+    "2-4 m": {
+     "voxels": 1818198,
+     "accuracy": 23.690929150730557
+    },
+    "4-8 m": {
+     "voxels": 1634718,
+     "accuracy": 21.3756134085512
+    },
+    ">8 m": {
+     "voxels": 2340671,
+     "accuracy": 18.898982385820133
+    }
+   },
+   "miou": {
+    "base": 3.706313886314373,
+    "oracle_teacher": 5.59301816732774,
+    "oracle_extrapolation": 16.197183230020105,
+    "oracle_semantics": 19.869510419621502
+   },
+   "oracle_gain": {
+    "oracle_teacher": 1.8867042810133667,
+    "oracle_extrapolation": 12.490869343705732,
+    "oracle_semantics": 16.16319653330713
+   }
+  },
+  "occ3d/waymo": {
+   "dataset": "occ3d",
+   "arm": "waymo",
+   "method": "B0",
+   "n_samples": 4219,
+   "predictions": "/media/minh/MINH1/lingbot_waymo_arm/zero_shot_predictions",
+   "geometry_seed": 0,
+   "gt_occupied_voxels": 46118669,
+   "valid_voxels": 212657425,
+   "false_positive_voxels": 6014191,
+   "buckets": {
+    "occ_miss": {
+     "voxels": 34203894,
+     "share": 0.741649634337886
+    },
+    "ev_right": {
+     "voxels": 1561021,
+     "share": 0.03384791959195527
+    },
+    "ev_wrong": {
+     "voxels": 1942422,
+     "share": 0.04211791107848321
+    },
+    "noev_right": {
+     "voxels": 2445907,
+     "share": 0.053035073497025687
+    },
+    "noev_wrong": {
+     "voxels": 5965425,
+     "share": 0.12934946149464982
+    }
+   },
+   "error_character": {
+    "ev_wrong": {
+     "voxels": 1942422,
+     "intra_superclass_share": 0.3563175252339605,
+     "predicted_free_share": 0.0
+    },
+    "noev_wrong": {
+     "voxels": 5965425,
+     "intra_superclass_share": 0.3095762665694397,
+     "predicted_free_share": 0.00017651718025119752
+    }
+   },
+   "distance": {
+    "0-1 m": {
+     "voxels": 7642730,
+     "accuracy": 40.80874242580858
+    },
+    "1-2 m": {
+     "voxels": 1179483,
+     "accuracy": 26.03233789719733
+    },
+    "2-4 m": {
+     "voxels": 960039,
+     "accuracy": 21.39840152327145
+    },
+    "4-8 m": {
+     "voxels": 853985,
+     "accuracy": 18.84482748526028
+    },
+    ">8 m": {
+     "voxels": 1278538,
+     "accuracy": 16.785891385316667
+    }
+   },
+   "distance_no_evidence": {
+    "0-1 m": {
+     "voxels": 4139287,
+     "accuracy": 37.63645767978881
+    },
+    "1-2 m": {
+     "voxels": 1179483,
+     "accuracy": 26.03233789719733
+    },
+    "2-4 m": {
+     "voxels": 960039,
+     "accuracy": 21.39840152327145
+    },
+    "4-8 m": {
+     "voxels": 853985,
+     "accuracy": 18.84482748526028
+    },
+    ">8 m": {
+     "voxels": 1278538,
+     "accuracy": 16.785891385316667
+    }
+   },
+   "miou": {
+    "base": 3.743859313778217,
+    "oracle_teacher": 6.257438143582468,
+    "oracle_extrapolation": 11.473557583854799,
+    "oracle_semantics": 15.234936599385772
+   },
+   "oracle_gain": {
+    "oracle_teacher": 2.5135788298042514,
+    "oracle_extrapolation": 7.729698270076582,
+    "oracle_semantics": 11.491077285607556
+   }
+  }
+ }
+}

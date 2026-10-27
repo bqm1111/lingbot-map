@@ -1,0 +1,95 @@
+{
+  "checks": [
+    {
+      "check": "B0 reproduces the published Gate 17 numbers",
+      "pass": true,
+      "detail": {
+        "completed_unobserved": [
+          8.796376363534595,
+          8.796376363534595
+        ],
+        "ssc_no_evidence": [
+          1.3927645153874209,
+          1.3927645153874209
+        ],
+        "oracle_unobserved": [
+          8.392475299689655,
+          8.392475299689655
+        ]
+      }
+    },
+    {
+      "check": "every anchor used exactly its five causal frames t-4..t",
+      "pass": true,
+      "detail": "24 anchors, 0 violations []"
+    },
+    {
+      "check": "region support lives exactly on the frozen evidence voxels",
+      "pass": true,
+      "detail": "24 anchors, 0 mismatches"
+    },
+    {
+      "check": "occupancy is one frozen volume, shared by all five methods and recomputable",
+      "pass": true,
+      "detail": "24 anchors recomputed, 0 differ"
+    },
+    {
+      "check": "one membership map, identical seed support under both recognizers",
+      "pass": true,
+      "detail": "24 anchors, 0 problems"
+    },
+    {
+      "check": "abstentions, malformed replies and empty regions fall back deterministically",
+      "pass": true,
+      "detail": "0 violations []"
+    },
+    {
+      "check": "the file audit saw no human label on the prediction side",
+      "pass": true,
+      "detail": {
+        "proposals.json": {
+          "opened": 11,
+          "violations": []
+        },
+        "predict.json": {
+          "opened": 203,
+          "violations": []
+        }
+      }
+    },
+    {
+      "check": "the legacy repository changed only by the sanctioned deliverable copy",
+      "pass": true,
+      "detail": {
+        "hash_before": "d56c8ed035e975bf",
+        "hash_after": "787a523e7e66fbea",
+        "unexpected_changes": [],
+        "deliverable_copy": "/home/minh/workspace/lingbot-map_fork/reports/region_naming_pilot",
+        "deliverable_copy_present": true
+      }
+    },
+    {
+      "check": "the reproduction repository was never touched by this experiment",
+      "pass": true,
+      "detail": {
+        "on_sys_path": false,
+        "unchanged": false,
+        "external_change_observed": [
+          "/home/minh/workspace/StreamingSSC/.pytest_cache/v/cache/nodeids",
+          "/home/minh/workspace/StreamingSSC/src/lingssc/__pycache__/verification.cpython-310.pyc",
+          "/home/minh/workspace/StreamingSSC/src/lingssc/training/geometry_training.py"
+        ],
+        "note": "changed by another session; this experiment neither reads nor writes it"
+      }
+    },
+    {
+      "check": "every write landed inside the experiment root",
+      "pass": true,
+      "detail": {
+        "recent_files_outside": []
+      }
+    }
+  ],
+  "all_pass": true,
+  "n_anchors": 24
+}

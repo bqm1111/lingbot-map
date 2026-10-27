@@ -37,7 +37,7 @@ The rule and these thresholds were written and hashed to `82c42383a456ce39…` b
 > **Privileged future supervision does not generalise from future-revealed hidden voxels to never-revealed hidden voxels under the simple completion model.**
 
 The pre-registered statement is the one above, and the measured numbers say something more specific than it does.
-
+<!--  -->
 The head *does* learn the pseudo-target: training top-1 agreement reaches 67 % on `U^R`, and on `E1_P1` and `E2_P1` — the voxels where B0 is wrong by construction and scores 0.00 — it recovers 4.32 and 4.05 mIoU, at 29.7 % and 22.8 % accuracy. It is producing real semantics on hidden space, on both halves, at almost the same rate.
 
 What it never learns is **when to defer**. On `E1`, where its supervision lives, it breaks 157,230 of B0's correct answers and fixes 157,620 of its wrong ones — a net +390 voxels out of 876,254, an almost exact wash (+0.05 pp mIoU). On `E2` the same trade at the same rates loses, 366,911 broken against 216,849 fixed, because `E2` is where B0 is *right more often* (49.1 % against 39.5 % on `E1`). The -3.99 pp is not a failure to produce semantics for never-revealed space; it is a failure of the model's errors to be complementary to the baseline's.

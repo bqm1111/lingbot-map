@@ -72,6 +72,19 @@ def write_report(res: Dict, verification: Dict) -> str:
           f"9. **Occupancy exactly unchanged?** {'Yes' if occ_ok else 'NO'}: " + "; ".join(f"seed {s} TP/FP/FN {v['ours']} (SC IoU {_m(v['iou'])} %)" for s, v in res["occupancy"].items()) + ", identical to the frozen baseline; geometry digests unchanged by training.\n"
           f"10. **Genuine semantic completion rather than copying?** {'Yes' if P['decision'] == 'A' else 'Not demonstrated'}: the frozen rule requires B1 to beat nearest-evidence copying by ≥ 2 mIoU points in evidence-free completed voxels, across seeds and classes.\n"
           f"11. **Ready for untouched zero-shot semantic evaluation?** {'Yes — Decision A unlocks it.' if P['decision'] == 'A' else 'No — target evaluation stays locked (Decision ' + P['decision'] + ').'}\n",
+          "## Interpretation (measurements vs reading)\n",
+          f"* **Measured.** B1 is below nearest-evidence copying in every region, including evidence voxels where it receives the teacher feature directly "
+          f"(oracle_observed {_m(mean('oracle_observed', 'B1'))} vs {_m(mean('oracle_observed', 'B0'))} mIoU) and in the label-free held-out test "
+          f"(cosine {hc1:.3f} vs {hc0:.3f}). B1 predicts {np.mean([b1p[s]['gt_classes_predicted'] for s in seeds]):.1f} of {b1p[seeds[0]]['n_gt_classes']} GT classes on completed_unobserved; "
+          f"B0 predicts all of them. It gains only on large flat classes ({', '.join(k for k, _ in up) or 'none'}).\n"
+          "* **Supported reading.** The head did not learn to preserve, let alone propagate, teacher class identity: its output keeps the teacher's shared "
+          "feature direction (final training loss 0.03–0.06 against 0.093 for a constant mean feature) while losing the small residual angles that decide the class. "
+          "This matches the risk recorded in `predeclaration.md` before evaluation.\n"
+          f"* **Rule vs pattern.** The frozen order yields Decision {P['decision']}: P1 fails, and the collapse clause of P3 passes (dominant fraction and class count "
+          "within their limits), so C is not triggered. The observed pattern is nonetheless a *partial* collapse (whole classes vanish), not 'near the trivial baseline'. "
+          "The decision stands as frozen; the next action targets the objective, not geometry.\n"
+          "* **Hypothesis (untested).** A distillation that removes the shared component (class-logit KL in the frozen text space) would let the same head keep class identity. "
+          "No ablation of this exists.\n",
           f"## Decision {P['decision']}\n",
           markdown_table(["criterion", "pass"], [["P1 unobserved gain ≥ +2 mIoU, all seeds, CI > 0", P["P1"]["pass"]], ["P2 SSC gain all seeds", P["P2"]["pass"]],
                                                 ["P3 ≥ 5 classes gain, no collapse", P["P3"]["pass"]], ["P4 occupancy identical", P["P4"]["pass"]], ["D teacher poor on observed", P["D_teacher_poor"]]]),

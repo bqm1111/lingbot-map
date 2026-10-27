@@ -1,0 +1,367 @@
+{
+ "version": "waymo_arm.1",
+ "results": {
+  "semantickitti": {
+   "dataset": "semantickitti",
+   "method": "B0",
+   "n_samples": 801,
+   "k360_predictions": "/media/SSD1/MINH_DATASETS/lingbot_zero_shot_eval/predictions",
+   "waymo_predictions": "/media/minh/MINH1/lingbot_waymo_arm/zero_shot_predictions",
+   "populations": {
+    "full": {
+     "k360": {
+      "sc_iou": 26.396948217145532,
+      "ssc_miou": 4.3185054284837605,
+      "n_gt_voxels": 1173859441
+     },
+     "waymo": {
+      "sc_iou": 23.553943978330498,
+      "ssc_miou": 4.9014812554939615,
+      "n_gt_voxels": 1173859441
+     },
+     "delta_sc_iou": -2.843004238815034,
+     "delta_ssc_miou": 0.582975827010201,
+     "ci_delta_sc_iou": {
+      "lo": -3.414446362700711,
+      "hi": -2.261356537114343,
+      "significant_at_95": true
+     },
+     "ci_delta_ssc_miou": {
+      "lo": 0.4421683513302902,
+      "hi": 0.7142874965177555,
+      "significant_at_95": true
+     }
+    },
+    "observed": {
+     "k360": {
+      "sc_iou": 33.43328787096904,
+      "ssc_miou": 6.966575821533545,
+      "n_gt_voxels": 139132541
+     },
+     "waymo": {
+      "sc_iou": 29.343622237082954,
+      "ssc_miou": 8.123371774857265,
+      "n_gt_voxels": 139132541
+     },
+     "delta_sc_iou": -4.089665633886085,
+     "delta_ssc_miou": 1.1567959533237202,
+     "ci_delta_sc_iou": {
+      "lo": -4.987422893906644,
+      "hi": -3.1920757365818453,
+      "significant_at_95": true
+     },
+     "ci_delta_ssc_miou": {
+      "lo": 0.809722909679395,
+      "hi": 1.4598858690570453,
+      "significant_at_95": true
+     }
+    },
+    "completed": {
+     "k360": {
+      "sc_iou": 24.920942723964373,
+      "ssc_miou": 3.4560544401147344,
+      "n_gt_voxels": 1034726900
+     },
+     "waymo": {
+      "sc_iou": 21.768179642964448,
+      "ssc_miou": 3.594628807836541,
+      "n_gt_voxels": 1034726900
+     },
+     "delta_sc_iou": -3.152763080999925,
+     "delta_ssc_miou": 0.13857436772180654,
+     "ci_delta_sc_iou": {
+      "lo": -3.830115955575708,
+      "hi": -2.443911221951016,
+      "significant_at_95": true
+     },
+     "ci_delta_ssc_miou": {
+      "lo": 0.03546415338990633,
+      "hi": 0.24584924277112766,
+      "significant_at_95": true
+     }
+    }
+   },
+   "per_class": {
+    "k360": {
+     "car": 7.567988101891377,
+     "bicycle": 3.6806102062432853,
+     "motorcycle": 4.576411829378527,
+     "truck": 3.9772653959216244,
+     "other-vehicle": 1.896687888622982,
+     "person": 1.432476457419568,
+     "bicyclist": 2.3160172257337,
+     "motorcyclist": 1.8957345941615567,
+     "road": 20.152308097848223,
+     "parking": 1.7307074669600675,
+     "sidewalk": 8.74726739546684,
+     "other-ground": 0.06339171311169779,
+     "building": 6.516776166710519,
+     "fence": 2.6660747200420087,
+     "vegetation": 13.492363332352697,
+     "trunk": 0.8275465967654047,
+     "terrain": 0.006142831957337104,
+     "pole": 0.46315151787561065,
+     "traffic-sign": 0.042681602728426575
+    },
+    "waymo": {
+     "car": 8.90886359924887,
+     "bicycle": 3.8919856582736054,
+     "motorcycle": 5.373591707007915,
+     "truck": 4.199743548804928,
+     "other-vehicle": 3.2282349540751647,
+     "person": 1.9327248647277635,
+     "bicyclist": 0.5562174505484052,
+     "motorcyclist": 2.2211867004952057,
+     "road": 27.084609400749205,
+     "parking": 2.2771074628075083,
+     "sidewalk": 10.294338592851906,
+     "other-ground": 0.0859479045191642,
+     "building": 6.8381414711953425,
+     "fence": 2.8972761066652244,
+     "vegetation": 11.542765260375429,
+     "trunk": 0.9896782646854696,
+     "terrain": 0.006071733554828269,
+     "pole": 0.4589618088970136,
+     "traffic-sign": 0.3406973649023304
+    }
+   },
+   "accuracy": {
+    "correct_occupied_per_arm": {
+     "k360": {
+      "accuracy": 41.53651577179714,
+      "n_voxels": 44053033
+     },
+     "waymo": {
+      "accuracy": 47.452214332090534,
+      "n_voxels": 39683185
+     },
+     "delta": 5.915698560293393,
+     "same_voxel_set": false
+    },
+    "shared_correct_occupied": {
+     "k360": {
+      "accuracy": 42.37070197189909,
+      "n_voxels": 33687018
+     },
+     "waymo": {
+      "accuracy": 42.37070197189909,
+      "n_voxels": 33687018
+     },
+     "delta": 0.0,
+     "same_voxel_set": true,
+     "ci_delta": {
+      "lo": 0.0,
+      "hi": 0.0,
+      "significant_at_95": false
+     }
+    }
+   },
+   "per_class_delta": {
+    "car": 1.3408754973574926,
+    "bicycle": 0.21137545203032015,
+    "motorcycle": 0.7971798776293877,
+    "truck": 0.22247815288330397,
+    "other-vehicle": 1.3315470654521826,
+    "person": 0.5002484073081954,
+    "bicyclist": -1.759799775185295,
+    "motorcyclist": 0.32545210633364907,
+    "road": 6.9323013029009815,
+    "parking": 0.5463999958474408,
+    "sidewalk": 1.5470711973850655,
+    "other-ground": 0.02255619140746641,
+    "building": 0.32136530448482326,
+    "fence": 0.23120138662321565,
+    "vegetation": -1.9495980719772685,
+    "trunk": 0.16213166792006495,
+    "terrain": -7.109840250883476e-05,
+    "pole": -0.004189708978597051,
+    "traffic-sign": 0.2980157621739038
+   },
+   "statistics": {
+    "n_blocks": 33,
+    "resamples": 2000,
+    "bootstrap_seed": 0,
+    "block_rule": "25 contiguous anchors",
+    "paired": "both arms resampled on the same anchors"
+   }
+  },
+  "occ3d": {
+   "dataset": "occ3d",
+   "method": "B0",
+   "n_samples": 4219,
+   "k360_predictions": "/media/SSD1/MINH_DATASETS/lingbot_zero_shot_eval/predictions",
+   "waymo_predictions": "/media/minh/MINH1/lingbot_waymo_arm/zero_shot_predictions",
+   "populations": {
+    "full": {
+     "k360": {
+      "sc_iou": 31.939957771336434,
+      "ssc_miou": 3.706313886314373,
+      "n_gt_voxels": 212657425
+     },
+     "waymo": {
+      "sc_iou": 22.854635253082222,
+      "ssc_miou": 3.743859313778217,
+      "n_gt_voxels": 212657425
+     },
+     "delta_sc_iou": -9.085322518254213,
+     "delta_ssc_miou": 0.037545427463843595,
+     "ci_delta_sc_iou": {
+      "lo": -10.193746877974743,
+      "hi": -7.999805429363843,
+      "significant_at_95": true
+     },
+     "ci_delta_ssc_miou": {
+      "lo": -0.23845020970521758,
+      "hi": 0.28000009094014816,
+      "significant_at_95": false
+     }
+    },
+    "observed": {
+     "k360": {
+      "sc_iou": 41.82196766943439,
+      "ssc_miou": 5.659356572104142,
+      "n_gt_voxels": 55436411
+     },
+     "waymo": {
+      "sc_iou": 33.504948455350174,
+      "ssc_miou": 6.928914148463096,
+      "n_gt_voxels": 55436411
+     },
+     "delta_sc_iou": -8.317019214084219,
+     "delta_ssc_miou": 1.2695575763589542,
+     "ci_delta_sc_iou": {
+      "lo": -9.868373688515751,
+      "hi": -6.896782184189855,
+      "significant_at_95": true
+     },
+     "ci_delta_ssc_miou": {
+      "lo": 0.8721509404040633,
+      "hi": 1.642081617473234,
+      "significant_at_95": true
+     }
+    },
+    "completed": {
+     "k360": {
+      "sc_iou": 27.356364955278167,
+      "ssc_miou": 2.6863277934212957,
+      "n_gt_voxels": 157221014
+     },
+     "waymo": {
+      "sc_iou": 17.01343816020243,
+      "ssc_miou": 1.8313836253899418,
+      "n_gt_voxels": 157221014
+     },
+     "delta_sc_iou": -10.342926795075737,
+     "delta_ssc_miou": -0.8549441680313539,
+     "ci_delta_sc_iou": {
+      "lo": -11.527788764522322,
+      "hi": -9.253059639025867,
+      "significant_at_95": true
+     },
+     "ci_delta_ssc_miou": {
+      "lo": -1.117177021563353,
+      "hi": -0.6312189317179568,
+      "significant_at_95": true
+     }
+    }
+   },
+   "per_class": {
+    "k360": {
+     "others": 0.043848652800585454,
+     "barrier": 0.8893649801720428,
+     "bicycle": 1.35309662394383,
+     "bus": 3.286706363764363,
+     "car": 5.235967829064647,
+     "construction_vehicle": 3.3963134370758534,
+     "motorcycle": 2.515590317483461,
+     "pedestrian": 0.8270389960536905,
+     "traffic_cone": 1.8974690159151413,
+     "trailer": 1.2203832115075737,
+     "truck": 3.6380875970528908,
+     "driveable_surface": 23.58412778866481,
+     "other_flat": 0.8473891292846332,
+     "sidewalk": 11.113033208952285,
+     "terrain": 0.7669000130695618,
+     "manmade": 0.27869787160741916,
+     "vegetation": 2.113321030931561
+    },
+    "waymo": {
+     "others": 0.040637062716801495,
+     "barrier": 1.3249135158956749,
+     "bicycle": 1.747654389651966,
+     "bus": 6.218814773004863,
+     "car": 5.823867649198322,
+     "construction_vehicle": 2.4928528504385845,
+     "motorcycle": 2.872729565188973,
+     "pedestrian": 0.6828010218992336,
+     "traffic_cone": 1.6060827840924448,
+     "trailer": 2.199066481534045,
+     "truck": 6.948556713872659,
+     "driveable_surface": 14.734655697439022,
+     "other_flat": 0.6953209676667074,
+     "sidewalk": 7.917253640039938,
+     "terrain": 0.7576257627542832,
+     "manmade": 1.0080900369662509,
+     "vegetation": 6.574685421869905
+    }
+   },
+   "accuracy": {
+    "correct_occupied_per_arm": {
+     "k360": {
+      "accuracy": 31.981852749783314,
+      "n_voxels": 16201022
+     },
+     "waymo": {
+      "accuracy": 33.62990908346989,
+      "n_voxels": 11914775
+     },
+     "delta": 1.6480563336865757,
+     "same_voxel_set": false
+    },
+    "shared_correct_occupied": {
+     "k360": {
+      "accuracy": 30.528401473771755,
+      "n_voxels": 9602301
+     },
+     "waymo": {
+      "accuracy": 30.58378403259802,
+      "n_voxels": 9602301
+     },
+     "delta": 0.05538255882626686,
+     "same_voxel_set": true,
+     "ci_delta": {
+      "lo": 0.03466686035792508,
+      "hi": 0.07846332313498915,
+      "significant_at_95": true
+     }
+    }
+   },
+   "per_class_delta": {
+    "others": -0.003211590083783959,
+    "barrier": 0.43554853572363206,
+    "bicycle": 0.39455776570813605,
+    "bus": 2.9321084092404996,
+    "car": 0.5878998201336749,
+    "construction_vehicle": -0.9034605866372689,
+    "motorcycle": 0.3571392477055122,
+    "pedestrian": -0.14423797415445683,
+    "traffic_cone": -0.2913862318226965,
+    "trailer": 0.9786832700264712,
+    "truck": 3.310469116819768,
+    "driveable_surface": -8.849472091225786,
+    "other_flat": -0.1520681616179258,
+    "sidewalk": -3.1957795689123465,
+    "terrain": -0.00927425031527862,
+    "manmade": 0.7293921653588318,
+    "vegetation": 4.4613643909383445
+   },
+   "statistics": {
+    "n_blocks": 150,
+    "resamples": 2000,
+    "bootstrap_seed": 0,
+    "block_rule": "one per scene",
+    "paired": "both arms resampled on the same anchors"
+   }
+  }
+ }
+}

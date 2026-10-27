@@ -1,0 +1,276 @@
+% ---------------------------------------------------------------------------------------------
+% Results record: our causal system vs OccAny, SemanticKITTI 08 and Occ3D-nuScenes val.
+% Compiles with pdflatex; needs only booktabs.
+% Every number is traceable -- see Appendix A for the file behind each table.
+% Last updated 2026-10-16.
+% ---------------------------------------------------------------------------------------------
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\us}{\textbf{ours}}
+\newcommand{\nm}{\,---\,}
+
+\title{Causal 3D occupancy and semantics: measured comparison against OccAny\\[2pt]
+\large SemanticKITTI 08 and Occ3D-nuScenes val}
+\author{}
+\date{Record compiled 16 October 2026}
+
+\begin{document}
+\maketitle
+
+\section{What the measurements support}
+
+\begin{enumerate}
+  \item Our system is \emph{causal}: it consumes the current and past frames only ($t{-}4\ldots t$).
+        OccAny's published configuration consumes the evaluated frame plus four \emph{later} frames
+        ($t\ldots t{+}40$ raw frames, about $4$\,s of ego motion).
+  \item \textbf{Occupancy.} In the single-camera setting our causal system exceeds OccAny on
+        Occ3D-nuScenes ($+10.98$ raw) and is indistinguishable from it on SemanticKITTI
+        ($-0.04$, CI spanning zero) \emph{while using no future frames}.
+  \item \textbf{Semantics.} Against OccAny's own causal configuration we are ahead on SemanticKITTI
+        ($4.45$ vs $3.97$). OccAny's semantic advantage over us exists only with the future window.
+  \item \textbf{The future window is worth more to semantics than to geometry} for OccAny:
+        $+1.91$ SC IoU but $+3.34$ SSC mIoU.
+  \item Being causal costs \emph{our own} system $2.77$ SC IoU on identical targets.
+  \item Not claimed: absolute state of the art; superiority in OccAny's six-camera surround setting
+        (it leads there); or any significant gain from our learned semantic head over the trivial
+        nearest-evidence baseline (see \S\ref{sec:caveats}).
+\end{enumerate}
+
+\section{Protocol definitions}
+
+All numbers use OccAny's own samples, labels, grid placement and evaluator unless stated.
+
+\begin{description}\itemsep2pt
+  \item[Track O] every voxel with $\text{label}\neq255$ on the $256\times256\times32$ grid. OccAny's
+        convention; all comparison tables below are Track O.
+  \item[Track P] $\text{valid}\cap\text{horizontal FOV}\cap\text{range}\le40$\,m. Our own analysis
+        convention, \emph{not} comparable to OccAny. Reported once, in \S\ref{sec:ours}.
+  \item[causal window] frames $t{-}4\ldots t$. Our deployed setting.
+  \item[forward window] frames $t\ldots t{+}40$ (stride 10). OccAny's published setting; also run on
+        our system to match their protocol.
+  \item[geometry pooling] $3\times3\times3$ majority \emph{dilation} of occupancy. Changes SC IoU.
+  \item[semantic pooling] $3\times3\times3$ majority \emph{relabelling} of already-occupied voxels.
+        Leaves SC IoU unchanged. Both are the default of OccAny's released metric script
+        (\texttt{USE\_MAJORITY\_POOLING=1}, \texttt{POOLING\_MODE=separate}) and are not described in
+        their paper.
+  \item[SSC mIoU] OccAny's \texttt{SSCMetrics.get\_stats}: mean IoU over all 19 non-empty classes,
+        absent classes counted as $0$.
+\end{description}
+
+\section{SemanticKITTI 08 \nm occupancy (SC IoU)}
+
+\begin{table}[h]\centering
+\begin{tabular}{llrrl}
+\toprule
+window (ours) & pooling & \us & OccAny & $\Delta$, paired 95\,\% CI \\
+\midrule
+causal  & none     & 26.32 & 25.21 & $+1.11$ $[+0.30,+1.93]$ \\
+causal  & geometry & 25.89 & 25.93 & $\mathbf{-0.04}$ $[-0.77,+0.70]$ \\
+forward & none     & 29.82 & 25.20 & $+4.61$ $[+3.73,+5.50]$ \\
+forward & geometry & 28.66 & 25.92 & $+2.74$ $[+2.05,+3.43]$ \\
+\bottomrule
+\end{tabular}
+\caption{OccAny's 805 samples (801 causal-eligible), its labels, placement and scorer. OccAny's column
+is always its forward window. The \emph{causal} rows describe our deployed system; the \emph{forward}
+rows exist only to match OccAny's protocol and are not a causal result.}
+\end{table}
+
+\paragraph{Cost of causality (ours, identical targets).}
+$28.66 \rightarrow 25.89 = \mathbf{-2.77}$ SC IoU. Same model and weights; only the input window changes.
+
+\paragraph{Against OccAny's own causal configuration.}
+OccAny's \texttt{1frame} preset is a single image, causal by construction.
+
+\begin{table}[h]\centering
+\begin{tabular}{lrr}
+\toprule
+SemanticKITTI 08, geometry pooling & SC IoU & frames used \\
+\midrule
+\us, causal & \textbf{25.89} & 5 (past) \\
+OccAny, 1-frame \emph{causal} & 24.02 & 1 \\
+OccAny, 5-frame \emph{forward} & 25.93 & 5 (future) \\
+\bottomrule
+\end{tabular}
+\caption{Our reproduction of OccAny's 1-frame preset gives P $45.62$ / R $33.65$ / IoU $24.02$ on 814
+samples against its published P $45.64$ / R $33.66$ / IoU $24.03$.}
+\end{table}
+
+\section{SemanticKITTI 08 \nm semantics (Track O)}
+
+\begin{table}[h]\centering
+\begin{tabular}{llrrr}
+\toprule
+system & window & SSC mIoU & superclass mIoU & SC IoU \\
+\midrule
+\us\ (B0, nearest evidence) & causal & 4.39 & 8.34 & 26.40 \\
+\us\ (B3, mean of 3 seeds)  & causal & \textbf{4.45} & 8.39 & 26.40 \\
+OccAny, 1-frame             & \emph{causal} & 3.97 & 8.15 & 20.33 \\
+OccAny, 5-frame             & forward & 7.31 & 13.58 & 25.25 \\
+\bottomrule
+\end{tabular}
+\caption{Semantic pooling applied to both sides. Ours on 801 samples, OccAny 1-frame on 814, OccAny
+5-frame on the 796 samples shared across window variants. OccAny publishes no 1-frame semantic number;
+that row is our measurement with its own preset.}
+\end{table}
+
+\paragraph{What the future window buys OccAny.}
+\begin{center}
+\begin{tabular}{lr}
+\toprule
+quantity & gain from 4 future frames \\
+\midrule
+SC IoU (geometry preset) & $+1.91$ \quad ($24.02\rightarrow25.93$) \\
+SSC mIoU & $\mathbf{+3.34}$ \quad ($3.97\rightarrow7.31$) \\
+superclass mIoU & $+5.43$ \quad ($8.15\rightarrow13.58$) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Occ3D-nuScenes val \nm occupancy (SC IoU)}
+
+\begin{table}[h]\centering
+\begin{tabular}{llrrl}
+\toprule
+window (ours) & pooling & \us & OccAny & $\Delta$, paired 95\,\% CI \\
+\midrule
+causal  & none     & 31.64 & 20.66 & $\mathbf{+10.98}$ $[+9.01,+12.97]$ \\
+causal  & geometry & 40.91 & 23.55 & $+17.36$ $[+16.04,+18.66]$ \\
+forward & none     & 25.13 & 20.67 & $+4.46$ $[+2.30,+6.62]$ \\
+forward & geometry & 40.09 & 23.56 & $+16.54$ $[+15.05,+18.03]$ \\
+\bottomrule
+\end{tabular}
+\caption{Single camera (\texttt{CAM\_FRONT}), front-half label (OccAny's \texttt{5frames} setting sets
+\texttt{voxel\_label[:100]=255}). 4{,}819 samples (4{,}219 causal-eligible).}
+\end{table}
+
+\paragraph{Pooling is not neutral here.} Geometry pooling adds $+14.96$ to our number and only $+2.89$
+to OccAny's, because a one-voxel dilation rewards a conservative high-precision prediction and ours is
+exactly that (raw precision $79.07$, recall $26.91$). \textbf{The raw rows are the defensible
+statement}; the pooled $\Delta$ should never be quoted alone.
+
+\section{Occ3D-nuScenes val \nm semantics (Track O)}
+
+\begin{table}[h]\centering
+\begin{tabular}{llrrr}
+\toprule
+system & setting & SSC mIoU & superclass & SC IoU \\
+\midrule
+\us\ (B3) & 6 cameras, 1 timestep (surround) & 4.09 & 7.24 & 32.62 \\
+OccAny    & 6 cameras, 1 timestep (surround) & \textbf{6.66} & 10.32 & \nm \\
+\midrule
+\us\ (B3) & 1 camera, 5 causal frames & 3.80 & 6.76 & 31.94 \\
+\us\ (B3) & 1 camera, 5 forward frames, front-half label & 2.62 & 5.08 & 25.45 \\
+OccAny    & 1 camera, 5 frames & \multicolumn{3}{l}{\emph{not published; not yet measured}} \\
+\bottomrule
+\end{tabular}
+\caption{Only the surround pair is like-for-like, and OccAny leads it. OccAny's published nuScenes
+semantics exist \emph{only} for the surround setting, which is a \emph{single timestep}
+(\texttt{video\_length=1}) and therefore already causal in time \nm there is no future window to remove
+from $6.66$. Our 1-camera causal row is scored against the frozen protocol label, not OccAny's
+front-half label, so it is not directly comparable to the row below it.}
+\end{table}
+
+\paragraph{OccAny's published surround geometry is 34.15 against our 32.62.} In its six-camera setting
+OccAny is ahead on occupancy. Our advantage is a \emph{single-camera} advantage and should be stated as
+such.
+
+\section{Our own frozen headline numbers}\label{sec:ours}
+
+\begin{table}[h]\centering
+\begin{tabular}{lrrrr}
+\toprule
+ & \multicolumn{2}{c}{Track P} & \multicolumn{2}{c}{Track O} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+dataset (samples) & SC IoU & SSC mIoU B0/B3 & SC IoU & SSC mIoU B0/B3 \\
+\midrule
+SemanticKITTI 08 (801)        & 32.65 & 5.45 / 5.64 & 26.40 & 4.32 / 4.43 \\
+Occ3D-nuScenes val (4{,}219)  & 36.87 & 4.36 / 4.54 & 31.94 & 3.71 / 3.80 \\
+\bottomrule
+\end{tabular}
+\caption{Causal window, no pooling. \textbf{Track P is not comparable to OccAny} (different scored
+region); it is included only so the two conventions are not confused.}
+\end{table}
+
+\section{Reproduction gates}
+
+\begin{table}[h]\centering
+\begin{tabular}{llrr}
+\toprule
+check & measured & published & agreement \\
+\midrule
+OccAny KITTI 5-frame semantic (805) & 7.27 / 13.52 & 7.28 / 13.53 & $0.01$ \\
+OccAny KITTI 1-frame geometry (814) & 24.02 & 24.03 & $0.01$ \\
+OccAny nuScenes surround semantic (377-sample shard) & 6.78 / 10.43 & 6.66 / 10.32 & $0.12$ \\
+our scorer vs our own frozen numbers (801) & 4.32 / 4.43 & 4.32 / 4.43 & exact \\
+\bottomrule
+\end{tabular}
+\caption{OccAny was rebuilt and re-run from scratch here, including a GroundingDINO box cache that did
+not previously exist (814 KITTI frames; 36{,}114 nuScenes sample-camera pairs). The OccAny checkout was
+never modified: runs go through a symlink shadow project.}
+\end{table}
+
+\section{Caveats and open items}\label{sec:caveats}
+
+\begin{enumerate}\itemsep2pt
+  \item \textbf{Frame budgets differ in the causal semantic comparison.} We use 5 causal frames; OccAny's
+        causal configuration uses 1. OccAny's 5-frame \emph{causal} number is not measured (see
+        \S\ref{sec:retracted}), so we have strictly more input in that row.
+  \item \textbf{Our learned semantic head is not shown to help.} The frozen decision is
+        \texttt{PAPER C}: B3 $-$ B0 $=+0.25$ on SemanticKITTI with the CI containing zero, $+0.54$ on
+        Occ3D. The semantic contribution over trivial nearest-evidence copying is not significant.
+  \item \textbf{Semantics are teacher-bounded.} The 2D teacher signal is $63.9\,\%$ top-1 correct and
+        covers $12.3\,\%$ of hidden occupied voxels. Oracle instance grouping moves the primary
+        population by $+0.09$ mIoU (CI $[-0.27,+0.34]$); a VLM recognizer on the same regions moves it
+        $+0.88$ (CI touching zero); region extension $\pm0.02$. Re-grouping or re-naming does not move
+        the bound.
+  \item \textbf{Both systems are zero-shot on both benchmarks.} OccAny trains on DDAD, ONCE, PandaSet,
+        VKITTI and Waymo; we train on KITTI-360. Neither trains on SemanticKITTI or nuScenes.
+  \item \textbf{Absolute numbers are below supervised methods} trained on these benchmarks. The claim is
+        zero-shot and causal, not absolute state of the art.
+  \item Open: OccAny 1-camera \texttt{5frames} semantics on Occ3D; a correct OccAny 5-frame causal variant.
+\end{enumerate}
+
+\section{Retracted}\label{sec:retracted}
+
+Two figures produced on 15 October 2026 are withdrawn. A monkeypatch that reversed OccAny's input window
+returned SC IoU $14.62$, which is $9.4$ points \emph{below} OccAny's own single-frame $24.03$ \nm
+impossible, since a causal 5-frame window contains that single frame plus four more. Running OccAny's
+unmodified 1-frame preset reproduced $24.02$, isolating the fault to the patch.
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+retracted claim & corrected \\
+\midrule
+``the future window costs OccAny $2.69$ mIoU / $10.6$ SC IoU'' & $+1.91$ SC IoU, $+3.34$ SSC mIoU \\
+``our geometry leads OccAny by $+11.8$ SC IoU'' & $-0.04$ to $+2.74$ (SK), $+4.46$ to $+17.36$ (Occ3D) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\appendix
+\section{Provenance}
+
+\begin{description}\itemsep1pt
+  \item[Occupancy tables (\S3, \S5)] \texttt{artifacts/occany\_comparison/report.md}, rows 21--23 and
+        29--33; deployed-setting lines 41 and 47.
+  \item[Semantic tables (\S4, \S6)] \texttt{artifacts/like\_for\_like/results\_*\_semantic*.json};
+        OccAny side \texttt{/media/SSD1/occany\_causal/logs/\{paired\_forward,score\_k1frame\_sem,%
+        score\_ns\_surround\_gate\}.txt}.
+  \item[Frozen headline (\S7)] \texttt{artifacts/final\_zero\_shot/analysis.json}
+        (\texttt{occupancy/ours\_\_P\_\_all}, \texttt{occupancy/ours\_\_official}, \texttt{official/}).
+  \item[Gates (\S8)] \texttt{/media/SSD1/occany\_causal/logs/score\_*.txt};
+        \texttt{artifacts/like\_for\_like/results\_semantickitti\_frozencheck.json}.
+  \item[Caveat 3] \texttt{artifacts/gate17\_instance\_oracle/analysis.json};
+        \texttt{/media/SSD1/region\_naming\_pilot/report.md}.
+  \item[Protocol definitions] \texttt{tools/zero\_shot\_eval/practical/masks.py},
+        \texttt{tools/zero\_shot\_eval/official/evaluator.py},
+        \texttt{tools/zero\_shot\_eval/canonical/metrics.py}.
+  \item[Run scripts] \texttt{/media/SSD1/occany\_causal/code/}; narrative guidance in
+        \texttt{reports/paper\_numbers\_occany\_comparison.md}.
+\end{description}
+
+\end{document}

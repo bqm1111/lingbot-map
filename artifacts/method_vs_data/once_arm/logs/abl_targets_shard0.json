@@ -1,0 +1,115 @@
+{
+  "provenance": {
+    "version": "once_arm.1",
+    "status": "exploratory",
+    "prevalence_band": {
+      "gate": "occupied prevalence in valid",
+      "predeclared_band": [
+        0.015,
+        0.04
+      ],
+      "once_measured_median": 0.013,
+      "verdict": "FAILED -- not relabelled as passed",
+      "sequences_inside_band": "2 of 6",
+      "why_it_is_not_disqualifying": "The band was calibrated under the frozen 21-sweep / 10.46 s carve. Applied to the authorized ~2.1 s window it also rejects KITTI-360, on vertical coverage (21 of 32 z-levels against a floor of 30). Each corpus fails a different band and the corpus the bands were calibrated from is one of them.",
+      "cause": "Scene content. LiDAR sparsity is falsified as the cause: removing 85 % of KITTI-360's returns leaves it in band (prevalence elasticity to point count ~0.1).",
+      "reference": "artifacts/method_vs_data/once_supervision_validation.md"
+    },
+    "camera": "cam01",
+    "hfov_deg": 90.1,
+    "input_clip": {
+      "offsets": [
+        -4,
+        -3,
+        -2,
+        -1,
+        0
+      ],
+      "stream_stride": 1,
+      "span_s": 2.0,
+      "future_frames_used": 0
+    },
+    "supervision": {
+      "policy": "duration-matched, native cadence",
+      "span_s": 2.1,
+      "max_gap_s": 0.75,
+      "interpolated_or_duplicated_sweeps": false
+    },
+    "grid": {
+      "dims": [
+        256,
+        256,
+        32
+      ],
+      "voxel_size": 0.2,
+      "origin": [
+        0.0,
+        -25.6,
+        -2.0
+      ],
+      "frame": "velodyne_of_anchor_frame"
+    },
+    "anchors": {
+      "min_separation_frames": 5,
+      "target_n": 1400,
+      "independent_scene_count": 6,
+      "note": "the anchor count is NOT the independent count"
+    },
+    "val_sequences": [
+      "000121"
+    ]
+  },
+  "manifest_digest": "aab448ccf7cee085e6bace9665d884c26b3d13dc69be72ea11458e6d47dce6f3",
+  "shard": 0,
+  "shards": 1,
+  "n_built": 10,
+  "n_skipped": 2,
+  "n_failed": 0,
+  "minutes": 0.028983795642852785,
+  "aggregate": {
+    "prevalence_in_valid": {
+      "min": 0.023850182071328163,
+      "p50": 0.03352251276373863,
+      "max": 0.04460754245519638
+    },
+    "valid_fraction": {
+      "min": 0.3941044807434082,
+      "p50": 0.4824995994567871,
+      "max": 0.5997905731201172
+    },
+    "conflict_fraction_of_touched": {
+      "min": 0.01583972469498373,
+      "p50": 0.024664086588173078,
+      "max": 0.02920475234144785
+    },
+    "n_occupied": {
+      "min": 28264.0,
+      "p50": 33640.0,
+      "max": 38249.0
+    },
+    "n_free": {
+      "min": 789629.0,
+      "p50": 978102.0,
+      "max": 1227852.0
+    },
+    "n_unknown": {
+      "min": 839300.0,
+      "p50": 1085277.0,
+      "max": 1270655.0
+    }
+  },
+  "band_reminder": {
+    "gate": "occupied prevalence in valid",
+    "predeclared_band": [
+      0.015,
+      0.04
+    ],
+    "once_measured_median": 0.013,
+    "verdict": "FAILED -- not relabelled as passed",
+    "sequences_inside_band": "2 of 6",
+    "why_it_is_not_disqualifying": "The band was calibrated under the frozen 21-sweep / 10.46 s carve. Applied to the authorized ~2.1 s window it also rejects KITTI-360, on vertical coverage (21 of 32 z-levels against a floor of 30). Each corpus fails a different band and the corpus the bands were calibrated from is one of them.",
+    "cause": "Scene content. LiDAR sparsity is falsified as the cause: removing 85 % of KITTI-360's returns leaves it in band (prevalence elasticity to point count ~0.1).",
+    "reference": "artifacts/method_vs_data/once_supervision_validation.md"
+  },
+  "errors": []
+}

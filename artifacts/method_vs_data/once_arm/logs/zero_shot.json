@@ -1,0 +1,241 @@
+{
+  "provenance": {
+    "version": "once_arm.1",
+    "status": "exploratory",
+    "prevalence_band": {
+      "gate": "occupied prevalence in valid",
+      "predeclared_band": [
+        0.015,
+        0.04
+      ],
+      "once_measured_median": 0.013,
+      "verdict": "FAILED -- not relabelled as passed",
+      "sequences_inside_band": "2 of 6",
+      "why_it_is_not_disqualifying": "The band was calibrated under the frozen 21-sweep / 10.46 s carve. Applied to the authorized ~2.1 s window it also rejects KITTI-360, on vertical coverage (21 of 32 z-levels against a floor of 30). Each corpus fails a different band and the corpus the bands were calibrated from is one of them.",
+      "cause": "Scene content. LiDAR sparsity is falsified as the cause: removing 85 % of KITTI-360's returns leaves it in band (prevalence elasticity to point count ~0.1).",
+      "reference": "artifacts/method_vs_data/once_supervision_validation.md"
+    },
+    "camera": "cam01",
+    "hfov_deg": 90.1,
+    "undistort_images": false,
+    "distortion_evidence": {
+      "decision": "use shipped JPEGs as-is; do NOT call cv2.undistort",
+      "logcorr_lidar_vs_mono_depth": {
+        "plain_pinhole": 0.8571,
+        "distortion_applied": 0.6978,
+        "pinhole_better_in": "12 of 12 frames"
+      },
+      "map_vs_target_iou_pct": {
+        "shipped": 3.26,
+        "undistorted": 1.44,
+        "shipped_better_in": "11 of 12 anchors"
+      },
+      "retracts": "once_metadata_audit.md \u00a75 (M2 gradient test is centre-biased)"
+    },
+    "input_clip": {
+      "offsets": [
+        -4,
+        -3,
+        -2,
+        -1,
+        0
+      ],
+      "stream_stride": 1,
+      "span_s": 2.0,
+      "future_frames_used": 0
+    },
+    "supervision": {
+      "policy": "duration-matched, native cadence",
+      "span_s": 2.1,
+      "max_gap_s": 0.75,
+      "interpolated_or_duplicated_sweeps": false
+    },
+    "grid": {
+      "dims": [
+        256,
+        256,
+        32
+      ],
+      "voxel_size": 0.2,
+      "origin": [
+        0.0,
+        -25.6,
+        -2.0
+      ],
+      "frame": "velodyne_of_anchor_frame"
+    },
+    "anchors": {
+      "min_separation_frames": 5,
+      "target_n": 1400,
+      "independent_scene_count": 6,
+      "note": "the anchor count is NOT the independent count"
+    },
+    "val_sequences": [
+      "000121"
+    ]
+  },
+  "datasets": {
+    "semantickitti": {
+      "n_anchors": 163,
+      "seed_statistics": {
+        "iou": {
+          "mean": 0.18498453318010852,
+          "median": 0.18371526981816821,
+          "sd": 0.006799604567299344,
+          "n": 3
+        },
+        "precision": {
+          "mean": 0.3142876272729679,
+          "median": 0.3155054259978147,
+          "sd": 0.00302663549094489,
+          "n": 3
+        },
+        "recall": {
+          "mean": 0.31051834654822036,
+          "median": 0.309968432435659,
+          "sd": 0.019256774435127626,
+          "n": 3
+        }
+      },
+      "map_only": {
+        "full": {
+          "tp": 2032159,
+          "fp": 4276113,
+          "fn": 16730771,
+          "iou": 0.08820500920980094,
+          "precision": 0.3221419431502002,
+          "recall": 0.10830712474011255,
+          "n_gt": 18762930,
+          "by_range": {
+            "0-5 m": {
+              "tp": 405279,
+              "fp": 663398,
+              "fn": 1563476,
+              "iou": 0.15397243245358458,
+              "precision": 0.3792343243094031,
+              "recall": 0.20585547719243888,
+              "n_gt": 1968755
+            },
+            "5-10 m": {
+              "tp": 427268,
+              "fp": 734401,
+              "fn": 1477821,
+              "iou": 0.161875210741469,
+              "precision": 0.3678052870482039,
+              "recall": 0.2242771860002341,
+              "n_gt": 1905089
+            },
+            "10-20 m": {
+              "tp": 727563,
+              "fp": 1712057,
+              "fn": 3347475,
+              "iou": 0.12572162717218224,
+              "precision": 0.29822800272173533,
+              "recall": 0.17854140255870007,
+              "n_gt": 4075038
+            },
+            "20-30 m": {
+              "tp": 349667,
+              "fp": 869819,
+              "fn": 3474059,
+              "iou": 0.07449955204435027,
+              "precision": 0.2867330990269671,
+              "recall": 0.09144666746518972,
+              "n_gt": 3823726
+            },
+            ">30 m": {
+              "tp": 122382,
+              "fp": 296438,
+              "fn": 6867940,
+              "iou": 0.016795118818240206,
+              "precision": 0.2922066758989542,
+              "recall": 0.017507348016300252,
+              "n_gt": 6990322
+            }
+          }
+        }
+      }
+    },
+    "occ3d": {
+      "n_anchors": 1182,
+      "seed_statistics": {
+        "iou": {
+          "mean": 0.19285905175540793,
+          "median": 0.19375272169990398,
+          "sd": 0.004663010948864616,
+          "n": 3
+        },
+        "precision": {
+          "mean": 0.5314772979548401,
+          "median": 0.5393011730513457,
+          "sd": 0.015511494978992997,
+          "n": 3
+        },
+        "recall": {
+          "mean": 0.23256818472618646,
+          "median": 0.23218198650396946,
+          "sd": 0.00944135560699337,
+          "n": 3
+        }
+      },
+      "map_only": {
+        "full": {
+          "tp": 1277569,
+          "fp": 773387,
+          "fn": 10680021,
+          "iou": 0.10035121420767629,
+          "precision": 0.6229138996643516,
+          "recall": 0.10684167963611396,
+          "n_gt": 11957590,
+          "by_range": {
+            "0-5 m": {
+              "tp": 292676,
+              "fp": 110716,
+              "fn": 2069900,
+              "iou": 0.11833459211447739,
+              "precision": 0.7255374424877042,
+              "recall": 0.12388003602847061,
+              "n_gt": 2362576
+            },
+            "5-10 m": {
+              "tp": 247582,
+              "fp": 127612,
+              "fn": 1521976,
+              "iou": 0.13050069313767348,
+              "precision": 0.6598772901485631,
+              "recall": 0.1399117745787366,
+              "n_gt": 1769558
+            },
+            "10-20 m": {
+              "tp": 440664,
+              "fp": 285112,
+              "fn": 2748204,
+              "iou": 0.12684701696613107,
+              "precision": 0.6071625405083663,
+              "recall": 0.13818822227825048,
+              "n_gt": 3188868
+            },
+            "20-30 m": {
+              "tp": 234835,
+              "fp": 189854,
+              "fn": 2497661,
+              "iou": 0.08035827330744093,
+              "precision": 0.5529575760144482,
+              "recall": 0.08594157136918042,
+              "n_gt": 2732496
+            },
+            ">30 m": {
+              "tp": 61812,
+              "fp": 60093,
+              "fn": 1842280,
+              "iou": 0.03146954080191021,
+              "precision": 0.5070505721668512,
+              "recall": 0.0324627171376173,
+              "n_gt": 1904092
+            }
+          }
+        }
+      }
+    }
+  }
+}

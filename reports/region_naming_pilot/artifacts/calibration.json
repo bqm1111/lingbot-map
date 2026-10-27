@@ -1,0 +1,66 @@
+{
+  "anchors": [
+    40,
+    481,
+    922,
+    1363
+  ],
+  "criterion": "mIoU on completed_unobserved, pooled-Trident naming",
+  "candidates": [
+    2,
+    4,
+    6,
+    8,
+    12,
+    16
+  ],
+  "rows": [
+    {
+      "max_hops": "P_N (no region extension)",
+      "miou": 0.11077026358705783,
+      "accuracy": 0.40732162024744367,
+      "occupied_coverage": 0.0
+    },
+    {
+      "max_hops": 2,
+      "miou": 0.11089747066105216,
+      "accuracy": 0.4073781142308344,
+      "occupied_coverage": 0.047750276513397694
+    },
+    {
+      "max_hops": 4,
+      "miou": 0.11138186628147725,
+      "accuracy": 0.4086774758488221,
+      "occupied_coverage": 0.0749329961836338
+    },
+    {
+      "max_hops": 6,
+      "miou": 0.11151800608580187,
+      "accuracy": 0.409920343483419,
+      "occupied_coverage": 0.10223344527184963
+    },
+    {
+      "max_hops": 8,
+      "miou": 0.11069648915948979,
+      "accuracy": 0.410654765267499,
+      "occupied_coverage": 0.1289180237799883
+    },
+    {
+      "max_hops": 12,
+      "miou": 0.10608710564068448,
+      "accuracy": 0.41003333145020054,
+      "occupied_coverage": 0.1801723912358284
+    },
+    {
+      "max_hops": 16,
+      "miou": 0.10623253597350765,
+      "accuracy": 0.411389187051579,
+      "occupied_coverage": 0.22740674763917923
+    }
+  ],
+  "chosen_max_hops": 6,
+  "association_thresholds_not_searched": {
+    "assoc_iou_min": 0.15,
+    "assoc_rgb_max": 0.22
+  }
+}

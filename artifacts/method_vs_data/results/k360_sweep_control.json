@@ -1,0 +1,227 @@
+{
+ "bands": {
+  "prevalence": [
+   0.015,
+   0.04
+  ],
+  "conflict_max": 0.12,
+  "valid": [
+   0.45,
+   0.75
+  ],
+  "z_levels_min": 30
+ },
+ "note": "decimate=1 is the frozen recipe (21 sweeps, 0.523 s spacing, 10.46 s span); decimate=5 keeps 5 sweeps over the same span",
+ "runs": {
+  "2013_05_28_drive_0003_sync|dec1": {
+   "drive": "2013_05_28_drive_0003_sync",
+   "decimate": 1,
+   "n_targets": 25,
+   "median": {
+    "prevalence": 0.021748650819063187,
+    "valid": 0.6580853462219238,
+    "conflict": 0.07517466043054079,
+    "z_levels": 32.0,
+    "n_frames_used": 21.0,
+    "span_s": 10.461272954940796,
+    "sweep_dt_s": 0.5230480432510376
+   },
+   "per_band_pass": {
+    "prevalence": true,
+    "valid": true,
+    "conflict": true,
+    "z_levels": true
+   },
+   "in_bands": true,
+   "ranges": {
+    "prevalence": [
+     0.004363560117781162,
+     0.03497632220387459
+    ],
+    "valid": [
+     0.3576517105102539,
+     0.8198928833007812
+    ],
+    "conflict": [
+     0.04887999051253253,
+     0.13299604217846292
+    ]
+   }
+  },
+  "2013_05_28_drive_0007_sync|dec1": {
+   "drive": "2013_05_28_drive_0007_sync",
+   "decimate": 1,
+   "n_targets": 25,
+   "median": {
+    "prevalence": 0.025571463629603386,
+    "valid": 0.5909924507141113,
+    "conflict": 0.07251198700108566,
+    "z_levels": 32.0,
+    "n_frames_used": 21.0,
+    "span_s": 10.441767930984497,
+    "sweep_dt_s": 0.5220935344696045
+   },
+   "per_band_pass": {
+    "prevalence": true,
+    "valid": true,
+    "conflict": true,
+    "z_levels": true
+   },
+   "in_bands": true,
+   "ranges": {
+    "prevalence": [
+     0.0102003775537014,
+     0.052009690552949905
+    ],
+    "valid": [
+     0.31958675384521484,
+     0.856358528137207
+    ],
+    "conflict": [
+     0.04851608475839354,
+     0.12242243646705374
+    ]
+   }
+  },
+  "2013_05_28_drive_0010_sync|dec1": {
+   "drive": "2013_05_28_drive_0010_sync",
+   "decimate": 1,
+   "n_targets": 25,
+   "median": {
+    "prevalence": 0.022349415346980095,
+    "valid": 0.6528496742248535,
+    "conflict": 0.07254620343208058,
+    "z_levels": 32.0,
+    "n_frames_used": 21.0,
+    "span_s": 10.418061017990112,
+    "sweep_dt_s": 0.5208905935287476
+   },
+   "per_band_pass": {
+    "prevalence": true,
+    "valid": true,
+    "conflict": true,
+    "z_levels": true
+   },
+   "in_bands": true,
+   "ranges": {
+    "prevalence": [
+     0.008275726810097694,
+     0.03208788111805916
+    ],
+    "valid": [
+     0.3155207633972168,
+     0.8361344337463379
+    ],
+    "conflict": [
+     0.05411279152272729,
+     0.09105291214554709
+    ]
+   }
+  },
+  "2013_05_28_drive_0003_sync|dec5": {
+   "drive": "2013_05_28_drive_0003_sync",
+   "decimate": 5,
+   "n_targets": 25,
+   "median": {
+    "prevalence": 0.0211541298776865,
+    "valid": 0.622891902923584,
+    "conflict": 0.02192438141116784,
+    "z_levels": 30.0,
+    "n_frames_used": 5.0,
+    "span_s": 10.461272954940796,
+    "sweep_dt_s": 2.615324020385742
+   },
+   "per_band_pass": {
+    "prevalence": true,
+    "valid": true,
+    "conflict": true,
+    "z_levels": true
+   },
+   "in_bands": true,
+   "ranges": {
+    "prevalence": [
+     0.006291601341217756,
+     0.03351422771811485
+    ],
+    "valid": [
+     0.36124610900878906,
+     0.7995686531066895
+    ],
+    "conflict": [
+     0.012593112468696665,
+     0.06775319459656809
+    ]
+   }
+  },
+  "2013_05_28_drive_0007_sync|dec5": {
+   "drive": "2013_05_28_drive_0007_sync",
+   "decimate": 5,
+   "n_targets": 25,
+   "median": {
+    "prevalence": 0.020834272727370262,
+    "valid": 0.5713596343994141,
+    "conflict": 0.013402636291327631,
+    "z_levels": 30.0,
+    "n_frames_used": 5.0,
+    "span_s": 10.441767930984497,
+    "sweep_dt_s": 2.610479950904846
+   },
+   "per_band_pass": {
+    "prevalence": true,
+    "valid": true,
+    "conflict": true,
+    "z_levels": true
+   },
+   "in_bands": true,
+   "ranges": {
+    "prevalence": [
+     0.012963500805199146,
+     0.046902477741241455
+    ],
+    "valid": [
+     0.31648683547973633,
+     0.8196368217468262
+    ],
+    "conflict": [
+     0.006504528108446773,
+     0.0474895780180423
+    ]
+   }
+  },
+  "2013_05_28_drive_0010_sync|dec5": {
+   "drive": "2013_05_28_drive_0010_sync",
+   "decimate": 5,
+   "n_targets": 25,
+   "median": {
+    "prevalence": 0.021251222118735313,
+    "valid": 0.5956234931945801,
+    "conflict": 0.023881568738572806,
+    "z_levels": 31.0,
+    "n_frames_used": 5.0,
+    "span_s": 10.418061017990112,
+    "sweep_dt_s": 2.6045974493026733
+   },
+   "per_band_pass": {
+    "prevalence": true,
+    "valid": true,
+    "conflict": true,
+    "z_levels": true
+   },
+   "in_bands": true,
+   "ranges": {
+    "prevalence": [
+     0.011376327835023403,
+     0.02934212051331997
+    ],
+    "valid": [
+     0.29901981353759766,
+     0.8119292259216309
+    ],
+    "conflict": [
+     0.0038331512976543403,
+     0.036191995144267554
+    ]
+   }
+  }
+ }
+}

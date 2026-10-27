@@ -1,0 +1,52 @@
+[
+ {
+  "arm": "one_frame_unet",
+  "dataset": "occ3d",
+  "n_samples": 4219,
+  "n_written": 264,
+  "n_skipped": 3954,
+  "n_no_scale": 1,
+  "no_scale_samples": [
+   "scene-1064_9ad02057efee422b9845f563b8565485"
+  ],
+  "minutes": 0.6124776601791382,
+  "root": "/media/minh/MINH1/lingbot_one_frame/predictions"
+ },
+ {
+  "arm": "one_frame_map",
+  "dataset": "occ3d",
+  "n_samples": 4219,
+  "n_written": 4218,
+  "n_skipped": 0,
+  "n_no_scale": 1,
+  "no_scale_samples": [
+   "scene-1064_9ad02057efee422b9845f563b8565485"
+  ],
+  "minutes": 1.2832666317621866,
+  "root": "/media/minh/MINH1/lingbot_one_frame/predictions"
+ },
+ {
+  "arm": "five_frame_map",
+  "dataset": "occ3d",
+  "n_samples": 4219,
+  "n_written": 4219,
+  "n_skipped": 0,
+  "n_no_scale": 0,
+  "no_scale_samples": [],
+  "minutes": 3.505960559844971,
+  "root": "/media/minh/MINH1/lingbot_one_frame/predictions"
+ },
+ {
+  "arm": "one_frame_unet_scale5",
+  "dataset": "occ3d",
+  "n_samples": 4219,
+  "n_written": 4218,
+  "n_skipped": 0,
+  "n_no_scale": 1,
+  "no_scale_samples": [
+   "scene-1064_9ad02057efee422b9845f563b8565485"
+  ],
+  "minutes": 11.427248545487721,
+  "root": "/media/minh/MINH1/lingbot_one_frame/predictions"
+ }
+]

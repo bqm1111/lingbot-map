@@ -1,0 +1,213 @@
+{
+ "n_per_segment": 2,
+ "n_segments": 40,
+ "n_anchors": 80,
+ "independent_anchors": 40,
+ "independence_rule_frames": 40,
+ "independence_note": "one anchor per 20 s segment has a non-overlapping clip and privileged window; n_anchors is a training volume, never an independent count",
+ "anchors_per_segment": {
+  "segment-898816942644052013_20_000_40_000_with_camera_labels.tfrecord": 2,
+  "segment-9015546800913584551_4431_180_4451_180_with_camera_labels.tfrecord": 2,
+  "segment-9016865488168499365_4780_000_4800_000_with_camera_labels.tfrecord": 2,
+  "segment-9058545212382992974_5236_200_5256_200_with_camera_labels.tfrecord": 2,
+  "segment-9062286840846668802_31_000_51_000_with_camera_labels.tfrecord": 2,
+  "segment-9105380625923157726_4420_000_4440_000_with_camera_labels.tfrecord": 2,
+  "segment-9110125340505914899_380_000_400_000_with_camera_labels.tfrecord": 2,
+  "segment-9123867659877264673_3569_950_3589_950_with_camera_labels.tfrecord": 2,
+  "segment-912496333665446669_1680_000_1700_000_with_camera_labels.tfrecord": 2,
+  "segment-913274067754539885_913_000_933_000_with_camera_labels.tfrecord": 2,
+  "segment-9142545919543484617_86_000_106_000_with_camera_labels.tfrecord": 2,
+  "segment-915935412356143375_1740_030_1760_030_with_camera_labels.tfrecord": 2,
+  "segment-9175749307679169289_5933_260_5953_260_with_camera_labels.tfrecord": 2,
+  "segment-9179922063516210200_157_000_177_000_with_camera_labels.tfrecord": 2,
+  "segment-9250355398701464051_4166_132_4186_132_with_camera_labels.tfrecord": 2,
+  "segment-9288629315134424745_4360_000_4380_000_with_camera_labels.tfrecord": 2,
+  "segment-9295161125729168140_1270_000_1290_000_with_camera_labels.tfrecord": 2,
+  "segment-9311322119128915594_5285_000_5305_000_with_camera_labels.tfrecord": 2,
+  "segment-9320169289978396279_1040_000_1060_000_with_camera_labels.tfrecord": 2,
+  "segment-9325580606626376787_4509_140_4529_140_with_camera_labels.tfrecord": 2,
+  "segment-9334364225104959137_661_000_681_000_with_camera_labels.tfrecord": 2,
+  "segment-9350921499281634194_2403_251_2423_251_with_camera_labels.tfrecord": 2,
+  "segment-9385013624094020582_2547_650_2567_650_with_camera_labels.tfrecord": 2,
+  "segment-9415086857375798767_4760_000_4780_000_with_camera_labels.tfrecord": 2,
+  "segment-9465500459680839281_1100_000_1120_000_with_camera_labels.tfrecord": 2,
+  "segment-9509506420470671704_4049_100_4069_100_with_camera_labels.tfrecord": 2,
+  "segment-9521653920958139982_940_000_960_000_with_camera_labels.tfrecord": 2,
+  "segment-9529958888589376527_640_000_660_000_with_camera_labels.tfrecord": 2,
+  "segment-9547911055204230158_1567_950_1587_950_with_camera_labels.tfrecord": 2,
+  "segment-9568394837328971633_466_365_486_365_with_camera_labels.tfrecord": 2,
+  "segment-9653249092275997647_980_000_1000_000_with_camera_labels.tfrecord": 2,
+  "segment-9654060644653474834_3905_000_3925_000_with_camera_labels.tfrecord": 2,
+  "segment-9696413700515401320_1690_000_1710_000_with_camera_labels.tfrecord": 2,
+  "segment-972142630887801133_642_740_662_740_with_camera_labels.tfrecord": 2,
+  "segment-9747453753779078631_940_000_960_000_with_camera_labels.tfrecord": 2,
+  "segment-9758342966297863572_875_230_895_230_with_camera_labels.tfrecord": 2,
+  "segment-9820553434532681355_2820_000_2840_000_with_camera_labels.tfrecord": 2,
+  "segment-9907794657177651763_1126_570_1146_570_with_camera_labels.tfrecord": 2,
+  "segment-990914685337955114_980_000_1000_000_with_camera_labels.tfrecord": 2,
+  "segment-9985243312780923024_3049_720_3069_720_with_camera_labels.tfrecord": 2
+ },
+ "picked": {
+  "segment-898816942644052013_20_000_40_000_with_camera_labels.tfrecord": [
+   4,
+   11
+  ],
+  "segment-9015546800913584551_4431_180_4451_180_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9016865488168499365_4780_000_4800_000_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9058545212382992974_5236_200_5256_200_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9062286840846668802_31_000_51_000_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9105380625923157726_4420_000_4440_000_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9110125340505914899_380_000_400_000_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9123867659877264673_3569_950_3589_950_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-912496333665446669_1680_000_1700_000_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-913274067754539885_913_000_933_000_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9142545919543484617_86_000_106_000_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-915935412356143375_1740_030_1760_030_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9175749307679169289_5933_260_5953_260_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9179922063516210200_157_000_177_000_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9250355398701464051_4166_132_4186_132_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9288629315134424745_4360_000_4380_000_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9295161125729168140_1270_000_1290_000_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9311322119128915594_5285_000_5305_000_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9320169289978396279_1040_000_1060_000_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9325580606626376787_4509_140_4529_140_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9334364225104959137_661_000_681_000_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9350921499281634194_2403_251_2423_251_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9385013624094020582_2547_650_2567_650_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9415086857375798767_4760_000_4780_000_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9465500459680839281_1100_000_1120_000_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9509506420470671704_4049_100_4069_100_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9521653920958139982_940_000_960_000_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9529958888589376527_640_000_660_000_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9547911055204230158_1567_950_1587_950_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9568394837328971633_466_365_486_365_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9653249092275997647_980_000_1000_000_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9654060644653474834_3905_000_3925_000_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9696413700515401320_1690_000_1710_000_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-972142630887801133_642_740_662_740_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9747453753779078631_940_000_960_000_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9758342966297863572_875_230_895_230_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9820553434532681355_2820_000_2840_000_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9907794657177651763_1126_570_1146_570_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-990914685337955114_980_000_1000_000_with_camera_labels.tfrecord": [
+   4,
+   12
+  ],
+  "segment-9985243312780923024_3049_720_3069_720_with_camera_labels.tfrecord": [
+   4,
+   12
+  ]
+ },
+ "digest": "74d200802ef8db037711f70683c063c6d97447f4a3e5d67fd40e7e25e3db5f93"
+}

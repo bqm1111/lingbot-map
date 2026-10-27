@@ -1,0 +1,80 @@
+{
+  "version": "waymo_arm.1",
+  "device": "cuda:0",
+  "checks": [
+    {
+      "check": "waymo_single_laser_equivalence",
+      "n": 2,
+      "all_passed": true,
+      "rows": [
+        {
+          "segment": "segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord",
+          "anchor": 4,
+          "laser": "TOP",
+          "n_sweeps": 21,
+          "n_occupied": 42282,
+          "n_valid": 778853,
+          "laser_shares": {
+            "TOP": 0.8995706351599081,
+            "FRONT": 0.022370694027899426,
+            "SIDE_LEFT": 0.02464311280221641,
+            "SIDE_RIGHT": 0.023584346258096134,
+            "REAR": 0.02983121175187999
+          },
+          "frames_used_equal": true,
+          "state": {
+            "equal": true,
+            "n_differing": 0
+          },
+          "n_obs": {
+            "equal": true,
+            "n_differing": 0
+          },
+          "n_frames_occ": {
+            "equal": true,
+            "n_differing": 0
+          },
+          "n_free": {
+            "equal": true,
+            "n_differing": 0
+          },
+          "all_equal": true
+        },
+        {
+          "segment": "segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord",
+          "anchor": 4,
+          "laser": "TOP",
+          "n_sweeps": 21,
+          "n_occupied": 20568,
+          "n_valid": 1462398,
+          "laser_shares": {
+            "TOP": 0.8946688344663074,
+            "FRONT": 0.022702722693761317,
+            "SIDE_LEFT": 0.027759214926523824,
+            "SIDE_RIGHT": 0.026526243319862818,
+            "REAR": 0.02834298459354468
+          },
+          "frames_used_equal": true,
+          "state": {
+            "equal": true,
+            "n_differing": 0
+          },
+          "n_obs": {
+            "equal": true,
+            "n_differing": 0
+          },
+          "n_frames_occ": {
+            "equal": true,
+            "n_differing": 0
+          },
+          "n_free": {
+            "equal": true,
+            "n_differing": 0
+          },
+          "all_equal": true
+        }
+      ]
+    }
+  ],
+  "all_passed": true
+}

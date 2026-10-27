@@ -1,0 +1,473 @@
+{
+  "version": "waymo_pilot.1",
+  "device": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+  "selection": {
+    "arm": "waymo",
+    "rule": "deterministic scene order, first N scenes, anchors spread with min separation 40 frames",
+    "sample_seed": 0,
+    "caps": {
+      "max_scenes": 40,
+      "max_anchors": 200,
+      "per_scene": 5,
+      "min_separation_frames": 40
+    },
+    "n_scenes_available": 40,
+    "n_scenes_used": 40,
+    "scenes_with_no_eligible_anchor": [],
+    "independent_anchor_ceiling": {
+      "segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord": 1,
+      "segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord": 1,
+      "segment-1005081002024129653_5313_150_5333_150_with_camera_labels.tfrecord": 1,
+      "segment-10061305430875486848_1080_000_1100_000_with_camera_labels.tfrecord": 1,
+      "segment-10072140764565668044_4060_000_4080_000_with_camera_labels.tfrecord": 1,
+      "segment-10072231702153043603_5725_000_5745_000_with_camera_labels.tfrecord": 1,
+      "segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord": 1,
+      "segment-10082223140073588526_6140_000_6160_000_with_camera_labels.tfrecord": 1,
+      "segment-10094743350625019937_3420_000_3440_000_with_camera_labels.tfrecord": 1,
+      "segment-10096619443888687526_2820_000_2840_000_with_camera_labels.tfrecord": 1,
+      "segment-10107710434105775874_760_000_780_000_with_camera_labels.tfrecord": 1,
+      "segment-10153695247769592104_787_000_807_000_with_camera_labels.tfrecord": 1,
+      "segment-10206293520369375008_2796_800_2816_800_with_camera_labels.tfrecord": 1,
+      "segment-10212406498497081993_5300_000_5320_000_with_camera_labels.tfrecord": 1,
+      "segment-1022527355599519580_4866_960_4886_960_with_camera_labels.tfrecord": 1,
+      "segment-10226164909075980558_180_000_200_000_with_camera_labels.tfrecord": 1,
+      "segment-10231929575853664160_1160_000_1180_000_with_camera_labels.tfrecord": 1,
+      "segment-10235335145367115211_5420_000_5440_000_with_camera_labels.tfrecord": 1,
+      "segment-10241508783381919015_2889_360_2909_360_with_camera_labels.tfrecord": 1,
+      "segment-10275144660749673822_5755_561_5775_561_with_camera_labels.tfrecord": 1,
+      "segment-10327752107000040525_1120_000_1140_000_with_camera_labels.tfrecord": 1,
+      "segment-10391312872392849784_4099_400_4119_400_with_camera_labels.tfrecord": 1,
+      "segment-10444454289801298640_4360_000_4380_000_with_camera_labels.tfrecord": 1,
+      "segment-10455472356147194054_1560_000_1580_000_with_camera_labels.tfrecord": 1,
+      "segment-10485926982439064520_4980_000_5000_000_with_camera_labels.tfrecord": 1,
+      "segment-10498013744573185290_1240_000_1260_000_with_camera_labels.tfrecord": 1,
+      "segment-10500357041547037089_1474_800_1494_800_with_camera_labels.tfrecord": 1,
+      "segment-10517728057304349900_3360_000_3380_000_with_camera_labels.tfrecord": 1,
+      "segment-1051897962568538022_238_170_258_170_with_camera_labels.tfrecord": 1,
+      "segment-10526338824408452410_5714_660_5734_660_with_camera_labels.tfrecord": 1,
+      "segment-10584247114982259878_490_000_510_000_with_camera_labels.tfrecord": 1,
+      "segment-10588771936253546636_2300_000_2320_000_with_camera_labels.tfrecord": 1,
+      "segment-10596949720463106554_1933_530_1953_530_with_camera_labels.tfrecord": 1,
+      "segment-10599748131695282446_1380_000_1400_000_with_camera_labels.tfrecord": 1,
+      "segment-10625026498155904401_200_000_220_000_with_camera_labels.tfrecord": 1,
+      "segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord": 1,
+      "segment-10676267326664322837_311_180_331_180_with_camera_labels.tfrecord": 1,
+      "segment-10723911392655396041_860_000_880_000_with_camera_labels.tfrecord": 1,
+      "segment-10724020115992582208_7660_400_7680_400_with_camera_labels.tfrecord": 1,
+      "segment-10734565072045778791_440_000_460_000_with_camera_labels.tfrecord": 1
+    },
+    "independent_anchor_ceiling_total": 40,
+    "eligible_anchors_total": 640,
+    "n_anchors": 40,
+    "anchors_per_scene": {
+      "segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord": 1,
+      "segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord": 1,
+      "segment-1005081002024129653_5313_150_5333_150_with_camera_labels.tfrecord": 1,
+      "segment-10061305430875486848_1080_000_1100_000_with_camera_labels.tfrecord": 1,
+      "segment-10072140764565668044_4060_000_4080_000_with_camera_labels.tfrecord": 1,
+      "segment-10072231702153043603_5725_000_5745_000_with_camera_labels.tfrecord": 1,
+      "segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord": 1,
+      "segment-10082223140073588526_6140_000_6160_000_with_camera_labels.tfrecord": 1,
+      "segment-10094743350625019937_3420_000_3440_000_with_camera_labels.tfrecord": 1,
+      "segment-10096619443888687526_2820_000_2840_000_with_camera_labels.tfrecord": 1,
+      "segment-10107710434105775874_760_000_780_000_with_camera_labels.tfrecord": 1,
+      "segment-10153695247769592104_787_000_807_000_with_camera_labels.tfrecord": 1,
+      "segment-10206293520369375008_2796_800_2816_800_with_camera_labels.tfrecord": 1,
+      "segment-10212406498497081993_5300_000_5320_000_with_camera_labels.tfrecord": 1,
+      "segment-1022527355599519580_4866_960_4886_960_with_camera_labels.tfrecord": 1,
+      "segment-10226164909075980558_180_000_200_000_with_camera_labels.tfrecord": 1,
+      "segment-10231929575853664160_1160_000_1180_000_with_camera_labels.tfrecord": 1,
+      "segment-10235335145367115211_5420_000_5440_000_with_camera_labels.tfrecord": 1,
+      "segment-10241508783381919015_2889_360_2909_360_with_camera_labels.tfrecord": 1,
+      "segment-10275144660749673822_5755_561_5775_561_with_camera_labels.tfrecord": 1,
+      "segment-10327752107000040525_1120_000_1140_000_with_camera_labels.tfrecord": 1,
+      "segment-10391312872392849784_4099_400_4119_400_with_camera_labels.tfrecord": 1,
+      "segment-10444454289801298640_4360_000_4380_000_with_camera_labels.tfrecord": 1,
+      "segment-10455472356147194054_1560_000_1580_000_with_camera_labels.tfrecord": 1,
+      "segment-10485926982439064520_4980_000_5000_000_with_camera_labels.tfrecord": 1,
+      "segment-10498013744573185290_1240_000_1260_000_with_camera_labels.tfrecord": 1,
+      "segment-10500357041547037089_1474_800_1494_800_with_camera_labels.tfrecord": 1,
+      "segment-10517728057304349900_3360_000_3380_000_with_camera_labels.tfrecord": 1,
+      "segment-1051897962568538022_238_170_258_170_with_camera_labels.tfrecord": 1,
+      "segment-10526338824408452410_5714_660_5734_660_with_camera_labels.tfrecord": 1,
+      "segment-10584247114982259878_490_000_510_000_with_camera_labels.tfrecord": 1,
+      "segment-10588771936253546636_2300_000_2320_000_with_camera_labels.tfrecord": 1,
+      "segment-10596949720463106554_1933_530_1953_530_with_camera_labels.tfrecord": 1,
+      "segment-10599748131695282446_1380_000_1400_000_with_camera_labels.tfrecord": 1,
+      "segment-10625026498155904401_200_000_220_000_with_camera_labels.tfrecord": 1,
+      "segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord": 1,
+      "segment-10676267326664322837_311_180_331_180_with_camera_labels.tfrecord": 1,
+      "segment-10723911392655396041_860_000_880_000_with_camera_labels.tfrecord": 1,
+      "segment-10724020115992582208_7660_400_7680_400_with_camera_labels.tfrecord": 1,
+      "segment-10734565072045778791_440_000_460_000_with_camera_labels.tfrecord": 1
+    },
+    "within_scene_gap_frames": {
+      "n": 0
+    },
+    "anchors": [
+      "segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord:00004",
+      "segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord:00004",
+      "segment-1005081002024129653_5313_150_5333_150_with_camera_labels.tfrecord:00004",
+      "segment-10061305430875486848_1080_000_1100_000_with_camera_labels.tfrecord:00004",
+      "segment-10072140764565668044_4060_000_4080_000_with_camera_labels.tfrecord:00004",
+      "segment-10072231702153043603_5725_000_5745_000_with_camera_labels.tfrecord:00004",
+      "segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord:00004",
+      "segment-10082223140073588526_6140_000_6160_000_with_camera_labels.tfrecord:00004",
+      "segment-10094743350625019937_3420_000_3440_000_with_camera_labels.tfrecord:00004",
+      "segment-10096619443888687526_2820_000_2840_000_with_camera_labels.tfrecord:00004",
+      "segment-10107710434105775874_760_000_780_000_with_camera_labels.tfrecord:00004",
+      "segment-10153695247769592104_787_000_807_000_with_camera_labels.tfrecord:00004",
+      "segment-10206293520369375008_2796_800_2816_800_with_camera_labels.tfrecord:00004",
+      "segment-10212406498497081993_5300_000_5320_000_with_camera_labels.tfrecord:00004",
+      "segment-1022527355599519580_4866_960_4886_960_with_camera_labels.tfrecord:00004",
+      "segment-10226164909075980558_180_000_200_000_with_camera_labels.tfrecord:00004",
+      "segment-10231929575853664160_1160_000_1180_000_with_camera_labels.tfrecord:00004",
+      "segment-10235335145367115211_5420_000_5440_000_with_camera_labels.tfrecord:00004",
+      "segment-10241508783381919015_2889_360_2909_360_with_camera_labels.tfrecord:00004",
+      "segment-10275144660749673822_5755_561_5775_561_with_camera_labels.tfrecord:00004",
+      "segment-10327752107000040525_1120_000_1140_000_with_camera_labels.tfrecord:00004",
+      "segment-10391312872392849784_4099_400_4119_400_with_camera_labels.tfrecord:00004",
+      "segment-10444454289801298640_4360_000_4380_000_with_camera_labels.tfrecord:00004",
+      "segment-10455472356147194054_1560_000_1580_000_with_camera_labels.tfrecord:00004",
+      "segment-10485926982439064520_4980_000_5000_000_with_camera_labels.tfrecord:00004",
+      "segment-10498013744573185290_1240_000_1260_000_with_camera_labels.tfrecord:00004",
+      "segment-10500357041547037089_1474_800_1494_800_with_camera_labels.tfrecord:00004",
+      "segment-10517728057304349900_3360_000_3380_000_with_camera_labels.tfrecord:00004",
+      "segment-1051897962568538022_238_170_258_170_with_camera_labels.tfrecord:00004",
+      "segment-10526338824408452410_5714_660_5734_660_with_camera_labels.tfrecord:00004",
+      "segment-10584247114982259878_490_000_510_000_with_camera_labels.tfrecord:00004",
+      "segment-10588771936253546636_2300_000_2320_000_with_camera_labels.tfrecord:00004",
+      "segment-10596949720463106554_1933_530_1953_530_with_camera_labels.tfrecord:00004",
+      "segment-10599748131695282446_1380_000_1400_000_with_camera_labels.tfrecord:00004",
+      "segment-10625026498155904401_200_000_220_000_with_camera_labels.tfrecord:00004",
+      "segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord:00004",
+      "segment-10676267326664322837_311_180_331_180_with_camera_labels.tfrecord:00004",
+      "segment-10723911392655396041_860_000_880_000_with_camera_labels.tfrecord:00004",
+      "segment-10724020115992582208_7660_400_7680_400_with_camera_labels.tfrecord:00004",
+      "segment-10734565072045778791_440_000_460_000_with_camera_labels.tfrecord:00004"
+    ],
+    "digest": "75b72e7293dbac80"
+  },
+  "n_built": 38,
+  "n_skipped": 2,
+  "seconds": 27.90929889678955,
+  "seconds_per_anchor": 0.7344552404002139,
+  "bytes_per_anchor": 1884169.605263158,
+  "scale_m_per_unit": {
+    "n": 38,
+    "median": 32.10005513491186,
+    "min": 13.153298805795643,
+    "max": 57.42136113433669
+  },
+  "n_anchors_all_five_moge": 38,
+  "firewall": {
+    "n_opened": 1026,
+    "violations": []
+  },
+  "rows": [
+    {
+      "segment": "segment-1005081002024129653_5313_150_5333_150_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 41.03981442947942,
+      "n_moge_ok": 5,
+      "seconds": 2.253171682357788,
+      "bytes": 2103299
+    },
+    {
+      "segment": "segment-10061305430875486848_1080_000_1100_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 22.351354166666663,
+      "n_moge_ok": 5,
+      "seconds": 0.724865198135376,
+      "bytes": 1993325
+    },
+    {
+      "segment": "segment-10072140764565668044_4060_000_4080_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 40.22312215717653,
+      "n_moge_ok": 5,
+      "seconds": 0.7215237617492676,
+      "bytes": 1770662
+    },
+    {
+      "segment": "segment-10072231702153043603_5725_000_5745_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 45.11691095132742,
+      "n_moge_ok": 5,
+      "seconds": 0.6972486972808838,
+      "bytes": 1746718
+    },
+    {
+      "segment": "segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 23.466564438804284,
+      "n_moge_ok": 5,
+      "seconds": 0.6951208114624023,
+      "bytes": 1857359
+    },
+    {
+      "segment": "segment-10082223140073588526_6140_000_6160_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 31.676575806171225,
+      "n_moge_ok": 5,
+      "seconds": 0.718848705291748,
+      "bytes": 1894541
+    },
+    {
+      "segment": "segment-10094743350625019937_3420_000_3440_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 24.08090917818741,
+      "n_moge_ok": 5,
+      "seconds": 0.6917695999145508,
+      "bytes": 1851773
+    },
+    {
+      "segment": "segment-10096619443888687526_2820_000_2840_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 25.110756080020924,
+      "n_moge_ok": 5,
+      "seconds": 0.7153897285461426,
+      "bytes": 2118296
+    },
+    {
+      "segment": "segment-10107710434105775874_760_000_780_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 28.359539481016554,
+      "n_moge_ok": 5,
+      "seconds": 0.7066566944122314,
+      "bytes": 1937885
+    },
+    {
+      "segment": "segment-10153695247769592104_787_000_807_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 57.42136113433669,
+      "n_moge_ok": 5,
+      "seconds": 0.6773025989532471,
+      "bytes": 1650514
+    },
+    {
+      "segment": "segment-10206293520369375008_2796_800_2816_800_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 22.290100040773535,
+      "n_moge_ok": 5,
+      "seconds": 0.6974701881408691,
+      "bytes": 1594221
+    },
+    {
+      "segment": "segment-10212406498497081993_5300_000_5320_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 38.27624481124687,
+      "n_moge_ok": 5,
+      "seconds": 0.7060587406158447,
+      "bytes": 2055731
+    },
+    {
+      "segment": "segment-1022527355599519580_4866_960_4886_960_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 36.16695428275041,
+      "n_moge_ok": 5,
+      "seconds": 0.6815085411071777,
+      "bytes": 1859305
+    },
+    {
+      "segment": "segment-10226164909075980558_180_000_200_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 34.97331087418709,
+      "n_moge_ok": 5,
+      "seconds": 0.6908257007598877,
+      "bytes": 1928250
+    },
+    {
+      "segment": "segment-10231929575853664160_1160_000_1180_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 37.060931079866464,
+      "n_moge_ok": 5,
+      "seconds": 0.6863129138946533,
+      "bytes": 2107320
+    },
+    {
+      "segment": "segment-10235335145367115211_5420_000_5440_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 30.30960773437232,
+      "n_moge_ok": 5,
+      "seconds": 0.6883583068847656,
+      "bytes": 1843336
+    },
+    {
+      "segment": "segment-10241508783381919015_2889_360_2909_360_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 28.03089775654524,
+      "n_moge_ok": 5,
+      "seconds": 0.7086951732635498,
+      "bytes": 1341884
+    },
+    {
+      "segment": "segment-10275144660749673822_5755_561_5775_561_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 37.506277813095984,
+      "n_moge_ok": 5,
+      "seconds": 0.677105188369751,
+      "bytes": 1879470
+    },
+    {
+      "segment": "segment-10327752107000040525_1120_000_1140_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 13.153298805795643,
+      "n_moge_ok": 5,
+      "seconds": 0.7135343551635742,
+      "bytes": 1903522
+    },
+    {
+      "segment": "segment-10391312872392849784_4099_400_4119_400_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 23.32775415368566,
+      "n_moge_ok": 5,
+      "seconds": 0.7021691799163818,
+      "bytes": 2034176
+    },
+    {
+      "segment": "segment-10444454289801298640_4360_000_4380_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 40.908909029706194,
+      "n_moge_ok": 5,
+      "seconds": 0.6779313087463379,
+      "bytes": 1892107
+    },
+    {
+      "segment": "segment-10455472356147194054_1560_000_1580_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 24.480320298949927,
+      "n_moge_ok": 5,
+      "seconds": 0.6609103679656982,
+      "bytes": 1865297
+    },
+    {
+      "segment": "segment-10485926982439064520_4980_000_5000_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 32.798006495536434,
+      "n_moge_ok": 5,
+      "seconds": 0.688805103302002,
+      "bytes": 1916931
+    },
+    {
+      "segment": "segment-10498013744573185290_1240_000_1260_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 31.021264737001214,
+      "n_moge_ok": 5,
+      "seconds": 0.6806685924530029,
+      "bytes": 2042470
+    },
+    {
+      "segment": "segment-10500357041547037089_1474_800_1494_800_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 30.84688984381154,
+      "n_moge_ok": 5,
+      "seconds": 0.6734678745269775,
+      "bytes": 1901514
+    },
+    {
+      "segment": "segment-10517728057304349900_3360_000_3380_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 34.411810661764704,
+      "n_moge_ok": 5,
+      "seconds": 0.6990985870361328,
+      "bytes": 1873103
+    },
+    {
+      "segment": "segment-1051897962568538022_238_170_258_170_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 37.39837175478542,
+      "n_moge_ok": 5,
+      "seconds": 0.673530101776123,
+      "bytes": 1981275
+    },
+    {
+      "segment": "segment-10526338824408452410_5714_660_5734_660_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 36.468140442132636,
+      "n_moge_ok": 5,
+      "seconds": 0.6903986930847168,
+      "bytes": 1993986
+    },
+    {
+      "segment": "segment-10584247114982259878_490_000_510_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 40.32717263650826,
+      "n_moge_ok": 5,
+      "seconds": 0.6836733818054199,
+      "bytes": 1442357
+    },
+    {
+      "segment": "segment-10588771936253546636_2300_000_2320_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 30.834696509327298,
+      "n_moge_ok": 5,
+      "seconds": 0.7063031196594238,
+      "bytes": 2201782
+    },
+    {
+      "segment": "segment-10596949720463106554_1933_530_1953_530_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 45.878779834262986,
+      "n_moge_ok": 5,
+      "seconds": 0.6769263744354248,
+      "bytes": 1991249
+    },
+    {
+      "segment": "segment-10599748131695282446_1380_000_1400_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 23.389549356240092,
+      "n_moge_ok": 5,
+      "seconds": 0.690148115158081,
+      "bytes": 1836995
+    },
+    {
+      "segment": "segment-10625026498155904401_200_000_220_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 36.75746161722781,
+      "n_moge_ok": 5,
+      "seconds": 0.6951429843902588,
+      "bytes": 1992120
+    },
+    {
+      "segment": "segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 26.038800950240248,
+      "n_moge_ok": 5,
+      "seconds": 0.6975176334381104,
+      "bytes": 2145982
+    },
+    {
+      "segment": "segment-10676267326664322837_311_180_331_180_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 36.96580943107549,
+      "n_moge_ok": 5,
+      "seconds": 0.6880254745483398,
+      "bytes": 1932014
+    },
+    {
+      "segment": "segment-10723911392655396041_860_000_880_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 25.6015994171095,
+      "n_moge_ok": 5,
+      "seconds": 0.6745204925537109,
+      "bytes": 1654365
+    },
+    {
+      "segment": "segment-10724020115992582208_7660_400_7680_400_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 32.523534463652496,
+      "n_moge_ok": 5,
+      "seconds": 0.6828227043151855,
+      "bytes": 1714306
+    },
+    {
+      "segment": "segment-10734565072045778791_440_000_460_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "scale_m_per_unit": 26.42235818100605,
+      "n_moge_ok": 5,
+      "seconds": 0.676586389541626,
+      "bytes": 1749005
+    }
+  ]
+}

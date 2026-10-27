@@ -1,0 +1,481 @@
+{
+ "provenance": {
+  "version": "once_arm.1",
+  "status": "exploratory",
+  "prevalence_band": {
+   "gate": "occupied prevalence in valid",
+   "predeclared_band": [
+    0.015,
+    0.04
+   ],
+   "once_measured_median": 0.013,
+   "verdict": "FAILED -- not relabelled as passed",
+   "sequences_inside_band": "2 of 6",
+   "why_it_is_not_disqualifying": "The band was calibrated under the frozen 21-sweep / 10.46 s carve. Applied to the authorized ~2.1 s window it also rejects KITTI-360, on vertical coverage (21 of 32 z-levels against a floor of 30). Each corpus fails a different band and the corpus the bands were calibrated from is one of them.",
+   "cause": "Scene content. LiDAR sparsity is falsified as the cause: removing 85 % of KITTI-360's returns leaves it in band (prevalence elasticity to point count ~0.1).",
+   "reference": "artifacts/method_vs_data/once_supervision_validation.md"
+  },
+  "camera": "cam01",
+  "hfov_deg": 90.1,
+  "undistort_images": false,
+  "distortion_evidence": {
+   "decision": "use shipped JPEGs as-is; do NOT call cv2.undistort",
+   "logcorr_lidar_vs_mono_depth": {
+    "plain_pinhole": 0.8571,
+    "distortion_applied": 0.6978,
+    "pinhole_better_in": "12 of 12 frames"
+   },
+   "map_vs_target_iou_pct": {
+    "shipped": 3.26,
+    "undistorted": 1.44,
+    "shipped_better_in": "11 of 12 anchors"
+   },
+   "retracts": "once_metadata_audit.md \u00a75 (M2 gradient test is centre-biased)"
+  },
+  "input_clip": {
+   "offsets": [
+    -4,
+    -3,
+    -2,
+    -1,
+    0
+   ],
+   "stream_stride": 1,
+   "span_s": 2.0,
+   "future_frames_used": 0
+  },
+  "supervision": {
+   "policy": "duration-matched, native cadence",
+   "span_s": 2.1,
+   "max_gap_s": 0.75,
+   "interpolated_or_duplicated_sweeps": false
+  },
+  "grid": {
+   "dims": [
+    256,
+    256,
+    32
+   ],
+   "voxel_size": 0.2,
+   "origin": [
+    0.0,
+    -25.6,
+    -2.0
+   ],
+   "frame": "velodyne_of_anchor_frame"
+  },
+  "anchors": {
+   "min_separation_frames": 5,
+   "target_n": 1400,
+   "independent_scene_count": 6,
+   "note": "the anchor count is NOT the independent count"
+  },
+  "val_sequences": [
+   "000121"
+  ]
+ },
+ "dataset": "semantickitti",
+ "n_samples": 801,
+ "postprocess": "pooled",
+ "arms": [
+  "k360",
+  "once",
+  "occany_1f",
+  "occany_5f_fwd"
+ ],
+ "n_missing_once_predictions": 0,
+ "once_prediction_root": "/media/minh/MINH1/lingbot_once_arm/zero_shot_predictions",
+ "statistics": {
+  "blocks": 33,
+  "resamples": 2000,
+  "bootstrap_seed": 0,
+  "block_rule": "25 contiguous anchors",
+  "paired": "all arms resampled on the same anchors"
+ },
+ "composition": {
+  "all": {
+   "valid_voxels": 1173859441,
+   "gt_occupied": 93298722,
+   "share_of_valid": 1.0,
+   "share_of_gt_occupied": 1.0
+  },
+  "anchor_observed": {
+   "valid_voxels": 383735341,
+   "gt_occupied": 4440970,
+   "share_of_valid": 0.32690058758065565,
+   "share_of_gt_occupied": 0.047599473013145883
+  },
+  "earlier_only": {
+   "valid_voxels": 291244488,
+   "gt_occupied": 5766773,
+   "share_of_valid": 0.24810848541788913,
+   "share_of_gt_occupied": 0.061809774843432475
+  },
+  "never_observed": {
+   "valid_voxels": 498879612,
+   "gt_occupied": 83090979,
+   "share_of_valid": 0.4249909270014552,
+   "share_of_gt_occupied": 0.8905907521434216
+  },
+  "in_frustum": {
+   "valid_voxels": 813955852,
+   "gt_occupied": 69534788,
+   "share_of_valid": 0.6934014615128014,
+   "share_of_gt_occupied": 0.7452919665930686
+  },
+  "out_frustum": {
+   "valid_voxels": 359903589,
+   "gt_occupied": 23763934,
+   "share_of_valid": 0.30659853848719865,
+   "share_of_gt_occupied": 0.2547080334069313
+  },
+  "A0fixed_observed": {
+   "valid_voxels": 139132541,
+   "gt_occupied": 14338548,
+   "share_of_valid": 0.11852572475071996,
+   "share_of_gt_occupied": 0.1536842916240589
+  },
+  "A0fixed_completed": {
+   "valid_voxels": 1034726900,
+   "gt_occupied": 78960174,
+   "share_of_valid": 0.88147427524928,
+   "share_of_gt_occupied": 0.8463157083759411
+  }
+ },
+ "iou": {
+  "all": {
+   "k360": {
+    "iou": 26.342442530594578,
+    "precision": 33.08073518068151,
+    "recall": 56.393698511754536
+   },
+   "once": {
+    "iou": 20.257584062329254,
+    "precision": 28.01188628032234,
+    "recall": 42.25632372542037
+   },
+   "occany_1f": {
+    "iou": 24.06195379759287,
+    "precision": 46.08225613073956,
+    "recall": 33.49067418093894
+   },
+   "occany_5f_fwd": {
+    "iou": 25.928567591541178,
+    "precision": 36.83271133296127,
+    "recall": 46.690312649727396
+   }
+  },
+  "anchor_observed": {
+   "k360": {
+    "iou": 9.017331663899068,
+    "precision": 9.497754940021624,
+    "recall": 64.06350414436486
+   },
+   "once": {
+    "iou": 7.422710652460747,
+    "precision": 7.783254537781817,
+    "recall": 61.57364269517696
+   },
+   "occany_1f": {
+    "iou": 11.716846495615629,
+    "precision": 12.977457465504193,
+    "recall": 54.67319076688201
+   },
+   "occany_5f_fwd": {
+    "iou": 8.29978266704144,
+    "precision": 8.641116385468795,
+    "recall": 67.75391412236516
+   }
+  },
+  "earlier_only": {
+   "k360": {
+    "iou": 14.56799063970518,
+    "precision": 15.730277119098709,
+    "recall": 66.34830259488278
+   },
+   "once": {
+    "iou": 9.715079156987455,
+    "precision": 10.272172333945594,
+    "recall": 64.17505943098506
+   },
+   "occany_1f": {
+    "iou": 13.919831698375859,
+    "precision": 25.988360197997398,
+    "recall": 23.06210076241947
+   },
+   "occany_5f_fwd": {
+    "iou": 11.055148753904817,
+    "precision": 17.268004331486082,
+    "recall": 23.504514569933654
+   }
+  },
+  "never_observed": {
+   "k360": {
+    "iou": 32.37314674027581,
+    "precision": 43.85139627765873,
+    "recall": 55.29288925576385
+   },
+   "once": {
+    "iou": 27.56375244781705,
+    "precision": 47.41069074848409,
+    "recall": 39.70264088475838
+   },
+   "occany_1f": {
+    "iou": 27.604003488568345,
+    "precision": 62.503943956122015,
+    "recall": 33.08230608283
+   },
+   "occany_5f_fwd": {
+    "iou": 32.80317723091852,
+    "precision": 51.84948239319101,
+    "recall": 47.17369138230998
+   }
+  },
+  "in_frustum": {
+   "k360": {
+    "iou": 25.755209986178954,
+    "precision": 32.74676815847228,
+    "recall": 54.67548991448712
+   },
+   "once": {
+    "iou": 20.27326529949248,
+    "precision": 29.97719338537089,
+    "recall": 38.50989521964171
+   },
+   "occany_1f": {
+    "iou": 27.332596346601647,
+    "precision": 45.97931101841986,
+    "recall": 40.26179816640845
+   },
+   "occany_5f_fwd": {
+    "iou": 29.006334885648336,
+    "precision": 36.84056035802325,
+    "recall": 57.69930153522579
+   }
+  },
+  "out_frustum": {
+   "k360": {
+    "iou": 28.00565742095774,
+    "precision": 33.98347050944168,
+    "recall": 61.421286559708506
+   },
+   "once": {
+    "iou": 20.224461329031563,
+    "precision": 24.59742850359437,
+    "recall": 53.218612709494984
+   },
+   "occany_1f": {
+    "iou": 11.849420026717942,
+    "precision": 46.98838566496557,
+    "recall": 13.677933123362488
+   },
+   "occany_5f_fwd": {
+    "iou": 11.588714290555219,
+    "precision": 36.74142368907868,
+    "recall": 14.477308344653709
+   }
+  },
+  "A0fixed_observed": {
+   "k360": {
+    "iou": 30.62985045225051,
+    "precision": 33.43668894274529,
+    "recall": 78.4890980593014
+   },
+   "once": {
+    "iou": 18.89944022141309,
+    "precision": 19.89044049400115,
+    "recall": 79.13763653056084
+   },
+   "occany_1f": {
+    "iou": 30.284242327404947,
+    "precision": 39.677155664591346,
+    "recall": 56.12600383246616
+   },
+   "occany_5f_fwd": {
+    "iou": 28.893060558845086,
+    "precision": 35.22174494126586,
+    "recall": 61.65671028893581
+   }
+  },
+  "A0fixed_completed": {
+   "k360": {
+    "iou": 25.375942520565356,
+    "precision": 32.98518774541716,
+    "recall": 52.381347335936724
+   },
+   "once": {
+    "iou": 20.863503791078777,
+    "precision": 33.547719117964775,
+    "recall": 35.55896672669439
+   },
+   "occany_1f": {
+    "iou": 22.46103767483956,
+    "precision": 48.81596740764776,
+    "recall": 29.380275935055565
+   },
+   "occany_5f_fwd": {
+    "iou": 25.268435004575796,
+    "precision": 37.26671426794614,
+    "recall": 43.97253227937416
+   }
+  }
+ },
+ "contrasts": {
+  "Q1a_once_vs_occany_1frame_causal": {
+   "a": "once",
+   "b": "occany_1f",
+   "all": {
+    "delta": -3.8043697352636165,
+    "ci_low": -4.691743054858306,
+    "ci_high": -2.9846319476062235,
+    "significant_at_95": true
+   },
+   "anchor_observed": {
+    "delta": -4.294135843154882,
+    "ci_low": -4.984223962220914,
+    "ci_high": -3.6474647671458653,
+    "significant_at_95": true
+   },
+   "earlier_only": {
+    "delta": -4.2047525413884035,
+    "ci_low": -5.273290571359397,
+    "ci_high": -3.13839724794458,
+    "significant_at_95": true
+   },
+   "never_observed": {
+    "delta": -0.04025104075129704,
+    "ci_low": -1.1246190261111018,
+    "ci_high": 1.0764960216760604,
+    "significant_at_95": false
+   },
+   "in_frustum": {
+    "delta": -7.059331047109168,
+    "ci_low": -7.841059866282917,
+    "ci_high": -6.283115599467702,
+    "significant_at_95": true
+   },
+   "out_frustum": {
+    "delta": 8.37504130231362,
+    "ci_low": 7.187636629143549,
+    "ci_high": 9.5382694639445,
+    "significant_at_95": true
+   },
+   "A0fixed_observed": {
+    "delta": -11.384802105991856,
+    "ci_low": -12.375336164564128,
+    "ci_high": -10.42078330669378,
+    "significant_at_95": true
+   },
+   "A0fixed_completed": {
+    "delta": -1.5975338837607822,
+    "ci_low": -2.638119840426204,
+    "ci_high": -0.5667264519288591,
+    "significant_at_95": true
+   }
+  },
+  "Q1b_once_vs_occany_5frame_forward": {
+   "a": "once",
+   "b": "occany_5f_fwd",
+   "all": {
+    "delta": -5.670983529211924,
+    "ci_low": -6.676340078581372,
+    "ci_high": -4.672344684390627,
+    "significant_at_95": true
+   },
+   "anchor_observed": {
+    "delta": -0.8770720145806923,
+    "ci_low": -1.3235654088630648,
+    "ci_high": -0.4320198764921503,
+    "significant_at_95": true
+   },
+   "earlier_only": {
+    "delta": -1.3400695969173615,
+    "ci_low": -2.2348928252058866,
+    "ci_high": -0.4940247369824166,
+    "significant_at_95": true
+   },
+   "never_observed": {
+    "delta": -5.239424783101473,
+    "ci_low": -6.449645593869734,
+    "ci_high": -4.049540061823916,
+    "significant_at_95": true
+   },
+   "in_frustum": {
+    "delta": -8.733069586155857,
+    "ci_low": -9.891990850128558,
+    "ci_high": -7.607580707580441,
+    "significant_at_95": true
+   },
+   "out_frustum": {
+    "delta": 8.635747038476344,
+    "ci_low": 7.2194283188976325,
+    "ci_high": 10.24459531052318,
+    "significant_at_95": true
+   },
+   "A0fixed_observed": {
+    "delta": -9.993620337431995,
+    "ci_low": -11.043049815945153,
+    "ci_high": -9.006847381014643,
+    "significant_at_95": true
+   },
+   "A0fixed_completed": {
+    "delta": -4.404931213497019,
+    "ci_low": -5.665121658444153,
+    "ci_high": -3.1302417288496964,
+    "significant_at_95": true
+   }
+  },
+  "Q3_once_vs_kitti360_same_recipe": {
+   "a": "once",
+   "b": "k360",
+   "all": {
+    "delta": -6.084858468265324,
+    "ci_low": -6.959030869989258,
+    "ci_high": -5.246488382417911,
+    "significant_at_95": true
+   },
+   "anchor_observed": {
+    "delta": -1.5946210114383206,
+    "ci_low": -2.0993945769228772,
+    "ci_high": -1.0751321229728887,
+    "significant_at_95": true
+   },
+   "earlier_only": {
+    "delta": -4.852911482717724,
+    "ci_low": -6.24617111335731,
+    "ci_high": -3.49444263451996,
+    "significant_at_95": true
+   },
+   "never_observed": {
+    "delta": -4.809394292458759,
+    "ci_low": -5.6175199515300145,
+    "ci_high": -3.930396437120365,
+    "significant_at_95": true
+   },
+   "in_frustum": {
+    "delta": -5.481944686686475,
+    "ci_low": -6.341638278229549,
+    "ci_high": -4.638597007710986,
+    "significant_at_95": true
+   },
+   "out_frustum": {
+    "delta": -7.7811960919261765,
+    "ci_low": -9.12759233398135,
+    "ci_high": -6.460990706211604,
+    "significant_at_95": true
+   },
+   "A0fixed_observed": {
+    "delta": -11.730410230837418,
+    "ci_low": -13.11986629205409,
+    "ci_high": -10.225523668498663,
+    "significant_at_95": true
+   },
+   "A0fixed_completed": {
+    "delta": -4.512438729486579,
+    "ci_low": -5.415423013232435,
+    "ci_high": -3.5849398623156326,
+    "significant_at_95": true
+   }
+  }
+ }
+}

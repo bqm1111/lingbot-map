@@ -1,0 +1,28 @@
+{
+  "n_anchors": 590,
+  "seconds": 333.0395357608795,
+  "regions": {
+    "completed_unobserved": {
+      "reference_miou": 8.796376363534595,
+      "reproduced_miou": 8.796376363534595,
+      "reference_voxels": 2743212,
+      "reproduced_voxels": 2743212,
+      "match": true
+    },
+    "ssc_no_evidence": {
+      "reference_miou": 1.3927645153874209,
+      "reproduced_miou": 1.3927645153874209,
+      "reference_voxels": 553275690,
+      "reproduced_voxels": 553275690,
+      "match": true
+    },
+    "oracle_unobserved": {
+      "reference_miou": 8.392475299689655,
+      "reproduced_miou": 8.392475299689655,
+      "reference_voxels": 7834276,
+      "reproduced_voxels": 7834276,
+      "match": true
+    }
+  },
+  "all_match": true
+}

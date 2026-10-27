@@ -1,0 +1,25 @@
+{
+  "version": "waymo_arm.1",
+  "shard": 0,
+  "shards": 1,
+  "n_built": 0,
+  "n_failed": 0,
+  "minutes": 4.473522675037384,
+  "gib": 0.0,
+  "grid": {
+    "dims": [
+      256,
+      256,
+      32
+    ],
+    "voxel_size": 0.2,
+    "origin": [
+      0.0,
+      -25.6,
+      -0.2570000000000001
+    ]
+  },
+  "aggregate": {},
+  "laser_shares": {},
+  "errors": []
+}

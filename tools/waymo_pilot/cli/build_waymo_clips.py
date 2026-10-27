@@ -38,6 +38,15 @@ def main() -> int:
     ap.add_argument("--segments", type=int, default=2)
     ap.add_argument("--anchors-per-segment", type=int, default=5)
     ap.add_argument("--limit", type=int, default=None)
+    ap.add_argument("--min-separation", type=int, default=C.MIN_ANCHOR_SEPARATION_FRAMES,
+                    help="stream frames between two anchors of one scene. The default is the "
+                         "pilot's independence rule (40), which a 39-frame Waymo segment can "
+                         "satisfy exactly once. The training arm lowers it to pack more "
+                         "anchors per scene; those anchors share privileged frames and the "
+                         "independent count stays one per segment.")
+    ap.add_argument("--log-tag", default="waymo_clips")
+    ap.add_argument("--skip-segments", type=int, default=0,
+                    help="skip this many segments before taking --segments (sharding)")
     a = ap.parse_args()
 
     C.ensure_dirs()
@@ -49,7 +58,7 @@ def main() -> int:
 
     root = C.Paths().waymo_frames
     segs = sorted(d for d in os.listdir(root)
-                  if len(os.listdir(os.path.join(root, d))) >= 190)[:a.segments]
+                  if len(os.listdir(os.path.join(root, d))) >= 190)[a.skip_segments:a.skip_segments + a.segments]
     if not segs:
         print("no fully extracted segments yet", file=sys.stderr)
         return 2
@@ -62,7 +71,8 @@ def main() -> int:
         eligible[s] = so.anchors()
     anchors, selection = SA.select(eligible, "waymo", len(segs),
                                    a.limit or len(segs) * a.anchors_per_segment,
-                                   a.anchors_per_segment)
+                                   a.anchors_per_segment, min_sep=a.min_separation)
+    selection["min_separation_frames_used"] = a.min_separation
     print(f"[clips] {selection['n_anchors']} anchors from {selection['n_scenes_used']} "
           f"segments (digest {selection['digest']})")
 
@@ -131,7 +141,7 @@ def main() -> int:
            "n_anchors_all_five_moge": sum(1 for r in built if r.get("n_moge_ok") == 5),
            "firewall": {"n_opened": len(audit.opened), "violations": audit.violations},
            "rows": built[:50]}
-    path = os.path.join(C.Paths().logs, "waymo_clips.json")
+    path = os.path.join(C.Paths().logs, f"{a.log_tag}.json")
     with open(path, "w") as fh:
         json.dump(rec, fh, indent=2, default=float)
     print(f"\n[clips] {len(built)} built in {rec['seconds'] / 60:.1f} min "

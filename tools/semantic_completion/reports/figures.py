@@ -80,7 +80,7 @@ def summary_plots(res: Dict) -> List[str]:
 
 def choose_examples(z: Dict[str, np.ndarray]) -> Dict[str, int]:
     def acc(cm):
-        cm = cm.astype(np.float64); return np.trace(cm[1:, 1:], axis1=-2, axis2=-1) / np.maximum(cm[:, 1:, :].sum((-2, -1)), 1)
+        cm = cm.astype(np.float64); return np.trace(cm[:, 1:, 1:], axis1=-2, axis2=-1) / np.maximum(cm[:, 1:, :].sum((-2, -1)), 1)
     b1, b0 = z[f"conf__B1_seed0__{PRIMARY}"], z[f"conf__B0_seed0__{PRIMARY}"]
     n = b1[:, 1:, :].sum((1, 2)); ok = n >= 2000
     gain = acc(b1) - acc(b0); ids = z["ids"]; order = np.argsort(gain[ok]); sel = ids[ok][order]
@@ -108,16 +108,20 @@ def example_panels(examples: Dict[str, int], device: str, paths: C.Paths = C.Pat
         teacher2d = classify(sample_at_lattice(tok, (140, 518)), text).cpu().numpy()
         vol = lambda v: v.reshape(C.GRID_DIMS)
         occ_np, E_np = occ.cpu().numpy(), E.cpu().numpy()
-        panels = [("evidence voxels (teacher readout)", bev(vol(np.where(E_np, ev_lab.cpu().numpy(), 0)))),
-                  ("completed occupancy (frozen)", bev(vol(occ_np.astype(np.int64) * 11))),
-                  ("B1 propagated (on predicted occupied)", bev(vol(np.where(occ_np, b1.cpu().numpy(), 0)))),
-                  ("B0 nearest evidence (on predicted occupied)", bev(vol(np.where(occ_np, b0.cpu().numpy(), 0)))),
-                  ("GT semantics (evaluation only)", bev(vol(np.where((gt >= 1) & (gt <= 18), gt, 0))))]
+        scored = occ_np & (gt >= 1) & (gt <= 18)          # correctly completed occupied voxels: where B0/B1 are scored
+        # the frozen occupancy over-predicts (pred/GT ~1.7), so a top-down "highest occupied voxel" view saturates;
+        # show occupancy as the fraction of each column predicted occupied, and semantics only on scored voxels
+        occ_height = vol(occ_np).mean(2)
+        panels = [("evidence voxels (teacher readout)", PALETTE[bev(vol(np.where(E_np, ev_lab.cpu().numpy(), 0)))]),
+                  ("completed occupancy (column fill fraction)", (255 * (1 - occ_height[..., None].repeat(3, 2))).astype(np.uint8)),
+                  ("B1 on correctly completed voxels", PALETTE[bev(vol(np.where(scored, b1.cpu().numpy(), 0)))]),
+                  ("B0 on correctly completed voxels", PALETTE[bev(vol(np.where(scored, b0.cpu().numpy(), 0)))]),
+                  ("GT semantics (evaluation only)", PALETTE[bev(vol(np.where((gt >= 1) & (gt <= 18), gt, 0)))])]
         fig = plt.figure(figsize=(16, 7)); gs = fig.add_gridspec(2, 5, height_ratios=[1, 2.3])
         a = fig.add_subplot(gs[0, :3]); a.imshow(plt.imread(img_path), cmap="gray"); a.set_title(f"0006 anchor {t}: RGB frame t"); a.axis("off")
         a = fig.add_subplot(gs[0, 3:]); a.imshow(PALETTE[teacher2d]); a.set_title("Trident-H readout on the LingBot lattice (frame t)"); a.axis("off")
         for i, (title, img) in enumerate(panels):
-            a = fig.add_subplot(gs[1, i]); a.imshow(PALETTE[np.rot90(img)], interpolation="nearest"); a.set_title(title, fontsize=8); a.axis("off")
+            a = fig.add_subplot(gs[1, i]); a.imshow(np.rot90(img), interpolation="nearest"); a.set_title(title, fontsize=8); a.axis("off")
         fig.suptitle(f"example '{name}' (deterministic selection rule, seed 0)"); fig.tight_layout()
         p = os.path.join(FIG, f"10_example_{name}_{t:05d}.png"); fig.savefig(p, dpi=110); plt.close(fig); out.append(p)
     return out

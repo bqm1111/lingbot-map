@@ -1,0 +1,51 @@
+{
+  "version": "waymo_arm.1",
+  "steps": 100,
+  "seed": 0,
+  "criterion": "data digests exact; loss trajectory within twice the frozen loop's own run-to-run envelope",
+  "frozen_self_envelope": {
+    "loss": 0.00015473365783691406,
+    "focal": 0.00014031678438186646,
+    "dice": 3.254413604736328e-05,
+    "iou": 0.00018911828047485021
+  },
+  "cross_envelope": {
+    "loss": 0.00015473365783691406,
+    "focal": 0.00014984607696533203,
+    "dice": 4.3392181396484375e-05,
+    "iou": 9.78694175043553e-05
+  },
+  "loss_within_envelope": true,
+  "n_train_anchors": [
+    1358,
+    1358
+  ],
+  "n_val_anchors": [
+    118,
+    118
+  ],
+  "init_digest": [
+    "1956770cb2196c52dac3459983d12be23a56086e21c705993c8173a0822d714a",
+    "1956770cb2196c52dac3459983d12be23a56086e21c705993c8173a0822d714a"
+  ],
+  "draw_digest": [
+    "4e368f4f38e9aaffa297eec9215ea2928096a86cd34c7463b964886dae59f8a7",
+    "4e368f4f38e9aaffa297eec9215ea2928096a86cd34c7463b964886dae59f8a7"
+  ],
+  "target_digest": [
+    "f57be2eb64b2c93106844344b4555e5a45e271c5d049e957c415bc721ebe63b5",
+    "f57be2eb64b2c93106844344b4555e5a45e271c5d049e957c415bc721ebe63b5"
+  ],
+  "final_sha256": [
+    "bdf802f3e48a79aed0905879fa57d02bef43ebb2b3f1a80b5611ed38b7e6b160",
+    "f3969a6b7255e68b30c9c4bbf6a1f3143b5f860f57145b709b33ac81f3d786a7"
+  ],
+  "n_logged": [
+    100,
+    100,
+    100
+  ],
+  "frozen_self_bitwise_equal": false,
+  "data_exact": true,
+  "passed": true
+}

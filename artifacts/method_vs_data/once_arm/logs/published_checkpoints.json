@@ -1,0 +1,23 @@
+[
+ {
+  "seed": 0,
+  "steps": 6000,
+  "source": "artifacts/method_vs_data/once_arm/checkpoints/by_step/once_geo_seed0_step06000.pt",
+  "published": "artifacts/method_vs_data/once_arm/checkpoints/geo_seed0_step06000.pt",
+  "sha256": "03fc0d26fc8396d592af38b82285495b34ec74e02be4050a9b6a56c26bcd9e7f"
+ },
+ {
+  "seed": 1,
+  "steps": 6000,
+  "source": "artifacts/method_vs_data/once_arm/checkpoints/by_step/once_geo_seed1_step06000.pt",
+  "published": "artifacts/method_vs_data/once_arm/checkpoints/geo_seed1_step06000.pt",
+  "sha256": "f469f80d0cb66abaab8499a21853443261c0cfb6755824470a93b4bb947662ac"
+ },
+ {
+  "seed": 2,
+  "steps": 6000,
+  "source": "artifacts/method_vs_data/once_arm/checkpoints/by_step/once_geo_seed2_step06000.pt",
+  "published": "artifacts/method_vs_data/once_arm/checkpoints/geo_seed2_step06000.pt",
+  "sha256": "2057b05e2d2304161ae9d437575b75b4fdd351ae3467ae5f57ac984aea3a46e4"
+ }
+]

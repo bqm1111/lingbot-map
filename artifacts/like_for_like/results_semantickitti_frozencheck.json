@@ -2,9 +2,11 @@
  "dataset": "semantickitti",
  "protocol": "causal (frozen predictions)",
  "source": "frozen",
+ "setting": "forward",
+ "ground_truth": "occany",
  "pooling": "none",
  "n_samples": 801,
- "seconds": 549.4451594352722,
+ "seconds": 688.9245300292969,
  "methods": {
   "B0": {
    "official_ssc_miou": 4.3185054284837605,

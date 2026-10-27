@@ -1,0 +1,34 @@
+{
+  "log": [
+    {
+      "t": 4,
+      "seconds": 141.45079445838928,
+      "n_frame_masks": 465,
+      "n_regions": 267,
+      "n_single_frame_regions": 200,
+      "n_regions_merging_two_masks_of_one_frame": 15,
+      "n_regions_with_non_contiguous_frames": 12,
+      "n_regions_with_rgb_support_no_evidence": 57,
+      "n_evidence_voxels": 18536,
+      "n_evidence_voxels_owned": 18240,
+      "evidence_ownership_fraction": 0.984031081199646
+    }
+  ],
+  "settings": {
+    "proposer": "SAM ViT-H SamAutomaticMaskGenerator (vendored in third_party/Trident)",
+    "points_per_side": 32,
+    "pred_iou_thresh": 0.86,
+    "stability_score_thresh": 0.92,
+    "crop_n_layers": 0,
+    "min_mask_region_area": 200,
+    "overlap_ownership": "paint largest area first; smallest mask wins a pixel",
+    "association": "3D world-key IoU over lifted visible support, all frame pairs in the clip",
+    "assoc_iou_min": 0.15,
+    "assoc_rgb_max": 0.22,
+    "min_support_voxels": 3
+  },
+  "audit": {
+    "opened": 11,
+    "violations": []
+  }
+}

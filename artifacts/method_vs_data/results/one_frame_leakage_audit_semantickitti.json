@@ -1,0 +1,55 @@
+{
+ "dataset": "semantickitti",
+ "n_samples_checked": 801,
+ "L1_one_slot_one_candidate": {
+  "failures": 0,
+  "examples": []
+ },
+ "L2_key_is_anchor": {
+  "failures": 0,
+  "examples": []
+ },
+ "L3_scale_differs_from_5frame": {
+  "failures": 0,
+  "examples": [],
+  "ratio_1f_over_5f": {
+   "min": 0.48848608485185957,
+   "p50": 0.7142275222858493,
+   "max": 1.054508940917463
+  }
+ },
+ "L4_depth_rerun_not_sliced": {
+  "failures": 0,
+  "examples": [],
+  "mean_abs_depth_diff": {
+   "min": 0.05044133588671684,
+   "p50": 0.253838449716568,
+   "max": 0.8758929967880249
+  }
+ },
+ "L5_prediction_records_one_frame": {
+  "failures": 0,
+  "examples": []
+ },
+ "L6_diagnostic_carries_5frame_scale": {
+  "failures": 0,
+  "examples": []
+ },
+ "L7_moge_cache_is_per_frame": {
+  "ok": true,
+  "signature": [
+   "dataset",
+   "key"
+  ],
+  "note": "no window/clip argument, so the cache cannot carry temporal content"
+ },
+ "L8_frozen_unet": {
+  "ok": true,
+  "checkpoint": "/home/minh/workspace/lingbot-map_fork/artifacts/baseline_reconstruction/checkpoints/geo_seed0_step06000.pt",
+  "sha256": "7f5e853dd05bdbde918da888503995a363f4cd4fa3e09061bcf4f765e2428faa",
+  "matches_code_freeze": true,
+  "geometry_seed": 0,
+  "note": "one file, loaded once, shared by every arm in a run"
+ },
+ "admissible_shared_input": "MoGe-B per-frame depth only (L7)"
+}

@@ -1,0 +1,113 @@
+{
+ "dataset": "semantickitti",
+ "protocol": "causal (frozen predictions)",
+ "source": "frozen",
+ "setting": "forward",
+ "ground_truth": "occany",
+ "pooling": "semantic",
+ "n_samples": 801,
+ "seconds": 641.1311779022217,
+ "methods": {
+  "B0": {
+   "official_ssc_miou": 4.389589692362516,
+   "official_superclass_miou": 8.336624635427341,
+   "per_class_iou": {
+    "car": 7.660520877343559,
+    "bicycle": 4.027456384179951,
+    "motorcycle": 4.928809545295695,
+    "truck": 4.1982271833452804,
+    "other-vehicle": 1.9802952182856253,
+    "person": 1.379438570597741,
+    "bicyclist": 2.3205261513344086,
+    "motorcyclist": 2.1054376622920463,
+    "road": 20.250601803095144,
+    "parking": 1.7504059760741413,
+    "sidewalk": 8.75707734116241,
+    "other-ground": 0.06282202708819376,
+    "building": 6.536872921511463,
+    "fence": 2.6141662318257484,
+    "vegetation": 13.591365262345361,
+    "trunk": 0.7900832588108111,
+    "terrain": 0.005817709333525603,
+    "pole": 0.42288078676275276,
+    "traffic-sign": 0.019399244203940434
+   }
+  },
+  "B3_s0": {
+   "official_ssc_miou": 4.456797946179303,
+   "official_superclass_miou": 8.419999752652373,
+   "per_class_iou": {
+    "car": 8.436453878320016,
+    "bicycle": 4.798932242237581,
+    "motorcycle": 5.807021416462975,
+    "truck": 5.082090372239336,
+    "other-vehicle": 2.638866009251742,
+    "person": 1.2995117508948808,
+    "bicyclist": 1.0038866380821747,
+    "motorcyclist": 0.9340222556955043,
+    "road": 19.41057966169927,
+    "parking": 2.07117984836413,
+    "sidewalk": 8.83649659482341,
+    "other-ground": 0.060371627740034926,
+    "building": 6.356740966075448,
+    "fence": 2.6219354330365254,
+    "vegetation": 14.121059439532003,
+    "trunk": 0.8280646010401373,
+    "terrain": 0.004984785408650119,
+    "pole": 0.36316184969094706,
+    "traffic-sign": 0.003801606811997667
+   }
+  },
+  "B3_s1": {
+   "official_ssc_miou": 4.436661022743645,
+   "official_superclass_miou": 8.365529297838192,
+   "per_class_iou": {
+    "car": 8.419174420308039,
+    "bicycle": 4.792386717331508,
+    "motorcycle": 5.797749458641152,
+    "truck": 4.710476423592896,
+    "other-vehicle": 2.658441989534441,
+    "person": 1.3072587987305242,
+    "bicyclist": 0.8661083997706731,
+    "motorcyclist": 1.1909487868381328,
+    "road": 19.491052466782705,
+    "parking": 2.0515903565822313,
+    "sidewalk": 8.817084182425617,
+    "other-ground": 0.06185301932891706,
+    "building": 6.268070143641781,
+    "fence": 2.5946662337354867,
+    "vegetation": 14.089308362273728,
+    "trunk": 0.8175266095546828,
+    "terrain": 0.004971482947377005,
+    "pole": 0.35414068927326636,
+    "traffic-sign": 0.0037508908361047135
+   }
+  },
+  "B3_s2": {
+   "official_ssc_miou": 4.448370367298477,
+   "official_superclass_miou": 8.370116991491807,
+   "per_class_iou": {
+    "car": 8.408002603644995,
+    "bicycle": 4.770508109540982,
+    "motorcycle": 5.746297630531126,
+    "truck": 5.059474564276702,
+    "other-vehicle": 2.652288419890059,
+    "person": 1.2841047383,
+    "bicyclist": 0.8994755287025418,
+    "motorcyclist": 1.075054746018207,
+    "road": 19.459701995497216,
+    "parking": 2.0555966143906375,
+    "sidewalk": 8.894531221947192,
+    "other-ground": 0.06075974592011623,
+    "building": 6.3463814788534805,
+    "fence": 2.607096014355404,
+    "vegetation": 14.058014008241779,
+    "trunk": 0.7861829166906293,
+    "terrain": 0.004951476859606137,
+    "pole": 0.34692608101040506,
+    "traffic-sign": 0.0036890839999890452
+   }
+  }
+ },
+ "official_sc_iou": 26.396948217145532
+}

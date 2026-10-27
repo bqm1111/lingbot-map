@@ -1,0 +1,478 @@
+{
+  "version": "waymo_arm.1",
+  "n_built": 200,
+  "n_failed": 0,
+  "minutes": 0.29019552071889243,
+  "grid": {
+    "dims": [
+      256,
+      256,
+      32
+    ],
+    "voxel_size": 0.2,
+    "origin": [
+      0.0,
+      -25.6,
+      -0.2570000000000001
+    ],
+    "frame": "vehicle_of_anchor_frame"
+  },
+  "occupancy_of_grid": {
+    "S_mean": 0.01659353733062744,
+    "F_mean": 0.12347396612167358
+  },
+  "bytes_per_input": 42424.43,
+  "errors": [],
+  "rows": [
+    {
+      "segment": "segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "n_rays": 732180,
+      "n_S": 28820,
+      "n_F": 121230,
+      "n_rows": 193823,
+      "bytes": 17383
+    },
+    {
+      "segment": "segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord",
+      "t": 7,
+      "n_rays": 679517,
+      "n_S": 28953,
+      "n_F": 107175,
+      "n_rows": 156209,
+      "bytes": 16125
+    },
+    {
+      "segment": "segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord",
+      "t": 10,
+      "n_rays": 632044,
+      "n_S": 22775,
+      "n_F": 87205,
+      "n_rows": 136834,
+      "bytes": 15013
+    },
+    {
+      "segment": "segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord",
+      "t": 13,
+      "n_rays": 629205,
+      "n_S": 25284,
+      "n_F": 76489,
+      "n_rows": 119508,
+      "bytes": 15613
+    },
+    {
+      "segment": "segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord",
+      "t": 16,
+      "n_rays": 602770,
+      "n_S": 25414,
+      "n_F": 89061,
+      "n_rows": 133167,
+      "bytes": 18054
+    },
+    {
+      "segment": "segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "n_rays": 632383,
+      "n_S": 60266,
+      "n_F": 379065,
+      "n_rows": 917719,
+      "bytes": 48362
+    },
+    {
+      "segment": "segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord",
+      "t": 7,
+      "n_rays": 628249,
+      "n_S": 62194,
+      "n_F": 357192,
+      "n_rows": 844789,
+      "bytes": 44619
+    },
+    {
+      "segment": "segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord",
+      "t": 10,
+      "n_rays": 601067,
+      "n_S": 53410,
+      "n_F": 287604,
+      "n_rows": 648148,
+      "bytes": 43451
+    },
+    {
+      "segment": "segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord",
+      "t": 13,
+      "n_rays": 521451,
+      "n_S": 15193,
+      "n_F": 71527,
+      "n_rows": 105222,
+      "bytes": 13154
+    },
+    {
+      "segment": "segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord",
+      "t": 16,
+      "n_rays": 526157,
+      "n_S": 18353,
+      "n_F": 93819,
+      "n_rows": 204174,
+      "bytes": 18159
+    },
+    {
+      "segment": "segment-1005081002024129653_5313_150_5333_150_with_camera_labels.tfrecord",
+      "t": 4,
+      "n_rays": 610045,
+      "n_S": 36743,
+      "n_F": 311270,
+      "n_rows": 975954,
+      "bytes": 62097
+    },
+    {
+      "segment": "segment-1005081002024129653_5313_150_5333_150_with_camera_labels.tfrecord",
+      "t": 7,
+      "n_rays": 577731,
+      "n_S": 35179,
+      "n_F": 295279,
+      "n_rows": 1217374,
+      "bytes": 60326
+    },
+    {
+      "segment": "segment-1005081002024129653_5313_150_5333_150_with_camera_labels.tfrecord",
+      "t": 10,
+      "n_rays": 611874,
+      "n_S": 40315,
+      "n_F": 309425,
+      "n_rows": 1208984,
+      "bytes": 59495
+    },
+    {
+      "segment": "segment-1005081002024129653_5313_150_5333_150_with_camera_labels.tfrecord",
+      "t": 13,
+      "n_rays": 566205,
+      "n_S": 33506,
+      "n_F": 262798,
+      "n_rows": 963806,
+      "bytes": 61728
+    },
+    {
+      "segment": "segment-1005081002024129653_5313_150_5333_150_with_camera_labels.tfrecord",
+      "t": 16,
+      "n_rays": 564024,
+      "n_S": 54735,
+      "n_F": 447468,
+      "n_rows": 1057467,
+      "bytes": 82562
+    },
+    {
+      "segment": "segment-10061305430875486848_1080_000_1100_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "n_rays": 777214,
+      "n_S": 34527,
+      "n_F": 197859,
+      "n_rows": 284297,
+      "bytes": 23137
+    },
+    {
+      "segment": "segment-10061305430875486848_1080_000_1100_000_with_camera_labels.tfrecord",
+      "t": 7,
+      "n_rays": 667069,
+      "n_S": 35829,
+      "n_F": 160425,
+      "n_rows": 283331,
+      "bytes": 27218
+    },
+    {
+      "segment": "segment-10061305430875486848_1080_000_1100_000_with_camera_labels.tfrecord",
+      "t": 10,
+      "n_rays": 629346,
+      "n_S": 43184,
+      "n_F": 233557,
+      "n_rows": 392915,
+      "bytes": 35498
+    },
+    {
+      "segment": "segment-10061305430875486848_1080_000_1100_000_with_camera_labels.tfrecord",
+      "t": 13,
+      "n_rays": 659381,
+      "n_S": 54839,
+      "n_F": 301393,
+      "n_rows": 518366,
+      "bytes": 44610
+    },
+    {
+      "segment": "segment-10061305430875486848_1080_000_1100_000_with_camera_labels.tfrecord",
+      "t": 16,
+      "n_rays": 652023,
+      "n_S": 58745,
+      "n_F": 332218,
+      "n_rows": 570656,
+      "bytes": 47612
+    },
+    {
+      "segment": "segment-10072140764565668044_4060_000_4080_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "n_rays": 422685,
+      "n_S": 26704,
+      "n_F": 263647,
+      "n_rows": 453343,
+      "bytes": 51658
+    },
+    {
+      "segment": "segment-10072140764565668044_4060_000_4080_000_with_camera_labels.tfrecord",
+      "t": 7,
+      "n_rays": 399418,
+      "n_S": 20299,
+      "n_F": 163055,
+      "n_rows": 298711,
+      "bytes": 31628
+    },
+    {
+      "segment": "segment-10072140764565668044_4060_000_4080_000_with_camera_labels.tfrecord",
+      "t": 10,
+      "n_rays": 400296,
+      "n_S": 20719,
+      "n_F": 184547,
+      "n_rows": 278086,
+      "bytes": 31090
+    },
+    {
+      "segment": "segment-10072140764565668044_4060_000_4080_000_with_camera_labels.tfrecord",
+      "t": 13,
+      "n_rays": 432052,
+      "n_S": 20673,
+      "n_F": 225440,
+      "n_rows": 403640,
+      "bytes": 35998
+    },
+    {
+      "segment": "segment-10072140764565668044_4060_000_4080_000_with_camera_labels.tfrecord",
+      "t": 16,
+      "n_rays": 443355,
+      "n_S": 18422,
+      "n_F": 249714,
+      "n_rows": 476022,
+      "bytes": 41315
+    },
+    {
+      "segment": "segment-10072231702153043603_5725_000_5745_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "n_rays": 445900,
+      "n_S": 24727,
+      "n_F": 323530,
+      "n_rows": 835428,
+      "bytes": 60927
+    },
+    {
+      "segment": "segment-10072231702153043603_5725_000_5745_000_with_camera_labels.tfrecord",
+      "t": 7,
+      "n_rays": 419285,
+      "n_S": 14001,
+      "n_F": 263560,
+      "n_rows": 745339,
+      "bytes": 57088
+    },
+    {
+      "segment": "segment-10072231702153043603_5725_000_5745_000_with_camera_labels.tfrecord",
+      "t": 10,
+      "n_rays": 437005,
+      "n_S": 17657,
+      "n_F": 344591,
+      "n_rows": 981535,
+      "bytes": 72306
+    },
+    {
+      "segment": "segment-10072231702153043603_5725_000_5745_000_with_camera_labels.tfrecord",
+      "t": 13,
+      "n_rays": 435709,
+      "n_S": 19696,
+      "n_F": 307816,
+      "n_rows": 900568,
+      "bytes": 69664
+    },
+    {
+      "segment": "segment-10072231702153043603_5725_000_5745_000_with_camera_labels.tfrecord",
+      "t": 16,
+      "n_rays": 407615,
+      "n_S": 14517,
+      "n_F": 289233,
+      "n_rows": 797150,
+      "bytes": 70908
+    },
+    {
+      "segment": "segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "n_rays": 639048,
+      "n_S": 47996,
+      "n_F": 184195,
+      "n_rows": 272534,
+      "bytes": 26768
+    },
+    {
+      "segment": "segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord",
+      "t": 7,
+      "n_rays": 772930,
+      "n_S": 39066,
+      "n_F": 193384,
+      "n_rows": 322636,
+      "bytes": 21405
+    },
+    {
+      "segment": "segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord",
+      "t": 10,
+      "n_rays": 640398,
+      "n_S": 35442,
+      "n_F": 131507,
+      "n_rows": 238329,
+      "bytes": 20474
+    },
+    {
+      "segment": "segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord",
+      "t": 13,
+      "n_rays": 600081,
+      "n_S": 41774,
+      "n_F": 224188,
+      "n_rows": 360169,
+      "bytes": 32450
+    },
+    {
+      "segment": "segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord",
+      "t": 16,
+      "n_rays": 600233,
+      "n_S": 50353,
+      "n_F": 267955,
+      "n_rows": 432751,
+      "bytes": 41911
+    },
+    {
+      "segment": "segment-10082223140073588526_6140_000_6160_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "n_rays": 362745,
+      "n_S": 13401,
+      "n_F": 137761,
+      "n_rows": 284906,
+      "bytes": 23720
+    },
+    {
+      "segment": "segment-10082223140073588526_6140_000_6160_000_with_camera_labels.tfrecord",
+      "t": 7,
+      "n_rays": 445216,
+      "n_S": 20919,
+      "n_F": 146093,
+      "n_rows": 267801,
+      "bytes": 29168
+    },
+    {
+      "segment": "segment-10082223140073588526_6140_000_6160_000_with_camera_labels.tfrecord",
+      "t": 10,
+      "n_rays": 547303,
+      "n_S": 21212,
+      "n_F": 172279,
+      "n_rows": 345565,
+      "bytes": 30111
+    },
+    {
+      "segment": "segment-10082223140073588526_6140_000_6160_000_with_camera_labels.tfrecord",
+      "t": 13,
+      "n_rays": 529104,
+      "n_S": 30628,
+      "n_F": 257692,
+      "n_rows": 510669,
+      "bytes": 45304
+    },
+    {
+      "segment": "segment-10082223140073588526_6140_000_6160_000_with_camera_labels.tfrecord",
+      "t": 16,
+      "n_rays": 576584,
+      "n_S": 31192,
+      "n_F": 298654,
+      "n_rows": 652000,
+      "bytes": 41560
+    },
+    {
+      "segment": "segment-10094743350625019937_3420_000_3440_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "n_rays": 483799,
+      "n_S": 24969,
+      "n_F": 161271,
+      "n_rows": 216955,
+      "bytes": 31644
+    },
+    {
+      "segment": "segment-10094743350625019937_3420_000_3440_000_with_camera_labels.tfrecord",
+      "t": 7,
+      "n_rays": 478173,
+      "n_S": 23725,
+      "n_F": 170256,
+      "n_rows": 228861,
+      "bytes": 32328
+    },
+    {
+      "segment": "segment-10094743350625019937_3420_000_3440_000_with_camera_labels.tfrecord",
+      "t": 10,
+      "n_rays": 479417,
+      "n_S": 22024,
+      "n_F": 162081,
+      "n_rows": 218804,
+      "bytes": 29750
+    },
+    {
+      "segment": "segment-10094743350625019937_3420_000_3440_000_with_camera_labels.tfrecord",
+      "t": 13,
+      "n_rays": 464992,
+      "n_S": 19246,
+      "n_F": 154432,
+      "n_rows": 208348,
+      "bytes": 28592
+    },
+    {
+      "segment": "segment-10094743350625019937_3420_000_3440_000_with_camera_labels.tfrecord",
+      "t": 16,
+      "n_rays": 477494,
+      "n_S": 18478,
+      "n_F": 161314,
+      "n_rows": 216276,
+      "bytes": 28977
+    },
+    {
+      "segment": "segment-10096619443888687526_2820_000_2840_000_with_camera_labels.tfrecord",
+      "t": 4,
+      "n_rays": 660385,
+      "n_S": 44053,
+      "n_F": 196393,
+      "n_rows": 348361,
+      "bytes": 29931
+    },
+    {
+      "segment": "segment-10096619443888687526_2820_000_2840_000_with_camera_labels.tfrecord",
+      "t": 7,
+      "n_rays": 694535,
+      "n_S": 48914,
+      "n_F": 220938,
+      "n_rows": 463706,
+      "bytes": 33450
+    },
+    {
+      "segment": "segment-10096619443888687526_2820_000_2840_000_with_camera_labels.tfrecord",
+      "t": 10,
+      "n_rays": 646109,
+      "n_S": 37664,
+      "n_F": 224274,
+      "n_rows": 446326,
+      "bytes": 29571
+    },
+    {
+      "segment": "segment-10096619443888687526_2820_000_2840_000_with_camera_labels.tfrecord",
+      "t": 13,
+      "n_rays": 679221,
+      "n_S": 37255,
+      "n_F": 289124,
+      "n_rows": 722471,
+      "bytes": 38205
+    },
+    {
+      "segment": "segment-10096619443888687526_2820_000_2840_000_with_camera_labels.tfrecord",
+      "t": 16,
+      "n_rays": 607890,
+      "n_S": 30179,
+      "n_F": 223900,
+      "n_rows": 577215,
+      "bytes": 42115
+    }
+  ]
+}

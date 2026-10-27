@@ -1,0 +1,99 @@
+{
+  "provenance": {
+    "version": "once_arm.1",
+    "status": "exploratory",
+    "prevalence_band": {
+      "gate": "occupied prevalence in valid",
+      "predeclared_band": [
+        0.015,
+        0.04
+      ],
+      "once_measured_median": 0.013,
+      "verdict": "FAILED -- not relabelled as passed",
+      "sequences_inside_band": "2 of 6",
+      "why_it_is_not_disqualifying": "The band was calibrated under the frozen 21-sweep / 10.46 s carve. Applied to the authorized ~2.1 s window it also rejects KITTI-360, on vertical coverage (21 of 32 z-levels against a floor of 30). Each corpus fails a different band and the corpus the bands were calibrated from is one of them.",
+      "cause": "Scene content. LiDAR sparsity is falsified as the cause: removing 85 % of KITTI-360's returns leaves it in band (prevalence elasticity to point count ~0.1).",
+      "reference": "artifacts/method_vs_data/once_supervision_validation.md"
+    },
+    "camera": "cam01",
+    "hfov_deg": 90.1,
+    "undistort_images": false,
+    "distortion_evidence": {
+      "decision": "use shipped JPEGs as-is; do NOT call cv2.undistort",
+      "logcorr_lidar_vs_mono_depth": {
+        "plain_pinhole": 0.8571,
+        "distortion_applied": 0.6978,
+        "pinhole_better_in": "12 of 12 frames"
+      },
+      "map_vs_target_iou_pct": {
+        "shipped": 3.26,
+        "undistorted": 1.44,
+        "shipped_better_in": "11 of 12 anchors"
+      },
+      "retracts": "once_metadata_audit.md \u00a75 (M2 gradient test is centre-biased)"
+    },
+    "input_clip": {
+      "offsets": [
+        -4,
+        -3,
+        -2,
+        -1,
+        0
+      ],
+      "stream_stride": 1,
+      "span_s": 2.0,
+      "future_frames_used": 0
+    },
+    "supervision": {
+      "policy": "duration-matched, native cadence",
+      "span_s": 2.1,
+      "max_gap_s": 0.75,
+      "interpolated_or_duplicated_sweeps": false
+    },
+    "grid": {
+      "dims": [
+        256,
+        256,
+        32
+      ],
+      "voxel_size": 0.2,
+      "origin": [
+        0.0,
+        -25.6,
+        -2.0
+      ],
+      "frame": "velodyne_of_anchor_frame"
+    },
+    "anchors": {
+      "min_separation_frames": 5,
+      "target_n": 1400,
+      "independent_scene_count": 6,
+      "note": "the anchor count is NOT the independent count"
+    },
+    "val_sequences": [
+      "000121"
+    ]
+  },
+  "manifest_digest": "aab448ccf7cee085e6bace9665d884c26b3d13dc69be72ea11458e6d47dce6f3",
+  "shard": 0,
+  "shards": 1,
+  "n_built": 1580,
+  "n_skipped": 0,
+  "n_failed": 0,
+  "minutes": 14.544649708271027,
+  "scale_m_per_unit": {
+    "min": 12.165698537348877,
+    "p50": 52.661967436377026,
+    "max": 143.69299339053805,
+    "n_nonfinite": 0
+  },
+  "fov_x_deg_per_sequence": {
+    "000076": 90.06978216699608,
+    "000080": 90.06978216699608,
+    "000092": 90.06978216699608,
+    "000104": 90.06978216699608,
+    "000113": 90.06978216699608,
+    "000121": 90.06978216699608
+  },
+  "errors": []
+}

@@ -1,0 +1,20 @@
+{
+ "semantickitti": {
+  "dataset": "semantickitti",
+  "n_samples": 801,
+  "n_written": 799,
+  "n_present": 2,
+  "n_no_scale": 0,
+  "clips_root": "/media/minh/MINH1/lingbot_one_frame/clips",
+  "model": "{'missing_keys': 0, 'unexpected_keys': 0}"
+ },
+ "occ3d": {
+  "dataset": "occ3d",
+  "n_samples": 4219,
+  "n_written": 4219,
+  "n_present": 0,
+  "n_no_scale": 1,
+  "clips_root": "/media/minh/MINH1/lingbot_one_frame/clips",
+  "model": "{'missing_keys': 0, 'unexpected_keys': 0}"
+ }
+}

@@ -1,0 +1,29 @@
+{
+  "version": "waymo_pilot.1",
+  "requested": 1,
+  "workers": 1,
+  "n_ok": 1,
+  "n_skipped": 0,
+  "n_failed": 0,
+  "n_frames_verified": 198,
+  "minutes": 3.6946807066599527,
+  "mib": 0.005649566650390625,
+  "segments": [
+    {
+      "segment": "segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord",
+      "status": "ok",
+      "n_frames": 198,
+      "n_verified": 198,
+      "lasers": [
+        "TOP",
+        "FRONT",
+        "SIDE_LEFT",
+        "SIDE_RIGHT",
+        "REAR"
+      ],
+      "download_s": 110.27323460578918,
+      "seconds": 221.2862536907196,
+      "bytes": 5924
+    }
+  ]
+}

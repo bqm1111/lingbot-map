@@ -1,0 +1,51 @@
+{
+  "version": "waymo_arm.1",
+  "n_figures": 3,
+  "rows": [
+    {
+      "segment": "segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord",
+      "anchor": 4,
+      "figure": "artifacts/waymo_arm/figures/anchor_100170901680446877_00004.png",
+      "n_lidar_in_image": 26520,
+      "n_S": 28820,
+      "n_F": 121230,
+      "n_occupied": 45011,
+      "valid_fraction": 0.35229921340942383,
+      "camera_voxel": [
+        7.695733804343303,
+        127.87985244572783,
+        11.86389234837166
+      ]
+    },
+    {
+      "segment": "segment-10023947602400723454_1120_000_1140_000_with_camera_labels.tfrecord",
+      "anchor": 4,
+      "figure": "artifacts/waymo_arm/figures/anchor_100239476024007234_00004.png",
+      "n_lidar_in_image": 25829,
+      "n_S": 60266,
+      "n_F": 379065,
+      "n_occupied": 23543,
+      "valid_fraction": 0.6842265129089355,
+      "camera_voxel": [
+        7.696839584282351,
+        127.88154449082771,
+        11.865073520583291
+      ]
+    },
+    {
+      "segment": "segment-1005081002024129653_5313_150_5333_150_with_camera_labels.tfrecord",
+      "anchor": 4,
+      "figure": "artifacts/waymo_arm/figures/anchor_100508100202412965_00004.png",
+      "n_lidar_in_image": 23330,
+      "n_S": 36743,
+      "n_F": 311270,
+      "n_occupied": 9334,
+      "valid_fraction": 0.5222511291503906,
+      "camera_voxel": [
+        7.722072521255471,
+        127.88561326305509,
+        11.86476770856442
+      ]
+    }
+  ]
+}

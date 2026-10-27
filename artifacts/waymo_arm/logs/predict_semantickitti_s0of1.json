@@ -1,0 +1,12 @@
+{
+ "dataset": "semantickitti",
+ "shard": 0,
+ "shards": 1,
+ "samples": 801,
+ "written": 798,
+ "seconds": 1325.1310048103333,
+ "checkpoints": "/home/minh/workspace/lingbot-map_fork/artifacts/waymo_arm/checkpoints",
+ "freeze": "/home/minh/workspace/lingbot-map_fork/artifacts/waymo_arm/geometry_freeze.json",
+ "prediction_root": "/media/minh/MINH1/lingbot_waymo_arm/zero_shot_predictions",
+ "geometry_seed": 0
+}

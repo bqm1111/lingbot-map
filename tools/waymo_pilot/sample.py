@@ -80,7 +80,8 @@ def independence_ceiling(eligible: Sequence[int],
 
 
 def select(eligible_by_scene: Dict[str, Sequence[int]], arm: str, max_scenes: int,
-           max_anchors: int, per_scene: int) -> Tuple[List[Anchor], Dict]:
+           max_anchors: int, per_scene: int,
+           min_sep: int = C.MIN_ANCHOR_SEPARATION_FRAMES) -> Tuple[List[Anchor], Dict]:
     """Apply the rule. Returns the anchors and the selection record for the report."""
     scenes = sorted(eligible_by_scene)[:max_scenes]
     picked: List[Anchor] = []
@@ -89,7 +90,7 @@ def select(eligible_by_scene: Dict[str, Sequence[int]], arm: str, max_scenes: in
         if len(picked) >= max_anchors:
             break
         want = min(per_scene, max_anchors - len(picked))
-        idx = spread(eligible_by_scene[s], want)
+        idx = spread(eligible_by_scene[s], want, min_sep)
         if not idx:                 # a scene that supplies nothing is not a scene used
             continue
         per_scene_counts[s] = len(idx)
@@ -97,11 +98,14 @@ def select(eligible_by_scene: Dict[str, Sequence[int]], arm: str, max_scenes: in
     gaps = _gaps(picked)
     rec = {
         "arm": arm, "rule": ("deterministic scene order, first N scenes, anchors spread "
-                             f"with min separation {C.MIN_ANCHOR_SEPARATION_FRAMES} frames"),
+                             f"with min separation {min_sep} frames"),
         "sample_seed": C.SAMPLE_SEED,
+        # ``min_separation_frames`` is what PACKED the anchors; the independence ceiling
+        # below is always computed at the pilot's rule (no shared frame at all), so a packed
+        # selection can never be reported as that many independent examples.
         "caps": {"max_scenes": max_scenes, "max_anchors": max_anchors,
-                 "per_scene": per_scene,
-                 "min_separation_frames": C.MIN_ANCHOR_SEPARATION_FRAMES},
+                 "per_scene": per_scene, "min_separation_frames": min_sep,
+                 "independence_rule_frames": C.MIN_ANCHOR_SEPARATION_FRAMES},
         "n_scenes_available": len(eligible_by_scene),
         "n_scenes_used": len(per_scene_counts),
         "scenes_with_no_eligible_anchor": sorted(s for s in scenes

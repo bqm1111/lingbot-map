@@ -25,6 +25,7 @@ import subprocess
 import sys
 import time
 
+
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..")))
 from tools.waymo_pilot import config as C                                     # noqa: E402
 
@@ -35,7 +36,6 @@ GSUTIL = os.path.join(C.GCLOUD, "bin", "gsutil")
 def free_gib(path: str) -> float:
     st = os.statvfs(path)
     return st.f_bavail * st.f_frsize / 2 ** 30
-
 
 def already_done(seg: str, expect_min: int) -> int:
     d = os.path.join(C.Paths().waymo_frames, seg)

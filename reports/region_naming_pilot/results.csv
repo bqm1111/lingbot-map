@@ -1,0 +1,151 @@
+set,n_anchors,region,method,miou_pct,overall_accuracy_pct,mean_class_accuracy_pct,n_voxels,n_gt_classes,gt_classes_predicted,dominant_pred_class,dominant_pred_fraction
+evaluation,24,oracle_observed,B0,17.8462,62.8448,31.8356,14173,13,13,vegetation,0.6338
+evaluation,24,oracle_observed,P_N,17.5701,62.8448,30.625,14173,13,13,vegetation,0.6347
+evaluation,24,oracle_observed,P_R,17.5906,62.9295,30.5286,14173,13,13,vegetation,0.636
+evaluation,24,oracle_observed,Q_N,19.5164,64.0231,34.7493,14173,13,13,vegetation,0.622
+evaluation,24,oracle_observed,Q_R,19.7273,64.1713,34.9293,14173,13,13,vegetation,0.6223
+evaluation,24,oracle_unobserved,B0,9.3327,52.2953,22.9034,351485,17,16,vegetation,0.5831
+evaluation,24,oracle_unobserved,P_N,9.0383,52.25,22.2249,351485,17,16,vegetation,0.5804
+evaluation,24,oracle_unobserved,P_R,9.0327,52.2808,22.135,351485,17,16,vegetation,0.5806
+evaluation,24,oracle_unobserved,Q_N,8.3308,53.264,17.4622,351485,17,16,vegetation,0.5918
+evaluation,24,oracle_unobserved,Q_R,8.3245,53.2816,17.4217,351485,17,16,vegetation,0.5917
+evaluation,24,completed_observed,B0,17.9604,54.8634,34.9135,8749,12,12,vegetation,0.5622
+evaluation,24,completed_observed,P_N,17.87,54.9777,34.8481,8749,12,12,vegetation,0.5611
+evaluation,24,completed_observed,P_R,17.9144,55.1149,34.6915,8749,12,12,vegetation,0.5633
+evaluation,24,completed_observed,Q_N,19.2973,55.9835,37.5228,8749,12,12,vegetation,0.555
+evaluation,24,completed_observed,Q_R,19.5616,56.2236,37.6611,8749,12,12,vegetation,0.5556
+evaluation,24,completed_unobserved,B0,10.1448,48.1567,25.4997,110913,15,15,vegetation,0.5123
+evaluation,24,completed_unobserved,P_N,9.5704,47.3073,24.8577,110913,15,15,vegetation,0.5105
+evaluation,24,completed_unobserved,P_R,9.5491,47.4047,24.6307,110913,15,15,vegetation,0.5112
+evaluation,24,completed_unobserved,Q_N,10.4477,48.9979,23.5346,110913,15,15,vegetation,0.5224
+evaluation,24,completed_unobserved,Q_R,10.4538,49.0538,23.4364,110913,15,15,vegetation,0.5221
+evaluation,24,ssc_full,B0,1.5706,15.9198,8.1269,23709740,17,16,vegetation,0.4902
+evaluation,24,ssc_full,P_N,1.5187,15.6649,7.931,23709740,17,16,vegetation,0.472
+evaluation,24,ssc_full,P_R,1.5055,15.6977,7.8396,23709740,17,16,vegetation,0.4719
+evaluation,24,ssc_full,Q_N,1.5735,16.2018,7.5163,23709740,17,16,vegetation,0.5055
+evaluation,24,ssc_full,Q_R,1.5741,16.2245,7.4825,23709740,17,16,vegetation,0.5051
+evaluation,24,ssc_no_evidence,B0,1.468,15.1961,7.5947,23490098,17,16,vegetation,0.4921
+evaluation,24,ssc_no_evidence,P_N,1.4044,14.9281,7.3867,23490098,17,16,vegetation,0.4732
+evaluation,24,ssc_no_evidence,P_R,1.3911,14.9588,7.2968,23490098,17,16,vegetation,0.4731
+evaluation,24,ssc_no_evidence,Q_N,1.4366,15.4615,6.912,23490098,17,16,vegetation,0.5081
+evaluation,24,ssc_no_evidence,Q_R,1.4327,15.4792,6.8715,23490098,17,16,vegetation,0.5076
+evaluation,24,completed_unobserved_geo_observed,B0,11.0653,38.0241,27.3142,18341,13,13,vegetation,0.3587
+evaluation,24,completed_unobserved_geo_observed,P_N,10.4125,37.9478,27.2641,18341,13,12,vegetation,0.3679
+evaluation,24,completed_unobserved_geo_observed,P_R,10.4152,37.9968,27.0572,18341,13,12,vegetation,0.3684
+evaluation,24,completed_unobserved_geo_observed,Q_N,10.8406,37.1408,26.2935,18341,13,13,vegetation,0.3623
+evaluation,24,completed_unobserved_geo_observed,Q_R,10.8696,37.1899,26.3838,18341,13,13,vegetation,0.3623
+evaluation,24,completed_unobserved_geo_unobserved,B0,8.897,50.1642,23.1948,92572,15,15,vegetation,0.5428
+evaluation,24,completed_unobserved_geo_unobserved,P_N,8.4666,49.1617,22.7155,92572,15,15,vegetation,0.5387
+evaluation,24,completed_unobserved_geo_unobserved,P_R,8.4358,49.2687,22.4767,92572,15,15,vegetation,0.5395
+evaluation,24,completed_unobserved_geo_unobserved,Q_N,9.4612,51.3471,21.9407,92572,15,15,vegetation,0.5542
+evaluation,24,completed_unobserved_geo_unobserved,Q_R,9.4632,51.4043,21.8233,92572,15,15,vegetation,0.5538
+evaluation,24,completed_unobserved_objects,B0,14.8343,27.7352,22.3808,1435,6,5,car,0.2188
+evaluation,24,completed_unobserved_objects,P_N,14.1837,28.0139,21.9504,1435,6,4,car,0.2265
+evaluation,24,completed_unobserved_objects,P_R,14.2507,28.2927,22.0183,1435,6,3,car,0.2293
+evaluation,24,completed_unobserved_objects,Q_N,11.2962,30.5226,16.3664,1435,6,5,car,0.2913
+evaluation,24,completed_unobserved_objects,Q_R,11.4594,31.2195,16.5363,1435,6,4,car,0.2983
+evaluation,24,completed_unobserved_surfaces,B0,15.7784,48.4243,27.5789,109478,9,9,vegetation,0.517
+evaluation,24,completed_unobserved_surfaces,P_N,15.1458,47.5602,26.7959,109478,9,9,vegetation,0.5153
+evaluation,24,completed_unobserved_surfaces,P_R,15.1041,47.6552,26.3723,109478,9,9,vegetation,0.516
+evaluation,24,completed_unobserved_surfaces,Q_N,16.5483,49.24,28.3134,109478,9,9,vegetation,0.5272
+evaluation,24,completed_unobserved_surfaces,Q_R,16.5433,49.2875,28.0364,109478,9,9,vegetation,0.5269
+calibration,4,oracle_observed,B0,17.6591,59.6728,36.8829,2812,12,12,vegetation,0.4765
+calibration,4,oracle_observed,P_N,17.1003,56.0811,36.9613,2812,12,12,vegetation,0.4559
+calibration,4,oracle_observed,P_R,17.5857,56.1522,39.2841,2812,12,12,vegetation,0.4513
+calibration,4,oracle_observed,Q_N,25.5649,70.9815,50.4371,2812,12,12,vegetation,0.4516
+calibration,4,oracle_observed,Q_R,26.4375,71.0526,52.7737,2812,12,12,vegetation,0.447
+calibration,4,oracle_unobserved,B0,9.1807,57.2978,15.2759,56983,15,14,vegetation,0.7025
+calibration,4,oracle_unobserved,P_N,9.7615,58.5824,15.5853,56983,15,14,vegetation,0.7138
+calibration,4,oracle_unobserved,P_R,9.7896,58.6631,15.6701,56983,15,14,vegetation,0.7143
+calibration,4,oracle_unobserved,Q_N,11.2215,56.2291,24.1828,56983,15,14,vegetation,0.6214
+calibration,4,oracle_unobserved,Q_R,11.2806,56.3273,24.3031,56983,15,14,vegetation,0.6217
+calibration,4,completed_observed,B0,15.1381,47.8821,35.87,1629,12,12,vegetation,0.4266
+calibration,4,completed_observed,P_N,14.9057,45.795,36.1347,1629,12,12,vegetation,0.4002
+calibration,4,completed_observed,P_R,15.4038,45.9177,38.4148,1629,12,12,vegetation,0.3923
+calibration,4,completed_observed,Q_N,23.4875,58.5021,49.916,1629,12,12,vegetation,0.391
+calibration,4,completed_observed,Q_R,24.3508,58.6249,52.2119,1629,12,12,vegetation,0.3831
+calibration,4,completed_unobserved,B0,10.6578,39.2972,22.4275,17701,13,13,vegetation,0.5151
+calibration,4,completed_unobserved,P_N,11.077,40.7322,22.6887,17701,13,13,vegetation,0.5258
+calibration,4,completed_unobserved,P_R,11.1518,40.992,22.9272,17701,13,13,vegetation,0.5277
+calibration,4,completed_unobserved,Q_N,13.5757,41.5683,29.0989,17701,13,13,vegetation,0.4767
+calibration,4,completed_unobserved,Q_R,13.7827,41.8846,29.5375,17701,13,13,vegetation,0.4778
+calibration,4,ssc_full,B0,1.3111,12.9375,6.2922,3513710,15,14,vegetation,0.5492
+calibration,4,ssc_full,P_N,1.3254,13.3055,6.4617,3513710,15,14,vegetation,0.5667
+calibration,4,ssc_full,P_R,1.3435,13.3857,6.5813,3513710,15,14,vegetation,0.565
+calibration,4,ssc_full,Q_N,2.0976,13.8992,9.0767,3513710,15,14,vegetation,0.5606
+calibration,4,ssc_full,Q_R,2.1691,13.9962,9.2376,3513710,15,14,vegetation,0.5581
+calibration,4,ssc_no_evidence,B0,1.2292,12.2071,5.7709,3470663,15,14,vegetation,0.5631
+calibration,4,ssc_no_evidence,P_N,1.251,12.6529,5.9486,3470663,15,14,vegetation,0.5821
+calibration,4,ssc_no_evidence,P_R,1.262,12.7336,6.0334,3470663,15,14,vegetation,0.5804
+calibration,4,ssc_no_evidence,Q_N,1.8218,12.9126,8.1039,3470663,15,14,vegetation,0.5762
+calibration,4,ssc_no_evidence,Q_R,1.8682,13.0109,8.2242,3470663,15,14,vegetation,0.5738
+calibration,4,completed_unobserved_geo_observed,B0,10.7487,28.0393,35.3791,3356,12,12,vegetation,0.2595
+calibration,4,completed_unobserved_geo_observed,P_N,10.9067,29.261,37.2465,3356,12,12,vegetation,0.2729
+calibration,4,completed_unobserved_geo_observed,P_R,10.9139,29.261,37.709,3356,12,12,vegetation,0.2709
+calibration,4,completed_unobserved_geo_observed,Q_N,15.2041,33.8796,48.2089,3356,12,12,vegetation,0.2452
+calibration,4,completed_unobserved_geo_observed,Q_R,15.272,33.9392,48.7183,3356,12,12,vegetation,0.2431
+calibration,4,completed_unobserved_geo_unobserved,B0,10.5264,41.931,21.3725,14345,13,12,vegetation,0.5748
+calibration,4,completed_unobserved_geo_unobserved,P_N,10.9178,43.4158,21.7027,14345,13,12,vegetation,0.585
+calibration,4,completed_unobserved_geo_unobserved,P_R,11.0014,43.7365,21.9463,14345,13,12,vegetation,0.5877
+calibration,4,completed_unobserved_geo_unobserved,Q_N,12.9305,43.367,27.1564,14345,13,13,vegetation,0.5308
+calibration,4,completed_unobserved_geo_unobserved,Q_R,13.1625,43.7435,27.6049,14345,13,13,vegetation,0.5327
+calibration,4,completed_unobserved_objects,B0,12.7572,24.2188,13.0252,512,4,1,vegetation,0.5898
+calibration,4,completed_unobserved_objects,P_N,12.7572,24.2188,13.0252,512,4,1,vegetation,0.5957
+calibration,4,completed_unobserved_objects,P_R,12.7572,24.2188,13.0252,512,4,1,vegetation,0.5996
+calibration,4,completed_unobserved_objects,Q_N,30.3708,48.4375,30.8413,512,4,2,vegetation,0.416
+calibration,4,completed_unobserved_objects,Q_R,30.7347,49.2188,31.416,512,4,2,vegetation,0.4062
+calibration,4,completed_unobserved_surfaces,B0,13.9662,39.7463,26.6064,17189,9,9,vegetation,0.5128
+calibration,4,completed_unobserved_surfaces,P_N,14.5928,41.224,26.9836,17189,9,9,vegetation,0.5238
+calibration,4,completed_unobserved_surfaces,P_R,14.7751,41.4917,27.328,17189,9,9,vegetation,0.5255
+calibration,4,completed_unobserved_surfaces,Q_N,16.3835,41.3637,28.3245,17189,9,9,vegetation,0.4785
+calibration,4,completed_unobserved_surfaces,Q_R,16.6591,41.6662,28.7025,17189,9,9,vegetation,0.4799
+golden,1,oracle_observed,B0,29.118,58.1028,34.7782,759,8,6,vegetation,0.2477
+golden,1,oracle_observed,P_N,29.7803,61.0013,37.1842,759,8,6,building,0.2556
+golden,1,oracle_observed,P_R,29.7577,61.1331,37.2431,759,8,6,vegetation,0.2582
+golden,1,oracle_observed,Q_N,30.2517,61.7918,41.7069,759,8,7,building,0.2437
+golden,1,oracle_observed,Q_R,30.6442,61.9236,43.2694,759,8,7,building,0.2451
+golden,1,oracle_unobserved,B0,8.8117,25.6214,21.3289,7724,12,10,other structure,0.3225
+golden,1,oracle_unobserved,P_N,8.9129,25.7121,21.5102,7724,12,10,other structure,0.3427
+golden,1,oracle_unobserved,P_R,8.909,25.6085,21.497,7724,12,10,other structure,0.3441
+golden,1,oracle_unobserved,Q_N,10.0411,28.0425,18.2059,7724,12,10,vegetation,0.2053
+golden,1,oracle_unobserved,Q_R,10.2519,28.1849,18.6492,7724,12,10,vegetation,0.2044
+golden,1,completed_observed,B0,25.1942,47.9021,31.9781,572,8,6,sidewalk,0.229
+golden,1,completed_observed,P_N,25.925,51.5734,34.7055,572,8,6,building,0.2168
+golden,1,completed_observed,P_R,25.9134,51.7483,34.8292,572,8,6,building,0.2185
+golden,1,completed_observed,Q_N,26.5145,53.3217,39.2116,572,8,7,building,0.208
+golden,1,completed_observed,Q_R,26.8973,53.4965,40.7741,572,8,7,building,0.2098
+golden,1,completed_unobserved,B0,9.2743,21.586,21.1432,4174,11,9,other structure,0.2959
+golden,1,completed_unobserved,P_N,9.5223,23.287,21.3681,4174,11,9,other structure,0.3158
+golden,1,completed_unobserved,P_R,9.4796,23.0954,21.309,4174,11,9,other structure,0.3184
+golden,1,completed_unobserved,Q_N,11.2497,28.1984,16.6287,4174,11,9,traffic sign,0.2262
+golden,1,completed_unobserved,Q_R,11.6213,28.4619,17.2388,4174,11,9,traffic sign,0.2269
+golden,1,ssc_full,B0,2.6002,13.8512,12.6484,984560,12,12,other structure,0.4236
+golden,1,ssc_full,P_N,2.8216,14.9358,12.9961,984560,12,11,other structure,0.4541
+golden,1,ssc_full,P_R,2.8325,14.8532,12.9887,984560,12,11,other structure,0.455
+golden,1,ssc_full,Q_N,3.0745,17.4702,9.8339,984560,12,11,building,0.261
+golden,1,ssc_full,Q_R,3.1192,17.6117,10.3751,984560,12,11,building,0.2625
+golden,1,ssc_no_evidence,B0,2.1461,11.6649,11.5928,971868,12,12,other structure,0.4391
+golden,1,ssc_no_evidence,P_N,2.3728,12.5842,11.8159,971868,12,11,other structure,0.4701
+golden,1,ssc_no_evidence,P_R,2.3834,12.4806,11.8027,971868,12,11,other structure,0.471
+golden,1,ssc_no_evidence,Q_N,2.6337,15.2382,8.6032,971868,12,11,building,0.2626
+golden,1,ssc_no_evidence,Q_R,2.6707,15.3806,9.0465,971868,12,11,building,0.2643
+golden,1,completed_unobserved_geo_observed,B0,15.7219,35.8814,31.6222,641,8,5,vegetation,0.2293
+golden,1,completed_unobserved_geo_observed,P_N,15.9029,37.1295,32.3211,641,8,5,vegetation,0.2387
+golden,1,completed_unobserved_geo_observed,P_R,15.8915,37.1295,32.3211,641,8,5,vegetation,0.2402
+golden,1,completed_unobserved_geo_observed,Q_N,16.461,38.8456,37.2504,641,8,7,vegetation,0.2402
+golden,1,completed_unobserved_geo_observed,Q_R,16.9355,39.0016,38.3867,641,8,7,vegetation,0.2402
+golden,1,completed_unobserved_geo_unobserved,B0,8.1962,18.9924,19.2626,3533,11,8,other structure,0.3496
+golden,1,completed_unobserved_geo_unobserved,P_N,8.6309,20.7755,19.6923,3533,11,9,other structure,0.3731
+golden,1,completed_unobserved_geo_unobserved,P_R,8.5903,20.5491,19.6289,3533,11,9,other structure,0.3762
+golden,1,completed_unobserved_geo_unobserved,Q_N,10.5155,26.2666,14.8487,3533,11,9,traffic sign,0.2649
+golden,1,completed_unobserved_geo_unobserved,Q_R,10.8478,26.5497,15.3093,3533,11,9,traffic sign,0.2658
+golden,1,completed_unobserved_objects,B0,16.9492,40.724,16.9492,221,3,2,car,0.4072
+golden,1,completed_unobserved_objects,P_N,16.9492,40.724,16.9492,221,3,2,car,0.4072
+golden,1,completed_unobserved_objects,P_R,16.9492,40.724,16.9492,221,3,2,car,0.4072
+golden,1,completed_unobserved_objects,Q_N,17.1375,41.1765,17.1375,221,3,2,car,0.4118
+golden,1,completed_unobserved_objects,Q_R,18.8469,42.0814,18.8469,221,3,3,car,0.4118
+golden,1,completed_unobserved_surfaces,B0,9.2347,20.5161,22.7159,3953,8,7,other structure,0.3074
+golden,1,completed_unobserved_surfaces,P_N,9.6263,22.3122,23.0252,3953,8,6,other structure,0.3284
+golden,1,completed_unobserved_surfaces,P_R,9.5437,22.1098,22.9439,3953,8,6,other structure,0.3311
+golden,1,completed_unobserved_surfaces,Q_N,12.178,27.4728,16.4378,3953,8,6,traffic sign,0.2363
+golden,1,completed_unobserved_surfaces,Q_R,12.2622,27.7005,16.6358,3953,8,6,traffic sign,0.237

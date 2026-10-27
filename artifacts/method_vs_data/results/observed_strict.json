@@ -1,0 +1,170 @@
+{
+ "dataset": "semantickitti",
+ "n_samples": 801,
+ "postprocess": "raw",
+ "pixel_stride": 2,
+ "step_m": 0.1,
+ "methods": {
+  "ours": "frozen causal pipeline, 5 past frames, B0 / B3 seeds 0-2",
+  "occany_1f_geom": "their EXP_ID 1 verbatim (geometry); reproduces the published 24.03 monocular IoU"
+ },
+ "windows": {
+  "ours": "causal",
+  "occany_1f_geom": "causal"
+ },
+ "composition": {
+  "all": {
+   "valid_voxels": 1173859441,
+   "gt_occupied": 93298722,
+   "share_of_valid": 1.0,
+   "share_of_gt_occupied": 1.0
+  },
+  "anchor_observed": {
+   "valid_voxels": 383735341,
+   "gt_occupied": 4440970,
+   "share_of_valid": 0.32690058758065565,
+   "share_of_gt_occupied": 0.047599473013145883
+  },
+  "earlier_only": {
+   "valid_voxels": 291244488,
+   "gt_occupied": 5766773,
+   "share_of_valid": 0.24810848541788913,
+   "share_of_gt_occupied": 0.061809774843432475
+  },
+  "never_observed": {
+   "valid_voxels": 498879612,
+   "gt_occupied": 83090979,
+   "share_of_valid": 0.4249909270014552,
+   "share_of_gt_occupied": 0.8905907521434216
+  }
+ },
+ "per_frame_observed_gt_occupied": {
+  "frame_0": {
+   "gt_occupied_seen": 4282340,
+   "share_of_gt_occupied": 0.04589923536144472
+  },
+  "frame_1": {
+   "gt_occupied_seen": 4551515,
+   "share_of_gt_occupied": 0.048784323112164386
+  },
+  "frame_2": {
+   "gt_occupied_seen": 4809429,
+   "share_of_gt_occupied": 0.05154871253220382
+  },
+  "frame_3": {
+   "gt_occupied_seen": 4769327,
+   "share_of_gt_occupied": 0.05111888885251826
+  },
+  "frame_4": {
+   "gt_occupied_seen": 4440970,
+   "share_of_gt_occupied": 0.047599473013145883
+  }
+ },
+ "iou": {
+  "all": {
+   "ours": {
+    "iou": 26.396948217145532,
+    "precision": 37.44695818687665,
+    "recall": 47.21718803393684,
+    "tp": 44053033,
+    "fp": 73588119,
+    "fn": 49245689
+   },
+   "occany_1f_geom": {
+    "iou": 20.319705142913374,
+    "precision": 55.63568484313846,
+    "recall": 24.24875123155492,
+    "tp": 22623775,
+    "fp": 18040369,
+    "fn": 70674947
+   }
+  },
+  "anchor_observed": {
+   "ours": {
+    "iou": 11.47220877858943,
+    "precision": 12.74407075349367,
+    "recall": 53.477911357203496,
+    "tp": 2374938,
+    "fp": 16260693,
+    "fn": 2066032
+   },
+   "occany_1f_geom": {
+    "iou": 15.761507717556903,
+    "precision": 19.95056501244623,
+    "recall": 42.87831262089138,
+    "tp": 1904213,
+    "fp": 7640444,
+    "fn": 2536757
+   }
+  },
+  "earlier_only": {
+   "ours": {
+    "iou": 17.95365026095798,
+    "precision": 20.574479629310215,
+    "recall": 58.496372234523534,
+    "tp": 3373353,
+    "fp": 13022459,
+    "fn": 2393420
+   },
+   "occany_1f_geom": {
+    "iou": 12.969129034998154,
+    "precision": 35.2538797736109,
+    "recall": 17.02402712921074,
+    "tp": 981737,
+    "fp": 1803026,
+    "fn": 4785036
+   }
+  },
+  "never_observed": {
+   "ours": {
+    "iou": 30.06747326166878,
+    "precision": 46.36832941755067,
+    "recall": 46.09976011956725,
+    "tp": 38304742,
+    "fp": 44304967,
+    "fn": 44786237
+   },
+   "occany_1f_geom": {
+    "iou": 21.527191413460347,
+    "precision": 69.65949271289884,
+    "recall": 23.754473996509297,
+    "tp": 19737825,
+    "fp": 8596899,
+    "fn": 63353154
+   }
+  }
+ },
+ "delta": {
+  "all": {
+   "ours_minus_occany": 6.0772430742321575,
+   "ci_low": 4.815016887954406,
+   "ci_high": 7.332547233900478,
+   "significant_at_95": true
+  },
+  "anchor_observed": {
+   "ours_minus_occany": -4.289298938967473,
+   "ci_low": -5.083195113368534,
+   "ci_high": -3.5972738759523506,
+   "significant_at_95": true
+  },
+  "earlier_only": {
+   "ours_minus_occany": 4.984521225959824,
+   "ci_low": 3.5669753897168,
+   "ci_high": 6.640502315672123,
+   "significant_at_95": true
+  },
+  "never_observed": {
+   "ours_minus_occany": 8.540281848208434,
+   "ci_low": 7.010702951753776,
+   "ci_high": 10.064654024059754,
+   "significant_at_95": true
+  }
+ },
+ "statistics": {
+  "blocks": 33,
+  "resamples": 2000,
+  "bootstrap_seed": 0,
+  "block_rule": "25 contiguous anchors",
+  "paired": "both methods resampled on the same anchors"
+ }
+}

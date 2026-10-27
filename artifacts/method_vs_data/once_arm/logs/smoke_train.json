@@ -1,0 +1,393 @@
+{
+  "provenance": {
+    "version": "once_arm.1",
+    "status": "exploratory",
+    "prevalence_band": {
+      "gate": "occupied prevalence in valid",
+      "predeclared_band": [
+        0.015,
+        0.04
+      ],
+      "once_measured_median": 0.013,
+      "verdict": "FAILED -- not relabelled as passed",
+      "sequences_inside_band": "2 of 6",
+      "why_it_is_not_disqualifying": "The band was calibrated under the frozen 21-sweep / 10.46 s carve. Applied to the authorized ~2.1 s window it also rejects KITTI-360, on vertical coverage (21 of 32 z-levels against a floor of 30). Each corpus fails a different band and the corpus the bands were calibrated from is one of them.",
+      "cause": "Scene content. LiDAR sparsity is falsified as the cause: removing 85 % of KITTI-360's returns leaves it in band (prevalence elasticity to point count ~0.1).",
+      "reference": "artifacts/method_vs_data/once_supervision_validation.md"
+    },
+    "camera": "cam01",
+    "hfov_deg": 90.1,
+    "undistort_images": false,
+    "distortion_evidence": {
+      "decision": "use shipped JPEGs as-is; do NOT call cv2.undistort",
+      "logcorr_lidar_vs_mono_depth": {
+        "plain_pinhole": 0.8571,
+        "distortion_applied": 0.6978,
+        "pinhole_better_in": "12 of 12 frames"
+      },
+      "map_vs_target_iou_pct": {
+        "shipped": 3.26,
+        "undistorted": 1.44,
+        "shipped_better_in": "11 of 12 anchors"
+      },
+      "retracts": "once_metadata_audit.md \u00a75 (M2 gradient test is centre-biased)"
+    },
+    "input_clip": {
+      "offsets": [
+        -4,
+        -3,
+        -2,
+        -1,
+        0
+      ],
+      "stream_stride": 1,
+      "span_s": 2.0,
+      "future_frames_used": 0
+    },
+    "supervision": {
+      "policy": "duration-matched, native cadence",
+      "span_s": 2.1,
+      "max_gap_s": 0.75,
+      "interpolated_or_duplicated_sweeps": false
+    },
+    "grid": {
+      "dims": [
+        256,
+        256,
+        32
+      ],
+      "voxel_size": 0.2,
+      "origin": [
+        0.0,
+        -25.6,
+        -2.0
+      ],
+      "frame": "velodyne_of_anchor_frame"
+    },
+    "anchors": {
+      "min_separation_frames": 5,
+      "target_n": 1400,
+      "independent_scene_count": 6,
+      "note": "the anchor count is NOT the independent count"
+    },
+    "val_sequences": [
+      "000121"
+    ]
+  },
+  "manifest_digest": "aab448ccf7cee085e6bace9665d884c26b3d13dc69be72ea11458e6d47dce6f3",
+  "train_sequences": [
+    "000076",
+    "000080",
+    "000092",
+    "000104",
+    "000113"
+  ],
+  "val_sequences": [
+    "000121"
+  ],
+  "seeds": {
+    "0": {
+      "seed": 0,
+      "steps": 20,
+      "n_train": 1259,
+      "n_val": 65,
+      "n_params": 967322,
+      "config_path": "artifacts/baseline_reconstruction/training_config.yaml",
+      "config_sha256": "4ef021b6444853877af830ac4c32bd2b23e5de63b9bc7575e03f0fd87c6ba43f",
+      "init_state_digest": "1956770cb2196c52dac3459983d12be23a56086e21c705993c8173a0822d714a",
+      "init_matches_gate12": null,
+      "draw_digest": "4428013e6cc62b0de9c036b623b416db67d3a9a0d8c2b8ee5162c9d01529d0cd",
+      "target_digest": "7c2b0fc5310d0a0d01ea82f31829be7f471a9f9df56bc05c92805cc9ca17c516",
+      "final_checkpoint": "artifacts/method_vs_data/once_arm/checkpoints/smoke/once_geo_seed0_step00020.pt",
+      "final_checkpoint_sha256": "6f88bd2055dc16c278a70103458eb103d7a99c8973b6a083bb5053b6f0da69bb",
+      "checkpoints": [
+        {
+          "step": 20,
+          "path": "artifacts/method_vs_data/once_arm/checkpoints/smoke/once_geo_seed0_step00020.pt",
+          "draw_digest": "4428013e6cc62b0de9c036b623b416db67d3a9a0d8c2b8ee5162c9d01529d0cd"
+        }
+      ],
+      "log": [
+        {
+          "sem_kl": 0.0,
+          "focal": 0.18894825875759125,
+          "dice": 0.9725185632705688,
+          "bce": NaN,
+          "iou": 0.0,
+          "base_iou": 0.0,
+          "prevalence": 0.014128155359359148,
+          "density": 0.0,
+          "step": 1,
+          "loss": 1.1614668369293213,
+          "lr": 0.0009938441702975688
+        },
+        {
+          "sem_kl": 0.0,
+          "focal": 0.17885847389698029,
+          "dice": 0.9879428148269653,
+          "bce": NaN,
+          "iou": 0.0331623013742219,
+          "base_iou": 0.0,
+          "prevalence": 0.006091563953813907,
+          "density": 0.05714348314032324,
+          "step": 2,
+          "loss": 1.1668013334274292,
+          "lr": 0.0009755282581475768
+        },
+        {
+          "sem_kl": 0.0,
+          "focal": 0.19519764184951782,
+          "dice": 0.9569403529167175,
+          "bce": NaN,
+          "iou": 0.012506025386963741,
+          "base_iou": 0.0,
+          "prevalence": 0.02249572037847611,
+          "density": 0.002747370135852947,
+          "step": 3,
+          "loss": 1.1521379947662354,
+          "lr": 0.0009455032620941839
+        },
+        {
+          "sem_kl": 0.0,
+          "focal": 0.171743243932724,
+          "dice": 0.9876635670661926,
+          "bce": NaN,
+          "iou": 0.023149772009821115,
+          "base_iou": 0.0,
+          "prevalence": 0.006223842234555545,
+          "density": 0.0020698753525611865,
+          "step": 4,
+          "loss": 1.1594067811965942,
+          "lr": 0.0009045084971874737
+        },
+        {
+          "sem_kl": 0.0,
+          "focal": 0.19944976270198822,
+          "dice": 0.9416748881340027,
+          "bce": NaN,
+          "iou": 0.023506240500096337,
+          "base_iou": 0.0,
+          "prevalence": 0.03089298170966444,
+          "density": 0.003702787112535204,
+          "step": 5,
+          "loss": 1.1411246061325073,
+          "lr": 0.0008535533905932737
+        },
+        {
+          "sem_kl": 0.0,
+          "focal": 0.17808718979358673,
+          "dice": 0.9686629176139832,
+          "bce": NaN,
+          "iou": 0.0420980576709164,
+          "base_iou": 0.0,
+          "prevalence": 0.01607539632630816,
+          "density": 0.002159806193889957,
+          "step": 6,
+          "loss": 1.1467500925064087,
+          "lr": 0.0007938926261462366
+        },
+        {
+          "sem_kl": 0.0,
+          "focal": 0.1720414161682129,
+          "dice": 0.9711693525314331,
+          "bce": NaN,
+          "iou": 0.11362463677592809,
+          "base_iou": 0.0,
+          "prevalence": 0.014647325964841331,
+          "density": 0.011427902853923524,
+          "step": 7,
+          "loss": 1.143210768699646,
+          "lr": 0.0007269952498697733
+        },
+        {
+          "sem_kl": 0.0,
+          "focal": 0.17544828355312347,
+          "dice": 0.9688636660575867,
+          "bce": NaN,
+          "iou": 0.04615653302063322,
+          "base_iou": 0.0,
+          "prevalence": 0.016015745135048755,
+          "density": 0.015591362186348589,
+          "step": 8,
+          "loss": 1.1443119049072266,
+          "lr": 0.0006545084971874737
+        },
+        {
+          "sem_kl": 0.0,
+          "focal": 0.16369888186454773,
+          "dice": 0.9789015650749207,
+          "bce": NaN,
+          "iou": 0.04530548408253872,
+          "base_iou": 0.0,
+          "prevalence": 0.0106805162895167,
+          "density": 0.0036517127909558716,
+          "step": 9,
+          "loss": 1.142600417137146,
+          "lr": 0.0005782172325201155
+        },
+        {
+          "sem_kl": 0.0,
+          "focal": 0.17014268040657043,
+          "dice": 0.9659478068351746,
+          "bce": NaN,
+          "iou": 0.06778258655804481,
+          "base_iou": 0.0,
+          "prevalence": 0.01740799865306848,
+          "density": 0.008746480673715192,
+          "step": 10,
+          "loss": 1.1360905170440674,
+          "lr": 0.0005
+        },
+        {
+          "sem_kl": 0.0,
+          "focal": 0.17562271654605865,
+          "dice": 0.9582138657569885,
+          "bce": NaN,
+          "iou": 0.06545940940425969,
+          "base_iou": 0.0,
+          "prevalence": 0.021525245967137792,
+          "density": 0.02726392949994299,
+          "step": 11,
+          "loss": 1.1338366270065308,
+          "lr": 0.0004217827674798847
+        },
+        {
+          "sem_kl": 0.0,
+          "focal": 0.15412437915802002,
+          "dice": 0.9845432043075562,
+          "bce": NaN,
+          "iou": 0.00945216049382716,
+          "base_iou": 0.0,
+          "prevalence": 0.00774362833584183,
+          "density": 0.0020688844774910367,
+          "step": 12,
+          "loss": 1.1386675834655762,
+          "lr": 0.00034549150281252633
+        },
+        {
+          "sem_kl": 0.0,
+          "focal": 0.15304453670978546,
+          "dice": 0.9852107763290405,
+          "bce": NaN,
+          "iou": 0.005455825413586766,
+          "base_iou": 0.0,
+          "prevalence": 0.007443447076960082,
+          "density": 0.000884875122545,
+          "step": 13,
+          "loss": 1.1382553577423096,
+          "lr": 0.00027300475013022663
+        },
+        {
+          "sem_kl": 0.0,
+          "focal": 0.17724072933197021,
+          "dice": 0.9495507478713989,
+          "bce": NaN,
+          "iou": 0.04764936242452302,
+          "base_iou": 0.0,
+          "prevalence": 0.02624076126784682,
+          "density": 0.013757471082354068,
+          "step": 14,
+          "loss": 1.1267914772033691,
+          "lr": 0.00020610737385376348
+        },
+        {
+          "sem_kl": 0.0,
+          "focal": 0.16088491678237915,
+          "dice": 0.9687090516090393,
+          "bce": NaN,
+          "iou": 0.033760808316331485,
+          "base_iou": 0.0,
+          "prevalence": 0.015832909737117654,
+          "density": 0.01297524280354589,
+          "step": 15,
+          "loss": 1.1295939683914185,
+          "lr": 0.00014644660940672625
+        },
+        {
+          "sem_kl": 0.0,
+          "focal": 0.1474740207195282,
+          "dice": 0.9868575930595398,
+          "bce": NaN,
+          "iou": 0.014807992064616693,
+          "base_iou": 0.0,
+          "prevalence": 0.006507032014100639,
+          "density": 0.002857000894365497,
+          "step": 16,
+          "loss": 1.1343315839767456,
+          "lr": 9.549150281252631e-05
+        },
+        {
+          "sem_kl": 0.0,
+          "focal": 0.15941183269023895,
+          "dice": 0.9688383936882019,
+          "bce": NaN,
+          "iou": 0.015277287177675732,
+          "base_iou": 0.0,
+          "prevalence": 0.015689521269580762,
+          "density": 0.0011576278885746523,
+          "step": 17,
+          "loss": 1.128250241279602,
+          "lr": 5.4496737905816096e-05
+        },
+        {
+          "sem_kl": 0.0,
+          "focal": 0.14756077527999878,
+          "dice": 0.9852890968322754,
+          "bce": NaN,
+          "iou": 0.01406786941580756,
+          "base_iou": 0.0,
+          "prevalence": 0.00729153648800641,
+          "density": 0.0013857135505877336,
+          "step": 18,
+          "loss": 1.132849931716919,
+          "lr": 2.447174185242323e-05
+        },
+        {
+          "sem_kl": 0.0,
+          "focal": 0.15179778635501862,
+          "dice": 0.9802423715591431,
+          "bce": NaN,
+          "iou": 0.014079895219384414,
+          "base_iou": 0.0,
+          "prevalence": 0.0099010847863605,
+          "density": 0.0014904226002798405,
+          "step": 19,
+          "loss": 1.1320401430130005,
+          "lr": 6.15582970243117e-06
+        },
+        {
+          "sem_kl": 0.0,
+          "focal": 0.1762479990720749,
+          "dice": 0.949588418006897,
+          "bce": NaN,
+          "iou": 0.007247528529196732,
+          "base_iou": 0.0,
+          "prevalence": 0.02627348560852027,
+          "density": 0.0023918705350317667,
+          "step": 20,
+          "loss": 1.1258363723754883,
+          "lr": 0.0
+        },
+        {
+          "val": {
+            "sem_kl": 0.0,
+            "focal": 0.16084725716534784,
+            "dice": 0.9680783187641817,
+            "bce": NaN,
+            "iou": 0.011046226168848929,
+            "base_iou": 0.0,
+            "prevalence": 0.0163956672972721,
+            "density": 0.00103211236113441,
+            "loss": 1.1289255829418408,
+            "step": 20
+          }
+        }
+      ],
+      "seconds": 7.740397691726685,
+      "firewall": {
+        "opened": 5298,
+        "violations": []
+      }
+    }
+  }
+}

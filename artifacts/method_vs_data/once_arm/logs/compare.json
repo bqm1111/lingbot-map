@@ -1,0 +1,215 @@
+{
+  "provenance": {
+    "version": "once_arm.1",
+    "status": "exploratory",
+    "prevalence_band": {
+      "gate": "occupied prevalence in valid",
+      "predeclared_band": [
+        0.015,
+        0.04
+      ],
+      "once_measured_median": 0.013,
+      "verdict": "FAILED -- not relabelled as passed",
+      "sequences_inside_band": "2 of 6",
+      "why_it_is_not_disqualifying": "The band was calibrated under the frozen 21-sweep / 10.46 s carve. Applied to the authorized ~2.1 s window it also rejects KITTI-360, on vertical coverage (21 of 32 z-levels against a floor of 30). Each corpus fails a different band and the corpus the bands were calibrated from is one of them.",
+      "cause": "Scene content. LiDAR sparsity is falsified as the cause: removing 85 % of KITTI-360's returns leaves it in band (prevalence elasticity to point count ~0.1).",
+      "reference": "artifacts/method_vs_data/once_supervision_validation.md"
+    },
+    "camera": "cam01",
+    "hfov_deg": 90.1,
+    "undistort_images": false,
+    "distortion_evidence": {
+      "decision": "use shipped JPEGs as-is; do NOT call cv2.undistort",
+      "logcorr_lidar_vs_mono_depth": {
+        "plain_pinhole": 0.8571,
+        "distortion_applied": 0.6978,
+        "pinhole_better_in": "12 of 12 frames"
+      },
+      "map_vs_target_iou_pct": {
+        "shipped": 3.26,
+        "undistorted": 1.44,
+        "shipped_better_in": "11 of 12 anchors"
+      },
+      "retracts": "once_metadata_audit.md \u00a75 (M2 gradient test is centre-biased)"
+    },
+    "input_clip": {
+      "offsets": [
+        -4,
+        -3,
+        -2,
+        -1,
+        0
+      ],
+      "stream_stride": 1,
+      "span_s": 2.0,
+      "future_frames_used": 0
+    },
+    "supervision": {
+      "policy": "duration-matched, native cadence",
+      "span_s": 2.1,
+      "max_gap_s": 0.75,
+      "interpolated_or_duplicated_sweeps": false
+    },
+    "grid": {
+      "dims": [
+        256,
+        256,
+        32
+      ],
+      "voxel_size": 0.2,
+      "origin": [
+        0.0,
+        -25.6,
+        -2.0
+      ],
+      "frame": "velodyne_of_anchor_frame"
+    },
+    "anchors": {
+      "min_separation_frames": 5,
+      "target_n": 1400,
+      "independent_scene_count": 6,
+      "note": "the anchor count is NOT the independent count"
+    },
+    "val_sequences": [
+      "000121"
+    ]
+  },
+  "protocols": {
+    "frozen_evaluator": "163 SK / 1,182 Occ3D anchors, own masks, 3 seeds, RAW",
+    "canonical": "801 SK / 4,219 Occ3D anchors, OccAny labels+scorer, seed 0"
+  },
+  "frozen_reference": {
+    "semantickitti": {
+      "kitti360": {
+        "full": 26.17,
+        "observed": 33.23,
+        "completed": 24.74
+      },
+      "waymo": {
+        "full": 23.14,
+        "observed": 28.26,
+        "completed": 21.46
+      }
+    },
+    "occ3d": {
+      "kitti360": {
+        "full": 31.22,
+        "observed": 39.03,
+        "completed": 27.5
+      },
+      "waymo": {
+        "full": 22.86,
+        "observed": 35.05,
+        "completed": 15.86
+      }
+    }
+  },
+  "occany_canonical": {
+    "semantickitti": {
+      "1frame_causal": {
+        "raw": 20.32,
+        "pooled": 24.06
+      },
+      "5frame_forward": {
+        "raw": 25.21,
+        "pooled": 25.93
+      }
+    },
+    "occ3d": {
+      "5frame_forward": {
+        "raw": 20.66,
+        "pooled": 23.55
+      }
+    }
+  },
+  "once": {
+    "semantickitti": {
+      "n_anchors": 163,
+      "map_only": 8.820500920980095,
+      "checkpoint_sha256": {
+        "0": "03fc0d26fc8396d592af38b82285495b34ec74e02be4050a9b6a56c26bcd9e7f",
+        "1": "f469f80d0cb66abaab8499a21853443261c0cfb6755824470a93b4bb947662ac",
+        "2": "2057b05e2d2304161ae9d437575b75b4fdd351ae3467ae5f57ac984aea3a46e4"
+      },
+      "regions": {
+        "full": {
+          "iou_mean": 18.49845331801085,
+          "iou_sd": 0.6799604567299345,
+          "iou_per_seed": [
+            18.37152698181682,
+            19.232933253112723,
+            17.890899719103007
+          ],
+          "precision": 31.42876272729679,
+          "recall": 31.051834654822034
+        },
+        "observed": {
+          "iou_mean": 18.772267170502857,
+          "iou_sd": 0.26099339745274336,
+          "iou_per_seed": [
+            19.0075528110874,
+            18.49153525181659,
+            18.817713448604582
+          ],
+          "precision": 21.8196215624359,
+          "recall": 57.40614955307469
+        },
+        "completed": {
+          "iou_mean": 18.392917559957265,
+          "iou_sd": 1.0297680745893047,
+          "iou_per_seed": [
+            18.118421232172437,
+            19.532119371464102,
+            17.528212076235256
+          ],
+          "precision": 38.271154565570036,
+          "recall": 26.17819316184163
+        }
+      }
+    },
+    "occ3d": {
+      "n_anchors": 1182,
+      "map_only": 10.035121420767629,
+      "checkpoint_sha256": {
+        "0": "03fc0d26fc8396d592af38b82285495b34ec74e02be4050a9b6a56c26bcd9e7f",
+        "1": "f469f80d0cb66abaab8499a21853443261c0cfb6755824470a93b4bb947662ac",
+        "2": "2057b05e2d2304161ae9d437575b75b4fdd351ae3467ae5f57ac984aea3a46e4"
+      },
+      "regions": {
+        "full": {
+          "iou_mean": 19.28590517554079,
+          "iou_sd": 0.46630109488646093,
+          "iou_per_seed": [
+            18.781388158094163,
+            19.701055198537812,
+            19.3752721699904
+          ],
+          "precision": 53.14772979548402,
+          "recall": 23.256818472618647
+        },
+        "observed": {
+          "iou_mean": 25.33957413711836,
+          "iou_sd": 0.14224629229212954,
+          "iou_per_seed": [
+            25.480543802016587,
+            25.34209391311773,
+            25.196084696220744
+          ],
+          "precision": 44.38265597613704,
+          "recall": 37.22651954343643
+        },
+        "completed": {
+          "iou_mean": 15.103182266420058,
+          "iou_sd": 0.6935008140587908,
+          "iou_per_seed": [
+            14.311885276320282,
+            15.605274099422504,
+            15.392387423517388
+          ],
+          "precision": 69.0934630212655,
+          "recall": 16.195693844059065
+        }
+      }
+    }
+  }
+}
