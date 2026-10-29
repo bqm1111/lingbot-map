@@ -1,0 +1,414 @@
+{
+ "method": "ours_clip_reset",
+ "dataset": "semantickitti",
+ "device": "cuda:3",
+ "mode": "e2e",
+ "n_streams": 3,
+ "reps": 3,
+ "streams": [
+  {
+   "segment": "08",
+   "start": 0,
+   "n_frames": 200,
+   "rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  },
+  {
+   "segment": "08",
+   "start": 307,
+   "n_frames": 200,
+   "rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  },
+  {
+   "segment": "08",
+   "start": 615,
+   "n_frames": 200,
+   "rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  }
+ ],
+ "latency_per_completed_occupancy_grid": {
+  "n": 9,
+  "mean_ms": 685.4858060841281,
+  "median_ms": 711.6114996094257,
+  "p95_ms": 713.1533343536894,
+  "min_ms": 574.9568048398942,
+  "max_ms": 713.2423069793731,
+  "std_ms": 53.52784777886082,
+  "predictions_per_second": 1.4588194111743176
+ },
+ "sequence_average_per_prediction_s": {
+  "n": 9,
+  "mean_ms": 685.4858060841281,
+  "median_ms": 711.6114996094257,
+  "p95_ms": 713.1533343536893,
+  "min_ms": 574.9568048398942,
+  "max_ms": 713.2423069793731,
+  "std_ms": 53.52784777886081,
+  "predictions_per_second": 1.4588194111743176
+ },
+ "measured_predictions_per_second": {
+  "n": 9,
+  "mean_ms": 1467.7186553368035,
+  "median_ms": 1405.2611580179057,
+  "p95_ms": 1699.609562280393,
+  "min_ms": 1402.0480700802286,
+  "max_ms": 1739.2610915848988,
+  "std_ms": 128.27428352628513,
+  "predictions_per_second": 0.6813294880213441
+ },
+ "peak_memory_sustained_bytes": {
+  "allocated": 12649146368,
+  "reserved": 14086569984
+ },
+ "resets_per_prediction": 1,
+ "moge_forwards_per_prediction": 5,
+ "model_load_seconds_reported_separately": {
+  "lingbot_map": 12.467719928361475,
+  "moge2_vitl": 4.999767151661217,
+  "completion_unet": 0.03911005612462759,
+  "total": 17.50659713614732
+ },
+ "parameters": {
+  "per_module_total_and_requires_grad": {
+   "lingbot_map": [
+    1157943540,
+    0
+   ],
+   "completion_unet": [
+    967322,
+    0
+   ],
+   "moge2_vitl": [
+    326209221,
+    0
+   ]
+  },
+  "total_inference_parameters": 1485120083,
+  "task_specific_trained_parameters": 967322
+ },
+ "configuration": {
+  "lingbot_checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+  "lingbot_resolution": 518,
+  "lingbot_autocast": "bfloat16",
+  "moge_repo": "Ruicheng/moge-2-vitl",
+  "moge_revision": "39c4d5e957afe587e04eec59dc2bcc3be5ecd968",
+  "moge_calls": "5 per anchor",
+  "completion_source": "k360",
+  "completion_seed": 0,
+  "prediction_grid": "semantickitti",
+  "eval_grid": "semantickitti",
+  "batch": "one evaluation anchor",
+  "state_policy": "reset at every anchor",
+  "resident_models": [
+   "LingBotMap GCTStream",
+   "MoGe-2 ViT-L",
+   "CompletionUNet"
+  ],
+  "future_frames_required": 0,
+  "generated_views": 0
+ },
+ "boundary": {
+  "start": "decoded RGB frames + ordinary calibration in host memory",
+  "end": "completed occupancy grid on the evaluation grid, host numpy array",
+  "excluded": [
+   "image decode",
+   "ground-truth loading",
+   "scoring",
+   "visualisation",
+   "prediction serialisation",
+   "model construction and checkpoint loading"
+  ]
+ },
+ "machine": {
+  "gpu_index": 3,
+  "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+  "gpu_total_memory_bytes": 101971722240,
+  "gpu_capability": "12.0",
+  "nvidia_smi_during_setup": "0, 48 %, 40589 MiB\n1, 100 %, 93262 MiB\n2, 2 %, 1903 MiB\n3, 96 %, 28986 MiB",
+  "cpu_model": "Intel(R) Xeon(R) w7-3565X",
+  "cpu_count": 64,
+  "loadavg": [
+   10.14404296875,
+   7.708984375,
+   8.6123046875
+  ],
+  "python": "3.10.19",
+  "executable": "/home/minh/anaconda3/envs/cu128/bin/python",
+  "torch": "2.7.1+cu128",
+  "torch_cuda": "12.8",
+  "cudnn": 90701,
+  "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+  "driver": "580.95.05\n580.95.05\n580.95.05\n580.95.05"
+ },
+ "runs": [
+  {
+   "segment": "08",
+   "start_position": 0,
+   "n_frames_window": 200,
+   "n_predictions_emitted": 196,
+   "latency_per_completed_occupancy_grid": {
+    "n": 196,
+    "mean_ms": 712.3837791221711,
+    "median_ms": 712.0715451892465,
+    "p95_ms": 715.9025901928544,
+    "min_ms": 707.8602309338748,
+    "max_ms": 720.2219380997121,
+    "std_ms": 2.0868642398539436,
+    "predictions_per_second": 1.4037377454498494
+   },
+   "per_input_update_s": null,
+   "sequence_average_per_prediction_s": 0.7123837791221711,
+   "measured_predictions_per_second": 1.4037377454498496,
+   "total_sequence_compute_s": 139.62722070794553,
+   "resets": 196,
+   "moge_forwards": 980,
+   "peak_memory_sustained": {
+    "allocated_bytes": 12649146368,
+    "reserved_bytes": 14086569984
+   },
+   "scale_distinct_values": 196,
+   "stages_s": null,
+   "rep": 0,
+   "selection_rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  },
+  {
+   "segment": "08",
+   "start_position": 0,
+   "n_frames_window": 200,
+   "n_predictions_emitted": 196,
+   "latency_per_completed_occupancy_grid": {
+    "n": 196,
+    "mean_ms": 711.9568513530515,
+    "median_ms": 711.4144549705088,
+    "p95_ms": 716.9680641964078,
+    "min_ms": 705.7372629642487,
+    "max_ms": 720.5014890059829,
+    "std_ms": 3.0213977307816005,
+    "predictions_per_second": 1.404579502394747
+   },
+   "per_input_update_s": null,
+   "sequence_average_per_prediction_s": 0.7119568513530515,
+   "measured_predictions_per_second": 1.404579502394747,
+   "total_sequence_compute_s": 139.5435428651981,
+   "resets": 196,
+   "moge_forwards": 980,
+   "peak_memory_sustained": {
+    "allocated_bytes": 12649146368,
+    "reserved_bytes": 14086569984
+   },
+   "scale_distinct_values": 196,
+   "stages_s": null,
+   "rep": 1,
+   "selection_rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  },
+  {
+   "segment": "08",
+   "start_position": 0,
+   "n_frames_window": 200,
+   "n_predictions_emitted": 196,
+   "latency_per_completed_occupancy_grid": {
+    "n": 196,
+    "mean_ms": 713.0198754151637,
+    "median_ms": 712.8401594236493,
+    "p95_ms": 718.351484509185,
+    "min_ms": 704.4146778061986,
+    "max_ms": 722.9652907699347,
+    "std_ms": 3.177437536415508,
+    "predictions_per_second": 1.4024854488351237
+   },
+   "per_input_update_s": null,
+   "sequence_average_per_prediction_s": 0.7130198754151637,
+   "measured_predictions_per_second": 1.402485448835124,
+   "total_sequence_compute_s": 139.75189558137208,
+   "resets": 196,
+   "moge_forwards": 980,
+   "peak_memory_sustained": {
+    "allocated_bytes": 12649146368,
+    "reserved_bytes": 14086569984
+   },
+   "scale_distinct_values": 196,
+   "stages_s": null,
+   "rep": 2,
+   "selection_rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  },
+  {
+   "segment": "08",
+   "start_position": 307,
+   "n_frames_window": 200,
+   "n_predictions_emitted": 200,
+   "latency_per_completed_occupancy_grid": {
+    "n": 200,
+    "mean_ms": 710.984244751744,
+    "median_ms": 710.9409892000258,
+    "p95_ms": 714.9322155164555,
+    "min_ms": 699.2299552075565,
+    "max_ms": 719.5816920138896,
+    "std_ms": 2.3838226266459692,
+    "predictions_per_second": 1.4065009279483716
+   },
+   "per_input_update_s": null,
+   "sequence_average_per_prediction_s": 0.7109842447517439,
+   "measured_predictions_per_second": 1.4065009279483716,
+   "total_sequence_compute_s": 142.1968489503488,
+   "resets": 200,
+   "moge_forwards": 1000,
+   "peak_memory_sustained": {
+    "allocated_bytes": 12649104384,
+    "reserved_bytes": 14086569984
+   },
+   "scale_distinct_values": 200,
+   "stages_s": null,
+   "rep": 0,
+   "selection_rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  },
+  {
+   "segment": "08",
+   "start_position": 307,
+   "n_frames_window": 200,
+   "n_predictions_emitted": 200,
+   "latency_per_completed_occupancy_grid": {
+    "n": 200,
+    "mean_ms": 711.6114996094257,
+    "median_ms": 710.8720610849559,
+    "p95_ms": 717.1181921148673,
+    "min_ms": 705.2078829146922,
+    "max_ms": 720.2881881967187,
+    "std_ms": 3.0324014237275114,
+    "predictions_per_second": 1.4052611580179057
+   },
+   "per_input_update_s": null,
+   "sequence_average_per_prediction_s": 0.7116114996094257,
+   "measured_predictions_per_second": 1.4052611580179057,
+   "total_sequence_compute_s": 142.32229992188513,
+   "resets": 200,
+   "moge_forwards": 1000,
+   "peak_memory_sustained": {
+    "allocated_bytes": 12649104384,
+    "reserved_bytes": 14086569984
+   },
+   "scale_distinct_values": 200,
+   "stages_s": null,
+   "rep": 1,
+   "selection_rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  },
+  {
+   "segment": "08",
+   "start_position": 307,
+   "n_frames_window": 200,
+   "n_predictions_emitted": 200,
+   "latency_per_completed_occupancy_grid": {
+    "n": 200,
+    "mean_ms": 713.2423069793731,
+    "median_ms": 713.203571503982,
+    "p95_ms": 717.5879129674286,
+    "min_ms": 704.4721711426973,
+    "max_ms": 720.8580826409161,
+    "std_ms": 2.8228391853216053,
+    "predictions_per_second": 1.4020480700802287
+   },
+   "per_input_update_s": null,
+   "sequence_average_per_prediction_s": 0.7132423069793731,
+   "measured_predictions_per_second": 1.4020480700802287,
+   "total_sequence_compute_s": 142.64846139587462,
+   "resets": 200,
+   "moge_forwards": 1000,
+   "peak_memory_sustained": {
+    "allocated_bytes": 12649104384,
+    "reserved_bytes": 14086569984
+   },
+   "scale_distinct_values": 200,
+   "stages_s": null,
+   "rep": 2,
+   "selection_rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  },
+  {
+   "segment": "08",
+   "start_position": 615,
+   "n_frames_window": 200,
+   "n_predictions_emitted": 190,
+   "latency_per_completed_occupancy_grid": {
+    "n": 190,
+    "mean_ms": 711.5099688526243,
+    "median_ms": 711.1134948208928,
+    "p95_ms": 715.6201694626361,
+    "min_ms": 704.5982349663973,
+    "max_ms": 720.925291068852,
+    "std_ms": 2.408661083448911,
+    "predictions_per_second": 1.4054616853964712
+   },
+   "per_input_update_s": null,
+   "sequence_average_per_prediction_s": 0.7115099688526243,
+   "measured_predictions_per_second": 1.4054616853964712,
+   "total_sequence_compute_s": 135.18689408199862,
+   "resets": 190,
+   "moge_forwards": 950,
+   "peak_memory_sustained": {
+    "allocated_bytes": 12649058304,
+    "reserved_bytes": 14086569984
+   },
+   "scale_distinct_values": 190,
+   "stages_s": null,
+   "rep": 0,
+   "selection_rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  },
+  {
+   "segment": "08",
+   "start_position": 615,
+   "n_frames_window": 200,
+   "n_predictions_emitted": 190,
+   "latency_per_completed_occupancy_grid": {
+    "n": 190,
+    "mean_ms": 609.7069238337051,
+    "median_ms": 708.8915505446494,
+    "p95_ms": 714.0988137805834,
+    "min_ms": 366.67393799871206,
+    "max_ms": 718.8309952616692,
+    "std_ms": 151.5453170931709,
+    "predictions_per_second": 1.6401322683236343
+   },
+   "per_input_update_s": null,
+   "sequence_average_per_prediction_s": 0.6097069238337051,
+   "measured_predictions_per_second": 1.6401322683236341,
+   "total_sequence_compute_s": 115.84431552840397,
+   "resets": 190,
+   "moge_forwards": 950,
+   "peak_memory_sustained": {
+    "allocated_bytes": 12649058304,
+    "reserved_bytes": 14086569984
+   },
+   "scale_distinct_values": 190,
+   "stages_s": null,
+   "rep": 1,
+   "selection_rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  },
+  {
+   "segment": "08",
+   "start_position": 615,
+   "n_frames_window": 200,
+   "n_predictions_emitted": 190,
+   "latency_per_completed_occupancy_grid": {
+    "n": 190,
+    "mean_ms": 574.9568048398942,
+    "median_ms": 565.9004454500973,
+    "p95_ms": 633.6589785292745,
+    "min_ms": 547.7614901028574,
+    "max_ms": 698.2192527502775,
+    "std_ms": 26.396056299960353,
+    "predictions_per_second": 1.7392610915848987
+   },
+   "per_input_update_s": null,
+   "sequence_average_per_prediction_s": 0.5749568048398942,
+   "measured_predictions_per_second": 1.739261091584899,
+   "total_sequence_compute_s": 109.2417929195799,
+   "resets": 190,
+   "moge_forwards": 950,
+   "peak_memory_sustained": {
+    "allocated_bytes": 12649058304,
+    "reserved_bytes": 14086569984
+   },
+   "scale_distinct_values": 190,
+   "stages_s": null,
+   "rep": 2,
+   "selection_rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  }
+ ]
+}

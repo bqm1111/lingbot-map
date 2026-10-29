@@ -1,0 +1,414 @@
+{
+ "method": "ours_clip_reset",
+ "dataset": "occ3d",
+ "device": "cuda:3",
+ "mode": "e2e",
+ "n_streams": 3,
+ "reps": 3,
+ "streams": [
+  {
+   "segment": "scene-0781",
+   "start": 0,
+   "n_frames": 40,
+   "rule": "the median-length validation scene and its neighbours in the length ranking; the 200-frame target is NOT available for Occ3D, whose scenes are ~40 samples"
+  },
+  {
+   "segment": "scene-0794",
+   "start": 0,
+   "n_frames": 40,
+   "rule": "the median-length validation scene and its neighbours in the length ranking; the 200-frame target is NOT available for Occ3D, whose scenes are ~40 samples"
+  },
+  {
+   "segment": "scene-0795",
+   "start": 0,
+   "n_frames": 40,
+   "rule": "the median-length validation scene and its neighbours in the length ranking; the 200-frame target is NOT available for Occ3D, whose scenes are ~40 samples"
+  }
+ ],
+ "latency_per_completed_occupancy_grid": {
+  "n": 9,
+  "mean_ms": 492.6823171960663,
+  "median_ms": 491.2701923167333,
+  "p95_ms": 497.66395953151266,
+  "min_ms": 488.3134820930926,
+  "max_ms": 498.90062417502384,
+  "std_ms": 3.7104465086661986,
+  "predictions_per_second": 2.0297054818024716
+ },
+ "sequence_average_per_prediction_s": {
+  "n": 9,
+  "mean_ms": 492.6823171960663,
+  "median_ms": 491.2701923167333,
+  "p95_ms": 497.66395953151266,
+  "min_ms": 488.3134820930926,
+  "max_ms": 498.90062417502384,
+  "std_ms": 3.7104465086661986,
+  "predictions_per_second": 2.0297054818024716
+ },
+ "measured_predictions_per_second": {
+  "n": 9,
+  "mean_ms": 2029.8075735900247,
+  "median_ms": 2035.5397409401075,
+  "p95_ms": 2047.3345459786017,
+  "min_ms": 2004.4071936241576,
+  "max_ms": 2047.8648177265745,
+  "std_ms": 15.250753049061828,
+  "predictions_per_second": 0.4926575371040454
+ },
+ "peak_memory_sustained_bytes": {
+  "allocated": 18933237760,
+  "reserved": 22066233344
+ },
+ "resets_per_prediction": 1,
+ "moge_forwards_per_prediction": 5,
+ "model_load_seconds_reported_separately": {
+  "lingbot_map": 10.724375823047012,
+  "moge2_vitl": 4.215882362797856,
+  "completion_unet": 0.014513851143419743,
+  "total": 14.954772036988288
+ },
+ "parameters": {
+  "per_module_total_and_requires_grad": {
+   "lingbot_map": [
+    1157943540,
+    0
+   ],
+   "completion_unet": [
+    967322,
+    0
+   ],
+   "moge2_vitl": [
+    326209221,
+    0
+   ]
+  },
+  "total_inference_parameters": 1485120083,
+  "task_specific_trained_parameters": 967322
+ },
+ "configuration": {
+  "lingbot_checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+  "lingbot_resolution": 518,
+  "lingbot_autocast": "bfloat16",
+  "moge_repo": "Ruicheng/moge-2-vitl",
+  "moge_revision": "39c4d5e957afe587e04eec59dc2bcc3be5ecd968",
+  "moge_calls": "5 per anchor",
+  "completion_source": "k360",
+  "completion_seed": 0,
+  "prediction_grid": "occ3d_nuscenes_canonical_0p2m",
+  "eval_grid": "occ3d_nuscenes",
+  "batch": "one evaluation anchor",
+  "state_policy": "reset at every anchor",
+  "resident_models": [
+   "LingBotMap GCTStream",
+   "MoGe-2 ViT-L",
+   "CompletionUNet"
+  ],
+  "future_frames_required": 0,
+  "generated_views": 0
+ },
+ "boundary": {
+  "start": "decoded RGB frames + ordinary calibration in host memory",
+  "end": "completed occupancy grid on the evaluation grid, host numpy array",
+  "excluded": [
+   "image decode",
+   "ground-truth loading",
+   "scoring",
+   "visualisation",
+   "prediction serialisation",
+   "model construction and checkpoint loading"
+  ]
+ },
+ "machine": {
+  "gpu_index": 3,
+  "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+  "gpu_total_memory_bytes": 101971722240,
+  "gpu_capability": "12.0",
+  "nvidia_smi_during_setup": "0, 53 %, 27300 MiB\n1, 99 %, 82534 MiB\n2, 0 %, 904 MiB\n3, 100 %, 22397 MiB",
+  "cpu_model": "Intel(R) Xeon(R) w7-3565X",
+  "cpu_count": 64,
+  "loadavg": [
+   3.7587890625,
+   4.4228515625,
+   5.06689453125
+  ],
+  "python": "3.10.19",
+  "executable": "/home/minh/anaconda3/envs/cu128/bin/python",
+  "torch": "2.7.1+cu128",
+  "torch_cuda": "12.8",
+  "cudnn": 90701,
+  "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+  "driver": "580.95.05\n580.95.05\n580.95.05\n580.95.05"
+ },
+ "runs": [
+  {
+   "segment": "scene-0781",
+   "start_position": 0,
+   "n_frames_window": 40,
+   "n_predictions_emitted": 28,
+   "latency_per_completed_occupancy_grid": {
+    "n": 28,
+    "mean_ms": 488.3134820930926,
+    "median_ms": 488.59191755764186,
+    "p95_ms": 493.83072138298303,
+    "min_ms": 482.63027099892497,
+    "max_ms": 496.8804041855037,
+    "std_ms": 3.0401286088421857,
+    "predictions_per_second": 2.0478648177265746
+   },
+   "per_input_update_s": null,
+   "sequence_average_per_prediction_s": 0.4883134820930926,
+   "measured_predictions_per_second": 2.0478648177265746,
+   "total_sequence_compute_s": 13.672777498606592,
+   "resets": 28,
+   "moge_forwards": 140,
+   "peak_memory_sustained": {
+    "allocated_bytes": 18931580928,
+    "reserved_bytes": 22051553280
+   },
+   "scale_distinct_values": 28,
+   "stages_s": null,
+   "rep": 0,
+   "selection_rule": "the median-length validation scene and its neighbours in the length ranking; the 200-frame target is NOT available for Occ3D, whose scenes are ~40 samples"
+  },
+  {
+   "segment": "scene-0781",
+   "start_position": 0,
+   "n_frames_window": 40,
+   "n_predictions_emitted": 28,
+   "latency_per_completed_occupancy_grid": {
+    "n": 28,
+    "mean_ms": 488.62979517850493,
+    "median_ms": 488.7082031928003,
+    "p95_ms": 492.951672966592,
+    "min_ms": 484.21809170395136,
+    "max_ms": 494.18575689196587,
+    "std_ms": 2.7535912461396355,
+    "predictions_per_second": 2.0465391383566423
+   },
+   "per_input_update_s": null,
+   "sequence_average_per_prediction_s": 0.4886297951785049,
+   "measured_predictions_per_second": 2.0465391383566423,
+   "total_sequence_compute_s": 13.681634264998138,
+   "resets": 28,
+   "moge_forwards": 140,
+   "peak_memory_sustained": {
+    "allocated_bytes": 18931580928,
+    "reserved_bytes": 22051553280
+   },
+   "scale_distinct_values": 28,
+   "stages_s": null,
+   "rep": 1,
+   "selection_rule": "the median-length validation scene and its neighbours in the length ranking; the 200-frame target is NOT available for Occ3D, whose scenes are ~40 samples"
+  },
+  {
+   "segment": "scene-0781",
+   "start_position": 0,
+   "n_frames_window": 40,
+   "n_predictions_emitted": 28,
+   "latency_per_completed_occupancy_grid": {
+    "n": 28,
+    "mean_ms": 490.29077002446036,
+    "median_ms": 490.46102608554065,
+    "p95_ms": 493.1207174435258,
+    "min_ms": 486.49934958666563,
+    "max_ms": 494.95920864865184,
+    "std_ms": 1.9207919553846968,
+    "predictions_per_second": 2.0396060075740574
+   },
+   "per_input_update_s": null,
+   "sequence_average_per_prediction_s": 0.49029077002446037,
+   "measured_predictions_per_second": 2.0396060075740574,
+   "total_sequence_compute_s": 13.72814156068489,
+   "resets": 28,
+   "moge_forwards": 140,
+   "peak_memory_sustained": {
+    "allocated_bytes": 18931580928,
+    "reserved_bytes": 22051553280
+   },
+   "scale_distinct_values": 28,
+   "stages_s": null,
+   "rep": 2,
+   "selection_rule": "the median-length validation scene and its neighbours in the length ranking; the 200-frame target is NOT available for Occ3D, whose scenes are ~40 samples"
+  },
+  {
+   "segment": "scene-0794",
+   "start_position": 0,
+   "n_frames_window": 40,
+   "n_predictions_emitted": 28,
+   "latency_per_completed_occupancy_grid": {
+    "n": 28,
+    "mean_ms": 494.7352770915521,
+    "median_ms": 494.8732203338295,
+    "p95_ms": 499.49084136169404,
+    "min_ms": 490.1973679661751,
+    "max_ms": 503.43822315335274,
+    "std_ms": 3.1020065224632556,
+    "predictions_per_second": 2.021282989720879
+   },
+   "per_input_update_s": null,
+   "sequence_average_per_prediction_s": 0.49473527709155213,
+   "measured_predictions_per_second": 2.0212829897208793,
+   "total_sequence_compute_s": 13.852587758563459,
+   "resets": 28,
+   "moge_forwards": 140,
+   "peak_memory_sustained": {
+    "allocated_bytes": 18931580928,
+    "reserved_bytes": 22051553280
+   },
+   "scale_distinct_values": 28,
+   "stages_s": null,
+   "rep": 0,
+   "selection_rule": "the median-length validation scene and its neighbours in the length ranking; the 200-frame target is NOT available for Occ3D, whose scenes are ~40 samples"
+  },
+  {
+   "segment": "scene-0794",
+   "start_position": 0,
+   "n_frames_window": 40,
+   "n_predictions_emitted": 28,
+   "latency_per_completed_occupancy_grid": {
+    "n": 28,
+    "mean_ms": 491.2701923167333,
+    "median_ms": 491.27810704521835,
+    "p95_ms": 493.80114944651723,
+    "min_ms": 486.67347710579634,
+    "max_ms": 498.637817800045,
+    "std_ms": 2.3521247400258383,
+    "predictions_per_second": 2.0355397409401075
+   },
+   "per_input_update_s": null,
+   "sequence_average_per_prediction_s": 0.4912701923167333,
+   "measured_predictions_per_second": 2.0355397409401075,
+   "total_sequence_compute_s": 13.755565384868532,
+   "resets": 28,
+   "moge_forwards": 140,
+   "peak_memory_sustained": {
+    "allocated_bytes": 18931580928,
+    "reserved_bytes": 22051553280
+   },
+   "scale_distinct_values": 28,
+   "stages_s": null,
+   "rep": 1,
+   "selection_rule": "the median-length validation scene and its neighbours in the length ranking; the 200-frame target is NOT available for Occ3D, whose scenes are ~40 samples"
+  },
+  {
+   "segment": "scene-0794",
+   "start_position": 0,
+   "n_frames_window": 40,
+   "n_predictions_emitted": 28,
+   "latency_per_completed_occupancy_grid": {
+    "n": 28,
+    "mean_ms": 490.4580642136612,
+    "median_ms": 490.63899740576744,
+    "p95_ms": 493.151371832937,
+    "min_ms": 486.26384418457747,
+    "max_ms": 496.4115498587489,
+    "std_ms": 2.309281015534658,
+    "predictions_per_second": 2.038910302358417
+   },
+   "per_input_update_s": null,
+   "sequence_average_per_prediction_s": 0.4904580642136612,
+   "measured_predictions_per_second": 2.0389103023584174,
+   "total_sequence_compute_s": 13.732825797982514,
+   "resets": 28,
+   "moge_forwards": 140,
+   "peak_memory_sustained": {
+    "allocated_bytes": 18931580928,
+    "reserved_bytes": 22051553280
+   },
+   "scale_distinct_values": 28,
+   "stages_s": null,
+   "rep": 2,
+   "selection_rule": "the median-length validation scene and its neighbours in the length ranking; the 200-frame target is NOT available for Occ3D, whose scenes are ~40 samples"
+  },
+  {
+   "segment": "scene-0795",
+   "start_position": 0,
+   "n_frames_window": 40,
+   "n_predictions_emitted": 28,
+   "latency_per_completed_occupancy_grid": {
+    "n": 28,
+    "mean_ms": 498.90062417502384,
+    "median_ms": 498.1373695190996,
+    "p95_ms": 504.4341846136376,
+    "min_ms": 494.16356487199664,
+    "max_ms": 508.6381519213319,
+    "std_ms": 3.1712487861798917,
+    "predictions_per_second": 2.004407193624157
+   },
+   "per_input_update_s": null,
+   "sequence_average_per_prediction_s": 0.49890062417502384,
+   "measured_predictions_per_second": 2.0044071936241576,
+   "total_sequence_compute_s": 13.969217476900667,
+   "resets": 28,
+   "moge_forwards": 140,
+   "peak_memory_sustained": {
+    "allocated_bytes": 18933237760,
+    "reserved_bytes": 22066233344
+   },
+   "scale_distinct_values": 28,
+   "stages_s": null,
+   "rep": 0,
+   "selection_rule": "the median-length validation scene and its neighbours in the length ranking; the 200-frame target is NOT available for Occ3D, whose scenes are ~40 samples"
+  },
+  {
+   "segment": "scene-0795",
+   "start_position": 0,
+   "n_frames_window": 40,
+   "n_predictions_emitted": 28,
+   "latency_per_completed_occupancy_grid": {
+    "n": 28,
+    "mean_ms": 495.8089625662459,
+    "median_ms": 495.6448844168335,
+    "p95_ms": 500.14731858391315,
+    "min_ms": 491.11193884164095,
+    "max_ms": 501.20442314073443,
+    "std_ms": 2.6195304655505147,
+    "predictions_per_second": 2.0169058558847417
+   },
+   "per_input_update_s": null,
+   "sequence_average_per_prediction_s": 0.4958089625662459,
+   "measured_predictions_per_second": 2.0169058558847417,
+   "total_sequence_compute_s": 13.882650951854885,
+   "resets": 28,
+   "moge_forwards": 140,
+   "peak_memory_sustained": {
+    "allocated_bytes": 18933237760,
+    "reserved_bytes": 22066233344
+   },
+   "scale_distinct_values": 28,
+   "stages_s": null,
+   "rep": 1,
+   "selection_rule": "the median-length validation scene and its neighbours in the length ranking; the 200-frame target is NOT available for Occ3D, whose scenes are ~40 samples"
+  },
+  {
+   "segment": "scene-0795",
+   "start_position": 0,
+   "n_frames_window": 40,
+   "n_predictions_emitted": 28,
+   "latency_per_completed_occupancy_grid": {
+    "n": 28,
+    "mean_ms": 495.73368710532253,
+    "median_ms": 496.124530909583,
+    "p95_ms": 499.79723426513374,
+    "min_ms": 490.75228068977594,
+    "max_ms": 502.5317561812699,
+    "std_ms": 2.941901026471564,
+    "predictions_per_second": 2.0172121161246443
+   },
+   "per_input_update_s": null,
+   "sequence_average_per_prediction_s": 0.4957336871053225,
+   "measured_predictions_per_second": 2.0172121161246443,
+   "total_sequence_compute_s": 13.88054323894903,
+   "resets": 28,
+   "moge_forwards": 140,
+   "peak_memory_sustained": {
+    "allocated_bytes": 18933237760,
+    "reserved_bytes": 22066233344
+   },
+   "scale_distinct_values": 28,
+   "stages_s": null,
+   "rep": 2,
+   "selection_rule": "the median-length validation scene and its neighbours in the length ranking; the 200-frame target is NOT available for Occ3D, whose scenes are ~40 samples"
+  }
+ ]
+}

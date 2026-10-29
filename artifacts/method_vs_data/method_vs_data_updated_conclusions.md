@@ -467,3 +467,50 @@ unproven, unless a density-and-content-matched control says otherwise.**
 | Never-observed completion advantage | **Yes, preserved** — out of frustum +14.13 / +8.38 (SK), +10.60 / +16.82 (Occ3D); never-observed a tie | strict visibility split (SK) and frustum split (both) |
 | Method-versus-data conclusion | **Source-data effect demonstrated; source robustness refuted; architectural causality unresolved** | 3 arms, one recipe, `map_only` bit-identical |
 | Next experiment | **Rescore the Waymo arm pooled** — no training, predictions on disk | `once_vs_occany.md` Addendum 3, Q5 above |
+
+---
+
+# Addendum 3 — 2026-10-27: the Waymo canonical rescore and the supervision audit
+
+The body and Addenda 1–2 are preserved. The Q6/Q5 recommendation they both carried — *rescore
+the existing Waymo arm pooled, with the paired bootstrap* — **has now been executed**, together
+with a provenance audit of what the three trained checkpoints were actually supervised with.
+The reconciled interpretation is in **`method_vs_data_reconciled_conclusions.md`**, which
+supersedes this file's interpretation where they differ; this file's measurements stand.
+Supporting: `waymo_canonical_rescore.md`, `training_supervision_provenance.md`.
+
+**Six corrections this phase forced, all to claims of mine:**
+
+1. **Addendum 1 Q3 / Addendum 2, "ours-Waymo … +3.23, −1.66, +2.19"** — those point estimates
+   now have intervals and two of the three change meaning. Occ3D raw is **+2.20 [−0.02, +4.35],
+   a tie**, not a lead. SemanticKITTI against their causal mode is **+3.23 raw but −0.69
+   [−1.52, +0.10] pooled**, a tie under the convention they publish in. Pooled Occ3D, never
+   previously measured, is **+14.51 [+12.92, +16.06]**, a decisive win.
+2. **Addendum 1 Q4, "No never-observed figure exists for the Waymo or ONCE arms"** — now
+   measured, and the two arms differ qualitatively. Waymo **+7.02 raw / +4.04 pooled, both
+   significant**, against OccAny's causal mode; ONCE **+0.65 / −0.04, both ns**. Against
+   OccAny's forward mode Waymo is a tie in both conventions.
+3. **Addendum 2 Q4, "Data-subset robustness — REFUTED … contradicted by two independent
+   attempts"** — **overstated**. Read from the training caches, the Waymo arm preserved the
+   frozen 21-frame / 10.44 s supervision window; the ONCE arm shortened it to 5 frames /
+   2.00 s. ONCE changed corpus **and** supervision construction, so it is not a second
+   independent source failure. One clean source substitution has been tried, not two.
+4. **Addendum 1's dismissal of a 2 Hz KITTI-360 control ("its diagnostic value has been
+   obtained by measurement")** — **withdrawn**. That argument rested on a *rebuilt* 5-sweep
+   KITTI-360 target probe. The KITTI-360 **checkpoint** that every comparison uses as its
+   reference trained at 21 sweeps over 10.44 s, and a statistics probe is not a trained
+   control. **No duration-matched KITTI-360 training control exists**, and it is now the single
+   justified next experiment.
+5. **Addendum 2 Q3's and `once_supervision_validation.md` §7's "sparsity is falsified"** —
+   **scope narrowed**. Every thinning condition ran at the 21-sweep window and measured target
+   prevalence, not transfer. It bounds neither density effects under 5-sweep supervision nor
+   any effect on a trained model.
+6. **The repeated use of out-of-frustum results as evidence about never-observed space** —
+   **invalid as a substitution, quantified.** Only **24.4 %** of never-observed GT-occupied
+   voxels are out of frustum (82.5 % of out-of-frustum voxels are never-observed), so an
+   out-of-frustum win addresses a quarter of that surface and is silent on the rest.
+
+**Unchanged:** the ONCE arm's occupied-prevalence gate remains **failed** (0.0131 against
+[0.015, 0.040]) and the arm remains exploratory; `map_only` is bit-identical across arms; the
+advantage is completion rather than accumulation; architectural causality remains
+**unestablished**; every canonical number is **seed 0**.

@@ -1,0 +1,432 @@
+{
+ "semantickitti": {
+  "dataset": "semantickitti",
+  "segment": "08",
+  "device": "cuda:1",
+  "n_frames_short": 40,
+  "n_frames_long": 52,
+  "n_anchors_in_pilot": 48,
+  "lingbot_load": {
+   "missing_keys": 0,
+   "unexpected_keys": 0
+  },
+  "checks": {
+   "C1_state_and_resets": {
+    "pass": true,
+    "long_pass": {
+     "peak_frames_processed": 52,
+     "aggregator_forward_calls": 48,
+     "clean_kv_cache_calls": 3,
+     "frame_counter_at_each_reset": [
+      0,
+      0,
+      52
+     ],
+     "mid_stream_resets": [],
+     "note": "resets at counter 0 precede any frame; a reset at the peak follows the last frame. Only a reset strictly between the two would break the persistent-state requirement."
+    },
+    "short_pass": {
+     "peak_frames_processed": 40,
+     "aggregator_forward_calls": 36,
+     "clean_kv_cache_calls": 3,
+     "frame_counter_at_each_reset": [
+      0,
+      0,
+      40
+     ],
+     "mid_stream_resets": [],
+     "note": "resets at counter 0 precede any frame; a reset at the peak follows the last frame. Only a reset strictly between the two would break the persistent-state requirement."
+    },
+    "rope_slots_predicted": {
+     "long": 52,
+     "short": 40
+    },
+    "rope_slots_measured_at_peak": {
+     "long": 52,
+     "short": 40
+    },
+    "rope_slots_as_recorded_by_replay_segment": {
+     "long": 0,
+     "short": 0,
+     "disagreement": "gates/gate7b/replay.replay_segment reads the frame counter AFTER inference_streaming's closing clean_kv_cache has zeroed it, so its stored rope_slots_used is 0 for every pass ever run. The peak counter above is the real slot usage. This is a reporting bug in the frozen gate code, not a behavioural one: the pass itself is unaffected, and no result in this phase uses that field."
+    },
+    "note": "three clean_kv_cache calls occur per pass -- replay_segment's own, inference_streaming's at entry, and its closing one -- all of them either before the first frame (counter 0) or after the last (counter at peak). No reset lands mid-stream, which is the persistent-state requirement."
+   },
+   "C2_causality_and_C7_replay": {
+    "pass": true,
+    "truncation": {
+     "short_frames": 40,
+     "long_frames": 52
+    },
+    "per_frame_outputs_of_frames_below_N": {
+     "pred_depth": {
+      "max_abs_difference": 0.0,
+      "identical": true
+     },
+     "pred_depth_conf": {
+      "max_abs_difference": 0.0,
+      "identical": true
+     },
+     "pred_pose_c2w": {
+      "max_abs_difference": 0.0,
+      "identical": true
+     },
+     "pred_K": {
+      "max_abs_difference": 0.0,
+      "identical": true
+     }
+    },
+    "note": "the long pass has M later frames the short pass never saw; identical outputs for every frame < N mean no future image entered an earlier frame's inference, and that a replay from the declared start reproduces the stream exactly",
+    "lingbot_initialization_block": {
+     "first_frames_processed_as_one_bidirectional_block": 5,
+     "consequence": "frames 0..4 attend to each other, so a frame inside the initialization block is not individually causal. Every such frame is at position <= 4, so for any anchor at position >= 4 no frame LATER THAN THE ANCHOR is ever used. The clip-reset reference has the same property over its own five frames, where ALL FIVE are one bidirectional block, so mode A is not the stricter of the two."
+    }
+   },
+   "C3_startup_only_gauge": {
+    "pass": true,
+    "moge_reads_in_segment": 5,
+    "moge_read_positions": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "n_init_frames": 5,
+    "scale_frozen_at_position": 4,
+    "startup_scale_m_per_unit": 26.980392156862735,
+    "init_frame_log_candidates": [
+     3.2951103857689628,
+     3.315172337957464,
+     3.308387266937152,
+     3.2842543292554973,
+     3.290661993409117
+    ],
+    "init_frame_valid_pixels": [
+     60582,
+     63651,
+     65285,
+     61364,
+     61149
+    ],
+    "distinct_scales_used_across_anchors": 1,
+    "later_frame_candidates_computed_but_NOT_used": [
+     3.265842510136137,
+     3.240413840980824,
+     3.2727270316568586,
+     3.2116545339142757,
+     3.2182772568092584
+    ],
+    "note": "the mapper receives the scalar through ScaleState.force, after which observe() is a no-op by construction, so there is no code path by which a later frame could change the gauge"
+   },
+   "C4_metric_units": {
+    "pass": true,
+    "translation_multiplier_sweep_median_abs_depth_disagreement_m": {
+     "0.5": 0.992762252729527,
+     "0.8": 0.6405688802899197,
+     "0.9": 0.543591828374308,
+     "0.95": 0.5040231340844588,
+     "1.0": 0.47548682819173393,
+     "1.05": 0.5405687402527297,
+     "1.1": 0.6631911443145819,
+     "1.25": 0.8763735778076813,
+     "2.0": 1.9455317268766805
+    },
+    "argmin_multiplier": "1.0",
+    "value_at_multiplier_1": 0.47548682819173393,
+    "ratio_to_best": 1.0,
+    "window_baseline_m": {
+     "median": 3.4060241185896176,
+     "min": 2.3378620759099418,
+     "max": 10.209098139564508
+    },
+    "probe_is_sensitive": true,
+    "local_well_ratio_at_0p9_and_1p1": 1.1432321489147783,
+    "monotone_increasing_above_one": true,
+    "n_anchors_in_probe": 8,
+    "n_anchors_skipped_below_min_baseline": 0,
+    "min_baseline_m_required": 2.0,
+    "note": "the sweep multiplies ONLY the pose translation; two frames' surfaces agree best when that multiplier is exactly 1, i.e. when translation carries the same metres-per-unit scalar the depth already carries. IncrementalMapper._integrate applies one scalar to both (d_m = s * depth, T[:3, 3] *= s) -- the same lines for both benchmarks, so a benchmark whose windows are too near-stationary for the probe to resolve alpha is reported as under-conditioned, never as confirmation."
+   },
+   "C5_map_window": {
+    "pass": true,
+    "frames_integrated_per_anchor": [
+     5
+    ],
+    "window_matches_reference_manifest": true,
+    "n_anchors_checked": 48,
+    "example": {
+     "sample_id": "08_000020",
+     "streaming_window": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "reference_window": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    "note": "LingBot's state has seen every earlier frame of the segment, but the explicit occupancy-map window is the same five frames the reference uses"
+   },
+   "C6_completion_inputs": {
+    "pass": true,
+    "channels": {
+     "shape": [
+      1,
+      3,
+      256,
+      256,
+      32
+     ],
+     "channel0_is_S": true,
+     "channel1_is_zero": true,
+     "channel2_is_F": true,
+     "dims": [
+      256,
+      256,
+      32
+     ],
+     "voxel_size": 0.2,
+     "grid": "semantickitti"
+    },
+    "mode_A_reproduces_stored_canonical_prediction_bitwise": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "n_checked": 10,
+    "note": "the end-to-end identity is the real check: if the grid, the channel meaning, the coordinate convention or the read-out had drifted, the frozen head could not land on the stored volume bit for bit"
+   }
+  },
+  "all_pass": true,
+  "seconds": 21.632825136184692
+ },
+ "occ3d": {
+  "dataset": "occ3d",
+  "segment": "scene-0278",
+  "device": "cuda:1",
+  "n_frames_short": 24,
+  "n_frames_long": 34,
+  "n_anchors_in_pilot": 28,
+  "lingbot_load": {
+   "missing_keys": 0,
+   "unexpected_keys": 0
+  },
+  "checks": {
+   "C1_state_and_resets": {
+    "pass": true,
+    "long_pass": {
+     "peak_frames_processed": 34,
+     "aggregator_forward_calls": 30,
+     "clean_kv_cache_calls": 3,
+     "frame_counter_at_each_reset": [
+      0,
+      0,
+      34
+     ],
+     "mid_stream_resets": [],
+     "note": "resets at counter 0 precede any frame; a reset at the peak follows the last frame. Only a reset strictly between the two would break the persistent-state requirement."
+    },
+    "short_pass": {
+     "peak_frames_processed": 24,
+     "aggregator_forward_calls": 20,
+     "clean_kv_cache_calls": 3,
+     "frame_counter_at_each_reset": [
+      0,
+      0,
+      24
+     ],
+     "mid_stream_resets": [],
+     "note": "resets at counter 0 precede any frame; a reset at the peak follows the last frame. Only a reset strictly between the two would break the persistent-state requirement."
+    },
+    "rope_slots_predicted": {
+     "long": 34,
+     "short": 24
+    },
+    "rope_slots_measured_at_peak": {
+     "long": 34,
+     "short": 24
+    },
+    "rope_slots_as_recorded_by_replay_segment": {
+     "long": 0,
+     "short": 0,
+     "disagreement": "gates/gate7b/replay.replay_segment reads the frame counter AFTER inference_streaming's closing clean_kv_cache has zeroed it, so its stored rope_slots_used is 0 for every pass ever run. The peak counter above is the real slot usage. This is a reporting bug in the frozen gate code, not a behavioural one: the pass itself is unaffected, and no result in this phase uses that field."
+    },
+    "note": "three clean_kv_cache calls occur per pass -- replay_segment's own, inference_streaming's at entry, and its closing one -- all of them either before the first frame (counter 0) or after the last (counter at peak). No reset lands mid-stream, which is the persistent-state requirement."
+   },
+   "C2_causality_and_C7_replay": {
+    "pass": true,
+    "truncation": {
+     "short_frames": 24,
+     "long_frames": 34
+    },
+    "per_frame_outputs_of_frames_below_N": {
+     "pred_depth": {
+      "max_abs_difference": 0.0,
+      "identical": true
+     },
+     "pred_depth_conf": {
+      "max_abs_difference": 0.0,
+      "identical": true
+     },
+     "pred_pose_c2w": {
+      "max_abs_difference": 0.0,
+      "identical": true
+     },
+     "pred_K": {
+      "max_abs_difference": 0.0,
+      "identical": true
+     }
+    },
+    "note": "the long pass has M later frames the short pass never saw; identical outputs for every frame < N mean no future image entered an earlier frame's inference, and that a replay from the declared start reproduces the stream exactly",
+    "lingbot_initialization_block": {
+     "first_frames_processed_as_one_bidirectional_block": 5,
+     "consequence": "frames 0..4 attend to each other, so a frame inside the initialization block is not individually causal. Every such frame is at position <= 4, so for any anchor at position >= 4 no frame LATER THAN THE ANCHOR is ever used. The clip-reset reference has the same property over its own five frames, where ALL FIVE are one bidirectional block, so mode A is not the stricter of the two."
+    }
+   },
+   "C3_startup_only_gauge": {
+    "pass": true,
+    "moge_reads_in_segment": 5,
+    "moge_read_positions": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "n_init_frames": 5,
+    "scale_frozen_at_position": 4,
+    "startup_scale_m_per_unit": 29.448331977217236,
+    "init_frame_log_candidates": [
+     3.425797951360474,
+     3.4140756284492406,
+     3.3826372693498117,
+     3.3281427417279024,
+     3.3426758100424996
+    ],
+    "init_frame_valid_pixels": [
+     97388,
+     98251,
+     103679,
+     98164,
+     100878
+    ],
+    "distinct_scales_used_across_anchors": 1,
+    "later_frame_candidates_computed_but_NOT_used": [
+     3.380311785361589,
+     3.372732119830806,
+     3.380037723635057,
+     3.3795796146366124,
+     3.382938225372074
+    ],
+    "note": "the mapper receives the scalar through ScaleState.force, after which observe() is a no-op by construction, so there is no code path by which a later frame could change the gauge"
+   },
+   "C4_metric_units": {
+    "pass": true,
+    "translation_multiplier_sweep_median_abs_depth_disagreement_m": {
+     "0.5": 0.9888389278685858,
+     "0.8": 1.4822600706510354,
+     "0.9": 1.1447819183897763,
+     "0.95": 1.0148039259275805,
+     "1.0": 0.9072330882409991,
+     "1.05": 0.9594628631738225,
+     "1.1": 1.026976258273606,
+     "1.25": 1.9489358743360343,
+     "2.0": 2.7662930450342484
+    },
+    "argmin_multiplier": "1.0",
+    "value_at_multiplier_1": 0.9072330882409991,
+    "ratio_to_best": 1.0,
+    "window_baseline_m": {
+     "median": 12.789112025736275,
+     "min": 5.181357726334349,
+     "max": 19.080280397706495
+    },
+    "probe_is_sensitive": true,
+    "local_well_ratio_at_0p9_and_1p1": 1.131987216498874,
+    "monotone_increasing_above_one": true,
+    "n_anchors_in_probe": 8,
+    "n_anchors_skipped_below_min_baseline": 0,
+    "min_baseline_m_required": 2.0,
+    "note": "the sweep multiplies ONLY the pose translation; two frames' surfaces agree best when that multiplier is exactly 1, i.e. when translation carries the same metres-per-unit scalar the depth already carries. IncrementalMapper._integrate applies one scalar to both (d_m = s * depth, T[:3, 3] *= s) -- the same lines for both benchmarks, so a benchmark whose windows are too near-stationary for the probe to resolve alpha is reported as under-conditioned, never as confirmation."
+   },
+   "C5_map_window": {
+    "pass": true,
+    "frames_integrated_per_anchor": [
+     5
+    ],
+    "window_matches_reference_manifest": true,
+    "n_anchors_checked": 28,
+    "example": {
+     "sample_id": "scene-0278_b462e73472684c509a3e5f8734c33b10",
+     "streaming_window": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "reference_window": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    "note": "LingBot's state has seen every earlier frame of the segment, but the explicit occupancy-map window is the same five frames the reference uses"
+   },
+   "C6_completion_inputs": {
+    "pass": true,
+    "channels": {
+     "shape": [
+      1,
+      3,
+      400,
+      400,
+      32
+     ],
+     "channel0_is_S": true,
+     "channel1_is_zero": true,
+     "channel2_is_F": true,
+     "dims": [
+      400,
+      400,
+      32
+     ],
+     "voxel_size": 0.2,
+     "grid": "occ3d_nuscenes_canonical_0p2m"
+    },
+    "mode_A_reproduces_stored_canonical_prediction_bitwise": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "n_checked": 10,
+    "note": "the end-to-end identity is the real check: if the grid, the channel meaning, the coordinate convention or the read-out had drifted, the frozen head could not land on the stored volume bit for bit"
+   }
+  },
+  "all_pass": true,
+  "seconds": 26.669808626174927
+ }
+}

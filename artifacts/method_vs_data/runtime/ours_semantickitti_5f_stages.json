@@ -1,0 +1,185 @@
+{
+ "method": "ours",
+ "dataset": "semantickitti",
+ "input_frames": 5,
+ "mode": "stages",
+ "device": "cuda:3",
+ "n_anchors": 50,
+ "passes": 3,
+ "warmup": 3,
+ "anchors": [
+  "08_000085",
+  "08_000150",
+  "08_000220",
+  "08_000280",
+  "08_000360",
+  "08_000420",
+  "08_000505",
+  "08_000580",
+  "08_000670",
+  "08_000805",
+  "08_000870",
+  "08_000970",
+  "08_001020",
+  "08_001105",
+  "08_001215",
+  "08_001275",
+  "08_001350",
+  "08_001420",
+  "08_001500",
+  "08_001610",
+  "08_001640",
+  "08_001765",
+  "08_001830",
+  "08_001860",
+  "08_001970",
+  "08_002085",
+  "08_002140",
+  "08_002180",
+  "08_002320",
+  "08_002395",
+  "08_002485",
+  "08_002510",
+  "08_002585",
+  "08_002725",
+  "08_002740",
+  "08_002860",
+  "08_002905",
+  "08_003000",
+  "08_003095",
+  "08_003170",
+  "08_003250",
+  "08_003300",
+  "08_003380",
+  "08_003465",
+  "08_003540",
+  "08_003670",
+  "08_003740",
+  "08_003830",
+  "08_003880",
+  "08_003990"
+ ],
+ "latency_per_completed_occupancy_grid": {
+  "n": 150,
+  "mean_ms": 378.1631875038147,
+  "median_ms": 376.77648081444204,
+  "p95_ms": 390.8354867715388,
+  "min_ms": 369.5438550785184,
+  "max_ms": 425.7663399912417,
+  "std_ms": 8.158271173277116,
+  "predictions_per_second": 2.644361040536005
+ },
+ "per_pass_mean_ms": [
+  375.67278501577675,
+  377.3271529749036,
+  381.48962452076375
+ ],
+ "image_decode_excluded_by_boundary": {
+  "n": 50,
+  "mean_ms": 43.23925359174609,
+  "median_ms": 43.040670454502106,
+  "p95_ms": 47.40201751701534,
+  "min_ms": 40.54243490099907,
+  "max_ms": 48.75420080497861,
+  "std_ms": 2.0334633830809326,
+  "predictions_per_second": 23.12713372533538
+ },
+ "peak_memory": {
+  "allocated_bytes": 12644935168,
+  "reserved_bytes": 13725859840,
+  "note": "this process holds LingBotMap + MoGe-2 + CompletionUNet resident; see --memory-only for an isolated figure"
+ },
+ "parameters": {
+  "per_module_total_and_requires_grad": {
+   "lingbot_map": [
+    1157943540,
+    0
+   ],
+   "completion_unet": [
+    967322,
+    0
+   ],
+   "moge2_vitl": [
+    326209221,
+    0
+   ]
+  },
+  "total_inference_parameters": 1485120083,
+  "task_specific_trained_parameters": 967322,
+  "note": "requires_grad is False everywhere at inference; the trained-parameter count is the CompletionUNet, the only module this work optimised. LingBotMap and MoGe-2 are frozen pretrained dependencies and are NOT free: they are in the total and in every latency figure."
+ },
+ "configuration": {
+  "lingbot_checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+  "lingbot_load": {
+   "missing_keys": 0,
+   "unexpected_keys": 0
+  },
+  "lingbot_resolution": 518,
+  "lingbot_autocast": "bfloat16",
+  "moge_repo": "Ruicheng/moge-2-vitl",
+  "moge_revision": "39c4d5e957afe587e04eec59dc2bcc3be5ecd968",
+  "completion_seed": 0,
+  "prediction_grid": "semantickitti",
+  "prediction_dims": [
+   256,
+   256,
+   32
+  ],
+  "prediction_voxel_m": 0.2,
+  "eval_grid": "semantickitti",
+  "eval_dims": [
+   256,
+   256,
+   32
+  ],
+  "eval_voxel_m": 0.2,
+  "unet_precision": "bfloat16 autocast, fp32 residual",
+  "batch": "one evaluation anchor",
+  "real_input_frames": 5,
+  "generated_views": 0,
+  "future_frames_required": 0
+ },
+ "machine": {
+  "gpu_index": 3,
+  "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+  "gpu_total_memory_bytes": 101971722240,
+  "gpu_capability": "12.0",
+  "nvidia_smi_during_setup": "0, 88 %, 26690 MiB\n1, 99 %, 80265 MiB\n2, 0 %, 3525 MiB\n3, 92 %, 14425 MiB",
+  "cpu_model": "Intel(R) Xeon(R) w7-3565X",
+  "cpu_count": 64,
+  "loadavg": [
+   4.091796875,
+   7.564453125,
+   8.92041015625
+  ],
+  "python": "3.10.19",
+  "executable": "/home/minh/anaconda3/envs/cu128/bin/python",
+  "torch": "2.7.1+cu128",
+  "torch_cuda": "12.8",
+  "cudnn": 90701,
+  "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+  "driver": "580.95.05\n580.95.05\n580.95.05\n580.95.05"
+ },
+ "stages_mean_ms": {
+  "preprocess": 20.927429844935734,
+  "lingbot": 73.19753345722954,
+  "moge": 212.05407842683297,
+  "scale": 8.275132278601328,
+  "mapper": 16.808229036008317,
+  "map_query": 3.0991060938686132,
+  "unet": 43.3838407198588,
+  "postproc": 0.25990470622976625
+ },
+ "boundary": {
+  "start": "decoded RGB frames + calibration + calibrated FOV in host memory",
+  "end": "completed occupancy grid on the evaluation grid, host numpy array",
+  "excluded": [
+   "image decode",
+   "ground-truth labels and LiDAR",
+   "scoring",
+   "visualisation",
+   "prediction serialisation",
+   "model construction and checkpoint loading"
+  ]
+ }
+}

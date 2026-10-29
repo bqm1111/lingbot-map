@@ -1,0 +1,24 @@
+{
+ "dataset": "semantickitti",
+ "n_frames": 40,
+ "fields": {
+  "depth": {
+   "identical": true,
+   "max_abs_difference": 0.0
+  },
+  "depth_conf": {
+   "identical": true,
+   "max_abs_difference": 0.0
+  },
+  "pose_c2w": {
+   "identical": true,
+   "max_abs_difference": 0.0
+  },
+  "K": {
+   "identical": true,
+   "max_abs_difference": 0.0
+  }
+ },
+ "all_identical": true,
+ "note": "the timed driver and the scored accuracy pass are the same computation; if this is identical, runtime measured here belongs to the accuracy reported from the mode-B maps"
+}

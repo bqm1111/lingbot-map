@@ -1,0 +1,870 @@
+{
+ "method": "ours_streaming",
+ "dataset": "semantickitti",
+ "device": "cuda:3",
+ "mode": "e2e",
+ "n_streams": 3,
+ "reps": 3,
+ "streams": [
+  {
+   "segment": "08",
+   "start": 0,
+   "n_frames": 200,
+   "rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  },
+  {
+   "segment": "08",
+   "start": 307,
+   "n_frames": 200,
+   "rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  },
+  {
+   "segment": "08",
+   "start": 615,
+   "n_frames": 200,
+   "rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  }
+ ],
+ "startup_s": {
+  "n": 9,
+  "mean_ms": 305.16019717065825,
+  "median_ms": 306.2198990955949,
+  "p95_ms": 311.848568264395,
+  "min_ms": 296.3702152483165,
+  "max_ms": 313.1598620675504,
+  "std_ms": 5.545781550101921,
+  "predictions_per_second": 3.276967341323215
+ },
+ "first_prediction_compute_s": {
+  "n": 9,
+  "mean_ms": 367.22586252209214,
+  "median_ms": 367.56174825131893,
+  "p95_ms": 373.4100051224232,
+  "min_ms": 358.20723231881857,
+  "max_ms": 374.6011210605502,
+  "std_ms": 5.304735386074071,
+  "predictions_per_second": 2.7231197528737248
+ },
+ "frame_acquisition_waiting_s": {
+  "n": 9,
+  "mean_ms": 2078.085666666657,
+  "median_ms": 2078.6999999999694,
+  "p95_ms": 2079.357,
+  "min_ms": 2076.2,
+  "max_ms": 2079.357,
+  "std_ms": 1.4425800670971811,
+  "predictions_per_second": 0.48121211557367854
+ },
+ "per_input_update_s": {
+  "n": 9,
+  "mean_ms": 60.52885152256259,
+  "median_ms": 60.58862812052934,
+  "p95_ms": 60.88074514355797,
+  "min_ms": 60.13249819381879,
+  "max_ms": 60.93186108299937,
+  "std_ms": 0.25864140672205876,
+  "predictions_per_second": 16.521046985787304
+ },
+ "per_input_update_pooled_s": {
+  "n": 9,
+  "mean_ms": 60.52885152256259,
+  "median_ms": 60.58862812052934,
+  "p95_ms": 60.88074514355797,
+  "min_ms": 60.13249819381879,
+  "max_ms": 60.93186108299937,
+  "std_ms": 0.25864140672205876,
+  "predictions_per_second": 16.521046985787304
+ },
+ "per_prediction_s": {
+  "n": 9,
+  "mean_ms": 61.56703926607234,
+  "median_ms": 61.55679103178092,
+  "p95_ms": 61.72499970270273,
+  "min_ms": 61.346304727097355,
+  "max_ms": 61.73004697148617,
+  "std_ms": 0.12242095123364016,
+  "predictions_per_second": 16.242457196590717
+ },
+ "sequence_average_per_prediction_s": {
+  "n": 9,
+  "mean_ms": 124.47533918030611,
+  "median_ms": 123.80720338812668,
+  "p95_ms": 126.79081242431396,
+  "min_ms": 122.90928148360429,
+  "max_ms": 126.85945538443424,
+  "std_ms": 1.6587818182755478,
+  "predictions_per_second": 8.033719824225352
+ },
+ "measured_predictions_per_second": {
+  "n": 9,
+  "mean_ms": 8034.978802520426,
+  "median_ms": 8077.074456363189,
+  "p95_ms": 8135.239934331703,
+  "min_ms": 7882.739185420632,
+  "max_ms": 8136.082059298319,
+  "std_ms": 106.28489347979523,
+  "predictions_per_second": 0.12445583548849168
+ },
+ "total_sequence_compute_s": {
+  "n": 9,
+  "mean_ms": 23975.054164727528,
+  "median_ms": 24096.454428043216,
+  "p95_ms": 24280.695347953588,
+  "min_ms": 23501.803039573133,
+  "max_ms": 24290.351003874093,
+  "std_ms": 323.6693628465153,
+  "predictions_per_second": 0.041710020470828196
+ },
+ "peak_memory_startup_bytes": {
+  "allocated": 11907037696,
+  "reserved": 14113832960
+ },
+ "peak_memory_sustained_bytes": {
+  "allocated": 12700488704,
+  "reserved": 14113832960
+ },
+ "model_load_seconds_reported_separately": {
+  "lingbot_map": 10.82088480424136,
+  "moge2_vitl": 4.222690822556615,
+  "completion_unet": 0.016326006036251783,
+  "total": 15.059901632834226
+ },
+ "parameters": {
+  "per_module_total_and_requires_grad": {
+   "lingbot_map": [
+    1157943540,
+    0
+   ],
+   "completion_unet": [
+    967322,
+    0
+   ],
+   "moge2_vitl": [
+    326209221,
+    0
+   ]
+  },
+  "total_inference_parameters": 1485120083,
+  "task_specific_trained_parameters": 967322
+ },
+ "configuration": {
+  "lingbot_checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+  "lingbot_load": {
+   "missing_keys": 0,
+   "unexpected_keys": 0
+  },
+  "lingbot_resolution": 518,
+  "lingbot_autocast": "bfloat16",
+  "kv_cache_sliding_window_blocks": 64,
+  "moge_repo": "Ruicheng/moge-2-vitl",
+  "moge_revision": "39c4d5e957afe587e04eec59dc2bcc3be5ecd968",
+  "moge_calls": "5 at startup, none afterwards",
+  "completion_source": "k360",
+  "completion_seed": 0,
+  "prediction_grid": "semantickitti",
+  "prediction_dims": [
+   256,
+   256,
+   32
+  ],
+  "eval_grid": "semantickitti",
+  "eval_dims": [
+   256,
+   256,
+   32
+  ],
+  "batch": "one frame per update, one anchor per prediction",
+  "state_policy": "persistent within the stream; reset only at the stream start",
+  "resident_models": [
+   "LingBotMap GCTStream",
+   "MoGe-2 ViT-L",
+   "CompletionUNet"
+  ],
+  "future_frames_required": 0,
+  "generated_views": 0
+ },
+ "boundary": {
+  "start": "decoded RGB frames + ordinary calibration in host memory",
+  "end": "completed occupancy grid on the evaluation grid, host numpy array",
+  "excluded": [
+   "image decode",
+   "ground-truth loading",
+   "scoring",
+   "visualisation",
+   "prediction serialisation",
+   "model construction and checkpoint loading (reported separately)"
+  ],
+  "no_cached_quantities": "depth, point maps, poses, scale and hard maps are all computed inside the timed region; the only cached read is the calibrated horizontal FOV, a deterministic function of ordinary calibration"
+ },
+ "machine": {
+  "gpu_index": 3,
+  "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+  "gpu_total_memory_bytes": 101971722240,
+  "gpu_capability": "12.0",
+  "nvidia_smi_during_setup": "0, 78 %, 27300 MiB\n1, 27 %, 82534 MiB\n2, 0 %, 904 MiB\n3, 63 %, 14815 MiB",
+  "cpu_model": "Intel(R) Xeon(R) w7-3565X",
+  "cpu_count": 64,
+  "loadavg": [
+   7.71630859375,
+   5.90966796875,
+   5.990234375
+  ],
+  "python": "3.10.19",
+  "executable": "/home/minh/anaconda3/envs/cu128/bin/python",
+  "torch": "2.7.1+cu128",
+  "torch_cuda": "12.8",
+  "cudnn": 90701,
+  "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+  "driver": "580.95.05\n580.95.05\n580.95.05\n580.95.05"
+ },
+ "runs": [
+  {
+   "segment": "08",
+   "start_position": 0,
+   "n_frames_processed": 200,
+   "duration_s": 103.3624,
+   "n_predictions_emitted": 196,
+   "output_cadence": {
+    "predictions_per_processed_frame": 0.98,
+    "rule": "every processed frame at or after position 4 of the segment that is a canonical anchor emits a grid"
+   },
+   "startup_s": 0.2987722670659423,
+   "startup_includes": {
+    "lingbot_scale_block_frames": 5,
+    "moge2_forwards": 5,
+    "live_moge": true
+   },
+   "startup_scale_m_per_unit": 26.97912907370954,
+   "first_prediction_latency_s": {
+    "compute_after_last_init_frame_arrives": 0.361804932821542,
+    "prediction_step_only": 0.06303266575559974,
+    "frame_acquisition_waiting_s": 2.079357,
+    "note": "waiting is the wall-clock time for the four later initialization frames to arrive at the sensor cadence; it is NOT computation and is never added into a latency figure"
+   },
+   "per_input_update_s": {
+    "n": 195,
+    "mean_ms": 60.34613964744867,
+    "median_ms": 60.171845369040966,
+    "p95_ms": 64.40593595616518,
+    "min_ms": 56.01224210113287,
+    "max_ms": 69.34485398232937,
+    "std_ms": 2.274778070009289,
+    "predictions_per_second": 16.571068271179435
+   },
+   "per_prediction_s": {
+    "n": 195,
+    "mean_ms": 61.346304727097355,
+    "median_ms": 61.27743003889918,
+    "p95_ms": 62.612367048859596,
+    "min_ms": 59.43221505731344,
+    "max_ms": 65.2020899578929,
+    "std_ms": 0.8436418085457388,
+    "predictions_per_second": 16.300900346786314
+   },
+   "steady_state_s": 23.734649495221674,
+   "total_sequence_compute_s": 24.096454428043216,
+   "sequence_average_per_prediction_s": 0.12294109402062865,
+   "measured_predictions_per_second": 8.133976746881778,
+   "measured_input_updates_per_second": 8.299976272328346,
+   "peak_memory_startup": {
+    "allocated_bytes": 11907037696,
+    "reserved_bytes": 14084472832
+   },
+   "peak_memory_sustained": {
+    "allocated_bytes": 12700488704,
+    "reserved_bytes": 14113832960
+   },
+   "state_trace": {
+    "peak_frames_processed": 200,
+    "aggregator_forward_calls": 196,
+    "clean_kv_cache_calls": 0,
+    "frame_counter_at_each_reset": [],
+    "mid_stream_resets": [],
+    "note": "resets at counter 0 precede any frame; a reset at the peak follows the last frame. Only a reset strictly between the two would break the persistent-state requirement."
+   },
+   "frame_gap_s": {
+    "median": 0.5192500000000031,
+    "max": 0.522439999999996
+   },
+   "stages_s": null,
+   "rep": 0,
+   "selection_rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  },
+  {
+   "segment": "08",
+   "start_position": 0,
+   "n_frames_processed": 200,
+   "duration_s": 103.3624,
+   "n_predictions_emitted": 196,
+   "output_cadence": {
+    "predictions_per_processed_frame": 0.98,
+    "rule": "every processed frame at or after position 4 of the segment that is a canonical anchor emits a grid"
+   },
+   "startup_s": 0.2963702152483165,
+   "startup_includes": {
+    "lingbot_scale_block_frames": 5,
+    "moge2_forwards": 5,
+    "live_moge": true
+   },
+   "startup_scale_m_per_unit": 26.97912907370954,
+   "first_prediction_latency_s": {
+    "compute_after_last_init_frame_arrives": 0.35820723231881857,
+    "prediction_step_only": 0.06183701707050204,
+    "frame_acquisition_waiting_s": 2.079357,
+    "note": "waiting is the wall-clock time for the four later initialization frames to arrive at the sensor cadence; it is NOT computation and is never added into a latency figure"
+   },
+   "per_input_update_s": {
+    "n": 195,
+    "mean_ms": 60.58862812052934,
+    "median_ms": 60.61859615147114,
+    "p95_ms": 64.42172429524362,
+    "min_ms": 55.367167107760906,
+    "max_ms": 70.03844622522593,
+    "std_ms": 2.3700079063431896,
+    "predictions_per_second": 16.504747359697493
+   },
+   "per_prediction_s": {
+    "n": 195,
+    "mean_ms": 61.482522299943064,
+    "median_ms": 61.34013785049319,
+    "p95_ms": 63.00607020966709,
+    "min_ms": 59.862897265702486,
+    "max_ms": 64.02866821736097,
+    "std_ms": 0.8137824990124681,
+    "predictions_per_second": 16.264784894827358
+   },
+   "steady_state_s": 23.80826842971146,
+   "total_sequence_compute_s": 24.16647566203028,
+   "sequence_average_per_prediction_s": 0.1232983452144402,
+   "measured_predictions_per_second": 8.110408929339663,
+   "measured_input_updates_per_second": 8.275927478918023,
+   "peak_memory_startup": {
+    "allocated_bytes": 11907037696,
+    "reserved_bytes": 14113832960
+   },
+   "peak_memory_sustained": {
+    "allocated_bytes": 12700488704,
+    "reserved_bytes": 14113832960
+   },
+   "state_trace": {
+    "peak_frames_processed": 200,
+    "aggregator_forward_calls": 196,
+    "clean_kv_cache_calls": 0,
+    "frame_counter_at_each_reset": [],
+    "mid_stream_resets": [],
+    "note": "resets at counter 0 precede any frame; a reset at the peak follows the last frame. Only a reset strictly between the two would break the persistent-state requirement."
+   },
+   "frame_gap_s": {
+    "median": 0.5192500000000031,
+    "max": 0.522439999999996
+   },
+   "stages_s": null,
+   "rep": 1,
+   "selection_rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  },
+  {
+   "segment": "08",
+   "start_position": 0,
+   "n_frames_processed": 200,
+   "duration_s": 103.3624,
+   "n_predictions_emitted": 196,
+   "output_cadence": {
+    "predictions_per_processed_frame": 0.98,
+    "rule": "every processed frame at or after position 4 of the segment that is a canonical anchor emits a grid"
+   },
+   "startup_s": 0.30038593895733356,
+   "startup_includes": {
+    "lingbot_scale_block_frames": 5,
+    "moge2_forwards": 5,
+    "live_moge": true
+   },
+   "startup_scale_m_per_unit": 26.97912907370954,
+   "first_prediction_latency_s": {
+    "compute_after_last_init_frame_arrives": 0.3630205597728491,
+    "prediction_step_only": 0.06263462081551552,
+    "frame_acquisition_waiting_s": 2.079357,
+    "note": "waiting is the wall-clock time for the four later initialization frames to arrive at the sensor cadence; it is NOT computation and is never added into a latency figure"
+   },
+   "per_input_update_s": {
+    "n": 195,
+    "mean_ms": 60.13249819381879,
+    "median_ms": 59.78426383808255,
+    "p95_ms": 64.01722524315119,
+    "min_ms": 55.652824230492115,
+    "max_ms": 68.25531413778663,
+    "std_ms": 2.2465676292452432,
+    "predictions_per_second": 16.629942710459236
+   },
+   "per_prediction_s": {
+    "n": 195,
+    "mean_ms": 61.52324365595212,
+    "median_ms": 61.4524707198143,
+    "p95_ms": 62.72749397903681,
+    "min_ms": 59.923558961600065,
+    "max_ms": 63.33016697317362,
+    "std_ms": 0.7331749460730749,
+    "predictions_per_second": 16.254019466076283
+   },
+   "steady_state_s": 23.72719861101359,
+   "total_sequence_compute_s": 24.09021917078644,
+   "sequence_average_per_prediction_s": 0.12290928148360429,
+   "measured_predictions_per_second": 8.13608205929832,
+   "measured_input_updates_per_second": 8.302124550304407,
+   "peak_memory_startup": {
+    "allocated_bytes": 11907037696,
+    "reserved_bytes": 14113832960
+   },
+   "peak_memory_sustained": {
+    "allocated_bytes": 12700488704,
+    "reserved_bytes": 14113832960
+   },
+   "state_trace": {
+    "peak_frames_processed": 200,
+    "aggregator_forward_calls": 196,
+    "clean_kv_cache_calls": 0,
+    "frame_counter_at_each_reset": [],
+    "mid_stream_resets": [],
+    "note": "resets at counter 0 precede any frame; a reset at the peak follows the last frame. Only a reset strictly between the two would break the persistent-state requirement."
+   },
+   "frame_gap_s": {
+    "median": 0.5192500000000031,
+    "max": 0.522439999999996
+   },
+   "stages_s": null,
+   "rep": 2,
+   "selection_rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  },
+  {
+   "segment": "08",
+   "start_position": 307,
+   "n_frames_processed": 200,
+   "duration_s": 103.42119999999997,
+   "n_predictions_emitted": 196,
+   "output_cadence": {
+    "predictions_per_processed_frame": 0.98,
+    "rule": "every processed frame at or after position 4 of the segment that is a canonical anchor emits a grid"
+   },
+   "startup_s": 0.30988162755966187,
+   "startup_includes": {
+    "lingbot_scale_block_frames": 5,
+    "moge2_forwards": 5,
+    "live_moge": true
+   },
+   "startup_scale_m_per_unit": 25.445306639361515,
+   "first_prediction_latency_s": {
+    "compute_after_last_init_frame_arrives": 0.37149655260145664,
+    "prediction_step_only": 0.06161492504179478,
+    "frame_acquisition_waiting_s": 2.0762,
+    "note": "waiting is the wall-clock time for the four later initialization frames to arrive at the sensor cadence; it is NOT computation and is never added into a latency figure"
+   },
+   "per_input_update_s": {
+    "n": 195,
+    "mean_ms": 60.63927797934948,
+    "median_ms": 60.069832019507885,
+    "p95_ms": 65.51767075434327,
+    "min_ms": 56.670531164854765,
+    "max_ms": 69.12590097635984,
+    "std_ms": 2.5417475691096825,
+    "predictions_per_second": 16.490961523990226
+   },
+   "per_prediction_s": {
+    "n": 195,
+    "mean_ms": 61.55679103178092,
+    "median_ms": 61.46242981776595,
+    "p95_ms": 63.00390954129398,
+    "min_ms": 59.93516789749265,
+    "max_ms": 63.804315868765116,
+    "std_ms": 0.841128237216731,
+    "predictions_per_second": 16.24516130939499
+   },
+   "steady_state_s": 23.832677335012704,
+   "total_sequence_compute_s": 24.20417388761416,
+   "sequence_average_per_prediction_s": 0.12349068310007225,
+   "measured_predictions_per_second": 8.097776892120981,
+   "measured_input_updates_per_second": 8.26303764502141,
+   "peak_memory_startup": {
+    "allocated_bytes": 11907037696,
+    "reserved_bytes": 14113832960
+   },
+   "peak_memory_sustained": {
+    "allocated_bytes": 12700488704,
+    "reserved_bytes": 14113832960
+   },
+   "state_trace": {
+    "peak_frames_processed": 200,
+    "aggregator_forward_calls": 196,
+    "clean_kv_cache_calls": 0,
+    "frame_counter_at_each_reset": [],
+    "mid_stream_resets": [],
+    "note": "resets at counter 0 precede any frame; a reset at the peak follows the last frame. Only a reset strictly between the two would break the persistent-state requirement."
+   },
+   "frame_gap_s": {
+    "median": 0.5197000000000003,
+    "max": 0.5218000000000131
+   },
+   "stages_s": null,
+   "rep": 0,
+   "selection_rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  },
+  {
+   "segment": "08",
+   "start_position": 307,
+   "n_frames_processed": 200,
+   "duration_s": 103.42119999999997,
+   "n_predictions_emitted": 196,
+   "output_cadence": {
+    "predictions_per_processed_frame": 0.98,
+    "rule": "every processed frame at or after position 4 of the segment that is a canonical anchor emits a grid"
+   },
+   "startup_s": 0.30707335006445646,
+   "startup_includes": {
+    "lingbot_scale_block_frames": 5,
+    "moge2_forwards": 5,
+    "live_moge": true
+   },
+   "startup_scale_m_per_unit": 25.445306639361515,
+   "first_prediction_latency_s": {
+    "compute_after_last_init_frame_arrives": 0.36937472224235535,
+    "prediction_step_only": 0.062301372177898884,
+    "frame_acquisition_waiting_s": 2.0762,
+    "note": "waiting is the wall-clock time for the four later initialization frames to arrive at the sensor cadence; it is NOT computation and is never added into a latency figure"
+   },
+   "per_input_update_s": {
+    "n": 195,
+    "mean_ms": 60.93186108299937,
+    "median_ms": 60.81550428643823,
+    "p95_ms": 65.65213156864047,
+    "min_ms": 56.5087478607893,
+    "max_ms": 70.68336568772793,
+    "std_ms": 2.5439711951009563,
+    "predictions_per_second": 16.411775091488394
+   },
+   "per_prediction_s": {
+    "n": 195,
+    "mean_ms": 61.717428799527575,
+    "median_ms": 61.621427070349455,
+    "p95_ms": 63.28157326206565,
+    "min_ms": 60.25015423074365,
+    "max_ms": 65.98880281671882,
+    "std_ms": 0.882118278257942,
+    "predictions_per_second": 16.20287849722694
+   },
+   "steady_state_s": 23.920976281631738,
+   "total_sequence_compute_s": 24.290351003874093,
+   "sequence_average_per_prediction_s": 0.12393036226466374,
+   "measured_predictions_per_second": 8.06904766294813,
+   "measured_input_updates_per_second": 8.233722105049111,
+   "peak_memory_startup": {
+    "allocated_bytes": 11907037696,
+    "reserved_bytes": 14113832960
+   },
+   "peak_memory_sustained": {
+    "allocated_bytes": 12700488704,
+    "reserved_bytes": 14113832960
+   },
+   "state_trace": {
+    "peak_frames_processed": 200,
+    "aggregator_forward_calls": 196,
+    "clean_kv_cache_calls": 0,
+    "frame_counter_at_each_reset": [],
+    "mid_stream_resets": [],
+    "note": "resets at counter 0 precede any frame; a reset at the peak follows the last frame. Only a reset strictly between the two would break the persistent-state requirement."
+   },
+   "frame_gap_s": {
+    "median": 0.5197000000000003,
+    "max": 0.5218000000000131
+   },
+   "stages_s": null,
+   "rep": 1,
+   "selection_rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  },
+  {
+   "segment": "08",
+   "start_position": 307,
+   "n_frames_processed": 200,
+   "duration_s": 103.42119999999997,
+   "n_predictions_emitted": 196,
+   "output_cadence": {
+    "predictions_per_processed_frame": 0.98,
+    "rule": "every processed frame at or after position 4 of the segment that is a canonical anchor emits a grid"
+   },
+   "startup_s": 0.30570080410689116,
+   "startup_includes": {
+    "lingbot_scale_block_frames": 5,
+    "moge2_forwards": 5,
+    "live_moge": true
+   },
+   "startup_scale_m_per_unit": 25.445306639361515,
+   "first_prediction_latency_s": {
+    "compute_after_last_init_frame_arrives": 0.36756174825131893,
+    "prediction_step_only": 0.061860944144427776,
+    "frame_acquisition_waiting_s": 2.0762,
+    "note": "waiting is the wall-clock time for the four later initialization frames to arrive at the sensor cadence; it is NOT computation and is never added into a latency figure"
+   },
+   "per_input_update_s": {
+    "n": 195,
+    "mean_ms": 60.80407123439587,
+    "median_ms": 60.69182697683573,
+    "p95_ms": 64.67956150881946,
+    "min_ms": 56.462671142071486,
+    "max_ms": 68.29818896949291,
+    "std_ms": 2.378801055641886,
+    "predictions_per_second": 16.44626716104359
+   },
+   "per_prediction_s": {
+    "n": 195,
+    "mean_ms": 61.73004697148617,
+    "median_ms": 61.645299196243286,
+    "p95_ms": 62.94549438171089,
+    "min_ms": 60.22960878908634,
+    "max_ms": 64.19377727434039,
+    "std_ms": 0.7494198919684641,
+    "predictions_per_second": 16.199566484404453
+   },
+   "steady_state_s": 23.89865011582151,
+   "total_sequence_compute_s": 24.26621186407283,
+   "sequence_average_per_prediction_s": 0.12380720338812667,
+   "measured_predictions_per_second": 8.077074456363189,
+   "measured_input_updates_per_second": 8.241912710574683,
+   "peak_memory_startup": {
+    "allocated_bytes": 11907037696,
+    "reserved_bytes": 14113832960
+   },
+   "peak_memory_sustained": {
+    "allocated_bytes": 12700488704,
+    "reserved_bytes": 14113832960
+   },
+   "state_trace": {
+    "peak_frames_processed": 200,
+    "aggregator_forward_calls": 196,
+    "clean_kv_cache_calls": 0,
+    "frame_counter_at_each_reset": [],
+    "mid_stream_resets": [],
+    "note": "resets at counter 0 precede any frame; a reset at the peak follows the last frame. Only a reset strictly between the two would break the persistent-state requirement."
+   },
+   "frame_gap_s": {
+    "median": 0.5197000000000003,
+    "max": 0.5218000000000131
+   },
+   "stages_s": null,
+   "rep": 2,
+   "selection_rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  },
+  {
+   "segment": "08",
+   "start_position": 615,
+   "n_frames_processed": 200,
+   "duration_s": 103.39549999999997,
+   "n_predictions_emitted": 186,
+   "output_cadence": {
+    "predictions_per_processed_frame": 0.93,
+    "rule": "every processed frame at or after position 4 of the segment that is a canonical anchor emits a grid"
+   },
+   "startup_s": 0.3131598620675504,
+   "startup_includes": {
+    "lingbot_scale_block_frames": 5,
+    "moge2_forwards": 5,
+    "live_moge": true
+   },
+   "startup_scale_m_per_unit": 23.47301753433295,
+   "first_prediction_latency_s": {
+    "compute_after_last_init_frame_arrives": 0.3746011210605502,
+    "prediction_step_only": 0.06144125899299979,
+    "frame_acquisition_waiting_s": 2.0786999999999694,
+    "note": "waiting is the wall-clock time for the four later initialization frames to arrive at the sensor cadence; it is NOT computation and is never added into a latency figure"
+   },
+   "per_input_update_s": {
+    "n": 195,
+    "mean_ms": 60.44449539711842,
+    "median_ms": 60.12716703116894,
+    "p95_ms": 64.87222565338016,
+    "min_ms": 56.089323945343494,
+    "max_ms": 67.02726613730192,
+    "std_ms": 2.310580242594438,
+    "predictions_per_second": 16.54410370092482
+   },
+   "per_prediction_s": {
+    "n": 185,
+    "mean_ms": 61.61249380155995,
+    "median_ms": 61.49568734690547,
+    "p95_ms": 63.359568268060684,
+    "min_ms": 59.76835498586297,
+    "max_ms": 64.60523698478937,
+    "std_ms": 0.9196135836717778,
+    "predictions_per_second": 16.230474345362097
+   },
+   "steady_state_s": 23.18933860398829,
+   "total_sequence_compute_s": 23.56393972504884,
+   "sequence_average_per_prediction_s": 0.12668784798413354,
+   "measured_predictions_per_second": 7.893416897611526,
+   "measured_input_updates_per_second": 8.48754505119519,
+   "peak_memory_startup": {
+    "allocated_bytes": 11907037696,
+    "reserved_bytes": 14113832960
+   },
+   "peak_memory_sustained": {
+    "allocated_bytes": 12697950208,
+    "reserved_bytes": 14113832960
+   },
+   "state_trace": {
+    "peak_frames_processed": 200,
+    "aggregator_forward_calls": 196,
+    "clean_kv_cache_calls": 0,
+    "frame_counter_at_each_reset": [],
+    "mid_stream_resets": [],
+    "note": "resets at counter 0 precede any frame; a reset at the peak follows the last frame. Only a reset strictly between the two would break the persistent-state requirement."
+   },
+   "frame_gap_s": {
+    "median": 0.5194999999999936,
+    "max": 0.5219000000000165
+   },
+   "stages_s": null,
+   "rep": 0,
+   "selection_rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  },
+  {
+   "segment": "08",
+   "start_position": 615,
+   "n_frames_processed": 200,
+   "duration_s": 103.39549999999997,
+   "n_predictions_emitted": 186,
+   "output_cadence": {
+    "predictions_per_processed_frame": 0.93,
+    "rule": "every processed frame at or after position 4 of the segment that is a canonical anchor emits a grid"
+   },
+   "startup_s": 0.30887781037017703,
+   "startup_includes": {
+    "lingbot_scale_block_frames": 5,
+    "moge2_forwards": 5,
+    "live_moge": true
+   },
+   "startup_scale_m_per_unit": 23.47301753433295,
+   "first_prediction_latency_s": {
+    "compute_after_last_init_frame_arrives": 0.3716233312152326,
+    "prediction_step_only": 0.06274552084505558,
+    "frame_acquisition_waiting_s": 2.0786999999999694,
+    "note": "waiting is the wall-clock time for the four later initialization frames to arrive at the sensor cadence; it is NOT computation and is never added into a latency figure"
+   },
+   "per_input_update_s": {
+    "n": 195,
+    "mean_ms": 60.253968533988186,
+    "median_ms": 59.77410078048706,
+    "p95_ms": 64.4681585021317,
+    "min_ms": 55.22408988326788,
+    "max_ms": 70.12533815577626,
+    "std_ms": 2.4019972506282534,
+    "predictions_per_second": 16.5964172042198
+   },
+   "per_prediction_s": {
+    "n": 185,
+    "mean_ms": 61.49394515700437,
+    "median_ms": 61.294290237128735,
+    "p95_ms": 63.045811746269464,
+    "min_ms": 59.814576990902424,
+    "max_ms": 63.906711991876364,
+    "std_ms": 0.8454191814216102,
+    "predictions_per_second": 16.261763616675303
+   },
+   "steady_state_s": 23.1301797083579,
+   "total_sequence_compute_s": 23.501803039573133,
+   "sequence_average_per_prediction_s": 0.12635377978265125,
+   "measured_predictions_per_second": 7.914286392699611,
+   "measured_input_updates_per_second": 8.509985368494204,
+   "peak_memory_startup": {
+    "allocated_bytes": 11907037696,
+    "reserved_bytes": 14113832960
+   },
+   "peak_memory_sustained": {
+    "allocated_bytes": 12697950208,
+    "reserved_bytes": 14113832960
+   },
+   "state_trace": {
+    "peak_frames_processed": 200,
+    "aggregator_forward_calls": 196,
+    "clean_kv_cache_calls": 0,
+    "frame_counter_at_each_reset": [],
+    "mid_stream_resets": [],
+    "note": "resets at counter 0 precede any frame; a reset at the peak follows the last frame. Only a reset strictly between the two would break the persistent-state requirement."
+   },
+   "frame_gap_s": {
+    "median": 0.5194999999999936,
+    "max": 0.5219000000000165
+   },
+   "stages_s": null,
+   "rep": 1,
+   "selection_rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  },
+  {
+   "segment": "08",
+   "start_position": 615,
+   "n_frames_processed": 200,
+   "duration_s": 103.39549999999997,
+   "n_predictions_emitted": 186,
+   "output_cadence": {
+    "predictions_per_processed_frame": 0.93,
+    "rule": "every processed frame at or after position 4 of the segment that is a canonical anchor emits a grid"
+   },
+   "startup_s": 0.3062198990955949,
+   "startup_includes": {
+    "lingbot_scale_block_frames": 5,
+    "moge2_forwards": 5,
+    "live_moge": true
+   },
+   "startup_scale_m_per_unit": 23.47301753433295,
+   "first_prediction_latency_s": {
+    "compute_after_last_init_frame_arrives": 0.36734256241470575,
+    "prediction_step_only": 0.06112266331911087,
+    "frame_acquisition_waiting_s": 2.0786999999999694,
+    "note": "waiting is the wall-clock time for the four later initialization frames to arrive at the sensor cadence; it is NOT computation and is never added into a latency figure"
+   },
+   "per_input_update_s": {
+    "n": 195,
+    "mean_ms": 60.618723513415226,
+    "median_ms": 60.245865024626255,
+    "p95_ms": 65.0006101001054,
+    "min_ms": 56.02629715576768,
+    "max_ms": 68.06594831869006,
+    "std_ms": 2.399560841352133,
+    "predictions_per_second": 16.496553243630988
+   },
+   "per_prediction_s": {
+    "n": 185,
+    "mean_ms": 61.640576950299575,
+    "median_ms": 61.52052106335759,
+    "p95_ms": 63.19680316373706,
+    "min_ms": 60.10222202166915,
+    "max_ms": 64.59597498178482,
+    "std_ms": 0.8533044661884432,
+    "predictions_per_second": 16.223079819747532
+   },
+   "steady_state_s": 23.22851613909006,
+   "total_sequence_compute_s": 23.595858701504767,
+   "sequence_average_per_prediction_s": 0.12685945538443424,
+   "measured_predictions_per_second": 7.882739185420632,
+   "measured_input_updates_per_second": 8.476063640237237,
+   "peak_memory_startup": {
+    "allocated_bytes": 11907037696,
+    "reserved_bytes": 14113832960
+   },
+   "peak_memory_sustained": {
+    "allocated_bytes": 12697950208,
+    "reserved_bytes": 14113832960
+   },
+   "state_trace": {
+    "peak_frames_processed": 200,
+    "aggregator_forward_calls": 196,
+    "clean_kv_cache_calls": 0,
+    "frame_counter_at_each_reset": [],
+    "mid_stream_resets": [],
+    "note": "resets at counter 0 precede any frame; a reset at the peak follows the last frame. Only a reset strictly between the two would break the persistent-state requirement."
+   },
+   "frame_gap_s": {
+    "median": 0.5194999999999936,
+    "max": 0.5219000000000165
+   },
+   "stages_s": null,
+   "rep": 2,
+   "selection_rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  }
+ ]
+}

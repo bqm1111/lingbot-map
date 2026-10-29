@@ -1,0 +1,103 @@
+{
+ "dataset": "semantickitti",
+ "boundary_rule": "one segment: SemanticKITTI odometry sequence 08, the 815 unique stride-5 frames in odometry order. One physical stream.",
+ "n_segments": 1,
+ "n_independent_streams": 1,
+ "n_frames_processed_total": 815,
+ "n_scored_anchors_total": 801,
+ "canonical_population": 801,
+ "exclusions": [],
+ "exclusion_reason": "none: every canonical anchor sits at stream position >= 4, the causal window needs four earlier frames, and the mode-B gauge is complete after position 4, so the initialization requirement excludes no anchor",
+ "modes": {
+  "A": "clip_reset_reference",
+  "B": "persistent_state_startup_scale"
+ },
+ "mode_A": {
+  "reset": "once per evaluation anchor (per five-frame clip)",
+  "scale": "estimated from that clip's own five frames",
+  "n_resets": 801,
+  "source": "frozen clip cache tools/occany_comparison/cli/build_clips.py"
+ },
+ "mode_B": {
+  "reset": "once per physical segment",
+  "scale": "one scalar from the segment's first five frames, frozen for the rest of the segment; no later MoGe call, no refresh",
+  "n_resets": 1,
+  "mapper_window": "the same five causal frames the reference uses for that anchor; the explicit occupancy-map window is NOT widened, only LingBot's own state persists"
+ },
+ "n_init_frames": 5,
+ "causal_offsets": [
+  -4,
+  -3,
+  -2,
+  -1,
+  0
+ ],
+ "anchor_slot": 4,
+ "timestamp_gap_s_overall": {
+  "min": 0.515190000000004,
+  "median": 0.5195999999999685,
+  "p95": 0.5208999999999833,
+  "max": 0.522439999999996
+ },
+ "segments": [
+  {
+   "segment": "08",
+   "n_frames_processed": 815,
+   "stream_start": {
+    "position": 0,
+    "key": "08_000000",
+    "time_s": 0.0
+   },
+   "end_condition": {
+    "position": 814,
+    "key": "08_004070",
+    "time_s": 422.9405,
+    "rule": "last frame of the physical segment"
+   },
+   "duration_s": 422.9405,
+   "initialization_frames": [
+    {
+     "position": 0,
+     "key": "08_000000",
+     "time_s": 0.0
+    },
+    {
+     "position": 1,
+     "key": "08_000005",
+     "time_s": 0.5196006
+    },
+    {
+     "position": 2,
+     "key": "08_000010",
+     "time_s": 1.039479
+    },
+    {
+     "position": 3,
+     "key": "08_000015",
+     "time_s": 1.559353
+    },
+    {
+     "position": 4,
+     "key": "08_000020",
+     "time_s": 2.079357
+    }
+   ],
+   "n_scored_anchors": 801,
+   "first_scored_position": 4,
+   "last_scored_position": 804,
+   "timestamp_gap_s": {
+    "min": 0.515190000000004,
+    "median": 0.5195999999999685,
+    "p95": 0.5208999999999833,
+    "max": 0.522439999999996
+   },
+   "lingbot_keyframe_interval": 1,
+   "rope_slots_used": 815,
+   "rope_table_size": 1024,
+   "resets": 1,
+   "reset_positions": [
+    0
+   ]
+  }
+ ]
+}

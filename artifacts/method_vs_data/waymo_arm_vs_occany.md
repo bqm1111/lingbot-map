@@ -166,3 +166,45 @@ figures (25.21 / 20.66, on 801 and 4,219 anchors). Those columns are not compara
 the rule `geometry_head_to_head.md` §1 states. The discrepancy is small — 26.17 against 26.40,
 22.86 against 22.85 — so the file's *conclusions* are unaffected, but its table should not be
 read as a head-to-head. §3 above is the head-to-head. That file is left otherwise unmodified.
+
+---
+
+# Addendum — 2026-10-27: both §5 gaps are closed, and §4 does not survive intact
+
+Everything above is preserved as written earlier today. §5 recorded two gaps in this file's own
+answer — no pooled convention for the Waymo arm, and no confidence interval on any §4 row — and
+stated that closing them needed a scorer applying the canonical pooling to the stored Waymo
+volumes. **That scorer was written and run** (`tools/method_vs_data/canonical_rescore.py`), on
+the same 801 / 4,219 anchors with the same labels, masks, pooling call and block bootstrap. Full
+report: `waymo_canonical_rescore.md`.
+
+**Three of §4's four statements change.**
+
+| §4 row | §4 said | measured |
+|---|---|---|
+| SK, vs OccAny causal 1-frame | +3.23 | **+3.23 [+2.26, +4.21] \*** raw; **−0.69 [−1.52, +0.10] ns** pooled — **a tie under their published convention** |
+| SK, vs OccAny forward 5-frame | −1.66 | **−1.66 [−2.52, −0.79] \*** raw; **−2.55 [−3.52, −1.65] \*** pooled |
+| Occ3D, vs OccAny forward 5-frame | +2.19 | **+2.20 [−0.02, +4.35] ns** raw — **a tie, not "stays ahead"**; **+14.51 [+12.92, +16.06] \*** pooled |
+
+So §6's "remains ahead of the released OccAny checkpoint on Occ3D (+2.19 raw) and ahead of its
+causal mode on SemanticKITTI (+3.23 raw)" is **retracted as stated**: the first is a tie once
+its interval exists, and the second holds only in the raw convention. What replaces it is
+stronger in one place and weaker in two: the arm **wins Occ3D decisively under the convention
+OccAny publishes in** (+14.51) and ties or loses in the other four OccAny cells.
+
+**§5's prediction is half-confirmed.** It predicted the sparser Waymo arm would gain more from
+dilation than the KITTI-360 arm. On Occ3D it does (+15.20 against +9.62); on SemanticKITTI it
+does not (−0.18 against −0.05). Recorded as measured, not as a mechanism.
+
+**One finding §5 did not anticipate.** On the strict never-observed mask — 89.06 % of
+SemanticKITTI GT occupancy — the Waymo arm beats OccAny's causal mode by **+7.02 [+5.66, +8.37]**
+raw and **+4.04 [+2.77, +5.29]** pooled, both significant, where the ONCE arm is a tie in both
+conventions. That is the first never-observed figure for any OccAny-source arm.
+
+**A correction to §1's framing.** §1's table treats Waymo and ONCE as two comparable draws from
+OccAny's source pool. They are not: measured from the training caches
+(`training_supervision_provenance.md`), the Waymo arm **preserved** the frozen 21-frame /
+10.44 s supervision window while the ONCE arm **shortened it to 5 frames / 2.00 s**. Only the
+Waymo arm is a clean source-only substitution.
+
+All numbers above are **seed 0**; canonical predictions exist for no other seed.

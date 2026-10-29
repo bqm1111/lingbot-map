@@ -1,0 +1,69 @@
+{
+  "dataset": "semantickitti",
+  "n_frames": 60,
+  "n_checked": 8,
+  "rows": [
+    {
+      "sample_id": "08_000020",
+      "identical": false,
+      "agreement_iou": 99.76915559682256,
+      "n_disagreeing": 900,
+      "n_voxels": 2097152
+    },
+    {
+      "sample_id": "08_000025",
+      "identical": false,
+      "agreement_iou": 99.79214156009736,
+      "n_disagreeing": 807,
+      "n_voxels": 2097152
+    },
+    {
+      "sample_id": "08_000030",
+      "identical": false,
+      "agreement_iou": 99.77245712345051,
+      "n_disagreeing": 871,
+      "n_voxels": 2097152
+    },
+    {
+      "sample_id": "08_000035",
+      "identical": false,
+      "agreement_iou": 99.79744978560144,
+      "n_disagreeing": 718,
+      "n_voxels": 2097152
+    },
+    {
+      "sample_id": "08_000040",
+      "identical": false,
+      "agreement_iou": 99.75344563988828,
+      "n_disagreeing": 866,
+      "n_voxels": 2097152
+    },
+    {
+      "sample_id": "08_000045",
+      "identical": false,
+      "agreement_iou": 99.86601219191726,
+      "n_disagreeing": 413,
+      "n_voxels": 2097152
+    },
+    {
+      "sample_id": "08_000050",
+      "identical": false,
+      "agreement_iou": 99.84221916956093,
+      "n_disagreeing": 487,
+      "n_voxels": 2097152
+    },
+    {
+      "sample_id": "08_000055",
+      "identical": false,
+      "agreement_iou": 99.69923881109051,
+      "n_disagreeing": 1166,
+      "n_voxels": 2097152
+    }
+  ],
+  "timed_startup_scale_live_moge": 26.97912907370954,
+  "scored_startup_scale_cached_moge": 26.980392156862735,
+  "scale_relative_difference": 4.681485524194156e-05,
+  "all_identical": false,
+  "min_agreement_iou": 99.69923881109051,
+  "note": "the runtime pass calls MoGe-2 live while the accuracy pass read the frozen MoGe frame cache. The two startup scales therefore differ in the 5th decimal (relative 4.7e-5) and the grids are NOT bit-identical: 413-1166 of 2,097,152 voxels disagree per anchor (0.02-0.06 %), min agreement IoU 99.70 %. This is the live-vs-cached MoGe difference only; it does not establish bit-equality, it bounds the discrepancy between the timed and the scored configuration."
+}

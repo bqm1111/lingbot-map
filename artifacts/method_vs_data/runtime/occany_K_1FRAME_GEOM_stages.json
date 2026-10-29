@@ -1,0 +1,1958 @@
+{
+ "method": "occany",
+ "preset": "K_1FRAME_GEOM",
+ "preset_args": "--exp_name OccAny --image_size 512 --batch_gen_view 16 --dataset kitti --setting 1frame --gen -rot 60 -vpi 50 -fwd 1 -seed_trans 2 --boxes_folder resized_1216_box5_text5_DINOB --recon_conf_thres 2.0 --gen_conf_thres 2.0",
+ "dataset": "semantickitti",
+ "mode": "stages",
+ "n_anchors": 50,
+ "passes": 3,
+ "warmup": 3,
+ "anchors": [
+  "08_000085",
+  "08_000150",
+  "08_000220",
+  "08_000280",
+  "08_000360",
+  "08_000420",
+  "08_000505",
+  "08_000580",
+  "08_000670",
+  "08_000805",
+  "08_000870",
+  "08_000970",
+  "08_001020",
+  "08_001105",
+  "08_001215",
+  "08_001275",
+  "08_001350",
+  "08_001420",
+  "08_001500",
+  "08_001610",
+  "08_001640",
+  "08_001765",
+  "08_001830",
+  "08_001860",
+  "08_001970",
+  "08_002085",
+  "08_002140",
+  "08_002180",
+  "08_002320",
+  "08_002395",
+  "08_002485",
+  "08_002510",
+  "08_002585",
+  "08_002725",
+  "08_002740",
+  "08_002860",
+  "08_002905",
+  "08_003000",
+  "08_003095",
+  "08_003170",
+  "08_003250",
+  "08_003300",
+  "08_003380",
+  "08_003465",
+  "08_003540",
+  "08_003670",
+  "08_003740",
+  "08_003830",
+  "08_003880",
+  "08_003990"
+ ],
+ "latency_per_completed_occupancy_grid": {
+  "n": 150,
+  "mean_ms": 1316.3981350014608,
+  "median_ms": 1312.5353720970452,
+  "p95_ms": 1362.1791270328686,
+  "min_ms": 1256.2037259340286,
+  "max_ms": 1514.1689642332494,
+  "std_ms": 35.083900245013645,
+  "predictions_per_second": 0.7596485997747865
+ },
+ "per_pass_mean_ms": [
+  1303.3252408448607,
+  1328.4608964808285,
+  1317.408267678693
+ ],
+ "stages_mean_ms": {
+  "network_mean_ms": 796.1503728789587,
+  "assemble_outputs_mean_ms": 3.9911335489402213,
+  "dict_tail_and_recon_mask_mean_ms": 0.9365875398119291,
+  "voxelise_recon_only_NOT_REQUIRED_mean_ms": 250.7494256583353,
+  "voxelise_combined_mean_ms": 260.3967409953475,
+  "post_network_segment_mean_ms": 520.2477621225019,
+  "e2e_less_recon_only_voxelisation_mean_ms": 1065.6487093431253
+ },
+ "peak_memory": {
+  "allocated_bytes": 11179363328,
+  "reserved_bytes": 12975079424
+ },
+ "parameters": {
+  "counted_by_their_own_count_unique_parameters": {
+   "total": 651129550,
+   "requires_grad": 651129550
+  },
+  "note": "OccAny's own counter over encoder + decoder + raymap_encoder + gen_decoder; the released checkpoint is fully trained, so total and trained coincide for the modules it ships"
+ },
+ "configuration": {
+  "recon_view_idx": [
+   0
+  ],
+  "output_resolution": [
+   512,
+   160
+  ],
+  "voxel_size": 0.2,
+  "generated_view_shapes": {
+   "recon_pts3d": [
+    1,
+    1,
+    160,
+    512,
+    3
+   ],
+   "gen_pts3d": [
+    1,
+    150,
+    160,
+    512,
+    3
+   ]
+  },
+  "checkpoint": "/media/SSD1/occany_causal/occany_shadow/checkpoints/occany.pth",
+  "project": "/media/SSD1/occany_causal/occany_shadow"
+ },
+ "wall_clock_including_model_load_s": 220.20953901857138,
+ "machine": {
+  "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+  "gpu_total_memory_bytes": 101971722240,
+  "gpu_capability": "12.0",
+  "cuda_visible_devices": "3",
+  "python": "3.10.19",
+  "executable": "/home/minh/workspace/third_party/occany_env/bin/python",
+  "torch": "2.7.1+cu128",
+  "torch_cuda": "12.8",
+  "cudnn": 90701,
+  "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+  "driver": "580.95.05\n580.95.05\n580.95.05\n580.95.05",
+  "loadavg": [
+   9.87158203125,
+   8.96484375,
+   8.95263671875
+  ],
+  "cpu_count": 64
+ },
+ "boundary": {
+  "start": "collated host item: decoded, resized, normalised RGB + calibration",
+  "end": "combined reconstruction+generation occupancy grid, host numpy array",
+  "excluded": [
+   "their DataLoader workers' decode/resize/normalise, LiDAR and GT-depth projection, GT voxel label read, box files",
+   "pickle serialisation of the output",
+   "visualisation",
+   "model construction and checkpoint loading"
+  ],
+  "disclosed_overcount": "the timed region also contains the uint8 input-image conversion, the reconstruction-only voxelisation and its host copy, and the GT voxel-label host copy"
+ },
+ "per_item": [
+  {
+   "index": 3,
+   "e2e_s": 1.3260562191717327,
+   "stage_s": {
+    "network": 0.7956690359860659,
+    "assemble_outputs": 0.0038001122884452343,
+    "dict_tail_and_recon_mask": 0.0008509047329425812,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25368924532085657,
+    "voxelise_combined": 0.2675779010169208
+   },
+   "n_occupied": 128126
+  },
+  {
+   "index": 4,
+   "e2e_s": 1.304948279634118,
+   "stage_s": {
+    "network": 0.7784529407508671,
+    "assemble_outputs": 0.0038161640986800194,
+    "dict_tail_and_recon_mask": 0.001036922913044691,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25272854091599584,
+    "voxelise_combined": 0.26470491476356983
+   },
+   "n_occupied": 91843
+  },
+  {
+   "index": 5,
+   "e2e_s": 1.314618406817317,
+   "stage_s": {
+    "network": 0.7869675499387085,
+    "assemble_outputs": 0.004235504660755396,
+    "dict_tail_and_recon_mask": 0.001025509089231491,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25093373795971274,
+    "voxelise_combined": 0.26704644318670034
+   },
+   "n_occupied": 127238
+  },
+  {
+   "index": 6,
+   "e2e_s": 1.2947733509354293,
+   "stage_s": {
+    "network": 0.7777559589594603,
+    "assemble_outputs": 0.0041404832154512405,
+    "dict_tail_and_recon_mask": 0.0009895199909806252,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24839214188978076,
+    "voxelise_combined": 0.259136687964201
+   },
+   "n_occupied": 96995
+  },
+  {
+   "index": 7,
+   "e2e_s": 1.3197117149829865,
+   "stage_s": {
+    "network": 0.7965025487355888,
+    "assemble_outputs": 0.004178152419626713,
+    "dict_tail_and_recon_mask": 0.0009555588476359844,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2431973172351718,
+    "voxelise_combined": 0.2706478200852871
+   },
+   "n_occupied": 108150
+  },
+  {
+   "index": 8,
+   "e2e_s": 1.3031951556913555,
+   "stage_s": {
+    "network": 0.7765789870172739,
+    "assemble_outputs": 0.004053196869790554,
+    "dict_tail_and_recon_mask": 0.0008238637819886208,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2511655129492283,
+    "voxelise_combined": 0.2665853351354599
+   },
+   "n_occupied": 118634
+  },
+  {
+   "index": 9,
+   "e2e_s": 1.3060929379425943,
+   "stage_s": {
+    "network": 0.7731455420143902,
+    "assemble_outputs": 0.0041056908667087555,
+    "dict_tail_and_recon_mask": 0.0008453591726720333,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2544778911396861,
+    "voxelise_combined": 0.2694408819079399
+   },
+   "n_occupied": 113682
+  },
+  {
+   "index": 10,
+   "e2e_s": 1.2937254239805043,
+   "stage_s": {
+    "network": 0.7839449229650199,
+    "assemble_outputs": 0.004148031119257212,
+    "dict_tail_and_recon_mask": 0.0009381580166518688,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2535468530841172,
+    "voxelise_combined": 0.2470882199704647
+   },
+   "n_occupied": 70649
+  },
+  {
+   "index": 11,
+   "e2e_s": 1.269968319684267,
+   "stage_s": {
+    "network": 0.7667635837569833,
+    "assemble_outputs": 0.003851471934467554,
+    "dict_tail_and_recon_mask": 0.0009502861648797989,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24978639790788293,
+    "voxelise_combined": 0.24417473375797272
+   },
+   "n_occupied": 49553
+  },
+  {
+   "index": 12,
+   "e2e_s": 1.2742791529744864,
+   "stage_s": {
+    "network": 0.7595241190865636,
+    "assemble_outputs": 0.003662428818643093,
+    "dict_tail_and_recon_mask": 0.0009665237739682198,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2520600543357432,
+    "voxelise_combined": 0.2540315859951079
+   },
+   "n_occupied": 85584
+  },
+  {
+   "index": 13,
+   "e2e_s": 1.293343085795641,
+   "stage_s": {
+    "network": 0.7734296498820186,
+    "assemble_outputs": 0.0039238580502569675,
+    "dict_tail_and_recon_mask": 0.0008813641034066677,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24445989495143294,
+    "voxelise_combined": 0.26626436971127987
+   },
+   "n_occupied": 87315
+  },
+  {
+   "index": 14,
+   "e2e_s": 1.2882219720631838,
+   "stage_s": {
+    "network": 0.7773726559244096,
+    "assemble_outputs": 0.004031147342175245,
+    "dict_tail_and_recon_mask": 0.0008432627655565739,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2468936019577086,
+    "voxelise_combined": 0.25494264578446746
+   },
+   "n_occupied": 70865
+  },
+  {
+   "index": 15,
+   "e2e_s": 1.3232159190811217,
+   "stage_s": {
+    "network": 0.8025494189932942,
+    "assemble_outputs": 0.004172455053776503,
+    "dict_tail_and_recon_mask": 0.0008743642829358578,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24605559278279543,
+    "voxelise_combined": 0.26531286304816604
+   },
+   "n_occupied": 137219
+  },
+  {
+   "index": 16,
+   "e2e_s": 1.2931976239196956,
+   "stage_s": {
+    "network": 0.7823924319818616,
+    "assemble_outputs": 0.003832615911960602,
+    "dict_tail_and_recon_mask": 0.0008693658746778965,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24638904724270105,
+    "voxelise_combined": 0.25567390909418464
+   },
+   "n_occupied": 91476
+  },
+  {
+   "index": 17,
+   "e2e_s": 1.3085943539626896,
+   "stage_s": {
+    "network": 0.7925356798805296,
+    "assemble_outputs": 0.004279549233615398,
+    "dict_tail_and_recon_mask": 0.0009630960412323475,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2472179397009313,
+    "voxelise_combined": 0.2594434549100697
+   },
+   "n_occupied": 62490
+  },
+  {
+   "index": 18,
+   "e2e_s": 1.3302520280703902,
+   "stage_s": {
+    "network": 0.7888661772012711,
+    "assemble_outputs": 0.0038430411368608475,
+    "dict_tail_and_recon_mask": 0.0008829277940094471,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25438317004591227,
+    "voxelise_combined": 0.27781315380707383
+   },
+   "n_occupied": 149871
+  },
+  {
+   "index": 19,
+   "e2e_s": 1.322292314376682,
+   "stage_s": {
+    "network": 0.7962794830091298,
+    "assemble_outputs": 0.0037255622446537018,
+    "dict_tail_and_recon_mask": 0.0008332161232829094,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25021365378051996,
+    "voxelise_combined": 0.267068597022444
+   },
+   "n_occupied": 98062
+  },
+  {
+   "index": 20,
+   "e2e_s": 1.3000635588541627,
+   "stage_s": {
+    "network": 0.7900706985965371,
+    "assemble_outputs": 0.004236190114170313,
+    "dict_tail_and_recon_mask": 0.0008447850123047829,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24094400694593787,
+    "voxelise_combined": 0.2596876989118755
+   },
+   "n_occupied": 117046
+  },
+  {
+   "index": 21,
+   "e2e_s": 1.2562037259340286,
+   "stage_s": {
+    "network": 0.7757201078347862,
+    "assemble_outputs": 0.0037346985191106796,
+    "dict_tail_and_recon_mask": 0.000808588694781065,
+    "voxelise_recon_only_NOT_REQUIRED": 0.23535895301029086,
+    "voxelise_combined": 0.23659839062020183
+   },
+   "n_occupied": 68919
+  },
+  {
+   "index": 22,
+   "e2e_s": 1.292140570934862,
+   "stage_s": {
+    "network": 0.7861534608528018,
+    "assemble_outputs": 0.005476858001202345,
+    "dict_tail_and_recon_mask": 0.0008190670050680637,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24296671291813254,
+    "voxelise_combined": 0.25264031905680895
+   },
+   "n_occupied": 123488
+  },
+  {
+   "index": 23,
+   "e2e_s": 1.290175843052566,
+   "stage_s": {
+    "network": 0.7811062862165272,
+    "assemble_outputs": 0.0051827444694936275,
+    "dict_tail_and_recon_mask": 0.0009106062352657318,
+    "voxelise_recon_only_NOT_REQUIRED": 0.23980028508231044,
+    "voxelise_combined": 0.25894468324258924
+   },
+   "n_occupied": 168507
+  },
+  {
+   "index": 24,
+   "e2e_s": 1.3037033970467746,
+   "stage_s": {
+    "network": 0.7875826810486615,
+    "assemble_outputs": 0.00392856914550066,
+    "dict_tail_and_recon_mask": 0.0010478398762643337,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2444796208292246,
+    "voxelise_combined": 0.26238196110352874
+   },
+   "n_occupied": 112989
+  },
+  {
+   "index": 25,
+   "e2e_s": 1.302892463747412,
+   "stage_s": {
+    "network": 0.7833811999298632,
+    "assemble_outputs": 0.003960490692406893,
+    "dict_tail_and_recon_mask": 0.0008821012452244759,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24685253016650677,
+    "voxelise_combined": 0.26370337372645736
+   },
+   "n_occupied": 136815
+  },
+  {
+   "index": 26,
+   "e2e_s": 1.3105369391851127,
+   "stage_s": {
+    "network": 0.7886338289827108,
+    "assemble_outputs": 0.003932706080377102,
+    "dict_tail_and_recon_mask": 0.0009245993569493294,
+    "voxelise_recon_only_NOT_REQUIRED": 0.245204443577677,
+    "voxelise_combined": 0.26736450381577015
+   },
+   "n_occupied": 111089
+  },
+  {
+   "index": 27,
+   "e2e_s": 1.2787483274005353,
+   "stage_s": {
+    "network": 0.7820309363305569,
+    "assemble_outputs": 0.004027866758406162,
+    "dict_tail_and_recon_mask": 0.0008792169392108917,
+    "voxelise_recon_only_NOT_REQUIRED": 0.241798582021147,
+    "voxelise_combined": 0.24592160107567906
+   },
+   "n_occupied": 58640
+  },
+  {
+   "index": 28,
+   "e2e_s": 1.2956738690845668,
+   "stage_s": {
+    "network": 0.7816897579468787,
+    "assemble_outputs": 0.003907522186636925,
+    "dict_tail_and_recon_mask": 0.0009630350396037102,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2468129931949079,
+    "voxelise_combined": 0.2579415519721806
+   },
+   "n_occupied": 63984
+  },
+  {
+   "index": 29,
+   "e2e_s": 1.3023983701132238,
+   "stage_s": {
+    "network": 0.7950609191320837,
+    "assemble_outputs": 0.003912392072379589,
+    "dict_tail_and_recon_mask": 0.0009112181141972542,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24591674003750086,
+    "voxelise_combined": 0.25241255201399326
+   },
+   "n_occupied": 75905
+  },
+  {
+   "index": 30,
+   "e2e_s": 1.3018523249775171,
+   "stage_s": {
+    "network": 0.7852603732608259,
+    "assemble_outputs": 0.0043258038349449635,
+    "dict_tail_and_recon_mask": 0.0008569932542741299,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25095374789088964,
+    "voxelise_combined": 0.25613179756328464
+   },
+   "n_occupied": 80055
+  },
+  {
+   "index": 31,
+   "e2e_s": 1.2903487728908658,
+   "stage_s": {
+    "network": 0.7846723049879074,
+    "assemble_outputs": 0.003951258957386017,
+    "dict_tail_and_recon_mask": 0.0009899609722197056,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2539737690240145,
+    "voxelise_combined": 0.24255020869895816
+   },
+   "n_occupied": 52184
+  },
+  {
+   "index": 32,
+   "e2e_s": 1.272207093425095,
+   "stage_s": {
+    "network": 0.7698726579546928,
+    "assemble_outputs": 0.003788923379033804,
+    "dict_tail_and_recon_mask": 0.0010020970366895199,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24598941579461098,
+    "voxelise_combined": 0.24763319035992026
+   },
+   "n_occupied": 31390
+  },
+  {
+   "index": 33,
+   "e2e_s": 1.2799390517175198,
+   "stage_s": {
+    "network": 0.771890752017498,
+    "assemble_outputs": 0.0037627341225743294,
+    "dict_tail_and_recon_mask": 0.0008972189389169216,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2447145590558648,
+    "voxelise_combined": 0.254594586789608
+   },
+   "n_occupied": 121491
+  },
+  {
+   "index": 34,
+   "e2e_s": 1.2675723009742796,
+   "stage_s": {
+    "network": 0.7737993579357862,
+    "assemble_outputs": 0.003888887818902731,
+    "dict_tail_and_recon_mask": 0.0009145848453044891,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2386165731586516,
+    "voxelise_combined": 0.24613417824730277
+   },
+   "n_occupied": 92851
+  },
+  {
+   "index": 35,
+   "e2e_s": 1.298664673231542,
+   "stage_s": {
+    "network": 0.7870919010601938,
+    "assemble_outputs": 0.003906567115336657,
+    "dict_tail_and_recon_mask": 0.0009279856458306313,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24647120339795947,
+    "voxelise_combined": 0.25624494440853596
+   },
+   "n_occupied": 49003
+  },
+  {
+   "index": 36,
+   "e2e_s": 1.3104576328769326,
+   "stage_s": {
+    "network": 0.7893677656538785,
+    "assemble_outputs": 0.0037118573673069477,
+    "dict_tail_and_recon_mask": 0.0009759198874235153,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2504133740440011,
+    "voxelise_combined": 0.2619229438714683
+   },
+   "n_occupied": 87531
+  },
+  {
+   "index": 37,
+   "e2e_s": 1.3143000812269747,
+   "stage_s": {
+    "network": 0.7882217559963465,
+    "assemble_outputs": 0.003822694066911936,
+    "dict_tail_and_recon_mask": 0.0008694850839674473,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25789073668420315,
+    "voxelise_combined": 0.2595079164020717
+   },
+   "n_occupied": 78949
+  },
+  {
+   "index": 38,
+   "e2e_s": 1.3299198970198631,
+   "stage_s": {
+    "network": 0.7929202988743782,
+    "assemble_outputs": 0.0037226579152047634,
+    "dict_tail_and_recon_mask": 0.0008587990887463093,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25319011183455586,
+    "voxelise_combined": 0.27504507591947913
+   },
+   "n_occupied": 123235
+  },
+  {
+   "index": 39,
+   "e2e_s": 1.3125420790165663,
+   "stage_s": {
+    "network": 0.7936665550805628,
+    "assemble_outputs": 0.003909327555447817,
+    "dict_tail_and_recon_mask": 0.0009905542246997356,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2526961318217218,
+    "voxelise_combined": 0.25697334529832006
+   },
+   "n_occupied": 68987
+  },
+  {
+   "index": 40,
+   "e2e_s": 1.3270970489829779,
+   "stage_s": {
+    "network": 0.8220576741732657,
+    "assemble_outputs": 0.004380010534077883,
+    "dict_tail_and_recon_mask": 0.0010025412775576115,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24140158900991082,
+    "voxelise_combined": 0.25413070106878877
+   },
+   "n_occupied": 100824
+  },
+  {
+   "index": 41,
+   "e2e_s": 1.3014222979545593,
+   "stage_s": {
+    "network": 0.7942868238314986,
+    "assemble_outputs": 0.003717960324138403,
+    "dict_tail_and_recon_mask": 0.0011697737500071526,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24520640401169658,
+    "voxelise_combined": 0.25271897902712226
+   },
+   "n_occupied": 84288
+  },
+  {
+   "index": 42,
+   "e2e_s": 1.3073416966944933,
+   "stage_s": {
+    "network": 0.7852821266278625,
+    "assemble_outputs": 0.003813081420958042,
+    "dict_tail_and_recon_mask": 0.0008330466225743294,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25151215121150017,
+    "voxelise_combined": 0.26175918197259307
+   },
+   "n_occupied": 84687
+  },
+  {
+   "index": 43,
+   "e2e_s": 1.3321492308750749,
+   "stage_s": {
+    "network": 0.8080673571676016,
+    "assemble_outputs": 0.0037389779463410378,
+    "dict_tail_and_recon_mask": 0.0008844267576932907,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24973099306225777,
+    "voxelise_combined": 0.2654694449156523
+   },
+   "n_occupied": 68543
+  },
+  {
+   "index": 44,
+   "e2e_s": 1.2839246219955385,
+   "stage_s": {
+    "network": 0.7829183400608599,
+    "assemble_outputs": 0.0038232081569731236,
+    "dict_tail_and_recon_mask": 0.0009547979570925236,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24074230808764696,
+    "voxelise_combined": 0.25131182791665196
+   },
+   "n_occupied": 78855
+  },
+  {
+   "index": 45,
+   "e2e_s": 1.2793308063410223,
+   "stage_s": {
+    "network": 0.7771326168440282,
+    "assemble_outputs": 0.003824982326477766,
+    "dict_tail_and_recon_mask": 0.0009084618650376797,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24236381333321333,
+    "voxelise_combined": 0.2511190143413842
+   },
+   "n_occupied": 77518
+  },
+  {
+   "index": 46,
+   "e2e_s": 1.3150529540143907,
+   "stage_s": {
+    "network": 0.7969843363389373,
+    "assemble_outputs": 0.0039030895568430424,
+    "dict_tail_and_recon_mask": 0.0009485050104558468,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2527364888228476,
+    "voxelise_combined": 0.25639314809814095
+   },
+   "n_occupied": 77076
+  },
+  {
+   "index": 47,
+   "e2e_s": 1.3043814096599817,
+   "stage_s": {
+    "network": 0.8043023720383644,
+    "assemble_outputs": 0.004157473798841238,
+    "dict_tail_and_recon_mask": 0.0009636851027607918,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24571411171928048,
+    "voxelise_combined": 0.24474264681339264
+   },
+   "n_occupied": 50357
+  },
+  {
+   "index": 48,
+   "e2e_s": 1.3060835376381874,
+   "stage_s": {
+    "network": 0.7914736922830343,
+    "assemble_outputs": 0.004204119555652142,
+    "dict_tail_and_recon_mask": 0.0009146328084170818,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24590425938367844,
+    "voxelise_combined": 0.2593470476567745
+   },
+   "n_occupied": 54132
+  },
+  {
+   "index": 49,
+   "e2e_s": 1.3100213883444667,
+   "stage_s": {
+    "network": 0.7896540341898799,
+    "assemble_outputs": 0.004042079206556082,
+    "dict_tail_and_recon_mask": 0.0009056716226041317,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25504382513463497,
+    "voxelise_combined": 0.25627352902665734
+   },
+   "n_occupied": 60041
+  },
+  {
+   "index": 50,
+   "e2e_s": 1.3243968519382179,
+   "stage_s": {
+    "network": 0.8080040831118822,
+    "assemble_outputs": 0.005631455685943365,
+    "dict_tail_and_recon_mask": 0.0009790100157260895,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24952740501612425,
+    "voxelise_combined": 0.25616290885955095
+   },
+   "n_occupied": 78743
+  },
+  {
+   "index": 51,
+   "e2e_s": 1.2941937991417944,
+   "stage_s": {
+    "network": 0.7894759248010814,
+    "assemble_outputs": 0.003762122243642807,
+    "dict_tail_and_recon_mask": 0.00100795179605484,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24421212123706937,
+    "voxelise_combined": 0.25143579207360744
+   },
+   "n_occupied": 86299
+  },
+  {
+   "index": 52,
+   "e2e_s": 1.404039166867733,
+   "stage_s": {
+    "network": 0.9086373788304627,
+    "assemble_outputs": 0.0039164540357887745,
+    "dict_tail_and_recon_mask": 0.0009961184114217758,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2346748299896717,
+    "voxelise_combined": 0.25172902597114444
+   },
+   "n_occupied": 179074
+  },
+  {
+   "index": 53,
+   "e2e_s": 1.3077636389061809,
+   "stage_s": {
+    "network": 0.785610203165561,
+    "assemble_outputs": 0.0038383998908102512,
+    "dict_tail_and_recon_mask": 0.0008566537871956825,
+    "voxelise_recon_only_NOT_REQUIRED": 0.247371185105294,
+    "voxelise_combined": 0.2654985277913511
+   },
+   "n_occupied": 128126
+  },
+  {
+   "index": 54,
+   "e2e_s": 1.3054176419973373,
+   "stage_s": {
+    "network": 0.7847358528524637,
+    "assemble_outputs": 0.003825241234153509,
+    "dict_tail_and_recon_mask": 0.0009731301106512547,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24499036697670817,
+    "voxelise_combined": 0.2668301109224558
+   },
+   "n_occupied": 91843
+  },
+  {
+   "index": 55,
+   "e2e_s": 1.3137807240709662,
+   "stage_s": {
+    "network": 0.7860380602069199,
+    "assemble_outputs": 0.0036580502055585384,
+    "dict_tail_and_recon_mask": 0.0008928929455578327,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2523335828445852,
+    "voxelise_combined": 0.26667067408561707
+   },
+   "n_occupied": 127238
+  },
+  {
+   "index": 56,
+   "e2e_s": 1.306713568046689,
+   "stage_s": {
+    "network": 0.7889411179348826,
+    "assemble_outputs": 0.003807361237704754,
+    "dict_tail_and_recon_mask": 0.0010637729428708553,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24892997089773417,
+    "voxelise_combined": 0.2598768840543926
+   },
+   "n_occupied": 96995
+  },
+  {
+   "index": 57,
+   "e2e_s": 1.3229171349667013,
+   "stage_s": {
+    "network": 0.7956390879116952,
+    "assemble_outputs": 0.004160942044109106,
+    "dict_tail_and_recon_mask": 0.0008759638294577599,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24990194430574775,
+    "voxelise_combined": 0.2681375201791525
+   },
+   "n_occupied": 108150
+  },
+  {
+   "index": 58,
+   "e2e_s": 1.3176733651198447,
+   "stage_s": {
+    "network": 0.7917676661163568,
+    "assemble_outputs": 0.005638716276735067,
+    "dict_tail_and_recon_mask": 0.001124645583331585,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2562384712509811,
+    "voxelise_combined": 0.25877497904002666
+   },
+   "n_occupied": 118632
+  },
+  {
+   "index": 59,
+   "e2e_s": 1.3018552232533693,
+   "stage_s": {
+    "network": 0.7837131503038108,
+    "assemble_outputs": 0.0037797121331095695,
+    "dict_tail_and_recon_mask": 0.0008729668334126472,
+    "voxelise_recon_only_NOT_REQUIRED": 0.250067429151386,
+    "voxelise_combined": 0.25944815622642636
+   },
+   "n_occupied": 113682
+  },
+  {
+   "index": 60,
+   "e2e_s": 1.5141689642332494,
+   "stage_s": {
+    "network": 0.9948185039684176,
+    "assemble_outputs": 0.004195215180516243,
+    "dict_tail_and_recon_mask": 0.0008858600631356239,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25373764988034964,
+    "voxelise_combined": 0.25634349416941404
+   },
+   "n_occupied": 70650
+  },
+  {
+   "index": 61,
+   "e2e_s": 1.314937425777316,
+   "stage_s": {
+    "network": 0.7932505719363689,
+    "assemble_outputs": 0.0038635749369859695,
+    "dict_tail_and_recon_mask": 0.0009523229673504829,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2562678921967745,
+    "voxelise_combined": 0.2565251588821411
+   },
+   "n_occupied": 49553
+  },
+  {
+   "index": 62,
+   "e2e_s": 1.2852249457500875,
+   "stage_s": {
+    "network": 0.7814976507797837,
+    "assemble_outputs": 0.003799967933446169,
+    "dict_tail_and_recon_mask": 0.0008075223304331303,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24382901098579168,
+    "voxelise_combined": 0.2511156420223415
+   },
+   "n_occupied": 85584
+  },
+  {
+   "index": 63,
+   "e2e_s": 1.3191244858317077,
+   "stage_s": {
+    "network": 0.8156911097466946,
+    "assemble_outputs": 0.00391600513830781,
+    "dict_tail_and_recon_mask": 0.0009468239732086658,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24243551027029753,
+    "voxelise_combined": 0.25197345577180386
+   },
+   "n_occupied": 87315
+  },
+  {
+   "index": 64,
+   "e2e_s": 1.2830211310647428,
+   "stage_s": {
+    "network": 0.7834793198853731,
+    "assemble_outputs": 0.003785007167607546,
+    "dict_tail_and_recon_mask": 0.001009501051157713,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2424453697167337,
+    "voxelise_combined": 0.24830243410542607
+   },
+   "n_occupied": 70865
+  },
+  {
+   "index": 65,
+   "e2e_s": 1.3054667469114065,
+   "stage_s": {
+    "network": 0.7883615419268608,
+    "assemble_outputs": 0.004010331816971302,
+    "dict_tail_and_recon_mask": 0.0008406932465732098,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24630009708926082,
+    "voxelise_combined": 0.2613756349310279
+   },
+   "n_occupied": 137225
+  },
+  {
+   "index": 66,
+   "e2e_s": 1.3247260842472315,
+   "stage_s": {
+    "network": 0.7903879131190479,
+    "assemble_outputs": 0.0039633652195334435,
+    "dict_tail_and_recon_mask": 0.001129003707319498,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25670276302844286,
+    "voxelise_combined": 0.26820002822205424
+   },
+   "n_occupied": 91476
+  },
+  {
+   "index": 67,
+   "e2e_s": 1.3127850517630577,
+   "stage_s": {
+    "network": 0.7961623659357429,
+    "assemble_outputs": 0.004109140019863844,
+    "dict_tail_and_recon_mask": 0.000873141922056675,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2537176520563662,
+    "voxelise_combined": 0.2533118608407676
+   },
+   "n_occupied": 62490
+  },
+  {
+   "index": 68,
+   "e2e_s": 1.4887950159609318,
+   "stage_s": {
+    "network": 0.9709112769924104,
+    "assemble_outputs": 0.003945942968130112,
+    "dict_tail_and_recon_mask": 0.0008574007079005241,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2441237112507224,
+    "voxelise_combined": 0.26453359099105
+   },
+   "n_occupied": 149871
+  },
+  {
+   "index": 69,
+   "e2e_s": 1.3362447242252529,
+   "stage_s": {
+    "network": 0.803076661657542,
+    "assemble_outputs": 0.0040487502701580524,
+    "dict_tail_and_recon_mask": 0.0009537972509860992,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25760290399193764,
+    "voxelise_combined": 0.26619655592367053
+   },
+   "n_occupied": 98062
+  },
+  {
+   "index": 70,
+   "e2e_s": 1.322228035889566,
+   "stage_s": {
+    "network": 0.7932499898597598,
+    "assemble_outputs": 0.004211305174976587,
+    "dict_tail_and_recon_mask": 0.0008637839928269386,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25054673897102475,
+    "voxelise_combined": 0.26901024393737316
+   },
+   "n_occupied": 117048
+  },
+  {
+   "index": 71,
+   "e2e_s": 1.3287577661685646,
+   "stage_s": {
+    "network": 0.8007393339648843,
+    "assemble_outputs": 0.004104109015315771,
+    "dict_tail_and_recon_mask": 0.0009396220557391644,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25876179384067655,
+    "voxelise_combined": 0.26010520989075303
+   },
+   "n_occupied": 68919
+  },
+  {
+   "index": 72,
+   "e2e_s": 1.3035362660884857,
+   "stage_s": {
+    "network": 0.7875763629563153,
+    "assemble_outputs": 0.003657284192740917,
+    "dict_tail_and_recon_mask": 0.0009066639468073845,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2519982918165624,
+    "voxelise_combined": 0.25536715099588037
+   },
+   "n_occupied": 123487
+  },
+  {
+   "index": 73,
+   "e2e_s": 1.3360647782683372,
+   "stage_s": {
+    "network": 0.7937432308681309,
+    "assemble_outputs": 0.003937410190701485,
+    "dict_tail_and_recon_mask": 0.0009528910741209984,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25178410997614264,
+    "voxelise_combined": 0.2813972062431276
+   },
+   "n_occupied": 168504
+  },
+  {
+   "index": 74,
+   "e2e_s": 1.3183869030326605,
+   "stage_s": {
+    "network": 0.792966356035322,
+    "assemble_outputs": 0.003698403015732765,
+    "dict_tail_and_recon_mask": 0.001008237712085247,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2478557680733502,
+    "voxelise_combined": 0.26859204610809684
+   },
+   "n_occupied": 112987
+  },
+  {
+   "index": 75,
+   "e2e_s": 1.3247985527850688,
+   "stage_s": {
+    "network": 0.7859982782974839,
+    "assemble_outputs": 0.0037836222909390926,
+    "dict_tail_and_recon_mask": 0.0009960462339222431,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25734886107966304,
+    "voxelise_combined": 0.2725573438219726
+   },
+   "n_occupied": 136815
+  },
+  {
+   "index": 76,
+   "e2e_s": 1.479034342803061,
+   "stage_s": {
+    "network": 0.9255660041235387,
+    "assemble_outputs": 0.004005115479230881,
+    "dict_tail_and_recon_mask": 0.0009584971703588963,
+    "voxelise_recon_only_NOT_REQUIRED": 0.27165444614365697,
+    "voxelise_combined": 0.2724503888748586
+   },
+   "n_occupied": 111089
+  },
+  {
+   "index": 77,
+   "e2e_s": 1.3141893241554499,
+   "stage_s": {
+    "network": 0.7862910940311849,
+    "assemble_outputs": 0.0036345277912914753,
+    "dict_tail_and_recon_mask": 0.0008996953256428242,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25639390386641026,
+    "voxelise_combined": 0.26300087943673134
+   },
+   "n_occupied": 58642
+  },
+  {
+   "index": 78,
+   "e2e_s": 1.3208121727220714,
+   "stage_s": {
+    "network": 0.7892840746790171,
+    "assemble_outputs": 0.0037441980093717575,
+    "dict_tail_and_recon_mask": 0.0009071221575140953,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2574634701013565,
+    "voxelise_combined": 0.2653765878640115
+   },
+   "n_occupied": 63984
+  },
+  {
+   "index": 79,
+   "e2e_s": 1.4601325383409858,
+   "stage_s": {
+    "network": 0.9278756049461663,
+    "assemble_outputs": 0.005865234415978193,
+    "dict_tail_and_recon_mask": 0.0011034556664526463,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2604310130700469,
+    "voxelise_combined": 0.26095570996403694
+   },
+   "n_occupied": 75901
+  },
+  {
+   "index": 80,
+   "e2e_s": 1.318228027317673,
+   "stage_s": {
+    "network": 0.7901078299619257,
+    "assemble_outputs": 0.004285365343093872,
+    "dict_tail_and_recon_mask": 0.0009415219537913799,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2522670738399029,
+    "voxelise_combined": 0.2665806142613292
+   },
+   "n_occupied": 80055
+  },
+  {
+   "index": 81,
+   "e2e_s": 1.3097474398091435,
+   "stage_s": {
+    "network": 0.791505478322506,
+    "assemble_outputs": 0.00383296562358737,
+    "dict_tail_and_recon_mask": 0.00088074104860425,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2525667818263173,
+    "voxelise_combined": 0.25688124913722277
+   },
+   "n_occupied": 52184
+  },
+  {
+   "index": 82,
+   "e2e_s": 1.2871788600459695,
+   "stage_s": {
+    "network": 0.779076736420393,
+    "assemble_outputs": 0.0036579566076397896,
+    "dict_tail_and_recon_mask": 0.0008165258914232254,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25022705318406224,
+    "voxelise_combined": 0.24912499776110053
+   },
+   "n_occupied": 31390
+  },
+  {
+   "index": 83,
+   "e2e_s": 1.2877549640834332,
+   "stage_s": {
+    "network": 0.7799459439702332,
+    "assemble_outputs": 0.0037914621643722057,
+    "dict_tail_and_recon_mask": 0.001089625060558319,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2454170947894454,
+    "voxelise_combined": 0.25355343613773584
+   },
+   "n_occupied": 121491
+  },
+  {
+   "index": 84,
+   "e2e_s": 1.290236297994852,
+   "stage_s": {
+    "network": 0.7759676370769739,
+    "assemble_outputs": 0.003788988571614027,
+    "dict_tail_and_recon_mask": 0.0012501361779868603,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2475465489551425,
+    "voxelise_combined": 0.2576890899799764
+   },
+   "n_occupied": 92851
+  },
+  {
+   "index": 85,
+   "e2e_s": 1.299891049042344,
+   "stage_s": {
+    "network": 0.7903907652944326,
+    "assemble_outputs": 0.0038377614691853523,
+    "dict_tail_and_recon_mask": 0.000863916240632534,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2521883468143642,
+    "voxelise_combined": 0.24846762232482433
+   },
+   "n_occupied": 49005
+  },
+  {
+   "index": 86,
+   "e2e_s": 1.3125880910083652,
+   "stage_s": {
+    "network": 0.7896023038774729,
+    "assemble_outputs": 0.0036045731976628304,
+    "dict_tail_and_recon_mask": 0.0008459589444100857,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25124304415658116,
+    "voxelise_combined": 0.2631733827292919
+   },
+   "n_occupied": 87532
+  },
+  {
+   "index": 87,
+   "e2e_s": 1.3386973422020674,
+   "stage_s": {
+    "network": 0.7899009096436203,
+    "assemble_outputs": 0.0039406465366482735,
+    "dict_tail_and_recon_mask": 0.001069092657417059,
+    "voxelise_recon_only_NOT_REQUIRED": 0.26345271803438663,
+    "voxelise_combined": 0.27592787332832813
+   },
+   "n_occupied": 78949
+  },
+  {
+   "index": 88,
+   "e2e_s": 1.3383537409827113,
+   "stage_s": {
+    "network": 0.7951859030872583,
+    "assemble_outputs": 0.00381736783310771,
+    "dict_tail_and_recon_mask": 0.000795471016317606,
+    "voxelise_recon_only_NOT_REQUIRED": 0.26245396211743355,
+    "voxelise_combined": 0.27194946724921465
+   },
+   "n_occupied": 123235
+  },
+  {
+   "index": 89,
+   "e2e_s": 1.3292086129076779,
+   "stage_s": {
+    "network": 0.7937099649570882,
+    "assemble_outputs": 0.0037731467746198177,
+    "dict_tail_and_recon_mask": 0.0010315999388694763,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2589713870547712,
+    "voxelise_combined": 0.26767864916473627
+   },
+   "n_occupied": 68987
+  },
+  {
+   "index": 90,
+   "e2e_s": 1.2992459977976978,
+   "stage_s": {
+    "network": 0.7962110778316855,
+    "assemble_outputs": 0.0041567240841686726,
+    "dict_tail_and_recon_mask": 0.0009183529764413834,
+    "voxelise_recon_only_NOT_REQUIRED": 0.23954410525038838,
+    "voxelise_combined": 0.25440136482939124
+   },
+   "n_occupied": 100825
+  },
+  {
+   "index": 91,
+   "e2e_s": 1.3185174418613315,
+   "stage_s": {
+    "network": 0.7945634759962559,
+    "assemble_outputs": 0.004267239943146706,
+    "dict_tail_and_recon_mask": 0.0008583990857005119,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25222544511780143,
+    "voxelise_combined": 0.2623840318992734
+   },
+   "n_occupied": 84288
+  },
+  {
+   "index": 92,
+   "e2e_s": 1.3189121261239052,
+   "stage_s": {
+    "network": 0.7980783269740641,
+    "assemble_outputs": 0.003881690092384815,
+    "dict_tail_and_recon_mask": 0.0009136931039392948,
+    "voxelise_recon_only_NOT_REQUIRED": 0.254971272777766,
+    "voxelise_combined": 0.2568577020429075
+   },
+   "n_occupied": 84687
+  },
+  {
+   "index": 93,
+   "e2e_s": 1.2902120742946863,
+   "stage_s": {
+    "network": 0.7833337970077991,
+    "assemble_outputs": 0.005268031265586615,
+    "dict_tail_and_recon_mask": 0.0008594710379838943,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2458455697633326,
+    "voxelise_combined": 0.2507292632944882
+   },
+   "n_occupied": 68543
+  },
+  {
+   "index": 94,
+   "e2e_s": 1.3588013998232782,
+   "stage_s": {
+    "network": 0.8448690483346581,
+    "assemble_outputs": 0.0038230065256357193,
+    "dict_tail_and_recon_mask": 0.0009847190231084824,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24807623401284218,
+    "voxelise_combined": 0.25693105394020677
+   },
+   "n_occupied": 78853
+  },
+  {
+   "index": 95,
+   "e2e_s": 1.2945949151180685,
+   "stage_s": {
+    "network": 0.7737154299393296,
+    "assemble_outputs": 0.0038109594024717808,
+    "dict_tail_and_recon_mask": 0.0009046816267073154,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2536773490719497,
+    "voxelise_combined": 0.2585110319778323
+   },
+   "n_occupied": 77518
+  },
+  {
+   "index": 96,
+   "e2e_s": 1.311860510148108,
+   "stage_s": {
+    "network": 0.7928223651833832,
+    "assemble_outputs": 0.0037716426886618137,
+    "dict_tail_and_recon_mask": 0.001094774343073368,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24934226600453258,
+    "voxelise_combined": 0.26080933725461364
+   },
+   "n_occupied": 77076
+  },
+  {
+   "index": 97,
+   "e2e_s": 1.3318795203231275,
+   "stage_s": {
+    "network": 0.8102215412072837,
+    "assemble_outputs": 0.003987669944763184,
+    "dict_tail_and_recon_mask": 0.0009284499101340771,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25871392199769616,
+    "voxelise_combined": 0.2539418670348823
+   },
+   "n_occupied": 50357
+  },
+  {
+   "index": 98,
+   "e2e_s": 1.313956432044506,
+   "stage_s": {
+    "network": 0.7871750919148326,
+    "assemble_outputs": 0.004130510147660971,
+    "dict_tail_and_recon_mask": 0.0009501120075583458,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2513414639979601,
+    "voxelise_combined": 0.2663731030188501
+   },
+   "n_occupied": 54132
+  },
+  {
+   "index": 99,
+   "e2e_s": 1.323943804949522,
+   "stage_s": {
+    "network": 0.79386149905622,
+    "assemble_outputs": 0.0037802462466061115,
+    "dict_tail_and_recon_mask": 0.0009287619031965733,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2584208007901907,
+    "voxelise_combined": 0.2627375666052103
+   },
+   "n_occupied": 60041
+  },
+  {
+   "index": 100,
+   "e2e_s": 1.3298224601894617,
+   "stage_s": {
+    "network": 0.8015022361651063,
+    "assemble_outputs": 0.0044196490198373795,
+    "dict_tail_and_recon_mask": 0.0010545351542532444,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25527109391987324,
+    "voxelise_combined": 0.26328184688463807
+   },
+   "n_occupied": 78743
+  },
+  {
+   "index": 101,
+   "e2e_s": 1.3191855289041996,
+   "stage_s": {
+    "network": 0.799592284951359,
+    "assemble_outputs": 0.004010619129985571,
+    "dict_tail_and_recon_mask": 0.0008766897954046726,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2497696690261364,
+    "voxelise_combined": 0.2606684840284288
+   },
+   "n_occupied": 86299
+  },
+  {
+   "index": 102,
+   "e2e_s": 1.3316716346889734,
+   "stage_s": {
+    "network": 0.7963441661559045,
+    "assemble_outputs": 0.0038608298636972904,
+    "dict_tail_and_recon_mask": 0.0009634546004235744,
+    "voxelise_recon_only_NOT_REQUIRED": 0.259834130294621,
+    "voxelise_combined": 0.2663893327116966
+   },
+   "n_occupied": 179070
+  },
+  {
+   "index": 103,
+   "e2e_s": 1.3051650798879564,
+   "stage_s": {
+    "network": 0.7933007958345115,
+    "assemble_outputs": 0.0036948053166270256,
+    "dict_tail_and_recon_mask": 0.0009553437121212482,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24424072913825512,
+    "voxelise_combined": 0.2586574237793684
+   },
+   "n_occupied": 128126
+  },
+  {
+   "index": 104,
+   "e2e_s": 1.312528665177524,
+   "stage_s": {
+    "network": 0.7960845059715211,
+    "assemble_outputs": 0.003591122105717659,
+    "dict_tail_and_recon_mask": 0.0010417741723358631,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2477232189849019,
+    "voxelise_combined": 0.25992918526753783
+   },
+   "n_occupied": 91843
+  },
+  {
+   "index": 105,
+   "e2e_s": 1.306438705418259,
+   "stage_s": {
+    "network": 0.7902777837589383,
+    "assemble_outputs": 0.0038970266468822956,
+    "dict_tail_and_recon_mask": 0.0008635716512799263,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24574213195592165,
+    "voxelise_combined": 0.26137211499735713
+   },
+   "n_occupied": 127238
+  },
+  {
+   "index": 106,
+   "e2e_s": 1.314496098086238,
+   "stage_s": {
+    "network": 0.7943808878771961,
+    "assemble_outputs": 0.003740814048796892,
+    "dict_tail_and_recon_mask": 0.0008565499447286129,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25075119733810425,
+    "voxelise_combined": 0.2605960317887366
+   },
+   "n_occupied": 96995
+  },
+  {
+   "index": 107,
+   "e2e_s": 1.3317353809252381,
+   "stage_s": {
+    "network": 0.7946422309614718,
+    "assemble_outputs": 0.003914876841008663,
+    "dict_tail_and_recon_mask": 0.0009799590334296227,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25747213000431657,
+    "voxelise_combined": 0.2703168480657041
+   },
+   "n_occupied": 108150
+  },
+  {
+   "index": 108,
+   "e2e_s": 1.318480373825878,
+   "stage_s": {
+    "network": 0.7937116799876094,
+    "assemble_outputs": 0.004130423069000244,
+    "dict_tail_and_recon_mask": 0.0008246349170804024,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2538210800848901,
+    "voxelise_combined": 0.26192274084314704
+   },
+   "n_occupied": 118632
+  },
+  {
+   "index": 109,
+   "e2e_s": 1.3102325429208577,
+   "stage_s": {
+    "network": 0.7816755003295839,
+    "assemble_outputs": 0.003787446301430464,
+    "dict_tail_and_recon_mask": 0.001149086281657219,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2556402860209346,
+    "voxelise_combined": 0.2638311218470335
+   },
+   "n_occupied": 113682
+  },
+  {
+   "index": 110,
+   "e2e_s": 1.3116041491739452,
+   "stage_s": {
+    "network": 0.7975044469349086,
+    "assemble_outputs": 0.0043201451189816,
+    "dict_tail_and_recon_mask": 0.0008873827755451202,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24576592538505793,
+    "voxelise_combined": 0.2591080260463059
+   },
+   "n_occupied": 70649
+  },
+  {
+   "index": 111,
+   "e2e_s": 1.3302087038755417,
+   "stage_s": {
+    "network": 0.8010789579711854,
+    "assemble_outputs": 0.003954064100980759,
+    "dict_tail_and_recon_mask": 0.0009689247235655785,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25858695711940527,
+    "voxelise_combined": 0.26155939511954784
+   },
+   "n_occupied": 49552
+  },
+  {
+   "index": 112,
+   "e2e_s": 1.3133805361576378,
+   "stage_s": {
+    "network": 0.7859190506860614,
+    "assemble_outputs": 0.004106251522898674,
+    "dict_tail_and_recon_mask": 0.000969182699918747,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2525074863806367,
+    "voxelise_combined": 0.26579328114166856
+   },
+   "n_occupied": 85583
+  },
+  {
+   "index": 113,
+   "e2e_s": 1.3130205143243074,
+   "stage_s": {
+    "network": 0.7963972287252545,
+    "assemble_outputs": 0.004027713555842638,
+    "dict_tail_and_recon_mask": 0.0008282470516860485,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2495312630198896,
+    "voxelise_combined": 0.2582339863292873
+   },
+   "n_occupied": 87315
+  },
+  {
+   "index": 114,
+   "e2e_s": 1.2965854005888104,
+   "stage_s": {
+    "network": 0.7819794458337128,
+    "assemble_outputs": 0.0038031269796192646,
+    "dict_tail_and_recon_mask": 0.0012099971063435078,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25072825979441404,
+    "voxelise_combined": 0.2548324977979064
+   },
+   "n_occupied": 70864
+  },
+  {
+   "index": 115,
+   "e2e_s": 1.305020194966346,
+   "stage_s": {
+    "network": 0.7903618752025068,
+    "assemble_outputs": 0.0037736655212938786,
+    "dict_tail_and_recon_mask": 0.0009348313324153423,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24644590262323618,
+    "voxelise_combined": 0.25919291423633695
+   },
+   "n_occupied": 137227
+  },
+  {
+   "index": 116,
+   "e2e_s": 1.3011711668223143,
+   "stage_s": {
+    "network": 0.7980462987907231,
+    "assemble_outputs": 0.0037378324195742607,
+    "dict_tail_and_recon_mask": 0.0008374368771910667,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24275037785992026,
+    "voxelise_combined": 0.2517802668735385
+   },
+   "n_occupied": 91476
+  },
+  {
+   "index": 117,
+   "e2e_s": 1.3671879572793841,
+   "stage_s": {
+    "network": 0.8375891703180969,
+    "assemble_outputs": 0.003759956918656826,
+    "dict_tail_and_recon_mask": 0.0010137436911463737,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2631441690027714,
+    "voxelise_combined": 0.25748424604535103
+   },
+   "n_occupied": 62490
+  },
+  {
+   "index": 118,
+   "e2e_s": 1.3453374211676419,
+   "stage_s": {
+    "network": 0.8044664021581411,
+    "assemble_outputs": 0.0039891949854791164,
+    "dict_tail_and_recon_mask": 0.0009747040458023548,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2551987636834383,
+    "voxelise_combined": 0.27622267231345177
+   },
+   "n_occupied": 149871
+  },
+  {
+   "index": 119,
+   "e2e_s": 1.3225625799968839,
+   "stage_s": {
+    "network": 0.7971476060338318,
+    "assemble_outputs": 0.004106678068637848,
+    "dict_tail_and_recon_mask": 0.0011040889658033848,
+    "voxelise_recon_only_NOT_REQUIRED": 0.252878509927541,
+    "voxelise_combined": 0.2631201888434589
+   },
+   "n_occupied": 98062
+  },
+  {
+   "index": 120,
+   "e2e_s": 1.382909594103694,
+   "stage_s": {
+    "network": 0.8519344227388501,
+    "assemble_outputs": 0.0043100835755467415,
+    "dict_tail_and_recon_mask": 0.0008778986521065235,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2521069264039397,
+    "voxelise_combined": 0.2694880999624729
+   },
+   "n_occupied": 117049
+  },
+  {
+   "index": 121,
+   "e2e_s": 1.2980457693338394,
+   "stage_s": {
+    "network": 0.8010622239671648,
+    "assemble_outputs": 0.003904936369508505,
+    "dict_tail_and_recon_mask": 0.0008654426783323288,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24035789305344224,
+    "voxelise_combined": 0.24785519298166037
+   },
+   "n_occupied": 68919
+  },
+  {
+   "index": 122,
+   "e2e_s": 1.3161109872162342,
+   "stage_s": {
+    "network": 0.8013158692047,
+    "assemble_outputs": 0.0035778828896582127,
+    "dict_tail_and_recon_mask": 0.0008892752230167389,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24753068666905165,
+    "voxelise_combined": 0.25883091101422906
+   },
+   "n_occupied": 123487
+  },
+  {
+   "index": 123,
+   "e2e_s": 1.324613739270717,
+   "stage_s": {
+    "network": 0.8007275117561221,
+    "assemble_outputs": 0.00395872350782156,
+    "dict_tail_and_recon_mask": 0.0008457638323307037,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2513042208738625,
+    "voxelise_combined": 0.26353570632636547
+   },
+   "n_occupied": 168507
+  },
+  {
+   "index": 124,
+   "e2e_s": 1.3249298892915249,
+   "stage_s": {
+    "network": 0.7939166878350079,
+    "assemble_outputs": 0.005908780265599489,
+    "dict_tail_and_recon_mask": 0.0009303749538958073,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25248348293825984,
+    "voxelise_combined": 0.26726824417710304
+   },
+   "n_occupied": 112987
+  },
+  {
+   "index": 125,
+   "e2e_s": 1.3079464449547231,
+   "stage_s": {
+    "network": 0.7841891339048743,
+    "assemble_outputs": 0.0035934532061219215,
+    "dict_tail_and_recon_mask": 0.0008137826807796955,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25101261818781495,
+    "voxelise_combined": 0.26419899705797434
+   },
+   "n_occupied": 136815
+  },
+  {
+   "index": 126,
+   "e2e_s": 1.3198189339600503,
+   "stage_s": {
+    "network": 0.789860890712589,
+    "assemble_outputs": 0.003916624002158642,
+    "dict_tail_and_recon_mask": 0.0008582542650401592,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2494374867528677,
+    "voxelise_combined": 0.27160055516287684
+   },
+   "n_occupied": 111089
+  },
+  {
+   "index": 127,
+   "e2e_s": 1.3145150900818408,
+   "stage_s": {
+    "network": 0.7893979279324412,
+    "assemble_outputs": 0.003750360105186701,
+    "dict_tail_and_recon_mask": 0.0009209811687469482,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2555834208615124,
+    "voxelise_combined": 0.2609001090750098
+   },
+   "n_occupied": 58642
+  },
+  {
+   "index": 128,
+   "e2e_s": 1.3133754236623645,
+   "stage_s": {
+    "network": 0.7925960067659616,
+    "assemble_outputs": 0.004013211000710726,
+    "dict_tail_and_recon_mask": 0.0011002658866345882,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2533663413487375,
+    "voxelise_combined": 0.258119560778141
+   },
+   "n_occupied": 63983
+  },
+  {
+   "index": 129,
+   "e2e_s": 1.2930447752587497,
+   "stage_s": {
+    "network": 0.7861860203556716,
+    "assemble_outputs": 0.0037904586642980576,
+    "dict_tail_and_recon_mask": 0.0009303530678153038,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2469607600942254,
+    "voxelise_combined": 0.2511381199583411
+   },
+   "n_occupied": 75901
+  },
+  {
+   "index": 130,
+   "e2e_s": 1.3211315963417292,
+   "stage_s": {
+    "network": 0.7898324127309024,
+    "assemble_outputs": 0.00444099260494113,
+    "dict_tail_and_recon_mask": 0.000950903631746769,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2531897812150419,
+    "voxelise_combined": 0.2683975021354854
+   },
+   "n_occupied": 80055
+  },
+  {
+   "index": 131,
+   "e2e_s": 1.307885873131454,
+   "stage_s": {
+    "network": 0.7866039471700788,
+    "assemble_outputs": 0.00407447712495923,
+    "dict_tail_and_recon_mask": 0.00100624468177557,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2541926591657102,
+    "voxelise_combined": 0.25779866287484765
+   },
+   "n_occupied": 52184
+  },
+  {
+   "index": 132,
+   "e2e_s": 1.2987593240104616,
+   "stage_s": {
+    "network": 0.7905751257203519,
+    "assemble_outputs": 0.0039527323096990585,
+    "dict_tail_and_recon_mask": 0.0008423887193202972,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24948204727843404,
+    "voxelise_combined": 0.2498015183955431
+   },
+   "n_occupied": 31390
+  },
+  {
+   "index": 133,
+   "e2e_s": 1.3086686539463699,
+   "stage_s": {
+    "network": 0.7840064540505409,
+    "assemble_outputs": 0.0036592381075024605,
+    "dict_tail_and_recon_mask": 0.0009754239581525326,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2582391919568181,
+    "voxelise_combined": 0.25756173813715577
+   },
+   "n_occupied": 121491
+  },
+  {
+   "index": 134,
+   "e2e_s": 1.2817259076982737,
+   "stage_s": {
+    "network": 0.7714125737547874,
+    "assemble_outputs": 0.003915593959391117,
+    "dict_tail_and_recon_mask": 0.0010003652423620224,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2509609740227461,
+    "voxelise_combined": 0.2504810276441276
+   },
+   "n_occupied": 92851
+  },
+  {
+   "index": 135,
+   "e2e_s": 1.284175924025476,
+   "stage_s": {
+    "network": 0.7759102382697165,
+    "assemble_outputs": 0.0035440977662801743,
+    "dict_tail_and_recon_mask": 0.0009590620175004005,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2435219450853765,
+    "voxelise_combined": 0.25635518971830606
+   },
+   "n_occupied": 49000
+  },
+  {
+   "index": 136,
+   "e2e_s": 1.3095043417997658,
+   "stage_s": {
+    "network": 0.7932703690603375,
+    "assemble_outputs": 0.003746254835277796,
+    "dict_tail_and_recon_mask": 0.0008856612257659435,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24845807859674096,
+    "voxelise_combined": 0.25906188879162073
+   },
+   "n_occupied": 87537
+  },
+  {
+   "index": 137,
+   "e2e_s": 1.3175647598691285,
+   "stage_s": {
+    "network": 0.7838094541803002,
+    "assemble_outputs": 0.004138173535466194,
+    "dict_tail_and_recon_mask": 0.0008743191137909889,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24715373711660504,
+    "voxelise_combined": 0.27749985875561833
+   },
+   "n_occupied": 78949
+  },
+  {
+   "index": 138,
+   "e2e_s": 1.3393522170372307,
+   "stage_s": {
+    "network": 0.7925703376531601,
+    "assemble_outputs": 0.0037360922433435917,
+    "dict_tail_and_recon_mask": 0.0008179950527846813,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2590462388470769,
+    "voxelise_combined": 0.2789865923114121
+   },
+   "n_occupied": 123235
+  },
+  {
+   "index": 139,
+   "e2e_s": 1.3159927329979837,
+   "stage_s": {
+    "network": 0.79371159337461,
+    "assemble_outputs": 0.003749570343643427,
+    "dict_tail_and_recon_mask": 0.0009056511335074902,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25313326716423035,
+    "voxelise_combined": 0.26019441429525614
+   },
+   "n_occupied": 68987
+  },
+  {
+   "index": 140,
+   "e2e_s": 1.3398632989265025,
+   "stage_s": {
+    "network": 0.789027466904372,
+    "assemble_outputs": 0.004289060831069946,
+    "dict_tail_and_recon_mask": 0.0010351701639592648,
+    "voxelise_recon_only_NOT_REQUIRED": 0.26620433619245887,
+    "voxelise_combined": 0.2749556740745902
+   },
+   "n_occupied": 100825
+  },
+  {
+   "index": 141,
+   "e2e_s": 1.318052789196372,
+   "stage_s": {
+    "network": 0.786035134922713,
+    "assemble_outputs": 0.00391728337854147,
+    "dict_tail_and_recon_mask": 0.0008747191168367863,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2490544719621539,
+    "voxelise_combined": 0.27378315292298794
+   },
+   "n_occupied": 84286
+  },
+  {
+   "index": 142,
+   "e2e_s": 1.3193039861507714,
+   "stage_s": {
+    "network": 0.7922240700572729,
+    "assemble_outputs": 0.0038221622817218304,
+    "dict_tail_and_recon_mask": 0.0008338158950209618,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25234333612024784,
+    "voxelise_combined": 0.26599829690530896
+   },
+   "n_occupied": 84687
+  },
+  {
+   "index": 143,
+   "e2e_s": 1.30985944904387,
+   "stage_s": {
+    "network": 0.7861123899929225,
+    "assemble_outputs": 0.004216164816170931,
+    "dict_tail_and_recon_mask": 0.0010254653170704842,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25895457388833165,
+    "voxelise_combined": 0.25532102724537253
+   },
+   "n_occupied": 68543
+  },
+  {
+   "index": 144,
+   "e2e_s": 1.2806062903255224,
+   "stage_s": {
+    "network": 0.7790618781000376,
+    "assemble_outputs": 0.0036399168893694878,
+    "dict_tail_and_recon_mask": 0.0008746269159018993,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24043273739516735,
+    "voxelise_combined": 0.25259419716894627
+   },
+   "n_occupied": 78853
+  },
+  {
+   "index": 145,
+   "e2e_s": 1.310224930755794,
+   "stage_s": {
+    "network": 0.7730108429677784,
+    "assemble_outputs": 0.003742638975381851,
+    "dict_tail_and_recon_mask": 0.001105787232518196,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2611517049372196,
+    "voxelise_combined": 0.26703022001311183
+   },
+   "n_occupied": 77519
+  },
+  {
+   "index": 146,
+   "e2e_s": 1.3649427220225334,
+   "stage_s": {
+    "network": 0.8350205989554524,
+    "assemble_outputs": 0.0038874661549925804,
+    "dict_tail_and_recon_mask": 0.0008032191544771194,
+    "voxelise_recon_only_NOT_REQUIRED": 0.259046183899045,
+    "voxelise_combined": 0.2620948958210647
+   },
+   "n_occupied": 77076
+  },
+  {
+   "index": 147,
+   "e2e_s": 1.2864654930308461,
+   "stage_s": {
+    "network": 0.7784361052326858,
+    "assemble_outputs": 0.0036129136569797993,
+    "dict_tail_and_recon_mask": 0.0008548540063202381,
+    "voxelise_recon_only_NOT_REQUIRED": 0.24798290012404323,
+    "voxelise_combined": 0.2514574062079191
+   },
+   "n_occupied": 50357
+  },
+  {
+   "index": 148,
+   "e2e_s": 1.3009042656049132,
+   "stage_s": {
+    "network": 0.784610940143466,
+    "assemble_outputs": 0.0038900338113307953,
+    "dict_tail_and_recon_mask": 0.0008795359171926975,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2520486549474299,
+    "voxelise_combined": 0.25522399693727493
+   },
+   "n_occupied": 54132
+  },
+  {
+   "index": 149,
+   "e2e_s": 1.3546160869300365,
+   "stage_s": {
+    "network": 0.8341225078329444,
+    "assemble_outputs": 0.003926764242351055,
+    "dict_tail_and_recon_mask": 0.0009241658262908459,
+    "voxelise_recon_only_NOT_REQUIRED": 0.25211595790460706,
+    "voxelise_combined": 0.25940654799342155
+   },
+   "n_occupied": 60041
+  },
+  {
+   "index": 150,
+   "e2e_s": 1.33775300020352,
+   "stage_s": {
+    "network": 0.7936309473589063,
+    "assemble_outputs": 0.003701496869325638,
+    "dict_tail_and_recon_mask": 0.0012012091465294361,
+    "voxelise_recon_only_NOT_REQUIRED": 0.27109290193766356,
+    "voxelise_combined": 0.2640862949192524
+   },
+   "n_occupied": 78737
+  },
+  {
+   "index": 151,
+   "e2e_s": 1.3338988260366023,
+   "stage_s": {
+    "network": 0.7907106950879097,
+    "assemble_outputs": 0.0038748849183321,
+    "dict_tail_and_recon_mask": 0.0009795366786420345,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2609072681516409,
+    "voxelise_combined": 0.2732393303886056
+   },
+   "n_occupied": 86299
+  },
+  {
+   "index": 152,
+   "e2e_s": 1.3286947971209884,
+   "stage_s": {
+    "network": 0.7928420421667397,
+    "assemble_outputs": 0.0038411496207118034,
+    "dict_tail_and_recon_mask": 0.0008998843841254711,
+    "voxelise_recon_only_NOT_REQUIRED": 0.2566220508888364,
+    "voxelise_combined": 0.27044184692204
+   },
+   "n_occupied": 179074
+  }
+ ]
+}

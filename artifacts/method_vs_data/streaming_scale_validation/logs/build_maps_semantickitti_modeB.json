@@ -1,0 +1,5694 @@
+{
+ "dataset": "semantickitti",
+ "mode": "B",
+ "n_segments": 1,
+ "n_anchors_written": 801,
+ "segments_without_a_valid_startup_scale": [],
+ "lingbot_load": {
+  "missing_keys": 0,
+  "unexpected_keys": 0
+ },
+ "keyframe_interval_rule": "gate7b.replay.keyframe_interval_for",
+ "moge_source": "frozen gate-7B frame cache (accuracy run); runtime calls the model",
+ "seconds": 70.94553518295288,
+ "segment_logs": [
+  {
+   "segment": "08",
+   "n_frames_processed": 815,
+   "duration_s": 422.9405,
+   "keyframe_interval": 1,
+   "rope_slots_used": 815,
+   "state_trace": {
+    "peak_frames_processed": 815,
+    "aggregator_forward_calls": 811,
+    "clean_kv_cache_calls": 3,
+    "frame_counter_at_each_reset": [
+     0,
+     0,
+     815
+    ],
+    "mid_stream_resets": [],
+    "note": "resets at counter 0 precede any frame; a reset at the peak follows the last frame. Only a reset strictly between the two would break the persistent-state requirement."
+   },
+   "lingbot_resets": 1,
+   "reset_positions": [
+    0
+   ],
+   "n_moge_calls": 5,
+   "scale_m_per_unit": 26.980392156862735,
+   "scale_candidates": [
+    {
+     "position": 0,
+     "key": "08_000000",
+     "n_valid": 60582,
+     "log_s": 3.2951103857689628,
+     "mad": 0.04605363762203374
+    },
+    {
+     "position": 1,
+     "key": "08_000005",
+     "n_valid": 63651,
+     "log_s": 3.315172337957464,
+     "mad": 0.06310163068036134
+    },
+    {
+     "position": 2,
+     "key": "08_000010",
+     "n_valid": 65285,
+     "log_s": 3.308387266937152,
+     "mad": 0.03155390109699052
+    },
+    {
+     "position": 3,
+     "key": "08_000015",
+     "n_valid": 61364,
+     "log_s": 3.2842543292554973,
+     "mad": 0.03636457845729946
+    },
+    {
+     "position": 4,
+     "key": "08_000020",
+     "n_valid": 61149,
+     "log_s": 3.290661993409117,
+     "mad": 0.026064860097505083
+    }
+   ],
+   "scale_valid": true,
+   "n_anchors_written": 801,
+   "anchors": [
+    {
+     "sample_id": "08_000020",
+     "position": 4,
+     "time_s": 2.079357,
+     "n_occupied": 69109,
+     "n_free": 254217
+    },
+    {
+     "sample_id": "08_000025",
+     "position": 5,
+     "time_s": 2.599102,
+     "n_occupied": 67344,
+     "n_free": 231648
+    },
+    {
+     "sample_id": "08_000030",
+     "position": 6,
+     "time_s": 3.118993,
+     "n_occupied": 65822,
+     "n_free": 198492
+    },
+    {
+     "sample_id": "08_000035",
+     "position": 7,
+     "time_s": 3.63873,
+     "n_occupied": 61053,
+     "n_free": 176693
+    },
+    {
+     "sample_id": "08_000040",
+     "position": 8,
+     "time_s": 4.15838,
+     "n_occupied": 55388,
+     "n_free": 158923
+    },
+    {
+     "sample_id": "08_000045",
+     "position": 9,
+     "time_s": 4.677976,
+     "n_occupied": 46158,
+     "n_free": 153236
+    },
+    {
+     "sample_id": "08_000050",
+     "position": 10,
+     "time_s": 5.196627,
+     "n_occupied": 45874,
+     "n_free": 160291
+    },
+    {
+     "sample_id": "08_000055",
+     "position": 11,
+     "time_s": 5.714602,
+     "n_occupied": 59889,
+     "n_free": 164672
+    },
+    {
+     "sample_id": "08_000060",
+     "position": 12,
+     "time_s": 6.232877,
+     "n_occupied": 55944,
+     "n_free": 164949
+    },
+    {
+     "sample_id": "08_000065",
+     "position": 13,
+     "time_s": 6.751478,
+     "n_occupied": 51896,
+     "n_free": 160679
+    },
+    {
+     "sample_id": "08_000070",
+     "position": 14,
+     "time_s": 7.270484,
+     "n_occupied": 44146,
+     "n_free": 121205
+    },
+    {
+     "sample_id": "08_000075",
+     "position": 15,
+     "time_s": 7.789732,
+     "n_occupied": 41549,
+     "n_free": 91830
+    },
+    {
+     "sample_id": "08_000080",
+     "position": 16,
+     "time_s": 8.31036,
+     "n_occupied": 37735,
+     "n_free": 70682
+    },
+    {
+     "sample_id": "08_000085",
+     "position": 17,
+     "time_s": 8.83236,
+     "n_occupied": 36710,
+     "n_free": 78855
+    },
+    {
+     "sample_id": "08_000090",
+     "position": 18,
+     "time_s": 9.35411,
+     "n_occupied": 32960,
+     "n_free": 90902
+    },
+    {
+     "sample_id": "08_000095",
+     "position": 19,
+     "time_s": 9.874732,
+     "n_occupied": 39414,
+     "n_free": 96765
+    },
+    {
+     "sample_id": "08_000100",
+     "position": 20,
+     "time_s": 10.39486,
+     "n_occupied": 40862,
+     "n_free": 103139
+    },
+    {
+     "sample_id": "08_000105",
+     "position": 21,
+     "time_s": 10.91436,
+     "n_occupied": 45165,
+     "n_free": 116268
+    },
+    {
+     "sample_id": "08_000110",
+     "position": 22,
+     "time_s": 11.43411,
+     "n_occupied": 42977,
+     "n_free": 112527
+    },
+    {
+     "sample_id": "08_000115",
+     "position": 23,
+     "time_s": 11.95386,
+     "n_occupied": 44693,
+     "n_free": 124700
+    },
+    {
+     "sample_id": "08_000120",
+     "position": 24,
+     "time_s": 12.47386,
+     "n_occupied": 47213,
+     "n_free": 129399
+    },
+    {
+     "sample_id": "08_000125",
+     "position": 25,
+     "time_s": 12.99373,
+     "n_occupied": 47232,
+     "n_free": 123882
+    },
+    {
+     "sample_id": "08_000130",
+     "position": 26,
+     "time_s": 13.51336,
+     "n_occupied": 44192,
+     "n_free": 104816
+    },
+    {
+     "sample_id": "08_000135",
+     "position": 27,
+     "time_s": 14.03274,
+     "n_occupied": 40400,
+     "n_free": 85651
+    },
+    {
+     "sample_id": "08_000140",
+     "position": 28,
+     "time_s": 14.55149,
+     "n_occupied": 40610,
+     "n_free": 85236
+    },
+    {
+     "sample_id": "08_000145",
+     "position": 29,
+     "time_s": 15.07024,
+     "n_occupied": 38314,
+     "n_free": 77478
+    },
+    {
+     "sample_id": "08_000150",
+     "position": 30,
+     "time_s": 15.58899,
+     "n_occupied": 32880,
+     "n_free": 61247
+    },
+    {
+     "sample_id": "08_000155",
+     "position": 31,
+     "time_s": 16.10799,
+     "n_occupied": 35384,
+     "n_free": 77499
+    },
+    {
+     "sample_id": "08_000160",
+     "position": 32,
+     "time_s": 16.62712,
+     "n_occupied": 39554,
+     "n_free": 99776
+    },
+    {
+     "sample_id": "08_000165",
+     "position": 33,
+     "time_s": 17.14616,
+     "n_occupied": 43065,
+     "n_free": 123978
+    },
+    {
+     "sample_id": "08_000170",
+     "position": 34,
+     "time_s": 17.66539,
+     "n_occupied": 48878,
+     "n_free": 160064
+    },
+    {
+     "sample_id": "08_000175",
+     "position": 35,
+     "time_s": 18.18449,
+     "n_occupied": 56122,
+     "n_free": 176986
+    },
+    {
+     "sample_id": "08_000180",
+     "position": 36,
+     "time_s": 18.70351,
+     "n_occupied": 56306,
+     "n_free": 174132
+    },
+    {
+     "sample_id": "08_000185",
+     "position": 37,
+     "time_s": 19.22239,
+     "n_occupied": 61263,
+     "n_free": 171224
+    },
+    {
+     "sample_id": "08_000190",
+     "position": 38,
+     "time_s": 19.74099,
+     "n_occupied": 57303,
+     "n_free": 170650
+    },
+    {
+     "sample_id": "08_000195",
+     "position": 39,
+     "time_s": 20.25999,
+     "n_occupied": 54969,
+     "n_free": 162169
+    },
+    {
+     "sample_id": "08_000200",
+     "position": 40,
+     "time_s": 20.77889,
+     "n_occupied": 54592,
+     "n_free": 152207
+    },
+    {
+     "sample_id": "08_000205",
+     "position": 41,
+     "time_s": 21.29751,
+     "n_occupied": 56321,
+     "n_free": 149548
+    },
+    {
+     "sample_id": "08_000210",
+     "position": 42,
+     "time_s": 21.81637,
+     "n_occupied": 51328,
+     "n_free": 126434
+    },
+    {
+     "sample_id": "08_000215",
+     "position": 43,
+     "time_s": 22.33525,
+     "n_occupied": 48643,
+     "n_free": 107884
+    },
+    {
+     "sample_id": "08_000220",
+     "position": 44,
+     "time_s": 22.85424,
+     "n_occupied": 45875,
+     "n_free": 89079
+    },
+    {
+     "sample_id": "08_000225",
+     "position": 45,
+     "time_s": 23.37325,
+     "n_occupied": 41685,
+     "n_free": 79321
+    },
+    {
+     "sample_id": "08_000230",
+     "position": 46,
+     "time_s": 23.89237,
+     "n_occupied": 37407,
+     "n_free": 67910
+    },
+    {
+     "sample_id": "08_000235",
+     "position": 47,
+     "time_s": 24.41149,
+     "n_occupied": 41705,
+     "n_free": 87819
+    },
+    {
+     "sample_id": "08_000240",
+     "position": 48,
+     "time_s": 24.9305,
+     "n_occupied": 40648,
+     "n_free": 92490
+    },
+    {
+     "sample_id": "08_000245",
+     "position": 49,
+     "time_s": 25.44975,
+     "n_occupied": 44875,
+     "n_free": 98885
+    },
+    {
+     "sample_id": "08_000250",
+     "position": 50,
+     "time_s": 25.96925,
+     "n_occupied": 47085,
+     "n_free": 92255
+    },
+    {
+     "sample_id": "08_000255",
+     "position": 51,
+     "time_s": 26.48887,
+     "n_occupied": 46054,
+     "n_free": 86873
+    },
+    {
+     "sample_id": "08_000260",
+     "position": 52,
+     "time_s": 27.00849,
+     "n_occupied": 47283,
+     "n_free": 69840
+    },
+    {
+     "sample_id": "08_000265",
+     "position": 53,
+     "time_s": 27.5286,
+     "n_occupied": 37655,
+     "n_free": 64266
+    },
+    {
+     "sample_id": "08_000270",
+     "position": 54,
+     "time_s": 28.04812,
+     "n_occupied": 35757,
+     "n_free": 60698
+    },
+    {
+     "sample_id": "08_000275",
+     "position": 55,
+     "time_s": 28.56724,
+     "n_occupied": 37853,
+     "n_free": 76674
+    },
+    {
+     "sample_id": "08_000280",
+     "position": 56,
+     "time_s": 29.08602,
+     "n_occupied": 42739,
+     "n_free": 79319
+    },
+    {
+     "sample_id": "08_000285",
+     "position": 57,
+     "time_s": 29.6044,
+     "n_occupied": 36866,
+     "n_free": 77132
+    },
+    {
+     "sample_id": "08_000290",
+     "position": 58,
+     "time_s": 30.123,
+     "n_occupied": 37778,
+     "n_free": 81925
+    },
+    {
+     "sample_id": "08_000295",
+     "position": 59,
+     "time_s": 30.64177,
+     "n_occupied": 33884,
+     "n_free": 96674
+    },
+    {
+     "sample_id": "08_000300",
+     "position": 60,
+     "time_s": 31.16075,
+     "n_occupied": 42379,
+     "n_free": 131007
+    },
+    {
+     "sample_id": "08_000305",
+     "position": 61,
+     "time_s": 31.67987,
+     "n_occupied": 48008,
+     "n_free": 159719
+    },
+    {
+     "sample_id": "08_000310",
+     "position": 62,
+     "time_s": 32.19887,
+     "n_occupied": 52985,
+     "n_free": 153220
+    },
+    {
+     "sample_id": "08_000315",
+     "position": 63,
+     "time_s": 32.71762,
+     "n_occupied": 51684,
+     "n_free": 161747
+    },
+    {
+     "sample_id": "08_000320",
+     "position": 64,
+     "time_s": 33.23637,
+     "n_occupied": 56235,
+     "n_free": 162899
+    },
+    {
+     "sample_id": "08_000325",
+     "position": 65,
+     "time_s": 33.75521,
+     "n_occupied": 51411,
+     "n_free": 136040
+    },
+    {
+     "sample_id": "08_000330",
+     "position": 66,
+     "time_s": 34.27367,
+     "n_occupied": 48714,
+     "n_free": 127362
+    },
+    {
+     "sample_id": "08_000335",
+     "position": 67,
+     "time_s": 34.79239,
+     "n_occupied": 36595,
+     "n_free": 100057
+    },
+    {
+     "sample_id": "08_000340",
+     "position": 68,
+     "time_s": 35.31116,
+     "n_occupied": 43550,
+     "n_free": 121794
+    },
+    {
+     "sample_id": "08_000345",
+     "position": 69,
+     "time_s": 35.83006,
+     "n_occupied": 46941,
+     "n_free": 114794
+    },
+    {
+     "sample_id": "08_000350",
+     "position": 70,
+     "time_s": 36.3525,
+     "n_occupied": 46168,
+     "n_free": 108398
+    },
+    {
+     "sample_id": "08_000355",
+     "position": 71,
+     "time_s": 36.86769,
+     "n_occupied": 33364,
+     "n_free": 71596
+    },
+    {
+     "sample_id": "08_000360",
+     "position": 72,
+     "time_s": 37.38627,
+     "n_occupied": 27859,
+     "n_free": 66282
+    },
+    {
+     "sample_id": "08_000365",
+     "position": 73,
+     "time_s": 37.90519,
+     "n_occupied": 31199,
+     "n_free": 70509
+    },
+    {
+     "sample_id": "08_000370",
+     "position": 74,
+     "time_s": 38.42423,
+     "n_occupied": 33222,
+     "n_free": 75021
+    },
+    {
+     "sample_id": "08_000375",
+     "position": 75,
+     "time_s": 38.94326,
+     "n_occupied": 29577,
+     "n_free": 64148
+    },
+    {
+     "sample_id": "08_000380",
+     "position": 76,
+     "time_s": 39.46226,
+     "n_occupied": 33565,
+     "n_free": 65032
+    },
+    {
+     "sample_id": "08_000385",
+     "position": 77,
+     "time_s": 39.98101,
+     "n_occupied": 37609,
+     "n_free": 68731
+    },
+    {
+     "sample_id": "08_000390",
+     "position": 78,
+     "time_s": 40.49988,
+     "n_occupied": 37242,
+     "n_free": 66674
+    },
+    {
+     "sample_id": "08_000395",
+     "position": 79,
+     "time_s": 41.01963,
+     "n_occupied": 35882,
+     "n_free": 65370
+    },
+    {
+     "sample_id": "08_000400",
+     "position": 80,
+     "time_s": 41.54063,
+     "n_occupied": 36594,
+     "n_free": 71857
+    },
+    {
+     "sample_id": "08_000405",
+     "position": 81,
+     "time_s": 42.06191,
+     "n_occupied": 25908,
+     "n_free": 68892
+    },
+    {
+     "sample_id": "08_000410",
+     "position": 82,
+     "time_s": 42.58325,
+     "n_occupied": 27696,
+     "n_free": 77089
+    },
+    {
+     "sample_id": "08_000415",
+     "position": 83,
+     "time_s": 43.10394,
+     "n_occupied": 39772,
+     "n_free": 84245
+    },
+    {
+     "sample_id": "08_000420",
+     "position": 84,
+     "time_s": 43.62413,
+     "n_occupied": 39340,
+     "n_free": 87417
+    },
+    {
+     "sample_id": "08_000425",
+     "position": 85,
+     "time_s": 44.14364,
+     "n_occupied": 39175,
+     "n_free": 87053
+    },
+    {
+     "sample_id": "08_000430",
+     "position": 86,
+     "time_s": 44.66241,
+     "n_occupied": 37336,
+     "n_free": 81220
+    },
+    {
+     "sample_id": "08_000435",
+     "position": 87,
+     "time_s": 45.18089,
+     "n_occupied": 39583,
+     "n_free": 72753
+    },
+    {
+     "sample_id": "08_000440",
+     "position": 88,
+     "time_s": 45.69925,
+     "n_occupied": 42328,
+     "n_free": 59819
+    },
+    {
+     "sample_id": "08_000445",
+     "position": 89,
+     "time_s": 46.21846,
+     "n_occupied": 35022,
+     "n_free": 59040
+    },
+    {
+     "sample_id": "08_000450",
+     "position": 90,
+     "time_s": 46.73653,
+     "n_occupied": 26841,
+     "n_free": 45704
+    },
+    {
+     "sample_id": "08_000455",
+     "position": 91,
+     "time_s": 47.25554,
+     "n_occupied": 23556,
+     "n_free": 33927
+    },
+    {
+     "sample_id": "08_000460",
+     "position": 92,
+     "time_s": 47.77438,
+     "n_occupied": 23449,
+     "n_free": 37581
+    },
+    {
+     "sample_id": "08_000465",
+     "position": 93,
+     "time_s": 48.29338,
+     "n_occupied": 24523,
+     "n_free": 51978
+    },
+    {
+     "sample_id": "08_000470",
+     "position": 94,
+     "time_s": 48.81251,
+     "n_occupied": 38498,
+     "n_free": 98489
+    },
+    {
+     "sample_id": "08_000475",
+     "position": 95,
+     "time_s": 49.33213,
+     "n_occupied": 48059,
+     "n_free": 170552
+    },
+    {
+     "sample_id": "08_000480",
+     "position": 96,
+     "time_s": 49.85253,
+     "n_occupied": 69088,
+     "n_free": 206156
+    },
+    {
+     "sample_id": "08_000485",
+     "position": 97,
+     "time_s": 50.37313,
+     "n_occupied": 80873,
+     "n_free": 237314
+    },
+    {
+     "sample_id": "08_000490",
+     "position": 98,
+     "time_s": 50.89388,
+     "n_occupied": 86183,
+     "n_free": 241641
+    },
+    {
+     "sample_id": "08_000495",
+     "position": 99,
+     "time_s": 51.41501,
+     "n_occupied": 90333,
+     "n_free": 250514
+    },
+    {
+     "sample_id": "08_000500",
+     "position": 100,
+     "time_s": 51.93552,
+     "n_occupied": 78553,
+     "n_free": 206252
+    },
+    {
+     "sample_id": "08_000505",
+     "position": 101,
+     "time_s": 52.45491,
+     "n_occupied": 66213,
+     "n_free": 169314
+    },
+    {
+     "sample_id": "08_000510",
+     "position": 102,
+     "time_s": 52.97376,
+     "n_occupied": 56511,
+     "n_free": 159340
+    },
+    {
+     "sample_id": "08_000515",
+     "position": 103,
+     "time_s": 53.49203,
+     "n_occupied": 57833,
+     "n_free": 154909
+    },
+    {
+     "sample_id": "08_000520",
+     "position": 104,
+     "time_s": 54.01051,
+     "n_occupied": 57994,
+     "n_free": 137752
+    },
+    {
+     "sample_id": "08_000525",
+     "position": 105,
+     "time_s": 54.52914,
+     "n_occupied": 57925,
+     "n_free": 134053
+    },
+    {
+     "sample_id": "08_000530",
+     "position": 106,
+     "time_s": 55.04764,
+     "n_occupied": 50598,
+     "n_free": 122000
+    },
+    {
+     "sample_id": "08_000535",
+     "position": 107,
+     "time_s": 55.56614,
+     "n_occupied": 50506,
+     "n_free": 137846
+    },
+    {
+     "sample_id": "08_000540",
+     "position": 108,
+     "time_s": 56.08478,
+     "n_occupied": 50702,
+     "n_free": 128500
+    },
+    {
+     "sample_id": "08_000545",
+     "position": 109,
+     "time_s": 56.60339,
+     "n_occupied": 52331,
+     "n_free": 120508
+    },
+    {
+     "sample_id": "08_000550",
+     "position": 110,
+     "time_s": 57.12239,
+     "n_occupied": 50332,
+     "n_free": 109485
+    },
+    {
+     "sample_id": "08_000555",
+     "position": 111,
+     "time_s": 57.64139,
+     "n_occupied": 46482,
+     "n_free": 107960
+    },
+    {
+     "sample_id": "08_000560",
+     "position": 112,
+     "time_s": 58.16064,
+     "n_occupied": 50153,
+     "n_free": 119409
+    },
+    {
+     "sample_id": "08_000565",
+     "position": 113,
+     "time_s": 58.67989,
+     "n_occupied": 45774,
+     "n_free": 126940
+    },
+    {
+     "sample_id": "08_000570",
+     "position": 114,
+     "time_s": 59.19889,
+     "n_occupied": 51323,
+     "n_free": 122719
+    },
+    {
+     "sample_id": "08_000575",
+     "position": 115,
+     "time_s": 59.71764,
+     "n_occupied": 55226,
+     "n_free": 115046
+    },
+    {
+     "sample_id": "08_000580",
+     "position": 116,
+     "time_s": 60.23664,
+     "n_occupied": 50409,
+     "n_free": 101083
+    },
+    {
+     "sample_id": "08_000585",
+     "position": 117,
+     "time_s": 60.75577,
+     "n_occupied": 50028,
+     "n_free": 103824
+    },
+    {
+     "sample_id": "08_000590",
+     "position": 118,
+     "time_s": 61.2749,
+     "n_occupied": 48720,
+     "n_free": 107114
+    },
+    {
+     "sample_id": "08_000595",
+     "position": 119,
+     "time_s": 61.79416,
+     "n_occupied": 37384,
+     "n_free": 89303
+    },
+    {
+     "sample_id": "08_000600",
+     "position": 120,
+     "time_s": 62.31364,
+     "n_occupied": 42049,
+     "n_free": 97937
+    },
+    {
+     "sample_id": "08_000605",
+     "position": 121,
+     "time_s": 62.83327,
+     "n_occupied": 47103,
+     "n_free": 106822
+    },
+    {
+     "sample_id": "08_000610",
+     "position": 122,
+     "time_s": 63.35327,
+     "n_occupied": 47776,
+     "n_free": 113758
+    },
+    {
+     "sample_id": "08_000615",
+     "position": 123,
+     "time_s": 63.87302,
+     "n_occupied": 56659,
+     "n_free": 144419
+    },
+    {
+     "sample_id": "08_000620",
+     "position": 124,
+     "time_s": 64.39227,
+     "n_occupied": 58658,
+     "n_free": 148304
+    },
+    {
+     "sample_id": "08_000625",
+     "position": 125,
+     "time_s": 64.91165,
+     "n_occupied": 58615,
+     "n_free": 146218
+    },
+    {
+     "sample_id": "08_000630",
+     "position": 126,
+     "time_s": 65.43102,
+     "n_occupied": 57199,
+     "n_free": 137376
+    },
+    {
+     "sample_id": "08_000635",
+     "position": 127,
+     "time_s": 65.95014,
+     "n_occupied": 57739,
+     "n_free": 132999
+    },
+    {
+     "sample_id": "08_000640",
+     "position": 128,
+     "time_s": 66.46902,
+     "n_occupied": 48837,
+     "n_free": 105685
+    },
+    {
+     "sample_id": "08_000645",
+     "position": 129,
+     "time_s": 66.98802,
+     "n_occupied": 47559,
+     "n_free": 96635
+    },
+    {
+     "sample_id": "08_000650",
+     "position": 130,
+     "time_s": 67.50714,
+     "n_occupied": 40185,
+     "n_free": 86202
+    },
+    {
+     "sample_id": "08_000655",
+     "position": 131,
+     "time_s": 68.02652,
+     "n_occupied": 44663,
+     "n_free": 94902
+    },
+    {
+     "sample_id": "08_000660",
+     "position": 132,
+     "time_s": 68.5464,
+     "n_occupied": 51028,
+     "n_free": 105357
+    },
+    {
+     "sample_id": "08_000665",
+     "position": 133,
+     "time_s": 69.06615,
+     "n_occupied": 51194,
+     "n_free": 98296
+    },
+    {
+     "sample_id": "08_000670",
+     "position": 134,
+     "time_s": 69.5859,
+     "n_occupied": 56285,
+     "n_free": 122646
+    },
+    {
+     "sample_id": "08_000675",
+     "position": 135,
+     "time_s": 70.10515,
+     "n_occupied": 59376,
+     "n_free": 141948
+    },
+    {
+     "sample_id": "08_000680",
+     "position": 136,
+     "time_s": 70.62403,
+     "n_occupied": 60401,
+     "n_free": 165436
+    },
+    {
+     "sample_id": "08_000685",
+     "position": 137,
+     "time_s": 71.14302,
+     "n_occupied": 62902,
+     "n_free": 186353
+    },
+    {
+     "sample_id": "08_000690",
+     "position": 138,
+     "time_s": 71.66177,
+     "n_occupied": 71944,
+     "n_free": 219760
+    },
+    {
+     "sample_id": "08_000695",
+     "position": 139,
+     "time_s": 72.18015,
+     "n_occupied": 72626,
+     "n_free": 218373
+    },
+    {
+     "sample_id": "08_000700",
+     "position": 140,
+     "time_s": 72.69828,
+     "n_occupied": 80489,
+     "n_free": 223858
+    },
+    {
+     "sample_id": "08_000705",
+     "position": 141,
+     "time_s": 73.21692,
+     "n_occupied": 80495,
+     "n_free": 210687
+    },
+    {
+     "sample_id": "08_000710",
+     "position": 142,
+     "time_s": 73.73565,
+     "n_occupied": 80315,
+     "n_free": 181864
+    },
+    {
+     "sample_id": "08_000715",
+     "position": 143,
+     "time_s": 74.2544,
+     "n_occupied": 68647,
+     "n_free": 162214
+    },
+    {
+     "sample_id": "08_000720",
+     "position": 144,
+     "time_s": 74.77328,
+     "n_occupied": 66485,
+     "n_free": 169839
+    },
+    {
+     "sample_id": "08_000725",
+     "position": 145,
+     "time_s": 75.29303,
+     "n_occupied": 62680,
+     "n_free": 160729
+    },
+    {
+     "sample_id": "08_000730",
+     "position": 146,
+     "time_s": 75.81315,
+     "n_occupied": 56926,
+     "n_free": 159531
+    },
+    {
+     "sample_id": "08_000735",
+     "position": 147,
+     "time_s": 76.33378,
+     "n_occupied": 57635,
+     "n_free": 140562
+    },
+    {
+     "sample_id": "08_000740",
+     "position": 148,
+     "time_s": 76.85478,
+     "n_occupied": 56808,
+     "n_free": 130509
+    },
+    {
+     "sample_id": "08_000745",
+     "position": 149,
+     "time_s": 77.3759,
+     "n_occupied": 56902,
+     "n_free": 134247
+    },
+    {
+     "sample_id": "08_000750",
+     "position": 150,
+     "time_s": 77.89653,
+     "n_occupied": 51254,
+     "n_free": 114145
+    },
+    {
+     "sample_id": "08_000755",
+     "position": 151,
+     "time_s": 78.41641,
+     "n_occupied": 51122,
+     "n_free": 104756
+    },
+    {
+     "sample_id": "08_000760",
+     "position": 152,
+     "time_s": 78.93604,
+     "n_occupied": 51944,
+     "n_free": 120132
+    },
+    {
+     "sample_id": "08_000765",
+     "position": 153,
+     "time_s": 79.45528,
+     "n_occupied": 52381,
+     "n_free": 117787
+    },
+    {
+     "sample_id": "08_000770",
+     "position": 154,
+     "time_s": 79.97465,
+     "n_occupied": 53258,
+     "n_free": 165022
+    },
+    {
+     "sample_id": "08_000775",
+     "position": 155,
+     "time_s": 80.49378,
+     "n_occupied": 58075,
+     "n_free": 193158
+    },
+    {
+     "sample_id": "08_000780",
+     "position": 156,
+     "time_s": 81.01254,
+     "n_occupied": 64162,
+     "n_free": 196376
+    },
+    {
+     "sample_id": "08_000785",
+     "position": 157,
+     "time_s": 81.53103,
+     "n_occupied": 70344,
+     "n_free": 195332
+    },
+    {
+     "sample_id": "08_000790",
+     "position": 158,
+     "time_s": 82.04941,
+     "n_occupied": 79069,
+     "n_free": 202822
+    },
+    {
+     "sample_id": "08_000795",
+     "position": 159,
+     "time_s": 82.56791,
+     "n_occupied": 76241,
+     "n_free": 188482
+    },
+    {
+     "sample_id": "08_000800",
+     "position": 160,
+     "time_s": 83.08653,
+     "n_occupied": 68056,
+     "n_free": 170274
+    },
+    {
+     "sample_id": "08_000805",
+     "position": 161,
+     "time_s": 83.60504,
+     "n_occupied": 67550,
+     "n_free": 141817
+    },
+    {
+     "sample_id": "08_000810",
+     "position": 162,
+     "time_s": 84.12441,
+     "n_occupied": 66806,
+     "n_free": 127996
+    },
+    {
+     "sample_id": "08_000815",
+     "position": 163,
+     "time_s": 84.64516,
+     "n_occupied": 51659,
+     "n_free": 108156
+    },
+    {
+     "sample_id": "08_000820",
+     "position": 164,
+     "time_s": 85.16678,
+     "n_occupied": 52519,
+     "n_free": 105365
+    },
+    {
+     "sample_id": "08_000825",
+     "position": 165,
+     "time_s": 85.68791,
+     "n_occupied": 52216,
+     "n_free": 110812
+    },
+    {
+     "sample_id": "08_000830",
+     "position": 166,
+     "time_s": 86.20841,
+     "n_occupied": 54675,
+     "n_free": 119777
+    },
+    {
+     "sample_id": "08_000835",
+     "position": 167,
+     "time_s": 86.72841,
+     "n_occupied": 52733,
+     "n_free": 119983
+    },
+    {
+     "sample_id": "08_000840",
+     "position": 168,
+     "time_s": 87.24779,
+     "n_occupied": 51307,
+     "n_free": 119548
+    },
+    {
+     "sample_id": "08_000845",
+     "position": 169,
+     "time_s": 87.76716,
+     "n_occupied": 56553,
+     "n_free": 118109
+    },
+    {
+     "sample_id": "08_000850",
+     "position": 170,
+     "time_s": 88.28642,
+     "n_occupied": 48224,
+     "n_free": 96165
+    },
+    {
+     "sample_id": "08_000855",
+     "position": 171,
+     "time_s": 88.80591,
+     "n_occupied": 42751,
+     "n_free": 100348
+    },
+    {
+     "sample_id": "08_000860",
+     "position": 172,
+     "time_s": 89.32581,
+     "n_occupied": 37892,
+     "n_free": 94023
+    },
+    {
+     "sample_id": "08_000865",
+     "position": 173,
+     "time_s": 89.84579,
+     "n_occupied": 33863,
+     "n_free": 96185
+    },
+    {
+     "sample_id": "08_000870",
+     "position": 174,
+     "time_s": 90.36579,
+     "n_occupied": 37924,
+     "n_free": 89506
+    },
+    {
+     "sample_id": "08_000875",
+     "position": 175,
+     "time_s": 90.88591,
+     "n_occupied": 41452,
+     "n_free": 97439
+    },
+    {
+     "sample_id": "08_000880",
+     "position": 176,
+     "time_s": 91.40604,
+     "n_occupied": 46670,
+     "n_free": 109721
+    },
+    {
+     "sample_id": "08_000885",
+     "position": 177,
+     "time_s": 91.92581,
+     "n_occupied": 50084,
+     "n_free": 111471
+    },
+    {
+     "sample_id": "08_000890",
+     "position": 178,
+     "time_s": 92.44554,
+     "n_occupied": 48674,
+     "n_free": 98293
+    },
+    {
+     "sample_id": "08_000895",
+     "position": 179,
+     "time_s": 92.96541,
+     "n_occupied": 51205,
+     "n_free": 110152
+    },
+    {
+     "sample_id": "08_000900",
+     "position": 180,
+     "time_s": 93.48529,
+     "n_occupied": 51545,
+     "n_free": 109610
+    },
+    {
+     "sample_id": "08_000905",
+     "position": 181,
+     "time_s": 94.00506,
+     "n_occupied": 49251,
+     "n_free": 119245
+    },
+    {
+     "sample_id": "08_000910",
+     "position": 182,
+     "time_s": 94.52492,
+     "n_occupied": 58549,
+     "n_free": 138560
+    },
+    {
+     "sample_id": "08_000915",
+     "position": 183,
+     "time_s": 95.04455,
+     "n_occupied": 65159,
+     "n_free": 153614
+    },
+    {
+     "sample_id": "08_000920",
+     "position": 184,
+     "time_s": 95.56404,
+     "n_occupied": 63257,
+     "n_free": 147641
+    },
+    {
+     "sample_id": "08_000925",
+     "position": 185,
+     "time_s": 96.08367,
+     "n_occupied": 64390,
+     "n_free": 152121
+    },
+    {
+     "sample_id": "08_000930",
+     "position": 186,
+     "time_s": 96.60342,
+     "n_occupied": 59078,
+     "n_free": 141027
+    },
+    {
+     "sample_id": "08_000935",
+     "position": 187,
+     "time_s": 97.12304,
+     "n_occupied": 49724,
+     "n_free": 130880
+    },
+    {
+     "sample_id": "08_000940",
+     "position": 188,
+     "time_s": 97.64292,
+     "n_occupied": 47312,
+     "n_free": 132164
+    },
+    {
+     "sample_id": "08_000945",
+     "position": 189,
+     "time_s": 98.16279,
+     "n_occupied": 47664,
+     "n_free": 138952
+    },
+    {
+     "sample_id": "08_000950",
+     "position": 190,
+     "time_s": 98.68254,
+     "n_occupied": 58645,
+     "n_free": 142107
+    },
+    {
+     "sample_id": "08_000955",
+     "position": 191,
+     "time_s": 99.20242,
+     "n_occupied": 49581,
+     "n_free": 92491
+    },
+    {
+     "sample_id": "08_000960",
+     "position": 192,
+     "time_s": 99.72217,
+     "n_occupied": 48940,
+     "n_free": 84244
+    },
+    {
+     "sample_id": "08_000965",
+     "position": 193,
+     "time_s": 100.2419,
+     "n_occupied": 39011,
+     "n_free": 64642
+    },
+    {
+     "sample_id": "08_000970",
+     "position": 194,
+     "time_s": 100.7614,
+     "n_occupied": 36588,
+     "n_free": 64281
+    },
+    {
+     "sample_id": "08_000975",
+     "position": 195,
+     "time_s": 101.2813,
+     "n_occupied": 38123,
+     "n_free": 65773
+    },
+    {
+     "sample_id": "08_000980",
+     "position": 196,
+     "time_s": 101.8011,
+     "n_occupied": 42931,
+     "n_free": 102895
+    },
+    {
+     "sample_id": "08_000985",
+     "position": 197,
+     "time_s": 102.3212,
+     "n_occupied": 42527,
+     "n_free": 127170
+    },
+    {
+     "sample_id": "08_000990",
+     "position": 198,
+     "time_s": 102.8417,
+     "n_occupied": 63922,
+     "n_free": 161231
+    },
+    {
+     "sample_id": "08_000995",
+     "position": 199,
+     "time_s": 103.3624,
+     "n_occupied": 65187,
+     "n_free": 156396
+    },
+    {
+     "sample_id": "08_001000",
+     "position": 200,
+     "time_s": 103.8836,
+     "n_occupied": 69316,
+     "n_free": 155982
+    },
+    {
+     "sample_id": "08_001005",
+     "position": 201,
+     "time_s": 104.4043,
+     "n_occupied": 77811,
+     "n_free": 162380
+    },
+    {
+     "sample_id": "08_001010",
+     "position": 202,
+     "time_s": 104.9247,
+     "n_occupied": 58277,
+     "n_free": 109408
+    },
+    {
+     "sample_id": "08_001015",
+     "position": 203,
+     "time_s": 105.4452,
+     "n_occupied": 49788,
+     "n_free": 102168
+    },
+    {
+     "sample_id": "08_001020",
+     "position": 204,
+     "time_s": 105.965,
+     "n_occupied": 44636,
+     "n_free": 106448
+    },
+    {
+     "sample_id": "08_001025",
+     "position": 205,
+     "time_s": 106.4837,
+     "n_occupied": 54996,
+     "n_free": 130475
+    },
+    {
+     "sample_id": "08_001030",
+     "position": 206,
+     "time_s": 107.0019,
+     "n_occupied": 59034,
+     "n_free": 126328
+    },
+    {
+     "sample_id": "08_001035",
+     "position": 207,
+     "time_s": 107.5203,
+     "n_occupied": 51754,
+     "n_free": 135954
+    },
+    {
+     "sample_id": "08_001040",
+     "position": 208,
+     "time_s": 108.0389,
+     "n_occupied": 69417,
+     "n_free": 134022
+    },
+    {
+     "sample_id": "08_001045",
+     "position": 209,
+     "time_s": 108.5579,
+     "n_occupied": 67491,
+     "n_free": 129447
+    },
+    {
+     "sample_id": "08_001050",
+     "position": 210,
+     "time_s": 109.0772,
+     "n_occupied": 59234,
+     "n_free": 115137
+    },
+    {
+     "sample_id": "08_001055",
+     "position": 211,
+     "time_s": 109.5962,
+     "n_occupied": 45946,
+     "n_free": 103439
+    },
+    {
+     "sample_id": "08_001060",
+     "position": 212,
+     "time_s": 110.1153,
+     "n_occupied": 37079,
+     "n_free": 109564
+    },
+    {
+     "sample_id": "08_001065",
+     "position": 213,
+     "time_s": 110.6348,
+     "n_occupied": 45291,
+     "n_free": 155822
+    },
+    {
+     "sample_id": "08_001070",
+     "position": 214,
+     "time_s": 111.1553,
+     "n_occupied": 61451,
+     "n_free": 211803
+    },
+    {
+     "sample_id": "08_001075",
+     "position": 215,
+     "time_s": 111.6769,
+     "n_occupied": 73246,
+     "n_free": 249209
+    },
+    {
+     "sample_id": "08_001080",
+     "position": 216,
+     "time_s": 112.1982,
+     "n_occupied": 80375,
+     "n_free": 247956
+    },
+    {
+     "sample_id": "08_001085",
+     "position": 217,
+     "time_s": 112.7189,
+     "n_occupied": 84585,
+     "n_free": 251663
+    },
+    {
+     "sample_id": "08_001090",
+     "position": 218,
+     "time_s": 113.2392,
+     "n_occupied": 79740,
+     "n_free": 248122
+    },
+    {
+     "sample_id": "08_001095",
+     "position": 219,
+     "time_s": 113.7583,
+     "n_occupied": 64572,
+     "n_free": 207859
+    },
+    {
+     "sample_id": "08_001100",
+     "position": 220,
+     "time_s": 114.2769,
+     "n_occupied": 56161,
+     "n_free": 159908
+    },
+    {
+     "sample_id": "08_001105",
+     "position": 221,
+     "time_s": 114.7956,
+     "n_occupied": 50647,
+     "n_free": 95967
+    },
+    {
+     "sample_id": "08_001110",
+     "position": 222,
+     "time_s": 115.3141,
+     "n_occupied": 45620,
+     "n_free": 123538
+    },
+    {
+     "sample_id": "08_001115",
+     "position": 223,
+     "time_s": 115.8331,
+     "n_occupied": 49041,
+     "n_free": 154435
+    },
+    {
+     "sample_id": "08_001120",
+     "position": 224,
+     "time_s": 116.3521,
+     "n_occupied": 55130,
+     "n_free": 179015
+    },
+    {
+     "sample_id": "08_001125",
+     "position": 225,
+     "time_s": 116.8711,
+     "n_occupied": 53936,
+     "n_free": 176990
+    },
+    {
+     "sample_id": "08_001130",
+     "position": 226,
+     "time_s": 117.3901,
+     "n_occupied": 58661,
+     "n_free": 139196
+    },
+    {
+     "sample_id": "08_001135",
+     "position": 227,
+     "time_s": 117.9093,
+     "n_occupied": 52068,
+     "n_free": 115362
+    },
+    {
+     "sample_id": "08_001140",
+     "position": 228,
+     "time_s": 118.4286,
+     "n_occupied": 49630,
+     "n_free": 117317
+    },
+    {
+     "sample_id": "08_001145",
+     "position": 229,
+     "time_s": 118.9476,
+     "n_occupied": 44813,
+     "n_free": 123547
+    },
+    {
+     "sample_id": "08_001150",
+     "position": 230,
+     "time_s": 119.4666,
+     "n_occupied": 62486,
+     "n_free": 168701
+    },
+    {
+     "sample_id": "08_001155",
+     "position": 231,
+     "time_s": 119.9854,
+     "n_occupied": 66377,
+     "n_free": 174418
+    },
+    {
+     "sample_id": "08_001160",
+     "position": 232,
+     "time_s": 120.5046,
+     "n_occupied": 71794,
+     "n_free": 168454
+    },
+    {
+     "sample_id": "08_001165",
+     "position": 233,
+     "time_s": 121.0239,
+     "n_occupied": 68219,
+     "n_free": 166305
+    },
+    {
+     "sample_id": "08_001170",
+     "position": 234,
+     "time_s": 121.5436,
+     "n_occupied": 69055,
+     "n_free": 178067
+    },
+    {
+     "sample_id": "08_001175",
+     "position": 235,
+     "time_s": 122.0634,
+     "n_occupied": 67842,
+     "n_free": 165871
+    },
+    {
+     "sample_id": "08_001180",
+     "position": 236,
+     "time_s": 122.583,
+     "n_occupied": 64695,
+     "n_free": 133581
+    },
+    {
+     "sample_id": "08_001185",
+     "position": 237,
+     "time_s": 123.1034,
+     "n_occupied": 51456,
+     "n_free": 92499
+    },
+    {
+     "sample_id": "08_001190",
+     "position": 238,
+     "time_s": 123.6221,
+     "n_occupied": 49181,
+     "n_free": 91259
+    },
+    {
+     "sample_id": "08_001195",
+     "position": 239,
+     "time_s": 124.1417,
+     "n_occupied": 41224,
+     "n_free": 68717
+    },
+    {
+     "sample_id": "08_001200",
+     "position": 240,
+     "time_s": 124.6613,
+     "n_occupied": 35546,
+     "n_free": 58199
+    },
+    {
+     "sample_id": "08_001205",
+     "position": 241,
+     "time_s": 125.181,
+     "n_occupied": 34654,
+     "n_free": 56108
+    },
+    {
+     "sample_id": "08_001210",
+     "position": 242,
+     "time_s": 125.7005,
+     "n_occupied": 33690,
+     "n_free": 78356
+    },
+    {
+     "sample_id": "08_001215",
+     "position": 243,
+     "time_s": 126.2203,
+     "n_occupied": 37955,
+     "n_free": 108948
+    },
+    {
+     "sample_id": "08_001220",
+     "position": 244,
+     "time_s": 126.7402,
+     "n_occupied": 43512,
+     "n_free": 121405
+    },
+    {
+     "sample_id": "08_001225",
+     "position": 245,
+     "time_s": 127.2602,
+     "n_occupied": 51555,
+     "n_free": 146806
+    },
+    {
+     "sample_id": "08_001230",
+     "position": 246,
+     "time_s": 127.7804,
+     "n_occupied": 61590,
+     "n_free": 140057
+    },
+    {
+     "sample_id": "08_001235",
+     "position": 247,
+     "time_s": 128.3008,
+     "n_occupied": 59556,
+     "n_free": 129399
+    },
+    {
+     "sample_id": "08_001240",
+     "position": 248,
+     "time_s": 128.8209,
+     "n_occupied": 53377,
+     "n_free": 112703
+    },
+    {
+     "sample_id": "08_001245",
+     "position": 249,
+     "time_s": 129.341,
+     "n_occupied": 49791,
+     "n_free": 96817
+    },
+    {
+     "sample_id": "08_001250",
+     "position": 250,
+     "time_s": 129.861,
+     "n_occupied": 45186,
+     "n_free": 80659
+    },
+    {
+     "sample_id": "08_001255",
+     "position": 251,
+     "time_s": 130.3811,
+     "n_occupied": 46841,
+     "n_free": 78280
+    },
+    {
+     "sample_id": "08_001260",
+     "position": 252,
+     "time_s": 130.9012,
+     "n_occupied": 40145,
+     "n_free": 62333
+    },
+    {
+     "sample_id": "08_001265",
+     "position": 253,
+     "time_s": 131.4215,
+     "n_occupied": 44635,
+     "n_free": 75674
+    },
+    {
+     "sample_id": "08_001270",
+     "position": 254,
+     "time_s": 131.9415,
+     "n_occupied": 50260,
+     "n_free": 134676
+    },
+    {
+     "sample_id": "08_001275",
+     "position": 255,
+     "time_s": 132.462,
+     "n_occupied": 63822,
+     "n_free": 213178
+    },
+    {
+     "sample_id": "08_001280",
+     "position": 256,
+     "time_s": 132.9816,
+     "n_occupied": 73396,
+     "n_free": 257097
+    },
+    {
+     "sample_id": "08_001285",
+     "position": 257,
+     "time_s": 133.5017,
+     "n_occupied": 80168,
+     "n_free": 269651
+    },
+    {
+     "sample_id": "08_001290",
+     "position": 258,
+     "time_s": 134.0223,
+     "n_occupied": 90763,
+     "n_free": 277184
+    },
+    {
+     "sample_id": "08_001295",
+     "position": 259,
+     "time_s": 134.5432,
+     "n_occupied": 99940,
+     "n_free": 280672
+    },
+    {
+     "sample_id": "08_001300",
+     "position": 260,
+     "time_s": 135.0638,
+     "n_occupied": 95493,
+     "n_free": 244343
+    },
+    {
+     "sample_id": "08_001305",
+     "position": 261,
+     "time_s": 135.5843,
+     "n_occupied": 91462,
+     "n_free": 230982
+    },
+    {
+     "sample_id": "08_001310",
+     "position": 262,
+     "time_s": 136.1051,
+     "n_occupied": 81400,
+     "n_free": 225991
+    },
+    {
+     "sample_id": "08_001315",
+     "position": 263,
+     "time_s": 136.626,
+     "n_occupied": 77252,
+     "n_free": 223552
+    },
+    {
+     "sample_id": "08_001320",
+     "position": 264,
+     "time_s": 137.1471,
+     "n_occupied": 81812,
+     "n_free": 214064
+    },
+    {
+     "sample_id": "08_001325",
+     "position": 265,
+     "time_s": 137.6678,
+     "n_occupied": 77406,
+     "n_free": 202080
+    },
+    {
+     "sample_id": "08_001330",
+     "position": 266,
+     "time_s": 138.1875,
+     "n_occupied": 64348,
+     "n_free": 175911
+    },
+    {
+     "sample_id": "08_001335",
+     "position": 267,
+     "time_s": 138.7066,
+     "n_occupied": 51068,
+     "n_free": 151464
+    },
+    {
+     "sample_id": "08_001340",
+     "position": 268,
+     "time_s": 139.2251,
+     "n_occupied": 62276,
+     "n_free": 135560
+    },
+    {
+     "sample_id": "08_001345",
+     "position": 269,
+     "time_s": 139.7436,
+     "n_occupied": 63216,
+     "n_free": 135867
+    },
+    {
+     "sample_id": "08_001350",
+     "position": 270,
+     "time_s": 140.2625,
+     "n_occupied": 54495,
+     "n_free": 105023
+    },
+    {
+     "sample_id": "08_001355",
+     "position": 271,
+     "time_s": 140.7816,
+     "n_occupied": 48921,
+     "n_free": 99732
+    },
+    {
+     "sample_id": "08_001360",
+     "position": 272,
+     "time_s": 141.3012,
+     "n_occupied": 41939,
+     "n_free": 94780
+    },
+    {
+     "sample_id": "08_001365",
+     "position": 273,
+     "time_s": 141.821,
+     "n_occupied": 50310,
+     "n_free": 112604
+    },
+    {
+     "sample_id": "08_001370",
+     "position": 274,
+     "time_s": 142.3408,
+     "n_occupied": 44548,
+     "n_free": 92060
+    },
+    {
+     "sample_id": "08_001375",
+     "position": 275,
+     "time_s": 142.8606,
+     "n_occupied": 48057,
+     "n_free": 108888
+    },
+    {
+     "sample_id": "08_001380",
+     "position": 276,
+     "time_s": 143.3806,
+     "n_occupied": 61180,
+     "n_free": 157167
+    },
+    {
+     "sample_id": "08_001385",
+     "position": 277,
+     "time_s": 143.9006,
+     "n_occupied": 58434,
+     "n_free": 190422
+    },
+    {
+     "sample_id": "08_001390",
+     "position": 278,
+     "time_s": 144.4206,
+     "n_occupied": 72028,
+     "n_free": 229961
+    },
+    {
+     "sample_id": "08_001395",
+     "position": 279,
+     "time_s": 144.9408,
+     "n_occupied": 78405,
+     "n_free": 240439
+    },
+    {
+     "sample_id": "08_001400",
+     "position": 280,
+     "time_s": 145.4608,
+     "n_occupied": 79993,
+     "n_free": 238695
+    },
+    {
+     "sample_id": "08_001405",
+     "position": 281,
+     "time_s": 145.9805,
+     "n_occupied": 87189,
+     "n_free": 236217
+    },
+    {
+     "sample_id": "08_001410",
+     "position": 282,
+     "time_s": 146.5002,
+     "n_occupied": 86636,
+     "n_free": 229336
+    },
+    {
+     "sample_id": "08_001415",
+     "position": 283,
+     "time_s": 147.02,
+     "n_occupied": 84843,
+     "n_free": 204855
+    },
+    {
+     "sample_id": "08_001420",
+     "position": 284,
+     "time_s": 147.5398,
+     "n_occupied": 77106,
+     "n_free": 175032
+    },
+    {
+     "sample_id": "08_001425",
+     "position": 285,
+     "time_s": 148.0601,
+     "n_occupied": 64753,
+     "n_free": 127190
+    },
+    {
+     "sample_id": "08_001430",
+     "position": 286,
+     "time_s": 148.5806,
+     "n_occupied": 53220,
+     "n_free": 107314
+    },
+    {
+     "sample_id": "08_001435",
+     "position": 287,
+     "time_s": 149.101,
+     "n_occupied": 60523,
+     "n_free": 150086
+    },
+    {
+     "sample_id": "08_001440",
+     "position": 288,
+     "time_s": 149.6205,
+     "n_occupied": 60134,
+     "n_free": 161182
+    },
+    {
+     "sample_id": "08_001445",
+     "position": 289,
+     "time_s": 150.1397,
+     "n_occupied": 60374,
+     "n_free": 159480
+    },
+    {
+     "sample_id": "08_001450",
+     "position": 290,
+     "time_s": 150.6592,
+     "n_occupied": 64832,
+     "n_free": 152063
+    },
+    {
+     "sample_id": "08_001455",
+     "position": 291,
+     "time_s": 151.1785,
+     "n_occupied": 66761,
+     "n_free": 148919
+    },
+    {
+     "sample_id": "08_001460",
+     "position": 292,
+     "time_s": 151.6976,
+     "n_occupied": 58868,
+     "n_free": 129487
+    },
+    {
+     "sample_id": "08_001465",
+     "position": 293,
+     "time_s": 152.2171,
+     "n_occupied": 52166,
+     "n_free": 126391
+    },
+    {
+     "sample_id": "08_001470",
+     "position": 294,
+     "time_s": 152.7367,
+     "n_occupied": 56960,
+     "n_free": 167739
+    },
+    {
+     "sample_id": "08_001475",
+     "position": 295,
+     "time_s": 153.2567,
+     "n_occupied": 60124,
+     "n_free": 214480
+    },
+    {
+     "sample_id": "08_001480",
+     "position": 296,
+     "time_s": 153.7766,
+     "n_occupied": 79894,
+     "n_free": 221673
+    },
+    {
+     "sample_id": "08_001485",
+     "position": 297,
+     "time_s": 154.2962,
+     "n_occupied": 85838,
+     "n_free": 227908
+    },
+    {
+     "sample_id": "08_001490",
+     "position": 298,
+     "time_s": 154.816,
+     "n_occupied": 91037,
+     "n_free": 220248
+    },
+    {
+     "sample_id": "08_001495",
+     "position": 299,
+     "time_s": 155.3358,
+     "n_occupied": 92776,
+     "n_free": 187474
+    },
+    {
+     "sample_id": "08_001500",
+     "position": 300,
+     "time_s": 155.8555,
+     "n_occupied": 81460,
+     "n_free": 139337
+    },
+    {
+     "sample_id": "08_001505",
+     "position": 301,
+     "time_s": 156.3753,
+     "n_occupied": 75323,
+     "n_free": 128877
+    },
+    {
+     "sample_id": "08_001510",
+     "position": 302,
+     "time_s": 156.8952,
+     "n_occupied": 65507,
+     "n_free": 99524
+    },
+    {
+     "sample_id": "08_001515",
+     "position": 303,
+     "time_s": 157.4152,
+     "n_occupied": 58076,
+     "n_free": 92247
+    },
+    {
+     "sample_id": "08_001520",
+     "position": 304,
+     "time_s": 157.9352,
+     "n_occupied": 45663,
+     "n_free": 53120
+    },
+    {
+     "sample_id": "08_001525",
+     "position": 305,
+     "time_s": 158.4558,
+     "n_occupied": 27333,
+     "n_free": 63632
+    },
+    {
+     "sample_id": "08_001530",
+     "position": 306,
+     "time_s": 158.9762,
+     "n_occupied": 39447,
+     "n_free": 76644
+    },
+    {
+     "sample_id": "08_001535",
+     "position": 307,
+     "time_s": 159.4951,
+     "n_occupied": 42751,
+     "n_free": 79544
+    },
+    {
+     "sample_id": "08_001540",
+     "position": 308,
+     "time_s": 160.0136,
+     "n_occupied": 46952,
+     "n_free": 106594
+    },
+    {
+     "sample_id": "08_001545",
+     "position": 309,
+     "time_s": 160.5326,
+     "n_occupied": 52809,
+     "n_free": 136991
+    },
+    {
+     "sample_id": "08_001550",
+     "position": 310,
+     "time_s": 161.0518,
+     "n_occupied": 43361,
+     "n_free": 150633
+    },
+    {
+     "sample_id": "08_001555",
+     "position": 311,
+     "time_s": 161.5713,
+     "n_occupied": 60518,
+     "n_free": 154926
+    },
+    {
+     "sample_id": "08_001560",
+     "position": 312,
+     "time_s": 162.0908,
+     "n_occupied": 55796,
+     "n_free": 126549
+    },
+    {
+     "sample_id": "08_001565",
+     "position": 313,
+     "time_s": 162.6107,
+     "n_occupied": 45131,
+     "n_free": 71153
+    },
+    {
+     "sample_id": "08_001570",
+     "position": 314,
+     "time_s": 163.1304,
+     "n_occupied": 39558,
+     "n_free": 77649
+    },
+    {
+     "sample_id": "08_001575",
+     "position": 315,
+     "time_s": 163.65,
+     "n_occupied": 38813,
+     "n_free": 95807
+    },
+    {
+     "sample_id": "08_001580",
+     "position": 316,
+     "time_s": 164.1697,
+     "n_occupied": 46907,
+     "n_free": 81164
+    },
+    {
+     "sample_id": "08_001585",
+     "position": 317,
+     "time_s": 164.6895,
+     "n_occupied": 44504,
+     "n_free": 86105
+    },
+    {
+     "sample_id": "08_001590",
+     "position": 318,
+     "time_s": 165.2095,
+     "n_occupied": 46790,
+     "n_free": 109530
+    },
+    {
+     "sample_id": "08_001595",
+     "position": 319,
+     "time_s": 165.7292,
+     "n_occupied": 35345,
+     "n_free": 109586
+    },
+    {
+     "sample_id": "08_001600",
+     "position": 320,
+     "time_s": 166.2485,
+     "n_occupied": 51849,
+     "n_free": 96541
+    },
+    {
+     "sample_id": "08_001605",
+     "position": 321,
+     "time_s": 166.7675,
+     "n_occupied": 46231,
+     "n_free": 88107
+    },
+    {
+     "sample_id": "08_001610",
+     "position": 322,
+     "time_s": 167.2864,
+     "n_occupied": 40829,
+     "n_free": 76110
+    },
+    {
+     "sample_id": "08_001615",
+     "position": 323,
+     "time_s": 167.805,
+     "n_occupied": 40953,
+     "n_free": 65282
+    },
+    {
+     "sample_id": "08_001620",
+     "position": 324,
+     "time_s": 168.3236,
+     "n_occupied": 44579,
+     "n_free": 50149
+    },
+    {
+     "sample_id": "08_001625",
+     "position": 325,
+     "time_s": 168.8429,
+     "n_occupied": 42545,
+     "n_free": 55983
+    },
+    {
+     "sample_id": "08_001630",
+     "position": 326,
+     "time_s": 169.3634,
+     "n_occupied": 35947,
+     "n_free": 52112
+    },
+    {
+     "sample_id": "08_001635",
+     "position": 327,
+     "time_s": 169.8835,
+     "n_occupied": 37880,
+     "n_free": 67875
+    },
+    {
+     "sample_id": "08_001640",
+     "position": 328,
+     "time_s": 170.4034,
+     "n_occupied": 42002,
+     "n_free": 103605
+    },
+    {
+     "sample_id": "08_001645",
+     "position": 329,
+     "time_s": 170.9241,
+     "n_occupied": 49229,
+     "n_free": 132955
+    },
+    {
+     "sample_id": "08_001650",
+     "position": 330,
+     "time_s": 171.4446,
+     "n_occupied": 63576,
+     "n_free": 155422
+    },
+    {
+     "sample_id": "08_001655",
+     "position": 331,
+     "time_s": 171.9651,
+     "n_occupied": 66260,
+     "n_free": 172467
+    },
+    {
+     "sample_id": "08_001660",
+     "position": 332,
+     "time_s": 172.4852,
+     "n_occupied": 66498,
+     "n_free": 177375
+    },
+    {
+     "sample_id": "08_001665",
+     "position": 333,
+     "time_s": 173.0054,
+     "n_occupied": 63950,
+     "n_free": 172146
+    },
+    {
+     "sample_id": "08_001670",
+     "position": 334,
+     "time_s": 173.5254,
+     "n_occupied": 66124,
+     "n_free": 185916
+    },
+    {
+     "sample_id": "08_001675",
+     "position": 335,
+     "time_s": 174.045,
+     "n_occupied": 66738,
+     "n_free": 173480
+    },
+    {
+     "sample_id": "08_001680",
+     "position": 336,
+     "time_s": 174.5649,
+     "n_occupied": 60976,
+     "n_free": 158846
+    },
+    {
+     "sample_id": "08_001685",
+     "position": 337,
+     "time_s": 175.0851,
+     "n_occupied": 53615,
+     "n_free": 121397
+    },
+    {
+     "sample_id": "08_001690",
+     "position": 338,
+     "time_s": 175.6055,
+     "n_occupied": 54341,
+     "n_free": 126208
+    },
+    {
+     "sample_id": "08_001695",
+     "position": 339,
+     "time_s": 176.1255,
+     "n_occupied": 57446,
+     "n_free": 141354
+    },
+    {
+     "sample_id": "08_001700",
+     "position": 340,
+     "time_s": 176.6447,
+     "n_occupied": 64602,
+     "n_free": 153809
+    },
+    {
+     "sample_id": "08_001705",
+     "position": 341,
+     "time_s": 177.1636,
+     "n_occupied": 55975,
+     "n_free": 141238
+    },
+    {
+     "sample_id": "08_001710",
+     "position": 342,
+     "time_s": 177.6827,
+     "n_occupied": 53749,
+     "n_free": 121856
+    },
+    {
+     "sample_id": "08_001715",
+     "position": 343,
+     "time_s": 178.2017,
+     "n_occupied": 52867,
+     "n_free": 140282
+    },
+    {
+     "sample_id": "08_001720",
+     "position": 344,
+     "time_s": 178.7207,
+     "n_occupied": 30234,
+     "n_free": 75976
+    },
+    {
+     "sample_id": "08_001725",
+     "position": 345,
+     "time_s": 179.2399,
+     "n_occupied": 27335,
+     "n_free": 75035
+    },
+    {
+     "sample_id": "08_001730",
+     "position": 346,
+     "time_s": 179.7589,
+     "n_occupied": 35888,
+     "n_free": 75115
+    },
+    {
+     "sample_id": "08_001735",
+     "position": 347,
+     "time_s": 180.2777,
+     "n_occupied": 35382,
+     "n_free": 70077
+    },
+    {
+     "sample_id": "08_001740",
+     "position": 348,
+     "time_s": 180.7965,
+     "n_occupied": 39796,
+     "n_free": 81621
+    },
+    {
+     "sample_id": "08_001745",
+     "position": 349,
+     "time_s": 181.3151,
+     "n_occupied": 41441,
+     "n_free": 107447
+    },
+    {
+     "sample_id": "08_001750",
+     "position": 350,
+     "time_s": 181.834,
+     "n_occupied": 47722,
+     "n_free": 118587
+    },
+    {
+     "sample_id": "08_001755",
+     "position": 351,
+     "time_s": 182.3531,
+     "n_occupied": 50483,
+     "n_free": 125374
+    },
+    {
+     "sample_id": "08_001760",
+     "position": 352,
+     "time_s": 182.8721,
+     "n_occupied": 45837,
+     "n_free": 114116
+    },
+    {
+     "sample_id": "08_001765",
+     "position": 353,
+     "time_s": 183.3911,
+     "n_occupied": 43549,
+     "n_free": 110940
+    },
+    {
+     "sample_id": "08_001770",
+     "position": 354,
+     "time_s": 183.9101,
+     "n_occupied": 43358,
+     "n_free": 109467
+    },
+    {
+     "sample_id": "08_001775",
+     "position": 355,
+     "time_s": 184.4291,
+     "n_occupied": 47392,
+     "n_free": 122684
+    },
+    {
+     "sample_id": "08_001780",
+     "position": 356,
+     "time_s": 184.9481,
+     "n_occupied": 50253,
+     "n_free": 109128
+    },
+    {
+     "sample_id": "08_001785",
+     "position": 357,
+     "time_s": 185.4671,
+     "n_occupied": 64096,
+     "n_free": 156157
+    },
+    {
+     "sample_id": "08_001790",
+     "position": 358,
+     "time_s": 185.9862,
+     "n_occupied": 55790,
+     "n_free": 123104
+    },
+    {
+     "sample_id": "08_001795",
+     "position": 359,
+     "time_s": 186.5056,
+     "n_occupied": 53140,
+     "n_free": 106305
+    },
+    {
+     "sample_id": "08_001800",
+     "position": 360,
+     "time_s": 187.0254,
+     "n_occupied": 56898,
+     "n_free": 151571
+    },
+    {
+     "sample_id": "08_001805",
+     "position": 361,
+     "time_s": 187.5451,
+     "n_occupied": 65335,
+     "n_free": 176224
+    },
+    {
+     "sample_id": "08_001810",
+     "position": 362,
+     "time_s": 188.065,
+     "n_occupied": 59748,
+     "n_free": 198567
+    },
+    {
+     "sample_id": "08_001815",
+     "position": 363,
+     "time_s": 188.5846,
+     "n_occupied": 68969,
+     "n_free": 207041
+    },
+    {
+     "sample_id": "08_001820",
+     "position": 364,
+     "time_s": 189.1041,
+     "n_occupied": 73292,
+     "n_free": 199190
+    },
+    {
+     "sample_id": "08_001825",
+     "position": 365,
+     "time_s": 189.6226,
+     "n_occupied": 72321,
+     "n_free": 191442
+    },
+    {
+     "sample_id": "08_001830",
+     "position": 366,
+     "time_s": 190.1412,
+     "n_occupied": 70846,
+     "n_free": 176310
+    },
+    {
+     "sample_id": "08_001835",
+     "position": 367,
+     "time_s": 190.6599,
+     "n_occupied": 70603,
+     "n_free": 199045
+    },
+    {
+     "sample_id": "08_001840",
+     "position": 368,
+     "time_s": 191.1786,
+     "n_occupied": 78743,
+     "n_free": 197130
+    },
+    {
+     "sample_id": "08_001845",
+     "position": 369,
+     "time_s": 191.6983,
+     "n_occupied": 75542,
+     "n_free": 207723
+    },
+    {
+     "sample_id": "08_001850",
+     "position": 370,
+     "time_s": 192.2182,
+     "n_occupied": 91133,
+     "n_free": 242663
+    },
+    {
+     "sample_id": "08_001855",
+     "position": 371,
+     "time_s": 192.7389,
+     "n_occupied": 79536,
+     "n_free": 216051
+    },
+    {
+     "sample_id": "08_001860",
+     "position": 372,
+     "time_s": 193.2592,
+     "n_occupied": 71480,
+     "n_free": 187513
+    },
+    {
+     "sample_id": "08_001865",
+     "position": 373,
+     "time_s": 193.7797,
+     "n_occupied": 64953,
+     "n_free": 167474
+    },
+    {
+     "sample_id": "08_001870",
+     "position": 374,
+     "time_s": 194.3006,
+     "n_occupied": 74927,
+     "n_free": 160175
+    },
+    {
+     "sample_id": "08_001875",
+     "position": 375,
+     "time_s": 194.8215,
+     "n_occupied": 74002,
+     "n_free": 139670
+    },
+    {
+     "sample_id": "08_001880",
+     "position": 376,
+     "time_s": 195.3417,
+     "n_occupied": 58005,
+     "n_free": 106933
+    },
+    {
+     "sample_id": "08_001885",
+     "position": 377,
+     "time_s": 195.8615,
+     "n_occupied": 75290,
+     "n_free": 153877
+    },
+    {
+     "sample_id": "08_001890",
+     "position": 378,
+     "time_s": 196.3811,
+     "n_occupied": 60014,
+     "n_free": 130822
+    },
+    {
+     "sample_id": "08_001895",
+     "position": 379,
+     "time_s": 196.9007,
+     "n_occupied": 51385,
+     "n_free": 125276
+    },
+    {
+     "sample_id": "08_001900",
+     "position": 380,
+     "time_s": 197.4204,
+     "n_occupied": 60690,
+     "n_free": 158296
+    },
+    {
+     "sample_id": "08_001905",
+     "position": 381,
+     "time_s": 197.9398,
+     "n_occupied": 56392,
+     "n_free": 143294
+    },
+    {
+     "sample_id": "08_001910",
+     "position": 382,
+     "time_s": 198.4602,
+     "n_occupied": 62665,
+     "n_free": 167934
+    },
+    {
+     "sample_id": "08_001915",
+     "position": 383,
+     "time_s": 198.982,
+     "n_occupied": 72870,
+     "n_free": 174581
+    },
+    {
+     "sample_id": "08_001920",
+     "position": 384,
+     "time_s": 199.5037,
+     "n_occupied": 80841,
+     "n_free": 189721
+    },
+    {
+     "sample_id": "08_001925",
+     "position": 385,
+     "time_s": 200.0247,
+     "n_occupied": 73612,
+     "n_free": 167789
+    },
+    {
+     "sample_id": "08_001930",
+     "position": 386,
+     "time_s": 200.5448,
+     "n_occupied": 62384,
+     "n_free": 146898
+    },
+    {
+     "sample_id": "08_001935",
+     "position": 387,
+     "time_s": 201.0643,
+     "n_occupied": 62715,
+     "n_free": 136014
+    },
+    {
+     "sample_id": "08_001940",
+     "position": 388,
+     "time_s": 201.5841,
+     "n_occupied": 48706,
+     "n_free": 91918
+    },
+    {
+     "sample_id": "08_001945",
+     "position": 389,
+     "time_s": 202.1038,
+     "n_occupied": 45513,
+     "n_free": 77786
+    },
+    {
+     "sample_id": "08_001950",
+     "position": 390,
+     "time_s": 202.6232,
+     "n_occupied": 46459,
+     "n_free": 74480
+    },
+    {
+     "sample_id": "08_001955",
+     "position": 391,
+     "time_s": 203.1421,
+     "n_occupied": 37795,
+     "n_free": 55898
+    },
+    {
+     "sample_id": "08_001960",
+     "position": 392,
+     "time_s": 203.6613,
+     "n_occupied": 38540,
+     "n_free": 58140
+    },
+    {
+     "sample_id": "08_001965",
+     "position": 393,
+     "time_s": 204.18,
+     "n_occupied": 37089,
+     "n_free": 57146
+    },
+    {
+     "sample_id": "08_001970",
+     "position": 394,
+     "time_s": 204.6989,
+     "n_occupied": 37300,
+     "n_free": 56727
+    },
+    {
+     "sample_id": "08_001975",
+     "position": 395,
+     "time_s": 205.218,
+     "n_occupied": 40920,
+     "n_free": 75107
+    },
+    {
+     "sample_id": "08_001980",
+     "position": 396,
+     "time_s": 205.7375,
+     "n_occupied": 41632,
+     "n_free": 75082
+    },
+    {
+     "sample_id": "08_001985",
+     "position": 397,
+     "time_s": 206.2574,
+     "n_occupied": 39380,
+     "n_free": 72046
+    },
+    {
+     "sample_id": "08_001990",
+     "position": 398,
+     "time_s": 206.7773,
+     "n_occupied": 42377,
+     "n_free": 73072
+    },
+    {
+     "sample_id": "08_001995",
+     "position": 399,
+     "time_s": 207.2968,
+     "n_occupied": 43969,
+     "n_free": 70089
+    },
+    {
+     "sample_id": "08_002000",
+     "position": 400,
+     "time_s": 207.8151,
+     "n_occupied": 44668,
+     "n_free": 67188
+    },
+    {
+     "sample_id": "08_002005",
+     "position": 401,
+     "time_s": 208.3345,
+     "n_occupied": 46050,
+     "n_free": 72987
+    },
+    {
+     "sample_id": "08_002010",
+     "position": 402,
+     "time_s": 208.8551,
+     "n_occupied": 45359,
+     "n_free": 87286
+    },
+    {
+     "sample_id": "08_002015",
+     "position": 403,
+     "time_s": 209.3753,
+     "n_occupied": 41331,
+     "n_free": 83598
+    },
+    {
+     "sample_id": "08_002020",
+     "position": 404,
+     "time_s": 209.8948,
+     "n_occupied": 44936,
+     "n_free": 91351
+    },
+    {
+     "sample_id": "08_002025",
+     "position": 405,
+     "time_s": 210.4142,
+     "n_occupied": 40706,
+     "n_free": 80262
+    },
+    {
+     "sample_id": "08_002030",
+     "position": 406,
+     "time_s": 210.9334,
+     "n_occupied": 37683,
+     "n_free": 69044
+    },
+    {
+     "sample_id": "08_002035",
+     "position": 407,
+     "time_s": 211.4529,
+     "n_occupied": 38815,
+     "n_free": 66448
+    },
+    {
+     "sample_id": "08_002040",
+     "position": 408,
+     "time_s": 211.9723,
+     "n_occupied": 37234,
+     "n_free": 64438
+    },
+    {
+     "sample_id": "08_002045",
+     "position": 409,
+     "time_s": 212.4921,
+     "n_occupied": 36774,
+     "n_free": 65064
+    },
+    {
+     "sample_id": "08_002050",
+     "position": 410,
+     "time_s": 213.012,
+     "n_occupied": 37825,
+     "n_free": 80460
+    },
+    {
+     "sample_id": "08_002055",
+     "position": 411,
+     "time_s": 213.5318,
+     "n_occupied": 38964,
+     "n_free": 88569
+    },
+    {
+     "sample_id": "08_002060",
+     "position": 412,
+     "time_s": 214.0516,
+     "n_occupied": 45751,
+     "n_free": 98743
+    },
+    {
+     "sample_id": "08_002065",
+     "position": 413,
+     "time_s": 214.5713,
+     "n_occupied": 43608,
+     "n_free": 83089
+    },
+    {
+     "sample_id": "08_002070",
+     "position": 414,
+     "time_s": 215.0909,
+     "n_occupied": 37815,
+     "n_free": 64780
+    },
+    {
+     "sample_id": "08_002075",
+     "position": 415,
+     "time_s": 215.6105,
+     "n_occupied": 33074,
+     "n_free": 55854
+    },
+    {
+     "sample_id": "08_002080",
+     "position": 416,
+     "time_s": 216.1303,
+     "n_occupied": 35436,
+     "n_free": 60099
+    },
+    {
+     "sample_id": "08_002085",
+     "position": 417,
+     "time_s": 216.6502,
+     "n_occupied": 33793,
+     "n_free": 53184
+    },
+    {
+     "sample_id": "08_002090",
+     "position": 418,
+     "time_s": 217.17,
+     "n_occupied": 38250,
+     "n_free": 58665
+    },
+    {
+     "sample_id": "08_002095",
+     "position": 419,
+     "time_s": 217.6896,
+     "n_occupied": 37178,
+     "n_free": 56000
+    },
+    {
+     "sample_id": "08_002100",
+     "position": 420,
+     "time_s": 218.2094,
+     "n_occupied": 34802,
+     "n_free": 46062
+    },
+    {
+     "sample_id": "08_002105",
+     "position": 421,
+     "time_s": 218.729,
+     "n_occupied": 35149,
+     "n_free": 39445
+    },
+    {
+     "sample_id": "08_002110",
+     "position": 422,
+     "time_s": 219.2486,
+     "n_occupied": 25503,
+     "n_free": 26017
+    },
+    {
+     "sample_id": "08_002115",
+     "position": 423,
+     "time_s": 219.7684,
+     "n_occupied": 24185,
+     "n_free": 24398
+    },
+    {
+     "sample_id": "08_002120",
+     "position": 424,
+     "time_s": 220.2882,
+     "n_occupied": 24717,
+     "n_free": 48437
+    },
+    {
+     "sample_id": "08_002125",
+     "position": 425,
+     "time_s": 220.808,
+     "n_occupied": 35600,
+     "n_free": 74074
+    },
+    {
+     "sample_id": "08_002130",
+     "position": 426,
+     "time_s": 221.3279,
+     "n_occupied": 42070,
+     "n_free": 100417
+    },
+    {
+     "sample_id": "08_002135",
+     "position": 427,
+     "time_s": 221.8479,
+     "n_occupied": 50346,
+     "n_free": 103414
+    },
+    {
+     "sample_id": "08_002140",
+     "position": 428,
+     "time_s": 222.3678,
+     "n_occupied": 59400,
+     "n_free": 104497
+    },
+    {
+     "sample_id": "08_002145",
+     "position": 429,
+     "time_s": 222.8871,
+     "n_occupied": 64112,
+     "n_free": 114877
+    },
+    {
+     "sample_id": "08_002150",
+     "position": 430,
+     "time_s": 223.4058,
+     "n_occupied": 61389,
+     "n_free": 105703
+    },
+    {
+     "sample_id": "08_002155",
+     "position": 431,
+     "time_s": 223.9244,
+     "n_occupied": 59142,
+     "n_free": 103583
+    },
+    {
+     "sample_id": "08_002160",
+     "position": 432,
+     "time_s": 224.443,
+     "n_occupied": 54501,
+     "n_free": 96107
+    },
+    {
+     "sample_id": "08_002165",
+     "position": 433,
+     "time_s": 224.962,
+     "n_occupied": 52226,
+     "n_free": 92856
+    },
+    {
+     "sample_id": "08_002170",
+     "position": 434,
+     "time_s": 225.4818,
+     "n_occupied": 46628,
+     "n_free": 84651
+    },
+    {
+     "sample_id": "08_002175",
+     "position": 435,
+     "time_s": 226.0016,
+     "n_occupied": 43389,
+     "n_free": 74138
+    },
+    {
+     "sample_id": "08_002180",
+     "position": 436,
+     "time_s": 226.5211,
+     "n_occupied": 41269,
+     "n_free": 64194
+    },
+    {
+     "sample_id": "08_002185",
+     "position": 437,
+     "time_s": 227.0418,
+     "n_occupied": 41997,
+     "n_free": 66335
+    },
+    {
+     "sample_id": "08_002190",
+     "position": 438,
+     "time_s": 227.5628,
+     "n_occupied": 39556,
+     "n_free": 49859
+    },
+    {
+     "sample_id": "08_002195",
+     "position": 439,
+     "time_s": 228.0838,
+     "n_occupied": 36654,
+     "n_free": 51994
+    },
+    {
+     "sample_id": "08_002200",
+     "position": 440,
+     "time_s": 228.6043,
+     "n_occupied": 38220,
+     "n_free": 52337
+    },
+    {
+     "sample_id": "08_002205",
+     "position": 441,
+     "time_s": 229.1244,
+     "n_occupied": 37272,
+     "n_free": 60711
+    },
+    {
+     "sample_id": "08_002210",
+     "position": 442,
+     "time_s": 229.6442,
+     "n_occupied": 39262,
+     "n_free": 61876
+    },
+    {
+     "sample_id": "08_002215",
+     "position": 443,
+     "time_s": 230.164,
+     "n_occupied": 37461,
+     "n_free": 63386
+    },
+    {
+     "sample_id": "08_002220",
+     "position": 444,
+     "time_s": 230.6841,
+     "n_occupied": 34833,
+     "n_free": 66974
+    },
+    {
+     "sample_id": "08_002225",
+     "position": 445,
+     "time_s": 231.2041,
+     "n_occupied": 30657,
+     "n_free": 68495
+    },
+    {
+     "sample_id": "08_002230",
+     "position": 446,
+     "time_s": 231.724,
+     "n_occupied": 33669,
+     "n_free": 66524
+    },
+    {
+     "sample_id": "08_002235",
+     "position": 447,
+     "time_s": 232.2439,
+     "n_occupied": 35093,
+     "n_free": 70366
+    },
+    {
+     "sample_id": "08_002240",
+     "position": 448,
+     "time_s": 232.7639,
+     "n_occupied": 37321,
+     "n_free": 81790
+    },
+    {
+     "sample_id": "08_002245",
+     "position": 449,
+     "time_s": 233.2838,
+     "n_occupied": 46243,
+     "n_free": 103270
+    },
+    {
+     "sample_id": "08_002250",
+     "position": 450,
+     "time_s": 233.8038,
+     "n_occupied": 55785,
+     "n_free": 115761
+    },
+    {
+     "sample_id": "08_002255",
+     "position": 451,
+     "time_s": 234.3239,
+     "n_occupied": 62401,
+     "n_free": 124096
+    },
+    {
+     "sample_id": "08_002260",
+     "position": 452,
+     "time_s": 234.8439,
+     "n_occupied": 64769,
+     "n_free": 127488
+    },
+    {
+     "sample_id": "08_002265",
+     "position": 453,
+     "time_s": 235.3638,
+     "n_occupied": 70959,
+     "n_free": 124024
+    },
+    {
+     "sample_id": "08_002270",
+     "position": 454,
+     "time_s": 235.8834,
+     "n_occupied": 65226,
+     "n_free": 113696
+    },
+    {
+     "sample_id": "08_002275",
+     "position": 455,
+     "time_s": 236.403,
+     "n_occupied": 54405,
+     "n_free": 90480
+    },
+    {
+     "sample_id": "08_002280",
+     "position": 456,
+     "time_s": 236.9225,
+     "n_occupied": 55391,
+     "n_free": 73016
+    },
+    {
+     "sample_id": "08_002285",
+     "position": 457,
+     "time_s": 237.4421,
+     "n_occupied": 53101,
+     "n_free": 75369
+    },
+    {
+     "sample_id": "08_002290",
+     "position": 458,
+     "time_s": 237.9618,
+     "n_occupied": 47078,
+     "n_free": 67596
+    },
+    {
+     "sample_id": "08_002295",
+     "position": 459,
+     "time_s": 238.4815,
+     "n_occupied": 43541,
+     "n_free": 61294
+    },
+    {
+     "sample_id": "08_002300",
+     "position": 460,
+     "time_s": 239.0013,
+     "n_occupied": 42465,
+     "n_free": 67546
+    },
+    {
+     "sample_id": "08_002305",
+     "position": 461,
+     "time_s": 239.521,
+     "n_occupied": 39768,
+     "n_free": 73219
+    },
+    {
+     "sample_id": "08_002310",
+     "position": 462,
+     "time_s": 240.0409,
+     "n_occupied": 40390,
+     "n_free": 88655
+    },
+    {
+     "sample_id": "08_002315",
+     "position": 463,
+     "time_s": 240.5609,
+     "n_occupied": 42657,
+     "n_free": 105637
+    },
+    {
+     "sample_id": "08_002320",
+     "position": 464,
+     "time_s": 241.0808,
+     "n_occupied": 42098,
+     "n_free": 119743
+    },
+    {
+     "sample_id": "08_002325",
+     "position": 465,
+     "time_s": 241.6004,
+     "n_occupied": 46632,
+     "n_free": 125656
+    },
+    {
+     "sample_id": "08_002330",
+     "position": 466,
+     "time_s": 242.12,
+     "n_occupied": 43801,
+     "n_free": 114716
+    },
+    {
+     "sample_id": "08_002335",
+     "position": 467,
+     "time_s": 242.6398,
+     "n_occupied": 39601,
+     "n_free": 96466
+    },
+    {
+     "sample_id": "08_002340",
+     "position": 468,
+     "time_s": 243.16,
+     "n_occupied": 46653,
+     "n_free": 126008
+    },
+    {
+     "sample_id": "08_002345",
+     "position": 469,
+     "time_s": 243.6803,
+     "n_occupied": 48162,
+     "n_free": 130934
+    },
+    {
+     "sample_id": "08_002350",
+     "position": 470,
+     "time_s": 244.2005,
+     "n_occupied": 47334,
+     "n_free": 141426
+    },
+    {
+     "sample_id": "08_002355",
+     "position": 471,
+     "time_s": 244.7208,
+     "n_occupied": 51254,
+     "n_free": 161050
+    },
+    {
+     "sample_id": "08_002360",
+     "position": 472,
+     "time_s": 245.2407,
+     "n_occupied": 58370,
+     "n_free": 179939
+    },
+    {
+     "sample_id": "08_002365",
+     "position": 473,
+     "time_s": 245.7607,
+     "n_occupied": 60666,
+     "n_free": 171383
+    },
+    {
+     "sample_id": "08_002370",
+     "position": 474,
+     "time_s": 246.2807,
+     "n_occupied": 59075,
+     "n_free": 160617
+    },
+    {
+     "sample_id": "08_002375",
+     "position": 475,
+     "time_s": 246.8012,
+     "n_occupied": 62532,
+     "n_free": 149303
+    },
+    {
+     "sample_id": "08_002380",
+     "position": 476,
+     "time_s": 247.3214,
+     "n_occupied": 60456,
+     "n_free": 122849
+    },
+    {
+     "sample_id": "08_002385",
+     "position": 477,
+     "time_s": 247.8414,
+     "n_occupied": 53627,
+     "n_free": 102292
+    },
+    {
+     "sample_id": "08_002390",
+     "position": 478,
+     "time_s": 248.3612,
+     "n_occupied": 47414,
+     "n_free": 82567
+    },
+    {
+     "sample_id": "08_002395",
+     "position": 479,
+     "time_s": 248.8805,
+     "n_occupied": 41748,
+     "n_free": 67162
+    },
+    {
+     "sample_id": "08_002400",
+     "position": 480,
+     "time_s": 249.3998,
+     "n_occupied": 35329,
+     "n_free": 59305
+    },
+    {
+     "sample_id": "08_002405",
+     "position": 481,
+     "time_s": 249.9201,
+     "n_occupied": 31652,
+     "n_free": 48161
+    },
+    {
+     "sample_id": "08_002410",
+     "position": 482,
+     "time_s": 250.4408,
+     "n_occupied": 33737,
+     "n_free": 42828
+    },
+    {
+     "sample_id": "08_002415",
+     "position": 483,
+     "time_s": 250.961,
+     "n_occupied": 28388,
+     "n_free": 37749
+    },
+    {
+     "sample_id": "08_002420",
+     "position": 484,
+     "time_s": 251.4807,
+     "n_occupied": 23444,
+     "n_free": 36828
+    },
+    {
+     "sample_id": "08_002425",
+     "position": 485,
+     "time_s": 251.9999,
+     "n_occupied": 30926,
+     "n_free": 47184
+    },
+    {
+     "sample_id": "08_002430",
+     "position": 486,
+     "time_s": 252.5193,
+     "n_occupied": 26595,
+     "n_free": 41229
+    },
+    {
+     "sample_id": "08_002435",
+     "position": 487,
+     "time_s": 253.0388,
+     "n_occupied": 29648,
+     "n_free": 38756
+    },
+    {
+     "sample_id": "08_002440",
+     "position": 488,
+     "time_s": 253.5584,
+     "n_occupied": 23748,
+     "n_free": 32814
+    },
+    {
+     "sample_id": "08_002445",
+     "position": 489,
+     "time_s": 254.0782,
+     "n_occupied": 22478,
+     "n_free": 33905
+    },
+    {
+     "sample_id": "08_002450",
+     "position": 490,
+     "time_s": 254.5979,
+     "n_occupied": 26247,
+     "n_free": 49802
+    },
+    {
+     "sample_id": "08_002455",
+     "position": 491,
+     "time_s": 255.1177,
+     "n_occupied": 29830,
+     "n_free": 87214
+    },
+    {
+     "sample_id": "08_002460",
+     "position": 492,
+     "time_s": 255.6377,
+     "n_occupied": 43067,
+     "n_free": 138933
+    },
+    {
+     "sample_id": "08_002465",
+     "position": 493,
+     "time_s": 256.1582,
+     "n_occupied": 50477,
+     "n_free": 181053
+    },
+    {
+     "sample_id": "08_002470",
+     "position": 494,
+     "time_s": 256.679,
+     "n_occupied": 55108,
+     "n_free": 199369
+    },
+    {
+     "sample_id": "08_002475",
+     "position": 495,
+     "time_s": 257.2,
+     "n_occupied": 71316,
+     "n_free": 224163
+    },
+    {
+     "sample_id": "08_002480",
+     "position": 496,
+     "time_s": 257.7208,
+     "n_occupied": 82517,
+     "n_free": 239464
+    },
+    {
+     "sample_id": "08_002485",
+     "position": 497,
+     "time_s": 258.2413,
+     "n_occupied": 83510,
+     "n_free": 250704
+    },
+    {
+     "sample_id": "08_002490",
+     "position": 498,
+     "time_s": 258.7612,
+     "n_occupied": 83308,
+     "n_free": 203948
+    },
+    {
+     "sample_id": "08_002495",
+     "position": 499,
+     "time_s": 259.2795,
+     "n_occupied": 84655,
+     "n_free": 199776
+    },
+    {
+     "sample_id": "08_002500",
+     "position": 500,
+     "time_s": 259.7977,
+     "n_occupied": 83601,
+     "n_free": 169073
+    },
+    {
+     "sample_id": "08_002505",
+     "position": 501,
+     "time_s": 260.3162,
+     "n_occupied": 78541,
+     "n_free": 152604
+    },
+    {
+     "sample_id": "08_002510",
+     "position": 502,
+     "time_s": 260.8352,
+     "n_occupied": 71537,
+     "n_free": 131536
+    },
+    {
+     "sample_id": "08_002515",
+     "position": 503,
+     "time_s": 261.3541,
+     "n_occupied": 52308,
+     "n_free": 94432
+    },
+    {
+     "sample_id": "08_002520",
+     "position": 504,
+     "time_s": 261.8737,
+     "n_occupied": 39946,
+     "n_free": 80724
+    },
+    {
+     "sample_id": "08_002525",
+     "position": 505,
+     "time_s": 262.3945,
+     "n_occupied": 47019,
+     "n_free": 108981
+    },
+    {
+     "sample_id": "08_002530",
+     "position": 506,
+     "time_s": 262.9163,
+     "n_occupied": 45899,
+     "n_free": 103577
+    },
+    {
+     "sample_id": "08_002535",
+     "position": 507,
+     "time_s": 263.4384,
+     "n_occupied": 41085,
+     "n_free": 95138
+    },
+    {
+     "sample_id": "08_002540",
+     "position": 508,
+     "time_s": 263.9593,
+     "n_occupied": 44112,
+     "n_free": 88332
+    },
+    {
+     "sample_id": "08_002545",
+     "position": 509,
+     "time_s": 264.4795,
+     "n_occupied": 48491,
+     "n_free": 82234
+    },
+    {
+     "sample_id": "08_002550",
+     "position": 510,
+     "time_s": 264.9992,
+     "n_occupied": 40458,
+     "n_free": 64462
+    },
+    {
+     "sample_id": "08_002555",
+     "position": 511,
+     "time_s": 265.5189,
+     "n_occupied": 39714,
+     "n_free": 67957
+    },
+    {
+     "sample_id": "08_002560",
+     "position": 512,
+     "time_s": 266.0388,
+     "n_occupied": 39399,
+     "n_free": 63806
+    },
+    {
+     "sample_id": "08_002565",
+     "position": 513,
+     "time_s": 266.5584,
+     "n_occupied": 41890,
+     "n_free": 76472
+    },
+    {
+     "sample_id": "08_002570",
+     "position": 514,
+     "time_s": 267.0777,
+     "n_occupied": 43443,
+     "n_free": 86402
+    },
+    {
+     "sample_id": "08_002575",
+     "position": 515,
+     "time_s": 267.5973,
+     "n_occupied": 43504,
+     "n_free": 88535
+    },
+    {
+     "sample_id": "08_002580",
+     "position": 516,
+     "time_s": 268.1167,
+     "n_occupied": 55078,
+     "n_free": 95158
+    },
+    {
+     "sample_id": "08_002585",
+     "position": 517,
+     "time_s": 268.6362,
+     "n_occupied": 54126,
+     "n_free": 90886
+    },
+    {
+     "sample_id": "08_002590",
+     "position": 518,
+     "time_s": 269.1555,
+     "n_occupied": 41036,
+     "n_free": 76842
+    },
+    {
+     "sample_id": "08_002595",
+     "position": 519,
+     "time_s": 269.675,
+     "n_occupied": 39464,
+     "n_free": 82525
+    },
+    {
+     "sample_id": "08_002600",
+     "position": 520,
+     "time_s": 270.1946,
+     "n_occupied": 39859,
+     "n_free": 147309
+    },
+    {
+     "sample_id": "08_002605",
+     "position": 521,
+     "time_s": 270.7142,
+     "n_occupied": 42655,
+     "n_free": 200549
+    },
+    {
+     "sample_id": "08_002610",
+     "position": 522,
+     "time_s": 271.234,
+     "n_occupied": 54686,
+     "n_free": 219898
+    },
+    {
+     "sample_id": "08_002615",
+     "position": 523,
+     "time_s": 271.7546,
+     "n_occupied": 66307,
+     "n_free": 241341
+    },
+    {
+     "sample_id": "08_002620",
+     "position": 524,
+     "time_s": 272.2755,
+     "n_occupied": 71317,
+     "n_free": 217977
+    },
+    {
+     "sample_id": "08_002625",
+     "position": 525,
+     "time_s": 272.7967,
+     "n_occupied": 70354,
+     "n_free": 198157
+    },
+    {
+     "sample_id": "08_002630",
+     "position": 526,
+     "time_s": 273.3176,
+     "n_occupied": 71625,
+     "n_free": 161694
+    },
+    {
+     "sample_id": "08_002635",
+     "position": 527,
+     "time_s": 273.8379,
+     "n_occupied": 55065,
+     "n_free": 104343
+    },
+    {
+     "sample_id": "08_002640",
+     "position": 528,
+     "time_s": 274.3576,
+     "n_occupied": 43212,
+     "n_free": 82113
+    },
+    {
+     "sample_id": "08_002645",
+     "position": 529,
+     "time_s": 274.8768,
+     "n_occupied": 42908,
+     "n_free": 66892
+    },
+    {
+     "sample_id": "08_002650",
+     "position": 530,
+     "time_s": 275.3963,
+     "n_occupied": 43130,
+     "n_free": 74889
+    },
+    {
+     "sample_id": "08_002655",
+     "position": 531,
+     "time_s": 275.9158,
+     "n_occupied": 39000,
+     "n_free": 65621
+    },
+    {
+     "sample_id": "08_002660",
+     "position": 532,
+     "time_s": 276.4347,
+     "n_occupied": 39128,
+     "n_free": 72837
+    },
+    {
+     "sample_id": "08_002665",
+     "position": 533,
+     "time_s": 276.9531,
+     "n_occupied": 39974,
+     "n_free": 85123
+    },
+    {
+     "sample_id": "08_002670",
+     "position": 534,
+     "time_s": 277.4717,
+     "n_occupied": 39599,
+     "n_free": 84734
+    },
+    {
+     "sample_id": "08_002675",
+     "position": 535,
+     "time_s": 277.9908,
+     "n_occupied": 41222,
+     "n_free": 100954
+    },
+    {
+     "sample_id": "08_002680",
+     "position": 536,
+     "time_s": 278.5099,
+     "n_occupied": 44870,
+     "n_free": 92938
+    },
+    {
+     "sample_id": "08_002685",
+     "position": 537,
+     "time_s": 279.0294,
+     "n_occupied": 39283,
+     "n_free": 92403
+    },
+    {
+     "sample_id": "08_002690",
+     "position": 538,
+     "time_s": 279.5491,
+     "n_occupied": 33152,
+     "n_free": 76572
+    },
+    {
+     "sample_id": "08_002695",
+     "position": 539,
+     "time_s": 280.0687,
+     "n_occupied": 32999,
+     "n_free": 87677
+    },
+    {
+     "sample_id": "08_002700",
+     "position": 540,
+     "time_s": 280.5882,
+     "n_occupied": 33031,
+     "n_free": 77191
+    },
+    {
+     "sample_id": "08_002705",
+     "position": 541,
+     "time_s": 281.1074,
+     "n_occupied": 42641,
+     "n_free": 100071
+    },
+    {
+     "sample_id": "08_002710",
+     "position": 542,
+     "time_s": 281.6264,
+     "n_occupied": 46065,
+     "n_free": 110316
+    },
+    {
+     "sample_id": "08_002715",
+     "position": 543,
+     "time_s": 282.1454,
+     "n_occupied": 42941,
+     "n_free": 90494
+    },
+    {
+     "sample_id": "08_002720",
+     "position": 544,
+     "time_s": 282.6642,
+     "n_occupied": 38064,
+     "n_free": 79654
+    },
+    {
+     "sample_id": "08_002725",
+     "position": 545,
+     "time_s": 283.1831,
+     "n_occupied": 38282,
+     "n_free": 75322
+    },
+    {
+     "sample_id": "08_002730",
+     "position": 546,
+     "time_s": 283.7021,
+     "n_occupied": 37291,
+     "n_free": 74374
+    },
+    {
+     "sample_id": "08_002735",
+     "position": 547,
+     "time_s": 284.2214,
+     "n_occupied": 38429,
+     "n_free": 79283
+    },
+    {
+     "sample_id": "08_002740",
+     "position": 548,
+     "time_s": 284.7407,
+     "n_occupied": 42206,
+     "n_free": 96535
+    },
+    {
+     "sample_id": "08_002745",
+     "position": 549,
+     "time_s": 285.2598,
+     "n_occupied": 44288,
+     "n_free": 117242
+    },
+    {
+     "sample_id": "08_002750",
+     "position": 550,
+     "time_s": 285.7788,
+     "n_occupied": 41757,
+     "n_free": 111930
+    },
+    {
+     "sample_id": "08_002755",
+     "position": 551,
+     "time_s": 286.2978,
+     "n_occupied": 52190,
+     "n_free": 148582
+    },
+    {
+     "sample_id": "08_002760",
+     "position": 552,
+     "time_s": 286.8169,
+     "n_occupied": 51481,
+     "n_free": 127955
+    },
+    {
+     "sample_id": "08_002765",
+     "position": 553,
+     "time_s": 287.3362,
+     "n_occupied": 52738,
+     "n_free": 125567
+    },
+    {
+     "sample_id": "08_002770",
+     "position": 554,
+     "time_s": 287.8553,
+     "n_occupied": 51109,
+     "n_free": 114502
+    },
+    {
+     "sample_id": "08_002775",
+     "position": 555,
+     "time_s": 288.3744,
+     "n_occupied": 46751,
+     "n_free": 101464
+    },
+    {
+     "sample_id": "08_002780",
+     "position": 556,
+     "time_s": 288.8938,
+     "n_occupied": 48869,
+     "n_free": 109509
+    },
+    {
+     "sample_id": "08_002785",
+     "position": 557,
+     "time_s": 289.413,
+     "n_occupied": 42010,
+     "n_free": 100916
+    },
+    {
+     "sample_id": "08_002790",
+     "position": 558,
+     "time_s": 289.9321,
+     "n_occupied": 42674,
+     "n_free": 109641
+    },
+    {
+     "sample_id": "08_002795",
+     "position": 559,
+     "time_s": 290.4509,
+     "n_occupied": 54939,
+     "n_free": 145063
+    },
+    {
+     "sample_id": "08_002800",
+     "position": 560,
+     "time_s": 290.9702,
+     "n_occupied": 49853,
+     "n_free": 124195
+    },
+    {
+     "sample_id": "08_002805",
+     "position": 561,
+     "time_s": 291.4893,
+     "n_occupied": 44700,
+     "n_free": 112674
+    },
+    {
+     "sample_id": "08_002810",
+     "position": 562,
+     "time_s": 292.0087,
+     "n_occupied": 41556,
+     "n_free": 113301
+    },
+    {
+     "sample_id": "08_002815",
+     "position": 563,
+     "time_s": 292.5279,
+     "n_occupied": 41807,
+     "n_free": 116994
+    },
+    {
+     "sample_id": "08_002820",
+     "position": 564,
+     "time_s": 293.0471,
+     "n_occupied": 46779,
+     "n_free": 133028
+    },
+    {
+     "sample_id": "08_002825",
+     "position": 565,
+     "time_s": 293.5662,
+     "n_occupied": 49062,
+     "n_free": 142603
+    },
+    {
+     "sample_id": "08_002830",
+     "position": 566,
+     "time_s": 294.0853,
+     "n_occupied": 52521,
+     "n_free": 139434
+    },
+    {
+     "sample_id": "08_002835",
+     "position": 567,
+     "time_s": 294.6039,
+     "n_occupied": 58706,
+     "n_free": 148196
+    },
+    {
+     "sample_id": "08_002840",
+     "position": 568,
+     "time_s": 295.1228,
+     "n_occupied": 51658,
+     "n_free": 118252
+    },
+    {
+     "sample_id": "08_002845",
+     "position": 569,
+     "time_s": 295.6416,
+     "n_occupied": 45648,
+     "n_free": 101651
+    },
+    {
+     "sample_id": "08_002850",
+     "position": 570,
+     "time_s": 296.1602,
+     "n_occupied": 46913,
+     "n_free": 132965
+    },
+    {
+     "sample_id": "08_002855",
+     "position": 571,
+     "time_s": 296.6787,
+     "n_occupied": 50310,
+     "n_free": 147713
+    },
+    {
+     "sample_id": "08_002860",
+     "position": 572,
+     "time_s": 297.1972,
+     "n_occupied": 41213,
+     "n_free": 113694
+    },
+    {
+     "sample_id": "08_002865",
+     "position": 573,
+     "time_s": 297.7161,
+     "n_occupied": 51155,
+     "n_free": 116606
+    },
+    {
+     "sample_id": "08_002870",
+     "position": 574,
+     "time_s": 298.2353,
+     "n_occupied": 45703,
+     "n_free": 89199
+    },
+    {
+     "sample_id": "08_002875",
+     "position": 575,
+     "time_s": 298.7556,
+     "n_occupied": 39375,
+     "n_free": 55526
+    },
+    {
+     "sample_id": "08_002880",
+     "position": 576,
+     "time_s": 299.2761,
+     "n_occupied": 46170,
+     "n_free": 80480
+    },
+    {
+     "sample_id": "08_002885",
+     "position": 577,
+     "time_s": 299.7968,
+     "n_occupied": 36539,
+     "n_free": 58987
+    },
+    {
+     "sample_id": "08_002890",
+     "position": 578,
+     "time_s": 300.3175,
+     "n_occupied": 41641,
+     "n_free": 70782
+    },
+    {
+     "sample_id": "08_002895",
+     "position": 579,
+     "time_s": 300.8376,
+     "n_occupied": 40468,
+     "n_free": 67183
+    },
+    {
+     "sample_id": "08_002900",
+     "position": 580,
+     "time_s": 301.3573,
+     "n_occupied": 38815,
+     "n_free": 71976
+    },
+    {
+     "sample_id": "08_002905",
+     "position": 581,
+     "time_s": 301.8765,
+     "n_occupied": 33719,
+     "n_free": 77325
+    },
+    {
+     "sample_id": "08_002910",
+     "position": 582,
+     "time_s": 302.3953,
+     "n_occupied": 38955,
+     "n_free": 72324
+    },
+    {
+     "sample_id": "08_002915",
+     "position": 583,
+     "time_s": 302.9141,
+     "n_occupied": 33929,
+     "n_free": 63031
+    },
+    {
+     "sample_id": "08_002920",
+     "position": 584,
+     "time_s": 303.433,
+     "n_occupied": 31864,
+     "n_free": 48521
+    },
+    {
+     "sample_id": "08_002925",
+     "position": 585,
+     "time_s": 303.9519,
+     "n_occupied": 19391,
+     "n_free": 55667
+    },
+    {
+     "sample_id": "08_002930",
+     "position": 586,
+     "time_s": 304.4716,
+     "n_occupied": 34513,
+     "n_free": 83868
+    },
+    {
+     "sample_id": "08_002935",
+     "position": 587,
+     "time_s": 304.9927,
+     "n_occupied": 47846,
+     "n_free": 115220
+    },
+    {
+     "sample_id": "08_002940",
+     "position": 588,
+     "time_s": 305.5142,
+     "n_occupied": 45244,
+     "n_free": 102169
+    },
+    {
+     "sample_id": "08_002945",
+     "position": 589,
+     "time_s": 306.0355,
+     "n_occupied": 51810,
+     "n_free": 124817
+    },
+    {
+     "sample_id": "08_002950",
+     "position": 590,
+     "time_s": 306.5561,
+     "n_occupied": 47912,
+     "n_free": 101723
+    },
+    {
+     "sample_id": "08_002955",
+     "position": 591,
+     "time_s": 307.0763,
+     "n_occupied": 39900,
+     "n_free": 90735
+    },
+    {
+     "sample_id": "08_002960",
+     "position": 592,
+     "time_s": 307.5955,
+     "n_occupied": 40348,
+     "n_free": 74456
+    },
+    {
+     "sample_id": "08_002965",
+     "position": 593,
+     "time_s": 308.1138,
+     "n_occupied": 42934,
+     "n_free": 78323
+    },
+    {
+     "sample_id": "08_002970",
+     "position": 594,
+     "time_s": 308.6326,
+     "n_occupied": 48898,
+     "n_free": 86221
+    },
+    {
+     "sample_id": "08_002975",
+     "position": 595,
+     "time_s": 309.1521,
+     "n_occupied": 43981,
+     "n_free": 79426
+    },
+    {
+     "sample_id": "08_002980",
+     "position": 596,
+     "time_s": 309.6721,
+     "n_occupied": 44588,
+     "n_free": 70564
+    },
+    {
+     "sample_id": "08_002985",
+     "position": 597,
+     "time_s": 310.1922,
+     "n_occupied": 35385,
+     "n_free": 69891
+    },
+    {
+     "sample_id": "08_002990",
+     "position": 598,
+     "time_s": 310.7123,
+     "n_occupied": 30675,
+     "n_free": 70673
+    },
+    {
+     "sample_id": "08_002995",
+     "position": 599,
+     "time_s": 311.232,
+     "n_occupied": 38233,
+     "n_free": 78930
+    },
+    {
+     "sample_id": "08_003000",
+     "position": 600,
+     "time_s": 311.7516,
+     "n_occupied": 39865,
+     "n_free": 85160
+    },
+    {
+     "sample_id": "08_003005",
+     "position": 601,
+     "time_s": 312.2713,
+     "n_occupied": 46490,
+     "n_free": 103313
+    },
+    {
+     "sample_id": "08_003010",
+     "position": 602,
+     "time_s": 312.7916,
+     "n_occupied": 39046,
+     "n_free": 80883
+    },
+    {
+     "sample_id": "08_003015",
+     "position": 603,
+     "time_s": 313.3118,
+     "n_occupied": 17630,
+     "n_free": 57074
+    },
+    {
+     "sample_id": "08_003020",
+     "position": 604,
+     "time_s": 313.8316,
+     "n_occupied": 17827,
+     "n_free": 52828
+    },
+    {
+     "sample_id": "08_003025",
+     "position": 605,
+     "time_s": 314.3513,
+     "n_occupied": 25005,
+     "n_free": 48044
+    },
+    {
+     "sample_id": "08_003030",
+     "position": 606,
+     "time_s": 314.8713,
+     "n_occupied": 38954,
+     "n_free": 74928
+    },
+    {
+     "sample_id": "08_003035",
+     "position": 607,
+     "time_s": 315.3921,
+     "n_occupied": 45921,
+     "n_free": 98237
+    },
+    {
+     "sample_id": "08_003040",
+     "position": 608,
+     "time_s": 315.9122,
+     "n_occupied": 37084,
+     "n_free": 86621
+    },
+    {
+     "sample_id": "08_003045",
+     "position": 609,
+     "time_s": 316.4317,
+     "n_occupied": 47749,
+     "n_free": 87823
+    },
+    {
+     "sample_id": "08_003050",
+     "position": 610,
+     "time_s": 316.9504,
+     "n_occupied": 44574,
+     "n_free": 108791
+    },
+    {
+     "sample_id": "08_003055",
+     "position": 611,
+     "time_s": 317.4692,
+     "n_occupied": 41923,
+     "n_free": 111775
+    },
+    {
+     "sample_id": "08_003060",
+     "position": 612,
+     "time_s": 317.9882,
+     "n_occupied": 47781,
+     "n_free": 106261
+    },
+    {
+     "sample_id": "08_003065",
+     "position": 613,
+     "time_s": 318.5072,
+     "n_occupied": 42768,
+     "n_free": 76749
+    },
+    {
+     "sample_id": "08_003070",
+     "position": 614,
+     "time_s": 319.0259,
+     "n_occupied": 39301,
+     "n_free": 70354
+    },
+    {
+     "sample_id": "08_003075",
+     "position": 615,
+     "time_s": 319.545,
+     "n_occupied": 28966,
+     "n_free": 44061
+    },
+    {
+     "sample_id": "08_003080",
+     "position": 616,
+     "time_s": 320.0642,
+     "n_occupied": 36197,
+     "n_free": 61553
+    },
+    {
+     "sample_id": "08_003085",
+     "position": 617,
+     "time_s": 320.5842,
+     "n_occupied": 35185,
+     "n_free": 62863
+    },
+    {
+     "sample_id": "08_003090",
+     "position": 618,
+     "time_s": 321.1042,
+     "n_occupied": 37983,
+     "n_free": 62841
+    },
+    {
+     "sample_id": "08_003095",
+     "position": 619,
+     "time_s": 321.6237,
+     "n_occupied": 48107,
+     "n_free": 83823
+    },
+    {
+     "sample_id": "08_003100",
+     "position": 620,
+     "time_s": 322.1432,
+     "n_occupied": 36167,
+     "n_free": 53939
+    },
+    {
+     "sample_id": "08_003105",
+     "position": 621,
+     "time_s": 322.663,
+     "n_occupied": 25402,
+     "n_free": 38946
+    },
+    {
+     "sample_id": "08_003110",
+     "position": 622,
+     "time_s": 323.1828,
+     "n_occupied": 26123,
+     "n_free": 45895
+    },
+    {
+     "sample_id": "08_003115",
+     "position": 623,
+     "time_s": 323.7028,
+     "n_occupied": 28931,
+     "n_free": 55583
+    },
+    {
+     "sample_id": "08_003120",
+     "position": 624,
+     "time_s": 324.2227,
+     "n_occupied": 25948,
+     "n_free": 51044
+    },
+    {
+     "sample_id": "08_003125",
+     "position": 625,
+     "time_s": 324.7422,
+     "n_occupied": 27156,
+     "n_free": 45975
+    },
+    {
+     "sample_id": "08_003130",
+     "position": 626,
+     "time_s": 325.2617,
+     "n_occupied": 34554,
+     "n_free": 50443
+    },
+    {
+     "sample_id": "08_003135",
+     "position": 627,
+     "time_s": 325.7815,
+     "n_occupied": 29740,
+     "n_free": 48838
+    },
+    {
+     "sample_id": "08_003140",
+     "position": 628,
+     "time_s": 326.3015,
+     "n_occupied": 32717,
+     "n_free": 47867
+    },
+    {
+     "sample_id": "08_003145",
+     "position": 629,
+     "time_s": 326.8212,
+     "n_occupied": 38551,
+     "n_free": 56420
+    },
+    {
+     "sample_id": "08_003150",
+     "position": 630,
+     "time_s": 327.341,
+     "n_occupied": 33808,
+     "n_free": 49599
+    },
+    {
+     "sample_id": "08_003155",
+     "position": 631,
+     "time_s": 327.8605,
+     "n_occupied": 34023,
+     "n_free": 51604
+    },
+    {
+     "sample_id": "08_003160",
+     "position": 632,
+     "time_s": 328.3798,
+     "n_occupied": 37847,
+     "n_free": 55869
+    },
+    {
+     "sample_id": "08_003165",
+     "position": 633,
+     "time_s": 328.8991,
+     "n_occupied": 39624,
+     "n_free": 52050
+    },
+    {
+     "sample_id": "08_003170",
+     "position": 634,
+     "time_s": 329.4187,
+     "n_occupied": 34292,
+     "n_free": 50597
+    },
+    {
+     "sample_id": "08_003175",
+     "position": 635,
+     "time_s": 329.9382,
+     "n_occupied": 25975,
+     "n_free": 61119
+    },
+    {
+     "sample_id": "08_003180",
+     "position": 636,
+     "time_s": 330.4576,
+     "n_occupied": 29399,
+     "n_free": 66008
+    },
+    {
+     "sample_id": "08_003185",
+     "position": 637,
+     "time_s": 330.9767,
+     "n_occupied": 37122,
+     "n_free": 84567
+    },
+    {
+     "sample_id": "08_003190",
+     "position": 638,
+     "time_s": 331.496,
+     "n_occupied": 42918,
+     "n_free": 86361
+    },
+    {
+     "sample_id": "08_003195",
+     "position": 639,
+     "time_s": 332.0151,
+     "n_occupied": 47037,
+     "n_free": 82676
+    },
+    {
+     "sample_id": "08_003200",
+     "position": 640,
+     "time_s": 332.5343,
+     "n_occupied": 45492,
+     "n_free": 78010
+    },
+    {
+     "sample_id": "08_003205",
+     "position": 641,
+     "time_s": 333.0536,
+     "n_occupied": 40853,
+     "n_free": 66803
+    },
+    {
+     "sample_id": "08_003210",
+     "position": 642,
+     "time_s": 333.5727,
+     "n_occupied": 31236,
+     "n_free": 57352
+    },
+    {
+     "sample_id": "08_003215",
+     "position": 643,
+     "time_s": 334.092,
+     "n_occupied": 30567,
+     "n_free": 55520
+    },
+    {
+     "sample_id": "08_003220",
+     "position": 644,
+     "time_s": 334.6113,
+     "n_occupied": 32731,
+     "n_free": 54701
+    },
+    {
+     "sample_id": "08_003225",
+     "position": 645,
+     "time_s": 335.1302,
+     "n_occupied": 31837,
+     "n_free": 54423
+    },
+    {
+     "sample_id": "08_003230",
+     "position": 646,
+     "time_s": 335.6492,
+     "n_occupied": 31420,
+     "n_free": 40129
+    },
+    {
+     "sample_id": "08_003235",
+     "position": 647,
+     "time_s": 336.1688,
+     "n_occupied": 34600,
+     "n_free": 51886
+    },
+    {
+     "sample_id": "08_003240",
+     "position": 648,
+     "time_s": 336.688,
+     "n_occupied": 29403,
+     "n_free": 46255
+    },
+    {
+     "sample_id": "08_003245",
+     "position": 649,
+     "time_s": 337.2073,
+     "n_occupied": 28765,
+     "n_free": 42474
+    },
+    {
+     "sample_id": "08_003250",
+     "position": 650,
+     "time_s": 337.7267,
+     "n_occupied": 27511,
+     "n_free": 39025
+    },
+    {
+     "sample_id": "08_003255",
+     "position": 651,
+     "time_s": 338.2461,
+     "n_occupied": 26930,
+     "n_free": 33650
+    },
+    {
+     "sample_id": "08_003260",
+     "position": 652,
+     "time_s": 338.7653,
+     "n_occupied": 20922,
+     "n_free": 37320
+    },
+    {
+     "sample_id": "08_003265",
+     "position": 653,
+     "time_s": 339.2851,
+     "n_occupied": 24282,
+     "n_free": 52571
+    },
+    {
+     "sample_id": "08_003270",
+     "position": 654,
+     "time_s": 339.8047,
+     "n_occupied": 23857,
+     "n_free": 49547
+    },
+    {
+     "sample_id": "08_003275",
+     "position": 655,
+     "time_s": 340.3246,
+     "n_occupied": 30194,
+     "n_free": 66922
+    },
+    {
+     "sample_id": "08_003280",
+     "position": 656,
+     "time_s": 340.8446,
+     "n_occupied": 31063,
+     "n_free": 64084
+    },
+    {
+     "sample_id": "08_003285",
+     "position": 657,
+     "time_s": 341.3645,
+     "n_occupied": 37959,
+     "n_free": 68860
+    },
+    {
+     "sample_id": "08_003290",
+     "position": 658,
+     "time_s": 341.8842,
+     "n_occupied": 37594,
+     "n_free": 61840
+    },
+    {
+     "sample_id": "08_003295",
+     "position": 659,
+     "time_s": 342.4033,
+     "n_occupied": 31630,
+     "n_free": 51217
+    },
+    {
+     "sample_id": "08_003300",
+     "position": 660,
+     "time_s": 342.9224,
+     "n_occupied": 36379,
+     "n_free": 55214
+    },
+    {
+     "sample_id": "08_003305",
+     "position": 661,
+     "time_s": 343.4414,
+     "n_occupied": 28415,
+     "n_free": 64559
+    },
+    {
+     "sample_id": "08_003310",
+     "position": 662,
+     "time_s": 343.9602,
+     "n_occupied": 32734,
+     "n_free": 80672
+    },
+    {
+     "sample_id": "08_003315",
+     "position": 663,
+     "time_s": 344.4789,
+     "n_occupied": 36162,
+     "n_free": 71346
+    },
+    {
+     "sample_id": "08_003320",
+     "position": 664,
+     "time_s": 344.9976,
+     "n_occupied": 33769,
+     "n_free": 54512
+    },
+    {
+     "sample_id": "08_003325",
+     "position": 665,
+     "time_s": 345.5165,
+     "n_occupied": 28314,
+     "n_free": 53863
+    },
+    {
+     "sample_id": "08_003330",
+     "position": 666,
+     "time_s": 346.0356,
+     "n_occupied": 29312,
+     "n_free": 51598
+    },
+    {
+     "sample_id": "08_003335",
+     "position": 667,
+     "time_s": 346.5545,
+     "n_occupied": 37957,
+     "n_free": 59843
+    },
+    {
+     "sample_id": "08_003340",
+     "position": 668,
+     "time_s": 347.0735,
+     "n_occupied": 38272,
+     "n_free": 58522
+    },
+    {
+     "sample_id": "08_003345",
+     "position": 669,
+     "time_s": 347.5927,
+     "n_occupied": 23868,
+     "n_free": 41993
+    },
+    {
+     "sample_id": "08_003350",
+     "position": 670,
+     "time_s": 348.1125,
+     "n_occupied": 24130,
+     "n_free": 41091
+    },
+    {
+     "sample_id": "08_003355",
+     "position": 671,
+     "time_s": 348.6319,
+     "n_occupied": 24059,
+     "n_free": 38402
+    },
+    {
+     "sample_id": "08_003360",
+     "position": 672,
+     "time_s": 349.1502,
+     "n_occupied": 28888,
+     "n_free": 57230
+    },
+    {
+     "sample_id": "08_003365",
+     "position": 673,
+     "time_s": 349.6686,
+     "n_occupied": 37091,
+     "n_free": 75022
+    },
+    {
+     "sample_id": "08_003370",
+     "position": 674,
+     "time_s": 350.1876,
+     "n_occupied": 41618,
+     "n_free": 74932
+    },
+    {
+     "sample_id": "08_003375",
+     "position": 675,
+     "time_s": 350.7076,
+     "n_occupied": 30716,
+     "n_free": 65289
+    },
+    {
+     "sample_id": "08_003380",
+     "position": 676,
+     "time_s": 351.2281,
+     "n_occupied": 42132,
+     "n_free": 92116
+    },
+    {
+     "sample_id": "08_003385",
+     "position": 677,
+     "time_s": 351.7495,
+     "n_occupied": 34631,
+     "n_free": 114200
+    },
+    {
+     "sample_id": "08_003390",
+     "position": 678,
+     "time_s": 352.2714,
+     "n_occupied": 52258,
+     "n_free": 125741
+    },
+    {
+     "sample_id": "08_003395",
+     "position": 679,
+     "time_s": 352.793,
+     "n_occupied": 56817,
+     "n_free": 120486
+    },
+    {
+     "sample_id": "08_003400",
+     "position": 680,
+     "time_s": 353.3141,
+     "n_occupied": 65004,
+     "n_free": 110130
+    },
+    {
+     "sample_id": "08_003405",
+     "position": 681,
+     "time_s": 353.8344,
+     "n_occupied": 52151,
+     "n_free": 82838
+    },
+    {
+     "sample_id": "08_003410",
+     "position": 682,
+     "time_s": 354.3541,
+     "n_occupied": 38157,
+     "n_free": 67765
+    },
+    {
+     "sample_id": "08_003415",
+     "position": 683,
+     "time_s": 354.8732,
+     "n_occupied": 42672,
+     "n_free": 90493
+    },
+    {
+     "sample_id": "08_003420",
+     "position": 684,
+     "time_s": 355.3925,
+     "n_occupied": 54511,
+     "n_free": 129759
+    },
+    {
+     "sample_id": "08_003425",
+     "position": 685,
+     "time_s": 355.9125,
+     "n_occupied": 66519,
+     "n_free": 153939
+    },
+    {
+     "sample_id": "08_003430",
+     "position": 686,
+     "time_s": 356.433,
+     "n_occupied": 68556,
+     "n_free": 149497
+    },
+    {
+     "sample_id": "08_003435",
+     "position": 687,
+     "time_s": 356.9531,
+     "n_occupied": 63208,
+     "n_free": 134647
+    },
+    {
+     "sample_id": "08_003440",
+     "position": 688,
+     "time_s": 357.4724,
+     "n_occupied": 42736,
+     "n_free": 81001
+    },
+    {
+     "sample_id": "08_003445",
+     "position": 689,
+     "time_s": 357.9909,
+     "n_occupied": 35697,
+     "n_free": 81121
+    },
+    {
+     "sample_id": "08_003450",
+     "position": 690,
+     "time_s": 358.5091,
+     "n_occupied": 34639,
+     "n_free": 75691
+    },
+    {
+     "sample_id": "08_003455",
+     "position": 691,
+     "time_s": 359.0275,
+     "n_occupied": 32145,
+     "n_free": 67840
+    },
+    {
+     "sample_id": "08_003460",
+     "position": 692,
+     "time_s": 359.5462,
+     "n_occupied": 30335,
+     "n_free": 62059
+    },
+    {
+     "sample_id": "08_003465",
+     "position": 693,
+     "time_s": 360.0656,
+     "n_occupied": 33292,
+     "n_free": 80497
+    },
+    {
+     "sample_id": "08_003470",
+     "position": 694,
+     "time_s": 360.585,
+     "n_occupied": 39060,
+     "n_free": 98356
+    },
+    {
+     "sample_id": "08_003475",
+     "position": 695,
+     "time_s": 361.1045,
+     "n_occupied": 40026,
+     "n_free": 98715
+    },
+    {
+     "sample_id": "08_003480",
+     "position": 696,
+     "time_s": 361.6237,
+     "n_occupied": 44526,
+     "n_free": 106549
+    },
+    {
+     "sample_id": "08_003485",
+     "position": 697,
+     "time_s": 362.1427,
+     "n_occupied": 43774,
+     "n_free": 109056
+    },
+    {
+     "sample_id": "08_003490",
+     "position": 698,
+     "time_s": 362.6621,
+     "n_occupied": 46486,
+     "n_free": 125048
+    },
+    {
+     "sample_id": "08_003495",
+     "position": 699,
+     "time_s": 363.1816,
+     "n_occupied": 49220,
+     "n_free": 127671
+    },
+    {
+     "sample_id": "08_003500",
+     "position": 700,
+     "time_s": 363.7012,
+     "n_occupied": 48568,
+     "n_free": 102326
+    },
+    {
+     "sample_id": "08_003505",
+     "position": 701,
+     "time_s": 364.221,
+     "n_occupied": 45045,
+     "n_free": 83553
+    },
+    {
+     "sample_id": "08_003510",
+     "position": 702,
+     "time_s": 364.7408,
+     "n_occupied": 39832,
+     "n_free": 77072
+    },
+    {
+     "sample_id": "08_003515",
+     "position": 703,
+     "time_s": 365.2601,
+     "n_occupied": 33598,
+     "n_free": 69610
+    },
+    {
+     "sample_id": "08_003520",
+     "position": 704,
+     "time_s": 365.7795,
+     "n_occupied": 30041,
+     "n_free": 73178
+    },
+    {
+     "sample_id": "08_003525",
+     "position": 705,
+     "time_s": 366.2992,
+     "n_occupied": 42060,
+     "n_free": 93380
+    },
+    {
+     "sample_id": "08_003530",
+     "position": 706,
+     "time_s": 366.819,
+     "n_occupied": 32693,
+     "n_free": 62764
+    },
+    {
+     "sample_id": "08_003535",
+     "position": 707,
+     "time_s": 367.3386,
+     "n_occupied": 26636,
+     "n_free": 50772
+    },
+    {
+     "sample_id": "08_003540",
+     "position": 708,
+     "time_s": 367.8584,
+     "n_occupied": 27653,
+     "n_free": 37973
+    },
+    {
+     "sample_id": "08_003545",
+     "position": 709,
+     "time_s": 368.3781,
+     "n_occupied": 32175,
+     "n_free": 67437
+    },
+    {
+     "sample_id": "08_003550",
+     "position": 710,
+     "time_s": 368.8977,
+     "n_occupied": 25999,
+     "n_free": 57117
+    },
+    {
+     "sample_id": "08_003555",
+     "position": 711,
+     "time_s": 369.4174,
+     "n_occupied": 23223,
+     "n_free": 39894
+    },
+    {
+     "sample_id": "08_003560",
+     "position": 712,
+     "time_s": 369.9369,
+     "n_occupied": 26297,
+     "n_free": 46124
+    },
+    {
+     "sample_id": "08_003565",
+     "position": 713,
+     "time_s": 370.4564,
+     "n_occupied": 21485,
+     "n_free": 63834
+    },
+    {
+     "sample_id": "08_003570",
+     "position": 714,
+     "time_s": 370.9759,
+     "n_occupied": 33397,
+     "n_free": 112061
+    },
+    {
+     "sample_id": "08_003575",
+     "position": 715,
+     "time_s": 371.4954,
+     "n_occupied": 40464,
+     "n_free": 119309
+    },
+    {
+     "sample_id": "08_003580",
+     "position": 716,
+     "time_s": 372.015,
+     "n_occupied": 43552,
+     "n_free": 113843
+    },
+    {
+     "sample_id": "08_003585",
+     "position": 717,
+     "time_s": 372.5344,
+     "n_occupied": 41314,
+     "n_free": 88823
+    },
+    {
+     "sample_id": "08_003590",
+     "position": 718,
+     "time_s": 373.054,
+     "n_occupied": 40116,
+     "n_free": 61214
+    },
+    {
+     "sample_id": "08_003595",
+     "position": 719,
+     "time_s": 373.5738,
+     "n_occupied": 38684,
+     "n_free": 54869
+    },
+    {
+     "sample_id": "08_003600",
+     "position": 720,
+     "time_s": 374.0935,
+     "n_occupied": 32415,
+     "n_free": 49301
+    },
+    {
+     "sample_id": "08_003605",
+     "position": 721,
+     "time_s": 374.6132,
+     "n_occupied": 39187,
+     "n_free": 55139
+    },
+    {
+     "sample_id": "08_003610",
+     "position": 722,
+     "time_s": 375.133,
+     "n_occupied": 37257,
+     "n_free": 73142
+    },
+    {
+     "sample_id": "08_003615",
+     "position": 723,
+     "time_s": 375.6528,
+     "n_occupied": 34714,
+     "n_free": 80413
+    },
+    {
+     "sample_id": "08_003620",
+     "position": 724,
+     "time_s": 376.1726,
+     "n_occupied": 27386,
+     "n_free": 67518
+    },
+    {
+     "sample_id": "08_003625",
+     "position": 725,
+     "time_s": 376.6925,
+     "n_occupied": 25595,
+     "n_free": 53204
+    },
+    {
+     "sample_id": "08_003630",
+     "position": 726,
+     "time_s": 377.2124,
+     "n_occupied": 31316,
+     "n_free": 62536
+    },
+    {
+     "sample_id": "08_003635",
+     "position": 727,
+     "time_s": 377.7321,
+     "n_occupied": 21655,
+     "n_free": 46988
+    },
+    {
+     "sample_id": "08_003640",
+     "position": 728,
+     "time_s": 378.252,
+     "n_occupied": 27456,
+     "n_free": 47960
+    },
+    {
+     "sample_id": "08_003645",
+     "position": 729,
+     "time_s": 378.7719,
+     "n_occupied": 34382,
+     "n_free": 80831
+    },
+    {
+     "sample_id": "08_003650",
+     "position": 730,
+     "time_s": 379.2916,
+     "n_occupied": 33047,
+     "n_free": 91996
+    },
+    {
+     "sample_id": "08_003655",
+     "position": 731,
+     "time_s": 379.8114,
+     "n_occupied": 47029,
+     "n_free": 106005
+    },
+    {
+     "sample_id": "08_003660",
+     "position": 732,
+     "time_s": 380.331,
+     "n_occupied": 43562,
+     "n_free": 92348
+    },
+    {
+     "sample_id": "08_003665",
+     "position": 733,
+     "time_s": 380.8504,
+     "n_occupied": 39688,
+     "n_free": 75241
+    },
+    {
+     "sample_id": "08_003670",
+     "position": 734,
+     "time_s": 381.3698,
+     "n_occupied": 38803,
+     "n_free": 65191
+    },
+    {
+     "sample_id": "08_003675",
+     "position": 735,
+     "time_s": 381.8893,
+     "n_occupied": 32299,
+     "n_free": 47100
+    },
+    {
+     "sample_id": "08_003680",
+     "position": 736,
+     "time_s": 382.4088,
+     "n_occupied": 33307,
+     "n_free": 45794
+    },
+    {
+     "sample_id": "08_003685",
+     "position": 737,
+     "time_s": 382.9283,
+     "n_occupied": 24470,
+     "n_free": 43786
+    },
+    {
+     "sample_id": "08_003690",
+     "position": 738,
+     "time_s": 383.4479,
+     "n_occupied": 31163,
+     "n_free": 66804
+    },
+    {
+     "sample_id": "08_003695",
+     "position": 739,
+     "time_s": 383.9676,
+     "n_occupied": 38606,
+     "n_free": 78950
+    },
+    {
+     "sample_id": "08_003700",
+     "position": 740,
+     "time_s": 384.4874,
+     "n_occupied": 31673,
+     "n_free": 66377
+    },
+    {
+     "sample_id": "08_003705",
+     "position": 741,
+     "time_s": 385.0071,
+     "n_occupied": 32056,
+     "n_free": 69746
+    },
+    {
+     "sample_id": "08_003710",
+     "position": 742,
+     "time_s": 385.5271,
+     "n_occupied": 34573,
+     "n_free": 81901
+    },
+    {
+     "sample_id": "08_003715",
+     "position": 743,
+     "time_s": 386.0476,
+     "n_occupied": 27742,
+     "n_free": 74335
+    },
+    {
+     "sample_id": "08_003720",
+     "position": 744,
+     "time_s": 386.5681,
+     "n_occupied": 36087,
+     "n_free": 102624
+    },
+    {
+     "sample_id": "08_003725",
+     "position": 745,
+     "time_s": 387.0884,
+     "n_occupied": 44357,
+     "n_free": 122004
+    },
+    {
+     "sample_id": "08_003730",
+     "position": 746,
+     "time_s": 387.6078,
+     "n_occupied": 49983,
+     "n_free": 154653
+    },
+    {
+     "sample_id": "08_003735",
+     "position": 747,
+     "time_s": 388.1266,
+     "n_occupied": 60530,
+     "n_free": 198247
+    },
+    {
+     "sample_id": "08_003740",
+     "position": 748,
+     "time_s": 388.645,
+     "n_occupied": 67068,
+     "n_free": 203029
+    },
+    {
+     "sample_id": "08_003745",
+     "position": 749,
+     "time_s": 389.1635,
+     "n_occupied": 61434,
+     "n_free": 172000
+    },
+    {
+     "sample_id": "08_003750",
+     "position": 750,
+     "time_s": 389.6824,
+     "n_occupied": 64049,
+     "n_free": 176057
+    },
+    {
+     "sample_id": "08_003755",
+     "position": 751,
+     "time_s": 390.2013,
+     "n_occupied": 53577,
+     "n_free": 145108
+    },
+    {
+     "sample_id": "08_003760",
+     "position": 752,
+     "time_s": 390.7202,
+     "n_occupied": 50083,
+     "n_free": 125958
+    },
+    {
+     "sample_id": "08_003765",
+     "position": 753,
+     "time_s": 391.239,
+     "n_occupied": 47913,
+     "n_free": 103746
+    },
+    {
+     "sample_id": "08_003770",
+     "position": 754,
+     "time_s": 391.7578,
+     "n_occupied": 44918,
+     "n_free": 78196
+    },
+    {
+     "sample_id": "08_003775",
+     "position": 755,
+     "time_s": 392.2777,
+     "n_occupied": 50352,
+     "n_free": 90114
+    },
+    {
+     "sample_id": "08_003780",
+     "position": 756,
+     "time_s": 392.799,
+     "n_occupied": 44063,
+     "n_free": 102916
+    },
+    {
+     "sample_id": "08_003785",
+     "position": 757,
+     "time_s": 393.3205,
+     "n_occupied": 43371,
+     "n_free": 105143
+    },
+    {
+     "sample_id": "08_003790",
+     "position": 758,
+     "time_s": 393.8414,
+     "n_occupied": 39527,
+     "n_free": 107352
+    },
+    {
+     "sample_id": "08_003795",
+     "position": 759,
+     "time_s": 394.3615,
+     "n_occupied": 34313,
+     "n_free": 94835
+    },
+    {
+     "sample_id": "08_003800",
+     "position": 760,
+     "time_s": 394.8813,
+     "n_occupied": 35951,
+     "n_free": 116166
+    },
+    {
+     "sample_id": "08_003805",
+     "position": 761,
+     "time_s": 395.401,
+     "n_occupied": 42633,
+     "n_free": 140400
+    },
+    {
+     "sample_id": "08_003810",
+     "position": 762,
+     "time_s": 395.9206,
+     "n_occupied": 37115,
+     "n_free": 127358
+    },
+    {
+     "sample_id": "08_003815",
+     "position": 763,
+     "time_s": 396.44,
+     "n_occupied": 37237,
+     "n_free": 127076
+    },
+    {
+     "sample_id": "08_003820",
+     "position": 764,
+     "time_s": 396.9591,
+     "n_occupied": 39592,
+     "n_free": 138587
+    },
+    {
+     "sample_id": "08_003825",
+     "position": 765,
+     "time_s": 397.4781,
+     "n_occupied": 35130,
+     "n_free": 113290
+    },
+    {
+     "sample_id": "08_003830",
+     "position": 766,
+     "time_s": 397.9971,
+     "n_occupied": 22778,
+     "n_free": 55110
+    },
+    {
+     "sample_id": "08_003835",
+     "position": 767,
+     "time_s": 398.5161,
+     "n_occupied": 29344,
+     "n_free": 80825
+    },
+    {
+     "sample_id": "08_003840",
+     "position": 768,
+     "time_s": 399.0349,
+     "n_occupied": 20618,
+     "n_free": 53375
+    },
+    {
+     "sample_id": "08_003845",
+     "position": 769,
+     "time_s": 399.5534,
+     "n_occupied": 38577,
+     "n_free": 92942
+    },
+    {
+     "sample_id": "08_003850",
+     "position": 770,
+     "time_s": 400.0719,
+     "n_occupied": 34121,
+     "n_free": 89650
+    },
+    {
+     "sample_id": "08_003855",
+     "position": 771,
+     "time_s": 400.5904,
+     "n_occupied": 42697,
+     "n_free": 132765
+    },
+    {
+     "sample_id": "08_003860",
+     "position": 772,
+     "time_s": 401.1095,
+     "n_occupied": 47364,
+     "n_free": 181012
+    },
+    {
+     "sample_id": "08_003865",
+     "position": 773,
+     "time_s": 401.629,
+     "n_occupied": 52749,
+     "n_free": 203403
+    },
+    {
+     "sample_id": "08_003870",
+     "position": 774,
+     "time_s": 402.1489,
+     "n_occupied": 56800,
+     "n_free": 176678
+    },
+    {
+     "sample_id": "08_003875",
+     "position": 775,
+     "time_s": 402.6688,
+     "n_occupied": 64307,
+     "n_free": 189227
+    },
+    {
+     "sample_id": "08_003880",
+     "position": 776,
+     "time_s": 403.1886,
+     "n_occupied": 56939,
+     "n_free": 149965
+    },
+    {
+     "sample_id": "08_003885",
+     "position": 777,
+     "time_s": 403.708,
+     "n_occupied": 51831,
+     "n_free": 128827
+    },
+    {
+     "sample_id": "08_003890",
+     "position": 778,
+     "time_s": 404.2273,
+     "n_occupied": 44396,
+     "n_free": 109562
+    },
+    {
+     "sample_id": "08_003895",
+     "position": 779,
+     "time_s": 404.7465,
+     "n_occupied": 37364,
+     "n_free": 97402
+    },
+    {
+     "sample_id": "08_003900",
+     "position": 780,
+     "time_s": 405.2657,
+     "n_occupied": 41636,
+     "n_free": 104696
+    },
+    {
+     "sample_id": "08_003905",
+     "position": 781,
+     "time_s": 405.785,
+     "n_occupied": 41621,
+     "n_free": 94141
+    },
+    {
+     "sample_id": "08_003910",
+     "position": 782,
+     "time_s": 406.3044,
+     "n_occupied": 37642,
+     "n_free": 73562
+    },
+    {
+     "sample_id": "08_003915",
+     "position": 783,
+     "time_s": 406.8238,
+     "n_occupied": 34542,
+     "n_free": 62671
+    },
+    {
+     "sample_id": "08_003920",
+     "position": 784,
+     "time_s": 407.3433,
+     "n_occupied": 34366,
+     "n_free": 73983
+    },
+    {
+     "sample_id": "08_003925",
+     "position": 785,
+     "time_s": 407.8628,
+     "n_occupied": 31951,
+     "n_free": 76151
+    },
+    {
+     "sample_id": "08_003930",
+     "position": 786,
+     "time_s": 408.3823,
+     "n_occupied": 31263,
+     "n_free": 65055
+    },
+    {
+     "sample_id": "08_003935",
+     "position": 787,
+     "time_s": 408.902,
+     "n_occupied": 34726,
+     "n_free": 61690
+    },
+    {
+     "sample_id": "08_003940",
+     "position": 788,
+     "time_s": 409.4218,
+     "n_occupied": 20557,
+     "n_free": 27749
+    },
+    {
+     "sample_id": "08_003945",
+     "position": 789,
+     "time_s": 409.9414,
+     "n_occupied": 19695,
+     "n_free": 42906
+    },
+    {
+     "sample_id": "08_003950",
+     "position": 790,
+     "time_s": 410.4609,
+     "n_occupied": 23169,
+     "n_free": 43209
+    },
+    {
+     "sample_id": "08_003955",
+     "position": 791,
+     "time_s": 410.9807,
+     "n_occupied": 27419,
+     "n_free": 48196
+    },
+    {
+     "sample_id": "08_003960",
+     "position": 792,
+     "time_s": 411.5005,
+     "n_occupied": 28820,
+     "n_free": 48071
+    },
+    {
+     "sample_id": "08_003965",
+     "position": 793,
+     "time_s": 412.0209,
+     "n_occupied": 35504,
+     "n_free": 56907
+    },
+    {
+     "sample_id": "08_003970",
+     "position": 794,
+     "time_s": 412.5412,
+     "n_occupied": 35375,
+     "n_free": 50388
+    },
+    {
+     "sample_id": "08_003975",
+     "position": 795,
+     "time_s": 413.0608,
+     "n_occupied": 32657,
+     "n_free": 66797
+    },
+    {
+     "sample_id": "08_003980",
+     "position": 796,
+     "time_s": 413.5803,
+     "n_occupied": 35943,
+     "n_free": 87102
+    },
+    {
+     "sample_id": "08_003985",
+     "position": 797,
+     "time_s": 414.1002,
+     "n_occupied": 40747,
+     "n_free": 105502
+    },
+    {
+     "sample_id": "08_003990",
+     "position": 798,
+     "time_s": 414.6204,
+     "n_occupied": 43805,
+     "n_free": 123418
+    },
+    {
+     "sample_id": "08_003995",
+     "position": 799,
+     "time_s": 415.141,
+     "n_occupied": 52678,
+     "n_free": 126198
+    },
+    {
+     "sample_id": "08_004000",
+     "position": 800,
+     "time_s": 415.6617,
+     "n_occupied": 53446,
+     "n_free": 120278
+    },
+    {
+     "sample_id": "08_004005",
+     "position": 801,
+     "time_s": 416.1811,
+     "n_occupied": 53190,
+     "n_free": 120433
+    },
+    {
+     "sample_id": "08_004010",
+     "position": 802,
+     "time_s": 416.7003,
+     "n_occupied": 45849,
+     "n_free": 109752
+    },
+    {
+     "sample_id": "08_004015",
+     "position": 803,
+     "time_s": 417.2198,
+     "n_occupied": 38632,
+     "n_free": 95306
+    },
+    {
+     "sample_id": "08_004020",
+     "position": 804,
+     "time_s": 417.7395,
+     "n_occupied": 41515,
+     "n_free": 100622
+    }
+   ],
+   "seconds": {
+    "load_images": 2.8561851978302,
+    "replay": 39.43703889846802,
+    "total": 70.8959219455719
+   }
+  }
+ ]
+}

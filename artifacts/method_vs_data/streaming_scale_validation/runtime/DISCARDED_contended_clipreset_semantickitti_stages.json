@@ -1,0 +1,261 @@
+{
+ "method": "ours_clip_reset",
+ "dataset": "semantickitti",
+ "device": "cuda:3",
+ "mode": "stages",
+ "n_streams": 3,
+ "reps": 1,
+ "streams": [
+  {
+   "segment": "08",
+   "start": 0,
+   "n_frames": 200,
+   "rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  },
+  {
+   "segment": "08",
+   "start": 307,
+   "n_frames": 200,
+   "rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  },
+  {
+   "segment": "08",
+   "start": 615,
+   "n_frames": 200,
+   "rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  }
+ ],
+ "latency_per_completed_occupancy_grid": {
+  "n": 3,
+  "mean_ms": 646.5283070346269,
+  "median_ms": 614.5797117729671,
+  "p95_ms": 702.7627916696092,
+  "min_ms": 612.4442976727886,
+  "max_ms": 712.560911658125,
+  "std_ms": 57.19587968872604,
+  "predictions_per_second": 1.546722686569765
+ },
+ "sequence_average_per_prediction_s": {
+  "n": 3,
+  "mean_ms": 646.5283070346269,
+  "median_ms": 614.5797117729671,
+  "p95_ms": 702.7627916696092,
+  "min_ms": 612.4442976727885,
+  "max_ms": 712.560911658125,
+  "std_ms": 57.195879688726066,
+  "predictions_per_second": 1.546722686569765
+ },
+ "measured_predictions_per_second": {
+  "n": 3,
+  "mean_ms": 1554.4395269395252,
+  "median_ms": 1627.1282322599866,
+  "p95_ms": 1632.2342203879723,
+  "min_ms": 1403.388796156396,
+  "max_ms": 1632.801552402193,
+  "std_ms": 130.84452259436398,
+  "predictions_per_second": 0.6433186899003145
+ },
+ "peak_memory_sustained_bytes": {
+  "allocated": 12649146368,
+  "reserved": 14086569984
+ },
+ "resets_per_prediction": 1,
+ "moge_forwards_per_prediction": 5,
+ "model_load_seconds_reported_separately": {
+  "lingbot_map": 12.15178310777992,
+  "moge2_vitl": 4.849475427065045,
+  "completion_unet": 0.037280968856066465,
+  "total": 17.03853950370103
+ },
+ "parameters": {
+  "per_module_total_and_requires_grad": {
+   "lingbot_map": [
+    1157943540,
+    0
+   ],
+   "completion_unet": [
+    967322,
+    0
+   ],
+   "moge2_vitl": [
+    326209221,
+    0
+   ]
+  },
+  "total_inference_parameters": 1485120083,
+  "task_specific_trained_parameters": 967322
+ },
+ "configuration": {
+  "lingbot_checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+  "lingbot_resolution": 518,
+  "lingbot_autocast": "bfloat16",
+  "moge_repo": "Ruicheng/moge-2-vitl",
+  "moge_revision": "39c4d5e957afe587e04eec59dc2bcc3be5ecd968",
+  "moge_calls": "5 per anchor",
+  "completion_source": "k360",
+  "completion_seed": 0,
+  "prediction_grid": "semantickitti",
+  "eval_grid": "semantickitti",
+  "batch": "one evaluation anchor",
+  "state_policy": "reset at every anchor",
+  "resident_models": [
+   "LingBotMap GCTStream",
+   "MoGe-2 ViT-L",
+   "CompletionUNet"
+  ],
+  "future_frames_required": 0,
+  "generated_views": 0
+ },
+ "boundary": {
+  "start": "decoded RGB frames + ordinary calibration in host memory",
+  "end": "completed occupancy grid on the evaluation grid, host numpy array",
+  "excluded": [
+   "image decode",
+   "ground-truth loading",
+   "scoring",
+   "visualisation",
+   "prediction serialisation",
+   "model construction and checkpoint loading"
+  ]
+ },
+ "machine": {
+  "gpu_index": 3,
+  "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+  "gpu_total_memory_bytes": 101971722240,
+  "gpu_capability": "12.0",
+  "nvidia_smi_during_setup": "0, 82 %, 40589 MiB\n1, 100 %, 85428 MiB\n2, 0 %, 904 MiB\n3, 91 %, 36574 MiB",
+  "cpu_model": "Intel(R) Xeon(R) w7-3565X",
+  "cpu_count": 64,
+  "loadavg": [
+   5.134765625,
+   6.02880859375,
+   7.54296875
+  ],
+  "python": "3.10.19",
+  "executable": "/home/minh/anaconda3/envs/cu128/bin/python",
+  "torch": "2.7.1+cu128",
+  "torch_cuda": "12.8",
+  "cudnn": 90701,
+  "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+  "driver": "580.95.05\n580.95.05\n580.95.05\n580.95.05"
+ },
+ "runs": [
+  {
+   "segment": "08",
+   "start_position": 0,
+   "n_frames_window": 200,
+   "n_predictions_emitted": 196,
+   "latency_per_completed_occupancy_grid": {
+    "n": 196,
+    "mean_ms": 712.560911658125,
+    "median_ms": 712.2984454035759,
+    "p95_ms": 721.2375234812498,
+    "min_ms": 692.0511778444052,
+    "max_ms": 733.3766911178827,
+    "std_ms": 5.343124504938102,
+    "predictions_per_second": 1.403388796156396
+   },
+   "per_input_update_s": null,
+   "sequence_average_per_prediction_s": 0.712560911658125,
+   "measured_predictions_per_second": 1.403388796156396,
+   "total_sequence_compute_s": 139.6619386849925,
+   "resets": 196,
+   "moge_forwards": 980,
+   "peak_memory_sustained": {
+    "allocated_bytes": 12649146368,
+    "reserved_bytes": 14086569984
+   },
+   "scale_distinct_values": 196,
+   "stages_s": {
+    "preprocess": 4.2860180754214525,
+    "lingbot_scale_block": 22.7833371325396,
+    "moge": 80.8288416066207,
+    "scale": 1.528657459653914,
+    "mapper": 13.585286252666265,
+    "map_query": 0.6215825933031738,
+    "unet": 15.825430696364492,
+    "readout": 0.05758025962859392
+   },
+   "rep": 0,
+   "selection_rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  },
+  {
+   "segment": "08",
+   "start_position": 307,
+   "n_frames_window": 200,
+   "n_predictions_emitted": 200,
+   "latency_per_completed_occupancy_grid": {
+    "n": 200,
+    "mean_ms": 614.5797117729671,
+    "median_ms": 710.2429184596986,
+    "p95_ms": 717.896224767901,
+    "min_ms": 365.7962782308459,
+    "max_ms": 727.9160199686885,
+    "std_ms": 152.38475938716957,
+    "predictions_per_second": 1.6271282322599865
+   },
+   "per_input_update_s": null,
+   "sequence_average_per_prediction_s": 0.6145797117729671,
+   "measured_predictions_per_second": 1.6271282322599865,
+   "total_sequence_compute_s": 122.91594235459343,
+   "resets": 200,
+   "moge_forwards": 1000,
+   "peak_memory_sustained": {
+    "allocated_bytes": 12649104384,
+    "reserved_bytes": 14086569984
+   },
+   "scale_distinct_values": 200,
+   "stages_s": {
+    "preprocess": 4.437344308011234,
+    "lingbot_scale_block": 20.10849443357438,
+    "moge": 71.16773512819782,
+    "scale": 1.5597104541957378,
+    "mapper": 10.791909012943506,
+    "map_query": 0.6324796946719289,
+    "unet": 14.0160553609021,
+    "readout": 0.057748979423195124
+   },
+   "rep": 0,
+   "selection_rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  },
+  {
+   "segment": "08",
+   "start_position": 615,
+   "n_frames_window": 200,
+   "n_predictions_emitted": 190,
+   "latency_per_completed_occupancy_grid": {
+    "n": 190,
+    "mean_ms": 612.4442976727886,
+    "median_ms": 655.4483145009726,
+    "p95_ms": 735.1481729187071,
+    "min_ms": 368.6076500453055,
+    "max_ms": 865.6836291775107,
+    "std_ms": 132.08759264529488,
+    "predictions_per_second": 1.6328015524021928
+   },
+   "per_input_update_s": null,
+   "sequence_average_per_prediction_s": 0.6124442976727885,
+   "measured_predictions_per_second": 1.632801552402193,
+   "total_sequence_compute_s": 116.36441655782983,
+   "resets": 190,
+   "moge_forwards": 950,
+   "peak_memory_sustained": {
+    "allocated_bytes": 12649058304,
+    "reserved_bytes": 14086569984
+   },
+   "scale_distinct_values": 190,
+   "stages_s": {
+    "preprocess": 4.271019340027124,
+    "lingbot_scale_block": 16.669574150815606,
+    "moge": 64.7573215002194,
+    "scale": 1.4745480241253972,
+    "mapper": 14.751651578582823,
+    "map_query": 1.6495270202867687,
+    "unet": 12.604565944056958,
+    "readout": 0.04918863158673048
+   },
+   "rep": 0,
+   "selection_rule": "3 evenly spaced 200-frame windows of segment 08 (815 frames)"
+  }
+ ]
+}

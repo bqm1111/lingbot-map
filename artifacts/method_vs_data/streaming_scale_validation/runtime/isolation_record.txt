@@ -1,0 +1,26 @@
+=== isolation record, start 2026-10-28T19:21:32+01:00 ===
+own jobs paused for the measurement: 1279358
+index, utilization.gpu [%], memory.used [MiB]
+0, 81 %, 27300 MiB
+1, 80 %, 85428 MiB
+2, 0 %, 904 MiB
+3, 0 %, 615 MiB
+--- compute apps (foreign pids are other users' jobs, outside my control) ---
+pid, gpu_bus_id, used_gpu_memory [MiB]
+2614668, 00000000:16:00.0, 26586 MiB
+2614668, 00000000:34:00.0, 552 MiB
+1214377, 00000000:34:00.0, 78966 MiB
+1279358, 00000000:34:00.0, 5836 MiB
+2614668, 00000000:52:00.0, 552 MiB
+2614668, 00000000:CA:00.0, 552 MiB
+--- loadavg ---
+3.78 4.40 5.73 4/32481 2687561
+--- driver ---
+580.95.05
+=== isolation record, end 2026-10-28T19:55:33+01:00 ===
+index, utilization.gpu [%], memory.used [MiB]
+0, 52 %, 27300 MiB
+1, 13 %, 82534 MiB
+2, 0 %, 904 MiB
+3, 0 %, 615 MiB
+10.97 8.20 6.61 3/32492 3332998

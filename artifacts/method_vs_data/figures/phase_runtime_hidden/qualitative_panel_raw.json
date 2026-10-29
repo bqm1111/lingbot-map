@@ -1,0 +1,98 @@
+{
+ "post": "raw",
+ "quantiles": [
+  0.04,
+  0.27,
+  0.5,
+  0.73,
+  0.96
+ ],
+ "rows": [
+  {
+   "quantile": 0.04,
+   "sample_id": "08_003820",
+   "post": "raw",
+   "sc_iou": {
+    "map_only": 5.610492107706593,
+    "ours": 17.90432504498457,
+    "occany_1f": 20.99521168758431,
+    "occany_5f_fwd": 23.417195830988934
+   },
+   "region_gt_occupied": {
+    "anchor_observed": 4417,
+    "earlier_only": 8554,
+    "never_observed_in_frustum": 81309,
+    "never_observed_out_frustum": 13876
+   }
+  },
+  {
+   "quantile": 0.27,
+   "sample_id": "08_000700",
+   "post": "raw",
+   "sc_iou": {
+    "map_only": 5.9344014465474055,
+    "ours": 22.06659819209341,
+    "occany_1f": 19.367497519378688,
+    "occany_5f_fwd": 18.571288775809766
+   },
+   "region_gt_occupied": {
+    "anchor_observed": 8905,
+    "earlier_only": 9391,
+    "never_observed_in_frustum": 36216,
+    "never_observed_out_frustum": 36637
+   }
+  },
+  {
+   "quantile": 0.5,
+   "sample_id": "08_002925",
+   "post": "raw",
+   "sc_iou": {
+    "map_only": 10.974011369541108,
+    "ours": 31.360473520568977,
+    "occany_1f": 25.491561607102177,
+    "occany_5f_fwd": 31.53579420255197
+   },
+   "region_gt_occupied": {
+    "anchor_observed": 6881,
+    "earlier_only": 9941,
+    "never_observed_in_frustum": 53915,
+    "never_observed_out_frustum": 29133
+   }
+  },
+  {
+   "quantile": 0.73,
+   "sample_id": "08_001550",
+   "post": "raw",
+   "sc_iou": {
+    "map_only": 6.382928232844286,
+    "ours": 36.26270129088323,
+    "occany_1f": 25.495656868037493,
+    "occany_5f_fwd": 32.56851462403658
+   },
+   "region_gt_occupied": {
+    "anchor_observed": 6713,
+    "earlier_only": 6851,
+    "never_observed_in_frustum": 97801,
+    "never_observed_out_frustum": 22650
+   }
+  },
+  {
+   "quantile": 0.96,
+   "sample_id": "08_002120",
+   "post": "raw",
+   "sc_iou": {
+    "map_only": 7.983174525249369,
+    "ours": 31.05881762017178,
+    "occany_1f": 11.475298818271087,
+    "occany_5f_fwd": 18.418526261893586
+   },
+   "region_gt_occupied": {
+    "anchor_observed": 3694,
+    "earlier_only": 4401,
+    "never_observed_in_frustum": 40469,
+    "never_observed_out_frustum": 32106
+   }
+  }
+ ],
+ "selection_rule": "fixed quantiles of the recorded per-anchor ranking in panel_ranking.json; low quantiles are OccAny wins"
+}

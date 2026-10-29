@@ -1,0 +1,485 @@
+{
+ "kitti360": {
+  "arm": "kitti360",
+  "targets_root": "/media/SSD1/MINH_DATASETS/lingbot_k360_7drives/targets",
+  "n_scenes_in_cache": 3,
+  "n_scenes_sampled": 3,
+  "anchors_sampled": 120,
+  "per_scene": 40,
+  "span_source": "KITTI-360 velodyne timestamps.txt",
+  "lasers_per_frame": 1,
+  "temporal_direction": [
+   "future_only"
+  ],
+  "n_frames_used": {
+   "min": 21.0,
+   "p50": 21.0,
+   "max": 21.0
+  },
+  "n_sweeps": {
+   "min": 21.0,
+   "p50": 21.0,
+   "max": 21.0
+  },
+  "supervision_span_s": {
+   "min": 10.409296989440918,
+   "p50": 10.444430112838745,
+   "max": 48.99078297615051
+  },
+  "sweep_spacing_s_implied": {
+   "p50": 0.5222215056419373
+  },
+  "prevalence_in_valid": {
+   "min": 0.0029952556432004496,
+   "p50": 0.022724417251197154,
+   "max": 0.055510036231996934
+  },
+  "valid_fraction": {
+   "min": 0.2878303527832031,
+   "p50": 0.633277416229248,
+   "max": 0.8592128753662109
+  },
+  "conflict_fraction_of_touched": {
+   "min": NaN,
+   "p50": NaN,
+   "max": NaN
+  },
+  "n_occupied": {
+   "min": 2805.0,
+   "p50": 29252.5,
+   "max": 52585.0
+  },
+  "samples": [
+   {
+    "scene": "2013_05_28_drive_0003_sync",
+    "file": "00004.npz",
+    "anchor_native": 27,
+    "n_frames_used": 21,
+    "n_sweeps": 21,
+    "native_span": 100,
+    "span_s": 10.471354007720947
+   },
+   {
+    "scene": "2013_05_28_drive_0003_sync",
+    "file": "00008.npz",
+    "anchor_native": 47,
+    "n_frames_used": 21,
+    "n_sweeps": 21,
+    "native_span": 110,
+    "span_s": 11.51848292350769
+   },
+   {
+    "scene": "2013_05_28_drive_0003_sync",
+    "file": "00012.npz",
+    "anchor_native": 67,
+    "n_frames_used": 21,
+    "n_sweeps": 21,
+    "native_span": 115,
+    "span_s": 12.04322099685669
+   },
+   {
+    "scene": "2013_05_28_drive_0003_sync",
+    "file": "00016.npz",
+    "anchor_native": 87,
+    "n_frames_used": 21,
+    "n_sweeps": 21,
+    "native_span": 115,
+    "span_s": 12.045303106307983
+   },
+   {
+    "scene": "2013_05_28_drive_0003_sync",
+    "file": "00020.npz",
+    "anchor_native": 107,
+    "n_frames_used": 21,
+    "n_sweeps": 21,
+    "native_span": 115,
+    "span_s": 12.045708179473877
+   },
+   {
+    "scene": "2013_05_28_drive_0003_sync",
+    "file": "00024.npz",
+    "anchor_native": 127,
+    "n_frames_used": 21,
+    "n_sweeps": 21,
+    "native_span": 115,
+    "span_s": 12.04455304145813
+   },
+   {
+    "scene": "2013_05_28_drive_0003_sync",
+    "file": "00028.npz",
+    "anchor_native": 157,
+    "n_frames_used": 21,
+    "n_sweeps": 21,
+    "native_span": 105,
+    "span_s": 10.99430799484253
+   },
+   {
+    "scene": "2013_05_28_drive_0003_sync",
+    "file": "00032.npz",
+    "anchor_native": 182,
+    "n_frames_used": 21,
+    "n_sweeps": 21,
+    "native_span": 100,
+    "span_s": 10.471156120300293
+   },
+   {
+    "scene": "2013_05_28_drive_0003_sync",
+    "file": "00036.npz",
+    "anchor_native": 202,
+    "n_frames_used": 21,
+    "n_sweeps": 21,
+    "native_span": 100,
+    "span_s": 10.46794080734253
+   },
+   {
+    "scene": "2013_05_28_drive_0003_sync",
+    "file": "00040.npz",
+    "anchor_native": 222,
+    "n_frames_used": 21,
+    "n_sweeps": 21,
+    "native_span": 100,
+    "span_s": 10.462760925292969
+   },
+   {
+    "scene": "2013_05_28_drive_0003_sync",
+    "file": "00044.npz",
+    "anchor_native": 242,
+    "n_frames_used": 21,
+    "n_sweeps": 21,
+    "native_span": 100,
+    "span_s": 10.461827039718628
+   },
+   {
+    "scene": "2013_05_28_drive_0003_sync",
+    "file": "00048.npz",
+    "anchor_native": 262,
+    "n_frames_used": 21,
+    "n_sweeps": 21,
+    "native_span": 100,
+    "span_s": 10.46195912361145
+   }
+  ]
+ },
+ "waymo": {
+  "arm": "waymo",
+  "targets_root": "/media/minh/MINH1/lingbot_waymo_arm/targets",
+  "n_scenes_in_cache": 791,
+  "n_scenes_sampled": 60,
+  "anchors_sampled": 300,
+  "per_scene": 40,
+  "span_source": "native index span / nominal rate (no published timestamps read)",
+  "lasers_per_frame": 5,
+  "temporal_direction": [
+   "future_only"
+  ],
+  "n_frames_used": {
+   "min": 21.0,
+   "p50": 21.0,
+   "max": 21.0
+  },
+  "n_sweeps": {
+   "min": 105.0,
+   "p50": 105.0,
+   "max": 105.0
+  },
+  "supervision_span_s": {
+   "min": 10.0,
+   "p50": 10.0,
+   "max": 10.0
+  },
+  "sweep_spacing_s_implied": {
+   "p50": 0.5
+  },
+  "prevalence_in_valid": {
+   "min": 0.007129344037468085,
+   "p50": 0.019990897072491774,
+   "max": 0.06092241058437384
+  },
+  "valid_fraction": {
+   "min": 0.32892704010009766,
+   "p50": 0.670623779296875,
+   "max": 0.9037175178527832
+  },
+  "conflict_fraction_of_touched": {
+   "min": 0.017661325676700784,
+   "p50": 0.06234286136349851,
+   "max": 0.11566922298759821
+  },
+  "n_occupied": {
+   "min": 11100.0,
+   "p50": 28102.0,
+   "max": 59571.0
+  },
+  "samples": [
+   {
+    "scene": "segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord",
+    "file": "00004.npz",
+    "anchor_native": 20,
+    "n_frames_used": 21,
+    "n_sweeps": 105,
+    "native_span": 100,
+    "span_s": 10.0
+   },
+   {
+    "scene": "segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord",
+    "file": "00007.npz",
+    "anchor_native": 35,
+    "n_frames_used": 21,
+    "n_sweeps": 105,
+    "native_span": 100,
+    "span_s": 10.0
+   },
+   {
+    "scene": "segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord",
+    "file": "00010.npz",
+    "anchor_native": 50,
+    "n_frames_used": 21,
+    "n_sweeps": 105,
+    "native_span": 100,
+    "span_s": 10.0
+   },
+   {
+    "scene": "segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord",
+    "file": "00013.npz",
+    "anchor_native": 65,
+    "n_frames_used": 21,
+    "n_sweeps": 105,
+    "native_span": 100,
+    "span_s": 10.0
+   },
+   {
+    "scene": "segment-10017090168044687777_6380_000_6400_000_with_camera_labels.tfrecord",
+    "file": "00016.npz",
+    "anchor_native": 80,
+    "n_frames_used": 21,
+    "n_sweeps": 105,
+    "native_span": 100,
+    "span_s": 10.0
+   },
+   {
+    "scene": "segment-10212406498497081993_5300_000_5320_000_with_camera_labels.tfrecord",
+    "file": "00004.npz",
+    "anchor_native": 20,
+    "n_frames_used": 21,
+    "n_sweeps": 105,
+    "native_span": 100,
+    "span_s": 10.0
+   },
+   {
+    "scene": "segment-10212406498497081993_5300_000_5320_000_with_camera_labels.tfrecord",
+    "file": "00007.npz",
+    "anchor_native": 35,
+    "n_frames_used": 21,
+    "n_sweeps": 105,
+    "native_span": 100,
+    "span_s": 10.0
+   },
+   {
+    "scene": "segment-10212406498497081993_5300_000_5320_000_with_camera_labels.tfrecord",
+    "file": "00010.npz",
+    "anchor_native": 50,
+    "n_frames_used": 21,
+    "n_sweeps": 105,
+    "native_span": 100,
+    "span_s": 10.0
+   },
+   {
+    "scene": "segment-10212406498497081993_5300_000_5320_000_with_camera_labels.tfrecord",
+    "file": "00013.npz",
+    "anchor_native": 65,
+    "n_frames_used": 21,
+    "n_sweeps": 105,
+    "native_span": 100,
+    "span_s": 10.0
+   },
+   {
+    "scene": "segment-10212406498497081993_5300_000_5320_000_with_camera_labels.tfrecord",
+    "file": "00016.npz",
+    "anchor_native": 80,
+    "n_frames_used": 21,
+    "n_sweeps": 105,
+    "native_span": 100,
+    "span_s": 10.0
+   },
+   {
+    "scene": "segment-10500357041547037089_1474_800_1494_800_with_camera_labels.tfrecord",
+    "file": "00004.npz",
+    "anchor_native": 20,
+    "n_frames_used": 21,
+    "n_sweeps": 105,
+    "native_span": 100,
+    "span_s": 10.0
+   },
+   {
+    "scene": "segment-10500357041547037089_1474_800_1494_800_with_camera_labels.tfrecord",
+    "file": "00007.npz",
+    "anchor_native": 35,
+    "n_frames_used": 21,
+    "n_sweeps": 105,
+    "native_span": 100,
+    "span_s": 10.0
+   }
+  ]
+ },
+ "once": {
+  "arm": "once",
+  "targets_root": "/media/minh/MINH1/lingbot_once_arm/targets",
+  "n_scenes_in_cache": 6,
+  "n_scenes_sampled": 6,
+  "anchors_sampled": 240,
+  "per_scene": 40,
+  "span_source": "published per-sweep timestamps in the target file",
+  "lasers_per_frame": 1,
+  "temporal_direction": [
+   "future_only"
+  ],
+  "n_frames_used": {
+   "min": 5.0,
+   "p50": 5.0,
+   "max": 5.0
+  },
+  "n_sweeps": {
+   "min": 5.0,
+   "p50": 5.0,
+   "max": 5.0
+  },
+  "supervision_span_s": {
+   "min": 1.997999906539917,
+   "p50": 2.0,
+   "max": 2.002000093460083
+  },
+  "sweep_spacing_s_implied": {
+   "p50": 0.5
+  },
+  "prevalence_in_valid": {
+   "min": 0.003635568057508986,
+   "p50": 0.013066187380693707,
+   "max": 0.04007815452508819
+  },
+  "valid_fraction": {
+   "min": 0.20311260223388672,
+   "p50": 0.5793685913085938,
+   "max": 0.8740959167480469
+  },
+  "conflict_fraction_of_touched": {
+   "min": 0.0017005568756915598,
+   "p50": 0.016848455196546243,
+   "max": 0.060547742413027385
+  },
+  "n_occupied": {
+   "min": 5260.0,
+   "p50": 13493.0,
+   "max": 37992.0
+  },
+  "samples": [
+   {
+    "scene": "000076",
+    "file": "00004.npz",
+    "anchor_native": 4,
+    "n_frames_used": 5,
+    "n_sweeps": 5,
+    "native_span": 4,
+    "span_s": 2.0
+   },
+   {
+    "scene": "000076",
+    "file": "00050.npz",
+    "anchor_native": 50,
+    "n_frames_used": 5,
+    "n_sweeps": 5,
+    "native_span": 4,
+    "span_s": 2.001000165939331
+   },
+   {
+    "scene": "000076",
+    "file": "00106.npz",
+    "anchor_native": 106,
+    "n_frames_used": 5,
+    "n_sweeps": 5,
+    "native_span": 4,
+    "span_s": 2.001000165939331
+   },
+   {
+    "scene": "000076",
+    "file": "00152.npz",
+    "anchor_native": 152,
+    "n_frames_used": 5,
+    "n_sweeps": 5,
+    "native_span": 4,
+    "span_s": 1.998999834060669
+   },
+   {
+    "scene": "000076",
+    "file": "00197.npz",
+    "anchor_native": 197,
+    "n_frames_used": 5,
+    "n_sweeps": 5,
+    "native_span": 4,
+    "span_s": 2.001000165939331
+   },
+   {
+    "scene": "000076",
+    "file": "00249.npz",
+    "anchor_native": 249,
+    "n_frames_used": 5,
+    "n_sweeps": 5,
+    "native_span": 4,
+    "span_s": 2.001000165939331
+   },
+   {
+    "scene": "000076",
+    "file": "00305.npz",
+    "anchor_native": 305,
+    "n_frames_used": 5,
+    "n_sweeps": 5,
+    "native_span": 4,
+    "span_s": 2.0
+   },
+   {
+    "scene": "000076",
+    "file": "00382.npz",
+    "anchor_native": 382,
+    "n_frames_used": 5,
+    "n_sweeps": 5,
+    "native_span": 4,
+    "span_s": 2.0
+   },
+   {
+    "scene": "000076",
+    "file": "00428.npz",
+    "anchor_native": 428,
+    "n_frames_used": 5,
+    "n_sweeps": 5,
+    "native_span": 4,
+    "span_s": 2.0
+   },
+   {
+    "scene": "000076",
+    "file": "00500.npz",
+    "anchor_native": 500,
+    "n_frames_used": 5,
+    "n_sweeps": 5,
+    "native_span": 4,
+    "span_s": 2.002000093460083
+   },
+   {
+    "scene": "000076",
+    "file": "00545.npz",
+    "anchor_native": 545,
+    "n_frames_used": 5,
+    "n_sweeps": 5,
+    "native_span": 4,
+    "span_s": 2.001000165939331
+   },
+   {
+    "scene": "000076",
+    "file": "00590.npz",
+    "anchor_native": 590,
+    "n_frames_used": 5,
+    "n_sweeps": 5,
+    "native_span": 4,
+    "span_s": 2.001000165939331
+   }
+  ]
+ }
+}

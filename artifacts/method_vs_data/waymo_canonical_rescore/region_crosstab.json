@@ -1,0 +1,92 @@
+{
+ "dataset": "semantickitti",
+ "n_samples": 200,
+ "partition_checks": {
+  "valid_voxels": 303492979,
+  "strict_regions_sum_equals_valid": true,
+  "frustum_split_sum_equals_valid": true,
+  "map_evidence_split_sum_equals_valid": true
+ },
+ "joint": {
+  "anchor_observed|in_frustum|map_completed": {
+   "valid_voxels": 83790223,
+   "gt_occupied": 591181,
+   "share_of_valid": 0.2760861990154968,
+   "share_of_gt_occupied": 0.024061606856606164
+  },
+  "anchor_observed|in_frustum|map_observed": {
+   "valid_voxels": 19400418,
+   "gt_occupied": 742974,
+   "share_of_valid": 0.06392377861235465,
+   "share_of_gt_occupied": 0.030239720648464866
+  },
+  "anchor_observed|out_frustum|map_completed": {
+   "valid_voxels": 469643,
+   "gt_occupied": 3820,
+   "share_of_valid": 0.0015474591917989642,
+   "share_of_gt_occupied": 0.00015547749029863196
+  },
+  "anchor_observed|out_frustum|map_observed": {
+   "valid_voxels": 609208,
+   "gt_occupied": 20285,
+   "share_of_valid": 0.0020073215598176986,
+   "share_of_gt_occupied": 0.0008256180342166884
+  },
+  "earlier_only|in_frustum|map_completed": {
+   "valid_voxels": 18482043,
+   "gt_occupied": 289859,
+   "share_of_valid": 0.06089776132844246,
+   "share_of_gt_occupied": 0.011797526141484597
+  },
+  "earlier_only|in_frustum|map_observed": {
+   "valid_voxels": 1085076,
+   "gt_occupied": 179795,
+   "share_of_valid": 0.003575291934512923,
+   "share_of_gt_occupied": 0.007317820777026841
+  },
+  "earlier_only|out_frustum|map_completed": {
+   "valid_voxels": 39703172,
+   "gt_occupied": 499680,
+   "share_of_valid": 0.13082072649858564,
+   "share_of_gt_occupied": 0.02033743255298964
+  },
+  "earlier_only|out_frustum|map_observed": {
+   "valid_voxels": 15780170,
+   "gt_occupied": 595888,
+   "share_of_valid": 0.05199517317334712,
+   "share_of_gt_occupied": 0.024253186057348483
+  },
+  "never_observed|in_frustum|map_completed": {
+   "valid_voxels": 86411946,
+   "gt_occupied": 14304327,
+   "share_of_valid": 0.28472469539402423,
+   "share_of_gt_occupied": 0.5821991786311411
+  },
+  "never_observed|in_frustum|map_observed": {
+   "valid_voxels": 3361903,
+   "gt_occupied": 2061392,
+   "share_of_valid": 0.011077366636544168,
+   "share_of_gt_occupied": 0.0839005378747847
+  },
+  "never_observed|out_frustum|map_completed": {
+   "valid_voxels": 32782352,
+   "gt_occupied": 4404882,
+   "share_of_valid": 0.10801683817535693,
+   "share_of_gt_occupied": 0.17928272209990015
+  },
+  "never_observed|out_frustum|map_observed": {
+   "valid_voxels": 1616825,
+   "gt_occupied": 875390,
+   "share_of_valid": 0.0053273884797183394,
+   "share_of_gt_occupied": 0.03562917283573807
+  }
+ },
+ "overlap_of_gt_occupied": {
+  "never_observed": 21645991,
+  "out_frustum": 6399945,
+  "both": 5280272,
+  "fraction_of_never_observed_that_is_out_of_frustum": 0.24393764184785996,
+  "fraction_of_out_of_frustum_that_is_never_observed": 0.8250495902699164,
+  "note": "the two masks are NOT interchangeable: an out-of-frustum result is a statement about a different voxel set than a never-observed result"
+ }
+}

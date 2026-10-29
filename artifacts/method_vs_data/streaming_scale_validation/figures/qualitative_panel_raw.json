@@ -1,0 +1,123 @@
+{
+ "post": "raw",
+ "quantiles": [
+  0.03,
+  0.27,
+  0.5,
+  0.73,
+  0.97
+ ],
+ "rows": [
+  {
+   "quantile": 0.03,
+   "sample_id": "08_003055",
+   "post": "raw",
+   "stream_position": 611,
+   "time_s": 317.4692,
+   "sc_iou": {
+    "map_only": 6.703119687418134,
+    "clip_reset": 24.85032320646254,
+    "streaming": 18.73158055508947,
+    "occany_1f": 15.894407138151431
+   },
+   "frames_cast": 44,
+   "frames_in_prefix": 612,
+   "region_gt_occupied": {
+    "current_frame": 3812,
+    "recent_other_four": 8044,
+    "earlier_in_stream": 5020,
+    "never_in_frustum": 114229,
+    "never_out_frustum": 25502
+   }
+  },
+  {
+   "quantile": 0.27,
+   "sample_id": "08_001215",
+   "post": "raw",
+   "stream_position": 243,
+   "time_s": 126.2203,
+   "sc_iou": {
+    "map_only": 6.280787206708754,
+    "clip_reset": 31.654409574432876,
+    "streaming": 29.125602171062027,
+    "occany_1f": 20.48671598021622
+   },
+   "frames_cast": 58,
+   "frames_in_prefix": 244,
+   "region_gt_occupied": {
+    "current_frame": 3511,
+    "recent_other_four": 5242,
+    "earlier_in_stream": 6410,
+    "never_in_frustum": 73700,
+    "never_out_frustum": 12962
+   }
+  },
+  {
+   "quantile": 0.5,
+   "sample_id": "08_002085",
+   "post": "raw",
+   "stream_position": 417,
+   "time_s": 216.6502,
+   "sc_iou": {
+    "map_only": 7.174045934852852,
+    "clip_reset": 25.721291509045887,
+    "streaming": 24.331279153410904,
+    "occany_1f": 15.141197291474299
+   },
+   "frames_cast": 44,
+   "frames_in_prefix": 418,
+   "region_gt_occupied": {
+    "current_frame": 3863,
+    "recent_other_four": 4751,
+    "earlier_in_stream": 3493,
+    "never_in_frustum": 72273,
+    "never_out_frustum": 14179
+   }
+  },
+  {
+   "quantile": 0.73,
+   "sample_id": "08_002465",
+   "post": "raw",
+   "stream_position": 493,
+   "time_s": 256.1582,
+   "sc_iou": {
+    "map_only": 14.760772629409304,
+    "clip_reset": 27.71905159217675,
+    "streaming": 27.467130978608484,
+    "occany_1f": 19.85760149743517
+   },
+   "frames_cast": 29,
+   "frames_in_prefix": 494,
+   "region_gt_occupied": {
+    "current_frame": 8125,
+    "recent_other_four": 6548,
+    "earlier_in_stream": 6125,
+    "never_in_frustum": 31961,
+    "never_out_frustum": 23864
+   }
+  },
+  {
+   "quantile": 0.97,
+   "sample_id": "08_002375",
+   "post": "raw",
+   "stream_position": 475,
+   "time_s": 246.8012,
+   "sc_iou": {
+    "map_only": 8.270171662354118,
+    "clip_reset": 25.27442464863386,
+    "streaming": 27.846919726197886,
+    "occany_1f": 11.359325605900949
+   },
+   "frames_cast": 31,
+   "frames_in_prefix": 476,
+   "region_gt_occupied": {
+    "current_frame": 4705,
+    "recent_other_four": 6109,
+    "earlier_in_stream": 5620,
+    "never_in_frustum": 69301,
+    "never_out_frustum": 13110
+   }
+  }
+ ],
+ "selection_rule": "fixed quantiles of the recorded per-anchor ranking in panel_ranking.json; low quantiles are streaming losses"
+}

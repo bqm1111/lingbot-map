@@ -1,0 +1,176 @@
+{
+ "method": "ours",
+ "dataset": "semantickitti",
+ "input_frames": 5,
+ "mode": "e2e",
+ "device": "cuda:3",
+ "n_anchors": 50,
+ "passes": 3,
+ "warmup": 3,
+ "anchors": [
+  "08_000085",
+  "08_000150",
+  "08_000220",
+  "08_000280",
+  "08_000360",
+  "08_000420",
+  "08_000505",
+  "08_000580",
+  "08_000670",
+  "08_000805",
+  "08_000870",
+  "08_000970",
+  "08_001020",
+  "08_001105",
+  "08_001215",
+  "08_001275",
+  "08_001350",
+  "08_001420",
+  "08_001500",
+  "08_001610",
+  "08_001640",
+  "08_001765",
+  "08_001830",
+  "08_001860",
+  "08_001970",
+  "08_002085",
+  "08_002140",
+  "08_002180",
+  "08_002320",
+  "08_002395",
+  "08_002485",
+  "08_002510",
+  "08_002585",
+  "08_002725",
+  "08_002740",
+  "08_002860",
+  "08_002905",
+  "08_003000",
+  "08_003095",
+  "08_003170",
+  "08_003250",
+  "08_003300",
+  "08_003380",
+  "08_003465",
+  "08_003540",
+  "08_003670",
+  "08_003740",
+  "08_003830",
+  "08_003880",
+  "08_003990"
+ ],
+ "latency_per_completed_occupancy_grid": {
+  "n": 150,
+  "mean_ms": 373.89395711012185,
+  "median_ms": 373.09737456962466,
+  "p95_ms": 382.81385973095894,
+  "min_ms": 361.9117080233991,
+  "max_ms": 428.96416829898953,
+  "std_ms": 8.43952871470686,
+  "predictions_per_second": 2.6745551271519292
+ },
+ "per_pass_mean_ms": [
+  369.40471899695694,
+  374.40017633140087,
+  377.8769760020077
+ ],
+ "image_decode_excluded_by_boundary": {
+  "n": 50,
+  "mean_ms": 50.42946796864271,
+  "median_ms": 49.708535661920905,
+  "p95_ms": 57.74533268995583,
+  "min_ms": 41.52327077463269,
+  "max_ms": 82.0549251511693,
+  "std_ms": 5.876674929981567,
+  "predictions_per_second": 19.829675788406192
+ },
+ "peak_memory": {
+  "allocated_bytes": 12644935168,
+  "reserved_bytes": 13725859840,
+  "note": "this process holds LingBotMap + MoGe-2 + CompletionUNet resident; see --memory-only for an isolated figure"
+ },
+ "parameters": {
+  "per_module_total_and_requires_grad": {
+   "lingbot_map": [
+    1157943540,
+    0
+   ],
+   "completion_unet": [
+    967322,
+    0
+   ],
+   "moge2_vitl": [
+    326209221,
+    0
+   ]
+  },
+  "total_inference_parameters": 1485120083,
+  "task_specific_trained_parameters": 967322,
+  "note": "requires_grad is False everywhere at inference; the trained-parameter count is the CompletionUNet, the only module this work optimised. LingBotMap and MoGe-2 are frozen pretrained dependencies and are NOT free: they are in the total and in every latency figure."
+ },
+ "configuration": {
+  "lingbot_checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+  "lingbot_load": {
+   "missing_keys": 0,
+   "unexpected_keys": 0
+  },
+  "lingbot_resolution": 518,
+  "lingbot_autocast": "bfloat16",
+  "moge_repo": "Ruicheng/moge-2-vitl",
+  "moge_revision": "39c4d5e957afe587e04eec59dc2bcc3be5ecd968",
+  "completion_seed": 0,
+  "prediction_grid": "semantickitti",
+  "prediction_dims": [
+   256,
+   256,
+   32
+  ],
+  "prediction_voxel_m": 0.2,
+  "eval_grid": "semantickitti",
+  "eval_dims": [
+   256,
+   256,
+   32
+  ],
+  "eval_voxel_m": 0.2,
+  "unet_precision": "bfloat16 autocast, fp32 residual",
+  "batch": "one evaluation anchor",
+  "real_input_frames": 5,
+  "generated_views": 0,
+  "future_frames_required": 0
+ },
+ "machine": {
+  "gpu_index": 3,
+  "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+  "gpu_total_memory_bytes": 101971722240,
+  "gpu_capability": "12.0",
+  "nvidia_smi_during_setup": "0, 55 %, 26690 MiB\n1, 92 %, 80265 MiB\n2, 0 %, 3525 MiB\n3, 87 %, 14425 MiB",
+  "cpu_model": "Intel(R) Xeon(R) w7-3565X",
+  "cpu_count": 64,
+  "loadavg": [
+   5.22216796875,
+   8.7744140625,
+   9.40087890625
+  ],
+  "python": "3.10.19",
+  "executable": "/home/minh/anaconda3/envs/cu128/bin/python",
+  "torch": "2.7.1+cu128",
+  "torch_cuda": "12.8",
+  "cudnn": 90701,
+  "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+  "driver": "580.95.05\n580.95.05\n580.95.05\n580.95.05"
+ },
+ "stages_mean_ms": null,
+ "boundary": {
+  "start": "decoded RGB frames + calibration + calibrated FOV in host memory",
+  "end": "completed occupancy grid on the evaluation grid, host numpy array",
+  "excluded": [
+   "image decode",
+   "ground-truth labels and LiDAR",
+   "scoring",
+   "visualisation",
+   "prediction serialisation",
+   "model construction and checkpoint loading"
+  ]
+ }
+}

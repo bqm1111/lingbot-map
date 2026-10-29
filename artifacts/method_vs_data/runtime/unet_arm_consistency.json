@@ -1,0 +1,73 @@
+{
+ "dataset": "semantickitti",
+ "grid": "semantickitti",
+ "dims": [
+  256,
+  256,
+  32
+ ],
+ "n_anchors": 20,
+ "repeats": 5,
+ "anchors": [
+  "08_000085",
+  "08_000150",
+  "08_000220",
+  "08_000280",
+  "08_000360",
+  "08_000420",
+  "08_000505",
+  "08_000580",
+  "08_000670",
+  "08_000805",
+  "08_000870",
+  "08_000970",
+  "08_001020",
+  "08_001105",
+  "08_001215",
+  "08_001275",
+  "08_001350",
+  "08_001420",
+  "08_001500",
+  "08_001610"
+ ],
+ "device": "cuda:3",
+ "arms": {
+  "k360": {
+   "checkpoint": "artifacts/baseline_reconstruction/checkpoints/geo_seed0_step06000.pt",
+   "n_params": 967322,
+   "n": 100,
+   "mean_ms": 42.86442147102207,
+   "median_ms": 42.80630312860012,
+   "p95_ms": 43.166504544205964,
+   "min_ms": 42.701676953583956,
+   "max_ms": 43.71395893394947,
+   "std_ms": 0.19676047097828006,
+   "predictions_per_second": 23.329371205348867
+  },
+  "waymo": {
+   "checkpoint": "artifacts/waymo_arm/checkpoints/geo_seed0_step06000.pt",
+   "n_params": 967322,
+   "n": 100,
+   "mean_ms": 42.8108622925356,
+   "median_ms": 42.78115020133555,
+   "p95_ms": 42.99598904326558,
+   "min_ms": 42.706096079200506,
+   "max_ms": 43.25657105073333,
+   "std_ms": 0.11252273356788425,
+   "predictions_per_second": 23.358557768979054
+  },
+  "once": {
+   "checkpoint": "artifacts/method_vs_data/once_arm/checkpoints/geo_seed0_step06000.pt",
+   "n_params": 967322,
+   "n": 100,
+   "mean_ms": 42.86092664115131,
+   "median_ms": 42.83110820688307,
+   "p95_ms": 42.98344699200243,
+   "min_ms": 42.75754280388355,
+   "max_ms": 43.30452112480998,
+   "std_ms": 0.1089085376092791,
+   "predictions_per_second": 23.3312734550141
+  }
+ },
+ "note": "CompletionUNet forward plus the residual decision only, on identical hard-map inputs; this is the stage a different trained source could in principle change, and the rest of the pipeline is arm-independent by construction (the hard map is bit-identical across arms)."
+}

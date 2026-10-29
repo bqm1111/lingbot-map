@@ -1,0 +1,870 @@
+{
+ "method": "ours_streaming",
+ "dataset": "occ3d",
+ "device": "cuda:3",
+ "mode": "e2e",
+ "n_streams": 3,
+ "reps": 3,
+ "streams": [
+  {
+   "segment": "scene-0781",
+   "start": 0,
+   "n_frames": 40,
+   "rule": "the median-length validation scene and its neighbours in the length ranking; the 200-frame target is NOT available for Occ3D, whose scenes are ~40 samples"
+  },
+  {
+   "segment": "scene-0794",
+   "start": 0,
+   "n_frames": 40,
+   "rule": "the median-length validation scene and its neighbours in the length ranking; the 200-frame target is NOT available for Occ3D, whose scenes are ~40 samples"
+  },
+  {
+   "segment": "scene-0795",
+   "start": 0,
+   "n_frames": 40,
+   "rule": "the median-length validation scene and its neighbours in the length ranking; the 200-frame target is NOT available for Occ3D, whose scenes are ~40 samples"
+  }
+ ],
+ "startup_s": {
+  "n": 9,
+  "mean_ms": 350.4837792263263,
+  "median_ms": 351.2061880901456,
+  "p95_ms": 359.1741922311485,
+  "min_ms": 344.04264809563756,
+  "max_ms": 359.69095630571246,
+  "std_ms": 5.919015951982805,
+  "predictions_per_second": 2.8531990901474673
+ },
+ "first_prediction_compute_s": {
+  "n": 9,
+  "mean_ms": 490.3029190479881,
+  "median_ms": 490.8552053384483,
+  "p95_ms": 499.3267288431525,
+  "min_ms": 483.0555282533169,
+  "max_ms": 500.5303593352437,
+  "std_ms": 6.502362689514895,
+  "predictions_per_second": 2.0395554689775883
+ },
+ "frame_acquisition_waiting_s": {
+  "n": 9,
+  "mean_ms": 2000.2263893333334,
+  "median_ms": 2000.045056,
+  "p95_ms": 2001.165056,
+  "min_ms": 1999.469056,
+  "max_ms": 2001.165056,
+  "std_ms": 0.7468761610870276,
+  "predictions_per_second": 0.4999434090724579
+ },
+ "per_input_update_s": {
+  "n": 9,
+  "mean_ms": 67.7384828276459,
+  "median_ms": 67.5602241818394,
+  "p95_ms": 68.57992265905652,
+  "min_ms": 67.00631402699011,
+  "max_ms": 68.70960582579885,
+  "std_ms": 0.6095716911920872,
+  "predictions_per_second": 14.762657181803208
+ },
+ "per_input_update_pooled_s": {
+  "n": 9,
+  "mean_ms": 67.7384828276459,
+  "median_ms": 67.5602241818394,
+  "p95_ms": 68.57992265905652,
+  "min_ms": 67.00631402699011,
+  "max_ms": 68.70960582579885,
+  "std_ms": 0.6095716911920872,
+  "predictions_per_second": 14.762657181803208
+ },
+ "per_prediction_s": {
+  "n": 9,
+  "mean_ms": 139.47320403147936,
+  "median_ms": 139.67531660778656,
+  "p95_ms": 140.28980073829493,
+  "min_ms": 138.48999918748936,
+  "max_ms": 140.38729260641117,
+  "std_ms": 0.6700357195195656,
+  "predictions_per_second": 7.169836005017122
+ },
+ "sequence_average_per_prediction_s": {
+  "n": 9,
+  "mean_ms": 236.70331271557467,
+  "median_ms": 236.3264878679599,
+  "p95_ms": 238.23233760693776,
+  "min_ms": 235.09635027897144,
+  "max_ms": 238.48184103345764,
+  "std_ms": 1.2275008606036228,
+  "predictions_per_second": 4.224697950051975
+ },
+ "measured_predictions_per_second": {
+  "n": 9,
+  "mean_ms": 4224.798885988519,
+  "median_ms": 4231.434271382728,
+  "p95_ms": 4251.276166978278,
+  "min_ms": 4193.191379547031,
+  "max_ms": 4253.575178063691,
+  "std_ms": 21.896932632029838,
+  "predictions_per_second": 0.23669765756578018
+ },
+ "total_sequence_compute_s": {
+  "n": 9,
+  "mean_ms": 6627.692756036089,
+  "median_ms": 6617.141660302877,
+  "p95_ms": 6670.505452994257,
+  "min_ms": 6582.697807811201,
+  "max_ms": 6677.491548936814,
+  "std_ms": 34.37002409690139,
+  "predictions_per_second": 0.15088206964471343
+ },
+ "peak_memory_startup_bytes": {
+  "allocated": 15574839808,
+  "reserved": 22070427648
+ },
+ "peak_memory_sustained_bytes": {
+  "allocated": 18936526848,
+  "reserved": 22070427648
+ },
+ "model_load_seconds_reported_separately": {
+  "lingbot_map": 10.702703804243356,
+  "moge2_vitl": 4.280322349164635,
+  "completion_unet": 0.015041655860841274,
+  "total": 14.998067809268832
+ },
+ "parameters": {
+  "per_module_total_and_requires_grad": {
+   "lingbot_map": [
+    1157943540,
+    0
+   ],
+   "completion_unet": [
+    967322,
+    0
+   ],
+   "moge2_vitl": [
+    326209221,
+    0
+   ]
+  },
+  "total_inference_parameters": 1485120083,
+  "task_specific_trained_parameters": 967322
+ },
+ "configuration": {
+  "lingbot_checkpoint": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+  "lingbot_load": {
+   "missing_keys": 0,
+   "unexpected_keys": 0
+  },
+  "lingbot_resolution": 518,
+  "lingbot_autocast": "bfloat16",
+  "kv_cache_sliding_window_blocks": 64,
+  "moge_repo": "Ruicheng/moge-2-vitl",
+  "moge_revision": "39c4d5e957afe587e04eec59dc2bcc3be5ecd968",
+  "moge_calls": "5 at startup, none afterwards",
+  "completion_source": "k360",
+  "completion_seed": 0,
+  "prediction_grid": "occ3d_nuscenes_canonical_0p2m",
+  "prediction_dims": [
+   400,
+   400,
+   32
+  ],
+  "eval_grid": "occ3d_nuscenes",
+  "eval_dims": [
+   200,
+   200,
+   16
+  ],
+  "batch": "one frame per update, one anchor per prediction",
+  "state_policy": "persistent within the stream; reset only at the stream start",
+  "resident_models": [
+   "LingBotMap GCTStream",
+   "MoGe-2 ViT-L",
+   "CompletionUNet"
+  ],
+  "future_frames_required": 0,
+  "generated_views": 0
+ },
+ "boundary": {
+  "start": "decoded RGB frames + ordinary calibration in host memory",
+  "end": "completed occupancy grid on the evaluation grid, host numpy array",
+  "excluded": [
+   "image decode",
+   "ground-truth loading",
+   "scoring",
+   "visualisation",
+   "prediction serialisation",
+   "model construction and checkpoint loading (reported separately)"
+  ],
+  "no_cached_quantities": "depth, point maps, poses, scale and hard maps are all computed inside the timed region; the only cached read is the calibrated horizontal FOV, a deterministic function of ordinary calibration"
+ },
+ "machine": {
+  "gpu_index": 3,
+  "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+  "gpu_total_memory_bytes": 101971722240,
+  "gpu_capability": "12.0",
+  "nvidia_smi_during_setup": "0, 46 %, 27300 MiB\n1, 100 %, 82534 MiB\n2, 0 %, 904 MiB\n3, 98 %, 22403 MiB",
+  "cpu_model": "Intel(R) Xeon(R) w7-3565X",
+  "cpu_count": 64,
+  "loadavg": [
+   3.94287109375,
+   4.76220703125,
+   5.27880859375
+  ],
+  "python": "3.10.19",
+  "executable": "/home/minh/anaconda3/envs/cu128/bin/python",
+  "torch": "2.7.1+cu128",
+  "torch_cuda": "12.8",
+  "cudnn": 90701,
+  "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+  "driver": "580.95.05\n580.95.05\n580.95.05\n580.95.05"
+ },
+ "runs": [
+  {
+   "segment": "scene-0781",
+   "start_position": 0,
+   "n_frames_processed": 40,
+   "duration_s": 19.500144128,
+   "n_predictions_emitted": 28,
+   "output_cadence": {
+    "predictions_per_processed_frame": 0.7,
+    "rule": "every processed frame at or after position 4 of the segment that is a canonical anchor emits a grid"
+   },
+   "startup_s": 0.3443603250198066,
+   "startup_includes": {
+    "lingbot_scale_block_frames": 5,
+    "moge2_forwards": 5,
+    "live_moge": true
+   },
+   "startup_scale_m_per_unit": 16.04340856728413,
+   "first_prediction_latency_s": {
+    "compute_after_last_init_frame_arrives": 0.4831654177978635,
+    "prediction_step_only": 0.13880509277805686,
+    "frame_acquisition_waiting_s": 2.001165056,
+    "note": "waiting is the wall-clock time for the four later initialization frames to arrive at the sensor cadence; it is NOT computation and is never added into a latency figure"
+   },
+   "per_input_update_s": {
+    "n": 35,
+    "mean_ms": 68.70960582579885,
+    "median_ms": 68.29683622345328,
+    "p95_ms": 72.98188167624176,
+    "min_ms": 64.1397750005126,
+    "max_ms": 74.75995924323797,
+    "std_ms": 2.596652369123034,
+    "predictions_per_second": 14.554005775194295
+   },
+   "per_prediction_s": {
+    "n": 27,
+    "mean_ms": 139.67531660778656,
+    "median_ms": 139.71969205886126,
+    "p95_ms": 140.75770233757794,
+    "min_ms": 138.58793303370476,
+    "max_ms": 142.6398791372776,
+    "std_ms": 0.8575156660929977,
+    "predictions_per_second": 7.159461129470977
+   },
+   "steady_state_s": 6.176860891282558,
+   "total_sequence_compute_s": 6.660026309080422,
+   "sequence_average_per_prediction_s": 0.23785808246715792,
+   "measured_predictions_per_second": 4.204187596349913,
+   "measured_input_updates_per_second": 6.005982280499875,
+   "peak_memory_startup": {
+    "allocated_bytes": 15574839808,
+    "reserved_bytes": 22053650432
+   },
+   "peak_memory_sustained": {
+    "allocated_bytes": 18936309248,
+    "reserved_bytes": 22059941888
+   },
+   "state_trace": {
+    "peak_frames_processed": 40,
+    "aggregator_forward_calls": 36,
+    "clean_kv_cache_calls": 0,
+    "frame_counter_at_each_reset": [],
+    "mid_stream_resets": [],
+    "note": "resets at counter 0 precede any frame; a reset at the peak follows the last frame. Only a reset strictly between the two would break the persistent-state requirement."
+   },
+   "frame_gap_s": {
+    "median": 0.49987916799999965,
+    "max": 0.6010670079999993
+   },
+   "stages_s": null,
+   "rep": 0,
+   "selection_rule": "the median-length validation scene and its neighbours in the length ranking; the 200-frame target is NOT available for Occ3D, whose scenes are ~40 samples"
+  },
+  {
+   "segment": "scene-0781",
+   "start_position": 0,
+   "n_frames_processed": 40,
+   "duration_s": 19.500144128,
+   "n_predictions_emitted": 28,
+   "output_cadence": {
+    "predictions_per_processed_frame": 0.7,
+    "rule": "every processed frame at or after position 4 of the segment that is a canonical anchor emits a grid"
+   },
+   "startup_s": 0.3442832762375474,
+   "startup_includes": {
+    "lingbot_scale_block_frames": 5,
+    "moge2_forwards": 5,
+    "live_moge": true
+   },
+   "startup_scale_m_per_unit": 16.04340856728413,
+   "first_prediction_latency_s": {
+    "compute_after_last_init_frame_arrives": 0.4830555282533169,
+    "prediction_step_only": 0.13877225201576948,
+    "frame_acquisition_waiting_s": 2.001165056,
+    "note": "waiting is the wall-clock time for the four later initialization frames to arrive at the sensor cadence; it is NOT computation and is never added into a latency figure"
+   },
+   "per_input_update_s": {
+    "n": 35,
+    "mean_ms": 67.5602241818394,
+    "median_ms": 67.54650035873055,
+    "p95_ms": 70.62768642790616,
+    "min_ms": 62.64486815780401,
+    "max_ms": 74.24829294905066,
+    "std_ms": 2.265266449198968,
+    "predictions_per_second": 14.80160867004355
+   },
+   "per_prediction_s": {
+    "n": 27,
+    "mean_ms": 139.18982761808567,
+    "median_ms": 138.9597961679101,
+    "p95_ms": 140.60987657867372,
+    "min_ms": 138.45608802512288,
+    "max_ms": 141.34215703234076,
+    "std_ms": 0.739690212079443,
+    "predictions_per_second": 7.1844330660703015
+   },
+   "steady_state_s": 6.12350448127836,
+   "total_sequence_compute_s": 6.606560009531677,
+   "sequence_average_per_prediction_s": 0.23594857176898845,
+   "measured_predictions_per_second": 4.2382117107243005,
+   "measured_input_updates_per_second": 6.054588158177572,
+   "peak_memory_startup": {
+    "allocated_bytes": 15574839808,
+    "reserved_bytes": 22059941888
+   },
+   "peak_memory_sustained": {
+    "allocated_bytes": 18936309248,
+    "reserved_bytes": 22059941888
+   },
+   "state_trace": {
+    "peak_frames_processed": 40,
+    "aggregator_forward_calls": 36,
+    "clean_kv_cache_calls": 0,
+    "frame_counter_at_each_reset": [],
+    "mid_stream_resets": [],
+    "note": "resets at counter 0 precede any frame; a reset at the peak follows the last frame. Only a reset strictly between the two would break the persistent-state requirement."
+   },
+   "frame_gap_s": {
+    "median": 0.49987916799999965,
+    "max": 0.6010670079999993
+   },
+   "stages_s": null,
+   "rep": 1,
+   "selection_rule": "the median-length validation scene and its neighbours in the length ranking; the 200-frame target is NOT available for Occ3D, whose scenes are ~40 samples"
+  },
+  {
+   "segment": "scene-0781",
+   "start_position": 0,
+   "n_frames_processed": 40,
+   "duration_s": 19.500144128,
+   "n_predictions_emitted": 28,
+   "output_cadence": {
+    "predictions_per_processed_frame": 0.7,
+    "rule": "every processed frame at or after position 4 of the segment that is a canonical anchor emits a grid"
+   },
+   "startup_s": 0.34404264809563756,
+   "startup_includes": {
+    "lingbot_scale_block_frames": 5,
+    "moge2_forwards": 5,
+    "live_moge": true
+   },
+   "startup_scale_m_per_unit": 16.04340856728413,
+   "first_prediction_latency_s": {
+    "compute_after_last_init_frame_arrives": 0.4833902018144727,
+    "prediction_step_only": 0.13934755371883512,
+    "frame_acquisition_waiting_s": 2.001165056,
+    "note": "waiting is the wall-clock time for the four later initialization frames to arrive at the sensor cadence; it is NOT computation and is never added into a latency figure"
+   },
+   "per_input_update_s": {
+    "n": 35,
+    "mean_ms": 68.38215250255806,
+    "median_ms": 68.0939476005733,
+    "p95_ms": 73.48499456420541,
+    "min_ms": 64.16316796094179,
+    "max_ms": 74.40751232206821,
+    "std_ms": 2.461747739111485,
+    "predictions_per_second": 14.623698778165718
+   },
+   "per_prediction_s": {
+    "n": 27,
+    "mean_ms": 139.95148731326614,
+    "median_ms": 139.91892989724874,
+    "p95_ms": 140.94008691608906,
+    "min_ms": 138.94588500261307,
+    "max_ms": 142.22538098692894,
+    "std_ms": 0.7234080591260779,
+    "predictions_per_second": 7.1453331379152045
+   },
+   "steady_state_s": 6.17287026392296,
+   "total_sequence_compute_s": 6.656260465737432,
+   "sequence_average_per_prediction_s": 0.23772358806205116,
+   "measured_predictions_per_second": 4.206566155896056,
+   "measured_input_updates_per_second": 6.009380222708651,
+   "peak_memory_startup": {
+    "allocated_bytes": 15574839808,
+    "reserved_bytes": 22059941888
+   },
+   "peak_memory_sustained": {
+    "allocated_bytes": 18936309248,
+    "reserved_bytes": 22059941888
+   },
+   "state_trace": {
+    "peak_frames_processed": 40,
+    "aggregator_forward_calls": 36,
+    "clean_kv_cache_calls": 0,
+    "frame_counter_at_each_reset": [],
+    "mid_stream_resets": [],
+    "note": "resets at counter 0 precede any frame; a reset at the peak follows the last frame. Only a reset strictly between the two would break the persistent-state requirement."
+   },
+   "frame_gap_s": {
+    "median": 0.49987916799999965,
+    "max": 0.6010670079999993
+   },
+   "stages_s": null,
+   "rep": 2,
+   "selection_rule": "the median-length validation scene and its neighbours in the length ranking; the 200-frame target is NOT available for Occ3D, whose scenes are ~40 samples"
+  },
+  {
+   "segment": "scene-0794",
+   "start_position": 0,
+   "n_frames_processed": 40,
+   "duration_s": 19.549867008,
+   "n_predictions_emitted": 28,
+   "output_cadence": {
+    "predictions_per_processed_frame": 0.7,
+    "rule": "every processed frame at or after position 4 of the segment that is a canonical anchor emits a grid"
+   },
+   "startup_s": 0.3583990461193025,
+   "startup_includes": {
+    "lingbot_scale_block_frames": 5,
+    "moge2_forwards": 5,
+    "live_moge": true
+   },
+   "startup_scale_m_per_unit": 22.468134401862457,
+   "first_prediction_latency_s": {
+    "compute_after_last_init_frame_arrives": 0.49752128310501575,
+    "prediction_step_only": 0.13912223698571324,
+    "frame_acquisition_waiting_s": 1.999469056,
+    "note": "waiting is the wall-clock time for the four later initialization frames to arrive at the sensor cadence; it is NOT computation and is never added into a latency figure"
+   },
+   "per_input_update_s": {
+    "n": 35,
+    "mean_ms": 67.00631402699011,
+    "median_ms": 66.93276017904282,
+    "p95_ms": 70.38041222840548,
+    "min_ms": 62.341945711523294,
+    "max_ms": 72.43330124765635,
+    "std_ms": 2.352348873994452,
+    "predictions_per_second": 14.923966711513193
+   },
+   "per_prediction_s": {
+    "n": 27,
+    "mean_ms": 138.48999918748936,
+    "median_ms": 138.3456690236926,
+    "p95_ms": 139.9594464339316,
+    "min_ms": 137.54028594121337,
+    "max_ms": 141.3141000084579,
+    "std_ms": 0.8334249706372862,
+    "predictions_per_second": 7.220738001782991
+   },
+   "steady_state_s": 6.085176524706185,
+   "total_sequence_compute_s": 6.582697807811201,
+   "sequence_average_per_prediction_s": 0.23509635027897144,
+   "measured_predictions_per_second": 4.2535751780636915,
+   "measured_input_updates_per_second": 6.076535968662417,
+   "peak_memory_startup": {
+    "allocated_bytes": 15574839808,
+    "reserved_bytes": 22059941888
+   },
+   "peak_memory_sustained": {
+    "allocated_bytes": 18936309248,
+    "reserved_bytes": 22059941888
+   },
+   "state_trace": {
+    "peak_frames_processed": 40,
+    "aggregator_forward_calls": 36,
+    "clean_kv_cache_calls": 0,
+    "frame_counter_at_each_reset": [],
+    "mid_stream_resets": [],
+    "note": "resets at counter 0 precede any frame; a reset at the peak follows the last frame. Only a reset strictly between the two would break the persistent-state requirement."
+   },
+   "frame_gap_s": {
+    "median": 0.499884032,
+    "max": 0.6005109760000025
+   },
+   "stages_s": null,
+   "rep": 0,
+   "selection_rule": "the median-length validation scene and its neighbours in the length ranking; the 200-frame target is NOT available for Occ3D, whose scenes are ~40 samples"
+  },
+  {
+   "segment": "scene-0794",
+   "start_position": 0,
+   "n_frames_processed": 40,
+   "duration_s": 19.549867008,
+   "n_predictions_emitted": 28,
+   "output_cadence": {
+    "predictions_per_processed_frame": 0.7,
+    "rule": "every processed frame at or after position 4 of the segment that is a canonical anchor emits a grid"
+   },
+   "startup_s": 0.34777889400720596,
+   "startup_includes": {
+    "lingbot_scale_block_frames": 5,
+    "moge2_forwards": 5,
+    "live_moge": true
+   },
+   "startup_scale_m_per_unit": 22.468134401862457,
+   "first_prediction_latency_s": {
+    "compute_after_last_init_frame_arrives": 0.487284435890615,
+    "prediction_step_only": 0.13950554188340902,
+    "frame_acquisition_waiting_s": 1.999469056,
+    "note": "waiting is the wall-clock time for the four later initialization frames to arrive at the sensor cadence; it is NOT computation and is never added into a latency figure"
+   },
+   "per_input_update_s": {
+    "n": 35,
+    "mean_ms": 67.49982855149678,
+    "median_ms": 67.95398565009236,
+    "p95_ms": 70.87728888727725,
+    "min_ms": 63.118483405560255,
+    "max_ms": 72.77979189530015,
+    "std_ms": 2.3768814162589877,
+    "predictions_per_second": 14.814852444211512
+   },
+   "per_prediction_s": {
+    "n": 27,
+    "mean_ms": 139.01642204641743,
+    "median_ms": 138.86665692552924,
+    "p95_ms": 139.9892500601709,
+    "min_ms": 138.03982315585017,
+    "max_ms": 140.5312088318169,
+    "std_ms": 0.6924452091160904,
+    "predictions_per_second": 7.193394746313505
+   },
+   "steady_state_s": 6.116724030580372,
+   "total_sequence_compute_s": 6.604008466470987,
+   "sequence_average_per_prediction_s": 0.23585744523110666,
+   "measured_predictions_per_second": 4.23984919797695,
+   "measured_input_updates_per_second": 6.056927425681357,
+   "peak_memory_startup": {
+    "allocated_bytes": 15574839808,
+    "reserved_bytes": 22059941888
+   },
+   "peak_memory_sustained": {
+    "allocated_bytes": 18936309248,
+    "reserved_bytes": 22059941888
+   },
+   "state_trace": {
+    "peak_frames_processed": 40,
+    "aggregator_forward_calls": 36,
+    "clean_kv_cache_calls": 0,
+    "frame_counter_at_each_reset": [],
+    "mid_stream_resets": [],
+    "note": "resets at counter 0 precede any frame; a reset at the peak follows the last frame. Only a reset strictly between the two would break the persistent-state requirement."
+   },
+   "frame_gap_s": {
+    "median": 0.499884032,
+    "max": 0.6005109760000025
+   },
+   "stages_s": null,
+   "rep": 1,
+   "selection_rule": "the median-length validation scene and its neighbours in the length ranking; the 200-frame target is NOT available for Occ3D, whose scenes are ~40 samples"
+  },
+  {
+   "segment": "scene-0794",
+   "start_position": 0,
+   "n_frames_processed": 40,
+   "duration_s": 19.549867008,
+   "n_predictions_emitted": 28,
+   "output_cadence": {
+    "predictions_per_processed_frame": 0.7,
+    "rule": "every processed frame at or after position 4 of the segment that is a canonical anchor emits a grid"
+   },
+   "startup_s": 0.3512061880901456,
+   "startup_includes": {
+    "lingbot_scale_block_frames": 5,
+    "moge2_forwards": 5,
+    "live_moge": true
+   },
+   "startup_scale_m_per_unit": 22.468134401862457,
+   "first_prediction_latency_s": {
+    "compute_after_last_init_frame_arrives": 0.4908552053384483,
+    "prediction_step_only": 0.1396490172483027,
+    "frame_acquisition_waiting_s": 1.999469056,
+    "note": "waiting is the wall-clock time for the four later initialization frames to arrive at the sensor cadence; it is NOT computation and is never added into a latency figure"
+   },
+   "per_input_update_s": {
+    "n": 35,
+    "mean_ms": 67.33594088416014,
+    "median_ms": 67.17829499393702,
+    "p95_ms": 71.08608321286738,
+    "min_ms": 62.85679340362549,
+    "max_ms": 72.23226595669985,
+    "std_ms": 2.4938758896759183,
+    "predictions_per_second": 14.850910032137625
+   },
+   "per_prediction_s": {
+    "n": 27,
+    "mean_ms": 138.6390833563551,
+    "median_ms": 138.44808982685208,
+    "p95_ms": 140.45518287457526,
+    "min_ms": 137.6803289167583,
+    "max_ms": 141.89373794943094,
+    "std_ms": 0.9701484146481493,
+    "predictions_per_second": 7.212973252496342
+   },
+   "steady_state_s": 6.1007493287324905,
+   "total_sequence_compute_s": 6.591604534070939,
+   "sequence_average_per_prediction_s": 0.23541444764539068,
+   "measured_predictions_per_second": 4.247827650350158,
+   "measured_input_updates_per_second": 6.068325214785939,
+   "peak_memory_startup": {
+    "allocated_bytes": 15574839808,
+    "reserved_bytes": 22059941888
+   },
+   "peak_memory_sustained": {
+    "allocated_bytes": 18936309248,
+    "reserved_bytes": 22059941888
+   },
+   "state_trace": {
+    "peak_frames_processed": 40,
+    "aggregator_forward_calls": 36,
+    "clean_kv_cache_calls": 0,
+    "frame_counter_at_each_reset": [],
+    "mid_stream_resets": [],
+    "note": "resets at counter 0 precede any frame; a reset at the peak follows the last frame. Only a reset strictly between the two would break the persistent-state requirement."
+   },
+   "frame_gap_s": {
+    "median": 0.499884032,
+    "max": 0.6005109760000025
+   },
+   "stages_s": null,
+   "rep": 2,
+   "selection_rule": "the median-length validation scene and its neighbours in the length ranking; the 200-frame target is NOT available for Occ3D, whose scenes are ~40 samples"
+  },
+  {
+   "segment": "scene-0795",
+   "start_position": 0,
+   "n_frames_processed": 40,
+   "duration_s": 19.549907968,
+   "n_predictions_emitted": 28,
+   "output_cadence": {
+    "predictions_per_processed_frame": 0.7,
+    "rule": "every processed frame at or after position 4 of the segment that is a canonical anchor emits a grid"
+   },
+   "startup_s": 0.35969095630571246,
+   "startup_includes": {
+    "lingbot_scale_block_frames": 5,
+    "moge2_forwards": 5,
+    "live_moge": true
+   },
+   "startup_scale_m_per_unit": 31.234242754545324,
+   "first_prediction_latency_s": {
+    "compute_after_last_init_frame_arrives": 0.5005303593352437,
+    "prediction_step_only": 0.14083940302953124,
+    "frame_acquisition_waiting_s": 2.000045056,
+    "note": "waiting is the wall-clock time for the four later initialization frames to arrive at the sensor cadence; it is NOT computation and is never added into a latency figure"
+   },
+   "per_input_update_s": {
+    "n": 35,
+    "mean_ms": 67.66431320990834,
+    "median_ms": 67.80513701960444,
+    "p95_ms": 70.8891212940216,
+    "min_ms": 64.14343090727925,
+    "max_ms": 74.64447617530823,
+    "std_ms": 2.4677185201215392,
+    "predictions_per_second": 14.778839133381851
+   },
+   "per_prediction_s": {
+    "n": 27,
+    "mean_ms": 140.14356293612056,
+    "median_ms": 139.86901799216866,
+    "p95_ms": 141.45201975479722,
+    "min_ms": 138.9464191161096,
+    "max_ms": 142.16128969565034,
+    "std_ms": 0.90057981969724,
+    "predictions_per_second": 7.135540006613177
+   },
+   "steady_state_s": 6.1529136430472136,
+   "total_sequence_compute_s": 6.653444002382457,
+   "sequence_average_per_prediction_s": 0.23762300008508777,
+   "measured_predictions_per_second": 4.208346833605843,
+   "measured_input_updates_per_second": 6.011924048008347,
+   "peak_memory_startup": {
+    "allocated_bytes": 15574839808,
+    "reserved_bytes": 22059941888
+   },
+   "peak_memory_sustained": {
+    "allocated_bytes": 18936526848,
+    "reserved_bytes": 22070427648
+   },
+   "state_trace": {
+    "peak_frames_processed": 40,
+    "aggregator_forward_calls": 36,
+    "clean_kv_cache_calls": 0,
+    "frame_counter_at_each_reset": [],
+    "mid_stream_resets": [],
+    "note": "resets at counter 0 precede any frame; a reset at the peak follows the last frame. Only a reset strictly between the two would break the persistent-state requirement."
+   },
+   "frame_gap_s": {
+    "median": 0.4998830079999994,
+    "max": 0.550768896
+   },
+   "stages_s": null,
+   "rep": 0,
+   "selection_rule": "the median-length validation scene and its neighbours in the length ranking; the 200-frame target is NOT available for Occ3D, whose scenes are ~40 samples"
+  },
+  {
+   "segment": "scene-0795",
+   "start_position": 0,
+   "n_frames_processed": 40,
+   "duration_s": 19.549907968,
+   "n_predictions_emitted": 28,
+   "output_cadence": {
+    "predictions_per_processed_frame": 0.7,
+    "rule": "every processed frame at or after position 4 of the segment that is a canonical anchor emits a grid"
+   },
+   "startup_s": 0.35300848819315434,
+   "startup_includes": {
+    "lingbot_scale_block_frames": 5,
+    "moge2_forwards": 5,
+    "live_moge": true
+   },
+   "startup_scale_m_per_unit": 31.234242754545324,
+   "first_prediction_latency_s": {
+    "compute_after_last_init_frame_arrives": 0.4941369602456689,
+    "prediction_step_only": 0.14112847205251455,
+    "frame_acquisition_waiting_s": 2.000045056,
+    "note": "waiting is the wall-clock time for the four later initialization frames to arrive at the sensor cadence; it is NOT computation and is never added into a latency figure"
+   },
+   "per_input_update_s": {
+    "n": 35,
+    "mean_ms": 67.10256835711854,
+    "median_ms": 67.65698501840234,
+    "p95_ms": 70.66784175112844,
+    "min_ms": 62.725454568862915,
+    "max_ms": 72.04212807118893,
+    "std_ms": 2.289038804744062,
+    "predictions_per_second": 14.90255923853793
+   },
+   "per_prediction_s": {
+    "n": 27,
+    "mean_ms": 139.76584461138205,
+    "median_ms": 139.58429591730237,
+    "p95_ms": 142.10939309559762,
+    "min_ms": 138.4757556952536,
+    "max_ms": 142.20518013462424,
+    "std_ms": 1.1047116755961077,
+    "predictions_per_second": 7.154823861155012
+   },
+   "steady_state_s": 6.1230047000572085,
+   "total_sequence_compute_s": 6.617141660302877,
+   "sequence_average_per_prediction_s": 0.2363264878679599,
+   "measured_predictions_per_second": 4.231434271382728,
+   "measured_input_updates_per_second": 6.044906101975325,
+   "peak_memory_startup": {
+    "allocated_bytes": 15574839808,
+    "reserved_bytes": 22070427648
+   },
+   "peak_memory_sustained": {
+    "allocated_bytes": 18936526848,
+    "reserved_bytes": 22070427648
+   },
+   "state_trace": {
+    "peak_frames_processed": 40,
+    "aggregator_forward_calls": 36,
+    "clean_kv_cache_calls": 0,
+    "frame_counter_at_each_reset": [],
+    "mid_stream_resets": [],
+    "note": "resets at counter 0 precede any frame; a reset at the peak follows the last frame. Only a reset strictly between the two would break the persistent-state requirement."
+   },
+   "frame_gap_s": {
+    "median": 0.4998830079999994,
+    "max": 0.550768896
+   },
+   "stages_s": null,
+   "rep": 1,
+   "selection_rule": "the median-length validation scene and its neighbours in the length ranking; the 200-frame target is NOT available for Occ3D, whose scenes are ~40 samples"
+  },
+  {
+   "segment": "scene-0795",
+   "start_position": 0,
+   "n_frames_processed": 40,
+   "duration_s": 19.549907968,
+   "n_predictions_emitted": 28,
+   "output_cadence": {
+    "predictions_per_processed_frame": 0.7,
+    "rule": "every processed frame at or after position 4 of the segment that is a canonical anchor emits a grid"
+   },
+   "startup_s": 0.3515841909684241,
+   "startup_includes": {
+    "lingbot_scale_block_frames": 5,
+    "moge2_forwards": 5,
+    "live_moge": true
+   },
+   "startup_scale_m_per_unit": 31.234242754545324,
+   "first_prediction_latency_s": {
+    "compute_after_last_init_frame_arrives": 0.49278687965124846,
+    "prediction_step_only": 0.14120268868282437,
+    "frame_acquisition_waiting_s": 2.000045056,
+    "note": "waiting is the wall-clock time for the four later initialization frames to arrive at the sensor cadence; it is NOT computation and is never added into a latency figure"
+   },
+   "per_input_update_s": {
+    "n": 35,
+    "mean_ms": 68.38539790894303,
+    "median_ms": 67.82269384711981,
+    "p95_ms": 72.70043860189617,
+    "min_ms": 64.41989867016673,
+    "max_ms": 73.87920934706926,
+    "std_ms": 2.5206883221412006,
+    "predictions_per_second": 14.62300477262012
+   },
+   "per_prediction_s": {
+    "n": 27,
+    "mean_ms": 140.38729260641117,
+    "median_ms": 140.2126969769597,
+    "p95_ms": 142.10500279441476,
+    "min_ms": 138.97980004549026,
+    "max_ms": 142.30466587468982,
+    "std_ms": 0.9409098352885525,
+    "predictions_per_second": 7.123151828303955
+   },
+   "steady_state_s": 6.184704669285566,
+   "total_sequence_compute_s": 6.677491548936814,
+   "sequence_average_per_prediction_s": 0.23848184103345765,
+   "measured_predictions_per_second": 4.193191379547031,
+   "measured_input_updates_per_second": 5.990273399352901,
+   "peak_memory_startup": {
+    "allocated_bytes": 15574839808,
+    "reserved_bytes": 22070427648
+   },
+   "peak_memory_sustained": {
+    "allocated_bytes": 18936526848,
+    "reserved_bytes": 22070427648
+   },
+   "state_trace": {
+    "peak_frames_processed": 40,
+    "aggregator_forward_calls": 36,
+    "clean_kv_cache_calls": 0,
+    "frame_counter_at_each_reset": [],
+    "mid_stream_resets": [],
+    "note": "resets at counter 0 precede any frame; a reset at the peak follows the last frame. Only a reset strictly between the two would break the persistent-state requirement."
+   },
+   "frame_gap_s": {
+    "median": 0.4998830079999994,
+    "max": 0.550768896
+   },
+   "stages_s": null,
+   "rep": 2,
+   "selection_rule": "the median-length validation scene and its neighbours in the length ranking; the 200-frame target is NOT available for Occ3D, whose scenes are ~40 samples"
+  }
+ ]
+}

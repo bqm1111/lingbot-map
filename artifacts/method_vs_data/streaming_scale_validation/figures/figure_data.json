@@ -1,0 +1,319 @@
+{
+ "regional_semantickitti": {
+  "figure": "/home/minh/workspace/lingbot-map_fork/artifacts/method_vs_data/streaming_scale_validation/figures/regional_semantickitti.png",
+  "arms": [
+   "A:k360_s0",
+   "B:k360_s0",
+   "B:map_only",
+   "occany_1f",
+   "occany_5f_fwd"
+  ],
+  "iou": {
+   "raw": {
+    "current_frame": {
+     "A:k360_s0": 11.47220877858943,
+     "B:k360_s0": 10.910042215578237,
+     "B:map_only": 12.336371557789063,
+     "occany_1f": 15.761507717556903,
+     "occany_5f_fwd": 11.71679231573168
+    },
+    "recent_other_four": {
+     "A:k360_s0": 17.95365026095798,
+     "B:k360_s0": 16.225568963815046,
+     "B:map_only": 10.332599732852115,
+     "occany_1f": 12.969129034998154,
+     "occany_5f_fwd": 11.651085674021301
+    },
+    "earlier_in_stream": {
+     "A:k360_s0": 12.82172758118475,
+     "B:k360_s0": 12.409193940595665,
+     "B:map_only": 5.89494524391027,
+     "occany_1f": 13.346188366284752,
+     "occany_5f_fwd": 14.306298646123917
+    },
+    "never_in_frustum": {
+     "A:k360_s0": 30.792678378947286,
+     "B:k360_s0": 29.324065759594767,
+     "B:map_only": 8.25808477879757,
+     "occany_1f": 25.844106713544946,
+     "occany_5f_fwd": 35.515603455187744
+    },
+    "never_out_frustum": {
+     "A:k360_s0": 41.910823333082426,
+     "B:k360_s0": 39.505685167405495,
+     "B:map_only": 8.25987808035596,
+     "occany_1f": 8.615765577283986,
+     "occany_5f_fwd": 10.110559959610294
+    }
+   },
+   "pooled": {
+    "current_frame": {
+     "A:k360_s0": 9.017331663899068,
+     "B:k360_s0": 8.625805934758159,
+     "B:map_only": 8.882529423662337,
+     "occany_1f": 11.716846495615629,
+     "occany_5f_fwd": 8.29978266704144
+    },
+    "recent_other_four": {
+     "A:k360_s0": 14.56799063970518,
+     "B:k360_s0": 13.512348598545701,
+     "B:map_only": 10.477541666797428,
+     "occany_1f": 13.919831698375859,
+     "occany_5f_fwd": 11.055148753904817
+    },
+    "earlier_in_stream": {
+     "A:k360_s0": 12.498589554206175,
+     "B:k360_s0": 12.135573065426797,
+     "B:map_only": 10.485868157549461,
+     "occany_1f": 14.605109897432403,
+     "occany_5f_fwd": 13.475864907273154
+    },
+    "never_in_frustum": {
+     "A:k360_s0": 34.29712229014256,
+     "B:k360_s0": 33.215115204958174,
+     "B:map_only": 18.694738117459156,
+     "occany_1f": 32.6573408968374,
+     "occany_5f_fwd": 39.79583031475252
+    },
+    "never_out_frustum": {
+     "A:k360_s0": 44.19022065449151,
+     "B:k360_s0": 42.13037748098189,
+     "B:map_only": 18.558236912287757,
+     "occany_1f": 14.13060912202822,
+     "occany_5f_fwd": 14.832865828160864
+    }
+   }
+  },
+  "composition": {
+   "current_frame": {
+    "valid_voxels": 383735341,
+    "gt_occupied": 4440970,
+    "share_of_valid": 0.32690058758065565,
+    "share_of_gt_occupied": 0.047599473013145883
+   },
+   "recent_other_four": {
+    "valid_voxels": 291244488,
+    "gt_occupied": 5766773,
+    "share_of_valid": 0.24810848541788913,
+    "share_of_gt_occupied": 0.061809774843432475
+   },
+   "earlier_in_stream": {
+    "valid_voxels": 204047495,
+    "gt_occupied": 5958659,
+    "share_of_valid": 0.17382617362277533,
+    "share_of_gt_occupied": 0.06386645896392878
+   },
+   "never_in_frustum": {
+    "valid_voxels": 248344502,
+    "gt_occupied": 60414754,
+    "share_of_valid": 0.21156238415430523,
+    "share_of_gt_occupied": 0.6475410670684214
+   },
+   "never_out_frustum": {
+    "valid_voxels": 46487615,
+    "gt_occupied": 16717566,
+    "share_of_valid": 0.03960236922437462,
+    "share_of_gt_occupied": 0.1791832261110715
+   }
+  }
+ },
+ "performance_over_time": {
+  "figure": "/home/minh/workspace/lingbot-map_fork/artifacts/method_vs_data/streaming_scale_validation/figures/performance_over_time.png",
+  "summary": {
+   "A:k360_s0|raw": {
+    "mean": 26.80250439407105,
+    "first_quarter_mean": 25.960688592020123,
+    "last_quarter_mean": 24.7527576139107
+   },
+   "B:k360_s0|raw": {
+    "mean": 25.329788773169327,
+    "first_quarter_mean": 24.653151400643313,
+    "last_quarter_mean": 22.643963996051177
+   },
+   "B:map_only|raw": {
+    "mean": 8.91573026932883,
+    "first_quarter_mean": 9.710607783254751,
+    "last_quarter_mean": 7.679388601160246
+   },
+   "A:k360_s0|pooled": {
+    "mean": 26.832812855377057,
+    "first_quarter_mean": 26.05726300040871,
+    "last_quarter_mean": 25.287471322921046
+   },
+   "B:k360_s0|pooled": {
+    "mean": 25.73310206016979,
+    "first_quarter_mean": 24.938043272379264,
+    "last_quarter_mean": 23.750303976069915
+   },
+   "B:map_only|pooled": {
+    "mean": 14.790866963082484,
+    "first_quarter_mean": 15.821704642423619,
+    "last_quarter_mean": 14.14431293168286
+   }
+  },
+  "note": "a declining streaming curve against a flat clip-reset curve would be gauge or pose drift; the quarter means above are the numbers behind that reading"
+ },
+ "accuracy_vs_latency": {
+  "figure": "/home/minh/workspace/lingbot-map_fork/artifacts/method_vs_data/streaming_scale_validation/figures/accuracy_vs_latency.png",
+  "points": [
+   {
+    "name": "ours \u00b7 clip-reset",
+    "colour": "#4C78A8",
+    "marker": "o",
+    "latency_ms": 368.6324171350409,
+    "iou_raw": 26.396948217145532,
+    "iou_pooled": 26.342442530594578,
+    "latency_source": "clipreset_semantickitti_e2e.json",
+    "latency_definition": "per completed occupancy grid, state reset per anchor"
+   },
+   {
+    "name": "ours \u00b7 streaming (per prediction)",
+    "colour": "#E45756",
+    "marker": "s",
+    "latency_ms": 61.56703926607234,
+    "iou_raw": 24.866372546873148,
+    "iou_pooled": 25.225487020354233,
+    "latency_source": "stream_semantickitti_e2e.json",
+    "latency_definition": "prediction step only, on top of the per-frame update"
+   },
+   {
+    "name": "ours \u00b7 streaming (sequence average)",
+    "colour": "#E45756",
+    "marker": "D",
+    "latency_ms": 124.47533918030611,
+    "iou_raw": 24.866372546873148,
+    "iou_pooled": 25.225487020354233,
+    "latency_source": "stream_semantickitti_e2e.json",
+    "latency_definition": "total sequence computation, startup and every intervening update included, per emitted grid"
+   },
+   {
+    "name": "OccAny \u00b7 1 causal frame",
+    "colour": "#54A24B",
+    "marker": "^",
+    "latency_ms": 1346.6421113784115,
+    "iou_raw": 20.319705142913374,
+    "iou_pooled": 24.06195379759287,
+    "latency_source": "streaming_scale_validation/runtime/occany_K_1FRAME_GEOM_e2e_rerun.json",
+    "latency_definition": "per completed occupancy grid, rerun on the same idle GPU as our measurement"
+   },
+   {
+    "name": "OccAny \u00b7 5 forward frames [+4 s future]",
+    "colour": "#54A24B",
+    "marker": "v",
+    "latency_ms": 1675.9180808160454,
+    "iou_raw": 25.20974996890375,
+    "iou_pooled": 25.928567591541178,
+    "latency_source": "streaming_scale_validation/runtime/occany_K_5FRAMES_GEOM_e2e_rerun.json",
+    "latency_definition": "per completed occupancy grid, rerun on the same idle GPU as our measurement"
+   }
+  ],
+  "warning": "the streaming and clip-reset points are different operating modes, not a speed-up of one configuration; OccAny's forward point consumes 4 s of future frames and is not temporally matched to either of ours"
+ },
+ "regional_occ3d": {
+  "figure": "/home/minh/workspace/lingbot-map_fork/artifacts/method_vs_data/streaming_scale_validation/figures/regional_occ3d.png",
+  "arms": [
+   "A:k360_s0",
+   "B:k360_s0",
+   "B:map_only",
+   "occany_5f_fwd"
+  ],
+  "iou": {
+   "raw": {
+    "current_frame": {
+     "A:k360_s0": 33.54926812336372,
+     "B:k360_s0": 37.18435434966406,
+     "B:map_only": 13.93348662739919,
+     "occany_5f_fwd": 29.424130429027077
+    },
+    "recent_other_four": {
+     "A:k360_s0": 36.46578016015831,
+     "B:k360_s0": 38.56578010790767,
+     "B:map_only": 17.300187079258194,
+     "occany_5f_fwd": 17.369852252069062
+    },
+    "earlier_in_stream": {
+     "A:k360_s0": 28.19482929064926,
+     "B:k360_s0": 27.770138880779857,
+     "B:map_only": 3.535585749845417,
+     "occany_5f_fwd": 9.655275203461239
+    },
+    "never_in_frustum": {
+     "A:k360_s0": 39.04675607569267,
+     "B:k360_s0": 38.53551727305712,
+     "B:map_only": 9.183181109668988,
+     "occany_5f_fwd": 29.774083715133838
+    },
+    "never_out_frustum": {
+     "A:k360_s0": 25.139698177701266,
+     "B:k360_s0": 24.997169557443108,
+     "B:map_only": 3.609840344212145,
+     "occany_5f_fwd": 10.517763952284747
+    }
+   },
+   "pooled": {
+    "current_frame": {
+     "A:k360_s0": 43.87252240665447,
+     "B:k360_s0": 43.97987456281568,
+     "B:map_only": 32.15556092834264,
+     "occany_5f_fwd": 25.516067815513715
+    },
+    "recent_other_four": {
+     "A:k360_s0": 44.064079751785144,
+     "B:k360_s0": 42.906928048372656,
+     "B:map_only": 31.033968186689492,
+     "occany_5f_fwd": 20.919911829029434
+    },
+    "earlier_in_stream": {
+     "A:k360_s0": 35.50879197898645,
+     "B:k360_s0": 34.709291260310955,
+     "B:map_only": 9.761170632923745,
+     "occany_5f_fwd": 12.800930373437794
+    },
+    "never_in_frustum": {
+     "A:k360_s0": 49.307552089476,
+     "B:k360_s0": 48.52657874695517,
+     "B:map_only": 20.744987766054056,
+     "occany_5f_fwd": 39.3034306357251
+    },
+    "never_out_frustum": {
+     "A:k360_s0": 35.818679445179875,
+     "B:k360_s0": 35.40927325183021,
+     "B:map_only": 8.548914738809453,
+     "occany_5f_fwd": 14.299015124334868
+    }
+   }
+  },
+  "composition": {
+   "current_frame": {
+    "valid_voxels": 78780071,
+    "gt_occupied": 9904602,
+    "share_of_valid": 0.3704553038766457,
+    "share_of_gt_occupied": 0.21476339657590726
+   },
+   "recent_other_four": {
+    "valid_voxels": 43445734,
+    "gt_occupied": 7733540,
+    "share_of_valid": 0.20429916331395437,
+    "share_of_gt_occupied": 0.16768784025401948
+   },
+   "earlier_in_stream": {
+    "valid_voxels": 29607010,
+    "gt_occupied": 6378635,
+    "share_of_valid": 0.13922396549285782,
+    "share_of_gt_occupied": 0.1383091736667422
+   },
+   "never_in_frustum": {
+    "valid_voxels": 19980052,
+    "gt_occupied": 8421617,
+    "share_of_valid": 0.09395417065733773,
+    "share_of_gt_occupied": 0.18260754663149537
+   },
+   "never_out_frustum": {
+    "valid_voxels": 40844558,
+    "gt_occupied": 13680275,
+    "share_of_valid": 0.19206739665920436,
+    "share_of_gt_occupied": 0.2966320428718357
+   }
+  }
+ }
+}

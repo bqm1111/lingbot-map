@@ -1,0 +1,177 @@
+{
+ "accuracy_vs_latency": {
+  "raw": [
+   {
+    "configuration": "Ours, 5 causal frames",
+    "sc_iou": 26.396948217145532,
+    "latency_mean_ms": 373.89395711012185,
+    "accuracy_source": "results/one_frame_semantickitti_raw.json",
+    "arm_key": "five_frame_unet",
+    "latency_source": "ours_semantickitti_5f_e2e.json",
+    "temporal_window": "causal"
+   },
+   {
+    "configuration": "Ours, 1 causal frame",
+    "sc_iou": 23.084073006168573,
+    "latency_mean_ms": 164.44576252872744,
+    "accuracy_source": "results/one_frame_semantickitti_raw.json",
+    "arm_key": "one_frame_unet",
+    "latency_source": "ours_semantickitti_1f_e2e.json",
+    "temporal_window": "causal"
+   },
+   {
+    "configuration": "Ours, map only (no learned head)",
+    "sc_iou": 8.786818096341399,
+    "latency_mean_ms": 330.510116390263,
+    "accuracy_source": "results/one_frame_semantickitti_raw.json",
+    "arm_key": "five_frame_map",
+    "latency_source": "derived: measured 5-frame end-to-end minus the measured CompletionUNet stage",
+    "temporal_window": "causal"
+   },
+   {
+    "configuration": "OccAny, 1 causal frame",
+    "sc_iou": 20.319705142913374,
+    "latency_mean_ms": 1320.0018706265837,
+    "accuracy_source": "results/one_frame_semantickitti_raw.json",
+    "arm_key": "occany_1f",
+    "latency_source": "occany_K_1FRAME_GEOM_e2e.json",
+    "temporal_window": "causal"
+   },
+   {
+    "configuration": "OccAny, 5 forward frames (t..t+40)",
+    "sc_iou": 25.20974996890375,
+    "latency_mean_ms": 1704.371918225661,
+    "accuracy_source": "results/one_frame_semantickitti_raw.json",
+    "arm_key": "occany_5f_fwd",
+    "latency_source": "occany_K_5FRAMES_GEOM_e2e.json",
+    "temporal_window": "forward"
+   }
+  ],
+  "pooled": [
+   {
+    "configuration": "Ours, 5 causal frames",
+    "sc_iou": 26.342442530594578,
+    "latency_mean_ms": 373.89395711012185,
+    "accuracy_source": "results/one_frame_semantickitti_pooled.json",
+    "arm_key": "five_frame_unet",
+    "latency_source": "ours_semantickitti_5f_e2e.json",
+    "temporal_window": "causal"
+   },
+   {
+    "configuration": "Ours, 1 causal frame",
+    "sc_iou": 24.533159405748343,
+    "latency_mean_ms": 164.44576252872744,
+    "accuracy_source": "results/one_frame_semantickitti_pooled.json",
+    "arm_key": "one_frame_unet",
+    "latency_source": "ours_semantickitti_1f_e2e.json",
+    "temporal_window": "causal"
+   },
+   {
+    "configuration": "Ours, map only (no learned head)",
+    "sc_iou": 15.043313568062288,
+    "latency_mean_ms": 330.510116390263,
+    "accuracy_source": "results/one_frame_semantickitti_pooled.json",
+    "arm_key": "five_frame_map",
+    "latency_source": "derived: measured 5-frame end-to-end minus the measured CompletionUNet stage",
+    "temporal_window": "causal"
+   },
+   {
+    "configuration": "OccAny, 1 causal frame",
+    "sc_iou": 24.06195379759287,
+    "latency_mean_ms": 1320.0018706265837,
+    "accuracy_source": "results/one_frame_semantickitti_pooled.json",
+    "arm_key": "occany_1f",
+    "latency_source": "occany_K_1FRAME_GEOM_e2e.json",
+    "temporal_window": "causal"
+   },
+   {
+    "configuration": "OccAny, 5 forward frames (t..t+40)",
+    "sc_iou": 25.928567591541178,
+    "latency_mean_ms": 1704.371918225661,
+    "accuracy_source": "results/one_frame_semantickitti_pooled.json",
+    "arm_key": "occany_5f_fwd",
+    "latency_source": "occany_K_5FRAMES_GEOM_e2e.json",
+    "temporal_window": "forward"
+   }
+  ]
+ },
+ "regional_semantickitti": {
+  "anchor_observed": {
+   "k360": 11.47220877858943,
+   "waymo": 10.293118112513525,
+   "once": 7.509183734637138,
+   "map_only": 11.15695984821236,
+   "occany_1f": 15.761507717556903,
+   "occany_5f_fwd": 11.71679231573168
+  },
+  "earlier_only": {
+   "k360": 17.95365026095798,
+   "waymo": 15.129376862210329,
+   "once": 11.480439328360001,
+   "map_only": 12.14238664522207,
+   "occany_1f": 12.969129034998154,
+   "occany_5f_fwd": 11.651085674021301
+  },
+  "never_observed_in_frustum": {
+   "k360": 28.557049520247134,
+   "waymo": 26.50294258322469,
+   "once": 19.605877711953653,
+   "map_only": 7.667552536831782,
+   "occany_1f": 25.44546739830435,
+   "occany_5f_fwd": 34.297619486225656
+  },
+  "never_observed_out_frustum": {
+   "k360": 35.120817774438805,
+   "waymo": 35.189055761015474,
+   "once": 30.22133999629334,
+   "map_only": 8.454037529427483,
+   "occany_1f": 7.984155366412376,
+   "occany_5f_fwd": 9.173932602623877
+  },
+  "never_observed": {
+   "k360": 30.06747326166878,
+   "waymo": 28.545261686574143,
+   "once": 22.173698504153904,
+   "map_only": 7.855216608817986,
+   "occany_1f": 21.527191413460347,
+   "occany_5f_fwd": 29.021176129463136
+  }
+ },
+ "regional_occ3d": {
+  "anchor_observed": {
+   "k360": 33.54926812336372,
+   "waymo": 20.221783437842387,
+   "once": 15.008842922756138,
+   "map_only": 13.190441755973902,
+   "occany_5f_fwd": 29.424130429027077
+  },
+  "earlier_only": {
+   "k360": 36.46578016015831,
+   "waymo": 28.397421061192937,
+   "once": 21.248149992853,
+   "map_only": 16.649331656780472,
+   "occany_5f_fwd": 17.369852252069062
+  },
+  "never_observed_in_frustum": {
+   "k360": 38.640771557113844,
+   "waymo": 26.90913820974029,
+   "once": 21.649760978718913,
+   "map_only": 10.942442532488387,
+   "occany_5f_fwd": 29.081150403552748
+  },
+  "never_observed_out_frustum": {
+   "k360": 25.64834167966485,
+   "waymo": 19.663409676359624,
+   "once": 18.10672840402423,
+   "map_only": 4.25726815891245,
+   "occany_5f_fwd": 9.06526389361625
+  },
+  "never_observed": {
+   "k360": 30.069018813518912,
+   "waymo": 22.165108039399918,
+   "once": 19.279050773682556,
+   "map_only": 6.4921566671890805,
+   "occany_5f_fwd": 17.050128955167033
+  }
+ }
+}

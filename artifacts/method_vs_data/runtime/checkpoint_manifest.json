@@ -1,0 +1,67 @@
+{
+ "generated": "2026-10-28T15:18:20+0100",
+ "git_rev": "db465c2ce2a692817d9ce4a141df7c24c4fa2d13",
+ "working_tree_modified": [
+  "M artifacts/method_vs_data/method_vs_data_updated_conclusions.md",
+  " M artifacts/method_vs_data/waymo_arm_vs_occany.md",
+  " M lingbot_map/heads/dpt_head.py",
+  "?? artifacts/method_vs_data/figures/",
+  "?? artifacts/method_vs_data/method_vs_data_reconciled_conclusions.md",
+  "?? artifacts/method_vs_data/observed_hidden/",
+  "?? artifacts/method_vs_data/observed_hidden_comparison.md",
+  "?? artifacts/method_vs_data/paper_positioning.md",
+  "?? artifacts/method_vs_data/runtime/",
+  "?? artifacts/method_vs_data/runtime_comparison.md",
+  "?? artifacts/method_vs_data/training_supervision_provenance.md",
+  "?? artifacts/method_vs_data/waymo_canonical_rescore.md",
+  "?? artifacts/method_vs_data/waymo_canonical_rescore/",
+  "?? tools/method_vs_data/canonical_rescore.py",
+  "?? tools/method_vs_data/map_only_predictions.py",
+  "?? tools/method_vs_data/observed_hidden.py",
+  "?? tools/method_vs_data/observed_hidden_tables.py",
+  "?? tools/method_vs_data/phase_figures.py",
+  "?? tools/method_vs_data/qualitative_panel.py",
+  "?? tools/method_vs_data/region_crosstab.py",
+  "?? tools/method_vs_data/rescore_tables.py",
+  "?? tools/method_vs_data/runtime/",
+  "?? tools/method_vs_data/supervision_provenance.py"
+ ],
+ "checkpoints": {
+  "ours/lingbot_map": {
+   "path": "checkpoints/lingbot-map/204754b/lingbot-map.pt",
+   "bytes": 4632303465,
+   "sha256": "ee665103348e07e6b826d529b8e61de8f413d5432a4f2e84970d6c8fd2e1cd72"
+  },
+  "ours/completion_unet_k360_seed0": {
+   "path": "artifacts/baseline_reconstruction/checkpoints/geo_seed0_step06000.pt",
+   "bytes": 3887295,
+   "sha256": "7f5e853dd05bdbde918da888503995a363f4cd4fa3e09061bcf4f765e2428faa"
+  },
+  "ours/completion_unet_waymo_seed0": {
+   "path": "artifacts/waymo_arm/checkpoints/geo_seed0_step06000.pt",
+   "bytes": 3887359,
+   "sha256": "e40fb93467e4d37c220113985ae53e944a86df9f90174b228e4348d626bf5702"
+  },
+  "ours/completion_unet_once_seed0": {
+   "path": "artifacts/method_vs_data/once_arm/checkpoints/geo_seed0_step06000.pt",
+   "bytes": 3887713,
+   "sha256": "03fc0d26fc8396d592af38b82285495b34ec74e02be4050a9b6a56c26bcd9e7f"
+  },
+  "occany/occany.pth": {
+   "path": "/media/SSD1/occany_causal/occany_shadow/checkpoints/occany.pth",
+   "bytes": 3745124158,
+   "sha256": "05155377a79cff430b6dfe45758cce89ff357c7e80b65438a66bea351c172b80"
+  },
+  "occany/MUSt3R_512.pth": {
+   "path": "/media/SSD1/occany_causal/occany_shadow/checkpoints/MUSt3R_512.pth",
+   "bytes": 1693926903,
+   "sha256": "96b0ae0fa3bc6e69b7570cd8f8aa8cefd3052cccf8537acad28eb20b9fda947b"
+  }
+ },
+ "moge2": {
+  "hf_repo": "Ruicheng/moge-2-vitl",
+  "hf_revision": "39c4d5e957afe587e04eec59dc2bcc3be5ecd968",
+  "note": "loaded from the HuggingFace cache at a pinned revision; no local checkpoint file to hash"
+ },
+ "note": "Identity of every model weight behind runtime_comparison.md and observed_hidden_comparison.md. OccAny's files live in the shadow copy at /media/SSD1/occany_causal/occany_shadow, which this work did not modify."
+}
